@@ -4,6 +4,7 @@ name: Verify desk data
 # stale or cites a dead source; GitHub emails the repo owner when it fails.
 on:
   push:
+    branches: [main]
     paths: ["data/**", "scripts/verify.py"]
   schedule:
     - cron: "17 * * * *"

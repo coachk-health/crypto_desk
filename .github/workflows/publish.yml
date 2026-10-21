@@ -1,0 +1,25 @@
+name: Publish to GitHub Pages
+
+# The live site is served from the gh-pages branch. Every push to main
+# (the daily and hourly updates) is copied there, which republishes the site.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Copy main to gh-pages
+        run: git push --force origin HEAD:gh-pages
