@@ -1,33 +1,85 @@
 {
  "date": "2026-10-21",
- "updated": "2026-10-21T12:18:51Z",
- "headline": "SpaceX and Tesla are studying a merger that would pool over 30,000 BTC, and the first final US stablecoin rule under the GENIUS Act landed today.",
+ "updated": "2026-10-21T16:10:03Z",
+ "headline": "Bitcoin pushed above $84,000 and Solana switched on its biggest upgrade since 2020, with Tesla and Meta earnings due after tonight's US close.",
  "market": {
-  "asOf": "21 Oct, ~19:00 Bangkok · CoinMarketCap",
+  "asOf": "21 Oct, ~22:55 Bangkok · CoinGecko",
   "btc": {
-   "price": 83310.73,
-   "chg24h": 2.32
+   "price": 84403.05,
+   "chg24h": 2.4
   },
   "eth": {
-   "price": 2440.8,
-   "chg24h": 1.78
+   "price": 2508.04,
+   "chg24h": 2.9
   },
   "sol": {
-   "price": 106.66,
-   "chg24h": 2.52
+   "price": 108.3,
+   "chg24h": 3.0
   },
-  "fearGreed": "63 Greed (Alternative.me) · 52 Neutral (CoinMarketCap)"
+  "fearGreed": "63 Greed (Alternative.me) · 54 (CoinMarketCap)"
  },
  "stories": [
   {
-   "title": "SpaceX and Tesla look at a merger that would combine more than 30,000 Bitcoin",
+   "title": "Bitcoin breaks above $84,000 and forces out about $188M of bets against it",
    "mood": "bullish",
-   "summary": "On SpaceX's earnings call on Tuesday 20 Oct, Elon Musk said SpaceX and Tesla have set up special committees to study a merger. Together the two companies hold 30,221 BTC. No deal terms have been agreed. Tesla reports its own earnings after the US close today.",
+   "summary": "Bitcoin rose above $84,000 on Wednesday, the top of the range it has traded in for the past week. The move forced many traders who had bet on a fall to close their positions. Price swings are still close to their smallest of 2026 as traders wait for the Fed decision on 28 Oct.",
    "points": [
-    "Reported holdings: 18,712 BTC at SpaceX and 11,509 BTC at Tesla, 30,221 BTC combined (about $2.5B, per CoinDesk).",
+    "Bitcoin briefly came close to $84,739, per Bitcoin.com (published 15:45 UTC, 22:45 Bangkok).",
+    "Forced closures (liquidations) over 24 hours totalled $243.04M across 71,223 traders. Bets on a fall made up $188.14M (77.4%); bets on a rise $54.89M.",
+    "Bitcoin's 28-day realized volatility is 1.2%, near its lowest of 2026, per K33 data reported by The Block. Bitcoin had traded between $80K and $84K for the past week.",
+    "On 19 Oct BlackRock's IBIT took in 8,128 BTC, its biggest daily inflow since April 2025. All US spot Bitcoin ETFs together took in a net 6,436 BTC that day.",
+    "Brent oil traded above $110 after attacks near the Strait of Hormuz, per CoinDesk."
+   ],
+   "sources": [
+    {
+     "label": "Bitcoin.com: Bitcoin cracks $84K as shorts get wiped out",
+     "url": "https://news.bitcoin.com/market-updates/bitcoin-price-cracks-84k-as-188-million-in-crypto-shorts-get-wiped-out/"
+    },
+    {
+     "label": "The Block: Bitcoin volatility nears 2026 lows",
+     "url": "https://www.theblock.co/news/markets/2026-10-21-bitcoin-volatility-nears-2026-lows-as-traders-brace-for-fed-decision-and-us-midterms-421524"
+    },
+    {
+     "label": "CoinDesk: Live updates, 21 Oct",
+     "url": "https://www.coindesk.com/markets/2026/10/21/live-updates-bitcoin-clings-to-usd82-500-as-spacex-results-lift-stock-futures"
+    }
+   ]
+  },
+  {
+   "title": "Solana's Alpenglow upgrade is live, its biggest overhaul since 2020",
+   "mood": "neutral",
+   "summary": "Solana switched to a new system, called Alpenglow, for agreeing which transactions are final. It replaces TowerBFT, which Solana has used since it launched in 2020. The goal is to make transactions final in a fraction of a second instead of several seconds.",
+   "points": [
+    "The switch happened at slot 459,653,000. Anza, the developer, puts it at about 14:00 UTC; Cointelegraph, citing the Solana Foundation's dashboard, puts it at about 13:54 UTC.",
+    "Anza says time to finality fell from about 12.8 seconds to about 150 milliseconds. CoinDesk's preview put the old figure at about 6 seconds. Cointelegraph reported the dashboard still showed 6.6 seconds at the time it published.",
+    "Running a validator should cost about 60% less: about 2 SOL a day in vote fees is replaced by a 0.8 SOL ticket per epoch, per CoinDesk.",
+    "CoinDesk counts 659 active validators, with 69% of SOL supply staked.",
+    "Anza CEO Brennan Watt called it \"the largest, most ambitious blockchain upgrade since 'The Merge.'\""
+   ],
+   "sources": [
+    {
+     "label": "The Block: Alpenglow goes live",
+     "url": "https://www.theblock.co/news/ecosystems/2026-10-21-anzas-alpenglow-goes-live-on-solana-cutting-finality-to-150-milliseconds-421508"
+    },
+    {
+     "label": "CoinDesk: Solana's Alpenglow goes live Wednesday",
+     "url": "https://www.coindesk.com/tech/2026/10/21/solana-s-alpenglow-its-biggest-network-overhaul-since-2020-goes-live-wednesday"
+    },
+    {
+     "label": "Cointelegraph: Alpenglow launches on mainnet",
+     "url": "https://cointelegraph.com/news/solanas-alpenglow-launches-mainnet-99-faster-finality"
+    }
+   ]
+  },
+  {
+   "title": "SpaceX and Tesla study a merger that would combine more than 30,000 Bitcoin",
+   "mood": "neutral",
+   "summary": "On SpaceX's earnings call on Tuesday 20 Oct, Elon Musk said SpaceX and Tesla have set up special committees to study a merger. Together the two companies hold 30,221 BTC. No terms have been agreed. Tesla reports its own results after today's US close.",
+   "points": [
+    "Holdings: 18,712 BTC at SpaceX and 11,509 BTC at Tesla, 30,221 BTC combined.",
     "Musk: \"The special committees have not reached agreement on the terms of any transaction.\" He added that shareholders would have to support it.",
-    "SpaceX Q3 revenue was $14.58B against a $12.7B estimate. Its shares were up about 9% before the US open.",
-    "Tesla and Meta both report after today's US close (about 03:30-04:30 Thursday, Bangkok time)."
+    "SpaceX Q3 revenue was $14.58B against a $12.7B estimate.",
+    "Forecasts for Tesla's results differ: CoinDesk cites $28.13B revenue and 44c adjusted earnings per share; Zacks (via BloFin) has $27.79B and 43c."
    ],
    "sources": [
     {
@@ -37,113 +89,59 @@
     {
      "label": "CoinDesk: Crypto Markets Today, 21 Oct",
      "url": "https://www.coindesk.com/markets/2026/10/21/crypto-rises-with-asian-tech-stocks-zcash-extends-gain-after-setting-upgrade-date"
-    }
-   ]
-  },
-  {
-   "title": "First final US stablecoin rule is out, and it leaves stablecoin 'rewards' in a grey zone",
-   "mood": "neutral",
-   "summary": "The Office of the Comptroller of the Currency (OCC), a US bank regulator, issued the first final rule under the GENIUS Act stablecoin law on 21 Oct. It sets how banks and other firms can get approval to issue dollar stablecoins. On rewards paid to stablecoin holders, the OCC will judge case by case instead of approving or banning them outright.",
-   "points": [
-    "The rule takes effect on 18 Jan 2027.",
-    "The OCC says it \"declines to presume\" that rewards programs from before the GENIUS Act comply. An OCC official said \"if we see a clear evasion, then we could pursue it.\"",
-    "CoinDesk names reward programs now under the spotlight: PayPal's PYUSD (4%), Coinbase One on USDC (3.75%) and Kraken+ on USDG (up to 4.5%).",
-    "Reserves must meet minimum daily liquidity rules and limits on relying on a single counterparty."
-   ],
-   "sources": [
-    {
-     "label": "CoinDesk: OCC final rule and stablecoin rewards",
-     "url": "https://www.coindesk.com/policy/2026/10/21/occ-s-final-rule-to-start-fresh-in-weighing-stablecoin-rewards-against-genius-act-ban"
     },
     {
-     "label": "The Block: OCC final GENIUS Act rule",
-     "url": "https://www.theblock.co/news/regulation/2026-10-21-occ-final-rule-implementing-trump-signed-genius-act-421470"
-    }
-   ]
-  },
-  {
-   "title": "Bitcoin reaches a one-week high near $83.4K as ETF inflows cool and oil stays near $110",
-   "mood": "volatile",
-   "summary": "Bitcoin rose about 2.5% to a one-week high, and Ether rose more. Money going into US spot Bitcoin ETFs slowed sharply on Tuesday after Monday's big day. Brent oil hit almost $112 on Tuesday before easing.",
-   "points": [
-    "Prices at about 11:15 UTC (18:15 Bangkok), per CoinDesk: BTC about $83,449 (+2.5%), ETH about $2,467 (+3.6%).",
-    "US spot Bitcoin ETFs took in a net $23.16M on 20 Oct (SoSoValue data via TokenPost), down from $526.7M on 19 Oct (Ted Pillows report).",
-    "Ether ETFs lost $26.13M on 20 Oct, their fifth straight day of outflows.",
-    "Brent oil peaked at $111.99 on 20 Oct and settled at $108.79.",
-    "Strategy (MSTR) bought 267 more BTC for $22.1M and now holds 848,517 BTC."
-   ],
-   "sources": [
-    {
-     "label": "CoinDesk Daybook, 21 Oct",
-     "url": "https://www.coindesk.com/daybook-us/2026/10/21/bitcoin-risk-management-grows-more-popular-as-the-just-bet-on-price-era-fades"
-    },
-    {
-     "label": "TokenPost: ETF flows for 20 Oct (SoSoValue data)",
-     "url": "https://www.tokenpost.com/news/investing/36487"
-    },
-    {
-     "label": "KuCoin News: 20 Oct ETF flows",
-     "url": "https://www.kucoin.com/news/flash/october-20-etf-flows-bitcoin-gains-eth-and-sol-lose"
-    },
-    {
-     "label": "Ted Pillows market report, 21 Oct",
-     "url": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-717"
-    },
-    {
-     "label": "Decrypt: Strategy buys $22M in Bitcoin",
-     "url": "https://decrypt.co/381302/strategy-buys-22m-in-bitcoin-buys-back-193m-of-strc"
+     "label": "BloFin: Tesla Q3 2026 earnings preview",
+     "url": "https://blofin.com/academy/education/tradfi/tesla-q3-2026-earnings-preview"
     }
    ]
   }
  ],
  "briefs": [
   {
-   "title": "Solana's Alpenglow upgrade is due within hours",
-   "summary": "The consensus switch happens at slot 459,653,000. Anza puts it at about 14:00 UTC today (21:00 Bangkok); the Solana Foundation's 13:20 UTC is the start of epoch 1064.",
-   "url": "https://solanacompass.com/news/alpenglow-is-pending-activation-on-solana-mainnet-with-towerbft-set-to-retire-at-slot-459653000"
+   "title": "Grayscale lets investors pay into 10 crypto funds with tokens",
+   "summary": "Eligible investors can now swap tokens such as BTC, ETH, SOL, XRP and DOGE directly for fund shares (in-kind subscriptions).",
+   "url": "https://www.theblock.co/news/markets/2026-10-21-grayscale-expands-in-kind-subscriptions-10-crypto-etfs-421559"
   },
   {
-   "title": "Trump to spotlight the crackdown on overseas crypto scams",
-   "summary": "The FBI's IC3 logged over $11B in crypto-related losses in 2025; people aged 60 and over lost about $7.7B.",
+   "title": "US bank regulator finalizes a GENIUS Act stablecoin rule",
+   "summary": "The OCC set the requirements that stablecoin issuers under its oversight must meet, covering reserves, redemption and custody. The law takes effect on 18 Jan 2027.",
+   "url": "https://decrypt.co/381502/occ-finalizes-genius-act-stablecoin-rules-ahead-of-january-deadline"
+  },
+  {
+   "title": "Standard Chartered agrees to buy all of Zodia Custody",
+   "summary": "The bank signed a deal for 100% of the crypto custody firm. Terms were not disclosed and regulators still have to approve it.",
+   "url": "https://www.theblock.co/news/business/2026-10-21-standard-chartered-signs-definitive-agreements-to-acquire-zodia-custody-421535"
+  },
+  {
+   "title": "White House event on overseas crypto scams",
+   "summary": "The FBI counted over $11B in US crypto-related losses in 2025.",
    "url": "https://crypto.news/trump-overseas-crypto-scam-crackdown-fbi-losses/"
   },
   {
-   "title": "Zcash (ZEC) up about 11% after its NU7 upgrade got a date",
-   "summary": "Developers set a November activation date for NU7, which cuts block times from 75 to 25 seconds.",
+   "title": "Zcash sets its NU7 upgrade for November",
+   "summary": "NU7 cuts block times from 75 to 25 seconds. ZEC was up about 11% over 24 hours in CoinDesk's morning report.",
    "url": "https://www.coindesk.com/markets/2026/10/21/crypto-rises-with-asian-tech-stocks-zcash-extends-gain-after-setting-upgrade-date"
   },
   {
-   "title": "Qubic restarts its network after a $1.4M wallet exploit",
-   "summary": "A weak random-number generator for wallet seeds hit 1,404 accounts. Wallet v4.26.4 fixes it and claims are open until 1 May 2027.",
-   "url": "https://www.cryptotimes.io/2026/10/21/qubic-restarts-network-after-1-4m-wallet-breach-opens-claims/"
+   "title": "Weak web security keys cracked at eMudhra",
+   "summary": "Eight of the Indian certificate company's secret keys were weak enough to crack. Browsers block the affected certificates, but some developer tools did not, so trading bots and wallet back-ends should update.",
+   "url": "https://www.coindesk.com/tech/2026/10/21/a-company-that-vouches-for-websites-had-secret-keys-so-weak-that-8-of-them-were-cracked"
   },
   {
-   "title": "NEAR up about 6% on a plan to cut new token issuance",
-   "summary": "A governance proposal would cut NEAR's yearly issuance from 2.5% to 1.6% over two years.",
-   "url": "https://www.coindesk.com/markets/2026/10/21/crypto-rises-with-asian-tech-stocks-zcash-extends-gain-after-setting-upgrade-date"
-  },
-  {
-   "title": "UK inflation rose to 3.5%",
-   "summary": "UK CPI rose 3.5% in the 12 months to September, up from 3.1%.",
-   "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/september2026"
+   "title": "UK banks drew 10,092 complaints over blocked crypto transfers",
+   "summary": "The complaints came between May and August, per a Stand With Crypto report. Lloyds had the most, 2,297.",
+   "url": "https://decrypt.co/381475/uk-banks-hit-with-10000-complaints-over-blocked-crypto-transfers-in-90-days-report"
   }
  ],
  "calendar": [
   {
-   "et": "Wed 21 · ~9:20–10:50am",
-   "bkk": "Wed 21 · ~20:20–21:50",
-   "event": "Solana Alpenglow upgrade switches on",
-   "impact": "neutral",
-   "key": false,
-   "note": "Times differ: Solana Foundation says epoch 1064 starts ~13:20 UTC; Solana Compass cites Anza at ~14:00 UTC; another Solana Compass report cites Anza at ~14:50 UTC."
-  },
-  {
    "et": "Wed 21 · after close",
    "bkk": "Thu 22 · 03:30–04:30",
-   "event": "Meta and Tesla earnings",
+   "event": "Meta, Tesla and IBM earnings",
    "impact": "volatile",
    "key": true,
-   "note": "Meta call 4:30pm ET, Tesla 5:30pm ET. IBM also reports after the close."
+   "note": "Meta call 4:30pm ET, IBM 5:00pm ET, Tesla webcast 5:30pm ET."
   },
   {
    "et": "Thu 22 · 8:30am",
@@ -154,12 +152,12 @@
    "note": "Consensus 200K, prior 199K."
   },
   {
-   "et": "Fri 23 · 4:00am",
-   "bkk": "Fri 23 · 15:00",
-   "event": "Deribit weekly Bitcoin options expiry",
+   "et": "Fri 23",
+   "bkk": "Fri 23",
+   "event": "Weekly Bitcoin options expiry",
    "impact": "neutral",
    "key": false,
-   "note": "Weekly options expire Fridays at 08:00 UTC. The big monthly expiry is 30 Oct."
+   "note": "About 14,759 BTC contracts expire (CryptoTicker, 17 Oct). The big monthly expiry is 30 Oct."
   },
   {
    "et": "Fri 23 · 9:45am",
@@ -167,39 +165,47 @@
    "event": "S&P Global flash PMIs (Oct)",
    "impact": "volatile",
    "key": false,
-   "note": "Prior readings: manufacturing 55.9, services 58.8."
+   "note": "Consensus manufacturing 55.5, services 58.0 (Investing.com). Prior 55.9 and 58.8."
   },
   {
    "et": "Fri 23 · 10:00am",
    "bkk": "Fri 23 · 21:00",
-   "event": "UMich consumer sentiment, final (Oct)",
+   "event": "UMich 1-year inflation expectations (Oct)",
    "impact": "neutral",
    "key": false,
-   "note": "The early reading was 46.3."
+   "note": "The early October readings were 46.3 for sentiment and 4.7% for 1-year inflation expectations."
   },
   {
    "et": "Fri 23 – Sun 25",
    "bkk": "Fri 23 – Sun 25",
-   "event": "Token unlocks: Plasma (XPL), Humanity (H), SoSoValue (SOSO), SOON",
+   "event": "Token unlocks: SOON, SoSoValue (SOSO), Humanity (H), COAI, Plasma (XPL)",
    "impact": "bearish",
    "key": false,
-   "note": "XPL ~$18.0M, H ~$15.5M, SOSO ~$6.8M, SOON ~$6.1M. All small."
+   "note": "SOON ~$6.05M (23rd), SOSO ~$6.8M (24th), H ~$15.5M, COAI ~$5.11M, XPL ~$18.0M (25th). All small."
   },
   {
-   "et": "Tue 27 · 8:30am",
-   "bkk": "Tue 27 · 19:30",
+   "et": "Sun 25",
+   "bkk": "Sun 25 / Mon 26",
+   "event": "Brazil presidential runoff",
+   "impact": "neutral",
+   "key": false,
+   "note": "A weekend event that could move global markets."
+  },
+  {
+   "et": "Tue 27",
+   "bkk": "Tue 27",
    "event": "Durable goods orders (Sep)",
    "impact": "neutral",
    "key": false,
-   "note": "August was first reported unchanged (0.0%), later revised to -0.1%."
+   "note": "Prior (Aug) 0.0%; excluding transport +0.3%."
   },
   {
-   "et": "Tue 27 · 10:00am",
-   "bkk": "Tue 27 · 21:00",
-   "event": "Consumer confidence (Oct)",
+   "et": "Tue 27",
+   "bkk": "Tue 27",
+   "event": "New home sales (Sep)",
    "impact": "neutral",
    "key": false,
-   "note": "Prior 81.9."
+   "note": "Prior 684K. Robinhood reports after the close."
   },
   {
    "et": "Wed 28 · 2:00pm",
@@ -207,15 +213,15 @@
    "event": "Fed rate decision",
    "impact": "volatile",
    "key": true,
-   "note": "Press conference 2:30pm ET. The range is now 3.75–4.00%."
+   "note": "Press conference 2:30pm ET. The range is now 3.75–4.00%. CME FedWatch showed about an 81% chance of no change (per Bitcoin.com, 21 Oct)."
   },
   {
    "et": "Thu 29 · 8:30am",
    "bkk": "Thu 29 · 19:30",
-   "event": "US Q3 GDP (advance) and September PCE inflation",
+   "event": "US Q3 GDP (advance) and September personal income and spending",
    "impact": "volatile",
    "key": false,
-   "note": "Coinbase and Intel report after the close the same day."
+   "note": "Coinbase, Strategy and Intel report after the close the same day; Amazon's call is at 5:00pm ET."
   },
   {
    "et": "Fri 30 · 4:00am",
@@ -223,15 +229,15 @@
    "event": "Deribit monthly Bitcoin options expiry, ~$12.2B",
    "impact": "volatile",
    "key": true,
-   "note": "Max pain $79K (as of 17 Oct). Not a price target."
+   "note": "Max pain $79K (as of 17 Oct, CryptoTicker). Not a price target."
   }
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-10-21T12:18:51Z",
-  "claimsChecked": 73,
-  "claimsRemoved": 9,
-  "rounds": 2,
+  "checkedAt": "2026-10-21T16:10:03Z",
+  "claimsChecked": 126,
+  "claimsRemoved": 11,
+  "rounds": 3,
   "method": "Independent source check: every claim re-opened at its cited URL"
  }
 }
