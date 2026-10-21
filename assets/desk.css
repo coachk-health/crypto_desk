@@ -1,0 +1,34 @@
+/* Coach K stream desk: shared tokens. Dusk-over-the-Andaman palette: indigo night, sunset amber. */
+:root {
+  --night: #10162E;
+  --panel: #18204A;
+  --panel-2: #1F2A5C;
+  --line: #2C3A78;
+  --text: #EEF0FA;
+  --muted: #A3ABD6;
+  --sun: #FFB547;
+  --sun-deep: #F08A24;
+  --bull: #43D6A0;
+  --bear: #FF6B7D;
+  --calm: #8FA7FF;
+  --display: "Big Shoulders Display", "Oswald", "Arial Narrow", sans-serif;
+  --body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+.num { font-variant-numeric: tabular-nums; }
+.up { color: var(--bull); }
+.down { color: var(--bear); }
+.mood { display: inline-flex; align-items: center; gap: .45em; font-weight: 600; }
+.mood::before { content: ""; width: .6em; height: .6em; border-radius: 50%; background: currentColor; }
+.mood.bullish { color: var(--bull); }
+.mood.bearish { color: var(--bear); }
+.mood.volatile { color: var(--sun); }
+.mood.neutral { color: var(--calm); }
+.conf { font-weight: 600; border-radius: 4px; padding: .1em .45em; white-space: nowrap; }
+.conf.confirmed { color: var(--bull); background: rgba(67, 214, 160, .14); }
+.conf.reported { color: var(--calm); background: rgba(143, 167, 255, .14); }
+.conf.estimated, .conf.disputed { color: var(--sun); background: rgba(255, 181, 71, .14); }
+.track { background: rgba(255, 255, 255, .07); border-radius: 3px; overflow: hidden; }
+.track > i { display: block; height: 100%; background: linear-gradient(90deg, var(--sun-deep), var(--sun)); border-radius: 3px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }

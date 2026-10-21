@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Coach K Crypto Desk</title>
+<meta name="description" content="Today's crypto news, upcoming token unlocks and the week's market calendar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Public+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/desk.css">
+<style>
+body { margin: 0; background: var(--night); color: var(--text); font-family: var(--body); font-size: 16px; line-height: 1.55; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 72px; }
+a { color: var(--sun); text-underline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; border-radius: 4px; }
+
+header.top { background: radial-gradient(900px 340px at 100% 0%, rgba(240, 138, 36, .18), transparent 70%); padding-top: env(safe-area-inset-top, 0); }
+header.top .wrap { padding-bottom: 0; }
+.brandrow { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px; padding: 32px 0 18px; }
+.brand h1 { font-family: var(--display); font-weight: 900; font-size: clamp(40px, 7vw, 64px); line-height: .9; margin: 0; letter-spacing: .005em; }
+.brand p { margin: 8px 0 0; color: var(--muted); }
+.prices { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: baseline; }
+.prices div { display: flex; gap: 8px; align-items: baseline; }
+.prices .s { color: var(--muted); font-weight: 600; font-size: 14px; }
+.prices .p { font-family: var(--display); font-weight: 800; font-size: 26px; }
+.prices .ch { font-size: 14px; font-weight: 700; }
+.prices .src { width: 100%; font-size: 12.5px; color: var(--muted); }
+
+nav.tabs { display: flex; gap: 4px; overflow-x: auto; border-bottom: 2px solid var(--line); scrollbar-width: none; }
+nav.tabs button { font: inherit; font-weight: 600; font-size: 16px; color: var(--muted); background: none; border: 0; padding: 12px 14px; border-bottom: 3px solid transparent; margin-bottom: -2px; cursor: pointer; white-space: nowrap; }
+nav.tabs button[aria-selected="true"] { color: var(--text); border-bottom-color: var(--sun); }
+
+section { padding-top: 28px; }
+.lead { font-family: var(--display); font-weight: 800; font-size: clamp(26px, 4vw, 38px); line-height: 1.08; margin: 0 0 8px; max-width: 30ch; text-wrap: balance; }
+.stamp { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+h2 { font-family: var(--display); font-weight: 800; font-size: 28px; line-height: 1.1; margin: 36px 0 12px; }
+
+.stories { display: grid; gap: 14px; }
+.storyc { background: var(--panel); border-radius: 14px; padding: 20px 22px; }
+.storyc h3 { font-family: var(--display); font-weight: 800; font-size: 27px; line-height: 1.08; margin: 8px 0 10px; text-wrap: balance; }
+.storyc p { margin: 0; max-width: 68ch; }
+.storyc details { margin-top: 12px; }
+.storyc summary { cursor: pointer; color: var(--sun); font-weight: 600; font-size: 15px; }
+.storyc ul { margin: 12px 0 0; padding-left: 20px; display: grid; gap: 8px; max-width: 68ch; color: var(--muted); }
+.storyc .srcs { margin-top: 12px; font-size: 14px; display: flex; flex-direction: column; gap: 4px; }
+.mood { font-size: 14px; }
+
+.briefs { display: grid; gap: 0; }
+.briefs a { display: block; text-decoration: none; color: inherit; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.briefs a:hover b { color: var(--sun); }
+.briefs b { font-weight: 600; font-size: 17px; }
+.briefs span { display: block; color: var(--muted); font-size: 15px; margin-top: 2px; max-width: 72ch; }
+
+.seg { display: inline-flex; background: var(--panel); border-radius: 10px; padding: 4px; gap: 4px; margin-bottom: 16px; flex-wrap: wrap; }
+.seg button { font: inherit; font-size: 14.5px; font-weight: 600; color: var(--muted); background: none; border: 0; border-radius: 7px; padding: 7px 12px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--panel-2); color: var(--text); }
+.intro { color: var(--muted); max-width: 70ch; margin: 0 0 16px; }
+
+.ul { display: grid; gap: 8px; }
+.u { background: var(--panel); border-radius: 12px; }
+.u > button { all: unset; box-sizing: border-box; width: 100%; display: grid; grid-template-columns: 175px 140px 100px minmax(0, 1fr) 90px; gap: 16px; align-items: center; padding: 14px 18px; cursor: pointer; border-radius: 12px; }
+.u > button:focus-visible { outline: 3px solid var(--sun); }
+.u.soon > button { box-shadow: inset 4px 0 0 var(--sun); }
+.u .cd { font-family: var(--display); font-weight: 800; font-size: 24px; color: var(--sun); line-height: 1.05; }
+.u .cd.dayonly { color: var(--text); }
+.u .when { font-size: 13px; color: var(--muted); }
+.u .tok { font-family: var(--display); font-weight: 900; font-size: 26px; line-height: 1; }
+.u .nm { font-size: 13px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.u .val { font-family: var(--display); font-weight: 800; font-size: 22px; }
+.u .val.na { font-family: var(--body); font-weight: 500; font-size: 13px; color: var(--muted); }
+.u .track { height: 9px; }
+.u .pct { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.u .pct b { color: var(--text); }
+.u .conf { font-size: 12.5px; justify-self: end; }
+.u .more { padding: 0 18px 16px; font-size: 14.5px; color: var(--muted); display: grid; gap: 4px; }
+.u .more b { color: var(--text); font-weight: 600; }
+@media (max-width: 560px) { .prices { gap: 4px 14px; } .prices .p { font-size: 21px; } }
+@media (max-width: 720px) {
+  .u > button { grid-template-columns: minmax(0, 1fr) auto; gap: 8px 12px; }
+  .u .c-tok { grid-row: 1; grid-column: 1; }
+  .u .c-val { grid-row: 1; grid-column: 2; text-align: right; }
+  .u .c-cd { grid-row: 2; grid-column: 1; }
+  .u .conf { grid-row: 2; grid-column: 2; align-self: center; }
+  .u .c-sup { grid-row: 3; grid-column: 1 / -1; }
+}
+
+.sched { display: grid; gap: 8px; }
+.sched .s { background: var(--panel); border-radius: 12px; padding: 14px 18px; display: grid; grid-template-columns: 120px minmax(0, 1fr) 150px; gap: 16px; align-items: baseline; }
+.sched .tok { font-family: var(--display); font-weight: 900; font-size: 24px; line-height: 1; }
+.sched .nm, .sched .k { font-size: 13px; color: var(--muted); }
+.sched .amt { font-weight: 600; }
+.sched .note { font-size: 14px; color: var(--muted); margin-top: 2px; }
+.sched .nx { text-align: right; font-family: var(--display); font-weight: 800; font-size: 20px; color: var(--sun); }
+@media (max-width: 640px) { .sched .s { grid-template-columns: 1fr auto; } .sched .s > div:nth-child(2) { grid-column: 1 / -1; grid-row: 2; } }
+
+.cal { display: grid; gap: 6px; }
+.crow { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 16px; padding: 12px 16px; border-radius: 12px; }
+.crow.key { background: var(--panel); box-shadow: inset 4px 0 0 var(--sun); }
+.crow .t { font-family: var(--display); font-weight: 800; font-size: 20px; line-height: 1.1; }
+.crow .t small { display: block; font-family: var(--body); font-weight: 500; font-size: 13px; color: var(--muted); }
+.crow .e { font-weight: 600; display: flex; gap: 10px; align-items: baseline; }
+.crow .e .mood { font-size: 0; flex: none; }
+.crow .e .mood::before { width: 10px; height: 10px; }
+.crow .n { font-size: 14.5px; color: var(--muted); padding-left: 20px; }
+@media (max-width: 560px) { .crow { grid-template-columns: 1fr; gap: 4px; } }
+
+.tablewrap { overflow-x: auto; background: var(--panel); border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14.5px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 13px; white-space: nowrap; }
+th button { all: unset; cursor: pointer; }
+th button:focus-visible { outline: 2px solid var(--sun); }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+td.tk { font-family: var(--display); font-weight: 900; font-size: 19px; }
+td.tk small { display: block; font-family: var(--body); font-weight: 500; font-size: 12.5px; color: var(--muted); }
+tr:last-child td { border-bottom: 0; }
+
+footer { margin-top: 48px; padding-top: 18px; border-top: 2px solid var(--line); font-size: 13.5px; color: var(--muted); display: grid; gap: 6px; }
+.state { padding: 60px 0; color: var(--muted); }
+.fresh { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; font-size: 14px; color: var(--muted); margin: 0 0 18px; }
+.fresh b { color: var(--text); font-weight: 600; }
+.fresh.stale { color: var(--sun); background: rgba(255, 181, 71, .1); border-radius: 10px; padding: 10px 14px; }
+.fresh.stale b { color: var(--sun); }
+.breaking { display: grid; gap: 10px; margin: 0 0 22px; }
+.breaking a { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 14px; text-decoration: none; color: inherit; background: var(--panel-2); border-radius: 12px; padding: 14px 18px; box-shadow: inset 4px 0 0 var(--bear); }
+.breaking .tag { color: var(--bear); font-weight: 700; font-size: 13px; padding-top: 2px; }
+.breaking b { font-size: 17px; }
+.breaking span.s { grid-column: 2; color: var(--muted); font-size: 15px; }
+html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; background: var(--night); }
+.scene-frame { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brandrow">
+      <div class="brand"><h1 id="brand">Crypto Desk</h1><p id="tagline"></p></div>
+      <div class="prices" id="prices" aria-live="polite"></div>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button role="tab" data-tab="news" aria-selected="true">Today</button>
+      <button role="tab" data-tab="unlocks" aria-selected="false">Token unlocks</button>
+      <button role="tab" data-tab="week" aria-selected="false">Week ahead</button>
+      <button role="tab" data-tab="supply" aria-selected="false">Supply and revenue</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="main"><p class="state">Loading today’s desk…</p></main>
+<div class="wrap"><footer id="foot"></footer></div>
+
+<script src="assets/desk.js"></script>
+<script>
+(function () {
+  function sceneRoute() {
+    const m = location.hash.match(/^#obs(?:-(unlocks|story|calendar|ticker))?$/);
+    if (!m) return false;
+    const f = document.createElement('iframe');
+    f.src = 'obs.html' + (m[1] ? '?scene=' + m[1] : '');
+    f.title = m[1] ? 'Stream scene: ' + m[1] : 'Stream scenes';
+    f.className = 'scene-frame';
+    document.documentElement.classList.add('scene-mode');
+    document.body.replaceChildren(f);
+    return true;
+  }
+  addEventListener('hashchange', () => { if (/^#obs/.test(location.hash) || document.documentElement.classList.contains('scene-mode')) location.reload(); });
+  if (sceneRoute()) return;
+  const { el } = Desk;
+  const main = document.getElementById('main');
+  let D, P, tab = 'news', uRange = 30, uView = 'upcoming', sortKey = 'revenueUsdM', open = null, cdTimer;
+  try { const h = location.hash.slice(1); if (['news', 'unlocks', 'week', 'supply'].includes(h)) tab = h; } catch (e) {}
+
+  function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : ''; }
+
+  function renderPrices() {
+    const box = document.getElementById('prices');
+    const kids = ['btc', 'eth', 'sol'].map(k => {
+      const x = P && P[k], ch = Desk.change(x && x.chg24h);
+      return el('div', null, [el('span', { class: 's', text: k.toUpperCase() }), el('span', { class: 'p num', text: Desk.price(x && x.price) }), el('span', { class: 'ch num ' + ch.dir, text: ch.text })]);
+    });
+    kids.push(el('span', { class: 'src', text: P && P.live ? 'Live from ' + P.source + ', updates every minute' : 'Prices as of ' + (P && P.source || 'the brief') }));
+    box.replaceChildren(...kids);
+  }
+
+  function freshness() {
+    const v = D.news.verification;
+    const h = Desk.ageHours(D.news.updated);
+    const stale = h == null || h > 26 || !v;
+    const when = new Date(D.news.updated).toLocaleString('en-US', { weekday: 'short', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit', timeZone: D.site.timeZone }) + ' ' + (D.site.tzLabel || '');
+    const kids = [el('span', null, [el('b', { text: 'Updated ' + Desk.ago(D.news.updated) }), ' (' + when + ')'])];
+    if (v) kids.push(el('span', { text: 'Checked against sources ' + Desk.ago(v.checkedAt) + ': ' + v.claimsChecked + ' facts confirmed' + (v.claimsRemoved ? ', ' + v.claimsRemoved + ' removed as unconfirmed' : '') + '.' }));
+    else kids.push(el('span', { text: 'This edition has not been through the source check yet.' }));
+    if (stale && h != null && h > 26) kids.unshift(el('b', { text: 'Older than a day. Treat prices and odds as out of date.' }));
+    return el('p', { class: 'fresh' + (stale ? ' stale' : ''), role: stale ? 'status' : null }, kids);
+  }
+
+  function breaking() {
+    const b = (D.news.breaking || []).filter(x => (Desk.ageHours(x.at) ?? 99) < 24);
+    if (!b.length) return null;
+    return el('div', { class: 'breaking', 'aria-label': 'Breaking' }, b.map(x => el('a', { href: x.url, target: '_blank', rel: 'noopener' }, [
+      el('span', { class: 'tag', text: 'Breaking, ' + Desk.ago(x.at) }), el('b', { text: x.title }), el('span', { class: 's', text: x.summary || '' })
+    ])));
+  }
+
+  function news() {
+    const n = D.news;
+    return el('section', { 'aria-label': 'Today' }, [
+      breaking(),
+      el('p', { class: 'lead', text: n.headline }),
+      freshness(),
+      el('div', { class: 'stories' }, (n.stories || []).map(s => el('article', { class: 'storyc' }, [
+        el('span', { class: 'mood ' + s.mood, text: cap(s.mood) }),
+        el('h3', { text: s.title }),
+        el('p', { text: s.summary }),
+        el('details', null, [
+          el('summary', { text: 'The details and sources' }),
+          el('ul', null, (s.points || []).map(p => el('li', { text: p }))),
+          el('div', { class: 'srcs' }, (s.sources || []).map(x => el('a', { href: x.url, target: '_blank', rel: 'noopener', text: x.label })))
+        ])
+      ]))),
+      (n.briefs || []).length ? el('h2', { text: 'Also today' }) : null,
+      el('div', { class: 'briefs' }, (n.briefs || []).map(b => el('a', { href: b.url, target: '_blank', rel: 'noopener' }, [el('b', { text: b.title }), el('span', { text: b.summary })])))
+    ]);
+  }
+
+  function unlockRow(u, now) {
+    const c = Desk.countdown(u, now), v = Desk.usd(u.usdM), id = u.date + u.token;
+    const isOpen = open === id;
+    const btn = el('button', { type: 'button', 'aria-expanded': String(isOpen) }, [
+      el('div', { class: 'c-cd' }, [el('div', { class: 'cd num' + (u.timeUTC ? '' : ' dayonly'), 'data-cd': id, text: c.text }), el('div', { class: 'when', text: Desk.dayLabel(u, D.site.timeZone) + (u.timeUTC ? ' ' + (D.site.tzLabel || '') : '') })]),
+      el('div', { class: 'c-tok' }, [el('div', { class: 'tok', text: u.token }), el('div', { class: 'nm', text: u.name })]),
+      el('div', { class: 'c-val' }, [v ? el('div', { class: 'val num', text: v }) : el('div', { class: 'val na', text: 'Size unconfirmed' })]),
+      el('div', { class: 'c-sup' }, u.pct != null ? [el('div', { class: 'track' }, [el('i', { style: 'width:' + Desk.supplyWidth(u.pct) + '%' })]), el('div', { class: 'pct' }, [el('b', { text: u.pct + '%' }), ' ' + (u.pctBasis || '')])] : [el('div', { class: 'pct', text: 'Share of supply unconfirmed' })]),
+      el('span', { class: 'conf ' + u.confidence, text: u.confidence })
+    ]);
+    btn.addEventListener('click', () => { open = isOpen ? null : id; render(); });
+    return el('div', { class: 'u' + (c.soon ? ' soon' : '') }, [
+      btn,
+      isOpen ? el('div', { class: 'more' }, [
+        el('div', null, [el('b', { text: 'Amount: ' }), u.amount || 'unconfirmed']),
+        el('div', null, [el('b', { text: 'Who receives it: ' }), u.recipients || 'unconfirmed']),
+        el('div', null, [el('b', { text: 'Type: ' }), u.type === 'linear' ? 'Linear (released gradually)' : 'Cliff (released at once)']),
+        u.note ? el('div', null, [el('b', { text: 'Notes: ' }), u.note]) : null,
+        u.source ? el('a', { href: u.source, target: '_blank', rel: 'noopener', text: 'Source' }) : null
+      ]) : null
+    ]);
+  }
+
+  function seg(opts, cur, set) {
+    return el('div', { class: 'seg', role: 'group' }, opts.map(([k, label]) => el('button', { type: 'button', 'aria-pressed': String(cur === k), text: label, onclick: () => { set(k); render(); } })));
+  }
+
+  function unlocks() {
+    const now = new Date();
+    const head = seg([['upcoming', 'Upcoming'], ['schedules', 'Monthly schedules']], uView, v => uView = v);
+    if (uView === 'schedules') {
+      return el('section', { 'aria-label': 'Monthly unlock schedules' }, [head,
+        el('p', { class: 'intro', text: 'Tokens that unlock on a fixed monthly rhythm. These repeat until the vesting schedule ends.' }),
+        el('div', { class: 'sched' }, D.unlocks.schedules.map(s => el('div', { class: 's' }, [
+          el('div', null, [el('div', { class: 'tok', text: s.token }), el('div', { class: 'nm', text: s.name })]),
+          el('div', null, [el('div', { class: 'amt', text: [s.typicalAmount, s.typicalUsd].filter(Boolean).join(', ') }), el('div', { class: 'k', text: [s.cadence + (s.dayOfMonth ? ' on day ' + s.dayOfMonth : ''), s.pct, s.recipients ? 'to ' + s.recipients : '', s.scheduleEnds ? 'ends ' + s.scheduleEnds : ''].filter(Boolean).join('. ') }), s.note ? el('div', { class: 'note', text: s.note }) : null]),
+          el('div', { class: 'nx' }, [s.nextDate ? new Date(s.nextDate + 'T00:00:00Z').toLocaleDateString('en-US', { day: 'numeric', month: 'short', timeZone: 'UTC' }) : '', el('div', { class: 'k', text: s.nextDate ? 'next' : '' })])
+        ])))
+      ]);
+    }
+    const days = uRange === 'all' ? 3650 : uRange;
+    const list = Desk.upcoming(D.unlocks, now, days);
+    const total = list.reduce((s, u) => s + (u.usdM || 0), 0);
+    return el('section', { 'aria-label': 'Upcoming token unlocks' }, [head, ' ',
+      seg([[7, 'Next 7 days'], [30, 'Next 30 days'], ['all', 'All']], uRange, v => uRange = v),
+      el('p', { class: 'intro', text: 'An unlock releases tokens held by teams, investors or the treasury. ' + list.length + ' unlocks worth about ' + (Desk.usd(total) || '$0') + ' in this window (rows without a confirmed size are excluded from the total). Tap a row for who receives it and the source.' }),
+      el('div', { class: 'ul' }, list.length ? list.map(u => unlockRow(u, now)) : [el('p', { class: 'state', text: 'No unlocks in this window.' })])
+    ]);
+  }
+
+  function week() {
+    return el('section', { 'aria-label': 'Week ahead' }, [
+      el('p', { class: 'intro', text: 'Events that can move crypto. Times in ET, Bangkok underneath. Highlighted rows are the big ones.' }),
+      el('div', { class: 'cal' }, (D.news.calendar || []).map(c => el('div', { class: 'crow' + (c.key ? ' key' : '') }, [
+        el('div', { class: 't' }, [c.et || c.bkk, el('small', { text: c.bkk ? 'Bangkok ' + c.bkk : '' })]),
+        el('div', null, [el('div', { class: 'e' }, [el('span', { class: 'mood ' + (c.impact || 'neutral'), title: cap(c.impact) }), c.event]), c.note ? el('div', { class: 'n', text: c.note }) : null])
+      ])))
+    ]);
+  }
+
+  function supply() {
+    const rows = D.unlocks.supply.slice().sort((a, b) => (b[sortKey] ?? -1) - (a[sortKey] ?? -1));
+    const th = (k, label, num) => el('th', { class: num ? 'n' : '', 'aria-sort': sortKey === k ? 'descending' : null }, [el('button', { type: 'button', text: label + (sortKey === k ? ' ↓' : ''), onclick: () => { sortKey = k; render(); } })]);
+    return el('section', { 'aria-label': 'Supply and revenue' }, [
+      el('p', { class: 'intro', text: 'Tokens with most of their supply already circulating and real protocol revenue. Less supply left to unlock means less future selling pressure. Revenue is annualised; tap a column to sort.' }),
+      el('div', { class: 'tablewrap' }, [el('table', null, [
+        el('thead', null, [el('tr', null, [el('th', { text: 'Token' }), th('mcapUsdM', 'Market cap', 1), th('circPct', 'Circulating', 1), th('revenueUsdM', 'Revenue / yr', 1), el('th', { text: 'How holders benefit' }), el('th', { text: 'Inflation' })])]),
+        el('tbody', null, rows.map(r => el('tr', null, [
+          el('td', { class: 'tk' }, [r.token, el('small', { text: r.name })]),
+          el('td', { class: 'n', text: Desk.usd(r.mcapUsdM) || '—' }),
+          el('td', { class: 'n', text: r.circPct != null ? r.circPct + '%' : '—' }),
+          el('td', { class: 'n', text: Desk.usd(r.revenueUsdM) || '—' }),
+          el('td', { text: r.holderValue || '—' }),
+          el('td', { text: r.inflation || '—' })
+        ])))
+      ])])
+    ]);
+  }
+
+  function render() {
+    document.querySelectorAll('nav.tabs button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === tab)));
+    const view = { news, unlocks, week, supply }[tab]();
+    main.replaceChildren(view);
+    clearInterval(cdTimer);
+    if (tab === 'unlocks' && uView === 'upcoming') {
+      cdTimer = setInterval(() => {
+        const now = new Date();
+        D.unlocks.upcoming.forEach(u => { const n = main.querySelector('[data-cd="' + CSS.escape(u.date + u.token) + '"]'); if (n) n.textContent = Desk.countdown(u, now).text; });
+      }, 1000);
+    }
+  }
+
+  document.querySelectorAll('nav.tabs button').forEach(b => b.addEventListener('click', () => {
+    tab = b.dataset.tab; try { history.replaceState(null, '', '#' + tab); } catch (e) {} render();
+  }));
+
+  async function boot() {
+    try { D = await Desk.load(''); }
+    catch (e) { main.replaceChildren(el('p', { class: 'state', text: 'Couldn’t read the data files (' + e.message + '). Open this page through the website or the local server, not as a file.' })); return; }
+    document.getElementById('brand').textContent = D.site.brand || 'Crypto Desk';
+    document.getElementById('tagline').textContent = D.site.tagline || '';
+    document.title = (D.site.brand || 'Crypto') + ' Desk';
+    document.getElementById('foot').replaceChildren(
+      el('div', { text: D.site.disclaimer || '' }),
+      el('div', { text: 'News updated ' + Desk.ago(D.news.updated) + '. Unlock data checked ' + Desk.ago(D.unlocks.checkedAt || D.unlocks.updated) + '. ' + (D.unlocks.snapshot || '') }),
+      el('div', null, ['Unlock dates and sizes often change and sources disagree; the confidence tag on each row says how solid it is. ', el('a', { href: '#obs', text: 'Stream scenes' })])
+    );
+    P = await Desk.prices(D.news.market);
+    renderPrices();
+    render();
+    setInterval(async () => { P = await Desk.prices(D.news.market); renderPrices(); }, 60000);
+    setInterval(async () => { try { D = await Desk.load(''); render(); } catch (e) {} }, 300000);
+  }
+  boot();
+})();
+</script>
+</body>
+</html>

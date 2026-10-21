@@ -1,0 +1,25 @@
+name: Verify desk data
+
+# Runs on every update and once an hour. A failed run means the live page is
+# stale or cites a dead source; GitHub emails the repo owner when it fails.
+on:
+  push:
+    paths: ["data/**", "scripts/verify.py"]
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check freshness, structure and sources
+        run: python3 scripts/verify.py

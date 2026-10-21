@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stream scenes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Public+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/desk.css">
+<style>
+html, body { margin: 0; background: var(--night); color: var(--text); font-family: var(--body); overflow: hidden; }
+html.clear, html.clear body { background: transparent; color-scheme: normal; }
+.stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+html:not(.clear) .stage {
+  background:
+    radial-gradient(1200px 520px at 100% 0%, rgba(240, 138, 36, .16), transparent 70%),
+    radial-gradient(900px 600px at 0% 100%, rgba(143, 167, 255, .10), transparent 70%),
+    var(--night);
+}
+.frame { position: absolute; inset: 72px 88px 64px; display: flex; flex-direction: column; }
+.head { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-bottom: 36px; }
+.title { font-family: var(--display); font-weight: 900; font-size: 112px; line-height: .9; letter-spacing: .005em; margin: 0; }
+.sub { font-size: 30px; color: var(--muted); margin: 14px 0 0; }
+.foot { margin-top: auto; display: flex; gap: 40px; justify-content: space-between; align-items: center; font-size: 22px; color: var(--muted); padding-top: 24px; border-top: 2px solid var(--line); }
+.foot b { color: var(--text); font-family: var(--display); font-weight: 800; font-size: 30px; letter-spacing: .01em; }
+
+/* ---------- Unlocks ---------- */
+.total { text-align: right; }
+.total .big { font-family: var(--display); font-weight: 900; font-size: 104px; line-height: .9; color: var(--sun); }
+.total .lbl { font-size: 26px; color: var(--muted); margin-top: 8px; }
+.ulist { display: flex; flex-direction: column; gap: 12px; }
+.urow { display: grid; grid-template-columns: 300px 330px 210px minmax(0, 1fr) 190px; align-items: center; gap: 32px; background: var(--panel); border-radius: 14px; padding: 12px 30px; min-height: 92px; }
+.urow.soon { box-shadow: inset 6px 0 0 var(--sun); }
+.cd { font-family: var(--display); font-weight: 800; font-size: 50px; line-height: 1; color: var(--sun); }
+.cd.dayonly { color: var(--text); }
+.when { font-size: 20px; color: var(--muted); margin-top: 6px; }
+.tok { font-family: var(--display); font-weight: 900; font-size: 54px; line-height: .95; }
+.tokname { font-size: 21px; color: var(--muted); margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.val { font-family: var(--display); font-weight: 800; font-size: 50px; }
+.val.na { font-family: var(--body); font-weight: 500; font-size: 22px; color: var(--muted); }
+.supply .track { height: 16px; }
+.supply .pct { display: flex; justify-content: space-between; font-size: 21px; color: var(--muted); margin-top: 10px; }
+.supply .pct b { color: var(--text); font-weight: 700; font-size: 24px; }
+.urow .conf { font-size: 20px; justify-self: end; }
+.empty { font-size: 36px; color: var(--muted); padding: 80px 0; }
+
+/* ---------- Story ---------- */
+.story { display: grid; grid-template-columns: minmax(0, 1fr) 470px; gap: 72px; flex: 1; min-height: 0; }
+.story .meta { display: flex; gap: 28px; align-items: center; font-size: 26px; color: var(--muted); margin-bottom: 26px; }
+.story h1 { font-family: var(--display); font-weight: 900; font-size: 92px; line-height: .95; margin: 0 0 30px; text-wrap: balance; }
+.story .sum { font-size: 33px; line-height: 1.38; margin: 0 0 30px; max-width: 30em; }
+.story ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 16px; }
+.story li { font-size: 27px; line-height: 1.35; color: var(--muted); padding-left: 34px; position: relative; max-width: 36em; }
+.story li::before { content: ""; position: absolute; left: 0; top: .5em; width: 14px; height: 14px; border-radius: 3px; background: var(--sun); transform: rotate(45deg); }
+.side { display: flex; flex-direction: column; gap: 22px; }
+.tile { background: var(--panel); border-radius: 18px; padding: 28px 32px; }
+.tile .k { font-size: 24px; color: var(--muted); }
+.tile .v { font-family: var(--display); font-weight: 900; font-size: 84px; line-height: 1; margin-top: 8px; }
+.tile .c { font-size: 30px; font-weight: 700; margin-top: 6px; }
+.tile.next .v { color: var(--sun); font-size: 64px; }
+.tile .src { font-size: 21px; color: var(--muted); margin-top: 12px; line-height: 1.4; }
+.dots { display: flex; gap: 10px; }
+.dots i { width: 44px; height: 8px; border-radius: 4px; background: var(--line); overflow: hidden; position: relative; }
+.dots i.on::after { content: ""; position: absolute; inset: 0; background: var(--sun); transform-origin: left; animation: fill var(--dur, 25s) linear forwards; }
+.dots i.done { background: var(--sun); }
+@keyframes fill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+/* ---------- Calendar ---------- */
+.cal { display: flex; flex-direction: column; gap: 6px; }
+.crow { display: grid; grid-template-columns: 400px minmax(0, 1fr); gap: 36px; align-items: baseline; padding: 11px 28px; border-radius: 12px; }
+.crow.key { background: var(--panel); box-shadow: inset 6px 0 0 var(--sun); }
+.crow .t { font-family: var(--display); font-weight: 800; font-size: 32px; line-height: 1.05; }
+.crow .t small { display: block; font-family: var(--body); font-weight: 500; font-size: 19px; color: var(--muted); margin-top: 3px; }
+.crow .e { font-size: 28px; font-weight: 600; line-height: 1.25; display: flex; gap: 14px; align-items: baseline; }
+.crow .e .mood { font-size: 0; flex: none; transform: translateY(-4px); }
+.crow .e .mood::before { width: 14px; height: 14px; }
+.crow .n { font-size: 20px; color: var(--muted); margin-top: 4px; padding-left: 28px; }
+
+/* ---------- Ticker (transparent lower third) ---------- */
+.bar { position: absolute; left: 0; right: 0; bottom: 0; height: 120px; display: flex; align-items: stretch; background: rgba(16, 22, 46, .94); border-top: 3px solid var(--sun); }
+.bar .brand { flex: none; background: var(--sun); color: #1A1406; display: flex; flex-direction: column; justify-content: center; padding: 0 34px; }
+.bar .brand b { font-family: var(--display); font-weight: 900; font-size: 46px; line-height: .9; }
+.bar .brand span { font-size: 17px; font-weight: 600; margin-top: 4px; }
+.bar .px { flex: none; display: flex; align-items: center; gap: 34px; padding: 0 34px; border-right: 2px solid var(--line); }
+.bar .px div { display: flex; flex-direction: column; }
+.bar .px .s { font-size: 18px; color: var(--muted); font-weight: 600; }
+.bar .px .p { font-family: var(--display); font-weight: 800; font-size: 40px; line-height: 1; }
+.bar .px .ch { font-size: 18px; font-weight: 700; }
+.bar .crawl { flex: 1; overflow: hidden; display: flex; align-items: center; mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
+.bar .crawl .run { display: flex; white-space: nowrap; animation: crawl var(--crawl, 120s) linear infinite; }
+.bar .crawl span { font-size: 32px; font-weight: 600; padding-right: 48px; }
+.bar .crawl span::after { content: ""; display: inline-block; width: 12px; height: 12px; margin-left: 48px; background: var(--sun); transform: rotate(45deg) translateY(-4px); }
+@keyframes crawl { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.bar .nx { flex: none; display: flex; flex-direction: column; justify-content: center; padding: 0 34px; border-left: 2px solid var(--line); min-width: 300px; }
+.bar .nx .s { font-size: 18px; color: var(--muted); font-weight: 600; }
+.bar .nx .p { font-family: var(--display); font-weight: 800; font-size: 40px; line-height: 1; color: var(--sun); }
+.nfa { position: absolute; right: 24px; bottom: 132px; font-size: 18px; font-weight: 600; color: var(--text); background: rgba(16, 22, 46, .8); padding: 6px 12px; border-radius: 6px; }
+
+/* ---------- Picker (normal page) ---------- */
+body.picker { overflow: auto; }
+.pick { max-width: 860px; margin: 0 auto; padding: 48px 20px 64px; }
+.pick h1 { font-family: var(--display); font-weight: 900; font-size: 64px; margin: 0 0 8px; line-height: .95; }
+.pick p { color: var(--muted); font-size: 17px; line-height: 1.55; max-width: 62ch; }
+.pick ol { padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; margin: 28px 0; }
+.pick li { background: var(--panel); border-radius: 12px; padding: 18px 20px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; align-items: center; }
+.pick li b { font-size: 19px; }
+.pick li span { color: var(--muted); font-size: 15px; grid-column: 1; }
+.pick li code { grid-column: 1; font-size: 14px; color: var(--sun); overflow-wrap: anywhere; }
+.pick .acts { grid-column: 2; grid-row: 1 / span 3; display: flex; gap: 8px; }
+.pick a, .pick button { font: inherit; font-size: 15px; font-weight: 600; color: var(--night); background: var(--sun); border: 0; border-radius: 8px; padding: 9px 14px; text-decoration: none; cursor: pointer; }
+.pick button { background: var(--panel-2); color: var(--text); }
+.pick a:focus-visible, .pick button:focus-visible { outline: 3px solid var(--text); outline-offset: 2px; }
+@media (max-width: 600px) { .pick li { grid-template-columns: 1fr; } .pick .acts { grid-column: 1; grid-row: auto; } }
+</style>
+</head>
+<body>
+<div class="stage" id="stage"></div>
+<script src="assets/desk.js"></script>
+<script>
+(function () {
+  const q = new URLSearchParams(location.search);
+  const scene = q.get('scene');
+  const stage = document.getElementById('stage');
+  const { el } = Desk;
+  let D = null, P = null, storyIdx = +(q.get('i') || 0), storyTimer = null;
+
+  function fit() {
+    const s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    stage.style.transform = 'scale(' + s + ')';
+  }
+
+  function foot(extra) {
+    return el('div', { class: 'foot' }, [
+      el('span', null, [el('b', { text: D.site.brand || '' }), '   ', D.site.tagline || '']),
+      el('span', { text: [extra, D.site.disclaimer].filter(Boolean).join('.  ') })
+    ]);
+  }
+
+  /* ---------- Unlocks ---------- */
+  function unlocks() {
+    const now = new Date();
+    let days = 7, list = Desk.upcoming(D.unlocks, now, 7);
+    if (list.length < 4) { days = 14; list = Desk.upcoming(D.unlocks, now, 14); }
+    const rows = list.slice(0, 6);
+    const total = list.reduce((s, u) => s + (u.usdM || 0), 0);
+    const tz = D.site.timeZone || 'America/New_York';
+    const frame = el('div', { class: 'frame' }, [
+      el('div', { class: 'head' }, [
+        el('div', null, [
+          el('h1', { class: 'title', text: 'Token unlocks' }),
+          el('p', { class: 'sub', text: 'New supply reaching the market in the next ' + days + ' days. Times in ' + (D.site.tzLabel || 'ET') + '.' })
+        ]),
+        el('div', { class: 'total' }, [
+          el('div', { class: 'big num', text: Desk.usd(total) || '$0' }),
+          el('div', { class: 'lbl', text: 'across ' + list.length + ' unlocks' + (list.length > rows.length ? ' (top ' + rows.length + ' shown)' : '') })
+        ])
+      ]),
+      rows.length ? el('div', { class: 'ulist' }, rows.map(u => {
+        const c = Desk.countdown(u, now);
+        const v = Desk.usd(u.usdM);
+        return el('div', { class: 'urow' + (c.soon ? ' soon' : ''), 'data-id': u.date + u.token }, [
+          el('div', null, [el('div', { class: 'cd num' + (u.timeUTC ? '' : ' dayonly'), 'data-cd': '1', text: c.text }), el('div', { class: 'when', text: Desk.dayLabel(u, tz) })]),
+          el('div', null, [el('div', { class: 'tok', text: u.token }), el('div', { class: 'tokname', text: u.name })]),
+          v ? el('div', { class: 'val num', text: v }) : el('div', { class: 'val na', text: 'Size unconfirmed' }),
+          el('div', { class: 'supply' }, u.pct != null ? [
+            el('div', { class: 'track' }, [el('i', { style: 'width:' + Desk.supplyWidth(u.pct) + '%' })]),
+            el('div', { class: 'pct' }, [el('span', null, [el('b', { text: u.pct + '%' }), ' ' + (u.pctBasis || '')]), el('span', { text: u.type === 'linear' ? 'linear' : '' })])
+          ] : [el('div', { class: 'pct' }, [el('span', { text: 'Share of supply unconfirmed' })])]),
+          el('span', { class: 'conf ' + u.confidence, text: u.confidence })
+        ]);
+      })) : el('p', { class: 'empty', text: 'No unlocks found in the next 14 days. Refresh the unlock data.' }),
+      foot('Unlocks checked ' + Desk.ago(D.unlocks.checkedAt || D.unlocks.updated))
+    ]);
+    stage.replaceChildren(frame);
+    tickUnlocks(rows);
+  }
+  let cdTimer = null;
+  function tickUnlocks(rows) {
+    clearInterval(cdTimer);
+    cdTimer = setInterval(() => {
+      const now = new Date();
+      stage.querySelectorAll('.urow').forEach((r, i) => {
+        const c = Desk.countdown(rows[i], now);
+        r.querySelector('[data-cd]').textContent = c.text;
+        r.classList.toggle('soon', !!c.soon);
+      });
+    }, 1000);
+  }
+
+  /* ---------- Story ---------- */
+  function story() {
+    const stories = D.news.stories || [];
+    if (!stories.length) { stage.replaceChildren(el('div', { class: 'frame' }, [el('p', { class: 'empty', text: 'No stories in today’s news file.' })])); return; }
+    storyIdx = ((storyIdx % stories.length) + stories.length) % stories.length;
+    const s = stories[storyIdx];
+    const dur = +(D.site.storySeconds || 25);
+    const next = Desk.upcoming(D.unlocks, new Date(), 30)[0];
+    const btc = P && P.btc, ch = Desk.change(btc && btc.chg24h);
+    const frame = el('div', { class: 'frame' }, [
+      el('div', { class: 'story' }, [
+        el('div', null, [
+          el('div', { class: 'meta' }, [
+            el('div', { class: 'dots', style: '--dur:' + dur + 's' }, stories.map((_, i) => el('i', { class: i === storyIdx ? 'on' : i < storyIdx ? 'done' : '' }))),
+            el('span', { class: 'mood ' + s.mood, text: s.mood ? s.mood[0].toUpperCase() + s.mood.slice(1) : '' })
+          ]),
+          el('h1', { text: s.title }),
+          el('p', { class: 'sum', text: s.summary }),
+          el('ul', null, (s.points || []).slice(0, 3).map(p => el('li', { text: p })))
+        ]),
+        el('div', { class: 'side' }, [
+          el('div', { class: 'tile' }, [
+            el('div', { class: 'k', text: 'Bitcoin' + (P && !P.live ? ' (as of brief)' : '') }),
+            el('div', { class: 'v num', 'data-px': 'btc', text: Desk.price(btc && btc.price) }),
+            el('div', { class: 'c num ' + ch.dir, 'data-ch': 'btc', text: ch.text ? ch.text + ' 24h' : '' })
+          ]),
+          next ? el('div', { class: 'tile next' }, [
+            el('div', { class: 'k', text: 'Next token unlock: ' + next.token }),
+            el('div', { class: 'v num', 'data-next': '1', text: Desk.countdown(next, new Date()).text }),
+            el('div', { class: 'src', text: (Desk.usd(next.usdM) || 'Size unconfirmed') + (next.pct != null ? ', ' + next.pct + '% ' + (next.pctBasis || '') : '') })
+          ]) : null,
+          el('div', { class: 'tile' }, [
+            el('div', { class: 'k', text: 'Sources' }),
+            el('div', { class: 'src', text: (s.sources || []).map(x => x.label.split(':')[0]).join(', ') })
+          ])
+        ])
+      ]),
+      foot('News updated ' + Desk.ago(D.news.updated))
+    ]);
+    stage.replaceChildren(frame);
+    clearInterval(cdTimer);
+    if (next) cdTimer = setInterval(() => { const n = stage.querySelector('[data-next]'); if (n) n.textContent = Desk.countdown(next, new Date()).text; }, 1000);
+    clearTimeout(storyTimer);
+    if (!q.has('i')) storyTimer = setTimeout(() => { storyIdx++; story(); }, dur * 1000);
+  }
+
+  /* ---------- Calendar ---------- */
+  function calendar() {
+    const rows = (D.news.calendar || []).slice(0, +(q.get('rows') || 8));
+    const frame = el('div', { class: 'frame' }, [
+      el('div', { class: 'head' }, [
+        el('div', null, [
+          el('h1', { class: 'title', text: 'The week ahead' }),
+          el('p', { class: 'sub', text: 'Events that can move crypto. Times in ET, Bangkok underneath.' })
+        ])
+      ]),
+      el('div', { class: 'cal' }, rows.map(c => el('div', { class: 'crow' + (c.key ? ' key' : '') }, [
+        el('div', { class: 't' }, [c.et || c.bkk, el('small', { text: c.bkk ? 'Bangkok ' + c.bkk : '' })]),
+        el('div', null, [
+          el('div', { class: 'e' }, [el('span', { class: 'mood ' + (c.impact || 'neutral'), 'aria-label': c.impact }), c.event]),
+          c.note ? el('div', { class: 'n', text: c.note }) : null
+        ])
+      ]))),
+      foot('Calendar updated ' + Desk.ago(D.news.updated))
+    ]);
+    stage.replaceChildren(frame);
+  }
+
+  /* ---------- Ticker ---------- */
+  function ticker() {
+    document.documentElement.classList.add('clear');
+    const brk = (D.news.breaking || []).filter(x => (Desk.ageHours(x.at) ?? 99) < 24).map(x => 'BREAKING: ' + x.title);
+    const items = brk.concat((D.news.stories || []).map(s => s.title), (D.news.briefs || []).map(b => b.title));
+    const next = Desk.upcoming(D.unlocks, new Date(), 30)[0];
+    const pxBlock = ['btc', 'eth', 'sol'].map(k => {
+      const x = P && P[k], ch = Desk.change(x && x.chg24h);
+      return el('div', null, [
+        el('span', { class: 's', text: k.toUpperCase() }),
+        el('span', { class: 'p num', 'data-px': k, text: Desk.price(x && x.price) }),
+        el('span', { class: 'ch num ' + ch.dir, 'data-ch': k, text: ch.text })
+      ]);
+    });
+    const run = el('div', { class: 'run' }, items.concat(items).map(t => el('span', { text: t })));
+    run.style.setProperty('--crawl', Math.max(60, items.join(' ').length * 0.32) + 's');
+    stage.replaceChildren(
+      el('div', { class: 'nfa', text: D.site.disclaimer || 'Not financial advice.' }),
+      el('div', { class: 'bar' }, [
+        el('div', { class: 'brand' }, [el('b', { text: D.site.brand || '' }), el('span', { text: D.site.tagline || '' })]),
+        el('div', { class: 'px' }, pxBlock),
+        el('div', { class: 'crawl' }, [run]),
+        next ? el('div', { class: 'nx' }, [el('span', { class: 's', text: 'Next unlock: ' + next.token + (next.usdM ? ' ' + Desk.usd(next.usdM) : '') }), el('span', { class: 'p num', 'data-next': '1', text: Desk.countdown(next, new Date()).text })]) : null
+      ])
+    );
+    clearInterval(cdTimer);
+    if (next) cdTimer = setInterval(() => { const n = stage.querySelector('[data-next]'); if (n) n.textContent = Desk.countdown(next, new Date()).text; }, 1000);
+  }
+
+  /* ---------- Picker ---------- */
+  function picker() {
+    document.body.classList.add('picker');
+    stage.style.cssText = 'position:static;width:auto;height:auto;transform:none;background:none';
+    const base = location.href.split('?')[0];
+    // Inside the hosted page the scenes are reached by #obs-<scene> on the public link.
+    const hosted = window.parent !== window && D.site.publicUrl;
+    const linkFor = name => hosted ? D.site.publicUrl + '#obs-' + name : base + '?scene=' + name;
+    const scenes = [
+      ['unlocks', 'Token unlocks', 'Next 7 days of unlocks with live countdowns, size and share of supply.'],
+      ['story', 'Top stories', 'Today’s three lead stories, one at a time. Rotates every ' + (D.site.storySeconds || 25) + ' seconds. Add &i=0, &i=1 or &i=2 to hold one story.'],
+      ['calendar', 'The week ahead', 'This week’s market-moving events in ET and Bangkok time.'],
+      ['ticker', 'Lower-third ticker', 'Transparent bar for the bottom of your camera scene: live prices, scrolling headlines, next unlock countdown.']
+    ];
+    stage.replaceChildren(el('div', { class: 'pick' }, [
+      el('h1', { text: 'Stream scenes' }),
+      el('p', { text: 'Add each link to OBS as a Browser Source at 1920 × 1080, or open it full-screen in your browser and capture the window. The scenes re-read the data every 5 minutes, so they stay current without a reload. Prices refresh every minute.' }),
+      el('ol', null, scenes.map(s => {
+        const url = linkFor(s[0]);
+        const btn = el('button', { type: 'button', text: 'Copy link' });
+        btn.addEventListener('click', ev => {
+          const code = ev.target.closest('li').querySelector('code');
+          const sel = () => { try { const r = document.createRange(); r.selectNodeContents(code); const g = getSelection(); g.removeAllRanges(); g.addRange(r); btn.textContent = 'Selected, press Cmd+C'; } catch (e) {} };
+          try { navigator.clipboard.writeText(url).then(() => { btn.textContent = 'Copied'; setTimeout(() => btn.textContent = 'Copy link', 1400); }, sel); } catch (e) { sel(); }
+        });
+        return el('li', null, [el('b', { text: s[1] }), el('span', { text: s[2] }), el('code', { text: url }), el('div', { class: 'acts' }, [el('a', { href: url, target: '_blank', rel: 'noopener', text: 'Preview' }), btn])]);
+      })),
+      el('p', null, ['Follower dashboard: ', el('a', { href: hosted ? D.site.publicUrl : 'index.html', target: hosted ? '_blank' : null, style: 'background:none;color:var(--sun);padding:0', text: 'open it' })])
+    ]));
+  }
+
+  const scenes = { unlocks, story, calendar, ticker };
+
+  function render() { (scenes[scene] || picker)(); }
+
+  async function refreshPrices() {
+    P = await Desk.prices(D && D.news.market);
+    ['btc', 'eth', 'sol'].forEach(k => {
+      const x = P[k]; if (!x) return;
+      stage.querySelectorAll('[data-px="' + k + '"]').forEach(n => n.textContent = Desk.price(x.price));
+      const ch = Desk.change(x.chg24h);
+      stage.querySelectorAll('[data-ch="' + k + '"]').forEach(n => { n.textContent = ch.text ? ch.text + (n.closest('.tile') ? ' 24h' : '') : ''; n.className = n.className.replace(/\b(up|down)\b/g, '') + ' ' + ch.dir; });
+    });
+  }
+
+  async function boot() {
+    try { D = await Desk.load(''); }
+    catch (e) { stage.replaceChildren(el('p', { class: 'empty', style: 'padding:80px', text: 'Couldn’t read the data files (' + e.message + '). Open this page through the local server or the website, not as a file.' })); return; }
+    if (scene) { fit(); addEventListener('resize', fit); }
+    await refreshPrices();
+    render();
+    setInterval(refreshPrices, 60000);
+    setInterval(async () => {
+      try { D = await Desk.load(''); if (scene !== 'story') render(); } catch (e) { /* keep showing the last good data */ }
+    }, 300000);
+  }
+
+  addEventListener('keydown', e => {
+    if (scene !== 'story') return;
+    if (e.key === 'ArrowRight') { storyIdx++; story(); }
+    if (e.key === 'ArrowLeft') { storyIdx--; story(); }
+  });
+
+  boot();
+})();
+</script>
+</body>
+</html>
