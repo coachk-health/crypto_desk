@@ -149,7 +149,7 @@ def sell_pressure(u, now):
         d = usd / adv
         pts = 0 if d < 0.25 else 1 if d < 1 else 2 if d < 3 else 3
         f.append({"key": "volume", "label": "Size vs. daily trading", "points": pts, "max": 3,
-                  "detail": f"{d:.2f} days of trading volume" + (" (based on 24h volume)" if m.get("advBasis") == "24h" else ""),
+                  "detail": f"{d:.2f} days of trading volume" + (f" (from {m.get('advBasis')} volume)" if m.get("advBasis") and m.get("advBasis") != "30d avg" else ""),
                   "evidence": "thetie"})
     else:
         f.append({"key": "volume", "label": "Size vs. daily trading", "points": None, "max": 3,
@@ -213,8 +213,11 @@ def sell_pressure(u, now):
     if s and s["investors"] >= 0.2 and isinstance(ie.get("priceUsd"), (int, float)) and ie["priceUsd"] > 0 and isinstance(price, (int, float)):
         x = price / ie["priceUsd"]
         pts = 1 if x >= 5 else 0.5 if x >= 2 else -0.5 if x < 1 else 0
+        if ie.get("implied"):
+            pts = pts / 2
         f.append({"key": "profit", "label": "Investors' paper profit", "points": pts, "max": 1,
-                  "detail": f"price is {x:.1f}x the {ie.get('round') or 'investor'} price", "evidence": "reasoning"})
+                  "detail": f"price is {x:.1f}x what investors paid" + (" (worked out from a reported valuation, so counted at half weight)" if ie.get("implied") else ""),
+                  "evidence": "reasoning"})
 
     known = [x for x in f if x["points"] is not None]
     core = [x for x in f if x["key"] in ("volume", "size", "recipients") and x["points"] is not None]
