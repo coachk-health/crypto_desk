@@ -59,7 +59,7 @@ h2 { font-family: var(--display); font-weight: 800; font-size: 28px; line-height
 
 .ul { display: grid; gap: 8px; }
 .u { background: var(--panel); border-radius: 12px; }
-.u > button { all: unset; box-sizing: border-box; width: 100%; display: grid; grid-template-columns: 175px 140px 100px minmax(0, 1fr) 90px; gap: 16px; align-items: center; padding: 14px 18px; cursor: pointer; border-radius: 12px; }
+.u > button { all: unset; box-sizing: border-box; width: 100%; display: grid; grid-template-columns: 165px 120px 95px minmax(0, 1fr) 190px; gap: 16px; align-items: center; padding: 14px 18px; cursor: pointer; border-radius: 12px; }
 .u > button:focus-visible { outline: 3px solid var(--sun); }
 .u.soon > button { box-shadow: inset 4px 0 0 var(--sun); }
 .u .cd { font-family: var(--display); font-weight: 800; font-size: 24px; color: var(--sun); line-height: 1.05; }
@@ -72,7 +72,32 @@ h2 { font-family: var(--display); font-weight: 800; font-size: 28px; line-height
 .u .track { height: 9px; }
 .u .pct { font-size: 13px; color: var(--muted); margin-top: 4px; }
 .u .pct b { color: var(--text); }
-.u .conf { font-size: 12.5px; justify-self: end; }
+.c-score { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.pchip, .cchip { font-size: 12.5px; font-weight: 600; border-radius: 6px; padding: 3px 8px; white-space: nowrap; }
+.pchip.p-low { color: var(--bull); background: rgba(67, 214, 160, .13); }
+.pchip.p-mod { color: var(--sun); background: rgba(255, 181, 71, .13); }
+.pchip.p-high { color: var(--bear); background: rgba(255, 107, 125, .14); }
+.pchip.p-vhigh { color: #1A1406; background: var(--bear); }
+.pchip.p-na { color: var(--muted); background: rgba(255, 255, 255, .06); }
+.cchip { color: var(--muted); background: rgba(255, 255, 255, .05); font-weight: 500; }
+.cchip b { color: var(--text); font-variant-numeric: tabular-nums; }
+.cchip.c-high b { color: var(--bull); } .cchip.c-good b { color: var(--calm); } .cchip.c-low b { color: var(--sun); } .cchip.c-unverified b { color: var(--bear); }
+.mgrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; margin-bottom: 8px; }
+.mgrid h4 { margin: 0 0 4px; font-size: 15px; color: var(--text); }
+.small { font-size: 13.5px; color: var(--muted); margin: 0 0 6px; }
+ul.facts { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+ul.facts li { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 8px; font-size: 14px; line-height: 1.4; }
+ul.facts b { color: var(--text); font-weight: 600; }
+.fp { font-weight: 700; text-align: right; }
+.fp.neg { color: var(--bear); } .fp.pos { color: var(--bull); } .fp.na { color: var(--muted); font-weight: 500; }
+.ev { color: var(--muted); font-size: 13px; }
+.srcs { display: flex; flex-wrap: wrap; gap: 4px 12px; }
+details.method { background: var(--panel); border-radius: 12px; padding: 12px 16px; margin: 0 0 14px; }
+details.method summary { cursor: pointer; color: var(--sun); font-weight: 600; }
+.mbody { display: grid; gap: 10px; margin-top: 10px; max-width: 75ch; }
+.mbody p { margin: 0; }
+.evlist { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 14px; color: var(--muted); }
+@media (max-width: 720px) { .mgrid { grid-template-columns: 1fr; } }
 .u .more { padding: 0 18px 16px; font-size: 14.5px; color: var(--muted); display: grid; gap: 4px; }
 .u .more b { color: var(--text); font-weight: 600; }
 @media (max-width: 560px) { .prices { gap: 4px 14px; } .prices .p { font-size: 21px; } }
@@ -81,7 +106,7 @@ h2 { font-family: var(--display); font-weight: 800; font-size: 28px; line-height
   .u .c-tok { grid-row: 1; grid-column: 1; }
   .u .c-val { grid-row: 1; grid-column: 2; text-align: right; }
   .u .c-cd { grid-row: 2; grid-column: 1; }
-  .u .conf { grid-row: 2; grid-column: 2; align-self: center; }
+  .c-score { grid-row: 4; grid-column: 1 / -1; flex-direction: row; justify-content: flex-start; flex-wrap: wrap; }
   .u .c-sup { grid-row: 3; grid-column: 1 / -1; }
 }
 
@@ -223,6 +248,22 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     ]);
   }
 
+  const PRESSURE = { 'Low': 'p-low', 'Moderate': 'p-mod', 'High': 'p-high', 'Very high': 'p-vhigh', 'Not enough data': 'p-na' };
+  function pressureChip(u) {
+    const g = (u.impact && u.impact.grade) || 'Not enough data';
+    return el('span', { class: 'pchip ' + PRESSURE[g], title: 'Sell pressure, based on what past unlocks like this did' }, [g === 'Not enough data' ? 'Pressure: not enough data' : 'Sell pressure: ' + g]);
+  }
+  function confChip(u) {
+    const c = u.confidenceScore ?? 0, l = u.confidenceLabel || 'Unverified';
+    return el('span', { class: 'cchip c-' + l.toLowerCase(), title: 'How sure we are the date and size are right' }, [el('b', { text: String(c) }), ' ' + l.toLowerCase()]);
+  }
+  function evidenceLink(key) {
+    const e = ((D.unlocks.scoring || {}).evidence || {})[key];
+    if (!e) return null;
+    return e.url ? el('a', { href: e.url, target: '_blank', rel: 'noopener', text: e.label }) : el('span', { text: e.label });
+  }
+  function fmtPts(p) { return p == null ? '?' : (p > 0 ? '+' : '') + p; }
+
   function unlockRow(u, now) {
     const c = Desk.countdown(u, now), v = Desk.usd(u.usdM), id = u.date + u.token;
     const isOpen = open === id;
@@ -230,19 +271,56 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       el('div', { class: 'c-cd' }, [el('div', { class: 'cd num' + (u.timeUTC ? '' : ' dayonly'), 'data-cd': id, text: c.text }), el('div', { class: 'when', text: Desk.dayLabel(u, D.site.timeZone) + (u.timeUTC ? ' ' + (D.site.tzLabel || '') : '') })]),
       el('div', { class: 'c-tok' }, [el('div', { class: 'tok', text: u.token }), el('div', { class: 'nm', text: u.name })]),
       el('div', { class: 'c-val' }, [v ? el('div', { class: 'val num', text: v }) : el('div', { class: 'val na', text: 'Size unconfirmed' })]),
-      el('div', { class: 'c-sup' }, u.pct != null ? [el('div', { class: 'track' }, [el('i', { style: 'width:' + Desk.supplyWidth(u.pct) + '%' })]), el('div', { class: 'pct' }, [el('b', { text: u.pct + '%' }), ' ' + (u.pctBasis || '')])] : [el('div', { class: 'pct', text: 'Share of supply unconfirmed' })]),
-      el('span', { class: 'conf ' + u.confidence, text: u.confidence })
+      el('div', { class: 'c-sup' }, u.pct != null ? [el('div', { class: 'track' }, [el('i', { style: 'width:' + Desk.supplyWidth(u.pctCirculating ?? u.pct) + '%' })]), el('div', { class: 'pct' }, [el('b', { text: (u.pctCirculating ?? u.pct) + '%' }), ' ' + (u.pctCirculating != null ? 'of circulating' : (u.pctBasis || ''))])] : [el('div', { class: 'pct', text: 'Share of supply unconfirmed' })]),
+      el('div', { class: 'c-score' }, [pressureChip(u), confChip(u)])
     ]);
     btn.addEventListener('click', () => { open = isOpen ? null : id; render(); });
-    return el('div', { class: 'u' + (c.soon ? ' soon' : '') }, [
-      btn,
-      isOpen ? el('div', { class: 'more' }, [
-        el('div', null, [el('b', { text: 'Amount: ' }), u.amount || 'unconfirmed']),
+    let more = null;
+    if (isOpen) {
+      const imp = u.impact || { factors: [] };
+      const m = u.market || {};
+      more = el('div', { class: 'more' }, [
+        el('div', { class: 'mgrid' }, [
+          el('section', null, [
+            el('h4', { text: imp.grade === 'Not enough data' ? 'Sell pressure: not enough data yet' : 'Why sell pressure is ' + imp.grade.toLowerCase() }),
+            el('p', { class: 'small', text: imp.grade === 'Not enough data' ? 'At least two of size vs. trading, size vs. supply and who receives it must be confirmed before we grade it.' : imp.points + ' of ' + imp.maxPoints + ' points. A pattern from past unlocks, not a prediction.' }),
+            el('ul', { class: 'facts' }, imp.factors.map(f => el('li', null, [
+              el('span', { class: 'fp num' + (f.points == null ? ' na' : f.points > 0 ? ' neg' : f.points < 0 ? ' pos' : ''), text: fmtPts(f.points) }),
+              el('span', null, [el('b', { text: f.label }), ' ' + f.detail + '. ', el('span', { class: 'ev' }, ['Basis: ', evidenceLink(f.evidence)])])
+            ])))
+          ]),
+          el('section', null, [
+            el('h4', { text: 'Confidence ' + (u.confidenceScore ?? 0) + ' / 100' }),
+            el('ul', { class: 'facts' }, (u.confidenceParts || []).map(p => el('li', null, [
+              el('span', { class: 'fp num' + (p.points < 0 ? ' neg' : p.points === 0 ? ' na' : ''), text: p.max ? p.points + '/' + p.max : String(p.points) }),
+              el('span', null, [el('b', { text: p.label }), ' ' + (p.detail || '')])
+            ]))),
+            (u.verify && u.verify.notes) ? el('p', { class: 'small', text: 'Re-check notes: ' + u.verify.notes }) : null
+          ])
+        ]),
         el('div', null, [el('b', { text: 'Who receives it: ' }), u.recipients || 'unconfirmed']),
-        el('div', null, [el('b', { text: 'Type: ' }), u.type === 'linear' ? 'Linear (released gradually)' : 'Cliff (released at once)']),
-        u.note ? el('div', null, [el('b', { text: 'Notes: ' }), u.note]) : null,
-        u.source ? el('a', { href: u.source, target: '_blank', rel: 'noopener', text: 'Source' }) : null
-      ]) : null
+        u.sellerNotes ? el('div', null, [el('b', { text: 'What they have done before: ' }), u.sellerNotes]) : null,
+        u.investorEntry && u.investorEntry.priceUsd ? el('div', null, [el('b', { text: 'Investor entry price: ' }), '$' + u.investorEntry.priceUsd + (u.investorEntry.round ? ' (' + u.investorEntry.round + ')' : '') + (m.priceUsd ? ', now $' + m.priceUsd : '')]) : null,
+        el('div', null, [el('b', { text: 'Amount: ' }), u.amountText || u.amount || 'unconfirmed', '. ', el('b', { text: 'Type: ' }), u.type === 'linear' ? 'released gradually' : 'released at once (cliff)']),
+        u.sourceDisagreements ? el('div', null, [el('b', { text: 'Sources disagree: ' }), u.sourceDisagreements]) : (u.note ? el('div', null, [el('b', { text: 'Notes: ' }), u.note]) : null),
+        u.gaps ? el('div', null, [el('b', { text: 'Not yet confirmed: ' }), u.gaps]) : null,
+        el('div', { class: 'srcs' }, [el('b', { text: 'Sources: ' })].concat((u.sources && u.sources.length ? u.sources : (u.source ? [{ url: u.source, label: 'Source', kind: '' }] : [])).map((s, i) =>
+          el('a', { href: s.url, target: '_blank', rel: 'noopener', text: (s.label || 'Source') + (s.kind ? ' (' + (s.kind === 'primary' ? 'official' : s.kind) + ')' : '') })))),
+      ]);
+    }
+    return el('div', { class: 'u' + (c.soon ? ' soon' : '') }, [btn, more]);
+  }
+
+  function method() {
+    const ev = ((D.unlocks.scoring || {}).evidence) || {};
+    return el('details', { class: 'method' }, [
+      el('summary', { text: 'How the two scores work' }),
+      el('div', { class: 'mbody' }, [
+        el('p', null, [el('b', { text: 'Sell pressure' }), ' adds up points for the features that published studies link to bigger price drops: the unlock’s size against daily trading volume (0 to 3), its size against circulating supply (0 to 3), who receives it (team counts double, investors and community once, ecosystem funds count against), an early-stage thin float (+1), a gradual release (−0.5) and investors sitting on big gains (+1). 0.5 or less is Low, up to 2.5 Moderate, up to 4.5 High, above that Very high. Most unlocks in these studies were followed by falling prices, often starting weeks before the date, so a low grade means less pressure, not a rise.']),
+        el('p', null, [el('b', { text: 'Confidence' }), ' (0 to 100) rises with each independent source that confirms the date (35), the amount (30) and who receives it (15), plus a published exact time (5) and a recent independent re-check (15). The project’s own announcement counts most. Disagreements and failed re-checks pull it down.']),
+        el('p', { class: 'small', text: 'Scores are computed by a fixed script from the researched facts, so the same facts always give the same score. This is a summary of research, not financial advice.' }),
+        el('ul', { class: 'evlist' }, Object.keys(ev).map(k => el('li', null, [evidenceLink(k), ': ' + ev[k].finding])))
+      ])
     ]);
   }
 
@@ -268,7 +346,8 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     const total = list.reduce((s, u) => s + (u.usdM || 0), 0);
     return el('section', { 'aria-label': 'Upcoming token unlocks' }, [head, ' ',
       seg([[7, 'Next 7 days'], [30, 'Next 30 days'], ['all', 'All']], uRange, v => uRange = v),
-      el('p', { class: 'intro', text: 'An unlock releases tokens held by teams, investors or the treasury. ' + list.length + ' unlocks worth about ' + (Desk.usd(total) || '$0') + ' in this window (rows without a confirmed size are excluded from the total). Tap a row for who receives it and the source.' }),
+      el('p', { class: 'intro', text: 'An unlock releases tokens held by teams, investors or the treasury. ' + list.length + ' unlocks worth about ' + (Desk.usd(total) || '$0') + ' in this window. Each row shows the likely sell pressure and how confident we are in the data. Tap a row for the reasons and sources.' }),
+      method(),
       el('div', { class: 'ul' }, list.length ? list.map(u => unlockRow(u, now)) : [el('p', { class: 'state', text: 'No unlocks in this window.' })])
     ]);
   }

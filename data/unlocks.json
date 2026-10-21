@@ -17,7 +17,72 @@
    "recipients": "Core contributors, strategic partners",
    "confidence": "confirmed",
    "note": "DefiLlama: 05:33 UTC, 23.63M, 5.91% of float; tokenomics.com: 31.3M. Monthly on the 20th.",
-   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12"
+   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 1,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 1,
+      "max": 3,
+      "detail": "3.83% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-10-20",
@@ -34,7 +99,72 @@
    "recipients": "Core contributors",
    "confidence": "confirmed",
    "note": "DefiLlama: 7.29% of float.",
-   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12"
+   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 1,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 1,
+      "max": 3,
+      "detail": "3.69% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-10-21",
@@ -51,7 +181,72 @@
    "recipients": "unconfirmed",
    "confidence": "reported",
    "note": "Biggest in dollars this week; small-cap token. KuCoin: 9.25% of market cap.",
-   "source": "https://www.kucoin.com/news/flash/20-altcoins-face-major-token-unlocks-this-week"
+   "source": "https://www.kucoin.com/news/flash/20-altcoins-face-major-token-unlocks-this-week",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-10-23",
@@ -68,7 +263,72 @@
    "recipients": "unconfirmed",
    "confidence": "confirmed",
    "note": "",
-   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12"
+   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 1,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 1,
+      "max": 3,
+      "detail": "3.5% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-10-23",
@@ -85,7 +345,72 @@
    "recipients": "unconfirmed",
    "confidence": "reported",
    "note": "Amount and recipients unconfirmed (DefiLlama via CryptoTimes).",
-   "source": "https://www.cryptotimes.io/2026/10/19/crypto-week-ahead-fed-blackout-meta-tesla-netflix-earnings-zro-gram-unlocks/"
+   "source": "https://www.cryptotimes.io/2026/10/19/crypto-week-ahead-fed-blackout-meta-tesla-netflix-earnings-zro-gram-unlocks/",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 1,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 1,
+      "max": 3,
+      "detail": "1.29% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-10-24",
@@ -102,7 +427,72 @@
    "recipients": "Foundation",
    "confidence": "reported",
    "note": "Historically quarterly; recurrence unconfirmed.",
-   "source": "https://defillama.com/unlocks/avalanche"
+   "source": "https://defillama.com/unlocks/avalanche",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 0,
+      "max": 3,
+      "detail": "0.38% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-10-24",
@@ -119,7 +509,72 @@
    "recipients": "unconfirmed",
    "confidence": "confirmed",
    "note": "",
-   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12"
+   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 2,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 2,
+      "max": 3,
+      "detail": "5.63% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-10-25",
@@ -136,7 +591,72 @@
    "recipients": "unconfirmed",
    "confidence": "confirmed",
    "note": "DefiLlama dates it 23 Oct at $16.87M.",
-   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12"
+   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 2,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 2,
+      "max": 3,
+      "detail": "6.84% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-10-25",
@@ -153,7 +673,72 @@
    "recipients": "unconfirmed",
    "confidence": "confirmed",
    "note": "",
-   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12"
+   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 2,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 2,
+      "max": 3,
+      "detail": "6.36% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-10-25",
@@ -170,7 +755,72 @@
    "recipients": "Ecosystem & growth",
    "confidence": "confirmed",
    "note": "Sources range $7–22M. Monthly on the 25th; supply is uncapped.",
-   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12"
+   "source": "https://panews.io/articles/01a14ee2-5418-77bd-96da-c0f5532dad12",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 2,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 2,
+      "max": 3,
+      "detail": "5.02% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-10-26",
@@ -187,7 +837,72 @@
    "recipients": "Community, private investors, insiders",
    "confidence": "reported",
    "note": "Small.",
-   "source": "https://app.tokenomics.com/tokenomics/sahara-ai/unlocks"
+   "source": "https://app.tokenomics.com/tokenomics/sahara-ai/unlocks",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-10-29",
@@ -204,7 +919,72 @@
    "recipients": "Insiders, community, foundation",
    "confidence": "disputed",
    "note": "A tracker shows ~$1.3B. Hyperliquid's real team distributions land around the 6th and have run far below models. Don't headline this figure.",
-   "source": "https://app.tokenomics.com/tokenomics/hyperliquid/unlocks"
+   "source": "https://app.tokenomics.com/tokenomics/hyperliquid/unlocks",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-10-30",
@@ -221,7 +1001,80 @@
    "recipients": "Core contributors",
    "confidence": "reported",
    "note": "Biweekly releases since W 2.0.",
-   "source": "https://tokenomist.ai/wormhole"
+   "source": "https://tokenomist.ai/wormhole",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": -0.5,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "linear",
+      "label": "Released gradually",
+      "points": -0.5,
+      "max": 0,
+      "detail": "linear release, not a one-day cliff",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-10-31",
@@ -238,7 +1091,72 @@
    "recipients": "unconfirmed",
    "confidence": "reported",
    "note": "The '$1.12B TIA unlock' circulating is the October 2024 event, not 2026.",
-   "source": "https://www.theblock.co/post/318599/october-preview-celestia-set-to-unlock-1-billion-in-tokens-alongside-these-projects"
+   "source": "https://www.theblock.co/post/318599/october-preview-celestia-set-to-unlock-1-billion-in-tokens-alongside-these-projects",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-01",
@@ -255,7 +1173,72 @@
    "recipients": "Investors, early contributors",
    "confidence": "reported",
    "note": "Monthly on the 1st until ~Oct 2027.",
-   "source": "https://cryptoticker.io/en/eigenlayer-eigen-unlock-monthly-schedule/"
+   "source": "https://cryptoticker.io/en/eigenlayer-eigen-unlock-monthly-schedule/",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 1,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 1,
+      "max": 3,
+      "detail": "4.49% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-01",
@@ -272,7 +1255,72 @@
    "recipients": "Team, investors, airdrop, ecosystem",
    "confidence": "reported",
    "note": "One-year cliff. Day uncertain: 1, 3 or 17 Nov depending on source.",
-   "source": "https://cryptoticker.io/en/kite-unlock-cliff-selling-pressure/"
+   "source": "https://cryptoticker.io/en/kite-unlock-cliff-selling-pressure/",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 3,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 3,
+      "max": 3,
+      "detail": "44.8% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-01",
@@ -289,7 +1337,72 @@
    "recipients": "Community reserve, early contributors, Mysten",
    "confidence": "reported",
    "note": "Sources disagree: tokenomics.com 22.62M ($26.3M) on 3 Nov; October's split was 13.26M. Much smaller than 2024's ~64M/month.",
-   "source": "https://app.tokenomics.com/tokenomics/sui/unlocks"
+   "source": "https://app.tokenomics.com/tokenomics/sui/unlocks",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-02",
@@ -306,7 +1419,72 @@
    "recipients": "Foundation, core contributors",
    "confidence": "estimated",
    "note": "Remaining investor tokens were released early on 5 Oct 2026.",
-   "source": "https://tokenomist.ai/ethena"
+   "source": "https://tokenomist.ai/ethena",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-06",
@@ -323,7 +1501,72 @@
    "recipients": "Core contributors",
    "confidence": "estimated",
    "note": "October's tranche (~$300–340M) was sold OTC to one buyer. Amount for November unconfirmed.",
-   "source": "https://tokenomist.ai/hyperliquid"
+   "source": "https://tokenomist.ai/hyperliquid",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-07",
@@ -340,7 +1583,72 @@
    "recipients": "Core contributors, private investors",
    "confidence": "reported",
    "note": "Final scheduled tranche.",
-   "source": "https://www.bitrue.com/blog/jto-token-unlock-detailed"
+   "source": "https://www.bitrue.com/blog/jto-token-unlock-detailed",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-08",
@@ -357,7 +1665,72 @@
    "recipients": "Community",
    "confidence": "reported",
    "note": "",
-   "source": "https://app.tokenomics.com/tokenomics/stable/unlocks"
+   "source": "https://app.tokenomics.com/tokenomics/stable/unlocks",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-11",
@@ -374,7 +1747,72 @@
    "recipients": "Early backers, core contributors",
    "confidence": "reported",
    "note": "One-year cliff; date derived from 11 Nov 2025 listing. 63–80% of circulating depending on source.",
-   "source": "https://cryptoticker.io/en/allora-allo-unlock-lock-up-expiry/"
+   "source": "https://cryptoticker.io/en/allora-allo-unlock-lock-up-expiry/",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 3,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 3,
+      "max": 3,
+      "detail": "63% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-11",
@@ -391,7 +1829,72 @@
    "recipients": "Community, foundation",
    "confidence": "reported",
    "note": "Down ~60% from 11.31M/month: contributor and investor tranches ended in October.",
-   "source": "https://defillama.com/unlocks/aptos"
+   "source": "https://defillama.com/unlocks/aptos",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 0,
+      "max": 3,
+      "detail": "0.51% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-13",
@@ -408,7 +1911,72 @@
    "recipients": "Staking rewards, strategic / investors",
    "confidence": "reported",
    "note": "Sources disagree: DefiLlama 22.08M ($1.4M) on 13 Nov; tokenomics.com 111.5M ($8M) on 15 Nov.",
-   "source": "https://defillama.com/unlocks/sei"
+   "source": "https://defillama.com/unlocks/sei",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-14",
@@ -425,7 +1993,72 @@
    "recipients": "Community, insiders, investors, foundation",
    "confidence": "reported",
    "note": "~10% of market cap.",
-   "source": "https://app.tokenomics.com/tokenomics/pieverse/unlocks"
+   "source": "https://app.tokenomics.com/tokenomics/pieverse/unlocks",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-15",
@@ -442,7 +2075,72 @@
    "recipients": "Team/contributors/advisors, investors",
    "confidence": "reported",
    "note": "Often listed on the 16th. Monthly until ~Mar 2027.",
-   "source": "https://defillama.com/unlocks/arbitrum"
+   "source": "https://defillama.com/unlocks/arbitrum",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 1,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 1,
+      "max": 3,
+      "detail": "1.34% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-15",
@@ -459,7 +2157,72 @@
    "recipients": "Early contributors, investors",
    "confidence": "estimated",
    "note": "Date given as the 15th or 20th; amount disputed.",
-   "source": "https://tokenomist.ai/starknet"
+   "source": "https://tokenomist.ai/starknet",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-17",
@@ -476,7 +2239,72 @@
    "recipients": "Private investors, insiders",
    "confidence": "reported",
    "note": "~1.5% of market cap.",
-   "source": "https://app.tokenomics.com/tokenomics/zksync/unlocks"
+   "source": "https://app.tokenomics.com/tokenomics/zksync/unlocks",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-18",
@@ -493,7 +2321,72 @@
    "recipients": "Investors, ecosystem, team",
    "confidence": "reported",
    "note": "",
-   "source": "https://cryptorank.io/token-unlock"
+   "source": "https://cryptorank.io/token-unlock",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 1,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 1,
+      "max": 3,
+      "detail": "2.86% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-20",
@@ -510,7 +2403,72 @@
    "recipients": "Core contributors, strategic partners",
    "confidence": "estimated",
    "note": "Same monthly tranche expected.",
-   "source": "https://defillama.com/unlocks/layerzero"
+   "source": "https://defillama.com/unlocks/layerzero",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-20",
@@ -527,7 +2485,72 @@
    "recipients": "Core contributors",
    "confidence": "estimated",
    "note": "Monthly on the 20th.",
-   "source": "https://tokenomist.ai/kaito"
+   "source": "https://tokenomist.ai/kaito",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 1,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 1,
+      "max": 3,
+      "detail": "3.69% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-24",
@@ -544,7 +2567,72 @@
    "recipients": "Team, investors, foundation",
    "confidence": "reported",
    "note": "Largest event of the quarter: mainnet anniversary. Estimates range $280–521M.",
-   "source": "https://app.tokenomics.com/tokenomics/monad/unlocks"
+   "source": "https://app.tokenomics.com/tokenomics/monad/unlocks",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 3,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 3,
+      "max": 3,
+      "detail": "90% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-25",
@@ -561,7 +2649,72 @@
    "recipients": "Ecosystem & growth",
    "confidence": "estimated",
    "note": "Monthly on the 25th.",
-   "source": "https://tokenomist.ai/plasma"
+   "source": "https://tokenomist.ai/plasma",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 2,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 2,
+      "max": 3,
+      "detail": "5.02% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-11-26",
@@ -578,7 +2731,72 @@
    "recipients": "Investors, insiders, community",
    "confidence": "reported",
    "note": "~13% of market cap; lockup was extended earlier in 2026.",
-   "source": "https://app.tokenomics.com/tokenomics/huma-finance/unlocks"
+   "source": "https://app.tokenomics.com/tokenomics/huma-finance/unlocks",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-12-01",
@@ -595,7 +2813,72 @@
    "recipients": "Investors, early contributors",
    "confidence": "estimated",
    "note": "Monthly.",
-   "source": "https://cryptoticker.io/en/eigenlayer-eigen-unlock-monthly-schedule/"
+   "source": "https://cryptoticker.io/en/eigenlayer-eigen-unlock-monthly-schedule/",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 1,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 1,
+      "max": 3,
+      "detail": "4.49% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-12-03",
@@ -612,7 +2895,72 @@
    "recipients": "Community reserve and others",
    "confidence": "estimated",
    "note": "Similar to November.",
-   "source": "https://app.tokenomics.com/tokenomics/sui/unlocks"
+   "source": "https://app.tokenomics.com/tokenomics/sui/unlocks",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-12-08",
@@ -629,7 +2977,72 @@
    "recipients": "Team, investors",
    "confidence": "disputed",
    "note": "Trackers still show ~$353M, but the Aug 2026 whitepaper moved the first release to 8 Dec 2027.",
-   "source": "https://www.kucoin.com/blog/stable-whitepaper-update-82-of-stable-supply-enters-universal-lock-with-unlocks-through-2029"
+   "source": "https://www.kucoin.com/blog/stable-whitepaper-update-82-of-stable-supply-enters-universal-lock-with-unlocks-through-2029",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-12-15",
@@ -646,7 +3059,72 @@
    "recipients": "Team/contributors/advisors, investors",
    "confidence": "estimated",
    "note": "Monthly.",
-   "source": "https://defillama.com/unlocks/arbitrum"
+   "source": "https://defillama.com/unlocks/arbitrum",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 1,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": 1,
+      "max": 3,
+      "detail": "1.34% of circulating supply",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-12-20",
@@ -663,7 +3141,72 @@
    "recipients": "Core contributors, strategic partners",
    "confidence": "estimated",
    "note": "Monthly.",
-   "source": "https://app.tokenomics.com/tokenomics/layerzero/unlocks"
+   "source": "https://app.tokenomics.com/tokenomics/layerzero/unlocks",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": 0,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-12-24",
@@ -680,7 +3223,80 @@
    "recipients": "unconfirmed",
    "confidence": "estimated",
    "note": "First monthly tranche after the November cliff (~1.4% of market cap).",
-   "source": "https://app.tokenomics.com/tokenomics/monad/unlocks"
+   "source": "https://app.tokenomics.com/tokenomics/monad/unlocks",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": -0.5,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "linear",
+      "label": "Released gradually",
+      "points": -0.5,
+      "max": 0,
+      "detail": "linear release, not a one-day cliff",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   },
   {
    "date": "2026-12-27",
@@ -697,7 +3313,80 @@
    "recipients": "Team, investors",
    "confidence": "reported",
    "note": "One-year cliff ends, then ~3.2M LIT/week. Could slip to ~30 Dec.",
-   "source": "https://tokenomist.ai/research/lighter-lit-tokenomics-robinhood-hype-a-real-burn-and-the-december-2026-cliff-2"
+   "source": "https://tokenomist.ai/research/lighter-lit-tokenomics-robinhood-hype-a-real-burn-and-the-december-2026-cliff-2",
+   "confidenceScore": 22,
+   "confidenceLabel": "Unverified",
+   "confidenceParts": [
+    {
+     "label": "Date",
+     "points": 12,
+     "max": 35,
+     "detail": "one source only"
+    },
+    {
+     "label": "Amount",
+     "points": 10,
+     "max": 30,
+     "detail": "one source only"
+    },
+    {
+     "label": "Who receives it",
+     "points": 0,
+     "max": 15,
+     "detail": "not confirmed"
+    },
+    {
+     "label": "Exact time",
+     "points": 0,
+     "max": 5,
+     "detail": "day known, time not published"
+    },
+    {
+     "label": "Recently re-checked",
+     "points": 0,
+     "max": 15,
+     "detail": "not independently re-checked"
+    }
+   ],
+   "impact": {
+    "grade": "Not enough data",
+    "points": -0.5,
+    "maxPoints": 10,
+    "factors": [
+     {
+      "key": "volume",
+      "label": "Size vs. daily trading",
+      "points": null,
+      "max": 3,
+      "detail": "volume or USD size not confirmed",
+      "evidence": "thetie"
+     },
+     {
+      "key": "size",
+      "label": "Size vs. circulating supply",
+      "points": null,
+      "max": 3,
+      "detail": "share of circulating supply not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "recipients",
+      "label": "Who receives it",
+      "points": null,
+      "max": 2,
+      "detail": "split between team, investors and others not confirmed",
+      "evidence": "keyrock"
+     },
+     {
+      "key": "linear",
+      "label": "Released gradually",
+      "points": -0.5,
+      "max": 0,
+      "detail": "linear release, not a one-day cliff",
+      "evidence": "keyrock"
+     }
+    ]
+   }
   }
  ],
  "schedules": [
@@ -1357,5 +4046,36 @@
    "source": "https://defillama.com/chain/bitcoin"
   }
  ],
- "checkedAt": "2026-10-19T11:00:00Z"
+ "checkedAt": "2026-10-19T11:00:00Z",
+ "scoredAt": "2026-10-21T08:47:02Z",
+ "scoring": {
+  "version": 1,
+  "evidence": {
+   "keyrock": {
+    "label": "Keyrock: 16,000+ unlocks across 40 tokens",
+    "url": "https://keyrock.com/from-locked-to-liquidity-what-16000-token-unlocks-teach-us/",
+    "finding": "About 90% of unlocks were followed by price pressure, starting about 30 days before. Team unlocks were worst (about -25%), investor and community unlocks moderate, ecosystem-development unlocks averaged +1.18%. Bigger unlocks hit harder; linear releases disrupt less than cliffs. Keyrock is a market maker and has not published its data."
+   },
+   "thetie": {
+    "label": "The Tie: 12,350 unlocks in 2026",
+    "url": "https://www.thetie.io/insights/venture-cliffs-token-unlocks-2026",
+    "finding": "The median unlock was 0.2% of a day's trading volume and 95.6% were under one day's volume. Their screen for unlocks that can move a market: more than a quarter of a day's volume."
+   },
+   "tokenomist": {
+    "label": "Tokenomist: 236 unlocks",
+    "url": "https://tokenomist.ai/research/do-token-unlocks-crash-prices",
+    "finding": "Drops are real but conditional: concentrated in early-stage tokens with a thin float, and mostly priced in before the unlock date."
+   },
+   "kim": {
+    "label": "Kim (SSRN): 52 Binance unlocks, 2023-2025",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6632838",
+    "finding": "46 of 52 major unlocks (88.5%) fell within 72 hours, mean -16.97%, in every Bitcoin market regime. Small, preliminary sample."
+   },
+   "reasoning": {
+    "label": "Reasoning, not a study",
+    "url": null,
+    "finding": "Holders sitting on large gains have more reason to take profit; holders below their entry price have less. No study above measures this directly, so it carries a small weight."
+   }
+  }
+ }
 }

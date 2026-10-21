@@ -111,6 +111,25 @@ if unlocks:
     if ahead < 3:
         err(f"only {ahead} unlocks are still ahead: the unlock list needs a refresh")
 
+if unlocks:
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import score
+    stamp = score.parse_ts(unlocks.get("scoredAt"))
+    if not stamp:
+        err("unlocks are not scored: run python3 scripts/score.py")
+    else:
+        before = json.dumps(unlocks.get("upcoming"), sort_keys=True)
+        after = json.dumps(score.score_all(json.loads(json.dumps(unlocks)), stamp)["upcoming"], sort_keys=True)
+        if before != after:
+            err("unlock scores do not match the data (edited by hand?): run python3 scripts/score.py")
+    for u in unlocks.get("upcoming") or []:
+        try:
+            soon = datetime.strptime(u["date"], "%Y-%m-%d").replace(tzinfo=timezone.utc) - NOW < timedelta(days=14)
+        except Exception:
+            soon = False
+        if soon and u.get("confidenceScore", 0) < 40 and u.get("date", "") >= NOW.strftime("%Y-%m-%d"):
+            warn(f"{u.get('token')} {u.get('date')}: confidence {u.get('confidenceScore')} for an unlock within 14 days")
+
 if site and not site.get("disclaimer"):
     err("site.disclaimer is empty")
 

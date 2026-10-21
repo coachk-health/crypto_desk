@@ -30,7 +30,7 @@ html:not(.clear) .stage {
 .total .big { font-family: var(--display); font-weight: 900; font-size: 104px; line-height: .9; color: var(--sun); }
 .total .lbl { font-size: 26px; color: var(--muted); margin-top: 8px; }
 .ulist { display: flex; flex-direction: column; gap: 12px; }
-.urow { display: grid; grid-template-columns: 300px 330px 210px minmax(0, 1fr) 190px; align-items: center; gap: 32px; background: var(--panel); border-radius: 14px; padding: 12px 30px; min-height: 92px; }
+.urow { display: grid; grid-template-columns: 290px 300px 200px minmax(0, 1fr) 270px; align-items: center; gap: 32px; background: var(--panel); border-radius: 14px; padding: 12px 30px; min-height: 92px; }
 .urow.soon { box-shadow: inset 6px 0 0 var(--sun); }
 .cd { font-family: var(--display); font-weight: 800; font-size: 50px; line-height: 1; color: var(--sun); }
 .cd.dayonly { color: var(--text); }
@@ -42,7 +42,14 @@ html:not(.clear) .stage {
 .supply .track { height: 16px; }
 .supply .pct { display: flex; justify-content: space-between; font-size: 21px; color: var(--muted); margin-top: 10px; }
 .supply .pct b { color: var(--text); font-weight: 700; font-size: 24px; }
-.urow .conf { font-size: 20px; justify-self: end; }
+.urow .scores { justify-self: end; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.urow .pres { font-size: 24px; font-weight: 700; border-radius: 8px; padding: 4px 12px; white-space: nowrap; }
+.pres.p-low { color: var(--bull); background: rgba(67, 214, 160, .14); }
+.pres.p-mod { color: var(--sun); background: rgba(255, 181, 71, .14); }
+.pres.p-high { color: var(--bear); background: rgba(255, 107, 125, .16); }
+.pres.p-vhigh { color: #1A1406; background: var(--bear); }
+.pres.p-na { color: var(--muted); background: rgba(255, 255, 255, .06); font-weight: 600; }
+.urow .cf { font-size: 19px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .empty { font-size: 36px; color: var(--muted); padding: 80px 0; }
 
 /* ---------- Story ---------- */
@@ -149,7 +156,7 @@ body.picker { overflow: auto; }
       el('div', { class: 'head' }, [
         el('div', null, [
           el('h1', { class: 'title', text: 'Token unlocks' }),
-          el('p', { class: 'sub', text: 'New supply reaching the market in the next ' + days + ' days. Times in ' + (D.site.tzLabel || 'ET') + '.' })
+          el('p', { class: 'sub', text: 'Next ' + days + ' days. Times in ' + (D.site.tzLabel || 'ET') + '. Pressure is what past unlocks like these did, not a prediction.' })
         ]),
         el('div', { class: 'total' }, [
           el('div', { class: 'big num', text: Desk.usd(total) || '$0' }),
@@ -167,7 +174,10 @@ body.picker { overflow: auto; }
             el('div', { class: 'track' }, [el('i', { style: 'width:' + Desk.supplyWidth(u.pct) + '%' })]),
             el('div', { class: 'pct' }, [el('span', null, [el('b', { text: u.pct + '%' }), ' ' + (u.pctBasis || '')]), el('span', { text: u.type === 'linear' ? 'linear' : '' })])
           ] : [el('div', { class: 'pct' }, [el('span', { text: 'Share of supply unconfirmed' })])]),
-          el('span', { class: 'conf ' + u.confidence, text: u.confidence })
+          el('div', { class: 'scores' }, [
+            el('span', { class: 'pres ' + ({ 'Low': 'p-low', 'Moderate': 'p-mod', 'High': 'p-high', 'Very high': 'p-vhigh' }[(u.impact || {}).grade] || 'p-na'), text: (u.impact && u.impact.grade && u.impact.grade !== 'Not enough data') ? u.impact.grade + ' pressure' : 'Pressure n/a' }),
+            el('span', { class: 'cf', text: 'Confidence ' + (u.confidenceScore ?? '—') })
+          ])
         ]);
       })) : el('p', { class: 'empty', text: 'No unlocks found in the next 14 days. Refresh the unlock data.' }),
       foot('Unlocks checked ' + Desk.ago(D.unlocks.checkedAt || D.unlocks.updated))
