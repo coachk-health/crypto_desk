@@ -116,7 +116,7 @@ def confidence(u, now):
     if u.get("sourceDisagreements") and amount:
         cut = min(10, amount)
         total -= cut
-        parts.append({"label": "Sources disagree on size", "points": -cut, "max": 0, "detail": u["sourceDisagreements"]})
+        parts.append({"label": "Sources disagree", "points": -cut, "max": 0, "detail": "details below"})
     total += tier("recipients", 15, 10, 6, "Who receives it")
     if u.get("timeUTC") and any("time" in (s.get("confirms") or []) for s in src):
         total += 5
