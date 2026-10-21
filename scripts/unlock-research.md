@@ -70,3 +70,5 @@ Rules: plain English, no predictions, no advice. Prefer fewer, confirmed values 
 more, guessed ones. Keep working until every row has been attempted; budget roughly
 equal effort per row. When finished, reply with one line per token: what you
 confirmed and what is still a gap.
+
+Note: CoinGecko's token-unlock widget shows Tokenomist data, so it is not independent of Tokenomist. Count them as one source.

@@ -28,3 +28,5 @@ Output a JSON array to the path you were given, one object per row:
   and you could not resolve it. Put the correct value in corrections when you can.
 Corrections may replace whole objects (e.g. "market", "recipientsMix", "investorEntry",
 "sellerNotes", "date", "usdM", "pctCirculating", "sources"). Keep notes short and plain.
+
+Note: CoinGecko's token-unlock widget shows Tokenomist data, so it is not independent of Tokenomist. Count them as one source.

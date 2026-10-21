@@ -57,10 +57,15 @@ AGGREGATOR_HOSTS = ("tokenomist", "defillama", "cryptorank", "tokenomics.com", "
                     "coingecko", "coinmarketcap", "tokenunlocks", "dropstab")
 
 
+# Sites that republish another site's unlock feed count as that site, not a second source.
+SAME_FEED = {"coingecko.com": "tokenomist.ai"}
+
+
 def host(url):
     try:
         h = urlparse(url).hostname or ""
-        return h[4:] if h.startswith("www.") else h
+        h = h[4:] if h.startswith("www.") else h
+        return SAME_FEED.get(h, h)
     except Exception:
         return ""
 
