@@ -185,12 +185,12 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
   function freshness() {
     const v = D.news.verification;
     const h = Desk.ageHours(D.news.updated);
-    const stale = h == null || h > 26 || !v;
+    const stale = h == null || h > 8 || !v;
     const when = new Date(D.news.updated).toLocaleString('en-US', { weekday: 'short', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit', timeZone: D.site.timeZone }) + ' ' + (D.site.tzLabel || '');
     const kids = [el('span', null, [el('b', { text: 'Updated ' + Desk.ago(D.news.updated) }), ' (' + when + ')'])];
     if (v) kids.push(el('span', { text: 'Checked against sources ' + Desk.ago(v.checkedAt) + ': ' + v.claimsChecked + ' facts confirmed' + (v.claimsRemoved ? ', ' + v.claimsRemoved + ' removed as unconfirmed' : '') + '.' }));
     else kids.push(el('span', { text: 'This edition has not been through the source check yet.' }));
-    if (stale && h != null && h > 26) kids.unshift(el('b', { text: 'Older than a day. Treat prices and odds as out of date.' }));
+    if (h != null && h > 8) kids.unshift(el('b', { text: 'News is more than 8 hours old. Prices at the top are still live; the stories, odds and calendar may be out of date.' }));
     return el('p', { class: 'fresh' + (stale ? ' stale' : ''), role: stale ? 'status' : null }, kids);
   }
 

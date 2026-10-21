@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 NOW = datetime.now(timezone.utc)
-NEWS_MAX_AGE = timedelta(hours=26)       # the 11:00 run plus slack
+NEWS_MAX_AGE = timedelta(hours=8)        # full update every 4h, so 8h means a run was missed
 UNLOCK_MAX_AGE = timedelta(days=8)       # weekly refresh plus slack
 MOODS = {"bullish", "bearish", "volatile", "neutral"}
 CONFIDENCE = {"confirmed", "reported", "estimated", "disputed"}
@@ -46,7 +46,7 @@ urls = []
 if news:
     up = ts(news.get("updated"), "news.updated")
     if up and NOW - up > NEWS_MAX_AGE:
-        err(f"news is {(NOW - up).total_seconds() / 3600:.0f}h old (limit {NEWS_MAX_AGE.total_seconds() / 3600:.0f}h): the 11:00 update did not land")
+        err(f"news is {(NOW - up).total_seconds() / 3600:.0f}h old (limit {NEWS_MAX_AGE.total_seconds() / 3600:.0f}h): a scheduled 4-hourly update did not land")
     if up and up - NOW > timedelta(minutes=10):
         err("news.updated is in the future")
     if not news.get("headline"):
