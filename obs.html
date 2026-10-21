@@ -291,8 +291,8 @@ body.picker { overflow: auto; }
     stage.style.cssText = 'position:static;width:auto;height:auto;transform:none;background:none';
     const base = location.href.split('?')[0];
     // Inside the hosted page the scenes are reached by #obs-<scene> on the public link.
-    const hosted = window.parent !== window && D.site.publicUrl;
-    const linkFor = name => hosted ? D.site.publicUrl + '#obs-' + name : base + '?scene=' + name;
+    const hosted = window.parent !== window && D.site.artifactUrl;
+    const linkFor = name => hosted ? D.site.artifactUrl + "#obs-" + name : base + '?scene=' + name;
     const scenes = [
       ['unlocks', 'Token unlocks', 'Next 7 days of unlocks with live countdowns, size and share of supply.'],
       ['story', 'Top stories', 'Today’s three lead stories, one at a time. Rotates every ' + (D.site.storySeconds || 25) + ' seconds. Add &i=0, &i=1 or &i=2 to hold one story.'],
@@ -312,7 +312,7 @@ body.picker { overflow: auto; }
         });
         return el('li', null, [el('b', { text: s[1] }), el('span', { text: s[2] }), el('code', { text: url }), el('div', { class: 'acts' }, [el('a', { href: url, target: '_blank', rel: 'noopener', text: 'Preview' }), btn])]);
       })),
-      el('p', null, ['Follower dashboard: ', el('a', { href: hosted ? D.site.publicUrl : 'index.html', target: hosted ? '_blank' : null, style: 'background:none;color:var(--sun);padding:0', text: 'open it' })])
+      el('p', null, ['Follower dashboard: ', el('a', { href: hosted ? D.site.artifactUrl : "index.html", target: hosted ? '_blank' : null, style: 'background:none;color:var(--sun);padding:0', text: 'open it' })])
     ]));
   }
 

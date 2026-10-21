@@ -1,5 +1,7 @@
 # Coach K Crypto Desk
 
+Live at https://coachk-health.github.io/crypto_desk/ (scenes: https://coachk-health.github.io/crypto_desk/obs.html)
+
 A public follower dashboard plus four OBS scenes for live streams. Static files only: no keys, no fees, no build step.
 
 ## What's here
