@@ -1,64 +1,63 @@
 {
  "date": "2026-10-22",
- "updated": "2026-10-22T12:35:58Z",
- "headline": "Bitcoin fell below $82,000 on Thursday as mixed Tesla and Meta results revived doubts about AI spending, Asian stocks slid and Brent oil passed $112.",
+ "updated": "2026-10-22T16:17:01Z",
+ "headline": "Bitcoin fell below $82,000 on Thursday as tech stocks slid after Meta and Tesla results and Brent oil stayed above $111.",
  "market": {
-  "asOf": "BTC, ETH, SOL and the CMC Fear & Greed Index read from CoinMarketCap about 12:00 UTC 22 Oct (19:00 Bangkok).",
+  "asOf": "BTC, ETH, SOL and the CMC Fear & Greed Index read from CoinMarketCap about 15:55 UTC 22 Oct (22:55 Bangkok).",
   "btc": {
-   "price": 81967.9,
-   "chg24h": 1.46
+   "price": 81584.22,
+   "chg24h": -3.27
   },
   "eth": {
-   "price": 2408.58,
-   "chg24h": 1.54
+   "price": 2396.38,
+   "chg24h": -3.97
   },
   "sol": {
-   "price": 104.51,
-   "chg24h": 1.53
+   "price": 104.2,
+   "chg24h": -3.5
   },
   "fearGreed": "49 Neutral (CoinMarketCap CMC Fear & Greed Index)"
  },
  "stories": [
   {
-   "title": "Bitcoin drops below $82,000 as AI doubts, an Asian stock slide and $112 oil hit risky assets",
+   "title": "Bitcoin slides below $82,000 as Nasdaq and Meta fall and oil holds above $111",
    "mood": "bearish",
-   "summary": "Bitcoin ran up close to $85,000 late Wednesday, then reversed and fell below $82,000 on Thursday. Mixed results from Tesla and Meta revived doubts about AI spending, Asian stocks fell hard, and oil jumped after more Houthi strikes in Saudi Arabia. Smaller coins, especially DeFi tokens, fell the most. Higher oil can keep inflation and interest rates up, which tends to weigh on crypto.",
+   "summary": "Bitcoin came close to $85,000 late Wednesday, then gave it all back and was at $81,652.8 by 10:11am ET on Thursday, per Investing.com. Tech stocks sold off after Meta's results, which beat revenue forecasts but still sent its shares sharply lower, and a Tesla spending cut, while Brent oil stayed above $111 on Middle East tensions. Crypto has been moving with tech stocks and oil. Higher oil can keep inflation and interest rates up, which tends to weigh on crypto.",
    "points": [
-    "Bitcoin fell as much as 2.9% to below $82,000, about 2.7% down since midnight UTC; ether lost 2.6% to near $2,400 and SOL 2.4% to about $104, per CoinDesk at 10:50 UTC (live prices are at the top of the page).",
-    "Mixed Tesla and Meta results sent Nasdaq 100 futures down 1.32%, per CoinDesk; Tesla fell 3% after hours after cutting its spending forecast.",
-    "China's CSI 300 stock index entered a bear market, and stocks in Japan, South Korea and Hong Kong fell around 3% or more, per CoinDesk.",
-    "Brent oil futures were at $111.91, up $3.09 and the highest since 18 May, per Cornerstone Futures (6:45am ET); CoinDesk reported Brent above $112. The US ordered some diplomats out of Saudi Arabia after Houthi strikes.",
-    "CoinDesk's DeFi index (DFX) fell 5.6%."
+    "Bitcoin fell 3.5% to $81,652.8 by 10:11am ET and ether 3.6% to $2,408.48, per Investing.com (live prices are at the top of the page).",
+    "At 10:35am ET the Nasdaq was down 2.2%, the S&P 500 down 1.4% and Meta down nearly 7%, while Brent oil was up 2.6% at $111.59, per Investing.com.",
+    "About $431M of leveraged bets were wiped out in 24 hours, per CoinDesk citing CoinGlass; the largest single one was an $11.8M BTC long on Binance.",
+    "US jobless claims fell to 194,000, below the 200,000 forecast, per Reuters via Investing.com, so the jobs data gave no sign of a weakening economy."
    ],
    "sources": [
     {
-     "label": "CoinDesk: Bitcoin slides below $82,000 as AI doubts return",
-     "url": "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines"
+     "label": "Investing.com: Bitcoin falls back to $82K",
+     "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-falls-back-to-82k-as-ai-selldown-rising-oil-batter-risk-4964695"
     },
     {
-     "label": "CoinDesk: Asian stocks tumble, bitcoin retreats",
-     "url": "https://www.coindesk.com/markets/2026/10/22/asian-stocks-tumble-bitcoin-retreats-as-china-enters-bear-market"
+     "label": "Investing.com: US stocks fall as investors weigh Tesla, Meta earnings",
+     "url": "https://investing.com/news/stock-market-news/us-stock-futures-fall-as-investors-weigh-tesla-meta-earnings-4964498"
     },
     {
-     "label": "CoinDesk: Bitcoin gives back its run at $85,000",
-     "url": "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves"
+     "label": "CoinDesk live: Bitcoin's round trip to $85,000",
+     "url": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides"
     },
     {
-     "label": "Cornerstone Futures: Brent hits its highest since May",
-     "url": "https://www.cornerstonefuturesllc.com/post/morning-highlights-brent-hits-its-highest-since-may-as-the-us-pulls-diplomats-from-saudi-arabia-and"
+     "label": "Reuters via Investing.com: Jobless claims near 57-year lows",
+     "url": "https://www.investing.com/news/economy-news/us-weekly-jobless-claims-near-57year-lows-4966076"
     }
    ]
   },
   {
-   "title": "Bitcoin ETFs take in $528M on Wednesday, and ether funds end a five-day outflow run",
+   "title": "Bitcoin ETFs took in about $1.08B in three days, but the price fell anyway",
    "mood": "neutral",
-   "summary": "US spot bitcoin ETFs, funds that hold bitcoin for stock-market investors, took in a net $528 million on Wednesday, led by BlackRock and Fidelity. Ether funds took in money for the first time in six sessions. The buying has not stopped Thursday's price drop, and one analyst told CoinDesk that flows remain volatile.",
+   "summary": "US spot bitcoin ETFs, funds that hold bitcoin for stock-market investors, took in money for a third straight day on Wednesday, and ether funds ended a five-day outflow run. The buying has not stopped Thursday's drop.",
    "points": [
-    "Spot bitcoin ETFs took in $528.4M on Wednesday: BlackRock's IBIT $235M and Fidelity's FBTC $212.7M, per The Block. FinanceFeeds puts the total at $524.8M.",
+    "Spot bitcoin ETFs took in a net $528M on Wednesday, per crypto.news citing SoSoValue; The Block's own count is $528.4M.",
+    "BlackRock's IBIT took in $235M and Fidelity's FBTC $212.7M, per The Block.",
+    "The three sessions since Monday add up to about $1.08B, per crypto.news.",
     "Ether ETFs took in $14.9M, ending five days of outflows, per The Block.",
-    "Solana ETFs added about $0.6M and XRP ETFs about $709,000, per FinanceFeeds.",
-    "Bitcoin ETFs drew about $1.08B over three days, per a KuCoin summary of CoinDesk citing SoSoValue.",
-    "Bitcoin's share of the whole crypto market hit 60% on Wednesday, its highest since May, per CoinDesk."
+    "Giottus CEO Vikram Subburaj told CoinDesk that flows remain volatile and sustained inflows are needed to confirm a stronger recovery."
    ],
    "sources": [
     {
@@ -66,12 +65,8 @@
      "url": "https://www.theblock.co/news/markets/2026-10-22-bitcoin-etfs-draw-528-million-as-ether-funds-snap-five-day-outflow-streak-421904"
     },
     {
-     "label": "FinanceFeeds: Crypto ETFs attract $541 million on 21 Oct",
-     "url": "https://financefeeds.com/crypto-etfs-attract-541-million-on-october-21-as-bitcoin-funds-lead-broad-recovery/"
-    },
-    {
-     "label": "KuCoin: Bitcoin ETFs attract $1.08B in 3 days",
-     "url": "https://www.kucoin.com/news/flash/bitcoin-etfs-attract-1-08-billion-in-3-days-but-not-enough-for-steep-rally"
+     "label": "crypto.news: Bitcoin ETF inflows top $1B in three days",
+     "url": "https://crypto.news/bitcoin-etf-inflows-1-billion-three-days-btc-price/"
     },
     {
      "label": "CoinDesk Crypto Daybook, 22 Oct",
@@ -80,63 +75,62 @@
    ]
   },
   {
-   "title": "The OCC's final stablecoin rule leaves room for platform rewards, and banks push back",
+   "title": "Visa reported in talks to buy Fireblocks, which denies it, and SoFi launches a 4.4% tokenized deposit",
    "mood": "neutral",
-   "summary": "The OCC, a federal bank regulator, issued its final rule under the GENIUS Act stablecoin law. It dropped a proposed presumption against stablecoin rewards paid through third parties such as exchanges, so each set-up will be judged on its own facts. The American Bankers Association says this undermines what Congress intended.",
+   "summary": "Axios reported that Visa is in late-stage talks to buy Fireblocks, a crypto custody and stablecoin company, for about $2.5B. Fireblocks said the report is \"not true at present time\" and Visa declined to comment. Separately, SoFi launched an interest-paying tokenized deposit that customers can swap one-for-one for its stablecoin. Both show big US payment and banking brands building crypto services ordinary customers use.",
    "points": [
-    "The final rule drops the proposed presumption against yield arranged through third parties, per The Block.",
-    "The direct ban stays: an issuer cannot pay interest or yield to a holder simply for holding, using or storing a payment stablecoin, per SpazioCrypto's reading of the rule.",
-    "Calling a payment a \"reward\" or \"cashback\" does not exempt it, and every structure will be judged on its own facts, per SpazioCrypto.",
-    "ABA CEO Rob Nichols said \"attempting to address deposit flight and economic harm after it has occurred is the wrong approach.\"",
-    "The rule applies from 18 Jan 2027, per SpazioCrypto."
+    "Axios reported a deal value of about $2.5B; Fireblocks was last valued at $8B in January 2022, per The Block.",
+    "Visa says its stablecoin settlement is running above $20B a year, per The Block.",
+    "SoFi's tokenized deposit pays 4.4% APY and is FDIC-insured within limits; its SoFiUSD stablecoin is not FDIC-insured, per The Block.",
+    "SoFi says it is the first US national bank to offer tokenized deposits to individual customers, with the rollout finishing in November, per The Block."
    ],
    "sources": [
     {
-     "label": "The Block: ABA accuses OCC of undermining Congress",
-     "url": "https://www.theblock.co/news/regulation/2026-10-21-american-bankers-association-accuses-occ-undermining-congress-stablecoin-rewards-rule-421629"
+     "label": "The Block: Visa in talks to acquire Fireblocks (Axios)",
+     "url": "https://www.theblock.co/news/deals/2026-10-22-visa-in-talks-acquire-crypto-custody-firm-fireblocks-around-2-5-billion-axios-421926"
     },
     {
-     "label": "SpazioCrypto: OCC stablecoin yield rule, case by case",
-     "url": "https://en.spaziocrypto.com/stablecoins/genius-act-occ-stablecoin-yield-rule-case-by-case"
+     "label": "The Block: SoFi launches FDIC-insured tokenized deposit",
+     "url": "https://theblock.co/news/business/2026-10-22-sofi-fdic-insured-tokenized-deposit-421916"
     }
    ]
   }
  ],
  "briefs": [
   {
-   "title": "Trump says nearly $1B in scam-linked crypto is frozen",
-   "summary": "At a White House roundtable on 21 Oct, Trump said authorities had frozen nearly $1 billion in crypto tied to foreign scammers. The DOJ's Scam Center Strike Force had about $938.5M under restraint as of 15 Oct. Frozen is not the same as returned to victims.",
-   "url": "https://www.tokenpost.com/news/regulation/37502"
+   "title": "The OCC's stablecoin rule reopens the banks-vs-crypto fight",
+   "summary": "The final GENIUS Act rule bars rewards paid just for holding a stablecoin but judges other set-ups case by case. The American Bankers Association objected; the Blockchain Association praised it.",
+   "url": "https://rollcall.com/2026/10/22/stablecoin-yield-rule-revives-crypto-vs-banking-industry-fight"
   },
   {
-   "title": "About $431M of leveraged bets wiped out",
-   "summary": "Roughly $431M of leveraged positions were liquidated in 24 hours, per CoinDesk citing CoinGlass. Bets on a rise made up $210M of the $222M wiped out in the last 12 hours, per CoinDesk.",
-   "url": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides"
+   "title": "China seeks 61,800 bitcoin seized in the UK",
+   "summary": "Chinese prosecutors want to confiscate more than 61,800 BTC tied to an alleged $5.7B fraud by Qian Zhimin that involved more than 102,000 investors.",
+   "url": "https://www.coindesk.com/markets/2026/10/22/china-seeks-to-seize-61-800-btc-tied-to-usd5-7-billion-fraud-scheme"
   },
   {
-   "title": "Tesla keeps its bitcoin and books a $288M paper gain",
-   "summary": "Tesla's Q3 net income included a $288M unrealized gain on its bitcoin. It sold none of its 11,509 BTC.",
-   "url": "https://www.tokenpost.com/news/business/37709"
+   "title": "CoinDCX denies a second hack",
+   "summary": "About 15.99M USDT moved from wallets linked to the Indian exchange. Its CEO says it was not breached; ZachXBT questions that. No new loss is confirmed.",
+   "url": "https://crypto.news/coindcx-denies-second-hack-claims-as-zachxbt-questions-wallet-activity/"
   },
   {
-   "title": "Money shelters in bitcoin as altcoins slide",
-   "summary": "CRV fell 8.2%, ENA 7.2% and UNI 5%, while Monero rose 4.9% to about $651, per CoinDesk.",
-   "url": "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines"
+   "title": "Tesla keeps its bitcoin",
+   "summary": "Tesla still holds 11,509 BTC and booked a $288M pre-tax paper gain in Q3, with no buys or sales disclosed.",
+   "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-22-2026"
   },
   {
-   "title": "Ireland fines Coinbase about €3.25M",
-   "summary": "The Central Bank of Ireland fined Coinbase Ireland €3,252,618 for breaching safeguarding and outsourcing rules between Nov 2020 and Aug 2025.",
-   "url": "https://fxnewsgroup.com/forex-news/cryptocurrency/irish-c-bank-imposes-e3-25m-fine-on-coinbase-ireland"
+   "title": "Asian stocks tumble as China enters a bear market",
+   "summary": "China's CSI 300 is 20% below its June peak; the Kospi fell 3.5% and the Nikkei and Hang Seng about 3%.",
+   "url": "https://www.coindesk.com/markets/2026/10/22/asian-stocks-tumble-bitcoin-retreats-as-china-enters-bear-market"
   },
   {
-   "title": "South Korea's crypto law nears completion",
-   "summary": "Talks on the Digital Asset Basic Act, covering exchange licensing and stablecoin issuance, are close to done, per The Block. Korea's crypto tax, due 1 Jan 2027, is under review again.",
-   "url": "https://www.theblock.co/news/regulation/2026-10-22-south-koreas-crypto-bill-nears-completion-421880"
+   "title": "Pirate Chain releases a fix after its exploit",
+   "summary": "Pirate Chain released node update v6.0.14 after a 14 Oct exploit minted about 39.82M fake ARRR. Its posts and its GitHub notes disagree on whether a full re-index is needed.",
+   "url": "https://www.cryptotimes.io/2026/10/22/pirate-chain-ships-mandatory-v6-0-14-update-after-39-8m-exploit/"
   },
   {
-   "title": "Grayscale lets investors pay in crypto for 10 funds",
-   "summary": "Investors can now contribute tokens instead of cash to 10 Grayscale products, including its BTC, ETH, SOL and XRP funds.",
-   "url": "https://www.theblock.co/news/markets/2026-10-21-grayscale-expands-in-kind-subscriptions-10-crypto-etfs-421559"
+   "title": "Switzerland approves its first retail spot bitcoin ETF",
+   "summary": "FINMA approved the fund, per KuCoin's daily report. The UK FCA also opened DeFi consultations.",
+   "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-22-2026"
   }
  ],
  "calendar": [
@@ -146,7 +140,7 @@
    "event": "US initial jobless claims",
    "impact": "volatile",
    "key": false,
-   "note": "Consensus 200K, prior 199K (Trading Economics). Leading indicators (Sep) follow at 10:00am ET (21:00 Bangkok): prior -0.1% (Conference Board)."
+   "note": "Released: 194K vs 200K expected; prior revised to 200K (FXStreet). Leading indicators (Sep) at 10:00am ET came in at 0.0%, after -0.1% in August (Conference Board)."
   },
   {
    "et": "Fri 23 · 9:45am",
@@ -154,7 +148,7 @@
    "event": "S&P Global flash PMIs (Oct)",
    "impact": "volatile",
    "key": false,
-   "note": "Manufacturing: consensus 55.5, prior 55.9 (Investing.com). Services: prior 58.8."
+   "note": "Manufacturing: forecast 55.5, prior 55.9. Services: forecast 58.0, prior 58.8 (Investing.com)."
   },
   {
    "et": "Fri 23 · 10:00am",
@@ -162,31 +156,31 @@
    "event": "UMich consumer sentiment, final (Oct)",
    "impact": "neutral",
    "key": false,
-   "note": "Preliminary 46.3; September final 48.1. 1-year inflation expectations: preliminary 4.7%, September 4.6%."
+   "note": "Preliminary 46.3; September final 48.1. 1-year inflation expectations: preliminary 4.7%."
   },
   {
    "et": "Fri 23 – Mon 26",
    "bkk": "Fri 23 – Mon 26",
-   "event": "Token unlocks: SOON, SoSoValue (SOSO), Humanity (H), COAI, Plasma (XPL), Sahara (SAHARA)",
+   "event": "Token unlocks: SOON, APR, SoSoValue (SOSO), Humanity (H), COAI, Plasma (XPL), Sahara (SAHARA)",
    "impact": "bearish",
    "key": false,
-   "note": "SOON ~$6.73M (23rd), SOSO ~$7.08M (24th), H ~$15.43M, COAI ~$5.12M, XPL ~$18.2M (25th), SAHARA ~$1.2M (26th), per the unlock data on this page. All small. Details in the unlocks section."
+   "note": "SOON ~$6.73M and APR ~$2.5M (23rd), SOSO ~$7.08M (24th), H ~$15.43M, COAI ~$5.12M, XPL ~$18.2M (25th), SAHARA ~$1.2M (26th), per the unlock data on this page. All small. Details in the unlocks section."
   },
   {
-   "et": "Sun 25",
-   "bkk": "Sun 25 / Mon 26",
-   "event": "Brazil presidential runoff",
+   "et": "Sun 25 · 4:00pm",
+   "bkk": "Mon 26 · 03:00",
+   "event": "Brazil presidential runoff (polls close)",
    "impact": "neutral",
    "key": false,
-   "note": "Flávio Bolsonaro vs Lula. Quaest (17-20 Oct): Bolsonaro 45%, Lula 44%. Datafolha (13-14 Oct): 47% to 45%. New Datafolha polls are due Thu 22 and Sat 24 Oct."
+   "note": "Flávio Bolsonaro vs Lula. Valid votes: Quaest (21 Oct) 50.6% to 49.4%; AtlasIntel (19 Oct) 51.1% to 48.9% (Rio Times). A new Datafolha poll is due Thu 22 at 6:00pm ET (Fri 05:00 Bangkok)."
   },
   {
-   "et": "Tue 27 · 8:30am",
-   "bkk": "Tue 27 · 19:30",
+   "et": "Tue 27",
+   "bkk": "Tue 27",
    "event": "US durable goods orders (Sep)",
    "impact": "neutral",
    "key": false,
-   "note": "August was first reported at 0.0% and later revised to -0.1%. Consumer confidence (prior 81.9) and new home sales (prior 684K) follow at 10:00am ET. Robinhood reports after the close (call 5:00pm ET)."
+   "note": "Prior -0.1%; Continuum Economics forecasts +3.5% (one firm, not a consensus). Consumer confidence follows at 10:00am ET (prior 81.9). Robinhood reports after the close (call 5:00pm ET)."
   },
   {
    "et": "Wed 28 · 2:00pm",
@@ -194,7 +188,7 @@
    "event": "Fed rate decision",
    "impact": "volatile",
    "key": true,
-   "note": "Range 3.75-4.00% after a September hike. In a Reuters poll (16-20 Oct) 94 of 100 economists expect a hold. Press conference 2:30pm ET (Thu 01:30 Bangkok). Alphabet (call 4:30pm ET) and Microsoft report after the close."
+   "note": "Range 3.75-4.00% after a September hike. In a Reuters poll (16-20 Oct) 94 of 100 economists expect a hold. Microsoft reports after the close."
   },
   {
    "et": "Thu 29 · 8:30am",
@@ -202,7 +196,7 @@
    "event": "US Q3 GDP (advance) and September PCE inflation",
    "impact": "volatile",
    "key": true,
-   "note": "Priors: GDP 2.2%; core PCE 3.0% y/y. No consensus yet; Atlanta Fed GDPNow 3.5% (20 Oct). Coinbase and Strategy report after the close; Coinbase, Strategy and Amazon hold calls at 5:00pm ET (Fri 04:00 Bangkok)."
+   "note": "Priors: GDP 2.2%; core PCE 3.0% y/y. No consensus yet; Atlanta Fed GDPNow 3.5% (20 Oct). Coinbase, Strategy and Amazon report after the close; Strategy's webinar, Amazon's call and a Coinbase Q&A are at 5:00pm ET (Fri 04:00 Bangkok)."
   },
   {
    "et": "Thu 29 · 9:15am",
@@ -210,7 +204,15 @@
    "event": "ECB rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Deposit rate 2.50%; a hold is expected. Press conference 9:45am ET. The Bank of Japan decides on Fri 30 (rate 1.25%)."
+   "note": "Deposit rate 2.50%; most analysts lean towards a move in December rather than October. Press conference 9:45am ET."
+  },
+  {
+   "et": "Thu 29 · ~11:00pm",
+   "bkk": "Fri 30 · ~10:00",
+   "event": "Bank of Japan rate decision",
+   "impact": "neutral",
+   "key": false,
+   "note": "Rate 1.25%. In a Bloomberg survey none of the economists expect an October move. No fixed release time."
   },
   {
    "et": "Fri 30 · 4:00am",
@@ -218,15 +220,15 @@
    "event": "Monthly Bitcoin options expiry (Deribit)",
    "impact": "volatile",
    "key": true,
-   "note": "Open interest 149,686 BTC, about $12.2B, with max pain at $79,000, per CryptoTicker on 17 Oct. Max pain is not a price target."
+   "note": "About $12.2B of Deribit open interest with max pain at $79,000 (CryptoTicker, 17 Oct). Bitfinex said on 21 Oct the expiry represents $11.2B in notional value across all platforms. Max pain is not a price target."
   }
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-10-22T12:35:58Z",
-  "claimsChecked": 97,
-  "claimsRemoved": 5,
-  "rounds": 2,
+  "checkedAt": "2026-10-22T16:17:01Z",
+  "claimsChecked": 124,
+  "claimsRemoved": 8,
+  "rounds": 3,
   "method": "Independent source check: every claim re-opened at its cited URL"
  }
 }
