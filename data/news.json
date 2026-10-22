@@ -1,141 +1,131 @@
 {
  "date": "2026-10-22",
- "updated": "2026-10-22T04:35:55Z",
- "headline": "Bitcoin gave back its run at $85,000 and slipped under $83,000 in Asian trading after the US ordered non-emergency staff out of Saudi Arabia and oil rose to about $110.",
+ "updated": "2026-10-22T08:18:22Z",
+ "headline": "Bitcoin fell back below $83,000 in Asian trading as Houthi strikes in Saudi Arabia pushed Brent oil above $111, even after US bitcoin ETFs took in $528M on Wednesday.",
  "market": {
-  "asOf": "BTC 22 Oct 02:19 UTC (09:19 Bangkok) via PANews citing OKX; HTX data at the same time showed +0.15% over 24h. ETH, SOL and Fear & Greed could not be read this run.",
+  "asOf": "BTC and ETH 22 Oct 06:00 UTC (13:00 Bangkok) via CoinCodex; SOL 06:13 UTC via OKX; Fear & Greed (Alternative.me) updated 04:00 UTC via Coinbird.",
   "btc": {
-   "price": 82990,
-   "chg24h": -1.83
+   "price": 82845,
+   "chg24h": 0.21
   },
-  "eth": null,
-  "sol": null,
-  "fearGreed": null
+  "eth": {
+   "price": 2436.67,
+   "chg24h": 0.01
+  },
+  "sol": {
+   "price": 104.94,
+   "chg24h": -0.58
+  },
+  "fearGreed": "68 Greed (Alternative.me)"
  },
  "stories": [
   {
-   "title": "Bitcoin gives back its run at $85,000 as the US orders staff out of Saudi Arabia",
+   "title": "Bitcoin slips back under $83,000 as Houthi strikes in Saudi Arabia push oil above $111",
    "mood": "volatile",
-   "summary": "Bitcoin climbed close to $85,000 late Wednesday US time, then gave the gain back in Asian trading on Thursday. Over the same hours the US ordered non-emergency government staff and their families to leave Saudi Arabia, oil rose to about $110 a barrel, and Asian stocks and US stock futures fell.",
+   "summary": "Bitcoin ran up to almost $85,000 overnight, then fell back under $83,000 in Asian trading on Thursday. Houthi attacks inside Saudi Arabia and a US order for non-emergency embassy staff to leave pushed oil higher, and a sell-off in AI stocks weighed on risky assets. Higher oil can keep inflation and interest rates up, which tends to hurt assets like crypto.",
    "points": [
-    "CoinDesk (03:51 UTC) says bitcoin \"topped out near $84,800 late Wednesday\" and was \"flat at just under $82,800\" in Thursday's Asian morning (read at that time; live prices are at the top of the page).",
-    "At 02:19 UTC PANews reported bitcoin had fallen below $83,000 to $82,990, down 1.83% on the day on OKX. TechFlow, citing HTX at the same time, showed $82,945, up 0.15% over 24 hours: the daily change depends on the exchange and the starting point used.",
-    "The State Department ordered the departure of non-emergency US government employees and their families \"in Saudi Arabia only\", per CBS. Reuters reported officials planned to withdraw family members from other US missions in the region, so the scope is still unclear.",
-    "Brent oil rose $1.29, or 1.2%, to $110.11 a barrel at 00:34 GMT, per Reuters.",
-    "South Korea's Kospi fell 2.2% and Nasdaq 100 futures fell 1.1%, per CoinDesk."
+    "Bitcoin was at $82,690 on Thursday morning after reaching $84,808 overnight and dipping as low as $82,567, per CryptoTicker (06:24 UTC; live prices are at the top of the page).",
+    "The total crypto market value was $2.785 trillion, down 2.64% over 24 hours, per the same report.",
+    "At 06:26 GMT Brent oil was up $2.82, or 2.59%, at $111.64 a barrel, and US crude (WTI) was up $2.24 at $99.39, per Reuters data.",
+    "The State Department ordered non-emergency embassy staff and their families to leave \"in Saudi Arabia only\". One person was killed and 8 wounded at Dammam airport, per ABC News.",
+    "Investing.com blamed \"a deep selldown in artificial intelligence stocks and a continued rise in oil prices\" for the drop."
    ],
    "sources": [
     {
-     "label": "CoinDesk: Bitcoin gives back its run at $85,000",
-     "url": "https://www.coindesk.com/markets/2026/10/22/bitcoin-gives-back-its-run-at-usd85-000-as-tesla-and-meta-fail-to-calm-ai-nerves"
+     "label": "CryptoTicker: Bitcoin price, 22 Oct",
+     "url": "https://cryptoticker.io/en/bitcoin-price-dominance-altcoin-pullback-22-october-2026/"
     },
     {
-     "label": "PANews: BTC falls below $83,000",
-     "url": "https://panews.io/articles/01a16167-f524-727b-8d44-d15d886725e3"
+     "label": "Reuters via Global Banking & Finance: Oil rises as US orders diplomats to leave Saudi Arabia",
+     "url": "https://www.globalbankingandfinance.com/oil-rises-us-orders-diplomats-leave-saudi-arabia-amid/"
     },
     {
-     "label": "TechFlow: BTC price update (HTX)",
-     "url": "https://www.techflowpost.com/en-US/newsletter/140896"
+     "label": "ABC News: US diplomats to leave Saudi Arabia",
+     "url": "https://www.abc.net.au/news/2026-10-22/us-diplomats-to-leave-saudi-arabia-amid-houthi-strikes/107295684"
     },
     {
-     "label": "CBS News: US orders departure of staff in Saudi Arabia",
-     "url": "https://www.cbsnews.com/news/us-saudi-arabia-ordered-departure-houthis/"
-    },
-    {
-     "label": "Reuters via Investing.com: Oil rises as US orders diplomats to leave",
-     "url": "https://www.investing.com/news/commodities-news/oil-rises-as-us-orders-diplomats-to-leave-saudi-arabia-amid-escalating-tensions-4964484"
+     "label": "Investing.com: Bitcoin falls back to $82K",
+     "url": "https://investing.com/news/cryptocurrency-news/bitcoin-falls-back-to-82k-as-ai-selldown-rising-oil-batter-risk-4964695"
     }
    ]
   },
   {
-   "title": "Tesla books a $288M paper gain on its bitcoin; no terms agreed on a SpaceX merger",
+   "title": "US bitcoin ETFs take in $528M in a day, but the price still slips",
    "mood": "neutral",
-   "summary": "Tesla's third-quarter results include a gain on paper from the rise in value of the bitcoin it holds. It did not sell any. Separately, Elon Musk said committees at SpaceX and Tesla are looking at a merger, which would put about 30,000 bitcoin under one company, but no terms have been agreed.",
+   "summary": "US spot bitcoin ETFs, funds that hold bitcoin for stock-market investors, took in a net $528 million on Wednesday 21 Oct, led by BlackRock and Fidelity. Ether, Solana and XRP funds also had small inflows. The money coming in has not been enough to stop Thursday's price drop.",
    "points": [
-    "Tesla's SEC filing shows a $288M pre-tax unrealized gain on digital assets in Q3, or $224M after tax.",
-    "Tesla reported $0.8B of GAAP net income for the quarter, per the same filing.",
-    "Tesla held 11,509 BTC at quarter-end, unchanged from the previous quarter, per Bloomingbit. SpaceX holds 18,712 BTC, 30,221 combined, per CoinDesk citing BitcoinTreasuries.net.",
-    "Musk said \"the special committees have not reached agreement on the terms of any transaction,\" per CoinDesk."
+    "Bitcoin ETFs had a net inflow of $528.41M on 21 Oct, taking October to +$463.3M so far, per Trader T data reported by KuCoin.",
+    "By fund: BlackRock's IBIT +$235M, Fidelity's FBTC +$212.71M, Grayscale's GBTC +$32.59M, Bitwise's BITB +$19.23M (same source).",
+    "Ether ETFs took in $14.96M, XRP funds $708,520 and Solana funds $585,300, per Gokhshtein.",
+    "Inflows are about $1.1B so far this week after $909.6M of outflows over the two weeks before, citing SoSoValue, per Traders Union."
    ],
    "sources": [
     {
-     "label": "Tesla Q3 2026 update (SEC filing)",
-     "url": "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026066738/exhibit9914.htm"
+     "label": "KuCoin: Bitcoin spot ETFs see $528.41M inflow",
+     "url": "https://www.kucoin.com/news/flash/bitcoin-spot-etfs-see-528-41m-net-inflow-on-october-21-2026"
     },
     {
-     "label": "Bloomingbit: Tesla holds 11,509 BTC",
-     "url": "https://en.bloomingbit.io/feed/news/122704"
+     "label": "Gokhshtein: BTC, ETH, SOL and XRP ETF flows",
+     "url": "https://gokhshtein.com/news/2026-10-22--etf-flows-btc-eth-sol-and-xrp-spot-etfs-saw-net-inflows-on"
     },
     {
-     "label": "CoinDesk: SpaceX and Tesla explore merger",
-     "url": "https://www.coindesk.com/markets/2026/10/21/spacex-and-tesla-explore-merger-that-would-unite-more-than-30-000-bitcoin"
+     "label": "Traders Union: Bitcoin falls below $83,000",
+     "url": "https://tradersunion.com/news/cryptocurrency-news/show/3918652-bitcoin-falls-below-83000/"
     }
    ]
   },
   {
-   "title": "The OCC finalizes its GENIUS Act stablecoin rule, and banks push back",
+   "title": "The OCC finalizes a GENIUS Act stablecoin rule, and banks push back",
    "mood": "neutral",
-   "summary": "The OCC, a federal bank regulator, issued a final rule putting the GENIUS Act stablecoin law into practice. It sets standards for the stablecoin issuers it oversees and bars them from paying interest-like yield directly to holders. The American Bankers Association says issuers can still offer equivalent yield through affiliates, exchanges and other partners.",
+   "summary": "The OCC, a federal bank regulator, issued a final rule under the GENIUS Act stablecoin law. It drops a proposed limit on stablecoin rewards arranged through third parties. The American Bankers Association accuses the OCC of undermining what Congress intended.",
    "points": [
-    "The rule was issued on 21 Oct and applies from 18 Jan 2027, when the GENIUS Act takes effect, per Decrypt.",
-    "Whether a payment to stablecoin holders through an intermediary counts as banned yield will depend \"on the facts and circumstances,\" the OCC wrote, per Banking Dive.",
-    "ABA CEO Rob Nichols said issuers \"can provide economically equivalent yield while technically avoiding the statutory prohibition.\"",
-    "A new weekly reporting form for issuers starts with the 25 Jan 2027 report date, subject to approval by the Office of Management and Budget, per an OCC bulletin."
+    "The final rule drops a proposed presumption against stablecoin yield arranged through third parties, per The Block.",
+    "ABA CEO Rob Nichols said \"attempting to address deposit flight and economic harm after it has occurred is the wrong approach.\"",
+    "The ABA warned the rule risks \"threatening the funds banks use to make the loans that drive the U.S. economy,\" per The Block.",
+    "The rule takes effect on 18 Jan 2027, per KuCoin's daily market report."
    ],
    "sources": [
     {
-     "label": "OCC news release",
-     "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-92.html"
+     "label": "The Block: ABA accuses OCC of undermining Congress on stablecoin rewards",
+     "url": "https://www.theblock.co/news/regulation/2026-10-21-american-bankers-association-accuses-occ-undermining-congress-stablecoin-rewards-rule-421629"
     },
     {
-     "label": "OCC Bulletin 2026-52",
-     "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-52.html"
-    },
-    {
-     "label": "Decrypt via Yahoo Finance: OCC finalizes GENIUS Act rule",
-     "url": "https://finance.yahoo.com/markets/crypto/articles/occ-finalizes-genius-act-stablecoin-115223630.html"
-    },
-    {
-     "label": "Banking Dive: OCC final rule and stablecoin yield",
-     "url": "https://www.bankingdive.com/news/occ-final-rule-genius-stablecoin-yield-gould-bessent-icba/833638/"
-    },
-    {
-     "label": "ABA statement",
-     "url": "https://www.aba.com/about-us/press-room/press-releases/aba-statement-on-occ-final-rule-implementing-the-genius-act"
+     "label": "KuCoin: Crypto daily market report, 22 Oct",
+     "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-22-2026"
     }
    ]
   }
  ],
  "briefs": [
   {
-   "title": "Bitcoin ETFs: inflows on 19 and 20 Oct",
-   "summary": "US spot Bitcoin ETFs took in a net $526.6M on 19 Oct and $23.2M on 20 Oct, leaving October at about -$67.4M so far, per TFTC's flow tracker.",
-   "url": "https://www.tftc.io/bitcoin-etf-flows/october-2026"
+   "title": "Tesla books a $288M paper gain on its bitcoin",
+   "summary": "Tesla's Q3 gain on its bitcoin is unrealized: its digital assets rose in value from $674M to $962M. Independent board committees at SpaceX and Tesla are studying a merger, but no terms are agreed.",
+   "url": "https://coindoo.com/teslas-bitcoin-gain-was-all-price-spacex-talks-begin/"
   },
   {
-   "title": "Ether ETF outflows pass $1B in October",
-   "summary": "US spot Ether ETFs took in $26M on 20 Oct, but net outflows since the start of October total $1.08B, per SoSoValue data reported by FXStreet.",
-   "url": "https://www.fxstreet.com/cryptocurrencies/news/ether-etf-outflows-continue-pass-1b-in-october-so-far-202610210841"
+   "title": "Bitcoin volatility near its 2026 low",
+   "summary": "Bitcoin's 28-day realized volatility is 1.2%, near this year's low, ahead of the 28 Oct Fed decision and the 3 Nov US midterms, per The Block citing K33.",
+   "url": "https://www.theblock.co/news/markets/2026-10-21-bitcoin-volatility-nears-2026-lows-as-traders-brace-for-fed-decision-and-us-midterms-421524"
   },
   {
-   "title": "White House event on overseas crypto scams",
-   "summary": "Ahead of Wednesday's event, a White House official said authorities had halted about $833M in fraudulent crypto transactions, seized 503 fraudulent sites and notified almost 9,000 US victims.",
-   "url": "https://www.coindesk.com/policy/2026/10/21/trump-to-throw-spotlight-on-overseas-crypto-abuses-in-white-house-event"
+   "title": "Short sellers squeezed in Wednesday's rally",
+   "summary": "CoinGlass counted $267.49M of liquidations in 24 hours as of Wednesday evening, $208.49M (78.3%) of them bets on a fall.",
+   "url": "https://www.cryptotimes.io/2026/10/22/bitcoin-ethereum-rebound-as-267m-in-crypto-positions-are-liquidated/"
   },
   {
-   "title": "Drift hacker moves $109M of ether to Tornado Cash",
-   "summary": "The wallet behind April's Drift Protocol hack sent about 44,510 ETH (around $109M) to the Tornado Cash mixer over 20-21 Oct and still holds about $138M.",
-   "url": "https://cryptobriefing.com/drift-exploiter-tornado-cash-109m-ether/"
+   "title": "Solana's Alpenglow upgrade goes live",
+   "summary": "The upgrade cuts the time for a Solana transaction to become final from about 12.8 seconds to about 150 milliseconds.",
+   "url": "https://www.theblock.co/news/ecosystems/2026-10-21-anzas-alpenglow-goes-live-on-solana-cutting-finality-to-150-milliseconds-421508"
   },
   {
-   "title": "Zcash jumps after setting an upgrade date",
-   "summary": "ZEC rose about 11% in 24 hours to around $1,260 after developers set a November date for the NU7 upgrade, which cuts block times from 75 to 25 seconds.",
-   "url": "https://www.coindesk.com/markets/2026/10/21/crypto-rises-with-asian-tech-stocks-zcash-extends-gain-after-setting-upgrade-date"
+   "title": "Grayscale lets investors pay in crypto for 10 funds",
+   "summary": "Investors can now contribute tokens instead of cash to 10 Grayscale products, including its BTC, ETH, SOL and XRP funds.",
+   "url": "https://www.theblock.co/news/markets/2026-10-21-grayscale-expands-in-kind-subscriptions-10-crypto-etfs-421559"
   },
   {
-   "title": "Big companies object to tokenized versions of their shares",
-   "summary": "Sixteen companies including Microsoft, Alphabet and Goldman Sachs objected to their shares trading in tokenized form on the OKXICE venue, removing 17 of 63 planned symbols before launch.",
-   "url": "https://www.ledgerinsights.com/microsoft-alphabet-goldman-object-to-tokenized-stocks-traded-on-okxice-venue/"
+   "title": "Comments close on the SEC's crypto offering proposal",
+   "summary": "Comments on the SEC's proposed crypto offering rule were due 20 Oct. It would create a $5M startup exemption plus $20M and $75M tiers. It is still only a proposal.",
+   "url": "https://finance.yahoo.com/markets/crypto/articles/sec-crypto-offering-rule-stops-211828536.html"
   }
  ],
  "calendar": [
@@ -145,7 +135,7 @@
    "event": "US initial jobless claims",
    "impact": "volatile",
    "key": false,
-   "note": "Consensus 200K, prior 199K (Trading Economics, Investing.com). Leading indicators (Sep) follow at 10:00am ET: consensus -0.1%."
+   "note": "Consensus 200K, prior 199K (Trading Economics). Leading indicators (Sep) follow at 10:00am ET: consensus -0.1%, prior -0.1%."
   },
   {
    "et": "Fri 23 · 9:45am",
@@ -153,7 +143,7 @@
    "event": "S&P Global flash PMIs (Oct)",
    "impact": "volatile",
    "key": false,
-   "note": "Manufacturing: consensus 55.5 (Trading Economics) or 55.6 (Kaohoon), prior 55.9. Services: consensus 58.0 (Trading Economics) or 57.9 (Kaohoon), prior 58.8."
+   "note": "Manufacturing: consensus 55.5, prior 55.9. Services: consensus 58.0, prior 58.8 (Trading Economics)."
   },
   {
    "et": "Fri 23 · 10:00am",
@@ -177,7 +167,7 @@
    "event": "Brazil presidential runoff",
    "impact": "neutral",
    "key": false,
-   "note": "Flávio Bolsonaro vs Lula. Quaest (17-20 Oct): Bolsonaro 45%, Lula 44%. Datafolha (13-14 Oct): Bolsonaro 47%, Lula 45% (Rio Times, ThePrint)."
+   "note": "Flávio Bolsonaro vs Lula. Quaest (17-20 Oct): Bolsonaro 45%, Lula 44%. Datafolha (13-14 Oct): Bolsonaro 47%, Lula 45% (Quaest; Datafolha)."
   },
   {
    "et": "Tue 27 · 8:30am",
@@ -185,7 +175,7 @@
    "event": "US durable goods orders (Sep)",
    "impact": "neutral",
    "key": false,
-   "note": "No survey consensus published yet. Prior: 0.0% (Trading Economics)."
+   "note": "No survey consensus published. Prior: 0.0% (Trading Economics)."
   },
   {
    "et": "Tue 27 · 10:00am",
@@ -201,7 +191,7 @@
    "event": "Fed rate decision",
    "impact": "volatile",
    "key": true,
-   "note": "The range is 3.75-4.00% after a September hike. Press conference 2:30pm ET (Thu 01:30 Bangkok). Fed officials are in a quiet period until 29 Oct. Alphabet holds its results call at 4:30pm ET and Microsoft reports after the close."
+   "note": "The range is 3.75-4.00% after a September hike; a hold is expected. Press conference 2:30pm ET (Thu 01:30 Bangkok). Fed officials are in a quiet period until 29 Oct. Alphabet holds its results call at 4:30pm ET and Microsoft reports after the close."
   },
   {
    "et": "Thu 29 · 8:30am",
@@ -217,22 +207,22 @@
    "event": "ECB rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Deposit rate 2.50%; 70 of 73 economists in a Reuters poll expect no change (Admiral Markets). Press conference 9:45am ET."
+   "note": "Deposit rate 2.50%; 70 of 73 economists in a Reuters poll expect no change (Admiral Markets). Press conference 9:45am ET. The Bank of Japan also decides on Fri 30 (no fixed time; rate 1.25%)."
   },
   {
    "et": "Fri 30 · 4:00am",
    "bkk": "Fri 30 · 15:00",
-   "event": "Deribit monthly Bitcoin options expiry, ~$12.2B",
+   "event": "Monthly Bitcoin options expiry (Deribit)",
    "impact": "volatile",
    "key": true,
-   "note": "149,686 BTC and max pain $79K as of 17 Oct (CryptoTicker). Max pain is not a price target."
+   "note": "Open interest for the 30 Oct expiry was 148,585 BTC with max pain at $79K, per a 21 Oct newsletter. Max pain is not a price target."
   }
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-10-22T04:35:55Z",
-  "claimsChecked": 160,
-  "claimsRemoved": 12,
+  "checkedAt": "2026-10-22T08:18:22Z",
+  "claimsChecked": 146,
+  "claimsRemoved": 28,
   "rounds": 2,
   "method": "Independent source check: every claim re-opened at its cited URL"
  }
