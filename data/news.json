@@ -1,9 +1,9 @@
 {
  "date": "2026-10-23",
- "updated": "2026-10-23T04:25:54Z",
- "headline": "Bitcoin hovered near $82,000 in Asian trading after Thursday's tech-stock sell-off, as US bitcoin funds saw their first outflow of the week.",
+ "updated": "2026-10-23T08:19:18Z",
+ "headline": "US bitcoin funds had their biggest one-day outflow since June on Thursday, as bitcoin held around $81,500 after the tech-stock sell-off.",
  "market": {
-  "asOf": "BTC, ETH and SOL from CoinGecko's coin pages, read 03:55 UTC 23 Oct (10:55 Bangkok). Fear & Greed read at the same time. Live prices are at the top of the page.",
+  "asOf": "BTC, ETH and SOL from CoinGecko's coin pages, read 03:55 UTC 23 Oct (10:55 Bangkok); a fresh read was not possible on this update. Fear & Greed read at the same time. Live prices are at the top of the page.",
   "btc": {
    "price": 81863.16,
    "chg24h": -1.2
@@ -20,76 +20,77 @@
  },
  "stories": [
   {
-   "title": "Bitcoin steadies near $82,000 as the tech-stock sell-off spreads to Asia",
-   "mood": "volatile",
-   "summary": "Bitcoin dipped below $81,000 overnight, then climbed back toward $82,000 during Asian trading on Friday, per CoinDesk. On Thursday the Nasdaq had its worst day since June as chip stocks and Meta fell on worries about AI spending, and Asian stock markets followed lower on Friday. On Thursday crypto traded like a riskier tech stock, falling along with them.",
+   "title": "Bitcoin ETFs lose $635 million in a day, the biggest outflow since June",
+   "mood": "bearish",
+   "summary": "US spot bitcoin ETFs, funds that hold bitcoin for stock-market investors, saw about $635 million leave on Thursday, according to SoSoValue data reported by crypto.news. That wipes out more than half of the roughly $1.08 billion that came in over the three days before.",
    "points": [
-    "At 9:30pm ET Thursday bitcoin was at $81,387, down 3.4% over 24 hours, and ether at $2,388, down 3.5%, per The Block.",
-    "Forced closures of leveraged bets: $435M in 24 hours, $385M of them bets on a rise, per CoinDesk; The Block, citing CoinGlass, puts it at $440.9M.",
-    "The Nasdaq fell 2.6% on Thursday, its worst session since June; Meta fell 6.98% and AMD 8.1%, per The Block.",
-    "In Asia on Friday the Nikkei fell 1.3% and South Korea's KOSPI 1.7%, while Brent oil touched a five-month high of $114, per Reuters via Investing.com."
+    "Net outflow of $635.49M on Thursday 22 Oct, the largest single day since June 25, per SoSoValue via crypto.news.",
+    "It ended a three-day inflow run of about $1.08B; October flows are now about $174.5M negative, per crypto.news.",
+    "By fund: BlackRock's IBIT -$254.05M, Fidelity's FBTC -$217.46M, ARK's ARKB -$109.43M, Grayscale's GBTC -$29.53M; only MSBT took in money (+$2.33M), per TokenPost citing SoSoValue.",
+    "Crypto Briefing also reports a $635M outflow, with IBIT down $254M."
    ],
    "sources": [
     {
-     "label": "CoinDesk: Bitcoin, gold trim early losses",
-     "url": "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100"
+     "label": "crypto.news: Why is bitcoin down today",
+     "url": "https://crypto.news/why-is-bitcoin-price-down-today-etf-outflows"
+    },
+    {
+     "label": "TokenPost: Bitcoin ETF flows by fund",
+     "url": "https://www.tokenpost.com/news/investing/38712"
+    },
+    {
+     "label": "Crypto Briefing: Spot bitcoin ETFs bleed $635M",
+     "url": "https://cryptobriefing.com/spot-bitcoin-etfs-635-million-outflows-october-22/"
+    }
+   ]
+  },
+  {
+   "title": "Bitcoin holds near $81,500 after Thursday's tech-stock sell-off",
+   "mood": "volatile",
+   "summary": "Bitcoin fell with tech stocks on Thursday, when the Nasdaq had its worst day since June, and has been trading between about $81,000 and $82,000 since. Traders are watching whether $80,000 holds, per The Block. Right now bitcoin is moving like a risky tech stock, so stock-market swings matter for crypto too.",
+   "points": [
+    "Bitcoin was at $81,449.88 on 23 Oct, down 0.97%, after an intraday low near $80,989, per crypto.news (read about 07:15 UTC).",
+    "The Nasdaq fell 2.60% on Thursday to 26,008.86, its biggest one-day drop since June, led by chip stocks, per KuCoin's daily report.",
+    "Forced closures of leveraged bets: about $435M in 24 hours, $385M of them bets on a rise, per CoinDesk; The Block, citing CoinGlass, puts it at $440.9M.",
+    "Laevitas told The Block bitcoin is \"trading as a high-beta tech position\", meaning it swings more than stocks in both directions."
+   ],
+   "sources": [
+    {
+     "label": "crypto.news: Why is bitcoin down today",
+     "url": "https://crypto.news/why-is-bitcoin-price-down-today-etf-outflows"
     },
     {
      "label": "The Block: Bitcoin slides with tech-stock sell-off",
      "url": "https://www.theblock.co/news/markets/2026-10-22-bitcoin-slides-tech-stock-sell-off-423990"
     },
     {
-     "label": "Reuters via Investing.com: Asian shares wobble",
-     "url": "https://www.investing.com/news/economy-news/asian-shares-wobble-as-tech-rout-boosts-bonds-dents-rate-hike-bets-4967929"
-    },
-    {
-     "label": "FXStreet: Bitcoin falls as chip stocks plunge",
-     "url": "https://fxstreet.com/cryptocurrencies/news/bitcoin-falls-4-as-chip-stocks-plunge-67-and-oil-surges-202610222333"
-    }
-   ]
-  },
-  {
-   "title": "US bitcoin funds see money leave on Thursday after a strong start to the week",
-   "mood": "bearish",
-   "summary": "US spot bitcoin ETFs, funds that hold bitcoin for stock-market investors, took in about $1.07 billion from Monday to Wednesday. On Thursday, the day of the stock sell-off, about $381 million left, according to early SoSoValue figures reported by CoinDesk. Farside, another tracker, had not yet posted Thursday's numbers when this edition was written, so the figure may change.",
-   "points": [
-    "About $381M flowed out of US spot bitcoin ETFs on Thursday, per preliminary SoSoValue data cited by CoinDesk.",
-    "Farside shows Monday +$526.7M, Tuesday +$23.2M and Wednesday +$524.8M, about $1.07B over three days.",
-    "On Wednesday BlackRock's IBIT took in $235.0M and Fidelity's FBTC $212.7M, per Farside.",
-    "Ether ETFs took in a combined $14.9M, after five straight sessions of outflows, per The Block (22 Oct)."
-   ],
-   "sources": [
-    {
      "label": "CoinDesk: Bitcoin, gold trim early losses",
      "url": "https://www.coindesk.com/markets/2026/10/23/bitcoin-gold-trim-early-losses-as-yen-gives-up-gains-oil-stays-near-usd100"
     },
     {
-     "label": "Farside: Bitcoin ETF flows",
-     "url": "https://farside.co.uk/btc/"
-    },
-    {
-     "label": "The Block: Bitcoin ETFs draw $528 million",
-     "url": "https://www.theblock.co/news/markets/2026-10-22-bitcoin-etfs-draw-528-million-as-ether-funds-snap-five-day-outflow-streak-421904"
+     "label": "KuCoin: Crypto daily market report",
+     "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-23-2026"
     }
    ]
   },
   {
    "title": "Washington: a Senate probe into Tether payments, and crypto rules shifting to agencies",
    "mood": "neutral",
-   "summary": "Sen. Richard Blumenthal sent letters to Tether and to Nxum Group, a consulting firm co-founded by Bo Hines, the former White House crypto adviser, asking about consulting payments Tether made while Hines was advising the administration. These are questions, not findings. Separately, with the CLARITY Act market-structure bill stalled in Congress, most new US crypto rules are coming from agencies, which a future administration could change.",
+   "summary": "Sen. Richard Blumenthal, the top Democrat on the Senate's Permanent Subcommittee on Investigations, wrote to Tether and to Nxum Group, a firm tied to former White House crypto adviser Bo Hines, about consulting payments. These are questions, not findings; Tether says an internal review found no wrongdoing. Separately, JPMorgan expects the CLARITY Act market-structure bill to stall this year, leaving US crypto rules to agencies.",
    "points": [
-    "The OCC's final stablecoin rule bars issuers from paying interest directly; the American Bankers Association says it ignores \"Congress's clear intent\", per The Block.",
-    "JPMorgan says the CLARITY Act is unlikely to pass this year and could return in 2027, per The Block.",
-    "JPMorgan also says the current agency actions could be overturned in as soon as two years if a Democrat wins the White House, per The Block."
+    "The letter cites reporting that over $6M went from Tether to Nxum, under a May 2025 deal paying $415,000 a month, and asks for records by Nov 3, per the Senate letter.",
+    "Bo Hines now runs Tether's US business; Tether said outside counsel \"found no evidence of wrongdoing\", per CoinDesk.",
+    "JPMorgan expects the CLARITY Act to stall this year and possibly return in 2027, per The Block.",
+    "JPMorgan warns the current agency actions could be overturned \"in as soon as two years, if a Democrat wins the White House\", per The Block."
    ],
    "sources": [
     {
-     "label": "Bloomingbit: Blumenthal letters to Tether",
-     "url": "https://en.bloomingbit.io/feed/news/122775"
+     "label": "Senate PSI: Blumenthal letter to Tether (PDF)",
+     "url": "https://www.hsgac.senate.gov/wp-content/uploads/2026-10-22-Letter-from-Sen-Blumenthal-to-Tether.pdf"
     },
     {
-     "label": "The Block: Bankers accuse OCC over stablecoin rewards rule",
-     "url": "https://www.theblock.co/news/regulation/2026-10-21-american-bankers-association-accuses-occ-undermining-congress-stablecoin-rewards-rule-421629"
+     "label": "CoinDesk: Senate investigator looks into Tether payments",
+     "url": "https://www.coindesk.com/policy/2026/10/22/senate-s-top-democratic-investigator-looking-into-tether-payments-to-bo-hines-firm"
     },
     {
      "label": "The Block: JPMorgan on crypto regulatory moves",
@@ -100,9 +101,29 @@
  ],
  "briefs": [
   {
+   "title": "HSBC launches RedCoin, its first Hong Kong dollar stablecoin",
+   "summary": "RedCoin works through HSBC's PayMe app, which has over 100,000 merchants, per The Block.",
+   "url": "https://www.theblock.co/news/business/2026-10-23-hsbc-hkd-stablecoin-redcoin-424018"
+  },
+  {
+   "title": "SEC lists three firms planning tokenized-stock platforms",
+   "summary": "TSV LLC, OKXICE TSV and Kephas Corp filed notices under the SEC's Innovation Exemption. The SEC says a notice does not mean a platform is approved to operate.",
+   "url": "https://www.cryptotimes.io/2026/10/22/sec-lists-three-firms-planning-tokenized-stock-platforms/"
+  },
+  {
+   "title": "India's CoinDCX admits a wallet failure after about $16M in USDT was drained",
+   "summary": "About 15.99M USDT was moved on 21 Oct. The exchange says it credited customers and absorbed the losses.",
+   "url": "https://cryptoadventure.com/coindcx-admits-sweeping-failure-after-16-million-crypto-theft-allegations/"
+  },
+  {
    "title": "SoFi launches an FDIC-insured tokenized deposit paying 4.4%",
-   "summary": "SoFi's SOFIE is worth $1 and converts 1:1 into its SoFiUSD stablecoin around the clock; SoFiUSD itself is not FDIC-insured. Rollout finishes in November.",
+   "summary": "SoFi's SOFIE converts 1:1 into its SoFiUSD stablecoin; SoFiUSD itself is not FDIC-insured. Rollout finishes in November.",
    "url": "https://www.theblock.co/news/business/2026-10-22-sofi-fdic-insured-tokenized-deposit-421916"
+  },
+  {
+   "title": "Crypto industry group urges Congress to pass crypto tax rules",
+   "summary": "The Blockchain Association wrote to Senate and House leaders; no vote is expected until after the November elections.",
+   "url": "https://www.theblock.co/news/regulation/2026-10-22-blockchain-association-pushes-crypto-tax-clarity-broader-bill-stalls-423475"
   },
   {
    "title": "Fireblocks denies a $2.5B Visa takeover report",
@@ -110,18 +131,8 @@
    "url": "https://www.theblock.co/news/deals/2026-10-22-visa-in-talks-acquire-crypto-custody-firm-fireblocks-around-2-5-billion-axios-421926"
   },
   {
-   "title": "White House highlights a crackdown on overseas crypto scams",
-   "summary": "Officials cited about $833M in scam-linked crypto halted, 503 fake crypto websites seized and almost 9,000 US victims notified.",
-   "url": "https://www.coindesk.com/policy/2026/10/21/trump-to-throw-spotlight-on-overseas-crypto-abuses-in-white-house-event"
-  },
-  {
-   "title": "Chainlink partners with LG CNS on Korean won stablecoins",
-   "summary": "LG CNS will add Chainlink's tools to its digital-asset platform for Korean institutions. Korea does not yet have a legal basis for won stablecoins.",
-   "url": "https://www.theblock.co/news/business/2026-10-22-chainlink-partners-with-lg-cns-423993"
-  },
-  {
-   "title": "Coinbase Ireland fined about $3.6M",
-   "summary": "The Central Bank of Ireland fined it over failures to keep customer funds separate and to oversee the business properly.",
+   "title": "Coinbase Ireland fined €3.25M (about $3.6M)",
+   "summary": "The Central Bank of Ireland fined it over customer-fund safeguarding failures; Coinbase says no customers lost money.",
    "url": "https://www.theblock.co/news/regulation/2026-10-22-coinbase-ireland-fined-3-6-million-over-customer-fund-segregation-oversight-failures-421943"
   }
  ],
@@ -132,15 +143,15 @@
    "event": "S&P Global flash PMIs (Oct)",
    "impact": "volatile",
    "key": false,
-   "note": "Consensus: manufacturing 55.5 (prior 55.9), services 58.0 (prior 58.8), per Econoday and Trading Economics."
+   "note": "Consensus: manufacturing 55.5 (prior 55.9), services 57.9 (prior 58.8), per TD Economics."
   },
   {
-   "et": "Fri 23 · 10:00am",
-   "bkk": "Fri 23 · 21:00",
+   "et": "Fri 23",
+   "bkk": "Fri 23 – Sat 24",
    "event": "UMich consumer sentiment, final (Oct)",
    "impact": "neutral",
    "key": false,
-   "note": "Consensus 46.3, prior 48.1; 1-year inflation expectations consensus 4.7%, per Trading Economics."
+   "note": "The preliminary October reading was 46.3, down from 48.1 in September, with 1-year inflation expectations at 4.7%."
   },
   {
    "et": "Fri 23 – Mon 26",
@@ -156,15 +167,15 @@
    "event": "Brazil presidential runoff",
    "impact": "neutral",
    "key": false,
-   "note": "Lula vs Flávio Bolsonaro. Polls show it within the margin of error, per Al Jazeera."
+   "note": "Lula vs Flávio Bolsonaro. Recent polls are close: CNT/MDA 46.8% Bolsonaro, 45.9% Lula, per Al Jazeera."
   },
   {
-   "et": "Tue 27 · 8:30am",
-   "bkk": "Tue 27 · 19:30",
+   "et": "Tue 27",
+   "bkk": "Tue 27 – Wed 28",
    "event": "US durable goods orders (Sep)",
    "impact": "neutral",
    "key": false,
-   "note": "Forecasts disagree: Trading Economics +0.6%, Continuum Economics +3.5%. Consumer confidence (prior 81.9) and new home sales (consensus 660,000, prior 684,000) follow at 10:00am ET. Robinhood reports after the close."
+   "note": "Continuum Economics expects +3.5%. Consumer confidence (prior 81.9) and new home sales (consensus 660,000, prior 684,000) are also due Tuesday. Robinhood reports after the close."
   },
   {
    "et": "Wed 28 · 2:00pm",
@@ -172,7 +183,7 @@
    "event": "Fed rate decision",
    "impact": "volatile",
    "key": true,
-   "note": "Range 3.75-4.00%. In a Reuters poll, 94 of 100 economists expect a hold. Press conference 2:30pm ET (01:30 Bangkok). Microsoft and Alphabet report after the close."
+   "note": "Range 3.75-4.00% after a hike in September. In a Reuters poll, 94 of 100 economists expect a hold now and all 100 expect a hike in December. Press conference 2:30pm ET (01:30 Bangkok). Microsoft and Alphabet report after the close."
   },
   {
    "et": "Thu 29 · 8:30am",
@@ -180,15 +191,15 @@
    "event": "US Q3 GDP (advance) and September PCE inflation",
    "impact": "volatile",
    "key": true,
-   "note": "Priors: Q2 GDP 2.2%; core PCE 3.0% y/y. Core PCE forecast 3.1% y/y per Trading Economics. GDP forecasts differ: Trading Economics 3.1%, Atlanta Fed GDPNow 3.5%, Continuum Economics 2.8%."
+   "note": "Priors: Q2 GDP 2.2%; core PCE 3.0% y/y. GDP forecasts differ: Trading Economics consensus 3.0%, Atlanta Fed GDPNow 3.5%, Continuum Economics 2.8%."
   },
   {
-   "et": "Thu 29 · 9:15am",
-   "bkk": "Thu 29 · 20:15",
+   "et": "Thu 29",
+   "bkk": "Thu 29 – Fri 30",
    "event": "ECB rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Deposit rate 2.50%; 70 of 73 economists in a Reuters poll expect a hold. Press conference 9:45am ET."
+   "note": "Deposit rate 2.50%; 70 of 73 economists in a Reuters poll expect a hold."
   },
   {
    "et": "Thu 29 · after close",
@@ -199,20 +210,20 @@
    "note": "Calls and webinar at 5:00pm ET (04:00 Bangkok Friday)."
   },
   {
-   "et": "Thu 29 · ~11:00pm",
-   "bkk": "Fri 30 · ~10:00",
+   "et": "Thu 29 – Fri 30",
+   "bkk": "Thu 29 – Fri 30",
    "event": "Bank of Japan rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Rate 1.25%; a hold is expected. The BoJ sets no fixed release time."
+   "note": "Rate 1.25%; the two-day meeting ends with the BoJ's Outlook Report."
   },
   {
    "et": "Fri 30 · 4:00am",
    "bkk": "Fri 30 · 15:00",
-   "event": "Monthly bitcoin and ether options expiry (Deribit)",
+   "event": "Monthly bitcoin options expiry (Deribit)",
    "impact": "volatile",
    "key": true,
-   "note": "Bitcoin open interest about $11.1B and ether about $0.74B as of 22 Oct, per PerpFinder. Max pain $79,000 per CryptoTicker (17 Oct); max pain is not a price target."
+   "note": "About 149,686 BTC (about $12.2B) of options, max pain $79,000, per CryptoTicker (17 Oct). Max pain is not a price target."
   },
   {
    "et": "Fri 30 · 8:30am",
@@ -220,15 +231,15 @@
    "event": "US Employment Cost Index (Q3)",
    "impact": "neutral",
    "key": false,
-   "note": "Forecast 0.8%, prior 0.9%, per Trading Economics. Chicago PMI follows at 9:45am ET."
+   "note": "Consensus 0.8%, prior 0.9%, per Trading Economics. Chicago PMI (prior 58.8) is also due Friday."
   }
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-10-23T04:25:54Z",
-  "claimsChecked": 135,
-  "claimsRemoved": 8,
-  "rounds": 3,
+  "checkedAt": "2026-10-23T08:19:18Z",
+  "claimsChecked": 153,
+  "claimsRemoved": 16,
+  "rounds": 2,
   "method": "Independent source check: every claim re-opened at its cited URL"
  }
 }
