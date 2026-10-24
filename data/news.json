@@ -1,140 +1,133 @@
 {
  "date": "2026-10-24",
- "updated": "2026-10-24T04:29:01Z",
- "headline": "Bitcoin slipped about 1% into the weekend after US stocks fell and oil jumped; next week brings the Fed decision, US growth and inflation data, and Coinbase earnings.",
+ "updated": "2026-10-24T08:11:44Z",
+ "headline": "Bitcoin ETFs lost money for a second straight day on Friday and bitcoin sits just below its 50-day average, with the Fed decision, US growth and inflation data and Coinbase earnings all due next week.",
  "market": {
-  "asOf": "BTC read about 04:30 UTC Sat 24 Oct (11:30 Bangkok) from CoinGecko's bitcoin page. ETH, SOL and the Fear & Greed index could not be read this run. Live prices are at the top of the page.",
+  "asOf": "Snapshot from news reports, not a live feed: BTC $80,806 on Saturday morning 24 Oct per CryptoTicker; ETH about $2,380 per Crypto.com's weekend update; SOL about $102, down 2%, per CaptainAltcoin (about 06:00 UTC, 13:00 Bangkok). Price pages and the Fear & Greed index could not be read this run. Live prices are at the top of the page.",
   "btc": {
-   "price": 80806.46,
-   "chg24h": -1.3
+   "price": 80806,
+   "chg24h": null
   },
   "eth": {
-   "price": null,
+   "price": 2380,
    "chg24h": null
   },
   "sol": {
-   "price": null,
-   "chg24h": null
+   "price": 102,
+   "chg24h": -2.0
   },
   "fearGreed": "Not read this run."
  },
  "stories": [
   {
-   "title": "Bitcoin slips about 1% as US stocks fall and oil jumps",
-   "mood": "neutral",
-   "summary": "Bitcoin drifted a little lower into the weekend after US stocks fell on Friday and oil rose sharply. Expensive oil and higher bond yields make risky assets less attractive, so next week's Fed meeting is the next big test.",
-   "points": [
-    "Bitcoin was $80,806 on CoinGecko at about 04:30 UTC Saturday (11:30 Bangkok), down 1.3% over 24 hours.",
-    "At Friday's close the Dow fell 1.23% to 52,215.16, the S&P 500 0.52% to 7,623.68 and the Nasdaq 0.21% to 25,955.34, per Yahoo Finance.",
-    "Brent crude rose 3.14% to settle at $116.72, per Sharecast, which tied the move to reports that the US and Israel were drawing up plans for renewed attacks on Iran.",
-    "Sources differ on the 10-year Treasury yield: Sharecast says 4.999%, Yahoo Finance says 4.988%.",
-    "The S&P 500 and Nasdaq fell for a second straight week, while the Dow ended the week higher, per Yahoo Finance."
-   ],
-   "sources": [
-    {
-     "label": "CoinGecko: Bitcoin",
-     "url": "https://www.coingecko.com/en/coins/bitcoin"
-    },
-    {
-     "label": "Yahoo Finance: Stock market today, 23 Oct",
-     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html"
-    },
-    {
-     "label": "Sharecast: US close, 23 Oct",
-     "url": "https://www.sharecast.com/news/market-report-us-close/us-close-stocks-sharply-lower-as-ai-jitters-deepen-oil-prices-surge--23918734.html"
-    },
-    {
-     "label": "CoinDesk: Live updates, 23 Oct",
-     "url": "https://www.coindesk.com/markets/2026/10/23/live-updates-bitcoin-holds-above-usd81-000-as-the-ai-rout-fades-and-oil-climbs"
-    }
-   ]
-  },
-  {
-   "title": "Bitcoin ETFs post their biggest one-day outflow since June; Friday's figures are still pending",
+   "title": "Bitcoin ETFs lose money for a second straight day",
    "mood": "bearish",
-   "summary": "US spot bitcoin ETFs, funds that hold bitcoin for stock-market investors, saw $635.6 million leave on Thursday 22 Oct, more than wiping out Wednesday's inflow. Friday's flow figures had not been published when this edition was written.",
+   "summary": "US spot bitcoin ETFs, funds that hold bitcoin for stock-market investors, saw another $137.9 million leave on Friday 23 Oct after a $635.6 million outflow on Thursday. Earlier inflows mean the week as a whole still ended slightly positive.",
    "points": [
-    "Net outflow of $635.6M on Thursday, the largest daily outflow since June, per The Block.",
-    "By fund on Thursday: BlackRock's IBIT -$254.1M, Fidelity's FBTC -$217.5M, ARK's ARKB -$109.4M; Morgan Stanley's MSBT took in $2.3M, per The Block.",
-    "The week through Thursday is still about +$442.7M net, per The Block.",
-    "October to date is now about -$174.5M after Thursday, per TFTC's flow table.",
-    "Spot ether ETFs lost $110.6M on Thursday, per The Block."
+    "Friday's net outflow was $137.94M, led by BlackRock's IBIT (-$110.34M) and Fidelity's FBTC (-$31.78M); Morgan Stanley's MSBT took in $4.19M, per SoSoValue data reported by Bloomingbit.",
+    "Thursday's $635.6M outflow was the largest daily outflow since June, per The Block.",
+    "Before Thursday the week had inflows of $526.7M on Monday, $23.2M on Tuesday and $528.4M on Wednesday, per The Block.",
+    "The full week ended about +$301M net, per SoSoValue figures cited by Crypto.com.",
+    "Spot ether ETFs took in $4.35M on Friday after losing $110.5M on Thursday, per Bloomingbit."
    ],
    "sources": [
+    {
+     "label": "Bloomingbit: Bitcoin ETF flows, 23 Oct",
+     "url": "https://en.bloomingbit.io/feed/news/122854"
+    },
+    {
+     "label": "Bloomingbit: Ether ETF flows, 23 Oct",
+     "url": "https://en.bloomingbit.io/feed/news/122855"
+    },
     {
      "label": "The Block: Bitcoin ETFs swing back to net outflows",
      "url": "https://www.theblock.co/news/markets/2026-10-23-bitcoin-etfs-swing-back-to-net-outflows-erase-previous-day-inflows-426483"
     },
     {
-     "label": "TFTC: Bitcoin ETF flows, October 2026",
-     "url": "https://www.tftc.io/bitcoin-etf-flows/october-2026"
-    },
-    {
-     "label": "Cointelegraph: Bitcoin ETFs erase October gains",
-     "url": "https://cointelegraph.com/markets/bitcoin-etfs-erase-october-gains-outflow"
+     "label": "Crypto.com: Weekend market update, 24 Oct",
+     "url": "https://crypto.com/en/market-updates/fed-meeting-bitcoin-oct-24-weekender"
     }
    ]
   },
   {
-   "title": "Senator asks Tether for records on payments to a firm co-founded by ex-White House crypto adviser Bo Hines",
-   "mood": "neutral",
-   "summary": "Sen. Richard Blumenthal wrote to Tether and to Nxum, the consulting firm linked to Bo Hines, asking for records of their dealings. The figures in his letter come from Wall Street Journal reporting and are allegations, not findings.",
+   "title": "Bitcoin sits below its 50-day average for a second day ahead of the Fed",
+   "mood": "volatile",
+   "summary": "Bitcoin has slipped under its 50-day moving average, a widely watched trend line, after staying above it for more than two months. Oil near six-month highs keeps worries about inflation and higher interest rates alive before Wednesday's Fed decision.",
    "points": [
-    "Tether agreed in May 2025 to pay Nxum $415,000 a month, according to the senator's release citing the Wall Street Journal.",
-    "More than $6M reportedly flowed to Nxum, per the release.",
-    "Records are due by 6 Nov 2026, per the release."
+    "Bitcoin was $80,806 against a 50-day average of $81,807 on Saturday morning, a second straight day below that line after 66 straight days above it, per CryptoTicker.",
+    "The 24-hour range was $80,455 to $81,939, per CryptoTicker.",
+    "Brent crude is at $116.72, a six-month high, and the 10-year US Treasury yield is about 4.99%, per Crypto.com.",
+    "More than $470M of leveraged crypto trades were liquidated in 24 hours, per Crypto.com.",
+    "The Fed holds rates at 3.75-4.00% after a September hike; 94 of 100 economists in a Reuters poll expect a hold on Wednesday, per Crypto.com."
    ],
    "sources": [
     {
-     "label": "Sen. Blumenthal: press release",
-     "url": "https://www.blumenthal.senate.gov/newsroom/press/release/blumenthal-investigates-tethers-multimillion-dollar-payment-to-consulting-firm-owned-by-white-house-official-who-previously-led-crypto-policy"
+     "label": "CryptoTicker: Bitcoin vs 50-day average, 24 Oct",
+     "url": "https://cryptoticker.io/en/bitcoin-price-50-day-moving-average-24-october-2026/"
     },
     {
-     "label": "Decrypt: Senate Democrat probes Tether payments",
-     "url": "https://decrypt.co/381755/senate-democrat-tether-payments-ex-white-house-crypto-adviser"
+     "label": "Crypto.com: Weekend market update, 24 Oct",
+     "url": "https://crypto.com/en/market-updates/fed-meeting-bitcoin-oct-24-weekender"
     },
     {
-     "label": "Cointelegraph: Senator probes Bo Hines-Tether deal",
-     "url": "https://cointelegraph.com/news/us-senator-probe-bo-hines-trump-crypto-adviser-tether-deal"
+     "label": "CaptainAltcoin: Why is crypto down today, 24 Oct",
+     "url": "https://captainaltcoin.com/why-is-the-crypto-market-down-today-october-24/"
+    }
+   ]
+  },
+  {
+   "title": "Phantom wallet starts offering Kalshi prediction markets to US users",
+   "mood": "neutral",
+   "summary": "Phantom, a popular self-custody crypto wallet, began rolling out Kalshi's regulated event contracts to US users on Friday. Users must verify their identity with Kalshi, and some categories are blocked in certain states.",
+   "points": [
+    "Access is rolling out gradually over the coming weeks; trades are funded with Phantom's CASH stablecoin, per The Block.",
+    "The fee is $0.02 per contract plus a network fee, per The Block.",
+    "Kalshi has handled more than $291B of volume this year, per The Block.",
+    "Sports contracts are blocked in Michigan; Nevada also blocks elections, politics and entertainment, per The Block."
+   ],
+   "sources": [
+    {
+     "label": "The Block: Phantom rolls out Kalshi prediction markets",
+     "url": "https://www.theblock.co/news/markets/2026-10-23-phantom-rolls-out-kalshi-prediction-markets-us-421652"
     }
    ]
   }
  ],
  "briefs": [
   {
-   "title": "More companies object to tokenized versions of their stock on OKX and ICE's platform",
-   "summary": "Objections have reached 22 of the 62 proposed companies, with Wells Fargo, Arm and Intuit among the latest, per Reuters via Cointelegraph.",
-   "url": "https://cointelegraph.com/news/nasdaq-companies-object-tokenized-stock-listings-okx-ice"
+   "title": "US bank regulator publishes its final stablecoin rule",
+   "summary": "The OCC's rule implementing the GENIUS Act, covering reserves, redemption, custody and licensing, appeared in the Federal Register on 23 Oct and takes effect 18 Jan 2027.",
+   "url": "https://federalregister.gov/documents/2026/10/23/2026-21706/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the"
   },
   {
-   "title": "IRS reportedly plans lower penalties for voluntary disclosures, crypto included",
-   "summary": "Forbes reports a revamped program launching before December with a 120-day target to resolve cases; there is no formal IRS release yet, per Cointelegraph.",
-   "url": "https://cointelegraph.com/news/irs-plans-lower-penalties-for-crypto-tax-disclosures-forbes-reports"
+   "title": "Tether says it found no wrongdoing as a senator seeks records on payments to Bo Hines' firm",
+   "summary": "Sen. Blumenthal is asking about roughly $6.3M paid to Nxum; Tether says an external-counsel review found no evidence of wrongdoing, per FinanceFeeds.",
+   "url": "https://financefeeds.com/tether-senate-records-demand-bo-hines-nxum/"
   },
   {
-   "title": "SEC adds tokenized securities to its 2027 exam priorities",
-   "summary": "Tokenization is flagged as a focus area, while crypto again has no standalone exam category, per Cointelegraph.",
-   "url": "https://cointelegraph.com/news/sec-adds-tokenized-securities-to-2027-examination-priorities"
-  },
-  {
-   "title": "Initia halts its network after an exploit",
-   "summary": "An attacker reportedly minted unbacked tokens; one researcher first put the loss at more than $2.6M and D2 Finance valued the attacker's wallet at about $2.73M. Initia has not confirmed the loss, per Cointelegraph.",
+   "title": "Initia's network is still halted after an exploit",
+   "summary": "The attacker minted 2M unbacked AUSD and holds about 1,135.5 ETH (about $2.73M); no restart or confirmed loss figure had been announced, per Cointelegraph.",
    "url": "https://cointelegraph.com/news/initia-halts-blockchain-exploit-drained"
   },
   {
-   "title": "HSBC launches a Hong Kong dollar stablecoin for PayMe users",
-   "summary": "RedCoin (RCHKD) is offered to more than 3.3 million users of HSBC's PayMe app, per Cointelegraph.",
-   "url": "https://cointelegraph.com/news/hsbc-launches-redcoin-hong-kong-dollar-stablecoin-payme"
+   "title": "New York seeks $1.37B from NovaTech founders",
+   "summary": "The state attorney general wants $1.13B in disgorgement plus $232.5M in interest over an alleged pyramid scheme that took in $1.16B of crypto deposits, per The Block.",
+   "url": "https://www.theblock.co/news/regulation/2026-10-23-new-york-seeks-over-1-3-billion-from-novatech-founders-after-couple-fled-the-us-424453"
   },
   {
-   "title": "Bitcoin Core will patch easy-to-find bugs right away",
-   "summary": "Bugs that are easy to discover, for example with AI tools, will be fixed immediately instead of waiting out the usual disclosure delay, per Cointelegraph.",
-   "url": "https://cointelegraph.com/news/bitcoin-core-changes-security-policy-as-ai-makes-bugs-easier-to-find"
+   "title": "Kraken withdraws questionnaires sent to Monero users",
+   "summary": "Co-CEO Arjun Sethi apologized for emails asking XMR customers about their employer and planned use of funds, calling them an internal mistake, per Crypto Adventure.",
+   "url": "https://cryptoadventure.com/kraken-apologizes-and-withdraws-intrusive-monero-withdrawal-questions/"
   },
   {
-   "title": "China targets a national blockchain network by 2030",
-   "summary": "A plan published Friday by the Central Cyberspace Affairs Commission aims to largely complete the network by 2030, per Cointelegraph.",
-   "url": "https://cointelegraph.com/news/china-2030-national-blockchain-network-buildout"
+   "title": "Netanyahu orders a blockchain plan for Israel",
+   "summary": "The plan is meant to help the economy withstand possible sanctions and banking restrictions; no chain or timeline was given, per The Block.",
+   "url": "https://www.theblock.co/news/markets/2026-10-23-netanyahu-israel-blockchain-plan-possible-sanctions-427792"
+  },
+  {
+   "title": "Bitcoin miner Bitdeer sold all the bitcoin it mined last week",
+   "summary": "Bitdeer sold all 283.4 BTC mined in the week to 23 Oct and holds no bitcoin on its balance sheet, per PANews via Phemex.",
+   "url": "https://phemex.com/news/article/bitdeer-sells-2834-btc-maintains-zero-bitcoin-holdings-100877"
   }
  ],
  "calendar": [
@@ -152,7 +145,7 @@
    "event": "Brazil presidential runoff (polls close)",
    "impact": "neutral",
    "key": false,
-   "note": "Flávio Bolsonaro vs Lula. The Rio Times' average of polls has Bolsonaro 50.9, Lula 49.1."
+   "note": "Flávio Bolsonaro vs Lula. The Rio Times' poll average has Bolsonaro 50.9, Lula 49.1; the latest Datafolha poll has them tied 50-50 on valid votes."
   },
   {
    "et": "Tue 27 · 8:30am",
@@ -160,11 +153,11 @@
    "event": "US durable goods orders (Sep)",
    "impact": "neutral",
    "key": false,
-   "note": "Prior 0.0%. Also due Tuesday: consumer confidence (prior 81.9) and new home sales (prior 684,000). Robinhood reports after the close, call 5:00pm ET (04:00 Wed Bangkok)."
+   "note": "Prior 0.0%. At 10:00am ET (21:00 Bangkok): consumer confidence (prior 81.9) and new home sales (prior 684,000). Robinhood reports after the close, call 5:00pm ET (04:00 Wed Bangkok)."
   },
   {
-   "et": "Wed 28",
-   "bkk": "Wed 28",
+   "et": "Wed 28 · 9:45am",
+   "bkk": "Wed 28 · 20:45",
    "event": "Bank of Canada rate decision",
    "impact": "neutral",
    "key": false,
@@ -176,7 +169,7 @@
    "event": "Fed rate decision",
    "impact": "volatile",
    "key": true,
-   "note": "Range 3.75-4.00%. In a Reuters poll, 94 of 100 economists expect a hold and all 100 expect a hike in December. Alphabet (call 4:30pm ET) and Microsoft (call 5:30pm ET) report after the close. Next Fed decision: Wed 9 Dec, 2:00pm ET (Thu 10 Dec 02:00 Bangkok)."
+   "note": "Range 3.75-4.00%. In a Reuters poll, 94 of 100 economists expect a hold and all 100 expect a hike in December. Press conference 2:30pm ET. Alphabet (call 4:30pm ET) and Microsoft (call 5:30pm ET) report after the close. Next Fed decision: Wed 9 Dec, 2:00pm ET (Thu 10 Dec 02:00 Bangkok)."
   },
   {
    "et": "Thu 29 · 8:30am",
@@ -192,7 +185,7 @@
    "event": "ECB rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Deposit rate 2.50%. Newsquawk and FXStreet expect a hold."
+   "note": "Deposit rate 2.50%. In a Reuters poll, 70 of 73 economists expect a hold. Press conference 9:45am ET."
   },
   {
    "et": "Thu 29 · after close",
@@ -208,7 +201,7 @@
    "event": "Bank of Japan rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Decision due Friday 30 Oct, Tokyo time; no fixed release time. A hold at 1.25% is expected, per Newsquawk."
+   "note": "No fixed release time. A hold at 1.25% is expected; Governor Ueda's press conference is around 13:30 Bangkok."
   },
   {
    "et": "Fri 30 · 4:00am",
@@ -216,15 +209,15 @@
    "event": "Monthly bitcoin options expiry (Deribit)",
    "impact": "volatile",
    "key": true,
-   "note": "Sources differ: CryptoTicker (17 Oct) says about $12.2B with max pain $79,000; CryptoQuant says $11.1B with max pain $78,000. Max pain is not a price target."
+   "note": "Sources differ on size: FXStreet (22 Oct) about $11.2B; CryptoTicker (17 Oct) about $12.2B with max pain $79,000. Max pain is not a price target."
   },
   {
-   "et": "Fri 30",
-   "bkk": "Fri 30",
-   "event": "Chicago PMI (Oct)",
+   "et": "Fri 30 · 8:30am",
+   "bkk": "Fri 30 · 19:30",
+   "event": "US Employment Cost Index (Q3), then Chicago PMI at 9:45am",
    "impact": "neutral",
    "key": false,
-   "note": "Prior 58.8. The Fed's quiet period ends 29 Oct, per the St. Louis Fed, so Fed officials can speak again from Friday."
+   "note": "ECI rose 0.9% in Q2."
   },
   {
    "et": "Fri 30 – Sat 31",
@@ -237,8 +230,8 @@
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-10-24T04:29:01Z",
-  "claimsChecked": 133,
+  "checkedAt": "2026-10-24T08:11:44Z",
+  "claimsChecked": 137,
   "claimsRemoved": 9,
   "rounds": 2,
   "method": "Independent source check: every claim re-opened at its cited URL"
