@@ -1,133 +1,121 @@
 {
- "date": "2026-10-24",
- "updated": "2026-10-24T16:03:00Z",
- "headline": "Bitcoin slipped below $80,000 on Saturday to a nine-day low, with the Fed's rate decision due on Wednesday.",
+ "date": "2026-10-25",
+ "updated": "2026-10-24T20:19:27Z",
+ "headline": "Bitcoin briefly fell to about $79,100 on Saturday as worries about a possible US strike on Iran forced out more than $800 million of leveraged bets, then climbed back above $80,000.",
  "market": {
-  "asOf": "Read from CoinGecko coin pages at about 16:00 UTC (23:00 Bangkok) on Sat 24 Oct. Fear & Greed is Alternative.me's 'Now' value. Live prices are at the top of the page.",
+  "asOf": "Read from The Block's market report at about 1:00pm ET (17:00 UTC) on Sat 24 Oct; this run could not open CoinGecko, so Solana and Fear & Greed are not shown. Live prices are at the top of the page.",
   "btc": {
-   "price": 79575,
-   "chg24h": -2.4
+   "price": 80138,
+   "chg24h": -1.9
   },
   "eth": {
-   "price": 2302,
-   "chg24h": -4.3
+   "price": 2314,
+   "chg24h": -3.8
   },
   "sol": {
-   "price": 99.6,
-   "chg24h": -4.8
+   "price": null,
+   "chg24h": null
   },
-  "fearGreed": "50, Neutral (Alternative.me Crypto Fear & Greed Index, now); yesterday 68, Greed"
+  "fearGreed": "Not available this run (source could not be opened)"
  },
  "stories": [
   {
-   "title": "Bitcoin dips below $80,000 as US cuts Middle East embassy staff",
-   "mood": "bearish",
-   "summary": "Bitcoin fell under $80,000 on Saturday to a nine-day low. Phemex News links the slide to reported US evacuations of personnel from Middle East embassies and military bases amid Iran threats. The fall forced many leveraged traders out of their bets.",
+   "title": "Bitcoin dips to about $79,100, then gets back above $80,000",
+   "mood": "volatile",
+   "summary": "Bitcoin fell below $80,000 again on Saturday, touching about $79,146, before recovering above $80,000 by the afternoon in the US. The drop forced hundreds of millions of dollars of borrowed-money bets on rising prices to close. It came as tension between the US and Iran grew over the weekend.",
    "points": [
-    "Bitcoin fell to a nine-day low of about $79,750, per CryptoPotato.",
-    "About $670M of leveraged positions were liquidated (forcibly closed) over 24 hours, per CoinGlass data cited by CryptoPotato.",
-    "US embassies in Jordan, Lebanon, Qatar and the UAE reduced staff, and non-essential staff were ordered out of Saudi Arabia, per AP.",
-    "Ether and Solana fell harder: CoinGecko showed ETH down 4.3% and SOL down 4.8% over 24 hours at about 16:00 UTC.",
-    "The Fed decides on Wed 28 Oct at 2:00pm ET with rates at 3.75-4.00%; 94 of 100 economists in a Reuters poll expect a hold."
+    "Bitcoin.com reports a low of about $79,146 on Saturday and a recovery above $80,000 by 2:30pm ET.",
+    "In the four hours to 1pm ET, $436.44M of leveraged positions were liquidated (forcibly closed), $404.15M of them bets on rising prices, per CoinGlass data cited by The Block. The 24-hour total was $815.26M.",
+    "Arthur Hayes said he closed out the directional trading book at his family office Maelstrom, citing macro and geopolitical risk, per The Block.",
+    "US Ambassador to Turkey Tom Barrack said a strike on Iran could come \"this weekend\", per CBS News; Brent crude is about $117, its highest since April, per Al Jazeera.",
+    "The Fed decides on Wed 28 Oct at 2:00pm ET with rates at 3.75-4.00%."
    ],
    "sources": [
     {
-     "label": "CryptoPotato: Bitcoin dumps below $80K as liquidations surge",
-     "url": "https://cryptopotato.com/bitcoin-price-suddenly-dumps-below-80k-as-liquidations-surge-to-670m/"
+     "label": "The Block: Crypto longs lose $404M in four hours as bitcoin slips below $80,000",
+     "url": "https://www.theblock.co/news/markets/2026-10-24-crypto-longs-lose-404-million-in-four-hours-as-bitcoin-briefly-slips-below-80000-431608"
     },
     {
-     "label": "Phemex News: Bitcoin slides below $80,000 as US evacuates Middle East personnel",
-     "url": "https://phemex.com/news/article/bitcoin-slides-below-80000-as-us-evacuates-middle-east-personnel-amid-iran-threats-100922"
+     "label": "Bitcoin.com: Bitcoin sinks to $79,146 as liquidations rock weekend trading",
+     "url": "https://news.bitcoin.com/market-updates/bitcoin-price-sinks-to-79146-as-liquidations-rock-weekend-trading/"
     },
     {
-     "label": "AP via ABC News: US reducing staffing at 4 Middle East embassies",
-     "url": "https://abcnews.com/US/wireStory/us-reducing-staffing-4-middle-east-embassies-increased-137529709"
+     "label": "CBS News: Iran live updates",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-oil-gas-prices-strait-of-hormuz-midterms/"
     },
     {
-     "label": "Hoodline: Fed set to hold rates in October, Reuters poll",
-     "url": "https://hoodline.com/2026/10/fed-set-to-hold-rates-steady-in-october-then-hike-again-in-december/"
+     "label": "Al Jazeera: Iran says it won't allow US warships to get close",
+     "url": "https://www.aljazeera.com/news/2026/10/24/iran-says-wont-allow-us-warships-to-get-close-as-trump-ponders-new-attacks"
     }
    ]
   },
   {
-   "title": "Bitcoin ETFs lose money for a second straight day",
+   "title": "Bitcoin ETFs lost money two days running, but the week still ended up",
    "mood": "bearish",
-   "summary": "US spot bitcoin ETFs, funds that hold bitcoin for stock-market investors, saw another $137.9 million leave on Friday 23 Oct after a $635.6 million outflow on Thursday. Strong buying earlier in the week means the week as a whole still ended slightly positive.",
+   "summary": "US spot bitcoin ETFs, funds that hold bitcoin for stock-market investors, saw money leave on Thursday and Friday. Strong buying earlier in the week means the week as a whole still ended with more money in than out. ETFs do not trade at weekends, so the next figures come after Monday's session.",
    "points": [
-    "Friday's net outflow was $137.9M, led by BlackRock's IBIT (-$110.3M) and Fidelity's FBTC (-$31.8M), per Farside Investors.",
-    "Thursday's $635.6M outflow was the largest daily outflow since June, per The Block. IBIT lost $254.1M, FBTC $217.5M and Ark's ARKB $109.4M that day, per Farside Investors.",
-    "Before Thursday the week had inflows of $526.7M on Monday, $23.2M on Tuesday and $524.8M on Wednesday, per Farside Investors.",
-    "Farside's five daily figures add up to about +$301M for the week."
+    "Friday 23 Oct: -$137.94M, led by BlackRock's IBIT (-$110.34M) and Fidelity's FBTC (-$31.78M), per SoSoValue data cited by The Block.",
+    "Thursday 22 Oct: -$635.49M, per SoSoValue via The Block.",
+    "The week still ended at a net +$304.73M, and total bitcoin ETF assets are $104.43B, per The Block.",
+    "Ether ETFs took in $4.35M on Friday but lost $220.60M over the week, per The Block."
    ],
    "sources": [
+    {
+     "label": "The Block: Crypto longs lose $404M in four hours (ETF section)",
+     "url": "https://www.theblock.co/news/markets/2026-10-24-crypto-longs-lose-404-million-in-four-hours-as-bitcoin-briefly-slips-below-80000-431608"
+    },
     {
      "label": "The Block: Bitcoin ETFs swing back to net outflows",
      "url": "https://www.theblock.co/news/markets/2026-10-23-bitcoin-etfs-swing-back-to-net-outflows-erase-previous-day-inflows-426483"
-    },
-    {
-     "label": "Farside Investors: Bitcoin ETF flows",
-     "url": "https://farside.co.uk/btc/"
     }
    ]
   },
   {
-   "title": "Circle shareholder sues Trump over UAE-linked crypto deals",
+   "title": "Electrum bitcoin wallet users told to upgrade to version 4.8.3 now",
    "mood": "neutral",
-   "summary": "A Circle shareholder has filed a lawsuit in federal court in Washington claiming that UAE-linked payments to Trump-family crypto ventures broke the Constitution's ban on officials taking foreign payments, and steered business away from Circle's USDC stablecoin. These are allegations; no court has ruled.",
+   "summary": "The team behind Electrum, a popular bitcoin wallet, has fixed a flaw that let a malicious server swap a payment in a user's history for a fake one. If the user then raised the fee on it, the wallet could sign a payment to the attacker.",
    "points": [
-    "The suit was filed on 22 Oct by J. Benjamin Greenberg, a former Circle employee who holds 10,000 shares, per CryptoSlate.",
-    "It alleges a vehicle tied to Sheikh Tahnoon paid $500M for 49% of World Liberty Financial, per CryptoSlate.",
-    "It says MGX's $2B Binance investment was settled in World Liberty's USD1 stablecoin, costing Circle $70M-82M a year in potential revenue, per CryptoSlate.",
-    "Binance and World Liberty deny the claims, per CryptoSlate."
+    "Versions before 4.8.3 are affected; users connected only to servers they trust are not, per Cryptonomist.",
+    "Developers had two user reports, one with real losses; in both, the attacker's address matched the last four characters of the intended one, per Cryptonomist.",
+    "Advice: upgrade, download only from electrum.org, check signatures, and check the whole address, including when raising a fee."
    ],
    "sources": [
     {
-     "label": "CryptoSlate: Circle shareholder sues Trump over UAE crypto deals",
-     "url": "https://cryptoslate.com/circle-shareholder-sues-trump-over-uae-crypto-deals-citing-up-to-82-million-in-potential-annual-revenue/"
+     "label": "Cryptonomist: Electrum wallet security flaw",
+     "url": "https://en.cryptonomist.ch/2026/10/24/electrum-wallet-security-flaw/"
+    },
+    {
+     "label": "Electrum (official site)",
+     "url": "https://electrum.org"
     }
    ]
   }
  ],
  "briefs": [
   {
-   "title": "Initia's network is still halted after a $2.7M exploit",
-   "summary": "A flaw in its MoveVM software let an attacker create unbacked tokens; about $2.7M was taken and a fix is expected within days pending an audit, with no restart date, per Phemex.",
-   "url": "https://phemex.com/news/article/initia-reveals-attack-details-movevm-script-caching-flaw-led-to-27m-theft-100894"
+   "title": "Circle shareholder's lawsuit against Trump: no ruling yet",
+   "summary": "A Circle shareholder sued in federal court in Washington over UAE-linked crypto deals; Circle says it did not authorize the suit and the White House calls it frivolous, per Bitcoin.com.",
+   "url": "https://news.bitcoin.com/regulation-and-legal/circle-shareholder-sues-trump-world-liberty-uae-crypto/"
   },
   {
-   "title": "Phantom wallet starts offering Kalshi prediction markets to US users",
-   "summary": "Access rolls out gradually and requires identity checks with Kalshi; some categories are blocked in certain states, per The Block.",
+   "title": "Initia's network is still paused after a $2.7M exploit",
+   "summary": "Initia blames a software flaw; no restart time has been given, and Upbit has suspended INIT deposits and withdrawals, per CryptoTicker.",
+   "url": "https://cryptoticker.io/en/initia-infinite-mint-network-halt/"
+  },
+  {
+   "title": "Tether says 15 mining operators and equipment makers will build on its open-source mining kit",
+   "summary": "They include Bitmain, Bitdeer, Canaan and Foundry, with a stable 1.0 version targeted before the end of 2026, per The Crypto Basic.",
+   "url": "https://thecryptobasic.com/2026/10/24/tcb-daily-edition-what-happened-in-crypto-on-october-24-2026/"
+  },
+  {
+   "title": "Phantom wallet offers Kalshi prediction markets to US users",
+   "summary": "Access rolls out gradually and requires identity checks with Kalshi, per The Block.",
    "url": "https://www.theblock.co/news/markets/2026-10-23-phantom-rolls-out-kalshi-prediction-markets-us-421652"
   },
   {
-   "title": "SEC flags tokenization as a high-risk area in its 2027 exam plans",
-   "summary": "The SEC's 2027 examination priorities name tokenization as a higher-risk area in its exams of clearing agencies.",
-   "url": "https://www.sec.gov/files/2027-exam-priorities.pdf"
-  },
-  {
-   "title": "New York seeks $1.37B from the founders of the NovaTech scheme",
-   "summary": "The New York Attorney General is seeking about $1.37B from the founders of the alleged Ponzi scheme.",
-   "url": "https://ag.ny.gov/sites/default/files/settlements-agreements/new-york-v-nova-tech-ltd-et-al-affirmation-2026.pdf"
-  },
-  {
-   "title": "Russia clears 17 firms, including Sberbank and VTB, to offer retail crypto",
-   "summary": "Retail purchases will be capped at 300,000 roubles a year per firm, per DL News.",
-   "url": "https://www.dlnews.com/articles/regulation/bank-of-russia-clears-crypto-exchangers-sberbank-and-vtb/"
-  },
-  {
-   "title": "Franklin Templeton puts $150M more of its tokenized fund on the XRP Ledger",
-   "summary": "The shares of its tokenized money-market fund went into one wallet now worth about $200M, per CoinDesk.",
-   "url": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet"
-  },
-  {
-   "title": "More companies object to their shares being sold as tokens on OKX's platform with ICE",
-   "summary": "22 companies, including Wells Fargo, Arm and Intuit, have objected to tokenized versions of their stock, per Reuters as reported by Cointelegraph.",
-   "url": "https://cointelegraph.com/news/nasdaq-companies-object-tokenized-stock-listings-okx-ice"
-  },
-  {
-   "title": "IRS plans lower penalties for voluntary tax disclosures, including crypto",
-   "summary": "Forbes reports the IRS wants lower penalties and a 120-day target to resolve voluntary disclosures, per Cointelegraph.",
-   "url": "https://cointelegraph.com/news/irs-plans-lower-penalties-for-crypto-tax-disclosures-forbes-reports"
+   "title": "SoFi launches an FDIC-insured tokenized deposit",
+   "summary": "SoFi Earn is aimed at crypto users, per The Block.",
+   "url": "https://www.theblock.co/news/business/2026-10-22-sofi-fdic-insured-tokenized-deposit-421916"
   }
  ],
  "calendar": [
@@ -145,7 +133,7 @@
    "event": "Brazil presidential runoff (polls close)",
    "impact": "neutral",
    "key": false,
-   "note": "Flávio Bolsonaro vs Lula. Datafolha (20-22 Oct) has them tied 50-50 on valid votes; Vox Brasil has Lula 50.6, Bolsonaro 49.4; Real Time Big Data has Bolsonaro 52, Lula 48; The Rio Times' average of 41 polls has Bolsonaro 51, Lula 49."
+   "note": "Flávio Bolsonaro vs Lula. Datafolha (22 Oct) has them tied 50-50 on valid votes; PoderData 51-49 and Real Time Big Data 52-48 for Bolsonaro; Vox Brasil 50.6-49.4 for Lula, per The Rio Times."
   },
   {
    "et": "Tue 27 · 8:30am",
@@ -153,15 +141,15 @@
    "event": "US durable goods orders (Sep)",
    "impact": "neutral",
    "key": false,
-   "note": "Prior 0.0%. Galaxy Digital reports before the open (call 8:30am ET). At 10:00am ET (21:00 Bangkok): consumer confidence (prior 81.9) and new home sales (prior 684,000). Robinhood reports after the close, call 5:00pm ET (04:00 Wed Bangkok). New Zealand's central bank decides about 9:00pm ET (08:00 Wed Bangkok); Newsquawk says a hike to 3.00% from 2.75% is expected."
+   "note": "Consensus +0.6%, prior 0.0% (Trading Economics). Galaxy Digital call 8:30am ET. At 10:00am ET (21:00 Bangkok): consumer confidence (consensus 80.5, prior 81.9) and new home sales (consensus 660,000, prior 684,000). Robinhood call 5:00pm ET (04:00 Wed Bangkok)."
   },
   {
-   "et": "Wed 28 · 3:00am",
-   "bkk": "Wed 28 · 14:00",
-   "event": "Bank of Thailand rate decision",
+   "et": "Wed 28 (Wellington)",
+   "bkk": "Wed 28",
+   "event": "New Zealand central bank decision",
    "impact": "neutral",
    "key": false,
-   "note": "Current rate 1.00%, per FXMacroData; FXStreet expects no change."
+   "note": "A hike to 3.00% from 2.75% is expected; Newsquawk puts market pricing at about 75-80%."
   },
   {
    "et": "Wed 28 · 9:45am",
@@ -169,7 +157,7 @@
    "event": "Bank of Canada rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Rate 2.25%. In a Reuters poll, 19 of 34 economists expect a hike to 2.50%."
+   "note": "Rate 2.25%. In a Reuters poll, 19 of 34 economists expect a hike to 2.50%. Bank of Thailand also decides on 28 Oct (rate 1.00%, a hold expected by Trading Economics)."
   },
   {
    "et": "Wed 28 · 2:00pm",
@@ -177,7 +165,7 @@
    "event": "Fed rate decision",
    "impact": "volatile",
    "key": true,
-   "note": "Range 3.75-4.00%. In a Reuters poll, 94 of 100 economists expect a hold and all 100 expect a hike in December. Chair Warsh's press conference 2:30pm ET. Alphabet (call 4:30pm ET) and Microsoft (call 5:30pm ET) report after the close. No new Fed projections at this meeting. Next Fed decision: Wed 9 Dec, 2:00pm ET (Thu 10 Dec 02:00 Bangkok)."
+   "note": "Range 3.75-4.00%. In a Reuters poll, 94 of 100 economists expect a hold and all 100 expect a hike in December. Chair Warsh's press conference 2:30pm ET. Alphabet (call 4:30pm ET) and Microsoft (call 5:30pm ET) report after the close. Next Fed decision: Wed 9 Dec, 2:00pm ET (Thu 10 Dec 02:00 Bangkok)."
   },
   {
    "et": "Thu 29 · 8:30am",
@@ -185,7 +173,7 @@
    "event": "US Q3 GDP (advance) and September PCE inflation",
    "impact": "volatile",
    "key": true,
-   "note": "GDP: Newsquawk consensus 3.0%, Continuum Economics 2.8%, Atlanta Fed GDPNow 3.5%; prior 2.2%. PCE 3.6% y/y expected (prior 3.4%), core 3.1% (prior 3.0%), per Newsquawk."
+   "note": "GDP: consensus 3.0% (Trading Economics, Newsquawk), Continuum Economics 2.8%, Atlanta Fed GDPNow 3.5%; prior 2.2%. PCE 3.6% y/y expected (prior 3.4%), core 3.1% (prior 3.0%)."
   },
   {
    "et": "Thu 29 · 9:15am",
@@ -193,7 +181,7 @@
    "event": "ECB rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Deposit rate 2.50%. In a Reuters poll, 70 of 73 economists expect a hold. Press conference 9:45am ET."
+   "note": "Deposit rate 2.50%, expected unchanged. Press conference 9:45am ET."
   },
   {
    "et": "Thu 29 · after close",
@@ -204,20 +192,12 @@
    "note": "Each discusses results at 5:00pm ET (04:00 Bangkok Friday). Token unlocks the same day: CARDS ~$21.3M, and FF, where trackers disagree (DefiLlama 75M FF, about $7.5M; tokenomics.com 211.39M FF), per the unlock data on this page."
   },
   {
-   "et": "Fri 30 (Tokyo)",
-   "bkk": "Fri 30",
-   "event": "Bank of Japan rate decision",
-   "impact": "neutral",
-   "key": false,
-   "note": "No fixed release time. A hold at 1.25% is expected, per Newsquawk."
-  },
-  {
    "et": "Fri 30 · 4:00am",
    "bkk": "Fri 30 · 15:00",
    "event": "Monthly bitcoin options expiry (Deribit)",
    "impact": "volatile",
    "key": true,
-   "note": "Sources differ on size: CryptoTicker about $11.1B with max pain $78,000 (22 Oct estimate); CryptoBriefing $10.7-11.3B with max pain $78,000-79,000. Max pain is not a price target."
+   "note": "Sources differ on size: CryptoTicker about $12.2B with max pain $79,000 (17 Oct estimate); CryptoBriefing $10.7-11.3B with max pain $78,000-79,000 (8 Oct). Max pain is not a price target. Bank of Japan also decides Fri 30 (no fixed time; hold at 1.25% expected)."
   },
   {
    "et": "Fri 30 · 8:30am",
@@ -228,20 +208,20 @@
    "note": "ECI rose 0.9% in Q2. Chicago PMI prior 58.8. Fed's Daly (12:00pm ET) and Musalem (12:30pm ET) are scheduled to speak, per Kiplinger."
   },
   {
-   "et": "Fri 30 – Sat 31",
-   "bkk": "Fri 30 – Sat 31",
-   "event": "Token unlocks: KMNO, W, TIA",
+   "et": "Fri 30 – Sun 1 Nov",
+   "bkk": "Fri 30 – Sun 1 Nov",
+   "event": "Token unlocks: KMNO, W, TIA, EIGEN, SUI",
    "impact": "bearish",
    "key": false,
-   "note": "KMNO ~$9.6M and W ~$0.65M (30th), TIA ~$3.05M (31st), per the unlock data on this page."
+   "note": "KMNO ~$9.6M and W ~$0.65M (30th), TIA ~$3.05M (31st), EIGEN ~$8.8M and SUI ~$12.7M (1 Nov, trackers differ on SUI's date), per the unlock data on this page. US clocks go back one hour on Sun 1 Nov."
   }
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-10-24T16:13:00Z",
-  "claimsChecked": 80,
-  "claimsRemoved": 4,
-  "rounds": 3,
+  "checkedAt": "2026-10-24T20:19:27Z",
+  "claimsChecked": 90,
+  "claimsRemoved": 10,
+  "rounds": 2,
   "method": "Independent source check: every claim re-opened at its cited URL"
  }
 }
