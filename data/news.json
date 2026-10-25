@@ -1,16 +1,16 @@
 {
  "date": "2026-10-25",
- "updated": "2026-10-25T00:26:04Z",
- "headline": "Bitcoin is holding near $80,000 after Saturday's dip below it, as President Trump says a US strike on Iran could come \"maybe tomorrow\" or a deal could be reached instead.",
+ "updated": "2026-10-25T04:34:48Z",
+ "headline": "Bitcoin is holding just above $80,000 on Sunday with no US strike on Iran and no deal so far, after President Trump said either could come soon.",
  "market": {
-  "asOf": "Read from The Block's market report at about 1:00pm ET (17:00 UTC) on Sat 24 Oct; this run could not open CoinGecko, so Solana and Fear & Greed are not shown. Live prices are at the top of the page.",
+  "asOf": "Bitcoin read by this run from Coinbase's bitcoin price page between about 03:55 and 04:30 UTC (10:55-11:30 Bangkok) on Sun 25 Oct. This run could not open CoinGecko or CoinMarketCap, so Ether, Solana and Fear & Greed are not shown. Live prices are at the top of the page.",
   "btc": {
-   "price": 80138,
-   "chg24h": -1.9
+   "price": 80430,
+   "chg24h": -0.89
   },
   "eth": {
-   "price": 2314,
-   "chg24h": -3.8
+   "price": null,
+   "chg24h": null
   },
   "sol": {
    "price": null,
@@ -20,46 +20,72 @@
  },
  "stories": [
   {
-   "title": "Bitcoin holds near $80,000 as Trump says an Iran strike could come \"maybe tomorrow\"",
+   "title": "Bitcoin holds just above $80,000 while the US-Iran \"strike or deal\" question stays open",
    "mood": "volatile",
-   "summary": "Bitcoin slipped below $80,000 on Saturday, its weakest level in more than a month, then climbed back to about $80,200. The drop forced out hundreds of millions of dollars of borrowed-money bets on rising prices. President Trump has since said a US strike on Iran was possible \"maybe tomorrow\", but so was a deal.",
+   "summary": "Bitcoin fell below $80,000 on Saturday after reports of US evacuations from the Middle East, then recovered. President Trump said another US strike on Iran could come \"maybe tomorrow\", but that a deal was also possible.",
    "points": [
-    "Lows differ by venue: about $79,280 on The Block's bitcoin price page around 11:20am ET, and $79,220.74 on Binance's BTC/USDT between 15:00 and 16:00 UTC, per Cointribune, which put bitcoin back near $80,200 afterwards.",
-    "Sources differ on the 24-hour total of leveraged positions liquidated (forcibly closed): about $841M, $697M of them bets on rising prices, per CoinGlass data cited by Cointribune; $815.26M per The Block's earlier report.",
-    "Trump told reporters after voting in Florida: \"Maybe tomorrow... There's a possibility I will. There's also a possibility we'll have a nice, big, beautiful agreement,\" per The Tribune (ANI).",
-    "CoinDesk tied the slide to reports of fast US evacuations from Middle East embassies and bases. Brent crude is about $117, its highest since April, per Al Jazeera.",
-    "Arthur Hayes said he closed the directional trading book at his family office Maelstrom, citing macro and geopolitical risk, per The Block."
+    "Coinbase's price page showed bitcoin at about $80,430, down 0.89% over one day, when this run read it (see the time above).",
+    "Saturday's low was about $79,280 before a recovery to around $80,138 by 1pm ET, per The Crypto Basic.",
+    "CoinGlass data cited by The Crypto Basic shows $436.44M of leveraged bets forcibly closed in four hours, $404.15M of them bets on rising prices.",
+    "Trump on a new strike: \"We're thinking about doing it, and maybe tomorrow,\" adding \"maybe they'll make a deal,\" per Arab Times.",
+    "Iran's Tasnim news agency called reports of an offer to reopen the Strait of Hormuz in exchange for lifting the US blockade \"a lie and fabrication\", per ANI."
    ],
    "sources": [
     {
-     "label": "Cointribune: Trump-Iran tensions send BTC below $80,000",
-     "url": "https://www.cointribune.com/en/bitcoin-trump-iran-tensions-send-btc-below-80000"
+     "label": "Coinbase: Bitcoin price",
+     "url": "https://www.coinbase.com/price/bitcoin"
     },
     {
-     "label": "The Block: Crypto longs lose $404M in four hours as bitcoin slips below $80,000",
-     "url": "https://www.theblock.co/news/markets/2026-10-24-crypto-longs-lose-404-million-in-four-hours-as-bitcoin-briefly-slips-below-80000-431608"
+     "label": "The Crypto Basic: What happened in crypto on 24 Oct",
+     "url": "https://thecryptobasic.com/2026/10/24/tcb-daily-edition-what-happened-in-crypto-on-october-24-2026"
     },
     {
      "label": "CoinDesk: Bitcoin slides below $80,000 on US Middle East evacuations",
      "url": "https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations"
     },
     {
-     "label": "The Tribune: Trump says US could strike Iran 'maybe tomorrow'",
-     "url": "https://www.tribuneindia.com/news/usa-news/theres-a-possibility-trump-says-us-could-strike-iran-maybe-tomorrow-doesnt-rule-out-big-beautiful-deal"
+     "label": "Arab Times: Trump says US could strike Iran as early as tomorrow or reach deal",
+     "url": "https://www.arabtimesonline.com/news/trump-says-us-could-strike-iran-as-early-as-tomorrow-or-reach-deal/"
     },
     {
-     "label": "Al Jazeera: Iran says it won't allow US warships to get close",
-     "url": "https://www.aljazeera.com/news/2026/10/24/iran-says-wont-allow-us-warships-to-get-close-as-trump-ponders-new-attacks"
+     "label": "ANI: Iranian media reject reports of a Hormuz offer",
+     "url": "https://aninews.in/news/world/middle-east/no-offer-made-to-us-no-proposal-sent-to-pakistan-mediator-on-strait-of-hormuz-reopening-iranian-media-rejects-reports16020261025041430/"
+    }
+   ]
+  },
+  {
+   "title": "Weekend DeFi hacks: X100 losses rise to about $4.85M, Initia still offline",
+   "mood": "bearish",
+   "summary": "Attackers used borrowed money to win a voting majority in the X100 protocol's on-chain \"Senate\" and drained its treasury, and its token crashed. Separately, the Initia blockchain is still paused after a software bug let an attacker create unbacked tokens and move money out.",
+   "points": [
+    "X100: about $4.85M in USDT taken so far plus about 550,000 X tokens, per CryptoTimes.",
+    "The X token fell 96.52% to $1.78, per CryptoTimes.",
+    "The attack started with a 1,942,457.64 USDT flash loan from Aave, per CryptoTimes.",
+    "Initia: about $2.7M moved out before the network was shut down and was swapped into 1,135.52 ETH; a fix plus audit is expected to take several days, per The Crypto Basic.",
+    "Initia has announced no restart date, per TokenPost."
+   ],
+   "sources": [
+    {
+     "label": "CryptoTimes: X100 hack drains $4.85M",
+     "url": "https://www.cryptotimes.io/2026/10/24/x100-hack-attackers-hijack-governance-drain-4-85m-as-x-token-crashes-96/"
+    },
+    {
+     "label": "The Crypto Basic: What happened in crypto on 24 Oct",
+     "url": "https://thecryptobasic.com/2026/10/24/tcb-daily-edition-what-happened-in-crypto-on-october-24-2026"
+    },
+    {
+     "label": "TokenPost: Initia exploit",
+     "url": "https://www.tokenpost.com/news/technology/40057"
     }
    ]
   },
   {
    "title": "Bitcoin ETFs lost money two days running, but the week still ended up",
    "mood": "bearish",
-   "summary": "US spot bitcoin ETFs, funds that hold bitcoin for stock-market investors, saw money leave on Thursday and Friday. Strong buying earlier in the week means the week as a whole still ended with more money in than out. ETFs do not trade at weekends, so the next figures come after Monday's session.",
+   "summary": "US spot bitcoin ETFs, funds that hold bitcoin for stock-market investors, saw money leave on Thursday and Friday. Strong buying earlier in the week means the week as a whole still ended with more money in than out.",
    "points": [
     "Friday 23 Oct: -$137.94M, led by BlackRock's IBIT (-$110.34M) and Fidelity's FBTC (-$31.78M), per SoSoValue data cited by The Block.",
-    "Thursday 22 Oct: -$635.49M, per SoSoValue via The Block.",
+    "Thursday 22 Oct: -$635.49M, per The Block.",
     "The week still ended at a net +$304.73M, and total bitcoin ETF assets are $104.43B, per The Block.",
     "Ether ETFs took in $4.35M on Friday but lost $220.60M over the week, per The Block."
    ],
@@ -73,58 +99,43 @@
      "url": "https://www.theblock.co/news/markets/2026-10-23-bitcoin-etfs-swing-back-to-net-outflows-erase-previous-day-inflows-426483"
     }
    ]
-  },
-  {
-   "title": "Two DeFi projects hit in a day: Initia still offline, X100 drained of about $4.7M",
-   "mood": "bearish",
-   "summary": "Initia, a blockchain network, is still paused after an attacker used a software bug to create unbacked tokens and move about $2.7M out. Separately, attackers took control of the X100 protocol's voting system and drained about $4.7M in stablecoins. Users of affected apps cannot move funds while a network is paused.",
-   "points": [
-    "Initia: the attacker used a bug in its MoveVM software to credit itself with unbacked tokens, then moved out about $2.7M, which was swapped into about 1,135.52 ETH, per PANews.",
-    "Initia says a fix should take a few days and must pass an audit, per PANews; it has given no restart date, per Unchained.",
-    "X100: attackers used contracts to win a voting majority in the protocol's \"Senate\", forced its treasury to sell assets into a pool they controlled and took about $4.7M in stablecoins, per Cryptonomist.",
-    "The X100 money left as ETH in four wallets of 400 ETH each, per Cryptonomist."
-   ],
-   "sources": [
-    {
-     "label": "PANews: Initia exploit",
-     "url": "https://panews.io/articles/01a16d51-3faa-7744-bb97-2e6cab90a09b"
-    },
-    {
-     "label": "Unchained: Initia has no restart date",
-     "url": "https://unchainedcrypto.com/initia-has-no-restart-date-after-attacker-mints-tokens-and-bridges-out-2-7-million/"
-    },
-    {
-     "label": "Cryptonomist: X100 stablecoin exploit",
-     "url": "https://en.cryptonomist.ch/2026/10/24/x100-stablecoin-exploit/"
-    }
-   ]
   }
  ],
  "briefs": [
   {
-   "title": "Bitget hacker moves another $19.48M",
-   "summary": "Arkham data shows the hacker moved $19.48M, mostly bitcoin, to new addresses from 21 to 24 Oct and still holds about $242.5M, per Cryptonomist.",
-   "url": "https://en.cryptonomist.ch/2026/10/24/bitget-hacker-fund-movements/"
+   "title": "Arthur Hayes steps back from directional trades",
+   "summary": "Hayes said he closed the directional trades at his family office Maelstrom, selling assets including ETH, ENA and UNI, citing economic and geopolitical worries, per The Crypto Basic.",
+   "url": "https://thecryptobasic.com/2026/10/24/tcb-daily-edition-what-happened-in-crypto-on-october-24-2026"
   },
   {
-   "title": "Franklin Templeton puts $150M more of a tokenized fund on the XRP Ledger",
-   "summary": "That takes its sgBENJI money-market fund shares there to about $200M, all in one issuer-controlled wallet, and Franklin has not formally announced it, per 24/7 Wall St.",
-   "url": "https://247wallst.com/investing/cryptocurrency/2026/10/24/franklin-templeton-just-put-150-million-on-the-xrp-ledger-why-is-it-all-in-one-wallet/"
+   "title": "Electrum wallet urges users to update",
+   "summary": "Electrum asked users to install version 4.8.3, saying it fixes a critical security issue, per The Crypto Basic.",
+   "url": "https://thecryptobasic.com/2026/10/24/tcb-daily-edition-what-happened-in-crypto-on-october-24-2026"
   },
   {
-   "title": "Tether says 15 mining operators and equipment makers will build on its open-source mining kit",
-   "summary": "They include Bitmain, Bitdeer, Canaan and Foundry, with a 1.0 version targeted before the end of 2026, per The Crypto Basic.",
-   "url": "https://thecryptobasic.com/2026/10/24/tcb-daily-edition-what-happened-in-crypto-on-october-24-2026/"
+   "title": "Tether says 15 mining firms will build on its open-source mining kit",
+   "summary": "They include Bitmain, Bitdeer, Canaan and Foundry, and Tether is aiming for a stable 1.0 release before the end of 2026, per The Crypto Basic.",
+   "url": "https://thecryptobasic.com/2026/10/24/tcb-daily-edition-what-happened-in-crypto-on-october-24-2026"
+  },
+  {
+   "title": "US spot XRP ETFs had a quiet week",
+   "summary": "They took in $4.3M net from 19 to 22 Oct, per 24/7 Wall St, which says lifetime inflows are $1.80B while the funds hold $1.48B.",
+   "url": "https://247wallst.com/investing/cryptocurrency/2026/10/24/xrp-etfs-took-in-just-4-3-million-in-a-week-could-wisdomtrees-fund-change-that"
+  },
+  {
+   "title": "Railway hosting breach drains crypto wallets",
+   "summary": "The cloud host said a third party may have accessed customers' stored secrets; about $371K was drained from more than 200 addresses, per researcher Taylor Monahan's estimate cited by CryptoTicker, and users were told to rotate keys.",
+   "url": "https://cryptoticker.io/en/railway-hack-crypto-api-keys"
   }
  ],
  "calendar": [
   {
    "et": "Sun 25 – Mon 26",
    "bkk": "Sun 25 – Mon 26",
-   "event": "Token unlocks: H, XPL, COAI, SAHARA",
+   "event": "Token unlocks: XPL, COAI, SAHARA",
    "impact": "bearish",
    "key": false,
-   "note": "H ~$14.88M, XPL ~$17.29M and COAI ~$5.05M (25th), SAHARA ~$1.23M (26th), per the unlock data on this page."
+   "note": "XPL ~$16.9M and COAI ~$5.1M (25th), SAHARA ~$1.3M (26th), per the unlock data on this page."
   },
   {
    "et": "Sun 25 · 4:00pm",
@@ -132,7 +143,7 @@
    "event": "Brazil presidential runoff (polls close)",
    "impact": "neutral",
    "key": false,
-   "note": "Final polls all show Flávio Bolsonaro narrowly ahead within the margin of error on valid votes: Datafolha and Quaest 51-49, AtlasIntel 50.8-49.2, per Gazeta do Povo."
+   "note": "Final polls are within the margin of error: Datafolha and Quaest both 51-49 for Flávio Bolsonaro over Lula on valid votes, per The Rio Times."
   },
   {
    "et": "Tue 27 · 8:30am",
@@ -140,7 +151,7 @@
    "event": "US durable goods orders (Sep)",
    "impact": "neutral",
    "key": false,
-   "note": "Consensus +0.6%, prior 0.0% (Trading Economics). Galaxy Digital call 8:30am ET. At 10:00am ET (21:00 Bangkok): consumer confidence (prior 81.9) and new home sales (consensus 660,000, prior 684,000). Robinhood call 5:00pm ET (04:00 Wed Bangkok)."
+   "note": "Forecasts differ: +1.6% (Economic Weekly) and +1.8% (Forex Factory); prior 0.0%. Galaxy Digital call 8:30am ET. At 10:00am ET (21:00 Bangkok): consumer confidence (forecast 80.5, prior 81.9) and new home sales (consensus 660,000, prior 684,000). Robinhood call 5:00pm ET (04:00 Wed Bangkok)."
   },
   {
    "et": "Tue 27 · 9:00pm",
@@ -148,15 +159,15 @@
    "event": "New Zealand central bank decision",
    "impact": "neutral",
    "key": false,
-   "note": "A hike to 3.00% from 2.75% is expected; Newsquawk puts market pricing at about 75-80%."
+   "note": "A hike to 3.00% from 2.75% is expected; ASB's Mark Smith says it is roughly 90% priced in, per interest.co.nz."
   },
   {
-   "et": "Wed 28",
-   "bkk": "Wed 28",
+   "et": "Wed 28 · 9:45am",
+   "bkk": "Wed 28 · 20:45",
    "event": "Bank of Canada rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Rate 2.25%. In a Reuters poll, 19 of 34 economists expect a hike to 2.50%. Bank of Thailand also decides on 28 Oct (rate 1.00%, a hold expected by Trading Economics)."
+   "note": "Rate 2.25%. In a Reuters poll, 19 of 34 economists expect a hike to 2.50%. The Bank of Thailand also decides on 28 Oct (rate 1.00%)."
   },
   {
    "et": "Wed 28 · 2:00pm",
@@ -172,7 +183,7 @@
    "event": "US Q3 GDP (advance) and September PCE inflation",
    "impact": "volatile",
    "key": true,
-   "note": "GDP: consensus 3.0% (Trading Economics, Newsquawk), Continuum Economics 2.8%, Atlanta Fed GDPNow 3.5%; prior 2.2%. PCE 3.6% y/y expected (prior 3.4%), core 3.1% (prior 3.0%)."
+   "note": "GDP: consensus 3.0%, prior 2.2%, Atlanta Fed GDPNow 3.5% (Newsquawk). PCE 3.6% y/y expected (prior 3.4%), core 3.1% (prior 3.0%). Weekly jobless claims: consensus 196,000, prior 194,000."
   },
   {
    "et": "Thu 29 · 9:15am",
@@ -180,7 +191,7 @@
    "event": "ECB rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Deposit rate 2.50%, expected unchanged. Press conference 9:45am ET."
+   "note": "Deposit rate 2.50%; 70 of 73 economists expect no change. Press conference 9:45am ET."
   },
   {
    "et": "Thu 29 · after close",
@@ -188,7 +199,7 @@
    "event": "Coinbase, Strategy and Amazon earnings",
    "impact": "volatile",
    "key": true,
-   "note": "Each discusses results at 5:00pm ET (04:00 Bangkok Friday). Token unlocks the same day: CARDS ~$21.3M, and FF, where trackers disagree (DefiLlama 75M FF, about $7.5M; tokenomics.com 211.39M FF), per the unlock data on this page."
+   "note": "Each discusses results at 5:00pm ET (04:00 Bangkok Friday). Token unlocks the same day: FF ~$20.1M (trackers differ on size) and CARDS ~$20.2M, per the unlock data on this page."
   },
   {
    "et": "Fri 30 · 4:00am",
@@ -196,7 +207,7 @@
    "event": "Monthly bitcoin options expiry (Deribit)",
    "impact": "volatile",
    "key": true,
-   "note": "The latest estimate is about $11.1B with max pain $78,000 (22 Oct snapshot, TokenPost); an earlier 17 Oct estimate was about $12.2B with max pain $79,000 (CryptoTicker). Max pain is not a price target. Bank of Japan decides around midday Tokyo on Fri 30 (about 10:00 Bangkok); a hold at 1.25% is expected."
+   "note": "A 17 Oct estimate put it at about $12.2B with max pain at $79,000 (CryptoTicker). Max pain is not a price target. The Bank of Japan decides around 10:00 Bangkok on Fri 30; a hold at 1.25% is expected."
   },
   {
    "et": "Fri 30 · 8:30am",
@@ -204,7 +215,7 @@
    "event": "US Employment Cost Index (Q3)",
    "impact": "neutral",
    "key": false,
-   "note": "Consensus +0.8%, prior +0.9% (Trading Economics). The Chicago PMI (prior 58.8) is also out on Fri 30."
+   "note": "Consensus +0.8%, prior +0.9% (Trading Economics). Chicago PMI at 9:45am ET: consensus 56.1, prior 58.8."
   },
   {
    "et": "Fri 30 – Sun 1 Nov",
@@ -212,13 +223,13 @@
    "event": "Token unlocks: KMNO, W, TIA, EIGEN, SUI",
    "impact": "bearish",
    "key": false,
-   "note": "KMNO ~$9.6M and W ~$0.65M (30th), TIA ~$3.05M (31st), EIGEN ~$8.8M and SUI ~$12.7M (1 Nov, trackers differ on SUI's date), per the unlock data on this page. US clocks go back one hour on Sun 1 Nov."
+   "note": "KMNO ~$9.3M and W ~$0.6M (30th), TIA ~$3.0M (31st), EIGEN ~$7.4M and SUI ~$12.3M (1 Nov, trackers differ on SUI's date), per the unlock data on this page. US clocks go back one hour on Sun 1 Nov."
   }
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-10-25T00:26:04Z",
-  "claimsChecked": 153,
+  "checkedAt": "2026-10-25T04:34:48Z",
+  "claimsChecked": 141,
   "claimsRemoved": 13,
   "rounds": 2,
   "method": "Independent source check: every claim re-opened at its cited URL"
