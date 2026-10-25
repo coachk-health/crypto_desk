@@ -1,7 +1,7 @@
 {
  "date": "2026-10-25",
- "updated": "2026-10-24T20:19:27Z",
- "headline": "Bitcoin briefly fell to about $79,100 on Saturday as worries about a possible US strike on Iran forced out more than $800 million of leveraged bets, then climbed back above $80,000.",
+ "updated": "2026-10-25T00:26:04Z",
+ "headline": "Bitcoin is holding near $80,000 after Saturday's dip below it, as President Trump says a US strike on Iran could come \"maybe tomorrow\" or a deal could be reached instead.",
  "market": {
   "asOf": "Read from The Block's market report at about 1:00pm ET (17:00 UTC) on Sat 24 Oct; this run could not open CoinGecko, so Solana and Fear & Greed are not shown. Live prices are at the top of the page.",
   "btc": {
@@ -20,28 +20,32 @@
  },
  "stories": [
   {
-   "title": "Bitcoin dips to about $79,100, then gets back above $80,000",
+   "title": "Bitcoin holds near $80,000 as Trump says an Iran strike could come \"maybe tomorrow\"",
    "mood": "volatile",
-   "summary": "Bitcoin fell below $80,000 again on Saturday, touching about $79,146, before recovering above $80,000 by the afternoon in the US. The drop forced hundreds of millions of dollars of borrowed-money bets on rising prices to close. It came as tension between the US and Iran grew over the weekend.",
+   "summary": "Bitcoin slipped below $80,000 on Saturday, its weakest level in more than a month, then climbed back to about $80,200. The drop forced out hundreds of millions of dollars of borrowed-money bets on rising prices. President Trump has since said a US strike on Iran was possible \"maybe tomorrow\", but so was a deal.",
    "points": [
-    "Bitcoin.com reports a low of about $79,146 on Saturday and a recovery above $80,000 by 2:30pm ET.",
-    "In the four hours to 1pm ET, $436.44M of leveraged positions were liquidated (forcibly closed), $404.15M of them bets on rising prices, per CoinGlass data cited by The Block. The 24-hour total was $815.26M.",
-    "Arthur Hayes said he closed out the directional trading book at his family office Maelstrom, citing macro and geopolitical risk, per The Block.",
-    "US Ambassador to Turkey Tom Barrack said a strike on Iran could come \"this weekend\", per CBS News; Brent crude is about $117, its highest since April, per Al Jazeera.",
-    "The Fed decides on Wed 28 Oct at 2:00pm ET with rates at 3.75-4.00%."
+    "Lows differ by venue: about $79,280 on The Block's bitcoin price page around 11:20am ET, and $79,220.74 on Binance's BTC/USDT between 15:00 and 16:00 UTC, per Cointribune, which put bitcoin back near $80,200 afterwards.",
+    "Sources differ on the 24-hour total of leveraged positions liquidated (forcibly closed): about $841M, $697M of them bets on rising prices, per CoinGlass data cited by Cointribune; $815.26M per The Block's earlier report.",
+    "Trump told reporters after voting in Florida: \"Maybe tomorrow... There's a possibility I will. There's also a possibility we'll have a nice, big, beautiful agreement,\" per The Tribune (ANI).",
+    "CoinDesk tied the slide to reports of fast US evacuations from Middle East embassies and bases. Brent crude is about $117, its highest since April, per Al Jazeera.",
+    "Arthur Hayes said he closed the directional trading book at his family office Maelstrom, citing macro and geopolitical risk, per The Block."
    ],
    "sources": [
+    {
+     "label": "Cointribune: Trump-Iran tensions send BTC below $80,000",
+     "url": "https://www.cointribune.com/en/bitcoin-trump-iran-tensions-send-btc-below-80000"
+    },
     {
      "label": "The Block: Crypto longs lose $404M in four hours as bitcoin slips below $80,000",
      "url": "https://www.theblock.co/news/markets/2026-10-24-crypto-longs-lose-404-million-in-four-hours-as-bitcoin-briefly-slips-below-80000-431608"
     },
     {
-     "label": "Bitcoin.com: Bitcoin sinks to $79,146 as liquidations rock weekend trading",
-     "url": "https://news.bitcoin.com/market-updates/bitcoin-price-sinks-to-79146-as-liquidations-rock-weekend-trading/"
+     "label": "CoinDesk: Bitcoin slides below $80,000 on US Middle East evacuations",
+     "url": "https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations"
     },
     {
-     "label": "CBS News: Iran live updates",
-     "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-oil-gas-prices-strait-of-hormuz-midterms/"
+     "label": "The Tribune: Trump says US could strike Iran 'maybe tomorrow'",
+     "url": "https://www.tribuneindia.com/news/usa-news/theres-a-possibility-trump-says-us-could-strike-iran-maybe-tomorrow-doesnt-rule-out-big-beautiful-deal"
     },
     {
      "label": "Al Jazeera: Iran says it won't allow US warships to get close",
@@ -71,51 +75,46 @@
    ]
   },
   {
-   "title": "Electrum bitcoin wallet users told to upgrade to version 4.8.3 now",
-   "mood": "neutral",
-   "summary": "The team behind Electrum, a popular bitcoin wallet, has fixed a flaw that let a malicious server swap a payment in a user's history for a fake one. If the user then raised the fee on it, the wallet could sign a payment to the attacker.",
+   "title": "Two DeFi projects hit in a day: Initia still offline, X100 drained of about $4.7M",
+   "mood": "bearish",
+   "summary": "Initia, a blockchain network, is still paused after an attacker used a software bug to create unbacked tokens and move about $2.7M out. Separately, attackers took control of the X100 protocol's voting system and drained about $4.7M in stablecoins. Users of affected apps cannot move funds while a network is paused.",
    "points": [
-    "Versions before 4.8.3 are affected; users connected only to servers they trust are not, per Cryptonomist.",
-    "Developers had two user reports, one with real losses; in both, the attacker's address matched the last four characters of the intended one, per Cryptonomist.",
-    "Advice: upgrade, download only from electrum.org, check signatures, and check the whole address, including when raising a fee."
+    "Initia: the attacker used a bug in its MoveVM software to credit itself with unbacked tokens, then moved out about $2.7M, which was swapped into about 1,135.52 ETH, per PANews.",
+    "Initia says a fix should take a few days and must pass an audit, per PANews; it has given no restart date, per Unchained.",
+    "X100: attackers used contracts to win a voting majority in the protocol's \"Senate\", forced its treasury to sell assets into a pool they controlled and took about $4.7M in stablecoins, per Cryptonomist.",
+    "The X100 money left as ETH in four wallets of 400 ETH each, per Cryptonomist."
    ],
    "sources": [
     {
-     "label": "Cryptonomist: Electrum wallet security flaw",
-     "url": "https://en.cryptonomist.ch/2026/10/24/electrum-wallet-security-flaw/"
+     "label": "PANews: Initia exploit",
+     "url": "https://panews.io/articles/01a16d51-3faa-7744-bb97-2e6cab90a09b"
     },
     {
-     "label": "Electrum (official site)",
-     "url": "https://electrum.org"
+     "label": "Unchained: Initia has no restart date",
+     "url": "https://unchainedcrypto.com/initia-has-no-restart-date-after-attacker-mints-tokens-and-bridges-out-2-7-million/"
+    },
+    {
+     "label": "Cryptonomist: X100 stablecoin exploit",
+     "url": "https://en.cryptonomist.ch/2026/10/24/x100-stablecoin-exploit/"
     }
    ]
   }
  ],
  "briefs": [
   {
-   "title": "Circle shareholder's lawsuit against Trump: no ruling yet",
-   "summary": "A Circle shareholder sued in federal court in Washington over UAE-linked crypto deals; Circle says it did not authorize the suit and the White House calls it frivolous, per Bitcoin.com.",
-   "url": "https://news.bitcoin.com/regulation-and-legal/circle-shareholder-sues-trump-world-liberty-uae-crypto/"
+   "title": "Bitget hacker moves another $19.48M",
+   "summary": "Arkham data shows the hacker moved $19.48M, mostly bitcoin, to new addresses from 21 to 24 Oct and still holds about $242.5M, per Cryptonomist.",
+   "url": "https://en.cryptonomist.ch/2026/10/24/bitget-hacker-fund-movements/"
   },
   {
-   "title": "Initia's network is still paused after a $2.7M exploit",
-   "summary": "Initia blames a software flaw; no restart time has been given, and Upbit has suspended INIT deposits and withdrawals, per CryptoTicker.",
-   "url": "https://cryptoticker.io/en/initia-infinite-mint-network-halt/"
+   "title": "Franklin Templeton puts $150M more of a tokenized fund on the XRP Ledger",
+   "summary": "That takes its sgBENJI money-market fund shares there to about $200M, all in one issuer-controlled wallet, and Franklin has not formally announced it, per 24/7 Wall St.",
+   "url": "https://247wallst.com/investing/cryptocurrency/2026/10/24/franklin-templeton-just-put-150-million-on-the-xrp-ledger-why-is-it-all-in-one-wallet/"
   },
   {
    "title": "Tether says 15 mining operators and equipment makers will build on its open-source mining kit",
-   "summary": "They include Bitmain, Bitdeer, Canaan and Foundry, with a stable 1.0 version targeted before the end of 2026, per The Crypto Basic.",
+   "summary": "They include Bitmain, Bitdeer, Canaan and Foundry, with a 1.0 version targeted before the end of 2026, per The Crypto Basic.",
    "url": "https://thecryptobasic.com/2026/10/24/tcb-daily-edition-what-happened-in-crypto-on-october-24-2026/"
-  },
-  {
-   "title": "Phantom wallet offers Kalshi prediction markets to US users",
-   "summary": "Access rolls out gradually and requires identity checks with Kalshi, per The Block.",
-   "url": "https://www.theblock.co/news/markets/2026-10-23-phantom-rolls-out-kalshi-prediction-markets-us-421652"
-  },
-  {
-   "title": "SoFi launches an FDIC-insured tokenized deposit",
-   "summary": "SoFi Earn is aimed at crypto users, per The Block.",
-   "url": "https://www.theblock.co/news/business/2026-10-22-sofi-fdic-insured-tokenized-deposit-421916"
   }
  ],
  "calendar": [
@@ -133,7 +132,7 @@
    "event": "Brazil presidential runoff (polls close)",
    "impact": "neutral",
    "key": false,
-   "note": "Flávio Bolsonaro vs Lula. Datafolha (22 Oct) has them tied 50-50 on valid votes; PoderData 51-49 and Real Time Big Data 52-48 for Bolsonaro; Vox Brasil 50.6-49.4 for Lula, per The Rio Times."
+   "note": "Final polls all show Flávio Bolsonaro narrowly ahead within the margin of error on valid votes: Datafolha and Quaest 51-49, AtlasIntel 50.8-49.2, per Gazeta do Povo."
   },
   {
    "et": "Tue 27 · 8:30am",
@@ -141,19 +140,19 @@
    "event": "US durable goods orders (Sep)",
    "impact": "neutral",
    "key": false,
-   "note": "Consensus +0.6%, prior 0.0% (Trading Economics). Galaxy Digital call 8:30am ET. At 10:00am ET (21:00 Bangkok): consumer confidence (consensus 80.5, prior 81.9) and new home sales (consensus 660,000, prior 684,000). Robinhood call 5:00pm ET (04:00 Wed Bangkok)."
+   "note": "Consensus +0.6%, prior 0.0% (Trading Economics). Galaxy Digital call 8:30am ET. At 10:00am ET (21:00 Bangkok): consumer confidence (prior 81.9) and new home sales (consensus 660,000, prior 684,000). Robinhood call 5:00pm ET (04:00 Wed Bangkok)."
   },
   {
-   "et": "Wed 28 (Wellington)",
-   "bkk": "Wed 28",
+   "et": "Tue 27 · 9:00pm",
+   "bkk": "Wed 28 · 08:00",
    "event": "New Zealand central bank decision",
    "impact": "neutral",
    "key": false,
    "note": "A hike to 3.00% from 2.75% is expected; Newsquawk puts market pricing at about 75-80%."
   },
   {
-   "et": "Wed 28 · 9:45am",
-   "bkk": "Wed 28 · 20:45",
+   "et": "Wed 28",
+   "bkk": "Wed 28",
    "event": "Bank of Canada rate decision",
    "impact": "neutral",
    "key": false,
@@ -197,15 +196,15 @@
    "event": "Monthly bitcoin options expiry (Deribit)",
    "impact": "volatile",
    "key": true,
-   "note": "Sources differ on size: CryptoTicker about $12.2B with max pain $79,000 (17 Oct estimate); CryptoBriefing $10.7-11.3B with max pain $78,000-79,000 (8 Oct). Max pain is not a price target. Bank of Japan also decides Fri 30 (no fixed time; hold at 1.25% expected)."
+   "note": "The latest estimate is about $11.1B with max pain $78,000 (22 Oct snapshot, TokenPost); an earlier 17 Oct estimate was about $12.2B with max pain $79,000 (CryptoTicker). Max pain is not a price target. Bank of Japan decides around midday Tokyo on Fri 30 (about 10:00 Bangkok); a hold at 1.25% is expected."
   },
   {
    "et": "Fri 30 · 8:30am",
    "bkk": "Fri 30 · 19:30",
-   "event": "US Employment Cost Index (Q3), then Chicago PMI at 9:45am",
+   "event": "US Employment Cost Index (Q3)",
    "impact": "neutral",
    "key": false,
-   "note": "ECI rose 0.9% in Q2. Chicago PMI prior 58.8. Fed's Daly (12:00pm ET) and Musalem (12:30pm ET) are scheduled to speak, per Kiplinger."
+   "note": "Consensus +0.8%, prior +0.9% (Trading Economics). The Chicago PMI (prior 58.8) is also out on Fri 30."
   },
   {
    "et": "Fri 30 – Sun 1 Nov",
@@ -218,9 +217,9 @@
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-10-24T20:19:27Z",
-  "claimsChecked": 90,
-  "claimsRemoved": 10,
+  "checkedAt": "2026-10-25T00:26:04Z",
+  "claimsChecked": 153,
+  "claimsRemoved": 13,
   "rounds": 2,
   "method": "Independent source check: every claim re-opened at its cited URL"
  }
