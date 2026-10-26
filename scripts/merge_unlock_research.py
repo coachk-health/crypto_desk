@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 DATA = Path(__file__).resolve().parent.parent / "data" / "unlocks.json"
-FIELDS = ["date", "timeUTC", "token", "name", "amountTokens", "amountText", "usdM", "type", "pctCirculating",
+FIELDS = ["date", "timeUTC", "token", "name", "coingeckoId", "amountTokens", "amountText", "usdM", "type", "pctCirculating",
           "sources", "sourceDisagreements", "recipients", "recipientsMix", "market", "investorEntry",
           "sellerNotes", "sellerSources", "gaps"]
 

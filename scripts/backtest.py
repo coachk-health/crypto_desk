@@ -117,8 +117,10 @@ def harvest():
         if u["date"] >= today or not u.get("sources"):
             continue
         t = by.get(u["token"])
+        if t and not t.get("coingeckoId") and u.get("coingeckoId"):
+            t["coingeckoId"] = u["coingeckoId"]
         if not t:
-            t = {"token": u["token"], "name": u.get("name"), "coingeckoId": None, "events": [], "harvested": True}
+            t = {"token": u["token"], "name": u.get("name"), "coingeckoId": u.get("coingeckoId"), "events": [], "harvested": True}
             past["tokens"].append(t)
             by[u["token"]] = t
         if any(e["date"] == u["date"] for e in t["events"]):

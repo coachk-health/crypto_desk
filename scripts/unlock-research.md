@@ -41,13 +41,15 @@ If you cannot confirm a value, set it to null and say why in `gaps`.
    evidence of how they behaved at previous unlocks (sold OTC, moved to exchanges,
    restaked, hedged, bought back). Each claim needs its source URL in `sellerSources`.
 
+8. **CoinGecko id**: the id in the token's CoinGecko URL (coingecko.com/en/coins/<id>).
+
 ## Output
 
 Write a JSON array to the output path you were given, one object per input row:
 
 ```json
 {
-  "token": "ARB", "name": "Arbitrum",
+  "token": "ARB", "name": "Arbitrum", "coingeckoId": "arbitrum",
   "date": "2026-11-16", "timeUTC": "13:00" or null,
   "stillUpcoming": true,
   "amountTokens": 92650000, "amountText": "92.65M ARB",
