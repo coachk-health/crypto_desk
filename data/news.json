@@ -1,143 +1,170 @@
 {
  "date": "2026-10-26",
- "updated": "2026-10-26T04:35:47Z",
- "headline": "Bitcoin dips just under $80,000 as oil stays high and Lula's win hits Brazilian markets, with the Fed, inflation data and a big options expiry all due this week.",
+ "updated": "2026-10-26T08:21:58Z",
+ "headline": "Bitcoin hovers around $80,000 as oil stays high ahead of a Fed decision Wednesday, and a popular Bitcoin wallet patches a bug that let attackers steal coins.",
  "market": {
-  "asOf": "BTC and ETH from a Bloomberg markets wrap (via Swissinfo) timestamped 02:59 UTC Mon 26 Oct (09:59 Bangkok). Fear & Greed reading from KuCoin's 26 Oct daily report. SOL could not be confirmed this run. Live prices are at the top of the page.",
+  "asOf": "BTC and SOL read from CoinGecko at about 08:00 UTC Mon 26 Oct (15:00 Bangkok). ETH from a Crypto Times snapshot at 05:50 UTC (12:50 Bangkok). Fear & Greed from alternative.me's index today; CoinMarketCap's index read 43 in a KuCoin morning brief. Live prices are at the top of the page.",
   "btc": {
-   "price": 79437,
-   "chg24h": -1.2
+   "price": 79959,
+   "chg24h": -0.8
   },
   "eth": {
-   "price": 2298,
-   "chg24h": -2.0
+   "price": 2320,
+   "chg24h": -1.8
   },
   "sol": {
-   "price": null,
-   "chg24h": null
+   "price": 100.61,
+   "chg24h": -0.9
   },
-  "fearGreed": "50 (Fear & Greed Index, per KuCoin's 26 Oct report)"
+  "fearGreed": "54, Neutral (alternative.me Crypto Fear & Greed Index), up from 51 yesterday"
  },
  "stories": [
   {
-   "title": "Bitcoin dips just under $80,000 as oil stays high and Lula's win shakes Brazil's markets",
+   "title": "Bitcoin hovers around $80,000 as oil stays high and traders get careful before the Fed",
    "mood": "volatile",
-   "summary": "Bitcoin and ether are lower as Asia opens. Oil eased a little but is still high after more missile and drone attacks on Saudi Arabia over the weekend. In Brazil, Lula won Sunday's runoff, and a Brazil fund in Tokyo fell sharply. Over the weekend, a quick drop wiped out hundreds of millions of dollars of borrowed bets on higher prices.",
+   "summary": "Bitcoin slipped under $80,000 in Asian trading on Monday and has hovered around that level since. Ether and solana are down a little more. Oil eased slightly but is still very high, and Trump said it is \"decision time\" on Iran. Forced selling from leveraged bets is much smaller than on Saturday.",
    "points": [
-    "Bitcoin was down about 1.2% at about $79,437 and ether down about 2% at about $2,298, per a Bloomberg wrap on Swissinfo.",
-    "On Saturday, $436.44M of leveraged positions were forcibly closed in the four hours to 1pm ET, $404.15M of them bets on higher prices, per The Block.",
-    "Brent oil fell 2% to about $114.40 and US crude 2.1% to $101.08, per Bloomberg. Gulf News says Houthi strike claims on Saudi oil sites are not independently confirmed.",
-    "Lula won Brazil's runoff with 51.8% and all votes counted, per CBS News. A Tokyo-listed Brazil fund fell as much as 16%, per Bloomberg."
+    "Bitcoin fell nearly 2% to about $79,800 and ether nearly 3% to just above $2,300, while SOL was barely holding $100, per CoinDesk at 04:37 UTC.",
+    "Over 24 hours, $138.03M of leveraged positions were forcibly closed, $103.84M of them bets on higher prices, per a KuCoin morning brief using CoinMarketCap data. On Saturday, $404.15M of such bets were closed in just four hours, per The Block.",
+    "Brent oil slipped 1.31% to $115.19 a barrel and US crude to $101.83, per India.com, after Brent gained 6% last week.",
+    "Trump told Fox: \"Do I finish it off, which would be very easy to do, or do I make a deal?\" Türkiye Today notes his claims were not independently verified."
    ],
    "sources": [
     {
-     "label": "Bloomberg via Swissinfo: markets wrap",
-     "url": "https://swissinfo.ch/eng/stocks-under-pressure-before-earnings,-oil-drops:-markets-wrap/92273033"
+     "label": "CoinDesk: bitcoin slips under $80,000 before the Fed",
+     "url": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting"
+    },
+    {
+     "label": "KuCoin: morning market brief",
+     "url": "https://www.kucoin.com/news/insight/BTC/6adefaeb3f52a20007f40ef6"
     },
     {
      "label": "The Block: $404M of longs liquidated",
      "url": "https://www.theblock.co/news/markets/2026-10-24-crypto-longs-lose-404-million-in-four-hours-as-bitcoin-briefly-slips-below-80000-431608"
     },
     {
-     "label": "Gulf News: Brent and WTI slip",
-     "url": "https://gulfnews.com/business/energy/crude-oils-weird-monday-brent-wti-slip-as-attacks-rattle-markets-murban-jumps-3-to-118-1.500723522"
+     "label": "India.com: oil prices",
+     "url": "https://www.india.com/business/oil-price-today-brent-crude-asian-trading-middle-east-united-states-texas-iran-strait-of-hormuz-abbas-araghchi-donald-trump-us-president-stock-exchange-8539248/"
     },
     {
-     "label": "CBS News: Brazil runoff",
-     "url": "https://www.cbsnews.com/news/brazil-presidential-runoff-lula-flavio-bolsonaro/"
+     "label": "Türkiye Today: Trump on Iran",
+     "url": "https://turkiyetoday.com/world/trump-says-it-is-decision-time-on-iran-make-a-deal-or-resume-attacks-3231020"
     }
    ]
   },
   {
-   "title": "Fed week: rate decision Wednesday, inflation data Thursday, bitcoin options expiry Friday",
+   "title": "Fed week: a hold expected Wednesday, but markets now lean toward a December hike",
    "mood": "volatile",
-   "summary": "The Fed announces its rate decision on Wednesday, and a hold is widely expected. Growth (GDP) and inflation (PCE) data land Thursday, along with Coinbase and Strategy earnings. A large batch of bitcoin options expires Friday. Spot bitcoin funds ended last week with two days of withdrawals.",
+   "summary": "The Fed announces its rate decision on Wednesday and almost everyone expects no change. But futures markets now put better-than-even odds on a rate rise in December, as high oil prices feed inflation worries. Inflation (PCE) and growth (GDP) data land Thursday, and a large batch of bitcoin options expires Friday.",
    "points": [
-    "The Fed's decision is at 2:00pm ET Wed 28 Oct (01:00 Thu Bangkok), with a press conference at 2:30pm, per the Fed's calendar.",
-    "Spot bitcoin ETFs (funds that hold bitcoin for stock-market investors) lost $635.49M on Thu 22 Oct and $137.94M on Fri 23 Oct, but still took in $304.73M over the week, per The Block citing SoSoValue.",
+    "CME FedWatch shows about a 90.6% chance of no change this week. For December, ATFX cites 79.4% odds of a hike, while BeInCrypto cites 68%.",
+    "Spot bitcoin ETFs (funds that hold bitcoin for stock-market investors) lost $635.6M on 22 Oct and $137.9M on 23 Oct but still took in about $301M over the week, per Farside; The Block puts the week at $304.73M.",
     "PCE inflation is expected at 3.6% a year, up from 3.4%, per Trading Economics.",
-    "Size of Friday's options expiry: about $11.1B with \"max pain\" at $78,000 (CryptoQuant), or about $12.3B with max pain at $79,000 (Bitcoin News Digest)."
+    "Friday's options expiry: about $11.1B with \"max pain\" at $78,000 (CryptoTicker), $10.97B (BeInCrypto), or about $12.3B with max pain at $79,000 (Bitcoin News Digest)."
    ],
    "sources": [
     {
-     "label": "Federal Reserve: October 2026 calendar",
-     "url": "https://www.federalreserve.gov/newsevents/2026-october.htm"
+     "label": "ATFX: FedWatch odds",
+     "url": "https://www.atfxcapital.com/en/analysis/market-news/gold-slips-below-4000"
     },
     {
-     "label": "The Block: ETF flows and liquidations",
-     "url": "https://www.theblock.co/news/markets/2026-10-24-crypto-longs-lose-404-million-in-four-hours-as-bitcoin-briefly-slips-below-80000-431608"
+     "label": "BeInCrypto: Fed week and options expiry",
+     "url": "https://beincrypto.com/fed-week-bitcoin-dollar-options-expiry"
+    },
+    {
+     "label": "Farside: bitcoin ETF flows",
+     "url": "https://farside.co.uk/btc/"
     },
     {
      "label": "Trading Economics: US calendar",
      "url": "https://tradingeconomics.com/united-states/calendar"
     },
     {
-     "label": "CryptoQuant: $11.1B options expiry",
-     "url": "https://cryptoquant.com/insights/quicktake/6adab3c27fe3697a52dc23a0-111-Billion-in-Bitcoin-Options-Expire-October-30-With-Max-Pain-at-78000"
-    },
-    {
-     "label": "Bitcoin News Digest, 25 Oct",
-     "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-25-2026"
+     "label": "CryptoTicker: $11.1B expiry",
+     "url": "https://cryptoticker.io/en/bitcoin-price-prediction-fed-meeting-october-expiry/"
     }
    ]
   },
   {
-   "title": "Security watch: Ethereum pauses a test of its next upgrade",
-   "mood": "neutral",
-   "summary": "Ethereum developers postponed a test run of the Glamsterdam upgrade that had been set for today, after security researchers warned that fee changes could alter how existing smart contracts behave.",
+   "title": "Security alert: Electrum wallet bug let rogue servers steal bitcoin",
+   "mood": "bearish",
+   "summary": "Electrum, a long-running Bitcoin wallet, had a flaw that let a malicious server trick the wallet when a user raised the fee to speed up a payment, so the coins went to the attacker instead. Version 4.8.3 fixes it. If you use Electrum, update and check addresses before you sign.",
    "points": [
-    "The Glamsterdam test on the Hoodi test network had been set for 26 Oct at 17:42:48 UTC; no new date has been set, per CoinDesk.",
-    "The concern is gas (fee) accounting changes; in one case creating storage would cost 110,020 gas instead of 22,100, per CoinDesk.",
-    "A test network lets developers try an upgrade before it reaches the main Ethereum network."
+    "Electrum released version 4.8.3 on 24 Oct; earlier versions remain vulnerable when connected to malicious servers, per CoinDesk.",
+    "A first report came in on 11 Oct; a user reported losing funds on 18 Oct. Developers have not disclosed the amount stolen, per CoinDesk.",
+    "Users who connect only to trusted servers, including their own, were not exposed, per crypto.news citing the advisory.",
+    "CoinDesk advises checking receiving addresses and amounts before signing any payment."
    ],
    "sources": [
     {
-     "label": "CoinDesk: Ethereum delays Glamsterdam test",
-     "url": "https://www.coindesk.com/tech/2026/10/23/ethereum-delays-glamsterdam-test-after-security-devs-flag-risk-to-existing-contracts"
+     "label": "CoinDesk: Electrum wallet bug",
+     "url": "https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments"
+    },
+    {
+     "label": "crypto.news: Electrum 4.8.3 fix",
+     "url": "https://crypto.news/electrum-wallet-bitcoin-theft-security-flaw-4-8-3/"
     }
    ]
   }
  ],
  "briefs": [
   {
-   "title": "Arthur Hayes closes his market bets",
-   "summary": "The BitMEX co-founder says he closed the directional trades at his family office, Maelstrom, taking profits on ETH, ENA and UNI, citing \"macro and geopolitical\" risks, per The Block.",
-   "url": "https://www.theblock.co/news/markets/2026-10-24-crypto-longs-lose-404-million-in-four-hours-as-bitcoin-briefly-slips-below-80000-431608"
+   "title": "Ethereum's Glamsterdam test is still on hold",
+   "summary": "The Hoodi test-network run of Ethereum's next upgrade, which had been set for today, is postponed with no new date, per Bitcoin Sistemi.",
+   "url": "https://en.bitcoinsistemi.com/watch-out-entering-a-critical-fed-week-here-are-the-numerous-economic-developments-and-altcoin-event/"
   },
   {
-   "title": "Retail money flows back onto exchanges",
-   "summary": "30-day retail bitcoin inflows to leading exchanges nearly doubled from $5.5B to $10.75B, a six-month high, while whale inflows fell to $3.8B, per KuCoin.",
-   "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-26-2026"
+   "title": "CoinDCX confirms a $16M loss",
+   "summary": "The Indian exchange lost 15.99M USDT from retired deposit wallets days after its CEO called breach reports a false alarm, and says the company absorbed the loss, per The Block.",
+   "url": "https://www.theblock.co/news/business/2026-10-25-coindcx-confirms-16-million-loss-from-retired-wallets-days-after-ceo-called-breach-reports-a-false-alarm-431617"
+  },
+  {
+   "title": "Keystone hardware wallet store breached",
+   "summary": "Customer names, contact details and shipping addresses were exposed through its online store. Keystone says recovery phrases and keys were not exposed and warns of scammers posing as the company, per The Block.",
+   "url": "https://www.theblock.co/news/business/2026-10-25-keystone-customers-say-breach-exposed-data-the-hardware-wallet-maker-promised-to-delete-431613"
+  },
+  {
+   "title": "Stablecoin supply is shrinking",
+   "summary": "Total stablecoin supply has shed $12.73B since 22 May to $300.36B, per DefiLlama data cited by Bitcoin.com News, which notes this does not necessarily mean money left crypto.",
+   "url": "https://news.bitcoin.com/stablecoins/stablecoin-market-sheds-12-7b-as-cryptos-dry-powder-runs-thin/"
+  },
+  {
+   "title": "Most bitcoin still can't be tied to a known owner",
+   "summary": "About 11.1M BTC can't be linked to any known owner even after Wall Street buying, per Galaxy research reported by CoinDesk. The figure may include lost coins.",
+   "url": "https://coindesk.com/markets/2026/10/26/over-11-million-btc-can-t-be-linked-to-any-known-owner-even-after-wall-street-buying"
+  },
+  {
+   "title": "Hong Kong bank stablecoins reach retail",
+   "summary": "HSBC's RedCoin began a phased rollout on 23 Oct to PayMe users, while Standard Chartered-backed Anchorpoint still plans retail access to its HKDAP coin with no date, per crypto.news.",
+   "url": "https://crypto.news/anchorpoint-retail-stablecoin-hsbc-redcoin-hong-kong/"
+  },
+  {
+   "title": "Strategy's latest disclosed bitcoin buy",
+   "summary": "Its last reported purchase was 267 BTC for $22.1M, taking holdings to 848,517 BTC, per Bitcoin.com News. Strategy reports earnings Thursday.",
+   "url": "https://news.bitcoin.com/crypto-news/strategy-holds-848517-btc-after-latest-22m-bitcoin-purchase/"
   },
   {
    "title": "China court moves to confiscate about 61,900 BTC",
-   "summary": "A Tianjin court accepted a request to confiscate 61,896 BTC, tied to a $5.7B fraud, starting a six-month notice period, per the Bitcoin News Digest.",
-   "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-25-2026"
-  },
-  {
-   "title": "Switzerland approves a retail spot bitcoin ETF",
-   "summary": "Regulator FINMA approved BIT Asset Management's fund, with a SIX exchange listing planned for November, per the Bitcoin News Digest.",
-   "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-25-2026"
-  },
-  {
-   "title": "South Korea to track cross-border crypto transfers",
-   "summary": "Draft rules scheduled to take effect on 3 Dec 2026 cover transfers to self-custody wallets, and the data could be shared with tax and financial watchdogs, per crypto.news.",
-   "url": "https://crypto.news/south-korea-crypto-transfer-rules-december-2026/"
-  },
-  {
-   "title": "Bitcoin mining difficulty set to rise",
-   "summary": "Difficulty is projected to rise about 5% around 4pm ET Thu 29 Oct, with hashrate near 1,070 EH/s, per the Bitcoin News Digest citing mempool.space.",
+   "summary": "A Tianjin court accepted a request to confiscate 61,896 BTC tied to a $5.7B fraud, starting a six-month notice period, per the Bitcoin News Digest.",
    "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-25-2026"
   }
  ],
  "calendar": [
+  {
+   "et": "Mon 26 · 8:30am",
+   "bkk": "Mon 26 · 19:30",
+   "event": "Chicago Fed activity index; Dallas Fed manufacturing at 10:30am ET",
+   "impact": "neutral",
+   "key": false,
+   "note": "Chicago Fed index: prior -0.04, Trading Economics forecast -0.1. Dallas Fed (21:30 Bangkok): prior 9.8, forecast 7. No Fed speakers: the Fed is in its quiet period before Wednesday's meeting."
+  },
   {
    "et": "Tue 27 · 8:30am",
    "bkk": "Tue 27 · 19:30",
    "event": "US durable goods orders",
    "impact": "neutral",
    "key": false,
-   "note": "Consensus +0.6%; prior 0.0% as first reported (Trading Economics), shown as -0.1% on Investing.com. At 10:00am ET (21:00 Bangkok): consumer confidence (consensus 80.5, prior 81.9) and new home sales (consensus 660,000, prior 684,000). Galaxy call 8:30am ET; Robinhood reports after the close (call 5:00pm ET, 04:00 Wed Bangkok)."
+   "note": "Consensus +0.6%; prior 0.0% (Trading Economics). At 10:00am ET (21:00 Bangkok): consumer confidence (consensus 80.5 per Trading Economics, 80.4 per Bitcoin Sistemi; prior 81.9) and new home sales (consensus 660,000 per Trading Economics, 650,000 per Bitcoin Sistemi; prior 684,000). Galaxy call 8:30am ET; Robinhood reports after the close (call 5:00pm ET, 04:00 Wed Bangkok)."
   },
   {
    "et": "Tue 27 · 9:00pm",
@@ -145,7 +172,7 @@
    "event": "New Zealand central bank decision",
    "impact": "neutral",
    "key": false,
-   "note": "Rate 2.75%; a hike to 3.00% is widely expected (about 90% priced, per InvestingLive)."
+   "note": "Rate 2.75%; a hike to 3.00% is widely expected (about 90% priced per InvestingLive, 98% per Forex.com)."
   },
   {
    "et": "Wed 28 · 9:45am",
@@ -153,7 +180,7 @@
    "event": "Bank of Canada rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Rate 2.25%. Markets price about an 81% chance of a hike to 2.50%, per InvestingLive."
+   "note": "Rate 2.25%. A Reuters poll (via FXStreet) expects a hike to 2.50%."
   },
   {
    "et": "Wed 28 · 2:00pm",
@@ -161,7 +188,7 @@
    "event": "Fed rate decision",
    "impact": "volatile",
    "key": true,
-   "note": "Range 3.75-4.00%. 94 of 100 economists in a Reuters poll expect a hold (Seoul Economic Daily); CME FedWatch shows 88% for a hold (Kiplinger). Press conference 2:30pm ET (01:30 Bangkok). No new projections at this meeting. Next meeting 8-9 Dec."
+   "note": "Range 3.75-4.00%. 94 of 100 economists in a Reuters poll expect a hold (Kitco); CME FedWatch showed 90.6% for a hold (BeInCrypto, 25 Oct). Press conference 2:30pm ET (01:30 Bangkok). No new projections at this meeting."
   },
   {
    "et": "Thu 29 · 8:30am",
@@ -169,15 +196,7 @@
    "event": "US Q3 GDP (advance) and September PCE inflation",
    "impact": "volatile",
    "key": true,
-   "note": "GDP: consensus 3.2% (Trading Economics) or 3.0% (Newsquawk); prior 2.2%. PCE: 3.6% y/y expected, prior 3.4%; core PCE 3.1% expected, prior 3.0%. Jobless claims: consensus 196,000, prior 194,000."
-  },
-  {
-   "et": "Thu 29 · 9:15am",
-   "bkk": "Thu 29 · 20:15",
-   "event": "ECB rate decision",
-   "impact": "neutral",
-   "key": false,
-   "note": "Deposit rate 2.50%; a hold is expected. Press conference 9:45am ET (20:45 Bangkok)."
+   "note": "GDP: consensus 3.2% (Trading Economics) or 3.0% (Bitcoin Sistemi); prior 2.2%. PCE: 3.6% y/y expected, prior 3.4%; core PCE 3.1% expected, prior 3.0%. Jobless claims: consensus 196,000, prior 194,000. ECB decision at 9:15am ET (20:15 Bangkok): deposit rate 2.50%, hold expected."
   },
   {
    "et": "Thu 29 · 5:00pm (calls)",
@@ -188,12 +207,12 @@
    "note": "Results after the US close; Coinbase Q&A and Strategy webinar at 5:00pm ET. Token unlocks the same day: FF ~$20.1M and CARDS ~$18.2M, per the unlock data on this page."
   },
   {
-   "et": "Thu 29 · night",
-   "bkk": "Fri 30 · daytime",
+   "et": "Thu 29 · ~11:00pm",
+   "bkk": "Fri 30 · ~10:00",
    "event": "Bank of Japan decision",
    "impact": "neutral",
    "key": false,
-   "note": "A hold at 1.25% is expected. Release time not confirmed this run."
+   "note": "A hold at 1.25% is expected. No fixed time; it usually comes around midday Tokyo. Governor's press conference 3:30pm Tokyo (13:30 Bangkok)."
   },
   {
    "et": "Fri 30 · 4:00am",
@@ -201,7 +220,7 @@
    "event": "Bitcoin options expiry (Deribit)",
    "impact": "volatile",
    "key": true,
-   "note": "At 08:00 UTC. About $11.1B with max pain at $78,000 (CryptoQuant), or about $12.3B with max pain at $79,000 (Bitcoin News Digest). Max pain is not a price target."
+   "note": "At 08:00 UTC. About $11.1B with max pain at $78,000 (CryptoTicker), $10.97B (BeInCrypto), or about $12.3B with max pain at $79,000 (Bitcoin News Digest). Max pain is not a price target."
   },
   {
    "et": "Fri 30 · 8:30am",
@@ -209,7 +228,7 @@
    "event": "US Employment Cost Index",
    "impact": "neutral",
    "key": false,
-   "note": "Consensus +0.8%, prior +0.9%. Chicago PMI at 9:45am ET: consensus 55.9 (Trading Economics) or 54.8 (Investing.com), prior 58.8. Fed's Daly speaks at 12:00pm ET (23:00 Bangkok) and Musalem at 12:30pm ET (23:30 Bangkok)."
+   "note": "Consensus +0.8%, prior +0.9%. Chicago PMI at 9:45am ET: consensus 55.9, prior 58.8 (Trading Economics). Fed's Daly speaks at 12:00pm ET (23:00 Bangkok) and Musalem at 12:30pm ET (23:30 Bangkok)."
   },
   {
    "et": "Fri 30 – Mon 2 Nov",
@@ -230,9 +249,9 @@
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-10-26T04:35:47Z",
-  "claimsChecked": 99,
-  "claimsRemoved": 4,
+  "checkedAt": "2026-10-26T08:21:58Z",
+  "claimsChecked": 116,
+  "claimsRemoved": 3,
   "rounds": 2,
   "method": "Independent source check: every claim re-opened at its cited URL"
  }
