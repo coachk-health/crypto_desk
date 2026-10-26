@@ -119,6 +119,7 @@ table.gt td:first-child { white-space: nowrap; }
 .smalltag { color: var(--sun); font-size: 12px; font-weight: 600; }
 .rng { display: block; color: var(--muted); font-size: 11.5px; }
 .verdict { margin: 0; font-weight: 600; max-width: 75ch; }
+.findings ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; max-width: 80ch; }
 tr.small td { opacity: .75; }
 .na { color: var(--muted); }
 .bars2 { display: grid; gap: 8px; }
@@ -433,7 +434,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
   }
 
   function lineChart(seriesList) {
-    const W = 800, H = 330, L = 48, R = 112, T = 16, B = 34;
+    const W = 800, H = 330, L = 48, R = 132, T = 16, B = 34;
     const xs = d => L + (d + 30) / 44 * (W - L - R);
     let lo = 0, hi = 0;
     seriesList.forEach(s => Object.values(s.path).forEach(v => { lo = Math.min(lo, v); hi = Math.max(hi, v); }));
@@ -535,8 +536,18 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     const lc = all.lowDayCounts || {};
     const topWhen = Object.keys(lc).sort((a, b) => lc[b] - lc[a])[0];
     const bn = all.median.beyondNormal, bnR = all.range90 && all.range90.beyondNormal;
-    const lead = el('p', { class: 'lead', text: 'Of ' + all.n + ' past unlocks, ' + all.pctDown.around + '% did worse than Bitcoin from a week before to two weeks after. The typical one lost ' + Math.abs(all.median.around ?? 0).toFixed(1) + '% against Bitcoin over those three weeks' + (bn != null ? ', and ' + Math.abs(bn).toFixed(1) + '% ' + (bn < 0 ? 'more' : 'less') + ' than its own normal three-week trend.' : '.') });
-    const sub = el('p', { class: 'stamp', text: 'Measured ' + Desk.ago(bt.generatedAt) + '. The lowest point most often came ' + (topWhen || 'unclear') + '. Every move is relative to Bitcoin, so a market-wide fall does not count.' });
+    const noise = bnR && bnR[0] < 0 && bnR[1] > 0;
+    const lead = el('p', { class: 'lead', text: 'Of ' + all.n + ' past unlocks, ' + all.pctDown.around + '% did worse than Bitcoin from a week before to two weeks after. ' + (bn != null && noise ? 'But these tokens slide against Bitcoin most of the time, and the typical unlock was no worse than its own normal trend.' : bn != null ? 'The typical one did ' + Math.abs(bn).toFixed(1) + '% ' + (bn < 0 ? 'worse' : 'better') + ' than its own normal trend.' : '') });
+    const sub = el('p', { class: 'stamp', text: 'Measured ' + Desk.ago(bt.generatedAt) + ' from ' + all.tokens + ' tokens. Every move is relative to Bitcoin, so a market-wide fall does not count.' });
+    // groups whose effect beyond the token's normal trend is clear (90% range does not cross 0)
+    const clearRows = Object.keys(G).filter(k => k !== 'All unlocks' && !/Not enough data/.test(k) && G[k].range90 && G[k].range90.beyondNormal && (G[k].range90.beyondNormal[1] < 0 || G[k].range90.beyondNormal[0] > 0))
+      .sort((a, b) => G[a].median.beyondNormal - G[b].median.beyondNormal);
+    const leanRows = Object.keys(G).filter(k => k !== 'All unlocks' && !/Not enough data/.test(k) && !clearRows.includes(k) && G[k].median.beyondNormal != null && G[k].median.beyondNormal <= -4 && G[k].n >= 10);
+    const niceGroup = k => { const [a, b] = k.split(': '); return a === 'Who receives' ? 'Going mainly to ' + (WHO_LABEL[b] || b).toLowerCase() : a === 'Size vs circulating' ? b + ' of circulating supply' : a === 'Size vs daily trading' ? b + ' of trading volume' : a === 'Grade' ? 'Graded ' + b : b[0].toUpperCase() + b.slice(1); };
+    const findings = el('div', { class: 'panel findings' }, [el('h3', { text: 'What clearly mattered' }),
+      clearRows.length ? el('ul', null, clearRows.map(k => el('li', null, [el('b', { text: niceGroup(k) + ': ' }), pct(G[k].median.beyondNormal), ' beyond the token’s normal trend over the three weeks, ' + G[k].pctDown.around + '% fell against Bitcoin (' + G[k].n + ' unlocks, ' + G[k].tokens + ' tokens).']))) : el('p', { text: 'No group stood out beyond the noise yet.' }),
+      leanRows.length ? el('p', { class: 'small', text: 'Leaning the same way but not clear yet: ' + leanRows.map(k => niceGroup(k) + ' (' + G[k].median.beyondNormal.toFixed(1) + '%)').join(', ') + '.' }) : null,
+      el('p', { class: 'small', text: 'Clear means the 90% range for the group’s median stays on one side of zero after resampling whole tokens.' })]);
 
     // chart
     let series = [];
@@ -573,7 +584,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     const timing = el('div', { class: 'panel' }, [el('h3', { text: 'When the lowest point came' }),
       el('div', { class: 'bars2' }, Object.keys(lc).map(k => el('div', { class: 'brow' }, [el('span', { text: k }),
         el('div', { class: 'bar2' }, [el('i', { style: 'width:' + (100 * lc[k] / tot) + '%' })]), el('span', { class: 'num', text: Math.round(100 * lc[k] / tot) + '%' })]))),
-      el('p', { class: 'small', text: 'For each unlock, the day its price was lowest against Bitcoin between 30 days before and 14 days after.' })]);
+      el('p', { class: 'small', text: 'For each unlock, the day its price was lowest against Bitcoin between 30 days before and 14 days after. For a token that slides all the time, the low naturally lands near the start or end of the window, so read the clusters at the edges with care; few lows fall on the unlock day itself.' })]);
 
     // list
     const evs = bt.events.filter(e => pastFilter === 'all' || e.grade === pastFilter);
@@ -606,7 +617,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
         }))
       ])])]);
 
-    return el('section', { 'aria-label': 'Past unlocks' }, [lead, sub, chart, gradeBlock, breakBlock, timing, list,
+    return el('section', { 'aria-label': 'Past unlocks' }, [lead, sub, findings, chart, gradeBlock, breakBlock, timing, list,
       el('details', { class: 'method' }, [el('summary', { text: 'How this is measured' }), el('div', { class: 'mbody' }, [el('p', { text: bt.method }),
         el('p', { text: 'This is a record of what happened, not a prediction. Small groups are noisy, overlapping monthly tranches are not independent, and a year of data covers one market regime.' }),
         (bt.skipped && bt.skipped.length) ? el('p', { class: 'small', text: 'Left out: ' + bt.skipped.map(s => s.token + (s.date ? ' ' + s.date : '') + ' (' + s.why + ')').join('; ') }) : null])])]);
