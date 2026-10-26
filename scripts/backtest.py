@@ -177,17 +177,28 @@ def summarise(evs):
         if len(v) >= 3:
             path[str(d)] = round(statistics.median(v), 2)
     def band(k, reps=2000):
-        """90% bootstrap range for the median: if it straddles 0, the group's effect is not clear."""
+        """90% range for the median, resampling whole tokens rather than single unlocks:
+        monthly tranches of one token move together, so treating them as independent
+        would make the range look tighter than it is. A range that crosses 0 means the
+        group's effect is not clear."""
         import random
-        v = [e["moves"][k] for e in evs if e["moves"].get(k) is not None]
-        if len(v) < 5:
+        by_tok = {}
+        for e in evs:
+            if e["moves"].get(k) is not None:
+                by_tok.setdefault(e["token"], []).append(e["moves"][k])
+        toks = list(by_tok.values())
+        if sum(len(t) for t in toks) < 5 or len(toks) < 3:
             return None
         rng = random.Random(7)
-        meds = sorted(statistics.median(rng.choices(v, k=len(v))) for _ in range(reps))
+        meds = []
+        for _ in range(reps):
+            pick = [x for t in rng.choices(toks, k=len(toks)) for x in t]
+            meds.append(statistics.median(pick))
+        meds.sort()
         return [round(meds[int(0.05 * reps)], 2), round(meds[int(0.95 * reps) - 1], 2)]
     keys = ("pre30", "pre7", "post7", "post14", "around", "beyondNormal", "normal21")
     return {
-        "n": len(evs), "small": len(evs) < MIN_GROUP,
+        "n": len(evs), "tokens": len({e["token"] for e in evs}), "small": len(evs) < MIN_GROUP or len({e["token"] for e in evs}) < 5,
         "median": {k: med(k) for k in keys},
         "pctDown": {k: neg(k) for k in keys},
         "range90": {k: band(k) for k in ("post14", "around", "beyondNormal")},
@@ -320,7 +331,7 @@ def main():
                    "'Beyond normal' compares each unlock's three weeks (7 days before to 14 after) with the token's own "
                    "average three-week drift against Bitcoin over the whole year, so a token that slides all year is not "
                    "blamed on its unlock. For tokens that unlock every month that average already contains unlocks, so this "
-                   "measure understates their effect. Ranges are 90% bootstrap ranges for the median."),
+                   "measure understates their effect. Ranges are 90% ranges for the median, found by resampling whole tokens (not single unlocks), because one token's monthly tranches move together."),
         "groups": groups, "events": events, "skipped": skipped,
     }, indent=1, ensure_ascii=False) + "\n")
     (ROOT / "data" / "backtest-log.txt").write_text("\n".join(LOG) + "\n")

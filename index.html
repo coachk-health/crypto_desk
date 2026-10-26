@@ -505,7 +505,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       el('thead', null, [el('tr', null, [el('th', { text: 'Group' }), el('th', { class: 'n', text: 'Unlocks' }), el('th', { class: 'n', text: '30 days before' }), el('th', { class: 'n', text: '7 days before' }), el('th', { class: 'n', text: '7 days after' }), el('th', { class: 'n', text: '14 days after' }), el('th', { class: 'n', text: 'Beyond its normal trend**' }), el('th', { class: 'n', text: 'Fell vs BTC*' })])]),
       el('tbody', null, rows.map(([label, g, color]) => el('tr', { class: g.small ? 'small' : '' }, [
         el('td', null, [color ? el('i', { class: 'sw', style: 'background:' + color }) : null, label, g.small ? el('span', { class: 'smalltag', text: ' small sample' }) : null]),
-        el('td', { class: 'n', text: String(g.n) }),
+        el('td', { class: 'n', text: g.n + (g.tokens ? ' (' + g.tokens + ' tokens)' : '') }),
         el('td', { class: 'n' }, [pct(g.median.pre30)]), el('td', { class: 'n' }, [pct(g.median.pre7)]),
         el('td', { class: 'n' }, [pct(g.median.post7)]), el('td', { class: 'n' }, [pct(g.median.post14)]),
         el('td', { class: 'n' }, [pct(g.median.beyondNormal), g.range90 && g.range90.beyondNormal ? el('small', { class: 'rng', text: ' ' + g.range90.beyondNormal[0].toFixed(1) + ' to ' + g.range90.beyondNormal[1].toFixed(1) }) : null]),
@@ -566,7 +566,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     const breakBlock = el('div', { class: 'panel' }, [el('h3', { text: 'Which unlocks dumped the most' }),
       seg([['who', 'Who receives'], ['size', 'Size vs supply'], ['vol', 'Size vs trading'], ['kind', 'First insider unlock']], pastBreak, v => pastBreak = v),
       groupTable(brRows),
-      el('p', { class: 'small', text: '* Share that did worse than Bitcoin from 7 days before to 14 days after. ** The same three weeks compared with the token’s own average three-week trend against Bitcoin over the year; the small figures are the 90% range for that median, and a range that crosses 0 means the group’s effect is not clear. Medians are the middle unlock in each group, so one extreme token cannot drag the number.' })]);
+      el('p', { class: 'small', text: '* Share that did worse than Bitcoin from 7 days before to 14 days after. ** The same three weeks compared with the token’s own average three-week trend against Bitcoin over the year; the small figures are the 90% range for that median, and a range that crosses 0 means the group’s effect is not clear. Ranges resample whole tokens, because one token’s monthly unlocks move together. Medians are the middle unlock in each group, so one extreme token cannot drag the number.' })]);
 
     // timing
     const tot = Object.values(lc).reduce((a, b) => a + b, 0) || 1;
