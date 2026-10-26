@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
   group: backtest
@@ -41,6 +42,11 @@ jobs:
           done
           # Pushes made by this workflow do not trigger the publish workflow, so copy to gh-pages here.
           git push --force origin HEAD:gh-pages
+      - name: Ask GitHub Pages to rebuild
+        # Pushes made with the workflow token do not always start a Pages build, so request one.
+        run: |
+          curl -sS -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true
       - name: Save the log even if measuring failed
         if: failure()
         run: |
