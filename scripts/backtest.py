@@ -176,10 +176,21 @@ def summarise(evs):
         v = [e["path"][str(d)] for e in evs if e["path"].get(str(d)) is not None]
         if len(v) >= 3:
             path[str(d)] = round(statistics.median(v), 2)
+    def band(k, reps=2000):
+        """90% bootstrap range for the median: if it straddles 0, the group's effect is not clear."""
+        import random
+        v = [e["moves"][k] for e in evs if e["moves"].get(k) is not None]
+        if len(v) < 5:
+            return None
+        rng = random.Random(7)
+        meds = sorted(statistics.median(rng.choices(v, k=len(v))) for _ in range(reps))
+        return [round(meds[int(0.05 * reps)], 2), round(meds[int(0.95 * reps) - 1], 2)]
+    keys = ("pre30", "pre7", "post7", "post14", "around", "beyondNormal", "normal21")
     return {
         "n": len(evs), "small": len(evs) < MIN_GROUP,
-        "median": {k: med(k) for k in ("pre30", "pre7", "post7", "post14", "around")},
-        "pctDown": {k: neg(k) for k in ("pre30", "pre7", "post7", "post14", "around")},
+        "median": {k: med(k) for k in keys},
+        "pctDown": {k: neg(k) for k in keys},
+        "range90": {k: band(k) for k in ("post14", "around", "beyondNormal")},
         "medianLowDay": statistics.median(lows) if lows else None,
         "lowDayCounts": {w: sum(1 for x in lows if lo <= x <= hi) for w, lo, hi in
                          (("30-8 days before", -30, -8), ("final week before", -7, -1), ("unlock day", 0, 0),
@@ -206,6 +217,16 @@ def main():
             log(f"  skipped: {e}")
             skipped.append({"token": t["token"], "why": f"price data unavailable ({e})"})
             continue
+        # The token's normal 3-week drift against Bitcoin over the whole year, so an unlock is
+        # only blamed for what it did beyond the token's usual trend.
+        common = sorted(k for k in s if s[k].get("price") and btc.get(k, {}).get("price"))
+        drift21 = None
+        if len(common) >= 120:
+            a, z = common[0], common[-1]
+            span = (datetime.strptime(z, "%Y-%m-%d") - datetime.strptime(a, "%Y-%m-%d")).days
+            ratio = (s[z]["price"] / s[a]["price"]) / (btc[z]["price"] / btc[a]["price"])
+            if span > 0 and ratio > 0:
+                drift21 = ratio ** (21 / span) - 1
         for e in evs:
             d0 = datetime.strptime(e["date"], "%Y-%m-%d").replace(tzinfo=timezone.utc)
             if d0 + timedelta(days=POST) > NOW:
@@ -239,6 +260,9 @@ def main():
                 "post7": rel(s, btc, d0, 0, 7), "post14": rel(s, btc, d0, 0, POST),
                 "around": rel(s, btc, d0, -7, POST),
             }
+            moves["normal21"] = round(drift21 * 100, 2) if drift21 is not None else None
+            moves["beyondNormal"] = (round(((1 + moves["around"] / 100) / (1 + drift21) - 1) * 100, 2)
+                                     if moves["around"] is not None and drift21 is not None else None)
             path = {}
             for d in range(-PRE, POST + 1):
                 r = rel(s, btc, d0, 0, d) if d != 0 else 0.0
@@ -292,7 +316,11 @@ def main():
                    "daily prices at 00:00 UTC (day 0 is the unlock date, so its price is from before the unlock). "
                    "Grades use the same rules as the live page, with size, trading volume and circulating supply "
                    "taken from CoinGecko as they were the day before each unlock. Monthly tranches of the same token "
-                   "overlap: the 30 days before one unlock include the 14 days after the previous one."),
+                   "overlap: the 30 days before one unlock include the 14 days after the previous one. "
+                   "'Beyond normal' compares each unlock's three weeks (7 days before to 14 after) with the token's own "
+                   "average three-week drift against Bitcoin over the whole year, so a token that slides all year is not "
+                   "blamed on its unlock. For tokens that unlock every month that average already contains unlocks, so this "
+                   "measure understates their effect. Ranges are 90% bootstrap ranges for the median."),
         "groups": groups, "events": events, "skipped": skipped,
     }, indent=1, ensure_ascii=False) + "\n")
     (ROOT / "data" / "backtest-log.txt").write_text("\n".join(LOG) + "\n")
