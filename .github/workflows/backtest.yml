@@ -1,0 +1,51 @@
+name: Past unlock track record
+
+# Measures what prices did around every past unlock and grades each one with the
+# live page's rules. Runs daily and whenever the researched list changes. Free.
+on:
+  push:
+    branches: [main]
+    paths: ["data/past_unlocks.json", "scripts/backtest.py", "scripts/score.py"]
+  schedule:
+    - cron: "40 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: backtest
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Measure past unlocks
+        run: python3 scripts/backtest.py
+      - name: Save results and publish
+        run: |
+          git config user.name "crypto-desk-bot"
+          git config user.email "crypto-desk-bot@users.noreply.github.com"
+          git add data/backtest.json data/backtest-log.txt data/past_unlocks.json
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "Track record update $(date -u +%Y-%m-%d)"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            sleep 5
+          done
+          # Pushes made by this workflow do not trigger the publish workflow, so copy to gh-pages here.
+          git push --force origin HEAD:gh-pages
+      - name: Save the log even if measuring failed
+        if: failure()
+        run: |
+          git config user.name "crypto-desk-bot"
+          git config user.email "crypto-desk-bot@users.noreply.github.com"
+          git add -f data/backtest-log.txt 2>/dev/null || true
+          git commit -m "Track record run failed $(date -u +%Y-%m-%d)" || exit 0
+          git pull --rebase origin main && git push origin HEAD:main || true
