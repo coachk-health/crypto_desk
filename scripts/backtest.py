@@ -264,6 +264,8 @@ def main():
                 "moves": moves, "path": path, "lowDay": low_day,
                 "worstDay": worst, "worstDayMove": drops.get(worst) if worst is not None else None,
                 "sources": e.get("sources") or [],
+                "check": (t.get("verify") or {}).get("status"),
+                "checkNotes": (t.get("verify") or {}).get("notes"),
             })
     events.sort(key=lambda e: e["date"], reverse=True)
     log(f"measured {len(events)} events, skipped {len(skipped)}")

@@ -581,6 +581,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
             el('div', null, [el('b', { text: 'Who received it: ' }), mix + (e.firstInsiderUnlock ? '. First insider unlock.' : '')]),
             el('div', null, [el('b', { text: '30 days before: ' }), pct(e.moves.pre30), '. ', el('b', { text: 'Whole window (7 before to 14 after): ' }), pct(e.moves.around), '. ', el('b', { text: 'Biggest one-day drop: ' }), e.worstDay != null ? (e.worstDay === 0 ? 'unlock day' : (e.worstDay < 0 ? Math.abs(e.worstDay) + ' days before' : e.worstDay + ' days after')) + ' (' : '', e.worstDay != null ? pct(e.worstDayMove) : '', e.worstDay != null ? ')' : '']),
             e.predicted && e.predicted.grade ? el('div', null, [el('b', { text: 'Live page said beforehand: ' }), e.predicted.grade + ' (confidence ' + e.predicted.confidence + ')']) : null,
+            e.check ? el('div', null, [el('b', { text: 'Independent check: ' }), e.check + (e.checkNotes ? '. ' + e.checkNotes : '')]) : null,
             el('ul', { class: 'facts' }, e.factors.map(f => el('li', null, [el('span', { class: 'fp num' + (f.points == null ? ' na' : f.points > 0 ? ' neg' : f.points < 0 ? ' pos' : ''), text: fmtPts(f.points) }), el('span', null, [el('b', { text: f.label }), ' ' + f.detail])]))),
             el('div', { class: 'srcs' }, [el('b', { text: 'Sources: ' })].concat((e.sources || []).map(s => el('a', { href: s.url, target: '_blank', rel: 'noopener', text: s.label || 'Source' }))))
           ])])]);
