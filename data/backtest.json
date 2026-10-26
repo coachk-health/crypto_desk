@@ -1,0 +1,61 @@
+{
+ "generatedAt": "2026-10-26T11:14:16Z",
+ "window": {
+  "pre": 30,
+  "post": 14
+ },
+ "benchmark": "Bitcoin",
+ "method": "Each move is the token's price change relative to Bitcoin over the same days, from CoinGecko daily prices at 00:00 UTC (day 0 is the unlock date, so its price is from before the unlock). Grades use the same rules as the live page, with size, trading volume and circulating supply taken from CoinGecko as they were the day before each unlock. Monthly tranches of the same token overlap: the 30 days before one unlock include the 14 days after the previous one.",
+ "groups": {
+  "All unlocks": {
+   "n": 0,
+   "small": true,
+   "median": {
+    "pre30": null,
+    "pre7": null,
+    "post7": null,
+    "post14": null,
+    "around": null
+   },
+   "pctDown": {
+    "pre30": null,
+    "pre7": null,
+    "post7": null,
+    "post14": null,
+    "around": null
+   },
+   "medianLowDay": null,
+   "lowDayCounts": {
+    "30-8 days before": 0,
+    "final week before": 0,
+    "unlock day": 0,
+    "days 1-7 after": 0,
+    "days 8-14 after": 0
+   },
+   "path": {}
+  }
+ },
+ "events": [],
+ "skipped": [
+  {
+   "token": "SOON",
+   "why": "no CoinGecko id"
+  },
+  {
+   "token": "APR",
+   "why": "no CoinGecko id"
+  },
+  {
+   "token": "SOSO",
+   "why": "no CoinGecko id"
+  },
+  {
+   "token": "COAI",
+   "why": "no CoinGecko id"
+  },
+  {
+   "token": "XPL",
+   "why": "no CoinGecko id"
+  }
+ ]
+}
