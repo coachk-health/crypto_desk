@@ -29,6 +29,9 @@ CACHE = ROOT / "data" / "cache"
 NOW = datetime.now(timezone.utc)
 PRE, POST = 30, 14
 MIN_GROUP = 10   # groups smaller than this are flagged as small samples
+ENTRIES = [-30, -14, -7, -3, -1, 0]   # days relative to the unlock to open a short
+EXITS = [0, 3, 7, 14]                 # days relative to the unlock to close it
+USD_KEYS = ("uPre30", "uPre14", "uPre7", "uPre3", "uPost3", "uPost7", "uPost14", "uAround")
 LOG = []
 
 
@@ -103,6 +106,25 @@ def rel(s, b, d0, a, z):
     if None in (p1, p2, b1, b2):
         return None
     return round(((p2 / p1) / (b2 / b1) - 1) * 100, 2)
+
+
+def usd(s, d0, a, z):
+    """Plain dollar price change from day a to day z, in %."""
+    p1, p2 = at(s, d0, a), at(s, d0, z)
+    return round((p2 / p1 - 1) * 100, 2) if p1 and p2 else None
+
+
+def short_baseline(s):
+    """For each holding length, the median result of shorting this token on EVERY day of
+    the year: the 'random timing' a short around an unlock has to beat."""
+    days = sorted(k for k in s if s[k].get("price"))
+    px = [s[k]["price"] for k in days]
+    out = {}
+    for h in sorted({x - e for e in ENTRIES for x in EXITS if x > e}):
+        r = [-(px[i + h] / px[i] - 1) * 100 for i in range(len(px) - h)]
+        if len(r) >= 60:
+            out[h] = statistics.median(r)
+    return out
 
 
 def harvest():
@@ -196,12 +218,54 @@ def summarise(evs):
             meds.append(statistics.median(pick))
         meds.sort()
         return [round(meds[int(0.05 * reps)], 2), round(meds[int(0.95 * reps) - 1], 2)]
-    keys = ("pre30", "pre7", "post7", "post14", "around", "beyondNormal", "normal21")
+    keys = ("pre30", "pre7", "post7", "post14", "around", "beyondNormal", "normal21") + USD_KEYS
+    path_usd = {}
+    for d in range(-PRE, POST + 1):
+        v = [e["pathUsd"][str(d)] for e in evs if e.get("pathUsd", {}).get(str(d)) is not None]
+        if len(v) >= 3:
+            path_usd[str(d)] = round(statistics.median(v), 2)
+    lows_usd = [e["lowDayUsd"] for e in evs if e.get("lowDayUsd") is not None]
+
+    def grid_band(vals_by_tok, reps=600):
+        import random
+        toks = list(vals_by_tok.values())
+        if sum(len(t) for t in toks) < 5 or len(toks) < 3:
+            return None
+        rng = random.Random(11)
+        meds = sorted(statistics.median([x for t in rng.choices(toks, k=len(toks)) for x in t]) for _ in range(reps))
+        return [round(meds[int(0.05 * reps)], 2), round(meds[int(0.95 * reps) - 1], 2)]
+    grid = {}
+    for a in ENTRIES:
+        for z in EXITS:
+            if z <= a:
+                continue
+            k = f"{a}:{z}"
+            rows = [(e["token"], e["shorts"][k]) for e in evs if k in (e.get("shorts") or {})]
+            if not rows:
+                continue
+            rets = [r["ret"] for _, r in rows]
+            maes = sorted(r["mae"] for _, r in rows)
+            edges = [r["edge"] for _, r in rows if r["edge"] is not None]
+            by_tok_e = {}
+            for t_, r in rows:
+                if r["edge"] is not None:
+                    by_tok_e.setdefault(t_, []).append(r["edge"])
+            grid[k] = {
+                "n": len(rows), "median": round(statistics.median(rets), 2), "mean": round(statistics.mean(rets), 2),
+                "win": round(100 * sum(1 for x in rets if x > 0) / len(rets)),
+                "maeMedian": round(statistics.median(maes), 2), "mae90": round(maes[min(len(maes) - 1, int(0.9 * len(maes)))], 2),
+                "edge": round(statistics.median(edges), 2) if edges else None, "edgeRange": grid_band(by_tok_e),
+            }
     return {
         "n": len(evs), "tokens": len({e["token"] for e in evs}), "small": len(evs) < MIN_GROUP or len({e["token"] for e in evs}) < 5,
         "median": {k: med(k) for k in keys},
         "pctDown": {k: neg(k) for k in keys},
-        "range90": {k: band(k) for k in ("post14", "around", "beyondNormal")},
+        "range90": {k: band(k) for k in ("post14", "around", "beyondNormal", "uPre7", "uPost7", "uPost14", "uAround")},
+        "pathUsd": path_usd, "grid": grid,
+        "medianLowDayUsd": statistics.median(lows_usd) if lows_usd else None,
+        "lowDayCountsUsd": {w: sum(1 for x in lows_usd if lo <= x <= hi) for w, lo, hi in
+                            (("30-8 days before", -30, -8), ("final week before", -7, -1), ("unlock day", 0, 0),
+                             ("days 1-7 after", 1, 7), ("days 8-14 after", 8, 14))},
         "medianLowDay": statistics.median(lows) if lows else None,
         "lowDayCounts": {w: sum(1 for x in lows if lo <= x <= hi) for w, lo, hi in
                          (("30-8 days before", -30, -8), ("final week before", -7, -1), ("unlock day", 0, 0),
@@ -238,6 +302,7 @@ def main():
             ratio = (s[z]["price"] / s[a]["price"]) / (btc[z]["price"] / btc[a]["price"])
             if span > 0 and ratio > 0:
                 drift21 = ratio ** (21 / span) - 1
+        base = short_baseline(s)
         for e in evs:
             d0 = datetime.strptime(e["date"], "%Y-%m-%d").replace(tzinfo=timezone.utc)
             if d0 + timedelta(days=POST) > NOW:
@@ -274,6 +339,29 @@ def main():
             moves["normal21"] = round(drift21 * 100, 2) if drift21 is not None else None
             moves["beyondNormal"] = (round(((1 + moves["around"] / 100) / (1 + drift21) - 1) * 100, 2)
                                      if moves["around"] is not None and drift21 is not None else None)
+            umoves = {"uPre30": usd(s, d0, -30, 0), "uPre14": usd(s, d0, -14, 0), "uPre7": usd(s, d0, -7, 0),
+                      "uPre3": usd(s, d0, -3, 0), "uPost3": usd(s, d0, 0, 3), "uPost7": usd(s, d0, 0, 7),
+                      "uPost14": usd(s, d0, 0, POST), "uAround": usd(s, d0, -7, POST)}
+            moves.update(umoves)
+            path_usd = {}
+            for d in range(-PRE, POST + 1):
+                r = usd(s, d0, 0, d) if d != 0 else 0.0
+                if r is not None:
+                    path_usd[str(d)] = r
+            shorts = {}
+            for a in ENTRIES:
+                for z in EXITS:
+                    if z <= a:
+                        continue
+                    pa, pz = at(s, d0, a), at(s, d0, z)
+                    if not pa or not pz:
+                        continue
+                    hold = [at(s, d0, d) for d in range(a, z + 1)]
+                    hold = [x for x in hold if x]
+                    ret = round(-(pz / pa - 1) * 100, 2)
+                    mae = round((max(hold) / pa - 1) * 100, 2)  # worst move against the short while held (daily closes)
+                    b = base.get(z - a)
+                    shorts[f"{a}:{z}"] = {"ret": ret, "mae": mae, "edge": round(ret - b, 2) if b is not None else None}
             path = {}
             for d in range(-PRE, POST + 1):
                 r = rel(s, btc, d0, 0, d) if d != 0 else 0.0
@@ -296,7 +384,8 @@ def main():
                 "recipientsMix": e.get("recipientsMix"), "who": who(e.get("recipientsMix")),
                 "grade": imp["grade"], "points": imp["points"], "factors": imp["factors"],
                 "predicted": e.get("predicted"),
-                "moves": moves, "path": path, "lowDay": low_day,
+                "moves": moves, "path": path, "pathUsd": path_usd, "shorts": shorts, "lowDay": low_day,
+                "lowDayUsd": int(min(path_usd, key=path_usd.get)) if path_usd else None,
                 "worstDay": worst, "worstDayMove": drops.get(worst) if worst is not None else None,
                 "sources": e.get("sources") or [],
                 "check": (t.get("verify") or {}).get("status"),
@@ -315,11 +404,34 @@ def main():
     add("Size vs circulating", lambda e: bucket_size(e["pctCirculating"]))
     add("Size vs daily trading", lambda e: bucket_vol(e["advDays"]))
     add("Kind", lambda e: "first insider unlock" if e["firstInsiderUnlock"] else "routine tranche")
+    def setup(e):
+        hp = e["who"] == "investors" or (e["pctCirculating"] or 0) >= 10 or (e["advDays"] or 0) >= 3
+        return "high pressure" if hp else "everything else"
+    add("Setup", setup)
     pred = [e for e in events if e.get("predicted") and e["predicted"].get("grade")]
     if pred:
         add("Live-page prediction", lambda e: (e.get("predicted") or {}).get("grade"))
 
+    per_token = {}
+    for e in events:
+        per_token.setdefault(e["token"], []).append(e)
+    tok_stats = {}
+    for t_, evs_ in per_token.items():
+        def md(k):
+            v = [x["moves"].get(k) for x in evs_ if x["moves"].get(k) is not None]
+            return round(statistics.median(v), 2) if v else None
+        sh = [x["shorts"].get("-7:7", {}).get("ret") for x in evs_ if x.get("shorts", {}).get("-7:7")]
+        tok_stats[t_] = {"n": len(evs_), "last": max(x["date"] for x in evs_),
+                         "uPre7": md("uPre7"), "uPost7": md("uPost7"), "uPost14": md("uPost14"), "uAround": md("uAround"),
+                         "shortWin": round(100 * sum(1 for x in sh if x > 0) / len(sh)) if sh else None,
+                         "shortMedian": round(statistics.median(sh), 2) if sh else None}
+    bdays = sorted(k for k in btc if btc[k].get("price"))
+    btc_year = round((btc[bdays[-1]]["price"] / btc[bdays[0]]["price"] - 1) * 100, 1) if bdays else None
+
     OUT.write_text(json.dumps({
+        "btcYear": btc_year, "btcFrom": bdays[0] if bdays else None, "btcTo": bdays[-1] if bdays else None,
+        "perToken": tok_stats,
+        "gridSpec": {"entries": ENTRIES, "exits": EXITS},
         "generatedAt": NOW.isoformat(timespec="seconds").replace("+00:00", "Z"),
         "window": {"pre": PRE, "post": POST},
         "benchmark": "Bitcoin",
@@ -331,7 +443,11 @@ def main():
                    "'Beyond normal' compares each unlock's three weeks (7 days before to 14 after) with the token's own "
                    "average three-week drift against Bitcoin over the whole year, so a token that slides all year is not "
                    "blamed on its unlock. For tokens that unlock every month that average already contains unlocks, so this "
-                   "measure understates their effect. Ranges are 90% ranges for the median, found by resampling whole tokens (not single unlocks), because one token's monthly tranches move together."),
+                   "measure understates their effect. Dollar moves are plain USD price changes. Short results are the % gained by "
+                   "shorting at the entry day's price and covering at the exit day's price, before fees and funding; 'worst "
+                   "move against you' is the highest daily close while the short was open, so intraday spikes were worse. "
+                   "'Edge over random timing' subtracts the median result of shorting the same token for the same number of "
+                   "days starting on every day of the year. Ranges are 90% ranges for the median, found by resampling whole tokens (not single unlocks), because one token's monthly tranches move together."),
         "groups": groups, "events": events, "skipped": skipped,
     }, indent=1, ensure_ascii=False) + "\n")
     (ROOT / "data" / "backtest-log.txt").write_text("\n".join(LOG) + "\n")

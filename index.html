@@ -92,6 +92,7 @@ ul.facts b { color: var(--text); font-weight: 600; }
 .fp.neg { color: var(--bear); } .fp.pos { color: var(--bull); } .fp.na { color: var(--muted); font-weight: 500; }
 .ev { color: var(--muted); font-size: 13px; }
 .srcs { display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.history { background: rgba(255,181,71,.07); border-radius: 8px; padding: 8px 10px; color: var(--text); }
 details.method { background: var(--panel); border-radius: 12px; padding: 12px 16px; margin: 0 0 14px; }
 details.method summary { cursor: pointer; color: var(--sun); font-weight: 600; }
 .mbody { display: grid; gap: 10px; margin-top: 10px; max-width: 75ch; }
@@ -119,6 +120,17 @@ table.gt td:first-child { white-space: nowrap; }
 .smalltag { color: var(--sun); font-size: 12px; font-weight: 600; }
 .rng { display: block; color: var(--muted); font-size: 11.5px; }
 .verdict { margin: 0; font-weight: 600; max-width: 75ch; }
+.grid { min-width: 620px; }
+.grid th[scope=row] { text-align: left; white-space: nowrap; color: var(--muted); font-weight: 600; }
+.gcell { text-align: center !important; vertical-align: middle; border-radius: 6px; }
+.gcell b { display: block; font-size: 17px; }
+.gcell small { display: block; color: var(--muted); font-size: 11.5px; }
+.gcell.pos { background: rgba(67, 214, 160, .10); } .gcell.pos b { color: var(--bull); }
+.gcell.neg { background: rgba(255, 107, 125, .08); } .gcell.neg b { color: var(--bear); }
+.gcell.clear { box-shadow: inset 0 0 0 2px var(--bull); }
+.gcell.best { box-shadow: inset 0 0 0 3px var(--sun); }
+.gcell.na { background: transparent; }
+section > .seg:first-child { margin-top: 0; }
 .findings ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; max-width: 80ch; }
 tr.small td { opacity: .75; }
 .na { color: var(--muted); }
@@ -337,6 +349,8 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
           ])
         ]),
         el('div', null, [el('b', { text: 'Who receives it: ' }), u.recipients || 'unconfirmed']),
+        (() => { const h = D.backtest && D.backtest.perToken && D.backtest.perToken[u.token]; if (!h) return null;
+          return el('div', { class: 'history' }, [el('b', { text: 'At its last ' + h.n + ' unlock' + (h.n > 1 ? 's' : '') + ' (in dollars): ' }), 'week before ', pct(h.uPre7), ', week after ', pct(h.uPost7), ', two weeks after ', pct(h.uPost14), h.shortWin != null ? '. A short from 7 days before to 7 days after made money ' + h.shortWin + '% of the time (median ' : '', h.shortMedian != null ? pct(h.shortMedian) : '', h.shortWin != null ? ').' : '', h.n < 3 ? ' Very few past unlocks, so this is thin.' : '']); })(),
         u.sellerNotes ? el('div', null, [el('b', { text: 'What they have done before: ' }), u.sellerNotes]) : null,
         u.investorEntry && u.investorEntry.priceUsd ? el('div', null, [el('b', { text: 'Investor entry price: ' }), '$' + u.investorEntry.priceUsd + (u.investorEntry.round ? ' (' + u.investorEntry.round + ')' : '') + (m.priceUsd ? ', now $' + m.priceUsd : '')]) : null,
         el('div', null, [el('b', { text: 'Amount: ' }), u.amountText || u.amount || 'unconfirmed', '. ', el('b', { text: 'Type: ' }), u.type === 'linear' ? 'released gradually' : 'released at once (cliff)']),
@@ -425,7 +439,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
   const WHO_ORDER = ['team', 'investors', 'team + investors', 'community', 'ecosystem', 'mixed'];
   const WHO_COLOR = { 'team': '#3987e5', 'investors': '#d95926', 'team + investors': '#199e70', 'community': '#c98500', 'ecosystem': '#d55181', 'mixed': '#9085e9' };
   const WHO_LABEL = { 'team': 'Team', 'investors': 'Investors', 'team + investors': 'Team + investors', 'community': 'Community', 'ecosystem': 'Ecosystem fund', 'mixed': 'Mixed' };
-  let pastView = 'grade', pastBreak = 'who', pastFilter = 'all', pastOpen = null;
+  let pastView = 'grade', pastBreak = 'who', pastFilter = 'all', pastOpen = null, pastUnit = 'usd';
 
   function pct(v, digits) {
     if (v == null) return el('span', { class: 'na', text: '—' });
@@ -501,30 +515,85 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     return span;
   }
 
+  // unit-aware keys: dollars (default) or against Bitcoin
+  function K() {
+    return pastUnit === 'usd'
+      ? { pre30: 'uPre30', pre7: 'uPre7', post7: 'uPost7', post14: 'uPost14', around: 'uAround', path: 'pathUsd', low: 'lowDayCountsUsd', label: 'in dollars' }
+      : { pre30: 'pre30', pre7: 'pre7', post7: 'post7', post14: 'post14', around: 'around', path: 'path', low: 'lowDayCounts', label: 'against Bitcoin' };
+  }
+  const SHORT_GROUPS = [['All unlocks', 'All unlocks'], ['Setup: high pressure', 'High-pressure setups'], ['Who receives: investors', 'Mostly to investors'], ['Size vs circulating: 10% or more', '10%+ of supply'], ['Size vs daily trading: 3+ days', '3+ days of volume'], ['Kind: first insider unlock', 'First insider unlock'], ['Grade: Very high', 'Graded Very high']];
+  const ENTRY_LABEL = { '-30': '30 days before', '-14': '14 days before', '-7': '7 days before', '-3': '3 days before', '-1': '1 day before', '0': 'On the day' };
+  const EXIT_LABEL = { '0': 'On the day', '3': '3 days after', '7': '7 days after', '14': '14 days after' };
+  let shortGroup = 'Setup: high pressure';
+
+  function sgn(v) { return v == null ? 'n/a' : (v > 0 ? '+' : '') + Number(v).toFixed(1) + '%'; }
+  function edgeClear(c) { return c && c.edgeRange && c.edgeRange[0] > 0; }
+
+  function shortPanel(bt) {
+    const G = bt.groups, avail = SHORT_GROUPS.filter(([k]) => G[k] && G[k].grid);
+    if (!avail.length) return null;
+    if (!G[shortGroup]) shortGroup = avail[0][0];
+    const g = G[shortGroup], grid = g.grid, spec = bt.gridSpec || { entries: [-30, -14, -7, -3, -1, 0], exits: [0, 3, 7, 14] };
+    // best cell: highest median edge among cells whose edge is clearly positive, else highest median result
+    const cells = Object.entries(grid);
+    const clear = cells.filter(([, c]) => edgeClear(c)).sort((a, b) => b[1].edge - a[1].edge);
+    const best = (clear[0] || cells.filter(([, c]) => c.edge != null).sort((a, b) => b[1].edge - a[1].edge)[0] || cells[0]);
+    const [bk, bc] = best || [];
+    const [ba, bz] = bk ? bk.split(':') : [];
+    const head = el('tr', null, [el('th', { text: 'Open the short' })].concat(spec.exits.map(z => el('th', { class: 'n', text: 'Cover ' + EXIT_LABEL[z].toLowerCase() }))));
+    const body = spec.entries.map(a => el('tr', null, [el('th', { scope: 'row', text: ENTRY_LABEL[a] })].concat(spec.exits.map(z => {
+      const c = grid[a + ':' + z];
+      if (!c || z <= a) return el('td', { class: 'gcell na', text: '' });
+      const tone = c.median > 0 ? 'pos' : c.median < 0 ? 'neg' : '';
+      return el('td', { class: 'gcell ' + tone + (a + ':' + z === bk ? ' best' : '') + (edgeClear(c) ? ' clear' : ''), title: 'n=' + c.n + ', average ' + c.mean + '%' }, [
+        el('b', { class: 'num', text: (c.median > 0 ? '+' : '') + c.median.toFixed(1) + '%' }),
+        el('small', { text: c.win + '% won' }),
+        el('small', { text: c.edge != null ? (c.edge > 0 ? '+' : '') + c.edge.toFixed(1) + ' vs random' : '' })
+      ]);
+    }))));
+    const summary = bc ? el('p', { class: 'verdict', text: 'Best timing for ' + avail.find(x => x[0] === shortGroup)[1].toLowerCase() + ': short ' + ENTRY_LABEL[ba].toLowerCase() + ', cover ' + EXIT_LABEL[bz].toLowerCase() + '. Median result ' + (bc.median > 0 ? '+' : '') + bc.median.toFixed(1) + '%, won ' + bc.win + '% of the time' + (bc.edge != null ? ', ' + Math.abs(bc.edge).toFixed(1) + '% ' + (bc.edge >= 0 ? 'better' : 'worse') + ' than shorting the same token at a random time' : '') + (edgeClear(bc) ? '. That edge is clear: its range stays above zero.' : '. That is not clearly better than random timing, so the unlock added no reliable edge here.') }) : null;
+    const risk = bc ? el('p', { class: 'small', text: 'While that short was open, the price typically ran ' + bc.maeMedian.toFixed(1) + '% against you at its worst daily close, and 1 in 10 trades saw ' + bc.mae90.toFixed(0) + '% or more. Intraday spikes were bigger. Size positions so a move like that cannot liquidate you.' }) : null;
+    return el('div', { class: 'panel' }, [
+      el('div', { class: 'phead' }, [el('h3', { text: 'When shorting paid' })]),
+      seg(avail.map(([k, l]) => [k, l + ' (' + G[k].n + ')']), shortGroup, v => shortGroup = v),
+      el('p', { class: 'small', text: 'Each cell: the median % made by shorting at the open day’s price and covering at the close day’s price, how often it made money, and how it compared with shorting the same token for the same number of days at a random time. Outlined cells beat random timing clearly. Before fees and funding.' }),
+      summary, risk,
+      el('div', { class: 'tablewrap' }, [el('table', { class: 'grid' }, [el('thead', null, [head]), el('tbody', null, body)])]),
+      g.small ? el('p', { class: 'smalltag', text: 'Small sample: ' + g.n + ' unlocks from ' + g.tokens + ' tokens.' }) : null
+    ]);
+  }
+
   function groupTable(rows) {
+    const k = K();
+    const lastHead = pastUnit === 'usd' ? 'Short edge vs random**' : 'Beyond its normal trend**';
     return el('div', { class: 'tablewrap' }, [el('table', { class: 'gt' }, [
-      el('thead', null, [el('tr', null, [el('th', { text: 'Group' }), el('th', { class: 'n', text: 'Unlocks' }), el('th', { class: 'n', text: '30 days before' }), el('th', { class: 'n', text: '7 days before' }), el('th', { class: 'n', text: '7 days after' }), el('th', { class: 'n', text: '14 days after' }), el('th', { class: 'n', text: 'Beyond its normal trend**' }), el('th', { class: 'n', text: 'Fell vs BTC*' })])]),
-      el('tbody', null, rows.map(([label, g, color]) => el('tr', { class: g.small ? 'small' : '' }, [
-        el('td', null, [color ? el('i', { class: 'sw', style: 'background:' + color }) : null, label, g.small ? el('span', { class: 'smalltag', text: ' small sample' }) : null]),
-        el('td', { class: 'n', text: g.n + (g.tokens ? ' (' + g.tokens + ' tokens)' : '') }),
-        el('td', { class: 'n' }, [pct(g.median.pre30)]), el('td', { class: 'n' }, [pct(g.median.pre7)]),
-        el('td', { class: 'n' }, [pct(g.median.post7)]), el('td', { class: 'n' }, [pct(g.median.post14)]),
-        el('td', { class: 'n' }, [pct(g.median.beyondNormal), g.range90 && g.range90.beyondNormal ? el('small', { class: 'rng', text: ' ' + g.range90.beyondNormal[0].toFixed(1) + ' to ' + g.range90.beyondNormal[1].toFixed(1) }) : null]),
-        el('td', { class: 'n', text: g.pctDown.around == null ? '—' : g.pctDown.around + '%' })
-      ])))
+      el('thead', null, [el('tr', null, [el('th', { text: 'Group' }), el('th', { class: 'n', text: 'Unlocks' }), el('th', { class: 'n', text: '30 days before' }), el('th', { class: 'n', text: '7 days before' }), el('th', { class: 'n', text: '7 days after' }), el('th', { class: 'n', text: '14 days after' }), el('th', { class: 'n', text: lastHead }), el('th', { class: 'n', text: 'Fell*' })])]),
+      el('tbody', null, rows.map(([label, g, color]) => {
+        const c = g.grid && g.grid['-7:14'];
+        const last = pastUnit === 'usd'
+          ? [c && c.edge != null ? pct(c.edge) : el('span', { class: 'na', text: '—' }), c && c.edgeRange ? el('small', { class: 'rng', text: c.edgeRange[0].toFixed(1) + ' to ' + c.edgeRange[1].toFixed(1) }) : null]
+          : [pct(g.median.beyondNormal), g.range90 && g.range90.beyondNormal ? el('small', { class: 'rng', text: g.range90.beyondNormal[0].toFixed(1) + ' to ' + g.range90.beyondNormal[1].toFixed(1) }) : null];
+        return el('tr', { class: g.small ? 'small' : '' }, [
+          el('td', null, [color ? el('i', { class: 'sw', style: 'background:' + color }) : null, label, g.small ? el('span', { class: 'smalltag', text: ' small sample' }) : null]),
+          el('td', { class: 'n', text: g.n + (g.tokens ? ' (' + g.tokens + ' tokens)' : '') }),
+          el('td', { class: 'n' }, [pct(g.median[k.pre30])]), el('td', { class: 'n' }, [pct(g.median[k.pre7])]),
+          el('td', { class: 'n' }, [pct(g.median[k.post7])]), el('td', { class: 'n' }, [pct(g.median[k.post14])]),
+          el('td', { class: 'n' }, last),
+          el('td', { class: 'n', text: g.pctDown[k.around] == null ? '—' : g.pctDown[k.around] + '%' })
+        ]);
+      }))
     ])]);
   }
 
   function gradeVerdict(G) {
-    const gs = GRADE_ORDER.filter(g => G['Grade: ' + g] && G['Grade: ' + g].median.post14 != null);
+    const k = K();
+    const gs = GRADE_ORDER.filter(g => G['Grade: ' + g] && G['Grade: ' + g].median[k.post14] != null);
     if (gs.length < 3) return 'Not enough graded unlocks yet to judge the grade.';
-    const v = gs.map(g => G['Grade: ' + g].median.post14);
+    const v = gs.map(g => G['Grade: ' + g].median[k.post14]);
     const ordered = v.every((x, i) => i === 0 || x <= v[i - 1] + 0.25);
-    const list = gs.map(g => g + ' ' + (G['Grade: ' + g].median.post14 > 0 ? '+' : '') + G['Grade: ' + g].median.post14.toFixed(1) + '%').join(', ');
-    const lo = G['Grade: ' + gs[0]].range90 && G['Grade: ' + gs[0]].range90.post14, hi = G['Grade: ' + gs[gs.length - 1]].range90 && G['Grade: ' + gs[gs.length - 1]].range90.post14;
-    const clear = lo && hi && hi[1] < lo[0];
-    if (ordered) return 'In the 14 days after the unlock, drops grew with the grade: ' + list + '. ' + (clear ? 'The gap between the lowest and highest grade is larger than the noise.' : 'The ranges still overlap, so treat the order as a lean, not proof.');
-    return 'The grade did not sort the 14 days after cleanly: ' + list + '. Read it as a rough guide.';
+    const list = gs.map(g => g + ' ' + (G['Grade: ' + g].median[k.post14] > 0 ? '+' : '') + G['Grade: ' + g].median[k.post14].toFixed(1) + '%').join(', ');
+    if (ordered) return 'In the 14 days after the unlock (' + k.label + '), drops grew with the grade: ' + list + '. The ranges overlap, so treat the order as a lean, not proof.';
+    return 'In the 14 days after (' + k.label + '), the grade did not sort the drops cleanly: ' + list + '. Read it as a rough guide.';
   }
 
   function past() {
@@ -532,82 +601,82 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     if (!bt || !bt.events || !bt.events.length) {
       return el('section', null, [el('p', { class: 'state', text: 'The track record is being measured. It updates once a day; check back shortly.' })]);
     }
-    const G = bt.groups, all = G['All unlocks'];
-    const lc = all.lowDayCounts || {};
-    const topWhen = Object.keys(lc).sort((a, b) => lc[b] - lc[a])[0];
-    const bn = all.median.beyondNormal, bnR = all.range90 && all.range90.beyondNormal;
-    const noise = bnR && bnR[0] < 0 && bnR[1] > 0;
-    const lead = el('p', { class: 'lead', text: 'Of ' + all.n + ' past unlocks, ' + all.pctDown.around + '% did worse than Bitcoin from a week before to two weeks after. ' + (bn != null && noise ? 'But these tokens slide against Bitcoin most of the time, and the typical unlock was no worse than its own normal trend.' : bn != null ? 'The typical one did ' + Math.abs(bn).toFixed(1) + '% ' + (bn < 0 ? 'worse' : 'better') + ' than its own normal trend.' : '') });
-    const sub = el('p', { class: 'stamp', text: 'Measured ' + Desk.ago(bt.generatedAt) + ' from ' + all.tokens + ' tokens. Every move is relative to Bitcoin, so a market-wide fall does not count.' });
-    // groups whose effect beyond the token's normal trend is clear (90% range does not cross 0)
-    const clearRows = Object.keys(G).filter(k => k !== 'All unlocks' && !/Not enough data/.test(k) && G[k].range90 && G[k].range90.beyondNormal && (G[k].range90.beyondNormal[1] < 0 || G[k].range90.beyondNormal[0] > 0))
-      .sort((a, b) => G[a].median.beyondNormal - G[b].median.beyondNormal);
-    const leanRows = Object.keys(G).filter(k => k !== 'All unlocks' && !/Not enough data/.test(k) && !clearRows.includes(k) && G[k].median.beyondNormal != null && G[k].median.beyondNormal <= -4 && G[k].n >= 10);
-    const niceGroup = k => { const [a, b] = k.split(': '); return a === 'Who receives' ? 'Going mainly to ' + (WHO_LABEL[b] || b).toLowerCase() : a === 'Size vs circulating' ? b + ' of circulating supply' : a === 'Size vs daily trading' ? b + ' of trading volume' : a === 'Grade' ? 'Graded ' + b : b[0].toUpperCase() + b.slice(1); };
-    const findings = el('div', { class: 'panel findings' }, [el('h3', { text: 'What clearly mattered' }),
-      clearRows.length ? el('ul', null, clearRows.map(k => el('li', null, [el('b', { text: niceGroup(k) + ': ' }), pct(G[k].median.beyondNormal), ' beyond the token’s normal trend over the three weeks, ' + G[k].pctDown.around + '% fell against Bitcoin (' + G[k].n + ' unlocks, ' + G[k].tokens + ' tokens).']))) : el('p', { text: 'No group stood out beyond the noise yet.' }),
-      leanRows.length ? el('p', { class: 'small', text: 'Leaning the same way but not clear yet: ' + leanRows.map(k => niceGroup(k) + ' (' + G[k].median.beyondNormal.toFixed(1) + '%)').join(', ') + '.' }) : null,
-      el('p', { class: 'small', text: 'Clear means the 90% range for the group’s median stays on one side of zero after resampling whole tokens.' })]);
+    const G = bt.groups, all = G['All unlocks'], k = K();
+    const usdMode = pastUnit === 'usd';
+    const lc = all[k.low] || {};
+    const unitSeg = seg([['usd', 'In dollars'], ['btc', 'Against Bitcoin']], pastUnit, v => pastUnit = v);
+    const leadText = usdMode
+      ? 'Across ' + all.n + ' past unlocks, the typical token moved ' + sgn(all.median.uPre7) + ' in the week before the unlock and ' + sgn(all.median.uPost14) + ' in the two weeks after, in dollars. ' + all.pctDown.uAround + '% were lower two weeks after than a week before.'
+      : 'Against Bitcoin, ' + all.pctDown.around + '% of ' + all.n + ' unlocks did worse from a week before to two weeks after, but the typical one was no worse than its own normal trend.';
+    const lead = el('p', { class: 'lead', text: leadText });
+    const sub = el('p', { class: 'stamp', text: 'Measured ' + Desk.ago(bt.generatedAt) + ' from ' + all.tokens + ' tokens' + (bt.btcYear != null ? '. Over the same year Bitcoin moved ' + sgn(bt.btcYear) + '. Many of these tokens slid most of the year whatever happened, so every short below is compared with shorting the same token at a random time: that difference is what the unlock itself added.' : '.') });
+
+    // findings: groups where the -7 to +14 short beat random timing clearly (USD), or beyond-normal clear (BTC)
+    const niceGroup = key => { const [a, b] = key.split(': '); return a === 'Who receives' ? 'Going mainly to ' + (WHO_LABEL[b] || b).toLowerCase() : a === 'Size vs circulating' ? b + ' of circulating supply' : a === 'Size vs daily trading' ? b + ' of trading volume' : a === 'Grade' ? 'Graded ' + b : a === 'Setup' ? (b === 'high pressure' ? 'High-pressure setups' : 'Everything else') : b[0].toUpperCase() + b.slice(1); };
+    const keys = Object.keys(G).filter(x => x !== 'All unlocks' && !/Not enough data|Live-page/.test(x));
+    const clearUsd = keys.filter(x => edgeClear(G[x].grid && G[x].grid['-7:14'])).sort((a, b) => G[b].grid['-7:14'].edge - G[a].grid['-7:14'].edge);
+    const clearBtc = keys.filter(x => G[x].range90 && G[x].range90.beyondNormal && G[x].range90.beyondNormal[1] < 0).sort((a, b) => G[a].median.beyondNormal - G[b].median.beyondNormal);
+    const findings = el('div', { class: 'panel findings' }, [el('h3', { text: 'Where the unlock itself made the difference' }),
+      usdMode
+        ? (clearUsd.length ? el('ul', null, clearUsd.map(x => { const c = G[x].grid['-7:14']; return el('li', null, [el('b', { text: niceGroup(x) + ': ' }), 'fell ' + Math.abs(G[x].median.uAround).toFixed(1) + '% from 7 days before to 14 days after; a short over that window beat random timing by ', pct(c.edge), ' and won ' + c.win + '% of the time (' + G[x].n + ' unlocks, ' + G[x].tokens + ' tokens).']); })) : el('p', { text: 'No group beat random timing clearly yet.' }))
+        : (clearBtc.length ? el('ul', null, clearBtc.map(x => el('li', null, [el('b', { text: niceGroup(x) + ': ' }), pct(G[x].median.beyondNormal), ' beyond the token’s normal trend against Bitcoin (' + G[x].n + ' unlocks, ' + G[x].tokens + ' tokens).']))) : el('p', { text: 'No group stood out beyond the noise yet.' })),
+      el('p', { class: 'small', text: 'Listed only when the 90% range stays on one side of zero after resampling whole tokens.' })]);
 
     // chart
     let series = [];
-    if (pastView === 'grade') series = GRADE_ORDER.filter(g => G['Grade: ' + g]).map(g => ({ label: g, color: GRADE_COLOR[g], path: G['Grade: ' + g].path, n: G['Grade: ' + g].n }));
-    else if (pastView === 'who') series = WHO_ORDER.filter(w => G['Who receives: ' + w]).map(w => ({ label: WHO_LABEL[w], color: WHO_COLOR[w], path: G['Who receives: ' + w].path, n: G['Who receives: ' + w].n }));
-    else series = [{ label: 'All', color: '#EEF0FA', path: all.path, n: all.n }];
+    if (pastView === 'grade') series = GRADE_ORDER.filter(g => G['Grade: ' + g]).map(g => ({ label: g, color: GRADE_COLOR[g], path: G['Grade: ' + g][k.path] || {}, n: G['Grade: ' + g].n }));
+    else if (pastView === 'who') series = WHO_ORDER.filter(w => G['Who receives: ' + w]).map(w => ({ label: WHO_LABEL[w], color: WHO_COLOR[w], path: G['Who receives: ' + w][k.path] || {}, n: G['Who receives: ' + w].n }));
+    else series = [{ label: 'All', color: '#EEF0FA', path: all[k.path] || {}, n: all.n }];
     const chart = el('div', { class: 'panel' }, [
-      el('div', { class: 'phead' }, [el('h3', { text: 'Median price against Bitcoin, 30 days before to 14 days after' }),
+      el('div', { class: 'phead' }, [el('h3', { text: 'Median price path ' + k.label + ', 30 days before to 14 days after' }),
         seg([['grade', 'By our grade'], ['who', 'By who receives'], ['all', 'All']], pastView, v => pastView = v)]),
       lineChart(series),
       el('p', { class: 'small', text: 'Each line is the middle unlock in its group, set to 0% on the unlock day. A line above 0% before the unlock means the price was higher then, so it fell into the date.' + (series.some(s => s.n < 10) ? ' Lines built from fewer than 10 unlocks are noisy.' : '') })
     ]);
 
-    // grade check
     const gradeRows = GRADE_ORDER.filter(g => G['Grade: ' + g]).map(g => [g, G['Grade: ' + g], GRADE_COLOR[g]]);
-    if (G['Grade: Not enough data']) gradeRows.push(['Not enough data', G['Grade: Not enough data']]);
     const gradeBlock = el('div', { class: 'panel' }, [el('h3', { text: 'Did our grade match what happened?' }),
-      el('p', { class: 'small', text: 'If the grade works, higher grades should show bigger drops. Grades were worked out from the facts as they stood the day before each unlock.' }),
-      el('p', { class: 'verdict', text: gradeVerdict(G) }),
-      groupTable(gradeRows)]);
+      el('p', { class: 'verdict', text: gradeVerdict(G) }), groupTable(gradeRows)]);
 
-    // breakdowns
-    const BREAKS = { who: ['Who receives', k => WHO_LABEL[k] || k], size: ['Size vs circulating', k => k + ' of circulating supply'], vol: ['Size vs daily trading', k => k + ' of trading'], kind: ['Kind', k => k[0].toUpperCase() + k.slice(1)] };
+    const BREAKS = { who: ['Who receives', x => WHO_LABEL[x] || x], size: ['Size vs circulating', x => x + ' of circulating supply'], vol: ['Size vs daily trading', x => x + ' of trading'], kind: ['Kind', x => x[0].toUpperCase() + x.slice(1)] };
     const [prefix, nice] = BREAKS[pastBreak];
     const order = pastBreak === 'who' ? WHO_ORDER : pastBreak === 'size' ? ['under 1%', '1-5%', '5-10%', '10% or more'] : pastBreak === 'vol' ? ['under 0.25 days', '0.25-1 day', '1-3 days', '3+ days'] : ['first insider unlock', 'routine tranche'];
-    const brRows = order.filter(k => G[prefix + ': ' + k]).map(k => [nice(k), G[prefix + ': ' + k], pastBreak === 'who' ? WHO_COLOR[k] : null]);
+    const brRows = order.filter(x => G[prefix + ': ' + x]).map(x => [nice(x), G[prefix + ': ' + x], pastBreak === 'who' ? WHO_COLOR[x] : null]);
     const breakBlock = el('div', { class: 'panel' }, [el('h3', { text: 'Which unlocks dumped the most' }),
       seg([['who', 'Who receives'], ['size', 'Size vs supply'], ['vol', 'Size vs trading'], ['kind', 'First insider unlock']], pastBreak, v => pastBreak = v),
       groupTable(brRows),
-      el('p', { class: 'small', text: '* Share that did worse than Bitcoin from 7 days before to 14 days after. ** The same three weeks compared with the token’s own average three-week trend against Bitcoin over the year; the small figures are the 90% range for that median, and a range that crosses 0 means the group’s effect is not clear. Ranges resample whole tokens, because one token’s monthly unlocks move together. Medians are the middle unlock in each group, so one extreme token cannot drag the number.' })]);
+      el('p', { class: 'small', text: '* Share that was lower 14 days after than 7 days before. ** ' + (usdMode ? 'How much more a short from 7 days before to 14 days after made than shorting the same token for 21 days at a random time; the small figures are the 90% range.' : 'The same three weeks compared with the token’s own average three-week trend against Bitcoin; the small figures are the 90% range.') + ' A range that crosses 0 means the effect is not clear.' })]);
 
-    // timing
     const tot = Object.values(lc).reduce((a, b) => a + b, 0) || 1;
-    const timing = el('div', { class: 'panel' }, [el('h3', { text: 'When the lowest point came' }),
-      el('div', { class: 'bars2' }, Object.keys(lc).map(k => el('div', { class: 'brow' }, [el('span', { text: k }),
-        el('div', { class: 'bar2' }, [el('i', { style: 'width:' + (100 * lc[k] / tot) + '%' })]), el('span', { class: 'num', text: Math.round(100 * lc[k] / tot) + '%' })]))),
-      el('p', { class: 'small', text: 'For each unlock, the day its price was lowest against Bitcoin between 30 days before and 14 days after. For a token that slides all the time, the low naturally lands near the start or end of the window, so read the clusters at the edges with care; few lows fall on the unlock day itself.' })]);
+    const timing = el('div', { class: 'panel' }, [el('h3', { text: 'When the lowest price came' }),
+      el('div', { class: 'bars2' }, Object.keys(lc).map(x => el('div', { class: 'brow' }, [el('span', { text: x }),
+        el('div', { class: 'bar2' }, [el('i', { style: 'width:' + (100 * lc[x] / tot) + '%' })]), el('span', { class: 'num', text: Math.round(100 * lc[x] / tot) + '%' })]))),
+      el('p', { class: 'small', text: 'For each unlock, the day its price (' + k.label + ') was lowest between 30 days before and 14 days after. For a token that slides all the time, the low naturally lands near the end of the window, so read that cluster with care; few lows fall on the unlock day itself.' })]);
 
-    // list
     const evs = bt.events.filter(e => pastFilter === 'all' || e.grade === pastFilter);
     const list = el('div', { class: 'panel' }, [el('h3', { text: 'Every past unlock (' + bt.events.length + ')' }),
       seg([['all', 'All']].concat(GRADE_ORDER.filter(g => G['Grade: ' + g]).map(g => [g, g])), pastFilter, v => pastFilter = v),
       el('div', { class: 'tablewrap' }, [el('table', { class: 'el' }, [
-        el('thead', null, [el('tr', null, [el('th', { text: 'Date' }), el('th', { text: 'Token' }), el('th', { text: 'Our grade' }), el('th', { class: 'n', text: '7d before' }), el('th', { class: 'n', text: '7d after' }), el('th', { class: 'n', text: '14d after' }), el('th', { text: 'Path vs BTC' })])]),
+        el('thead', null, [el('tr', null, [el('th', { text: 'Date' }), el('th', { text: 'Token' }), el('th', { text: 'Our grade' }), el('th', { class: 'n', text: '7d before' }), el('th', { class: 'n', text: '7d after' }), el('th', { class: 'n', text: '14d after' }), el('th', { text: 'Price path' })])]),
         el('tbody', null, evs.flatMap(e => {
           const id = e.token + e.date, open = pastOpen === id;
           const tr = el('tr', { class: 'click' + (open ? ' open' : ''), tabindex: '0', 'aria-expanded': String(open) }, [
             el('td', { class: 'num', text: e.date }), el('td', null, [el('b', { text: e.token }), el('small', { text: e.usdM ? ' ' + Desk.usd(e.usdM) : '' })]),
             el('td', null, [el('span', { class: 'pchip ' + (PRESSURE[e.grade] || 'p-na'), text: e.grade })]),
-            el('td', { class: 'n' }, [pct(e.moves.pre7)]), el('td', { class: 'n' }, [pct(e.moves.post7)]), el('td', { class: 'n' }, [pct(e.moves.post14)]),
-            el('td', null, [spark(e.path)])]);
+            el('td', { class: 'n' }, [pct(e.moves[k.pre7])]), el('td', { class: 'n' }, [pct(e.moves[k.post7])]), el('td', { class: 'n' }, [pct(e.moves[k.post14])]),
+            el('td', null, [spark(e[k.path] || {})])]);
           const toggle = () => { pastOpen = open ? null : id; render(); };
           tr.addEventListener('click', toggle);
           tr.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); toggle(); } });
           if (!open) return [tr];
-          const mix = e.recipientsMix ? Object.entries(e.recipientsMix).filter(([, v]) => v >= 0.05).map(([k, v]) => k + ' ' + Math.round(v * 100) + '%').join(', ') : 'not confirmed';
+          const mix = e.recipientsMix ? Object.entries(e.recipientsMix).filter(([, v]) => v >= 0.05).map(([kk, v]) => kk + ' ' + Math.round(v * 100) + '%').join(', ') : 'not confirmed';
+          const sh = e.shorts && e.shorts['-7:7'];
           const det = el('tr', { class: 'det' }, [el('td', { colspan: '7' }, [el('div', { class: 'more' }, [
             el('div', null, [el('b', { text: 'Size: ' }), (e.amountTokens ? Number(e.amountTokens).toLocaleString('en-US') + ' tokens' : 'unconfirmed') + (e.pctCirculating != null ? ', ' + e.pctCirculating + '% of circulating' : '') + (e.advDays != null ? ', ' + e.advDays + ' days of trading' : '')]),
             el('div', null, [el('b', { text: 'Who received it: ' }), mix + (e.firstInsiderUnlock ? '. First insider unlock.' : '')]),
-            el('div', null, [el('b', { text: '30 days before: ' }), pct(e.moves.pre30), '. ', el('b', { text: 'Whole window (7 before to 14 after): ' }), pct(e.moves.around), e.moves.beyondNormal != null ? ' (' : '', e.moves.beyondNormal != null ? pct(e.moves.beyondNormal) : '', e.moves.beyondNormal != null ? ' beyond its normal trend of ' : '', e.moves.normal21 != null ? pct(e.moves.normal21) : '', e.moves.beyondNormal != null ? ' per three weeks)' : '', '. ', el('b', { text: 'Biggest one-day drop: ' }), e.worstDay != null ? (e.worstDay === 0 ? 'unlock day' : (e.worstDay < 0 ? Math.abs(e.worstDay) + ' days before' : e.worstDay + ' days after')) + ' (' : '', e.worstDay != null ? pct(e.worstDayMove) : '', e.worstDay != null ? ')' : '']),
+            el('div', null, [el('b', { text: 'In dollars: ' }), '30 days before ', pct(e.moves.uPre30), ', 7 days before ', pct(e.moves.uPre7), ', 3 days before ', pct(e.moves.uPre3), ', 3 days after ', pct(e.moves.uPost3), ', 7 days after ', pct(e.moves.uPost7), ', 14 days after ', pct(e.moves.uPost14), '.']),
+            el('div', null, [el('b', { text: 'Against Bitcoin: ' }), '7 before to 14 after ', pct(e.moves.around), e.moves.beyondNormal != null ? ', ' : '', e.moves.beyondNormal != null ? pct(e.moves.beyondNormal) : '', e.moves.beyondNormal != null ? ' beyond its normal trend.' : '.']),
+            sh ? el('div', null, [el('b', { text: 'A short from 7 days before to 7 days after: ' }), pct(sh.ret), ', worst move against it ', pct(sh.mae), sh.edge != null ? ', vs random timing ' : '', sh.edge != null ? pct(sh.edge) : '', '.']) : null,
             e.predicted && e.predicted.grade ? el('div', null, [el('b', { text: 'Live page said beforehand: ' }), e.predicted.grade + ' (confidence ' + e.predicted.confidence + ')']) : null,
             e.check ? el('div', null, [el('b', { text: 'Independent check: ' }), e.check + (e.checkNotes ? '. ' + e.checkNotes : '')]) : null,
             el('ul', { class: 'facts' }, e.factors.map(f => el('li', null, [el('span', { class: 'fp num' + (f.points == null ? ' na' : f.points > 0 ? ' neg' : f.points < 0 ? ' pos' : ''), text: fmtPts(f.points) }), el('span', null, [el('b', { text: f.label }), ' ' + f.detail])]))),
@@ -617,9 +686,9 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
         }))
       ])])]);
 
-    return el('section', { 'aria-label': 'Past unlocks' }, [lead, sub, findings, chart, gradeBlock, breakBlock, timing, list,
+    return el('section', { 'aria-label': 'Past unlocks' }, [unitSeg, lead, sub, findings, usdMode ? shortPanel(bt) : null, chart, gradeBlock, breakBlock, timing, list,
       el('details', { class: 'method' }, [el('summary', { text: 'How this is measured' }), el('div', { class: 'mbody' }, [el('p', { text: bt.method }),
-        el('p', { text: 'This is a record of what happened, not a prediction. Small groups are noisy, overlapping monthly tranches are not independent, and a year of data covers one market regime.' }),
+        el('p', { text: 'This is a record of what happened, not a prediction or trading advice. Results are before exchange fees and perpetual funding, which can cost a short several percent a month when funding is negative. Not every token had a liquid perpetual market at every unlock. Small groups are noisy, overlapping monthly tranches are not independent, and one year of data covers one market phase.' }),
         (bt.skipped && bt.skipped.length) ? el('p', { class: 'small', text: 'Left out: ' + bt.skipped.map(s => s.token + (s.date ? ' ' + s.date : '') + ' (' + s.why + ')').join('; ') }) : null])])]);
   }
 
