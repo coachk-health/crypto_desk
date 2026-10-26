@@ -1,14 +1,15 @@
 {
- "generatedAt": "2026-10-26T12:07:27Z",
+ "generatedAt": "2026-10-26T12:22:51Z",
  "window": {
   "pre": 30,
   "post": 14
  },
  "benchmark": "Bitcoin",
- "method": "Each move is the token's price change relative to Bitcoin over the same days, from CoinGecko daily prices at 00:00 UTC (day 0 is the unlock date, so its price is from before the unlock). Grades use the same rules as the live page, with size, trading volume and circulating supply taken from CoinGecko as they were the day before each unlock. Monthly tranches of the same token overlap: the 30 days before one unlock include the 14 days after the previous one. 'Beyond normal' compares each unlock's three weeks (7 days before to 14 after) with the token's own average three-week drift against Bitcoin over the whole year, so a token that slides all year is not blamed on its unlock. For tokens that unlock every month that average already contains unlocks, so this measure understates their effect. Ranges are 90% bootstrap ranges for the median.",
+ "method": "Each move is the token's price change relative to Bitcoin over the same days, from CoinGecko daily prices at 00:00 UTC (day 0 is the unlock date, so its price is from before the unlock). Grades use the same rules as the live page, with size, trading volume and circulating supply taken from CoinGecko as they were the day before each unlock. Monthly tranches of the same token overlap: the 30 days before one unlock include the 14 days after the previous one. 'Beyond normal' compares each unlock's three weeks (7 days before to 14 after) with the token's own average three-week drift against Bitcoin over the whole year, so a token that slides all year is not blamed on its unlock. For tokens that unlock every month that average already contains unlocks, so this measure understates their effect. Ranges are 90% ranges for the median, found by resampling whole tokens (not single unlocks), because one token's monthly tranches move together.",
  "groups": {
   "All unlocks": {
    "n": 316,
+   "tokens": 64,
    "small": false,
    "median": {
     "pre30": -7.4,
@@ -16,8 +17,8 @@
     "post7": -1.78,
     "post14": -2.4,
     "around": -5.82,
-    "beyondNormal": -1.19,
-    "normal21": -4.09
+    "beyondNormal": -1.2,
+    "normal21": -4.07
    },
    "pctDown": {
     "pre30": 64,
@@ -30,16 +31,16 @@
    },
    "range90": {
     "post14": [
-     -3.47,
-     -0.98
+     -3.34,
+     -1.09
     ],
     "around": [
-     -7.0,
-     -4.12
+     -7.01,
+     -4.2
     ],
     "beyondNormal": [
-     -2.8,
-     2.01
+     -2.94,
+     1.24
     ]
    },
    "medianLowDay": 2.0,
@@ -100,6 +101,7 @@
   },
   "Grade: High": {
    "n": 97,
+   "tokens": 21,
    "small": false,
    "median": {
     "pre30": -9.05,
@@ -107,8 +109,8 @@
     "post7": -1.43,
     "post14": -2.84,
     "around": -5.5,
-    "beyondNormal": -1.14,
-    "normal21": -3.61
+    "beyondNormal": -1.13,
+    "normal21": -3.6
    },
    "pctDown": {
     "pre30": 63,
@@ -117,20 +119,20 @@
     "post14": 59,
     "around": 64,
     "beyondNormal": 51,
-    "normal21": 92
+    "normal21": 91
    },
    "range90": {
     "post14": [
-     -4.74,
-     -0.03
+     -5.1,
+     -0.2
     ],
     "around": [
      -7.31,
      -2.81
     ],
     "beyondNormal": [
-     -4.85,
-     3.43
+     -4.88,
+     3.71
     ]
    },
    "medianLowDay": 1,
@@ -191,7 +193,8 @@
   },
   "Grade: Low": {
    "n": 39,
-   "small": false,
+   "tokens": 4,
+   "small": true,
    "median": {
     "pre30": -7.23,
     "pre7": -3.83,
@@ -212,16 +215,16 @@
    },
    "range90": {
     "post14": [
-     -6.14,
-     0.17
+     -3.7,
+     -0.31
     ],
     "around": [
      -8.73,
      -0.43
     ],
     "beyondNormal": [
-     -3.59,
-     3.24
+     -1.22,
+     2.76
     ]
    },
    "medianLowDay": 5,
@@ -282,6 +285,7 @@
   },
   "Grade: Moderate": {
    "n": 105,
+   "tokens": 18,
    "small": false,
    "median": {
     "pre30": -7.91,
@@ -289,8 +293,8 @@
     "post7": -4.12,
     "post14": -2.26,
     "around": -5.55,
-    "beyondNormal": -0.3,
-    "normal21": -4.14
+    "beyondNormal": -0.33,
+    "normal21": -4.11
    },
    "pctDown": {
     "pre30": 68,
@@ -303,16 +307,16 @@
    },
    "range90": {
     "post14": [
-     -3.76,
-     -0.14
+     -4.45,
+     -0.23
     ],
     "around": [
-     -8.17,
-     -0.87
+     -7.17,
+     -1.09
     ],
     "beyondNormal": [
-     -1.94,
-     4.02
+     -1.71,
+     3.92
     ]
    },
    "medianLowDay": 4,
@@ -373,6 +377,7 @@
   },
   "Grade: Not enough data": {
    "n": 19,
+   "tokens": 9,
    "small": false,
    "median": {
     "pre30": -10.4,
@@ -380,8 +385,8 @@
     "post7": -1.19,
     "post14": 3.88,
     "around": -5.4,
-    "beyondNormal": 4.85,
-    "normal21": -7.78
+    "beyondNormal": 4.84,
+    "normal21": -7.83
    },
    "pctDown": {
     "pre30": 63,
@@ -394,16 +399,16 @@
    },
    "range90": {
     "post14": [
-     -0.37,
+     -1.8,
      13.01
     ],
     "around": [
-     -11.52,
+     -9.04,
      19.02
     ],
     "beyondNormal": [
-     -3.47,
-     16.76
+     -3.49,
+     15.03
     ]
    },
    "medianLowDay": 1,
@@ -464,6 +469,7 @@
   },
   "Grade: Very high": {
    "n": 56,
+   "tokens": 40,
    "small": false,
    "median": {
     "pre30": -0.05,
@@ -471,7 +477,7 @@
     "post7": -1.4,
     "post14": -3.41,
     "around": -7.71,
-    "beyondNormal": -4.72,
+    "beyondNormal": -4.74,
     "normal21": -6.58
    },
    "pctDown": {
@@ -485,16 +491,16 @@
    },
    "range90": {
     "post14": [
-     -7.16,
-     -1.52
+     -8.07,
+     -1.89
     ],
     "around": [
-     -11.63,
-     -3.17
+     -13.15,
+     -0.83
     ],
     "beyondNormal": [
-     -8.11,
-     -1.17
+     -9.41,
+     0.27
     ]
    },
    "medianLowDay": 1.0,
@@ -555,6 +561,7 @@
   },
   "Who receives: community": {
    "n": 12,
+   "tokens": 7,
    "small": false,
    "median": {
     "pre30": -19.67,
@@ -562,8 +569,8 @@
     "post7": -2.76,
     "post14": -1.25,
     "around": -2.53,
-    "beyondNormal": 4.84,
-    "normal21": -2.29
+    "beyondNormal": 4.82,
+    "normal21": -2.27
    },
    "pctDown": {
     "pre30": 67,
@@ -577,15 +584,15 @@
    "range90": {
     "post14": [
      -16.45,
-     9.56
+     20.78
     ],
     "around": [
-     -26.6,
-     13.79
+     -28.38,
+     28.95
     ],
     "beyondNormal": [
-     -22.05,
-     20.42
+     -22.07,
+     44.53
     ]
    },
    "medianLowDay": -3.0,
@@ -646,6 +653,7 @@
   },
   "Who receives: ecosystem": {
    "n": 80,
+   "tokens": 15,
    "small": false,
    "median": {
     "pre30": -8.33,
@@ -653,8 +661,8 @@
     "post7": -1.78,
     "post14": -1.41,
     "around": -5.53,
-    "beyondNormal": -0.3,
-    "normal21": -7.26
+    "beyondNormal": -0.34,
+    "normal21": -7.24
    },
    "pctDown": {
     "pre30": 74,
@@ -663,20 +671,20 @@
     "post14": 56,
     "around": 66,
     "beyondNormal": 50,
-    "normal21": 99
+    "normal21": 98
    },
    "range90": {
     "post14": [
-     -3.75,
-     0.21
+     -3.47,
+     0.16
     ],
     "around": [
-     -8.18,
+     -7.28,
      -0.8
     ],
     "beyondNormal": [
-     -5.05,
-     2.83
+     -4.17,
+     2.53
     ]
    },
    "medianLowDay": 4.0,
@@ -737,6 +745,7 @@
   },
   "Who receives: investors": {
    "n": 14,
+   "tokens": 7,
    "small": false,
    "median": {
     "pre30": 4.38,
@@ -758,16 +767,16 @@
    },
    "range90": {
     "post14": [
-     -17.86,
-     -3.77
+     -18.27,
+     -6.26
     ],
     "around": [
-     -18.74,
-     -3.6
+     -28.8,
+     -8.17
     ],
     "beyondNormal": [
-     -17.92,
-     -2.22
+     -26.52,
+     -5.51
     ]
    },
    "medianLowDay": -9.5,
@@ -828,6 +837,7 @@
   },
   "Who receives: mixed": {
    "n": 39,
+   "tokens": 8,
    "small": false,
    "median": {
     "pre30": -3.35,
@@ -835,7 +845,7 @@
     "post7": 0.44,
     "post14": -1.5,
     "around": -4.16,
-    "beyondNormal": 6.25,
+    "beyondNormal": 6.28,
     "normal21": -7.12
    },
    "pctDown": {
@@ -849,16 +859,16 @@
    },
    "range90": {
     "post14": [
-     -3.0,
-     2.53
+     -2.21,
+     1.7
     ],
     "around": [
-     -7.2,
-     2.75
+     -6.35,
+     3.29
     ],
     "beyondNormal": [
-     1.84,
-     11.41
+     -1.34,
+     10.98
     ]
    },
    "medianLowDay": 0,
@@ -919,6 +929,7 @@
   },
   "Who receives: team": {
    "n": 48,
+   "tokens": 11,
    "small": false,
    "median": {
     "pre30": -1.43,
@@ -926,8 +937,8 @@
     "post7": -2.64,
     "post14": -3.33,
     "around": -5.09,
-    "beyondNormal": -1.81,
-    "normal21": -3.61
+    "beyondNormal": -1.84,
+    "normal21": -3.6
    },
    "pctDown": {
     "pre30": 52,
@@ -940,16 +951,16 @@
    },
    "range90": {
     "post14": [
-     -7.36,
-     3.84
+     -5.3,
+     2.53
     ],
     "around": [
-     -7.25,
-     6.49
+     -6.94,
+     2.25
     ],
     "beyondNormal": [
-     -5.74,
-     10.49
+     -5.28,
+     6.07
     ]
    },
    "medianLowDay": -2.5,
@@ -1010,6 +1021,7 @@
   },
   "Who receives: team + investors": {
    "n": 88,
+   "tokens": 15,
    "small": false,
    "median": {
     "pre30": -8.71,
@@ -1017,8 +1029,8 @@
     "post7": -2.34,
     "post14": -3.82,
     "around": -7.09,
-    "beyondNormal": -1.92,
-    "normal21": -3.86
+    "beyondNormal": -1.94,
+    "normal21": -3.85
    },
    "pctDown": {
     "pre30": 66,
@@ -1031,16 +1043,16 @@
    },
    "range90": {
     "post14": [
-     -6.62,
-     -1.8
+     -6.74,
+     -2.38
     ],
     "around": [
-     -8.84,
-     -3.89
+     -8.71,
+     -2.81
     ],
     "beyondNormal": [
-     -3.39,
-     0.34
+     -3.59,
+     0.69
     ]
    },
    "medianLowDay": 6.5,
@@ -1101,6 +1113,7 @@
   },
   "Size vs circulating: 1-5%": {
    "n": 158,
+   "tokens": 22,
    "small": false,
    "median": {
     "pre30": -7.78,
@@ -1108,8 +1121,8 @@
     "post7": -2.97,
     "post14": -2.83,
     "around": -5.65,
-    "beyondNormal": 0.48,
-    "normal21": -4.05
+    "beyondNormal": 0.42,
+    "normal21": -4.03
    },
    "pctDown": {
     "pre30": 65,
@@ -1122,16 +1135,16 @@
    },
    "range90": {
     "post14": [
-     -4.44,
-     -1.25
+     -4.74,
+     -1.34
     ],
     "around": [
      -7.01,
-     -2.5
+     -2.24
     ],
     "beyondNormal": [
-     -2.01,
-     3.43
+     -2.03,
+     3.41
     ]
    },
    "medianLowDay": 3.5,
@@ -1192,6 +1205,7 @@
   },
   "Size vs circulating: 10% or more": {
    "n": 47,
+   "tokens": 37,
    "small": false,
    "median": {
     "pre30": -2.81,
@@ -1199,8 +1213,8 @@
     "post7": -3.56,
     "post14": -3.63,
     "around": -9.43,
-    "beyondNormal": -5.95,
-    "normal21": -5.44
+    "beyondNormal": -5.97,
+    "normal21": -5.43
    },
    "pctDown": {
     "pre30": 55,
@@ -1214,15 +1228,15 @@
    "range90": {
     "post14": [
      -7.95,
-     -1.94
+     -2.42
     ],
     "around": [
      -16.06,
      -6.78
     ],
     "beyondNormal": [
-     -11.04,
-     -3.77
+     -10.91,
+     -3.81
     ]
    },
    "medianLowDay": 4,
@@ -1283,6 +1297,7 @@
   },
   "Size vs circulating: 5-10%": {
    "n": 35,
+   "tokens": 11,
    "small": false,
    "median": {
     "pre30": -3.14,
@@ -1290,8 +1305,8 @@
     "post7": -0.3,
     "post14": 2.77,
     "around": 2.55,
-    "beyondNormal": 7.67,
-    "normal21": -6.81
+    "beyondNormal": 7.65,
+    "normal21": -6.79
    },
    "pctDown": {
     "pre30": 57,
@@ -1300,20 +1315,20 @@
     "post14": 49,
     "around": 43,
     "beyondNormal": 43,
-    "normal21": 91
+    "normal21": 89
    },
    "range90": {
     "post14": [
-     -4.0,
-     5.35
+     -6.22,
+     5.17
     ],
     "around": [
-     -11.15,
-     7.14
+     -13.92,
+     5.62
     ],
     "beyondNormal": [
-     -7.78,
-     13.34
+     -8.2,
+     12.55
     ]
    },
    "medianLowDay": -8,
@@ -1374,6 +1389,7 @@
   },
   "Size vs circulating: under 1%": {
    "n": 48,
+   "tokens": 5,
    "small": false,
    "median": {
     "pre30": -8.12,
@@ -1381,8 +1397,8 @@
     "post7": -0.91,
     "post14": -0.98,
     "around": -4.55,
-    "beyondNormal": 1.52,
-    "normal21": -4.05
+    "beyondNormal": 1.5,
+    "normal21": -4.03
    },
    "pctDown": {
     "pre30": 75,
@@ -1395,16 +1411,16 @@
    },
    "range90": {
     "post14": [
-     -6.14,
-     -0.14
+     -3.7,
+     -0.31
     ],
     "around": [
-     -7.53,
+     -7.13,
      -0.43
     ],
     "beyondNormal": [
-     -3.79,
-     3.41
+     -1.22,
+     2.76
     ]
    },
    "medianLowDay": 4.5,
@@ -1465,6 +1481,7 @@
   },
   "Size vs daily trading: 0.25-1 day": {
    "n": 74,
+   "tokens": 28,
    "small": false,
    "median": {
     "pre30": -5.65,
@@ -1473,7 +1490,7 @@
     "post14": -1.52,
     "around": -5.46,
     "beyondNormal": 1.75,
-    "normal21": -3.15
+    "normal21": -3.12
    },
    "pctDown": {
     "pre30": 57,
@@ -1482,20 +1499,20 @@
     "post14": 54,
     "around": 55,
     "beyondNormal": 49,
-    "normal21": 86
+    "normal21": 85
    },
    "range90": {
     "post14": [
-     -4.15,
-     1.09
+     -4.37,
+     0.88
     ],
     "around": [
-     -8.32,
-     2.92
+     -9.06,
+     3.2
     ],
     "beyondNormal": [
-     -6.08,
-     9.48
+     -7.25,
+     10.53
     ]
    },
    "medianLowDay": -5.0,
@@ -1556,6 +1573,7 @@
   },
   "Size vs daily trading: 1-3 days": {
    "n": 10,
+   "tokens": 9,
    "small": false,
    "median": {
     "pre30": 3.57,
@@ -1563,8 +1581,8 @@
     "post7": -1.23,
     "post14": -3.41,
     "around": -4.17,
-    "beyondNormal": -0.7,
-    "normal21": -5.12
+    "beyondNormal": -0.73,
+    "normal21": -5.11
    },
    "pctDown": {
     "pre30": 40,
@@ -1577,16 +1595,16 @@
    },
    "range90": {
     "post14": [
-     -7.32,
+     -9.34,
      5.51
     ],
     "around": [
-     -10.11,
+     -10.87,
      1.73
     ],
     "beyondNormal": [
-     -5.74,
-     8.47
+     -5.75,
+     6.83
     ]
    },
    "medianLowDay": 2.5,
@@ -1647,6 +1665,7 @@
   },
   "Size vs daily trading: 3+ days": {
    "n": 19,
+   "tokens": 14,
    "small": false,
    "median": {
     "pre30": 0.12,
@@ -1654,8 +1673,8 @@
     "post7": -2.41,
     "post14": -1.94,
     "around": -10.29,
-    "beyondNormal": -5.95,
-    "normal21": -0.9
+    "beyondNormal": -5.97,
+    "normal21": -0.89
    },
    "pctDown": {
     "pre30": 47,
@@ -1668,15 +1687,15 @@
    },
    "range90": {
     "post14": [
-     -9.34,
-     0.16
+     -11.09,
+     0.24
     ],
     "around": [
      -16.35,
      -2.23
     ],
     "beyondNormal": [
-     -11.38,
+     -11.39,
      -1.35
     ]
    },
@@ -1738,6 +1757,7 @@
   },
   "Size vs daily trading: under 0.25 days": {
    "n": 194,
+   "tokens": 29,
    "small": false,
    "median": {
     "pre30": -8.99,
@@ -1745,8 +1765,8 @@
     "post7": -2.4,
     "post14": -2.92,
     "around": -5.95,
-    "beyondNormal": -1.05,
-    "normal21": -4.09
+    "beyondNormal": -1.06,
+    "normal21": -4.07
    },
    "pctDown": {
     "pre30": 70,
@@ -1759,16 +1779,16 @@
    },
    "range90": {
     "post14": [
-     -4.5,
-     -1.27
+     -4.45,
+     -1.46
     ],
     "around": [
-     -7.15,
-     -2.93
+     -7.25,
+     -2.81
     ],
     "beyondNormal": [
-     -2.6,
-     2.2
+     -3.05,
+     1.95
     ]
    },
    "medianLowDay": 5.0,
@@ -1829,6 +1849,7 @@
   },
   "Kind: first insider unlock": {
    "n": 28,
+   "tokens": 28,
    "small": false,
    "median": {
     "pre30": -12.5,
@@ -1836,8 +1857,8 @@
     "post7": -1.97,
     "post14": -5.53,
     "around": -11.72,
-    "beyondNormal": -7.31,
-    "normal21": -6.79
+    "beyondNormal": -7.35,
+    "normal21": -6.77
    },
    "pctDown": {
     "pre30": 64,
@@ -1859,7 +1880,7 @@
     ],
     "beyondNormal": [
      -20.27,
-     3.03
+     3.0
     ]
    },
    "medianLowDay": 5.0,
@@ -1920,6 +1941,7 @@
   },
   "Kind: routine tranche": {
    "n": 288,
+   "tokens": 50,
    "small": false,
    "median": {
     "pre30": -7.13,
@@ -1927,8 +1949,8 @@
     "post7": -1.78,
     "post14": -2.15,
     "around": -5.48,
-    "beyondNormal": -0.94,
-    "normal21": -4.05
+    "beyondNormal": -0.96,
+    "normal21": -4.03
    },
    "pctDown": {
     "pre30": 64,
@@ -1941,16 +1963,16 @@
    },
    "range90": {
     "post14": [
-     -3.05,
-     -0.84
+     -3.1,
+     -0.87
     ],
     "around": [
-     -6.86,
-     -2.81
+     -6.81,
+     -2.93
     ],
     "beyondNormal": [
-     -2.3,
-     2.1
+     -2.29,
+     2.02
     ]
    },
    "medianLowDay": 2.0,
@@ -2072,8 +2094,8 @@
     "post7": -10.89,
     "post14": -22.01,
     "around": -26.19,
-    "normal21": -9.46,
-    "beyondNormal": -18.48
+    "normal21": -9.49,
+    "beyondNormal": -18.45
    },
    "path": {
     "-30": -7.12,
@@ -2365,8 +2387,8 @@
     "post7": -10.64,
     "post14": -19.92,
     "around": -27.56,
-    "normal21": -11.17,
-    "beyondNormal": -18.45
+    "normal21": -11.14,
+    "beyondNormal": -18.47
    },
    "path": {
     "-30": 5.16,
@@ -2514,8 +2536,8 @@
     "post7": 1.12,
     "post14": -8.97,
     "around": -11.72,
-    "normal21": -3.61,
-    "beyondNormal": -8.41
+    "normal21": -3.6,
+    "beyondNormal": -8.42
    },
    "path": {
     "-30": -9.01,
@@ -2651,8 +2673,8 @@
     "post7": -9.83,
     "post14": -11.89,
     "around": -7.69,
-    "normal21": 4.99,
-    "beyondNormal": -12.08
+    "normal21": 5.02,
+    "beyondNormal": -12.1
    },
    "path": {
     "-30": -2.52,
@@ -2780,8 +2802,8 @@
     "post7": 1.65,
     "post14": -17.76,
     "around": -28.8,
-    "normal21": -3.15,
-    "beyondNormal": -26.49
+    "normal21": -3.1,
+    "beyondNormal": -26.52
    },
    "path": {
     "-30": -26.77,
@@ -2957,7 +2979,7 @@
     "post7": -34.28,
     "post14": -39.44,
     "around": -39.08,
-    "normal21": -10.05,
+    "normal21": -10.04,
     "beyondNormal": -32.28
    },
    "path": {
@@ -3118,8 +3140,8 @@
     "post7": -11.81,
     "post14": -13.05,
     "around": -6.33,
-    "normal21": -3.15,
-    "beyondNormal": -3.29
+    "normal21": -3.1,
+    "beyondNormal": -3.33
    },
    "path": {
     "-30": -28.21,
@@ -3418,8 +3440,8 @@
     "post7": -2.52,
     "post14": 0.84,
     "around": 7.22,
-    "normal21": -8.0,
-    "beyondNormal": 16.54
+    "normal21": -7.99,
+    "beyondNormal": 16.53
    },
    "path": {
     "-30": -14.43,
@@ -3574,8 +3596,8 @@
     "post7": -2.69,
     "post14": -9.96,
     "around": 10.11,
-    "normal21": -4.05,
-    "beyondNormal": 14.76
+    "normal21": -4.03,
+    "beyondNormal": 14.73
    },
    "path": {
     "-30": -33.53,
@@ -3707,8 +3729,8 @@
     "post7": -13.34,
     "post14": -9.31,
     "around": 20.39,
-    "normal21": -0.32,
-    "beyondNormal": 20.77
+    "normal21": -0.3,
+    "beyondNormal": 20.76
    },
    "path": {
     "-30": -39.18,
@@ -3863,8 +3885,8 @@
     "post7": -7.98,
     "post14": -9.34,
     "around": -9.34,
-    "normal21": -1.69,
-    "beyondNormal": -7.78
+    "normal21": -1.62,
+    "beyondNormal": -7.84
    },
    "path": {
     "-30": -19.46,
@@ -4023,8 +4045,8 @@
     "post7": -6.96,
     "post14": -10.5,
     "around": -6.46,
-    "normal21": -10.79,
-    "beyondNormal": 4.85
+    "normal21": -10.78,
+    "beyondNormal": 4.84
    },
    "path": {
     "-30": -11.32,
@@ -4186,8 +4208,8 @@
     "post7": 1.09,
     "post14": -3.63,
     "around": -4.16,
-    "normal21": -14.79,
-    "beyondNormal": 12.47
+    "normal21": -14.81,
+    "beyondNormal": 12.5
    },
    "path": {
     "-30": -4.16,
@@ -4327,8 +4349,8 @@
     "post7": 7.77,
     "post14": 0.76,
     "around": -32.11,
-    "normal21": -7.78,
-    "beyondNormal": -26.38
+    "normal21": -7.83,
+    "beyondNormal": -26.34
    },
    "path": {
     "-30": 30.38,
@@ -4464,8 +4486,8 @@
     "post7": -13.69,
     "post14": -21.93,
     "around": -10.29,
-    "normal21": -7.26,
-    "beyondNormal": -3.26
+    "normal21": -7.24,
+    "beyondNormal": -3.29
    },
    "path": {
     "-30": -12.23,
@@ -4631,8 +4653,8 @@
     "post7": 112.68,
     "post14": 65.2,
     "around": 63.53,
-    "normal21": -2.29,
-    "beyondNormal": 67.36
+    "normal21": -2.27,
+    "beyondNormal": 67.32
    },
    "path": {
     "-30": 8.79,
@@ -4777,8 +4799,8 @@
     "post7": -0.3,
     "post14": -4.0,
     "around": 3.29,
-    "normal21": -6.81,
-    "beyondNormal": 10.84
+    "normal21": -6.79,
+    "beyondNormal": 10.82
    },
    "path": {
     "-30": 13.12,
@@ -4924,8 +4946,8 @@
     "post7": 37.77,
     "post14": 71.31,
     "around": 77.82,
-    "normal21": 1.8,
-    "beyondNormal": 74.67
+    "normal21": 1.85,
+    "beyondNormal": 74.59
    },
    "path": {
     "-30": -12.71,
@@ -5083,8 +5105,8 @@
     "post7": 6.79,
     "post14": 3.69,
     "around": 6.26,
-    "normal21": -1.74,
-    "beyondNormal": 8.14
+    "normal21": -1.7,
+    "beyondNormal": 8.1
    },
    "path": {
     "-30": 11.21,
@@ -5229,7 +5251,7 @@
     "post14": 18.72,
     "around": 25.9,
     "normal21": -8.23,
-    "beyondNormal": 37.19
+    "beyondNormal": 37.2
    },
    "path": {
     "-30": -4.76,
@@ -5389,8 +5411,8 @@
     "post7": 25.95,
     "post14": 25.36,
     "around": 17.18,
-    "normal21": -4.14,
-    "beyondNormal": 22.24
+    "normal21": -4.11,
+    "beyondNormal": 22.2
    },
    "path": {
     "-30": 1.62,
@@ -5536,8 +5558,8 @@
     "post7": 13.09,
     "post14": 23.82,
     "around": 13.58,
-    "normal21": -3.75,
-    "beyondNormal": 18.0
+    "normal21": -3.72,
+    "beyondNormal": 17.97
    },
    "path": {
     "-30": 0.68,
@@ -5684,8 +5706,8 @@
     "post7": 35.74,
     "post14": 21.11,
     "around": 15.69,
-    "normal21": -1.81,
-    "beyondNormal": 17.82
+    "normal21": -1.82,
+    "beyondNormal": 17.83
    },
    "path": {
     "-30": -41.78,
@@ -5832,8 +5854,8 @@
     "post7": 37.02,
     "post14": 35.92,
     "around": 26.93,
-    "normal21": -3.86,
-    "beyondNormal": 32.03
+    "normal21": -3.85,
+    "beyondNormal": 32.02
    },
    "path": {
     "-30": -1.05,
@@ -6141,8 +6163,8 @@
     "post7": -3.87,
     "post14": 22.25,
     "around": 13.37,
-    "normal21": -9.46,
-    "beyondNormal": 25.21
+    "normal21": -9.49,
+    "beyondNormal": 25.25
    },
    "path": {
     "-30": 72.81,
@@ -6416,8 +6438,8 @@
     "post7": -10.85,
     "post14": -1.3,
     "around": 2.18,
-    "normal21": -11.17,
-    "beyondNormal": 15.03
+    "normal21": -11.14,
+    "beyondNormal": 15.0
    },
    "path": {
     "-30": -6.22,
@@ -6565,8 +6587,8 @@
     "post7": -5.94,
     "post14": 6.54,
     "around": 4.97,
-    "normal21": -3.61,
-    "beyondNormal": 8.91
+    "normal21": -3.6,
+    "beyondNormal": 8.89
    },
    "path": {
     "-30": 29.91,
@@ -6702,8 +6724,8 @@
     "post7": -11.05,
     "post14": 1.84,
     "around": -0.39,
-    "normal21": -3.15,
-    "beyondNormal": 2.85
+    "normal21": -3.1,
+    "beyondNormal": 2.8
    },
    "path": {
     "-30": -30.09,
@@ -7011,8 +7033,8 @@
     "post7": -1.34,
     "post14": -10.28,
     "around": 1.44,
-    "normal21": -3.15,
-    "beyondNormal": 4.74
+    "normal21": -3.1,
+    "beyondNormal": 4.69
    },
    "path": {
     "-30": -31.7,
@@ -7169,8 +7191,8 @@
     "post7": 8.75,
     "post14": 3.94,
     "around": -6.85,
-    "normal21": -8.0,
-    "beyondNormal": 1.25
+    "normal21": -7.99,
+    "beyondNormal": 1.24
    },
    "path": {
     "-30": 14.01,
@@ -7315,8 +7337,8 @@
     "post7": 11.86,
     "post14": -0.31,
     "around": -8.87,
-    "normal21": -4.05,
-    "beyondNormal": -5.02
+    "normal21": -4.03,
+    "beyondNormal": -5.04
    },
    "path": {
     "-30": 16.35,
@@ -7457,8 +7479,8 @@
     "post7": -4.46,
     "post14": 0.09,
     "around": 3.69,
-    "normal21": -0.32,
-    "beyondNormal": 4.02
+    "normal21": -0.3,
+    "beyondNormal": 4.0
    },
    "path": {
     "-30": -15.51,
@@ -7613,8 +7635,8 @@
     "post7": 15.43,
     "post14": 70.62,
     "around": 112.36,
-    "normal21": -1.69,
-    "beyondNormal": 116.01
+    "normal21": -1.62,
+    "beyondNormal": 115.86
    },
    "path": {
     "-30": -8.83,
@@ -7770,7 +7792,7 @@
     "post7": 4.59,
     "post14": 19.29,
     "around": 7.94,
-    "normal21": -10.79,
+    "normal21": -10.78,
     "beyondNormal": 20.99
    },
    "path": {
@@ -7916,8 +7938,8 @@
     "post7": 3.41,
     "post14": 11.85,
     "around": -17.67,
-    "normal21": -14.79,
-    "beyondNormal": -3.38
+    "normal21": -14.81,
+    "beyondNormal": -3.35
    },
    "path": {
     "-30": 35.32,
@@ -8054,8 +8076,8 @@
     "post7": -13.35,
     "post14": -4.75,
     "around": -0.53,
-    "normal21": -7.26,
-    "beyondNormal": 7.26
+    "normal21": -7.24,
+    "beyondNormal": 7.23
    },
    "path": {
     "-30": 5.06,
@@ -8220,8 +8242,8 @@
     "post7": 3.57,
     "post14": -3.63,
     "around": -23.84,
-    "normal21": -2.29,
-    "beyondNormal": -22.06
+    "normal21": -2.27,
+    "beyondNormal": -22.07
    },
    "path": {
     "-30": 2.35,
@@ -8527,8 +8549,8 @@
     "post7": -19.91,
     "post14": -21.91,
     "around": -46.2,
-    "normal21": -6.81,
-    "beyondNormal": -42.27
+    "normal21": -6.79,
+    "beyondNormal": -42.28
    },
    "path": {
     "-30": 206.17,
@@ -8691,8 +8713,8 @@
     "post7": 19.65,
     "post14": 5.51,
     "around": 1.73,
-    "normal21": 1.8,
-    "beyondNormal": -0.07
+    "normal21": 1.85,
+    "beyondNormal": -0.12
    },
    "path": {
     "-30": -2.72,
@@ -8836,8 +8858,8 @@
     "post7": -13.24,
     "post14": -16.07,
     "around": -18.93,
-    "normal21": -1.74,
-    "beyondNormal": -17.49
+    "normal21": -1.7,
+    "beyondNormal": -17.53
    },
    "path": {
     "-30": 12.81,
@@ -8981,8 +9003,8 @@
     "post7": 35.18,
     "post14": 17.5,
     "around": 11.37,
-    "normal21": -4.14,
-    "beyondNormal": 16.18
+    "normal21": -4.11,
+    "beyondNormal": 16.14
    },
    "path": {
     "-30": -1.47,
@@ -9137,8 +9159,8 @@
     "post7": -0.73,
     "post14": -2.15,
     "around": -4.68,
-    "normal21": -3.75,
-    "beyondNormal": -0.97
+    "normal21": -3.72,
+    "beyondNormal": -0.99
    },
    "path": {
     "-30": 25.08,
@@ -9284,8 +9306,8 @@
     "post7": 11.35,
     "post14": -2.89,
     "around": -7.0,
-    "normal21": -1.81,
-    "beyondNormal": -5.29
+    "normal21": -1.82,
+    "beyondNormal": -5.28
    },
    "path": {
     "-30": 20.84,
@@ -9579,8 +9601,8 @@
     "post7": -24.05,
     "post14": -33.98,
     "around": -55.98,
-    "normal21": -0.9,
-    "beyondNormal": -55.58
+    "normal21": -0.89,
+    "beyondNormal": -55.59
    },
    "path": {
     "-30": 152.43,
@@ -9710,8 +9732,8 @@
     "post7": 1.15,
     "post14": -13.21,
     "around": -16.93,
-    "normal21": -3.86,
-    "beyondNormal": -13.59
+    "normal21": -3.85,
+    "beyondNormal": -13.6
    },
    "path": {
     "-30": 21.99,
@@ -10011,8 +10033,8 @@
     "post7": -5.15,
     "post14": -31.05,
     "around": -18.05,
-    "normal21": -9.46,
-    "beyondNormal": -9.49
+    "normal21": -9.49,
+    "beyondNormal": -9.46
    },
    "path": {
     "-30": 18.2,
@@ -10166,8 +10188,8 @@
     "post7": 1.69,
     "post14": -1.09,
     "around": -5.02,
-    "normal21": -2.78,
-    "beyondNormal": -2.3
+    "normal21": -2.79,
+    "beyondNormal": -2.29
    },
    "path": {
     "-30": 6.18,
@@ -10442,8 +10464,8 @@
     "post7": -7.08,
     "post14": -6.22,
     "around": -12.79,
-    "normal21": -11.17,
-    "beyondNormal": -1.83
+    "normal21": -11.14,
+    "beyondNormal": -1.85
    },
    "path": {
     "-30": 59.68,
@@ -10591,8 +10613,8 @@
     "post7": 16.16,
     "post14": 5.16,
     "around": 2.25,
-    "normal21": -3.61,
-    "beyondNormal": 6.08
+    "normal21": -3.6,
+    "beyondNormal": 6.07
    },
    "path": {
     "-30": 55.28,
@@ -10729,7 +10751,7 @@
     "post14": -6.14,
     "around": -3.02,
     "normal21": -8.23,
-    "beyondNormal": 5.67
+    "beyondNormal": 5.68
    },
    "path": {
     "-30": 18.98,
@@ -10889,8 +10911,8 @@
     "post7": 0.31,
     "post14": 14.02,
     "around": 19.17,
-    "normal21": 4.99,
-    "beyondNormal": 13.5
+    "normal21": 5.02,
+    "beyondNormal": 13.48
    },
    "path": {
     "-30": 25.15,
@@ -11026,8 +11048,8 @@
     "post7": -1.58,
     "post14": -11.24,
     "around": -2.06,
-    "normal21": -3.15,
-    "beyondNormal": 1.12
+    "normal21": -3.1,
+    "beyondNormal": 1.07
    },
    "path": {
     "-30": -12.03,
@@ -11165,8 +11187,8 @@
     "post7": -8.79,
     "post14": -7.83,
     "around": -13.15,
-    "normal21": -6.77,
-    "beyondNormal": -6.84
+    "normal21": -6.75,
+    "beyondNormal": -6.86
    },
    "path": {
     "-30": 19.58,
@@ -11326,8 +11348,8 @@
     "post7": 10.18,
     "post14": 5.53,
     "around": -0.43,
-    "normal21": -3.15,
-    "beyondNormal": 2.8
+    "normal21": -3.1,
+    "beyondNormal": 2.76
    },
    "path": {
     "-30": -1.3,
@@ -11455,8 +11477,8 @@
     "post7": -5.73,
     "post14": -4.31,
     "around": -16.21,
-    "normal21": -8.0,
-    "beyondNormal": -8.92
+    "normal21": -7.99,
+    "beyondNormal": -8.94
    },
    "path": {
     "-30": 14.87,
@@ -11612,8 +11634,8 @@
     "post7": -4.52,
     "post14": -0.14,
     "around": -2.29,
-    "normal21": -4.05,
-    "beyondNormal": 1.84
+    "normal21": -4.03,
+    "beyondNormal": 1.81
    },
    "path": {
     "-30": 9.9,
@@ -11755,8 +11777,8 @@
     "post7": -1.38,
     "post14": 1.35,
     "around": 3.7,
-    "normal21": -0.32,
-    "beyondNormal": 4.03
+    "normal21": -0.3,
+    "beyondNormal": 4.01
    },
    "path": {
     "-30": 12.68,
@@ -11911,7 +11933,7 @@
     "post7": 0.76,
     "post14": 7.8,
     "around": 13.52,
-    "normal21": -10.53,
+    "normal21": -10.54,
     "beyondNormal": 26.89
    },
    "path": {
@@ -12049,8 +12071,8 @@
     "post7": -4.29,
     "post14": 0.88,
     "around": 13.19,
-    "normal21": -1.69,
-    "beyondNormal": 15.14
+    "normal21": -1.62,
+    "beyondNormal": 15.06
    },
    "path": {
     "-30": 9.07,
@@ -12196,8 +12218,8 @@
     "post7": -1.19,
     "post14": -0.37,
     "around": -5.4,
-    "normal21": -7.26,
-    "beyondNormal": 2.01
+    "normal21": -7.24,
+    "beyondNormal": 1.98
    },
    "path": {
     "-30": 36.0,
@@ -12361,7 +12383,7 @@
     "post7": -10.02,
     "post14": -5.67,
     "around": -6.04,
-    "normal21": -10.79,
+    "normal21": -10.78,
     "beyondNormal": 5.32
    },
    "path": {
@@ -12507,8 +12529,8 @@
     "post7": 2.42,
     "post14": 13.76,
     "around": 15.35,
-    "normal21": -14.79,
-    "beyondNormal": 35.37
+    "normal21": -14.81,
+    "beyondNormal": 35.41
    },
    "path": {
     "-30": -4.31,
@@ -12639,8 +12661,8 @@
     "post7": 3.41,
     "post14": 26.59,
     "around": 31.39,
-    "normal21": -7.78,
-    "beyondNormal": 42.48
+    "normal21": -7.83,
+    "beyondNormal": 42.55
    },
    "path": {
     "-30": 7.64,
@@ -12781,8 +12803,8 @@
     "post7": -11.42,
     "post14": -11.53,
     "around": -12.31,
-    "normal21": -7.26,
-    "beyondNormal": -5.44
+    "normal21": -7.24,
+    "beyondNormal": -5.47
    },
    "path": {
     "-30": 14.09,
@@ -13089,8 +13111,8 @@
     "post7": 26.31,
     "post14": 41.88,
     "around": 36.1,
-    "normal21": -2.29,
-    "beyondNormal": 39.28
+    "normal21": -2.27,
+    "beyondNormal": 39.26
    },
    "path": {
     "-30": 3.47,
@@ -13227,8 +13249,8 @@
     "post7": 24.34,
     "post14": 8.14,
     "around": 49.68,
-    "normal21": -6.81,
-    "beyondNormal": 60.62
+    "normal21": -6.79,
+    "beyondNormal": 60.59
    },
    "path": {
     "-30": -48.29,
@@ -13381,8 +13403,8 @@
     "post7": 8.36,
     "post14": -7.67,
     "around": -17.14,
-    "normal21": 1.8,
-    "beyondNormal": -18.61
+    "normal21": 1.85,
+    "beyondNormal": -18.65
    },
    "path": {
     "-30": 26.55,
@@ -13525,8 +13547,8 @@
     "post7": -6.48,
     "post14": -8.71,
     "around": 2.21,
-    "normal21": -1.74,
-    "beyondNormal": 4.02
+    "normal21": -1.7,
+    "beyondNormal": 3.98
    },
    "path": {
     "-30": 22.23,
@@ -13670,8 +13692,8 @@
     "post7": -11.06,
     "post14": -13.49,
     "around": -12.4,
-    "normal21": -1.15,
-    "beyondNormal": -11.38
+    "normal21": -1.14,
+    "beyondNormal": -11.39
    },
    "path": {
     "-30": -14.54,
@@ -13801,8 +13823,8 @@
     "post7": -1.21,
     "post14": -1.19,
     "around": -4.43,
-    "normal21": -4.14,
-    "beyondNormal": -0.3
+    "normal21": -4.11,
+    "beyondNormal": -0.33
    },
    "path": {
     "-30": 15.0,
@@ -13948,8 +13970,8 @@
     "post7": -7.55,
     "post14": -20.7,
     "around": -26.06,
-    "normal21": -3.75,
-    "beyondNormal": -23.18
+    "normal21": -3.72,
+    "beyondNormal": -23.2
    },
    "path": {
     "-30": 11.74,
@@ -14086,7 +14108,7 @@
     "post7": -0.26,
     "post14": -9.44,
     "around": 0.25,
-    "normal21": -1.81,
+    "normal21": -1.82,
     "beyondNormal": 2.1
    },
    "path": {
@@ -14236,8 +14258,8 @@
     "post7": -27.28,
     "post14": -53.24,
     "around": -76.27,
-    "normal21": -23.19,
-    "beyondNormal": -69.11
+    "normal21": -23.23,
+    "beyondNormal": -69.09
    },
    "path": {
     "-30": 1033.31,
@@ -14375,8 +14397,8 @@
     "post7": -5.56,
     "post14": -13.13,
     "around": -18.91,
-    "normal21": -6.27,
-    "beyondNormal": -13.49
+    "normal21": -6.24,
+    "beyondNormal": -13.51
    },
    "path": {
     "-30": 26.15,
@@ -14505,8 +14527,8 @@
     "post7": -3.12,
     "post14": -3.47,
     "around": -7.28,
-    "normal21": -0.9,
-    "beyondNormal": -6.44
+    "normal21": -0.89,
+    "beyondNormal": -6.45
    },
    "path": {
     "-30": -33.9,
@@ -14644,7 +14666,7 @@
     "post7": -1.43,
     "post14": -0.03,
     "around": -7.31,
-    "normal21": -3.86,
+    "normal21": -3.85,
     "beyondNormal": -3.59
    },
    "path": {
@@ -14934,8 +14956,8 @@
     "post7": -1.75,
     "post14": 28.1,
     "around": 44.61,
-    "normal21": -9.46,
-    "beyondNormal": 59.71
+    "normal21": -9.49,
+    "beyondNormal": 59.77
    },
    "path": {
     "-30": -3.62,
@@ -15210,7 +15232,7 @@
     "post14": -10.35,
     "around": -16.41,
     "normal21": -8.23,
-    "beyondNormal": -8.92
+    "beyondNormal": -8.91
    },
    "path": {
     "-30": -4.57,
@@ -15370,8 +15392,8 @@
     "post7": -6.4,
     "post14": -10.78,
     "around": -12.95,
-    "normal21": -11.17,
-    "beyondNormal": -2.01
+    "normal21": -11.14,
+    "beyondNormal": -2.03
    },
    "path": {
     "-30": 18.54,
@@ -15519,8 +15541,8 @@
     "post7": -16.54,
     "post14": -23.47,
     "around": -22.69,
-    "normal21": -3.61,
-    "beyondNormal": -19.79
+    "normal21": -3.6,
+    "beyondNormal": -19.8
    },
    "path": {
     "-30": -33.44,
@@ -15656,8 +15678,8 @@
     "post7": -5.81,
     "post14": -15.7,
     "around": -8.47,
-    "normal21": 4.99,
-    "beyondNormal": -12.82
+    "normal21": 5.02,
+    "beyondNormal": -12.84
    },
    "path": {
     "-30": -12.61,
@@ -15790,8 +15812,8 @@
     "post7": 0.39,
     "post14": -0.36,
     "around": -2.81,
-    "normal21": -3.15,
-    "beyondNormal": 0.35
+    "normal21": -3.1,
+    "beyondNormal": 0.3
    },
    "path": {
     "-30": 18.48,
@@ -15929,8 +15951,8 @@
     "post7": 1.02,
     "post14": 8.61,
     "around": -7.29,
-    "normal21": -3.15,
-    "beyondNormal": -4.28
+    "normal21": -3.1,
+    "beyondNormal": -4.32
    },
    "path": {
     "-30": 4.65,
@@ -16058,8 +16080,8 @@
     "post7": 1.79,
     "post14": 4.07,
     "around": -8.84,
-    "normal21": -8.0,
-    "beyondNormal": -0.91
+    "normal21": -7.99,
+    "beyondNormal": -0.93
    },
    "path": {
     "-30": -17.74,
@@ -16198,8 +16220,8 @@
     "post7": -2.4,
     "post14": -0.44,
     "around": 4.42,
-    "normal21": -4.05,
-    "beyondNormal": 8.83
+    "normal21": -4.03,
+    "beyondNormal": 8.8
    },
    "path": {
     "-30": 3.21,
@@ -16330,8 +16352,8 @@
     "post7": -5.11,
     "post14": -6.95,
     "around": -6.87,
-    "normal21": -0.32,
-    "beyondNormal": -6.57
+    "normal21": -0.3,
+    "beyondNormal": -6.59
    },
    "path": {
     "-30": -20.52,
@@ -16486,8 +16508,8 @@
     "post7": -12.66,
     "post14": -14.48,
     "around": -14.65,
-    "normal21": -1.69,
-    "beyondNormal": -13.18
+    "normal21": -1.62,
+    "beyondNormal": -13.24
    },
    "path": {
     "-30": 23.6,
@@ -16633,8 +16655,8 @@
     "post7": -13.28,
     "post14": -19.49,
     "around": -28.47,
-    "normal21": -10.79,
-    "beyondNormal": -19.82
+    "normal21": -10.78,
+    "beyondNormal": -19.83
    },
    "path": {
     "-30": 108.03,
@@ -16958,8 +16980,8 @@
     "post7": 2.52,
     "post14": 2.01,
     "around": -9.46,
-    "normal21": -14.79,
-    "beyondNormal": 6.25
+    "normal21": -14.81,
+    "beyondNormal": 6.28
    },
    "path": {
     "-30": -18.84,
@@ -17090,8 +17112,8 @@
     "post7": 13.23,
     "post14": 5.33,
     "around": -69.73,
-    "normal21": -7.78,
-    "beyondNormal": -67.18
+    "normal21": -7.83,
+    "beyondNormal": -67.16
    },
    "path": {
     "-30": 207.77,
@@ -17235,8 +17257,8 @@
     "post7": 0.38,
     "post14": -2.99,
     "around": -16.39,
-    "normal21": -7.26,
-    "beyondNormal": -9.84
+    "normal21": -7.24,
+    "beyondNormal": -9.87
    },
    "path": {
     "-30": -26.24,
@@ -17382,8 +17404,8 @@
     "post7": 0.74,
     "post14": -6.49,
     "around": -9.06,
-    "normal21": -5.49,
-    "beyondNormal": -3.77
+    "normal21": -5.46,
+    "beyondNormal": -3.81
    },
    "path": {
     "-30": 19.87,
@@ -17532,8 +17554,8 @@
     "post7": 15.98,
     "post14": 4.98,
     "around": 2.55,
-    "normal21": -2.29,
-    "beyondNormal": 4.95
+    "normal21": -2.27,
+    "beyondNormal": 4.93
    },
    "path": {
     "-30": -15.99,
@@ -17670,8 +17692,8 @@
     "post7": 15.81,
     "post14": 32.21,
     "around": 51.07,
-    "normal21": -6.81,
-    "beyondNormal": 62.11
+    "normal21": -6.79,
+    "beyondNormal": 62.08
    },
    "path": {
     "-30": -18.1,
@@ -17816,8 +17838,8 @@
     "post7": -14.03,
     "post14": -8.07,
     "around": -0.83,
-    "normal21": 1.8,
-    "beyondNormal": -2.59
+    "normal21": 1.85,
+    "beyondNormal": -2.63
    },
    "path": {
     "-30": 13.7,
@@ -17959,8 +17981,8 @@
     "post7": 10.66,
     "post14": -21.85,
     "around": -26.17,
-    "normal21": -1.74,
-    "beyondNormal": -24.86
+    "normal21": -1.7,
+    "beyondNormal": -24.89
    },
    "path": {
     "-30": -19.44,
@@ -18104,8 +18126,8 @@
     "post7": -8.02,
     "post14": -5.75,
     "around": -5.75,
-    "normal21": -4.14,
-    "beyondNormal": -1.68
+    "normal21": -4.11,
+    "beyondNormal": -1.71
    },
    "path": {
     "-30": -0.66,
@@ -18251,8 +18273,8 @@
     "post7": 0.19,
     "post14": -0.81,
     "around": 0.24,
-    "normal21": -3.75,
-    "beyondNormal": 4.15
+    "normal21": -3.72,
+    "beyondNormal": 4.12
    },
    "path": {
     "-30": 14.27,
@@ -18399,8 +18421,8 @@
     "post7": -0.08,
     "post14": -2.84,
     "around": -2.93,
-    "normal21": -1.81,
-    "beyondNormal": -1.14
+    "normal21": -1.82,
+    "beyondNormal": -1.13
    },
    "path": {
     "-30": 16.68,
@@ -18545,7 +18567,7 @@
     "post7": -2.85,
     "post14": -11.59,
     "around": -9.75,
-    "normal21": -3.86,
+    "normal21": -3.85,
     "beyondNormal": -6.13
    },
    "path": {
@@ -18692,7 +18714,7 @@
     "post14": -2.26,
     "around": -15.98,
     "normal21": -7.12,
-    "beyondNormal": -9.53
+    "beyondNormal": -9.54
    },
    "path": {
     "-30": 32.23,
@@ -18998,8 +19020,8 @@
     "post7": -6.0,
     "post14": 8.1,
     "around": 130.41,
-    "normal21": -9.46,
-    "beyondNormal": 154.47
+    "normal21": -9.49,
+    "beyondNormal": 154.56
    },
    "path": {
     "-30": -80.9,
@@ -19273,8 +19295,8 @@
     "post7": -23.06,
     "post14": -37.91,
     "around": -53.2,
-    "normal21": -6.56,
-    "beyondNormal": -49.92
+    "normal21": -6.57,
+    "beyondNormal": -49.91
    },
    "path": {
     "-30": -65.15,
@@ -19404,8 +19426,8 @@
     "post7": 3.08,
     "post14": 1.5,
     "around": -15.2,
-    "normal21": -9.15,
-    "beyondNormal": -6.66
+    "normal21": -9.14,
+    "beyondNormal": -6.67
    },
    "path": {
     "-30": 52.05,
@@ -19544,8 +19566,8 @@
     "post7": -15.26,
     "post14": -14.78,
     "around": -12.32,
-    "normal21": -11.17,
-    "beyondNormal": -1.3
+    "normal21": -11.14,
+    "beyondNormal": -1.32
    },
    "path": {
     "-30": 8.58,
@@ -19693,8 +19715,8 @@
     "post7": 2.04,
     "post14": 5.72,
     "around": -4.18,
-    "normal21": -5.32,
-    "beyondNormal": 1.21
+    "normal21": -5.28,
+    "beyondNormal": 1.16
    },
    "path": {
     "-30": 35.9,
@@ -19832,8 +19854,8 @@
     "post7": 2.64,
     "post14": 26.51,
     "around": 48.03,
-    "normal21": -3.61,
-    "beyondNormal": 53.58
+    "normal21": -3.6,
+    "beyondNormal": 53.56
    },
    "path": {
     "-30": -9.91,
@@ -19969,8 +19991,8 @@
     "post7": -4.73,
     "post14": 13.01,
     "around": 26.32,
-    "normal21": 4.99,
-    "beyondNormal": 20.31
+    "normal21": 5.02,
+    "beyondNormal": 20.28
    },
    "path": {
     "-30": -45.96,
@@ -20105,8 +20127,8 @@
     "post7": -15.31,
     "post14": 2.61,
     "around": 26.8,
-    "normal21": -3.15,
-    "beyondNormal": 30.92
+    "normal21": -3.1,
+    "beyondNormal": 30.86
    },
    "path": {
     "-30": -8.43,
@@ -20244,8 +20266,8 @@
     "post7": 8.83,
     "post14": 3.72,
     "around": -0.38,
-    "normal21": -3.15,
-    "beyondNormal": 2.86
+    "normal21": -3.1,
+    "beyondNormal": 2.81
    },
    "path": {
     "-30": 4.9,
@@ -20383,8 +20405,8 @@
     "post7": -0.2,
     "post14": 8.81,
     "around": 6.95,
-    "normal21": -8.0,
-    "beyondNormal": 16.25
+    "normal21": -7.99,
+    "beyondNormal": 16.23
    },
    "path": {
     "-30": -20.62,
@@ -20523,8 +20545,8 @@
     "post7": -1.55,
     "post14": 0.5,
     "around": -8.73,
-    "normal21": -4.05,
-    "beyondNormal": -4.87
+    "normal21": -4.03,
+    "beyondNormal": -4.9
    },
    "path": {
     "-30": -3.33,
@@ -20652,8 +20674,8 @@
     "post7": -5.65,
     "post14": 1.64,
     "around": -2.24,
-    "normal21": -6.04,
-    "beyondNormal": 4.04
+    "normal21": -6.01,
+    "beyondNormal": 4.01
    },
    "path": {
     "-30": -3.47,
@@ -20790,8 +20812,8 @@
     "post7": -6.74,
     "post14": 9.2,
     "around": 3.1,
-    "normal21": -0.32,
-    "beyondNormal": 3.43
+    "normal21": -0.3,
+    "beyondNormal": 3.41
    },
    "path": {
     "-30": 5.65,
@@ -20946,8 +20968,8 @@
     "post7": 4.92,
     "post14": -10.81,
     "around": 7.46,
-    "normal21": -1.69,
-    "beyondNormal": 9.31
+    "normal21": -1.62,
+    "beyondNormal": 9.23
    },
    "path": {
     "-30": -37.19,
@@ -21094,7 +21116,7 @@
     "post14": -8.49,
     "around": -14.1,
     "normal21": -8.23,
-    "beyondNormal": -6.4
+    "beyondNormal": -6.39
    },
    "path": {
     "-30": 7.01,
@@ -21254,8 +21276,8 @@
     "post7": 12.14,
     "post14": 17.12,
     "around": 35.13,
-    "normal21": -0.1,
-    "beyondNormal": 35.26
+    "normal21": 0.2,
+    "beyondNormal": 34.86
    },
    "path": {
     "-30": 1.11,
@@ -21382,8 +21404,8 @@
     "post7": 2.52,
     "post14": 20.78,
     "around": 28.95,
-    "normal21": -10.79,
-    "beyondNormal": 44.54
+    "normal21": -10.78,
+    "beyondNormal": 44.53
    },
    "path": {
     "-30": -32.7,
@@ -21527,8 +21549,8 @@
     "post7": 8.41,
     "post14": -5.77,
     "around": -5.5,
-    "normal21": -14.79,
-    "beyondNormal": 10.9
+    "normal21": -14.81,
+    "beyondNormal": 10.93
    },
    "path": {
     "-30": 15.08,
@@ -21659,8 +21681,8 @@
     "post7": 112.83,
     "post14": 283.93,
     "around": 264.52,
-    "normal21": -7.78,
-    "beyondNormal": 295.28
+    "normal21": -7.83,
+    "beyondNormal": 295.49
    },
    "path": {
     "-30": -39.11,
@@ -21795,8 +21817,8 @@
     "post7": 14.7,
     "post14": 3.72,
     "around": 1.48,
-    "normal21": -7.26,
-    "beyondNormal": 9.43
+    "normal21": -7.24,
+    "beyondNormal": 9.4
    },
    "path": {
     "-30": 22.39,
@@ -21942,8 +21964,8 @@
     "post7": 5.54,
     "post14": 20.1,
     "around": 13.79,
-    "normal21": -2.29,
-    "beyondNormal": 16.45
+    "normal21": -2.27,
+    "beyondNormal": 16.43
    },
    "path": {
     "-30": 9.56,
@@ -22096,8 +22118,8 @@
     "post7": 12.39,
     "post14": 16.38,
     "around": 18.33,
-    "normal21": -6.81,
-    "beyondNormal": 26.98
+    "normal21": -6.79,
+    "beyondNormal": 26.95
    },
    "path": {
     "-30": -2.04,
@@ -22242,8 +22264,8 @@
     "post7": -2.02,
     "post14": -1.5,
     "around": -7.73,
-    "normal21": 1.8,
-    "beyondNormal": -9.37
+    "normal21": 1.85,
+    "beyondNormal": -9.41
    },
    "path": {
     "-30": 26.56,
@@ -22385,8 +22407,8 @@
     "post7": -7.77,
     "post14": 2.91,
     "around": -16.76,
-    "normal21": -0.64,
-    "beyondNormal": -16.22
+    "normal21": -0.63,
+    "beyondNormal": -16.23
    },
    "path": {
     "-30": 4.36,
@@ -22566,8 +22588,8 @@
     "post7": 1.14,
     "post14": 4.57,
     "around": 17.08,
-    "normal21": -1.74,
-    "beyondNormal": 19.15
+    "normal21": -1.7,
+    "beyondNormal": 19.11
    },
    "path": {
     "-30": -7.8,
@@ -22711,8 +22733,8 @@
     "post7": 8.24,
     "post14": 0.25,
     "around": -18.36,
-    "normal21": -4.14,
-    "beyondNormal": -14.83
+    "normal21": -4.11,
+    "beyondNormal": -14.86
    },
    "path": {
     "-30": -2.82,
@@ -22875,8 +22897,8 @@
     "post7": -2.86,
     "post14": -4.45,
     "around": -17.14,
-    "normal21": -3.75,
-    "beyondNormal": -13.91
+    "normal21": -3.72,
+    "beyondNormal": -13.94
    },
    "path": {
     "-30": 9.13,
@@ -23013,8 +23035,8 @@
     "post7": -8.85,
     "post14": -10.49,
     "around": -20.64,
-    "normal21": -1.81,
-    "beyondNormal": -19.18
+    "normal21": -1.82,
+    "beyondNormal": -19.17
    },
    "path": {
     "-30": -2.51,
@@ -23151,7 +23173,7 @@
     "post7": 0.84,
     "post14": -1.72,
     "around": -2.23,
-    "normal21": -0.9,
+    "normal21": -0.89,
     "beyondNormal": -1.35
    },
    "path": {
@@ -23282,8 +23304,8 @@
     "post7": -0.9,
     "post14": -12.56,
     "around": -13.15,
-    "normal21": -3.86,
-    "beyondNormal": -9.66
+    "normal21": -3.85,
+    "beyondNormal": -9.67
    },
    "path": {
     "-30": -24.24,
@@ -23429,7 +23451,7 @@
     "post14": -11.67,
     "around": -13.28,
     "normal21": -8.23,
-    "beyondNormal": -5.51
+    "beyondNormal": -5.5
    },
    "path": {
     "-30": -9.29,
@@ -23725,8 +23747,8 @@
     "post7": -3.22,
     "post14": -2.95,
     "around": 4.74,
-    "normal21": -2.78,
-    "beyondNormal": 7.74
+    "normal21": -2.79,
+    "beyondNormal": 7.75
    },
    "path": {
     "-30": 3.52,
@@ -23872,8 +23894,8 @@
     "post7": -7.83,
     "post14": -2.49,
     "around": -25.56,
-    "normal21": -9.46,
-    "beyondNormal": -17.79
+    "normal21": -9.49,
+    "beyondNormal": -17.76
    },
    "path": {
     "-30": 15.82,
@@ -24147,8 +24169,8 @@
     "post7": -6.16,
     "post14": -11.79,
     "around": -7.17,
-    "normal21": -11.17,
-    "beyondNormal": 4.5
+    "normal21": -11.14,
+    "beyondNormal": 4.47
    },
    "path": {
     "-30": 8.23,
@@ -24296,8 +24318,8 @@
     "post7": -0.16,
     "post14": -8.34,
     "around": -28.11,
-    "normal21": -8.82,
-    "beyondNormal": -21.16
+    "normal21": -8.79,
+    "beyondNormal": -21.18
    },
    "path": {
     "-30": 41.04,
@@ -24438,8 +24460,8 @@
     "post7": 20.76,
     "post14": 29.98,
     "around": 51.66,
-    "normal21": -3.61,
-    "beyondNormal": 57.35
+    "normal21": -3.6,
+    "beyondNormal": 57.32
    },
    "path": {
     "-30": -24.66,
@@ -24575,8 +24597,8 @@
     "post7": -7.48,
     "post14": 15.88,
     "around": 19.02,
-    "normal21": 4.99,
-    "beyondNormal": 13.36
+    "normal21": 5.02,
+    "beyondNormal": 13.33
    },
    "path": {
     "-30": -0.75,
@@ -24703,8 +24725,8 @@
     "post7": -0.65,
     "post14": -7.95,
     "around": -6.78,
-    "normal21": -3.08,
-    "beyondNormal": -3.82
+    "normal21": -3.09,
+    "beyondNormal": -3.81
    },
    "path": {
     "-30": -15.01,
@@ -24833,8 +24855,8 @@
     "post7": 25.42,
     "post14": 8.98,
     "around": -1.08,
-    "normal21": -3.15,
-    "beyondNormal": 2.13
+    "normal21": -3.1,
+    "beyondNormal": 2.09
    },
    "path": {
     "-30": -4.93,
@@ -24972,8 +24994,8 @@
     "post7": 13.48,
     "post14": 5.46,
     "around": 0.34,
-    "normal21": -18.97,
-    "beyondNormal": 23.82
+    "normal21": -18.95,
+    "beyondNormal": 23.79
    },
    "path": {
     "-30": 29.94,
@@ -25102,8 +25124,8 @@
     "post7": 25.83,
     "post14": 7.57,
     "around": -0.01,
-    "normal21": -3.15,
-    "beyondNormal": 3.24
+    "normal21": -3.1,
+    "beyondNormal": 3.19
    },
    "path": {
     "-30": 1.73,
@@ -25250,8 +25272,8 @@
     "post7": 3.43,
     "post14": 16.01,
     "around": 17.22,
-    "normal21": -8.0,
-    "beyondNormal": 27.41
+    "normal21": -7.99,
+    "beyondNormal": 27.39
    },
    "path": {
     "-30": 3.25,
@@ -25396,8 +25418,8 @@
     "post7": 1.72,
     "post14": 23.0,
     "around": 21.13,
-    "normal21": -4.05,
-    "beyondNormal": 26.25
+    "normal21": -4.03,
+    "beyondNormal": 26.21
    },
    "path": {
     "-30": 8.27,
@@ -25536,7 +25558,7 @@
     "post14": 9.66,
     "around": 5.67,
     "normal21": -8.23,
-    "beyondNormal": 15.14
+    "beyondNormal": 15.15
    },
    "path": {
     "-30": 30.28,
@@ -25690,8 +25712,8 @@
     "post7": -0.68,
     "post14": 9.88,
     "around": 12.16,
-    "normal21": -0.32,
-    "beyondNormal": 12.52
+    "normal21": -0.3,
+    "beyondNormal": 12.5
    },
    "path": {
     "-30": -4.56,
@@ -25846,8 +25868,8 @@
     "post7": 10.63,
     "post14": 16.51,
     "around": 18.94,
-    "normal21": -6.04,
-    "beyondNormal": 26.58
+    "normal21": -6.01,
+    "beyondNormal": 26.55
    },
    "path": {
     "-30": 0.29,
@@ -25993,8 +26015,8 @@
     "post7": -11.08,
     "post14": 12.54,
     "around": -1.09,
-    "normal21": -1.69,
-    "beyondNormal": 0.61
+    "normal21": -1.62,
+    "beyondNormal": 0.54
    },
    "path": {
     "-30": 22.61,
@@ -26134,8 +26156,8 @@
     "post7": -4.32,
     "post14": -3.34,
     "around": -16.06,
-    "normal21": -5.8,
-    "beyondNormal": -10.89
+    "normal21": -5.79,
+    "beyondNormal": -10.91
    },
    "path": {
     "-30": 133.61,
@@ -26271,8 +26293,8 @@
     "post7": 1.44,
     "post14": 56.45,
     "around": 61.39,
-    "normal21": -10.79,
-    "beyondNormal": 80.91
+    "normal21": -10.78,
+    "beyondNormal": 80.9
    },
    "path": {
     "-30": 39.16,
@@ -26416,8 +26438,8 @@
     "post7": 1.08,
     "post14": 4.89,
     "around": 3.72,
-    "normal21": -14.79,
-    "beyondNormal": 21.72
+    "normal21": -14.81,
+    "beyondNormal": 21.75
    },
    "path": {
     "-30": -9.29,
@@ -26554,8 +26576,8 @@
     "post7": -9.78,
     "post14": 6.41,
     "around": -16.69,
-    "normal21": -7.26,
-    "beyondNormal": -10.17
+    "normal21": -7.24,
+    "beyondNormal": -10.19
    },
    "path": {
     "-30": 9.1,
@@ -26701,8 +26723,8 @@
     "post7": -4.34,
     "post14": -2.84,
     "around": 17.67,
-    "normal21": -2.29,
-    "beyondNormal": 20.42
+    "normal21": -2.27,
+    "beyondNormal": 20.4
    },
    "path": {
     "-30": -5.35,
@@ -26839,8 +26861,8 @@
     "post7": 4.28,
     "post14": -12.85,
     "around": -16.35,
-    "normal21": -15.36,
-    "beyondNormal": -1.17
+    "normal21": -15.35,
+    "beyondNormal": -1.18
    },
    "path": {
     "-30": -8.12,
@@ -26981,8 +27003,8 @@
     "post7": -8.19,
     "post14": 5.35,
     "around": 5.62,
-    "normal21": -6.81,
-    "beyondNormal": 13.34
+    "normal21": -6.79,
+    "beyondNormal": 13.32
    },
    "path": {
     "-30": -9.83,
@@ -27127,8 +27149,8 @@
     "post7": -9.5,
     "post14": -20.2,
     "around": -35.73,
-    "normal21": 1.8,
-    "beyondNormal": -36.87
+    "normal21": 1.85,
+    "beyondNormal": -36.9
    },
    "path": {
     "-30": 32.97,
@@ -27271,8 +27293,8 @@
     "post7": -8.71,
     "post14": -3.33,
     "around": 3.54,
-    "normal21": -1.74,
-    "beyondNormal": 5.37
+    "normal21": -1.7,
+    "beyondNormal": 5.33
    },
    "path": {
     "-30": 4.19,
@@ -27416,8 +27438,8 @@
     "post7": 2.88,
     "post14": 24.53,
     "around": 41.78,
-    "normal21": -4.14,
-    "beyondNormal": 47.9
+    "normal21": -4.11,
+    "beyondNormal": 47.86
    },
    "path": {
     "-30": 1.28,
@@ -27582,7 +27604,7 @@
     "post14": -7.91,
     "around": -13.39,
     "normal21": -8.23,
-    "beyondNormal": -5.63
+    "beyondNormal": -5.62
    },
    "path": {
     "-30": 62.22,
@@ -27742,8 +27764,8 @@
     "post7": -4.65,
     "post14": -8.11,
     "around": -7.01,
-    "normal21": -3.75,
-    "beyondNormal": -3.39
+    "normal21": -3.72,
+    "beyondNormal": -3.41
    },
    "path": {
     "-30": 31.09,
@@ -27880,8 +27902,8 @@
     "post7": 7.05,
     "post14": 7.63,
     "around": 10.7,
-    "normal21": -1.81,
-    "beyondNormal": 12.74
+    "normal21": -1.82,
+    "beyondNormal": 12.75
    },
    "path": {
     "-30": -4.46,
@@ -28022,8 +28044,8 @@
     "post7": -2.41,
     "post14": 0.16,
     "around": 1.49,
-    "normal21": -0.9,
-    "beyondNormal": 2.41
+    "normal21": -0.89,
+    "beyondNormal": 2.4
    },
    "path": {
     "-30": -0.12,
@@ -28152,8 +28174,8 @@
     "post7": 14.11,
     "post14": 17.53,
     "around": 4.83,
-    "normal21": -3.86,
-    "beyondNormal": 9.04
+    "normal21": -3.85,
+    "beyondNormal": 9.03
    },
    "path": {
     "-30": 25.73,
@@ -28443,8 +28465,8 @@
     "post7": 6.39,
     "post14": 15.1,
     "around": 0.63,
-    "normal21": -9.46,
-    "beyondNormal": 11.14
+    "normal21": -9.49,
+    "beyondNormal": 11.18
    },
    "path": {
     "-30": 30.56,
@@ -28589,8 +28611,8 @@
     "post7": -7.38,
     "post14": -7.56,
     "around": -13.4,
-    "normal21": -11.17,
-    "beyondNormal": -2.51
+    "normal21": -11.14,
+    "beyondNormal": -2.54
    },
    "path": {
     "-30": 46.63,
@@ -28738,8 +28760,8 @@
     "post7": 10.94,
     "post14": 12.49,
     "around": 8.02,
-    "normal21": -3.61,
-    "beyondNormal": 12.07
+    "normal21": -3.6,
+    "beyondNormal": 12.05
    },
    "path": {
     "-30": 21.81,
@@ -28875,8 +28897,8 @@
     "post7": 7.83,
     "post14": 2.53,
     "around": -4.09,
-    "normal21": 4.99,
-    "beyondNormal": -8.65
+    "normal21": 5.02,
+    "beyondNormal": -8.67
    },
    "path": {
     "-30": -14.98,
@@ -29014,8 +29036,8 @@
     "post7": 10.14,
     "post14": 32.66,
     "around": 16.17,
-    "normal21": -3.15,
-    "beyondNormal": 19.94
+    "normal21": -3.1,
+    "beyondNormal": 19.89
    },
    "path": {
     "-30": 35.94,
@@ -29314,8 +29336,8 @@
     "post7": -5.99,
     "post14": 0.27,
     "around": -9.07,
-    "normal21": -3.15,
-    "beyondNormal": -6.12
+    "normal21": -3.1,
+    "beyondNormal": -6.16
    },
    "path": {
     "-30": 24.84,
@@ -29443,8 +29465,8 @@
     "post7": -4.26,
     "post14": -11.87,
     "around": -23.55,
-    "normal21": -8.0,
-    "beyondNormal": -16.9
+    "normal21": -7.99,
+    "beyondNormal": -16.91
    },
    "path": {
     "-30": 11.37,
@@ -29599,8 +29621,8 @@
     "post7": 4.18,
     "post14": -2.38,
     "around": -9.1,
-    "normal21": -4.05,
-    "beyondNormal": -5.26
+    "normal21": -4.03,
+    "beyondNormal": -5.28
    },
    "path": {
     "-30": 8.19,
@@ -29748,8 +29770,8 @@
     "post7": 1.05,
     "post14": -1.46,
     "around": -2.81,
-    "normal21": -6.04,
-    "beyondNormal": 3.43
+    "normal21": -6.01,
+    "beyondNormal": 3.41
    },
    "path": {
     "-30": 16.08,
@@ -29894,7 +29916,7 @@
     "post7": -14.55,
     "post14": -4.57,
     "around": -41.26,
-    "normal21": -10.37,
+    "normal21": -10.38,
     "beyondNormal": -34.46
    },
    "path": {
@@ -30029,8 +30051,8 @@
     "post7": -2.38,
     "post14": 4.95,
     "around": -32.15,
-    "normal21": -0.32,
-    "beyondNormal": -31.93
+    "normal21": -0.3,
+    "beyondNormal": -31.94
    },
    "path": {
     "-30": 50.81,
@@ -30185,8 +30207,8 @@
     "post7": -1.72,
     "post14": 13.43,
     "around": 17.32,
-    "normal21": -1.69,
-    "beyondNormal": 19.34
+    "normal21": -1.62,
+    "beyondNormal": 19.26
    },
    "path": {
     "-30": 14.2,
@@ -30335,7 +30357,7 @@
     "post7": -13.96,
     "post14": -18.88,
     "around": -12.72,
-    "normal21": -10.79,
+    "normal21": -10.78,
     "beyondNormal": -2.17
    },
    "path": {
@@ -30480,8 +30502,8 @@
     "post7": -3.86,
     "post14": -1.98,
     "around": -5.46,
-    "normal21": -14.79,
-    "beyondNormal": 10.95
+    "normal21": -14.81,
+    "beyondNormal": 10.98
    },
    "path": {
     "-30": 11.42,
@@ -30612,8 +30634,8 @@
     "post7": -12.1,
     "post14": -16.42,
     "around": -6.45,
-    "normal21": -3.15,
-    "beyondNormal": -3.41
+    "normal21": -3.14,
+    "beyondNormal": -3.42
    },
    "path": {
     "-30": 20.55,
@@ -30763,8 +30785,8 @@
     "post7": -1.81,
     "post14": 31.13,
     "around": 13.29,
-    "normal21": -7.26,
-    "beyondNormal": 22.16
+    "normal21": -7.24,
+    "beyondNormal": 22.13
    },
    "path": {
     "-30": -7.45,
@@ -30904,8 +30926,8 @@
     "post7": -49.46,
     "post14": -46.82,
     "around": -42.19,
-    "normal21": -4.91,
-    "beyondNormal": -39.21
+    "normal21": -4.94,
+    "beyondNormal": -39.18
    },
    "path": {
     "-30": 62.37,
@@ -31043,8 +31065,8 @@
     "post7": -24.97,
     "post14": -27.53,
     "around": -27.7,
-    "normal21": -2.29,
-    "beyondNormal": -26.01
+    "normal21": -2.27,
+    "beyondNormal": -26.02
    },
    "path": {
     "-30": 20.58,
@@ -31172,8 +31194,8 @@
     "post7": -43.52,
     "post14": -51.71,
     "around": -41.95,
-    "normal21": -8.92,
-    "beyondNormal": -36.26
+    "normal21": -8.9,
+    "beyondNormal": -36.28
    },
    "path": {
     "-30": -66.77,
@@ -31323,8 +31345,8 @@
     "post7": 197.26,
     "post14": 187.76,
     "around": 173.26,
-    "normal21": 13.91,
-    "beyondNormal": 139.89
+    "normal21": 14.0,
+    "beyondNormal": 139.69
    },
    "path": {
     "-30": 2.53,
@@ -31452,8 +31474,8 @@
     "post7": -0.78,
     "post14": -4.77,
     "around": 4.2,
-    "normal21": -6.81,
-    "beyondNormal": 11.82
+    "normal21": -6.79,
+    "beyondNormal": 11.79
    },
    "path": {
     "-30": -3.67,
@@ -31607,7 +31629,7 @@
     "post14": -35.24,
     "around": -33.03,
     "normal21": -8.23,
-    "beyondNormal": -27.03
+    "beyondNormal": -27.02
    },
    "path": {
     "-30": 14.67,
@@ -31767,8 +31789,8 @@
     "post7": 5.4,
     "post14": -3.1,
     "around": -3.89,
-    "normal21": 1.8,
-    "beyondNormal": -5.59
+    "normal21": 1.85,
+    "beyondNormal": -5.64
    },
    "path": {
     "-30": -19.35,
@@ -31905,8 +31927,8 @@
     "post7": -1.4,
     "post14": 18.72,
     "around": 23.16,
-    "normal21": -16.02,
-    "beyondNormal": 46.66
+    "normal21": -16.03,
+    "beyondNormal": 46.67
    },
    "path": {
     "-30": 18.41,
@@ -32034,7 +32056,7 @@
     "post7": -53.84,
     "post14": -63.99,
     "around": -68.24,
-    "normal21": -7.94,
+    "normal21": -7.95,
     "beyondNormal": -65.5
    },
    "path": {
@@ -32186,8 +32208,8 @@
     "post7": -3.54,
     "post14": -8.19,
     "around": -8.23,
-    "normal21": -1.74,
-    "beyondNormal": -6.61
+    "normal21": -1.7,
+    "beyondNormal": -6.64
    },
    "path": {
     "-30": 19.73,
@@ -32331,8 +32353,8 @@
     "post7": -6.84,
     "post14": -10.16,
     "around": -6.0,
-    "normal21": -4.14,
-    "beyondNormal": -1.94
+    "normal21": -4.11,
+    "beyondNormal": -1.97
    },
    "path": {
     "-30": 6.0,
@@ -32478,8 +32500,8 @@
     "post7": -7.51,
     "post14": -7.23,
     "around": -5.89,
-    "normal21": -3.75,
-    "beyondNormal": -2.22
+    "normal21": -3.72,
+    "beyondNormal": -2.25
    },
    "path": {
     "-30": 19.01,
@@ -32624,8 +32646,8 @@
     "post7": -3.88,
     "post14": -6.28,
     "around": -6.57,
-    "normal21": -1.81,
-    "beyondNormal": -4.85
+    "normal21": -1.82,
+    "beyondNormal": -4.84
    },
    "path": {
     "-30": 17.4,
@@ -32773,8 +32795,8 @@
     "post7": 10.31,
     "post14": -5.09,
     "around": -9.04,
-    "normal21": -5.77,
-    "beyondNormal": -3.47
+    "normal21": -5.75,
+    "beyondNormal": -3.49
    },
    "path": {
     "-30": 24.22,
@@ -32902,7 +32924,7 @@
     "post7": -2.3,
     "post14": -6.74,
     "around": -8.55,
-    "normal21": -3.86,
+    "normal21": -3.85,
     "beyondNormal": -4.88
    },
    "path": {
@@ -33056,8 +33078,8 @@
     "post7": 0.75,
     "post14": -1.94,
     "around": -0.74,
-    "normal21": 5.54,
-    "beyondNormal": -5.95
+    "normal21": 5.56,
+    "beyondNormal": -5.97
    },
    "path": {
     "-30": -1.68,
@@ -33362,8 +33384,8 @@
     "post7": -5.31,
     "post14": -0.88,
     "around": 13.43,
-    "normal21": -9.46,
-    "beyondNormal": 25.28
+    "normal21": -9.49,
+    "beyondNormal": 25.32
    },
    "path": {
     "-30": -53.08,
@@ -33508,8 +33530,8 @@
     "post7": -7.54,
     "post14": -8.93,
     "around": -5.55,
-    "normal21": -11.17,
-    "beyondNormal": 6.32
+    "normal21": -11.14,
+    "beyondNormal": 6.3
    },
    "path": {
     "-30": -9.16,
@@ -33657,8 +33679,8 @@
     "post7": -1.72,
     "post14": -4.8,
     "around": -7.25,
-    "normal21": -3.61,
-    "beyondNormal": -3.77
+    "normal21": -3.6,
+    "beyondNormal": -3.79
    },
    "path": {
     "-30": -7.19,
@@ -33794,8 +33816,8 @@
     "post7": 22.53,
     "post14": 30.17,
     "around": 34.5,
-    "normal21": 4.99,
-    "beyondNormal": 28.1
+    "normal21": 5.02,
+    "beyondNormal": 28.07
    },
    "path": {
     "-30": -0.4,
@@ -33932,8 +33954,8 @@
     "post7": -11.95,
     "post14": 0.57,
     "around": -20.78,
-    "normal21": -3.08,
-    "beyondNormal": -18.27
+    "normal21": -3.09,
+    "beyondNormal": -18.26
    },
    "path": {
     "-30": 26.88,
@@ -34085,7 +34107,7 @@
     "post14": -11.57,
     "around": -14.96,
     "normal21": -8.23,
-    "beyondNormal": -7.34
+    "beyondNormal": -7.33
    },
    "path": {
     "-30": 0.95,
@@ -34245,8 +34267,8 @@
     "post7": -7.18,
     "post14": -5.94,
     "around": -5.75,
-    "normal21": -3.15,
-    "beyondNormal": -2.69
+    "normal21": -3.1,
+    "beyondNormal": -2.73
    },
    "path": {
     "-30": 10.31,
@@ -34384,8 +34406,8 @@
     "post7": -4.93,
     "post14": -3.63,
     "around": 2.62,
-    "normal21": -3.15,
-    "beyondNormal": 5.95
+    "normal21": -3.1,
+    "beyondNormal": 5.9
    },
    "path": {
     "-30": 16.08,
@@ -34513,8 +34535,8 @@
     "post7": -5.32,
     "post14": -2.42,
     "around": -4.21,
-    "normal21": -8.0,
-    "beyondNormal": 4.12
+    "normal21": -7.99,
+    "beyondNormal": 4.1
    },
    "path": {
     "-30": 27.85,
@@ -34653,8 +34675,8 @@
     "post7": -0.34,
     "post14": 6.2,
     "around": 1.1,
-    "normal21": -4.05,
-    "beyondNormal": 5.37
+    "normal21": -4.03,
+    "beyondNormal": 5.34
    },
    "path": {
     "-30": 14.46,
@@ -34791,8 +34813,8 @@
     "post7": 43.96,
     "post14": 50.3,
     "around": 25.75,
-    "normal21": 4.9,
-    "beyondNormal": 19.88
+    "normal21": 4.94,
+    "beyondNormal": 19.83
    },
    "path": {
     "-30": -5.04,
@@ -34942,8 +34964,8 @@
     "post7": -3.09,
     "post14": -4.74,
     "around": -8.09,
-    "normal21": -6.04,
-    "beyondNormal": -2.19
+    "normal21": -6.01,
+    "beyondNormal": -2.21
    },
    "path": {
     "-30": 84.72,
@@ -35064,7 +35086,7 @@
     "post7": 25.11,
     "post14": 3.88,
     "around": -31.76,
-    "normal21": -10.79,
+    "normal21": -10.78,
     "beyondNormal": -23.51
    },
    "path": {
@@ -35209,8 +35231,8 @@
     "post7": -0.54,
     "post14": -4.43,
     "around": -12.88,
-    "normal21": -14.79,
-    "beyondNormal": 2.24
+    "normal21": -14.81,
+    "beyondNormal": 2.27
    },
    "path": {
     "-30": -12.31,
@@ -35347,8 +35369,8 @@
     "post7": 23.76,
     "post14": 4.31,
     "around": -0.87,
-    "normal21": -7.26,
-    "beyondNormal": 6.89
+    "normal21": -7.24,
+    "beyondNormal": 6.86
    },
    "path": {
     "-30": 0.77,
@@ -35494,8 +35516,8 @@
     "post7": 3.4,
     "post14": -0.98,
     "around": -5.45,
-    "normal21": -2.29,
-    "beyondNormal": -3.24
+    "normal21": -2.27,
+    "beyondNormal": -3.26
    },
    "path": {
     "-30": 28.65,
@@ -35623,8 +35645,8 @@
     "post7": 0.81,
     "post14": -1.89,
     "around": 2.75,
-    "normal21": -6.81,
-    "beyondNormal": 10.26
+    "normal21": -6.79,
+    "beyondNormal": 10.24
    },
    "path": {
     "-30": -11.87,
@@ -35957,8 +35979,8 @@
     "post7": 4.62,
     "post14": 17.21,
     "around": -9.43,
-    "normal21": 1.8,
-    "beyondNormal": -11.04
+    "normal21": 1.85,
+    "beyondNormal": -11.08
    },
    "path": {
     "-30": -10.0,
@@ -36120,8 +36142,8 @@
     "post7": -15.4,
     "post14": -20.14,
     "around": -2.17,
-    "normal21": -1.74,
-    "beyondNormal": -0.44
+    "normal21": -1.7,
+    "beyondNormal": -0.47
    },
    "path": {
     "-30": -25.38,
@@ -36265,8 +36287,8 @@
     "post7": -7.3,
     "post14": -3.76,
     "around": 12.38,
-    "normal21": -4.14,
-    "beyondNormal": 17.23
+    "normal21": -4.11,
+    "beyondNormal": 17.2
    },
    "path": {
     "-30": 17.03,
@@ -36561,8 +36583,8 @@
     "post7": -4.13,
     "post14": -14.99,
     "around": -14.93,
-    "normal21": -3.75,
-    "beyondNormal": -11.62
+    "normal21": -3.72,
+    "beyondNormal": -11.64
    },
    "path": {
     "-30": 12.11,
@@ -36714,7 +36736,7 @@
     "post7": -17.17,
     "post14": -9.24,
     "around": -8.45,
-    "normal21": -1.81,
+    "normal21": -1.82,
     "beyondNormal": -6.76
    },
    "path": {
@@ -36864,8 +36886,8 @@
     "post7": -10.84,
     "post14": -15.68,
     "around": -13.63,
-    "normal21": -3.86,
-    "beyondNormal": -10.16
+    "normal21": -3.85,
+    "beyondNormal": -10.17
    },
    "path": {
     "-30": 19.2,
@@ -37181,8 +37203,8 @@
     "post7": 21.8,
     "post14": 32.37,
     "around": 74.61,
-    "normal21": -9.46,
-    "beyondNormal": 92.85
+    "normal21": -9.49,
+    "beyondNormal": 92.91
    },
    "path": {
     "-30": 5.12,
@@ -37327,8 +37349,8 @@
     "post7": 7.62,
     "post14": 2.83,
     "around": -0.56,
-    "normal21": -2.78,
-    "beyondNormal": 2.29
+    "normal21": -2.79,
+    "beyondNormal": 2.3
    },
    "path": {
     "-30": 18.88,
@@ -37485,8 +37507,8 @@
     "post7": -1.02,
     "post14": 3.99,
     "around": 17.94,
-    "normal21": -11.17,
-    "beyondNormal": 32.77
+    "normal21": -11.14,
+    "beyondNormal": 32.73
    },
    "path": {
     "-30": -0.13,
@@ -37645,8 +37667,8 @@
     "post7": 12.68,
     "post14": 21.16,
     "around": 13.14,
-    "normal21": -3.61,
-    "beyondNormal": 17.38
+    "normal21": -3.6,
+    "beyondNormal": 17.36
    },
    "path": {
     "-30": 21.03,
@@ -37782,8 +37804,8 @@
     "post7": 4.04,
     "post14": 11.64,
     "around": 15.94,
-    "normal21": -11.87,
-    "beyondNormal": 31.56
+    "normal21": -11.86,
+    "beyondNormal": 31.54
    },
    "path": {
     "-30": -37.81,
@@ -37912,8 +37934,8 @@
     "post7": -10.58,
     "post14": -17.43,
     "around": 19.53,
-    "normal21": 4.99,
-    "beyondNormal": 13.84
+    "normal21": 5.02,
+    "beyondNormal": 13.82
    },
    "path": {
     "-30": -42.69,
@@ -38212,8 +38234,8 @@
     "post7": -8.86,
     "post14": -5.4,
     "around": -10.71,
-    "normal21": -3.15,
-    "beyondNormal": -7.81
+    "normal21": -3.1,
+    "beyondNormal": -7.85
    },
    "path": {
     "-30": 47.17,
@@ -38351,8 +38373,8 @@
     "post7": -3.72,
     "post14": -0.31,
     "around": -6.06,
-    "normal21": -3.15,
-    "beyondNormal": -3.01
+    "normal21": -3.1,
+    "beyondNormal": -3.05
    },
    "path": {
     "-30": 48.57,
@@ -38480,8 +38502,8 @@
     "post7": -6.11,
     "post14": -5.7,
     "around": -16.22,
-    "normal21": -8.0,
-    "beyondNormal": -8.94
+    "normal21": -7.99,
+    "beyondNormal": -8.95
    },
    "path": {
     "-30": 28.78,
@@ -38620,8 +38642,8 @@
     "post7": -0.52,
     "post14": 1.54,
     "around": -11.52,
-    "normal21": -4.05,
-    "beyondNormal": -7.78
+    "normal21": -4.03,
+    "beyondNormal": -7.81
    },
    "path": {
     "-30": 11.6,
@@ -38748,8 +38770,8 @@
     "post7": -10.34,
     "post14": -11.66,
     "around": -19.01,
-    "normal21": -6.04,
-    "beyondNormal": -13.81
+    "normal21": -6.01,
+    "beyondNormal": -13.83
    },
    "path": {
     "-30": -1.9,
@@ -38870,8 +38892,8 @@
     "post7": 1.33,
     "post14": 7.85,
     "around": -11.15,
-    "normal21": -0.32,
-    "beyondNormal": -10.87
+    "normal21": -0.3,
+    "beyondNormal": -10.88
    },
    "path": {
     "-30": 45.19,
@@ -39031,8 +39053,8 @@
     "post7": 9.35,
     "post14": -17.52,
     "around": -12.59,
-    "normal21": -5.8,
-    "beyondNormal": -7.21
+    "normal21": -5.79,
+    "beyondNormal": -7.22
    },
    "path": {
     "-30": -11.21,
@@ -39160,8 +39182,8 @@
     "post7": -3.64,
     "post14": -9.34,
     "around": -7.2,
-    "normal21": -3.37,
-    "beyondNormal": -3.96
+    "normal21": -3.36,
+    "beyondNormal": -3.97
    },
    "path": {
     "-30": -3.91,
@@ -39324,8 +39346,8 @@
     "post7": -2.51,
     "post14": 48.11,
     "around": 22.52,
-    "normal21": -10.79,
-    "beyondNormal": 37.34
+    "normal21": -10.78,
+    "beyondNormal": 37.33
    },
    "path": {
     "-30": -9.06,
@@ -39469,8 +39491,8 @@
     "post7": -19.04,
     "post14": -1.5,
     "around": -4.59,
-    "normal21": -14.79,
-    "beyondNormal": 11.97
+    "normal21": -14.81,
+    "beyondNormal": 12.0
    },
    "path": {
     "-30": -0.3,
@@ -39607,8 +39629,8 @@
     "post7": -6.75,
     "post14": -16.72,
     "around": -18.33,
-    "normal21": -7.26,
-    "beyondNormal": -11.93
+    "normal21": -7.24,
+    "beyondNormal": -11.96
    },
    "path": {
     "-30": 5.63,
@@ -39754,8 +39776,8 @@
     "post7": -11.6,
     "post14": -22.14,
     "around": -26.6,
-    "normal21": -2.29,
-    "beyondNormal": -24.88
+    "normal21": -2.27,
+    "beyondNormal": -24.9
    },
    "path": {
     "-30": 34.93,
@@ -39894,7 +39916,7 @@
     "post14": 0.17,
     "around": -11.52,
     "normal21": -8.23,
-    "beyondNormal": -3.59
+    "beyondNormal": -3.58
    },
    "path": {
     "-30": 7.79,
@@ -40048,8 +40070,8 @@
     "post7": -27.54,
     "post14": -3.19,
     "around": 5.92,
-    "normal21": -8.48,
-    "beyondNormal": 15.74
+    "normal21": -8.47,
+    "beyondNormal": 15.73
    },
    "path": {
     "-30": -14.01,
@@ -40189,8 +40211,8 @@
     "post7": 12.04,
     "post14": -61.35,
     "around": -13.92,
-    "normal21": -8.92,
-    "beyondNormal": -5.49
+    "normal21": -8.9,
+    "beyondNormal": -5.51
    },
    "path": {
     "-30": -87.42,
@@ -40331,8 +40353,8 @@
     "post7": 0.64,
     "post14": 19.77,
     "around": 29.77,
-    "normal21": -6.61,
-    "beyondNormal": 38.96
+    "normal21": -6.6,
+    "beyondNormal": 38.94
    },
    "path": {
     "-30": -67.37,
@@ -40482,8 +40504,8 @@
     "post7": -6.06,
     "post14": -7.69,
     "around": -26.1,
-    "normal21": -6.81,
-    "beyondNormal": -20.7
+    "normal21": -6.79,
+    "beyondNormal": -20.71
    },
    "path": {
     "-30": 3.54,
@@ -40628,8 +40650,8 @@
     "post7": 18.09,
     "post14": 18.95,
     "around": 38.06,
-    "normal21": 1.8,
-    "beyondNormal": 35.61
+    "normal21": 1.85,
+    "beyondNormal": 35.55
    },
    "path": {
     "-30": -21.11,
@@ -40782,8 +40804,8 @@
     "post7": -4.96,
     "post14": 14.22,
     "around": 16.0,
-    "normal21": -1.74,
-    "beyondNormal": 18.05
+    "normal21": -1.7,
+    "beyondNormal": 18.01
    },
    "path": {
     "-30": -5.77,
@@ -40927,8 +40949,8 @@
     "post7": -7.99,
     "post14": 2.53,
     "around": -2.46,
-    "normal21": -1.15,
-    "beyondNormal": -1.33
+    "normal21": -1.14,
+    "beyondNormal": -1.34
    },
    "path": {
     "-30": 20.68,
@@ -41056,8 +41078,8 @@
     "post7": -13.33,
     "post14": -17.87,
     "around": -20.84,
-    "normal21": -4.14,
-    "beyondNormal": -17.42
+    "normal21": -4.11,
+    "beyondNormal": -17.45
    },
    "path": {
     "-30": -15.12,
@@ -41203,8 +41225,8 @@
     "post7": -3.56,
     "post14": -5.3,
     "around": -10.87,
-    "normal21": -5.44,
-    "beyondNormal": -5.74
+    "normal21": -5.43,
+    "beyondNormal": -5.75
    },
    "path": {
     "-30": 5.07,
@@ -41380,8 +41402,8 @@
     "post7": -10.76,
     "post14": -20.52,
     "around": -21.93,
-    "normal21": -3.75,
-    "beyondNormal": -18.89
+    "normal21": -3.72,
+    "beyondNormal": -18.91
    },
    "path": {
     "-30": -15.17,
@@ -41537,7 +41559,7 @@
     "post7": -9.93,
     "post14": -15.0,
     "around": -18.8,
-    "normal21": -1.81,
+    "normal21": -1.82,
     "beyondNormal": -17.3
    },
    "path": {
@@ -41687,8 +41709,8 @@
     "post7": 0.4,
     "post14": 0.24,
     "around": -18.48,
-    "normal21": -0.9,
-    "beyondNormal": -17.74
+    "normal21": -0.89,
+    "beyondNormal": -17.75
    },
    "path": {
     "-30": 26.07,
@@ -41816,8 +41838,8 @@
     "post7": -2.39,
     "post14": -15.05,
     "around": -18.8,
-    "normal21": -3.86,
-    "beyondNormal": -15.54
+    "normal21": -3.85,
+    "beyondNormal": -15.55
    },
    "path": {
     "-30": 24.15,
@@ -42116,8 +42138,8 @@
     "post7": -12.99,
     "post14": -15.29,
     "around": -22.61,
-    "normal21": -9.46,
-    "beyondNormal": -14.53
+    "normal21": -9.49,
+    "beyondNormal": -14.5
    },
    "path": {
     "-30": 18.06,
@@ -42256,8 +42278,8 @@
     "post7": -8.69,
     "post14": -19.08,
     "around": -23.96,
-    "normal21": -8.12,
-    "beyondNormal": -17.24
+    "normal21": -8.1,
+    "beyondNormal": -17.26
    },
    "path": {
     "-30": 15.81,
@@ -42396,8 +42418,8 @@
     "post7": 4.81,
     "post14": 3.46,
     "around": 7.14,
-    "normal21": -11.17,
-    "beyondNormal": 20.61
+    "normal21": -11.14,
+    "beyondNormal": 20.58
    },
    "path": {
     "-30": 9.95,
@@ -42717,8 +42739,8 @@
     "post7": -4.28,
     "post14": -23.74,
     "around": -10.75,
-    "normal21": -3.61,
-    "beyondNormal": -7.4
+    "normal21": -3.6,
+    "beyondNormal": -7.42
    },
    "path": {
     "-30": -7.94,
@@ -42854,8 +42876,8 @@
     "post7": -7.42,
     "post14": -8.99,
     "around": -13.04,
-    "normal21": 4.99,
-    "beyondNormal": -17.18
+    "normal21": 5.02,
+    "beyondNormal": -17.2
    },
    "path": {
     "-30": 22.9,
@@ -43003,8 +43025,8 @@
     "post7": -8.54,
     "post14": -22.39,
     "around": -10.13,
-    "normal21": -3.15,
-    "beyondNormal": -7.21
+    "normal21": -3.1,
+    "beyondNormal": -7.25
    },
    "path": {
     "-30": 6.33,
@@ -43159,8 +43181,8 @@
     "post7": 4.5,
     "post14": -4.5,
     "around": 2.54,
-    "normal21": -3.15,
-    "beyondNormal": 5.87
+    "normal21": -3.1,
+    "beyondNormal": 5.82
    },
    "path": {
     "-30": 20.36,
@@ -43288,8 +43310,8 @@
     "post7": 12.55,
     "post14": 11.98,
     "around": 0.89,
-    "normal21": -8.0,
-    "beyondNormal": 9.66
+    "normal21": -7.99,
+    "beyondNormal": 9.65
    },
    "path": {
     "-30": 48.18,
@@ -43434,8 +43456,8 @@
     "post7": 24.35,
     "post14": 19.87,
     "around": 18.95,
-    "normal21": -4.05,
-    "beyondNormal": 23.98
+    "normal21": -4.03,
+    "beyondNormal": 23.94
    },
    "path": {
     "-30": -2.73,
@@ -43580,8 +43602,8 @@
     "post7": 15.07,
     "post14": 26.02,
     "around": 25.31,
-    "normal21": -6.04,
-    "beyondNormal": 33.36
+    "normal21": -6.01,
+    "beyondNormal": 33.33
    },
    "path": {
     "-30": 14.96,
@@ -43720,8 +43742,8 @@
     "post7": 5.06,
     "post14": 2.77,
     "around": 13.01,
-    "normal21": -0.32,
-    "beyondNormal": 13.37
+    "normal21": -0.3,
+    "beyondNormal": 13.35
    },
    "path": {
     "-30": 7.45,
@@ -43870,7 +43892,7 @@
     "post7": -3.33,
     "post14": 1.48,
     "around": 2.33,
-    "normal21": -10.79,
+    "normal21": -10.78,
     "beyondNormal": 14.7
    },
    "path": {
@@ -44176,8 +44198,8 @@
     "post7": 4.35,
     "post14": 1.39,
     "around": -24.07,
-    "normal21": -14.79,
-    "beyondNormal": -10.89
+    "normal21": -14.81,
+    "beyondNormal": -10.87
    },
    "path": {
     "-30": 36.07,
@@ -44314,8 +44336,8 @@
     "post7": 21.86,
     "post14": 28.68,
     "around": 34.64,
-    "normal21": -7.26,
-    "beyondNormal": 45.18
+    "normal21": -7.24,
+    "beyondNormal": 45.15
    },
    "path": {
     "-30": 50.05,
@@ -44461,8 +44483,8 @@
     "post7": -12.3,
     "post14": -1.53,
     "around": 5.21,
-    "normal21": -2.29,
-    "beyondNormal": 7.67
+    "normal21": -2.27,
+    "beyondNormal": 7.65
    },
    "path": {
     "-30": 74.31,
@@ -44610,8 +44632,8 @@
     "post7": -0.75,
     "post14": 3.64,
     "around": -12.44,
-    "normal21": -6.81,
-    "beyondNormal": -6.04
+    "normal21": -6.79,
+    "beyondNormal": -6.06
    },
    "path": {
     "-30": 47.96,
@@ -44756,8 +44778,8 @@
     "post7": -7.23,
     "post14": -2.91,
     "around": -8.92,
-    "normal21": 1.8,
-    "beyondNormal": -10.53
+    "normal21": 1.85,
+    "beyondNormal": -10.58
    },
    "path": {
     "-30": -0.12,
@@ -44912,8 +44934,8 @@
     "post7": 1.49,
     "post14": 6.92,
     "around": -8.59,
-    "normal21": -1.74,
-    "beyondNormal": -6.97
+    "normal21": -1.7,
+    "beyondNormal": -7.01
    },
    "path": {
     "-30": 46.46,
@@ -45057,8 +45079,8 @@
     "post7": -12.85,
     "post14": -11.72,
     "around": -25.48,
-    "normal21": -4.14,
-    "beyondNormal": -22.26
+    "normal21": -4.11,
+    "beyondNormal": -22.29
    },
    "path": {
     "-30": 14.93,
@@ -45213,8 +45235,8 @@
     "post7": -1.12,
     "post14": 0.79,
     "around": -10.98,
-    "normal21": -3.75,
-    "beyondNormal": -7.51
+    "normal21": -3.72,
+    "beyondNormal": -7.54
    },
    "path": {
     "-30": 65.39,
@@ -45350,7 +45372,7 @@
     "post7": -7.22,
     "post14": -4.35,
     "around": -6.87,
-    "normal21": -1.81,
+    "normal21": -1.82,
     "beyondNormal": -5.15
    },
    "path": {
@@ -45500,8 +45522,8 @@
     "post7": -23.26,
     "post14": -20.74,
     "around": -24.39,
-    "normal21": -3.86,
-    "beyondNormal": -21.35
+    "normal21": -3.85,
+    "beyondNormal": -21.36
    },
    "path": {
     "-30": 52.9,
@@ -45971,8 +45993,8 @@
     "post7": -25.37,
     "post14": -22.22,
     "around": -28.11,
-    "normal21": -9.46,
-    "beyondNormal": -20.6
+    "normal21": -9.49,
+    "beyondNormal": -20.57
    },
    "path": {
     "-30": 634.21,
@@ -46117,8 +46139,8 @@
     "post7": -7.93,
     "post14": -16.45,
     "around": -28.38,
-    "normal21": -8.12,
-    "beyondNormal": -22.05
+    "normal21": -8.1,
+    "beyondNormal": -22.07
    },
    "path": {
     "-30": 37.75,
@@ -46247,8 +46269,8 @@
     "post7": -2.55,
     "post14": -20.7,
     "around": -30.61,
-    "normal21": -11.17,
-    "beyondNormal": -21.89
+    "normal21": -11.14,
+    "beyondNormal": -21.91
    },
    "path": {
     "-30": 31.36,
@@ -46422,8 +46444,8 @@
     "post7": -12.79,
     "post14": -18.04,
     "around": -21.17,
-    "normal21": -3.61,
-    "beyondNormal": -18.21
+    "normal21": -3.6,
+    "beyondNormal": -18.23
    },
    "path": {
     "-30": 46.3,
@@ -46563,8 +46585,8 @@
     "post7": -19.38,
     "post14": -33.31,
     "around": -32.74,
-    "normal21": -11.87,
-    "beyondNormal": -23.68
+    "normal21": -11.86,
+    "beyondNormal": -23.69
    },
    "path": {
     "-30": 46.7,
@@ -46692,8 +46714,8 @@
     "post7": -6.8,
     "post14": -24.94,
     "around": -26.26,
-    "normal21": -3.15,
-    "beyondNormal": -23.86
+    "normal21": -3.1,
+    "beyondNormal": -23.9
    },
    "path": {
     "-30": 2.02,
@@ -46825,8 +46847,8 @@
     "post7": -30.84,
     "post14": -43.72,
     "around": -59.95,
-    "normal21": -8.21,
-    "beyondNormal": -56.37
+    "normal21": -8.25,
+    "beyondNormal": -56.35
    },
    "path": {
     "-30": 18.65,
@@ -46957,8 +46979,8 @@
     "post7": -19.44,
     "post14": -34.17,
     "around": -36.64,
-    "normal21": -16.64,
-    "beyondNormal": -23.99
+    "normal21": -16.63,
+    "beyondNormal": -24.0
    },
    "path": {
     "-30": 7.73,
@@ -47087,8 +47109,8 @@
     "post7": 6.8,
     "post14": -10.12,
     "around": -15.22,
-    "normal21": -3.15,
-    "beyondNormal": -12.47
+    "normal21": -3.1,
+    "beyondNormal": -12.51
    },
    "path": {
     "-30": 25.06,
@@ -47216,8 +47238,8 @@
     "post7": 86.14,
     "post14": 107.68,
     "around": 134.93,
-    "normal21": -1.67,
-    "beyondNormal": 138.92
+    "normal21": -1.65,
+    "beyondNormal": 138.87
    },
    "path": {
     "-30": -89.68,
@@ -47345,8 +47367,8 @@
     "post7": -16.8,
     "post14": -24.14,
     "around": -23.87,
-    "normal21": -8.0,
-    "beyondNormal": -17.25
+    "normal21": -7.99,
+    "beyondNormal": -17.26
    },
    "path": {
     "-30": 33.76,
@@ -47503,8 +47525,8 @@
     "post7": 5.32,
     "post14": 6.24,
     "around": 12.03,
-    "normal21": -4.05,
-    "beyondNormal": 16.76
+    "normal21": -4.03,
+    "beyondNormal": 16.73
    },
    "path": {
     "-30": 29.87,
@@ -47659,8 +47681,8 @@
     "post7": -2.14,
     "post14": -2.83,
     "around": -2.18,
-    "normal21": -6.04,
-    "beyondNormal": 4.1
+    "normal21": -6.01,
+    "beyondNormal": 4.08
    },
    "path": {
     "-30": 2.56,
@@ -47803,8 +47825,8 @@
     "post7": -9.58,
     "post14": -17.43,
     "around": -20.36,
-    "normal21": 4.99,
-    "beyondNormal": -24.15
+    "normal21": 5.02,
+    "beyondNormal": -24.17
    },
    "path": {
     "-30": 13.55,
