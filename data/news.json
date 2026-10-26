@@ -1,148 +1,118 @@
 {
  "date": "2026-10-26",
- "updated": "2026-10-25T20:14:55Z",
- "headline": "Bitcoin is steady near $80,500 early Monday in Asia as Gulf tensions keep oil high, CoinDCX confirms a $16M loss, and markets brace for a packed Fed week.",
+ "updated": "2026-10-26T00:22:44Z",
+ "headline": "Bitcoin slips back to about $80,000 early Monday in Asia as Gulf attacks continue, Lula leads Brazil's count, and markets head into a packed Fed week.",
  "market": {
-  "asOf": "Prices read from CoinMarketCap's homepage at about 20:00 UTC Sun 25 Oct (03:00 Mon Bangkok); Alternative.me showed BTC at $80,686 at the same time. The 24h change could not be confirmed this run. Live prices are at the top of the page.",
+  "asOf": "BTC read from CoinGecko at about 00:00 UTC Mon 26 Oct (07:00 Bangkok). ETH, SOL and the Fear & Greed Index could not be confirmed this run. Live prices are at the top of the page.",
   "btc": {
-   "price": 80499.87,
-   "chg24h": null
+   "price": 79995.29,
+   "chg24h": -1.0
   },
   "eth": {
-   "price": 2350.88,
+   "price": null,
    "chg24h": null
   },
   "sol": {
-   "price": 101.59,
+   "price": null,
    "chg24h": null
   },
-  "fearGreed": "54 (Neutral) on Alternative.me's Crypto Fear & Greed Index (0-100), read about 20:00 UTC; CoinMarketCap's own Fear and Greed Index read 45 (Neutral)"
+  "fearGreed": "Not confirmed this run"
  },
  "stories": [
   {
-   "title": "Bitcoin steady near $80,500 as Gulf attacks keep oil near $117",
+   "title": "Bitcoin slips back to about $80,000 as Gulf attacks continue and oil stays high",
    "mood": "volatile",
-   "summary": "Bitcoin has climbed back above $80,000 after Saturday's dip to its lowest level in more than a month. President Trump said there would be no US strike on Iran today, but missile attacks on Saudi Arabia continue and oil is very high. High oil can push inflation up, which makes the Fed less likely to cut rates.",
+   "summary": "Bitcoin is about 1% lower over 24 hours and back near $80,000. Missile and drone attacks on Saudi Arabia went on through Sunday. Oil dipped slightly when futures reopened but stays high. High oil can push inflation up, which makes the Fed less likely to cut rates.",
    "points": [
-    "Saturday's low was $79,146, per Investing.com.",
-    "Liquidations (traders forced out of borrowed bets) over 24 hours: more than $810M per Coinglass data cited by Investing.com; crypto.news gives about $546.88M.",
-    "Trump: \"The answer is no, there will not be a strike today,\" per Gulf News. About 10 ballistic missiles were intercepted over southern Saudi Arabia and falling debris injured two people.",
-    "Brent oil settled Friday at $116.72, up 3.14%, its highest since 29 April; oil futures reopen Sunday 6pm ET (22:00 UTC), per FinanceFeeds.",
-    "The US State Department ordered non-emergency staff to leave its missions in Saudi Arabia, per FinanceFeeds."
+    "BTC was $79,995.29, down 1.00% over 24 hours, per CoinGecko.",
+    "Brent oil fell to about $115.5 (down about 1%) after the Sunday-night reopen, and US WTI was about $102.2, per Trading Economics. Brent had settled Friday at $116.72, per Discovery Alert.",
+    "Trump on Iran: \"The answer is no, there will not be a strike today,\" per Gulf News. Riyadh's King Khalid airport reopened Sunday, and missile debris injured two people in southern Saudi Arabia.",
+    "Saudi forces intercepted 10 ballistic missiles aimed at southern Saudi Arabia on Sunday, plus drones and a missile aimed at Riyadh, per Discovery Alert."
    ],
    "sources": [
     {
-     "label": "Investing.com: Bitcoin recovers to $80,800 ahead of Fed meeting",
-     "url": "https://au.investing.com/news/cryptocurrency-news/bitcoin-price-today-btc-recovers-to-80800-ahead-of-fed-meeting-4712898"
+     "label": "CoinGecko: Bitcoin",
+     "url": "https://www.coingecko.com/en/coins/bitcoin"
     },
     {
-     "label": "crypto.news: Market watch, worst altcoins",
-     "url": "https://crypto.news/crypto-market-watch-worst-altcoins-bitcoin-price-80k/"
+     "label": "Trading Economics: Brent crude",
+     "url": "https://tradingeconomics.com/commodity/brent-crude-oil"
     },
     {
-     "label": "Gulf News: Missiles intercepted over Saudi Arabia",
+     "label": "Trading Economics: WTI crude",
+     "url": "https://tradingeconomics.com/commodity/crude-oil"
+    },
+    {
+     "label": "Gulf News: Riyadh airport resumes operations",
      "url": "https://gulfnews.com/world/mena/middle-east-war-drone-missile-intercepted-over-riyadh-as-king-khalid-airport-resumes-operations-1.500722685"
     },
     {
-     "label": "FinanceFeeds: Brent at $116.72 ahead of Sunday open",
-     "url": "https://financefeeds.com/brent-crude-oil-price-116-72-sunday-futures-open-houthi-yanbu-rabigh-claims-riyadh-intercepts-fed-week-bull-120-bear-108/"
-    }
-   ]
-  },
-  {
-   "title": "CoinDCX confirms $16M loss after its CEO called breach reports a \"false alarm\"",
-   "mood": "bearish",
-   "summary": "Indian exchange CoinDCX now confirms it lost 15.99 million USDT (about $16M) from deposit wallets it had stopped using, days after its CEO dismissed the reports. It says it covered the loss. Other weekend security problems are still open: the Initia blockchain is still halted and hardware-wallet maker Keystone is facing more questions over leaked customer data.",
-   "points": [
-    "CoinDCX lost 15.99M USDT from retired deposit wallets, per The Block.",
-    "Tether froze nine wallets holding 2,212,850 USDT; the funds came from 40 wallets on the TRON network, per The Crypto Times.",
-    "Initia said on 24 Oct its network and rollups remain halted after its exploit; its USDC bridge reserve briefly fell from about $1M to $63 on 23 Oct, per CryptoSlate.",
-    "Keystone customers say the leak included data the company had promised to delete; Keystone says private keys and recovery phrases were not exposed, per The Block.",
-    "If your address leaked, expect fake refund or replacement offers. Never type a recovery phrase into a website or reply."
-   ],
-   "sources": [
-    {
-     "label": "The Block: CoinDCX confirms $16M loss",
-     "url": "https://www.theblock.co/news/business/2026-10-25-coindcx-confirms-16-million-loss-from-retired-wallets-days-after-ceo-called-breach-reports-a-false-alarm-431617"
-    },
-    {
-     "label": "The Crypto Times: CoinDCX admits sweep failure",
-     "url": "https://www.cryptotimes.io/2026/10/25/coindcx-admits-deposit-sweep-failure-after-16m-usdt-drained-from-tron-wallets/"
-    },
-    {
-     "label": "CryptoSlate: Initia bridge reserve down to $63",
-     "url": "https://cryptoslate.com/initia-hack-drove-its-usdc-bridge-reserve-down-to-63-as-withdrawals-failed/"
-    },
-    {
-     "label": "The Block: Keystone customers say deleted data leaked",
-     "url": "https://theblock.co/news/business/2026-10-25-keystone-customers-say-breach-exposed-data-the-hardware-wallet-maker-promised-to-delete-431613"
+     "label": "Discovery Alert: Houthi attacks and Brent",
+     "url": "https://discoveryalert.com/analysis/houthi-attacks-saudi-arabia-brent-october-2026/"
     }
    ]
   },
   {
    "title": "Fed week: rate decision Wednesday, inflation data Thursday, $11B bitcoin options expiry Friday",
    "mood": "volatile",
-   "summary": "The Fed announces its rate decision on Wednesday, with a hold widely expected. Inflation (PCE) and growth (GDP) data land Thursday, along with Coinbase and Strategy earnings. About $11B of bitcoin options expire on Friday morning.",
+   "summary": "The Fed announces its rate decision on Wednesday, with a hold widely expected. Growth (GDP) and inflation (PCE) data land Thursday, along with Coinbase and Strategy earnings. About $11B of bitcoin options expire Friday. Spot bitcoin funds saw two days of withdrawals before the weekend.",
    "points": [
-    "Fed range is 3.75-4.00%; 94 of 100 economists in a Reuters poll expect a hold, per CoinAlertNews.",
-    "Spot bitcoin ETFs (funds that hold bitcoin for stock-market investors) had outflows of $635.5M on 22 Oct and $137.9M on 23 Oct, per crypto.news.",
-    "Even so, the week ended with about $301.2M of net inflows, per crypto.news citing Farside.",
-    "Deribit bitcoin options worth about $11B expire on Fri 30 Oct at 08:00 UTC (15:00 Bangkok), per EthNews and Crypto Briefing."
+    "Fed range is 3.75-4.00%. In a Reuters poll, 94 of 100 economists expect a hold, per Coinpaper; CME FedWatch puts a hold at 88%, per Kiplinger.",
+    "Spot bitcoin ETFs (funds that hold bitcoin for stock-market investors) had net outflows of about $635.5M on 22 Oct and $137.9M on 23 Oct, per crypto.news citing Farside.",
+    "PCE inflation is forecast at 3.6% a year, up from 3.4%, per Trading Economics.",
+    "Deribit bitcoin options worth about $11.1B expire Fri 30 Oct at 08:00 UTC (15:00 Bangkok), per CryptoQuant."
    ],
    "sources": [
     {
-     "label": "CoinAlertNews: Fed to hold in October, hike in December",
-     "url": "https://coinalertnews.com/news/2026/10/20/fed-october-hold-december-hike"
+     "label": "Coinpaper: 94 of 100 economists expect a pause",
+     "url": "https://coinpaper.com/37623/fed-rate-decision-94-of-100-economists-expect-october-pause-december-hike-looms"
+    },
+    {
+     "label": "Kiplinger: This week's economic calendar",
+     "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar"
     },
     {
      "label": "crypto.news: ETF outflows and $80,000",
      "url": "https://crypto.news/bitcoin-price-prediction-etf-outflows-80000/"
     },
     {
-     "label": "crypto.news: Market watch (weekly ETF flows)",
-     "url": "https://crypto.news/crypto-market-watch-worst-altcoins-bitcoin-price-80k/"
+     "label": "Trading Economics: US calendar",
+     "url": "https://tradingeconomics.com/united-states/calendar"
     },
     {
-     "label": "EthNews: Bitcoin faces $11B options expiry",
-     "url": "https://ethnews.com/bitcoin-faces-11b-options-expiry-as-fed-and-pce-risks-converge/"
+     "label": "CryptoQuant: $11.1B options expiry",
+     "url": "https://cryptoquant.com/insights/quicktake/6adab3c27fe3697a52dc23a0-111-Billion-in-Bitcoin-Options-Expire-October-30-With-Max-Pain-at-78000"
+    }
+   ]
+  },
+  {
+   "title": "Wallet security: Electrum flaw used to redirect bitcoin payments; CoinDCX absorbs losses from $16M drain",
+   "mood": "bearish",
+   "summary": "A flaw in the popular Electrum bitcoin wallet let malicious servers swap pending payments for fraudulent ones. A fixed version, 4.8.3, is out and Electrum is urging everyone to upgrade. Separately, Indian exchange CoinDCX says it absorbed the losses after about 15.99M USDT was drained from its deposit wallets.",
+   "points": [
+    "The flaw affected every Electrum version before 4.8.3, per crypto.news. Electrum: \"we urge all users to upgrade.\"",
+    "No total loss was given; one shared (multisig) wallet had nearly all its BTC redirected, per crypto.news.",
+    "About 15.99M USDT was drained from 40 CoinDCX wallets on the TRON network; Tether froze 2,212,850 USDT, per The Crypto Times.",
+    "CoinDCX co-founder Sumit Gupta: \"We assure that no user funds will be at loss.\"",
+    "Keep wallet software updated and check the receiving address before you sign."
+   ],
+   "sources": [
+    {
+     "label": "crypto.news: Electrum wallet flaw",
+     "url": "https://crypto.news/electrum-wallet-bitcoin-theft-security-flaw-4-8-3/"
     },
     {
-     "label": "Crypto Briefing: Deribit October 30 expiry",
-     "url": "https://cryptobriefing.com/deribit-bitcoin-options-october-30-expiry/"
+     "label": "The Crypto Times: CoinDCX admits sweep failure",
+     "url": "https://www.cryptotimes.io/2026/10/25/coindcx-admits-deposit-sweep-failure-after-16m-usdt-drained-from-tron-wallets/"
     }
    ]
   }
  ],
  "briefs": [
   {
-   "title": "Brazil runoff: counting under way, no winner yet",
-   "summary": "Polls closed at 4pm ET (03:00 Mon Bangkok). With only about 0.25% of polling stations counted at about 20:10 UTC, no winner had been declared. Final polls were split: Quaest had Flávio Bolsonaro 51%, Lula 49%, while Vox Brasil had the reverse, per The Rio Times.",
-   "url": "https://www.riotimesonline.com/brazil-election-results-2026/"
-  },
-  {
-   "title": "US bank regulator finalizes first stablecoin rules under the GENIUS Act",
-   "summary": "The OCC finalized the rules on 21 Oct, effective 18 Jan 2027, covering reserves, redemptions and custody, per crypto.news.",
-   "url": "https://crypto.news/crypto-rules-bitcoin-solana-weekly-recap/"
-  },
-  {
-   "title": "Strategy adds 267 BTC and raises a repurchase limit",
-   "summary": "Strategy now holds 848,517 BTC and lifted its repurchase authorization for its digital credit securities from $2B to $3B, per crypto.news.",
-   "url": "https://crypto.news/crypto-rules-bitcoin-solana-weekly-recap/"
-  },
-  {
-   "title": "Ethereum delays Glamsterdam test on the Hoodi testnet",
-   "summary": "The upgrade test, set for 26 Oct, is postponed while developers look into contract risks; no new date yet, per crypto.news.",
-   "url": "https://crypto.news/crypto-rules-bitcoin-solana-weekly-recap/"
-  },
-  {
-   "title": "Week's movers: Zcash and Pepe up, Aave and Hedera down",
-   "summary": "Over 7 days, Zcash rose 7.51% ahead of its NU7 upgrade around 5 Nov and Pepe 14.15%; Aave fell 11.65% and Hedera 13.47%, per crypto.news.",
-   "url": "https://crypto.news/crypto-market-watch-worst-altcoins-bitcoin-price-80k/"
-  },
-  {
-   "title": "Tether signs 15 bitcoin mining firms to its open-source mining kit",
-   "summary": "15 mining companies and industry groups have signed on, including Bitmain, MicroBT, Canaan, Foundry and F2Pool; version 1.0 is targeted before the end of 2026, per crypto.news.",
-   "url": "https://crypto.news/tether-15-bitcoin-mining-firms-ai-automation-mdk/"
+   "title": "Brazil runoff: Lula leads with about 81% counted",
+   "summary": "With 80.75% of sections counted, Lula had 51.31% and Flávio Bolsonaro 48.69%. Pollster Datafolha projects a Lula win, but no official result had been declared, per Bloomberg Línea.",
+   "url": "https://bloomberglinea.com.br/brasil/ao-vivo-brasil-vota-no-2-turno-para-escolher-entre-lula-e-flavio-bolsonaro-como-presidente"
   }
  ],
  "calendar": [
@@ -152,7 +122,7 @@
    "event": "US durable goods orders",
    "impact": "neutral",
    "key": false,
-   "note": "Consensus differs: +1.8% (FXEmpire) and +0.6% (Trading Economics); prior -0.1% (FXEmpire) or 0.0% (Trading Economics). At 10:00am ET (21:00 Bangkok): consumer confidence (consensus 80.5, prior 81.9) and new home sales (consensus 649,000 FXEmpire or 660,000 Trading Economics; prior 684,000). Galaxy call 8:30am ET; Robinhood reports after the close (call 5:00pm ET, 04:00 Wed Bangkok)."
+   "note": "Consensus +0.6%, prior 0.0% (Trading Economics). At 10:00am ET (21:00 Bangkok): consumer confidence (consensus 80.5, prior 81.9) and new home sales (consensus 660,000, prior 684,000). Galaxy call 8:30am ET; Robinhood reports after the close (call 5:00pm ET, 04:00 Wed Bangkok)."
   },
   {
    "et": "Tue 27 · 9:00pm",
@@ -160,15 +130,15 @@
    "event": "New Zealand central bank decision",
    "impact": "neutral",
    "key": false,
-   "note": "Rate 2.75%; a hike to 3.00% is expected. Westpac calls a hike; Admirals says about 80-85% is priced in."
+   "note": "Rate 2.75%; a hike to 3.00% is expected (about 90% priced, per InvestingLive)."
   },
   {
-   "et": "Wed 28 · 9:45am",
-   "bkk": "Wed 28 · 20:45",
+   "et": "Wed 28",
+   "bkk": "Wed 28 (night)",
    "event": "Bank of Canada rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Rate 2.25%. Views differ: in a Reuters poll 19 of 34 economists expect a hike to 2.50%; Admirals says hold, citing TD and RBC. The Bank of Thailand also meets on the 28th (rate 1.00%; no release time given)."
+   "note": "Rate 2.25%. Markets price about an 80% chance of a 0.25-point hike, per Newsquawk."
   },
   {
    "et": "Wed 28 · 2:00pm",
@@ -176,7 +146,7 @@
    "event": "Fed rate decision",
    "impact": "volatile",
    "key": true,
-   "note": "Range 3.75-4.00%. In a Reuters poll, 94 of 100 economists expect a hold. Press conference 2:30pm ET (01:30 Bangkok). Microsoft and Alphabet report after the close."
+   "note": "Range 3.75-4.00%. 94 of 100 economists in a Reuters poll expect a hold; CME FedWatch shows 88% for a hold. Press conference 2:30pm ET (01:30 Bangkok). No new projections at this meeting. Next meeting 8-9 Dec."
   },
   {
    "et": "Thu 29 · 8:30am",
@@ -184,7 +154,7 @@
    "event": "US Q3 GDP (advance) and September PCE inflation",
    "impact": "volatile",
    "key": true,
-   "note": "GDP: consensus differs, 3.0% (Thrive in Markets) and 3.2% (FXEmpire); prior 2.2%. PCE 3.6% y/y forecast (prior 3.4%) per Trading Economics; core PCE prior 3.0% y/y (FinancialJuice). Weekly jobless claims: consensus 198,000 (FXEmpire), prior 194,000."
+   "note": "GDP: consensus 3.2% (Trading Economics) or 3.0% (Newsquawk); prior 2.2%. PCE: 3.6% y/y expected, prior 3.4%; core PCE 3.1% expected, prior 3.0%. Jobless claims: consensus 196,000, prior 194,000."
   },
   {
    "et": "Thu 29 · 9:15am",
@@ -192,7 +162,7 @@
    "event": "ECB rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Deposit rate 2.50%; 70 of 73 economists in a Reuters poll expect no change. Press conference 9:45am ET."
+   "note": "Deposit rate 2.50%; a hold is expected. Press conference 9:45am ET (20:45 Bangkok)."
   },
   {
    "et": "Thu 29 · 5:00pm (calls)",
@@ -200,15 +170,15 @@
    "event": "Coinbase, Strategy and Amazon earnings",
    "impact": "volatile",
    "key": true,
-   "note": "Calls at 5:00pm ET. Coinbase EPS estimates differ: -$0.12 (Yahoo) and -$0.23 (MarketBeat). Strategy: $26.16 (MarketBeat, single estimate). Token unlocks the same day: FF ~$20.1M and CARDS ~$20.2M, per the unlock data on this page."
+   "note": "Results after the US close; calls and webinars at 5:00pm ET. Token unlocks the same day: FF ~$20.1M and CARDS ~$20.2M, per the unlock data on this page."
   },
   {
-   "et": "Thu 29 · ~11:00pm",
-   "bkk": "Fri 30 · ~10:00",
+   "et": "Thu 29 · night",
+   "bkk": "Fri 30 · daytime",
    "event": "Bank of Japan decision",
    "impact": "neutral",
    "key": false,
-   "note": "A hold at 1.25% is expected. The BoJ has no fixed release time, per Admirals."
+   "note": "A hold at 1.25% is expected; release time not confirmed this run."
   },
   {
    "et": "Fri 30 · 4:00am",
@@ -216,7 +186,7 @@
    "event": "Bitcoin options expiry (Deribit)",
    "impact": "volatile",
    "key": true,
-   "note": "About $11B (EthNews) or $11.1B (CryptoTicker) at 08:00 UTC, with max pain near $78,000. Max pain is not a price target."
+   "note": "About $11.1B at 08:00 UTC, with max pain at $78,000 (CryptoQuant). Max pain is not a price target."
   },
   {
    "et": "Fri 30 · 8:30am",
@@ -224,7 +194,7 @@
    "event": "US Employment Cost Index",
    "impact": "neutral",
    "key": false,
-   "note": "Consensus +0.8%, prior +0.9% (FXEmpire). Chicago PMI at 9:45am ET: consensus 54.8 (FXEmpire), prior 58.8. Fed's Daly speaks at 12:00pm ET and Musalem at 12:30pm ET (23:30 Bangkok)."
+   "note": "Consensus +0.8%, prior +0.9%. Chicago PMI at 9:45am ET: consensus 55.9, prior 58.8 (Trading Economics). Fed's Daly speaks at 12:00pm ET (23:00 Bangkok) and Musalem at 12:30pm ET (23:30 Bangkok)."
   },
   {
    "et": "Fri 30 – Mon 2 Nov",
@@ -240,14 +210,14 @@
    "event": "US ISM manufacturing",
    "impact": "neutral",
    "key": false,
-   "note": "Prior 54.5 (Trading Economics); no consensus yet; release time not confirmed this run. Apple reports after the close (call about 4:30pm ET)."
+   "note": "No consensus yet; release time not confirmed this run. Apple's earnings call is at 5:00pm ET (05:00 Tue Bangkok)."
   }
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-10-25T20:14:55Z",
-  "claimsChecked": 159,
-  "claimsRemoved": 7,
+  "checkedAt": "2026-10-26T00:22:44Z",
+  "claimsChecked": 139,
+  "claimsRemoved": 30,
   "rounds": 2,
   "method": "Independent source check: every claim re-opened at its cited URL"
  }
