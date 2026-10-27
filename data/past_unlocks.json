@@ -10474,6 +10474,72 @@
       }
      ],
      "gaps": "Re-opened in this run: Bitrue (22 Sep 2026) states the date, the 12:00 UTC time and that this is the Early Backers' first cliff after the 3-month delay; the AiCoin/Tokenomist and Phemex delay reports agree. The CoinGecko/Tokenomist widget shows Early Backers on monthly 41.15M from 26 Oct, which fits a September cliff. Size and recipient split are not confirmed. The time comes from Bitrue only."
+    },
+    {
+     "date": "2026-10-26",
+     "timeUTC": null,
+     "amountTokens": 125410000,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0,
+      "investors": 0.3281,
+      "community": 0.2492,
+      "ecosystem": 0.4228,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko SAHARA page, Tokenomist-powered unlock widget (read 26 Oct 2026): next unlock 26 Oct, ~7 hours away, 156.66M SAHARA (~$1.2M, 1.6% of supply): Community Incentives 31.25M, Core Team & Contributors 31.25M, Early Backers 41.15M, Ecosystem Development 53.02M",
+       "url": "https://coingecko.com/coins/sahara-ai",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist SAHARA unlock events: next unlock 26 Oct 2026 to Community Incentives; no amount or time shown (same feed as the CoinGecko widget, counted as one source)",
+       "url": "https://tokenomist.ai/sahara-ai/unlock-events",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "tokenomics.com SAHARA unlocks (data ~24 Oct 2026): 26 Oct 2026, 156,976,144 SAHARA, $1.2M; Community 52.6% / Private Investors 27.0% / Insiders 20.5%; all-day calendar entry, no time; no delay reflected; TGE 25 Jun 2025",
+       "url": "https://app.tokenomics.com/tokenomics/sahara-ai/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Bitrue blog (22 Sep 2026): Early Backers' first cliff 26 Sep 2026 (delayed 3 months), monthly vesting from Oct 2026; Core Team & Contributors first cliff 26 Dec 2026 after a six-month delay",
+       "url": "https://www.bitrue.com/blog/sahara-token-unlock",
+       "kind": "news",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "Phemex News (24 Jun 2026, via PANews): Sahara AI extends investor unlocks by 3 months and founder/core team/advisor unlocks by 6 months; buybacks funded by revenue",
+       "url": "https://phemex.com/news/article/sahara-ai-delays-token-unlock-schedule-rules-out-burn-mechanism-90499",
+       "kind": "news",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Moderate",
+      "points": 1.37,
+      "confidence": 30,
+      "scoredAt": "2026-10-27T04:33:01Z"
+     }
     }
    ],
    "gaps": "10 monthly events on the 26th (Dec 2025-Sep 2026). Main gaps: the Dec 2025-May 2026 totals are unconfirmed (base 84.27M, plus possible Knowledge Drop and Binance airdrop steps), and so is the size of the delayed 26 Sep 2026 Early Backers cliff. No official Sahara vesting document was found; terms are from tokenomics.com and Tokenomist. Tokenomist has not logged a schedule revision (its updates page shows only 'Version 1'), so its insider figures for June-October may ignore the delays. Day: tokenomics.com, BeInCrypto and Bitrue use the 26th; PANews/Tokenomist gave 27 Nov 2025 00:00 UTC for the November step. Max supply 10B per CoinGecko; TGE 25 Jun 2025 per tokenomics.com.",
