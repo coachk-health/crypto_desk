@@ -140,6 +140,7 @@ details.logp h4 { margin: 18px 0 6px; font-size: 15px; } table.sig small.why { c
 .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin: 14px 0 18px; }
 .tile { background: var(--panel, #1b2350); border-radius: 10px; padding: 10px 14px; } .tile small { display: block; color: var(--muted); font-size: 12.5px; } .tile b { font-size: 20px; }
 ul.plain { list-style: none; padding: 0; margin: 0; } ul.plain li { padding: 6px 0; border-top: 1px solid rgba(255,255,255,.06); }
+.tierA { color: var(--sun); font-weight: 700; font-size: 12px; }
 .pc { font-weight: 600; font-size: 13.5px; } .pc.ok { color: var(--bull); } .pc.bad { color: var(--bear); } .pc.na { color: var(--muted); font-weight: 500; }
 details.logp summary { cursor: pointer; list-style: none; } details.logp summary h3 { display: inline; } details.logp summary::after { content: ' (show)'; color: var(--sun); font-size: 14px; } details.logp[open] summary::after { content: ' (hide)'; }
 .findings ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; max-width: 80ch; }
@@ -726,7 +727,8 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
         advDays: u.usdM && m.advUsdM && m.advBasis && !/24h/i.test(m.advBasis) ? u.usdM / m.advUsdM : null,
       };
       const hits = Object.keys(R).filter(k => { const r = R[k], v = facts[r.field]; return r.equals !== undefined ? v === r.equals : (typeof v === 'number' && v >= r.min); });
-      return { u, hits, entry: addDays(u.date, pb.entry), exit: addDays(u.date, (S.levels && S.levels.plan.cover) || pb.exit), id: u.coingeckoId || (S.ids || {})[u.token] };
+      const setup = facts.firstInsiderUnlock && (facts.investorsShare || 0) >= 0.3 ? 'A' : 'B';
+      return { u, hits, setup, entry: addDays(u.date, pb.entry), exit: addDays(u.date, (S.levels && S.levels.plan.cover) || pb.exit), id: u.coingeckoId || (S.ids || {})[u.token] };
     }).filter(x => x.hits.length && daysFromToday(x.exit) >= 0).sort((a, b) => a.entry.localeCompare(b.entry));
   }
 
@@ -838,7 +840,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
           const conf = x.u.confidenceScore ?? 0;
           const pc = el('small', { class: 'pc na', text: dEntry <= 14 ? 'Checking price…' : 'Price checked nearer the date' });
           const row = el('tr', null, [
-            el('td', null, [el('b', { text: x.u.token }), el('small', { text: (x.u.usdM ? ' ' + Desk.usd(x.u.usdM) : '') }), el('br'), el('small', { class: 'why', text: x.hits.map(h => RULE_SHORT[h]).join(', ') })]),
+            el('td', null, [el('b', { text: x.u.token }), el('small', { text: (x.u.usdM ? ' ' + Desk.usd(x.u.usdM) : '') }), el('br'), x.setup === 'A' ? el('small', { class: 'tierA', text: 'Setup A ' }) : null, el('small', { class: 'why', text: x.hits.map(h => RULE_SHORT[h]).join(', ') })]),
             el('td', { class: 'num', text: fmtDay(x.u.date) }), el('td', { class: 'num', text: fmtDay(addDays(x.entry, -1)) }),
             ...lvCells(null, false),
             el('td', { class: 'num', text: fmtDay(x.exit) }),
@@ -859,7 +861,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
 
     // playbook steps
     const steps = [
-      el('li', null, [el('b', { text: 'Pick the unlock. ' }), 'Any of: 10%+ of circulating supply, 60%+ to investors, or the token’s first insider unlock.']),
+      el('li', null, [el('b', { text: 'Pick the unlock. ' }), 'Either 10%+ of circulating supply, or the token’s first insider (team or investor) unlock. Setup A: a first insider unlock with 30%+ going to investors (best record, but only 8 past trades, so normal size until it proves itself live). Unlocks that go mainly to investors were dropped as a trigger: they lost money, as investors tend to sell gradually through OTC deals and hedges.']),
       el('li', null, [el('b', { text: 'Check, 8 days before. ' }), 'The unlock data is confirmed (confidence 60+) and the token is not up ' + pb.pumpPct + '% or more over the last three weeks. If either fails, skip it.']),
       el('li', null, [el('b', { text: 'Enter, 7 days before. ' }), P ? 'Short at the 00:00 UTC price (the entry zone is that price to ' + ZONE + '% above). Waiting to sell half higher, 3–8% up, made less in every test.' : 'Short a week before the unlock.']),
       P ? el('li', null, [el('b', { text: 'Stop and target, straight away. ' }), 'Stop ' + P.stop + '% above entry (1R). Target ' + P.target + '% below (' + P.rr + 'R). Only settings with a target at least ' + L.minRR + '× the stop were allowed.']) : null,
@@ -890,7 +892,8 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       el('div', { class: 'tablewrap' }, [el('table', { class: 'gt' }, [
         el('thead', null, [el('tr', null, [el('th', { text: '' }), el('th', { class: 'n', text: 'Trades (tokens)' }), el('th', { class: 'n', text: 'Won' }), el('th', { class: 'n', text: 'Average win' }), el('th', { class: 'n', text: 'Total' }), el('th', { class: 'n', text: 'Without best 3' })])]),
         el('tbody', null, [rRow('This plan', PS.all), rRow('↳ first half (to ' + fmtDay(H.split) + ')', PS.first), rRow('↳ second half', PS.second),
-          rRow('Old wide stop (35% stop, 30% target)', L.wide.all, 'under 1R reward')])])]),
+          L.bySetup && L.bySetup.A ? rRow('Setup A (first insider unlock, 30%+ investors)', L.bySetup.A, 'small sample') : null, L.bySetup && L.bySetup.B ? rRow('All other signals', L.bySetup.B) : null,
+          rRow('Old wide stop (35% stop, 30% target)', L.wide.all, 'under 1R reward')].filter(Boolean))])]),
       el('p', { class: 'small', text: 'R = what a stopped trade loses. With no stop at all, the first half of the year lost money (one squeeze cost 173%).' })]) : null;
 
     // stop x target grid, in R
@@ -992,7 +995,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       const last = (c.history || []).slice(-1)[0];
       return el('tr', null, [
         el('td', { class: 'num', text: fmtDay(c.checkDate) }),
-        el('td', null, [el('b', { text: c.token }), el('small', { text: ' unlock ' + fmtDay(c.unlockDate) }), el('br'), el('small', { class: 'why', text: c.rules.map(h => RULE_SHORT[h]).join(', ') + (c.decision ? ' · data ' + c.decision.confidence : '') })]),
+        el('td', null, [el('b', { text: c.token }), el('small', { text: ' unlock ' + fmtDay(c.unlockDate) }), el('br'), c.setup === 'A' ? el('small', { class: 'tierA', text: 'Setup A ' }) : null, el('small', { class: 'why', text: c.rules.map(h => RULE_SHORT[h]).join(', ') + (c.decision ? ' · data ' + c.decision.confidence : '') })]),
         el('td', { class: 'num', text: c.ref ? fmtPx(lv.zoneLow) + '–' + fmtPx(lv.zoneHigh) : '—' }),
         el('td', { class: 'num', text: lv.stop ? fmtPx(lv.stop) : c.plan ? '+' + c.plan.stop + '%' : '—' }),
         el('td', { class: 'num', text: (lv.target ? fmtPx(lv.target) : c.plan && c.plan.target ? '−' + c.plan.target + '%' : '—') + (c.plan && c.plan.rr ? ' (' + c.plan.rr + 'R)' : '') }),
@@ -1004,7 +1007,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       el('tbody', null, rows)])])]) : null;
     const next = watch.length ? el('div', { class: 'panel' }, [el('h3', { text: 'Coming up' }),
       el('p', { class: 'small', text: 'Unlocks that match the playbook. Each one is decided on its check day; until then the unlock data can still change.' }),
-      el('ul', { class: 'plain' }, watch.map(c => el('li', null, [el('b', { text: c.token }), ' check day ' + fmtDay(c.checkDate) + ', unlock ' + fmtDay(c.unlockDate) + ' · ' + c.rules.map(h => RULE_SHORT[h]).join(', ')])))]) : null;
+      el('ul', { class: 'plain' }, watch.map(c => el('li', null, [el('b', { text: c.token }), c.setup === 'A' ? el('small', { class: 'tierA', text: ' Setup A' }) : null, ' check day ' + fmtDay(c.checkDate) + ', unlock ' + fmtDay(c.unlockDate) + ' · ' + c.rules.map(h => RULE_SHORT[h]).join(', ')])))]) : null;
     return el('section', { 'aria-label': 'Trade log' }, [lead, rule, tiles, table, next,
       el('details', { class: 'method' }, [el('summary', { text: 'Exactly how calls are logged' }), el('div', { class: 'mbody' }, [el('p', { style: 'white-space:pre-line', text: L.method }),
         el('p', { text: 'A record of what a fixed rule set called and what followed, not a recommendation to trade.' })])])].filter(Boolean));

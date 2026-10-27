@@ -7,10 +7,13 @@ unlock research and from the track record's group results (data/backtest.json):
 
   Signal fires if ANY of:
     big        the unlock is 10% or more of circulating supply
-    investors  60% or more goes to investors
     first      it is the token's first insider (team or investor) unlock
-  (A fourth trigger, "worth 3+ days of trading volume", was tested and dropped: only 4 trades
-  fired on it alone, all from one token, so it had no evidence of its own.)
+  Dropped after testing: "60%+ to investors" (it lost money, -0.14R a trade; its trades were mostly
+  one token's monthly tranches, and Keyrock's unlock study found investors sell in a controlled way
+  through OTC deals and hedging, while team unlocks hit hardest) and "worth 3+ days of trading
+  volume" (only 4 trades fired on it alone, all one token).
+  Setup A (tracked, not traded bigger yet): a first insider unlock where investors get 30%+ of it.
+  Past record +0.78R a trade over only 8 trades, so it needs live results before it earns more size.
   Skip if:    the token rose 30% or more from 30 days before to the entry day (shorting into a
               pump is how the worst losses happened; this guard was added after seeing them,
               so its record is shown both ways and tracked live)
@@ -36,7 +39,6 @@ OUT = ROOT / "data" / "signals.json"
 
 RULES = {
     "big": {"label": "10%+ of circulating supply", "field": "pctCirculating", "min": 10},
-    "investors": {"label": "Mostly to investors (60%+)", "field": "investorsShare", "min": 0.6},
     "first": {"label": "First insider unlock", "field": "firstInsiderUnlock", "equals": True},
 }
 ENTRY, EXIT = -7, 7
@@ -47,6 +49,11 @@ STOP = 20.0          # % adverse close that closes the trade in the 'with stop' 
 NOTIONAL = 1000      # $ per trade in the account curve
 RISK_USD = 100       # $ risked per trade when stop and target are used (position = risk / stop distance)
 PUMP = 30.0          # % rise from day -30 to entry that blocks the trade
+
+
+def setup_tier(first, inv_share):
+    """'A' = first insider unlock with 30%+ going to investors; 'B' = any other signal."""
+    return "A" if first and (inv_share or 0) >= 0.3 else "B"
 
 
 def investors_share(mix):
@@ -210,6 +217,7 @@ def main():
             "rules": hits, "grade": e.get("grade"), "usdM": e.get("usdM"),
             "pctCirculating": e.get("pctCirculating"), "advDays": e.get("advDays"),
             "investorsShare": round(facts["investorsShare"], 2) if facts["investorsShare"] is not None else None,
+            "setup": setup_tier(facts["firstInsiderUnlock"], facts["investorsShare"]),
             "firstInsiderUnlock": facts["firstInsiderUnlock"],
             "entryVsUnlockDay": pe,  # % the price was above (+) or below (-) the unlock-day price at entry
             "pnl": r[0], "worstAgainst": r[1], "held": r[2],
@@ -259,9 +267,13 @@ def main():
                     rows.append({"pnl": r["r"] * RISK_USD / NOTIONAL * 100, "exitDate": d, "token": t["token"]})
             return curve(rows)
 
+        by_setup = {}
+        for tier in ("A", "B"):
+            rows = [dict(t["plan"], token=t["token"], unlockDate=t["unlockDate"]) for t in trades if t.get("plan") and t["setup"] == tier]
+            by_setup[tier] = levels.stats(rows) if rows else None
         c_plan, dd_plan = risk_curve(P["stop"], P["target"], P["cover"])
         c_wide, dd_wide = risk_curve(35, 30, 7)
-        lv = {"plan": P, "planStats": plan, "baseline": base, "wide": wide, "riskUsd": RISK_USD,
+        lv = {"plan": P, "planStats": plan, "baseline": base, "wide": wide, "riskUsd": RISK_USD, "bySetup": by_setup,
               "withCandles": len(with_c), "withoutCandles": len(trades) - len(with_c), "minRR": levels.MIN_RR,
               "stops": levels.STOPS, "targets": levels.TARGETS, "covers": levels.COVERS,
               "modes": [{"mode": c["mode"], "zone": c["zone"], "win": c["all"]["win"], "rTotal": c["all"].get("rTotal"),

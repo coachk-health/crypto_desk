@@ -178,7 +178,8 @@ def main():
             continue
         base = {"id": cid, "token": r["token"], "name": r.get("name"), "coingeckoId": r.get("coingeckoId"),
                 "unlockDate": r["date"], "checkDate": iso(check), "entryDate": iso(u + timedelta(days=ENTRY)),
-                "coverDate": iso(u + timedelta(days=cover_days)), "rules": hits, "history": []}
+                "coverDate": iso(u + timedelta(days=cover_days)), "rules": hits,
+                "setup": signals.setup_tier(facts["firstInsiderUnlock"], facts["investorsShare"]), "history": []}
         if check > TODAY:
             calls[cid] = dict(base, status="watching")
             continue

@@ -2,21 +2,6 @@
  "startedAt": "2026-10-28",
  "calls": [
   {
-   "id": "BABY-2026-11-10",
-   "token": "BABY",
-   "name": "Babylon",
-   "coingeckoId": "babylon",
-   "unlockDate": "2026-11-10",
-   "checkDate": "2026-11-02",
-   "entryDate": "2026-11-03",
-   "coverDate": "2026-11-20",
-   "rules": [
-    "investors"
-   ],
-   "history": [],
-   "status": "watching"
-  },
-  {
    "id": "ALLO-2026-11-11",
    "token": "ALLO",
    "name": "Allora",
@@ -26,9 +11,9 @@
    "entryDate": "2026-11-04",
    "coverDate": "2026-11-21",
    "rules": [
-    "big",
-    "investors"
+    "big"
    ],
+   "setup": "B",
    "history": [],
    "status": "watching"
   },
@@ -44,6 +29,7 @@
    "rules": [
     "big"
    ],
+   "setup": "B",
    "history": [],
    "status": "watching"
   },
@@ -59,6 +45,7 @@
    "rules": [
     "big"
    ],
+   "setup": "B",
    "history": [],
    "status": "watching"
   },
@@ -74,6 +61,7 @@
    "rules": [
     "big"
    ],
+   "setup": "B",
    "history": [],
    "status": "watching"
   },
@@ -89,6 +77,7 @@
    "rules": [
     "big"
    ],
+   "setup": "B",
    "history": [],
    "status": "watching"
   },
@@ -104,11 +93,12 @@
    "rules": [
     "big"
    ],
+   "setup": "B",
    "history": [],
    "status": "watching"
   }
  ],
- "updatedAt": "2026-10-27T17:09:58Z",
+ "updatedAt": "2026-10-27T18:04:57Z",
  "summary": {
   "closed": 0,
   "won": 0,
@@ -117,7 +107,7 @@
   "totalUsd": 0,
   "open": 0,
   "skipped": 0,
-  "watching": 7
+  "watching": 6
  },
  "method": "Live trade log: every unlock short the page calls from now on, with the levels it showed\nand what actually happened. Nothing in it is rewritten later: a call's decision, entry price,\nstop and target are frozen when they are made, and only its result is filled in afterwards.\n\nLife of a call (days are relative to the unlock date):\n  watching  the unlock matches the playbook; its check day has not come yet. Not frozen.\n  check day (day -8): the decision is frozen with the unlock data as it stood then:\n              confidence under 60  -> skipped (\"data not confirmed\")\n              otherwise            -> called, waiting for the entry price\n  entry (day -7): R = the 00:00 UTC price that day (Binance daily open; CoinGecko if the token is\n              not on Binance). Pump check: up 30%+ from day -30 to R -> skipped (\"pumped\").\n              Otherwise open, with zone R to R x 1.01, stop R x (1 + stop%), target R x (1 - target%),\n              using the stop, target and cover day the page showed on the check day.\n  open      checked against each completed day's high and low (same rules as the backtest:\n              a day that reaches the stop counts as stopped first; stops fill 0.5% worse).\n  closed    stop, target, or covered at 00:00 UTC on the plan's cover day. Result after 0.10% fees\n              and 0.03% funding a day, also in R (1R = what a stopped trade loses).\nA call whose check day passed before this script saw it (for example a missed run) is logged as\n\"missed\" and not counted, so a late entry can never use hindsight.\n\nRuns on GitHub Actions twice a day. Needs api.coingecko.com and data.binance.vision.\nOutput: data/trade_log.json"
 }
