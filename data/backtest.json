@@ -1,5 +1,5 @@
 {
- "btcYear": -30.3,
+ "btcYear": -30.0,
  "btcFrom": "2025-10-28",
  "btcTo": "2026-10-27",
  "perToken": {
@@ -660,7 +660,7 @@
    14
   ]
  },
- "generatedAt": "2026-10-27T10:39:39Z",
+ "generatedAt": "2026-10-27T10:56:45Z",
  "window": {
   "pre": 30,
   "post": 14
@@ -678,7 +678,7 @@
     "post7": -1.78,
     "post14": -2.4,
     "around": -5.82,
-    "beyondNormal": -1.1,
+    "beyondNormal": -1.11,
     "normal21": -3.91,
     "uPre30": -8.03,
     "uPre14": -3.49,
@@ -716,8 +716,8 @@
      -4.2
     ],
     "beyondNormal": [
-     -2.69,
-     1.1
+     -2.74,
+     1.07
     ],
     "uPre7": [
      -2.94,
@@ -830,9 +830,9 @@
      "win": 64,
      "maeMedian": 14.0,
      "mae90": 73.05,
-     "edge": 1.07,
+     "edge": 1.11,
      "edgeRange": [
-      -1.79,
+      -1.75,
       2.56
      ]
     },
@@ -884,7 +884,7 @@
      "mae90": 61.83,
      "edge": 0.64,
      "edgeRange": [
-      -1.65,
+      -1.6,
       1.78
      ]
     },
@@ -1015,7 +1015,7 @@
      "edge": 0.11,
      "edgeRange": [
       -1.01,
-      0.76
+      0.8
      ]
     },
     "-1:7": {
@@ -1158,8 +1158,8 @@
     "post7": -1.43,
     "post14": -2.84,
     "around": -5.5,
-    "beyondNormal": -1.05,
-    "normal21": -3.33,
+    "beyondNormal": -1.07,
+    "normal21": -3.31,
     "uPre30": -9.75,
     "uPre14": -3.52,
     "uPre7": -1.45,
@@ -1196,7 +1196,7 @@
      -2.81
     ],
     "beyondNormal": [
-     -5.07,
+     -5.09,
      3.53
     ],
     "uPre7": [
@@ -1677,7 +1677,7 @@
     ],
     "beyondNormal": [
      -1.62,
-     2.78
+     2.75
     ],
     "uPre7": [
      -7.75,
@@ -1962,7 +1962,7 @@
      "edge": 0.67,
      "edgeRange": [
       0.4,
-      1.21
+      1.24
      ]
     },
     "-1:3": {
@@ -2118,7 +2118,7 @@
     "post7": -4.12,
     "post14": -2.26,
     "around": -5.55,
-    "beyondNormal": -0.55,
+    "beyondNormal": -0.54,
     "normal21": -3.91,
     "uPre30": -4.68,
     "uPre14": -3.75,
@@ -2156,8 +2156,8 @@
      -1.09
     ],
     "beyondNormal": [
-     -1.59,
-     3.73
+     -1.58,
+     3.76
     ],
     "uPre7": [
      -4.21,
@@ -2441,7 +2441,7 @@
      "mae90": 4.78,
      "edge": 0.07,
      "edgeRange": [
-      -0.52,
+      -0.49,
       0.66
      ]
     },
@@ -2598,8 +2598,8 @@
     "post7": -1.19,
     "post14": 3.88,
     "around": -5.4,
-    "beyondNormal": 4.82,
-    "normal21": -7.63,
+    "beyondNormal": 4.81,
+    "normal21": -7.65,
     "uPre30": -14.7,
     "uPre14": -5.23,
     "uPre7": 4.1,
@@ -2636,8 +2636,8 @@
      19.02
     ],
     "beyondNormal": [
-     -4.1,
-     14.89
+     -4.08,
+     14.88
     ],
     "uPre7": [
      -1.33,
@@ -2919,7 +2919,7 @@
      "win": 47,
      "maeMedian": 0.07,
      "mae90": 8.43,
-     "edge": -0.48,
+     "edge": -0.45,
      "edgeRange": [
       -1.97,
       1.54
@@ -3078,7 +3078,7 @@
     "post7": -1.4,
     "post14": -3.41,
     "around": -7.71,
-    "beyondNormal": -4.99,
+    "beyondNormal": -4.97,
     "normal21": -6.35,
     "uPre30": -2.13,
     "uPre14": -0.13,
@@ -3116,8 +3116,8 @@
      -0.83
     ],
     "beyondNormal": [
-     -9.46,
-     0.19
+     -9.51,
+     0.2
     ],
     "uPre7": [
      -5.68,
@@ -3401,7 +3401,7 @@
      "mae90": 13.5,
      "edge": 0.12,
      "edgeRange": [
-      -1.68,
+      -1.66,
       1.03
      ]
     },
@@ -3559,7 +3559,7 @@
     "post14": -1.25,
     "around": -2.53,
     "beyondNormal": 5.12,
-    "normal21": -3.23,
+    "normal21": -3.24,
     "uPre30": -14.55,
     "uPre14": -6.97,
     "uPre7": -6.81,
@@ -3597,7 +3597,7 @@
     ],
     "beyondNormal": [
      -22.26,
-     44.51
+     44.49
     ],
     "uPre7": [
      -7.21,
@@ -3710,7 +3710,7 @@
      "win": 75,
      "maeMedian": 10.05,
      "mae90": 113.97,
-     "edge": 21.34,
+     "edge": 21.42,
      "edgeRange": [
       -11.86,
       36.61
@@ -3881,7 +3881,7 @@
      "mae90": 3.7,
      "edge": 1.22,
      "edgeRange": [
-      -2.72,
+      -2.7,
       3.49
      ]
     },
@@ -4038,8 +4038,8 @@
     "post7": -1.78,
     "post14": -1.41,
     "around": -5.53,
-    "beyondNormal": -0.83,
-    "normal21": -6.81,
+    "beyondNormal": -0.82,
+    "normal21": -6.8,
     "uPre30": -10.07,
     "uPre14": -6.57,
     "uPre7": -3.27,
@@ -4076,8 +4076,8 @@
      -0.8
     ],
     "beyondNormal": [
-     -4.3,
-     2.52
+     -4.33,
+     2.5
     ],
     "uPre7": [
      -6.14,
@@ -4518,8 +4518,8 @@
     "post7": -2.38,
     "post14": -8.66,
     "around": -14.61,
-    "beyondNormal": -9.41,
-    "normal21": -2.56,
+    "beyondNormal": -9.37,
+    "normal21": -2.6,
     "uPre30": -3.75,
     "uPre14": -0.82,
     "uPre7": -2.14,
@@ -4556,8 +4556,8 @@
      -8.17
     ],
     "beyondNormal": [
-     -26.5,
-     -5.48
+     -26.53,
+     -5.47
     ],
     "uPre7": [
      -17.29,
@@ -4998,7 +4998,7 @@
     "post7": 0.44,
     "post14": -1.5,
     "around": -4.16,
-    "beyondNormal": 5.97,
+    "beyondNormal": 5.98,
     "normal21": -7.03,
     "uPre30": -0.76,
     "uPre14": 0.86,
@@ -5036,8 +5036,8 @@
      3.29
     ],
     "beyondNormal": [
-     -0.54,
-     10.4
+     -0.53,
+     10.39
     ],
     "uPre7": [
      -5.52,
@@ -5321,7 +5321,7 @@
      "mae90": 4.04,
      "edge": 0.6,
      "edgeRange": [
-      -0.62,
+      -0.58,
       1.09
      ]
     },
@@ -5478,8 +5478,8 @@
     "post7": -2.64,
     "post14": -3.33,
     "around": -5.09,
-    "beyondNormal": -2.05,
-    "normal21": -3.33,
+    "beyondNormal": -2.04,
+    "normal21": -3.31,
     "uPre30": 0.35,
     "uPre14": 1.08,
     "uPre7": 0.54,
@@ -5517,7 +5517,7 @@
     ],
     "beyondNormal": [
      -5.12,
-     5.77
+     5.75
     ],
     "uPre7": [
      -1.9,
@@ -5632,7 +5632,7 @@
      "mae90": 72.82,
      "edge": 0.67,
      "edgeRange": [
-      -6.63,
+      -6.4,
       12.48
      ]
     },
@@ -5958,7 +5958,7 @@
     "post7": -2.34,
     "post14": -3.82,
     "around": -7.09,
-    "beyondNormal": -1.66,
+    "beyondNormal": -1.65,
     "normal21": -3.57,
     "uPre30": -10.41,
     "uPre14": -3.79,
@@ -5996,8 +5996,8 @@
      -2.81
     ],
     "beyondNormal": [
-     -3.95,
-     0.5
+     -3.94,
+     0.48
     ],
     "uPre7": [
      -5.23,
@@ -6281,7 +6281,7 @@
      "mae90": 5.5,
      "edge": 0.01,
      "edgeRange": [
-      -0.55,
+      -0.54,
       0.66
      ]
     },
@@ -6438,7 +6438,7 @@
     "post7": -2.97,
     "post14": -2.83,
     "around": -5.65,
-    "beyondNormal": 0.13,
+    "beyondNormal": 0.11,
     "normal21": -3.9,
     "uPre30": -5.65,
     "uPre14": -3.54,
@@ -6476,8 +6476,8 @@
      -2.24
     ],
     "beyondNormal": [
-     -2.18,
-     3.61
+     -2.17,
+     3.59
     ],
     "uPre7": [
      -3.53,
@@ -6761,7 +6761,7 @@
      "mae90": 5.5,
      "edge": -0.04,
      "edgeRange": [
-      -0.52,
+      -0.49,
       0.53
      ]
     },
@@ -6918,8 +6918,8 @@
     "post7": -3.56,
     "post14": -3.63,
     "around": -9.43,
-    "beyondNormal": -5.98,
-    "normal21": -5.15,
+    "beyondNormal": -5.96,
+    "normal21": -5.09,
     "uPre30": -6.5,
     "uPre14": -1.17,
     "uPre7": -5.01,
@@ -6956,8 +6956,8 @@
      -6.78
     ],
     "beyondNormal": [
-     -10.67,
-     -4.05
+     -10.68,
+     -4.06
     ],
     "uPre7": [
      -8.45,
@@ -7124,7 +7124,7 @@
      "mae90": 78.32,
      "edge": 4.29,
      "edgeRange": [
-      -1.84,
+      -1.74,
       7.4
      ]
     },
@@ -7252,7 +7252,7 @@
      "win": 55,
      "maeMedian": 2.69,
      "mae90": 23.02,
-     "edge": 0.76,
+     "edge": 0.8,
      "edgeRange": [
       -1.67,
       2.69
@@ -7398,8 +7398,8 @@
     "post7": -0.3,
     "post14": 2.77,
     "around": 2.55,
-    "beyondNormal": 8.72,
-    "normal21": -6.44,
+    "beyondNormal": 8.73,
+    "normal21": -6.43,
     "uPre30": -0.76,
     "uPre14": -2.89,
     "uPre7": 3.62,
@@ -7436,8 +7436,8 @@
      5.62
     ],
     "beyondNormal": [
-     -8.4,
-     12.71
+     -8.39,
+     12.69
     ],
     "uPre7": [
      -3.29,
@@ -7721,7 +7721,7 @@
      "mae90": 9.02,
      "edge": 0.11,
      "edgeRange": [
-      -0.62,
+      -0.58,
       1.39
      ]
     },
@@ -7879,7 +7879,7 @@
     "post14": -0.98,
     "around": -4.55,
     "beyondNormal": 1.23,
-    "normal21": -3.91,
+    "normal21": -3.9,
     "uPre30": -13.5,
     "uPre14": -5.28,
     "uPre7": -1.95,
@@ -7917,7 +7917,7 @@
     ],
     "beyondNormal": [
      -1.62,
-     2.78
+     2.75
     ],
     "uPre7": [
      -6.14,
@@ -8202,7 +8202,7 @@
      "edge": 0.66,
      "edgeRange": [
       0.2,
-      1.11
+      1.14
      ]
     },
     "-1:3": {
@@ -8359,7 +8359,7 @@
     "post14": -1.52,
     "around": -5.46,
     "beyondNormal": 0.98,
-    "normal21": -3.23,
+    "normal21": -3.24,
     "uPre30": -3.04,
     "uPre14": -1.32,
     "uPre7": -2.78,
@@ -8396,7 +8396,7 @@
      3.2
     ],
     "beyondNormal": [
-     -7.23,
+     -7.26,
      9.84
     ],
     "uPre7": [
@@ -8562,7 +8562,7 @@
      "win": 58,
      "maeMedian": 14.89,
      "mae90": 86.86,
-     "edge": -2.31,
+     "edge": -2.27,
      "edgeRange": [
       -4.79,
       1.72
@@ -8682,7 +8682,7 @@
      "edge": 0.42,
      "edgeRange": [
       -0.49,
-      1.39
+      1.42
      ]
     },
     "-1:3": {
@@ -8838,8 +8838,8 @@
     "post7": -1.23,
     "post14": -3.41,
     "around": -4.17,
-    "beyondNormal": -0.36,
-    "normal21": -4.64,
+    "beyondNormal": -0.38,
+    "normal21": -4.69,
     "uPre30": 10.71,
     "uPre14": 9.25,
     "uPre7": 2.17,
@@ -8876,7 +8876,7 @@
      1.73
     ],
     "beyondNormal": [
-     -5.48,
+     -5.47,
      6.17
     ],
     "uPre7": [
@@ -9318,8 +9318,8 @@
     "post7": -2.41,
     "post14": -1.94,
     "around": -10.29,
-    "beyondNormal": -5.98,
-    "normal21": -0.65,
+    "beyondNormal": -5.96,
+    "normal21": -0.66,
     "uPre30": 1.99,
     "uPre14": 1.72,
     "uPre7": -1.44,
@@ -9356,8 +9356,8 @@
      -2.23
     ],
     "beyondNormal": [
-     -10.67,
-     -1.59
+     -10.66,
+     -1.58
     ],
     "uPre7": [
      -5.01,
@@ -9655,7 +9655,7 @@
      "edge": -1.2,
      "edgeRange": [
       -3.6,
-      1.02
+      1.04
      ]
     },
     "-1:7": {
@@ -9798,8 +9798,8 @@
     "post7": -2.4,
     "post14": -2.92,
     "around": -5.95,
-    "beyondNormal": -1.1,
-    "normal21": -3.9,
+    "beyondNormal": -1.11,
+    "normal21": -3.91,
     "uPre30": -10.86,
     "uPre14": -5.64,
     "uPre7": -1.95,
@@ -9836,7 +9836,7 @@
      -2.81
     ],
     "beyondNormal": [
-     -3.03,
+     -3.06,
      1.68
     ],
     "uPre7": [
@@ -9950,7 +9950,7 @@
      "win": 67,
      "maeMedian": 12.17,
      "mae90": 56.66,
-     "edge": 1.13,
+     "edge": 1.21,
      "edgeRange": [
       -1.1,
       3.77
@@ -10278,7 +10278,7 @@
     "post7": -1.97,
     "post14": -5.53,
     "around": -11.72,
-    "beyondNormal": -7.87,
+    "beyondNormal": -7.86,
     "normal21": -6.44,
     "uPre30": -17.36,
     "uPre14": -4.78,
@@ -10316,8 +10316,8 @@
      -5.32
     ],
     "beyondNormal": [
-     -20.45,
-     2.87
+     -20.46,
+     2.86
     ],
     "uPre7": [
      -14.36,
@@ -10482,7 +10482,7 @@
      "win": 68,
      "maeMedian": 9.95,
      "mae90": 153.27,
-     "edge": 2.45,
+     "edge": 2.54,
      "edgeRange": [
       -9.23,
       18.81
@@ -10550,7 +10550,7 @@
      "edge": 3.52,
      "edgeRange": [
       -0.54,
-      5.26
+      5.24
      ]
     },
     "-3:3": {
@@ -10599,7 +10599,7 @@
      "win": 71,
      "maeMedian": 0.0,
      "mae90": 6.06,
-     "edge": 1.76,
+     "edge": 1.77,
      "edgeRange": [
       0.48,
       4.77
@@ -10758,7 +10758,7 @@
     "post7": -1.78,
     "post14": -2.15,
     "around": -5.48,
-    "beyondNormal": -0.72,
+    "beyondNormal": -0.7,
     "normal21": -3.9,
     "uPre30": -6.5,
     "uPre14": -3.4,
@@ -10796,8 +10796,8 @@
      -2.93
     ],
     "beyondNormal": [
-     -2.33,
-     1.51
+     -2.34,
+     1.5
     ],
     "uPre7": [
      -2.21,
@@ -10912,7 +10912,7 @@
      "mae90": 71.07,
      "edge": 0.56,
      "edgeRange": [
-      -1.85,
+      -1.79,
       2.28
      ]
     },
@@ -11238,7 +11238,7 @@
     "post7": -1.72,
     "post14": -1.5,
     "around": -5.02,
-    "beyondNormal": 1.27,
+    "beyondNormal": 1.28,
     "normal21": -3.91,
     "uPre30": -8.8,
     "uPre14": -4.66,
@@ -11277,7 +11277,7 @@
     ],
     "beyondNormal": [
      -1.15,
-     3.61
+     3.59
     ],
     "uPre7": [
      -2.68,
@@ -11718,8 +11718,8 @@
     "post7": -2.41,
     "post14": -3.63,
     "around": -9.06,
-    "beyondNormal": -5.76,
-    "normal21": -2.85,
+    "beyondNormal": -5.74,
+    "normal21": -2.84,
     "uPre30": -4.16,
     "uPre14": -0.37,
     "uPre7": -2.28,
@@ -11756,8 +11756,8 @@
      -7.2
     ],
     "beyondNormal": [
-     -9.46,
-     -4.13
+     -9.51,
+     -4.18
     ],
     "uPre7": [
      -6.12,
@@ -12570,8 +12570,8 @@
     "post7": -10.33,
     "post14": -2.97,
     "around": -0.06,
-    "normal21": -2.56,
-    "beyondNormal": 2.57,
+    "normal21": -2.6,
+    "beyondNormal": 2.61,
     "uPre30": 23.01,
     "uPre14": 3.13,
     "uPre7": 0.63,
@@ -12890,8 +12890,8 @@
     "post7": -10.64,
     "post14": -19.92,
     "around": -27.56,
-    "normal21": -11.4,
-    "beyondNormal": -18.24,
+    "normal21": -11.41,
+    "beyondNormal": -18.23,
     "uPre30": -0.98,
     "uPre14": -5.04,
     "uPre7": -12.91,
@@ -13212,8 +13212,8 @@
     "post7": 1.12,
     "post14": -8.97,
     "around": -11.72,
-    "normal21": -3.33,
-    "beyondNormal": -8.68,
+    "normal21": -3.31,
+    "beyondNormal": -8.69,
     "uPre30": 17.03,
     "uPre14": 4.43,
     "uPre7": -0.82,
@@ -13336,7 +13336,7 @@
     "-30:14": {
      "ret": -3.31,
      "mae": 29.03,
-     "edge": -6.27
+     "edge": -6.04
     },
     "-14:0": {
      "ret": -4.43,
@@ -13824,8 +13824,8 @@
     "post7": 1.65,
     "post14": -17.76,
     "around": -28.8,
-    "normal21": -3.12,
-    "beyondNormal": -26.5,
+    "normal21": -3.1,
+    "beyondNormal": -26.53,
     "uPre30": 48.24,
     "uPre14": 11.22,
     "uPre7": -11.33,
@@ -14174,8 +14174,8 @@
     "post7": -34.28,
     "post14": -39.44,
     "around": -39.08,
-    "normal21": -9.72,
-    "beyondNormal": -32.52,
+    "normal21": -9.68,
+    "beyondNormal": -32.55,
     "uPre30": 6.51,
     "uPre14": 19.51,
     "uPre7": 1.16,
@@ -14508,8 +14508,8 @@
     "post7": -11.81,
     "post14": -13.05,
     "around": -6.33,
-    "normal21": -3.12,
-    "beyondNormal": -3.31,
+    "normal21": -3.1,
+    "beyondNormal": -3.34,
     "uPre30": 52.66,
     "uPre14": 57.31,
     "uPre7": 8.33,
@@ -15483,8 +15483,8 @@
     "post7": -2.69,
     "post14": -9.96,
     "around": 10.11,
-    "normal21": -3.91,
-    "beyondNormal": 14.59,
+    "normal21": -3.9,
+    "beyondNormal": 14.58,
     "uPre30": 60.07,
     "uPre14": 63.1,
     "uPre7": 21.13,
@@ -15672,7 +15672,7 @@
     "-1:0": {
      "ret": -0.94,
      "mae": 0.94,
-     "edge": -1.35
+     "edge": -1.32
     },
     "-1:3": {
      "ret": -2.76,
@@ -15789,8 +15789,8 @@
     "post7": -13.34,
     "post14": -9.31,
     "around": 20.39,
-    "normal21": -0.49,
-    "beyondNormal": 20.99,
+    "normal21": -0.47,
+    "beyondNormal": 20.96,
     "uPre30": 77.09,
     "uPre14": 76.94,
     "uPre7": 28.83,
@@ -16119,7 +16119,7 @@
     "post14": -9.34,
     "around": -9.34,
     "normal21": -1.03,
-    "beyondNormal": -8.4,
+    "beyondNormal": -8.39,
     "uPre30": 32.51,
     "uPre14": -2.89,
     "uPre7": -3.6,
@@ -16451,8 +16451,8 @@
     "post7": -6.96,
     "post14": -10.5,
     "around": -6.46,
-    "normal21": -10.77,
-    "beyondNormal": 4.82,
+    "normal21": -10.76,
+    "beyondNormal": 4.81,
     "uPre30": 19.98,
     "uPre14": 7.29,
     "uPre7": 8.65,
@@ -16787,8 +16787,8 @@
     "post7": 1.09,
     "post14": -3.63,
     "around": -4.16,
-    "normal21": -13.97,
-    "beyondNormal": 11.41,
+    "normal21": -13.98,
+    "beyondNormal": 11.42,
     "uPre30": 12.14,
     "uPre14": 13.37,
     "uPre7": 9.87,
@@ -17101,8 +17101,8 @@
     "post7": 7.77,
     "post14": 0.76,
     "around": -32.11,
-    "normal21": -7.63,
-    "beyondNormal": -26.5,
+    "normal21": -7.65,
+    "beyondNormal": -26.49,
     "uPre30": -17.57,
     "uPre14": -17.45,
     "uPre7": -25.56,
@@ -17411,8 +17411,8 @@
     "post7": -13.69,
     "post14": -21.93,
     "around": -10.29,
-    "normal21": -6.81,
-    "beyondNormal": -3.73,
+    "normal21": -6.8,
+    "beyondNormal": -3.74,
     "uPre30": 22.45,
     "uPre14": 31.75,
     "uPre7": 26.95,
@@ -17535,7 +17535,7 @@
     "-30:14": {
      "ret": 7.44,
      "mae": 26.68,
-     "edge": -2.77
+     "edge": -2.62
     },
     "-14:0": {
      "ret": -31.75,
@@ -17751,8 +17751,8 @@
     "post7": 112.68,
     "post14": 65.2,
     "around": 63.53,
-    "normal21": -3.23,
-    "beyondNormal": 68.98,
+    "normal21": -3.24,
+    "beyondNormal": 69.0,
     "uPre30": 1.94,
     "uPre14": 6.03,
     "uPre7": 12.86,
@@ -18070,8 +18070,8 @@
     "post7": -0.3,
     "post14": -4.0,
     "around": 3.29,
-    "normal21": -6.44,
-    "beyondNormal": 10.4,
+    "normal21": -6.43,
+    "beyondNormal": 10.39,
     "uPre30": -1.65,
     "uPre14": 11.7,
     "uPre7": 13.13,
@@ -18259,7 +18259,7 @@
     "-1:0": {
      "ret": -3.52,
      "mae": 3.52,
-     "edge": -3.71
+     "edge": -3.67
     },
     "-1:3": {
      "ret": -9.52,
@@ -18390,8 +18390,8 @@
     "post7": 37.77,
     "post14": 71.31,
     "around": 77.82,
-    "normal21": 1.91,
-    "beyondNormal": 74.48,
+    "normal21": 1.97,
+    "beyondNormal": 74.39,
     "uPre30": 27.45,
     "uPre14": 5.26,
     "uPre7": 9.14,
@@ -18723,7 +18723,7 @@
     "post14": 3.69,
     "around": 6.26,
     "normal21": -1.55,
-    "beyondNormal": 7.93,
+    "beyondNormal": 7.94,
     "uPre30": 6.16,
     "uPre14": 0.58,
     "uPre7": 2.23,
@@ -19374,8 +19374,8 @@
     "post7": 25.95,
     "post14": 25.36,
     "around": 17.18,
-    "normal21": -3.9,
-    "beyondNormal": 21.94,
+    "normal21": -3.91,
+    "beyondNormal": 21.95,
     "uPre30": 16.19,
     "uPre14": -16.55,
     "uPre7": -9.07,
@@ -19695,7 +19695,7 @@
     "post14": 23.82,
     "around": 13.58,
     "normal21": -3.57,
-    "beyondNormal": 17.78,
+    "beyondNormal": 17.79,
     "uPre30": 17.27,
     "uPre14": 0.73,
     "uPre7": -10.78,
@@ -20015,8 +20015,8 @@
     "post7": 35.74,
     "post14": 21.11,
     "around": 15.69,
-    "normal21": -1.9,
-    "beyondNormal": 17.93,
+    "normal21": -1.88,
+    "beyondNormal": 17.91,
     "uPre30": 106.59,
     "uPre14": 37.69,
     "uPre7": -7.96,
@@ -20336,8 +20336,8 @@
     "post7": 37.02,
     "post14": 35.92,
     "around": 26.93,
-    "normal21": -3.5,
-    "beyondNormal": 31.53,
+    "normal21": -3.51,
+    "beyondNormal": 31.55,
     "uPre30": 25.33,
     "uPre14": 10.94,
     "uPre7": -7.7,
@@ -20992,7 +20992,7 @@
     "post14": 22.25,
     "around": 13.37,
     "normal21": -9.47,
-    "beyondNormal": 25.24,
+    "beyondNormal": 25.23,
     "uPre30": -30.28,
     "uPre14": -18.27,
     "uPre7": -12.64,
@@ -21310,8 +21310,8 @@
     "post7": -1.36,
     "post14": 1.89,
     "around": 1.0,
-    "normal21": -2.56,
-    "beyondNormal": 3.65,
+    "normal21": -2.6,
+    "beyondNormal": 3.7,
     "uPre30": -13.64,
     "uPre14": -11.9,
     "uPre7": 0.39,
@@ -21612,8 +21612,8 @@
     "post7": -10.85,
     "post14": -1.3,
     "around": 2.18,
-    "normal21": -11.4,
-    "beyondNormal": 15.32,
+    "normal21": -11.41,
+    "beyondNormal": 15.33,
     "uPre30": 28.99,
     "uPre14": 12.13,
     "uPre7": 4.9,
@@ -21934,8 +21934,8 @@
     "post7": -5.94,
     "post14": 6.54,
     "around": 4.97,
-    "normal21": -3.33,
-    "beyondNormal": 8.59,
+    "normal21": -3.31,
+    "beyondNormal": 8.57,
     "uPre30": -4.7,
     "uPre14": -23.09,
     "uPre7": 1.92,
@@ -22058,7 +22058,7 @@
     "-30:14": {
      "ret": -2.6,
      "mae": 33.35,
-     "edge": -5.56
+     "edge": -5.33
     },
     "-14:0": {
      "ret": 23.09,
@@ -22244,8 +22244,8 @@
     "post7": -11.05,
     "post14": 1.84,
     "around": -0.39,
-    "normal21": -3.12,
-    "beyondNormal": 2.82,
+    "normal21": -3.1,
+    "beyondNormal": 2.79,
     "uPre30": 76.39,
     "uPre14": 14.5,
     "uPre7": 0.14,
@@ -22899,8 +22899,8 @@
     "post7": -1.34,
     "post14": -10.28,
     "around": 1.44,
-    "normal21": -3.12,
-    "beyondNormal": 4.71,
+    "normal21": -3.1,
+    "beyondNormal": 4.68,
     "uPre30": 78.49,
     "uPre14": 92.67,
     "uPre7": 11.49,
@@ -23549,8 +23549,8 @@
     "post7": 11.86,
     "post14": -0.31,
     "around": -8.87,
-    "normal21": -3.91,
-    "beyondNormal": -5.16,
+    "normal21": -3.9,
+    "beyondNormal": -5.17,
     "uPre30": 7.55,
     "uPre14": 7.69,
     "uPre7": -9.08,
@@ -23738,7 +23738,7 @@
     "-1:0": {
      "ret": -2.19,
      "mae": 2.19,
-     "edge": -2.6
+     "edge": -2.57
     },
     "-1:3": {
      "ret": -10.18,
@@ -23864,8 +23864,8 @@
     "post7": -4.46,
     "post14": 0.09,
     "around": 3.69,
-    "normal21": -0.49,
-    "beyondNormal": 4.2,
+    "normal21": -0.47,
+    "beyondNormal": 4.18,
     "uPre30": 43.0,
     "uPre14": 42.32,
     "uPre7": 5.14,
@@ -24194,7 +24194,7 @@
     "post14": 70.62,
     "around": 112.36,
     "normal21": -1.03,
-    "beyondNormal": 114.57,
+    "beyondNormal": 114.58,
     "uPre30": 33.55,
     "uPre14": 41.55,
     "uPre7": 23.68,
@@ -24523,8 +24523,8 @@
     "post7": 4.59,
     "post14": 19.29,
     "around": 7.94,
-    "normal21": -10.77,
-    "beyondNormal": 20.96,
+    "normal21": -10.76,
+    "beyondNormal": 20.95,
     "uPre30": -10.31,
     "uPre14": 0.03,
     "uPre7": 9.82,
@@ -24842,8 +24842,8 @@
     "post7": 3.41,
     "post14": 11.85,
     "around": -17.67,
-    "normal21": -13.97,
-    "beyondNormal": -4.3,
+    "normal21": -13.98,
+    "beyondNormal": -4.28,
     "uPre30": -9.26,
     "uPre14": -28.63,
     "uPre7": -9.86,
@@ -25153,8 +25153,8 @@
     "post7": -13.35,
     "post14": -4.75,
     "around": -0.53,
-    "normal21": -6.81,
-    "beyondNormal": 6.74,
+    "normal21": -6.8,
+    "beyondNormal": 6.73,
     "uPre30": 16.88,
     "uPre14": 23.58,
     "uPre7": 27.88,
@@ -25277,7 +25277,7 @@
     "-30:14": {
      "ret": -11.49,
      "mae": 21.93,
-     "edge": -21.7
+     "edge": -21.55
     },
     "-14:0": {
      "ret": -23.58,
@@ -25492,8 +25492,8 @@
     "post7": 3.57,
     "post14": -3.63,
     "around": -23.84,
-    "normal21": -3.23,
-    "beyondNormal": -21.3,
+    "normal21": -3.24,
+    "beyondNormal": -21.29,
     "uPre30": 15.77,
     "uPre14": -12.84,
     "uPre7": -3.35,
@@ -26145,8 +26145,8 @@
     "post7": -19.91,
     "post14": -21.91,
     "around": -46.2,
-    "normal21": -6.44,
-    "beyondNormal": -42.49,
+    "normal21": -6.43,
+    "beyondNormal": -42.5,
     "uPre30": -65.28,
     "uPre14": -62.87,
     "uPre7": -24.72,
@@ -26334,7 +26334,7 @@
     "-1:0": {
      "ret": -3.02,
      "mae": 3.02,
-     "edge": -3.21
+     "edge": -3.17
     },
     "-1:3": {
      "ret": -2.87,
@@ -26482,8 +26482,8 @@
     "post7": 19.65,
     "post14": 5.51,
     "around": 1.73,
-    "normal21": 1.91,
-    "beyondNormal": -0.18,
+    "normal21": 1.97,
+    "beyondNormal": -0.23,
     "uPre30": 9.27,
     "uPre14": 11.08,
     "uPre7": 5.36,
@@ -27118,8 +27118,8 @@
     "post7": 35.18,
     "post14": 17.5,
     "around": 11.37,
-    "normal21": -3.9,
-    "beyondNormal": 15.89,
+    "normal21": -3.91,
+    "beyondNormal": 15.9,
     "uPre30": -0.19,
     "uPre14": -3.67,
     "uPre7": -8.16,
@@ -27767,8 +27767,8 @@
     "post7": 11.35,
     "post14": -2.89,
     "around": -7.0,
-    "normal21": -1.9,
-    "beyondNormal": -5.2,
+    "normal21": -1.88,
+    "beyondNormal": -5.22,
     "uPre30": -18.23,
     "uPre14": -7.79,
     "uPre7": -7.02,
@@ -28090,8 +28090,8 @@
     "post7": -18.51,
     "post14": -18.27,
     "around": -17.75,
-    "normal21": 0.27,
-    "beyondNormal": -17.97,
+    "normal21": 0.25,
+    "beyondNormal": -17.96,
     "uPre30": -1.41,
     "uPre14": -1.17,
     "uPre7": -2.28,
@@ -28408,7 +28408,7 @@
     "post7": -24.05,
     "post14": -33.98,
     "around": -55.98,
-    "normal21": -0.65,
+    "normal21": -0.66,
     "beyondNormal": -55.69,
     "uPre30": -61.45,
     "uPre14": -49.84,
@@ -28712,8 +28712,8 @@
     "post7": 1.15,
     "post14": -13.21,
     "around": -16.93,
-    "normal21": -3.5,
-    "beyondNormal": -13.92,
+    "normal21": -3.51,
+    "beyondNormal": -13.91,
     "uPre30": -20.22,
     "uPre14": -9.86,
     "uPre7": -7.09,
@@ -29360,7 +29360,7 @@
     "post14": -31.05,
     "around": -18.05,
     "normal21": -9.47,
-    "beyondNormal": -9.47,
+    "beyondNormal": -9.48,
     "uPre30": -15.23,
     "uPre14": -9.69,
     "uPre7": 19.69,
@@ -29687,8 +29687,8 @@
     "post7": 1.69,
     "post14": -1.09,
     "around": -5.02,
-    "normal21": -2.76,
-    "beyondNormal": -2.33,
+    "normal21": -2.75,
+    "beyondNormal": -2.34,
     "uPre30": -4.73,
     "uPre14": -4.71,
     "uPre7": -1.93,
@@ -30007,8 +30007,8 @@
     "post7": -23.26,
     "post14": -17.96,
     "around": -8.17,
-    "normal21": -2.56,
-    "beyondNormal": -5.76,
+    "normal21": -2.6,
+    "beyondNormal": -5.71,
     "uPre30": -3.35,
     "uPre14": 2.44,
     "uPre7": 14.31,
@@ -30309,8 +30309,8 @@
     "post7": -7.08,
     "post14": -6.22,
     "around": -12.79,
-    "normal21": -11.4,
-    "beyondNormal": -1.57,
+    "normal21": -11.41,
+    "beyondNormal": -1.56,
     "uPre30": -35.67,
     "uPre14": -27.2,
     "uPre7": -3.83,
@@ -30631,8 +30631,8 @@
     "post7": 16.16,
     "post14": 5.16,
     "around": 2.25,
-    "normal21": -3.33,
-    "beyondNormal": 5.77,
+    "normal21": -3.31,
+    "beyondNormal": 5.75,
     "uPre30": -34.66,
     "uPre14": -23.21,
     "uPre7": -3.49,
@@ -30755,7 +30755,7 @@
     "-30:14": {
      "ret": 21.92,
      "mae": 0.0,
-     "edge": 18.96
+     "edge": 19.19
     },
     "-14:0": {
      "ret": 23.21,
@@ -31276,7 +31276,7 @@
     "post14": 14.02,
     "around": 19.17,
     "normal21": 5.15,
-    "beyondNormal": 13.33,
+    "beyondNormal": 13.34,
     "uPre30": -19.34,
     "uPre14": -4.11,
     "uPre7": 5.65,
@@ -31585,8 +31585,8 @@
     "post7": -1.58,
     "post14": -11.24,
     "around": -2.06,
-    "normal21": -3.12,
-    "beyondNormal": 1.1,
+    "normal21": -3.1,
+    "beyondNormal": 1.07,
     "uPre30": 14.52,
     "uPre14": 6.48,
     "uPre7": 10.65,
@@ -31897,8 +31897,8 @@
     "post7": -8.79,
     "post14": -7.83,
     "around": -13.15,
-    "normal21": -6.27,
-    "beyondNormal": -7.34,
+    "normal21": -6.28,
+    "beyondNormal": -7.33,
     "uPre30": -15.75,
     "uPre14": -14.13,
     "uPre7": -5.52,
@@ -32231,8 +32231,8 @@
     "post7": 10.18,
     "post14": 5.53,
     "around": -0.43,
-    "normal21": -3.12,
-    "beyondNormal": 2.78,
+    "normal21": -3.1,
+    "beyondNormal": 2.75,
     "uPre30": 3.43,
     "uPre14": -1.82,
     "uPre7": -7.91,
@@ -32863,7 +32863,7 @@
     "post7": -4.52,
     "post14": -0.14,
     "around": -2.29,
-    "normal21": -3.91,
+    "normal21": -3.9,
     "beyondNormal": 1.68,
     "uPre30": -4.68,
     "uPre14": -7.89,
@@ -33052,7 +33052,7 @@
     "-1:0": {
      "ret": 1.52,
      "mae": 0.0,
-     "edge": 1.11
+     "edge": 1.14
     },
     "-1:3": {
      "ret": 0.19,
@@ -33179,8 +33179,8 @@
     "post7": -1.38,
     "post14": 1.35,
     "around": 3.7,
-    "normal21": -0.49,
-    "beyondNormal": 4.21,
+    "normal21": -0.47,
+    "beyondNormal": 4.19,
     "uPre30": -5.7,
     "uPre14": 0.33,
     "uPre7": -1.03,
@@ -33508,8 +33508,8 @@
     "post7": 0.76,
     "post14": 7.8,
     "around": 13.52,
-    "normal21": -10.06,
-    "beyondNormal": 26.22,
+    "normal21": -10.07,
+    "beyondNormal": 26.23,
     "uPre30": -6.5,
     "uPre14": -2.33,
     "uPre7": 1.87,
@@ -34139,8 +34139,8 @@
     "post7": -1.19,
     "post14": -0.37,
     "around": -5.4,
-    "normal21": -6.81,
-    "beyondNormal": 1.51,
+    "normal21": -6.8,
+    "beyondNormal": 1.5,
     "uPre30": -21.88,
     "uPre14": -11.95,
     "uPre7": -7.21,
@@ -34263,7 +34263,7 @@
     "-30:14": {
      "ret": 21.9,
      "mae": 8.32,
-     "edge": 11.69
+     "edge": 11.84
     },
     "-14:0": {
      "ret": 11.95,
@@ -34477,8 +34477,8 @@
     "post7": -10.02,
     "post14": -5.67,
     "around": -6.04,
-    "normal21": -10.77,
-    "beyondNormal": 5.3,
+    "normal21": -10.76,
+    "beyondNormal": 5.28,
     "uPre30": -25.84,
     "uPre14": -11.81,
     "uPre7": -1.13,
@@ -34796,8 +34796,8 @@
     "post7": 2.42,
     "post14": 13.76,
     "around": 15.35,
-    "normal21": -13.97,
-    "beyondNormal": 34.09,
+    "normal21": -13.98,
+    "beyondNormal": 34.1,
     "uPre30": 9.82,
     "uPre14": 1.51,
     "uPre7": 1.7,
@@ -35101,8 +35101,8 @@
     "post7": 3.41,
     "post14": 26.59,
     "around": 31.39,
-    "normal21": -7.63,
-    "beyondNormal": 42.25,
+    "normal21": -7.65,
+    "beyondNormal": 42.27,
     "uPre30": -2.37,
     "uPre14": -6.62,
     "uPre7": 4.1,
@@ -35416,8 +35416,8 @@
     "post7": -11.42,
     "post14": -11.53,
     "around": -12.31,
-    "normal21": -6.81,
-    "beyondNormal": -5.9,
+    "normal21": -6.8,
+    "beyondNormal": -5.91,
     "uPre30": -7.89,
     "uPre14": -7.83,
     "uPre7": -0.59,
@@ -35540,7 +35540,7 @@
     "-30:14": {
      "ret": 17.51,
      "mae": 18.85,
-     "edge": 7.3
+     "edge": 7.45
     },
     "-14:0": {
      "ret": 7.83,
@@ -36070,8 +36070,8 @@
     "post7": 26.31,
     "post14": 41.88,
     "around": 36.1,
-    "normal21": -3.23,
-    "beyondNormal": 40.64,
+    "normal21": -3.24,
+    "beyondNormal": 40.65,
     "uPre30": -0.12,
     "uPre14": -2.71,
     "uPre7": -2.06,
@@ -36381,8 +36381,8 @@
     "post7": 24.34,
     "post14": 8.14,
     "around": 49.68,
-    "normal21": -6.44,
-    "beyondNormal": 59.99,
+    "normal21": -6.43,
+    "beyondNormal": 59.97,
     "uPre30": 96.97,
     "uPre14": 46.06,
     "uPre7": 40.42,
@@ -36570,7 +36570,7 @@
     "-1:0": {
      "ret": -15.55,
      "mae": 15.55,
-     "edge": -15.74
+     "edge": -15.7
     },
     "-1:3": {
      "ret": -21.24,
@@ -36708,8 +36708,8 @@
     "post7": 8.36,
     "post14": -7.67,
     "around": -17.14,
-    "normal21": 1.91,
-    "beyondNormal": -18.7,
+    "normal21": 1.97,
+    "beyondNormal": -18.74,
     "uPre30": -19.51,
     "uPre14": -14.91,
     "uPre7": -8.96,
@@ -37343,8 +37343,8 @@
     "post7": -11.06,
     "post14": -13.49,
     "around": -12.4,
-    "normal21": -1.93,
-    "beyondNormal": -10.67,
+    "normal21": -1.94,
+    "beyondNormal": -10.66,
     "uPre30": 13.76,
     "uPre14": 7.31,
     "uPre7": 2.22,
@@ -37647,8 +37647,8 @@
     "post7": -1.21,
     "post14": -1.19,
     "around": -4.43,
-    "normal21": -3.9,
-    "beyondNormal": -0.55,
+    "normal21": -3.91,
+    "beyondNormal": -0.54,
     "uPre30": -15.47,
     "uPre14": -4.66,
     "uPre7": -2.36,
@@ -38278,8 +38278,8 @@
     "post7": -0.26,
     "post14": -9.44,
     "around": 0.25,
-    "normal21": -1.9,
-    "beyondNormal": 2.19,
+    "normal21": -1.88,
+    "beyondNormal": 2.17,
     "uPre30": 2.5,
     "uPre14": 16.19,
     "uPre7": 15.08,
@@ -38601,7 +38601,7 @@
     "post7": -27.28,
     "post14": -53.24,
     "around": -76.27,
-    "normal21": -22.77,
+    "normal21": -22.78,
     "beyondNormal": -69.27,
     "uPre30": -91.39,
     "uPre14": -77.46,
@@ -39216,7 +39216,7 @@
     "post7": -3.12,
     "post14": -3.47,
     "around": -7.28,
-    "normal21": -0.65,
+    "normal21": -0.66,
     "beyondNormal": -6.67,
     "uPre30": 49.61,
     "uPre14": 68.43,
@@ -39528,8 +39528,8 @@
     "post7": -1.43,
     "post14": -0.03,
     "around": -7.31,
-    "normal21": -3.5,
-    "beyondNormal": -3.95,
+    "normal21": -3.51,
+    "beyondNormal": -3.94,
     "uPre30": -18.82,
     "uPre14": -0.23,
     "uPre7": -4.87,
@@ -40483,8 +40483,8 @@
     "post7": -3.4,
     "post14": -9.37,
     "around": -15.29,
-    "normal21": -2.56,
-    "beyondNormal": -13.06,
+    "normal21": -2.6,
+    "beyondNormal": -13.03,
     "uPre30": -12.6,
     "uPre14": -0.48,
     "uPre7": -3.95,
@@ -41119,8 +41119,8 @@
     "post7": -6.4,
     "post14": -10.78,
     "around": -12.95,
-    "normal21": -11.4,
-    "beyondNormal": -1.75,
+    "normal21": -11.41,
+    "beyondNormal": -1.74,
     "uPre30": -16.74,
     "uPre14": 1.12,
     "uPre7": 1.28,
@@ -41441,8 +41441,8 @@
     "post7": -16.54,
     "post14": -23.47,
     "around": -22.69,
-    "normal21": -3.33,
-    "beyondNormal": -20.02,
+    "normal21": -3.31,
+    "beyondNormal": -20.04,
     "uPre30": 58.02,
     "uPre14": 20.76,
     "uPre7": 7.48,
@@ -41565,7 +41565,7 @@
     "-30:14": {
      "ret": -23.16,
      "mae": 63.0,
-     "edge": -26.12
+     "edge": -25.89
     },
     "-14:0": {
      "ret": -20.76,
@@ -42058,8 +42058,8 @@
     "post7": 0.39,
     "post14": -0.36,
     "around": -2.81,
-    "normal21": -3.12,
-    "beyondNormal": 0.32,
+    "normal21": -3.1,
+    "beyondNormal": 0.29,
     "uPre30": -16.56,
     "uPre14": -11.73,
     "uPre7": 2.64,
@@ -42370,8 +42370,8 @@
     "post7": 1.02,
     "post14": 8.61,
     "around": -7.29,
-    "normal21": -3.12,
-    "beyondNormal": -4.3,
+    "normal21": -3.1,
+    "beyondNormal": -4.33,
     "uPre30": -19.65,
     "uPre14": -25.04,
     "uPre7": -16.07,
@@ -42985,8 +42985,8 @@
     "post7": -2.4,
     "post14": -0.44,
     "around": 4.42,
-    "normal21": -3.91,
-    "beyondNormal": 8.67,
+    "normal21": -3.9,
+    "beyondNormal": 8.66,
     "uPre30": -22.9,
     "uPre14": -13.34,
     "uPre7": -1.97,
@@ -43174,7 +43174,7 @@
     "-1:0": {
      "ret": 1.62,
      "mae": 0.0,
-     "edge": 1.21
+     "edge": 1.24
     },
     "-1:3": {
      "ret": -9.72,
@@ -43290,8 +43290,8 @@
     "post7": -5.11,
     "post14": -6.95,
     "around": -6.87,
-    "normal21": -0.49,
-    "beyondNormal": -6.41,
+    "normal21": -0.47,
+    "beyondNormal": -6.43,
     "uPre30": 2.53,
     "uPre14": 5.94,
     "uPre7": -5.84,
@@ -43939,8 +43939,8 @@
     "post7": -13.28,
     "post14": -19.49,
     "around": -28.47,
-    "normal21": -10.77,
-    "beyondNormal": -19.84,
+    "normal21": -10.76,
+    "beyondNormal": -19.85,
     "uPre30": -62.15,
     "uPre14": -28.48,
     "uPre7": -15.63,
@@ -44610,8 +44610,8 @@
     "post7": 2.52,
     "post14": 2.01,
     "around": -9.46,
-    "normal21": -13.97,
-    "beyondNormal": 5.25,
+    "normal21": -13.98,
+    "beyondNormal": 5.26,
     "uPre30": -2.73,
     "uPre14": 26.29,
     "uPre7": -16.01,
@@ -44915,8 +44915,8 @@
     "post7": 13.23,
     "post14": 5.33,
     "around": -69.73,
-    "normal21": -7.63,
-    "beyondNormal": -67.23,
+    "normal21": -7.65,
+    "beyondNormal": -67.22,
     "uPre30": -74.35,
     "uPre14": -66.25,
     "uPre7": -72.8,
@@ -45233,8 +45233,8 @@
     "post7": 0.38,
     "post14": -2.99,
     "around": -16.39,
-    "normal21": -6.81,
-    "beyondNormal": -10.28,
+    "normal21": -6.8,
+    "beyondNormal": -10.29,
     "uPre30": 7.02,
     "uPre14": 50.1,
     "uPre7": -18.43,
@@ -45357,7 +45357,7 @@
     "-30:14": {
      "ret": -5.96,
      "mae": 31.2,
-     "edge": -16.17
+     "edge": -16.02
     },
     "-14:0": {
      "ret": -50.1,
@@ -45553,8 +45553,8 @@
     "post7": 0.74,
     "post14": -6.49,
     "around": -9.06,
-    "normal21": -5.15,
-    "beyondNormal": -4.13,
+    "normal21": -5.09,
+    "beyondNormal": -4.18,
     "uPre30": -32.12,
     "uPre14": -1.77,
     "uPre7": -7.13,
@@ -45667,7 +45667,7 @@
     "-30:3": {
      "ret": 35.14,
      "mae": 1.24,
-     "edge": 24.03
+     "edge": 24.22
     },
     "-30:7": {
      "ret": 36.09,
@@ -45697,7 +45697,7 @@
     "-14:14": {
      "ret": 7.16,
      "mae": 6.59,
-     "edge": -1.84
+     "edge": -1.65
     },
     "-7:0": {
      "ret": 7.13,
@@ -45742,7 +45742,7 @@
     "-1:0": {
      "ret": 1.96,
      "mae": 0.0,
-     "edge": 1.85
+     "edge": 1.87
     },
     "-1:3": {
      "ret": 6.32,
@@ -45876,8 +45876,8 @@
     "post7": 15.98,
     "post14": 4.98,
     "around": 2.55,
-    "normal21": -3.23,
-    "beyondNormal": 5.97,
+    "normal21": -3.24,
+    "beyondNormal": 5.98,
     "uPre30": -0.76,
     "uPre14": 0.86,
     "uPre7": -5.78,
@@ -46187,8 +46187,8 @@
     "post7": 15.81,
     "post14": 32.21,
     "around": 51.07,
-    "normal21": -6.44,
-    "beyondNormal": 61.48,
+    "normal21": -6.43,
+    "beyondNormal": 61.46,
     "uPre30": 0.06,
     "uPre14": 3.26,
     "uPre7": 14.19,
@@ -46376,7 +46376,7 @@
     "-1:0": {
      "ret": -0.43,
      "mae": 0.43,
-     "edge": -0.62
+     "edge": -0.58
     },
     "-1:3": {
      "ret": 1.64,
@@ -46506,8 +46506,8 @@
     "post7": -14.03,
     "post14": -8.07,
     "around": -0.83,
-    "normal21": 1.91,
-    "beyondNormal": -2.69,
+    "normal21": 1.97,
+    "beyondNormal": -2.74,
     "uPre30": -27.92,
     "uPre14": 1.35,
     "uPre7": 7.8,
@@ -46823,7 +46823,7 @@
     "post14": -21.85,
     "around": -26.17,
     "normal21": -1.55,
-    "beyondNormal": -25.01,
+    "beyondNormal": -25.0,
     "uPre30": 3.95,
     "uPre14": 1.8,
     "uPre7": -0.98,
@@ -47140,8 +47140,8 @@
     "post7": -8.02,
     "post14": -5.75,
     "around": -5.75,
-    "normal21": -3.9,
-    "beyondNormal": -1.92,
+    "normal21": -3.91,
+    "beyondNormal": -1.91,
     "uPre30": -14.69,
     "uPre14": 4.22,
     "uPre7": 6.4,
@@ -47781,8 +47781,8 @@
     "post7": -0.08,
     "post14": -2.84,
     "around": -2.93,
-    "normal21": -1.9,
-    "beyondNormal": -1.05,
+    "normal21": -1.88,
+    "beyondNormal": -1.07,
     "uPre30": -27.28,
     "uPre14": -15.63,
     "uPre7": 5.01,
@@ -48100,8 +48100,8 @@
     "post7": -2.85,
     "post14": -11.59,
     "around": -9.75,
-    "normal21": -3.5,
-    "beyondNormal": -6.48,
+    "normal21": -3.51,
+    "beyondNormal": -6.47,
     "uPre30": -18.79,
     "uPre14": -6.47,
     "uPre7": 6.0,
@@ -48420,7 +48420,7 @@
     "post14": -2.26,
     "around": -15.98,
     "normal21": -7.03,
-    "beyondNormal": -9.62,
+    "beyondNormal": -9.63,
     "uPre30": -40.28,
     "uPre14": -31.31,
     "uPre7": -14.38,
@@ -49073,7 +49073,7 @@
     "post14": 8.1,
     "around": 130.41,
     "normal21": -9.47,
-    "beyondNormal": 154.52,
+    "beyondNormal": 154.51,
     "uPre30": 294.37,
     "uPre14": 308.19,
     "uPre7": 104.6,
@@ -49391,8 +49391,8 @@
     "post7": 3.29,
     "post14": -14.28,
     "around": 4.5,
-    "normal21": -2.56,
-    "beyondNormal": 7.25,
+    "normal21": -2.6,
+    "beyondNormal": 7.29,
     "uPre30": -18.05,
     "uPre14": -2.73,
     "uPre7": 12.67,
@@ -49693,8 +49693,8 @@
     "post7": -23.06,
     "post14": -37.91,
     "around": -53.2,
-    "normal21": -6.43,
-    "beyondNormal": -49.98,
+    "normal21": -6.42,
+    "beyondNormal": -49.99,
     "uPre30": 115.78,
     "uPre14": 38.75,
     "uPre7": -30.33,
@@ -49997,8 +49997,8 @@
     "post7": 3.08,
     "post14": 1.5,
     "around": -15.2,
-    "normal21": -9.79,
-    "beyondNormal": -6.0,
+    "normal21": -9.77,
+    "beyondNormal": -6.02,
     "uPre30": -50.55,
     "uPre14": -37.11,
     "uPre7": -22.79,
@@ -50116,7 +50116,7 @@
     "-30:7": {
      "ret": 45.76,
      "mae": 2.32,
-     "edge": 32.06
+     "edge": 32.09
     },
     "-30:14": {
      "ret": 49.0,
@@ -50186,7 +50186,7 @@
     "-1:0": {
      "ret": 4.5,
      "mae": 0.0,
-     "edge": 4.39
+     "edge": 4.41
     },
     "-1:3": {
      "ret": -1.64,
@@ -50310,8 +50310,8 @@
     "post7": -15.26,
     "post14": -14.78,
     "around": -12.32,
-    "normal21": -11.4,
-    "beyondNormal": -1.04,
+    "normal21": -11.41,
+    "beyondNormal": -1.03,
     "uPre30": -28.01,
     "uPre14": -15.73,
     "uPre7": -9.02,
@@ -50632,7 +50632,7 @@
     "post7": 2.04,
     "post14": 5.72,
     "around": -4.18,
-    "normal21": -5.05,
+    "normal21": -5.06,
     "beyondNormal": 0.92,
     "uPre30": -42.48,
     "uPre14": -28.62,
@@ -50944,8 +50944,8 @@
     "post7": 2.64,
     "post14": 26.51,
     "around": 48.03,
-    "normal21": -3.33,
-    "beyondNormal": 53.13,
+    "normal21": -3.31,
+    "beyondNormal": 53.1,
     "uPre30": -15.59,
     "uPre14": 1.28,
     "uPre7": -3.53,
@@ -51068,7 +51068,7 @@
     "-30:14": {
      "ret": -12.75,
      "mae": 33.74,
-     "edge": -15.71
+     "edge": -15.48
     },
     "-14:0": {
      "ret": -1.28,
@@ -51255,7 +51255,7 @@
     "post14": 13.01,
     "around": 26.32,
     "normal21": 5.15,
-    "beyondNormal": 20.13,
+    "beyondNormal": 20.14,
     "uPre30": 38.51,
     "uPre14": 9.2,
     "uPre7": -7.29,
@@ -51563,8 +51563,8 @@
     "post7": -15.31,
     "post14": 2.61,
     "around": 26.8,
-    "normal21": -3.12,
-    "beyondNormal": 30.89,
+    "normal21": -3.1,
+    "beyondNormal": 30.85,
     "uPre30": -13.88,
     "uPre14": -11.47,
     "uPre7": 7.06,
@@ -51875,8 +51875,8 @@
     "post7": 8.83,
     "post14": 3.72,
     "around": -0.38,
-    "normal21": -3.12,
-    "beyondNormal": 2.83,
+    "normal21": -3.1,
+    "beyondNormal": 2.8,
     "uPre30": -13.59,
     "uPre14": -15.92,
     "uPre7": -11.34,
@@ -52500,7 +52500,7 @@
     "post7": -1.55,
     "post14": 0.5,
     "around": -8.73,
-    "normal21": -3.91,
+    "normal21": -3.9,
     "beyondNormal": -5.02,
     "uPre30": -2.65,
     "uPre14": -14.3,
@@ -52689,7 +52689,7 @@
     "-1:0": {
      "ret": 1.61,
      "mae": 0.0,
-     "edge": 1.2
+     "edge": 1.23
     },
     "-1:3": {
      "ret": 9.32,
@@ -52802,8 +52802,8 @@
     "post7": -5.65,
     "post14": 1.64,
     "around": -2.24,
-    "normal21": -5.86,
-    "beyondNormal": 3.85,
+    "normal21": -5.88,
+    "beyondNormal": 3.87,
     "uPre30": 0.23,
     "uPre14": -9.4,
     "uPre7": -7.41,
@@ -53113,8 +53113,8 @@
     "post7": -6.74,
     "post14": 9.2,
     "around": 3.1,
-    "normal21": -0.49,
-    "beyondNormal": 3.61,
+    "normal21": -0.47,
+    "beyondNormal": 3.59,
     "uPre30": -8.2,
     "uPre14": -10.83,
     "uPre7": -8.05,
@@ -54096,7 +54096,7 @@
     "post7": 12.14,
     "post14": 17.12,
     "around": 35.13,
-    "normal21": 2.09,
+    "normal21": 2.1,
     "beyondNormal": 32.36,
     "uPre30": -1.58,
     "uPre14": 10.46,
@@ -54397,8 +54397,8 @@
     "post7": 2.52,
     "post14": 20.78,
     "around": 28.95,
-    "normal21": -10.77,
-    "beyondNormal": 44.51,
+    "normal21": -10.76,
+    "beyondNormal": 44.49,
     "uPre30": 47.87,
     "uPre14": -3.75,
     "uPre7": 7.18,
@@ -54715,8 +54715,8 @@
     "post7": 8.41,
     "post14": -5.77,
     "around": -5.5,
-    "normal21": -13.97,
-    "beyondNormal": 9.85,
+    "normal21": -13.98,
+    "beyondNormal": 9.86,
     "uPre30": -13.58,
     "uPre14": -19.0,
     "uPre7": -0.26,
@@ -55020,8 +55020,8 @@
     "post7": 112.83,
     "post14": 283.93,
     "around": 264.52,
-    "normal21": -7.63,
-    "beyondNormal": 294.65,
+    "normal21": -7.65,
+    "beyondNormal": 294.71,
     "uPre30": 63.31,
     "uPre14": 7.71,
     "uPre7": -5.56,
@@ -55329,8 +55329,8 @@
     "post7": 14.7,
     "post14": 3.72,
     "around": 1.48,
-    "normal21": -6.81,
-    "beyondNormal": 8.9,
+    "normal21": -6.8,
+    "beyondNormal": 8.88,
     "uPre30": -18.75,
     "uPre14": -24.22,
     "uPre7": -2.68,
@@ -55453,7 +55453,7 @@
     "-30:14": {
      "ret": 30.76,
      "mae": 10.19,
-     "edge": 20.55
+     "edge": 20.7
     },
     "-14:0": {
      "ret": 24.22,
@@ -55649,8 +55649,8 @@
     "post7": 5.54,
     "post14": 20.1,
     "around": 13.79,
-    "normal21": -3.23,
-    "beyondNormal": 17.58,
+    "normal21": -3.24,
+    "beyondNormal": 17.6,
     "uPre30": -11.95,
     "uPre14": -17.93,
     "uPre7": -9.55,
@@ -55976,8 +55976,8 @@
     "post7": 12.39,
     "post14": 16.38,
     "around": 18.33,
-    "normal21": -6.44,
-    "beyondNormal": 26.48,
+    "normal21": -6.43,
+    "beyondNormal": 26.46,
     "uPre30": 6.11,
     "uPre14": -8.64,
     "uPre7": -3.03,
@@ -56165,7 +56165,7 @@
     "-1:0": {
      "ret": 8.27,
      "mae": 0.0,
-     "edge": 8.08
+     "edge": 8.12
     },
     "-1:3": {
      "ret": 1.23,
@@ -56295,8 +56295,8 @@
     "post7": -2.02,
     "post14": -1.5,
     "around": -7.73,
-    "normal21": 1.91,
-    "beyondNormal": -9.46,
+    "normal21": 1.97,
+    "beyondNormal": -9.51,
     "uPre30": -17.86,
     "uPre14": -7.41,
     "uPre7": -10.66,
@@ -56611,8 +56611,8 @@
     "post7": -7.77,
     "post14": 2.91,
     "around": -16.76,
-    "normal21": -0.56,
-    "beyondNormal": -16.29,
+    "normal21": -0.58,
+    "beyondNormal": -16.27,
     "uPre30": -2.61,
     "uPre14": -8.85,
     "uPre7": -23.74,
@@ -56966,7 +56966,7 @@
     "post14": 4.57,
     "around": 17.08,
     "normal21": -1.55,
-    "beyondNormal": 18.92,
+    "beyondNormal": 18.93,
     "uPre30": 8.89,
     "uPre14": 15.21,
     "uPre7": 5.7,
@@ -57283,7 +57283,7 @@
     "post7": 8.24,
     "post14": 0.25,
     "around": -18.36,
-    "normal21": -3.9,
+    "normal21": -3.91,
     "beyondNormal": -15.04,
     "uPre30": 7.04,
     "uPre14": -14.64,
@@ -57621,7 +57621,7 @@
     "post14": -4.45,
     "around": -17.14,
     "normal21": -3.57,
-    "beyondNormal": -14.08,
+    "beyondNormal": -14.07,
     "uPre30": -4.68,
     "uPre14": -7.94,
     "uPre7": -16.02,
@@ -57931,8 +57931,8 @@
     "post7": -8.85,
     "post14": -10.49,
     "around": -20.64,
-    "normal21": -1.9,
-    "beyondNormal": -19.1,
+    "normal21": -1.88,
+    "beyondNormal": -19.12,
     "uPre30": 8.39,
     "uPre14": 0.88,
     "uPre7": -12.59,
@@ -58242,8 +58242,8 @@
     "post7": 0.84,
     "post14": -1.72,
     "around": -2.23,
-    "normal21": -0.65,
-    "beyondNormal": -1.59,
+    "normal21": -0.66,
+    "beyondNormal": -1.58,
     "uPre30": 9.3,
     "uPre14": 6.4,
     "uPre7": 0.76,
@@ -58546,8 +58546,8 @@
     "post7": -0.9,
     "post14": -12.56,
     "around": -13.15,
-    "normal21": -3.5,
-    "beyondNormal": -10.0,
+    "normal21": -3.51,
+    "beyondNormal": -9.99,
     "uPre30": 44.02,
     "uPre14": 21.01,
     "uPre7": 0.61,
@@ -59200,7 +59200,7 @@
     "post14": -9.34,
     "around": 3.47,
     "normal21": -7.03,
-    "beyondNormal": 11.3,
+    "beyondNormal": 11.29,
     "uPre30": 30.58,
     "uPre14": 16.61,
     "uPre7": 16.71,
@@ -59508,8 +59508,8 @@
     "post7": -3.22,
     "post14": -2.95,
     "around": 4.74,
-    "normal21": -2.76,
-    "beyondNormal": 7.71,
+    "normal21": -2.75,
+    "beyondNormal": 7.7,
     "uPre30": 7.98,
     "uPre14": 9.25,
     "uPre7": 10.36,
@@ -60147,8 +60147,8 @@
     "post7": 6.33,
     "post14": -7.2,
     "around": -16.7,
-    "normal21": -2.56,
-    "beyondNormal": -14.51,
+    "normal21": -2.6,
+    "beyondNormal": -14.47,
     "uPre30": 33.39,
     "uPre14": 16.8,
     "uPre7": -7.95,
@@ -60449,8 +60449,8 @@
     "post7": -6.16,
     "post14": -11.79,
     "around": -7.17,
-    "normal21": -11.4,
-    "beyondNormal": 4.77,
+    "normal21": -11.41,
+    "beyondNormal": 4.78,
     "uPre30": 4.89,
     "uPre14": 1.11,
     "uPre7": 7.92,
@@ -61086,8 +61086,8 @@
     "post7": 20.76,
     "post14": 29.98,
     "around": 51.66,
-    "normal21": -3.33,
-    "beyondNormal": 56.89,
+    "normal21": -3.31,
+    "beyondNormal": 56.86,
     "uPre30": 57.4,
     "uPre14": 26.29,
     "uPre7": 25.39,
@@ -61210,7 +61210,7 @@
     "-30:14": {
      "ret": -94.62,
      "mae": 119.03,
-     "edge": -97.58
+     "edge": -97.35
     },
     "-14:0": {
      "ret": -26.29,
@@ -61697,8 +61697,8 @@
     "post7": -0.65,
     "post14": -7.95,
     "around": -6.78,
-    "normal21": -2.85,
-    "beyondNormal": -4.05,
+    "normal21": -2.84,
+    "beyondNormal": -4.06,
     "uPre30": 37.98,
     "uPre14": 10.28,
     "uPre7": 7.34,
@@ -62000,8 +62000,8 @@
     "post7": 25.42,
     "post14": 8.98,
     "around": -1.08,
-    "normal21": -3.12,
-    "beyondNormal": 2.11,
+    "normal21": -3.1,
+    "beyondNormal": 2.08,
     "uPre30": 25.18,
     "uPre14": -10.5,
     "uPre7": -6.34,
@@ -62312,8 +62312,8 @@
     "post7": 13.48,
     "post14": 5.46,
     "around": 0.34,
-    "normal21": -18.8,
-    "beyondNormal": 23.57,
+    "normal21": -18.79,
+    "beyondNormal": 23.56,
     "uPre30": -8.42,
     "uPre14": 5.41,
     "uPre7": -1.83,
@@ -62501,7 +62501,7 @@
     "-1:0": {
      "ret": -2.14,
      "mae": 2.14,
-     "edge": -2.72
+     "edge": -2.7
     },
     "-1:3": {
      "ret": -15.67,
@@ -62615,8 +62615,8 @@
     "post7": 25.83,
     "post14": 7.57,
     "around": -0.01,
-    "normal21": -3.12,
-    "beyondNormal": 3.21,
+    "normal21": -3.1,
+    "beyondNormal": 3.18,
     "uPre30": 13.12,
     "uPre14": -18.57,
     "uPre7": -6.14,
@@ -63255,8 +63255,8 @@
     "post7": 1.72,
     "post14": 23.0,
     "around": 21.13,
-    "normal21": -3.91,
-    "beyondNormal": 26.06,
+    "normal21": -3.9,
+    "beyondNormal": 26.05,
     "uPre30": 3.47,
     "uPre14": -9.21,
     "uPre7": -4.01,
@@ -63444,7 +63444,7 @@
     "-1:0": {
      "ret": -0.11,
      "mae": 0.11,
-     "edge": -0.52
+     "edge": -0.49
     },
     "-1:3": {
      "ret": -1.4,
@@ -63895,8 +63895,8 @@
     "post7": -0.68,
     "post14": 9.88,
     "around": 12.16,
-    "normal21": -0.49,
-    "beyondNormal": 12.71,
+    "normal21": -0.47,
+    "beyondNormal": 12.69,
     "uPre30": 19.06,
     "uPre14": -2.12,
     "uPre7": -1.13,
@@ -64224,8 +64224,8 @@
     "post7": 10.63,
     "post14": 16.51,
     "around": 18.94,
-    "normal21": -5.86,
-    "beyondNormal": 26.35,
+    "normal21": -5.88,
+    "beyondNormal": 26.37,
     "uPre30": 13.31,
     "uPre14": -0.16,
     "uPre7": -1.12,
@@ -65168,8 +65168,8 @@
     "post7": 1.44,
     "post14": 56.45,
     "around": 61.39,
-    "normal21": -10.77,
-    "beyondNormal": 80.86,
+    "normal21": -10.76,
+    "beyondNormal": 80.84,
     "uPre30": -18.83,
     "uPre14": 6.93,
     "uPre7": 5.77,
@@ -65486,8 +65486,8 @@
     "post7": 1.08,
     "post14": 4.89,
     "around": 3.72,
-    "normal21": -13.97,
-    "beyondNormal": 20.57,
+    "normal21": -13.98,
+    "beyondNormal": 20.58,
     "uPre30": 19.74,
     "uPre14": 22.75,
     "uPre7": -0.71,
@@ -65797,8 +65797,8 @@
     "post7": -9.78,
     "post14": 6.41,
     "around": -16.69,
-    "normal21": -6.81,
-    "beyondNormal": -10.6,
+    "normal21": -6.8,
+    "beyondNormal": -10.61,
     "uPre30": -0.44,
     "uPre14": -23.1,
     "uPre7": -21.38,
@@ -65921,7 +65921,7 @@
     "-30:14": {
      "ret": -9.71,
      "mae": 40.28,
-     "edge": -19.92
+     "edge": -19.77
     },
     "-14:0": {
      "ret": 23.1,
@@ -66117,8 +66117,8 @@
     "post7": -4.34,
     "post14": -2.84,
     "around": 17.67,
-    "normal21": -3.23,
-    "beyondNormal": 21.59,
+    "normal21": -3.24,
+    "beyondNormal": 21.61,
     "uPre30": 16.44,
     "uPre14": 54.82,
     "uPre7": 26.63,
@@ -66428,8 +66428,8 @@
     "post7": 4.28,
     "post14": -12.85,
     "around": -16.35,
-    "normal21": -15.72,
-    "beyondNormal": -0.75,
+    "normal21": -15.73,
+    "beyondNormal": -0.73,
     "uPre30": 22.28,
     "uPre14": 1.74,
     "uPre7": -1.39,
@@ -66743,8 +66743,8 @@
     "post7": -8.19,
     "post14": 5.35,
     "around": 5.62,
-    "normal21": -6.44,
-    "beyondNormal": 12.89,
+    "normal21": -6.43,
+    "beyondNormal": 12.88,
     "uPre30": 16.12,
     "uPre14": -1.22,
     "uPre7": 4.77,
@@ -66932,7 +66932,7 @@
     "-1:0": {
      "ret": 5.17,
      "mae": 0.0,
-     "edge": 4.98
+     "edge": 5.02
     },
     "-1:3": {
      "ret": 9.03,
@@ -67062,8 +67062,8 @@
     "post7": -9.5,
     "post14": -20.2,
     "around": -35.73,
-    "normal21": 1.91,
-    "beyondNormal": -36.94,
+    "normal21": 1.97,
+    "beyondNormal": -36.97,
     "uPre30": -21.26,
     "uPre14": -15.88,
     "uPre7": -15.84,
@@ -67380,7 +67380,7 @@
     "post14": -3.33,
     "around": 3.54,
     "normal21": -1.55,
-    "beyondNormal": 5.17,
+    "beyondNormal": 5.18,
     "uPre30": 3.94,
     "uPre14": 12.66,
     "uPre7": 13.28,
@@ -67697,8 +67697,8 @@
     "post7": 2.88,
     "post14": 24.53,
     "around": 41.78,
-    "normal21": -3.9,
-    "beyondNormal": 47.54,
+    "normal21": -3.91,
+    "beyondNormal": 47.55,
     "uPre30": 0.21,
     "uPre14": 26.54,
     "uPre7": 19.82,
@@ -68680,8 +68680,8 @@
     "post7": 7.05,
     "post14": 7.63,
     "around": 10.7,
-    "normal21": -1.9,
-    "beyondNormal": 12.84,
+    "normal21": -1.88,
+    "beyondNormal": 12.82,
     "uPre30": 4.87,
     "uPre14": 21.46,
     "uPre7": 8.94,
@@ -68995,7 +68995,7 @@
     "post7": -2.41,
     "post14": 0.16,
     "around": 1.49,
-    "normal21": -0.65,
+    "normal21": -0.66,
     "beyondNormal": 2.16,
     "uPre30": 1.99,
     "uPre14": 7.26,
@@ -69298,8 +69298,8 @@
     "post7": 14.11,
     "post14": 17.53,
     "around": 4.83,
-    "normal21": -3.5,
-    "beyondNormal": 8.63,
+    "normal21": -3.51,
+    "beyondNormal": 8.64,
     "uPre30": -18.98,
     "uPre14": -7.07,
     "uPre7": -7.52,
@@ -70254,8 +70254,8 @@
     "post7": -7.38,
     "post14": -7.56,
     "around": -13.4,
-    "normal21": -11.4,
-    "beyondNormal": -2.26,
+    "normal21": -11.41,
+    "beyondNormal": -2.25,
     "uPre30": -29.59,
     "uPre14": -35.81,
     "uPre7": -2.62,
@@ -70576,8 +70576,8 @@
     "post7": 10.94,
     "post14": 12.49,
     "around": 8.02,
-    "normal21": -3.33,
-    "beyondNormal": 11.74,
+    "normal21": -3.31,
+    "beyondNormal": 11.72,
     "uPre30": -16.28,
     "uPre14": -18.19,
     "uPre7": -1.12,
@@ -70700,7 +70700,7 @@
     "-30:14": {
      "ret": -4.03,
      "mae": 6.74,
-     "edge": -6.99
+     "edge": -6.76
     },
     "-14:0": {
      "ret": 18.19,
@@ -71198,8 +71198,8 @@
     "post7": 10.14,
     "post14": 32.66,
     "around": 16.17,
-    "normal21": -3.12,
-    "beyondNormal": 19.92,
+    "normal21": -3.1,
+    "beyondNormal": 19.88,
     "uPre30": -30.37,
     "uPre14": -17.76,
     "uPre7": -11.52,
@@ -71844,8 +71844,8 @@
     "post7": -5.99,
     "post14": 0.27,
     "around": -9.07,
-    "normal21": -3.12,
-    "beyondNormal": -6.14,
+    "normal21": -3.1,
+    "beyondNormal": -6.17,
     "uPre30": -20.89,
     "uPre14": -16.63,
     "uPre7": -13.56,
@@ -72475,8 +72475,8 @@
     "post7": 4.18,
     "post14": -2.38,
     "around": -9.1,
-    "normal21": -3.91,
-    "beyondNormal": -5.4,
+    "normal21": -3.9,
+    "beyondNormal": -5.41,
     "uPre30": -4.37,
     "uPre14": -17.32,
     "uPre7": -10.08,
@@ -72664,7 +72664,7 @@
     "-1:0": {
      "ret": -1.73,
      "mae": 1.73,
-     "edge": -2.14
+     "edge": -2.11
     },
     "-1:3": {
      "ret": -1.37,
@@ -72797,8 +72797,8 @@
     "post7": 1.05,
     "post14": -1.46,
     "around": -2.81,
-    "normal21": -5.86,
-    "beyondNormal": 3.24,
+    "normal21": -5.88,
+    "beyondNormal": 3.27,
     "uPre30": -14.27,
     "uPre14": -23.09,
     "uPre7": -7.34,
@@ -73116,8 +73116,8 @@
     "post7": -14.55,
     "post14": -4.57,
     "around": -41.26,
-    "normal21": -10.04,
-    "beyondNormal": -34.7,
+    "normal21": -10.03,
+    "beyondNormal": -34.71,
     "uPre30": -41.8,
     "uPre14": -3.3,
     "uPre7": -40.25,
@@ -73305,7 +73305,7 @@
     "-1:0": {
      "ret": 2.36,
      "mae": 0.0,
-     "edge": 1.3
+     "edge": 1.42
     },
     "-1:3": {
      "ret": -4.83,
@@ -73424,8 +73424,8 @@
     "post7": -2.38,
     "post14": 4.95,
     "around": -32.15,
-    "normal21": -0.49,
-    "beyondNormal": -31.81,
+    "normal21": -0.47,
+    "beyondNormal": -31.83,
     "uPre30": -33.64,
     "uPre14": -41.95,
     "uPre7": -37.24,
@@ -74076,8 +74076,8 @@
     "post7": -13.96,
     "post14": -18.88,
     "around": -12.72,
-    "normal21": -10.77,
-    "beyondNormal": -2.19,
+    "normal21": -10.76,
+    "beyondNormal": -2.2,
     "uPre30": -21.63,
     "uPre14": 15.22,
     "uPre7": 7.71,
@@ -74394,8 +74394,8 @@
     "post7": -3.86,
     "post14": -1.98,
     "around": -5.46,
-    "normal21": -13.97,
-    "beyondNormal": 9.9,
+    "normal21": -13.98,
+    "beyondNormal": 9.91,
     "uPre30": -2.9,
     "uPre14": -6.64,
     "uPre7": -8.08,
@@ -74699,8 +74699,8 @@
     "post7": -12.1,
     "post14": -16.42,
     "around": -6.45,
-    "normal21": -1.67,
-    "beyondNormal": -4.86,
+    "normal21": -1.71,
+    "beyondNormal": -4.82,
     "uPre30": -10.25,
     "uPre14": 7.19,
     "uPre7": 6.67,
@@ -75023,8 +75023,8 @@
     "post7": -1.81,
     "post14": 31.13,
     "around": 13.29,
-    "normal21": -6.81,
-    "beyondNormal": 21.57,
+    "normal21": -6.8,
+    "beyondNormal": 21.56,
     "uPre30": 16.9,
     "uPre14": -1.5,
     "uPre7": -17.66,
@@ -75147,7 +75147,7 @@
     "-30:14": {
      "ret": -55.75,
      "mae": 55.75,
-     "edge": -65.96
+     "edge": -65.81
     },
     "-14:0": {
      "ret": 1.5,
@@ -75337,8 +75337,8 @@
     "post7": -49.46,
     "post14": -46.82,
     "around": -42.19,
-    "normal21": -4.24,
-    "beyondNormal": -39.63,
+    "normal21": -4.32,
+    "beyondNormal": -39.58,
     "uPre30": -35.73,
     "uPre14": -33.85,
     "uPre7": 3.33,
@@ -75649,8 +75649,8 @@
     "post7": -24.97,
     "post14": -27.53,
     "around": -27.7,
-    "normal21": -3.23,
-    "beyondNormal": -25.29,
+    "normal21": -3.24,
+    "beyondNormal": -25.28,
     "uPre30": -17.15,
     "uPre14": -12.93,
     "uPre7": -7.07,
@@ -75952,7 +75952,7 @@
     "post14": -51.71,
     "around": -41.95,
     "normal21": -8.93,
-    "beyondNormal": -36.26,
+    "beyondNormal": -36.25,
     "uPre30": 207.39,
     "uPre14": 60.51,
     "uPre7": 15.6,
@@ -76275,8 +76275,8 @@
     "post7": 197.26,
     "post14": 187.76,
     "around": 173.26,
-    "normal21": 14.28,
-    "beyondNormal": 139.11,
+    "normal21": 14.22,
+    "beyondNormal": 139.24,
     "uPre30": 0.96,
     "uPre14": -4.21,
     "uPre7": -5.68,
@@ -76444,7 +76444,7 @@
     "-3:0": {
      "ret": 6.28,
      "mae": 1.88,
-     "edge": 5.26
+     "edge": 5.24
     },
     "-3:3": {
      "ret": -104.71,
@@ -76484,7 +76484,7 @@
     "0:3": {
      "ret": -118.42,
      "mae": 118.42,
-     "edge": -119.44
+     "edge": -119.46
     },
     "0:7": {
      "ret": -192.12,
@@ -76577,8 +76577,8 @@
     "post7": -0.78,
     "post14": -4.77,
     "around": 4.2,
-    "normal21": -6.44,
-    "beyondNormal": 11.38,
+    "normal21": -6.43,
+    "beyondNormal": 11.36,
     "uPre30": 7.46,
     "uPre14": 9.23,
     "uPre7": 8.67,
@@ -76766,7 +76766,7 @@
     "-1:0": {
      "ret": -1.51,
      "mae": 1.51,
-     "edge": -1.7
+     "edge": -1.66
     },
     "-1:3": {
      "ret": -0.79,
@@ -77238,8 +77238,8 @@
     "post7": 5.4,
     "post14": -3.1,
     "around": -3.89,
-    "normal21": 1.91,
-    "beyondNormal": -5.69,
+    "normal21": 1.97,
+    "beyondNormal": -5.74,
     "uPre30": 28.36,
     "uPre14": 9.21,
     "uPre7": -1.48,
@@ -77549,8 +77549,8 @@
     "post7": -1.4,
     "post14": 18.72,
     "around": 23.16,
-    "normal21": -15.63,
-    "beyondNormal": 45.98,
+    "normal21": -15.65,
+    "beyondNormal": 46.0,
     "uPre30": -12.65,
     "uPre14": 6.91,
     "uPre7": 5.5,
@@ -77975,7 +77975,7 @@
     "-30:14": {
      "ret": 54.86,
      "mae": 113.97,
-     "edge": 39.35
+     "edge": 39.59
     },
     "-14:0": {
      "ret": 0.37,
@@ -78177,7 +78177,7 @@
     "post14": -8.19,
     "around": -8.23,
     "normal21": -1.55,
-    "beyondNormal": -6.79,
+    "beyondNormal": -6.78,
     "uPre30": -10.13,
     "uPre14": 13.37,
     "uPre7": 5.9,
@@ -78494,8 +78494,8 @@
     "post7": -6.84,
     "post14": -10.16,
     "around": -6.0,
-    "normal21": -3.9,
-    "beyondNormal": -2.18,
+    "normal21": -3.91,
+    "beyondNormal": -2.17,
     "uPre30": 0.94,
     "uPre14": 13.03,
     "uPre7": 14.18,
@@ -79133,8 +79133,8 @@
     "post7": -3.88,
     "post14": -6.28,
     "around": -6.57,
-    "normal21": -1.9,
-    "beyondNormal": -4.76,
+    "normal21": -1.88,
+    "beyondNormal": -4.78,
     "uPre30": -9.75,
     "uPre14": 4.48,
     "uPre7": 10.09,
@@ -79455,8 +79455,8 @@
     "post7": 10.31,
     "post14": -5.09,
     "around": -9.04,
-    "normal21": -5.15,
-    "beyondNormal": -4.1,
+    "normal21": -5.17,
+    "beyondNormal": -4.08,
     "uPre30": -14.7,
     "uPre14": -6.69,
     "uPre7": 5.83,
@@ -79757,8 +79757,8 @@
     "post7": -2.3,
     "post14": -6.74,
     "around": -8.55,
-    "normal21": -3.5,
-    "beyondNormal": -5.23,
+    "normal21": -3.51,
+    "beyondNormal": -5.22,
     "uPre30": -17.4,
     "uPre14": -5.6,
     "uPre7": 3.61,
@@ -80084,8 +80084,8 @@
     "post7": 0.75,
     "post14": -1.94,
     "around": -0.74,
-    "normal21": 5.57,
-    "beyondNormal": -5.98,
+    "normal21": 5.55,
+    "beyondNormal": -5.96,
     "uPre30": 4.04,
     "uPre14": 8.22,
     "uPre7": 0.58,
@@ -81055,8 +81055,8 @@
     "post7": -7.54,
     "post14": -8.93,
     "around": -5.55,
-    "normal21": -11.4,
-    "beyondNormal": 6.6,
+    "normal21": -11.41,
+    "beyondNormal": 6.61,
     "uPre30": 3.45,
     "uPre14": -2.57,
     "uPre7": 4.06,
@@ -81377,8 +81377,8 @@
     "post7": -1.72,
     "post14": -4.8,
     "around": -7.25,
-    "normal21": -3.33,
-    "beyondNormal": -4.05,
+    "normal21": -3.31,
+    "beyondNormal": -4.07,
     "uPre30": 0.49,
     "uPre14": -3.33,
     "uPre7": 0.75,
@@ -81501,7 +81501,7 @@
     "-30:14": {
      "ret": 0.98,
      "mae": 11.94,
-     "edge": -1.98
+     "edge": -1.75
     },
     "-14:0": {
      "ret": 3.33,
@@ -81688,7 +81688,7 @@
     "post14": 30.17,
     "around": 34.5,
     "normal21": 5.15,
-    "beyondNormal": 27.91,
+    "beyondNormal": 27.92,
     "uPre30": -5.92,
     "uPre14": 5.23,
     "uPre7": 8.49,
@@ -81998,8 +81998,8 @@
     "post7": -11.95,
     "post14": 0.57,
     "around": -20.78,
-    "normal21": -2.85,
-    "beyondNormal": -18.46,
+    "normal21": -2.84,
+    "beyondNormal": -18.47,
     "uPre30": -26.14,
     "uPre14": -16.13,
     "uPre7": -17.29,
@@ -82657,8 +82657,8 @@
     "post7": -7.18,
     "post14": -5.94,
     "around": -5.75,
-    "normal21": -3.12,
-    "beyondNormal": -2.71,
+    "normal21": -3.1,
+    "beyondNormal": -2.74,
     "uPre30": -16.17,
     "uPre14": 2.17,
     "uPre7": 7.44,
@@ -82969,8 +82969,8 @@
     "post7": -4.93,
     "post14": -3.63,
     "around": 2.62,
-    "normal21": -3.12,
-    "beyondNormal": 5.93,
+    "normal21": -3.1,
+    "beyondNormal": 5.9,
     "uPre30": -32.57,
     "uPre14": -14.77,
     "uPre7": 7.52,
@@ -83584,7 +83584,7 @@
     "post7": -0.34,
     "post14": 6.2,
     "around": 1.1,
-    "normal21": -3.91,
+    "normal21": -3.9,
     "beyondNormal": 5.21,
     "uPre30": -30.82,
     "uPre14": -11.97,
@@ -83773,7 +83773,7 @@
     "-1:0": {
      "ret": -0.19,
      "mae": 0.19,
-     "edge": -0.6
+     "edge": -0.57
     },
     "-1:3": {
      "ret": -0.81,
@@ -84219,8 +84219,8 @@
     "post7": -3.09,
     "post14": -4.74,
     "around": -8.09,
-    "normal21": -5.86,
-    "beyondNormal": -2.36,
+    "normal21": -5.88,
+    "beyondNormal": -2.34,
     "uPre30": -60.02,
     "uPre14": -36.47,
     "uPre7": -6.51,
@@ -84514,8 +84514,8 @@
     "post7": 25.11,
     "post14": 3.88,
     "around": -31.76,
-    "normal21": -10.77,
-    "beyondNormal": -23.53,
+    "normal21": -10.76,
+    "beyondNormal": -23.54,
     "uPre30": -38.56,
     "uPre14": -27.72,
     "uPre7": -32.9,
@@ -84832,8 +84832,8 @@
     "post7": -0.54,
     "post14": -4.43,
     "around": -12.88,
-    "normal21": -13.97,
-    "beyondNormal": 1.27,
+    "normal21": -13.98,
+    "beyondNormal": 1.28,
     "uPre30": -15.65,
     "uPre14": -1.59,
     "uPre7": -13.55,
@@ -85143,8 +85143,8 @@
     "post7": 23.76,
     "post14": 4.31,
     "around": -0.87,
-    "normal21": -6.81,
-    "beyondNormal": 6.37,
+    "normal21": -6.8,
+    "beyondNormal": 6.36,
     "uPre30": -26.6,
     "uPre14": 7.22,
     "uPre7": -9.86,
@@ -85267,7 +85267,7 @@
     "-30:14": {
      "ret": 16.53,
      "mae": 22.35,
-     "edge": 6.32
+     "edge": 6.47
     },
     "-14:0": {
      "ret": -7.22,
@@ -85463,8 +85463,8 @@
     "post7": 3.4,
     "post14": -0.98,
     "around": -5.45,
-    "normal21": -3.23,
-    "beyondNormal": -2.3,
+    "normal21": -3.24,
+    "beyondNormal": -2.29,
     "uPre30": -43.4,
     "uPre14": -6.7,
     "uPre7": -9.5,
@@ -85765,8 +85765,8 @@
     "post7": 0.81,
     "post14": -1.89,
     "around": 2.75,
-    "normal21": -6.44,
-    "beyondNormal": 9.83,
+    "normal21": -6.43,
+    "beyondNormal": 9.81,
     "uPre30": -14.05,
     "uPre14": 17.04,
     "uPre7": 5.86,
@@ -85954,7 +85954,7 @@
     "-1:0": {
      "ret": 6.37,
      "mae": 0.0,
-     "edge": 6.18
+     "edge": 6.22
     },
     "-1:3": {
      "ret": 5.91,
@@ -86445,8 +86445,8 @@
     "post7": 4.62,
     "post14": 17.21,
     "around": -9.43,
-    "normal21": 1.91,
-    "beyondNormal": -11.13,
+    "normal21": 1.97,
+    "beyondNormal": -11.18,
     "uPre30": -15.83,
     "uPre14": 2.72,
     "uPre7": -21.89,
@@ -86782,7 +86782,7 @@
     "post14": -20.14,
     "around": -2.17,
     "normal21": -1.55,
-    "beyondNormal": -0.63,
+    "beyondNormal": -0.62,
     "uPre30": -3.0,
     "uPre14": 10.5,
     "uPre7": 20.22,
@@ -87099,8 +87099,8 @@
     "post7": -7.3,
     "post14": -3.76,
     "around": 12.38,
-    "normal21": -3.9,
-    "beyondNormal": 16.94,
+    "normal21": -3.91,
+    "beyondNormal": 16.96,
     "uPre30": -37.94,
     "uPre14": -6.48,
     "uPre7": 14.58,
@@ -87419,8 +87419,8 @@
     "post7": 7.19,
     "post14": -0.28,
     "around": -0.41,
-    "normal21": 0.27,
-    "beyondNormal": -0.68,
+    "normal21": 0.25,
+    "beyondNormal": -0.66,
     "uPre30": -4.16,
     "uPre14": -2.32,
     "uPre7": -2.0,
@@ -88067,8 +88067,8 @@
     "post7": -17.17,
     "post14": -9.24,
     "around": -8.45,
-    "normal21": -1.9,
-    "beyondNormal": -6.68,
+    "normal21": -1.88,
+    "beyondNormal": -6.7,
     "uPre30": -45.79,
     "uPre14": -15.53,
     "uPre7": -1.45,
@@ -88390,8 +88390,8 @@
     "post7": -10.84,
     "post14": -15.68,
     "around": -13.63,
-    "normal21": -3.5,
-    "beyondNormal": -10.5,
+    "normal21": -3.51,
+    "beyondNormal": -10.49,
     "uPre30": -38.74,
     "uPre14": -6.11,
     "uPre7": 3.25,
@@ -89054,7 +89054,7 @@
     "post14": 32.37,
     "around": 74.61,
     "normal21": -9.47,
-    "beyondNormal": 92.88,
+    "beyondNormal": 92.87,
     "uPre30": -27.92,
     "uPre14": -15.35,
     "uPre7": 20.08,
@@ -89372,8 +89372,8 @@
     "post7": 7.62,
     "post14": 2.83,
     "around": -0.56,
-    "normal21": -2.76,
-    "beyondNormal": 2.26,
+    "normal21": -2.75,
+    "beyondNormal": 2.25,
     "uPre30": -36.26,
     "uPre14": -28.25,
     "uPre7": -11.97,
@@ -89703,8 +89703,8 @@
     "post7": -1.02,
     "post14": 3.99,
     "around": 17.94,
-    "normal21": -11.4,
-    "beyondNormal": 33.11,
+    "normal21": -11.41,
+    "beyondNormal": 33.12,
     "uPre30": -22.15,
     "uPre14": -17.31,
     "uPre7": 3.83,
@@ -90036,8 +90036,8 @@
     "post7": 12.68,
     "post14": 21.16,
     "around": 13.14,
-    "normal21": -3.33,
-    "beyondNormal": 17.04,
+    "normal21": -3.31,
+    "beyondNormal": 17.02,
     "uPre30": -36.4,
     "uPre14": -21.05,
     "uPre7": -21.96,
@@ -90160,7 +90160,7 @@
     "-30:14": {
      "ret": 25.43,
      "mae": 12.79,
-     "edge": 22.47
+     "edge": 22.7
     },
     "-14:0": {
      "ret": 21.05,
@@ -90346,8 +90346,8 @@
     "post7": 4.04,
     "post14": 11.64,
     "around": 15.94,
-    "normal21": -11.45,
-    "beyondNormal": 30.93,
+    "normal21": -11.43,
+    "beyondNormal": 30.9,
     "uPre30": 7.79,
     "uPre14": -25.66,
     "uPre7": -22.96,
@@ -91295,8 +91295,8 @@
     "post7": -8.86,
     "post14": -5.4,
     "around": -10.71,
-    "normal21": -3.12,
-    "beyondNormal": -7.83,
+    "normal21": -3.1,
+    "beyondNormal": -7.86,
     "uPre30": -47.12,
     "uPre14": -25.66,
     "uPre7": -22.7,
@@ -91607,8 +91607,8 @@
     "post7": -3.72,
     "post14": -0.31,
     "around": -6.06,
-    "normal21": -3.12,
-    "beyondNormal": -3.03,
+    "normal21": -3.1,
+    "beyondNormal": -3.06,
     "uPre30": -42.48,
     "uPre14": -31.26,
     "uPre7": -16.35,
@@ -92222,8 +92222,8 @@
     "post7": -0.52,
     "post14": 1.54,
     "around": -11.52,
-    "normal21": -3.91,
-    "beyondNormal": -7.92,
+    "normal21": -3.9,
+    "beyondNormal": -7.93,
     "uPre30": -20.61,
     "uPre14": -34.42,
     "uPre7": -23.13,
@@ -92411,7 +92411,7 @@
     "-1:0": {
      "ret": 9.49,
      "mae": 0.0,
-     "edge": 9.08
+     "edge": 9.11
     },
     "-1:3": {
      "ret": 12.5,
@@ -92523,8 +92523,8 @@
     "post7": -10.34,
     "post14": -11.66,
     "around": -19.01,
-    "normal21": -5.86,
-    "beyondNormal": -13.96,
+    "normal21": -5.88,
+    "beyondNormal": -13.95,
     "uPre30": -2.11,
     "uPre14": -22.71,
     "uPre7": -13.89,
@@ -92818,8 +92818,8 @@
     "post7": 1.33,
     "post14": 7.85,
     "around": -11.15,
-    "normal21": -0.49,
-    "beyondNormal": -10.71,
+    "normal21": -0.47,
+    "beyondNormal": -10.73,
     "uPre30": -34.03,
     "uPre14": -31.82,
     "uPre7": -22.08,
@@ -93153,7 +93153,7 @@
     "post14": -17.52,
     "around": -12.59,
     "normal21": -5.73,
-    "beyondNormal": -7.28,
+    "beyondNormal": -7.27,
     "uPre30": 14.26,
     "uPre14": -5.23,
     "uPre7": 6.85,
@@ -93454,8 +93454,8 @@
     "post7": -3.64,
     "post14": -9.34,
     "around": -7.2,
-    "normal21": -3.3,
-    "beyondNormal": -4.03,
+    "normal21": -3.31,
+    "beyondNormal": -4.02,
     "uPre30": 3.26,
     "uPre14": 1.72,
     "uPre7": -5.01,
@@ -93648,7 +93648,7 @@
     "-1:3": {
      "ret": 1.56,
      "mae": 0.0,
-     "edge": 0.76
+     "edge": 0.8
     },
     "-1:7": {
      "ret": 16.16,
@@ -93791,8 +93791,8 @@
     "post7": -2.51,
     "post14": 48.11,
     "around": 22.52,
-    "normal21": -10.77,
-    "beyondNormal": 37.3,
+    "normal21": -10.76,
+    "beyondNormal": 37.29,
     "uPre30": 9.11,
     "uPre14": -2.41,
     "uPre7": -23.23,
@@ -94109,8 +94109,8 @@
     "post7": -19.04,
     "post14": -1.5,
     "around": -4.59,
-    "normal21": -13.97,
-    "beyondNormal": 10.91,
+    "normal21": -13.98,
+    "beyondNormal": 10.92,
     "uPre30": 2.55,
     "uPre14": -3.46,
     "uPre7": -8.92,
@@ -94420,8 +94420,8 @@
     "post7": -6.75,
     "post14": -16.72,
     "around": -18.33,
-    "normal21": -6.81,
-    "beyondNormal": -12.36,
+    "normal21": -6.8,
+    "beyondNormal": -12.37,
     "uPre30": -3.21,
     "uPre14": -19.69,
     "uPre7": -7.79,
@@ -94544,7 +94544,7 @@
     "-30:14": {
      "ret": 37.39,
      "mae": 55.88,
-     "edge": 27.18
+     "edge": 27.33
     },
     "-14:0": {
      "ret": 19.69,
@@ -94740,8 +94740,8 @@
     "post7": -11.6,
     "post14": -22.14,
     "around": -26.6,
-    "normal21": -3.23,
-    "beyondNormal": -24.15,
+    "normal21": -3.24,
+    "beyondNormal": -24.14,
     "uPre30": -24.2,
     "uPre14": -17.91,
     "uPre7": -11.75,
@@ -95380,8 +95380,8 @@
     "post7": -27.54,
     "post14": -3.19,
     "around": 5.92,
-    "normal21": -7.74,
-    "beyondNormal": 14.81,
+    "normal21": -7.76,
+    "beyondNormal": 14.83,
     "uPre30": 17.56,
     "uPre14": 21.97,
     "uPre7": 1.0,
@@ -95695,7 +95695,7 @@
     "post14": -61.35,
     "around": -13.92,
     "normal21": -8.93,
-    "beyondNormal": -5.48,
+    "beyondNormal": -5.47,
     "uPre30": 703.51,
     "uPre14": 163.5,
     "uPre7": 105.61,
@@ -96009,8 +96009,8 @@
     "post7": 0.64,
     "post14": 19.77,
     "around": 29.77,
-    "normal21": -6.44,
-    "beyondNormal": 38.7,
+    "normal21": -6.45,
+    "beyondNormal": 38.72,
     "uPre30": 205.55,
     "uPre14": 170.73,
     "uPre7": 0.38,
@@ -96333,8 +96333,8 @@
     "post7": -6.06,
     "post14": -7.69,
     "around": -26.1,
-    "normal21": -6.44,
-    "beyondNormal": -21.01,
+    "normal21": -6.43,
+    "beyondNormal": -21.02,
     "uPre30": 1.19,
     "uPre14": -5.47,
     "uPre7": -18.75,
@@ -96522,7 +96522,7 @@
     "-1:0": {
      "ret": 3.99,
      "mae": 0.0,
-     "edge": 3.8
+     "edge": 3.84
     },
     "-1:3": {
      "ret": 17.26,
@@ -96652,8 +96652,8 @@
     "post7": 18.09,
     "post14": 18.95,
     "around": 38.06,
-    "normal21": 1.91,
-    "beyondNormal": 35.47,
+    "normal21": 1.97,
+    "beyondNormal": 35.4,
     "uPre30": 32.8,
     "uPre14": 25.24,
     "uPre7": 17.8,
@@ -96980,7 +96980,7 @@
     "post14": 14.22,
     "around": 16.0,
     "normal21": -1.55,
-    "beyondNormal": 17.82,
+    "beyondNormal": 17.83,
     "uPre30": 17.74,
     "uPre14": 2.65,
     "uPre7": 6.48,
@@ -97297,8 +97297,8 @@
     "post7": -7.99,
     "post14": 2.53,
     "around": -2.46,
-    "normal21": -1.93,
-    "beyondNormal": -0.54,
+    "normal21": -1.94,
+    "beyondNormal": -0.53,
     "uPre30": -8.17,
     "uPre14": 3.71,
     "uPre7": 0.35,
@@ -97599,8 +97599,8 @@
     "post7": -13.33,
     "post14": -17.87,
     "around": -20.84,
-    "normal21": -3.9,
-    "beyondNormal": -17.63,
+    "normal21": -3.91,
+    "beyondNormal": -17.62,
     "uPre30": 30.56,
     "uPre14": 12.76,
     "uPre7": 1.67,
@@ -98599,8 +98599,8 @@
     "post7": -9.93,
     "post14": -15.0,
     "around": -18.8,
-    "normal21": -1.9,
-    "beyondNormal": -17.23,
+    "normal21": -1.88,
+    "beyondNormal": -17.24,
     "uPre30": 4.96,
     "uPre14": 3.95,
     "uPre7": 0.32,
@@ -98922,8 +98922,8 @@
     "post7": 0.4,
     "post14": 0.24,
     "around": -18.48,
-    "normal21": -0.65,
-    "beyondNormal": -17.95,
+    "normal21": -0.66,
+    "beyondNormal": -17.94,
     "uPre30": -11.05,
     "uPre14": -34.55,
     "uPre7": -13.68,
@@ -99224,8 +99224,8 @@
     "post7": -2.39,
     "post14": -15.05,
     "around": -18.8,
-    "normal21": -3.5,
-    "beyondNormal": -15.86,
+    "normal21": -3.51,
+    "beyondNormal": -15.85,
     "uPre30": -9.68,
     "uPre14": 11.82,
     "uPre7": 1.46,
@@ -100184,7 +100184,7 @@
     "post14": -19.08,
     "around": -23.96,
     "normal21": -7.87,
-    "beyondNormal": -17.46,
+    "beyondNormal": -17.47,
     "uPre30": -15.0,
     "uPre14": -2.99,
     "uPre7": -5.43,
@@ -100496,8 +100496,8 @@
     "post7": 4.81,
     "post14": 3.46,
     "around": 7.14,
-    "normal21": -11.4,
-    "beyondNormal": 20.92,
+    "normal21": -11.41,
+    "beyondNormal": 20.93,
     "uPre30": -10.68,
     "uPre14": 0.64,
     "uPre7": 6.19,
@@ -101163,8 +101163,8 @@
     "post7": -4.28,
     "post14": -23.74,
     "around": -10.75,
-    "normal21": -3.33,
-    "beyondNormal": -7.67,
+    "normal21": -3.31,
+    "beyondNormal": -7.69,
     "uPre30": 12.53,
     "uPre14": 37.18,
     "uPre7": 24.04,
@@ -101287,7 +101287,7 @@
     "-30:14": {
      "ret": 18.98,
      "mae": 12.53,
-     "edge": 16.02
+     "edge": 16.25
     },
     "-14:0": {
      "ret": -37.18,
@@ -101795,8 +101795,8 @@
     "post7": -8.54,
     "post14": -22.39,
     "around": -10.13,
-    "normal21": -3.12,
-    "beyondNormal": -7.23,
+    "normal21": -3.1,
+    "beyondNormal": -7.26,
     "uPre30": -3.19,
     "uPre14": 19.57,
     "uPre7": 21.09,
@@ -102124,8 +102124,8 @@
     "post7": 4.5,
     "post14": -4.5,
     "around": 2.54,
-    "normal21": -3.12,
-    "beyondNormal": 5.85,
+    "normal21": -3.1,
+    "beyondNormal": 5.82,
     "uPre30": -19.24,
     "uPre14": 10.31,
     "uPre7": 9.3,
@@ -102745,8 +102745,8 @@
     "post7": 24.35,
     "post14": 19.87,
     "around": 18.95,
-    "normal21": -3.91,
-    "beyondNormal": 23.79,
+    "normal21": -3.9,
+    "beyondNormal": 23.78,
     "uPre30": 4.32,
     "uPre14": -1.27,
     "uPre7": -0.78,
@@ -102934,7 +102934,7 @@
     "-1:0": {
      "ret": 2.01,
      "mae": 0.0,
-     "edge": 1.6
+     "edge": 1.63
     },
     "-1:3": {
      "ret": -16.2,
@@ -103064,8 +103064,8 @@
     "post7": 15.07,
     "post14": 26.02,
     "around": 25.31,
-    "normal21": -5.86,
-    "beyondNormal": 33.12,
+    "normal21": -5.88,
+    "beyondNormal": 33.14,
     "uPre30": -14.94,
     "uPre14": -7.36,
     "uPre7": 0.42,
@@ -103377,8 +103377,8 @@
     "post7": 5.06,
     "post14": 2.77,
     "around": 13.01,
-    "normal21": -0.49,
-    "beyondNormal": 13.57,
+    "normal21": -0.47,
+    "beyondNormal": 13.54,
     "uPre30": -10.7,
     "uPre14": -9.93,
     "uPre7": 8.3,
@@ -103700,8 +103700,8 @@
     "post7": -3.33,
     "post14": 1.48,
     "around": 2.33,
-    "normal21": -10.77,
-    "beyondNormal": 14.68,
+    "normal21": -10.76,
+    "beyondNormal": 14.66,
     "uPre30": -67.18,
     "uPre14": -19.66,
     "uPre7": 2.9,
@@ -104352,8 +104352,8 @@
     "post7": 4.35,
     "post14": 1.39,
     "around": -24.07,
-    "normal21": -13.97,
-    "beyondNormal": -11.74,
+    "normal21": -13.98,
+    "beyondNormal": -11.73,
     "uPre30": -27.07,
     "uPre14": -23.36,
     "uPre7": -23.9,
@@ -104663,8 +104663,8 @@
     "post7": 21.86,
     "post14": 28.68,
     "around": 34.64,
-    "normal21": -6.81,
-    "beyondNormal": 44.48,
+    "normal21": -6.8,
+    "beyondNormal": 44.46,
     "uPre30": -33.86,
     "uPre14": -21.84,
     "uPre7": 6.32,
@@ -104787,7 +104787,7 @@
     "-30:14": {
      "ret": 11.3,
      "mae": 10.81,
-     "edge": 1.09
+     "edge": 1.24
     },
     "-14:0": {
      "ret": 21.84,
@@ -104983,8 +104983,8 @@
     "post7": -12.3,
     "post14": -1.53,
     "around": 5.21,
-    "normal21": -3.23,
-    "beyondNormal": 8.72,
+    "normal21": -3.24,
+    "beyondNormal": 8.73,
     "uPre30": -40.05,
     "uPre14": -7.24,
     "uPre7": 9.41,
@@ -105305,8 +105305,8 @@
     "post7": -0.75,
     "post14": 3.64,
     "around": -12.44,
-    "normal21": -6.44,
-    "beyondNormal": -6.41,
+    "normal21": -6.43,
+    "beyondNormal": -6.42,
     "uPre30": -34.87,
     "uPre14": -21.46,
     "uPre7": -17.55,
@@ -105494,7 +105494,7 @@
     "-1:0": {
      "ret": -4.78,
      "mae": 4.78,
-     "edge": -4.97
+     "edge": -4.93
     },
     "-1:3": {
      "ret": -3.21,
@@ -105624,8 +105624,8 @@
     "post7": -7.23,
     "post14": -2.91,
     "around": -8.92,
-    "normal21": 1.91,
-    "beyondNormal": -10.63,
+    "normal21": 1.97,
+    "beyondNormal": -10.68,
     "uPre30": -3.52,
     "uPre14": -1.43,
     "uPre7": -8.45,
@@ -106271,7 +106271,7 @@
     "post7": -12.85,
     "post14": -11.72,
     "around": -25.48,
-    "normal21": -3.9,
+    "normal21": -3.91,
     "beyondNormal": -22.45,
     "uPre30": -18.96,
     "uPre14": -17.37,
@@ -106601,7 +106601,7 @@
     "post14": 0.79,
     "around": -10.98,
     "normal21": -3.57,
-    "beyondNormal": -7.69,
+    "beyondNormal": -7.68,
     "uPre30": -43.69,
     "uPre14": -17.1,
     "uPre7": -16.41,
@@ -106910,8 +106910,8 @@
     "post7": -7.22,
     "post14": -4.35,
     "around": -6.87,
-    "normal21": -1.9,
-    "beyondNormal": -5.07,
+    "normal21": -1.88,
+    "beyondNormal": -5.09,
     "uPre30": -18.23,
     "uPre14": 1.65,
     "uPre7": -7.16,
@@ -107233,8 +107233,8 @@
     "post7": -23.26,
     "post14": -20.74,
     "around": -24.39,
-    "normal21": -3.5,
-    "beyondNormal": -21.65,
+    "normal21": -3.51,
+    "beyondNormal": -21.64,
     "uPre30": -39.14,
     "uPre14": -16.36,
     "uPre7": -6.95,
@@ -108845,7 +108845,7 @@
     "post7": -2.55,
     "post14": -20.7,
     "around": -30.61,
-    "normal21": -11.4,
+    "normal21": -11.41,
     "beyondNormal": -21.68,
     "uPre30": -32.55,
     "uPre14": -17.94,
@@ -109193,8 +109193,8 @@
     "post7": -12.79,
     "post14": -18.04,
     "around": -21.17,
-    "normal21": -3.33,
-    "beyondNormal": -18.45,
+    "normal21": -3.31,
+    "beyondNormal": -18.47,
     "uPre30": -39.77,
     "uPre14": -3.52,
     "uPre7": -5.51,
@@ -109317,7 +109317,7 @@
     "-30:14": {
      "ret": 51.12,
      "mae": 10.85,
-     "edge": 48.16
+     "edge": 48.39
     },
     "-14:0": {
      "ret": 3.52,
@@ -109507,8 +109507,8 @@
     "post7": -19.38,
     "post14": -33.31,
     "around": -32.74,
-    "normal21": -11.45,
-    "beyondNormal": -24.04,
+    "normal21": -11.43,
+    "beyondNormal": -24.06,
     "uPre30": -41.42,
     "uPre14": -13.36,
     "uPre7": -0.97,
@@ -109809,8 +109809,8 @@
     "post7": -6.8,
     "post14": -24.94,
     "around": -26.26,
-    "normal21": -3.12,
-    "beyondNormal": -23.88,
+    "normal21": -3.1,
+    "beyondNormal": -23.9,
     "uPre30": -11.03,
     "uPre14": 11.83,
     "uPre7": -0.9,
@@ -110115,8 +110115,8 @@
     "post7": -30.84,
     "post14": -43.72,
     "around": -59.95,
-    "normal21": -7.02,
-    "beyondNormal": -56.93,
+    "normal21": -7.05,
+    "beyondNormal": -56.91,
     "uPre30": -23.49,
     "uPre14": -5.35,
     "uPre7": -28.22,
@@ -110420,8 +110420,8 @@
     "post7": -19.44,
     "post14": -34.17,
     "around": -36.64,
-    "normal21": -18.88,
-    "beyondNormal": -21.89,
+    "normal21": -18.9,
+    "beyondNormal": -21.88,
     "uPre30": -23.29,
     "uPre14": -6.26,
     "uPre7": 0.67,
@@ -110723,8 +110723,8 @@
     "post7": 6.8,
     "post14": -10.12,
     "around": -15.22,
-    "normal21": -3.12,
-    "beyondNormal": -12.49,
+    "normal21": -3.1,
+    "beyondNormal": -12.51,
     "uPre30": -37.3,
     "uPre14": -6.31,
     "uPre7": -7.75,
@@ -111025,8 +111025,8 @@
     "post7": 86.14,
     "post14": 107.68,
     "around": 134.93,
-    "normal21": -0.76,
-    "beyondNormal": 136.73,
+    "normal21": -0.71,
+    "beyondNormal": 136.61,
     "uPre30": 698.98,
     "uPre14": 132.71,
     "uPre7": 17.84,
@@ -111658,8 +111658,8 @@
     "post7": 5.32,
     "post14": 6.24,
     "around": 12.03,
-    "normal21": -3.91,
-    "beyondNormal": 16.59,
+    "normal21": -3.9,
+    "beyondNormal": 16.58,
     "uPre30": -36.5,
     "uPre14": -10.6,
     "uPre7": 9.85,
@@ -111847,7 +111847,7 @@
     "-1:0": {
      "ret": -0.07,
      "mae": 0.07,
-     "edge": -0.48
+     "edge": -0.45
     },
     "-1:3": {
      "ret": -13.13,
@@ -111987,8 +111987,8 @@
     "post7": -2.14,
     "post14": -2.83,
     "around": -2.18,
-    "normal21": -5.86,
-    "beyondNormal": 3.91,
+    "normal21": -5.88,
+    "beyondNormal": 3.93,
     "uPre30": -18.31,
     "uPre14": -16.01,
     "uPre7": 7.99,
@@ -112920,10 +112920,6 @@
   }
  ],
  "skipped": [
-  {
-   "token": "APR",
-   "why": "no CoinGecko id"
-  },
   {
    "token": "CAPX",
    "date": "2025-12-05",

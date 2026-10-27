@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-27T10:54:28Z",
+ "generatedAt": "2026-10-27T11:12:06Z",
  "playbook": {
   "entry": -7,
   "exit": 7,
@@ -3181,5 +3181,38 @@
   "ZK": "zksync",
   "ZRO": "layerzero"
  },
+ "pumpChecks": {
+  "APR": {
+   "id": "apriori",
+   "rise": -69.5,
+   "to": "2026-10-16"
+  },
+  "COAI": {
+   "id": "chainopera-ai",
+   "rise": -19.0,
+   "to": "2026-10-18"
+  },
+  "KITE": {
+   "id": "kite-2",
+   "rise": -24.4,
+   "to": "2026-10-27"
+  },
+  "BABY": {
+   "id": "babylon",
+   "rise": 3.0,
+   "to": "2026-10-27"
+  },
+  "ALLO": {
+   "id": "allora",
+   "rise": -31.1,
+   "to": "2026-10-27"
+  },
+  "PIEVERSE": {
+   "id": "pieverse",
+   "rise": -24.3,
+   "to": "2026-10-27"
+  }
+ },
+ "pumpCheckedAt": "2026-10-27T11:13:24Z",
  "method": "Fixed playbook applied to every past unlock in the track record. Entry and exit use CoinGecko daily prices at 00:00 UTC; day 0 is the unlock date. Profit is for a short: positive when the price fell. Costs assumed: 0.10% fees for the round trip and 0.03% funding per day held. The 'with stop' version covers at the first daily close 20% above entry, so a real stop-loss order could fill earlier or later. The account curve books $1,000 per trade on its exit date. Trades are skipped when the token rose 30% or more from 30 days before the unlock to the entry day; that guard was chosen after seeing the worst losses, so results are shown with and without it. Rules were chosen from published research and this same year of data, so the first-half and second-half results and the live-tracked trades are the fairer test."
 }
