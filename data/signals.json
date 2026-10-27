@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-27T18:04:40Z",
+ "generatedAt": "2026-10-27T18:21:25Z",
  "playbook": {
   "entry": -7,
   "exit": 7,
@@ -7852,31 +7852,24 @@
    "id": "kite-2",
    "rise": -21.7,
    "to": "2026-10-27",
-   "ref": 0.118261,
-   "source": "binance-futures"
-  },
-  "BABY": {
-   "id": "babylon",
-   "rise": 6.9,
-   "to": "2026-10-27",
-   "ref": 0.014414,
+   "ref": 0.118393,
    "source": "binance-futures"
   },
   "ALLO": {
    "id": "allora",
-   "rise": -30.2,
+   "rise": -30.1,
    "to": "2026-10-27",
-   "ref": 0.185871,
+   "ref": 0.186152,
    "source": "binance-futures"
   },
   "PIEVERSE": {
    "id": "pieverse",
-   "rise": -25.1,
+   "rise": -24.2,
    "to": "2026-10-27",
-   "ref": 1.01655,
+   "ref": 1.02782,
    "source": "binance-futures"
   }
  },
- "pumpCheckedAt": "2026-10-27T18:04:40Z",
+ "pumpCheckedAt": "2026-10-27T18:22:30Z",
  "method": "Fixed playbook applied to every past unlock in the track record. Entry and exit use CoinGecko daily prices at 00:00 UTC; day 0 is the unlock date. Profit is for a short: positive when the price fell. Costs assumed: 0.10% fees for the round trip and 0.03% funding per day held. The 'with stop' version covers at the first daily close 20% above entry, so a real stop-loss order could fill earlier or later. The account curve books $1,000 per trade on its exit date. Trades are skipped when the token rose 30% or more from 30 days before the unlock to the entry day; that guard was chosen after seeing the worst losses, so results are shown with and without it. Rules were chosen from published research and this same year of data, so the first-half and second-half results and the live-tracked trades are the fairer test."
 }
