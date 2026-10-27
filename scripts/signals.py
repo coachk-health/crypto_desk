@@ -23,7 +23,7 @@ half-year, and without the three best trades, so one lucky period or token canno
 Input:  data/backtest.json (needs pathUsd per event)
 Output: data/signals.json
 """
-import json, statistics
+import json, statistics, time, urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -124,6 +124,42 @@ def max_open(trades):
     return best
 
 
+def pump_checks(rules_hits):
+    """For upcoming signals whose entry is within 14 days, the token's rise over the 23 days
+    up to the entry day (or today, if entry is ahead), from CoinGecko daily prices.
+    Saved so the page has a value even when the viewer's browser is rate-limited."""
+    out = {}
+    up = json.loads((ROOT / "data" / "unlocks.json").read_text()).get("upcoming", [])
+    today = datetime.now(timezone.utc).date()
+    for r in up:
+        pc = r.get("pctCirculating")
+        if pc is None and r.get("pctBasis") == "of circulating":
+            pc = r.get("pct")
+        facts = {"pctCirculating": pc, "investorsShare": investors_share(r.get("recipientsMix")),
+                 "firstInsiderUnlock": r.get("firstInsiderUnlock") is True}
+        if not rules_hits(facts) or not r.get("coingeckoId"):
+            continue
+        d0 = datetime.strptime(r["date"], "%Y-%m-%d").date()
+        entry, exit_ = d0 + timedelta(days=ENTRY), d0 + timedelta(days=EXIT)
+        if (entry - today).days > 14 or exit_ < today or r["token"] in out:
+            continue
+        end = min(entry, today)
+        url = f"https://api.coingecko.com/api/v3/coins/{r['coingeckoId']}/market_chart?vs_currency=usd&days=40&interval=daily"
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "coachk-crypto-desk/1.0", "Accept": "application/json"})
+            with urllib.request.urlopen(req, timeout=40) as f:
+                px = {datetime.fromtimestamp(t / 1000, timezone.utc).date(): p for t, p in json.load(f).get("prices", [])}
+        except Exception as e:  # network or rate limit: leave it to the browser check
+            print(f"pump check {r['token']}: {e}")
+            time.sleep(13)
+            continue
+        a, z = px.get(end - timedelta(days=23)), px.get(end) or (list(px.values())[-1] if px else None)
+        if a and z:
+            out[r["token"]] = {"id": r["coingeckoId"], "rise": round((z / a - 1) * 100, 1), "to": end.isoformat()}
+        time.sleep(13)
+    return out
+
+
 def main():
     bt = json.loads(BT.read_text())
     past = json.loads((ROOT / "data" / "past_unlocks.json").read_text())
@@ -195,6 +231,8 @@ def main():
         "live": stats([t for t in trades if t["live"]]),
         "curve": pts, "curveStop": pts_s, "curveNoGuard": curve(every)[0], "trades": every,
         "ids": ids,
+        "pumpChecks": pump_checks(lambda f: matched(f)),
+        "pumpCheckedAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "method": ("Fixed playbook applied to every past unlock in the track record. Entry and exit use CoinGecko "
                    "daily prices at 00:00 UTC; day 0 is the unlock date. Profit is for a short: positive when the "
                    "price fell. Costs assumed: 0.10% fees for the round trip and 0.03% funding per day held. The "

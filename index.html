@@ -742,7 +742,12 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       if (!a || !z) return (pumpCache[sig.id] = { text: 'Price history missing', cls: 'na' });
       const rise = (z / a - 1) * 100;
       return (pumpCache[sig.id] = rise >= pumpPct ? { text: 'Up ' + rise.toFixed(0) + '% in 3 weeks: skip', cls: 'bad', rise } : { text: (rise >= 0 ? 'Up ' : 'Down ') + Math.abs(rise).toFixed(0) + '% in 3 weeks: OK', cls: 'ok', rise });
-    } catch (e) { setTimeout(done, 2500); return { text: 'Price check failed, check by hand', cls: 'na' }; }
+    } catch (e) {
+      setTimeout(done, 2500);
+      const saved = (D.signals.pumpChecks || {})[sig.u.token];
+      if (saved) return { text: (saved.rise >= pumpPct ? 'Up ' + saved.rise.toFixed(0) + '% in 3 weeks: skip' : (saved.rise >= 0 ? 'Up ' : 'Down ') + Math.abs(saved.rise).toFixed(0) + '% in 3 weeks: OK') + ' (to ' + fmtDay(saved.to) + ')', cls: saved.rise >= pumpPct ? 'bad' : 'ok' };
+      return { text: 'Price check failed, check by hand', cls: 'na' };
+    }
   }
 
   function dateChart(series) {
