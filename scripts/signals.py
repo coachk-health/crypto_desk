@@ -23,11 +23,13 @@ half-year, and without the three best trades, so one lucky period or token canno
 Input:  data/backtest.json (needs pathUsd per event)
 Output: data/signals.json
 """
-import json, statistics, time, urllib.request
+import json, statistics, sys, time, urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+import levels  # noqa: E402
 BT = ROOT / "data" / "backtest.json"
 OUT = ROOT / "data" / "signals.json"
 
@@ -155,7 +157,8 @@ def pump_checks(rules_hits):
             continue
         a, z = px.get(end - timedelta(days=23)), px.get(end) or (list(px.values())[-1] if px else None)
         if a and z:
-            out[r["token"]] = {"id": r["coingeckoId"], "rise": round((z / a - 1) * 100, 1), "to": end.isoformat()}
+            out[r["token"]] = {"id": r["coingeckoId"], "rise": round((z / a - 1) * 100, 1), "to": end.isoformat(),
+                               "ref": float(f"{z:.6g}")}  # price that sets the entry zone, stop and target
         time.sleep(13)
     return out
 
@@ -198,6 +201,7 @@ def main():
             "pnlStop": rs[0] if rs else None, "stopped": rs[3] if rs else None,
             "exits": alt,
             "edgeVsRandom": (e.get("shorts") or {}).get(f"{ENTRY}:{EXIT}", {}).get("edge"),
+            "ohlc": e.get("ohlc") or None, "priceSource": e.get("priceSource"),
             "live": bool(e.get("predicted")), "check": e.get("check"),
             "momentum": momentum, "skipped": momentum is not None and momentum >= PUMP,
         })
@@ -214,6 +218,31 @@ def main():
              for z in [str(z) for z in EXITS_COMPARE]}
     edges = [t["edgeVsRandom"] for t in trades if t["edgeVsRandom"] is not None]
 
+    # Entry zone, stop and target: tested only where exchange candles (with highs and lows) exist.
+    with_c = [t for t in trades if t.get("ohlc")]
+    cells = levels.grid(with_c, split) if with_c and split else []
+    plan, plan_score = levels.pick(cells) if cells else (None, None)
+    lv = None
+    if plan:
+        for t in every:
+            r = levels.sim(levels.bars(t["ohlc"]), plan["mode"], plan["zone"], plan["stop"], plan["target"]) if t.get("ohlc") else None
+            t["plan"] = r
+        base = next(c for c in cells if c["mode"] == "market" and c["stop"] is None and c["target"] is None)
+        lv = {"plan": {k: plan[k] for k in ("mode", "zone", "stop", "target")}, "planStats": plan,
+              "baseline": base, "withCandles": len(with_c), "withoutCandles": len(trades) - len(with_c),
+              "modes": [{"mode": m, "zone": z} for m, z in levels.MODES], "stops": levels.STOPS, "targets": levels.TARGETS,
+              "grid": [{"mode": c["mode"], "zone": c["zone"], "stop": c["stop"], "target": c["target"],
+                        "n": c["all"]["n"], "win": c["all"]["win"], "median": c["all"]["median"], "worst": c["all"]["worst"],
+                        "pf": c["all"]["profitFactor"], "total": c["all"]["totalUsd"],
+                        "h1": c["first"]["totalUsd"] if c["first"] else None, "h2": c["second"]["totalUsd"] if c["second"] else None,
+                        "stops": c["all"]["stops"], "targets": c["all"]["targets"]} for c in cells],
+              "method": levels.__doc__.strip()}
+        planned = [dict(t["plan"], token=t["token"], exitDate=t["unlockDate"]) for t in trades if t.get("plan")]
+        lv["curve"] = curve([dict(p_, exitDate=(datetime.strptime(p_["exitDate"], "%Y-%m-%d") + timedelta(days=p_["exitDay"])).strftime("%Y-%m-%d")) for p_ in planned])[0]
+        lv["drawdownUsd"] = curve([dict(p_, exitDate=(datetime.strptime(p_["exitDate"], "%Y-%m-%d") + timedelta(days=p_["exitDay"])).strftime("%Y-%m-%d")) for p_ in planned])[1]
+    for t in every:
+        t.pop("ohlc", None)
+
     OUT.write_text(json.dumps({
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "playbook": {"entry": ENTRY, "exit": EXIT, "pumpPct": PUMP, "feesPct": FEES, "fundingPctPerDay": FUNDING_DAY,
@@ -229,7 +258,7 @@ def main():
                    "second": stats([t for t in trades if t["unlockDate"] >= split]) if split else None},
         "byRule": by_rule, "exitCompare": exits,
         "live": stats([t for t in trades if t["live"]]),
-        "curve": pts, "curveStop": pts_s, "curveNoGuard": curve(every)[0], "trades": every,
+        "curve": pts, "curveStop": pts_s, "curveNoGuard": curve(every)[0], "trades": every, "levels": lv,
         "ids": ids,
         "pumpChecks": pump_checks(lambda f: matched(f)),
         "pumpCheckedAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
