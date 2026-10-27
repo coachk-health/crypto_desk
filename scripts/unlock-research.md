@@ -41,7 +41,10 @@ If you cannot confirm a value, set it to null and say why in `gaps`.
    evidence of how they behaved at previous unlocks (sold OTC, moved to exchanges,
    restaked, hedged, bought back). Each claim needs its source URL in `sellerSources`.
 
-8. **CoinGecko id**: the id in the token's CoinGecko URL (coingecko.com/en/coins/<id>).
+8. **First insider unlock?** true if this tranche is the first time team or investor
+   tokens unlock (the end of their cliff), false if it is a routine later tranche, null if
+   no source says. Past data shows first insider unlocks fell hardest, so get this right.
+9. **CoinGecko API id**: shown as "API ID" on the coin's CoinGecko page. It can differ from the web address (Avalanche's web page is /coins/avalanche but its API id is avalanche-2), so use the API id.
 
 ## Output
 
@@ -49,7 +52,7 @@ Write a JSON array to the output path you were given, one object per input row:
 
 ```json
 {
-  "token": "ARB", "name": "Arbitrum", "coingeckoId": "arbitrum",
+  "token": "ARB", "name": "Arbitrum", "coingeckoId": "arbitrum", "firstInsiderUnlock": false,
   "date": "2026-11-16", "timeUTC": "13:00" or null,
   "stillUpcoming": true,
   "amountTokens": 92650000, "amountText": "92.65M ARB",

@@ -5,7 +5,7 @@ name: Past unlock track record
 on:
   push:
     branches: [main]
-    paths: ["data/past_unlocks.json", "scripts/backtest.py", "scripts/score.py"]
+    paths: ["data/past_unlocks.json", "scripts/backtest.py", "scripts/score.py", "scripts/signals.py"]
   schedule:
     - cron: "40 1 * * *"
   workflow_dispatch:
@@ -29,11 +29,13 @@ jobs:
           python-version: "3.12"
       - name: Measure past unlocks
         run: python3 scripts/backtest.py
+      - name: Replay the trade-signal playbook
+        run: python3 scripts/signals.py
       - name: Save results and publish
         run: |
           git config user.name "crypto-desk-bot"
           git config user.email "crypto-desk-bot@users.noreply.github.com"
-          git add data/backtest.json data/backtest-log.txt data/past_unlocks.json
+          git add data/backtest.json data/backtest-log.txt data/past_unlocks.json data/signals.json
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "Track record update $(date -u +%Y-%m-%d)"
           for i in 1 2 3; do

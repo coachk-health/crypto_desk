@@ -1,0 +1,3185 @@
+{
+ "generatedAt": "2026-10-27T10:38:48Z",
+ "playbook": {
+  "entry": -7,
+  "exit": 7,
+  "pumpPct": 30.0,
+  "feesPct": 0.1,
+  "fundingPctPerDay": 0.03,
+  "stopPct": 20.0,
+  "notional": 1000,
+  "rules": {
+   "big": {
+    "label": "10%+ of circulating supply",
+    "min": 10,
+    "field": "pctCirculating"
+   },
+   "investors": {
+    "label": "Mostly to investors (60%+)",
+    "min": 0.6,
+    "field": "investorsShare"
+   },
+   "first": {
+    "label": "First insider unlock",
+    "equals": true,
+    "field": "firstInsiderUnlock"
+   }
+  }
+ },
+ "summary": {
+  "n": 52,
+  "tokens": 38,
+  "win": 71,
+  "median": 11.95,
+  "mean": 8.21,
+  "best": 69.19,
+  "worst": -176.03,
+  "profitFactor": 2.31,
+  "totalUsd": 4270,
+  "totalUsdWithoutBest3": 2471
+ },
+ "summaryStop": {
+  "n": 52,
+  "tokens": 38,
+  "win": 65,
+  "median": 9.34,
+  "mean": 5.59,
+  "best": 69.19,
+  "worst": -106.4,
+  "profitFactor": 1.8,
+  "totalUsd": 2908,
+  "totalUsdWithoutBest3": 1117
+ },
+ "summaryNoGuard": {
+  "n": 62,
+  "tokens": 46,
+  "win": 69,
+  "median": 11.12,
+  "mean": 5.05,
+  "best": 69.19,
+  "worst": -176.03,
+  "profitFactor": 1.54,
+  "totalUsd": 3128,
+  "totalUsdWithoutBest3": 1249
+ },
+ "skippedStats": {
+  "n": 10,
+  "tokens": 10,
+  "win": 60,
+  "median": 6.52,
+  "mean": -11.42,
+  "best": 58.37,
+  "worst": -130.3,
+  "profitFactor": 0.55,
+  "totalUsd": -1142,
+  "totalUsdWithoutBest3": -2299
+ },
+ "drawdownUsdNoGuard": -2166,
+ "drawdownUsd": -1819,
+ "drawdownUsdStop": -1403,
+ "maxOpen": 5,
+ "medianEdgeVsRandom": 8.01,
+ "halves": {
+  "split": "2026-05-08",
+  "first": {
+   "n": 26,
+   "tokens": 22,
+   "win": 65,
+   "median": 10.89,
+   "mean": 3.71,
+   "best": 50.42,
+   "worst": -176.03,
+   "profitFactor": 1.36,
+   "totalUsd": 965,
+   "totalUsdWithoutBest3": -496
+  },
+  "second": {
+   "n": 26,
+   "tokens": 20,
+   "win": 77,
+   "median": 11.95,
+   "mean": 12.71,
+   "best": 69.19,
+   "worst": -24.35,
+   "profitFactor": 6.8,
+   "totalUsd": 3305,
+   "totalUsdWithoutBest3": 1655
+  }
+ },
+ "byRule": {
+  "big": {
+   "n": 40,
+   "tokens": 31,
+   "win": 72,
+   "median": 12.49,
+   "mean": 7.66,
+   "best": 60.31,
+   "worst": -176.03,
+   "profitFactor": 2.05,
+   "totalUsd": 3063,
+   "totalUsdWithoutBest3": 1460
+  },
+  "investors": {
+   "n": 11,
+   "tokens": 5,
+   "win": 82,
+   "median": 5.81,
+   "mean": 12.65,
+   "best": 60.31,
+   "worst": -24.35,
+   "profitFactor": 5.5,
+   "totalUsd": 1392,
+   "totalUsdWithoutBest3": 57
+  },
+  "first": {
+   "n": 24,
+   "tokens": 24,
+   "win": 62,
+   "median": 12.77,
+   "mean": 8.98,
+   "best": 69.19,
+   "worst": -176.03,
+   "profitFactor": 1.89,
+   "totalUsd": 2156,
+   "totalUsdWithoutBest3": 356
+  }
+ },
+ "exitCompare": {
+  "0": {
+   "n": 52,
+   "tokens": 38,
+   "win": 60,
+   "median": 2.3,
+   "mean": 6.65,
+   "best": 72.49,
+   "worst": -27.26,
+   "profitFactor": 3.39,
+   "totalUsd": 3457,
+   "totalUsdWithoutBest3": 1864
+  },
+  "3": {
+   "n": 52,
+   "tokens": 38,
+   "win": 65,
+   "median": 7.11,
+   "mean": 6.73,
+   "best": 73.62,
+   "worst": -106.4,
+   "profitFactor": 2.39,
+   "totalUsd": 3500,
+   "totalUsdWithoutBest3": 1882
+  },
+  "7": {
+   "n": 52,
+   "tokens": 38,
+   "win": 71,
+   "median": 11.95,
+   "mean": 8.21,
+   "best": 69.19,
+   "worst": -176.03,
+   "profitFactor": 2.31,
+   "totalUsd": 4270,
+   "totalUsdWithoutBest3": 2471
+  },
+  "14": {
+   "n": 52,
+   "tokens": 38,
+   "win": 81,
+   "median": 9.23,
+   "mean": 10.16,
+   "best": 74.91,
+   "worst": -160.29,
+   "profitFactor": 2.88,
+   "totalUsd": 5281,
+   "totalUsdWithoutBest3": 3214
+  }
+ },
+ "live": null,
+ "curve": [
+  {
+   "date": "2025-12-06",
+   "cum": 80,
+   "token": "HYPE"
+  },
+  {
+   "date": "2025-12-12",
+   "cum": 576,
+   "token": "XION"
+  },
+  {
+   "date": "2025-12-16",
+   "cum": 717,
+   "token": "MOVE"
+  },
+  {
+   "date": "2025-12-24",
+   "cum": 1017,
+   "token": "PENGU"
+  },
+  {
+   "date": "2025-12-27",
+   "cum": 1170,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-01-24",
+   "cum": 1300,
+   "token": "DBR"
+  },
+  {
+   "date": "2026-01-24",
+   "cum": 1397,
+   "token": "TRUMP"
+  },
+  {
+   "date": "2026-01-27",
+   "cum": 1066,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-01-29",
+   "cum": 1331,
+   "token": "MBG"
+  },
+  {
+   "date": "2026-02-02",
+   "cum": 1513,
+   "token": "BGB"
+  },
+  {
+   "date": "2026-02-24",
+   "cum": 1520,
+   "token": "YZY"
+  },
+  {
+   "date": "2026-02-27",
+   "cum": 1440,
+   "token": "KAITO"
+  },
+  {
+   "date": "2026-02-27",
+   "cum": 1611,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-03-07",
+   "cum": 1398,
+   "token": "GRASS"
+  },
+  {
+   "date": "2026-03-13",
+   "cum": 1670,
+   "token": "RED"
+  },
+  {
+   "date": "2026-03-20",
+   "cum": 1658,
+   "token": "WBT"
+  },
+  {
+   "date": "2026-03-26",
+   "cum": 1611,
+   "token": "ESPORTS"
+  },
+  {
+   "date": "2026-03-27",
+   "cum": -149,
+   "token": "BR"
+  },
+  {
+   "date": "2026-03-31",
+   "cum": 355,
+   "token": "NIL"
+  },
+  {
+   "date": "2026-04-01",
+   "cum": 445,
+   "token": "PARTI"
+  },
+  {
+   "date": "2026-04-06",
+   "cum": 905,
+   "token": "GUN"
+  },
+  {
+   "date": "2026-04-27",
+   "cum": 1089,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-04-29",
+   "cum": 1055,
+   "token": "UDS"
+  },
+  {
+   "date": "2026-05-05",
+   "cum": 1176,
+   "token": "SIGN"
+  },
+  {
+   "date": "2026-05-12",
+   "cum": 1031,
+   "token": "OPN"
+  },
+  {
+   "date": "2026-05-13",
+   "cum": 965,
+   "token": "RED"
+  },
+  {
+   "date": "2026-05-15",
+   "cum": 1128,
+   "token": "SXT"
+  },
+  {
+   "date": "2026-05-26",
+   "cum": 1417,
+   "token": "PYTH"
+  },
+  {
+   "date": "2026-05-27",
+   "cum": 1546,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-06-16",
+   "cum": 1682,
+   "token": "WET"
+  },
+  {
+   "date": "2026-06-17",
+   "cum": 1438,
+   "token": "BABY"
+  },
+  {
+   "date": "2026-06-17",
+   "cum": 1586,
+   "token": "ME"
+  },
+  {
+   "date": "2026-06-27",
+   "cum": 1705,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-06-30",
+   "cum": 1671,
+   "token": "SOON"
+  },
+  {
+   "date": "2026-07-01",
+   "cum": 1792,
+   "token": "NEWT"
+  },
+  {
+   "date": "2026-07-02",
+   "cum": 2484,
+   "token": "H"
+  },
+  {
+   "date": "2026-07-17",
+   "cum": 2542,
+   "token": "BABY"
+  },
+  {
+   "date": "2026-07-23",
+   "cum": 3145,
+   "token": "ES"
+  },
+  {
+   "date": "2026-07-23",
+   "cum": 3204,
+   "token": "SOLV"
+  },
+  {
+   "date": "2026-07-24",
+   "cum": 3271,
+   "token": "DBR"
+  },
+  {
+   "date": "2026-08-06",
+   "cum": 3229,
+   "token": "LAVA"
+  },
+  {
+   "date": "2026-08-12",
+   "cum": 3369,
+   "token": "PROVE"
+  },
+  {
+   "date": "2026-08-17",
+   "cum": 3514,
+   "token": "BABY"
+  },
+  {
+   "date": "2026-08-23",
+   "cum": 3535,
+   "token": "YZY"
+  },
+  {
+   "date": "2026-08-27",
+   "cum": 3842,
+   "token": "KAITO"
+  },
+  {
+   "date": "2026-09-17",
+   "cum": 3874,
+   "token": "BABY"
+  },
+  {
+   "date": "2026-10-02",
+   "cum": 3752,
+   "token": "COAI"
+  },
+  {
+   "date": "2026-10-02",
+   "cum": 3940,
+   "token": "H"
+  },
+  {
+   "date": "2026-10-02",
+   "cum": 3833,
+   "token": "XPL"
+  },
+  {
+   "date": "2026-10-03",
+   "cum": 3812,
+   "token": "SAHARA"
+  },
+  {
+   "date": "2026-10-09",
+   "cum": 4166,
+   "token": "2Z"
+  },
+  {
+   "date": "2026-10-17",
+   "cum": 4270,
+   "token": "BABY"
+  }
+ ],
+ "curveStop": [
+  {
+   "date": "2025-12-06",
+   "cum": 80,
+   "token": "HYPE"
+  },
+  {
+   "date": "2025-12-12",
+   "cum": 576,
+   "token": "XION"
+  },
+  {
+   "date": "2025-12-16",
+   "cum": 717,
+   "token": "MOVE"
+  },
+  {
+   "date": "2025-12-24",
+   "cum": 1017,
+   "token": "PENGU"
+  },
+  {
+   "date": "2025-12-27",
+   "cum": 1170,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-01-24",
+   "cum": 1300,
+   "token": "DBR"
+  },
+  {
+   "date": "2026-01-24",
+   "cum": 1397,
+   "token": "TRUMP"
+  },
+  {
+   "date": "2026-01-27",
+   "cum": 1111,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-01-29",
+   "cum": 1376,
+   "token": "MBG"
+  },
+  {
+   "date": "2026-02-02",
+   "cum": 1558,
+   "token": "BGB"
+  },
+  {
+   "date": "2026-02-24",
+   "cum": 1565,
+   "token": "YZY"
+  },
+  {
+   "date": "2026-02-27",
+   "cum": 1485,
+   "token": "KAITO"
+  },
+  {
+   "date": "2026-02-27",
+   "cum": 1656,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-03-07",
+   "cum": 1432,
+   "token": "GRASS"
+  },
+  {
+   "date": "2026-03-13",
+   "cum": 1704,
+   "token": "RED"
+  },
+  {
+   "date": "2026-03-20",
+   "cum": 1692,
+   "token": "WBT"
+  },
+  {
+   "date": "2026-03-26",
+   "cum": 1645,
+   "token": "ESPORTS"
+  },
+  {
+   "date": "2026-03-27",
+   "cum": 581,
+   "token": "BR"
+  },
+  {
+   "date": "2026-03-31",
+   "cum": 301,
+   "token": "NIL"
+  },
+  {
+   "date": "2026-04-01",
+   "cum": 390,
+   "token": "PARTI"
+  },
+  {
+   "date": "2026-04-06",
+   "cum": 851,
+   "token": "GUN"
+  },
+  {
+   "date": "2026-04-27",
+   "cum": 1034,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-04-29",
+   "cum": 1001,
+   "token": "UDS"
+  },
+  {
+   "date": "2026-05-05",
+   "cum": 1121,
+   "token": "SIGN"
+  },
+  {
+   "date": "2026-05-12",
+   "cum": 907,
+   "token": "OPN"
+  },
+  {
+   "date": "2026-05-13",
+   "cum": 841,
+   "token": "RED"
+  },
+  {
+   "date": "2026-05-15",
+   "cum": 1004,
+   "token": "SXT"
+  },
+  {
+   "date": "2026-05-26",
+   "cum": 1293,
+   "token": "PYTH"
+  },
+  {
+   "date": "2026-05-27",
+   "cum": 1423,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-06-16",
+   "cum": 1558,
+   "token": "WET"
+  },
+  {
+   "date": "2026-06-17",
+   "cum": 1242,
+   "token": "BABY"
+  },
+  {
+   "date": "2026-06-17",
+   "cum": 1390,
+   "token": "ME"
+  },
+  {
+   "date": "2026-06-27",
+   "cum": 1160,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-06-30",
+   "cum": 1126,
+   "token": "SOON"
+  },
+  {
+   "date": "2026-07-01",
+   "cum": 1247,
+   "token": "NEWT"
+  },
+  {
+   "date": "2026-07-02",
+   "cum": 1939,
+   "token": "H"
+  },
+  {
+   "date": "2026-07-17",
+   "cum": 1997,
+   "token": "BABY"
+  },
+  {
+   "date": "2026-07-23",
+   "cum": 2600,
+   "token": "ES"
+  },
+  {
+   "date": "2026-07-23",
+   "cum": 2659,
+   "token": "SOLV"
+  },
+  {
+   "date": "2026-07-24",
+   "cum": 2726,
+   "token": "DBR"
+  },
+  {
+   "date": "2026-08-06",
+   "cum": 2684,
+   "token": "LAVA"
+  },
+  {
+   "date": "2026-08-12",
+   "cum": 2824,
+   "token": "PROVE"
+  },
+  {
+   "date": "2026-08-17",
+   "cum": 2969,
+   "token": "BABY"
+  },
+  {
+   "date": "2026-08-23",
+   "cum": 2990,
+   "token": "YZY"
+  },
+  {
+   "date": "2026-08-27",
+   "cum": 3297,
+   "token": "KAITO"
+  },
+  {
+   "date": "2026-09-17",
+   "cum": 3329,
+   "token": "BABY"
+  },
+  {
+   "date": "2026-10-02",
+   "cum": 3207,
+   "token": "COAI"
+  },
+  {
+   "date": "2026-10-02",
+   "cum": 3395,
+   "token": "H"
+  },
+  {
+   "date": "2026-10-02",
+   "cum": 3122,
+   "token": "XPL"
+  },
+  {
+   "date": "2026-10-03",
+   "cum": 3101,
+   "token": "SAHARA"
+  },
+  {
+   "date": "2026-10-09",
+   "cum": 2805,
+   "token": "2Z"
+  },
+  {
+   "date": "2026-10-17",
+   "cum": 2908,
+   "token": "BABY"
+  }
+ ],
+ "curveNoGuard": [
+  {
+   "date": "2025-12-06",
+   "cum": 80,
+   "token": "HYPE"
+  },
+  {
+   "date": "2025-12-08",
+   "cum": -1120,
+   "token": "BEAT"
+  },
+  {
+   "date": "2025-12-12",
+   "cum": -624,
+   "token": "XION"
+  },
+  {
+   "date": "2025-12-16",
+   "cum": -483,
+   "token": "MOVE"
+  },
+  {
+   "date": "2025-12-24",
+   "cum": -182,
+   "token": "PENGU"
+  },
+  {
+   "date": "2025-12-27",
+   "cum": -29,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-01-24",
+   "cum": 100,
+   "token": "DBR"
+  },
+  {
+   "date": "2026-01-24",
+   "cum": 198,
+   "token": "TRUMP"
+  },
+  {
+   "date": "2026-01-27",
+   "cum": -134,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-01-28",
+   "cum": -157,
+   "token": "PLUME"
+  },
+  {
+   "date": "2026-01-29",
+   "cum": 108,
+   "token": "MBG"
+  },
+  {
+   "date": "2026-01-29",
+   "cum": -1195,
+   "token": "RIVER"
+  },
+  {
+   "date": "2026-02-02",
+   "cum": -1013,
+   "token": "BGB"
+  },
+  {
+   "date": "2026-02-13",
+   "cum": -864,
+   "token": "BERA"
+  },
+  {
+   "date": "2026-02-24",
+   "cum": -857,
+   "token": "YZY"
+  },
+  {
+   "date": "2026-02-27",
+   "cum": -938,
+   "token": "KAITO"
+  },
+  {
+   "date": "2026-02-27",
+   "cum": -767,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-03-07",
+   "cum": -979,
+   "token": "GRASS"
+  },
+  {
+   "date": "2026-03-13",
+   "cum": -708,
+   "token": "RED"
+  },
+  {
+   "date": "2026-03-20",
+   "cum": -719,
+   "token": "WBT"
+  },
+  {
+   "date": "2026-03-25",
+   "cum": -136,
+   "token": "BARD"
+  },
+  {
+   "date": "2026-03-26",
+   "cum": -182,
+   "token": "ESPORTS"
+  },
+  {
+   "date": "2026-03-27",
+   "cum": -1943,
+   "token": "BR"
+  },
+  {
+   "date": "2026-03-27",
+   "cum": -1968,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-03-31",
+   "cum": -1464,
+   "token": "NIL"
+  },
+  {
+   "date": "2026-04-01",
+   "cum": -1375,
+   "token": "PARTI"
+  },
+  {
+   "date": "2026-04-06",
+   "cum": -914,
+   "token": "GUN"
+  },
+  {
+   "date": "2026-04-27",
+   "cum": -731,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-04-29",
+   "cum": -764,
+   "token": "UDS"
+  },
+  {
+   "date": "2026-05-05",
+   "cum": -644,
+   "token": "SIGN"
+  },
+  {
+   "date": "2026-05-12",
+   "cum": -788,
+   "token": "OPN"
+  },
+  {
+   "date": "2026-05-13",
+   "cum": -854,
+   "token": "RED"
+  },
+  {
+   "date": "2026-05-15",
+   "cum": -691,
+   "token": "SXT"
+  },
+  {
+   "date": "2026-05-17",
+   "cum": -644,
+   "token": "BABY"
+  },
+  {
+   "date": "2026-05-26",
+   "cum": -356,
+   "token": "PYTH"
+  },
+  {
+   "date": "2026-05-27",
+   "cum": -226,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-06-16",
+   "cum": -91,
+   "token": "WET"
+  },
+  {
+   "date": "2026-06-17",
+   "cum": -334,
+   "token": "BABY"
+  },
+  {
+   "date": "2026-06-17",
+   "cum": 90,
+   "token": "HOME"
+  },
+  {
+   "date": "2026-06-17",
+   "cum": 238,
+   "token": "ME"
+  },
+  {
+   "date": "2026-06-27",
+   "cum": 357,
+   "token": "ZRO"
+  },
+  {
+   "date": "2026-06-30",
+   "cum": 323,
+   "token": "SOON"
+  },
+  {
+   "date": "2026-07-01",
+   "cum": 444,
+   "token": "NEWT"
+  },
+  {
+   "date": "2026-07-02",
+   "cum": 1136,
+   "token": "H"
+  },
+  {
+   "date": "2026-07-17",
+   "cum": 1194,
+   "token": "BABY"
+  },
+  {
+   "date": "2026-07-23",
+   "cum": 1797,
+   "token": "ES"
+  },
+  {
+   "date": "2026-07-23",
+   "cum": 1856,
+   "token": "SOLV"
+  },
+  {
+   "date": "2026-07-24",
+   "cum": 1923,
+   "token": "DBR"
+  },
+  {
+   "date": "2026-08-06",
+   "cum": 1881,
+   "token": "LAVA"
+  },
+  {
+   "date": "2026-08-12",
+   "cum": 2021,
+   "token": "PROVE"
+  },
+  {
+   "date": "2026-08-17",
+   "cum": 2166,
+   "token": "BABY"
+  },
+  {
+   "date": "2026-08-23",
+   "cum": 2187,
+   "token": "YZY"
+  },
+  {
+   "date": "2026-08-27",
+   "cum": 2494,
+   "token": "KAITO"
+  },
+  {
+   "date": "2026-09-17",
+   "cum": 2526,
+   "token": "BABY"
+  },
+  {
+   "date": "2026-10-02",
+   "cum": 2404,
+   "token": "COAI"
+  },
+  {
+   "date": "2026-10-02",
+   "cum": 2592,
+   "token": "H"
+  },
+  {
+   "date": "2026-10-02",
+   "cum": 2485,
+   "token": "XPL"
+  },
+  {
+   "date": "2026-10-03",
+   "cum": 2464,
+   "token": "SAHARA"
+  },
+  {
+   "date": "2026-10-06",
+   "cum": 2547,
+   "token": "FF"
+  },
+  {
+   "date": "2026-10-09",
+   "cum": 2902,
+   "token": "2Z"
+  },
+  {
+   "date": "2026-10-12",
+   "cum": 3024,
+   "token": "ENA"
+  },
+  {
+   "date": "2026-10-17",
+   "cum": 3128,
+   "token": "BABY"
+  }
+ ],
+ "trades": [
+  {
+   "token": "BABY",
+   "name": "Babylon",
+   "unlockDate": "2026-10-10",
+   "entryDate": "2026-10-03",
+   "exitDate": "2026-10-17",
+   "rules": [
+    "investors"
+   ],
+   "grade": "Moderate",
+   "usdM": 1.873,
+   "pctCirculating": 2.784,
+   "advDays": 0.06,
+   "investorsShare": 0.62,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -0.63,
+   "pnl": 10.38,
+   "worstAgainst": 0.63,
+   "held": 14,
+   "pnlStop": 10.38,
+   "stopped": false,
+   "exits": {
+    "0": -0.94,
+    "3": 10.47,
+    "7": 10.38,
+    "14": 3.36
+   },
+   "edgeVsRandom": 7.63,
+   "live": false,
+   "check": "confirmed",
+   "momentum": 22.24,
+   "skipped": false
+  },
+  {
+   "token": "ENA",
+   "name": "Ethena",
+   "unlockDate": "2026-10-05",
+   "entryDate": "2026-09-28",
+   "exitDate": "2026-10-12",
+   "rules": [
+    "big",
+    "investors"
+   ],
+   "grade": "Very high",
+   "usdM": 361.991,
+   "pctCirculating": 14.858,
+   "advDays": 0.73,
+   "investorsShare": 0.94,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 12.78,
+   "pnl": 12.27,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 12.27,
+   "stopped": false,
+   "exits": {
+    "0": 11.02,
+    "3": 16.42,
+    "7": 12.27,
+    "14": 30.12
+   },
+   "edgeVsRandom": 7.14,
+   "live": false,
+   "check": "partial",
+   "momentum": 67.18,
+   "skipped": true
+  },
+  {
+   "token": "2Z",
+   "name": "DoubleZero",
+   "unlockDate": "2026-10-02",
+   "entryDate": "2026-09-25",
+   "exitDate": "2026-10-09",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 93.636,
+   "pctCirculating": 32.371,
+   "advDays": 10.624,
+   "investorsShare": 0.18,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": -1.14,
+   "pnl": 35.47,
+   "worstAgainst": 29.47,
+   "held": 14,
+   "pnlStop": -29.63,
+   "stopped": true,
+   "exits": {
+    "0": -1.46,
+    "3": 18.84,
+    "7": 35.47,
+    "14": 39.95
+   },
+   "edgeVsRandom": 31.2,
+   "live": false,
+   "check": "confirmed",
+   "momentum": 5.3,
+   "skipped": false
+  },
+  {
+   "token": "FF",
+   "name": "Falcon Finance",
+   "unlockDate": "2026-09-29",
+   "entryDate": "2026-09-22",
+   "exitDate": "2026-10-06",
+   "rules": [
+    "first"
+   ],
+   "grade": "High",
+   "usdM": 24.953,
+   "pctCirculating": 6.467,
+   "advDays": 1.107,
+   "investorsShare": 0.06,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 3.74,
+   "pnl": 8.34,
+   "worstAgainst": 6.84,
+   "held": 14,
+   "pnlStop": 8.34,
+   "stopped": false,
+   "exits": {
+    "0": 3.3,
+    "3": 3.28,
+    "7": 8.34,
+    "14": 13.64
+   },
+   "edgeVsRandom": 5.49,
+   "live": false,
+   "check": "partial",
+   "momentum": 37.46,
+   "skipped": true
+  },
+  {
+   "token": "SAHARA",
+   "name": "Sahara AI",
+   "unlockDate": "2026-09-26",
+   "entryDate": "2026-09-19",
+   "exitDate": "2026-10-03",
+   "rules": [
+    "first"
+   ],
+   "grade": "Not enough data",
+   "usdM": null,
+   "pctCirculating": null,
+   "advDays": null,
+   "investorsShare": null,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": -7.96,
+   "pnl": -2.13,
+   "worstAgainst": 9.57,
+   "held": 14,
+   "pnlStop": -2.13,
+   "stopped": false,
+   "exits": {
+    "0": -8.96,
+    "3": -3.38,
+    "7": -2.13,
+    "14": 3.78
+   },
+   "edgeVsRandom": -7.42,
+   "live": false,
+   "check": "partial",
+   "momentum": 10.43,
+   "skipped": false
+  },
+  {
+   "token": "COAI",
+   "name": "ChainOpera AI",
+   "unlockDate": "2026-09-25",
+   "entryDate": "2026-09-18",
+   "exitDate": "2026-10-02",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 6.298,
+   "pctCirculating": 10.392,
+   "advDays": 2.961,
+   "investorsShare": 0.23,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": -8.99,
+   "pnl": -12.2,
+   "worstAgainst": 13.3,
+   "held": 14,
+   "pnlStop": -12.2,
+   "stopped": false,
+   "exits": {
+    "0": -10.19,
+    "3": -6.61,
+    "7": -12.2,
+    "14": -3.24
+   },
+   "edgeVsRandom": -15.45,
+   "live": false,
+   "check": "partial",
+   "momentum": 2.05,
+   "skipped": false
+  },
+  {
+   "token": "H",
+   "name": "Humanity Protocol",
+   "unlockDate": "2026-09-25",
+   "entryDate": "2026-09-18",
+   "exitDate": "2026-10-02",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 17.729,
+   "pctCirculating": 13.542,
+   "advDays": 4.914,
+   "investorsShare": null,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 34.34,
+   "pnl": 18.82,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 18.82,
+   "stopped": false,
+   "exits": {
+    "0": 25.25,
+    "3": 19.91,
+    "7": 18.82,
+    "14": 26.66
+   },
+   "edgeVsRandom": 14.6,
+   "live": false,
+   "check": "partial",
+   "momentum": 10.73,
+   "skipped": false
+  },
+  {
+   "token": "XPL",
+   "name": "Plasma",
+   "unlockDate": "2026-09-25",
+   "entryDate": "2026-09-18",
+   "exitDate": "2026-10-02",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 194.5,
+   "pctCirculating": 63.2,
+   "advDays": 3.336,
+   "investorsShare": 0.47,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": -21.23,
+   "pnl": -10.69,
+   "worstAgainst": 31.33,
+   "held": 14,
+   "pnlStop": -27.26,
+   "stopped": true,
+   "exits": {
+    "0": -27.26,
+    "3": -22.01,
+    "7": -10.69,
+    "14": 3.32
+   },
+   "edgeVsRandom": -15.82,
+   "live": false,
+   "check": "partial",
+   "momentum": -3.54,
+   "skipped": false
+  },
+  {
+   "token": "BABY",
+   "name": "Babylon",
+   "unlockDate": "2026-09-10",
+   "entryDate": "2026-09-03",
+   "exitDate": "2026-09-17",
+   "rules": [
+    "investors"
+   ],
+   "grade": "Moderate",
+   "usdM": 1.523,
+   "pctCirculating": 2.964,
+   "advDays": 0.099,
+   "investorsShare": 0.62,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -0.38,
+   "pnl": 3.17,
+   "worstAgainst": 8.43,
+   "held": 14,
+   "pnlStop": 3.17,
+   "stopped": false,
+   "exits": {
+    "0": -0.69,
+    "3": -5.08,
+    "7": 3.17,
+    "14": -10.98
+   },
+   "edgeVsRandom": 0.42,
+   "live": false,
+   "check": "confirmed",
+   "momentum": -13.97,
+   "skipped": false
+  },
+  {
+   "token": "KAITO",
+   "name": "Kaito",
+   "unlockDate": "2026-08-20",
+   "entryDate": "2026-08-13",
+   "exitDate": "2026-08-27",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 11.336,
+   "pctCirculating": 13.505,
+   "advDays": 0.211,
+   "investorsShare": 0.07,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 32.84,
+   "pnl": 30.73,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 30.73,
+   "stopped": false,
+   "exits": {
+    "0": 24.41,
+    "3": 24.43,
+    "7": 30.73,
+    "14": 33.69
+   },
+   "edgeVsRandom": 28.09,
+   "live": false,
+   "check": "partial",
+   "momentum": -53.88,
+   "skipped": false
+  },
+  {
+   "token": "YZY",
+   "name": "YZY (Yeezy)",
+   "unlockDate": "2026-08-16",
+   "entryDate": "2026-08-09",
+   "exitDate": "2026-08-23",
+   "rules": [
+    "big",
+    "investors"
+   ],
+   "grade": "Very high",
+   "usdM": 35.035,
+   "pctCirculating": 40.416,
+   "advDays": 289.545,
+   "investorsShare": 1.0,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 2.33,
+   "pnl": 2.09,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 2.09,
+   "stopped": false,
+   "exits": {
+    "0": 1.97,
+    "3": 2.21,
+    "7": 2.09,
+    "14": 0.15
+   },
+   "edgeVsRandom": 1.86,
+   "live": false,
+   "check": "confirmed",
+   "momentum": 0.89,
+   "skipped": false
+  },
+  {
+   "token": "BABY",
+   "name": "Babylon",
+   "unlockDate": "2026-08-10",
+   "entryDate": "2026-08-03",
+   "exitDate": "2026-08-17",
+   "rules": [
+    "investors"
+   ],
+   "grade": "Moderate",
+   "usdM": 1.766,
+   "pctCirculating": 3.17,
+   "advDays": 0.076,
+   "investorsShare": 0.62,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -12.52,
+   "pnl": 14.48,
+   "worstAgainst": 14.31,
+   "held": 14,
+   "pnlStop": 14.48,
+   "stopped": false,
+   "exits": {
+    "0": -14.62,
+    "3": 9.45,
+    "7": 14.48,
+    "14": -13.11
+   },
+   "edgeVsRandom": 11.73,
+   "live": false,
+   "check": "confirmed",
+   "momentum": -15.45,
+   "skipped": false
+  },
+  {
+   "token": "PROVE",
+   "name": "Succinct",
+   "unlockDate": "2026-08-05",
+   "entryDate": "2026-07-29",
+   "exitDate": "2026-08-12",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 34.733,
+   "pctCirculating": 106.836,
+   "advDays": 7.01,
+   "investorsShare": 0.13,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 5.84,
+   "pnl": 14.01,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 14.01,
+   "stopped": false,
+   "exits": {
+    "0": 5.21,
+    "3": 12.36,
+    "7": 14.01,
+    "14": 11.34
+   },
+   "edgeVsRandom": 8.21,
+   "live": false,
+   "check": "confirmed",
+   "momentum": -10.83,
+   "skipped": false
+  },
+  {
+   "token": "LAVA",
+   "name": "Lava Network",
+   "unlockDate": "2026-07-30",
+   "entryDate": "2026-07-23",
+   "exitDate": "2026-08-06",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 2.285,
+   "pctCirculating": 25.67,
+   "advDays": 4.185,
+   "investorsShare": 0.39,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": -1.83,
+   "pnl": -4.27,
+   "worstAgainst": 7.65,
+   "held": 14,
+   "pnlStop": -4.27,
+   "stopped": false,
+   "exits": {
+    "0": -2.17,
+    "3": -0.31,
+    "7": -4.27,
+    "14": -9.66
+   },
+   "edgeVsRandom": -11.37,
+   "live": false,
+   "check": "confirmed",
+   "momentum": -8.21,
+   "skipped": false
+  },
+  {
+   "token": "DBR",
+   "name": "deBridge",
+   "unlockDate": "2026-07-17",
+   "entryDate": "2026-07-10",
+   "exitDate": "2026-07-24",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 10.237,
+   "pctCirculating": 11.612,
+   "advDays": 3.456,
+   "investorsShare": 0.18,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -2.17,
+   "pnl": 6.77,
+   "worstAgainst": 8.77,
+   "held": 14,
+   "pnlStop": 6.77,
+   "stopped": false,
+   "exits": {
+    "0": -2.53,
+    "3": -6.45,
+    "7": 6.77,
+    "14": 9.52
+   },
+   "edgeVsRandom": 7.07,
+   "live": false,
+   "check": "confirmed",
+   "momentum": 11.3,
+   "skipped": false
+  },
+  {
+   "token": "ES",
+   "name": "Eclipse",
+   "unlockDate": "2026-07-16",
+   "entryDate": "2026-07-09",
+   "exitDate": "2026-07-23",
+   "rules": [
+    "big",
+    "investors",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 0.404,
+   "pctCirculating": 111.111,
+   "advDays": 0.141,
+   "investorsShare": 0.62,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 89.55,
+   "pnl": 60.31,
+   "worstAgainst": 13.77,
+   "held": 14,
+   "pnlStop": 60.31,
+   "stopped": false,
+   "exits": {
+    "0": 46.93,
+    "3": 44.2,
+    "7": 60.31,
+    "14": 74.91
+   },
+   "edgeVsRandom": 55.22,
+   "live": false,
+   "check": "partial",
+   "momentum": -83.67,
+   "skipped": false
+  },
+  {
+   "token": "SOLV",
+   "name": "Solv Protocol",
+   "unlockDate": "2026-07-16",
+   "entryDate": "2026-07-09",
+   "exitDate": "2026-07-23",
+   "rules": [
+    "big"
+   ],
+   "grade": "High",
+   "usdM": 1.007,
+   "pctCirculating": 25.561,
+   "advDays": 0.228,
+   "investorsShare": 0.0,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 3.03,
+   "pnl": 5.9,
+   "worstAgainst": 3.59,
+   "held": 14,
+   "pnlStop": 5.9,
+   "stopped": false,
+   "exits": {
+    "0": 2.63,
+    "3": 5.66,
+    "7": 5.9,
+    "14": 16.0
+   },
+   "edgeVsRandom": 0.55,
+   "live": false,
+   "check": "partial",
+   "momentum": -20.27,
+   "skipped": false
+  },
+  {
+   "token": "BABY",
+   "name": "Babylon",
+   "unlockDate": "2026-07-10",
+   "entryDate": "2026-07-03",
+   "exitDate": "2026-07-17",
+   "rules": [
+    "investors"
+   ],
+   "grade": "Moderate",
+   "usdM": 1.807,
+   "pctCirculating": 3.407,
+   "advDays": 0.042,
+   "investorsShare": 0.62,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 4.11,
+   "pnl": 5.81,
+   "worstAgainst": 3.56,
+   "held": 14,
+   "pnlStop": 5.81,
+   "stopped": false,
+   "exits": {
+    "0": 3.64,
+    "3": 6.86,
+    "7": 5.81,
+    "14": 9.65
+   },
+   "edgeVsRandom": 3.07,
+   "live": false,
+   "check": "confirmed",
+   "momentum": -9.01,
+   "skipped": false
+  },
+  {
+   "token": "H",
+   "name": "Humanity Protocol",
+   "unlockDate": "2026-06-25",
+   "entryDate": "2026-06-18",
+   "exitDate": "2026-07-02",
+   "rules": [
+    "first"
+   ],
+   "grade": "Not enough data",
+   "usdM": null,
+   "pctCirculating": null,
+   "advDays": null,
+   "investorsShare": null,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 267.62,
+   "pnl": 69.19,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 69.19,
+   "stopped": false,
+   "exits": {
+    "0": 72.49,
+    "3": 73.62,
+    "7": 69.19,
+    "14": 70.03
+   },
+   "edgeVsRandom": 64.97,
+   "live": false,
+   "check": "partial",
+   "momentum": -5.71,
+   "skipped": false
+  },
+  {
+   "token": "NEWT",
+   "name": "Newton Protocol",
+   "unlockDate": "2026-06-24",
+   "entryDate": "2026-06-17",
+   "exitDate": "2026-07-01",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 6.695,
+   "pctCirculating": 61.93,
+   "advDays": 0.98,
+   "investorsShare": 0.41,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 7.67,
+   "pnl": 12.03,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 12.03,
+   "stopped": false,
+   "exits": {
+    "0": 6.81,
+    "3": 10.86,
+    "7": 12.03,
+    "14": 11.49
+   },
+   "edgeVsRandom": 7.81,
+   "live": false,
+   "check": "confirmed",
+   "momentum": -26.92,
+   "skipped": false
+  },
+  {
+   "token": "SOON",
+   "name": "SOON",
+   "unlockDate": "2026-06-23",
+   "entryDate": "2026-06-16",
+   "exitDate": "2026-06-30",
+   "rules": [
+    "first"
+   ],
+   "grade": "High",
+   "usdM": 3.285,
+   "pctCirculating": 5.957,
+   "advDays": 0.247,
+   "investorsShare": 0.0,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 6.13,
+   "pnl": -3.33,
+   "worstAgainst": 2.81,
+   "held": 14,
+   "pnlStop": -3.33,
+   "stopped": false,
+   "exits": {
+    "0": 5.47,
+    "3": 0.46,
+    "7": -3.33,
+    "14": 0.26
+   },
+   "edgeVsRandom": -6.43,
+   "live": false,
+   "check": "partial",
+   "momentum": 5.33,
+   "skipped": false
+  },
+  {
+   "token": "ZRO",
+   "name": "LayerZero",
+   "unlockDate": "2026-06-20",
+   "entryDate": "2026-06-13",
+   "exitDate": "2026-06-27",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 25.189,
+   "pctCirculating": 11.897,
+   "advDays": 0.667,
+   "investorsShare": 0.59,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -7.23,
+   "pnl": 11.87,
+   "worstAgainst": 22.84,
+   "held": 14,
+   "pnlStop": -23.03,
+   "stopped": true,
+   "exits": {
+    "0": -8.1,
+    "3": -5.21,
+    "7": 11.87,
+    "14": 1.63
+   },
+   "edgeVsRandom": 10.68,
+   "live": false,
+   "check": "partial",
+   "momentum": -33.13,
+   "skipped": false
+  },
+  {
+   "token": "BABY",
+   "name": "Babylon",
+   "unlockDate": "2026-06-10",
+   "entryDate": "2026-06-03",
+   "exitDate": "2026-06-17",
+   "rules": [
+    "investors"
+   ],
+   "grade": "Moderate",
+   "usdM": 2.067,
+   "pctCirculating": 3.681,
+   "advDays": 0.102,
+   "investorsShare": 0.62,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -11.25,
+   "pnl": -24.35,
+   "worstAgainst": 45.14,
+   "held": 14,
+   "pnlStop": -31.58,
+   "stopped": true,
+   "exits": {
+    "0": -12.99,
+    "3": -2.77,
+    "7": -24.35,
+    "14": 1.13
+   },
+   "edgeVsRandom": -27.1,
+   "live": false,
+   "check": "confirmed",
+   "momentum": -27.27,
+   "skipped": false
+  },
+  {
+   "token": "HOME",
+   "name": "Defi App",
+   "unlockDate": "2026-06-10",
+   "entryDate": "2026-06-03",
+   "exitDate": "2026-06-17",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 24.811,
+   "pctCirculating": 19.557,
+   "advDays": 0.615,
+   "investorsShare": 0.33,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 43.54,
+   "pnl": 42.44,
+   "worstAgainst": 21.77,
+   "held": 14,
+   "pnlStop": -21.93,
+   "stopped": true,
+   "exits": {
+    "0": 30.02,
+    "3": 35.14,
+    "7": 42.44,
+    "14": 55.32
+   },
+   "edgeVsRandom": 36.55,
+   "live": false,
+   "check": "partial",
+   "momentum": 209.75,
+   "skipped": true
+  },
+  {
+   "token": "ME",
+   "name": "Magic Eden",
+   "unlockDate": "2026-06-10",
+   "entryDate": "2026-06-03",
+   "exitDate": "2026-06-17",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 10.124,
+   "pctCirculating": 30.767,
+   "advDays": 0.917,
+   "investorsShare": 0.02,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 29.51,
+   "pnl": 14.79,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 14.79,
+   "stopped": false,
+   "exits": {
+    "0": 22.48,
+    "3": 17.42,
+    "7": 14.79,
+    "14": 19.64
+   },
+   "edgeVsRandom": 9.45,
+   "live": false,
+   "check": "partial",
+   "momentum": -35.96,
+   "skipped": false
+  },
+  {
+   "token": "WET",
+   "name": "HumidiFi",
+   "unlockDate": "2026-06-09",
+   "entryDate": "2026-06-02",
+   "exitDate": "2026-06-16",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 14.471,
+   "pctCirculating": 111.596,
+   "advDays": 2.723,
+   "investorsShare": 0.0,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 24.76,
+   "pnl": 13.51,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 13.51,
+   "stopped": false,
+   "exits": {
+    "0": 19.54,
+    "3": 18.6,
+    "7": 13.51,
+    "14": 13.37
+   },
+   "edgeVsRandom": 10.62,
+   "live": false,
+   "check": "partial",
+   "momentum": -28.23,
+   "skipped": false
+  },
+  {
+   "token": "ZRO",
+   "name": "LayerZero",
+   "unlockDate": "2026-05-20",
+   "entryDate": "2026-05-13",
+   "exitDate": "2026-05-27",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 34.041,
+   "pctCirculating": 10.189,
+   "advDays": 0.841,
+   "investorsShare": 0.59,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 11.93,
+   "pnl": 12.98,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 12.98,
+   "stopped": false,
+   "exits": {
+    "0": 10.35,
+    "3": 12.78,
+    "7": 12.98,
+    "14": 22.77
+   },
+   "edgeVsRandom": 11.79,
+   "live": false,
+   "check": "partial",
+   "momentum": -8.07,
+   "skipped": false
+  },
+  {
+   "token": "PYTH",
+   "name": "Pyth Network",
+   "unlockDate": "2026-05-19",
+   "entryDate": "2026-05-12",
+   "exitDate": "2026-05-26",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 94.361,
+   "pctCirculating": 36.957,
+   "advDays": 5.842,
+   "investorsShare": 0.12,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 31.12,
+   "pnl": 28.87,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 28.87,
+   "stopped": false,
+   "exits": {
+    "0": 23.42,
+    "3": 26.65,
+    "7": 28.87,
+    "14": 26.54
+   },
+   "edgeVsRandom": 27.09,
+   "live": false,
+   "check": "confirmed",
+   "momentum": 27.7,
+   "skipped": false
+  },
+  {
+   "token": "BABY",
+   "name": "Babylon",
+   "unlockDate": "2026-05-10",
+   "entryDate": "2026-05-03",
+   "exitDate": "2026-05-17",
+   "rules": [
+    "investors",
+    "first"
+   ],
+   "grade": "Moderate",
+   "usdM": 2.484,
+   "pctCirculating": 3.512,
+   "advDays": 0.123,
+   "investorsShare": 0.62,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 8.64,
+   "pnl": 4.7,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 4.7,
+   "stopped": false,
+   "exits": {
+    "0": 7.64,
+    "3": 11.55,
+    "7": 4.7,
+    "14": 18.08
+   },
+   "edgeVsRandom": 1.94,
+   "live": false,
+   "check": "confirmed",
+   "momentum": 44.91,
+   "skipped": true
+  },
+  {
+   "token": "SXT",
+   "name": "Space and Time",
+   "unlockDate": "2026-05-08",
+   "entryDate": "2026-05-01",
+   "exitDate": "2026-05-15",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 5.298,
+   "pctCirculating": 14.916,
+   "advDays": 0.843,
+   "investorsShare": 0.5,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 21.57,
+   "pnl": 16.29,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 16.29,
+   "stopped": false,
+   "exits": {
+    "0": 17.43,
+    "3": 14.68,
+    "7": 16.29,
+    "14": 26.2
+   },
+   "edgeVsRandom": 10.3,
+   "live": false,
+   "check": "confirmed",
+   "momentum": -3.75,
+   "skipped": false
+  },
+  {
+   "token": "RED",
+   "name": "RedStone",
+   "unlockDate": "2026-05-06",
+   "entryDate": "2026-04-29",
+   "exitDate": "2026-05-13",
+   "rules": [
+    "big",
+    "investors"
+   ],
+   "grade": "High",
+   "usdM": 5.846,
+   "pctCirculating": 10.886,
+   "advDays": 0.14,
+   "investorsShare": 0.65,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -6.84,
+   "pnl": -6.6,
+   "worstAgainst": 15.89,
+   "held": 14,
+   "pnlStop": -6.6,
+   "stopped": false,
+   "exits": {
+    "0": -7.65,
+    "3": -16.29,
+    "7": -6.6,
+    "14": 5.53
+   },
+   "edgeVsRandom": -11.26,
+   "live": false,
+   "check": "partial",
+   "momentum": 28.53,
+   "skipped": false
+  },
+  {
+   "token": "OPN",
+   "name": "OPN",
+   "unlockDate": "2026-05-05",
+   "entryDate": "2026-04-28",
+   "exitDate": "2026-05-12",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 5.574,
+   "pctCirculating": 22.593,
+   "advDays": 0.38,
+   "investorsShare": 0.0,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 1.86,
+   "pnl": -14.45,
+   "worstAgainst": 20.88,
+   "held": 14,
+   "pnlStop": -21.37,
+   "stopped": true,
+   "exits": {
+    "0": 1.52,
+    "3": -11.59,
+    "7": -14.45,
+    "14": -0.55
+   },
+   "edgeVsRandom": -22.72,
+   "live": false,
+   "check": "confirmed",
+   "momentum": -6.71,
+   "skipped": false
+  },
+  {
+   "token": "SIGN",
+   "name": "Sign",
+   "unlockDate": "2026-04-28",
+   "entryDate": "2026-04-21",
+   "exitDate": "2026-05-05",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "High",
+   "usdM": 6.469,
+   "pctCirculating": 20.777,
+   "advDays": 0.212,
+   "investorsShare": null,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 12.9,
+   "pnl": 12.04,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 12.04,
+   "stopped": false,
+   "exits": {
+    "0": 11.12,
+    "3": 13.19,
+    "7": 12.04,
+    "14": 8.94
+   },
+   "edgeVsRandom": 8.71,
+   "live": false,
+   "check": "partial",
+   "momentum": -43.68,
+   "skipped": false
+  },
+  {
+   "token": "UDS",
+   "name": "Undeads Games",
+   "unlockDate": "2026-04-22",
+   "entryDate": "2026-04-15",
+   "exitDate": "2026-04-29",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 36.832,
+   "pctCirculating": 17.613,
+   "advDays": 120.366,
+   "investorsShare": 0.26,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 1.41,
+   "pnl": -3.36,
+   "worstAgainst": 4.22,
+   "held": 14,
+   "pnlStop": -3.36,
+   "stopped": false,
+   "exits": {
+    "0": 1.08,
+    "3": -4.01,
+    "7": -3.36,
+    "14": 8.16
+   },
+   "edgeVsRandom": -7.76,
+   "live": false,
+   "check": "partial",
+   "momentum": 24.0,
+   "skipped": false
+  },
+  {
+   "token": "ZRO",
+   "name": "LayerZero",
+   "unlockDate": "2026-04-20",
+   "entryDate": "2026-04-13",
+   "exitDate": "2026-04-27",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 41.444,
+   "pctCirculating": 10.189,
+   "advDays": 0.694,
+   "investorsShare": 0.59,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 18.82,
+   "pnl": 18.37,
+   "worstAgainst": 6.39,
+   "held": 14,
+   "pnlStop": 18.37,
+   "stopped": false,
+   "exits": {
+    "0": 15.53,
+    "3": 17.97,
+    "7": 18.37,
+    "14": 27.87
+   },
+   "edgeVsRandom": 17.17,
+   "live": false,
+   "check": "partial",
+   "momentum": -6.44,
+   "skipped": false
+  },
+  {
+   "token": "GUN",
+   "name": "GUNZ",
+   "unlockDate": "2026-03-30",
+   "entryDate": "2026-03-23",
+   "exitDate": "2026-04-06",
+   "rules": [
+    "big",
+    "investors",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 6.881,
+   "pctCirculating": 26.651,
+   "advDays": 0.562,
+   "investorsShare": 0.6,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 67.35,
+   "pnl": 46.05,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 46.05,
+   "stopped": false,
+   "exits": {
+    "0": 39.93,
+    "3": 35.44,
+    "7": 46.05,
+    "14": 38.17
+   },
+   "edgeVsRandom": 39.14,
+   "live": false,
+   "check": "partial",
+   "momentum": -2.61,
+   "skipped": false
+  },
+  {
+   "token": "PARTI",
+   "name": "Particle Network",
+   "unlockDate": "2026-03-25",
+   "entryDate": "2026-03-18",
+   "exitDate": "2026-04-01",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 9.062,
+   "pctCirculating": 38.326,
+   "advDays": 0.729,
+   "investorsShare": null,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -6.25,
+   "pnl": 8.93,
+   "worstAgainst": 9.19,
+   "held": 14,
+   "pnlStop": 8.93,
+   "stopped": false,
+   "exits": {
+    "0": -6.98,
+    "3": -5.7,
+    "7": 8.93,
+    "14": 8.68
+   },
+   "edgeVsRandom": 6.33,
+   "live": false,
+   "check": "partial",
+   "momentum": -15.86,
+   "skipped": false
+  },
+  {
+   "token": "NIL",
+   "name": "Nillion",
+   "unlockDate": "2026-03-24",
+   "entryDate": "2026-03-17",
+   "exitDate": "2026-03-31",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 7.891,
+   "pctCirculating": 34.98,
+   "advDays": 1.644,
+   "investorsShare": null,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": -3.22,
+   "pnl": 50.42,
+   "worstAgainst": 88.76,
+   "held": 14,
+   "pnlStop": -28.04,
+   "stopped": true,
+   "exits": {
+    "0": -3.64,
+    "3": 3.32,
+    "7": 50.42,
+    "14": 46.12
+   },
+   "edgeVsRandom": 51.05,
+   "live": false,
+   "check": "partial",
+   "momentum": -37.8,
+   "skipped": false
+  },
+  {
+   "token": "BR",
+   "name": "Bedrock",
+   "unlockDate": "2026-03-20",
+   "entryDate": "2026-03-13",
+   "exitDate": "2026-03-27",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 3.811,
+   "pctCirculating": 32.197,
+   "advDays": 7.084,
+   "investorsShare": 0.29,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 6.03,
+   "pnl": -176.03,
+   "worstAgainst": 189.91,
+   "held": 14,
+   "pnlStop": -106.4,
+   "stopped": true,
+   "exits": {
+    "0": 5.38,
+    "3": -106.4,
+    "7": -176.03,
+    "14": -160.29
+   },
+   "edgeVsRandom": -174.32,
+   "live": false,
+   "check": "partial",
+   "momentum": 7.05,
+   "skipped": false
+  },
+  {
+   "token": "ZRO",
+   "name": "LayerZero",
+   "unlockDate": "2026-03-20",
+   "entryDate": "2026-03-13",
+   "exitDate": "2026-03-27",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 53.005,
+   "pctCirculating": 10.189,
+   "advDays": 0.669,
+   "investorsShare": 0.59,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 1.51,
+   "pnl": -2.56,
+   "worstAgainst": 9.95,
+   "held": 14,
+   "pnlStop": -2.56,
+   "stopped": false,
+   "exits": {
+    "0": 1.18,
+    "3": 7.09,
+    "7": -2.56,
+    "14": 7.98
+   },
+   "edgeVsRandom": -3.75,
+   "live": false,
+   "check": "partial",
+   "momentum": 30.29,
+   "skipped": true
+  },
+  {
+   "token": "ESPORTS",
+   "name": "Yooldo",
+   "unlockDate": "2026-03-19",
+   "entryDate": "2026-03-12",
+   "exitDate": "2026-03-26",
+   "rules": [
+    "first"
+   ],
+   "grade": "Not enough data",
+   "usdM": null,
+   "pctCirculating": null,
+   "advDays": null,
+   "investorsShare": null,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": -5.22,
+   "pnl": -4.68,
+   "worstAgainst": 9.34,
+   "held": 14,
+   "pnlStop": -4.68,
+   "stopped": false,
+   "exits": {
+    "0": -5.82,
+    "3": 6.57,
+    "7": -4.68,
+    "14": -20.25
+   },
+   "edgeVsRandom": -7.84,
+   "live": false,
+   "check": "partial",
+   "momentum": -17.22,
+   "skipped": false
+  },
+  {
+   "token": "BARD",
+   "name": "Lombard",
+   "unlockDate": "2026-03-18",
+   "entryDate": "2026-03-11",
+   "exitDate": "2026-03-25",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 32.284,
+   "pctCirculating": 13.333,
+   "advDays": 0.584,
+   "investorsShare": 0.0,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 7.01,
+   "pnl": 58.37,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 58.37,
+   "stopped": false,
+   "exits": {
+    "0": 6.24,
+    "3": 51.58,
+    "7": 58.37,
+    "14": 68.3
+   },
+   "edgeVsRandom": 54.52,
+   "live": false,
+   "check": "confirmed",
+   "momentum": 45.73,
+   "skipped": true
+  },
+  {
+   "token": "WBT",
+   "name": "WhiteBIT Coin",
+   "unlockDate": "2026-03-13",
+   "entryDate": "2026-03-06",
+   "exitDate": "2026-03-20",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 4368.09,
+   "pctCirculating": 38.188,
+   "advDays": 59.303,
+   "investorsShare": 0.0,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -0.58,
+   "pnl": -1.16,
+   "worstAgainst": 6.71,
+   "held": 14,
+   "pnlStop": -1.16,
+   "stopped": false,
+   "exits": {
+    "0": -0.89,
+    "3": -2.11,
+    "7": -1.16,
+    "14": 3.01
+   },
+   "edgeVsRandom": -0.2,
+   "live": false,
+   "check": "partial",
+   "momentum": 3.43,
+   "skipped": false
+  },
+  {
+   "token": "RED",
+   "name": "RedStone",
+   "unlockDate": "2026-03-06",
+   "entryDate": "2026-02-27",
+   "exitDate": "2026-03-13",
+   "rules": [
+    "big",
+    "investors",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 6.59,
+   "pctCirculating": 13.017,
+   "advDays": 0.667,
+   "investorsShare": 0.65,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 20.91,
+   "pnl": 27.12,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 27.12,
+   "stopped": false,
+   "exits": {
+    "0": 16.98,
+    "3": 23.12,
+    "7": 27.12,
+    "14": 17.18
+   },
+   "edgeVsRandom": 22.45,
+   "live": false,
+   "check": "partial",
+   "momentum": -10.7,
+   "skipped": false
+  },
+  {
+   "token": "GRASS",
+   "name": "Grass",
+   "unlockDate": "2026-02-28",
+   "entryDate": "2026-02-21",
+   "exitDate": "2026-03-07",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 14.643,
+   "pctCirculating": 11.662,
+   "advDays": 0.927,
+   "investorsShare": 0.0,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 23.35,
+   "pnl": -21.22,
+   "worstAgainst": 22.21,
+   "held": 14,
+   "pnlStop": -22.34,
+   "stopped": true,
+   "exits": {
+    "0": 18.62,
+    "3": -0.81,
+    "7": -21.22,
+    "14": -31.73
+   },
+   "edgeVsRandom": -20.62,
+   "live": false,
+   "check": "confirmed",
+   "momentum": -4.05,
+   "skipped": false
+  },
+  {
+   "token": "KAITO",
+   "name": "Kaito",
+   "unlockDate": "2026-02-20",
+   "entryDate": "2026-02-13",
+   "exitDate": "2026-02-27",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 13.587,
+   "pctCirculating": 13.505,
+   "advDays": 0.682,
+   "investorsShare": 0.07,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": -5.54,
+   "pnl": -8.07,
+   "worstAgainst": 18.25,
+   "held": 14,
+   "pnlStop": -8.07,
+   "stopped": false,
+   "exits": {
+    "0": -6.17,
+    "3": -6.78,
+    "7": -8.07,
+    "14": -10.63
+   },
+   "edgeVsRandom": -10.71,
+   "live": false,
+   "check": "partial",
+   "momentum": -18.81,
+   "skipped": false
+  },
+  {
+   "token": "ZRO",
+   "name": "LayerZero",
+   "unlockDate": "2026-02-20",
+   "entryDate": "2026-02-13",
+   "exitDate": "2026-02-27",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 39.134,
+   "pctCirculating": 10.189,
+   "advDays": 0.283,
+   "investorsShare": 0.59,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 28.03,
+   "pnl": 17.12,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 17.12,
+   "stopped": false,
+   "exits": {
+    "0": 21.58,
+    "3": 18.74,
+    "7": 17.12,
+    "14": 2.4
+   },
+   "edgeVsRandom": 15.93,
+   "live": false,
+   "check": "partial",
+   "momentum": 7.76,
+   "skipped": false
+  },
+  {
+   "token": "YZY",
+   "name": "YZY (Yeezy)",
+   "unlockDate": "2026-02-17",
+   "entryDate": "2026-02-10",
+   "exitDate": "2026-02-24",
+   "rules": [
+    "big",
+    "investors"
+   ],
+   "grade": "Very high",
+   "usdM": 20.424,
+   "pctCirculating": 48.077,
+   "advDays": 11.93,
+   "investorsShare": 1.0,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 2.04,
+   "pnl": 0.71,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 0.71,
+   "stopped": false,
+   "exits": {
+    "0": 1.69,
+    "3": 1.32,
+    "7": 0.71,
+    "14": 1.6
+   },
+   "edgeVsRandom": 0.49,
+   "live": false,
+   "check": "confirmed",
+   "momentum": -2.2,
+   "skipped": false
+  },
+  {
+   "token": "BERA",
+   "name": "Berachain",
+   "unlockDate": "2026-02-06",
+   "entryDate": "2026-01-30",
+   "exitDate": "2026-02-13",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 44.07,
+   "pctCirculating": 43.201,
+   "advDays": 0.536,
+   "investorsShare": 0.45,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 29.81,
+   "pnl": 14.89,
+   "worstAgainst": 6.46,
+   "held": 14,
+   "pnlStop": 14.89,
+   "stopped": false,
+   "exits": {
+    "0": 22.65,
+    "3": 40.11,
+    "7": 14.89,
+    "14": 7.52
+   },
+   "edgeVsRandom": 8.43,
+   "live": false,
+   "check": "partial",
+   "momentum": 39.93,
+   "skipped": true
+  },
+  {
+   "token": "BGB",
+   "name": "Bitget Token",
+   "unlockDate": "2026-01-26",
+   "entryDate": "2026-01-19",
+   "exitDate": "2026-02-02",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 499.929,
+   "pctCirculating": 20.0,
+   "advDays": 8.832,
+   "investorsShare": 0.0,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 5.27,
+   "pnl": 18.22,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 18.22,
+   "stopped": false,
+   "exits": {
+    "0": 4.7,
+    "3": 4.2,
+    "7": 18.22,
+    "14": 29.28
+   },
+   "edgeVsRandom": 16.75,
+   "live": false,
+   "check": "confirmed",
+   "momentum": 8.71,
+   "skipped": false
+  },
+  {
+   "token": "MBG",
+   "name": "MBG (MultiBank Group)",
+   "unlockDate": "2026-01-22",
+   "entryDate": "2026-01-15",
+   "exitDate": "2026-01-29",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 14.847,
+   "pctCirculating": 18.92,
+   "advDays": 1.837,
+   "investorsShare": null,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -0.99,
+   "pnl": 26.49,
+   "worstAgainst": 1.0,
+   "held": 14,
+   "pnlStop": 26.49,
+   "stopped": false,
+   "exits": {
+    "0": -1.31,
+    "3": 38.58,
+    "7": 26.49,
+    "14": 19.41
+   },
+   "edgeVsRandom": 23.82,
+   "live": false,
+   "check": "partial",
+   "momentum": 16.39,
+   "skipped": false
+  },
+  {
+   "token": "RIVER",
+   "name": "River",
+   "unlockDate": "2026-01-22",
+   "entryDate": "2026-01-15",
+   "exitDate": "2026-01-29",
+   "rules": [
+    "investors"
+   ],
+   "grade": "Very high",
+   "usdM": 66.611,
+   "pctCirculating": 7.653,
+   "advDays": 2.058,
+   "investorsShare": 1.0,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -51.37,
+   "pnl": -130.3,
+   "worstAgainst": 294.12,
+   "held": 14,
+   "pnlStop": -24.79,
+   "stopped": true,
+   "exits": {
+    "0": -105.94,
+    "3": -182.65,
+    "7": -130.3,
+    "14": 34.35
+   },
+   "edgeVsRandom": -140.12,
+   "live": false,
+   "check": "partial",
+   "momentum": 290.6,
+   "skipped": true
+  },
+  {
+   "token": "PLUME",
+   "name": "Plume",
+   "unlockDate": "2026-01-21",
+   "entryDate": "2026-01-14",
+   "exitDate": "2026-01-28",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 71.94,
+   "pctCirculating": 40.949,
+   "advDays": 4.293,
+   "investorsShare": 0.51,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": -0.38,
+   "pnl": -2.37,
+   "worstAgainst": 20.87,
+   "held": 14,
+   "pnlStop": -21.12,
+   "stopped": true,
+   "exits": {
+    "0": -0.69,
+    "3": 18.91,
+    "7": -2.37,
+    "14": -3.57
+   },
+   "edgeVsRandom": -2.02,
+   "live": false,
+   "check": "partial",
+   "momentum": 204.37,
+   "skipped": true
+  },
+  {
+   "token": "ZRO",
+   "name": "LayerZero",
+   "unlockDate": "2026-01-20",
+   "entryDate": "2026-01-13",
+   "exitDate": "2026-01-27",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 45.769,
+   "pctCirculating": 10.189,
+   "advDays": 1.877,
+   "investorsShare": 0.59,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -15.11,
+   "pnl": -33.14,
+   "worstAgainst": 51.41,
+   "held": 14,
+   "pnlStop": -28.63,
+   "stopped": true,
+   "exits": {
+    "0": -18.11,
+    "3": -45.73,
+    "7": -33.14,
+    "14": -19.81
+   },
+   "edgeVsRandom": -34.33,
+   "live": false,
+   "check": "partial",
+   "momentum": 12.74,
+   "skipped": false
+  },
+  {
+   "token": "DBR",
+   "name": "deBridge",
+   "unlockDate": "2026-01-17",
+   "entryDate": "2026-01-10",
+   "exitDate": "2026-01-24",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 11.481,
+   "pctCirculating": 15.015,
+   "advDays": 1.662,
+   "investorsShare": 0.18,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -0.35,
+   "pnl": 12.95,
+   "worstAgainst": 4.17,
+   "held": 14,
+   "pnlStop": 12.95,
+   "stopped": false,
+   "exits": {
+    "0": -0.66,
+    "3": -0.13,
+    "7": 12.95,
+    "14": 8.69
+   },
+   "edgeVsRandom": 13.25,
+   "live": false,
+   "check": "confirmed",
+   "momentum": -8.49,
+   "skipped": false
+  },
+  {
+   "token": "TRUMP",
+   "name": "Official Trump",
+   "unlockDate": "2026-01-17",
+   "entryDate": "2026-01-10",
+   "exitDate": "2026-01-24",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 270.964,
+   "pctCirculating": 25.0,
+   "advDays": 1.205,
+   "investorsShare": 0.0,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 0.71,
+   "pnl": 9.74,
+   "worstAgainst": 7.58,
+   "held": 14,
+   "pnlStop": 9.74,
+   "stopped": false,
+   "exits": {
+    "0": 0.39,
+    "3": 7.35,
+    "7": 9.74,
+    "14": 16.5
+   },
+   "edgeVsRandom": 2.82,
+   "live": false,
+   "check": "confirmed",
+   "momentum": 6.22,
+   "skipped": false
+  },
+  {
+   "token": "ZRO",
+   "name": "LayerZero",
+   "unlockDate": "2025-12-20",
+   "entryDate": "2025-12-13",
+   "exitDate": "2025-12-27",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 34.78,
+   "pctCirculating": 12.672,
+   "advDays": 0.961,
+   "investorsShare": 0.59,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": 9.23,
+   "pnl": 15.31,
+   "worstAgainst": 3.99,
+   "held": 14,
+   "pnlStop": 15.31,
+   "stopped": false,
+   "exits": {
+    "0": 8.14,
+    "3": 11.14,
+    "7": 15.31,
+    "14": 8.48
+   },
+   "edgeVsRandom": 14.12,
+   "live": false,
+   "check": "partial",
+   "momentum": 5.39,
+   "skipped": false
+  },
+  {
+   "token": "PENGU",
+   "name": "Pudgy Penguins",
+   "unlockDate": "2025-12-17",
+   "entryDate": "2025-12-10",
+   "exitDate": "2025-12-24",
+   "rules": [
+    "first"
+   ],
+   "grade": "Moderate",
+   "usdM": 7.124,
+   "pctCirculating": 1.123,
+   "advDays": 0.042,
+   "investorsShare": 0.0,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 25.18,
+   "pnl": 30.04,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 30.04,
+   "stopped": false,
+   "exits": {
+    "0": 19.81,
+    "3": 25.07,
+    "7": 30.04,
+    "14": 28.23
+   },
+   "edgeVsRandom": 26.74,
+   "live": false,
+   "check": "confirmed",
+   "momentum": 1.44,
+   "skipped": false
+  },
+  {
+   "token": "MOVE",
+   "name": "Movement",
+   "unlockDate": "2025-12-09",
+   "entryDate": "2025-12-02",
+   "exitDate": "2025-12-16",
+   "rules": [
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 6.937,
+   "pctCirculating": 5.87,
+   "advDays": 0.321,
+   "investorsShare": 0.38,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 8.83,
+   "pnl": 14.1,
+   "worstAgainst": 7.32,
+   "held": 14,
+   "pnlStop": 14.1,
+   "stopped": false,
+   "exits": {
+    "0": 7.8,
+    "3": 14.15,
+    "7": 14.1,
+    "14": 28.12
+   },
+   "edgeVsRandom": 7.57,
+   "live": false,
+   "check": "confirmed",
+   "momentum": -26.6,
+   "skipped": false
+  },
+  {
+   "token": "XION",
+   "name": "XION",
+   "unlockDate": "2025-12-05",
+   "entryDate": "2025-11-28",
+   "exitDate": "2025-12-12",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "grade": "Very high",
+   "usdM": 9.487,
+   "pctCirculating": 56.917,
+   "advDays": 0.582,
+   "investorsShare": null,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": 39.32,
+   "pnl": 49.62,
+   "worstAgainst": 0.0,
+   "held": 14,
+   "pnlStop": 49.62,
+   "stopped": false,
+   "exits": {
+    "0": 27.91,
+    "3": 43.92,
+    "7": 49.62,
+    "14": 61.8
+   },
+   "edgeVsRandom": 45.81,
+   "live": false,
+   "check": "partial",
+   "momentum": 6.59,
+   "skipped": false
+  },
+  {
+   "token": "BEAT",
+   "name": "Audiera",
+   "unlockDate": "2025-12-01",
+   "entryDate": "2025-11-24",
+   "exitDate": "2025-12-08",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 21.525,
+   "pctCirculating": 15.25,
+   "advDays": 0.639,
+   "investorsShare": 0.0,
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -15.14,
+   "pnl": -119.96,
+   "worstAgainst": 119.44,
+   "held": 14,
+   "pnlStop": -29.38,
+   "stopped": true,
+   "exits": {
+    "0": -18.15,
+    "3": -29.38,
+    "7": -119.96,
+    "14": -139.57
+   },
+   "edgeVsRandom": -116.76,
+   "live": false,
+   "check": "confirmed",
+   "momentum": 577.8,
+   "skipped": true
+  },
+  {
+   "token": "HYPE",
+   "name": "Hyperliquid",
+   "unlockDate": "2025-11-29",
+   "entryDate": "2025-11-22",
+   "exitDate": "2025-12-06",
+   "rules": [
+    "first"
+   ],
+   "grade": "High",
+   "usdM": 60.917,
+   "pctCirculating": 0.645,
+   "advDays": 0.112,
+   "investorsShare": 0.0,
+   "firstInsiderUnlock": true,
+   "entryVsUnlockDay": -2.96,
+   "pnl": 7.98,
+   "worstAgainst": 6.9,
+   "held": 14,
+   "pnlStop": 7.98,
+   "stopped": false,
+   "exits": {
+    "0": -3.36,
+    "3": 7.79,
+    "7": 7.98,
+    "14": 14.78
+   },
+   "edgeVsRandom": 8.7,
+   "live": false,
+   "check": "partial",
+   "momentum": -29.39,
+   "skipped": false
+  }
+ ],
+ "ids": {
+  "2Z": "doublezero",
+  "ALLO": "allora",
+  "APT": "aptos",
+  "ARB": "arbitrum",
+  "AVAX": "avalanche-2",
+  "BABY": "babylon",
+  "BARD": "lombard-protocol",
+  "BEAT": "audiera",
+  "BERA": "berachain-bera",
+  "BGB": "bitget-token",
+  "BR": "bedrock-token",
+  "CAPX": "capx-ai-2",
+  "COAI": "chainopera-ai",
+  "CONX": "connex",
+  "CRO": "crypto-com-chain",
+  "DBR": "debridge",
+  "EIGEN": "eigenlayer",
+  "ENA": "ethena",
+  "ES": "eclipse-3",
+  "ESPORTS": "yooldo-games",
+  "FF": "falcon-finance-ff",
+  "GRASS": "grass",
+  "GUN": "gunz",
+  "H": "humanity",
+  "HOME": "home",
+  "HUMA": "huma-finance",
+  "HYPE": "hyperliquid",
+  "JTO": "jito-governance-token",
+  "JUP": "jupiter-exchange-solana",
+  "KAITO": "kaito",
+  "KMNO": "kamino",
+  "LAVA": "lava-network",
+  "LINEA": "linea",
+  "MANTA": "manta-network",
+  "MBG": "mbg-by-multibank-group",
+  "ME": "magic-eden",
+  "MON": "monad",
+  "MOVE": "movement",
+  "NEWT": "newton-protocol",
+  "NIL": "nillion",
+  "OP": "optimism",
+  "OPN": "opinion",
+  "PARTI": "particle-network",
+  "PENGU": "pudgy-penguins",
+  "PIEVERSE": "pieverse",
+  "PLUME": "plume",
+  "PROVE": "succinct",
+  "PYTH": "pyth-network",
+  "RED": "redstone-oracles",
+  "RIVER": "river",
+  "SAHARA": "sahara-ai",
+  "SEI": "sei-network",
+  "SIGN": "sign-global",
+  "SOLV": "solv-protocol",
+  "SOON": "soon-2",
+  "SOSO": "sosovalue",
+  "SPEC": "spectral",
+  "STBL": "stbl",
+  "STRK": "starknet",
+  "SUI": "sui",
+  "SXT": "space-and-time",
+  "TIA": "celestia",
+  "TRUMP": "official-trump",
+  "UDS": "undeads-games",
+  "W": "wormhole",
+  "WBT": "whitebit",
+  "WET": "humidifi",
+  "WLD": "worldcoin",
+  "XION": "xion-2",
+  "XPL": "plasma",
+  "YZY": "yzy",
+  "ZK": "zksync",
+  "ZRO": "layerzero"
+ },
+ "method": "Fixed playbook applied to every past unlock in the track record. Entry and exit use CoinGecko daily prices at 00:00 UTC; day 0 is the unlock date. Profit is for a short: positive when the price fell. Costs assumed: 0.10% fees for the round trip and 0.03% funding per day held. The 'with stop' version covers at the first daily close 20% above entry, so a real stop-loss order could fill earlier or later. The account curve books $1,000 per trade on its exit date. Trades are skipped when the token rose 30% or more from 30 days before the unlock to the entry day; that guard was chosen after seeing the worst losses, so results are shown with and without it. Rules were chosen from published research and this same year of data, so the first-half and second-half results and the live-tracked trades are the fairer test."
+}

@@ -131,6 +131,12 @@ table.gt td:first-child { white-space: nowrap; }
 .gcell.best { box-shadow: inset 0 0 0 3px var(--sun); }
 .gcell.na { background: transparent; }
 section > .seg:first-child { margin-top: 0; }
+.warnline { color: var(--sun); }
+ol.steps { margin: 0; padding-left: 22px; display: grid; gap: 8px; max-width: 80ch; }
+table.sig { min-width: 860px; }
+.status { font-weight: 600; } .status.soon { color: var(--sun); } .status.open { color: var(--bull); }
+.pc { font-weight: 600; font-size: 13.5px; } .pc.ok { color: var(--bull); } .pc.bad { color: var(--bear); } .pc.na { color: var(--muted); font-weight: 500; }
+details.logp summary { cursor: pointer; list-style: none; } details.logp summary h3 { display: inline; } details.logp summary::after { content: ' (show)'; color: var(--sun); font-size: 14px; } details.logp[open] summary::after { content: ' (hide)'; }
 .findings ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; max-width: 80ch; }
 tr.small td { opacity: .75; }
 .na { color: var(--muted); }
@@ -216,6 +222,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       <button role="tab" data-tab="news" aria-selected="true">Today</button>
       <button role="tab" data-tab="unlocks" aria-selected="false">Token unlocks</button>
       <button role="tab" data-tab="past" aria-selected="false">Past unlocks</button>
+      <button role="tab" data-tab="signals" aria-selected="false">Trade signals</button>
       <button role="tab" data-tab="week" aria-selected="false">Week ahead</button>
       <button role="tab" data-tab="supply" aria-selected="false">Supply and revenue</button>
     </nav>
@@ -243,7 +250,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
   const { el } = Desk;
   const main = document.getElementById('main');
   let D, P, tab = 'news', uRange = 30, uView = 'upcoming', sortKey = 'revenueUsdM', open = null, cdTimer;
-  try { const h = location.hash.slice(1); if (['news', 'unlocks', 'past', 'week', 'supply'].includes(h)) tab = h; } catch (e) {}
+  try { const h = location.hash.slice(1); if (['news', 'unlocks', 'past', 'signals', 'week', 'supply'].includes(h)) tab = h; } catch (e) {}
 
   function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : ''; }
 
@@ -692,9 +699,159 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
         (bt.skipped && bt.skipped.length) ? el('p', { class: 'small', text: 'Left out: ' + bt.skipped.map(s => s.token + (s.date ? ' ' + s.date : '') + ' (' + s.why + ')').join('; ') }) : null])])]);
   }
 
+  /* ---------------- Trade signals ---------------- */
+  const RULE_SHORT = { big: '10%+ of supply', investors: 'Mostly investors', first: 'First insider unlock', thin: '3+ days of volume' };
+  let sigCurve = 'guard', sigLogFilter = 'taken', pumpCache = {};
+
+  function addDays(iso, n) { const d = new Date(iso + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
+  function fmtDay(iso) { return new Date(iso + 'T00:00:00Z').toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' }); }
+  function daysFromToday(iso) { const t = new Date(); const today = Date.UTC(t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate()); return Math.round((Date.parse(iso + 'T00:00:00Z') - today) / 86400000); }
+
+  function upcomingSignals(S) {
+    const pb = S.playbook, R = pb.rules;
+    return (D.unlocks.upcoming || []).map(u => {
+      const mix = u.recipientsMix, tot = mix ? Object.values(mix).reduce((a, b) => a + (b || 0), 0) : 0;
+      const m = u.market || {};
+      const facts = {
+        pctCirculating: u.pctCirculating ?? (u.pctBasis === 'of circulating' ? u.pct : null),
+        investorsShare: tot ? (mix.investors || 0) / tot : null,
+        firstInsiderUnlock: u.firstInsiderUnlock === true,
+        // only a multi-day average counts, as in the backtest; one day's volume is too noisy
+        advDays: u.usdM && m.advUsdM && m.advBasis && !/24h/i.test(m.advBasis) ? u.usdM / m.advUsdM : null,
+      };
+      const hits = Object.keys(R).filter(k => { const r = R[k], v = facts[r.field]; return r.equals !== undefined ? v === r.equals : (typeof v === 'number' && v >= r.min); });
+      return { u, hits, entry: addDays(u.date, pb.entry), exit: addDays(u.date, pb.exit), id: u.coingeckoId || (S.ids || {})[u.token] };
+    }).filter(x => x.hits.length && daysFromToday(x.exit) >= 0).sort((a, b) => a.entry.localeCompare(b.entry));
+  }
+
+  async function pumpCheck(sig, pumpPct) {
+    // Rise over the 23 days up to the entry day (or up to today if entry is still ahead), from CoinGecko in the viewer's browser.
+    if (!sig.id) return { text: 'No price id, check by hand', cls: 'na' };
+    if (pumpCache[sig.id]) return pumpCache[sig.id];
+    try {
+      const j = await fetch('https://api.coingecko.com/api/v3/coins/' + sig.id + '/market_chart?vs_currency=usd&days=40&interval=daily').then(r => r.json());
+      const px = {}; (j.prices || []).forEach(([t, p]) => px[new Date(t).toISOString().slice(0, 10)] = p);
+      const end = daysFromToday(sig.entry) > 0 ? new Date().toISOString().slice(0, 10) : sig.entry;
+      const a = px[addDays(end, -23)], z = px[end] || Object.values(px).slice(-1)[0];
+      if (!a || !z) return (pumpCache[sig.id] = { text: 'Price history missing', cls: 'na' });
+      const rise = (z / a - 1) * 100;
+      return (pumpCache[sig.id] = rise >= pumpPct ? { text: 'Up ' + rise.toFixed(0) + '% in 3 weeks: skip', cls: 'bad', rise } : { text: (rise >= 0 ? 'Up ' : 'Down ') + Math.abs(rise).toFixed(0) + '% in 3 weeks: OK', cls: 'ok', rise });
+    } catch (e) { return { text: 'Price check failed, check by hand', cls: 'na' }; }
+  }
+
+  function dateChart(series) {
+    const W = 800, H = 280, L = 64, R = 24, T = 14, B = 30;
+    const all = series.flatMap(s => s.pts);
+    if (!all.length) return el('p', { class: 'small', text: 'No trades yet.' });
+    const t0 = Date.parse(all.reduce((a, p) => p.date < a ? p.date : a, all[0].date)), t1 = Date.parse(all.reduce((a, p) => p.date > a ? p.date : a, all[0].date));
+    let lo = Math.min(0, ...all.map(p => p.cum)), hi = Math.max(0, ...all.map(p => p.cum));
+    const rough = Math.max(1, hi - lo) / 5, mag = Math.pow(10, Math.floor(Math.log10(rough)));
+    const step = [1, 2, 5, 10].find(m => m * mag >= rough) * mag;
+    lo = Math.floor(lo / step) * step; hi = Math.ceil(hi / step) * step;
+    const xs = d => L + (Date.parse(d) - t0) / Math.max(1, t1 - t0) * (W - L - R), ys = v => T + (hi - v) / (hi - lo) * (H - T - B);
+    let svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" class="lc" role="img" aria-label="Account result over time">';
+    for (let v = lo; v <= hi + 0.1; v += step) svg += '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + ys(v) + '" y2="' + ys(v) + '" class="' + (v === 0 ? 'zero' : 'grid') + '"/><text x="' + (L - 8) + '" y="' + (ys(v) + 4) + '" class="tick" text-anchor="end">' + (v < 0 ? '−$' : '$') + Math.abs(v).toLocaleString('en-US') + '</text>';
+    const months = []; for (let t = new Date(t0); t <= new Date(t1); t.setUTCMonth(t.getUTCMonth() + 2)) months.push(new Date(Date.UTC(t.getUTCFullYear(), t.getUTCMonth(), 1)).toISOString().slice(0, 10));
+    months.forEach(m => { if (Date.parse(m) >= t0) svg += '<text x="' + xs(m) + '" y="' + (H - 8) + '" class="tick" text-anchor="middle">' + new Date(m).toLocaleDateString('en-US', { month: 'short', year: '2-digit', timeZone: 'UTC' }) + '</text>'; });
+    series.forEach(s => { if (!s.pts.length) return; let d = 'M' + xs(s.pts[0].date).toFixed(1) + ',' + ys(0).toFixed(1); s.pts.forEach(p => d += ' L' + xs(p.date).toFixed(1) + ',' + ys(p.cum).toFixed(1)); svg += '<path d="' + d + '" fill="none" stroke="' + s.color + '" stroke-width="2" stroke-linejoin="round"/>'; });
+    svg += '</svg>';
+    const box = el('div', { class: 'chartbox' }); box.innerHTML = svg; return box;
+  }
+
+  function statRow(label, s, extra) {
+    if (!s) return el('tr', null, [el('td', { text: label }), el('td', { colspan: '6', class: 'na', text: 'No trades yet' })]);
+    return el('tr', null, [el('td', null, [label, extra ? el('small', { class: 'rng', text: extra }) : null]), el('td', { class: 'n', text: s.n + ' (' + s.tokens + ')' }), el('td', { class: 'n', text: s.win + '%' }),
+      el('td', { class: 'n' }, [pct(s.median)]), el('td', { class: 'n' }, [pct(s.worst)]),
+      el('td', { class: 'n', text: s.profitFactor == null ? '—' : s.profitFactor.toFixed(2) }),
+      el('td', { class: 'n' }, [el('span', { class: 'num ' + (s.totalUsd < 0 ? 'down' : 'up'), text: (s.totalUsd < 0 ? '−$' : '+$') + Math.abs(s.totalUsd).toLocaleString('en-US') })])]);
+  }
+  function statTable(rows) {
+    return el('div', { class: 'tablewrap' }, [el('table', { class: 'gt' }, [el('thead', null, [el('tr', null, [el('th', { text: '' }), el('th', { class: 'n', text: 'Trades (tokens)' }), el('th', { class: 'n', text: 'Won' }), el('th', { class: 'n', text: 'Median trade' }), el('th', { class: 'n', text: 'Worst trade' }), el('th', { class: 'n', text: 'Profit factor*' }), el('th', { class: 'n', text: 'Total, $1k each' })])]), el('tbody', null, rows)])]);
+  }
+
+  function signals() {
+    const S = D.signals;
+    if (!S || !S.trades) return el('section', null, [el('p', { class: 'state', text: 'Signals are being calculated. They update once a day.' })]);
+    const pb = S.playbook, sum = S.summary, ng = S.summaryNoGuard;
+    const usd = v => (v < 0 ? '−$' : '+$') + Math.abs(v).toLocaleString('en-US');
+
+    // upcoming
+    const ups = upcomingSignals(S);
+    const upList = el('div', { class: 'panel' }, [el('h3', { text: 'Upcoming signals' }),
+      el('p', { class: 'small', text: 'Unlocks on the live page that match the playbook. Planned short: ' + Math.abs(pb.entry) + ' days before the unlock, covered ' + pb.exit + ' days after. Before entering, check the token has not pumped ' + pb.pumpPct + '% or more in the three weeks before, and that the unlock data is confirmed (confidence 60+).' }),
+      ups.length ? el('div', { class: 'tablewrap' }, [el('table', { class: 'el sig' }, [
+        el('thead', null, [el('tr', null, [el('th', { text: 'Token' }), el('th', { text: 'Unlock' }), el('th', { text: 'Why' }), el('th', { text: 'Short from' }), el('th', { text: 'Cover' }), el('th', { text: 'Status' }), el('th', { text: 'Data' }), el('th', { text: 'Pump check' })])]),
+        el('tbody', null, ups.map(x => {
+          const dEntry = daysFromToday(x.entry), dExit = daysFromToday(x.exit);
+          const status = dEntry > 0 ? 'Opens in ' + dEntry + ' day' + (dEntry === 1 ? '' : 's') : dExit > 0 ? 'Open now, cover in ' + dExit + ' day' + (dExit === 1 ? '' : 's') : 'Cover today';
+          const conf = x.u.confidenceScore ?? 0;
+          const pc = el('span', { class: 'pc na', text: dEntry <= 14 ? 'Checking…' : 'Checked nearer the date' });
+          if (dEntry <= 14) pumpCheck(x, pb.pumpPct).then(r => { pc.textContent = r.text; pc.className = 'pc ' + r.cls; });
+          return el('tr', null, [el('td', null, [el('b', { text: x.u.token }), el('small', { text: x.u.usdM ? ' ' + Desk.usd(x.u.usdM) : '' })]), el('td', { class: 'num', text: fmtDay(x.u.date) }),
+            el('td', { text: x.hits.map(h => RULE_SHORT[h]).join(', ') }), el('td', { class: 'num', text: fmtDay(x.entry) }), el('td', { class: 'num', text: fmtDay(x.exit) }),
+            el('td', null, [el('span', { class: 'status ' + (dEntry <= 3 && dEntry > 0 ? 'soon' : dEntry <= 0 ? 'open' : ''), text: status })]),
+            el('td', null, [el('span', { class: 'cchip c-' + (x.u.confidenceLabel || 'unverified').toLowerCase(), title: 'Confidence in the unlock data' }, [el('b', { text: String(conf) }), conf >= 60 ? ' ok' : ' confirm first'])]),
+            el('td', null, [pc])]);
+        }))])]) : el('p', { text: 'No upcoming unlocks match the playbook right now.' })]);
+
+    // headline
+    const lead = el('p', { class: 'lead', text: 'Taking every signal over the past year: ' + sum.n + ' shorts, ' + sum.win + '% made money, the median trade made ' + sgn(sum.median) + ', and $1,000 per trade would have returned ' + usd(sum.totalUsd) + ' after assumed costs.' });
+    const warn = el('p', { class: 'verdict warnline', text: 'The catch: the worst trade lost ' + Math.abs(sum.worst).toFixed(0) + '%, and the account fell $' + Math.abs(S.drawdownUsd).toLocaleString('en-US') + ' from its peak at one point. Shorts can lose more than 100% when a token squeezes, so size small and use a real stop order.' });
+
+    // playbook steps
+    const plan = el('div', { class: 'panel' }, [el('h3', { text: 'The playbook' }), el('ol', { class: 'steps' }, [
+      el('li', null, [el('b', { text: 'Pick the unlock. ' }), 'Any of: 10%+ of circulating supply, 60%+ to investors, or the token’s first insider unlock. Only when the unlock data is confirmed (confidence 60+). (Size against trading volume was tested too and dropped: only 4 trades fired on it alone, all one token.)']),
+      el('li', null, [el('b', { text: 'Skip pumps. ' }), 'If the token is up ' + pb.pumpPct + '% or more over the three weeks before entry, do not short it. Most of the worst losses came from shorting into a pump.']),
+      el('li', null, [el('b', { text: 'Enter ' + Math.abs(pb.entry) + ' days before. ' }), 'Short at the daily close a week before the unlock.']),
+      el('li', null, [el('b', { text: 'Cover ' + pb.exit + ' days after. ' }), 'Close at the daily close a week after. Covering on the unlock day itself made less but had far smaller worst losses (see below).']),
+      el('li', null, [el('b', { text: 'Protect the downside. ' }), 'Place a stop about ' + pb.stopPct + '% above entry and keep each position small: up to ' + S.maxOpen + ' signals were open at the same time.'])
+    ])]);
+
+    // curve
+    const curveSeries = sigCurve === 'guard' ? [{ pts: S.curve, color: '#ffb547' }] : sigCurve === 'stop' ? [{ pts: S.curveStop, color: '#ffb547' }] : [{ pts: S.curveNoGuard, color: '#ffb547' }];
+    const curveP = el('div', { class: 'panel' }, [el('div', { class: 'phead' }, [el('h3', { text: 'Account result, $1,000 per trade' }),
+      seg([['guard', 'Playbook'], ['stop', 'With ' + pb.stopPct + '% stop'], ['noguard', 'Without pump check']], sigCurve, v => sigCurve = v)]),
+      dateChart(curveSeries),
+      el('p', { class: 'small', text: 'Each trade is booked on the day it closes. Fees and funding are already taken off.' })]);
+
+    // stability + exits + rules
+    const H = S.halves;
+    const stab = el('div', { class: 'panel' }, [el('h3', { text: 'Does it hold up?' }),
+      el('p', { class: 'small', text: 'A real edge should work in both halves of the year, survive losing its three best trades, and keep working on trades tracked live from now on.' }),
+      statTable([statRow('Playbook', sum), statRow('Without pump check', ng), statRow('With ' + pb.stopPct + '% stop', S.summaryStop),
+        statRow('First half (to ' + fmtDay(H.split) + ')', H.first), statRow('Second half', H.second),
+        el('tr', null, [el('td', { text: 'Without the 3 best trades' }), el('td', { colspan: '5' }), el('td', { class: 'n' }, [el('span', { class: 'num ' + (sum.totalUsdWithoutBest3 < 0 ? 'down' : 'up'), text: usd(sum.totalUsdWithoutBest3) })])]),
+        statRow('Live-tracked trades', S.live, 'signals the live page showed before the date')]),
+      el('p', { class: 'small', text: '* Profit factor: total won divided by total lost. Above 1 makes money; above 2 is strong.' + (S.medianEdgeVsRandom != null ? ' The median trade also beat shorting the same token at a random time by ' + sgn(S.medianEdgeVsRandom) + '.' : '') })]);
+    const exitP = el('div', { class: 'panel' }, [el('h3', { text: 'When to cover' }),
+      el('p', { class: 'small', text: 'Same entries, different exits. Holding longer earned more but let the worst squeezes run much further.' }),
+      statTable(['0', '3', '7', '14'].filter(z => S.exitCompare[z]).map(z => statRow(z === '0' ? 'Cover on the unlock day' : 'Cover ' + z + ' days after', S.exitCompare[z])))]);
+    const ruleP = el('div', { class: 'panel' }, [el('h3', { text: 'Which trigger worked' }),
+      el('p', { class: 'small', text: 'A trade can match more than one trigger, so these overlap.' }),
+      statTable(Object.keys(S.byRule).filter(k => S.byRule[k]).map(k => statRow(RULE_SHORT[k], S.byRule[k])))]);
+
+    // log
+    const log = S.trades.filter(t => sigLogFilter === 'all' || (sigLogFilter === 'taken' ? !t.skipped : t.skipped));
+    const logP = el('details', { class: 'panel logp' }, [el('summary', null, [el('h3', { text: 'Every trade (' + S.trades.length + ')' })]),
+      seg([['taken', 'Taken (' + S.trades.filter(t => !t.skipped).length + ')'], ['skipped', 'Skipped by pump check (' + S.trades.filter(t => t.skipped).length + ')'], ['all', 'All']], sigLogFilter, v => sigLogFilter = v),
+      el('div', { class: 'tablewrap' }, [el('table', { class: 'el' }, [
+        el('thead', null, [el('tr', null, [el('th', { text: 'Short from' }), el('th', { text: 'Token' }), el('th', { text: 'Why' }), el('th', { class: 'n', text: 'Result' }), el('th', { class: 'n', text: 'Worst against' }), el('th', { class: 'n', text: 'With stop' }), el('th', { class: 'n', text: 'Rise before entry' }), el('th', { text: 'Data check' })])]),
+        el('tbody', null, log.map(t => el('tr', null, [
+          el('td', { class: 'num', text: t.entryDate }), el('td', null, [el('b', { text: t.token }), el('small', { text: ' unlock ' + t.unlockDate.slice(5) })]),
+          el('td', { text: t.rules.map(h => RULE_SHORT[h]).join(', ') }),
+          el('td', { class: 'n' }, [pct(t.pnl)]), el('td', { class: 'n' }, [pct(t.worstAgainst)]),
+          el('td', { class: 'n' }, [t.stopped ? el('span', null, [pct(t.pnlStop), el('small', { text: ' stopped' })]) : pct(t.pnlStop)]),
+          el('td', { class: 'n' }, [t.momentum == null ? el('span', { class: 'na', text: '—' }) : el('span', { class: t.skipped ? 'down' : '', text: (t.momentum > 0 ? '+' : '') + t.momentum.toFixed(0) + '%' + (t.skipped ? ' skip' : '') })]),
+          el('td', { text: (t.check || '—') + (t.live ? ', live' : '') })])))])])]);
+
+    return el('section', { 'aria-label': 'Trade signals' }, [upList, lead, warn, plan, curveP, stab, exitP, ruleP, logP,
+      el('details', { class: 'method' }, [el('summary', { text: 'How this is calculated' }), el('div', { class: 'mbody' }, [el('p', { text: S.method }),
+        el('p', { text: 'This is a record of what a fixed rule set would have done, not a recommendation to trade. Past results in one year and one market phase may not repeat. Real fills, funding rates, borrow availability and exchange listings will differ.' })])])]);
+  }
+
   function render() {
     document.querySelectorAll('nav.tabs button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === tab)));
-    const view = { news, unlocks, past, week, supply }[tab]();
+    const view = { news, unlocks, past, signals, week, supply }[tab]();
     main.replaceChildren(view);
     clearInterval(cdTimer);
     if (tab === 'unlocks' && uView === 'upcoming') {
@@ -721,11 +878,12 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       el('div', null, ['Unlock dates and sizes often change and sources disagree; the confidence tag on each row says how solid it is. ', el('a', { href: '#obs', text: 'Stream scenes' })])
     );
     try { D.backtest = await fetch('data/backtest.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.backtest = null; }
+    try { D.signals = await fetch('data/signals.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.signals = null; }
     P = await Desk.prices(D.news.market);
     renderPrices();
     render();
     setInterval(async () => { P = await Desk.prices(D.news.market); renderPrices(); }, 60000);
-    setInterval(async () => { try { const bt = D.backtest; D = await Desk.load(''); D.backtest = bt; render(); } catch (e) {} }, 300000);
+    setInterval(async () => { try { const bt = D.backtest, sg = D.signals; D = await Desk.load(''); D.backtest = bt; D.signals = sg; render(); } catch (e) {} }, 300000);
   }
   boot();
 })();
