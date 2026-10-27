@@ -60,6 +60,8 @@ def main():
             prim = any(s.get("kind") == "primary" for s in r.get("sources") or [])
             n = len(r.get("sources") or [])
             new["confidence"] = "confirmed" if prim or n >= 2 else "reported" if n == 1 else "estimated"
+            if i is not None and not new.get("coingeckoId"):
+                new["coingeckoId"] = rows[i].get("coingeckoId")  # keep a checked id when research leaves it blank
             if i is None:
                 rows.append(new); added += 1
             else:

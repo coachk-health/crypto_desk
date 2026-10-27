@@ -700,8 +700,8 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
   }
 
   /* ---------------- Trade signals ---------------- */
-  const RULE_SHORT = { big: '10%+ of supply', investors: 'Mostly investors', first: 'First insider unlock', thin: '3+ days of volume' };
-  let sigCurve = 'guard', sigLogFilter = 'taken', pumpCache = {};
+  const RULE_SHORT = { big: '10%+ of supply', investors: 'Mostly investors', first: 'First insider unlock' };
+  let sigCurve = 'guard', sigLogFilter = 'taken', pumpCache = {}, pumpQueue = Promise.resolve();
 
   function addDays(iso, n) { const d = new Date(iso + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
   function fmtDay(iso) { return new Date(iso + 'T00:00:00Z').toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' }); }
@@ -728,15 +728,21 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     // Rise over the 23 days up to the entry day (or up to today if entry is still ahead), from CoinGecko in the viewer's browser.
     if (!sig.id) return { text: 'No price id, check by hand', cls: 'na' };
     if (pumpCache[sig.id]) return pumpCache[sig.id];
+    // CoinGecko's free API rate-limits bursts, so checks run one at a time and retry once.
+    const get = () => fetch('https://api.coingecko.com/api/v3/coins/' + sig.id + '/market_chart?vs_currency=usd&days=40&interval=daily').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+    const turn = pumpQueue; let done; pumpQueue = new Promise(r => done = r);
+    await turn;
     try {
-      const j = await fetch('https://api.coingecko.com/api/v3/coins/' + sig.id + '/market_chart?vs_currency=usd&days=40&interval=daily').then(r => r.json());
+      let j;
+      try { j = await get(); } catch (e) { await new Promise(r => setTimeout(r, 15000)); j = await get(); }
+      setTimeout(done, 2500);
       const px = {}; (j.prices || []).forEach(([t, p]) => px[new Date(t).toISOString().slice(0, 10)] = p);
       const end = daysFromToday(sig.entry) > 0 ? new Date().toISOString().slice(0, 10) : sig.entry;
       const a = px[addDays(end, -23)], z = px[end] || Object.values(px).slice(-1)[0];
       if (!a || !z) return (pumpCache[sig.id] = { text: 'Price history missing', cls: 'na' });
       const rise = (z / a - 1) * 100;
       return (pumpCache[sig.id] = rise >= pumpPct ? { text: 'Up ' + rise.toFixed(0) + '% in 3 weeks: skip', cls: 'bad', rise } : { text: (rise >= 0 ? 'Up ' : 'Down ') + Math.abs(rise).toFixed(0) + '% in 3 weeks: OK', cls: 'ok', rise });
-    } catch (e) { return { text: 'Price check failed, check by hand', cls: 'na' }; }
+    } catch (e) { setTimeout(done, 2500); return { text: 'Price check failed, check by hand', cls: 'na' }; }
   }
 
   function dateChart(series) {
