@@ -27,8 +27,8 @@ SLIP = 0.5
 START, END = -7, 7
 
 MODES = [("market", 0.0), ("ladder", 3.0), ("ladder", 5.0), ("ladder", 8.0)]
-STOPS = [None, 10, 15, 20, 25, 30, 40]
-TARGETS = [None, 10, 15, 20, 25, 30, 40]
+STOPS = [None, 10, 15, 20, 25, 30, 35, 40, 50]
+TARGETS = [None, 10, 15, 20, 25, 30, 40, 50]
 
 
 def bars(ohlc):

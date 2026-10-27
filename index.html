@@ -135,6 +135,8 @@ section > .seg:first-child { margin-top: 0; }
 ol.steps { margin: 0; padding-left: 22px; display: grid; gap: 8px; max-width: 80ch; }
 table.sig { min-width: 860px; }
 .status { font-weight: 600; } .status.soon { color: var(--sun); } .status.open { color: var(--bull); }
+.heat td.n { color: var(--text); font-variant-numeric: tabular-nums; } .heat td.pick { outline: 2px solid var(--sun); outline-offset: -2px; font-weight: 700; }
+details.logp h4 { margin: 18px 0 6px; font-size: 15px; } table.sig small.why { color: var(--muted); font-size: 12px; } table.sig td { vertical-align: top; }
 .pc { font-weight: 600; font-size: 13.5px; } .pc.ok { color: var(--bull); } .pc.bad { color: var(--bear); } .pc.na { color: var(--muted); font-weight: 500; }
 details.logp summary { cursor: pointer; list-style: none; } details.logp summary h3 { display: inline; } details.logp summary::after { content: ' (show)'; color: var(--sun); font-size: 14px; } details.logp[open] summary::after { content: ' (hide)'; }
 .findings ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; max-width: 80ch; }
@@ -701,7 +703,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
 
   /* ---------------- Trade signals ---------------- */
   const RULE_SHORT = { big: '10%+ of supply', investors: 'Mostly investors', first: 'First insider unlock' };
-  let sigCurve = 'guard', sigLogFilter = 'taken', pumpCache = {}, pumpQueue = Promise.resolve();
+  let sigCurve = 'plan', sigLogFilter = 'taken', pumpCache = {}, pumpQueue = Promise.resolve();
 
   function addDays(iso, n) { const d = new Date(iso + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
   function fmtDay(iso) { return new Date(iso + 'T00:00:00Z').toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' }); }
@@ -724,33 +726,53 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     }).filter(x => x.hits.length && daysFromToday(x.exit) >= 0).sort((a, b) => a.entry.localeCompare(b.entry));
   }
 
+  function pumpVerdict(rise, pumpPct) {
+    return rise >= pumpPct ? { text: 'Up ' + rise.toFixed(0) + '% in 3 weeks: skip', cls: 'bad' } : { text: (rise >= 0 ? 'Up ' : 'Down ') + Math.abs(rise).toFixed(0) + '% in 3 weeks: OK', cls: 'ok' };
+  }
   async function pumpCheck(sig, pumpPct) {
-    // Rise over the 23 days up to the entry day (or up to today if entry is still ahead), from CoinGecko in the viewer's browser.
-    if (!sig.id) return { text: 'No price id, check by hand', cls: 'na' };
-    if (pumpCache[sig.id]) return pumpCache[sig.id];
-    // The daily track-record run saves this check; use it straight away when it is current.
-    const saved = (D.signals.pumpChecks || {})[sig.u.token], endDay = daysFromToday(sig.entry) > 0 ? new Date().toISOString().slice(0, 10) : sig.entry;
-    if (saved && saved.to >= addDays(endDay, -1)) return (pumpCache[sig.id] = { text: (saved.rise >= pumpPct ? 'Up ' + saved.rise.toFixed(0) + '% in 3 weeks: skip' : (saved.rise >= 0 ? 'Up ' : 'Down ') + Math.abs(saved.rise).toFixed(0) + '% in 3 weeks: OK'), cls: saved.rise >= pumpPct ? 'bad' : 'ok' });
-    // CoinGecko's free API rate-limits bursts, so checks run one at a time and retry once.
-    const get = () => fetch('https://api.coingecko.com/api/v3/coins/' + sig.id + '/market_chart?vs_currency=usd&days=40&interval=daily').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+    // The check: rise over the 23 days up to the entry day (or today, if entry is still ahead), and the
+    // reference price that sets the entry zone, stop and target: the 00:00 UTC price on the entry day
+    // (until then, the latest price). Binance futures first (what the track record uses), then CoinGecko.
+    if (pumpCache[sig.u.token]) return pumpCache[sig.u.token];
+    const endDay = daysFromToday(sig.entry) > 0 ? new Date().toISOString().slice(0, 10) : sig.entry;
+    const saved = (D.signals.pumpChecks || {})[sig.u.token];
+    const fromSaved = note => Object.assign(pumpVerdict(saved.rise, pumpPct), { rise: saved.rise, ref: saved.ref, refDay: saved.to, final: saved.to >= sig.entry, note });
+    if (saved && saved.ref && saved.to >= sig.entry) return (pumpCache[sig.u.token] = fromSaved(''));
     const turn = pumpQueue; let done; pumpQueue = new Promise(r => done = r);
     await turn;
+    const px = {};
     try {
-      let j;
-      try { j = await get(); } catch (e) { await new Promise(r => setTimeout(r, 15000)); j = await get(); }
-      setTimeout(done, 2500);
-      const px = {}; (j.prices || []).forEach(([t, p]) => px[new Date(t).toISOString().slice(0, 10)] = p);
-      const end = daysFromToday(sig.entry) > 0 ? new Date().toISOString().slice(0, 10) : sig.entry;
-      const a = px[addDays(end, -23)], z = px[end] || Object.values(px).slice(-1)[0];
-      if (!a || !z) return (pumpCache[sig.id] = { text: 'Price history missing', cls: 'na' });
-      const rise = (z / a - 1) * 100;
-      return (pumpCache[sig.id] = rise >= pumpPct ? { text: 'Up ' + rise.toFixed(0) + '% in 3 weeks: skip', cls: 'bad', rise } : { text: (rise >= 0 ? 'Up ' : 'Down ') + Math.abs(rise).toFixed(0) + '% in 3 weeks: OK', cls: 'ok', rise });
+      const k = await fetch('https://fapi.binance.com/fapi/v1/klines?symbol=' + sig.u.token + 'USDT&interval=1d&limit=40').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+      const live = +k[k.length - 1][4], chk = (saved && saved.ref) || (sig.u.market || {}).priceUsd;
+      // A Binance ticker can belong to a different token; check it against a known price first.
+      if (chk && Math.abs(Math.log(live / chk)) > Math.log(saved && saved.ref ? 1.25 : 1.5)) throw new Error('ticker mismatch');
+      k.forEach(r => px[new Date(r[0]).toISOString().slice(0, 10)] = +r[1]);
+      px._live = live;
     } catch (e) {
-      setTimeout(done, 2500);
-      const saved = (D.signals.pumpChecks || {})[sig.u.token];
-      if (saved) return { text: (saved.rise >= pumpPct ? 'Up ' + saved.rise.toFixed(0) + '% in 3 weeks: skip' : (saved.rise >= 0 ? 'Up ' : 'Down ') + Math.abs(saved.rise).toFixed(0) + '% in 3 weeks: OK') + ' (to ' + fmtDay(saved.to) + ')', cls: saved.rise >= pumpPct ? 'bad' : 'ok' };
-      return { text: 'Price check failed, check by hand', cls: 'na' };
+      if (sig.id) {
+        const get = () => fetch('https://api.coingecko.com/api/v3/coins/' + sig.id + '/market_chart?vs_currency=usd&days=40&interval=daily').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+        try {
+          let j;
+          try { j = await get(); } catch (e2) { await new Promise(r => setTimeout(r, 15000)); j = await get(); }
+          (j.prices || []).forEach(([t, p]) => px[new Date(t).toISOString().slice(0, 10)] = p);
+          px._live = (j.prices || []).slice(-1)[0]?.[1];
+        } catch (e3) { /* fall through to the saved check */ }
+      }
     }
+    setTimeout(done, 1500);
+    const a = px[addDays(endDay, -23)], z = daysFromToday(sig.entry) > 0 ? px._live : px[sig.entry];
+    if (a && z) {
+      const rise = (z / a - 1) * 100;
+      return (pumpCache[sig.u.token] = Object.assign(pumpVerdict(rise, pumpPct), { rise, ref: z, refDay: endDay, final: daysFromToday(sig.entry) <= 0 }));
+    }
+    if (saved) return (pumpCache[sig.u.token] = fromSaved(' (as of ' + fmtDay(saved.to) + ')'));
+    return { text: 'Price check failed, check by hand', cls: 'na' };
+  }
+
+  function fmtPx(p) {
+    if (p == null || !isFinite(p)) return '—';
+    const d = p >= 1000 ? 0 : p >= 1 ? 3 : Math.min(8, 2 - Math.floor(Math.log10(p)) + 1);
+    return '$' + p.toLocaleString('en-US', { minimumFractionDigits: Math.min(d, 2), maximumFractionDigits: d });
   }
 
   function dateChart(series) {
@@ -786,81 +808,126 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
   function signals() {
     const S = D.signals;
     if (!S || !S.trades) return el('section', null, [el('p', { class: 'state', text: 'Signals are being calculated. They update once a day.' })]);
-    const pb = S.playbook, sum = S.summary, ng = S.summaryNoGuard;
+    const pb = S.playbook, sum = S.summary, ng = S.summaryNoGuard, L = S.levels;
+    const P = L ? L.plan : null, PS = L ? L.planStats : null;
     const usd = v => (v < 0 ? '−$' : '+$') + Math.abs(v).toLocaleString('en-US');
+    const ZONE = 3; // entry zone width above the check price, %
 
     // upcoming
     const ups = upcomingSignals(S);
+    const lvCells = (ref, final) => {
+      if (!P) return [el('td', { text: '—' }), el('td', { text: '—' }), el('td', { text: '—' })];
+      const pend = final ? '' : ' *';
+      return ref ? [el('td', { class: 'num', text: fmtPx(ref) + '–' + fmtPx(ref * (1 + ZONE / 100)) + pend }),
+        el('td', { class: 'num down', text: fmtPx(ref * (1 + P.stop / 100)) + pend }),
+        el('td', { class: 'num up', text: P.target ? fmtPx(ref * (1 - P.target / 100)) + pend : 'none' })]
+        : [el('td', { class: 'na', text: '+0–' + ZONE + '%' }), el('td', { class: 'na', text: '+' + P.stop + '%' }), el('td', { class: 'na', text: P.target ? '−' + P.target + '%' : 'none' })];
+    };
     const upList = el('div', { class: 'panel' }, [el('h3', { text: 'Upcoming signals' }),
-      el('p', { class: 'small', text: 'Unlocks on the live page that match the playbook. Planned short: ' + Math.abs(pb.entry) + ' days before the unlock, covered ' + pb.exit + ' days after. Before entering, check the token has not pumped ' + pb.pumpPct + '% or more in the three weeks before, and that the unlock data is confirmed (confidence 60+).' }),
+      el('p', { class: 'small', text: P ? 'Unlocks that match the playbook, with the levels it tested best. On the check day, confirm the unlock data (confidence 60+) and that the token has not pumped ' + pb.pumpPct + '%+; the next day’s 00:00 UTC price then sets the entry zone, stop (+' + P.stop + '%) and target (' + (P.target ? '−' + P.target + '%' : 'none') + '). * = from today’s price, final on the check day.' : 'Unlocks on the live page that match the playbook.' }),
       ups.length ? el('div', { class: 'tablewrap' }, [el('table', { class: 'el sig' }, [
-        el('thead', null, [el('tr', null, [el('th', { text: 'Token' }), el('th', { text: 'Unlock' }), el('th', { text: 'Why' }), el('th', { text: 'Short from' }), el('th', { text: 'Cover' }), el('th', { text: 'Status' }), el('th', { text: 'Data' }), el('th', { text: 'Pump check' })])]),
+        el('thead', null, [el('tr', null, [el('th', { text: 'Token' }), el('th', { text: 'Unlock' }), el('th', { text: 'Check' }), el('th', { text: 'Entry zone' }), el('th', { text: 'Stop' }), el('th', { text: 'Target' }), el('th', { text: 'Cover by' }), el('th', { text: 'Status' })])]),
         el('tbody', null, ups.map(x => {
           const dEntry = daysFromToday(x.entry), dExit = daysFromToday(x.exit);
           const status = dEntry > 0 ? 'Opens in ' + dEntry + ' day' + (dEntry === 1 ? '' : 's') : dExit > 0 ? 'Open now, cover in ' + dExit + ' day' + (dExit === 1 ? '' : 's') : 'Cover today';
           const conf = x.u.confidenceScore ?? 0;
-          const pc = el('span', { class: 'pc na', text: dEntry <= 14 ? 'Checking…' : 'Checked nearer the date' });
-          if (dEntry <= 14) pumpCheck(x, pb.pumpPct).then(r => { pc.textContent = r.text; pc.className = 'pc ' + r.cls; });
-          return el('tr', null, [el('td', null, [el('b', { text: x.u.token }), el('small', { text: x.u.usdM ? ' ' + Desk.usd(x.u.usdM) : '' })]), el('td', { class: 'num', text: fmtDay(x.u.date) }),
-            el('td', { text: x.hits.map(h => RULE_SHORT[h]).join(', ') }), el('td', { class: 'num', text: fmtDay(x.entry) }), el('td', { class: 'num', text: fmtDay(x.exit) }),
-            el('td', null, [el('span', { class: 'status ' + (dEntry <= 3 && dEntry > 0 ? 'soon' : dEntry <= 0 ? 'open' : ''), text: status })]),
-            el('td', null, [el('span', { class: 'cchip c-' + (x.u.confidenceLabel || 'unverified').toLowerCase(), title: 'Confidence in the unlock data' }, [el('b', { text: String(conf) }), conf >= 60 ? ' ok' : ' confirm first'])]),
-            el('td', null, [pc])]);
+          const pc = el('small', { class: 'pc na', text: dEntry <= 14 ? 'Checking price…' : 'Price checked nearer the date' });
+          const row = el('tr', null, [
+            el('td', null, [el('b', { text: x.u.token }), el('small', { text: (x.u.usdM ? ' ' + Desk.usd(x.u.usdM) : '') }), el('br'), el('small', { class: 'why', text: x.hits.map(h => RULE_SHORT[h]).join(', ') })]),
+            el('td', { class: 'num', text: fmtDay(x.u.date) }), el('td', { class: 'num', text: fmtDay(addDays(x.entry, -1)) }),
+            ...lvCells(null, false),
+            el('td', { class: 'num', text: fmtDay(x.exit) }),
+            el('td', null, [el('span', { class: 'status ' + (dEntry <= 3 && dEntry > 0 ? 'soon' : dEntry <= 0 ? 'open' : ''), text: status }), el('br'),
+              el('small', { class: 'cchip c-' + (x.u.confidenceLabel || 'unverified').toLowerCase(), title: 'Confidence in the unlock data' }, ['data ', el('b', { text: String(conf) }), conf >= 60 ? ' ok' : ' confirm first']), ' ', pc])]);
+          if (dEntry <= 14) pumpCheck(x, pb.pumpPct).then(r => {
+            pc.textContent = r.text + (r.note || ''); pc.className = 'pc ' + r.cls;
+            if (r.ref) { const cells = lvCells(r.ref, r.final); [3, 4, 5].forEach((i, j) => row.replaceChild(cells[j], row.children[i])); }
+          });
+          return row;
         }))])]) : el('p', { text: 'No upcoming unlocks match the playbook right now.' })]);
 
     // headline
-    const lead = el('p', { class: 'lead', text: 'Taking every signal over the past year: ' + sum.n + ' shorts, ' + sum.win + '% made money, the median trade made ' + sgn(sum.median) + ', and $1,000 per trade would have returned ' + usd(sum.totalUsd) + ' after assumed costs.' });
-    const warn = el('p', { class: 'verdict warnline', text: 'The catch: the worst trade lost ' + Math.abs(sum.worst).toFixed(0) + '%, and the account fell $' + Math.abs(S.drawdownUsd).toLocaleString('en-US') + ' from its peak at one point. Shorts can lose more than 100% when a token squeezes, so size small and use a real stop order.' });
+    const lead = PS ? el('p', { class: 'lead', text: 'With the stop and target, every past signal: ' + PS.all.n + ' shorts, ' + PS.all.win + '% made money, the median trade made ' + sgn(PS.all.median) + ', and $1,000 per trade returned ' + usd(PS.all.totalUsd) + ' after assumed costs. The worst trade lost ' + Math.abs(PS.all.worst).toFixed(0) + '%.' })
+      : el('p', { class: 'lead', text: 'Taking every signal over the past year: ' + sum.n + ' shorts, ' + sum.win + '% made money, the median trade made ' + sgn(sum.median) + ', and $1,000 per trade would have returned ' + usd(sum.totalUsd) + ' after assumed costs.' });
+    const warn = el('p', { class: 'verdict warnline', text: PS ? 'Without a stop the same trades made only ' + usd(L.baseline.all.totalUsd) + ' and the worst lost ' + Math.abs(L.baseline.all.worst).toFixed(0) + '% (a squeeze). The stop is what made the first half of the year profitable, so it is not optional. Account low point with the plan: −$' + Math.abs(L.drawdownUsd).toLocaleString('en-US') + '.' : 'The catch: the worst trade lost ' + Math.abs(sum.worst).toFixed(0) + '%. Shorts can lose more than 100% when a token squeezes, so size small and use a real stop order.' });
 
     // playbook steps
-    const plan = el('div', { class: 'panel' }, [el('h3', { text: 'The playbook' }), el('ol', { class: 'steps' }, [
-      el('li', null, [el('b', { text: 'Pick the unlock. ' }), 'Any of: 10%+ of circulating supply, 60%+ to investors, or the token’s first insider unlock. Only when the unlock data is confirmed (confidence 60+). (Size against trading volume was tested too and dropped: only 4 trades fired on it alone, all one token.)']),
-      el('li', null, [el('b', { text: 'Skip pumps. ' }), 'If the token is up ' + pb.pumpPct + '% or more over the three weeks before entry, do not short it. Most of the worst losses came from shorting into a pump.']),
-      el('li', null, [el('b', { text: 'Enter ' + Math.abs(pb.entry) + ' days before. ' }), 'Short at the daily close a week before the unlock.']),
-      el('li', null, [el('b', { text: 'Cover ' + pb.exit + ' days after. ' }), 'Close at the daily close a week after. Covering on the unlock day itself made less but had far smaller worst losses (see below).']),
-      el('li', null, [el('b', { text: 'Protect the downside. ' }), 'Place a stop about ' + pb.stopPct + '% above entry and keep each position small: up to ' + S.maxOpen + ' signals were open at the same time.'])
-    ])]);
+    const steps = [
+      el('li', null, [el('b', { text: 'Pick the unlock. ' }), 'Any of: 10%+ of circulating supply, 60%+ to investors, or the token’s first insider unlock.']),
+      el('li', null, [el('b', { text: 'Check, 8 days before. ' }), 'The unlock data is confirmed (confidence 60+) and the token is not up ' + pb.pumpPct + '% or more over the last three weeks. If either fails, skip it.']),
+      el('li', null, [el('b', { text: 'Enter, 7 days before. ' }), P ? 'Short near the 00:00 UTC price (the entry zone is that price to ' + ZONE + '% above). Waiting to sell half higher, 3–8% up, made less in every test, because the price often never came back.' : 'Short at the daily close a week before the unlock.']),
+      P ? el('li', null, [el('b', { text: 'Place the stop and target straight away. ' }), 'Stop ' + P.stop + '% above the entry price' + (P.target ? ', take profit ' + P.target + '% below it' : '') + '. The stop is wide because unlock tokens swing hard inside a day; tighter stops got hit by noise and made less.']) : null,
+      el('li', null, [el('b', { text: 'Cover 7 days after ' }), 'whatever is still open, at 00:00 UTC.']),
+      el('li', null, [el('b', { text: 'Size it. ' }), P ? 'A stopped trade loses about ' + (P.stop + 1) + '%, so size each short so that is a loss you accept. Up to ' + S.maxOpen + ' signals were open at once.' : 'Keep each position small: up to ' + S.maxOpen + ' signals were open at once.'])
+    ].filter(Boolean);
+    const plan = el('div', { class: 'panel' }, [el('h3', { text: 'The playbook' }), el('ol', { class: 'steps' }, steps)]);
 
     // curve
-    const curveSeries = sigCurve === 'guard' ? [{ pts: S.curve, color: '#ffb547' }] : sigCurve === 'stop' ? [{ pts: S.curveStop, color: '#ffb547' }] : [{ pts: S.curveNoGuard, color: '#ffb547' }];
-    const curveP = el('div', { class: 'panel' }, [el('div', { class: 'phead' }, [el('h3', { text: 'Account result, $1,000 per trade' }),
-      seg([['guard', 'Playbook'], ['stop', 'With ' + pb.stopPct + '% stop'], ['noguard', 'Without pump check']], sigCurve, v => sigCurve = v)]),
+    const opts = L ? [['plan', 'With stop and target'], ['guard', 'No stop or target'], ['noguard', 'No pump check either']] : [['guard', 'Playbook'], ['noguard', 'Without pump check']];
+    if (!opts.some(o => o[0] === sigCurve)) sigCurve = opts[0][0];
+    const curveSeries = [{ pts: sigCurve === 'plan' ? L.curve : sigCurve === 'guard' ? S.curve : S.curveNoGuard, color: '#ffb547' }];
+    const curveP = el('div', { class: 'panel' }, [el('div', { class: 'phead' }, [el('h3', { text: 'Account result, $1,000 per trade' }), seg(opts, sigCurve, v => sigCurve = v)]),
       dateChart(curveSeries),
-      el('p', { class: 'small', text: 'Each trade is booked on the day it closes. Fees and funding are already taken off.' })]);
+      el('p', { class: 'small', text: 'Each trade is booked on the day it closes. Fees and funding are already taken off.' + (L ? ' The stop-and-target line covers the ' + L.withCandles + ' trades with exchange highs and lows; the others cover all ' + sum.n + '.' : '') })]);
 
-    // stability + exits + rules
+    // stability
     const H = S.halves;
+    const stabRows = PS ? [statRow('With stop and target', PS.all, L.withCandles + ' trades with exchange highs and lows'), statRow('↳ first half (to ' + fmtDay(H.split) + ')', PS.first), statRow('↳ second half', PS.second),
+      statRow('Same trades, no stop or target', L.baseline.all), statRow('↳ first half', L.baseline.first), statRow('↳ second half', L.baseline.second)]
+      : [statRow('Playbook', sum), statRow('First half (to ' + fmtDay(H.split) + ')', H.first), statRow('Second half', H.second)];
+    stabRows.push(statRow('All ' + sum.n + ' signals, no stop or target', sum), statRow('Without pump check', ng), statRow('Live-tracked trades', S.live, 'signals the live page showed before the date'));
     const stab = el('div', { class: 'panel' }, [el('h3', { text: 'Does it hold up?' }),
-      el('p', { class: 'small', text: 'A real edge should work in both halves of the year, survive losing its three best trades, and keep working on trades tracked live from now on.' }),
-      statTable([statRow('Playbook', sum), statRow('Without pump check', ng), statRow('With ' + pb.stopPct + '% stop', S.summaryStop),
-        statRow('First half (to ' + fmtDay(H.split) + ')', H.first), statRow('Second half', H.second),
-        el('tr', null, [el('td', { text: 'Without the 3 best trades' }), el('td', { colspan: '5' }), el('td', { class: 'n' }, [el('span', { class: 'num ' + (sum.totalUsdWithoutBest3 < 0 ? 'down' : 'up'), text: usd(sum.totalUsdWithoutBest3) })])]),
-        statRow('Live-tracked trades', S.live, 'signals the live page showed before the date')]),
-      el('p', { class: 'small', text: '* Profit factor: total won divided by total lost. Above 1 makes money; above 2 is strong.' + (S.medianEdgeVsRandom != null ? ' The median trade also beat shorting the same token at a random time by ' + sgn(S.medianEdgeVsRandom) + '.' : '') })]);
-    const exitP = el('div', { class: 'panel' }, [el('h3', { text: 'When to cover' }),
-      el('p', { class: 'small', text: 'Same entries, different exits. Holding longer earned more but let the worst squeezes run much further.' }),
-      statTable(['0', '3', '7', '14'].filter(z => S.exitCompare[z]).map(z => statRow(z === '0' ? 'Cover on the unlock day' : 'Cover ' + z + ' days after', S.exitCompare[z])))]);
-    const ruleP = el('div', { class: 'panel' }, [el('h3', { text: 'Which trigger worked' }),
-      el('p', { class: 'small', text: 'A trade can match more than one trigger, so these overlap.' }),
+      el('p', { class: 'small', text: 'A real edge should work in both halves of the year and keep working on trades tracked live from now on.' }),
+      statTable(stabRows),
+      el('p', { class: 'small', text: '* Profit factor: total won divided by total lost. Above 1 makes money; above 2 is strong.' })]);
+
+    // stop x target grid
+    let gridP = null;
+    if (L) {
+      const cell = (st, tg, m, z) => L.grid.find(c => c.mode === m && c.zone === z && c.stop === st && c.target === tg);
+      const all = L.grid.filter(c => c.mode === P.mode && c.zone === P.zone).map(c => c.total);
+      const hi = Math.max(...all.map(Math.abs));
+      const shade = v => 'background:' + (v >= 0 ? 'rgba(46,204,113,' : 'rgba(255,99,99,') + (0.08 + 0.42 * Math.abs(v) / hi).toFixed(2) + ')';
+      const lab = v => v == null ? 'none' : v + '%';
+      const tbl = el('div', { class: 'tablewrap' }, [el('table', { class: 'gt heat' }, [
+        el('thead', null, [el('tr', null, [el('th', { text: 'Stop ↓  Target →' }), ...L.targets.map(t => el('th', { class: 'n', text: t == null ? 'none' : '−' + t + '%' }))])]),
+        el('tbody', null, L.stops.map(st => el('tr', null, [el('td', { text: st == null ? 'no stop' : '+' + st + '%' }), ...L.targets.map(tg => {
+          const c = cell(st, tg, P.mode, P.zone); if (!c) return el('td', { text: '—' });
+          const mine = st === P.stop && tg === P.target;
+          return el('td', { class: 'n' + (mine ? ' pick' : ''), style: shade(c.total), title: 'First half ' + usd(c.h1) + ', second half ' + usd(c.h2) + ', ' + c.win + '% won, worst ' + c.worst + '%, stopped ' + c.stops + ', target hit ' + c.targets }, [usd(c.total)]);
+        })])))])]);
+      const modeRows = L.modes.map(m => { const c = cell(P.stop, P.target, m.mode, m.zone); return c ? el('tr', null, [el('td', { text: m.mode === 'market' ? 'All at the check price' : 'Half there, half ' + m.zone + '% higher if reached' }), el('td', { class: 'n', text: c.win + '%' }), el('td', { class: 'n' }, [pct(c.median)]), el('td', { class: 'n' }, [el('span', { class: 'num ' + (c.total < 0 ? 'down' : 'up'), text: usd(c.total) })])]) : null; }).filter(Boolean);
+      gridP = el('details', { class: 'panel logp' }, [el('summary', null, [el('h3', { text: 'How the stop, target and entry were chosen' })]),
+        el('p', { class: 'small', text: 'Every combination was replayed on daily exchange highs and lows (' + L.withCandles + ' trades; ' + L.withoutCandles + ' had no exchange candles). Total for $1,000 per trade; hover a cell for each half of the year. The pick is the setting that did best in its weaker half, averaged with its neighbours so one lucky cell cannot win. Settings without a stop were not allowed.' }),
+        tbl,
+        el('h4', { text: 'Entry zone, with the ' + P.stop + '% stop' + (P.target ? ' and ' + P.target + '% target' : '') }),
+        el('div', { class: 'tablewrap' }, [el('table', { class: 'gt' }, [el('thead', null, [el('tr', null, [el('th', { text: '' }), el('th', { class: 'n', text: 'Won' }), el('th', { class: 'n', text: 'Median trade' }), el('th', { class: 'n', text: 'Total, $1k each' })])]), el('tbody', null, modeRows)])]),
+        el('p', { class: 'small', text: 'Daily candles do not show which came first inside a day, so a day that touched both the stop and the target counts as stopped, and stops are filled 0.5% worse than their price.' })]);
+    }
+
+    const exitP = el('details', { class: 'panel logp' }, [el('summary', null, [el('h3', { text: 'Which trigger worked' })]),
+      el('p', { class: 'small', text: 'No stop or target. A trade can match more than one trigger, so these overlap.' }),
       statTable(Object.keys(S.byRule).filter(k => S.byRule[k]).map(k => statRow(RULE_SHORT[k], S.byRule[k])))]);
 
     // log
     const log = S.trades.filter(t => sigLogFilter === 'all' || (sigLogFilter === 'taken' ? !t.skipped : t.skipped));
+    const WHY = { stop: 'stopped', target: 'target', time: 'day +7' };
     const logP = el('details', { class: 'panel logp' }, [el('summary', null, [el('h3', { text: 'Every trade (' + S.trades.length + ')' })]),
       seg([['taken', 'Taken (' + S.trades.filter(t => !t.skipped).length + ')'], ['skipped', 'Skipped by pump check (' + S.trades.filter(t => t.skipped).length + ')'], ['all', 'All']], sigLogFilter, v => sigLogFilter = v),
       el('div', { class: 'tablewrap' }, [el('table', { class: 'el' }, [
-        el('thead', null, [el('tr', null, [el('th', { text: 'Short from' }), el('th', { text: 'Token' }), el('th', { text: 'Why' }), el('th', { class: 'n', text: 'Result' }), el('th', { class: 'n', text: 'Worst against' }), el('th', { class: 'n', text: 'With stop' }), el('th', { class: 'n', text: 'Rise before entry' }), el('th', { text: 'Data check' })])]),
+        el('thead', null, [el('tr', null, [el('th', { text: 'Short from' }), el('th', { text: 'Token' }), el('th', { text: 'Why' }), el('th', { class: 'n', text: 'With stop and target' }), el('th', { class: 'n', text: 'No stop or target' }), el('th', { class: 'n', text: 'Rise before entry' }), el('th', { text: 'Prices' })])]),
         el('tbody', null, log.map(t => el('tr', null, [
           el('td', { class: 'num', text: t.entryDate }), el('td', null, [el('b', { text: t.token }), el('small', { text: ' unlock ' + t.unlockDate.slice(5) })]),
           el('td', { text: t.rules.map(h => RULE_SHORT[h]).join(', ') }),
-          el('td', { class: 'n' }, [pct(t.pnl)]), el('td', { class: 'n' }, [pct(t.worstAgainst)]),
-          el('td', { class: 'n' }, [t.stopped ? el('span', null, [pct(t.pnlStop), el('small', { text: ' stopped' })]) : pct(t.pnlStop)]),
+          el('td', { class: 'n' }, [t.plan ? el('span', null, [pct(t.plan.pnl), el('small', { text: ' ' + WHY[t.plan.why] })]) : el('span', { class: 'na', text: 'no candles' })]),
+          el('td', { class: 'n' }, [pct(t.pnl)]),
           el('td', { class: 'n' }, [t.momentum == null ? el('span', { class: 'na', text: '—' }) : el('span', { class: t.skipped ? 'down' : '', text: (t.momentum > 0 ? '+' : '') + t.momentum.toFixed(0) + '%' + (t.skipped ? ' skip' : '') })]),
-          el('td', { text: (t.check || '—') + (t.live ? ', live' : '') })])))])])]);
+          el('td', { text: t.priceSource === 'coingecko' ? 'CoinGecko' : 'Binance' })])))])])]);
 
-    return el('section', { 'aria-label': 'Trade signals' }, [upList, lead, warn, plan, curveP, stab, exitP, ruleP, logP,
+    return el('section', { 'aria-label': 'Trade signals' }, [upList, lead, warn, plan, curveP, stab, gridP, exitP, logP,
       el('details', { class: 'method' }, [el('summary', { text: 'How this is calculated' }), el('div', { class: 'mbody' }, [el('p', { text: S.method }),
-        el('p', { text: 'This is a record of what a fixed rule set would have done, not a recommendation to trade. Past results in one year and one market phase may not repeat. Real fills, funding rates, borrow availability and exchange listings will differ.' })])])]);
+        L ? el('p', { style: 'white-space:pre-line', text: L.method }) : null,
+        el('p', { text: 'This is a record of what a fixed rule set would have done, not a recommendation to trade. Past results in one year and one market phase may not repeat. Real fills, funding rates, borrow availability and exchange listings will differ.' })])])].filter(Boolean));
   }
 
   function render() {

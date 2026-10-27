@@ -30,6 +30,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 import levels  # noqa: E402
+import candles as levels_candles  # noqa: E402
 BT = ROOT / "data" / "backtest.json"
 OUT = ROOT / "data" / "signals.json"
 
@@ -128,7 +129,8 @@ def max_open(trades):
 
 def pump_checks(rules_hits):
     """For upcoming signals whose entry is within 14 days, the token's rise over the 23 days
-    up to the entry day (or today, if entry is ahead), from CoinGecko daily prices.
+    up to the entry day (or today, if entry is ahead), and the reference price for the entry zone,
+    stop and target: Binance daily opens where the token trades there, else CoinGecko.
     Saved so the page has a value even when the viewer's browser is rate-limited."""
     out = {}
     up = json.loads((ROOT / "data" / "unlocks.json").read_text()).get("upcoming", [])
@@ -155,10 +157,22 @@ def pump_checks(rules_hits):
             print(f"pump check {r['token']}: {e}")
             time.sleep(13)
             continue
+        src = "coingecko"
+        # Binance futures daily opens are what the track record uses; take them when the ticker is the
+        # same token (its latest open within 5% of CoinGecko's price that day).
+        try:
+            bsrc, _, bn = levels_candles.token_days(r["token"], end - timedelta(days=30), end)
+            common = [d for d in sorted(bn) if datetime.strptime(d, "%Y-%m-%d").date() in px]
+            if bsrc and common and abs(bn[common[-1]]["o"] / px[datetime.strptime(common[-1], "%Y-%m-%d").date()] - 1) <= 0.05:
+                for d, x in bn.items():
+                    px[datetime.strptime(d, "%Y-%m-%d").date()] = x["o"]
+                src = bsrc
+        except Exception as e:
+            print(f"binance candles {r['token']}: {e}")
         a, z = px.get(end - timedelta(days=23)), px.get(end) or (list(px.values())[-1] if px else None)
         if a and z:
             out[r["token"]] = {"id": r["coingeckoId"], "rise": round((z / a - 1) * 100, 1), "to": end.isoformat(),
-                               "ref": float(f"{z:.6g}")}  # price that sets the entry zone, stop and target
+                               "ref": float(f"{z:.6g}"), "source": src}  # ref sets the entry zone, stop and target
         time.sleep(13)
     return out
 
