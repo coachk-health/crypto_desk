@@ -137,6 +137,9 @@ table.sig { min-width: 860px; }
 .status { font-weight: 600; } .status.soon { color: var(--sun); } .status.open { color: var(--bull); }
 .heat td.n { color: var(--text); font-variant-numeric: tabular-nums; } .heat td.pick { outline: 2px solid var(--sun); outline-offset: -2px; font-weight: 700; }
 details.logp h4 { margin: 18px 0 6px; font-size: 15px; } table.sig small.why { color: var(--muted); font-size: 12px; } table.sig td { vertical-align: top; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin: 14px 0 18px; }
+.tile { background: var(--panel, #1b2350); border-radius: 10px; padding: 10px 14px; } .tile small { display: block; color: var(--muted); font-size: 12.5px; } .tile b { font-size: 20px; }
+ul.plain { list-style: none; padding: 0; margin: 0; } ul.plain li { padding: 6px 0; border-top: 1px solid rgba(255,255,255,.06); }
 .pc { font-weight: 600; font-size: 13.5px; } .pc.ok { color: var(--bull); } .pc.bad { color: var(--bear); } .pc.na { color: var(--muted); font-weight: 500; }
 details.logp summary { cursor: pointer; list-style: none; } details.logp summary h3 { display: inline; } details.logp summary::after { content: ' (show)'; color: var(--sun); font-size: 14px; } details.logp[open] summary::after { content: ' (hide)'; }
 .findings ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; max-width: 80ch; }
@@ -225,6 +228,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       <button role="tab" data-tab="unlocks" aria-selected="false">Token unlocks</button>
       <button role="tab" data-tab="past" aria-selected="false">Past unlocks</button>
       <button role="tab" data-tab="signals" aria-selected="false">Trade signals</button>
+      <button role="tab" data-tab="log" aria-selected="false">Trade log</button>
       <button role="tab" data-tab="week" aria-selected="false">Week ahead</button>
       <button role="tab" data-tab="supply" aria-selected="false">Supply and revenue</button>
     </nav>
@@ -252,7 +256,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
   const { el } = Desk;
   const main = document.getElementById('main');
   let D, P, tab = 'news', uRange = 30, uView = 'upcoming', sortKey = 'revenueUsdM', open = null, cdTimer;
-  try { const h = location.hash.slice(1); if (['news', 'unlocks', 'past', 'signals', 'week', 'supply'].includes(h)) tab = h; } catch (e) {}
+  try { const h = location.hash.slice(1); if (['news', 'unlocks', 'past', 'signals', 'log', 'week', 'supply'].includes(h)) tab = h; } catch (e) {}
 
   function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : ''; }
 
@@ -930,9 +934,75 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
         el('p', { text: 'This is a record of what a fixed rule set would have done, not a recommendation to trade. Past results in one year and one market phase may not repeat. Real fills, funding rates, borrow availability and exchange listings will differ.' })])])].filter(Boolean));
   }
 
+  /* ---------------- Trade log ---------------- */
+  const liveCache = {};
+  async function livePrice(c) {
+    // Latest price for an open call: Binance futures (what the log uses), else CoinGecko.
+    if (liveCache[c.id]) return liveCache[c.id];
+    try {
+      const j = await fetch('https://fapi.binance.com/fapi/v1/ticker/price?symbol=' + c.token + 'USDT').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+      const p = +j.price;
+      if (c.ref && Math.abs(Math.log(p / c.ref)) > Math.log(3)) throw new Error('ticker mismatch');
+      return (liveCache[c.id] = p);
+    } catch (e) {
+      if (!c.coingeckoId) return null;
+      try { const j = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=' + c.coingeckoId + '&vs_currencies=usd').then(r => r.json()); return (liveCache[c.id] = j[c.coingeckoId].usd); } catch (e2) { return null; }
+    }
+  }
+
+  function tradeLog() {
+    const L = D.tradelog;
+    if (!L) return el('section', null, [el('p', { class: 'state', text: 'The trade log is being set up. It updates twice a day.' })]);
+    const calls = L.calls.filter(c => c.status !== 'watching').slice().reverse();
+    const watch = L.calls.filter(c => c.status === 'watching');
+    const sm = L.summary || {};
+    const usd = v => (v < 0 ? '−$' : '+$') + Math.abs(v).toLocaleString('en-US');
+    const WHY = { stop: 'Stopped out', target: 'Target hit', time: 'Covered day +7' };
+
+    const lead = sm.closed ? el('p', { class: 'lead', text: sm.closed + ' closed call' + (sm.closed === 1 ? '' : 's') + ': ' + sm.won + ' made money, ' + usd(sm.totalUsd) + ' at $1,000 each after costs.' + (sm.open ? ' ' + sm.open + ' open.' : '') })
+      : el('p', { class: 'lead', text: 'Every short this page calls from ' + fmtDay(L.startedAt) + ' on, with the levels it showed and what happened. No results yet' + (watch.length ? ': the first check day is ' + fmtDay(watch[0].checkDate) + ' (' + watch[0].token + ').' : '.') });
+    const rule = el('p', { class: 'small', text: 'Each call is frozen on its check day (the decision and the stop and target in use), and its entry price is the next day’s 00:00 UTC price. Nothing is edited afterwards; only results are added. Calls before ' + fmtDay(L.startedAt) + ' are not here, because their levels were shown after the entry; the year of simulated trades is in Trade signals. Updated ' + Desk.ago(L.updatedAt) + ' from completed daily candles.' });
+
+    const tiles = el('div', { class: 'tiles' }, [['Closed', sm.closed || 0], ['Won', sm.closed ? sm.won + ' of ' + sm.closed : '—'], ['Result, $1k each', sm.closed ? usd(sm.totalUsd) : '—'], ['Open', sm.open || 0], ['Skipped', sm.skipped || 0]]
+      .map(([k, v]) => el('div', { class: 'tile' }, [el('small', { text: k }), el('b', { text: String(v) })])));
+
+    const rows = calls.map(c => {
+      const lv = c.levels || {};
+      const res = el('td', { class: 'n' });
+      let status;
+      if (c.status === 'closed') { status = WHY[c.exit.why] + ' ' + fmtDay(c.exit.date) + ' at ' + fmtPx(c.exit.price); res.append(pct(c.pnl)); }
+      else if (c.status === 'open') {
+        status = 'Open, cover ' + fmtDay(c.coverDate);
+        if (c.mark) res.append(pct(c.mark.pnl), el('small', { text: ' at ' + fmtDay(c.mark.date) + ' close' }));
+        const live = el('small', { class: 'na' }); res.append(el('br'), live);
+        livePrice(c).then(p => { if (!p) return; const pl = (c.ref - p) / c.ref * 100; live.className = pl >= 0 ? 'up' : 'down'; live.textContent = 'now ' + fmtPx(p) + ' (' + (pl >= 0 ? '+' : '') + pl.toFixed(1) + '% before costs)' + (p >= lv.stop ? ' above stop' : lv.target && p <= lv.target ? ' below target' : ''); });
+      }
+      else if (c.status === 'called') { status = 'Called: short at the ' + fmtDay(c.entryDate) + ' 00:00 UTC price'; res.append(el('span', { class: 'na', text: '—' })); }
+      else { status = (c.status === 'missed' ? 'Not counted: ' : 'Skipped: ') + c.skipReason; res.append(el('span', { class: 'na', text: '—' })); }
+      const last = (c.history || []).slice(-1)[0];
+      return el('tr', null, [
+        el('td', { class: 'num', text: fmtDay(c.checkDate) }),
+        el('td', null, [el('b', { text: c.token }), el('small', { text: ' unlock ' + fmtDay(c.unlockDate) }), el('br'), el('small', { class: 'why', text: c.rules.map(h => RULE_SHORT[h]).join(', ') + (c.decision ? ' · data ' + c.decision.confidence : '') })]),
+        el('td', { class: 'num', text: c.ref ? fmtPx(lv.zoneLow) + '–' + fmtPx(lv.zoneHigh) : '—' }),
+        el('td', { class: 'num', text: lv.stop ? fmtPx(lv.stop) : c.plan ? '+' + c.plan.stop + '%' : '—' }),
+        el('td', { class: 'num', text: lv.target ? fmtPx(lv.target) : c.plan && c.plan.target ? '−' + c.plan.target + '%' : '—' }),
+        el('td', null, [el('span', { text: status }), last ? el('small', { class: 'why', text: ' · logged ' + Desk.ago(last.at) }) : null]),
+        res]);
+    });
+    const table = calls.length ? el('div', { class: 'panel' }, [el('h3', { text: 'Calls' }), el('div', { class: 'tablewrap' }, [el('table', { class: 'el sig' }, [
+      el('thead', null, [el('tr', null, [el('th', { text: 'Check day' }), el('th', { text: 'Token' }), el('th', { text: 'Entry zone' }), el('th', { text: 'Stop' }), el('th', { text: 'Target' }), el('th', { text: 'Status' }), el('th', { class: 'n', text: 'Result' })])]),
+      el('tbody', null, rows)])])]) : null;
+    const next = watch.length ? el('div', { class: 'panel' }, [el('h3', { text: 'Coming up' }),
+      el('p', { class: 'small', text: 'Unlocks that match the playbook. Each one is decided on its check day; until then the unlock data can still change.' }),
+      el('ul', { class: 'plain' }, watch.map(c => el('li', null, [el('b', { text: c.token }), ' check day ' + fmtDay(c.checkDate) + ', unlock ' + fmtDay(c.unlockDate) + ' · ' + c.rules.map(h => RULE_SHORT[h]).join(', ')])))]) : null;
+    return el('section', { 'aria-label': 'Trade log' }, [lead, rule, tiles, table, next,
+      el('details', { class: 'method' }, [el('summary', { text: 'Exactly how calls are logged' }), el('div', { class: 'mbody' }, [el('p', { style: 'white-space:pre-line', text: L.method }),
+        el('p', { text: 'A record of what a fixed rule set called and what followed, not a recommendation to trade.' })])])].filter(Boolean));
+  }
+
   function render() {
     document.querySelectorAll('nav.tabs button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === tab)));
-    const view = { news, unlocks, past, signals, week, supply }[tab]();
+    const view = { news, unlocks, past, signals, log: tradeLog, week, supply }[tab]();
     main.replaceChildren(view);
     clearInterval(cdTimer);
     if (tab === 'unlocks' && uView === 'upcoming') {
@@ -960,11 +1030,12 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     );
     try { D.backtest = await fetch('data/backtest.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.backtest = null; }
     try { D.signals = await fetch('data/signals.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.signals = null; }
+    try { D.tradelog = await fetch('data/trade_log.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.tradelog = null; }
     P = await Desk.prices(D.news.market);
     renderPrices();
     render();
     setInterval(async () => { P = await Desk.prices(D.news.market); renderPrices(); }, 60000);
-    setInterval(async () => { try { const bt = D.backtest, sg = D.signals; D = await Desk.load(''); D.backtest = bt; D.signals = sg; render(); } catch (e) {} }, 300000);
+    setInterval(async () => { try { const bt = D.backtest, sg = D.signals, tl = D.tradelog; D = await Desk.load(''); D.backtest = bt; D.signals = sg; D.tradelog = tl; render(); } catch (e) {} }, 300000);
   }
   boot();
 })();
