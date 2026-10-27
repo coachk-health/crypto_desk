@@ -1,149 +1,157 @@
 {
  "date": "2026-10-27",
- "updated": "2026-10-27T00:16:07Z",
- "headline": "Bitcoin is holding just under $80,000 ahead of Wednesday's Fed decision, in a week packed with crypto company earnings and a big Friday options expiry.",
+ "updated": "2026-10-27T04:33:01Z",
+ "headline": "Bitcoin is holding around $80,000 ahead of Wednesday's Fed decision, as crypto company earnings start today and a string of wallet and exchange security problems keeps users on alert.",
  "market": {
-  "asOf": "BTC, ETH and SOL from the Motley Fool's market report at 5:25pm ET Mon 26 Oct (21:25 UTC; 04:25 Tue Bangkok); the price sites could not be reached this run. The Fear & Greed index was not read this run. Live prices are at the top of the page.",
+  "asOf": "Bitcoin from IT Times citing CoinMarketCap at 00:30 UTC Tue 27 Oct (07:30 Bangkok). Ether and solana read from CoinMarketCap this run, around 04:00 UTC (11:00 Bangkok). Fear & Greed is CoinMarketCap's CMC Crypto Fear & Greed Index. Live prices are at the top of the page.",
   "btc": {
-   "price": 79817,
-   "chg24h": -0.28
+   "price": 80138.79,
+   "chg24h": 0.09
   },
   "eth": {
-   "price": 2313.61,
-   "chg24h": null
+   "price": 2308.11,
+   "chg24h": -1.69
   },
   "sol": {
-   "price": 100.3,
-   "chg24h": null
+   "price": 100.41,
+   "chg24h": -1.17
   },
-  "fearGreed": "Not read this run"
+  "fearGreed": "43 out of 100, CMC Crypto Fear & Greed Index"
  },
  "stories": [
   {
-   "title": "Bitcoin slips just under $80,000 into a busy Fed, earnings and options week",
+   "title": "Bitcoin holds around $80,000 into Wednesday's Fed decision",
    "mood": "volatile",
-   "summary": "Bitcoin fell below $80,000 on Monday as traders cut risk before Wednesday's Fed decision. Money left the US spot bitcoin funds late last week, and spot ether funds lost money for the week. A large batch of bitcoin options expires on Friday.",
+   "summary": "Bitcoin dipped to its lowest level since mid-September on Monday, then got back just above $80,000 by Tuesday morning in Asia. Economists widely expect the Fed to hold rates on Wednesday. The latest US spot bitcoin fund data shows two days of heavy selling late last week, and a large batch of bitcoin options expires on Friday.",
    "points": [
-    "Bitcoin's Monday low was just under $79,300, per Quartz.",
-    "At 5:25pm ET Monday bitcoin was $79,817, down 0.28% on the day and 2.4% over 7 days; ether was $2,313.61, down 3.5% over 7 days, per the Motley Fool.",
-    "Spot bitcoin ETFs (funds that hold bitcoin for stock-market investors) lost $635.6M on 22 Oct and $137.9M on 23 Oct but ended the week $301.2M positive, per Farside. Monday's flows were not posted yet.",
-    "Spot ether ETFs lost $220.7M over 19-23 Oct, per Farside.",
-    "The Fed decides on Wednesday; Polymarket priced a 94.5% chance of no change, per Coinspeaker."
+    "Bitcoin slipped to $79,332 overnight into Monday, its lowest since 18 September, per CryptoTicker.",
+    "At 9:30am Korea time Tuesday (00:30 UTC) bitcoin was $80,138.79, up 0.09% from the previous day, and ether $2,324.22, per IT Times citing CoinMarketCap.",
+    "US spot bitcoin ETFs (funds that hold bitcoin for stock-market investors) lost $635.6M on Thu 22 Oct and $137.9M on Fri 23 Oct, but the five-day week still ended net positive, per Coin Turk citing Farside. Monday's full flows were not confirmed this run.",
+    "94 of 100 economists in a Reuters poll expect the Fed to hold, per Newsquawk.",
+    "Bitcoin options worth about $12.2B (notional) expire on Deribit on Friday 30 Oct, with 'max pain' at $79,000, per CryptoTicker. Max pain is not a price target."
    ],
    "sources": [
     {
-     "label": "Quartz: bitcoin below $80,000",
-     "url": "https://qz.com/bitcoin-below-80000-ai-fed-caution-crypto-102626"
+     "label": "CryptoTicker: bitcoin's lowest since September",
+     "url": "https://cryptoticker.io/en/bitcoin-price-lowest-since-september-26-october-2026/"
     },
     {
-     "label": "Motley Fool (via Yahoo): crypto market today",
-     "url": "https://finance.yahoo.com/markets/crypto/articles/crypto-market-today-oct-26-212502358.html"
+     "label": "IT Times: Tuesday morning prices",
+     "url": "https://www.ittimes.com/news/articleView.html?idxno=87649"
     },
     {
-     "label": "Farside: bitcoin ETF flows",
-     "url": "https://farside.co.uk/btc/"
+     "label": "Coin Turk: US ETF outflows top $770M",
+     "url": "https://en.coin-turk.com/bitcoin-slides-below-80000-as-us-etf-outflows-hit-774-million/"
     },
     {
-     "label": "Farside: ether ETF flows",
-     "url": "https://farside.co.uk/eth/"
+     "label": "CryptoTicker: 30 Oct options expiry",
+     "url": "https://cryptoticker.io/en/bitcoin-options-expiry-october-30-2026-max-pain/"
     },
     {
-     "label": "Coinspeaker (via Yahoo): bitcoin holds $79,200 before Fed",
-     "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-holds-79-200-fed-133225031.html"
+     "label": "Newsquawk: week in focus 26-30 Oct",
+     "url": "https://www.newsquawk.com/headlines/week-in-focus-26-30th-october-2026-fomc-boc-rbnz-ecb-boj-policy-decisions-us-pce"
     }
    ]
   },
   {
-   "title": "A rough security week: Electrum wallet bug, CoinDCX's $16M loss and two DeFi exploits",
-   "mood": "bearish",
-   "summary": "A bug in the Electrum bitcoin wallet let rogue servers trick users into paying an attacker when they tried to speed up a payment; version 4.8.3 fixes it. India's CoinDCX admitted a $16M loss after first calling reports a false alarm. Two DeFi projects, X100 and Initia, were also exploited.",
-   "points": [
-    "In Electrum, a rogue server could show a fake pending payment; if the user pressed 'speed up', the wallet signed a new payment to the attacker. Version 4.8.3, released 24 Oct, fixes it, per CoinDesk.",
-    "Electrum users should update, use trusted servers and check the full receiving address, since attackers used addresses matching the last 4 characters, per CoinDesk.",
-    "CoinDCX lost 15.99M USDT (about $16M) tied to a retired wallet; it says customer balances were not affected and it absorbed the loss, per CoinDesk.",
-    "X100 lost about $4.75M in a flash-loan governance attack on 24 Oct (PeckShield figure), and the attacker moved 821.2 ETH into Tornado Cash, per The Crypto Times.",
-    "Initia's chain has been halted since 23 Oct after a bug let an attacker mint 2M unbacked AUSD and take about $2.7M, per Altcoin Buzz."
-   ],
-   "sources": [
-    {
-     "label": "CoinDesk: Electrum wallet bug",
-     "url": "https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments"
-    },
-    {
-     "label": "CoinDesk: CoinDCX absorbs $16M loss",
-     "url": "https://www.coindesk.com/markets/2026/10/26/coindcx-absorbs-usd16-million-loss-from-internal-process-failure-tied-to-retired-wallet"
-    },
-    {
-     "label": "The Crypto Times: X100 exploiter moves 821 ETH",
-     "url": "https://www.cryptotimes.io/2026/10/26/x100-exploiter-moves-821-eth-into-tornado-cash-after-4-75m-exploit/"
-    },
-    {
-     "label": "Altcoin Buzz: Initia halts chain",
-     "url": "https://www.altcoinbuzz.io/initia-halts-chain-after-2-7m-movevm-exploit-no-restart-date-yet"
-    }
-   ]
-  },
-  {
-   "title": "US regulators move on crypto while Congress stalls: CFTC exchange path, OCC stablecoin push, NBA deal",
+   "title": "Crypto company earnings week starts today with Galaxy and Robinhood",
    "mood": "neutral",
-   "summary": "With the market-structure bill stuck in the Senate, US regulators are acting on their own. The CFTC is working on a voluntary federal registration path for crypto exchanges, the bank regulator is urging community banks to issue stablecoins, and the NBA signed an integrity deal with the CFTC and named Kalshi and Polymarket as partners.",
+   "summary": "Galaxy reports before the US market opens today and Robinhood after it closes; Strategy follows on Thursday. Strategy, which holds 848,517 BTC, bought none last week and holds a shareholder vote on Wednesday.",
    "points": [
-    "The CFTC's voluntary registration path would cover exchanges offering retail customers leveraged or margined crypto trading; it is an early-stage proposal with comments due 14 Dec, per crypto.news.",
-    "The CLARITY Act market-structure bill failed a Senate procedural vote 49-50 on 15 Sep, per crypto.news.",
-    "The OCC is urging community banks to apply to issue payment stablecoins under the GENIUS Act; it gives itself 30 days to say an application is complete and 120 days to decide, per The Crypto Times.",
-    "The NBA named Kalshi and Polymarket its prediction market exchanges and signed an integrity agreement with the CFTC, per crypto.news.",
-    "State fights continue: Utah sued Kalshi on 20 Oct, per crypto.news."
+    "Galaxy reports before the Nasdaq opens on Tue 27 Oct, with an investor call at 8:30am ET (19:30 Bangkok), per its announcement.",
+    "Robinhood reports after the close on Tue 27 Oct with a call at 5:00pm ET (04:00 Wed Bangkok); in its last quarter crypto revenue fell 38% to $100M, per TradingKey.",
+    "Strategy bought no bitcoin from 19 to 25 Oct, still holds 848,517 BTC, and bought back about $204.9M of its STRC preferred shares instead, per The Block.",
+    "Strategy's special shareholder meeting is Wed 28 Oct at 10:00am ET (21:00 Bangkok); the main proposal would let its preferred shares pay dividends daily, per its SEC filing.",
+    "Strategy reports after the US close on Thu 29 Oct with a webinar at 5:00pm ET (04:00 Fri Bangkok), per Strategy."
    ],
    "sources": [
     {
-     "label": "crypto.news: CFTC voluntary exchange registration",
-     "url": "https://crypto.news/cftc-voluntary-crypto-exchange-registration/"
+     "label": "Galaxy: Q3 results webcast and call",
+     "url": "https://www.tradingview.com/news/prnewswire:b53409b6bf193:0-galaxy-schedules-webcast-and-investor-call-to-review-third-quarter-2026-results-on-october-27-2026/"
     },
     {
-     "label": "The Crypto Times: OCC seeks community bank stablecoins",
-     "url": "https://www.cryptotimes.io/2026/10/26/occ-seeks-community-banks-to-expand-regulated-stablecoin-issuance/"
+     "label": "TradingKey: Robinhood Q3 preview",
+     "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262235729-robinhood-stock-forecast-q3-earnings-preview-event-contracts-95-support-october-25-2026-tradingkey"
     },
     {
-     "label": "crypto.news: NBA names Kalshi and Polymarket",
-     "url": "https://crypto.news/nba-kalshi-polymarket-prediction-market-exchanges/"
+     "label": "The Block: Strategy pauses bitcoin buys",
+     "url": "https://www.theblock.co/news/business/2026-10-26-strategy-pauses-bitcoin-buys-repurchases-205-million-of-strc-preferred-shares-431699"
     },
     {
-     "label": "NBA: integrity framework and prediction market partners",
-     "url": "https://www.nba.com/news/nba-establishes-integrity-framework-and-commercial-partnerships-for-prediction-markets"
+     "label": "SEC: Strategy special meeting proxy",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001050446/000119312526413159/d503578ddef14a.htm"
+    },
+    {
+     "label": "Strategy: Q3 earnings date and webinar",
+     "url": "https://www.strategy.com/press/strategy-announces-earnings-release-date-and-live-video-webinar-for-third-quarter-2026-financial-results_10-08-2026"
+    }
+   ]
+  },
+  {
+   "title": "Security watch: Electrum bug, CoinDCX's $16M loss, a Solana bot drain and phishing emails",
+   "mood": "bearish",
+   "summary": "Several recent attacks hit ordinary users rather than big protocols. A bug in the Electrum bitcoin wallet let rogue servers steal funds when users sped up a payment; version 4.8.3 fixes it. India's CoinDCX confirmed a $16M loss. The Solana trading bot Bloom was drained of about $954K, and wallet maker Foundation warned of phishing emails sent from its own domains.",
+   "points": [
+    "Electrum 4.8.3 adds signature checks for unconfirmed transactions; the bug was disclosed 24 Oct and some servers were actively exploiting it. Update only from electrum.org, per CryptoTicker.",
+    "CoinDCX lost 15.99M USDT (about $16M) on 21 Oct after its CEO first called it a false alarm; it says user balances are unaffected, per Decrypt.",
+    "About 9,408 SOL (about $954,000) was taken from 49 wallets belonging to 9 Bloom users; Bloom says it will fully reimburse them, per Blockchain Reporter.",
+    "Attackers used compromised Cloudflare API keys to send fake emails from Foundation's domains; Foundation says funds on its Passport wallets are safe, per crypto.news."
+   ],
+   "sources": [
+    {
+     "label": "CryptoTicker: Electrum fee-bump attack",
+     "url": "https://cryptoticker.io/en/bitcoin-wallet-bug-electrum-fee-bump-attack"
+    },
+    {
+     "label": "Decrypt: CoinDCX confirms $16M loss",
+     "url": "https://decrypt.co/381834/india-coindcx-confirms-16-million-loss-ceo-called-false-alarm"
+    },
+    {
+     "label": "Blockchain Reporter: Bloom bot drain",
+     "url": "https://blockchainreporter.net/bloom-trading-bot-solana-drain/"
+    },
+    {
+     "label": "crypto.news: Foundation Passport phishing",
+     "url": "https://crypto.news/foundation-passport-phishing-cloudflare-api-keys/"
     }
    ]
   }
  ],
  "briefs": [
   {
-   "title": "Strategy pauses its bitcoin buying",
-   "summary": "Strategy bought no bitcoin from 19 to 25 Oct and still holds 848,517 BTC at an average cost of $75,446; it bought back about $204.9M of its STRC preferred shares instead, per The Block.",
-   "url": "https://www.theblock.co/news/business/2026-10-26-strategy-pauses-bitcoin-buys-repurchases-205-million-of-strc-preferred-shares-431699"
+   "title": "Ripple's Swell conference opens in New York",
+   "summary": "Swell runs 27-29 Oct at The Shed with about 1,500 attendees expected; Cross River Bank will build Ripple's RLUSD stablecoin into its core banking platform, per Digital Today.",
+   "url": "https://www.digitaltoday.co.kr/en/view/119183/ripple-swell-2026-to-open-in-new-york-focus-on-rlusd-and-xrpl"
   },
   {
-   "title": "Strive keeps buying bitcoin",
-   "summary": "Strive's SEC filing shows it bought 6,182 BTC from 17 to 23 Oct at an average of about $82,732, taking it to 43,000 BTC.",
-   "url": "https://www.sec.gov/Archives/edgar/data/0001920406/000162828026067141/asst-20261026.htm"
+   "title": "Ripple Treasury adds always-on returns for companies",
+   "summary": "Ripple says eligible corporate customers can earn returns on qualifying digital assets, including RLUSD, and use new AI workflow tools.",
+   "url": "https://ripple.com/ripple-press/ripple-treasury-introduces-always-on-corporate-treasury-platform-to-modernize-corporate-cash-management/"
   },
   {
-   "title": "Bernstein resets crypto stock targets",
-   "summary": "Bernstein cut its Coinbase target to $250 from $330, kept Robinhood at $160 and raised Circle to $145 from $140, per The Block.",
-   "url": "https://www.theblock.co/news/markets/2026-10-26-prediction-markets-derivatives-drive-bernstein-crypto-stock-outlook-coinbase-robinhood-circle-431750"
+   "title": "Franklin Templeton bitcoin 'dividend reinvestment' ETFs move closer",
+   "summary": "FBEQ and FIBT hold about 95% US stocks and 5% bitcoin exposure, reinvest dividends into bitcoin and charge 0.09% a year; no trading start date yet, per crypto.news.",
+   "url": "https://crypto.news/franklin-templeton-moves-closer-to-launching-two-bitcoin-drip-etfs-on-nasdaq/"
   },
   {
-   "title": "Bitcoin trades below what ETF buyers paid on average",
-   "summary": "InvestingLive cites a Coinbase Institutional estimate that spot bitcoin ETF holders' average cost is about $81,300, and puts October ETF flows to date at about -$313.5M.",
-   "url": "https://investinglive.com/cryptocurrency/bitcoin-etf-inflows-fade-as-price-pressure-tests-etf-buyers-81-300-cost-basis/"
+   "title": "Trump-linked crypto firms hire lawyers and lobbyists",
+   "summary": "Citing Bloomberg, ChainCatcher reports they are preparing for a possible congressional investigation after Democrats asked World Liberty Financial and 1789 Capital for information.",
+   "url": "https://www.chaincatcher.com/en/article/2299012"
   },
   {
-   "title": "About $10.9B of bitcoin options expire Friday",
-   "summary": "About 135,700 BTC of options expire on 30 Oct with 'max pain' at $78,000, per Coinspeaker; max pain is not a price target.",
-   "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-holds-79-200-fed-133225031.html"
+   "title": "Asia-morning movers",
+   "summary": "Among the top 100 coins on Tuesday morning, XDC led with +7.91% and LayerZero (ZRO) fell most, -7.14%, per IT Times.",
+   "url": "https://www.ittimes.com/news/articleView.html?idxno=87649"
   },
   {
-   "title": "Ripple's Swell conference starts Tuesday",
-   "summary": "Ripple's Swell runs 27-29 Oct in New York, per CoinDesk's week-ahead preview.",
-   "url": "https://www.coindesk.com/markets/2026/10/26/fed-ecb-and-boj-interest-rate-decisions-coinbase-earnings-crypto-week-ahead"
+   "title": "Friday's options expiry in numbers",
+   "summary": "CryptoTicker counts 149,686 bitcoin option contracts expiring 30 Oct with 'max pain' at $79,000. Max pain is not a price target.",
+   "url": "https://cryptoticker.io/en/bitcoin-options-expiry-october-30-2026-max-pain/"
+  },
+  {
+   "title": "US rule-making carries on without Congress",
+   "summary": "The CFTC opened rule-making on retail crypto trading on 5 Oct, and SEC Chair Atkins said Congress was unsuccessful in advancing the CLARITY Act, per law firm Baker Botts.",
+   "url": "https://www.bakerbotts.com/thought-leadership/publications/2026/october/cftc-launches-crypto-market-structure-rulemaking-as-sec-advances-its-own-digital-asset-framework"
   }
  ],
  "calendar": [
@@ -153,7 +161,7 @@
    "event": "US durable goods orders; Galaxy earnings call",
    "impact": "neutral",
    "key": false,
-   "note": "Consensus +1.8% (Investing.com) or +0.7% (IFC Markets), prior 0.0%. Galaxy reports before the open and holds its call at 8:30am ET."
+   "note": "Consensus +1.8% (heygotrade), +0.7% (IFC Markets) or +3.5% (Continuum Economics); prior 0.0% (IFC) or -0.1% (Continuum). Galaxy reports before the open."
   },
   {
    "et": "Tue 27 · 10:00am",
@@ -161,7 +169,7 @@
    "event": "US consumer confidence and new home sales",
    "impact": "neutral",
    "key": false,
-   "note": "Consumer confidence consensus 80.5 (Investing.com) or 81.5 (IFC Markets), prior 81.9. New home sales consensus 649,000, prior 684,000 (Investing.com)."
+   "note": "Consumer confidence consensus 80.5 (heygotrade) or 81.5 (IFC Markets), prior 81.9. New home sales consensus 708,000 (IFC Markets), prior 684,000."
   },
   {
    "et": "Tue 27 · 5:00pm (call)",
@@ -169,7 +177,7 @@
    "event": "Robinhood earnings",
    "impact": "neutral",
    "key": false,
-   "note": "Reports after the US close. EPS estimate $0.54, revenue estimate $1.41B (Hudson Labs)."
+   "note": "Reports after the US close. Consensus revenue about $1.42-1.43B and EPS about $0.55-0.56 (TradingKey)."
   },
   {
    "et": "Wed 28 · 9:45am",
@@ -177,7 +185,7 @@
    "event": "Bank of Canada rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "A hike to 2.50% from 2.25% is expected, priced at about 80% (Newsquawk). Strategy's special shareholder meeting on daily preferred dividends is at 10:00am ET (21:00 Bangkok)."
+   "note": "Rate is 2.25%; markets price about 80% for a hike to 2.50% (MoneySense). Strategy's special shareholder meeting on daily preferred dividends is at 10:00am ET (21:00 Bangkok)."
   },
   {
    "et": "Wed 28 · 2:00pm",
@@ -185,7 +193,7 @@
    "event": "Fed rate decision",
    "impact": "volatile",
    "key": true,
-   "note": "Range 3.75-4.00%; a hold is expected (CME FedWatch about 88% per Kiplinger; 94 of 100 economists in a Reuters poll, per Newsquawk). Chair Warsh's press conference 2:30pm ET (01:30 Bangkok). No new projections at this meeting. Alphabet and Microsoft report after the close."
+   "note": "Range 3.75-4.00%; a hold is expected (94 of 100 economists in a Reuters poll, per Newsquawk). Chair Warsh's press conference 2:30pm ET (01:30 Bangkok). No new projections at this meeting."
   },
   {
    "et": "Thu 29 · 8:30am",
@@ -193,7 +201,7 @@
    "event": "US Q3 GDP (advance) and September PCE inflation",
    "impact": "volatile",
    "key": true,
-   "note": "GDP consensus 3.2% (Investing.com) or 3.0% (Newsquawk), prior 2.2%. PCE 3.6% a year expected, prior 3.4%; core 3.1%, prior 3.0% (Newsquawk). Jobless claims consensus 198,000, prior 194,000 (Investing.com). ECB decision 9:15am ET (20:15 Bangkok): deposit rate 2.50%, hold expected."
+   "note": "GDP consensus 3.0% (Newsquawk) or 1.4% (IFC Markets), prior 2.2%. PCE 3.6% a year expected, prior 3.4%; core 3.1%, prior 3.0% (Newsquawk). ECB decision 9:15am ET (20:15 Bangkok): deposit rate 2.50%, hold expected."
   },
   {
    "et": "Thu 29 · 5:00pm (calls)",
@@ -201,7 +209,7 @@
    "event": "Coinbase and Strategy earnings",
    "impact": "volatile",
    "key": true,
-   "note": "Both report after the US close; both calls at 5:00pm ET. Token unlocks the same day: FF ~$20.1M and CARDS ~$18.2M, per the unlock data on this page."
+   "note": "Both report after the US close; Coinbase revenue estimate about $1.20B (PrimeXBT). Token unlocks the same day: FF ~$19.5M and CARDS ~$19.1M, per the unlock data on this page."
   },
   {
    "et": "Fri 30 · 4:00am",
@@ -209,23 +217,23 @@
    "event": "Bitcoin options expiry (Deribit)",
    "impact": "volatile",
    "key": true,
-   "note": "At 08:00 UTC. About $10.9B with max pain at $78,000 (Coinspeaker, 26 Oct) or $12.2B with max pain at $79,000 (CryptoTicker, 17 Oct). Max pain is not a price target. The Bank of Japan also decides Fri 30 Oct; a hold at 1.25% is expected (Newsquawk)."
+   "note": "At 08:00 UTC. About $12.2B notional with max pain at $79,000 (CryptoTicker). Max pain is not a price target. The Bank of Japan also decides Fri 30 Oct; a hold at 1.25% is expected (InvestingLive)."
   },
   {
    "et": "Fri 30 · 8:30am",
    "bkk": "Fri 30 · 19:30",
-   "event": "US Employment Cost Index",
+   "event": "US Employment Cost Index (Q3)",
    "impact": "neutral",
    "key": false,
-   "note": "Consensus +0.8%, prior +0.9% (Investing.com). Chicago PMI at 9:45am ET: consensus 54.8, prior 58.8. Fed's Daly speaks at 12:00pm ET (23:00 Bangkok) and Musalem at 12:30pm ET (23:30 Bangkok), per Kiplinger."
+   "note": "No consensus found. Fed speakers Musalem and Daly also speak Friday."
   },
   {
-   "et": "Fri 30 – Mon 2 Nov",
-   "bkk": "Fri 30 – Mon 2 Nov",
-   "event": "Token unlocks: KMNO, W, TIA, EIGEN, SUI, ENA, BTW",
+   "et": "Fri 30 – Tue 3 Nov",
+   "bkk": "Fri 30 – Tue 3 Nov",
+   "event": "Token unlocks: KMNO, W, TIA, EIGEN, SUI, M, ENA, BTW, KITE",
    "impact": "bearish",
    "key": false,
-   "note": "KMNO ~$9.8M and W ~$0.6M (30th), TIA ~$3.0M (31st), EIGEN ~$7.3M and SUI ~$11.9M (1 Nov), ENA ~$8.2M and BTW ~$168.7M (2 Nov), per the unlock data on this page."
+   "note": "KMNO ~$9.9M and W ~$0.6M (30th), TIA ~$3.0M (31st), EIGEN ~$7.1M and SUI (size unconfirmed) on 1 Nov, MemeCore (M) ~$53.3M (1 Nov, 23:44 UTC), ENA ~$8.5M and BTW ~$169.7M (2 Nov), KITE ~$89.1M (3 Nov), per the unlock data on this page. US clocks fall back on Sun 1 Nov."
   },
   {
    "et": "Mon 2 Nov · 10:00am",
@@ -233,7 +241,7 @@
    "event": "US ISM manufacturing",
    "impact": "neutral",
    "key": false,
-   "note": "Prior 54.5; no consensus found yet."
+   "note": "Prior 54.5; no consensus published yet."
   },
   {
    "et": "Tue 3 Nov",
@@ -241,15 +249,15 @@
    "event": "US midterm elections; JOLTS job openings 10:00am ET (22:00 Bangkok)",
    "impact": "volatile",
    "key": false,
-   "note": "The next Fed meeting after this week is 8-9 Dec, per the Federal Reserve."
+   "note": "JOLTS prior 7.079M (BLS). The next Fed meeting after this week is 8-9 Dec, per the Federal Reserve."
   }
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-10-27T00:16:07Z",
-  "claimsChecked": 146,
-  "claimsRemoved": 5,
-  "rounds": 2,
+  "checkedAt": "2026-10-27T04:33:01Z",
+  "claimsChecked": 227,
+  "claimsRemoved": 14,
+  "rounds": 3,
   "method": "Independent source check: every claim re-opened at its cited URL"
  }
 }
