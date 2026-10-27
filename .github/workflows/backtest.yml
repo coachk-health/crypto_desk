@@ -5,7 +5,7 @@ name: Past unlock track record
 on:
   push:
     branches: [main]
-    paths: ["data/past_unlocks.json", "scripts/backtest.py", "scripts/score.py", "scripts/signals.py"]
+    paths: ["data/past_unlocks.json", "scripts/backtest.py", "scripts/score.py", "scripts/signals.py", "scripts/candles.py"]
   schedule:
     - cron: "40 1 * * *"
   workflow_dispatch:
@@ -27,6 +27,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Reuse downloaded exchange candles
+        # Binance's daily files never change once published, so keep them between runs.
+        uses: actions/cache@v4
+        with:
+          path: data/cache/bn
+          key: bn-${{ github.run_id }}
+          restore-keys: bn-
       - name: Measure past unlocks
         run: python3 scripts/backtest.py
       - name: Replay the trade-signal playbook
@@ -44,6 +51,15 @@ jobs:
           done
           # Pushes made by this workflow do not trigger the publish workflow, so copy to gh-pages here.
           git push --force origin HEAD:gh-pages
+      - name: Keep the price downloads for checking
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: price-cache
+          path: |
+            data/cache/*.json
+          retention-days: 3
+          if-no-files-found: ignore
       - name: Ask GitHub Pages to rebuild
         # Pushes made with the workflow token do not always start a Pages build, so request one.
         run: |

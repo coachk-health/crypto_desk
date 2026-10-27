@@ -3,15 +3,16 @@
 page (scripts/score.py), then measures what the price actually did around it.
 
 Prices are measured against Bitcoin, so a move counts only if the token did worse
-(or better) than the market. Day 0 is the unlock date; P(d) is the CoinGecko daily
-price at 00:00 UTC on day 0+d, which is before the unlock on its own day.
+(or better) than the market. Day 0 is the unlock date; P(d) is the price at 00:00 UTC on
+day 0+d (the Binance daily open; CoinGecko only if the token is not on Binance), which is
+before the unlock on its own day.
 
 Inputs:  data/past_unlocks.json (researched past events)
          data/unlocks.json      (upcoming rows; any that have now happened are
                                   harvested into past_unlocks.json with their
                                   original prediction attached)
 Output:  data/backtest.json
-Runs on GitHub Actions (free). Needs network access to api.coingecko.com and
+Runs on GitHub Actions (free). Needs network access to api.coingecko.com, data.binance.vision and
 coins.llama.fi. Standard library only.
 """
 import json, sys, time, statistics, urllib.request, urllib.error
@@ -21,6 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 import score  # noqa: E402
+import candles  # noqa: E402
 
 PAST = ROOT / "data" / "past_unlocks.json"
 UPCOMING = ROOT / "data" / "unlocks.json"
@@ -92,6 +94,27 @@ def series(cg_id):
         raise RuntimeError(f"no price data for {cg_id}")
     f.write_text(json.dumps({"fetchedAt": NOW.isoformat(), "source": source, "days": days}))
     return days
+
+
+def exchange_series(token, cg):
+    """Swap CoinGecko's price for Binance candles where the token trades there (CoinGecko's
+    history is wrong for some tokens on some days). Market cap and volume stay CoinGecko's
+    (all exchanges); cgPrice is kept so circulating supply = market cap / CoinGecko price.
+    Only exchange days are kept, so a series never jumps between two sources."""
+    start = (NOW - timedelta(days=366)).date()
+    src, sym, bn = candles.token_days(token, start, NOW.date(), cg)
+    if not src:
+        return cg, {"source": "coingecko", "symbol": None, "cgGapMedianPct": None, "cgGapMaxPct": None}
+    out, gaps = {}, []
+    for d, x in bn.items():
+        c = cg.get(d) or {}
+        out[d] = {"price": x["o"], "h": x["h"], "l": x["l"], "c": x["c"], "mcap": c.get("mcap"), "vol": c.get("vol"), "cgPrice": c.get("price")}
+        if c.get("price"):
+            gaps.append(abs(c["price"] / x["o"] - 1) * 100)
+    info = {"source": src, "symbol": sym,
+            "cgGapMedianPct": round(statistics.median(gaps), 1) if gaps else None,
+            "cgGapMaxPct": round(max(gaps), 1) if gaps else None}
+    return out, info
 
 
 def at(s, d0, off, field="price"):
@@ -276,8 +299,9 @@ def summarise(evs):
 
 def main():
     past = harvest()
-    btc = series("bitcoin")
+    btc, _ = exchange_series("BTC", series("bitcoin"))
     events, skipped = [], []
+    sources = {}
     for t in past["tokens"]:
         cg = t.get("coingeckoId")
         evs = [e for e in t.get("events") or [] if e.get("date") and e.get("type") != "continuous"]
@@ -287,11 +311,13 @@ def main():
             continue
         log(f"{t['token']} ({cg}): {len(evs)} events")
         try:
-            s = series(cg)
+            s, info = exchange_series(t["token"], series(cg))
         except Exception as e:
             log(f"  skipped: {e}")
             skipped.append({"token": t["token"], "why": f"price data unavailable ({e})"})
             continue
+        sources[t["token"]] = info
+        log(f"  prices: {info['source']} {info['symbol'] or ''} (CoinGecko differed by a median {info['cgGapMedianPct']}%, at most {info['cgGapMaxPct']}%)")
         # The token's normal 3-week drift against Bitcoin over the whole year, so an unlock is
         # only blamed for what it did beyond the token's usual trend.
         common = sorted(k for k in s if s[k].get("price") and btc.get(k, {}).get("price"))
@@ -314,7 +340,7 @@ def main():
             vols = [at(s, d0, -i, "vol") for i in range(1, 31)]
             vols = [v for v in vols if v]
             mcap1 = at(s, d0, -1, "mcap")
-            p1 = at(s, d0, -1)
+            p1 = at(s, d0, -1, "cgPrice") or (at(s, d0, -1) if info["source"] == "coingecko" else None)
             circ = mcap1 / p1 if mcap1 and p1 else None
             amt = e.get("amountTokens")
             usdM = round(amt * p0 / 1e6, 3) if amt else None
@@ -367,6 +393,14 @@ def main():
                 r = rel(s, btc, d0, 0, d) if d != 0 else 0.0
                 if r is not None:
                     path[str(d)] = r
+            # Daily candles as % of the unlock-day open, for entry-zone, stop and target tests.
+            ohlc = {}
+            if info["source"] != "coingecko":
+                for d in range(-8, POST + 1):
+                    k = (d0 + timedelta(days=d)).strftime("%Y-%m-%d")
+                    x = s.get(k)
+                    if x and x.get("h"):
+                        ohlc[str(d)] = [round((x[f] / p0 - 1) * 100, 3) for f in ("price", "h", "l", "c")]
             win = {d: v for d, v in path.items() if -PRE <= int(d) <= POST}
             low_day = int(min(win, key=win.get)) if win else None
             # biggest single-day drop vs Bitcoin, days -14..+14
@@ -384,7 +418,8 @@ def main():
                 "recipientsMix": e.get("recipientsMix"), "who": who(e.get("recipientsMix")),
                 "grade": imp["grade"], "points": imp["points"], "factors": imp["factors"],
                 "predicted": e.get("predicted"),
-                "moves": moves, "path": path, "pathUsd": path_usd, "shorts": shorts, "lowDay": low_day,
+                "moves": moves, "path": path, "pathUsd": path_usd, "ohlc": ohlc, "priceSource": info["source"],
+                "shorts": shorts, "lowDay": low_day,
                 "lowDayUsd": int(min(path_usd, key=path_usd.get)) if path_usd else None,
                 "worstDay": worst, "worstDayMove": drops.get(worst) if worst is not None else None,
                 "sources": e.get("sources") or [],
@@ -430,13 +465,15 @@ def main():
 
     OUT.write_text(json.dumps({
         "btcYear": btc_year, "btcFrom": bdays[0] if bdays else None, "btcTo": bdays[-1] if bdays else None,
-        "perToken": tok_stats,
+        "perToken": tok_stats, "priceSources": sources,
         "gridSpec": {"entries": ENTRIES, "exits": EXITS},
         "generatedAt": NOW.isoformat(timespec="seconds").replace("+00:00", "Z"),
         "window": {"pre": PRE, "post": POST},
         "benchmark": "Bitcoin",
-        "method": ("Each move is the token's price change relative to Bitcoin over the same days, from CoinGecko "
-                   "daily prices at 00:00 UTC (day 0 is the unlock date, so its price is from before the unlock). "
+        "method": ("Each move is the token's price change relative to Bitcoin over the same days, from Binance "
+                   "perpetual-futures daily candles where the token trades there (else Binance spot, else CoinGecko), "
+                   "using the price at 00:00 UTC (day 0 is the unlock date, so its price is from before the unlock). "
+                   "CoinGecko's own history was wrong for some tokens on some days, so it is only the last resort. "
                    "Grades use the same rules as the live page, with size, trading volume and circulating supply "
                    "taken from CoinGecko as they were the day before each unlock. Monthly tranches of the same token "
                    "overlap: the 30 days before one unlock include the 14 days after the previous one. "
