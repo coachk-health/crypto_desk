@@ -10,12 +10,12 @@ Life of a call (days are relative to the unlock date):
               otherwise            -> called, waiting for the entry price
   entry (day -7): R = the 00:00 UTC price that day (Binance daily open; CoinGecko if the token is
               not on Binance). Pump check: up 30%+ from day -30 to R -> skipped ("pumped").
-              Otherwise open, with zone R to R x 1.03, stop R x (1 + stop%), target R x (1 - target%),
-              using the stop and target the page showed on the check day.
+              Otherwise open, with zone R to R x 1.01, stop R x (1 + stop%), target R x (1 - target%),
+              using the stop, target and cover day the page showed on the check day.
   open      checked against each completed day's high and low (same rules as the backtest:
               a day that reaches the stop counts as stopped first; stops fill 0.5% worse).
-  closed    stop, target, or covered at 00:00 UTC on day +7. Result after 0.10% fees and
-              0.03% funding a day.
+  closed    stop, target, or covered at 00:00 UTC on the plan's cover day. Result after 0.10% fees
+              and 0.03% funding a day, also in R (1R = what a stopped trade loses).
 A call whose check day passed before this script saw it (for example a missed run) is logged as
 "missed" and not counted, so a late entry can never use hindsight.
 
@@ -30,13 +30,15 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 import candles  # noqa: E402
 import signals  # noqa: E402
+from levels import risk as levels_risk  # noqa: E402
 
 LOG = ROOT / "data" / "trade_log.json"
 UNLOCKS = ROOT / "data" / "unlocks.json"
 SIGNALS = ROOT / "data" / "signals.json"
 START_DATE = "2026-10-28"     # first check day the log covers
 CHECK, ENTRY, COVER, PRE = -8, -7, 7, -30
-ZONE = 3.0
+ZONE = 1.0
+RISK_USD = 100
 MIN_CONF = 60
 FEES, FUNDING_DAY, SLIP = 0.10, 0.03, 0.5
 NOW = datetime.now(timezone.utc)
@@ -132,17 +134,17 @@ def walk(call, days):
         return close(call, cover, days[iso(cover)]["o"], "time", worst)
     if last:
         held = max(1, (last[0] - entry).days + 1)
-        call["mark"] = {"date": iso(last[0]), "price": last[1],
-                        "pnl": round((R - last[1]) / R * 100 - FEES - FUNDING_DAY * held, 2)}
+        pnl = round((R - last[1]) / R * 100 - FEES - FUNDING_DAY * held, 2)
+        call["mark"] = {"date": iso(last[0]), "price": last[1], "pnl": pnl, "r": round(pnl / call["plan"]["riskPct"], 2)}
     call["worstAgainst"] = round(worst, 2)
     return call
 
 
 def close(call, d, px, why, worst):
     held = max(1, (d - D(call["entryDate"])).days)
+    pnl = round((call["ref"] - px) / call["ref"] * 100 - FEES - FUNDING_DAY * held, 2)
     call.update(status="closed", exit={"date": iso(d), "price": float(f"{px:.6g}"), "why": why},
-                pnl=round((call["ref"] - px) / call["ref"] * 100 - FEES - FUNDING_DAY * held, 2),
-                worstAgainst=round(worst, 2))
+                pnl=pnl, r=round(pnl / call["plan"]["riskPct"], 2), worstAgainst=round(worst, 2))
     call.pop("mark", None)
     call["history"].append({"at": NOW.isoformat(timespec="seconds"), "event": f"closed: {why} on {iso(d)} at {px:.6g}, {call['pnl']:+.2f}%"})
     return call
@@ -152,7 +154,8 @@ def main():
     log = json.loads(LOG.read_text()) if LOG.exists() else {"startedAt": START_DATE, "calls": []}
     up = json.loads(UNLOCKS.read_text()).get("upcoming") or []
     sig = json.loads(SIGNALS.read_text()) if SIGNALS.exists() else {}
-    plan = ((sig.get("levels") or {}).get("plan")) or {"mode": "market", "zone": 0.0, "stop": 35, "target": 30}
+    plan = ((sig.get("levels") or {}).get("plan")) or {"mode": "market", "zone": 0.0, "stop": 12, "target": 30, "cover": 10}
+    cover_days = plan.get("cover", COVER)
     pump = (sig.get("playbook") or {}).get("pumpPct", 30)
     calls = {c["id"]: c for c in log["calls"]}
 
@@ -175,7 +178,7 @@ def main():
             continue
         base = {"id": cid, "token": r["token"], "name": r.get("name"), "coingeckoId": r.get("coingeckoId"),
                 "unlockDate": r["date"], "checkDate": iso(check), "entryDate": iso(u + timedelta(days=ENTRY)),
-                "coverDate": iso(u + timedelta(days=COVER)), "rules": hits, "history": []}
+                "coverDate": iso(u + timedelta(days=cover_days)), "rules": hits, "history": []}
         if check > TODAY:
             calls[cid] = dict(base, status="watching")
             continue
@@ -184,8 +187,9 @@ def main():
         base["decision"] = {"confidence": conf, "pctCirculating": pc, "investorsShare": facts["investorsShare"],
                             "firstInsiderUnlock": facts["firstInsiderUnlock"], "usdM": r.get("usdM"),
                             "amount": r.get("amount"), "frozenAt": NOW.isoformat(timespec="seconds")}
-        base["plan"] = {"stop": plan["stop"], "target": plan.get("target"), "zone": ZONE, "pumpPct": pump,
-                        "fromSignals": sig.get("generatedAt")}
+        base["plan"] = {"stop": plan["stop"], "target": plan.get("target"), "cover": cover_days, "zone": ZONE,
+                        "rr": round(plan["target"] / plan["stop"], 2) if plan.get("target") else None,
+                        "riskPct": round(levels_risk(plan["stop"]), 2), "pumpPct": pump, "fromSignals": sig.get("generatedAt")}
         if TODAY > u + timedelta(days=ENTRY):
             base.update(status="missed", skipReason="not logged before its entry day, so not counted")
         elif conf < MIN_CONF:
@@ -228,10 +232,10 @@ def main():
 
     out = sorted(calls.values(), key=lambda c: (c["checkDate"], c["token"]))
     closed = [c for c in out if c["status"] == "closed"]
-    v = [c["pnl"] for c in closed]
+    v = [c["r"] for c in closed]
     log.update(calls=out, updatedAt=NOW.isoformat(timespec="seconds").replace("+00:00", "Z"),
-               summary={"closed": len(v), "won": sum(1 for x in v if x > 0),
-                        "totalUsd": round(sum(v) * 10) if v else 0,
+               summary={"closed": len(v), "won": sum(1 for x in v if x > 0), "riskUsd": RISK_USD,
+                        "rTotal": round(sum(v), 2) if v else 0, "totalUsd": round(sum(v) * RISK_USD) if v else 0,
                         "open": sum(1 for c in out if c["status"] == "open"),
                         "skipped": sum(1 for c in out if c["status"] == "skipped"),
                         "watching": sum(1 for c in out if c["status"] == "watching")},

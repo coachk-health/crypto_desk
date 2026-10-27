@@ -707,7 +707,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
 
   /* ---------------- Trade signals ---------------- */
   const RULE_SHORT = { big: '10%+ of supply', investors: 'Mostly investors', first: 'First insider unlock' };
-  let sigCurve = 'plan', sigLogFilter = 'taken', pumpCache = {}, pumpQueue = Promise.resolve();
+  let sigCurve = 'plan', sigCover = null, sigLogFilter = 'taken', pumpCache = {}, pumpQueue = Promise.resolve();
 
   function addDays(iso, n) { const d = new Date(iso + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
   function fmtDay(iso) { return new Date(iso + 'T00:00:00Z').toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' }); }
@@ -726,7 +726,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
         advDays: u.usdM && m.advUsdM && m.advBasis && !/24h/i.test(m.advBasis) ? u.usdM / m.advUsdM : null,
       };
       const hits = Object.keys(R).filter(k => { const r = R[k], v = facts[r.field]; return r.equals !== undefined ? v === r.equals : (typeof v === 'number' && v >= r.min); });
-      return { u, hits, entry: addDays(u.date, pb.entry), exit: addDays(u.date, pb.exit), id: u.coingeckoId || (S.ids || {})[u.token] };
+      return { u, hits, entry: addDays(u.date, pb.entry), exit: addDays(u.date, (S.levels && S.levels.plan.cover) || pb.exit), id: u.coingeckoId || (S.ids || {})[u.token] };
     }).filter(x => x.hits.length && daysFromToday(x.exit) >= 0).sort((a, b) => a.entry.localeCompare(b.entry));
   }
 
@@ -812,10 +812,11 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
   function signals() {
     const S = D.signals;
     if (!S || !S.trades) return el('section', null, [el('p', { class: 'state', text: 'Signals are being calculated. They update once a day.' })]);
-    const pb = S.playbook, sum = S.summary, ng = S.summaryNoGuard, L = S.levels;
+    const pb = S.playbook, sum = S.summary, L = S.levels;
     const P = L ? L.plan : null, PS = L ? L.planStats : null;
-    const usd = v => (v < 0 ? '−$' : '+$') + Math.abs(v).toLocaleString('en-US');
-    const ZONE = 3; // entry zone width above the check price, %
+    const usd = v => (v < 0 ? '−$' : '+$') + Math.abs(Math.round(v)).toLocaleString('en-US');
+    const rf = v => v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(1) + 'R';
+    const ZONE = 1; // entry zone width above the reference price, %
 
     // upcoming
     const ups = upcomingSignals(S);
@@ -824,13 +825,13 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       const pend = final ? '' : ' *';
       return ref ? [el('td', { class: 'num', text: fmtPx(ref) + '–' + fmtPx(ref * (1 + ZONE / 100)) + pend }),
         el('td', { class: 'num down', text: fmtPx(ref * (1 + P.stop / 100)) + pend }),
-        el('td', { class: 'num up', text: P.target ? fmtPx(ref * (1 - P.target / 100)) + pend : 'none' })]
-        : [el('td', { class: 'na', text: '+0–' + ZONE + '%' }), el('td', { class: 'na', text: '+' + P.stop + '%' }), el('td', { class: 'na', text: P.target ? '−' + P.target + '%' : 'none' })];
+        el('td', { class: 'num up', text: fmtPx(ref * (1 - P.target / 100)) + pend })]
+        : [el('td', { class: 'na', text: '+0–' + ZONE + '%' }), el('td', { class: 'na', text: '+' + P.stop + '%' }), el('td', { class: 'na', text: '−' + P.target + '%' })];
     };
     const upList = el('div', { class: 'panel' }, [el('h3', { text: 'Upcoming signals' }),
-      el('p', { class: 'small', text: P ? 'Unlocks that match the playbook, with the levels it tested best. On the check day, confirm the unlock data (confidence 60+) and that the token has not pumped ' + pb.pumpPct + '%+; the next day’s 00:00 UTC price then sets the entry zone, stop (+' + P.stop + '%) and target (' + (P.target ? '−' + P.target + '%' : 'none') + '). * = from today’s price, final on the check day.' : 'Unlocks on the live page that match the playbook.' }),
+      el('p', { class: 'small', text: P ? 'Stop ' + P.stop + '% above entry, target ' + P.target + '% below: ' + P.rr + 'R reward for 1R risk. On the check day, confirm the unlock data (confidence 60+) and that the token has not pumped ' + pb.pumpPct + '%+; the next day’s 00:00 UTC price sets the levels. * = from today’s price, final on the check day.' : 'Unlocks on the live page that match the playbook.' }),
       ups.length ? el('div', { class: 'tablewrap' }, [el('table', { class: 'el sig' }, [
-        el('thead', null, [el('tr', null, [el('th', { text: 'Token' }), el('th', { text: 'Unlock' }), el('th', { text: 'Check' }), el('th', { text: 'Entry zone' }), el('th', { text: 'Stop' }), el('th', { text: 'Target' }), el('th', { text: 'Cover by' }), el('th', { text: 'Status' })])]),
+        el('thead', null, [el('tr', null, [el('th', { text: 'Token' }), el('th', { text: 'Unlock' }), el('th', { text: 'Check' }), el('th', { text: 'Entry zone' }), el('th', { text: 'Stop (1R)' }), el('th', { text: 'Target (' + (P ? P.rr + 'R' : '') + ')' }), el('th', { text: 'Cover by' }), el('th', { text: 'Status' })])]),
         el('tbody', null, ups.map(x => {
           const dEntry = daysFromToday(x.entry), dExit = daysFromToday(x.exit);
           const status = dEntry > 0 ? 'Opens in ' + dEntry + ' day' + (dEntry === 1 ? '' : 's') : dExit > 0 ? 'Open now, cover in ' + dExit + ' day' + (dExit === 1 ? '' : 's') : 'Cover today';
@@ -851,80 +852,88 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
         }))])]) : el('p', { text: 'No upcoming unlocks match the playbook right now.' })]);
 
     // headline
-    const lead = PS ? el('p', { class: 'lead', text: 'With the stop and target, every past signal: ' + PS.all.n + ' shorts, ' + PS.all.win + '% made money, the median trade made ' + sgn(PS.all.median) + ', and $1,000 per trade returned ' + usd(PS.all.totalUsd) + ' after assumed costs. The worst trade lost ' + Math.abs(PS.all.worst).toFixed(0) + '%.' })
-      : el('p', { class: 'lead', text: 'Taking every signal over the past year: ' + sum.n + ' shorts, ' + sum.win + '% made money, the median trade made ' + sgn(sum.median) + ', and $1,000 per trade would have returned ' + usd(sum.totalUsd) + ' after assumed costs.' });
-    const warn = el('p', { class: 'verdict warnline', text: PS ? 'Without a stop the same trades made only ' + usd(L.baseline.all.totalUsd) + ' and the worst lost ' + Math.abs(L.baseline.all.worst).toFixed(0) + '% (a squeeze). The stop is what made the first half of the year profitable, so it is not optional. Account low point with the plan: −$' + Math.abs(L.drawdownUsd).toLocaleString('en-US') + '.' : 'The catch: the worst trade lost ' + Math.abs(sum.worst).toFixed(0) + '%. Shorts can lose more than 100% when a token squeezes, so size small and use a real stop order.' });
+    const A = PS ? PS.all : null;
+    const lead = A ? el('p', { class: 'lead', text: 'Risking $' + L.riskUsd + ' a trade with a ' + P.stop + '% stop and a ' + P.target + '% target (' + P.rr + 'R): ' + A.n + ' past signals, ' + A.win + '% won, ' + rf(A.rTotal) + ' in total, which is ' + usd(A.rTotal * L.riskUsd) + '.' })
+      : el('p', { class: 'lead', text: 'Taking every signal over the past year: ' + sum.n + ' shorts, ' + sum.win + '% made money.' });
+    const warn = A ? el('p', { class: 'verdict warnline', text: 'Half the trades lose a full 1R: the stop was hit ' + A.stops + ' times out of ' + A.n + '. It works because a winner averages ' + A.avgWinR + 'R. The old wide setup (35% stop, 30% target, under 1R) made ' + rf(L.wide.all.rTotal) + ' on the same trades. Account low point: −$' + Math.abs(L.drawdownUsd).toLocaleString('en-US') + ' (' + (Math.abs(L.drawdownUsd) / L.riskUsd).toFixed(1) + 'R).' }) : null;
 
     // playbook steps
     const steps = [
       el('li', null, [el('b', { text: 'Pick the unlock. ' }), 'Any of: 10%+ of circulating supply, 60%+ to investors, or the token’s first insider unlock.']),
       el('li', null, [el('b', { text: 'Check, 8 days before. ' }), 'The unlock data is confirmed (confidence 60+) and the token is not up ' + pb.pumpPct + '% or more over the last three weeks. If either fails, skip it.']),
-      el('li', null, [el('b', { text: 'Enter, 7 days before. ' }), P ? 'Short near the 00:00 UTC price (the entry zone is that price to ' + ZONE + '% above). Waiting to sell half higher, 3–8% up, made less in every test, because the price often never came back.' : 'Short at the daily close a week before the unlock.']),
-      P ? el('li', null, [el('b', { text: 'Place the stop and target straight away. ' }), 'Stop ' + P.stop + '% above the entry price' + (P.target ? ', take profit ' + P.target + '% below it' : '') + '. The stop is wide because unlock tokens swing hard inside a day; tighter stops got hit by noise and made less.']) : null,
-      el('li', null, [el('b', { text: 'Cover 7 days after ' }), 'whatever is still open, at 00:00 UTC.']),
-      el('li', null, [el('b', { text: 'Size it. ' }), P ? 'A stopped trade loses about ' + (P.stop + 1) + '%, so size each short so that is a loss you accept. Up to ' + S.maxOpen + ' signals were open at once.' : 'Keep each position small: up to ' + S.maxOpen + ' signals were open at once.'])
+      el('li', null, [el('b', { text: 'Enter, 7 days before. ' }), P ? 'Short at the 00:00 UTC price (the entry zone is that price to ' + ZONE + '% above). Waiting to sell half higher, 3–8% up, made less in every test.' : 'Short a week before the unlock.']),
+      P ? el('li', null, [el('b', { text: 'Stop and target, straight away. ' }), 'Stop ' + P.stop + '% above entry (1R). Target ' + P.target + '% below (' + P.rr + 'R). Only settings with a target at least ' + L.minRR + '× the stop were allowed.']) : null,
+      el('li', null, [el('b', { text: 'Cover ' + (P ? P.cover : pb.exit) + ' days after the unlock ' }), 'whatever is still open, at 00:00 UTC.']),
+      P ? el('li', null, [el('b', { text: 'Size by risk. ' }), 'Position = the dollars you will risk ÷ ' + P.riskPct.toFixed(1) + '% (the stop plus slippage and fees). Risking $100 means a $' + Math.round(100 / P.riskPct * 100).toLocaleString('en-US') + ' short. Up to ' + S.maxOpen + ' signals were open at once.']) : null
     ].filter(Boolean);
     const plan = el('div', { class: 'panel' }, [el('h3', { text: 'The playbook' }), el('ol', { class: 'steps' }, steps)]);
 
     // curve
-    const opts = L ? [['plan', 'With stop and target'], ['guard', 'No stop or target'], ['noguard', 'No pump check either']] : [['guard', 'Playbook'], ['noguard', 'Without pump check']];
-    if (!opts.some(o => o[0] === sigCurve)) sigCurve = opts[0][0];
-    const curveSeries = [{ pts: sigCurve === 'plan' ? L.curve : sigCurve === 'guard' ? S.curve : S.curveNoGuard, color: '#ffb547' }];
-    const curveP = el('div', { class: 'panel' }, [el('div', { class: 'phead' }, [el('h3', { text: 'Account result, $1,000 per trade' }), seg(opts, sigCurve, v => sigCurve = v)]),
-      dateChart(curveSeries),
-      el('p', { class: 'small', text: 'Each trade is booked on the day it closes. Fees and funding are already taken off.' + (L ? ' The stop-and-target line covers the ' + L.withCandles + ' trades with exchange highs and lows; the others cover all ' + sum.n + '.' : '') })]);
+    let curveP = null;
+    if (L) {
+      const opts = [['plan', P.stop + '% stop, ' + P.target + '% target'], ['wide', 'Old wide stop']];
+      if (!opts.some(o => o[0] === sigCurve)) sigCurve = 'plan';
+      curveP = el('div', { class: 'panel' }, [el('div', { class: 'phead' }, [el('h3', { text: 'Account result, risking $' + L.riskUsd + ' a trade' }), seg(opts, sigCurve, v => sigCurve = v)]),
+        dateChart([{ pts: sigCurve === 'plan' ? L.curve : L.curveWide, color: '#ffb547' }]),
+        el('p', { class: 'small', text: 'Each trade is booked on the day it closes, after fees and funding. ' + L.withCandles + ' trades had exchange highs and lows to test the stop and target on; ' + L.withoutCandles + ' did not.' })]);
+    }
 
-    // stability
+    // stability, in R
+    const rRow = (label, s, note) => !s ? el('tr', null, [el('td', { text: label }), el('td', { colspan: '5', class: 'na', text: 'No trades yet' })]) :
+      el('tr', null, [el('td', null, [label, note ? el('small', { class: 'rng', text: note }) : null]), el('td', { class: 'n', text: s.n + ' (' + s.tokens + ')' }), el('td', { class: 'n', text: s.win + '%' }),
+        el('td', { class: 'n', text: s.avgWinR != null ? '+' + s.avgWinR.toFixed(2) + 'R' : '—' }),
+        el('td', { class: 'n' }, [el('span', { class: 'num ' + (s.rTotal < 0 ? 'down' : 'up'), text: rf(s.rTotal) })]),
+        el('td', { class: 'n' }, [el('span', { class: 'num ' + (s.rWithoutBest3 < 0 ? 'down' : 'up'), text: rf(s.rWithoutBest3) })])]);
     const H = S.halves;
-    const stabRows = PS ? [statRow('With stop and target', PS.all, L.withCandles + ' trades with exchange highs and lows'), statRow('↳ first half (to ' + fmtDay(H.split) + ')', PS.first), statRow('↳ second half', PS.second),
-      statRow('Same trades, no stop or target', L.baseline.all), statRow('↳ first half', L.baseline.first), statRow('↳ second half', L.baseline.second)]
-      : [statRow('Playbook', sum), statRow('First half (to ' + fmtDay(H.split) + ')', H.first), statRow('Second half', H.second)];
-    stabRows.push(statRow('All ' + sum.n + ' signals, no stop or target', sum), statRow('Without pump check', ng), statRow('Live-tracked trades', S.live, 'signals the live page showed before the date'));
-    const stab = el('div', { class: 'panel' }, [el('h3', { text: 'Does it hold up?' }),
-      el('p', { class: 'small', text: 'A real edge should work in both halves of the year and keep working on trades tracked live from now on.' }),
-      statTable(stabRows),
-      el('p', { class: 'small', text: '* Profit factor: total won divided by total lost. Above 1 makes money; above 2 is strong.' })]);
+    const stab = L ? el('div', { class: 'panel' }, [el('h3', { text: 'Does it hold up?' }),
+      el('p', { class: 'small', text: 'An edge should work in both halves of the year, survive losing its three best trades, and keep working on calls tracked live (the Trade log tab).' }),
+      el('div', { class: 'tablewrap' }, [el('table', { class: 'gt' }, [
+        el('thead', null, [el('tr', null, [el('th', { text: '' }), el('th', { class: 'n', text: 'Trades (tokens)' }), el('th', { class: 'n', text: 'Won' }), el('th', { class: 'n', text: 'Average win' }), el('th', { class: 'n', text: 'Total' }), el('th', { class: 'n', text: 'Without best 3' })])]),
+        el('tbody', null, [rRow('This plan', PS.all), rRow('↳ first half (to ' + fmtDay(H.split) + ')', PS.first), rRow('↳ second half', PS.second),
+          rRow('Old wide stop (35% stop, 30% target)', L.wide.all, 'under 1R reward')])])]),
+      el('p', { class: 'small', text: 'R = what a stopped trade loses. With no stop at all, the first half of the year lost money (one squeeze cost 173%).' })]) : null;
 
-    // stop x target grid
+    // stop x target grid, in R
     let gridP = null;
     if (L) {
-      const cell = (st, tg, m, z) => L.grid.find(c => c.mode === m && c.zone === z && c.stop === st && c.target === tg);
-      const all = L.grid.filter(c => c.mode === P.mode && c.zone === P.zone).map(c => c.total);
-      const hi = Math.max(...all.map(Math.abs));
-      const shade = v => 'background:' + (v >= 0 ? 'rgba(46,204,113,' : 'rgba(255,99,99,') + (0.08 + 0.42 * Math.abs(v) / hi).toFixed(2) + ')';
-      const lab = v => v == null ? 'none' : v + '%';
+      const cov = L.covers.includes(sigCover) ? sigCover : P.cover;
+      const cell = (st, tg, cv) => L.grid.find(c => c.stop === st && c.target === tg && c.cover === cv);
+      const vals = L.grid.filter(c => c.cover === cov && c.stop != null && c.r != null).map(c => Math.abs(c.r));
+      const hi = Math.max(...vals, 1);
+      const shade = (v, ok) => 'background:' + (v >= 0 ? 'rgba(46,204,113,' : 'rgba(255,99,99,') + ((ok ? 0.1 : 0.03) + (ok ? 0.42 : 0.12) * Math.min(1, Math.abs(v) / hi)).toFixed(2) + ')' + (ok ? '' : ';color:var(--muted)');
+      const stops = L.stops.filter(x => x != null), targets = L.targets.filter(x => x != null);
       const tbl = el('div', { class: 'tablewrap' }, [el('table', { class: 'gt heat' }, [
-        el('thead', null, [el('tr', null, [el('th', { text: 'Stop ↓  Target →' }), ...L.targets.map(t => el('th', { class: 'n', text: t == null ? 'none' : '−' + t + '%' }))])]),
-        el('tbody', null, L.stops.map(st => el('tr', null, [el('td', { text: st == null ? 'no stop' : '+' + st + '%' }), ...L.targets.map(tg => {
-          const c = cell(st, tg, P.mode, P.zone); if (!c) return el('td', { text: '—' });
-          const mine = st === P.stop && tg === P.target;
-          return el('td', { class: 'n' + (mine ? ' pick' : ''), style: shade(c.total), title: 'First half ' + usd(c.h1) + ', second half ' + usd(c.h2) + ', ' + c.win + '% won, worst ' + c.worst + '%, stopped ' + c.stops + ', target hit ' + c.targets }, [usd(c.total)]);
+        el('thead', null, [el('tr', null, [el('th', { text: 'Stop ↓  Target →' }), ...targets.map(t => el('th', { class: 'n', text: '−' + t + '%' }))])]),
+        el('tbody', null, stops.map(st => el('tr', null, [el('td', { text: '+' + st + '%' }), ...targets.map(tg => {
+          const c = cell(st, tg, cov); if (!c || c.r == null) return el('td', { text: '—' });
+          const ok = tg >= L.minRR * st, mine = st === P.stop && tg === P.target && cov === P.cover;
+          return el('td', { class: 'n' + (mine ? ' pick' : ''), style: shade(c.r, ok), title: (ok ? '' : 'Below ' + L.minRR + 'R, not allowed. ') + (tg / st).toFixed(1) + 'R target. First half ' + rf(c.h1) + ', second half ' + rf(c.h2) + '. ' + c.win + '% won, stopped ' + c.stops + ', target hit ' + c.targets + '.' }, [rf(c.r)]);
         })])))])]);
-      const modeRows = L.modes.map(m => { const c = cell(P.stop, P.target, m.mode, m.zone); return c ? el('tr', null, [el('td', { text: m.mode === 'market' ? 'All at the check price' : 'Half there, half ' + m.zone + '% higher if reached' }), el('td', { class: 'n', text: c.win + '%' }), el('td', { class: 'n' }, [pct(c.median)]), el('td', { class: 'n' }, [el('span', { class: 'num ' + (c.total < 0 ? 'down' : 'up'), text: usd(c.total) })])]) : null; }).filter(Boolean);
+      const modeRows = L.modes.map(m => el('tr', null, [el('td', { text: m.mode === 'market' ? 'All at the 00:00 UTC price' : 'Half there, half ' + m.zone + '% higher if reached' }), el('td', { class: 'n', text: m.win + '%' }), el('td', { class: 'n' }, [el('span', { class: 'num ' + (m.rTotal < 0 ? 'down' : 'up'), text: rf(m.rTotal) })])]));
       gridP = el('details', { class: 'panel logp' }, [el('summary', null, [el('h3', { text: 'How the stop, target and entry were chosen' })]),
-        el('p', { class: 'small', text: 'Every combination was replayed on daily exchange highs and lows (' + L.withCandles + ' trades; ' + L.withoutCandles + ' had no exchange candles). Total for $1,000 per trade; hover a cell for each half of the year. The pick is the setting that did best in its weaker half, averaged with its neighbours so one lucky cell cannot win. Settings without a stop were not allowed.' }),
+        el('p', { class: 'small', text: 'Every stop and target replayed on daily exchange highs and lows, in R. Faded cells have a target under ' + L.minRR + '× the stop and were not allowed. The pick is the allowed setting whose weaker half of the year did best, averaged with its neighbours so one lucky cell cannot win. Hover a cell for each half.' }),
+        seg(L.covers.map(c => [c, 'Cover day +' + c]), cov, v => sigCover = v),
         tbl,
-        el('h4', { text: 'Entry zone, with the ' + P.stop + '% stop' + (P.target ? ' and ' + P.target + '% target' : '') }),
-        el('div', { class: 'tablewrap' }, [el('table', { class: 'gt' }, [el('thead', null, [el('tr', null, [el('th', { text: '' }), el('th', { class: 'n', text: 'Won' }), el('th', { class: 'n', text: 'Median trade' }), el('th', { class: 'n', text: 'Total, $1k each' })])]), el('tbody', null, modeRows)])]),
-        el('p', { class: 'small', text: 'Daily candles do not show which came first inside a day, so a day that touched both the stop and the target counts as stopped, and stops are filled 0.5% worse than their price.' })]);
+        el('h4', { text: 'Entry, with this stop and target' }),
+        el('div', { class: 'tablewrap' }, [el('table', { class: 'gt' }, [el('thead', null, [el('tr', null, [el('th', { text: '' }), el('th', { class: 'n', text: 'Won' }), el('th', { class: 'n', text: 'Total' })])]), el('tbody', null, modeRows)])]),
+        el('p', { class: 'small', text: 'Daily candles do not show which came first inside a day, so a day that touched both the stop and the target counts as stopped, and stops fill 0.5% worse than their price.' })]);
     }
 
     const exitP = el('details', { class: 'panel logp' }, [el('summary', null, [el('h3', { text: 'Which trigger worked' })]),
-      el('p', { class: 'small', text: 'No stop or target. A trade can match more than one trigger, so these overlap.' }),
+      el('p', { class: 'small', text: 'Shorting from 7 days before to 7 days after, no stop or target, $1,000 a trade. A trade can match more than one trigger.' }),
       statTable(Object.keys(S.byRule).filter(k => S.byRule[k]).map(k => statRow(RULE_SHORT[k], S.byRule[k])))]);
 
     // log
     const log = S.trades.filter(t => sigLogFilter === 'all' || (sigLogFilter === 'taken' ? !t.skipped : t.skipped));
-    const WHY = { stop: 'stopped', target: 'target', time: 'day +7' };
-    const logP = el('details', { class: 'panel logp' }, [el('summary', null, [el('h3', { text: 'Every trade (' + S.trades.length + ')' })]),
+    const WHY = { stop: 'stopped', target: 'target', time: 'day +' + (P ? P.cover : 7) };
+    const logP = el('details', { class: 'panel logp' }, [el('summary', null, [el('h3', { text: 'Every past trade (' + S.trades.length + ')' })]),
       seg([['taken', 'Taken (' + S.trades.filter(t => !t.skipped).length + ')'], ['skipped', 'Skipped by pump check (' + S.trades.filter(t => t.skipped).length + ')'], ['all', 'All']], sigLogFilter, v => sigLogFilter = v),
       el('div', { class: 'tablewrap' }, [el('table', { class: 'el' }, [
-        el('thead', null, [el('tr', null, [el('th', { text: 'Short from' }), el('th', { text: 'Token' }), el('th', { text: 'Why' }), el('th', { class: 'n', text: 'With stop and target' }), el('th', { class: 'n', text: 'No stop or target' }), el('th', { class: 'n', text: 'Rise before entry' }), el('th', { text: 'Prices' })])]),
+        el('thead', null, [el('tr', null, [el('th', { text: 'Short from' }), el('th', { text: 'Token' }), el('th', { text: 'Why' }), el('th', { class: 'n', text: 'Result' }), el('th', { class: 'n', text: 'Rise before entry' }), el('th', { text: 'Prices' })])]),
         el('tbody', null, log.map(t => el('tr', null, [
           el('td', { class: 'num', text: t.entryDate }), el('td', null, [el('b', { text: t.token }), el('small', { text: ' unlock ' + t.unlockDate.slice(5) })]),
           el('td', { text: t.rules.map(h => RULE_SHORT[h]).join(', ') }),
-          el('td', { class: 'n' }, [t.plan ? el('span', null, [pct(t.plan.pnl), el('small', { text: ' ' + WHY[t.plan.why] })]) : el('span', { class: 'na', text: 'no candles' })]),
-          el('td', { class: 'n' }, [pct(t.pnl)]),
+          el('td', { class: 'n' }, [t.plan && t.plan.r != null ? el('span', null, [el('span', { class: 'num ' + (t.plan.r < 0 ? 'down' : 'up'), text: rf(t.plan.r) }), el('small', { text: ' ' + WHY[t.plan.why] })]) : el('span', { class: 'na', text: 'no candles' })]),
           el('td', { class: 'n' }, [t.momentum == null ? el('span', { class: 'na', text: '—' }) : el('span', { class: t.skipped ? 'down' : '', text: (t.momentum > 0 ? '+' : '') + t.momentum.toFixed(0) + '%' + (t.skipped ? ' skip' : '') })]),
           el('td', { text: t.priceSource === 'coingecko' ? 'CoinGecko' : 'Binance' })])))])])]);
 
@@ -957,23 +966,24 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     const watch = L.calls.filter(c => c.status === 'watching');
     const sm = L.summary || {};
     const usd = v => (v < 0 ? '−$' : '+$') + Math.abs(v).toLocaleString('en-US');
-    const WHY = { stop: 'Stopped out', target: 'Target hit', time: 'Covered day +7' };
+    const WHY = { stop: 'Stopped out', target: 'Target hit', time: 'Covered at the time limit' };
+    const rf = v => v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(2) + 'R';
 
-    const lead = sm.closed ? el('p', { class: 'lead', text: sm.closed + ' closed call' + (sm.closed === 1 ? '' : 's') + ': ' + sm.won + ' made money, ' + usd(sm.totalUsd) + ' at $1,000 each after costs.' + (sm.open ? ' ' + sm.open + ' open.' : '') })
+    const lead = sm.closed ? el('p', { class: 'lead', text: sm.closed + ' closed call' + (sm.closed === 1 ? '' : 's') + ': ' + sm.won + ' made money, ' + rf(sm.rTotal) + ' in total, ' + usd(sm.totalUsd) + ' risking $' + (sm.riskUsd || 100) + ' a trade.' + (sm.open ? ' ' + sm.open + ' open.' : '') })
       : el('p', { class: 'lead', text: 'Every short this page calls from ' + fmtDay(L.startedAt) + ' on, with the levels it showed and what happened. No results yet' + (watch.length ? ': the first check day is ' + fmtDay(watch[0].checkDate) + ' (' + watch[0].token + ').' : '.') });
     const rule = el('p', { class: 'small', text: 'Each call is frozen on its check day (the decision and the stop and target in use), and its entry price is the next day’s 00:00 UTC price. Nothing is edited afterwards; only results are added. Calls before ' + fmtDay(L.startedAt) + ' are not here, because their levels were shown after the entry; the year of simulated trades is in Trade signals. Updated ' + Desk.ago(L.updatedAt) + ' from completed daily candles.' });
 
-    const tiles = el('div', { class: 'tiles' }, [['Closed', sm.closed || 0], ['Won', sm.closed ? sm.won + ' of ' + sm.closed : '—'], ['Result, $1k each', sm.closed ? usd(sm.totalUsd) : '—'], ['Open', sm.open || 0], ['Skipped', sm.skipped || 0]]
+    const tiles = el('div', { class: 'tiles' }, [['Closed', sm.closed || 0], ['Won', sm.closed ? sm.won + ' of ' + sm.closed : '—'], ['Result', sm.closed ? rf(sm.rTotal) + ' (' + usd(sm.totalUsd) + ')' : '—'], ['Open', sm.open || 0], ['Skipped', sm.skipped || 0]]
       .map(([k, v]) => el('div', { class: 'tile' }, [el('small', { text: k }), el('b', { text: String(v) })])));
 
     const rows = calls.map(c => {
       const lv = c.levels || {};
       const res = el('td', { class: 'n' });
       let status;
-      if (c.status === 'closed') { status = WHY[c.exit.why] + ' ' + fmtDay(c.exit.date) + ' at ' + fmtPx(c.exit.price); res.append(pct(c.pnl)); }
+      if (c.status === 'closed') { status = WHY[c.exit.why] + ' ' + fmtDay(c.exit.date) + ' at ' + fmtPx(c.exit.price); res.append(el('span', { class: 'num ' + (c.r < 0 ? 'down' : 'up'), text: rf(c.r) }), el('small', { text: ' ' + (c.pnl > 0 ? '+' : '') + c.pnl.toFixed(1) + '%' })); }
       else if (c.status === 'open') {
         status = 'Open, cover ' + fmtDay(c.coverDate);
-        if (c.mark) res.append(pct(c.mark.pnl), el('small', { text: ' at ' + fmtDay(c.mark.date) + ' close' }));
+        if (c.mark) res.append(el('span', { class: 'num ' + (c.mark.r < 0 ? 'down' : 'up'), text: rf(c.mark.r) }), el('small', { text: ' at ' + fmtDay(c.mark.date) + ' close' }));
         const live = el('small', { class: 'na' }); res.append(el('br'), live);
         livePrice(c).then(p => { if (!p) return; const pl = (c.ref - p) / c.ref * 100; live.className = pl >= 0 ? 'up' : 'down'; live.textContent = 'now ' + fmtPx(p) + ' (' + (pl >= 0 ? '+' : '') + pl.toFixed(1) + '% before costs)' + (p >= lv.stop ? ' above stop' : lv.target && p <= lv.target ? ' below target' : ''); });
       }
@@ -985,12 +995,12 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
         el('td', null, [el('b', { text: c.token }), el('small', { text: ' unlock ' + fmtDay(c.unlockDate) }), el('br'), el('small', { class: 'why', text: c.rules.map(h => RULE_SHORT[h]).join(', ') + (c.decision ? ' · data ' + c.decision.confidence : '') })]),
         el('td', { class: 'num', text: c.ref ? fmtPx(lv.zoneLow) + '–' + fmtPx(lv.zoneHigh) : '—' }),
         el('td', { class: 'num', text: lv.stop ? fmtPx(lv.stop) : c.plan ? '+' + c.plan.stop + '%' : '—' }),
-        el('td', { class: 'num', text: lv.target ? fmtPx(lv.target) : c.plan && c.plan.target ? '−' + c.plan.target + '%' : '—' }),
+        el('td', { class: 'num', text: (lv.target ? fmtPx(lv.target) : c.plan && c.plan.target ? '−' + c.plan.target + '%' : '—') + (c.plan && c.plan.rr ? ' (' + c.plan.rr + 'R)' : '') }),
         el('td', null, [el('span', { text: status }), last ? el('small', { class: 'why', text: ' · logged ' + Desk.ago(last.at) }) : null]),
         res]);
     });
     const table = calls.length ? el('div', { class: 'panel' }, [el('h3', { text: 'Calls' }), el('div', { class: 'tablewrap' }, [el('table', { class: 'el sig' }, [
-      el('thead', null, [el('tr', null, [el('th', { text: 'Check day' }), el('th', { text: 'Token' }), el('th', { text: 'Entry zone' }), el('th', { text: 'Stop' }), el('th', { text: 'Target' }), el('th', { text: 'Status' }), el('th', { class: 'n', text: 'Result' })])]),
+      el('thead', null, [el('tr', null, [el('th', { text: 'Check day' }), el('th', { text: 'Token' }), el('th', { text: 'Entry zone' }), el('th', { text: 'Stop (1R)' }), el('th', { text: 'Target' }), el('th', { text: 'Status' }), el('th', { class: 'n', text: 'Result' })])]),
       el('tbody', null, rows)])])]) : null;
     const next = watch.length ? el('div', { class: 'panel' }, [el('h3', { text: 'Coming up' }),
       el('p', { class: 'small', text: 'Unlocks that match the playbook. Each one is decided on its check day; until then the unlock data can still change.' }),

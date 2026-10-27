@@ -45,6 +45,7 @@ FEES = 0.10          # % round trip
 FUNDING_DAY = 0.03   # % per day held (assumption: shorts usually pay on unlock tokens)
 STOP = 20.0          # % adverse close that closes the trade in the 'with stop' version
 NOTIONAL = 1000      # $ per trade in the account curve
+RISK_USD = 100       # $ risked per trade when stop and target are used (position = risk / stop distance)
 PUMP = 30.0          # % rise from day -30 to entry that blocks the trade
 
 
@@ -232,28 +233,46 @@ def main():
              for z in [str(z) for z in EXITS_COMPARE]}
     edges = [t["edgeVsRandom"] for t in trades if t["edgeVsRandom"] is not None]
 
-    # Entry zone, stop and target: tested only where exchange candles (with highs and lows) exist.
+    # Entry, stop, target and cover day: tested only where exchange candles (with highs and lows) exist.
     with_c = [t for t in trades if t.get("ohlc")]
     cells = levels.grid(with_c, split) if with_c and split else []
     plan, plan_score = levels.pick(cells) if cells else (None, None)
     lv = None
     if plan:
+        P = {k: plan[k] for k in ("mode", "zone", "stop", "target", "cover")}
+        P["rr"] = levels.rr(P["stop"], P["target"])
+        P["riskPct"] = round(levels.risk(P["stop"]), 2)
         for t in every:
-            r = levels.sim(levels.bars(t["ohlc"]), plan["mode"], plan["zone"], plan["stop"], plan["target"]) if t.get("ohlc") else None
-            t["plan"] = r
-        base = next(c for c in cells if c["mode"] == "market" and c["stop"] is None and c["target"] is None)
-        lv = {"plan": {k: plan[k] for k in ("mode", "zone", "stop", "target")}, "planStats": plan,
-              "baseline": base, "withCandles": len(with_c), "withoutCandles": len(trades) - len(with_c),
-              "modes": [{"mode": m, "zone": z} for m, z in levels.MODES], "stops": levels.STOPS, "targets": levels.TARGETS,
-              "grid": [{"mode": c["mode"], "zone": c["zone"], "stop": c["stop"], "target": c["target"],
-                        "n": c["all"]["n"], "win": c["all"]["win"], "median": c["all"]["median"], "worst": c["all"]["worst"],
-                        "pf": c["all"]["profitFactor"], "total": c["all"]["totalUsd"],
-                        "h1": c["first"]["totalUsd"] if c["first"] else None, "h2": c["second"]["totalUsd"] if c["second"] else None,
+            t["plan"] = levels.sim(levels.bars(t["ohlc"]), P["mode"], P["zone"], P["stop"], P["target"], P["cover"]) if t.get("ohlc") else None
+        find = lambda st, tg, cv: next((c for c in cells if c["stop"] == st and c["target"] == tg and c["cover"] == cv), None)
+        base = find(None, None, 7)
+        wide = find(35, 30, 7)
+
+        def risk_curve(st, tg, cv):
+            rows = []
+            for t in trades:
+                if not t.get("ohlc"):
+                    continue
+                r = levels.sim(levels.bars(t["ohlc"]), "market", 0.0, st, tg, cv)
+                if r:
+                    d = (datetime.strptime(t["unlockDate"], "%Y-%m-%d") + timedelta(days=r["exitDay"])).strftime("%Y-%m-%d")
+                    rows.append({"pnl": r["r"] * RISK_USD / NOTIONAL * 100, "exitDate": d, "token": t["token"]})
+            return curve(rows)
+
+        c_plan, dd_plan = risk_curve(P["stop"], P["target"], P["cover"])
+        c_wide, dd_wide = risk_curve(35, 30, 7)
+        lv = {"plan": P, "planStats": plan, "baseline": base, "wide": wide, "riskUsd": RISK_USD,
+              "withCandles": len(with_c), "withoutCandles": len(trades) - len(with_c), "minRR": levels.MIN_RR,
+              "stops": levels.STOPS, "targets": levels.TARGETS, "covers": levels.COVERS,
+              "modes": [{"mode": c["mode"], "zone": c["zone"], "win": c["all"]["win"], "rTotal": c["all"].get("rTotal"),
+                         "rMean": c["all"].get("rMean")} for c in levels.modes(with_c, split, P)],
+              "grid": [{"stop": c["stop"], "target": c["target"], "cover": c["cover"], "rr": c["rr"],
+                        "n": c["all"]["n"], "win": c["all"]["win"], "total": c["all"]["totalUsd"],
+                        "r": c["all"].get("rTotal"), "h1": c["first"].get("rTotal") if c["first"] else None,
+                        "h2": c["second"].get("rTotal") if c["second"] else None,
                         "stops": c["all"]["stops"], "targets": c["all"]["targets"]} for c in cells],
+              "curve": c_plan, "drawdownUsd": dd_plan, "curveWide": c_wide, "drawdownUsdWide": dd_wide,
               "method": levels.__doc__.strip()}
-        planned = [dict(t["plan"], token=t["token"], exitDate=t["unlockDate"]) for t in trades if t.get("plan")]
-        lv["curve"] = curve([dict(p_, exitDate=(datetime.strptime(p_["exitDate"], "%Y-%m-%d") + timedelta(days=p_["exitDay"])).strftime("%Y-%m-%d")) for p_ in planned])[0]
-        lv["drawdownUsd"] = curve([dict(p_, exitDate=(datetime.strptime(p_["exitDate"], "%Y-%m-%d") + timedelta(days=p_["exitDay"])).strftime("%Y-%m-%d")) for p_ in planned])[1]
     for t in every:
         t.pop("ohlc", None)
 
