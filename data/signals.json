@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-27T11:12:06Z",
+ "generatedAt": "2026-10-27T12:14:18Z",
  "playbook": {
   "entry": -7,
   "exit": 7,
@@ -27,171 +27,171 @@
   }
  },
  "summary": {
-  "n": 52,
-  "tokens": 38,
-  "win": 71,
-  "median": 11.95,
-  "mean": 8.21,
-  "best": 69.19,
-  "worst": -176.03,
-  "profitFactor": 2.31,
-  "totalUsd": 4270,
-  "totalUsdWithoutBest3": 2471
+  "n": 55,
+  "tokens": 41,
+  "win": 69,
+  "median": 11.6,
+  "mean": 4.39,
+  "best": 65.73,
+  "worst": -172.83,
+  "profitFactor": 1.49,
+  "totalUsd": 2415,
+  "totalUsdWithoutBest3": 659
  },
  "summaryStop": {
-  "n": 52,
-  "tokens": 38,
+  "n": 55,
+  "tokens": 41,
   "win": 65,
-  "median": 9.34,
-  "mean": 5.59,
-  "best": 69.19,
-  "worst": -106.4,
-  "profitFactor": 1.8,
-  "totalUsd": 2908,
-  "totalUsdWithoutBest3": 1117
+  "median": 10.19,
+  "mean": 4.54,
+  "best": 65.73,
+  "worst": -106.79,
+  "profitFactor": 1.57,
+  "totalUsd": 2500,
+  "totalUsdWithoutBest3": 743
  },
  "summaryNoGuard": {
   "n": 62,
   "tokens": 46,
   "win": 69,
-  "median": 11.12,
-  "mean": 5.05,
-  "best": 69.19,
-  "worst": -176.03,
-  "profitFactor": 1.54,
-  "totalUsd": 3128,
-  "totalUsdWithoutBest3": 1249
+  "median": 10.98,
+  "mean": 3.67,
+  "best": 65.73,
+  "worst": -172.83,
+  "profitFactor": 1.36,
+  "totalUsd": 2277,
+  "totalUsdWithoutBest3": 418
  },
  "skippedStats": {
-  "n": 10,
-  "tokens": 10,
-  "win": 60,
-  "median": 6.52,
-  "mean": -11.42,
-  "best": 58.37,
-  "worst": -130.3,
-  "profitFactor": 0.55,
-  "totalUsd": -1142,
-  "totalUsdWithoutBest3": -2299
+  "n": 7,
+  "tokens": 7,
+  "win": 71,
+  "median": 8.25,
+  "mean": -1.98,
+  "best": 59.78,
+  "worst": -138.6,
+  "profitFactor": 0.9,
+  "totalUsd": -139,
+  "totalUsdWithoutBest3": -1287
  },
- "drawdownUsdNoGuard": -2166,
- "drawdownUsd": -1819,
- "drawdownUsdStop": -1403,
- "maxOpen": 5,
- "medianEdgeVsRandom": 8.01,
+ "drawdownUsdNoGuard": -2826,
+ "drawdownUsd": -2192,
+ "drawdownUsdStop": -1898,
+ "maxOpen": 6,
+ "medianEdgeVsRandom": 7.46,
  "halves": {
-  "split": "2026-05-08",
+  "split": "2026-05-05",
   "first": {
-   "n": 26,
-   "tokens": 22,
-   "win": 65,
-   "median": 10.89,
-   "mean": 3.71,
-   "best": 50.42,
-   "worst": -176.03,
-   "profitFactor": 1.36,
-   "totalUsd": 965,
-   "totalUsdWithoutBest3": -496
+   "n": 27,
+   "tokens": 24,
+   "win": 67,
+   "median": 11.6,
+   "mean": -2.32,
+   "best": 49.62,
+   "worst": -172.83,
+   "profitFactor": 0.85,
+   "totalUsd": -626,
+   "totalUsdWithoutBest3": -1985
   },
   "second": {
-   "n": 26,
-   "tokens": 20,
-   "win": 77,
-   "median": 11.95,
-   "mean": 12.71,
-   "best": 69.19,
-   "worst": -24.35,
-   "profitFactor": 6.8,
-   "totalUsd": 3305,
-   "totalUsdWithoutBest3": 1655
+   "n": 28,
+   "tokens": 22,
+   "win": 71,
+   "median": 11.15,
+   "mean": 10.86,
+   "best": 65.73,
+   "worst": -24.38,
+   "profitFactor": 4.87,
+   "totalUsd": 3042,
+   "totalUsdWithoutBest3": 1427
   }
  },
  "byRule": {
   "big": {
-   "n": 40,
-   "tokens": 31,
-   "win": 72,
-   "median": 12.49,
-   "mean": 7.66,
+   "n": 43,
+   "tokens": 34,
+   "win": 70,
+   "median": 12.1,
+   "mean": 2.92,
    "best": 60.31,
-   "worst": -176.03,
-   "profitFactor": 2.05,
-   "totalUsd": 3063,
-   "totalUsdWithoutBest3": 1460
+   "worst": -172.83,
+   "profitFactor": 1.27,
+   "totalUsd": 1255,
+   "totalUsdWithoutBest3": -304
   },
   "investors": {
    "n": 11,
    "tokens": 5,
    "win": 82,
-   "median": 5.81,
-   "mean": 12.65,
+   "median": 5.91,
+   "mean": 11.92,
    "best": 60.31,
-   "worst": -24.35,
-   "profitFactor": 5.5,
-   "totalUsd": 1392,
-   "totalUsdWithoutBest3": 57
+   "worst": -24.38,
+   "profitFactor": 5.18,
+   "totalUsd": 1311,
+   "totalUsdWithoutBest3": 54
   },
   "first": {
-   "n": 24,
-   "tokens": 24,
+   "n": 26,
+   "tokens": 26,
    "win": 62,
    "median": 12.77,
-   "mean": 8.98,
-   "best": 69.19,
-   "worst": -176.03,
-   "profitFactor": 1.89,
-   "totalUsd": 2156,
-   "totalUsdWithoutBest3": 356
+   "mean": 6.23,
+   "best": 65.73,
+   "worst": -172.83,
+   "profitFactor": 1.56,
+   "totalUsd": 1620,
+   "totalUsdWithoutBest3": -136
   }
  },
  "exitCompare": {
   "0": {
-   "n": 52,
-   "tokens": 38,
-   "win": 60,
-   "median": 2.3,
-   "mean": 6.65,
-   "best": 72.49,
-   "worst": -27.26,
-   "profitFactor": 3.39,
-   "totalUsd": 3457,
-   "totalUsdWithoutBest3": 1864
+   "n": 55,
+   "tokens": 41,
+   "win": 62,
+   "median": 3.67,
+   "mean": 7.04,
+   "best": 69.04,
+   "worst": -27.21,
+   "profitFactor": 3.29,
+   "totalUsd": 3874,
+   "totalUsdWithoutBest3": 2319
   },
   "3": {
-   "n": 52,
-   "tokens": 38,
-   "win": 65,
-   "median": 7.11,
-   "mean": 6.73,
-   "best": 73.62,
-   "worst": -106.4,
-   "profitFactor": 2.39,
-   "totalUsd": 3500,
-   "totalUsdWithoutBest3": 1882
+   "n": 55,
+   "tokens": 41,
+   "win": 67,
+   "median": 7.99,
+   "mean": 5.92,
+   "best": 71.39,
+   "worst": -106.79,
+   "profitFactor": 1.94,
+   "totalUsd": 3254,
+   "totalUsdWithoutBest3": 1659
   },
   "7": {
-   "n": 52,
-   "tokens": 38,
-   "win": 71,
-   "median": 11.95,
-   "mean": 8.21,
-   "best": 69.19,
-   "worst": -176.03,
-   "profitFactor": 2.31,
-   "totalUsd": 4270,
-   "totalUsdWithoutBest3": 2471
+   "n": 55,
+   "tokens": 41,
+   "win": 69,
+   "median": 11.6,
+   "mean": 4.39,
+   "best": 65.73,
+   "worst": -172.83,
+   "profitFactor": 1.49,
+   "totalUsd": 2415,
+   "totalUsdWithoutBest3": 659
   },
   "14": {
-   "n": 52,
-   "tokens": 38,
-   "win": 81,
-   "median": 9.23,
-   "mean": 10.16,
+   "n": 55,
+   "tokens": 41,
+   "win": 78,
+   "median": 8.69,
+   "mean": 6.28,
    "best": 74.91,
-   "worst": -160.29,
-   "profitFactor": 2.88,
-   "totalUsd": 5281,
-   "totalUsdWithoutBest3": 3214
+   "worst": -156.41,
+   "profitFactor": 1.73,
+   "totalUsd": 3455,
+   "totalUsdWithoutBest3": 1425
   }
  },
  "live": null,
@@ -202,258 +202,273 @@
    "token": "HYPE"
   },
   {
+   "date": "2025-12-08",
+   "cum": -1120,
+   "token": "BEAT"
+  },
+  {
    "date": "2025-12-12",
-   "cum": 576,
+   "cum": -623,
    "token": "XION"
   },
   {
    "date": "2025-12-16",
-   "cum": 717,
+   "cum": -479,
    "token": "MOVE"
   },
   {
    "date": "2025-12-24",
-   "cum": 1017,
+   "cum": -178,
    "token": "PENGU"
   },
   {
    "date": "2025-12-27",
-   "cum": 1170,
+   "cum": -28,
    "token": "ZRO"
   },
   {
    "date": "2026-01-24",
-   "cum": 1300,
+   "cum": 102,
    "token": "DBR"
   },
   {
    "date": "2026-01-24",
-   "cum": 1397,
+   "cum": 204,
    "token": "TRUMP"
   },
   {
    "date": "2026-01-27",
-   "cum": 1066,
+   "cum": -175,
    "token": "ZRO"
   },
   {
+   "date": "2026-01-28",
+   "cum": -41,
+   "token": "PLUME"
+  },
+  {
    "date": "2026-01-29",
-   "cum": 1331,
+   "cum": 224,
    "token": "MBG"
   },
   {
    "date": "2026-02-02",
-   "cum": 1513,
+   "cum": 406,
    "token": "BGB"
   },
   {
+   "date": "2026-02-13",
+   "cum": 126,
+   "token": "BERA"
+  },
+  {
    "date": "2026-02-24",
-   "cum": 1520,
+   "cum": 133,
    "token": "YZY"
   },
   {
    "date": "2026-02-27",
-   "cum": 1440,
+   "cum": 103,
    "token": "KAITO"
   },
   {
    "date": "2026-02-27",
-   "cum": 1611,
+   "cum": 277,
    "token": "ZRO"
   },
   {
    "date": "2026-03-07",
-   "cum": 1398,
+   "cum": -182,
    "token": "GRASS"
   },
   {
    "date": "2026-03-13",
-   "cum": 1670,
+   "cum": 14,
    "token": "RED"
   },
   {
    "date": "2026-03-20",
-   "cum": 1658,
+   "cum": 2,
    "token": "WBT"
   },
   {
    "date": "2026-03-26",
-   "cum": 1611,
+   "cum": -57,
    "token": "ESPORTS"
   },
   {
    "date": "2026-03-27",
-   "cum": -149,
+   "cum": -1786,
    "token": "BR"
   },
   {
    "date": "2026-03-31",
-   "cum": 355,
+   "cum": -1382,
    "token": "NIL"
   },
   {
    "date": "2026-04-01",
-   "cum": 445,
+   "cum": -1350,
    "token": "PARTI"
   },
   {
    "date": "2026-04-06",
-   "cum": 905,
+   "cum": -891,
    "token": "GUN"
   },
   {
    "date": "2026-04-27",
-   "cum": 1089,
+   "cum": -708,
    "token": "ZRO"
   },
   {
    "date": "2026-04-29",
-   "cum": 1055,
+   "cum": -742,
    "token": "UDS"
   },
   {
    "date": "2026-05-05",
-   "cum": 1176,
+   "cum": -626,
    "token": "SIGN"
   },
   {
    "date": "2026-05-12",
-   "cum": 1031,
+   "cum": -772,
    "token": "OPN"
   },
   {
    "date": "2026-05-13",
-   "cum": 965,
+   "cum": -842,
    "token": "RED"
   },
   {
    "date": "2026-05-15",
-   "cum": 1128,
+   "cum": -680,
    "token": "SXT"
   },
   {
    "date": "2026-05-26",
-   "cum": 1417,
+   "cum": -392,
    "token": "PYTH"
   },
   {
    "date": "2026-05-27",
-   "cum": 1546,
+   "cum": -265,
    "token": "ZRO"
   },
   {
    "date": "2026-06-16",
-   "cum": 1682,
+   "cum": -128,
    "token": "WET"
   },
   {
    "date": "2026-06-17",
-   "cum": 1438,
+   "cum": -372,
    "token": "BABY"
   },
   {
    "date": "2026-06-17",
-   "cum": 1586,
+   "cum": -226,
    "token": "ME"
   },
   {
    "date": "2026-06-27",
-   "cum": 1705,
+   "cum": -107,
    "token": "ZRO"
   },
   {
    "date": "2026-06-30",
-   "cum": 1671,
+   "cum": -142,
    "token": "SOON"
   },
   {
    "date": "2026-07-01",
-   "cum": 1792,
+   "cum": -21,
    "token": "NEWT"
   },
   {
    "date": "2026-07-02",
-   "cum": 2484,
+   "cum": 636,
    "token": "H"
   },
   {
    "date": "2026-07-17",
-   "cum": 2542,
+   "cum": 695,
    "token": "BABY"
   },
   {
    "date": "2026-07-23",
-   "cum": 3145,
+   "cum": 1298,
    "token": "ES"
   },
   {
    "date": "2026-07-23",
-   "cum": 3204,
+   "cum": 1357,
    "token": "SOLV"
   },
   {
    "date": "2026-07-24",
-   "cum": 3271,
+   "cum": 1425,
    "token": "DBR"
   },
   {
    "date": "2026-08-06",
-   "cum": 3229,
+   "cum": 1382,
    "token": "LAVA"
   },
   {
    "date": "2026-08-12",
-   "cum": 3369,
+   "cum": 1521,
    "token": "PROVE"
   },
   {
    "date": "2026-08-17",
-   "cum": 3514,
+   "cum": 1664,
    "token": "BABY"
   },
   {
    "date": "2026-08-23",
-   "cum": 3535,
+   "cum": 1685,
    "token": "YZY"
   },
   {
    "date": "2026-08-27",
-   "cum": 3842,
+   "cum": 1983,
    "token": "KAITO"
   },
   {
    "date": "2026-09-17",
-   "cum": 3874,
+   "cum": 2017,
    "token": "BABY"
   },
   {
    "date": "2026-10-02",
-   "cum": 3752,
+   "cum": 1897,
    "token": "COAI"
   },
   {
    "date": "2026-10-02",
-   "cum": 3940,
+   "cum": 2086,
    "token": "H"
   },
   {
    "date": "2026-10-02",
-   "cum": 3833,
+   "cum": 1980,
    "token": "XPL"
   },
   {
    "date": "2026-10-03",
-   "cum": 3812,
+   "cum": 1958,
    "token": "SAHARA"
   },
   {
    "date": "2026-10-09",
-   "cum": 4166,
+   "cum": 2312,
    "token": "2Z"
   },
   {
    "date": "2026-10-17",
-   "cum": 4270,
+   "cum": 2416,
    "token": "BABY"
   }
  ],
@@ -464,258 +479,273 @@
    "token": "HYPE"
   },
   {
+   "date": "2025-12-08",
+   "cum": -225,
+   "token": "BEAT"
+  },
+  {
    "date": "2025-12-12",
-   "cum": 576,
+   "cum": 271,
    "token": "XION"
   },
   {
    "date": "2025-12-16",
-   "cum": 717,
+   "cum": 416,
    "token": "MOVE"
   },
   {
    "date": "2025-12-24",
-   "cum": 1017,
+   "cum": 716,
    "token": "PENGU"
   },
   {
    "date": "2025-12-27",
-   "cum": 1170,
+   "cum": 867,
    "token": "ZRO"
   },
   {
    "date": "2026-01-24",
-   "cum": 1300,
+   "cum": 996,
    "token": "DBR"
   },
   {
    "date": "2026-01-24",
-   "cum": 1397,
+   "cum": 1098,
    "token": "TRUMP"
   },
   {
    "date": "2026-01-27",
-   "cum": 1111,
+   "cum": 890,
    "token": "ZRO"
   },
   {
+   "date": "2026-01-28",
+   "cum": 1024,
+   "token": "PLUME"
+  },
+  {
    "date": "2026-01-29",
-   "cum": 1376,
+   "cum": 1289,
    "token": "MBG"
   },
   {
    "date": "2026-02-02",
-   "cum": 1558,
+   "cum": 1472,
    "token": "BGB"
   },
   {
+   "date": "2026-02-13",
+   "cum": 819,
+   "token": "BERA"
+  },
+  {
    "date": "2026-02-24",
-   "cum": 1565,
+   "cum": 827,
    "token": "YZY"
   },
   {
    "date": "2026-02-27",
-   "cum": 1485,
+   "cum": 797,
    "token": "KAITO"
   },
   {
    "date": "2026-02-27",
-   "cum": 1656,
+   "cum": 971,
    "token": "ZRO"
   },
   {
    "date": "2026-03-07",
-   "cum": 1432,
+   "cum": 517,
    "token": "GRASS"
   },
   {
    "date": "2026-03-13",
-   "cum": 1704,
+   "cum": 712,
    "token": "RED"
   },
   {
    "date": "2026-03-20",
-   "cum": 1692,
+   "cum": 701,
    "token": "WBT"
   },
   {
    "date": "2026-03-26",
-   "cum": 1645,
+   "cum": 641,
    "token": "ESPORTS"
   },
   {
    "date": "2026-03-27",
-   "cum": 581,
+   "cum": -427,
    "token": "BR"
   },
   {
    "date": "2026-03-31",
-   "cum": 301,
+   "cum": -23,
    "token": "NIL"
   },
   {
    "date": "2026-04-01",
-   "cum": 390,
+   "cum": 9,
    "token": "PARTI"
   },
   {
    "date": "2026-04-06",
-   "cum": 851,
+   "cum": 468,
    "token": "GUN"
   },
   {
    "date": "2026-04-27",
-   "cum": 1034,
+   "cum": 650,
    "token": "ZRO"
   },
   {
    "date": "2026-04-29",
-   "cum": 1001,
+   "cum": 617,
    "token": "UDS"
   },
   {
    "date": "2026-05-05",
-   "cum": 1121,
+   "cum": 733,
    "token": "SIGN"
   },
   {
    "date": "2026-05-12",
-   "cum": 907,
+   "cum": 519,
    "token": "OPN"
   },
   {
    "date": "2026-05-13",
-   "cum": 841,
+   "cum": 449,
    "token": "RED"
   },
   {
    "date": "2026-05-15",
-   "cum": 1004,
+   "cum": 611,
    "token": "SXT"
   },
   {
    "date": "2026-05-26",
-   "cum": 1293,
+   "cum": 899,
    "token": "PYTH"
   },
   {
    "date": "2026-05-27",
-   "cum": 1423,
+   "cum": 1026,
    "token": "ZRO"
   },
   {
    "date": "2026-06-16",
-   "cum": 1558,
+   "cum": 1163,
    "token": "WET"
   },
   {
    "date": "2026-06-17",
-   "cum": 1242,
+   "cum": 863,
    "token": "BABY"
   },
   {
    "date": "2026-06-17",
-   "cum": 1390,
+   "cum": 1008,
    "token": "ME"
   },
   {
    "date": "2026-06-27",
-   "cum": 1160,
+   "cum": 779,
    "token": "ZRO"
   },
   {
    "date": "2026-06-30",
-   "cum": 1126,
+   "cum": 744,
    "token": "SOON"
   },
   {
    "date": "2026-07-01",
-   "cum": 1247,
+   "cum": 865,
    "token": "NEWT"
   },
   {
    "date": "2026-07-02",
-   "cum": 1939,
+   "cum": 1522,
    "token": "H"
   },
   {
    "date": "2026-07-17",
-   "cum": 1997,
+   "cum": 1581,
    "token": "BABY"
   },
   {
    "date": "2026-07-23",
-   "cum": 2600,
+   "cum": 2185,
    "token": "ES"
   },
   {
    "date": "2026-07-23",
-   "cum": 2659,
+   "cum": 2243,
    "token": "SOLV"
   },
   {
    "date": "2026-07-24",
-   "cum": 2726,
+   "cum": 2311,
    "token": "DBR"
   },
   {
    "date": "2026-08-06",
-   "cum": 2684,
+   "cum": 2268,
    "token": "LAVA"
   },
   {
    "date": "2026-08-12",
-   "cum": 2824,
+   "cum": 2408,
    "token": "PROVE"
   },
   {
    "date": "2026-08-17",
-   "cum": 2969,
+   "cum": 2550,
    "token": "BABY"
   },
   {
    "date": "2026-08-23",
-   "cum": 2990,
+   "cum": 2571,
    "token": "YZY"
   },
   {
    "date": "2026-08-27",
-   "cum": 3297,
+   "cum": 2869,
    "token": "KAITO"
   },
   {
    "date": "2026-09-17",
-   "cum": 3329,
+   "cum": 2903,
    "token": "BABY"
   },
   {
    "date": "2026-10-02",
-   "cum": 3207,
+   "cum": 2783,
    "token": "COAI"
   },
   {
    "date": "2026-10-02",
-   "cum": 3395,
+   "cum": 2972,
    "token": "H"
   },
   {
    "date": "2026-10-02",
-   "cum": 3122,
+   "cum": 2700,
    "token": "XPL"
   },
   {
    "date": "2026-10-03",
-   "cum": 3101,
+   "cum": 2678,
    "token": "SAHARA"
   },
   {
    "date": "2026-10-09",
-   "cum": 2805,
+   "cum": 2396,
    "token": "2Z"
   },
   {
    "date": "2026-10-17",
-   "cum": 2908,
+   "cum": 2500,
    "token": "BABY"
   }
  ],
@@ -732,302 +762,302 @@
   },
   {
    "date": "2025-12-12",
-   "cum": -624,
+   "cum": -623,
    "token": "XION"
   },
   {
    "date": "2025-12-16",
-   "cum": -483,
+   "cum": -479,
    "token": "MOVE"
   },
   {
    "date": "2025-12-24",
-   "cum": -182,
+   "cum": -178,
    "token": "PENGU"
   },
   {
    "date": "2025-12-27",
-   "cum": -29,
+   "cum": -28,
    "token": "ZRO"
   },
   {
    "date": "2026-01-24",
-   "cum": 100,
+   "cum": 102,
    "token": "DBR"
   },
   {
    "date": "2026-01-24",
-   "cum": 198,
+   "cum": 204,
    "token": "TRUMP"
   },
   {
    "date": "2026-01-27",
-   "cum": -134,
+   "cum": -175,
    "token": "ZRO"
   },
   {
    "date": "2026-01-28",
-   "cum": -157,
+   "cum": -41,
    "token": "PLUME"
   },
   {
    "date": "2026-01-29",
-   "cum": 108,
+   "cum": 224,
    "token": "MBG"
   },
   {
    "date": "2026-01-29",
-   "cum": -1195,
+   "cum": -1162,
    "token": "RIVER"
   },
   {
    "date": "2026-02-02",
-   "cum": -1013,
+   "cum": -980,
    "token": "BGB"
   },
   {
    "date": "2026-02-13",
-   "cum": -864,
+   "cum": -1260,
    "token": "BERA"
   },
   {
    "date": "2026-02-24",
-   "cum": -857,
+   "cum": -1253,
    "token": "YZY"
   },
   {
    "date": "2026-02-27",
-   "cum": -938,
+   "cum": -1283,
    "token": "KAITO"
   },
   {
    "date": "2026-02-27",
-   "cum": -767,
+   "cum": -1109,
    "token": "ZRO"
   },
   {
    "date": "2026-03-07",
-   "cum": -979,
+   "cum": -1568,
    "token": "GRASS"
   },
   {
    "date": "2026-03-13",
-   "cum": -708,
+   "cum": -1372,
    "token": "RED"
   },
   {
    "date": "2026-03-20",
-   "cum": -719,
+   "cum": -1384,
    "token": "WBT"
   },
   {
    "date": "2026-03-25",
-   "cum": -136,
+   "cum": -786,
    "token": "BARD"
   },
   {
    "date": "2026-03-26",
-   "cum": -182,
+   "cum": -846,
    "token": "ESPORTS"
   },
   {
    "date": "2026-03-27",
-   "cum": -1943,
+   "cum": -2574,
    "token": "BR"
   },
   {
    "date": "2026-03-27",
-   "cum": -1968,
+   "cum": -2602,
    "token": "ZRO"
   },
   {
    "date": "2026-03-31",
-   "cum": -1464,
+   "cum": -2198,
    "token": "NIL"
   },
   {
    "date": "2026-04-01",
-   "cum": -1375,
+   "cum": -2166,
    "token": "PARTI"
   },
   {
    "date": "2026-04-06",
-   "cum": -914,
+   "cum": -1708,
    "token": "GUN"
   },
   {
    "date": "2026-04-27",
-   "cum": -731,
+   "cum": -1525,
    "token": "ZRO"
   },
   {
    "date": "2026-04-29",
-   "cum": -764,
+   "cum": -1558,
    "token": "UDS"
   },
   {
    "date": "2026-05-05",
-   "cum": -644,
+   "cum": -1442,
    "token": "SIGN"
   },
   {
    "date": "2026-05-12",
-   "cum": -788,
+   "cum": -1588,
    "token": "OPN"
   },
   {
    "date": "2026-05-13",
-   "cum": -854,
+   "cum": -1658,
    "token": "RED"
   },
   {
    "date": "2026-05-15",
-   "cum": -691,
+   "cum": -1496,
    "token": "SXT"
   },
   {
    "date": "2026-05-17",
-   "cum": -644,
+   "cum": -1451,
    "token": "BABY"
   },
   {
    "date": "2026-05-26",
-   "cum": -356,
+   "cum": -1163,
    "token": "PYTH"
   },
   {
    "date": "2026-05-27",
-   "cum": -226,
+   "cum": -1036,
    "token": "ZRO"
   },
   {
    "date": "2026-06-16",
-   "cum": -91,
+   "cum": -899,
    "token": "WET"
   },
   {
    "date": "2026-06-17",
-   "cum": -334,
+   "cum": -1143,
    "token": "BABY"
   },
   {
    "date": "2026-06-17",
-   "cum": 90,
+   "cum": -716,
    "token": "HOME"
   },
   {
    "date": "2026-06-17",
-   "cum": 238,
+   "cum": -570,
    "token": "ME"
   },
   {
    "date": "2026-06-27",
-   "cum": 357,
+   "cum": -451,
    "token": "ZRO"
   },
   {
    "date": "2026-06-30",
-   "cum": 323,
+   "cum": -486,
    "token": "SOON"
   },
   {
    "date": "2026-07-01",
-   "cum": 444,
+   "cum": -365,
    "token": "NEWT"
   },
   {
    "date": "2026-07-02",
-   "cum": 1136,
+   "cum": 292,
    "token": "H"
   },
   {
    "date": "2026-07-17",
-   "cum": 1194,
+   "cum": 351,
    "token": "BABY"
   },
   {
    "date": "2026-07-23",
-   "cum": 1797,
+   "cum": 954,
    "token": "ES"
   },
   {
    "date": "2026-07-23",
-   "cum": 1856,
+   "cum": 1013,
    "token": "SOLV"
   },
   {
    "date": "2026-07-24",
-   "cum": 1923,
+   "cum": 1081,
    "token": "DBR"
   },
   {
    "date": "2026-08-06",
-   "cum": 1881,
+   "cum": 1038,
    "token": "LAVA"
   },
   {
    "date": "2026-08-12",
-   "cum": 2021,
+   "cum": 1177,
    "token": "PROVE"
   },
   {
    "date": "2026-08-17",
-   "cum": 2166,
+   "cum": 1320,
    "token": "BABY"
   },
   {
    "date": "2026-08-23",
-   "cum": 2187,
+   "cum": 1341,
    "token": "YZY"
   },
   {
    "date": "2026-08-27",
-   "cum": 2494,
+   "cum": 1639,
    "token": "KAITO"
   },
   {
    "date": "2026-09-17",
-   "cum": 2526,
+   "cum": 1673,
    "token": "BABY"
   },
   {
    "date": "2026-10-02",
-   "cum": 2404,
+   "cum": 1553,
    "token": "COAI"
   },
   {
    "date": "2026-10-02",
-   "cum": 2592,
+   "cum": 1742,
    "token": "H"
   },
   {
    "date": "2026-10-02",
-   "cum": 2485,
+   "cum": 1636,
    "token": "XPL"
   },
   {
    "date": "2026-10-03",
-   "cum": 2464,
+   "cum": 1614,
    "token": "SAHARA"
   },
   {
    "date": "2026-10-06",
-   "cum": 2547,
+   "cum": 1696,
    "token": "FF"
   },
   {
    "date": "2026-10-09",
-   "cum": 2902,
+   "cum": 2050,
    "token": "2Z"
   },
   {
    "date": "2026-10-12",
-   "cum": 3024,
+   "cum": 2173,
    "token": "ENA"
   },
   {
    "date": "2026-10-17",
-   "cum": 3128,
+   "cum": 2277,
    "token": "BABY"
   }
  ],
@@ -1042,27 +1072,27 @@
     "investors"
    ],
    "grade": "Moderate",
-   "usdM": 1.873,
+   "usdM": 1.874,
    "pctCirculating": 2.784,
-   "advDays": 0.06,
+   "advDays": 0.061,
    "investorsShare": 0.62,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": -0.63,
-   "pnl": 10.38,
-   "worstAgainst": 0.63,
+   "entryVsUnlockDay": -0.65,
+   "pnl": 10.37,
+   "worstAgainst": 0.65,
    "held": 14,
-   "pnlStop": 10.38,
+   "pnlStop": 10.37,
    "stopped": false,
    "exits": {
-    "0": -0.94,
-    "3": 10.47,
-    "7": 10.38,
-    "14": 3.36
+    "0": -0.96,
+    "3": 10.57,
+    "7": 10.37,
+    "14": 3.52
    },
-   "edgeVsRandom": 7.63,
+   "edgeVsRandom": 6.02,
    "live": false,
    "check": "confirmed",
-   "momentum": 22.24,
+   "momentum": 22.26,
    "skipped": false
   },
   {
@@ -1076,27 +1106,27 @@
     "investors"
    ],
    "grade": "Very high",
-   "usdM": 361.991,
+   "usdM": 362.025,
    "pctCirculating": 14.858,
    "advDays": 0.73,
    "investorsShare": 0.94,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 12.78,
-   "pnl": 12.27,
+   "entryVsUnlockDay": 12.81,
+   "pnl": 12.28,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 12.27,
+   "pnlStop": 12.28,
    "stopped": false,
    "exits": {
-    "0": 11.02,
-    "3": 16.42,
-    "7": 12.27,
-    "14": 30.12
+    "0": 11.05,
+    "3": 16.47,
+    "7": 12.28,
+    "14": 30.13
    },
-   "edgeVsRandom": 7.14,
+   "edgeVsRandom": 6.33,
    "live": false,
    "check": "partial",
-   "momentum": 67.18,
+   "momentum": 67.32,
    "skipped": true
   },
   {
@@ -1110,27 +1140,27 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 93.636,
+   "usdM": 93.458,
    "pctCirculating": 32.371,
-   "advDays": 10.624,
+   "advDays": 10.603,
    "investorsShare": 0.18,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": -1.14,
-   "pnl": 35.47,
-   "worstAgainst": 29.47,
+   "entryVsUnlockDay": -1.08,
+   "pnl": 35.39,
+   "worstAgainst": 28.05,
    "held": 14,
-   "pnlStop": -29.63,
+   "pnlStop": -28.21,
    "stopped": true,
    "exits": {
-    "0": -1.46,
-    "3": 18.84,
-    "7": 35.47,
-    "14": 39.95
+    "0": -1.4,
+    "3": 18.92,
+    "7": 35.39,
+    "14": 39.89
    },
-   "edgeVsRandom": 31.2,
+   "edgeVsRandom": 29.7,
    "live": false,
    "check": "confirmed",
-   "momentum": 5.3,
+   "momentum": 5.28,
    "skipped": false
   },
   {
@@ -1143,27 +1173,27 @@
     "first"
    ],
    "grade": "High",
-   "usdM": 24.953,
+   "usdM": 24.968,
    "pctCirculating": 6.467,
-   "advDays": 1.107,
+   "advDays": 1.108,
    "investorsShare": 0.06,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 3.74,
-   "pnl": 8.34,
-   "worstAgainst": 6.84,
+   "entryVsUnlockDay": 3.56,
+   "pnl": 8.25,
+   "worstAgainst": 7.03,
    "held": 14,
-   "pnlStop": 8.34,
+   "pnlStop": 8.25,
    "stopped": false,
    "exits": {
-    "0": 3.3,
-    "3": 3.28,
-    "7": 8.34,
-    "14": 13.64
+    "0": 3.13,
+    "3": 3.14,
+    "7": 8.25,
+    "14": 13.54
    },
-   "edgeVsRandom": 5.49,
+   "edgeVsRandom": 5.27,
    "live": false,
    "check": "partial",
-   "momentum": 37.46,
+   "momentum": 37.18,
    "skipped": true
   },
   {
@@ -1181,22 +1211,22 @@
    "advDays": null,
    "investorsShare": null,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": -7.96,
-   "pnl": -2.13,
-   "worstAgainst": 9.57,
+   "entryVsUnlockDay": -8.15,
+   "pnl": -2.21,
+   "worstAgainst": 9.87,
    "held": 14,
-   "pnlStop": -2.13,
+   "pnlStop": -2.21,
    "stopped": false,
    "exits": {
-    "0": -8.96,
-    "3": -3.38,
-    "7": -2.13,
-    "14": 3.78
+    "0": -9.18,
+    "3": -3.35,
+    "7": -2.21,
+    "14": 3.76
    },
-   "edgeVsRandom": -7.42,
+   "edgeVsRandom": -6.67,
    "live": false,
    "check": "partial",
-   "momentum": 10.43,
+   "momentum": 10.34,
    "skipped": false
   },
   {
@@ -1210,27 +1240,27 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 6.298,
+   "usdM": 6.316,
    "pctCirculating": 10.392,
-   "advDays": 2.961,
+   "advDays": 2.969,
    "investorsShare": 0.23,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": -8.99,
-   "pnl": -12.2,
-   "worstAgainst": 13.3,
+   "entryVsUnlockDay": -9.0,
+   "pnl": -12.0,
+   "worstAgainst": 13.35,
    "held": 14,
-   "pnlStop": -12.2,
+   "pnlStop": -12.0,
    "stopped": false,
    "exits": {
-    "0": -10.19,
-    "3": -6.61,
-    "7": -12.2,
-    "14": -3.24
+    "0": -10.2,
+    "3": -6.69,
+    "7": -12.0,
+    "14": -3.07
    },
-   "edgeVsRandom": -15.45,
+   "edgeVsRandom": -15.7,
    "live": false,
    "check": "partial",
-   "momentum": 2.05,
+   "momentum": 2.12,
    "skipped": false
   },
   {
@@ -1243,27 +1273,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 17.729,
+   "usdM": 17.756,
    "pctCirculating": 13.542,
-   "advDays": 4.914,
+   "advDays": 4.921,
    "investorsShare": null,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 34.34,
-   "pnl": 18.82,
+   "entryVsUnlockDay": 34.51,
+   "pnl": 18.91,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 18.82,
+   "pnlStop": 18.91,
    "stopped": false,
    "exits": {
-    "0": 25.25,
-    "3": 19.91,
-    "7": 18.82,
-    "14": 26.66
+    "0": 25.35,
+    "3": 20.1,
+    "7": 18.91,
+    "14": 26.75
    },
-   "edgeVsRandom": 14.6,
+   "edgeVsRandom": 16.99,
    "live": false,
    "check": "partial",
-   "momentum": 10.73,
+   "momentum": 10.86,
    "skipped": false
   },
   {
@@ -1277,27 +1307,27 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 194.5,
+   "usdM": 194.48,
    "pctCirculating": 63.2,
    "advDays": 3.336,
    "investorsShare": 0.47,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": -21.23,
-   "pnl": -10.69,
-   "worstAgainst": 31.33,
+   "entryVsUnlockDay": -21.2,
+   "pnl": -10.61,
+   "worstAgainst": 31.36,
    "held": 14,
-   "pnlStop": -27.26,
+   "pnlStop": -27.21,
    "stopped": true,
    "exits": {
-    "0": -27.26,
-    "3": -22.01,
-    "7": -10.69,
-    "14": 3.32
+    "0": -27.21,
+    "3": -22.05,
+    "7": -10.61,
+    "14": 3.34
    },
-   "edgeVsRandom": -15.82,
+   "edgeVsRandom": -17.43,
    "live": false,
    "check": "partial",
-   "momentum": -3.54,
+   "momentum": -3.44,
    "skipped": false
   },
   {
@@ -1315,19 +1345,19 @@
    "advDays": 0.099,
    "investorsShare": 0.62,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": -0.38,
-   "pnl": 3.17,
+   "entryVsUnlockDay": -0.36,
+   "pnl": 3.42,
    "worstAgainst": 8.43,
    "held": 14,
-   "pnlStop": 3.17,
+   "pnlStop": 3.42,
    "stopped": false,
    "exits": {
-    "0": -0.69,
-    "3": -5.08,
-    "7": 3.17,
-    "14": -10.98
+    "0": -0.67,
+    "3": -5.16,
+    "7": 3.42,
+    "14": -10.96
    },
-   "edgeVsRandom": 0.42,
+   "edgeVsRandom": -0.92,
    "live": false,
    "check": "confirmed",
    "momentum": -13.97,
@@ -1343,27 +1373,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 11.336,
+   "usdM": 11.325,
    "pctCirculating": 13.505,
    "advDays": 0.211,
    "investorsShare": 0.07,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 32.84,
-   "pnl": 30.73,
+   "entryVsUnlockDay": 31.0,
+   "pnl": 29.82,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 30.73,
+   "pnlStop": 29.82,
    "stopped": false,
    "exits": {
-    "0": 24.41,
-    "3": 24.43,
-    "7": 30.73,
-    "14": 33.69
+    "0": 23.35,
+    "3": 23.55,
+    "7": 29.82,
+    "14": 32.74
    },
-   "edgeVsRandom": 28.09,
+   "edgeVsRandom": 27.17,
    "live": false,
    "check": "partial",
-   "momentum": -53.88,
+   "momentum": -54.6,
    "skipped": false
   },
   {
@@ -1410,27 +1440,27 @@
     "investors"
    ],
    "grade": "Moderate",
-   "usdM": 1.766,
+   "usdM": 1.767,
    "pctCirculating": 3.17,
    "advDays": 0.076,
    "investorsShare": 0.62,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": -12.52,
-   "pnl": 14.48,
-   "worstAgainst": 14.31,
+   "entryVsUnlockDay": -12.79,
+   "pnl": 14.23,
+   "worstAgainst": 14.67,
    "held": 14,
-   "pnlStop": 14.48,
+   "pnlStop": 14.23,
    "stopped": false,
    "exits": {
-    "0": -14.62,
-    "3": 9.45,
-    "7": 14.48,
-    "14": -13.11
+    "0": -14.98,
+    "3": 9.4,
+    "7": 14.23,
+    "14": -13.63
    },
-   "edgeVsRandom": 11.73,
+   "edgeVsRandom": 9.88,
    "live": false,
    "check": "confirmed",
-   "momentum": -15.45,
+   "momentum": -15.77,
    "skipped": false
   },
   {
@@ -1444,27 +1474,27 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 34.733,
+   "usdM": 34.666,
    "pctCirculating": 106.836,
-   "advDays": 7.01,
+   "advDays": 6.996,
    "investorsShare": 0.13,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 5.84,
-   "pnl": 14.01,
+   "entryVsUnlockDay": 5.95,
+   "pnl": 13.95,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 14.01,
+   "pnlStop": 13.95,
    "stopped": false,
    "exits": {
-    "0": 5.21,
-    "3": 12.36,
-    "7": 14.01,
-    "14": 11.34
+    "0": 5.31,
+    "3": 12.42,
+    "7": 13.95,
+    "14": 11.24
    },
-   "edgeVsRandom": 8.21,
+   "edgeVsRandom": 7.99,
    "live": false,
    "check": "confirmed",
-   "momentum": -10.83,
+   "momentum": -10.78,
    "skipped": false
   },
   {
@@ -1584,22 +1614,22 @@
    "advDays": 0.228,
    "investorsShare": 0.0,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 3.03,
-   "pnl": 5.9,
-   "worstAgainst": 3.59,
+   "entryVsUnlockDay": 3.24,
+   "pnl": 5.86,
+   "worstAgainst": 3.39,
    "held": 14,
-   "pnlStop": 5.9,
+   "pnlStop": 5.86,
    "stopped": false,
    "exits": {
-    "0": 2.63,
-    "3": 5.66,
-    "7": 5.9,
-    "14": 16.0
+    "0": 2.83,
+    "3": 5.98,
+    "7": 5.86,
+    "14": 16.19
    },
-   "edgeVsRandom": 0.55,
+   "edgeVsRandom": -0.31,
    "live": false,
    "check": "partial",
-   "momentum": -20.27,
+   "momentum": -20.06,
    "skipped": false
   },
   {
@@ -1612,27 +1642,27 @@
     "investors"
    ],
    "grade": "Moderate",
-   "usdM": 1.807,
+   "usdM": 1.808,
    "pctCirculating": 3.407,
    "advDays": 0.042,
    "investorsShare": 0.62,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 4.11,
-   "pnl": 5.81,
-   "worstAgainst": 3.56,
+   "entryVsUnlockDay": 4.14,
+   "pnl": 5.91,
+   "worstAgainst": 3.54,
    "held": 14,
-   "pnlStop": 5.81,
+   "pnlStop": 5.91,
    "stopped": false,
    "exits": {
-    "0": 3.64,
-    "3": 6.86,
-    "7": 5.81,
-    "14": 9.65
+    "0": 3.67,
+    "3": 6.83,
+    "7": 5.91,
+    "14": 9.76
    },
-   "edgeVsRandom": 3.07,
+   "edgeVsRandom": 1.57,
    "live": false,
    "check": "confirmed",
-   "momentum": -9.01,
+   "momentum": -8.78,
    "skipped": false
   },
   {
@@ -1650,22 +1680,22 @@
    "advDays": null,
    "investorsShare": null,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 267.62,
-   "pnl": 69.19,
-   "worstAgainst": 0.0,
+   "entryVsUnlockDay": 226.24,
+   "pnl": 65.73,
+   "worstAgainst": 7.76,
    "held": 14,
-   "pnlStop": 69.19,
+   "pnlStop": 65.73,
    "stopped": false,
    "exits": {
-    "0": 72.49,
-    "3": 73.62,
-    "7": 69.19,
-    "14": 70.03
+    "0": 69.04,
+    "3": 71.39,
+    "7": 65.73,
+    "14": 66.34
    },
-   "edgeVsRandom": 64.97,
+   "edgeVsRandom": 63.8,
    "live": false,
    "check": "partial",
-   "momentum": -5.71,
+   "momentum": -16.33,
    "skipped": false
   },
   {
@@ -1679,27 +1709,27 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 6.695,
+   "usdM": 6.691,
    "pctCirculating": 61.93,
-   "advDays": 0.98,
+   "advDays": 0.979,
    "investorsShare": 0.41,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 7.67,
-   "pnl": 12.03,
+   "entryVsUnlockDay": 7.84,
+   "pnl": 12.1,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 12.03,
+   "pnlStop": 12.1,
    "stopped": false,
    "exits": {
-    "0": 6.81,
-    "3": 10.86,
-    "7": 12.03,
-    "14": 11.49
+    "0": 6.96,
+    "3": 11.43,
+    "7": 12.1,
+    "14": 11.74
    },
-   "edgeVsRandom": 7.81,
+   "edgeVsRandom": 8.15,
    "live": false,
    "check": "confirmed",
-   "momentum": -26.92,
+   "momentum": -26.88,
    "skipped": false
   },
   {
@@ -1717,22 +1747,22 @@
    "advDays": 0.247,
    "investorsShare": 0.0,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 6.13,
-   "pnl": -3.33,
-   "worstAgainst": 2.81,
+   "entryVsUnlockDay": 6.65,
+   "pnl": -3.53,
+   "worstAgainst": 3.01,
    "held": 14,
-   "pnlStop": -3.33,
+   "pnlStop": -3.53,
    "stopped": false,
    "exits": {
-    "0": 5.47,
-    "3": 0.46,
-    "7": -3.33,
-    "14": 0.26
+    "0": 5.93,
+    "3": 0.35,
+    "7": -3.53,
+    "14": 0.65
    },
-   "edgeVsRandom": -6.43,
+   "edgeVsRandom": -7.5,
    "live": false,
    "check": "partial",
-   "momentum": 5.33,
+   "momentum": 4.33,
    "skipped": false
   },
   {
@@ -1745,27 +1775,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 25.189,
+   "usdM": 25.18,
    "pctCirculating": 11.897,
-   "advDays": 0.667,
+   "advDays": 0.666,
    "investorsShare": 0.59,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": -7.23,
-   "pnl": 11.87,
-   "worstAgainst": 22.84,
+   "entryVsUnlockDay": -7.1,
+   "pnl": 11.93,
+   "worstAgainst": 22.71,
    "held": 14,
-   "pnlStop": -23.03,
+   "pnlStop": -22.9,
    "stopped": true,
    "exits": {
-    "0": -8.1,
-    "3": -5.21,
-    "7": 11.87,
-    "14": 1.63
+    "0": -7.95,
+    "3": -5.14,
+    "7": 11.93,
+    "14": 1.79
    },
-   "edgeVsRandom": 10.68,
+   "edgeVsRandom": 8.84,
    "live": false,
    "check": "partial",
-   "momentum": -33.13,
+   "momentum": -33.06,
    "skipped": false
   },
   {
@@ -1778,27 +1808,27 @@
     "investors"
    ],
    "grade": "Moderate",
-   "usdM": 2.067,
+   "usdM": 2.063,
    "pctCirculating": 3.681,
    "advDays": 0.102,
    "investorsShare": 0.62,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": -11.25,
-   "pnl": -24.35,
-   "worstAgainst": 45.14,
+   "entryVsUnlockDay": -11.28,
+   "pnl": -24.38,
+   "worstAgainst": 45.36,
    "held": 14,
-   "pnlStop": -31.58,
+   "pnlStop": -30.0,
    "stopped": true,
    "exits": {
-    "0": -12.99,
-    "3": -2.77,
-    "7": -24.35,
-    "14": 1.13
+    "0": -13.02,
+    "3": -2.78,
+    "7": -24.38,
+    "14": 0.98
    },
-   "edgeVsRandom": -27.1,
+   "edgeVsRandom": -28.74,
    "live": false,
    "check": "confirmed",
-   "momentum": -27.27,
+   "momentum": -27.57,
    "skipped": false
   },
   {
@@ -1811,27 +1841,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 24.811,
+   "usdM": 24.278,
    "pctCirculating": 19.557,
-   "advDays": 0.615,
+   "advDays": 0.602,
    "investorsShare": 0.33,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 43.54,
-   "pnl": 42.44,
-   "worstAgainst": 21.77,
+   "entryVsUnlockDay": 46.08,
+   "pnl": 42.74,
+   "worstAgainst": 18.11,
    "held": 14,
-   "pnlStop": -21.93,
-   "stopped": true,
+   "pnlStop": 42.74,
+   "stopped": false,
    "exits": {
-    "0": 30.02,
-    "3": 35.14,
-    "7": 42.44,
-    "14": 55.32
+    "0": 31.23,
+    "3": 35.94,
+    "7": 42.74,
+    "14": 55.16
    },
-   "edgeVsRandom": 36.55,
+   "edgeVsRandom": 35.62,
    "live": false,
    "check": "partial",
-   "momentum": 209.75,
+   "momentum": 209.43,
    "skipped": true
   },
   {
@@ -1844,27 +1874,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 10.124,
+   "usdM": 10.095,
    "pctCirculating": 30.767,
-   "advDays": 0.917,
+   "advDays": 0.914,
    "investorsShare": 0.02,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 29.51,
-   "pnl": 14.79,
+   "entryVsUnlockDay": 29.69,
+   "pnl": 14.55,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 14.79,
+   "pnlStop": 14.55,
    "stopped": false,
    "exits": {
-    "0": 22.48,
-    "3": 17.42,
-    "7": 14.79,
-    "14": 19.64
+    "0": 22.58,
+    "3": 17.27,
+    "7": 14.55,
+    "14": 19.66
    },
-   "edgeVsRandom": 9.45,
+   "edgeVsRandom": 9.71,
    "live": false,
    "check": "partial",
-   "momentum": -35.96,
+   "momentum": -35.89,
    "skipped": false
   },
   {
@@ -1878,27 +1908,27 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 14.471,
+   "usdM": 14.494,
    "pctCirculating": 111.596,
-   "advDays": 2.723,
+   "advDays": 2.728,
    "investorsShare": 0.0,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 24.76,
-   "pnl": 13.51,
+   "entryVsUnlockDay": 24.74,
+   "pnl": 13.69,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 13.51,
+   "pnlStop": 13.69,
    "stopped": false,
    "exits": {
-    "0": 19.54,
-    "3": 18.6,
-    "7": 13.51,
-    "14": 13.37
+    "0": 19.52,
+    "3": 18.38,
+    "7": 13.69,
+    "14": 13.43
    },
-   "edgeVsRandom": 10.62,
+   "edgeVsRandom": 10.73,
    "live": false,
    "check": "partial",
-   "momentum": -28.23,
+   "momentum": -27.89,
    "skipped": false
   },
   {
@@ -1911,27 +1941,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 34.041,
+   "usdM": 34.068,
    "pctCirculating": 10.189,
-   "advDays": 0.841,
+   "advDays": 0.842,
    "investorsShare": 0.59,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 11.93,
-   "pnl": 12.98,
+   "entryVsUnlockDay": 11.58,
+   "pnl": 12.71,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 12.98,
+   "pnlStop": 12.71,
    "stopped": false,
    "exits": {
-    "0": 10.35,
-    "3": 12.78,
-    "7": 12.98,
-    "14": 22.77
+    "0": 10.07,
+    "3": 12.64,
+    "7": 12.71,
+    "14": 22.4
    },
-   "edgeVsRandom": 11.79,
+   "edgeVsRandom": 9.62,
    "live": false,
    "check": "partial",
-   "momentum": -8.07,
+   "momentum": -7.94,
    "skipped": false
   },
   {
@@ -1944,27 +1974,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 94.361,
+   "usdM": 94.286,
    "pctCirculating": 36.957,
-   "advDays": 5.842,
+   "advDays": 5.837,
    "investorsShare": 0.12,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 31.12,
-   "pnl": 28.87,
+   "entryVsUnlockDay": 31.15,
+   "pnl": 28.77,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 28.87,
+   "pnlStop": 28.77,
    "stopped": false,
    "exits": {
-    "0": 23.42,
-    "3": 26.65,
-    "7": 28.87,
-    "14": 26.54
+    "0": 23.44,
+    "3": 26.42,
+    "7": 28.77,
+    "14": 26.35
    },
-   "edgeVsRandom": 27.09,
+   "edgeVsRandom": 25.69,
    "live": false,
    "check": "confirmed",
-   "momentum": 27.7,
+   "momentum": 27.93,
    "skipped": false
   },
   {
@@ -1978,27 +2008,27 @@
     "first"
    ],
    "grade": "Moderate",
-   "usdM": 2.484,
+   "usdM": 2.476,
    "pctCirculating": 3.512,
    "advDays": 0.123,
    "investorsShare": 0.62,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 8.64,
-   "pnl": 4.7,
+   "entryVsUnlockDay": 8.63,
+   "pnl": 4.49,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 4.7,
+   "pnlStop": 4.49,
    "stopped": false,
    "exits": {
-    "0": 7.64,
-    "3": 11.55,
-    "7": 4.7,
-    "14": 18.08
+    "0": 7.63,
+    "3": 11.49,
+    "7": 4.49,
+    "14": 17.94
    },
-   "edgeVsRandom": 1.94,
+   "edgeVsRandom": 0.14,
    "live": false,
    "check": "confirmed",
-   "momentum": 44.91,
+   "momentum": 45.19,
    "skipped": true
   },
   {
@@ -2012,27 +2042,27 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 5.298,
+   "usdM": 5.28,
    "pctCirculating": 14.916,
-   "advDays": 0.843,
+   "advDays": 0.84,
    "investorsShare": 0.5,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 21.57,
-   "pnl": 16.29,
+   "entryVsUnlockDay": 21.95,
+   "pnl": 16.22,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 16.29,
+   "pnlStop": 16.22,
    "stopped": false,
    "exits": {
-    "0": 17.43,
-    "3": 14.68,
-    "7": 16.29,
-    "14": 26.2
+    "0": 17.69,
+    "3": 14.65,
+    "7": 16.22,
+    "14": 26.24
    },
-   "edgeVsRandom": 10.3,
+   "edgeVsRandom": 8.82,
    "live": false,
    "check": "confirmed",
-   "momentum": -3.75,
+   "momentum": -3.6,
    "skipped": false
   },
   {
@@ -2046,27 +2076,27 @@
     "investors"
    ],
    "grade": "High",
-   "usdM": 5.846,
+   "usdM": 5.837,
    "pctCirculating": 10.886,
    "advDays": 0.14,
    "investorsShare": 0.65,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": -6.84,
-   "pnl": -6.6,
-   "worstAgainst": 15.89,
+   "entryVsUnlockDay": -7.0,
+   "pnl": -6.99,
+   "worstAgainst": 15.96,
    "held": 14,
-   "pnlStop": -6.6,
+   "pnlStop": -6.99,
    "stopped": false,
    "exits": {
-    "0": -7.65,
-    "3": -16.29,
-    "7": -6.6,
-    "14": 5.53
+    "0": -7.84,
+    "3": -16.28,
+    "7": -6.99,
+    "14": 5.22
    },
-   "edgeVsRandom": -11.21,
+   "edgeVsRandom": -13.05,
    "live": false,
    "check": "partial",
-   "momentum": 28.53,
+   "momentum": 28.65,
    "skipped": false
   },
   {
@@ -2079,27 +2109,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 5.574,
+   "usdM": 5.571,
    "pctCirculating": 22.593,
    "advDays": 0.38,
    "investorsShare": 0.0,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 1.86,
-   "pnl": -14.45,
-   "worstAgainst": 20.88,
+   "entryVsUnlockDay": 1.67,
+   "pnl": -14.58,
+   "worstAgainst": 20.91,
    "held": 14,
-   "pnlStop": -21.37,
+   "pnlStop": -21.4,
    "stopped": true,
    "exits": {
-    "0": 1.52,
-    "3": -11.59,
-    "7": -14.45,
-    "14": -0.55
+    "0": 1.33,
+    "3": -11.96,
+    "7": -14.58,
+    "14": -0.05
    },
-   "edgeVsRandom": -22.72,
+   "edgeVsRandom": -23.65,
    "live": false,
    "check": "confirmed",
-   "momentum": -6.71,
+   "momentum": -7.06,
    "skipped": false
   },
   {
@@ -2113,27 +2143,27 @@
     "first"
    ],
    "grade": "High",
-   "usdM": 6.469,
+   "usdM": 6.384,
    "pctCirculating": 20.777,
-   "advDays": 0.212,
+   "advDays": 0.209,
    "investorsShare": null,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 12.9,
-   "pnl": 12.04,
+   "entryVsUnlockDay": 13.57,
+   "pnl": 11.6,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 12.04,
+   "pnlStop": 11.6,
    "stopped": false,
    "exits": {
-    "0": 11.12,
-    "3": 13.19,
-    "7": 12.04,
-    "14": 8.94
+    "0": 11.64,
+    "3": 12.93,
+    "7": 11.6,
+    "14": 8.4
    },
-   "edgeVsRandom": 8.71,
+   "edgeVsRandom": 7.46,
    "live": false,
    "check": "partial",
-   "momentum": -43.68,
+   "momentum": -44.2,
    "skipped": false
   },
   {
@@ -2179,27 +2209,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 41.444,
+   "usdM": 41.295,
    "pctCirculating": 10.189,
-   "advDays": 0.694,
+   "advDays": 0.692,
    "investorsShare": 0.59,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 18.82,
-   "pnl": 18.37,
-   "worstAgainst": 6.39,
+   "entryVsUnlockDay": 19.07,
+   "pnl": 18.26,
+   "worstAgainst": 6.38,
    "held": 14,
-   "pnlStop": 18.37,
+   "pnlStop": 18.26,
    "stopped": false,
    "exits": {
-    "0": 15.53,
-    "3": 17.97,
-    "7": 18.37,
-    "14": 27.87
+    "0": 15.71,
+    "3": 18.06,
+    "7": 18.26,
+    "14": 27.77
    },
-   "edgeVsRandom": 17.17,
+   "edgeVsRandom": 15.16,
    "live": false,
    "check": "partial",
-   "momentum": -6.44,
+   "momentum": -6.16,
    "skipped": false
   },
   {
@@ -2214,27 +2244,27 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 6.881,
+   "usdM": 6.868,
    "pctCirculating": 26.651,
-   "advDays": 0.562,
+   "advDays": 0.561,
    "investorsShare": 0.6,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 67.35,
-   "pnl": 46.05,
+   "entryVsUnlockDay": 66.03,
+   "pnl": 45.89,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 46.05,
+   "pnlStop": 45.89,
    "stopped": false,
    "exits": {
-    "0": 39.93,
-    "3": 35.44,
-    "7": 46.05,
-    "14": 38.17
+    "0": 39.46,
+    "3": 35.03,
+    "7": 45.89,
+    "14": 37.7
    },
-   "edgeVsRandom": 39.14,
+   "edgeVsRandom": 37.58,
    "live": false,
    "check": "partial",
-   "momentum": -2.61,
+   "momentum": -3.34,
    "skipped": false
   },
   {
@@ -2247,27 +2277,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 9.062,
+   "usdM": 8.562,
    "pctCirculating": 38.326,
-   "advDays": 0.729,
+   "advDays": 0.689,
    "investorsShare": null,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": -6.25,
-   "pnl": 8.93,
-   "worstAgainst": 9.19,
+   "entryVsUnlockDay": -6.54,
+   "pnl": 3.2,
+   "worstAgainst": 14.2,
    "held": 14,
-   "pnlStop": 8.93,
+   "pnlStop": 3.2,
    "stopped": false,
    "exits": {
-    "0": -6.98,
-    "3": -5.7,
-    "7": 8.93,
-    "14": 8.68
+    "0": -7.31,
+    "3": -12.65,
+    "7": 3.2,
+    "14": 3.13
    },
-   "edgeVsRandom": 6.33,
+   "edgeVsRandom": -0.23,
    "live": false,
    "check": "partial",
-   "momentum": -15.86,
+   "momentum": -18.52,
    "skipped": false
   },
   {
@@ -2280,28 +2310,28 @@
     "big",
     "first"
    ],
-   "grade": "Very high",
-   "usdM": 7.891,
+   "grade": "High",
+   "usdM": 4.474,
    "pctCirculating": 34.98,
-   "advDays": 1.644,
+   "advDays": 0.932,
    "investorsShare": null,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": -3.22,
-   "pnl": 50.42,
-   "worstAgainst": 88.76,
+   "entryVsUnlockDay": 41.23,
+   "pnl": 40.36,
+   "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": -28.04,
-   "stopped": true,
+   "pnlStop": 40.36,
+   "stopped": false,
    "exits": {
-    "0": -3.64,
-    "3": 3.32,
-    "7": 50.42,
-    "14": 46.12
+    "0": 28.88,
+    "3": 39.68,
+    "7": 40.36,
+    "14": 34.56
    },
-   "edgeVsRandom": 51.05,
+   "edgeVsRandom": 38.48,
    "live": false,
    "check": "partial",
-   "momentum": -37.8,
+   "momentum": 15.04,
    "skipped": false
   },
   {
@@ -2315,27 +2345,27 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 3.811,
+   "usdM": 3.829,
    "pctCirculating": 32.197,
-   "advDays": 7.084,
+   "advDays": 7.117,
    "investorsShare": 0.29,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 6.03,
-   "pnl": -176.03,
-   "worstAgainst": 189.91,
+   "entryVsUnlockDay": 5.59,
+   "pnl": -172.83,
+   "worstAgainst": 189.36,
    "held": 14,
-   "pnlStop": -106.4,
+   "pnlStop": -106.79,
    "stopped": true,
    "exits": {
-    "0": 5.38,
-    "3": -106.4,
-    "7": -176.03,
-    "14": -160.29
+    "0": 4.98,
+    "3": -106.79,
+    "7": -172.83,
+    "14": -156.41
    },
-   "edgeVsRandom": -174.32,
+   "edgeVsRandom": -170.63,
    "live": false,
    "check": "partial",
-   "momentum": 7.05,
+   "momentum": 6.68,
    "skipped": false
   },
   {
@@ -2348,27 +2378,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 53.005,
+   "usdM": 52.903,
    "pctCirculating": 10.189,
-   "advDays": 0.669,
+   "advDays": 0.667,
    "investorsShare": 0.59,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 1.51,
-   "pnl": -2.56,
-   "worstAgainst": 9.95,
+   "entryVsUnlockDay": 1.98,
+   "pnl": -2.82,
+   "worstAgainst": 10.1,
    "held": 14,
-   "pnlStop": -2.56,
+   "pnlStop": -2.82,
    "stopped": false,
    "exits": {
-    "0": 1.18,
-    "3": 7.09,
-    "7": -2.56,
-    "14": 7.98
+    "0": 1.63,
+    "3": 7.72,
+    "7": -2.82,
+    "14": 10.63
    },
-   "edgeVsRandom": -3.75,
+   "edgeVsRandom": -5.92,
    "live": false,
    "check": "partial",
-   "momentum": 30.29,
+   "momentum": 32.41,
    "skipped": true
   },
   {
@@ -2386,22 +2416,22 @@
    "advDays": null,
    "investorsShare": null,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": -5.22,
-   "pnl": -4.68,
-   "worstAgainst": 9.34,
+   "entryVsUnlockDay": -5.4,
+   "pnl": -5.93,
+   "worstAgainst": 9.66,
    "held": 14,
-   "pnlStop": -4.68,
+   "pnlStop": -5.93,
    "stopped": false,
    "exits": {
-    "0": -5.82,
-    "3": 6.57,
-    "7": -4.68,
-    "14": -20.25
+    "0": -6.02,
+    "3": 5.68,
+    "7": -5.93,
+    "14": -20.31
    },
-   "edgeVsRandom": -7.84,
+   "edgeVsRandom": -7.17,
    "live": false,
    "check": "partial",
-   "momentum": -17.22,
+   "momentum": -17.25,
    "skipped": false
   },
   {
@@ -2414,27 +2444,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 32.284,
+   "usdM": 32.088,
    "pctCirculating": 13.333,
-   "advDays": 0.584,
+   "advDays": 0.581,
    "investorsShare": 0.0,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 7.01,
-   "pnl": 58.37,
+   "entryVsUnlockDay": 8.47,
+   "pnl": 59.78,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 58.37,
+   "pnlStop": 59.78,
    "stopped": false,
    "exits": {
-    "0": 6.24,
-    "3": 51.58,
-    "7": 58.37,
-    "14": 68.3
+    "0": 7.5,
+    "3": 52.23,
+    "7": 59.78,
+    "14": 69.05
    },
-   "edgeVsRandom": 54.52,
+   "edgeVsRandom": 56.01,
    "live": false,
    "check": "confirmed",
-   "momentum": 45.73,
+   "momentum": 46.94,
    "skipped": true
   },
   {
@@ -2482,27 +2512,27 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 6.59,
+   "usdM": 5.621,
    "pctCirculating": 13.017,
-   "advDays": 0.667,
+   "advDays": 0.569,
    "investorsShare": 0.65,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 20.91,
-   "pnl": 27.12,
-   "worstAgainst": 0.0,
+   "entryVsUnlockDay": 17.01,
+   "pnl": 19.55,
+   "worstAgainst": 0.62,
    "held": 14,
-   "pnlStop": 27.12,
+   "pnlStop": 19.55,
    "stopped": false,
    "exits": {
-    "0": 16.98,
-    "3": 23.12,
-    "7": 27.12,
-    "14": 17.18
+    "0": 14.23,
+    "3": 24.14,
+    "7": 19.55,
+    "14": 17.91
    },
-   "edgeVsRandom": 22.5,
+   "edgeVsRandom": 13.48,
    "live": false,
    "check": "partial",
-   "momentum": -10.7,
+   "momentum": -22.96,
    "skipped": false
   },
   {
@@ -2516,27 +2546,27 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 14.643,
+   "usdM": 11.605,
    "pctCirculating": 11.662,
-   "advDays": 0.927,
+   "advDays": 0.735,
    "investorsShare": 0.0,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 23.35,
-   "pnl": -21.22,
-   "worstAgainst": 22.21,
+   "entryVsUnlockDay": -9.19,
+   "pnl": -45.92,
+   "worstAgainst": 59.02,
    "held": 14,
-   "pnlStop": -22.34,
+   "pnlStop": -45.42,
    "stopped": true,
    "exits": {
-    "0": 18.62,
-    "3": -0.81,
-    "7": -21.22,
-    "14": -31.73
+    "0": -10.43,
+    "3": -59.42,
+    "7": -45.92,
+    "14": -101.5
    },
-   "edgeVsRandom": -20.62,
+   "edgeVsRandom": -48.4,
    "live": false,
    "check": "confirmed",
-   "momentum": -4.05,
+   "momentum": -32.98,
    "skipped": false
   },
   {
@@ -2550,27 +2580,27 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 13.587,
+   "usdM": 9.738,
    "pctCirculating": 13.505,
-   "advDays": 0.682,
+   "advDays": 0.489,
    "investorsShare": 0.07,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": -5.54,
-   "pnl": -8.07,
-   "worstAgainst": 18.25,
+   "entryVsUnlockDay": 6.36,
+   "pnl": -2.97,
+   "worstAgainst": 4.69,
    "held": 14,
-   "pnlStop": -8.07,
+   "pnlStop": -2.97,
    "stopped": false,
    "exits": {
-    "0": -6.17,
-    "3": -6.78,
-    "7": -8.07,
-    "14": -10.63
+    "0": 5.67,
+    "3": 6.05,
+    "7": -2.97,
+    "14": -12.94
    },
-   "edgeVsRandom": -10.71,
+   "edgeVsRandom": -5.63,
    "live": false,
    "check": "partial",
-   "momentum": -18.81,
+   "momentum": -26.34,
    "skipped": false
   },
   {
@@ -2583,27 +2613,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 39.134,
+   "usdM": 38.771,
    "pctCirculating": 10.189,
-   "advDays": 0.283,
+   "advDays": 0.28,
    "investorsShare": 0.59,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 28.03,
-   "pnl": 17.12,
+   "entryVsUnlockDay": 28.79,
+   "pnl": 17.4,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 17.12,
+   "pnlStop": 17.4,
    "stopped": false,
    "exits": {
-    "0": 21.58,
-    "3": 18.74,
-    "7": 17.12,
-    "14": 2.4
+    "0": 22.04,
+    "3": 16.58,
+    "7": 17.4,
+    "14": 2.38
    },
-   "edgeVsRandom": 15.93,
+   "edgeVsRandom": 14.3,
    "live": false,
    "check": "partial",
-   "momentum": 7.76,
+   "momentum": 7.41,
    "skipped": false
   },
   {
@@ -2651,28 +2681,28 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 44.07,
+   "usdM": 23.843,
    "pctCirculating": 43.201,
-   "advDays": 0.536,
+   "advDays": 0.29,
    "investorsShare": 0.45,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 29.81,
-   "pnl": 14.89,
-   "worstAgainst": 6.46,
+   "entryVsUnlockDay": 51.55,
+   "pnl": -28.03,
+   "worstAgainst": 64.72,
    "held": 14,
-   "pnlStop": 14.89,
-   "stopped": false,
+   "pnlStop": -65.21,
+   "stopped": true,
    "exits": {
-    "0": 22.65,
-    "3": 40.11,
-    "7": 14.89,
-    "14": 7.52
+    "0": 33.71,
+    "3": 18.53,
+    "7": -28.03,
+    "14": -3.68
    },
-   "edgeVsRandom": 8.43,
+   "edgeVsRandom": -35.21,
    "live": false,
    "check": "partial",
-   "momentum": 39.93,
-   "skipped": true
+   "momentum": -11.6,
+   "skipped": false
   },
   {
    "token": "BGB",
@@ -2750,27 +2780,27 @@
     "investors"
    ],
    "grade": "Very high",
-   "usdM": 66.611,
+   "usdM": 65.22,
    "pctCirculating": 7.653,
-   "advDays": 2.058,
+   "advDays": 2.015,
    "investorsShare": 1.0,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": -51.37,
-   "pnl": -130.3,
-   "worstAgainst": 294.12,
+   "entryVsUnlockDay": -51.66,
+   "pnl": -138.6,
+   "worstAgainst": 269.84,
    "held": 14,
-   "pnlStop": -24.79,
+   "pnlStop": -29.41,
    "stopped": true,
    "exits": {
-    "0": -105.94,
-    "3": -182.65,
-    "7": -130.3,
-    "14": 34.35
+    "0": -107.18,
+    "3": -189.7,
+    "7": -138.6,
+    "14": 32.58
    },
-   "edgeVsRandom": -140.12,
+   "edgeVsRandom": -148.19,
    "live": false,
    "check": "partial",
-   "momentum": 290.6,
+   "momentum": 280.63,
    "skipped": true
   },
   {
@@ -2784,28 +2814,28 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 71.94,
+   "usdM": 18.933,
    "pctCirculating": 40.949,
-   "advDays": 4.293,
+   "advDays": 1.13,
    "investorsShare": 0.51,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": -0.38,
-   "pnl": -2.37,
-   "worstAgainst": 20.87,
+   "entryVsUnlockDay": 29.39,
+   "pnl": 13.43,
+   "worstAgainst": 0.11,
    "held": 14,
-   "pnlStop": -21.12,
-   "stopped": true,
+   "pnlStop": 13.43,
+   "stopped": false,
    "exits": {
-    "0": -0.69,
-    "3": 18.91,
-    "7": -2.37,
-    "14": -3.57
+    "0": 22.4,
+    "3": 14.28,
+    "7": 13.43,
+    "14": 32.64
    },
-   "edgeVsRandom": -2.02,
+   "edgeVsRandom": 9.05,
    "live": false,
    "check": "partial",
-   "momentum": 204.37,
-   "skipped": true
+   "momentum": 4.49,
+   "skipped": false
   },
   {
    "token": "ZRO",
@@ -2817,27 +2847,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 45.769,
+   "usdM": 45.453,
    "pctCirculating": 10.189,
-   "advDays": 1.877,
+   "advDays": 1.864,
    "investorsShare": 0.59,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": -15.11,
-   "pnl": -33.14,
-   "worstAgainst": 51.41,
+   "entryVsUnlockDay": -17.48,
+   "pnl": -37.9,
+   "worstAgainst": 56.0,
    "held": 14,
-   "pnlStop": -28.63,
+   "pnlStop": -20.81,
    "stopped": true,
    "exits": {
-    "0": -18.11,
-    "3": -45.73,
-    "7": -33.14,
-    "14": -19.81
+    "0": -21.49,
+    "3": -50.12,
+    "7": -37.9,
+    "14": -23.57
    },
-   "edgeVsRandom": -34.33,
+   "edgeVsRandom": -41.01,
    "live": false,
    "check": "partial",
-   "momentum": 12.74,
+   "momentum": 8.98,
    "skipped": false
   },
   {
@@ -2883,27 +2913,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 270.964,
+   "usdM": 269.2,
    "pctCirculating": 25.0,
-   "advDays": 1.205,
+   "advDays": 1.198,
    "investorsShare": 0.0,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 0.71,
-   "pnl": 9.74,
-   "worstAgainst": 7.58,
+   "entryVsUnlockDay": 0.91,
+   "pnl": 10.19,
+   "worstAgainst": 4.27,
    "held": 14,
-   "pnlStop": 9.74,
+   "pnlStop": 10.19,
    "stopped": false,
    "exits": {
-    "0": 0.39,
-    "3": 7.35,
-    "7": 9.74,
-    "14": 16.5
+    "0": 0.59,
+    "3": 7.39,
+    "7": 10.19,
+    "14": 17.22
    },
-   "edgeVsRandom": 2.82,
+   "edgeVsRandom": 3.41,
    "live": false,
    "check": "confirmed",
-   "momentum": 6.22,
+   "momentum": 5.91,
    "skipped": false
   },
   {
@@ -2916,27 +2946,27 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 34.78,
+   "usdM": 34.755,
    "pctCirculating": 12.672,
-   "advDays": 0.961,
+   "advDays": 0.96,
    "investorsShare": 0.59,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": 9.23,
-   "pnl": 15.31,
-   "worstAgainst": 3.99,
+   "entryVsUnlockDay": 8.95,
+   "pnl": 15.09,
+   "worstAgainst": 3.91,
    "held": 14,
-   "pnlStop": 15.31,
+   "pnlStop": 15.09,
    "stopped": false,
    "exits": {
-    "0": 8.14,
-    "3": 11.14,
-    "7": 15.31,
-    "14": 8.48
+    "0": 7.9,
+    "3": 10.88,
+    "7": 15.09,
+    "14": 8.21
    },
-   "edgeVsRandom": 14.12,
+   "edgeVsRandom": 11.99,
    "live": false,
    "check": "partial",
-   "momentum": 5.39,
+   "momentum": 5.08,
    "skipped": false
   },
   {
@@ -2949,27 +2979,27 @@
     "first"
    ],
    "grade": "Moderate",
-   "usdM": 7.124,
+   "usdM": 7.123,
    "pctCirculating": 1.123,
    "advDays": 0.042,
    "investorsShare": 0.0,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 25.18,
-   "pnl": 30.04,
+   "entryVsUnlockDay": 25.04,
+   "pnl": 30.02,
    "worstAgainst": 0.0,
    "held": 14,
-   "pnlStop": 30.04,
+   "pnlStop": 30.02,
    "stopped": false,
    "exits": {
-    "0": 19.81,
-    "3": 25.07,
-    "7": 30.04,
-    "14": 28.23
+    "0": 19.72,
+    "3": 25.06,
+    "7": 30.02,
+    "14": 28.1
    },
-   "edgeVsRandom": 26.74,
+   "edgeVsRandom": 25.2,
    "live": false,
    "check": "confirmed",
-   "momentum": 1.44,
+   "momentum": 1.43,
    "skipped": false
   },
   {
@@ -2982,27 +3012,27 @@
     "first"
    ],
    "grade": "Very high",
-   "usdM": 6.937,
+   "usdM": 6.921,
    "pctCirculating": 5.87,
-   "advDays": 0.321,
+   "advDays": 0.32,
    "investorsShare": 0.38,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": 8.83,
-   "pnl": 14.1,
-   "worstAgainst": 7.32,
+   "entryVsUnlockDay": 8.92,
+   "pnl": 14.46,
+   "worstAgainst": 7.42,
    "held": 14,
-   "pnlStop": 14.1,
+   "pnlStop": 14.46,
    "stopped": false,
    "exits": {
-    "0": 7.8,
-    "3": 14.15,
-    "7": 14.1,
+    "0": 7.88,
+    "3": 14.32,
+    "7": 14.46,
     "14": 28.12
    },
-   "edgeVsRandom": 7.57,
+   "edgeVsRandom": 6.46,
    "live": false,
    "check": "confirmed",
-   "momentum": -26.6,
+   "momentum": -26.85,
    "skipped": false
   },
   {
@@ -3049,28 +3079,28 @@
     "big"
    ],
    "grade": "Very high",
-   "usdM": 21.525,
+   "usdM": 21.62,
    "pctCirculating": 15.25,
-   "advDays": 0.639,
+   "advDays": null,
    "investorsShare": 0.0,
    "firstInsiderUnlock": false,
-   "entryVsUnlockDay": -15.14,
-   "pnl": -119.96,
-   "worstAgainst": 119.44,
+   "entryVsUnlockDay": -15.81,
+   "pnl": -119.95,
+   "worstAgainst": 119.43,
    "held": 14,
-   "pnlStop": -29.38,
+   "pnlStop": -30.51,
    "stopped": true,
    "exits": {
-    "0": -18.15,
-    "3": -29.38,
-    "7": -119.96,
-    "14": -139.57
+    "0": -19.09,
+    "3": -30.51,
+    "7": -119.95,
+    "14": -118.18
    },
-   "edgeVsRandom": -116.76,
+   "edgeVsRandom": -119.33,
    "live": false,
    "check": "confirmed",
-   "momentum": 577.8,
-   "skipped": true
+   "momentum": null,
+   "skipped": false
   },
   {
    "token": "HYPE",
@@ -3082,27 +3112,27 @@
     "first"
    ],
    "grade": "High",
-   "usdM": 60.917,
+   "usdM": 60.967,
    "pctCirculating": 0.645,
-   "advDays": 0.112,
+   "advDays": 0.113,
    "investorsShare": 0.0,
    "firstInsiderUnlock": true,
-   "entryVsUnlockDay": -2.96,
-   "pnl": 7.98,
-   "worstAgainst": 6.9,
+   "entryVsUnlockDay": -3.07,
+   "pnl": 8.0,
+   "worstAgainst": 6.99,
    "held": 14,
-   "pnlStop": 7.98,
+   "pnlStop": 8.0,
    "stopped": false,
    "exits": {
-    "0": -3.36,
-    "3": 7.79,
-    "7": 7.98,
-    "14": 14.78
+    "0": -3.48,
+    "3": 7.99,
+    "7": 8.0,
+    "14": 14.82
    },
-   "edgeVsRandom": 8.7,
+   "edgeVsRandom": 8.73,
    "live": false,
    "check": "partial",
-   "momentum": -29.39,
+   "momentum": -29.41,
    "skipped": false
   }
  ],
@@ -3194,25 +3224,25 @@
   },
   "KITE": {
    "id": "kite-2",
-   "rise": -24.4,
+   "rise": -24.6,
    "to": "2026-10-27"
   },
   "BABY": {
    "id": "babylon",
-   "rise": 3.0,
+   "rise": 3.9,
    "to": "2026-10-27"
   },
   "ALLO": {
    "id": "allora",
-   "rise": -31.1,
+   "rise": -31.9,
    "to": "2026-10-27"
   },
   "PIEVERSE": {
    "id": "pieverse",
-   "rise": -24.3,
+   "rise": -24.8,
    "to": "2026-10-27"
   }
  },
- "pumpCheckedAt": "2026-10-27T11:13:24Z",
+ "pumpCheckedAt": "2026-10-27T12:15:36Z",
  "method": "Fixed playbook applied to every past unlock in the track record. Entry and exit use CoinGecko daily prices at 00:00 UTC; day 0 is the unlock date. Profit is for a short: positive when the price fell. Costs assumed: 0.10% fees for the round trip and 0.03% funding per day held. The 'with stop' version covers at the first daily close 20% above entry, so a real stop-loss order could fill earlier or later. The account curve books $1,000 per trade on its exit date. Trades are skipped when the token rose 30% or more from 30 days before the unlock to the entry day; that guard was chosen after seeing the worst losses, so results are shown with and without it. Rules were chosen from published research and this same year of data, so the first-half and second-half results and the live-tracked trades are the fairer test."
 }
