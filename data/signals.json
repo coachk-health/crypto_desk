@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-27T17:07:37Z",
+ "generatedAt": "2026-10-27T17:25:03Z",
  "playbook": {
   "entry": -7,
   "exit": 7,
@@ -8154,34 +8154,46 @@
   "APR": {
    "id": "apriori",
    "rise": -69.5,
-   "to": "2026-10-16"
+   "to": "2026-10-16",
+   "ref": 0.04447,
+   "source": "binance-futures"
   },
   "COAI": {
    "id": "chainopera-ai",
    "rise": -19.0,
-   "to": "2026-10-18"
+   "to": "2026-10-18",
+   "ref": 0.2619,
+   "source": "binance-futures"
   },
   "KITE": {
    "id": "kite-2",
-   "rise": -24.6,
-   "to": "2026-10-27"
+   "rise": -21.7,
+   "to": "2026-10-27",
+   "ref": 0.118261,
+   "source": "binance-futures"
   },
   "BABY": {
    "id": "babylon",
-   "rise": 3.9,
-   "to": "2026-10-27"
+   "rise": 6.9,
+   "to": "2026-10-27",
+   "ref": 0.014414,
+   "source": "binance-futures"
   },
   "ALLO": {
    "id": "allora",
-   "rise": -31.9,
-   "to": "2026-10-27"
+   "rise": -30.2,
+   "to": "2026-10-27",
+   "ref": 0.185871,
+   "source": "binance-futures"
   },
   "PIEVERSE": {
    "id": "pieverse",
-   "rise": -24.8,
-   "to": "2026-10-27"
+   "rise": -25.1,
+   "to": "2026-10-27",
+   "ref": 1.01655,
+   "source": "binance-futures"
   }
  },
- "pumpCheckedAt": "2026-10-27T17:07:37Z",
+ "pumpCheckedAt": "2026-10-27T17:26:22Z",
  "method": "Fixed playbook applied to every past unlock in the track record. Entry and exit use CoinGecko daily prices at 00:00 UTC; day 0 is the unlock date. Profit is for a short: positive when the price fell. Costs assumed: 0.10% fees for the round trip and 0.03% funding per day held. The 'with stop' version covers at the first daily close 20% above entry, so a real stop-loss order could fill earlier or later. The account curve books $1,000 per trade on its exit date. Trades are skipped when the token rose 30% or more from 30 days before the unlock to the entry day; that guard was chosen after seeing the worst losses, so results are shown with and without it. Rules were chosen from published research and this same year of data, so the first-half and second-half results and the live-tracked trades are the fairer test."
 }
