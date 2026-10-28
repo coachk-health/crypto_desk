@@ -1,34 +1,72 @@
 {
  "date": "2026-10-28",
- "updated": "2026-10-28T00:17:20Z",
- "headline": "Robinhood's crypto revenue fell 55% from a year ago even as total revenue hit a record, bitcoin is holding near $80,500 into Wednesday's Fed decision, and Ripple's new trust bank comes with a Robinhood deal for its RLUSD stablecoin.",
+ "updated": "2026-10-28T04:22:05Z",
+ "headline": "It's Fed decision day: bitcoin is back above $80,000 ahead of the 2:00pm ET announcement, Robinhood's crypto revenue fell 55% last quarter, and Korean exchange Bithumb disclosed a breach of its internal groupware system.",
  "market": {
-  "asOf": "Read from CoinGecko coin pages around 23:58 UTC Tue 27 Oct (06:58 Wed Bangkok). ETH and SOL 24h changes are left out because the pages showed conflicting figures. Live prices are at the top of the page.",
+  "asOf": "BTC and ETH read from KuCoin's daily market report, data as of 00:00 UTC Wed 28 Oct (07:00 Bangkok). 24h changes and SOL are left out because no page confirmed them this run. Live prices are at the top of the page.",
   "btc": {
-   "price": 80634.16,
-   "chg24h": 1.0
+   "price": 80908,
+   "chg24h": null
   },
   "eth": {
-   "price": 2343.03,
+   "price": 2350,
    "chg24h": null
   },
   "sol": {
-   "price": 100.89,
+   "price": null,
    "chg24h": null
   },
-  "fearGreed": "48, Neutral, on the Alternative.me Crypto Fear & Greed Index, read around 23:59 UTC 27 Oct."
+  "fearGreed": "51 (previous 48) on the Fear & Greed Index per KuCoin's daily market report, data as of 00:00 UTC 28 Oct; the report does not name the provider."
  },
  "stories": [
+  {
+   "title": "Fed decision day: bitcoin back above $80,000 ahead of the announcement",
+   "mood": "volatile",
+   "summary": "The Fed announces its interest-rate decision at 2:00pm ET today (01:00 Thursday Bangkok), and most of the market expects no change. Bitcoin is back above $80,000 after dipping below it earlier this week. Inflation and growth data follow on Thursday and a large batch of bitcoin options expires on Friday.",
+   "points": [
+    "Bitcoin was at $80,908 and ether at $2,350 as of 00:00 UTC Wednesday, per KuCoin's daily report.",
+    "The Fed's range is 3.75-4.00%; CME FedWatch showed 90.6% odds of a hold on 27 Oct, per Bloomingbit. No new Fed projections are due until December, per Newsquawk.",
+    "About $149M of leveraged crypto bets were liquidated in 24 hours, $99.9M of them shorts (bets on a fall), per CoinGlass data reported by ChainCatcher.",
+    "September PCE inflation and the first estimate of Q3 GDP are both due Thursday at 8:30am ET, per crypto.news.",
+    "Friday's Deribit bitcoin options expiry is estimated at about $11B to $12B, with 'max pain' estimates of $76,000 to $79,000, per FinanceFeeds. Max pain is not a price target."
+   ],
+   "sources": [
+    {
+     "label": "KuCoin: crypto daily market report, 28 Oct",
+     "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-28-2026"
+    },
+    {
+     "label": "Bloomingbit: CME FedWatch odds",
+     "url": "https://en.bloomingbit.io/feed/news/123058"
+    },
+    {
+     "label": "Newsquawk: Fed decision preview",
+     "url": "https://www.newsquawk.com/headlines/preview-federal-reserve-rate-decision-due-wednesday-october-28th-at-1800gmt1400edt"
+    },
+    {
+     "label": "ChainCatcher: 24h liquidations",
+     "url": "https://www.chaincatcher.com/en/article/2299458"
+    },
+    {
+     "label": "crypto.news: week ahead",
+     "url": "https://crypto.news/crypto-week-ahead-bitcoin-fed-pce-gdp-earnings/"
+    },
+    {
+     "label": "FinanceFeeds: options expiry estimates",
+     "url": "https://financefeeds.com/bitcoin-dips-below-80000-into-fed-day/"
+    }
+   ]
+  },
   {
    "title": "Robinhood's crypto revenue falls 55% even as total revenue hits a record",
    "mood": "bearish",
    "summary": "Robinhood reported its July-September results after Tuesday's close. Total revenue was a record, but crypto trading revenue more than halved from a year earlier, and prediction markets now bring in more than crypto. The stock fell after hours.",
    "points": [
-    "Total revenue rose 12% from a year earlier to $1.42B, just under the $1.43B analysts expected, per CoinDesk.",
-    "Crypto revenue was $120M, down 55%, on crypto trading volume of $50B, down 38%, per CoinDesk. Event contract (prediction market) revenue was $173M, up more than 6x, per the company's release.",
-    "Reported earnings were $0.51 a share, down 16% per the company's release and below the $0.55 expected per CoinDesk; on an adjusted basis earnings were $0.60, above the $0.55 estimate, per Investing.com.",
-    "Net income fell 14% to $476M; funded customers rose 7% to 28.7M, per the company's release.",
-    "Shares were down about 5% after hours per CoinDesk; Investing.com had them down 7.36% at $87.60."
+    "Total revenue rose 12% from a year earlier to $1.42B, just under the $1.43B analysts expected, per the company's release and Investing.com.",
+    "Crypto revenue was $120M, down 55%, on crypto trading volume of $50B, down 38%. Event contract (prediction market) revenue was $173M, more than 6x a year earlier, per the company's release.",
+    "Reported earnings were $0.51 a share, down 16%, and net income fell 14% to $476M, per the company's release; adjusted earnings were $0.60 against a $0.55 estimate, per Investing.com.",
+    "Funded customers rose 7% to 28.7M, per the company's release.",
+    "Shares fell 7.36% after hours to $87.60 from a $94.56 close, per Investing.com."
    ],
    "sources": [
     {
@@ -45,107 +83,86 @@
     },
     {
      "label": "Investing.com: Robinhood Q3 call",
-     "url": "https://ca.investing.com/news/stock-market-news/earnings-call-transcript-robinhood-q3-2026-revenue-tops-14-billion-stock-falls-93CH-4907390"
+     "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-robinhood-q3-2026-revenue-tops-14-billion-stock-falls-93CH-4977221"
     }
    ]
   },
   {
-   "title": "Bitcoin holds near $80,500 as the Fed decides Wednesday",
-   "mood": "volatile",
-   "summary": "Bitcoin dipped below $80,000 early Tuesday and recovered. The Fed announces its rate decision on Wednesday afternoon US time, inflation and growth data follow on Thursday, and a large batch of bitcoin options expires on Friday.",
+   "title": "Korean exchange Bithumb hacked as cyberattacks spread across Korean finance",
+   "mood": "bearish",
+   "summary": "Bithumb, one of South Korea's largest crypto exchanges, said an outsider broke into the internal mobile app its staff use for work on 27 Oct and personal data leaked. It reported the breach to regulators the same day. No report says customer crypto was taken. Brokerage Daishin Securities and two Mirae Asset companies also reported attacks.",
    "points": [
-    "Bitcoin recovered from an early low near $79,400 and was around $80,600 in an article published mid-afternoon US time Tuesday, per Bitcoin Magazine.",
-    "The Fed's range is 3.75-4.00% after a hike in September, per Newsquawk; CME FedWatch showed 90.6% odds of a hold, per Bloomingbit.",
-    "September PCE inflation and the first estimate of Q3 GDP are both due Thursday at 8:30am ET, per crypto.news.",
-    "Friday's Deribit bitcoin options expiry is estimated at about $11B to $12B, with 'max pain' estimates of $76,000 to $79,000, per FinanceFeeds. Max pain is not a price target."
+    "Bithumb said the leaked data found so far is mainly employee data, but it has not ruled out customer data and has given no count, per Digital Today.",
+    "Bithumb reported the breach to KISA, Korea's internet security agency, and the Personal Information Protection Commission, per Digital Today.",
+    "Daishin Securities said data on 38,490 customers leaked; Mirae Asset Global Investments and Mirae Asset Life also reported intrusions, per The Korea Times.",
+    "No funds or private keys have been reported stolen so far, per SpendNode."
    ],
    "sources": [
     {
-     "label": "Bitcoin Magazine: bitcoin near $80,500",
-     "url": "https://bitcoinmagazine.com/markets/bitcoin-price-rests-near-80500-midterms"
+     "label": "The Korea Times: Bithumb, Mirae Asset, Daishin join list of victims",
+     "url": "https://www.koreatimes.co.kr/business/banking-finance/20261028/bithumb-mirae-asset-daishin-join-growing-list-of-cyberattack-victims"
     },
     {
-     "label": "Bloomingbit: CME FedWatch odds",
-     "url": "https://en.bloomingbit.io/feed/news/123058"
+     "label": "Digital Today: Bithumb internal system hacked",
+     "url": "https://www.digitaltoday.co.kr/en/view/120428/bithumb-internal-mobile-system-hacked-probing-personal-data-leak-scope"
     },
     {
-     "label": "Newsquawk: week in focus",
-     "url": "https://www.newsquawk.com/headlines/week-in-focus-26-30th-october-2026-fomc-boc-rbnz-ecb-boj-policy-decisions-us-pce"
-    },
-    {
-     "label": "crypto.news: week ahead",
-     "url": "https://crypto.news/crypto-week-ahead-bitcoin-fed-pce-gdp-earnings/"
-    },
-    {
-     "label": "FinanceFeeds: options expiry estimates",
-     "url": "https://financefeeds.com/bitcoin-dips-below-80000-into-fed-day/"
-    }
-   ]
-  },
-  {
-   "title": "Ripple's new US trust bank comes with a Robinhood deal for RLUSD",
-   "mood": "neutral",
-   "summary": "The OCC, the US regulator for national banks, gave Ripple final approval to launch a national trust bank that will manage the reserves behind its RLUSD stablecoin. On Tuesday Robinhood and Ripple announced a partnership that includes bringing RLUSD to the Robinhood app later this year.",
-   "points": [
-    "Ripple disclosed final OCC approval on 26 Oct, per Bitcoin.com; the trust bank is authorized to manage the segregated reserves backing RLUSD, per The Block.",
-    "Robinhood will bring RLUSD to its app later in 2026; it is already live on Robinhood Chain and Bitstamp, per Bitcoin.com.",
-    "Robinhood is set to use RLUSD on the XRP Ledger through Bitstamp's institutional business and will adopt Ripple Treasury software, per Bitcoin.com."
-   ],
-   "sources": [
-    {
-     "label": "The Block: Ripple gains final OCC approval",
-     "url": "https://www.theblock.co/news/regulation/2026-10-26-ripple-gains-final-occ-approval-rlusd-431810"
-    },
-    {
-     "label": "Bitcoin.com: Robinhood strikes Ripple deal",
-     "url": "https://news.bitcoin.com/featured/robinhood-strikes-ripple-deal-bring-rlusd-29m-customers/"
+     "label": "SpendNode: Bithumb confirms breach",
+     "url": "https://www.spendnode.io/blog/bithumb-confirms-security-breach-october-2026/"
     }
    ]
   }
  ],
  "briefs": [
   {
-   "title": "Bitcoin ETFs take in $110M, ether ETFs lose $89M",
-   "summary": "US spot bitcoin ETFs took in about $110M on Monday 26 Oct, led by BlackRock's IBIT, while spot ether ETFs saw $88.58M of outflows, per Crypto Briefing.",
-   "url": "https://cryptobriefing.com/bitcoin-etfs-inflows-ether-funds-outflows/"
+   "title": "New Zealand surprises with a rate hold",
+   "summary": "New Zealand's central bank kept its rate at 2.75% in a 4-3 vote when markets had expected a hike, and said tighter policy is still likely to be needed, per investingLive.",
+   "url": "https://investinglive.com/central-banks/rbnz-holds-ocr-at-2-75-in-surprise-4-3-vote-says-tighter-policy-still-likely/"
   },
   {
-   "title": "Galaxy swings to a $323M profit",
-   "summary": "Galaxy reported Q3 net income of $323M, against an $85M loss in Q2, and approved a new $200M share buyback, per The Block.",
-   "url": "https://www.theblock.co/news/business/2026-10-27-galaxy-digital-323-million-quarterly-profit-new-200-million-share-buyback-431860"
+   "title": "Ripple wins final approval for its US trust bank",
+   "summary": "The OCC, the US regulator for national banks, gave final approval to Ripple National Trust Bank, which will manage the reserves behind Ripple's roughly $2.6B RLUSD stablecoin, per Decrypt.",
+   "url": "https://decrypt.co/381899/ripple-wins-final-occ-approval-for-trust-bank-behind-2-6b-rlusd-stablecoin"
+  },
+  {
+   "title": "Bitcoin ETFs took in $110M on Monday",
+   "summary": "US spot bitcoin ETFs took in $110.3M on 26 Oct after outflows of $635.6M on 22 Oct and $137.9M on 23 Oct, per Farside. Tuesday's figures were not yet published.",
+   "url": "https://farside.co.uk/btc/"
+  },
+  {
+   "title": "USDC supply shrinks by $4B in a month",
+   "summary": "USDC in circulation fell $4.08B over 30 days to $71.30B, per DefiLlama data reported by CryptoTicker.",
+   "url": "https://cryptoticker.io/en/stablecoin-supply-shrinks-usdc-redemptions/"
+  },
+  {
+   "title": "Kraken's parent plans regulated perpetuals on Hyperliquid",
+   "summary": "Hyperliquid says Payward, Kraken's parent, will be the first CFTC-regulated deployer of its HIP-3 markets; the plan still needs regulatory approval, per The Block.",
+   "url": "https://www.theblock.co/news/markets/2026-10-26-hyperliquid-payward-kraken-cftc-regulated-hip-3-deployer-431787"
+  },
+  {
+   "title": "OCC invites community banks to issue stablecoins",
+   "summary": "The OCC encouraged community banks to apply to issue stablecoins under the GENIUS Act; it is not yet accepting applications, per CoinDesk.",
+   "url": "https://www.coindesk.com/policy/2026/10/26/occ-calls-on-community-banks-to-enter-the-stablecoin-payments-market"
   },
   {
    "title": "Strategy paused bitcoin buying last week",
-   "summary": "Strategy made no bitcoin purchases or sales in the week ending 25 Oct and holds 848,517 BTC; it spent about $204.9M buying back its STRC preferred stock instead, per Analytics Insight.",
-   "url": "https://www.analyticsinsight.net/news/bitcoin-price-drops-as-strategy-pauses-btc-purchases-ahead-of-fed-decision"
+   "summary": "Strategy made no bitcoin purchases in the week to 25 Oct, per The Crypto Times.",
+   "url": "https://www.cryptotimes.io/2026/10/27/bitcoin-price-below-80k-as-markets-price-90-fed-hold-strategy-halts-buys-mara-moves-1k-btc/"
   },
   {
    "title": "Suspected exploit at Predict Fun",
-   "summary": "On-chain trackers flagged suspected unauthorized outflows of more than $300K from Predict Fun, a prediction market on BNB Chain; the team had not confirmed the cause or total, per The Crypto Times.",
+   "summary": "On-chain trackers flagged suspected unauthorized outflows of more than $300K from Predict Fun, a prediction market on BNB Chain; the team had not confirmed the cause, per The Crypto Times.",
    "url": "https://www.cryptotimes.io/2026/10/27/300k-suspected-exploit-hits-predict-fun-on-bnb-smart-chain/"
-  },
-  {
-   "title": "Keystone wallet customer data leaked",
-   "summary": "Keystone said customer names, contact details and shipping addresses were exposed, while recovery phrases and private keys remain secure. It warned buyers about fake replacement devices and refund offers, per Bitcoin.com.",
-   "url": "https://news.bitcoin.com/security/keystone-wallet-data-breach-exposes-buyers-addresses-to-scammers/"
   }
  ],
  "calendar": [
-  {
-   "et": "Tue 27 · 9:00pm",
-   "bkk": "Wed 28 · 08:00",
-   "event": "Reserve Bank of New Zealand rate decision",
-   "impact": "neutral",
-   "key": false,
-   "note": "Rate 2.75%. Newsquawk's RBNZ preview puts a hike to 3.00% at about 93% priced; its week-ahead note says 75-80%, with Westpac expecting a hold. Not yet announced when this edition was written."
-  },
   {
    "et": "Wed 28 · 9:45am",
    "bkk": "Wed 28 · 20:45",
    "event": "Bank of Canada rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Rate 2.25%; markets about 80% priced for a hike to 2.50% (Newsquawk). Strategy's common shareholders vote on daily dividends for its preferred shares at 10:00am ET (21:00 Bangkok), per its proxy."
+   "note": "Rate 2.25%; a hike to 2.50% is about 80% priced (Newsquawk), about 85% per BBH. Strategy holds a special shareholder meeting at 10:00am ET (21:00 Bangkok)."
   },
   {
    "et": "Wed 28 · 2:00pm",
@@ -153,7 +170,7 @@
    "event": "Fed rate decision",
    "impact": "volatile",
    "key": true,
-   "note": "Range 3.75-4.00%; a hold is expected (CME FedWatch 90.6%, per Bloomingbit). Chair Warsh's press conference 2:30pm ET (01:30 Bangkok). No new projections until December (Newsquawk)."
+   "note": "Range 3.75-4.00%; a hold is expected (CME FedWatch 90.6% on 27 Oct, per Bloomingbit). Chair Warsh's press conference 2:30pm ET (01:30 Bangkok). No new projections until December (Newsquawk)."
   },
   {
    "et": "Thu 29 · 8:30am",
@@ -161,7 +178,7 @@
    "event": "US Q3 GDP (first estimate) and September PCE inflation",
    "impact": "volatile",
    "key": true,
-   "note": "GDP forecasts differ: about 3.0% (Newsquawk) vs 1.7% (AP survey); prior 2.2%. PCE 3.6% a year expected, prior 3.4%; core 3.1%, prior 3.0% (Newsquawk). ECB decision 9:15am ET (20:15 Bangkok), hold expected."
+   "note": "GDP forecasts: 3.0% (Newsquawk), 3.2% (BBH); prior 2.2%. PCE 3.6% a year expected, prior 3.4%; core 3.1%, prior 3.0% (Newsquawk). ECB decision 9:15am ET (20:15 Bangkok), hold expected."
   },
   {
    "et": "Thu 29 · 5:00pm (calls)",
@@ -169,7 +186,7 @@
    "event": "Coinbase and Strategy earnings",
    "impact": "volatile",
    "key": true,
-   "note": "Both report after the US close. Coinbase consensus EPS -$0.23, revenue $1.21B (MarketBeat). Token unlocks the same day: FF ~$19.5M and CARDS ~$19.1M, per the unlock data on this page."
+   "note": "Both report after the US close. Coinbase EPS consensus -$0.23 and revenue $1.21B (MarketBeat); CoinDesk lists -$0.10. Token unlocks the same day: FF and CARDS, per the unlock data on this page."
   },
   {
    "et": "Fri 30 · 4:00am",
@@ -177,7 +194,7 @@
    "event": "Bitcoin options expiry (Deribit)",
    "impact": "volatile",
    "key": true,
-   "note": "At 08:00 UTC. Estimates range from about $11B to $12.2B, with max pain between $76,000 and $79,000 (FinanceFeeds, CryptoTicker). Max pain is not a price target."
+   "note": "At 08:00 UTC. Estimated at about $11B to $12B, with max pain between $76,000 and $79,000 (FinanceFeeds). Max pain is not a price target."
   },
   {
    "et": "Fri 30",
@@ -185,7 +202,7 @@
    "event": "Bank of Japan rate decision",
    "impact": "neutral",
    "key": false,
-   "note": "Rate 1.25%, hold expected (Newsquawk); no fixed announcement time."
+   "note": "Rate 1.25%, hold expected (BBH)."
   },
   {
    "et": "Fri 30 · 8:30am",
@@ -193,15 +210,23 @@
    "event": "US Employment Cost Index (Q3) and Chicago PMI",
    "impact": "neutral",
    "key": false,
-   "note": "ECI prior 0.9% (BLS). Chicago PMI at 9:45am ET (20:45 Bangkok), prior 58.8."
+   "note": "ECI 0.8% expected, prior 0.9%. Chicago PMI 9:45am ET (20:45 Bangkok), 55.8 expected, prior 58.8 (TradingCharts). Fed's Daly speaks at 12:00pm ET and Musalem at 12:30pm ET (Kiplinger)."
   },
   {
-   "et": "Fri 30 – Tue 3 Nov",
-   "bkk": "Fri 30 – Tue 3 Nov",
-   "event": "Token unlocks: KMNO, W, TIA, EIGEN, SUI, M, ENA, BTW, KITE",
+   "et": "Fri 30 – Wed 4 Nov",
+   "bkk": "Fri 30 – Wed 4 Nov",
+   "event": "Token unlocks: KMNO, W, M, EIGEN, BTW, Q, ENA, 2Z, KITE, MMT",
    "impact": "bearish",
    "key": false,
-   "note": "KMNO ~$9.9M and W ~$0.6M (30th), TIA ~$3.0M (31st), EIGEN ~$7.1M, MemeCore (M) ~$53.3M and SUI (size unconfirmed; trackers differ on 1 or 3 Nov) on 1 Nov, ENA ~$8.5M and BTW ~$169.7M (2 Nov), KITE ~$89.1M (3 Nov), per the unlock data on this page. US clocks fall back on Sun 1 Nov."
+   "note": "KMNO ~$9.25M and W ~$0.64M (30 Oct); MemeCore (M) ~$57.8M and EIGEN ~$7.3M (1 Nov); BTW ~$163.6M, Q ~$23.5M, ENA ~$8.2M and 2Z ~$4.4M (2 Nov); KITE ~$89.4M (3 Nov) and MMT ~$2.3M (4 Nov), both the first unlock for insiders, per the unlock data on this page."
+  },
+  {
+   "et": "Mon 2 Nov · 10:00am",
+   "bkk": "Mon 2 · 22:00",
+   "event": "US ISM manufacturing; Reserve Bank of Australia decision that evening",
+   "impact": "neutral",
+   "key": false,
+   "note": "ISM prior 54.5 (ISM). RBA decides at 10:30pm ET (10:30 Tue Bangkok): rate 4.60%, with 56.75% odds of a rise (RBA Rate Watch)."
   },
   {
    "et": "Tue 3 Nov",
@@ -209,7 +234,7 @@
    "event": "US midterm elections; JOLTS job openings (10:00am ET, 22:00 Bangkok)",
    "impact": "volatile",
    "key": false,
-   "note": "JOLTS prior 7.1M. Polls close 6:00pm ET Tue to 1:00am ET Wed (06:00-13:00 Wed Bangkok). Reserve Bank of Australia also decides Tue 3 Nov (rate 4.60%, roughly even odds of a hike). Block reports after the US close."
+   "note": "JOLTS prior 7.1M (BLS). Block reports after the US close, call 5:00pm ET (05:00 Wed Bangkok)."
   },
   {
    "et": "Wed 4 Nov · 8:00am",
@@ -217,14 +242,14 @@
    "event": "Circle and Riot earnings calls",
    "impact": "neutral",
    "key": false,
-   "note": "The next Fed decision after this week is Wed 9 Dec, 2:00pm ET (02:00 Thu 10 Dec Bangkok), per the Federal Reserve."
+   "note": "ADP jobs report times differ: 7:15am ET per LiteFinance vs 8:15am ET per financecalendar.com; prior 90K. ISM services 10:00am ET (22:00 Bangkok), prior 54.9. US October jobs report Fri 6 Nov. The next Fed decision after this week is Wed 9 Dec, 2:00pm ET (02:00 Thu 10 Dec Bangkok), per the Federal Reserve."
   }
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-10-28T00:17:20Z",
-  "claimsChecked": 154,
-  "claimsRemoved": 14,
+  "checkedAt": "2026-10-28T04:22:05Z",
+  "claimsChecked": 158,
+  "claimsRemoved": 9,
   "rounds": 2,
   "method": "Independent source check: every claim re-opened at its cited URL"
  }
