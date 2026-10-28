@@ -333,7 +333,7 @@
      "label": "Recently re-checked",
      "points": 10,
      "max": 15,
-     "detail": "independently re-checked 4 days ago"
+     "detail": "independently re-checked 5 days ago"
     }
    ],
    "impact": {
@@ -514,7 +514,7 @@
      "label": "Recently re-checked",
      "points": 10,
      "max": 15,
-     "detail": "independently re-checked 4 days ago"
+     "detail": "independently re-checked 5 days ago"
     }
    ],
    "impact": {
@@ -665,8 +665,8 @@
     "status": "partial",
     "notes": "I reopened the sources. tokenomics.com gives 23,463,889 SOSO on 24 Oct, and the CoinGecko/Tokenomist widget gives 23.46M on 24 Oct ('4 hours away') with the 9.17/9.17/2.58/1.58/0.97M split. Price $0.2968, 342.0M circulating (6.86%) and the implied $0.20 investor entry ($200M FDV / 1B; The Block says no per-token price was disclosed) all check out. Not confirmed: the time of day, so it is unclear whether the unlock is still upcoming at ~05:00 UTC. DefiLlama still says 'no upcoming SOSO unlocks are scheduled' and models weekly streams. CoinGecko shows two 24h volumes ($2.65M and $3.98M)."
    },
-   "confidenceScore": 62,
-   "confidenceLabel": "Good",
+   "confidenceScore": 57,
+   "confidenceLabel": "Low",
    "confidenceParts": [
     {
      "label": "Date",
@@ -700,9 +700,9 @@
     },
     {
      "label": "Recently re-checked",
-     "points": 15,
+     "points": 10,
      "max": 15,
-     "detail": "independently re-checked 3 days ago"
+     "detail": "independently re-checked 4 days ago"
     }
    ],
    "impact": {
@@ -1249,7 +1249,7 @@
      "label": "Recently re-checked",
      "points": 15,
      "max": 15,
-     "detail": "independently re-checked 1 days ago"
+     "detail": "independently re-checked 2 days ago"
     },
     {
      "label": "Re-check found a conflict",
@@ -3982,7 +3982,7 @@
      "label": "Recently re-checked",
      "points": 15,
      "max": 15,
-     "detail": "independently re-checked 0 days ago"
+     "detail": "independently re-checked 1 days ago"
     }
    ],
    "impact": {
@@ -4335,7 +4335,7 @@
      "label": "Recently re-checked",
      "points": 15,
      "max": 15,
-     "detail": "independently re-checked 1 days ago"
+     "detail": "independently re-checked 2 days ago"
     }
    ],
    "impact": {
@@ -6667,7 +6667,7 @@
      "label": "Recently re-checked",
      "points": 15,
      "max": 15,
-     "detail": "independently re-checked 0 days ago"
+     "detail": "independently re-checked 1 days ago"
     }
    ],
    "impact": {
@@ -7191,7 +7191,7 @@
      "label": "Recently re-checked",
      "points": 15,
      "max": 15,
-     "detail": "independently re-checked 0 days ago"
+     "detail": "independently re-checked 1 days ago"
     }
    ],
    "impact": {
@@ -7548,7 +7548,7 @@
      "label": "Recently re-checked",
      "points": 15,
      "max": 15,
-     "detail": "independently re-checked 0 days ago"
+     "detail": "independently re-checked 1 days ago"
     }
    ],
    "impact": {
@@ -7712,7 +7712,7 @@
      "label": "Recently re-checked",
      "points": 15,
      "max": 15,
-     "detail": "independently re-checked 1 days ago"
+     "detail": "independently re-checked 2 days ago"
     }
    ],
    "impact": {
@@ -8059,7 +8059,7 @@
     "status": "partial",
     "notes": "KuCoin lists 1 Dec 2026 00:00 UTC, 36,794,832 EIGEN (DefiLlama model, with no recipient split for December). No independent source gives a December figure. CoinGecko/Tokenomist give Nov 1 as 36.82M (19.75M investors / 17.07M early contributors) against KuCoin's 37.83M. Market data matches ($0.209, ~976M circulating, so 3.77%, ~$7.7M). The Block sources support both sellerNotes claims."
    },
-   "confidenceScore": 70,
+   "confidenceScore": 67,
    "confidenceLabel": "Good",
    "confidenceParts": [
     {
@@ -8094,9 +8094,9 @@
     },
     {
      "label": "Recently re-checked",
-     "points": 15,
+     "points": 10,
      "max": 15,
-     "detail": "independently re-checked 3 days ago"
+     "detail": "independently re-checked 4 days ago"
     }
    ],
    "impact": {
@@ -8399,8 +8399,8 @@
     "status": "partial",
     "notes": "No source prints the Dec 2026 tranche. It is inferred from the primary schedule (monthly for 3 years after the 16 Mar 2024 first unlock) and from the CoinGecko/Tokenomist next unlock of 16 Nov, 92.65M ARB. KuCoin confirms 92.65M per month through Mar 2027. Market data matches ($0.171, 6.892B circulating, so 1.34%, ~$15.9M). The Cointelegraph sellerNote is supported. The primary-doc URL had a stray trailing backslash, now fixed."
    },
-   "confidenceScore": 62,
-   "confidenceLabel": "Good",
+   "confidenceScore": 57,
+   "confidenceLabel": "Low",
    "confidenceParts": [
     {
      "label": "Date",
@@ -8434,9 +8434,9 @@
     },
     {
      "label": "Recently re-checked",
-     "points": 15,
+     "points": 10,
      "max": 15,
-     "detail": "independently re-checked 3 days ago"
+     "detail": "independently re-checked 4 days ago"
     }
    ],
    "impact": {
@@ -8619,7 +8619,7 @@
      "label": "Recently re-checked",
      "points": 10,
      "max": 15,
-     "detail": "independently re-checked 4 days ago"
+     "detail": "independently re-checked 5 days ago"
     }
    ],
    "impact": {
@@ -9706,7 +9706,7 @@
   }
  ],
  "checkedAt": "2026-10-28T04:18:40Z",
- "scoredAt": "2026-10-28T04:22:06Z",
+ "scoredAt": "2026-10-28T08:24:58Z",
  "scoring": {
   "version": 1,
   "evidence": {
