@@ -1,100 +1,87 @@
 {
   "date": "2026-10-29",
-  "updated": "2026-10-29T08:12:35Z",
-  "headline": "Bitcoin is hovering around $80,000 as traders bet the Fed will raise rates in December; US growth and inflation data land at 19:30 Bangkok tonight, and Coinbase and Strategy report after the US close.",
+  "updated": "2026-10-29T12:16:05Z",
+  "headline": "Bitcoin slipped back below $80,000 as weak big-tech earnings and a hawkish Fed hit risk assets; US growth and inflation data land at 19:30 Bangkok tonight, and Coinbase and Strategy report after the US close.",
   "market": {
-    "asOf": "Snapshots from articles, because price pages could not be opened this run. BTC $80,159 (down 0.87% in 24 hours) per CryptoTicker at about 06:22 UTC Thu 29 Oct (13:22 Bangkok); Analytics Insight, citing CoinGecko the same morning, had $80,361 (down 1.1%). ETH $2,307 (down 2.4%) per CoinGabbar, citing CoinGecko at 04:15 UTC. SOL was 'roughly $100' per CaptainAltcoin at 06:45 UTC; no exact figure was confirmed. Live prices are at the top of the page.",
+    "asOf": "Snapshots from articles, because price pages could not be opened this run. BTC $79,876 (down 1.12% in 24 hours) and ETH $2,310.70 (down 1.64%) on the price ticker of a Cryptowisser article published Thursday 29 Oct; CoinDesk's same-morning report had BTC near $80,000. SOL and the Fear & Greed Index could not be confirmed this run. Live prices are at the top of the page.",
     "btc": {
-      "price": 80159,
-      "chg24h": -0.87
+      "price": 79876,
+      "chg24h": -1.12
     },
     "eth": {
-      "price": 2307,
-      "chg24h": -2.4
+      "price": 2310.7,
+      "chg24h": -1.64
     },
     "sol": {
       "price": null,
       "chg24h": null
     },
-    "fearGreed": "51 (Neutral) on the alternative.me Crypto Fear & Greed Index on 29 Oct, per CoinGabbar. CaptainAltcoin reported at 06:45 UTC that the index had slipped from 46 to 44, without naming which index."
+    "fearGreed": "Not confirmed this run: the index page could not be opened."
   },
   "stories": [
     {
-      "title": "Bitcoin stuck near $80,000 as traders now expect a December Fed hike",
+      "title": "Bitcoin dips back below $80,000 as big-tech earnings disappoint and the Fed sounds hawkish",
       "mood": "bearish",
-      "summary": "Bitcoin spent Thursday's Asian session trading near $80,000. After the Fed held rates on Wednesday with two officials voting for a hike, traders now see a December rate rise as the most likely outcome, which tends to weigh on riskier assets like crypto. A slide in big tech stocks after hours added to the caution.",
+      "summary": "Bitcoin fell from above $81,700 to about $79,800 during Thursday's Asian session, undoing a two-day recovery. Disappointing results from Samsung and Alphabet hit tech stocks, and that weakness rippled into crypto, per CoinDesk, a day after the Fed's 'hawkish hold' on interest rates.",
       "points": [
-        "The Fed held its rate range at 3.75-4.00% on Wednesday in a 10-2 vote; Lisa Cook and Beth Hammack wanted a quarter-point hike, per the Fed's statement.",
-        "Estimates of the odds of a December hike differ: 86% on CME FedWatch per CoinDesk, about 90% in bond markets per Bloomberg as cited by Analytics Insight, and roughly 80% per Reuters as cited by CaptainAltcoin.",
-        "About $259M of crypto futures positions were forced closed over 24 hours, more of them bets on falling prices ($156M) than on rising prices ($103M), per ChainCatcher.",
-        "Total crypto derivatives open interest fell about 7.35% to $318.6B, per CaptainAltcoin.",
-        "Alphabet shares fell after hours: about 7% per CoinDesk, about 10% per CaptainAltcoin."
+        "The Fed held its rate range at 3.75-4.00% on Wednesday, a decision CoinDesk described as a 'hawkish hold'.",
+        "Alphabet's Q3 operating income was $40.58B against $43.16B expected and its shares were down 10% before the US open; Nasdaq futures were down 1.4%, per CoinDesk.",
+        "Samsung's chip profit came in at 106.5 trillion won against 108.5 trillion expected, and its shares fell more than 5%, per CoinDesk.",
+        "Forced closures of leveraged crypto bets over 24 hours: $356M per CoinDesk, $369.1M per Cryptowisser citing CoinGlass. Most were bets on rising prices ($205M per CoinDesk, $213M per Cryptowisser)."
       ],
       "sources": [
         {
-          "label": "Federal Reserve: 28 Oct statement",
-          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+          "label": "CoinDesk: bitcoin dips below $80,000",
+          "url": "https://www.coindesk.com/markets/2026/10/29/bitcoin-dips-below-usd80-000-as-samsung-led-risk-aversion-in-tech-and-a-hawkish-fed-weigh-on-crypto"
         },
         {
-          "label": "CoinDesk: Fed decision live blog",
-          "url": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
-        },
-        {
-          "label": "Analytics Insight: crypto prices today",
-          "url": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-slips-near-usd-80361-as-fed-hold-keeps-hike-fears-alive"
-        },
-        {
-          "label": "ChainCatcher: 24h liquidations",
-          "url": "https://www.chaincatcher.com/en/article/2299816"
-        },
-        {
-          "label": "CaptainAltcoin: why the market is down",
-          "url": "https://captainaltcoin.com/why-is-the-crypto-market-down-today-october-29/"
+          "label": "Cryptowisser: $370M liquidated",
+          "url": "https://www.cryptowisser.com/news/bitcoin-falls-below-80k-as-370m-in-crypto-bets-liquidated/"
         }
       ]
     },
     {
-      "title": "Coinbase and Strategy report tonight, with forecasts for Coinbase all over the map",
+      "title": "Coinbase and Strategy report tonight; Coinbase adds Ripple's stablecoin and flags a vendor data incident",
       "mood": "volatile",
-      "summary": "Coinbase, the US crypto exchange, reports third-quarter results after the US close on Thursday, and analysts expect a loss but disagree on how big. Strategy, the company that holds 848,517 bitcoin, reports the same evening.",
+      "summary": "Coinbase, the US crypto exchange, and Strategy, the company that holds 848,517 bitcoin, both report third-quarter results after the US close on Thursday. The numbers are a read on how much ordinary people are trading and on corporate bitcoin buying. Coinbase also had two pieces of news before the results.",
       "points": [
-        "Loss-per-share forecasts for Coinbase differ: an average of $0.12 per Yahoo and $0.28 per MarketBeat, both as cited by PrimeXBT. Revenue is expected around $1.20B.",
-        "Analysts' trading volume forecasts differ too: JPMorgan $173B, Barclays $147B, Oppenheimer $141B, per CoinDesk.",
-        "Strategy holds 848,517 BTC bought at an average of $75,446, per Yahoo Finance, so its bitcoin sits only modestly above what it paid.",
-        "Coinbase's live Q&A and Strategy's webinar are both at 5:00pm ET (04:00 Friday Bangkok), per the companies."
+        "Coinbase's live Q&A is at 2:00pm PT (5:00pm ET, 04:00 Friday Bangkok), per Coinbase; Strategy's webinar is at 5:00pm ET, per Strategy.",
+        "Strategy holds 848,517 BTC bought for $64.02B, an average of $75,446 each, per Bitcoin Magazine. Its shareholders approved daily dividends on four preferred shares with 99.3% of votes; the first daily STRC payment is targeted for 2 Nov.",
+        "Coinbase listed Ripple's RLUSD dollar stablecoin on its app, Exchange and Prime; Moody's rated RLUSD A2, an investment grade, per CryptoSlate.",
+        "Coinbase said contact details for a 'small subset' of customers were exposed in a security incident at its analytics vendor Amplitude; it said funds were not affected and gave no count, per CoinMarketCap."
       ],
       "sources": [
         {
-          "label": "PrimeXBT: Coinbase earnings date and estimates",
-          "url": "https://primexbt.com/for-traders/coinbase-earnings-date/"
-        },
-        {
-          "label": "CoinDesk: Wall Street divided on Coinbase",
-          "url": "https://coindesk.com/markets/2026/10/28/coinbase-earnings-wall-street-divided-on-trading-rebound-as-robinhood-crypto-revenue-sinks-55"
-        },
-        {
-          "label": "Yahoo Finance: Strategy holdings and Friday expiry",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-holds-79-200-fed-133225031.html"
-        },
-        {
           "label": "Coinbase: Q3 results date",
-          "url": "https://investingnews.com/coinbase-announces-date-of-third-quarter-2026-financial-results/"
+          "url": "https://investor.coinbase.com/news/news-details/2026/Coinbase-Announces-Date-of-Third-Quarter-2026-Financial-Results/default.aspx"
         },
         {
           "label": "Strategy: Q3 results date",
-          "url": "https://www.strategy.com/press/strategy-announces-earnings-release-date-and-live-video-webinar-for-third-quarter-2026-financial-results_10-08-2026"
+          "url": "https://www.stocktitan.net/news/MSTR/strategy-announces-earnings-release-date-and-live-video-webinar-for-p6ioo1l97xoh.html"
+        },
+        {
+          "label": "Bitcoin Magazine: Strategy daily dividends",
+          "url": "https://bitcoinmagazine.com/news/strategy-shareholders-daily-dividends"
+        },
+        {
+          "label": "CryptoSlate: RLUSD on Coinbase, Moody's rating",
+          "url": "https://cryptoslate.com/ripples-rlusd-stablecoin-gains-coinbase-access-as-moodys-awards-investment-grade-rating/"
+        },
+        {
+          "label": "CoinMarketCap: Coinbase vendor incident",
+          "url": "https://coinmarketcap.com/academy/article/coinbase-amplitude-vendor-incident-customer-data"
         }
       ]
     },
     {
-      "title": "Bitcoin funds take in money for a third day while ether funds keep losing it",
-      "mood": "neutral",
-      "summary": "US spot bitcoin ETFs took in money again on Wednesday, almost all of it into BlackRock's fund, while ether ETFs had a third straight day of withdrawals. A large monthly options expiry lands on Friday, which can make prices jumpy around it.",
+      "title": "Bitcoin funds take in money for a third day, ether funds keep losing it, and a big options expiry lands Friday",
+      "mood": "volatile",
+      "summary": "US spot bitcoin ETFs took in money again on Wednesday, almost all of it into BlackRock's fund, while ether ETFs had a third straight day of withdrawals. About $10.9B of bitcoin options expire on Friday, which can make prices jumpy around it.",
       "points": [
-        "Spot bitcoin ETFs took in a net $137.33M on Wed 28 Oct, the third straight day of inflows; BlackRock's IBIT took $136.01M, per TokenPost.",
-        "Spot ether ETFs lost a net $21.41M the same day, their third straight day of outflows, per SoSoValue data reported by PANews. Analytics Insight, citing WazirX, instead reported inflows of $23.4M.",
-        "CryptoQuant says demand for bitcoin on spot exchanges has been negative every day since 14 Oct, despite the ETF inflows, per Analytics Insight.",
-        "Bitcoin options worth about $10.9B expire on Friday at 08:00 UTC (15:00 Bangkok), with 'max pain' at $78,000, per Yahoo Finance. Max pain is not a price target."
+        "Spot bitcoin ETFs took in a net $137.33M on Wed 28 Oct, about 22% less than the day before; BlackRock's IBIT took $136.01M and only 2 of 12 funds had inflows, per TokenPost citing SoSoValue.",
+        "Spot ether ETFs lost a net $21.41M the same day, their third straight day of outflows; BlackRock's ETHA lost $44.83M, per TokenPost.",
+        "About 135,700 BTC of options, roughly $10.9B, expire on Deribit at 08:00 UTC Friday (15:00 Bangkok), with 'max pain' at $78,000, per Tokenist. Max pain is not a price target.",
+        "About $780M of ether options expire at the same time, per Tokenist."
       ],
       "sources": [
         {
@@ -102,40 +89,31 @@
           "url": "https://www.tokenpost.com/news/investing/43260"
         },
         {
-          "label": "PANews: ether ETF flows",
-          "url": "https://panews.io/articles/01a1861e-9cc3-72a5-9a73-bb606d41cfb7"
+          "label": "TokenPost: ether ETF flows 28 Oct",
+          "url": "https://www.tokenpost.com/news/investing/43262"
         },
         {
-          "label": "Analytics Insight: crypto prices today",
-          "url": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-slips-near-usd-80361-as-fed-hold-keeps-hike-fears-alive"
-        },
-        {
-          "label": "Yahoo Finance: Friday options expiry",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-holds-79-200-fed-133225031.html"
+          "label": "Tokenist: Friday options expiry",
+          "url": "https://tokenist.com/bitcoin-options-expiry-79k-fomc"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Crypto.com brings perpetual futures to US users",
-      "summary": "Eligible US customers can now trade crypto perpetual futures (contracts with no expiry date) around the clock, with leverage capped at 5x, through the CFTC-regulated OG.com, per Blockhead.",
-      "url": "https://www.blockhead.co/2026/10/29/crypto-com-brings-perpetual-futures-to-us-customers-with-a-5x-cap/"
+      "title": "Utah files criminal charges against Kalshi",
+      "summary": "Utah prosecutors filed 14 criminal counts against prediction market Kalshi and its two founders over alleged illegal gambling promotion; Kalshi called it a 'crazy overreach', per crypto.news.",
+      "url": "https://crypto.news/utah-kalshi-14-criminal-charges-illegal-gambling/"
     },
     {
-      "title": "MARA moves 1,000 bitcoin to BitGo",
-      "summary": "Bitcoin miner MARA moved 1,000 BTC, worth about $80.66M, to custodian BitGo overnight, its fourth large transfer this month, per PANews as cited by Analytics Insight.",
-      "url": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-slips-near-usd-80361-as-fed-hold-keeps-hike-fears-alive"
+      "title": "US sanctions a North Korean IT-worker crypto network",
+      "summary": "The Treasury sanctioned 10 people and an entity based in Vladivostok, Russia; two Russian nationals converted more than $5M in crypto for North Korean networks, per Decrypt.",
+      "url": "https://decrypt.co/382132/treasury-sanctions-11-over-north-korean-it-worker-scheme-that-moved-millions-in-crypto"
     },
     {
-      "title": "Tether freezes $27M; Hifi Finance hit by suspected attack",
-      "summary": "Tether froze about $27M of USDT across at least 33 TRON addresses on 28 Oct without giving a reason, and a suspected governance attack on Hifi Finance minted 25M HIFI tokens and drained about $1M, per CoinGabbar.",
-      "url": "https://www.coingabbar.com/en/crypto-news-bitcoin-ethereum-price-today-fed-rate-pce-inflation"
-    },
-    {
-      "title": "Binance applies for a Brazil licence",
-      "summary": "Binance applied to Brazil's central bank for a licence ahead of the 30 Oct deadline and delisted 22 tokens for Brazilian users, per crypto.news.",
-      "url": "https://crypto.news/binance-files-for-brazil-crypto-license-ahead-of-oct-30-deadline/"
+      "title": "Bessent: regulators can fill the gap left by the failed Clarity Act",
+      "summary": "Treasury Secretary Scott Bessent said the SEC and CFTC can set crypto rules without Congress after the Clarity Act failed 49-50 in the Senate on 15 Sept, per investingLive.",
+      "url": "https://investinglive.com/cryptocurrency/bessent-says-sec-and-cftc-can-fill-the-clarity-act-gap-but-agency-rules-come-with-an-expiry-risk/"
     }
   ],
   "calendar": [
@@ -145,7 +123,7 @@
       "event": "US Q3 GDP (first estimate), September PCE inflation and jobless claims",
       "impact": "volatile",
       "key": true,
-      "note": "GDP expected 3.2% (Reuters poll, per IndexBox); Continuum Economics expects 2.8%. Prior 2.2%. Core PCE inflation expected 3.1% a year, prior 3.0%; jobless claims expected 196K, prior 194K, per Kaohoon."
+      "note": "GDP expected 3.2% (Reuters poll), prior 2.2%; the Atlanta Fed's GDPNow model had 3.3%. Core PCE inflation expected 3.1% a year, prior 3.0%, per TradingEconomics. Jobless claims expected 199K per TradingEconomics or 196K per CoinDesk, prior 194K."
     },
     {
       "et": "Thu 29 · 9:15am",
@@ -153,7 +131,7 @@
       "event": "European Central Bank rate decision",
       "impact": "neutral",
       "key": false,
-      "note": "Deposit rate 2.50%, per Admiral Markets. Kaohoon's calendar expects a hold; futures in late September priced about a 60% chance of a hike, per Admiral Markets. Press conference 9:45am ET (20:45 Bangkok)."
+      "note": "Deposit rate 2.50%; a hold is expected, per Newsquawk. Press conference 9:45am ET (20:45 Bangkok)."
     },
     {
       "et": "Thu 29 · after close",
@@ -161,31 +139,31 @@
       "event": "Coinbase, Strategy and Amazon earnings",
       "impact": "volatile",
       "key": true,
-      "note": "Coinbase Q&A, Strategy webinar and Amazon call all at 5:00pm ET (04:00 Friday Bangkok), per the companies. Token unlocks the same day: FF (~$19.2M) and CARDS (~$17.7M), per the unlock data on this page."
+      "note": "Coinbase Q&A, Strategy webinar and Amazon call all at 5:00pm ET (04:00 Friday Bangkok), per the companies. Token unlocks the same day: FF and CARDS, per the unlock data on this page."
     },
     {
-      "et": "Thu 29 · night",
-      "bkk": "Fri 30 · daytime",
+      "et": "Thu 29 · about 11:00pm",
+      "bkk": "Fri 30 · about 10:00",
       "event": "Bank of Japan rate decision",
       "impact": "neutral",
       "key": false,
-      "note": "Rate 1.25%; a hold is expected, per MUFG. Release time not confirmed."
+      "note": "Rate 1.25%; all 16 economists in a CNBC survey expect a hold, per KuCoin. The Bank of Japan has no fixed release time; about 12:00 Tokyo per FinanceCalendar."
     },
     {
       "et": "Fri 30 · 4:00am",
       "bkk": "Fri 30 · 15:00",
-      "event": "Bitcoin options expiry (Deribit)",
+      "event": "Bitcoin and ether options expiry (Deribit)",
       "impact": "volatile",
       "key": true,
-      "note": "At 08:00 UTC. About $10.9B of bitcoin options with 'max pain' at $78,000, per Yahoo Finance; CryptoTicker, writing on 17 Oct, put it at $12.2B with max pain at $79,000. Max pain is not a price target."
+      "note": "At 08:00 UTC. About $10.9B of bitcoin options with 'max pain' at $78,000, and about $780M of ether options, per Tokenist. Max pain is not a price target."
     },
     {
       "et": "Fri 30 · 8:30am",
       "bkk": "Fri 30 · 19:30",
-      "event": "US Employment Cost Index (Q3); Chicago PMI",
+      "event": "US Employment Cost Index (Q3); Chicago PMI at 9:45am ET",
       "impact": "neutral",
       "key": false,
-      "note": "ECI prior +0.9% for the quarter. Chicago PMI also due Friday, prior 58.8."
+      "note": "ECI expected +0.8% for the quarter, prior +0.9%. Chicago PMI expected 56.1, prior 58.8, per TradingEconomics. Fed's Daly speaks at 12:00pm ET and Musalem at 12:30pm ET, per Kiplinger."
     },
     {
       "et": "Fri 30 – Wed 4 Nov",
@@ -193,15 +171,23 @@
       "event": "Token unlocks: KMNO, W, M, SUI, EIGEN, ZETA, BTW, Q, ENA, 2Z, KITE, MMT",
       "impact": "bearish",
       "key": false,
-      "note": "KMNO ~$9.0M and W ~$0.6M (30 Oct); MemeCore (M) ~$61.7M, SUI ~$12.2M, EIGEN ~$7.1M and ZETA ~$1.8M (1 Nov); BTW ~$179.9M, Q ~$11.65M, ENA ~$8.4M and 2Z ~$3.9M (2 Nov); KITE ~$91.5M (3 Nov) and MMT ~$1.65M (4 Nov), per the unlock data on this page."
+      "note": "See the unlock table on this page for sizes, dates and confidence. US clocks go back one hour on Sun 1 Nov: from then, Bangkok is ET+12."
     },
     {
-      "et": "Mon 2 Nov",
-      "bkk": "Mon 2 – Tue 3",
-      "event": "US ISM manufacturing; Fed's Goolsbee speaks; Reserve Bank of Australia decision (Tue 3 Nov Sydney)",
+      "et": "Mon 2 Nov · 10:00am",
+      "bkk": "Mon 2 · 22:00",
+      "event": "US ISM manufacturing; Fed's Goolsbee speaks at 11:15am ET",
       "impact": "neutral",
       "key": false,
-      "note": "ISM prior 54.5. Goolsbee Q&A at 11:15am ET (23:15 Bangkok). RBA: cash rate 4.60%, with markets pricing about a 73% chance of a rise, per RBA Rate Watch."
+      "note": "ISM prior 54.5, per Investing.com."
+    },
+    {
+      "et": "Tue 3 Nov (Sydney)",
+      "bkk": "Tue 3",
+      "event": "Reserve Bank of Australia rate decision",
+      "impact": "neutral",
+      "key": false,
+      "note": "A rise to 4.85% is described as close to fully priced, per investingLive."
     },
     {
       "et": "Tue 3 Nov",
@@ -209,15 +195,15 @@
       "event": "US midterm elections; JOLTS job openings at 10:00am ET (22:00 Bangkok)",
       "impact": "volatile",
       "key": true,
-      "note": "Control of Congress could change the outlook for crypto bills. JOLTS prior 7.08M, per BLS."
+      "note": "JOLTS prior 7.08M, per TradingEconomics."
     },
     {
       "et": "Wed 4 Nov · 8:00am",
       "bkk": "Wed 4 · 20:00",
-      "event": "Circle and Riot earnings calls; ADP jobs; ISM services",
+      "event": "Circle and Riot earnings calls; ADP jobs (8:15am ET); ISM services",
       "impact": "neutral",
       "key": false,
-      "note": "Circle and Riot calls at 8:00am ET, per the companies. ADP jobs (date estimated; prior +90K) and ISM services (prior 54.9) also due the same day."
+      "note": "Call times per the companies. ADP prior 90K; ISM services prior 54.9."
     },
     {
       "et": "Thu 5 Nov · 7:00am",
@@ -225,22 +211,14 @@
       "event": "Bank of England rate decision",
       "impact": "neutral",
       "key": false,
-      "note": "Bank Rate 3.75%; a hold is the base case, per FinanceCalendar."
-    },
-    {
-      "et": "Fri 6 Nov · 8:30am",
-      "bkk": "Fri 6 · 20:30",
-      "event": "US October jobs report",
-      "impact": "volatile",
-      "key": true,
-      "note": "Date per BLS. Prior: payrolls +29K, unemployment 4.2%. The next Fed decision is Wed 9 Dec, after a two-day meeting on 8-9 Dec, per the Fed's calendar."
+      "note": "Bank Rate 3.75%; 54 of 63 economists in a Reuters poll expect a rise to 4.00%, per HOA. Next: US October jobs report Fri 6 Nov 8:30am ET (20:30 Bangkok), per BLS; the next Fed decision is Wed 9 Dec."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-10-29T08:12:35Z",
-    "claimsChecked": 114,
-    "claimsRemoved": 14,
+    "checkedAt": "2026-10-29T12:16:05Z",
+    "claimsChecked": 122,
+    "claimsRemoved": 17,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
