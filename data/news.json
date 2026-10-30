@@ -1,140 +1,126 @@
 {
   "date": "2026-10-30",
-  "updated": "2026-10-30T08:16:03Z",
-  "headline": "Binance's withdrawals are still paused after a hack it puts at about $6.3B, prices have recovered part of the overnight drop, and NYSE owner ICE plans regulated US Hyperliquid futures.",
+  "updated": "2026-10-30T12:18:54Z",
+  "headline": "Binance says it has found more weak points behind its roughly $6.3B hack and expects withdrawals back within about 45 hours, forced selling has reached $1.57B, and ICE's Hyperliquid futures plan keeps HYPE rising.",
   "market": {
-    "asOf": "Read from news reports this run, not live pages: BTC and ETH as reported by Trending Topics at 06:35 UTC Fri 30 Oct (13:35 Bangkok); Fear & Greed as reported by CoinGabbar. CoinGecko and CoinMarketCap could not be opened this run and no SOL reading was found. Check the live prices at the top of the page.",
+    "asOf": "Read from a CoinDesk report published around 11:09 UTC Fri 30 Oct (18:09 Bangkok), not live price pages: CoinGecko, CoinMarketCap and the Fear & Greed index could not be opened this run, and no SOL reading was found. Check the live prices at the top of the page.",
     "btc": {
-      "price": 78518,
-      "chg24h": -1.78
+      "price": 77350,
+      "chg24h": -3.1
     },
     "eth": {
-      "price": 2245.53,
-      "chg24h": -2.79
+      "price": 2220,
+      "chg24h": -4
     },
     "sol": {
       "price": null,
       "chg24h": null
     },
-    "fearGreed": "30, Fear, on the alternative.me Crypto Fear & Greed Index, down from 51 a day earlier, as reported by CoinGabbar and Trending Topics on 30 Oct."
+    "fearGreed": "Not read this run: the index page could not be opened."
   },
   "stories": [
     {
-      "title": "Binance hack: withdrawals still paused, about $3B frozen, reopening expected within 48 hours",
+      "title": "Binance hack: more breach points found, withdrawals expected back within about 45 hours",
       "mood": "bearish",
-      "summary": "Binance says deposits are working normally and it expects to begin restoring withdrawals within 48 hours of co-CEO Yi He's statement early Friday. It puts the hack's impact at about $6.3B, says a compromised DevOps engineer's laptop may have been the way in, and found no evidence that a private key leaked.",
+      "summary": "Binance says its investigation has uncovered additional points of breach. Withdrawals are still suspended, and Binance expects to resume them in the next 45 hours, per Reuters. It puts the hack at about $6.3B and says about $3B has been located so far; it did not say what happened to the remaining $3.3B.",
       "points": [
-        "Estimates differ: Binance about $6.3B, per U.Today; Chainalysis at least $5.912B, per Reuters via Investing.com, while U.Today cites Chainalysis at about $6.4B.",
-        "About $3B has been frozen so far, per U.Today; Reuters says Binance gave no update on the rest, per Investing.com.",
-        "FinanceFeeds dates Yi He's statement to 04:17 UTC Friday, which would put the 48-hour window at about 04:17 UTC Sunday 1 Nov (11:17 Bangkok). No date has been given for a full restore.",
-        "Arkham saw $38.82M of ETH moved to a new wallet, and the attacker still holds about $1.12B in ETH, per PANews.",
-        "TRM Labs says with high confidence that North Korea's 'TraderTraitor' hackers did it, per CoinDesk."
+        "Stablecoin issuers froze about half the stolen assets: Tether nearly $1.57B and Circle more than $800M, per Reuters.",
+        "About $2.5B in ether and tokens was gone less than four minutes after a Binance wallet signed an Ethereum permission (EIP-7702) that handed control to another program, per CoinDesk.",
+        "About 18,270 BTC (about $1.4B) was split into 19 wallets; as of 04:23 UTC none had moved, and no issuer can freeze bitcoin, per CoinDesk.",
+        "TRM Labs and Chainalysis are highly confident North Korea was responsible, per Reuters."
       ],
       "sources": [
         {
-          "label": "U.Today: Binance withdrawal timeline",
-          "url": "https://u.today/binance-reveals-when-it-will-resume-withdrawals-after-historic-hack"
+          "label": "CoinDesk live: additional breach points",
+          "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
         },
         {
-          "label": "FinanceFeeds: 48-hour window",
-          "url": "https://financefeeds.com/binance-withdrawals-resume-48-hours/"
+          "label": "Reuters via Yahoo: Tether and Circle freezes",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/tether-circle-freeze-2-38-222607515.html"
         },
         {
-          "label": "Investing.com (Reuters): analysts react",
-          "url": "https://www.investing.com/news/economy-news/analysts-react-as-binance-freezes-assets-after-63-billion-security-breach-4985760"
+          "label": "CoinDesk: how one permission drained $2.5B",
+          "url": "https://www.coindesk.com/tech/2026/10/30/here-s-how-one-ethereum-permission-let-an-attacker-drain-usd2-5-billion-from-binance"
         },
         {
-          "label": "CoinDesk: North Korea link",
-          "url": "https://www.coindesk.com/policy/2026/10/29/crypto-s-longtime-foe-north-korea-s-lazarus-group-likely-behind-binance-hack-blockchain-sleuths"
-        },
-        {
-          "label": "PANews: attacker wallet moves",
-          "url": "https://panews.io/articles/01a18b46-4d5c-77a7-afe2-2422ca5c0bec"
+          "label": "CoinDesk: bitcoin split into 19 wallets",
+          "url": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-splits-usd1-4-billion-of-bitcoin-into-19-wallets-that-no-one-can-freeze"
         }
       ]
     },
     {
-      "title": "Prices win back part of the overnight drop after more than $1.5B of forced selling",
-      "mood": "volatile",
-      "summary": "Bitcoin briefly fell to about $76,650, a six-week low, after the hack news, then recovered some ground by Friday morning. Leveraged bets being forced shut made the drop sharper, and the market mood index sits in 'Fear'.",
+      "title": "Forced selling hits $1.57B as bitcoin dips to $76,400 overnight",
+      "mood": "bearish",
+      "summary": "Bitcoin fell to an overnight low of $76,400 before winning back some of the drop, and forced closures of trading positions jumped. Options traders are now paying more for protection against further falls.",
       "points": [
-        "On Friday morning bitcoin was about $78,518 (down 1.78% in 24 hours) and ether $2,245.53 (down 2.79%), per Trending Topics at 06:35 UTC.",
-        "More than $1.5B of positions were liquidated in 24 hours, almost all bets on rising prices, per Journal du Coin.",
-        "The alternative.me Fear & Greed index fell to 30 ('Fear') from 51 a day earlier, per CoinGabbar.",
-        "About $10.92B of bitcoin options expired on Deribit at 08:00 UTC today, with 'max pain' at $78,000, per Journal du Coin. No report of the outcome was available when this was written.",
-        "Coinbase shares fell 4.8% and Strategy nearly 6% in extended US trading, per Reuters via Investing.com."
+        "Liquidations reached $1.57B, about four times higher: $522M in bitcoin and $361M in ether, per CoinDesk.",
+        "Bitcoin was about $77,350 (down 3.1% in 24 hours) and ether about $2,220 (down 4%), after an ether low of $2,170, per CoinDesk's Friday report.",
+        "Five of the six most-traded bitcoin options are puts (bets on a fall), led by the $74,000 put expiring 13 Nov, per CoinDesk.",
+        "BNB fell 6.2% while HYPE rose 15%, per CoinDesk.",
+        "Standard Chartered's Geoffrey Kendrick: 'Only after assets are unfrozen and more detail of the hack emerges will we find a new base,' per CoinDesk."
       ],
       "sources": [
         {
-          "label": "Trending Topics: market recap",
-          "url": "https://www.trendingtopics.eu/binance-hack-bitcoin-76650-dollars-crypto-market/"
+          "label": "CoinDesk: liquidations jump to $1.57B",
+          "url": "https://www.coindesk.com/markets/2026/10/30/crypto-liquidations-jump-to-usd1-57-billion-as-binance-hack-sends-bitcoin-ether-lower"
         },
         {
-          "label": "Journal du Coin: liquidations and options (French)",
-          "url": "https://journalducoin.com/bitcoin/bitcoin-sous-77-000-dollars-liquidations-options"
-        },
-        {
-          "label": "CoinGabbar: market roundup",
-          "url": "https://www.coingabbar.com/en/crypto-news-today-bitcoin-ethereum-price-falls-binance-hacked"
-        },
-        {
-          "label": "Investing.com (Reuters): analysts react",
-          "url": "https://www.investing.com/news/economy-news/analysts-react-as-binance-freezes-assets-after-63-billion-security-breach-4985760"
+          "label": "CoinDesk: Standard Chartered sees more losses ahead",
+          "url": "https://www.coindesk.com/markets/2026/10/30/usd6-billion-binance-hack-sends-bitcoin-ether-tumbling-standard-chartered-sees-more-losses-ahead"
         }
       ]
     },
     {
       "title": "NYSE owner ICE plans regulated US futures based on Hyperliquid",
       "mood": "bullish",
-      "summary": "Intercontinental Exchange, which owns the New York Stock Exchange, agreed with TradeXYZ to bring Hyperliquid-based perpetual futures to US markets under regulation, subject to approval. No launch date has been set. Hyperliquid's HYPE token rose while most of the market fell.",
+      "summary": "Intercontinental Exchange, which owns the New York Stock Exchange, signed a definitive agreement to be the exclusive operator of Trade[XYZ]'s regulated markets and is taking a strategic stake. It still needs regulatory approval and has no launch date. Hyperliquid's HYPE token kept rising while most of the market fell.",
       "points": [
-        "ICE will build exchange and clearing systems for perpetual futures on crypto, stocks, indices, commodities and currencies, and is making a strategic investment in TradeXYZ, per The Block.",
-        "ICE CEO Jeffrey Sprecher called these markets 'additive to our futures markets, not a replacement for them,' per The Block.",
-        "HYPE was up 15% to about $91.21 when The Block reported the deal on 29 Oct; its all-time high is $97.96.",
-        "Trending Topics reported HYPE up 18% in 24 hours on Friday morning, against the market trend."
+        "US access would come through futures brokers, with distribution via ICE's joint venture with OKX, per Decrypt.",
+        "ICE CEO Jeffrey Sprecher called these markets 'additive to our futures markets, not a replacement for them,' per Decrypt.",
+        "HYPE rose about 13% to about $91 on Thursday, per Decrypt, and was up 15% in CoinDesk's Friday report."
       ],
       "sources": [
         {
-          "label": "The Block: ICE and TradeXYZ",
-          "url": "https://www.theblock.co/news/business/2026-10-29-ice-tradexyz-hyperliquid-perpetual-futures-us-432132"
+          "label": "Decrypt via Yahoo: HYPE jumps on ICE deal",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/hyperliquids-hype-jumps-13-nyse-155948808.html"
         },
         {
-          "label": "Trending Topics: market recap",
-          "url": "https://www.trendingtopics.eu/binance-hack-bitcoin-76650-dollars-crypto-market/"
+          "label": "CoinDesk: liquidations jump to $1.57B",
+          "url": "https://www.coindesk.com/markets/2026/10/30/crypto-liquidations-jump-to-usd1-57-billion-as-binance-hack-sends-bitcoin-ether-lower"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Ether funds lose money for a fourth day; bitcoin funds take in a little",
-      "summary": "On 29 Oct US spot bitcoin ETFs took in $17.07M while ether ETFs lost $105M, per KuCoin News citing Wu Blockchain.",
-      "url": "https://www.kucoin.com/news/flash/bitcoin-etfs-see-17m-inflows-ethereum-etfs-lose-105m-on-october-29"
+      "title": "Binance went almost an hour without a word as the drain began",
+      "summary": "The drain started at 20:24 UTC Thursday; CZ posted at 21:15 UTC and Binance's first statement came at 21:24 UTC. About $628M of positions were force-closed within one hour, per CoinGlass via CryptoTicker.",
+      "url": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations/"
+    },
+    {
+      "title": "India's CoinDCX limits futures trading after the Binance incident",
+      "summary": "Futures are reduce-only, so no new or bigger positions, citing a global liquidity provider a spokesperson confirmed was Binance. Deposits and withdrawals are unaffected.",
+      "url": "https://www.coindesk.com/markets/2026/10/30/coindcx-halts-new-crypto-futures-bets-as-binance-incident-disrupts-liquidity"
+    },
+    {
+      "title": "Strategy posts a $20.9B profit on bitcoin's rise; its CFO is leaving",
+      "summary": "Strategy bought 7,218 BTC and sold 5,552 BTC in Q3 to fund dividends and buybacks. CFO Andrew Kang leaves on 5 Nov, citing personal reasons.",
+      "url": "https://unchainedcrypto.com/strategy-sold-5552-bitcoin-and-bought-7218-in-q3-as-a-20-9-billion-markup-drove-profit/"
+    },
+    {
+      "title": "Bitcoin ETF inflows slow to $17.07M",
+      "summary": "US spot bitcoin ETFs took in $17.07M on 29 Oct, a fourth straight day of inflows but about 88% less than the day before. IBIT took in $12.8M while Grayscale's BTC fund lost $15.35M.",
+      "url": "https://tokenpost.com/news/investing/44518"
+    },
+    {
+      "title": "Odds of a December Fed hike fall as stocks slide",
+      "summary": "Odds of a December rate hike fell to 70% from nearly 90%; Nasdaq 100 futures were down 2.7% and Intel fell 25%, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
     },
     {
       "title": "Fed held rates at 3.75%-4.00% this week, with two votes for a hike",
       "summary": "The vote on 28 Oct was 10-2; Governor Lisa Cook and Cleveland Fed President Beth Hammack wanted a quarter-point hike.",
       "url": "https://admiralmarkets.com/analytics/traders-blog/fomc-october-2026-fed-holds-rates"
-    },
-    {
-      "title": "Other big exchanges say they were not hit",
-      "summary": "Bybit's Ben Zhou and Gate's Han Lin said their platforms were not affected, and OKX's CEO proposed shared security standards across exchanges, per CoinGabbar.",
-      "url": "https://www.coingabbar.com/en/crypto-news-today-bitcoin-ethereum-price-falls-binance-hacked"
-    },
-    {
-      "title": "Kraken had a one-hour outage",
-      "summary": "Kraken users saw connection and order problems from about 02:42 to 03:42 UTC Friday, reportedly since fixed, per CoinGabbar.",
-      "url": "https://www.coingabbar.com/en/crypto-news-today-bitcoin-ethereum-price-falls-binance-hacked"
-    },
-    {
-      "title": "Aave freezes 292 markets to stop the attacker borrowing",
-      "summary": "Aave and its partners froze 292 reserves across V3 and V4; the attacker's $44.6M WETH loan is still fully backed by collateral, per LlamaRisk via CoinGabbar.",
-      "url": "https://www.coingabbar.com/en/crypto-news-today-bitcoin-ethereum-price-falls-binance-hacked"
-    },
-    {
-      "title": "Standard Chartered: no new floor until funds are unfrozen",
-      "summary": "Geoffrey Kendrick said only after assets are unfrozen and more detail emerges 'will we find a new base,' per Reuters via Investing.com.",
-      "url": "https://www.investing.com/news/economy-news/analysts-react-as-binance-freezes-assets-after-63-billion-security-breach-4985760"
     }
   ],
   "calendar": [
@@ -144,15 +130,15 @@
       "event": "US Employment Cost Index (Q3); Chicago PMI at 9:45am ET (20:45 Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "ECI consensus +0.8%, prior +0.9%; Chicago PMI consensus 56.1, prior 58.8, per The Rio Times."
+      "note": "ECI consensus +0.8%, prior +0.9%, per Trading Economics; release time per BLS. Chicago PMI prior 58.8, per Trading Economics."
     },
     {
-      "et": "Fri 30 · 12:00pm",
-      "bkk": "Fri 30 · 23:00",
-      "event": "Fed speakers: Daly (12:00pm ET), Musalem (12:30pm ET, 23:30 Bangkok)",
+      "et": "Fri 30 · 12:30pm",
+      "bkk": "Fri 30 · 23:30",
+      "event": "Fed's Musalem speaks",
       "impact": "neutral",
       "key": false,
-      "note": "Times per Market Math."
+      "note": "Time per Trading Economics."
     },
     {
       "et": "Fri 30 – Fri 6 Nov",
@@ -163,28 +149,28 @@
       "note": "See the unlock table on this page for sizes, dates and confidence. US clocks go back one hour on Sun 1 Nov: from then, Bangkok is ET+12."
     },
     {
-      "et": "Sun 1 Nov · about 12:17am",
-      "bkk": "Sun 1 · about 11:17",
-      "event": "End of Binance's 48-hour window to start reopening withdrawals",
+      "et": "Sun 1 Nov",
+      "bkk": "Sun 1 Nov",
+      "event": "Binance's expected window to resume withdrawals",
       "impact": "volatile",
       "key": true,
-      "note": "Based on Yi He's statement at 04:17 UTC Fri 30 Oct, per FinanceFeeds. No date has been given for a full restore."
+      "note": "Reuters reported at 10:15 UTC Fri that Binance expects to resume withdrawals in the next 45 hours."
     },
     {
       "et": "Mon 2 Nov · 10:00am",
       "bkk": "Mon 2 · 22:00",
-      "event": "US ISM manufacturing index; Fed's Goolsbee speaks at 11:15am ET (23:15 Bangkok)",
+      "event": "US ISM manufacturing index; Fed's Goolsbee at 11:15am ET (23:15 Bangkok); Apple earnings after the close",
       "impact": "neutral",
       "key": false,
-      "note": "ISM consensus 54.7, prior 54.5, per Trading Economics; release time per ISM. Goolsbee per the Chicago Fed."
+      "note": "Prior 54.5; Trading Economics forecasts 54.7 (a model forecast, not a survey consensus). Release time per ISM."
     },
     {
-      "et": "Mon 2 Nov · 10:30pm",
-      "bkk": "Tue 3 · 10:30",
+      "et": "Tue 3 Nov (Sydney time)",
+      "bkk": "Tue 3",
       "event": "Reserve Bank of Australia rate decision",
       "impact": "neutral",
       "key": false,
-      "note": "Cash rate 4.60%; futures price about a 79% chance of a hike, per RBA Watch."
+      "note": "Cash rate 4.60%. CommBank says markets price about 90% for a hike; RBA RateWatch showed about 70% on 29 Oct."
     },
     {
       "et": "Tue 3 Nov",
@@ -192,23 +178,23 @@
       "event": "US midterm elections; JOLTS job openings at 10:00am ET (22:00 Bangkok); Block earnings after the close",
       "impact": "volatile",
       "key": true,
-      "note": "First polls close 6pm ET (06:00 Wednesday Bangkok), per The Rio Times. JOLTS consensus 7.06M, prior 7.079M, per Trading Economics. Ethereum's Devcon 8 runs 3-6 Nov in Mumbai."
+      "note": "Ethereum's Devcon 8 runs 3-6 Nov in Mumbai."
     },
     {
       "et": "Wed 4 Nov · 8:00am",
       "bkk": "Wed 4 · 20:00",
-      "event": "Circle and Riot earnings calls; ADP jobs (8:15am ET) and ISM services (10:00am ET)",
+      "event": "Circle and Riot earnings calls; ADP jobs; ISM services (10:00am ET)",
       "impact": "neutral",
       "key": false,
-      "note": "ADP consensus 80K, prior 90K; ISM services consensus 54.5, prior 54.9, per Trading Economics. Call times per the companies."
+      "note": "ADP prior 90K; Continuum Economics forecasts 65K. ISM services prior 54.9. Call times per the companies."
     },
     {
       "et": "Thu 5 Nov · 7:00am",
       "bkk": "Thu 5 · 19:00",
-      "event": "Bank of England rate decision",
+      "event": "Bank of England rate decision; Fed's Barkin at 9:10am ET (21:10 Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Bank Rate 3.75%; a hike to 4.00% was about 95% priced as of 19 Oct, per Spike Today."
+      "note": "Bank Rate 3.75%. LiteFinance says more and more analysts expect a hike."
     },
     {
       "et": "Fri 6 Nov · 8:30am",
@@ -216,14 +202,22 @@
       "event": "US October jobs report",
       "impact": "volatile",
       "key": true,
-      "note": "Consensus +40K jobs and 4.2% unemployment; prior +29K and 4.2%, per Trading Economics. The next Fed decision is Wed 9 Dec at 2:00pm ET (02:00 Thu 10 Dec Bangkok), per Yahoo Finance."
+      "note": "Prior +29K jobs and 4.2% unemployment, per BLS. Trading Economics forecasts +40K; Continuum +50K. No published survey consensus found."
+    },
+    {
+      "et": "Wed 9 Dec · 2:00pm",
+      "bkk": "Thu 10 Dec · 02:00",
+      "event": "Next Fed rate decision",
+      "impact": "volatile",
+      "key": false,
+      "note": "Meeting runs 8-9 Dec with a press conference at 2:30pm ET, per the Federal Reserve."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-10-30T08:16:03Z",
-    "claimsChecked": 78,
-    "claimsRemoved": 4,
+    "checkedAt": "2026-10-30T12:18:54Z",
+    "claimsChecked": 139,
+    "claimsRemoved": 15,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
