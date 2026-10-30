@@ -1,138 +1,149 @@
 {
   "date": "2026-10-30",
-  "updated": "2026-10-29T20:27:41Z",
-  "headline": "Coinbase and Strategy report third-quarter results after the US close tonight, and the prediction market Polymarket paused trading after an exploit that took more than $2.5M.",
+  "updated": "2026-10-30T00:10:05Z",
+  "headline": "Binance froze withdrawals after confirming a security breach it said affected over $5.7B, and bitcoin slipped below $80,000 as Coinbase and Strategy reported results.",
   "market": {
-    "asOf": "Read about 19:57-19:59 UTC Thu 29 Oct (02:57 Friday Bangkok). ETH and SOL from CoinGecko; CoinGecko's bitcoin page could not be opened this run, so BTC is from the CoinMarketCap homepage, which showed a 1.28% 24-hour move without saying up or down. CoinMarketCap had ETH $2,357.40 (+0.70%) and SOL $100.58 (-0.65%). Live prices are at the top of the page.",
+    "asOf": "Read about 22:15 UTC Thu 29 Oct (05:15 Friday Bangkok) from CryptoTicker's Binance timeline, because CoinGecko's and CoinMarketCap's coin pages could not be opened this run. At about 23:57 UTC the CoinGecko homepage showed BTC $77,866, ETH $2,247 and SOL $95.48, while the CoinMarketCap homepage showed BTC $79,788, ETH $2,305 and SOL $99.63; the two disagree, so check the live prices at the top of the page.",
     "btc": {
-      "price": 79787.97,
-      "chg24h": null
+      "price": 78783,
+      "chg24h": -3.0
     },
     "eth": {
-      "price": 2359.66,
-      "chg24h": 1.2
+      "price": 2264.86,
+      "chg24h": null
     },
     "sol": {
-      "price": 100.32,
-      "chg24h": -1.7
+      "price": 97.31,
+      "chg24h": null
     },
-    "fearGreed": "43, Neutral, on CoinMarketCap's CMC Fear and Greed Index (read about 19:59 UTC). The alternative.me index could not be opened this run."
+    "fearGreed": "43, Neutral, on CoinMarketCap's CMC Fear and Greed Index (homepage widget, read about 23:57 UTC). The alternative.me index could not be opened this run."
   },
   "stories": [
     {
-      "title": "Coinbase and Strategy report third-quarter results after the US close tonight",
-      "mood": "volatile",
-      "summary": "Coinbase and Strategy report after the 4pm ET close on Thursday (03:00 Friday Bangkok). Analysts expect Coinbase to post a loss.",
-      "points": [
-        "Coinbase's live Q&A is at 2:00pm PT (5:00pm ET, 04:00 Friday Bangkok); Strategy's webinar is at 5:00pm ET, per the companies.",
-        "Analysts expect Coinbase to lose about $0.22 a share on about $1.20B of revenue, per 24/7 Wall St; a year ago it earned $1.44 a share on $1.87B. Coinbase has missed revenue estimates three quarters in a row.",
-        "Wall Street is split on trading: forecasts for Coinbase's quarterly trading volume range from $141B (Oppenheimer) to $173B (JPMorgan), per CoinDesk. Robinhood's crypto revenue fell 55% from a year earlier.",
-        "Strategy already reported a $20.91B unaudited gain on its bitcoin for the quarter in a filing, and held 848,517 BTC on 18 Oct, per PrimeXBT."
-      ],
-      "sources": [
-        {
-          "label": "Coinbase: Q3 results date",
-          "url": "https://investor.coinbase.com/news/news-details/2026/Coinbase-Announces-Date-of-Third-Quarter-2026-Financial-Results/default.aspx"
-        },
-        {
-          "label": "Strategy: Q3 results date",
-          "url": "https://www.strategy.com/press/strategy-announces-earnings-release-date-and-live-video-webinar-for-third-quarter-2026-financial-results_10-08-2026"
-        },
-        {
-          "label": "24/7 Wall St: Coinbase preview",
-          "url": "https://247wallst.com/investing/2026/10/25/coinbase-q3-earnings-preview-can-cryptos-rebound-save-coin-from-a-fourth-consecutive-miss-oct-29/"
-        },
-        {
-          "label": "CoinDesk: Wall Street divided on Coinbase",
-          "url": "https://www.coindesk.com/markets/2026/10/28/coinbase-earnings-wall-street-divided-on-trading-rebound-as-robinhood-crypto-revenue-sinks-55"
-        },
-        {
-          "label": "PrimeXBT: Strategy earnings date and holdings",
-          "url": "https://primexbt.com/for-traders/mstr-earnings-date/"
-        }
-      ]
-    },
-    {
-      "title": "Polymarket pauses trading after a wallet-drain exploit of about $2.65M",
+      "title": "Binance confirms a security breach and freezes withdrawals",
       "mood": "bearish",
-      "summary": "The prediction market Polymarket switched its exchange to cancel-only mode after an exploit. It blamed a compromised third-party provider and said it had found and fixed the cause.",
+      "summary": "Binance, the world's largest crypto exchange, froze withdrawals after a security incident on Thursday evening. Binance said the hack affected over $5.7B and that user funds remain safe, per CoinDesk. The story is still developing and the loss figures are still moving.",
       "points": [
-        "A suspected attacker wallet held about $2.65M in POL after swapping USDC.e, per Arkham data cited by The Block; the funds were then moved on.",
-        "Polymarket referred the case to law enforcement. It has not named the provider or said whether users will be repaid, per The Block.",
-        "Cancel-only mode means users can cancel open orders but cannot place new ones.",
-        "Separately, Utah has filed 14 criminal counts against rival Kalshi and its co-founders over online gambling; the CFTC has sued Utah, saying only federal regulators oversee these contracts, per CoinDesk."
+        "Outside estimates of the loss differ: about $3.55B to one wallet (analyst Spreek), up to $5.8B (Coinbase's Conor Grogan), and about $3.3B being investigated by Blockaid, per The Block.",
+        "Stablecoin issuers froze linked funds: Tether more than $1.57B of USDT and Circle more than $800M of USDC, per CoinDesk. A post by CZ quoted in the same report gave lower figures, about $971M and $823M.",
+        "Binance said it suspended withdrawals on multiple networks as a precaution, per TechCrunch. Former CEO CZ said he expects user funds to be fully covered.",
+        "Aave froze its lending markets so the attacker cannot borrow against stolen tokens, per CoinDesk. Nobody has said who is behind the attack.",
+        "If confirmed in the billions, it would be bigger than Bybit's roughly $1.4B hack in 2025, the previous record, per TechCrunch."
       ],
       "sources": [
         {
-          "label": "The Block: Polymarket exploit",
-          "url": "https://www.theblock.co/news/defi/2026-10-29-polymarket-exploit-2-5-million-cancel-only-mode-432158"
+          "label": "CoinDesk: live updates",
+          "url": "https://www.coindesk.com/business/2026/10/29/live-updates-bitcoin-clings-to-usd80-000-as-strategy-s-cushion-thins-before-earnings"
         },
         {
-          "label": "CoinDesk: Utah charges Kalshi",
-          "url": "https://www.coindesk.com/policy/2026/10/29/utah-charges-predictions-platform-kalshi-with-illegal-gambling"
+          "label": "TechCrunch: Binance pauses withdrawals",
+          "url": "https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/"
+        },
+        {
+          "label": "The Block: Binance investigating hack",
+          "url": "https://www.theblock.co/news/markets/2026-10-29-binance-investigating-hack-suspicious-outflows-5-billion-432171"
         }
       ]
     },
     {
-      "title": "NYSE owner ICE moves to bring Hyperliquid-style perpetual futures to the US",
-      "mood": "bullish",
-      "summary": "Intercontinental Exchange, which owns the New York Stock Exchange, will partner with and invest in TradeXYZ to offer perpetual futures built on Hyperliquid's technology, per The Block. The plan still needs regulatory approval and has no launch date.",
+      "title": "Coinbase and Strategy report third-quarter results; both stocks dip after hours",
+      "mood": "neutral",
+      "summary": "Coinbase posted a profit helped by gains on its own crypto, while trading revenue kept shrinking. Strategy reported a $19.53B profit driven by its bitcoin.",
       "points": [
-        "The markets would cover crypto, stocks, stock indices, commodities and currencies, with ICE running the regulated exchange and clearing, per The Block.",
-        "Hyperliquid's HYPE token rose about 15% to around $91.21 on the news; its all-time high is $97.96, per The Block (at 10:43am ET Thursday).",
-        "CFTC staff opened a US path for perpetual futures with an advisory and no-action relief in May, per The Block."
+        "Coinbase: revenue $1.22B and $2.51 a share, per CoinDesk, helped by a $715M gain on its crypto holdings. Net income was $718.7M and adjusted net income $77.7M, per the company.",
+        "Coinbase transaction revenue was $590M (down 44% from a year ago) and subscription and services revenue $570M, per Investing.com. Prediction markets passed $200M in annualized revenue, per the company.",
+        "Coinbase stock fell about 2.2% after hours to $157.10, per Investing.com.",
+        "Strategy held 848,517 BTC on 25 Oct at an average cost of about $75,446 each, per the company. Its stock fell about 3.5% after hours, per The Block.",
+        "Strategy's CFO Andrew Kang steps down on 5 Nov; Reza Virasteh becomes CFO on 1 Jan 2027, per the company."
       ],
       "sources": [
         {
-          "label": "The Block: ICE and TradeXYZ",
-          "url": "https://www.theblock.co/news/business/2026-10-29-ice-tradexyz-hyperliquid-perpetual-futures-us-432132"
+          "label": "Coinbase: Q3 results",
+          "url": "https://investor.coinbase.com/news/news-details/2026/Coinbase-Q3-2026-Earnings-Show-All-time-high-Coinbase-One-Subscribers-and-Prediction-Markets-Surpassing-200-Million-in-Annualized-Revenue/default.aspx"
+        },
+        {
+          "label": "Investing.com: Coinbase Q3",
+          "url": "https://ca.investing.com/news/stock-market-news/coinbase-q3-2026-slides-diversification-drives-profit-beat-amid-flat-revenue-93CH-4915749"
+        },
+        {
+          "label": "Strategy: Q3 results",
+          "url": "https://www.strategy.com/press/strategy-announces-third-quarter-2026-financial-results_10-29-2026"
+        },
+        {
+          "label": "The Block: Strategy Q3",
+          "url": "https://www.theblock.co/news/business/2026-10-29-strategy-q3-net-income-preferred-daily-dividends-432141"
+        },
+        {
+          "label": "CoinDesk: live updates",
+          "url": "https://www.coindesk.com/business/2026/10/29/live-updates-bitcoin-clings-to-usd80-000-as-strategy-s-cushion-thins-before-earnings"
+        }
+      ]
+    },
+    {
+      "title": "Bitcoin falls below $80,000 and leveraged bets are wiped out",
+      "mood": "volatile",
+      "summary": "Bitcoin slipped below $80,000 on Thursday as a tech-stock selloff and a hawkish Fed weighed on markets, then fell further on the Binance news. Forced selling by borrowed bets sped up the drop.",
+      "points": [
+        "Earlier Thursday, bitcoin fell from above $81,700 to about $79,800 after Alphabet and Samsung's chip unit disappointed, per CoinDesk. The Fed held rates at 3.75%-4% on Wednesday.",
+        "After the Binance news, bitcoin hit $78,763 at 21:00 UTC and BNB fell about 6.8%, per CryptoTicker.",
+        "About $628M of positions were liquidated in one hour, about $607M of them bets on prices rising, per CryptoTicker.",
+        "'Liquidated' means traders who borrowed to bet were forced out of their positions, which adds selling pressure."
+      ],
+      "sources": [
+        {
+          "label": "CoinDesk: bitcoin dips below $80,000",
+          "url": "https://www.coindesk.com/markets/2026/10/29/bitcoin-dips-below-usd80-000-as-samsung-led-risk-aversion-in-tech-and-a-hawkish-fed-weigh-on-crypto"
+        },
+        {
+          "label": "CryptoTicker: Binance hack timeline",
+          "url": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations/"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Bitcoin briefly back above $81,000 after US data",
-      "summary": "US GDP grew at a 3.4% yearly pace in July-September (3.2% expected) and September PCE inflation was 3.6% a year, as expected, with core at 3.1%; bitcoin rose to $81,547 from a $79,607 low, per Cointelegraph.",
-      "url": "https://cointelegraph.com/markets/bitcoin-reaction-to-pce-data"
+      "title": "Polymarket resumes trading and promises full repayment",
+      "summary": "Polymarket paused trading for about an hour after a security issue involving a third-party provider, then resumed, and said it is fully reimbursing affected traders, per AP.",
+      "url": "https://www.wral.com/news/ap/cd33b-polymarket-paused-international-trading-after-a-security-issue-involving-a-third-party-provider/"
     },
     {
-      "title": "Bitcoin funds take in money for a third day",
-      "summary": "US spot bitcoin ETFs took in $137.3M on Wed 28 Oct, turning October positive at +$111.2M, per TFTC. Thursday's figures were not out yet.",
-      "url": "https://www.tftc.io/bitcoin-etf-flows/october-2026"
+      "title": "NYSE owner ICE invests in TradeXYZ to bring Hyperliquid-style perpetual futures to the US",
+      "summary": "ICE will run a new US market and clearing structure built on Hyperliquid, covering crypto, stocks, commodities and currencies. It needs regulatory approval and has no launch date.",
+      "url": "https://ir.theice.com/press/news-details/2026/Intercontinental-Exchange-and-TradeXYZ-to-Bring-Hyperliquid-Based-Perpetual-Markets-Onshore/default.aspx"
     },
     {
-      "title": "Ether funds lose money for a third day",
-      "summary": "US spot ether ETFs saw about $170M of outflows over 26-28 Oct, including $21.4M on Wednesday, per crypto.news.",
-      "url": "https://crypto.news/ethereum-price-falls-etf-outflows-october-29-2026/"
+      "title": "Franklin Templeton launches ETFs that turn stock dividends into bitcoin",
+      "summary": "Franklin Templeton has launched FBEQ (0.09% fee) and FIBT (0.19% fee), which hold about 5% in bitcoin, per 24/7 Wall St.",
+      "url": "https://247wallst.com/investing/cryptocurrency/2026/10/29/franklin-templeton-just-launched-etfs-that-turn-stock-dividends-into-bitcoin-is-that-a-smarter-way-to-own-btc/"
     },
     {
-      "title": "US sanctions North Korean IT-worker crypto network",
-      "summary": "Treasury sanctioned 10 people and one entity; one Russian national allegedly converted $3.5M in crypto since 2024, per Decrypt.",
-      "url": "https://decrypt.co/382132/treasury-sanctions-11-over-north-korean-it-worker-scheme-that-moved-millions-in-crypto"
+      "title": "Bitcoin funds took in money on Wednesday; ether funds lost money",
+      "summary": "US spot bitcoin ETFs took in $137.3M on 28 Oct, while ether ETFs saw $21.4M of outflows, per KuCoin News. Thursday's figures were not out yet.",
+      "url": "https://www.kucoin.com/news/flash/u-s-bitcoin-spot-etfs-see-137-3m-net-inflow-ethereum-etfs-record-21-4m-net-outflow-on-october-28"
     },
     {
-      "title": "38 of 62 companies now object to OKX-ICE tokenized stock trading",
-      "summary": "Walmart, Eli Lilly, Carnival, Cigna and Arcos Dorados are the newest objectors to the planned 24/7 tokenized US stock venue, per CoinDesk.",
-      "url": "https://www.coindesk.com/business/2026/10/29/walmart-eli-lilly-join-growing-pushback-against-okx-ice-tokenized-stock-plans"
+      "title": "US jobless claims stay near multi-decade lows",
+      "summary": "Weekly jobless claims were 194K against 199K expected, per Reuters via Investing.com.",
+      "url": "https://www.investing.com/news/economic-indicators/us-weekly-jobless-claims-hover-near-57year-lows-4983709"
     }
   ],
   "calendar": [
     {
-      "et": "Thu 29 · after close",
-      "bkk": "Fri 30 · 04:00 (calls)",
-      "event": "Coinbase and Strategy Q3 earnings",
-      "impact": "volatile",
-      "key": true,
-      "note": "Coinbase Q&A and Strategy webinar at 5:00pm ET (04:00 Friday Bangkok), per the companies. Coinbase expected loss about $0.22 a share on $1.20B revenue, per 24/7 Wall St."
-    },
-    {
-      "et": "Thu 29 · ~11:00pm",
-      "bkk": "Fri 30 · ~10:00",
+      "et": "Thu 29 · after 10:30pm",
+      "bkk": "Fri 30 · after 09:30",
       "event": "Bank of Japan rate decision",
       "impact": "neutral",
       "key": false,
-      "note": "Rate 1.25%; a hold is expected, per MUFG. Release is around midday Tokyo, per FinanceCalendar; press conference 06:30 GMT (13:30 Bangkok), per ActionForex."
+      "note": "Rate 1.25%; a hold is about 98% priced, per Newsquawk. Release any time after 02:30 GMT."
+    },
+    {
+      "et": "Fri 30 · 4:00am",
+      "bkk": "Fri 30 · 15:00",
+      "event": "Monthly bitcoin and ether options expiry on Deribit",
+      "impact": "volatile",
+      "key": true,
+      "note": "About $10.92B of bitcoin options (max pain $78,000) and about $776M of ether options, per Deribit data reported by KuCoin News."
     },
     {
       "et": "Fri 30 · 8:30am",
@@ -140,7 +151,15 @@
       "event": "US Employment Cost Index (Q3); Chicago PMI at 9:45am ET (20:45 Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "ECI expected +0.8% for the quarter, prior +0.9%. Chicago PMI expected 55.9, prior 58.8, per ActionForex."
+      "note": "ECI prior +0.9%; Continuum Economics forecasts +0.8%. Chicago PMI forecast 54.8, prior 58.8, per Investing.com."
+    },
+    {
+      "et": "Fri 30 · 12:00pm",
+      "bkk": "Fri 30 · 23:00",
+      "event": "Fed speakers: Daly (12:00pm ET), Musalem (12:30pm ET, 23:30 Bangkok)",
+      "impact": "neutral",
+      "key": false,
+      "note": "Per Kiplinger's economic calendar."
     },
     {
       "et": "Fri 30 – Fri 6 Nov",
@@ -151,12 +170,12 @@
       "note": "See the unlock table on this page for sizes, dates and confidence. US clocks go back one hour on Sun 1 Nov: from then, Bangkok is ET+12."
     },
     {
-      "et": "Mon 2 Nov",
-      "bkk": "Mon 2 Nov",
+      "et": "Mon 2 Nov · 10:00am",
+      "bkk": "Mon 2 · 22:00",
       "event": "US ISM manufacturing",
       "impact": "neutral",
       "key": false,
-      "note": "Prior 54.5, per Textile World citing ISM."
+      "note": "Prior 54.5, per Investing.com."
     },
     {
       "et": "Mon 2 Nov · 10:30pm",
@@ -164,23 +183,23 @@
       "event": "Reserve Bank of Australia rate decision",
       "impact": "neutral",
       "key": false,
-      "note": "Cash rate 4.60%; RBA Rate Watch's model put the chance of a hike at about 73% on 28 Oct."
+      "note": "Cash rate 4.60%; futures priced about an 81% chance of a hike on 29 Oct, per RBA Watch."
     },
     {
       "et": "Tue 3 Nov",
       "bkk": "Tue 3 – Wed 4",
-      "event": "US midterm elections; JOLTS job openings at 10:00am ET (22:00 Bangkok)",
+      "event": "US midterm elections; JOLTS job openings at 10:00am ET (22:00 Bangkok); Block earnings after the close",
       "impact": "volatile",
       "key": true,
-      "note": "Election day is Tue 3 Nov. JOLTS prior 7.08M, per BLS."
+      "note": "First polls close 6pm ET (06:00 Wednesday Bangkok). JOLTS prior 7.079M, per BLS."
     },
     {
       "et": "Wed 4 Nov · 8:00am",
       "bkk": "Wed 4 · 20:00",
-      "event": "Circle and Riot earnings calls; ADP jobs (8:15am ET); ISM services",
+      "event": "Circle and Riot earnings calls",
       "impact": "neutral",
       "key": false,
-      "note": "Call times per the companies. ADP prior +90K; ISM services prior 54.9."
+      "note": "Call times per the companies."
     },
     {
       "et": "Thu 5 Nov · 7:00am",
@@ -188,7 +207,7 @@
       "event": "Bank of England rate decision",
       "impact": "neutral",
       "key": false,
-      "note": "Bank Rate 3.75%, per FinanceCalendar."
+      "note": "MUFG expects a 25bp hike, per investingLive."
     },
     {
       "et": "Fri 6 Nov · 8:30am",
@@ -201,9 +220,9 @@
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-10-29T20:27:41Z",
-    "claimsChecked": 118,
-    "claimsRemoved": 28,
+    "checkedAt": "2026-10-30T00:10:05Z",
+    "claimsChecked": 105,
+    "claimsRemoved": 6,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
