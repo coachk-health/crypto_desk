@@ -611,7 +611,7 @@
   {
    "token": "APR",
    "name": "Capricorn (formerly aPriori)",
-   "coingeckoId": null,
+   "coingeckoId": "apriori",
    "events": [
     {
      "date": "2026-10-23",
@@ -4959,6 +4959,68 @@
       }
      ],
      "gaps": "timeUTC 10:29 is for the insider/foundation tranches; the ecosystem part landed at 01:23 UTC. DefiLlama shows a same-size insider tranche on 30 Aug 2026 that the other trackers do not show (see the 29 Aug event). The ecosystem bucket here is Ecosystem 75M + Foundation 60M."
+    },
+    {
+     "date": "2026-10-29",
+     "timeUTC": "11:52",
+     "amountTokens": 203055556,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0.2736,
+      "investors": 0.0616,
+      "community": 0,
+      "ecosystem": 0.6648,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CryptoTicker: 203,055,556 FF on 29 Oct; Ecosystem 75M at 11:52 UTC; Foundation 60M, Core team 55,555,556, Investors 12.5M at 20:58 UTC; 6.07% of circulating; team/investor cliff ended 29 Sep 2026",
+       "url": "https://cryptoticker.io/en/falcon-ff-unlock-monthly-series/",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients",
+        "time"
+       ]
+      },
+      {
+       "label": "CoinGecko FF page, Tokenomist-powered widget (read 29 Oct 2026): 29 Oct, 208.86M FF: Ecosystems 77.14M, Foundation 61.71M, Team 57.14M, Investors 12.86M. Tokenomist's own page also gives 29 Oct 2026 (same feed, counted once)",
+       "url": "https://www.coingecko.com/coins/falcon-finance-ff",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "tokenomics.com FF unlocks (read 29 Oct 2026): 29 Oct 2026, 211,388,889 FF; Community 39.4% / Foundation 28.4% / Insiders 26.3% / Investors 5.9%; insiders and private investors 12m cliff + 36m linear; TGE 29 Sep 2025",
+       "url": "https://app.tokenomics.com/tokenomics/falcon-finance/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Falcon Finance tokenomics press release (Chainwire, 19 Sep 2025): 10B supply; Investors 4.5% and Core Team & Early Contributors 20%, each 1-year cliff then 3-year vesting (450M/36 = 12.5M; 2B/36 = 55.56M per month)",
+       "url": "https://chainwire.org/2025/09/19/falcon-finance-unveils-tokenomics-framework-for-ff-token/",
+       "kind": "primary",
+       "confirms": [
+        "recipients",
+        "amount"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 4.28,
+      "confidence": 70,
+      "scoredAt": "2026-10-30T04:29:52Z"
+     }
     }
    ],
    "gaps": "The Community Airdrops & Launchpad remainder (~350M) vested Oct 2025 to ~Mar/Apr 2026 (DropsTab: 6-month linear; tokenomics.com: 12-month nonlinear). No source gives dated monthly amounts, so no airdrop tranche is listed. This likely misses community releases on ~29 Dec 2025, 29 Jan, 28 Feb and 29 Mar 2026. Ecosystem tranche dates follow tokenomics.com's 29th convention; DefiLlama dates differ by about a day. The 29 Oct 2026 tranche falls outside the window. coingeckoId confirmed on CoinGecko (coingecko.com/coins/falcon-finance-ff).",
@@ -15820,6 +15882,74 @@
     "notes": "The monthly rhythm on the 20th is confirmed: PANews 25.71M on 20 Dec 2025 at 11:00 UTC, and BeInCrypto/Coinotag 25.71M on 20 Sep 2026 with the 13.42/10.63/1.67 split, which fills the missing Sep amount. LayerZero's own blog says the Sep 2025 buyback cut the Strategic Partner monthly unlock from 15M to 12.7M, so 25.71M is a tracker figure that may be about 2.4M too high. The blog also says the repurchased FTX tokens were returned to Strategic Partners, so that 1.67M belongs in investors, not other.",
     "checkedAt": "2026-10-26T11:51:16Z"
    }
+  },
+  {
+   "token": "CARDS",
+   "name": "Collector Crypt",
+   "coingeckoId": "collector-crypt",
+   "events": [
+    {
+     "date": "2026-10-29",
+     "timeUTC": null,
+     "amountTokens": 59256250,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0.6668,
+      "investors": 0.0871,
+      "community": 0.2461,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko CARDS page, Tokenomist-powered widget (read 29 Oct 2026): 29 Oct, 59.26M CARDS (3.0% of total): Team 32.5M, Community 14.58M, Advisors 7.01M, Seed 5.16M",
+       "url": "https://www.coingecko.com/hi/coins/collector-crypt",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Datawallet: What is Collector Crypt (citing Four Pillars): team, advisor and seed allocations release on the 29th of each month until 29 Jul 2027 via Streamflow; ~59M CARDS on 29 Oct 2026, mostly team; pre-seed fully unlocked 29 Aug 2026",
+       "url": "https://www.datawallet.com/de/krypto/what-is-collector-crypt-cards",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "The Currency Analytics (26 Oct 2026): CARDS 29 Oct, 59.26M; Team 32.50M, community 14.58M, advisors 7.01M, seed 5.16M; notes Tokenomist marks it 'pending verification' (same Tokenomist feed)",
+       "url": "https://thecurrencyanalytics.com/altcoins/collector-crypt-sui-kamino-unlocks-730-million-306287",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "KuCoin news (21 Oct 2026): monthly unlocks of 44-59M CARDS covering team, advisor and seed allocations until mid-2027",
+       "url": "https://www.kucoin.com/news/flash/collector-crypt-cards-nears-all-time-high-amid-pump-fun-integration",
+       "kind": "news",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 6.67,
+      "confidence": 62,
+      "scoredAt": "2026-10-30T04:29:52Z"
+     }
+    }
+   ],
+   "harvested": true
   }
  ],
  "dropped": [
