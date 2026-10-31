@@ -7203,6 +7203,50 @@
       }
      ],
      "gaps": "Amount not printed for this month by any source opened; time not found (Jan 2026 and Aug 2025 were 12:00 UTC). recipientsMix null: the tranche is Key Stakeholders & Advisors 145.83M (63.6%) + Core Contributors 83.33M (36.4%); the larger pool mixes investors and advisors and no source splits it."
+    },
+    {
+     "date": "2026-10-30",
+     "timeUTC": null,
+     "amountTokens": 229166667,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": null,
+     "sources": [
+      {
+       "label": "CoinGecko KMNO page, unlock widget (Tokenomist data), read 30 Oct 2026: 30 Oct, 229.17M KMNO ($8.39M), 2.3% of supply; Key Stakeholders & Advisors 145.83M, Core Contributors 83.33M",
+       "url": "https://www.coingecko.com/en/coins/kamino",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "tokenomics.com KMNO unlocks: 30 Oct 2026, 229,166,667 KMNO, 100% Insiders; Key Stakeholders & Advisors 35% and Core Contributors 20%, each 12-month cliff + 24-month linear; TGE 29 Apr 2024",
+       "url": "https://app.tokenomics.com/tokenomics/kamino/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "The Currency Analytics: KMNO 30 Oct unlock (Tokenomist data, so not independent of CoinGecko widget)",
+       "url": "https://thecurrencyanalytics.com/altcoins/collector-crypt-sui-kamino-unlocks-730-million-306287",
+       "kind": "news",
+       "confirms": [
+        "date"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Moderate",
+      "points": 2.5,
+      "confidence": 62,
+      "scoredAt": "2026-10-31T04:26:41Z"
+     }
     }
    ],
    "gaps": "No Kamino primary tokenomics page could be opened. First insider unlock was 30 Apr 2025 (outside window), so all window tranches are routine. Only Jan 2026 has a printed amount and time; Dec 2025 and Feb 2026 rows rest on vesting terms (Feb day unknown). Airdrop Seasons 4/5 timing and size unconfirmed. Recipient split inside 'Key Stakeholders & Advisors' not published, so recipientsMix is null throughout.",
@@ -13977,6 +14021,63 @@
       }
      ],
      "gaps": "Excludes the ~9.87M core-contributor tokens that, per Wormhole, move bi-weekly to Foundation escrow but stay legally locked on the annual schedule; Tokenomist counts them as the event recipient (giving ~50.4M per event, per earlier desk research). type 'linear-biweekly' is used because the brief's 'linear-monthly' does not fit a 14-day step. Day derived from the 14-day grid starting 3 Oct 2025 (confirmed by Tokenomist's 4 Sep 2026 and 30 Oct 2026 dates); time not published."
+    },
+    {
+     "date": "2026-10-30",
+     "timeUTC": null,
+     "amountTokens": 50410000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.1958,
+      "investors": 0.2184,
+      "community": 0,
+      "ecosystem": 0.4896,
+      "other": 0.0962
+     },
+     "sources": [
+      {
+       "label": "CoinGecko W page, unlock widget (Tokenomist data), read 30 Oct 2026: 30 Oct, 50.41M W ($626.72K), 0.50% of total supply; Ecosystem & Incubation 24.68M, Strategic Network Participants 11.01M, Core contributors 9.87M, Guardian Nodes 4.84M",
+       "url": "https://www.coingecko.com/en/coins/wormhole",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist W competitor-analysis page (same feed as CoinGecko widget, counted once): next unlock 30 Oct 2026 to Core contributors, no amount shown",
+       "url": "https://tokenomist.ai/wormhole/competitor-analysis",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "Wormhole blog, W 2.0 upgrade: bi-weekly unlocks from 3 Oct 2025 for Guardian Nodes, Community & Launch, Ecosystem & Incubation, Strategic Network Participants; Core Contributor tokens unlock bi-weekly to the Foundation, held in escrow; investor and Guardian locks extended 6 months to Oct 2028. 3 Oct 2025 + 28 x 14 days = 30 Oct 2026",
+       "url": "https://wormhole.com/blog/wormhole-announces-w-token-2-0-upgrade",
+       "kind": "primary",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Wormhole blog, W tokenomics: Strategic Network Participants 11.6% (private sales to strategic angels, builders, technical partners, long-duration funds); Guardian Nodes 5.1% are node operators; insider categories 0% at TGE",
+       "url": "https://wormhole.com/blog/wormhole-w-tokenomics",
+       "kind": "primary",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Low",
+      "points": -0.09,
+      "confidence": 65,
+      "scoredAt": "2026-10-31T04:26:41Z"
+     }
     }
    ],
    "gaps": "coingeckoId 'wormhole' comes from the CoinGecko URL cited in earlier desk research (coingecko.com/coins/wormhole); not re-fetched this run. Each bi-weekly step is ~40.5M W (~0.6-0.75% of circulating, but well under $1M at ~$0.01-0.02), so it passes the 0.25%-of-circulating test only. Per-event amounts in the window are derived, not stated. tokenomics.com still models a monthly Foundation-only 44.37M event on the 3rd and does not reflect W 2.0. Possible unlisted event: 3 Apr 2026 legal annual release of core-contributor tokens from Foundation escrow. DropsTab shows 840M core unlocked and the next 240M due ~3 Apr 2027, but no source gives an Apr 2026 date or amount, so it is not listed. Listed month inferred from DropsTab's schedule starting Apr 2024 and the W airdrop coverage.",
