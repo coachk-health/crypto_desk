@@ -1,85 +1,64 @@
 {
   "date": "2026-10-31",
-  "updated": "2026-10-31T12:06:49Z",
-  "headline": "Binance withdrawals stay paused while it buys back the last of the stolen coins, ahead of a planned phased restart on Sunday and a reserve report due by Monday.",
+  "updated": "2026-10-31T16:06:27Z",
+  "headline": "Binance says it has now replaced about 90% of the stolen crypto, with withdrawals still due to restart on Sunday and the full reserve proof now expected around Tuesday.",
   "market": {
-    "asOf": "BTC, ETH and SOL from CoinMarketCap at about 11:57 UTC Sat 31 Oct (18:57 Bangkok); Fear and Greed from alternative.me, read at the same time. Check the live prices at the top of the page.",
+    "asOf": "BTC, ETH and SOL from CoinGecko coin pages read at about 15:57-15:59 UTC Sat 31 Oct (22:57-22:59 Bangkok). CoinGecko's own BTC page showed conflicting 24h figures, so no BTC change is shown. Check the live prices at the top of the page.",
     "btc": {
-      "price": 77152.99,
-      "chg24h": -1.75
+      "price": 77305.25,
+      "chg24h": null
     },
     "eth": {
-      "price": 2247.25,
-      "chg24h": 0.74
+      "price": 2248.6,
+      "chg24h": 1.1
     },
     "sol": {
-      "price": 94.91,
-      "chg24h": -5.55
+      "price": 95.42,
+      "chg24h": -1.5
     },
-    "fearGreed": "30 out of 100 ('Fear') on alternative.me's Crypto Fear and Greed Index, down from 51 ('Neutral') the day before."
+    "fearGreed": "CoinGecko's sentiment gauge showed 40 ('Fear') at about 15:56 UTC. alternative.me's Fear and Greed Index could not be read this run."
   },
   "stories": [
     {
-      "title": "Binance buys back stolen coins; withdrawals still paused ahead of Sunday restart",
+      "title": "Binance says 90% of stolen crypto is replaced; withdrawals still set for Sunday",
       "mood": "volatile",
-      "summary": "Withdrawals remain paused and no source found by this edition shows the reserve snapshot or Proof of Reserves results (a public check that customer balances are fully backed) have been published. Binance is buying back the stolen tokens it does not already hold, with a phased restart targeted for around 12:33 Bangkok time on Sunday 1 Nov, subject to security checks.",
+      "summary": "Binance says it has now replaced about 90% of the assets taken in the hack, up from about 80% earlier. Withdrawals are still paused and are due to restart on Sunday 1 Nov, but Binance has not given an exact hour. The full Proof of Reserves (a public check that customer balances are fully backed) is now expected around Tuesday 3 Nov.",
       "points": [
-        "Binance has set aside more than $6.34B; about $5B (80%) of the stolen assets are already covered and about $1.3B is being bought on the market and in OTC (private) deals, per Bitcoin.com News.",
-        "Ethena sent 128.63M ENA (about $24M) to Binance, about 59% of the 217.5M ENA stolen; Binance will also repurchase 3.38B stolen RSR, per Bitcoin.com News.",
-        "Per ChainCatcher, Binance said it would 'gradually restore withdrawal services within approximately 34 hours', putting the restart at about 13:33 (UTC+8) on 1 Nov.",
-        "Binance has promised a full Proof of Reserves report by Monday 2 Nov, and the FBI and Secret Service are involved, per Investing.com.",
-        "Critics say a snapshot taken after the buyback could hide how big the gap was; claims of an inside job on social media have no hard evidence behind them, per Bitcoin.com News."
+        "Binance says it has replenished about 90% of the stolen assets and set aside more than $6.34B, including $5B it already held in the affected tokens, per CoinDesk.",
+        "Ten tokens are fully covered: BTC, ETH, USDT, BNB, SOL, USDC, XRP, USD1, RLUSD and ZEC. The rest, mostly smaller altcoins, is still being bought on the market and in private (OTC) deals, per TechFlow.",
+        "Withdrawals are still targeted for Sun 1 Nov with details to come through official channels; no source this edition gives an exact time, per CoinDesk and TechFlow.",
+        "A reserve snapshot was taken at 00:00 UTC on 31 Oct; building the full zero-knowledge proof takes about 40-50 hours, so it should land around 3 Nov, per ChainCatcher and TokenPost.",
+        "Binance co-CEO Richard Teng said investigators found more ways in than the employee laptop first suspected, per CoinDesk."
       ],
       "sources": [
         {
-          "label": "Bitcoin.com News: buyback and ENA",
-          "url": "https://news.bitcoin.com/market-updates/binance-buys-back-stolen-tokens-ethena-ena"
+          "label": "CoinDesk: 90% replaced",
+          "url": "https://www.coindesk.com/business/2026/10/31/binance-says-it-has-replaced-90-of-stolen-crypto-after-massive-usd6-3-billion-breach"
         },
         {
-          "label": "ChainCatcher: Binance timeline",
-          "url": "https://www.chaincatcher.com/en/article/2300571"
+          "label": "TechFlow: Binance update",
+          "url": "https://www.techflowpost.com/en-US/newsletter/142251"
         },
         {
-          "label": "Investing.com: recovery takes shape",
-          "url": "https://in.investing.com/news/cryptocurrency-news/bitcoin-holds-above-77000-as-binance-hack-recovery-takes-shape-5669520"
+          "label": "ChainCatcher: reserve snapshot",
+          "url": "https://www.chaincatcher.com/en/article/2300674"
         },
         {
-          "label": "Bitcoin.com News: reserve proof doubts",
-          "url": "https://news.bitcoin.com/security/binance-hack-inside-job-theories-proof-of-reserves/"
+          "label": "TokenPost: proof of reserves timing",
+          "url": "https://www.tokenpost.com/news/technology/45530"
         }
       ]
     },
     {
-      "title": "The hack becomes an election-week political fight in Washington",
-      "mood": "neutral",
-      "summary": "With the US midterm elections on Tuesday 3 Nov, top officials and lawmakers are using the Binance hack to argue about how crypto should be regulated.",
-      "points": [
-        "Asked about the hack, President Trump said 'We don't know. We're looking at that,' per Cointelegraph.",
-        "Senator Cynthia Lummis said the stalled Clarity Act would have let firms freeze suspicious funds quickly; the bill failed to advance on 15 Sept, per Cointelegraph.",
-        "CFTC Chairman Mike Selig said the hack supports the agency's proposed rules and that offshore exchanges lack US-style safeguards, per Cointelegraph.",
-        "Rep. Maxine Waters called the hack a 'wake-up call' and pointed to Binance's ties to the Trump family, in a 30 Oct statement."
-      ],
-      "sources": [
-        {
-          "label": "Cointelegraph: pre-election political chatter",
-          "url": "https://cointelegraph.com/news/binance-63b-record-hack-sparks-pre-election-political-chatter"
-        },
-        {
-          "label": "House Financial Services Democrats: Waters statement",
-          "url": "https://democrats-financialservices.house.gov/news/documentsingle.aspx?DocumentID=415414"
-        }
-      ]
-    },
-    {
-      "title": "Stolen bitcoin still parked as markets head into a weak October close",
+      "title": "Stolen bitcoin still parked as October ends with big ETF outflows",
       "mood": "bearish",
-      "summary": "Blockchain trackers give slightly different totals for how much was stolen and frozen, so each is named. The stolen bitcoin has not moved, and US spot bitcoin and ether funds saw money leave in the latest session.",
+      "summary": "Trackers give slightly different totals for how much was stolen and frozen, so each is named. The 18,270 stolen bitcoin has not moved, while US spot bitcoin and ether funds lost money on Friday. Bitcoin's monthly candle closes at 00:00 UTC on Sunday (07:00 Bangkok).",
       "points": [
         "Amount stolen: Elliptic says $6.43B, TRM Labs $6.36B and Binance about $6.3B.",
-        "Frozen: Elliptic says $2.85B; TRM Labs said $2.7B as of 30 Oct. Elliptic says the attacker still holds 519,104 ETH and 18,270 BTC.",
-        "CoinDesk says the 18,270 stolen BTC sits in 19 addresses, more than Tesla's 11,509 BTC, and none had been spent as of 2:02am ET Friday.",
-        "US spot bitcoin ETFs had net outflows of about $643M on 30 Oct and spot ether ETFs about $156M, per TokenPost; Saturday is not a trading day, so Monday brings the next figures.",
-        "Cointelegraph, citing CoinGlass, said bitcoin was set to close October 7.7% lower, its worst October since 2014."
+        "Frozen: Binance and partners about $3B (CoinDesk); Elliptic $2.85B; TRM about $2.7B as of 30 Oct. Elliptic says about $3.21B is in assets issuers cannot freeze.",
+        "The 18,270 stolen BTC sits in 19 addresses and none had been spent as of 2:02am ET Friday, per CoinDesk; Elliptic says none of it has been frozen.",
+        "US spot bitcoin ETFs had net outflows of $643.2M on 30 Oct, the largest since June, and spot ether ETFs $155.7M, per crypto.news.",
+        "October losses depend on the starting price: CoinGlass (via Cointelegraph) had bitcoin on track for -7.7%, its worst October since 2014; Coinpedia puts it at -11.37%."
       ],
       "sources": [
         {
@@ -95,36 +74,80 @@
           "url": "https://www.coindesk.com/markets/2026/10/31/bitcoin-stolen-from-binance-tops-tesla-s-holdings-and-is-over-twice-el-salvador-s-reserve"
         },
         {
-          "label": "TokenPost: ETF flows",
-          "url": "https://www.tokenpost.com/news/investing/45347"
+          "label": "crypto.news: ETF outflows",
+          "url": "https://crypto.news/bitcoin-etfs-643-million-outflows-october-30/"
         },
         {
           "label": "Cointelegraph: worst October since 2014",
           "url": "https://cointelegraph.com/markets/bitcoin-risks-worst-october-in-12-years-as-tech-sell-off-spreads-to-gold"
         }
       ]
+    },
+    {
+      "title": "The hack becomes an election-week fight in Washington",
+      "mood": "neutral",
+      "summary": "With the US midterm elections on Tuesday 3 Nov, officials and lawmakers are using the Binance hack to argue over the stalled crypto market-structure bill (the CLARITY Act).",
+      "points": [
+        "President Trump said he was looking into the hack and that Binance says customers will be repaid, per The Block.",
+        "Senator Cynthia Lummis said the CLARITY Act's freeze tools would have helped: 'Every minute lost is money gone for good,' per The Block.",
+        "CFTC Chair Mike Selig said 'These are unregulated offshore exchanges,' per The Block.",
+        "The CLARITY Act passed the House but has stalled in the Senate, per The Block."
+      ],
+      "sources": [
+        {
+          "label": "The Block: Trump looking into hack",
+          "url": "https://www.theblock.co/news/regulation/2026-10-30-trump-looking-into-binance-hack-calls-grow-for-crypto-rules-432236"
+        },
+        {
+          "label": "investingLive: week ahead",
+          "url": "https://investinglive.com/news/week-ahead-elections-rate-decisions-and-jobs-take-center-stage/"
+        }
+      ]
     }
   ],
   "briefs": [
     {
-      "title": "Chainalysis reports its own data breach",
-      "summary": "Chainalysis said attackers accessed customer names, emails, user IDs and job titles, and that the breach is unrelated to the Binance hack, per TokenPost.",
-      "url": "https://www.tokenpost.com/news/technology/45208"
+      "title": "Coinbase Q3: revenue down, profit up",
+      "summary": "Revenue was $1.22B, down 35% from a year earlier; net income was $719M, including a $715M gain on crypto it holds, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-10-30-coinbase-q3-net-income-jumps-432189"
     },
     {
-      "title": "Liquidations cool to about $400M",
-      "summary": "About $403.67M of leveraged bets were liquidated over 24 hours, 76.48% of them longs, per Koin Bülteni's Saturday market overview.",
-      "url": "https://koinbulteni.com/en/bitcoin-and-altcoins-market-overview-october-31-2026-291495.html"
+      "title": "Trezor warns of a possible tampered device",
+      "summary": "Trezor says anyone who bought a device from reseller CryptoBilis since March 2026 should move their funds now, after a report of a cellular implant in a Safe 5, per The Block.",
+      "url": "https://www.theblock.co/news/ecosystems/2026-10-30-trezor-reports-suspected-hardware-implant-432196"
+    },
+    {
+      "title": "Strategy changes its preferred-stock dividends",
+      "summary": "Holders approved dividends that accrue daily, starting 1 Nov for STRC, and MSTR fell 8.7% on Friday morning, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-10-30-strategy-mstr-preferred-stock-bitcoin-buying-analysts-432214"
+    },
+    {
+      "title": "Hack knocked about $100B off the crypto market",
+      "summary": "Total crypto market value fell from nearly $2.7T to below $2.6T by midday Friday, per Yahoo Finance.",
+      "url": "https://finance.yahoo.com/markets/crypto/article/the-binance-hack-knocked-about-100-billion-off-crypto--and-the-timing-has-a-familiar-ring-chart-of-the-day-120412412.html"
+    },
+    {
+      "title": "Big bitcoin options expiry next Friday",
+      "summary": "About $2.065B of bitcoin options expire on Fri 6 Nov, with a put/call ratio of 0.32, per TokenPost.",
+      "url": "https://www.tokenpost.com/news/investing/45332"
     }
   ],
   "calendar": [
     {
-      "et": "Sun 1 Nov · about 1:33am",
-      "bkk": "Sun 1 · about 12:33",
-      "event": "Binance aims to begin restoring withdrawals in phases",
+      "et": "Sat 31 Oct · 8:00pm",
+      "bkk": "Sun 1 · 07:00",
+      "event": "Bitcoin's October monthly close (00:00 UTC)",
+      "impact": "volatile",
+      "key": false,
+      "note": "CoinGlass, via Cointelegraph, had bitcoin on track for -7.7% for October; Coinpedia says -11.37%."
+    },
+    {
+      "et": "Sun 1 Nov · time not given",
+      "bkk": "Sun 1 · time not given",
+      "event": "Binance aims to begin restoring withdrawals",
       "impact": "volatile",
       "key": true,
-      "note": "Target about 13:33 (UTC+8) on 1 Nov, subject to security checks, per ChainCatcher."
+      "note": "Binance still says Sunday 1 Nov; details to come through official channels, per CoinDesk and TechFlow. US clocks go back one hour on Sun 1 Nov: from then, Bangkok is ET+12."
     },
     {
       "et": "Sun 1 – Fri 6 Nov",
@@ -132,15 +155,7 @@
       "event": "Token unlocks: M, EIGEN, SUI, ZETA, 2Z, ENA, BTW, Q, KITE, MMT, HYPE, TON",
       "impact": "bearish",
       "key": false,
-      "note": "See the unlock table on this page for sizes, dates and confidence. US clocks go back one hour on Sun 1 Nov: from then, Bangkok is ET+12."
-    },
-    {
-      "et": "By Mon 2 Nov",
-      "bkk": "By Mon 2 Nov",
-      "event": "Binance Proof of Reserves results",
-      "impact": "volatile",
-      "key": true,
-      "note": "Investing.com says by Monday 2 Nov; ChainCatcher says before 2 Nov. No time given."
+      "note": "See the unlock table on this page for sizes, dates and confidence."
     },
     {
       "et": "Mon 2 Nov · 10:00am",
@@ -148,7 +163,7 @@
       "event": "US ISM manufacturing index; Fed's Goolsbee at 11:15am ET (23:15 Bangkok); Apple earnings call at 5:00pm ET (05:00 Tue Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 54.7, prior 54.5, per Newsquawk, investingLive and Trading Economics."
+      "note": "Consensus 54.7, prior 54.5, per investingLive, Newsquawk and Trading Economics."
     },
     {
       "et": "Mon 2 Nov · 10:30pm",
@@ -167,25 +182,33 @@
       "note": "JOLTS prior 7.08M; consensus 7.11M per investingLive, 7.10M per Trading Economics."
     },
     {
+      "et": "Around Tue 3 Nov",
+      "bkk": "Around Tue 3 Nov",
+      "event": "Binance full Proof of Reserves (zero-knowledge proof)",
+      "impact": "volatile",
+      "key": false,
+      "note": "Snapshot taken 00:00 UTC 31 Oct; proof takes about 40-50 hours to build, so around 3 Nov, per ChainCatcher and TokenPost. No time given."
+    },
+    {
       "et": "Wed 4 Nov · 8:00am",
       "bkk": "Wed 4 · 20:00",
       "event": "Circle and Riot earnings calls, Hut 8 at 8:30am ET; ADP jobs at 8:15am ET (20:15 Bangkok); ISM services at 10:00am ET (22:00 Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "ADP consensus 65K, prior 90K, per Trading Economics. ISM services prior 54.9; consensus Newsquawk 54.7, Trading Economics 54.8, investingLive 54.9."
+      "note": "ADP consensus 65K, prior 90K, per Trading Economics. ISM services prior 54.9; consensus Newsquawk 54.7, investingLive 54.9."
     },
     {
       "et": "Thu 5 Nov · 7:00am",
       "bkk": "Thu 5 · 19:00",
-      "event": "Bank of England rate decision; Governor Bailey at 7:30am ET (19:30 Bangkok); US jobless claims at 8:30am ET (20:30 Bangkok); IREN earnings after the close",
+      "event": "Bank of England rate decision; Governor Bailey at 7:30am ET (19:30 Bangkok); US jobless claims at 8:30am ET (20:30 Bangkok); IREN earnings call at 5:00pm ET",
       "impact": "neutral",
       "key": false,
-      "note": "Bank Rate 3.75%; investingLive and Trading Economics expect a hike to 4.00%. Jobless claims consensus 197K, prior 194K."
+      "note": "Bank Rate 3.75%; investingLive expects a hike to 4.00%. Jobless claims consensus 197K, prior 194K."
     },
     {
       "et": "Fri 6 Nov · 8:30am",
       "bkk": "Fri 6 · 20:30",
-      "event": "US October jobs report",
+      "event": "US October jobs report; bitcoin options expiry (about $2.07B) the same day",
       "impact": "volatile",
       "key": true,
       "note": "Prior +29K jobs and 4.2% unemployment. Payrolls consensus differs: Newsquawk +55K, investingLive +63K, Trading Economics +65K. Unemployment consensus 4.2%."
@@ -196,14 +219,14 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": false,
-      "note": "FOMC meeting listed at 2:00pm ET Wed 9 Dec (02:00 Thu 10 Dec Bangkok), press conference 2:30pm ET, per the Federal Reserve."
+      "note": "Decision at 2:00pm ET Wed 9 Dec (02:00 Thu 10 Dec Bangkok), press conference 2:30pm ET, per the Federal Reserve."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-10-31T12:06:49Z",
-    "claimsChecked": 119,
-    "claimsRemoved": 10,
+    "checkedAt": "2026-10-31T16:11:41Z",
+    "claimsChecked": 99,
+    "claimsRemoved": 6,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
