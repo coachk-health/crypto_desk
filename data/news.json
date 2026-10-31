@@ -1,181 +1,176 @@
 {
   "date": "2026-10-31",
-  "updated": "2026-10-30T20:01:09Z",
-  "headline": "Binance is aiming to reopen withdrawals on Sunday and publish full Proof of Reserves on Monday, as Friday's tech sell-off dragged bitcoin toward a second straight losing October.",
+  "updated": "2026-10-31T00:16:19Z",
+  "headline": "Binance says it aims to start reopening withdrawals in phases this weekend and publish reserve results on 2 Nov, after Wall Street closed sharply lower on Friday and bitcoin headed for a losing October.",
   "market": {
-    "asOf": "Read from CoinDesk's live blog at 3:24pm ET Fri 30 Oct (19:24 UTC, 02:24 Bangkok Sat) and Yahoo Finance's live blog at about 3:27pm ET, before the US close, not a live price page: CoinGecko, CoinMarketCap and the Fear & Greed index could not be read reliably this run. Check the live prices at the top of the page.",
+    "asOf": "Read from CoinMarketCap at about 00:00 UTC Sat 31 Oct (07:00 Bangkok). Check the live prices at the top of the page.",
     "btc": {
-      "price": 76300,
-      "chg24h": -5.5
+      "price": 77193,
+      "chg24h": -0.73
     },
     "eth": {
-      "price": null,
-      "chg24h": null
+      "price": 2241,
+      "chg24h": -0.23
     },
     "sol": {
-      "price": null,
-      "chg24h": null
+      "price": 96.21,
+      "chg24h": -0.68
     },
-    "fearGreed": "Not read this run: the index page could not be opened reliably."
+    "fearGreed": "35 out of 100 on CoinMarketCap's Crypto Fear and Greed Index, read about 00:00 UTC 31 Oct."
   },
   "stories": [
     {
-      "title": "Binance targets Sunday to reopen withdrawals, Monday for full Proof of Reserves",
+      "title": "Binance aims to restart withdrawals in phases this weekend, reserve results on 2 Nov",
       "mood": "volatile",
-      "summary": "Co-CEO Richard Teng said Binance hopes to restart withdrawals within about 40 hours, and is targeting Sunday, but only once the rebuilt system passes testing. A full Proof of Reserves report (a public check that customer balances are fully backed) is promised by Monday.",
+      "summary": "In a Friday-afternoon update Binance said it aims to begin restoring withdrawals in phases in about 34 hours, once security checks are done. Deposits keep working. Results of a Proof of Reserves check (a public test that customer balances are fully backed) are due on Monday 2 Nov.",
       "points": [
-        "Binance puts the theft at about $6.3B; Chainalysis' Jonathan Levin puts it at $6.4B. Binance says more than $6.34B is set aside to cover it, per Cointelegraph.",
-        "About $3B of the stolen funds has been frozen, including about $1.567B of USDT by Tether, per Cointelegraph.",
-        "CoinDesk found the drained wallets were among those backing customer balances: about 204,500 ETH was taken, roughly 5.6% of Binance's ETH reserves.",
-        "CFTC Chair Michael Selig told CNBC blockchain tracing gives 'a very good shot' at following the funds, and said 'the real issue here is that these are unregulated offshore exchanges', per Stocktwits."
+        "Binance plans to begin restoring withdrawals in phases 'within approximately 34 hours, subject to the completion of security checks', per Forbes. Bloomingbit reports Binance expects to restore withdrawals by Sunday.",
+        "The first reserve snapshot was to be taken within 12 hours of the update, with results announced on 2 November, per ChainCatcher.",
+        "Binance has set aside more than $6.34B, including about $5B already held in the affected tokens, per ChainCatcher. Sources word the cover differently: ChainCatcher says about 80% of the affected amount; Bloomingbit quotes Teng saying Binance will fully compensate losses from its own funds.",
+        "CFTC Chairman Michael Selig said on CNBC the breach shows 'these are unregulated offshore exchanges', and pitched a 'federal option' for offshore venues to register with the CFTC, per Decrypt."
       ],
       "sources": [
         {
-          "label": "The Defiant: Sunday restart target",
-          "url": "https://thedefiant.io/news/hacks/binance-s-teng-targets-sunday-withdrawal-restart-after-hack"
+          "label": "Forbes: withdrawals this weekend",
+          "url": "https://www.forbes.com/sites/antoniopequenoiv/2026/10/30/binance-says-it-plans-to-resume-withdrawals-this-weekend-after-63-billion-hack/"
         },
         {
-          "label": "The Defiant: Monday reserves deadline",
-          "url": "https://thedefiant.io/news/hacks/binance-s-teng-sets-monday-reserve-report-deadline-as-withdrawals-stay-paused"
+          "label": "ChainCatcher: reserves and cover",
+          "url": "https://www.chaincatcher.com/en/article/2300551"
         },
         {
-          "label": "Cointelegraph live updates",
-          "url": "https://www.tradingview.com/news/cointelegraph:3a8f5c45b094b:0-live-updates-binance-says-6-34b-set-aside-to-cover-hack-losses/"
+          "label": "Bloomingbit: Teng",
+          "url": "https://en.bloomingbit.io/feed/news/123309"
         },
         {
-          "label": "CoinDesk: reserve data",
-          "url": "https://www.coindesk.com/business/2026/10/30/binance-hack-drained-wallets-backing-customer-assets-reserve-data-shows"
-        },
-        {
-          "label": "Stocktwits: CFTC chair",
-          "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/binance-hacked-cftc-chair-says-blockchain-gives-a-very-good-shot-at-tracing-stolen-funds/cZULGfkR9TC"
+          "label": "Decrypt: CFTC chair",
+          "url": "https://decrypt.co/382285/binance-hack-why-offshore-exchanges-need-us-oversight-cftc-chair"
         }
       ]
     },
     {
-      "title": "Tech sell-off deepens into the close, and bitcoin heads for a losing October",
+      "title": "Wall Street closes sharply lower, and bitcoin heads for a losing October",
       "mood": "bearish",
-      "summary": "The Binance hack landed on the same day as a sharp drop in tech stocks, and both pulled crypto lower through the US afternoon. These are intraday readings from before the 4pm ET close.",
+      "summary": "Friday's tech sell-off held into the close, landing on the same day as the Binance hack news. The October figures for bitcoin below were each measured at a different time, before the month ended.",
       "points": [
-        "Late in the session the Nasdaq Composite was down 3.3%, the Dow down 1.25% at 3:27pm ET and Intel down about 30%, per Yahoo Finance.",
-        "Bitcoin was about $76,300 at 3:24pm ET and down about 8.4% for October, per CoinDesk, which would make it a second losing October in a row.",
-        "At the open Coinbase fell 12%, Strategy 11%, Circle 9.5%, Bullish 8.3% and Galaxy 6.8%, per CoinDesk.",
-        "Some analysts pushed back on the panic: Cantor's Ramsey El-Assal said 'this is painful, but it is not 2022', per CoinDesk."
+        "Final closes: Nasdaq down 2.84%, S&P 500 down 1.83% and Dow down 1.06%, per TheStreet; The Wall Street Republic has the Nasdaq down 2.86% and the Dow down 1.09%.",
+        "Intel fell 28.58% to $65.76, per The Wall Street Republic.",
+        "CoinDesk had bitcoin at about $76,300 and down 8.4% for October at 3:24pm ET Friday; Cryptonews, citing CoinGlass, had it down 7.7%, its worst October since 2014."
       ],
       "sources": [
         {
-          "label": "Yahoo Finance live",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-083236552.html"
+          "label": "TheStreet: market close",
+          "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
+        },
+        {
+          "label": "The Wall Street Republic: close",
+          "url": "https://thewallstreetrepublic.substack.com/p/intel-falls-2858-the-nasdaq-100-enters"
         },
         {
           "label": "CoinDesk live blog",
           "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
         },
         {
-          "label": "CoinDesk: analysts on crypto stocks",
-          "url": "https://www.coindesk.com/markets/2026/10/30/wall-street-analysts-urge-investors-to-buy-crypto-stocks-on-weakness-after-usd6-3-billion-binance-hack"
+          "label": "Cryptonews: worst October since 2014",
+          "url": "https://cryptonews.net/news/bitcoin/33678574/"
         }
       ]
     },
     {
-      "title": "Weak results also weighed on Coinbase and Strategy",
+      "title": "Following the stolen money: estimates differ on how much was taken and frozen",
       "mood": "bearish",
-      "summary": "The two biggest US-listed crypto companies reported on Thursday, and their results were soft before the hack hit: Coinbase's trading revenue shrank sharply, and Strategy announced its finance chief is leaving.",
+      "summary": "Blockchain trackers are still counting. The figures differ by source, so both are given. The latest tracking found did not show the attacker sending funds to an exchange, mixer or bridge.",
       "points": [
-        "Coinbase's transaction revenue fell 44% from a year earlier to $590M, per 24/7 Wall St.",
-        "Sources differ on total revenue: 24/7 Wall St says $1.16B against $1.21B expected; Benzinga says $1.216B against $1.230B expected.",
-        "Strategy CFO Andrew Kang steps down on 5 Nov for personal reasons, which the company says was not the result of any disagreement, per CoinDesk.",
-        "Strategy reported holding 848,517 BTC, per the company."
+        "Amount stolen: Binance says $6.3B; blockchain analytics firm TRM puts it at about $6.36B across 10 blockchains, per Al Jazeera.",
+        "Amount frozen: Binance says about $3B; Bitquery counts about $2.7B, including about 1.76B USDT frozen by Tether and 823M USDC by Circle.",
+        "Bitquery found about $3.2B still held by the attacker at 06:43 UTC on 30 Oct, with 'none of it sent to a known exchange, a mixer or a bridge'."
       ],
       "sources": [
         {
-          "label": "24/7 Wall St: crypto stocks",
-          "url": "https://247wallst.com/investing/2026/10/30/coinbase-tumbles-11-as-record-binance-hack-hits-crypto-and-trading-revenue-slides-strategy-sinks-12-robinhood-plunges-10-circle-drops-9/"
+          "label": "Al Jazeera: what we know",
+          "url": "https://www.aljazeera.com/news/2026/10/30/binance-says-6-3bn-stolen-in-biggest-crypto-heist-in-history-what-we-know"
         },
         {
-          "label": "Benzinga via Yahoo: Coinbase Q3",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/coinbase-q3-highlights-mixed-earnings-204456486.html"
-        },
-        {
-          "label": "CoinDesk: Strategy CFO",
-          "url": "https://www.coindesk.com/markets/2026/10/30/strategy-cfo-resigns-as-company-posts-record-quarterly-profit-mstr-stock-falls-6"
-        },
-        {
-          "label": "Strategy: Q3 results",
-          "url": "https://www.strategy.com/press/strategy-announces-third-quarter-2026-financial-results_10-29-2026"
+          "label": "Bitquery: investigation",
+          "url": "https://www.bitquery.io/investigations/binance-hack"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Tether reports $1.5B Q3 profit",
-      "summary": "Tether's excess reserves rose to $7.95B from $4.11B in June, with total reserves of $191.45B.",
-      "url": "https://crypto.news/tether-q3-2026-profit-reserve-buffer/"
+      "title": "Liquidations near $1.6B",
+      "summary": "Forced closures of leveraged bets jumped to $1.57B as the hack news hit, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/10/30/crypto-liquidations-jump-to-usd1-57-billion-as-binance-hack-sends-bitcoin-ether-lower"
     },
     {
-      "title": "Ether ETFs lose $105.5M",
-      "summary": "On 29 Oct US spot ether ETFs saw $105.5M of outflows and solana ETFs $27.7M, while bitcoin ETFs took in a small inflow.",
-      "url": "https://financefeeds.com/us-crypto-etfs-record-116-million-in-net-outflows-as-ethereum-withdrawals-hit-105-5-million/"
+      "title": "Bitcoin ETFs took in $440.8M before the hack",
+      "summary": "US spot bitcoin ETFs drew a net $440.8M over 26-29 Oct, per Farside data; Thursday alone was $17.2M.",
+      "url": "https://crypto.news/bitcoin-etfs-440-million-inflows-binance-hack/"
     },
     {
-      "title": "Liquidations top $1.6B",
-      "summary": "More than $1.6B of leveraged positions were wiped out, $1.35B of them bets on rising prices, per CoinGlass data.",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/binance-hack-sparks-bitcoin-sell-131240704.html"
+      "title": "Coinbase Q3",
+      "summary": "Coinbase reported net income of $719M and adjusted net income of $78M; prediction markets passed $200M in annualized revenue.",
+      "url": "https://investor.coinbase.com/news/news-details/2026/Coinbase-Q3-2026-Earnings-Show-All-time-high-Coinbase-One-Subscribers-and-Prediction-Markets-Surpassing-200-Million-in-Annualized-Revenue/default.aspx"
     },
     {
-      "title": "Hacker swaps about $158M of altcoins for ETH",
-      "summary": "The attacker sold UNI, ENA, PEPE, LINK, AAVE and others for 70,480 ETH; some analysts question Binance's 'no key leak' account.",
-      "url": "https://news.bitcoin.com/security/binance-hacker-dumps-158m-altcoins-key-leak-doubts"
-    },
-    {
-      "title": "Coinbase bitcoin price falls to a deep discount",
-      "summary": "Bitcoin traded at a deep discount on Coinbase compared with Binance, which suggests weaker buying or stronger selling there, per CoinDesk.",
+      "title": "Strategy slides on CFO exit",
+      "summary": "Strategy shares fell 11% after the departure of its finance chief was disclosed, per CoinDesk.",
       "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
     },
     {
-      "title": "Monthly options expire",
-      "summary": "About $10.9B of bitcoin options expired on Deribit at 08:00 UTC Friday, with max pain at $78K.",
-      "url": "https://cryptopotato.com/bitcoin-price-faces-another-test-as-10-9b-deribit-options-expire-today/"
+      "title": "Tether reports $1.5B Q3 profit",
+      "summary": "Tether's excess reserves rose to $7.95B from $4.1B, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
     },
     {
       "title": "Aave reopens its markets",
-      "summary": "Aave reopened its V3 and V4 markets after a precautionary freeze and says it was not affected by the hack.",
+      "summary": "Aave reopened its V3 and V4 markets after a precautionary freeze; USDT, USDC, XAUT and PAXG can't yet back new loans.",
       "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
+    },
+    {
+      "title": "Market makers disclose Binance exposure",
+      "summary": "GSR said its exposure is under 5% of net equity and Wintermute under 20%; neither confirmed losses, per Cointelegraph.",
+      "url": "https://www.tradingview.com/news/cointelegraph:3a8f5c45b094b:0-live-updates-binance-says-6-34b-set-aside-to-cover-hack-losses/"
+    },
+    {
+      "title": "Oil up 15% in October",
+      "summary": "US oil (WTI) settled at $104.12 on Friday, up 15.2% for the month, per The Wall Street Republic.",
+      "url": "https://thewallstreetrepublic.substack.com/p/intel-falls-2858-the-nasdaq-100-enters"
     }
   ],
   "calendar": [
     {
-      "et": "Sat 31 Oct – Fri 6 Nov",
-      "bkk": "Sat 31 Oct – Fri 6 Nov",
-      "event": "Token unlocks: W, KMNO, M, EIGEN, SUI, ZETA, 2Z, ENA, BTW, Q, KITE, MMT, HYPE",
+      "et": "Sat 31 Oct – Sun 1 Nov (target)",
+      "bkk": "Sat 31 Oct – Sun 1 Nov (target)",
+      "event": "Binance aims to begin reopening withdrawals in phases",
+      "impact": "volatile",
+      "key": true,
+      "note": "On Friday afternoon Binance said about 34 hours, subject to security checks, per Forbes. No exact time given."
+    },
+    {
+      "et": "Sun 1 – Fri 6 Nov",
+      "bkk": "Sun 1 – Fri 6 Nov",
+      "event": "Token unlocks: M, EIGEN, SUI, ZETA, 2Z, ENA, BTW, Q, KITE, MMT, HYPE",
       "impact": "bearish",
       "key": false,
       "note": "See the unlock table on this page for sizes, dates and confidence. US clocks go back one hour on Sun 1 Nov: from then, Bangkok is ET+12."
     },
     {
-      "et": "Sun 1 Nov (target)",
-      "bkk": "Sun 1 Nov (target)",
-      "event": "Binance aims to reopen withdrawals",
+      "et": "Mon 2 Nov",
+      "bkk": "Mon 2 Nov",
+      "event": "Binance Proof of Reserves results",
       "impact": "volatile",
       "key": true,
-      "note": "Teng said he hopes to restart withdrawals within about 40 hours, with a Sunday target, only if the rebuilt system passes testing, per The Defiant."
-    },
-    {
-      "et": "Mon 2 Nov (by)",
-      "bkk": "Mon 2 Nov (by)",
-      "event": "Binance full Proof of Reserves report",
-      "impact": "volatile",
-      "key": true,
-      "note": "No time given, per The Defiant."
+      "note": "Results to be announced on 2 Nov, per ChainCatcher. No time given."
     },
     {
       "et": "Mon 2 Nov · 10:00am",
       "bkk": "Mon 2 · 22:00",
-      "event": "US ISM manufacturing index; Fed's Goolsbee at 11:15am ET (23:15 Bangkok); Apple earnings after the close",
+      "event": "US ISM manufacturing index; Fed's Goolsbee at 11:15am ET (23:15 Bangkok); Apple and Palantir earnings after the close",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 54.7, prior 54.5, per InvestingLive and Newsquawk."
+      "note": "Consensus 54.7, prior 54.5, per Newsquawk, InvestingLive and Economic Weekly."
     },
     {
       "et": "Mon 2 Nov · 10:30pm",
@@ -188,7 +183,7 @@
     {
       "et": "Tue 3 Nov",
       "bkk": "Tue 3 – Wed 4",
-      "event": "US midterm elections; JOLTS job openings at 10:00am ET (22:00 Bangkok); Block and MARA earnings",
+      "event": "US midterm elections; JOLTS job openings at 10:00am ET (22:00 Bangkok); Block and AMD earnings after the close",
       "impact": "volatile",
       "key": true,
       "note": "JOLTS consensus 7.11M, prior 7.08M, per InvestingLive."
@@ -196,7 +191,7 @@
     {
       "et": "Wed 4 Nov",
       "bkk": "Wed 4",
-      "event": "Circle, Riot and Hut 8 earnings before the open; ADP jobs; ISM services at 10:00am ET (22:00 Bangkok)",
+      "event": "Circle (8:00am ET), Riot and Hut 8 earnings; ADP jobs at 8:15am ET (20:15 Bangkok); ISM services at 10:00am ET (22:00 Bangkok)",
       "impact": "neutral",
       "key": false,
       "note": "ADP consensus +75K, prior +90K, per Economic Weekly. ISM services prior 54.9; sources disagree on consensus: Newsquawk 54.7, Economic Weekly 54.8, InvestingLive 54.9."
@@ -204,10 +199,10 @@
     {
       "et": "Thu 5 Nov · 7:00am",
       "bkk": "Thu 5 · 19:00",
-      "event": "Bank of England rate decision; Fed's Hammack speaks at 8:50am ET (20:50 Bangkok)",
+      "event": "Bank of England rate decision; Governor Bailey speaks at 7:30am ET (19:30 Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Bank Rate 3.75%. Sources disagree: Newsquawk and InvestingLive expect a 25bp hike; CMC Markets expects a hold."
+      "note": "Bank Rate 3.75%. Sources disagree: Newsquawk and InvestingLive expect a hike to 4.00%; CMC Markets expects a hold."
     },
     {
       "et": "Fri 6 Nov · 8:30am",
@@ -215,7 +210,7 @@
       "event": "US October jobs report",
       "impact": "volatile",
       "key": true,
-      "note": "Prior +29K jobs and 4.2% unemployment. Consensus differs: Newsquawk +55K, CMC Markets about +60K, InvestingLive +63K, Economic Weekly +65K."
+      "note": "Prior +29K jobs and 4.2% unemployment. Consensus differs: Newsquawk +55K, CMC Markets about +60K, InvestingLive +63K, Economic Weekly +65K. A bitcoin options expiry of about $1.29B is also due Friday on Deribit, per Tokenist."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -223,14 +218,14 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": false,
-      "note": "Decision Wed 9 Dec; press conference 2:30pm ET (02:30 Thu 10 Dec Bangkok), per the Federal Reserve."
+      "note": "Statement 2:00pm ET Wed 9 Dec (02:00 Thu 10 Dec Bangkok), press conference 2:30pm ET, per the Federal Reserve."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-10-30T20:05:31Z",
-    "claimsChecked": 159,
-    "claimsRemoved": 8,
+    "checkedAt": "2026-10-31T00:16:19Z",
+    "claimsChecked": 98,
+    "claimsRemoved": 7,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
