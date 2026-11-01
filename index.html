@@ -134,6 +134,21 @@ section > .seg:first-child { margin-top: 0; }
 .warnline { color: var(--sun); }
 ol.steps { margin: 0; padding-left: 22px; display: grid; gap: 8px; max-width: 80ch; }
 table.sig { min-width: 1080px; }
+.gl { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.gl .gc { background: rgba(255, 255, 255, .04); border-radius: 12px; padding: 12px 14px; display: grid; gap: 4px; }
+.gl .gc .gn { font-size: 22px; font-weight: 800; letter-spacing: .5px; }
+.gl .gc .gr { font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.gl .gc small { color: var(--muted); }
+.gb { display: inline-block; font-weight: 800; font-size: 12px; letter-spacing: .4px; border-radius: 6px; padding: 2px 7px; margin-right: 4px; }
+.gb.g-AAA { background: rgba(67, 214, 160, .18); color: var(--bull); } .gb.g-AA { background: rgba(143, 167, 255, .18); color: var(--calm); }
+.gb.g-A { background: rgba(255, 181, 71, .16); color: var(--sun); } .gb.g-none { background: rgba(255, 255, 255, .06); color: var(--muted); }
+.gn.g-AAA { color: var(--bull); } .gn.g-AA { color: var(--calm); } .gn.g-A { color: var(--sun); } .gn.g-none { color: var(--muted); }
+.eck { display: inline-block; font-size: 12.5px; margin: 2px 6px 2px 0; white-space: nowrap; } .eck.y { color: var(--bull); } .eck.n { color: var(--muted); text-decoration: line-through; } .eck.u { color: var(--muted); }
+.est { font-size: 12px; font-weight: 700; border-radius: 6px; padding: 2px 7px; white-space: nowrap; }
+.est.s-confirmed { background: rgba(67, 214, 160, .16); color: var(--bull); } .est.s-watching { background: rgba(255, 181, 71, .14); color: var(--sun); }
+.est.s-hurts { background: rgba(255, 107, 125, .14); color: var(--bear); } .est.s-few { background: rgba(255, 255, 255, .06); color: var(--muted); }
+.gup { display: grid; gap: 8px; } .gup .gi { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 4px 12px; align-items: start; background: rgba(255, 255, 255, .03); border-radius: 10px; padding: 10px 12px; }
+@media (max-width: 760px) { .gl { grid-template-columns: repeat(2, minmax(0, 1fr)); } .gup .gi { grid-template-columns: 56px minmax(0, 1fr); } .gup .gi .gx { grid-column: 2; } }
 .status { font-weight: 600; } .status.soon { color: var(--sun); } .status.open { color: var(--bull); }
 .heat td.n { color: var(--text); font-variant-numeric: tabular-nums; } .heat td.pick { outline: 2px solid var(--sun); outline-offset: -2px; font-weight: 700; }
 details.logp h4 { margin: 18px 0 6px; font-size: 15px; } table.sig small.why { color: var(--muted); font-size: 12px; } table.sig td { vertical-align: top; }
@@ -732,6 +747,11 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     }).filter(x => x.hits.length && daysFromToday(x.exit) >= 0).sort((a, b) => a.entry.localeCompare(b.entry));
   }
 
+  function gradeBadge(token, date) {
+    const g = ((D.grades || {}).upcoming || []).find(u => u.token === token && u.date === date);
+    return g && g.grade ? el('span', { class: 'gb g-' + g.grade, title: 'Setup grade from past results', text: g.grade }) : null;
+  }
+
   function pumpVerdict(rise, pumpPct) {
     return rise >= pumpPct ? { text: 'Up ' + rise.toFixed(0) + '% in 3 weeks: skip', cls: 'bad' } : { text: (rise >= 0 ? 'Up ' : 'Down ') + Math.abs(rise).toFixed(0) + '% in 3 weeks: OK', cls: 'ok' };
   }
@@ -839,6 +859,82 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     return el('div', { class: 'tablewrap' }, [el('table', { class: 'gt' }, [el('thead', null, [el('tr', null, [el('th', { text: '' }), el('th', { class: 'n', text: 'Trades (tokens)' }), el('th', { class: 'n', text: 'Won' }), el('th', { class: 'n', text: 'Median trade' }), el('th', { class: 'n', text: 'Worst trade' }), el('th', { class: 'n', text: 'Profit factor*' }), el('th', { class: 'n', text: 'Total, $1k each' })])]), el('tbody', null, rows)])]);
   }
 
+  function gradesPanel(rf1, usd) {
+    const G = D.grades;
+    const rf = v => v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(2) + 'R';
+    if (!G || !G.ladder) return null;
+    const EL = Object.fromEntries(G.edges.map(e => [e.key, e])), BL = G.boosters || [];
+    const risk = G.riskUsd || 100;
+    const card = (name, s, wf) => {
+      const cls = 'g-' + (name === 'none' ? 'none' : name);
+      return el('div', { class: 'gc' }, [el('span', { class: 'gn ' + cls, text: name === 'none' ? 'No grade' : name }),
+        s ? el('span', { class: 'gr ' + (s.meanR < 0 ? 'down' : 'up'), text: rf(s.meanR) + ' a trade' }) : el('span', { class: 'gr na', text: '—' }),
+        s ? el('small', { text: s.win + '% won · ' + s.n + ' trades on ' + s.tokens + ' tokens · ' + usd(s.meanR * risk) + ' a trade at $' + risk + ' risk' }) : el('small', { text: 'No past trades yet' }),
+        el('small', null, ['Unseen-data test: ', wf ? el('b', { class: wf.meanR < 0 ? 'down' : 'up', text: rf(wf.meanR) }) : '—', wf ? ' over ' + wf.n : ''])]);
+    };
+    const names = ['AAA', 'AA', 'A', 'none'];
+    const ladderBox = el('div', { class: 'gl' }, names.map(n => card(n, G.ladder[n], G.walkForward.ladder[n])));
+    const conf = G.confirmed.map(k => EL[k].label), boo = BL.map(k => EL[k].label);
+    const L = G.ladder, W = G.walkForward.ladder, m = k => L[k] ? L[k].meanR : null;
+    const graded = ['AAA', 'AA', 'A'].map(k => L[k]).filter(Boolean);
+    const gn = graded.reduce((a, x) => a + x.n, 0), gr = gn ? graded.reduce((a, x) => a + x.meanR * x.n, 0) / gn : null;
+    const up = ['AAA', 'AA'].map(k => L[k]).filter(Boolean), upn = up.reduce((a, x) => a + x.n, 0), upr = upn ? up.reduce((a, x) => a + x.meanR * x.n, 0) / upn : null;
+    const wfAll = ['AAA', 'AA', 'A'].map(k => W[k]).filter(Boolean), wfn = wfAll.reduce((a, x) => a + x.n, 0), wfr = wfn ? wfAll.reduce((a, x) => a + x.meanR * x.n, 0) / wfn : null;
+    const lines = [];
+    if (upr != null && m('A') != null) lines.push(upr > m('A') ? 'AA and AAA setups together averaged ' + rf(upr) + ' a trade over ' + upn + ' trades, against ' + rf(m('A')) + ' for plain A.' : 'AA and AAA have not beaten plain A yet (' + rf(upr) + ' against ' + rf(m('A')) + ').');
+    if (m('none') != null) lines.push('Unlocks with no grade averaged ' + rf(m('none')) + ' over ' + L.none.n + ' trades: shorting every unlock does not pay.');
+    if (G.ladderHolds) lines.push('Every grade beat the one below it.');
+    else lines.push('The order is not perfect: ' + ['AAA', 'AA', 'A', 'none'].filter(k => L[k]).map(k => (k === 'none' ? 'no grade' : k) + ' ' + rf(m(k))).join(', ') + '. With this few trades a single result moves an average a lot.');
+    lines.push(wfn ? (wfr > 0 ? 'On trades the grading had never seen (graded each month using only earlier results), graded setups made ' + rf(wfr) + ' a trade over ' + wfn + ' trades.' : 'On trades the grading had never seen (graded each month using only earlier results), graded setups lost ' + rf(wfr) + ' a trade over ' + wfn + ' trades. So far this is a record of what worked, not proof it keeps working; the live Trade log is the real test.') : 'There is not enough history yet for the unseen-data test.');
+    const verdict = el('p', { class: 'verdict' + (G.ladderHolds && G.walkForward.holds ? '' : ' warnline'), text: lines.join(' ') });
+    const lead = el('p', { class: 'small', text: 'Re-learned every day from ' + G.sample.trades + ' past unlock shorts on ' + G.sample.tokens + ' tokens, each replayed with today’s ' + G.plan.stop + '% stop and ' + G.plan.target + '% target. A = the unlock has a condition that made money on its own (today: ' + (conf.length ? conf.join(', ') : 'none') + '). AA = an A setup with one booster, AAA = two or more (today: ' + (boo.length ? boo.join(', ') : 'none yet') + '). A condition only counts if it helped in both halves of the record, on enough trades and tokens, so one lucky token cannot make it. As more unlocks happen, conditions can be added or dropped.' });
+
+    // upcoming graded unlocks
+    const ups = (G.upcoming || []).filter(u => u.grade);
+    const upBox = el('div', { class: 'gup' }, ups.length ? ups.slice(0, 12).map(u => el('div', { class: 'gi' }, [
+      el('span', null, [el('span', { class: 'gb g-' + u.grade, text: u.grade })]),
+      el('div', null, [el('b', { text: u.token }), el('small', { class: 'why', text: ' unlock ' + fmtDay(u.date) + (u.usdM ? ' · ' + Desk.usd(u.usdM) : '') + ' · short from ' + fmtDay(u.entry) }), el('br'),
+        ...u.has.map(k => el('span', { class: 'eck y', text: '✓ ' + EL[k].label })),
+        ...u.missing.map(k => el('span', { class: 'eck n', text: EL[k].label })),
+        ...u.unknown.map(k => el('span', { class: 'eck u', text: '? ' + EL[k].label }))]),
+      el('small', { class: 'gx ' + (u.pumped ? 'pc bad' : 'na'), text: (u.pumped ? 'Pumped ' + u.momentum.toFixed(0) + '%: skip' : u.momentum != null ? (u.momentum >= 0 ? 'Up ' : 'Down ') + Math.abs(u.momentum).toFixed(0) + '% in 3 weeks' : '') + (u.vsLaunch != null ? ' · ' + (u.vsLaunch >= 0 ? '+' : '−') + Math.abs(u.vsLaunch).toFixed(0) + '% vs first Binance price' : '') + ((u.confidenceScore ?? 0) < 60 ? ' · data ' + (u.confidenceScore ?? 0) + ', confirm first' : '') })
+    ])) : [el('p', { class: 'small', text: 'No unlock in the next 45 days has a counted condition.' })]);
+
+    // the edges, explained
+    const chip = s => el('span', { class: 'est s-' + (s === 'confirmed' ? 'confirmed' : s === 'watching' ? 'watching' : s === 'hurts' ? 'hurts' : 'few'), text: s === 'confirmed' ? 'Counts' : s === 'watching' ? 'Watching' : s === 'hurts' ? 'Hurts results' : s === 'too few trades' ? 'Too few trades' : 'No data' });
+    const edgeRows = G.edges.map(e => el('tr', null, [
+      el('td', null, [el('b', { text: e.label }), el('br'), el('small', { class: 'why', text: e.plain })]),
+      el('td', null, [chip(e.status)]),
+      el('td', { class: 'n' }, e.with ? [el('span', { class: 'num ' + (e.with.meanR < 0 ? 'down' : 'up'), text: rf(e.with.meanR) }), el('small', { text: ' ' + e.with.n + ' trades' })] : ['—']),
+      el('td', { class: 'n' }, e.without ? [el('span', { class: 'num ' + (e.without.meanR < 0 ? 'down' : 'up'), text: rf(e.without.meanR) })] : ['—']),
+      el('td', { class: 'n' }, [e.lift == null ? '—' : el('span', { class: 'num ' + (e.lift < 0 ? 'down' : 'up'), text: rf(e.lift) }),
+        e.halves ? el('small', { class: 'rng', text: 'halves ' + e.halves.map(h => h == null ? '—' : rf(h)).join(' / ') }) : null])]));
+    const head = el('thead', null, [el('tr', null, [el('th', { text: 'Condition' }), el('th', { text: 'Verdict' }), el('th', { class: 'n', text: 'With it' }), el('th', { class: 'n', text: 'Without' }), el('th', { class: 'n', text: 'Difference' })])]);
+    const boostRows = (G.boosterTests || []).map(e => el('tr', null, [
+      el('td', null, [el('b', { text: e.label }), el('br'), el('small', { class: 'why', text: e.plain })]),
+      el('td', null, [chip(e.status)]),
+      el('td', { class: 'n' }, e.with ? [el('span', { class: 'num ' + (e.with.meanR < 0 ? 'down' : 'up'), text: rf(e.with.meanR) }), el('small', { text: ' ' + e.with.n + ' trades' })] : ['—']),
+      el('td', { class: 'n' }, e.without ? [el('span', { class: 'num ' + (e.without.meanR < 0 ? 'down' : 'up'), text: rf(e.without.meanR) })] : ['—']),
+      el('td', { class: 'n' }, [e.lift == null ? '—' : el('span', { class: 'num ' + (e.lift < 0 ? 'down' : 'up'), text: rf(e.lift) }),
+        e.halves ? el('small', { class: 'rng', text: 'halves ' + e.halves.map(h => h == null ? '—' : rf(h)).join(' / ') }) : null])]));
+    const edgeTbl = el('details', { class: 'panel logp' }, [el('summary', null, [el('h3', { text: 'What makes a setup dump harder' })]),
+      el('h4', { text: 'Step 1: which unlocks are worth shorting at all (A)' }),
+      el('p', { class: 'small', text: 'Average result a trade, in R (1R = what a stopped trade loses), for every past unlock with and without each condition. "Counts" needs a gain in both halves of the record (the second half starts ' + fmtDay(G.rules.split) + '), ' + G.rules.minN + '+ trades on ' + G.rules.minTokens + '+ tokens, and the trades with it averaging at least ' + rf(G.rules.minWithR) + '.' }),
+      el('div', { class: 'tablewrap' }, [el('table', { class: 'gt' }, [head, el('tbody', null, edgeRows)])]),
+      boostRows.length ? el('h4', { text: 'Step 2: what makes an A setup better (AA, AAA)' }) : null,
+      boostRows.length ? el('p', { class: 'small', text: 'The same test, but only inside the A setups: A trades with each condition against A trades without it. Counts with ' + G.boosterRules.minN + '+ trades on ' + G.boosterRules.minTokens + '+ tokens and a gain in both halves.' }) : null,
+      boostRows.length ? el('div', { class: 'tablewrap' }, [el('table', { class: 'gt' }, [head.cloneNode(true), el('tbody', null, boostRows)])]) : null]);
+
+    // how it changed
+    const H = (G.history || []).slice(-8).reverse();
+    const histP = H.length > 1 ? el('details', { class: 'panel logp' }, [el('summary', null, [el('h3', { text: 'How the grading has changed' })]),
+      el('ul', { class: 'plain' }, H.map(h => el('li', null, [el('b', { text: fmtDay(h.date) + ': ' }), h.trades + ' trades; A: ' + (h.confirmed.length ? h.confirmed.map(k => EL[k] ? EL[k].label : k).join(', ') : 'nothing') + '; boosters: ' + ((h.boosters || []).length ? h.boosters.map(k => EL[k] ? EL[k].label : k).join(', ') : 'none') + '; AAA ' + rf(h.meanR.AAA) + ', AA ' + rf(h.meanR.AA) + ', A ' + rf(h.meanR.A) + ', no grade ' + rf(h.meanR.none)])))]) : null;
+
+    return [el('div', { class: 'panel' }, [el('h3', { text: 'Setup grades: AAA, AA, A' }), lead, ladderBox, verdict,
+      el('h4', { text: 'Graded unlocks coming up' }), upBox,
+      el('p', { class: 'small', text: '✓ has it, crossed out = does not, ? = not known yet. Grades say how similar setups did in the past. They are not a forecast and not advice.' })]), edgeTbl, histP];
+  }
+
   function signals() {
     const S = D.signals;
     if (!S || !S.trades) return el('section', null, [el('p', { class: 'state', text: 'Signals are being calculated. They update once a day.' })]);
@@ -877,7 +973,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
           const pxNow = el('td', { class: 'num', text: '…' }), inTrade = el('td', { class: 'na', text: dEntry > 0 ? 'Not open yet' : '…' });
           if (x.id) nowPx[x.id] = (nowPx[x.id] || []).concat(pxNow);
           const row = el('tr', null, [
-            el('td', null, [el('b', { text: x.u.token }), el('small', { text: (x.u.usdM ? ' ' + Desk.usd(x.u.usdM) : '') }), el('br'), x.setup === 'A' ? el('small', { class: 'tierA', text: 'Setup A ' }) : null, el('small', { class: 'why', text: x.hits.map(h => RULE_SHORT[h]).join(', ') })]),
+            el('td', null, [gradeBadge(x.u.token, x.u.date), el('b', { text: x.u.token }), el('small', { text: (x.u.usdM ? ' ' + Desk.usd(x.u.usdM) : '') }), el('br'), x.setup === 'A' ? el('small', { class: 'tierA', text: 'Setup A ' }) : null, el('small', { class: 'why', text: x.hits.map(h => RULE_SHORT[h]).join(', ') })]),
             el('td', { class: 'num', text: fmtDay(x.u.date) }), el('td', { class: 'num', text: fmtDay(addDays(x.entry, -1)) }),
             ...lvCells(null, false),
             el('td', { class: 'num', text: fmtDay(x.exit) }),
@@ -989,7 +1085,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
           el('td', { class: 'n' }, [t.momentum == null ? el('span', { class: 'na', text: '—' }) : el('span', { class: t.skipped ? 'down' : '', text: (t.momentum > 0 ? '+' : '') + t.momentum.toFixed(0) + '%' + (t.skipped ? ' skip' : '') })]),
           el('td', { text: t.priceSource === 'coingecko' ? 'CoinGecko' : 'Binance' })])))])])]);
 
-    return el('section', { 'aria-label': 'Trade signals' }, [upList, lead, warn, plan, curveP, stab, gridP, exitP, logP,
+    return el('section', { 'aria-label': 'Trade signals' }, [...(gradesPanel(rf, usd) || []), upList, lead, warn, plan, curveP, stab, gridP, exitP, logP,
       el('details', { class: 'method' }, [el('summary', { text: 'How this is calculated' }), el('div', { class: 'mbody' }, [el('p', { text: S.method }),
         L ? el('p', { style: 'white-space:pre-line', text: L.method }) : null,
         el('p', { text: 'This is a record of what a fixed rule set would have done, not a recommendation to trade. Past results in one year and one market phase may not repeat. Real fills, funding rates, borrow availability and exchange listings will differ.' })])])].filter(Boolean));
@@ -1092,12 +1188,13 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     );
     try { D.backtest = await fetch('data/backtest.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.backtest = null; }
     try { D.signals = await fetch('data/signals.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.signals = null; }
+    try { D.grades = await fetch('data/grades.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.grades = null; }
     try { D.tradelog = await fetch('data/trade_log.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.tradelog = null; }
     P = await Desk.prices(D.news.market);
     renderPrices();
     render();
     setInterval(async () => { P = await Desk.prices(D.news.market); renderPrices(); }, 60000);
-    setInterval(async () => { try { const bt = D.backtest, sg = D.signals, tl = D.tradelog; D = await Desk.load(''); D.backtest = bt; D.signals = sg; D.tradelog = tl; render(); } catch (e) {} }, 300000);
+    setInterval(async () => { try { const bt = D.backtest, sg = D.signals, tl = D.tradelog, gr = D.grades; D = await Desk.load(''); D.backtest = bt; D.signals = sg; D.tradelog = tl; D.grades = gr; render(); } catch (e) {} }, 300000);
   }
   boot();
 })();
