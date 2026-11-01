@@ -133,7 +133,7 @@ table.gt td:first-child { white-space: nowrap; }
 section > .seg:first-child { margin-top: 0; }
 .warnline { color: var(--sun); }
 ol.steps { margin: 0; padding-left: 22px; display: grid; gap: 8px; max-width: 80ch; }
-table.sig { min-width: 860px; }
+table.sig { min-width: 1080px; }
 .status { font-weight: 600; } .status.soon { color: var(--sun); } .status.open { color: var(--bull); }
 .heat td.n { color: var(--text); font-variant-numeric: tabular-nums; } .heat td.pick { outline: 2px solid var(--sun); outline-offset: -2px; font-weight: 700; }
 details.logp h4 { margin: 18px 0 6px; font-size: 15px; } table.sig small.why { color: var(--muted); font-size: 12px; } table.sig td { vertical-align: top; }
@@ -743,16 +743,17 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     const endDay = daysFromToday(sig.entry) > 0 ? new Date().toISOString().slice(0, 10) : sig.entry;
     const saved = (D.signals.pumpChecks || {})[sig.u.token];
     const fromSaved = note => Object.assign(pumpVerdict(saved.rise, pumpPct), { rise: saved.rise, ref: saved.ref, refDay: saved.to, final: saved.to >= sig.entry, note });
-    if (saved && saved.ref && saved.to >= sig.entry) return (pumpCache[sig.u.token] = fromSaved(''));
+    // The check is frozen once the entry day has passed, but an open trade still needs today's prices.
+    const frozen = saved && saved.ref && saved.to >= sig.entry;
     const turn = pumpQueue; let done; pumpQueue = new Promise(r => done = r);
     await turn;
-    const px = {};
+    const px = {}, hl = {};
     try {
       const k = await fetch('https://fapi.binance.com/fapi/v1/klines?symbol=' + sig.u.token + 'USDT&interval=1d&limit=40').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
       const live = +k[k.length - 1][4], chk = (saved && saved.ref) || (sig.u.market || {}).priceUsd;
       // A Binance ticker can belong to a different token; check it against a known price first.
-      if (chk && Math.abs(Math.log(live / chk)) > Math.log(saved && saved.ref ? 1.25 : 1.5)) throw new Error('ticker mismatch');
-      k.forEach(r => px[new Date(r[0]).toISOString().slice(0, 10)] = +r[1]);
+      if (chk && Math.abs(Math.log(live / chk)) > Math.log(frozen ? 1.6 : saved && saved.ref ? 1.25 : 1.5)) throw new Error('ticker mismatch');
+      k.forEach(r => { const d = new Date(r[0]).toISOString().slice(0, 10); px[d] = +r[1]; hl[d] = [+r[2], +r[3]]; });
       px._live = live;
     } catch (e) {
       if (sig.id) {
@@ -766,13 +767,40 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       }
     }
     setTimeout(done, 1500);
+    if (frozen) return (pumpCache[sig.u.token] = Object.assign(fromSaved(''), { live: px._live, hl }));
     const a = px[addDays(endDay, -23)], z = daysFromToday(sig.entry) > 0 ? px._live : px[sig.entry];
     if (a && z) {
       const rise = (z / a - 1) * 100;
-      return (pumpCache[sig.u.token] = Object.assign(pumpVerdict(rise, pumpPct), { rise, ref: z, refDay: endDay, final: daysFromToday(sig.entry) <= 0 }));
+      return (pumpCache[sig.u.token] = Object.assign(pumpVerdict(rise, pumpPct), { rise, ref: z, refDay: endDay, final: daysFromToday(sig.entry) <= 0, live: px._live, hl }));
     }
-    if (saved) return (pumpCache[sig.u.token] = fromSaved(' (as of ' + fmtDay(saved.to) + ')'));
+    if (saved) return (pumpCache[sig.u.token] = Object.assign(fromSaved(' (as of ' + fmtDay(saved.to) + ')'), { live: px._live, hl }));
     return { text: 'Price check failed, check by hand', cls: 'na' };
+  }
+
+  function ifInTrade(sig, r, P, pb, riskUsd) {
+    // A short opened at the entry-day 00:00 UTC price (r.ref), stop and target set straight away, covered at
+    // 00:00 UTC on the cover day. Same rules as the backtest: a day that touched the stop counts as stopped
+    // (filled 0.5% worse), then the target; otherwise it is marked to the latest price. After fees and funding.
+    if (!P || !r || !r.ref || !r.final || daysFromToday(sig.entry) > 0) return null;
+    const ref = r.ref, stopPx = ref * (1 + P.stop / 100), tgtPx = ref * (1 - P.target / 100);
+    const last = daysFromToday(sig.exit) <= 0 ? addDays(sig.exit, -1) : new Date().toISOString().slice(0, 10);
+    const fees = pb.feesPct ?? 0.1, fund = pb.fundingPctPerDay ?? 0.03;
+    const haveHL = r.hl && Object.keys(r.hl).length;
+    let out = null;
+    for (let d = sig.entry; haveHL && d <= last; d = addDays(d, 1)) {
+      const x = r.hl[d]; if (!x) continue;
+      const held = Math.max(1, Math.round((Date.parse(d) - Date.parse(sig.entry)) / 86400000));
+      if (x[0] >= stopPx) { out = { state: 'Stopped ' + fmtDay(d), pnl: -P.riskPct, px: stopPx * 1.005 }; break; }
+      if (x[1] <= tgtPx) { out = { state: 'Target hit ' + fmtDay(d), pnl: P.target - fees - fund * held, px: tgtPx }; break; }
+    }
+    if (!out) {
+      const px = r.live; if (!px) return null;
+      const held = Math.max(1, -daysFromToday(sig.entry));
+      out = { state: daysFromToday(sig.exit) <= 0 ? 'Covered' : 'Open', pnl: (ref - px) / ref * 100 - fees - fund * held, px };
+      if (!haveHL) out.state += ', stop not checked';
+    }
+    out.r = out.pnl / P.riskPct; out.usd = out.r * riskUsd; out.entry = ref;
+    return out;
   }
 
   function fmtPx(p) {
@@ -822,6 +850,13 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
 
     // upcoming
     const ups = upcomingSignals(S);
+    const nowPx = {};
+    // Price now: one CoinGecko call for every row; a Binance futures price from the check above replaces it.
+    setTimeout(async () => {
+      const ids = Object.keys(nowPx); if (!ids.length) return;
+      let j = {}; try { j = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=' + ids.join(',') + '&vs_currencies=usd').then(r => r.ok ? r.json() : {}); } catch (e) {}
+      ids.forEach(id => nowPx[id].forEach(td => { if (!td.dataset.live) td.textContent = j[id] && j[id].usd ? fmtPx(j[id].usd) : '—'; }));
+    }, 0);
     const lvCells = (ref, final) => {
       if (!P) return [el('td', { text: '—' }), el('td', { text: '—' }), el('td', { text: '—' })];
       const pend = final ? '' : ' *';
@@ -831,25 +866,38 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
         : [el('td', { class: 'na', text: '+0–' + ZONE + '%' }), el('td', { class: 'na', text: '+' + P.stop + '%' }), el('td', { class: 'na', text: '−' + P.target + '%' })];
     };
     const upList = el('div', { class: 'panel' }, [el('h3', { text: 'Upcoming signals' }),
-      el('p', { class: 'small', text: P ? 'Stop ' + P.stop + '% above entry, target ' + P.target + '% below: ' + P.rr + 'R reward for 1R risk. On the check day, confirm the unlock data (confidence 60+) and that the token has not pumped ' + pb.pumpPct + '%+; the next day’s 00:00 UTC price sets the levels. * = from today’s price, final on the check day.' : 'Unlocks on the live page that match the playbook.' }),
+      el('p', { class: 'small', text: P ? 'Stop ' + P.stop + '% above entry, target ' + P.target + '% below: ' + P.rr + 'R reward for 1R risk. On the check day, confirm the unlock data (confidence 60+) and that the token has not pumped ' + pb.pumpPct + '%+; the next day’s 00:00 UTC price sets the levels. * = from today’s price, final on the check day. Price now is live. If in the trade is what a short from the entry price would show now: after fees and funding, stopped or target hit if a daily high or low reached it, otherwise marked to the live price.' : 'Unlocks on the live page that match the playbook.' }),
       ups.length ? el('div', { class: 'tablewrap' }, [el('table', { class: 'el sig' }, [
-        el('thead', null, [el('tr', null, [el('th', { text: 'Token' }), el('th', { text: 'Unlock' }), el('th', { text: 'Check' }), el('th', { text: 'Entry zone' }), el('th', { text: 'Stop (1R)' }), el('th', { text: 'Target (' + (P ? P.rr + 'R' : '') + ')' }), el('th', { text: 'Cover by' }), el('th', { text: 'Status' })])]),
+        el('thead', null, [el('tr', null, [el('th', { text: 'Token' }), el('th', { text: 'Unlock' }), el('th', { text: 'Check' }), el('th', { text: 'Entry zone' }), el('th', { text: 'Stop (1R)' }), el('th', { text: 'Target (' + (P ? P.rr + 'R' : '') + ')' }), el('th', { text: 'Cover by' }), el('th', { text: 'Price now' }), el('th', { text: 'If in the trade' }), el('th', { text: 'Status' })])]),
         el('tbody', null, ups.map(x => {
           const dEntry = daysFromToday(x.entry), dExit = daysFromToday(x.exit);
           const status = dEntry > 0 ? 'Opens in ' + dEntry + ' day' + (dEntry === 1 ? '' : 's') : dExit > 0 ? 'Open now, cover in ' + dExit + ' day' + (dExit === 1 ? '' : 's') : 'Cover today';
           const conf = x.u.confidenceScore ?? 0;
           const pc = el('small', { class: 'pc na', text: dEntry <= 14 ? 'Checking price…' : 'Price checked nearer the date' });
+          const pxNow = el('td', { class: 'num', text: '…' }), inTrade = el('td', { class: 'na', text: dEntry > 0 ? 'Not open yet' : '…' });
+          if (x.id) nowPx[x.id] = (nowPx[x.id] || []).concat(pxNow);
           const row = el('tr', null, [
             el('td', null, [el('b', { text: x.u.token }), el('small', { text: (x.u.usdM ? ' ' + Desk.usd(x.u.usdM) : '') }), el('br'), x.setup === 'A' ? el('small', { class: 'tierA', text: 'Setup A ' }) : null, el('small', { class: 'why', text: x.hits.map(h => RULE_SHORT[h]).join(', ') })]),
             el('td', { class: 'num', text: fmtDay(x.u.date) }), el('td', { class: 'num', text: fmtDay(addDays(x.entry, -1)) }),
             ...lvCells(null, false),
             el('td', { class: 'num', text: fmtDay(x.exit) }),
+            pxNow, inTrade,
             el('td', null, [el('span', { class: 'status ' + (dEntry <= 3 && dEntry > 0 ? 'soon' : dEntry <= 0 ? 'open' : ''), text: status }), el('br'),
               el('small', { class: 'cchip c-' + (x.u.confidenceLabel || 'unverified').toLowerCase(), title: 'Confidence in the unlock data' }, ['data ', el('b', { text: String(conf) }), conf >= 60 ? ' ok' : ' confirm first']), ' ', pc])]);
           if (dEntry <= 14) pumpCheck(x, pb.pumpPct).then(r => {
             pc.textContent = r.text + (r.note || ''); pc.className = 'pc ' + r.cls;
             if (r.ref) { const cells = lvCells(r.ref, r.final); [3, 4, 5].forEach((i, j) => row.replaceChild(cells[j], row.children[i])); }
+            if (r.live) { pxNow.textContent = fmtPx(r.live); pxNow.dataset.live = '1'; }
+            const t = ifInTrade(x, r, P, pb, L ? L.riskUsd : 100);
+            if (t) {
+              inTrade.className = 'n'; inTrade.textContent = '';
+              inTrade.append(el('span', { class: 'num ' + (t.pnl < 0 ? 'down' : 'up'), text: (t.pnl < 0 ? '−' : '+') + Math.abs(t.pnl).toFixed(1) + '%' }),
+                el('small', { text: ' ' + rf(t.r) + ', ' + usd(t.usd) + ' on $' + (L ? L.riskUsd : 100) + ' risk' }), el('br'),
+                el('small', { class: 'na', text: t.state + ' · in at ' + fmtPx(t.entry) }));
+              if (/^(Stopped|Target)/.test(t.state)) { const st = row.querySelector('span.status'); if (st) st.textContent = 'Closed early: ' + (t.state.startsWith('Stopped') ? 'stopped' : 'target hit'); }
+            } else if (dEntry <= 0) inTrade.textContent = 'Price check failed';
           });
+          else if (dEntry <= 0) inTrade.textContent = '—';
           return row;
         }))])]) : el('p', { text: 'No upcoming unlocks match the playbook right now.' })]);
 
@@ -932,11 +980,12 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     const logP = el('details', { class: 'panel logp' }, [el('summary', null, [el('h3', { text: 'Every past trade (' + S.trades.length + ')' })]),
       seg([['taken', 'Taken (' + S.trades.filter(t => !t.skipped).length + ')'], ['skipped', 'Skipped by pump check (' + S.trades.filter(t => t.skipped).length + ')'], ['all', 'All']], sigLogFilter, v => sigLogFilter = v),
       el('div', { class: 'tablewrap' }, [el('table', { class: 'el' }, [
-        el('thead', null, [el('tr', null, [el('th', { text: 'Short from' }), el('th', { text: 'Token' }), el('th', { text: 'Why' }), el('th', { class: 'n', text: 'Result' }), el('th', { class: 'n', text: 'Rise before entry' }), el('th', { text: 'Prices' })])]),
+        el('thead', null, [el('tr', null, [el('th', { text: 'Short from' }), el('th', { text: 'Token' }), el('th', { text: 'Why' }), el('th', { class: 'n', text: 'Result' }), el('th', { class: 'n', text: 'Return' }), el('th', { class: 'n', text: 'Rise before entry' }), el('th', { text: 'Prices' })])]),
         el('tbody', null, log.map(t => el('tr', null, [
           el('td', { class: 'num', text: t.entryDate }), el('td', null, [el('b', { text: t.token }), el('small', { text: ' unlock ' + t.unlockDate.slice(5) })]),
           el('td', { text: t.rules.map(h => RULE_SHORT[h]).join(', ') }),
           el('td', { class: 'n' }, [t.plan && t.plan.r != null ? el('span', null, [el('span', { class: 'num ' + (t.plan.r < 0 ? 'down' : 'up'), text: rf(t.plan.r) }), el('small', { text: ' ' + WHY[t.plan.why] })]) : el('span', { class: 'na', text: 'no candles' })]),
+          el('td', { class: 'n' }, [t.plan && t.plan.pnl != null ? el('span', null, [el('span', { class: 'num ' + (t.plan.pnl < 0 ? 'down' : 'up'), text: (t.plan.pnl < 0 ? '−' : '+') + Math.abs(t.plan.pnl).toFixed(1) + '%' }), t.plan.r != null && L ? el('small', { text: ' ' + usd(t.plan.r * L.riskUsd) }) : null]) : el('span', { class: 'na', text: '—' })]),
           el('td', { class: 'n' }, [t.momentum == null ? el('span', { class: 'na', text: '—' }) : el('span', { class: t.skipped ? 'down' : '', text: (t.momentum > 0 ? '+' : '') + t.momentum.toFixed(0) + '%' + (t.skipped ? ' skip' : '') })]),
           el('td', { text: t.priceSource === 'coingecko' ? 'CoinGecko' : 'Binance' })])))])])]);
 
