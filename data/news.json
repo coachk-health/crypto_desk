@@ -1,148 +1,135 @@
 {
   "date": "2026-11-01",
-  "updated": "2026-11-01T08:06:28Z",
-  "headline": "Binance has started reopening withdrawals, Bitcoin first, with its full reserves report due by Monday.",
+  "updated": "2026-11-01T12:09:40Z",
+  "headline": "Binance withdrawals are partly back and about $2B left the exchange in three hours; its full reserves proof is now expected by Tuesday 3 Nov.",
   "market": {
-    "asOf": "Read at about 07:57-07:59 UTC Sun 1 Nov (14:57 Bangkok). BTC and SOL from CoinGecko; ETH from CoinMarketCap. CoinMarketCap showed BTC near $77,142 and down about 1.75% over 24h, so the two sites disagree on bitcoin's 24h direction. Use the live prices at the top of the page.",
+    "asOf": "Live price pages could not be opened for this edition, so there is no fresh snapshot. The last read this run: CryptoTicker had bitcoin at $77,725 on Sunday morning (article at 06:29 UTC Sun 1 Nov). Use the live prices at the top of the page.",
     "btc": {
-      "price": 77791.37,
-      "chg24h": 0.6
+      "price": 77725,
+      "chg24h": null
     },
-    "eth": {
-      "price": 2249.44,
-      "chg24h": 0.65
-    },
-    "sol": {
-      "price": 95.37,
-      "chg24h": -0.4
-    },
-    "fearGreed": "36 out of 100 on CoinMarketCap's Fear & Greed Index (Fear). CoinGecko's own gauge read 46, Neutral."
+    "eth": null,
+    "sol": null,
+    "fearGreed": "Not read this edition: the index pages could not be opened."
   },
   "stories": [
     {
-      "title": "Binance withdrawals are partly back, Bitcoin first",
+      "title": "Binance reopens withdrawals in phases; about $2B leaves in three hours",
       "mood": "volatile",
-      "summary": "Binance began reopening withdrawals shortly after 06:00 GMT on Sunday, starting with the Bitcoin network, and has since opened more networks. It says it has now covered 95% of the roughly $6.3B stolen in the hack. A full Proof of Reserves report (a public check that customer balances are fully backed) is due by Monday 2 Nov.",
+      "summary": "After the roughly $6.3B hack, Binance ran phase one of withdrawals on Sunday, starting with Bitcoin, then ETH and the big stablecoins. About $2B left in the first three hours, per Whale Alert. The full Proof of Reserves (a public check that customer balances are fully backed) is now expected by Tuesday 3 Nov, a day later than first promised.",
       "points": [
-        "Binance's status page said the planned withdrawals began shortly after 06:00 GMT Sunday, per Reuters via Investing.com; Binance said on X the Bitcoin network opened first, per AFP via Malay Mail.",
-        "ETH, USDT and USDC on Ethereum, and BNB, USDT and USDC on BNB Smart Chain have also reopened, with more to follow in phases, per TechFlow citing Binance.",
-        "Binance says it has covered 95% of the $6.3B stolen; the last 5% is less liquid tokens, per Reuters. These are Binance's own figures.",
-        "Binance warned of possible delays or failed withdrawals in the first hours because of heavy traffic, per Bitcoin Sistemi.",
-        "Co-CEO Richard Teng said a full Proof of Reserves report is due by Monday 2 Nov, per TokenPost."
+        "Phase one was set for 06:00-09:00 UTC on 1 Nov and covers BTC, ETH, USDT, USDC, BNB and XRP plus assets on 15 other blockchains, per CoinDesk.",
+        "ETH, USDT and USDC on Ethereum and BNB, USDT and USDC on BNB Smart Chain have reopened, per crypto.news.",
+        "About $2B left Binance within three hours of reopening, including 10,000 BTC and nearly $1B of USDT, per Whale Alert via The Currency Analytics.",
+        "Binance says it has replaced about 95% of affected assets with company funds, up from 90% a day earlier, and that losses will not be passed on to users, per CoinDesk. These are Binance's own figures.",
+        "The zero-knowledge reserves proof takes 40-50 hours to compute and is expected by Tue 3 Nov (UTC), per tech-ish; Binance had promised it by Monday."
       ],
       "sources": [
         {
-          "label": "Reuters via Investing.com: withdrawals begin",
-          "url": "https://www.investing.com/news/stock-market-news/binance-to-resume-withdrawals-after-recovering-bulk-of-6-billion-in-stolen-funds-4989388"
+          "label": "CoinDesk: phase one opens",
+          "url": "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack"
         },
         {
-          "label": "Malay Mail (AFP): Bitcoin first",
-          "url": "https://www.malaymail.com/news/money/2026/11/01/binance-resumes-bitcoin-withdrawals-following-record-us63b-crypto-hack/241577"
+          "label": "crypto.news: networks reopened, proof timing",
+          "url": "https://crypto.news/binance-restores-usdt-usdc-eth-bnb-withdrawals/"
         },
         {
-          "label": "TechFlow: networks reopened",
-          "url": "https://www.techflowpost.com/en-US/newsletter/142317"
+          "label": "The Currency Analytics: $2B outflow",
+          "url": "https://thecurrencyanalytics.com/crypto-exchanges/binance-reopens-withdrawals-2-billion-moves-307221"
         },
         {
-          "label": "Bitcoin Sistemi: delays warning",
-          "url": "https://en.bitcoinsistemi.com/binance-issues-long-awaited-statement-withdrawals-have-partially-resumed-here-are-the-altcoins-now-a/"
+          "label": "tech-ish: reserves proof by 3 Nov",
+          "url": "https://tech-ish.com/2026/11/01/binance-hack-6-3-billion-withdrawals-proof/"
         },
         {
-          "label": "TokenPost: reserves report timing",
-          "url": "https://www.tokenpost.com/news/technology/44888"
+          "label": "Cointelegraph: delays warning",
+          "url": "https://cointelegraph.com/news/binance-says-phase-one-of-withdrawals-opens-after-63b-hack"
         }
       ]
     },
     {
-      "title": "North Korea named as the hacker; laundering slowed, Tron hit",
+      "title": "FBI names North Korea; stolen funds laundered 'on autopilot'",
       "mood": "bearish",
-      "summary": "The FBI says North Korea's TraderTraitor group carried out the theft and expects more laundering. THORChain, a swap network the launderers used, paused most swaps after a glitch, which slowed them down. Tron's TRX token has fallen below its pre-hack price.",
+      "summary": "The FBI says North Korea's TraderTraitor group stole more than $6B and is converting it mainly into ETH. Blockchain analysts see automated laundering, and about $3B, mostly stablecoins, has been frozen. Bitcoin and ETH cannot be frozen the same way.",
       "points": [
-        "The FBI said North Korea's TraderTraitor unit was behind the hack and expects \"further laundering,\" per Reuters via Investing.com.",
-        "Total stolen differs by source: Chainalysis puts it at $6.4B, per The Block; Reuters reports $6.3B.",
-        "THORChain halted swaps on most of its bridges after an Ethereum block rewrite (a reorg) made it refund a 10 ETH deposit twice; Chainalysis said this delayed the laundering, per TokenPost.",
-        "TRX was at $0.302 late on 31 Oct, down 8.3% in 24 hours and below its pre-hack level of about $0.331, per CryptoTicker."
+        "The FBI alert names TraderTraitor for \"the theft of more than $6 billion USD in virtual assets\", being converted \"primarily into Ethereum (ETH)\", per tech-ish.",
+        "About $3B is frozen, mostly USDT and USDC that issuers can freeze, per CoinDesk; Elliptic put verified frozen funds at $2.84B.",
+        "Elliptic says the main Tron distribution wallet \"has sent funds every hour for 31 hours straight\", and puts the stolen total at about $6.43B.",
+        "Trump, asked about the hack on 31 Oct, said \"We're looking into it. I'm not worried,\" per crypto.news."
       ],
       "sources": [
         {
-          "label": "Reuters via Investing.com: FBI attribution",
-          "url": "https://www.investing.com/news/stock-market-news/binance-to-resume-withdrawals-after-recovering-bulk-of-6-billion-in-stolen-funds-4989388"
+          "label": "tech-ish: FBI alert",
+          "url": "https://tech-ish.com/2026/11/01/binance-hack-6-3-billion-withdrawals-proof/"
         },
         {
-          "label": "The Block: Chainalysis total",
-          "url": "https://www.theblock.co/news/business/2026-10-31-chainalysis-says-hacker-using-offensive-agentic-techniques-accessed-its-customers-names-and-emails-432244"
+          "label": "Elliptic: laundering on autopilot",
+          "url": "https://www.elliptic.co/insights/the-binance-hack-is-laundering-on-autopilot/"
         },
         {
-          "label": "TokenPost: THORChain pause",
-          "url": "https://www.tokenpost.com/news/technology/45584"
+          "label": "CoinDesk: funds frozen",
+          "url": "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack"
         },
         {
-          "label": "CryptoTicker: TRX below pre-hack",
-          "url": "https://cryptoticker.io/en/tron-trx-price-below-pre-hack-level-binance-attacker"
+          "label": "crypto.news: Trump comment",
+          "url": "https://crypto.news/binance-restores-usdt-usdc-eth-bnb-withdrawals/"
         }
       ]
     },
     {
-      "title": "A red October ends, with US midterms on Tuesday",
+      "title": "Bitcoin's worst October since 2014 hands off to midterm week",
       "mood": "bearish",
-      "summary": "Bitcoin ended October lower after trading above $87,000 earlier in the month. On Tuesday 3 Nov the US votes in midterm elections that shape who takes up the stalled CLARITY Act on crypto market rules, and the hack has added calls in Washington for exchange rules.",
+      "summary": "Bitcoin fell about 7.7% in October amid a tech-stock sell-off and the Binance hack, and traded in a narrow range on Sunday. Tuesday's US midterms shape who writes crypto market rules, with the CLARITY Act stuck in the Senate.",
       "points": [
-        "October was set to be bitcoin's second straight red month, with BTC near $77,000 on 31 Oct after trading above $87,000 earlier in the month, per crypto.news.",
-        "Trump said his administration is looking into the Binance hack, and the Digital Chamber urged Congress to give the CFTC authority over exchanges, per The Block.",
-        "The CLARITY Act's Senate vote to start debate failed on 15 Sep, per CoinDesk."
+        "Bitcoin was on track for its worst October since 2014 as of 30 Oct, per CoinGlass data cited by Cointelegraph.",
+        "CryptoTicker had October closing at $77,223, down 7.67% on the month, and only $656 between bitcoin's high and low over the 24 hours to Sunday morning, the tightest range since 17 Oct.",
+        "Crypto groups spent about $176M across more than 100 races, per Reuters via the Motley Fool.",
+        "The CLARITY Act failed a Senate cloture vote on 15 Sep with 49 of the 60 votes needed, per the Motley Fool."
       ],
       "sources": [
         {
-          "label": "crypto.news: red October",
-          "url": "https://crypto.news/bitcoin-red-october-stocks-gold-selloff/"
+          "label": "Cointelegraph: worst October since 2014",
+          "url": "https://cointelegraph.com/markets/bitcoin-risks-worst-october-in-12-years-as-tech-sell-off-spreads-to-gold"
         },
         {
-          "label": "The Block: calls for crypto rules",
-          "url": "https://www.theblock.co/news/regulation/2026-10-30-trump-looking-into-binance-hack-calls-grow-for-crypto-rules-432236"
+          "label": "CryptoTicker: October close, tight range",
+          "url": "https://cryptoticker.io/en/bitcoin-price-narrowest-daily-range-november-2026/"
         },
         {
-          "label": "CoinDesk: CLARITY vote fails",
-          "url": "https://www.coindesk.com/policy/2026/09/15/crypto-clarity-act-flames-out-in-failed-u-s-senate-vote"
+          "label": "Motley Fool: crypto money in the midterms",
+          "url": "https://fool.com/investing/2026/11/01/with-midterms-looming-the-crypto-industry-is-mobil"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Which coins are in phase one",
-      "summary": "BusinessToday lists phase-one withdrawals as including BTC, ETH, BNB, TRX, SOL, XRP, DOGE, TON, AVAX and SUI, plus USDT and USDC.",
-      "url": "https://www.businesstoday.in/technology/story/binance-resumes-crypto-withdrawals-after-6-3-billion-security-breach-whats-open-from-today-564972-2026-11-01"
+      "title": "Which networks are in phase one",
+      "summary": "U.Today says phase one spans 15 networks, with assets including XRP, SOL, TRX, DOGE, AVAX and SUI; not all were live at the time.",
+      "url": "https://u.today/binance-to-resume-xrp-bitcoin-ethereum-and-other-crypto-withdrawals"
     },
     {
-      "title": "How the hackers got in",
-      "summary": "Reuters reports the attack began with a compromised laptop and malware built to delete evidence, and most of the theft took about 20 minutes.",
-      "url": "https://www.investing.com/news/stock-market-news/binance-to-resume-withdrawals-after-recovering-bulk-of-6-billion-in-stolen-funds-4989388"
+      "title": "Expect slow withdrawals",
+      "summary": "Binance warned of congestion and told users whose withdrawal fails to \"try again after a short while\", per Cointelegraph.",
+      "url": "https://cointelegraph.com/news/binance-says-phase-one-of-withdrawals-opens-after-63b-hack"
     },
     {
-      "title": "Company may sell its bitcoin",
-      "summary": "Nasdaq-listed Next Technology Holding authorized selling or borrowing against about 5,833 BTC, citing the Binance hack and quantum-computing risk, per CoinDesk.",
-      "url": "https://www.coindesk.com/markets/2026/10/31/a-nasdaq-listed-company-may-sell-usd450-million-bitcoin-citing-binance-hack-and-quantum-fears"
+      "title": "Binance refilling its SAFU fund",
+      "summary": "Binance plans to refill its emergency fund to about $1B; the 95% figure means replaced assets, not recovered stolen funds, per TokenPost.",
+      "url": "https://www.tokenpost.com/news/technology/45797"
     },
     {
-      "title": "Chainalysis customer data accessed",
-      "summary": "Chainalysis said a hacker using AI-agent techniques accessed customers' names, emails and user IDs, and says it is unrelated to the Binance hack, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-10-31-chainalysis-says-hacker-using-offensive-agentic-techniques-accessed-its-customers-names-and-emails-432244"
+      "title": "Moscow Exchange to list crypto",
+      "summary": "The Moscow Exchange plans BTC, ETH and USDT trading from 1 Dec, with limits for retail investors, per crypto.news.",
+      "url": "https://crypto.news/moscow-exchange-bitcoin-ethereum-usdt-trading-december/"
     },
     {
-      "title": "DeFi websites hijacked",
-      "summary": "About a dozen DeFi websites registered with Name.com were hijacked with a wallet-draining kit, with about $138K stolen, per The Block.",
-      "url": "https://www.theblock.co/news/defi/2026-10-31-hackers-hijack-a-dozen-defi-websites-all-registered-with-name-com-and-steal-about-138000-432251"
+      "title": "3x crypto ETFs pushed back",
+      "summary": "GraniteShares moved the planned effective date for its 3x BTC, XRP, ETH and SOL ETFs to 30 Nov, per Coinpedia.",
+      "url": "https://coinpedia.org/news/sec-delays-graniteshares-3x-bitcoin-xrp-and-ethereum-etfs-ahead-of-us-midterms/"
     }
   ],
   "calendar": [
-    {
-      "et": "By Mon 2 Nov",
-      "bkk": "By Mon 2 – Tue 3",
-      "event": "Binance full Proof of Reserves report",
-      "impact": "volatile",
-      "key": true,
-      "note": "Due by Mon 2 Nov per co-CEO Richard Teng, via TokenPost. Withdrawals began reopening in stages from about 06:00 GMT Sun 1 Nov, per Reuters."
-    },
     {
       "et": "Sun 1 – Sun 8 Nov",
       "bkk": "Sun 1 – Sun 8 Nov",
@@ -154,10 +141,10 @@
     {
       "et": "Mon 2 Nov · 10:00am",
       "bkk": "Mon 2 · 22:00",
-      "event": "US ISM manufacturing index; Fed's Goolsbee at 11:15am ET (23:15 Bangkok); Apple and Palantir earnings calls at 5:00pm ET (05:00 Tue Bangkok)",
+      "event": "US ISM manufacturing; Fed's Goolsbee Q&A at 11:15am ET (23:15 Bangkok); Apple results 4:30pm ET (04:30 Tue Bangkok); Palantir after the close",
       "impact": "neutral",
       "key": false,
-      "note": "ISM consensus 54.7, prior 54.5, per Newsquawk and Trading Economics."
+      "note": "ISM consensus 54.7, prior 54.5, per Trading Economics and Newsquawk."
     },
     {
       "et": "Mon 2 Nov · 10:30pm",
@@ -165,39 +152,63 @@
       "event": "Reserve Bank of Australia rate decision",
       "impact": "neutral",
       "key": false,
-      "note": "Cash rate 4.60%. Newsquawk puts the odds of a hike to 4.85% at about 79%."
+      "note": "Cash rate 4.60%. Hike odds differ: Newsquawk about 79%, ThriveInMarkets about 70%."
+    },
+    {
+      "et": "By Tue 3 Nov",
+      "bkk": "By Tue 3 – Wed 4",
+      "event": "Binance full Proof of Reserves (zero-knowledge proof)",
+      "impact": "volatile",
+      "key": true,
+      "note": "Now expected by Tue 3 Nov (UTC), per tech-ish and crypto.news, a day later than the Monday promise. No Binance post confirming the new date was found."
     },
     {
       "et": "Tue 3 Nov",
       "bkk": "Tue 3 – Wed 4",
-      "event": "US midterm elections; JOLTS job openings at 10:00am ET (22:00 Bangkok); AMD and Block earnings calls at 5:00pm ET (05:00 Wed Bangkok)",
+      "event": "US midterm elections; JOLTS job openings at 10:00am ET (22:00 Bangkok); AMD and Block results after the close",
       "impact": "volatile",
       "key": true,
-      "note": "JOLTS prior 7.079M, consensus 7.10M per Trading Economics. Polymarket, via Newsquawk: Democrats about 94% to win the House, 69% the Senate."
+      "note": "JOLTS consensus 7.10M, prior 7.079M, per Trading Economics."
+    },
+    {
+      "et": "Wed 4 Nov · 5:00am",
+      "bkk": "Wed 4 · 17:00",
+      "event": "Eurozone flash inflation",
+      "impact": "neutral",
+      "key": false,
+      "note": "Consensus 3.9%, prior 3.8%, per Trading Economics."
     },
     {
       "et": "Wed 4 Nov · 8:00am",
       "bkk": "Wed 4 · 20:00",
-      "event": "Circle and Riot earnings calls, Hut 8 at 8:30am ET; ADP jobs at 8:15am ET (20:15 Bangkok); ISM services at 10:00am ET (22:00 Bangkok)",
+      "event": "Circle and Riot results, Hut 8 call at 8:30am ET; ADP jobs at 8:15am ET (20:15 Bangkok); ISM services at 10:00am ET (22:00 Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "ADP prior 90K, consensus 65K per Trading Economics. ISM services prior 54.9; consensus 54.7 per Newsquawk, 54.8 per Trading Economics. Eurozone flash inflation at 5:00am ET (17:00 Bangkok): prior 3.8%, consensus 3.9% per Trading Economics."
+      "note": "ADP prior 90K; consensus differs: Trading Economics 65K, BitcoinSistemi 75K. ISM services prior 54.9; consensus 54.8 per Trading Economics, 54.7 per Newsquawk."
     },
     {
-      "et": "Thu 5 Nov",
-      "bkk": "Thu 5 – Fri 6",
-      "event": "Bank of England rate decision (time not given); US jobless claims at 8:30am ET (20:30 Bangkok); Fed's Hammack at 8:50am ET (20:50 Bangkok); IREN earnings call at 5:00pm ET (05:00 Fri Bangkok)",
+      "et": "Thu 5 Nov · 7:00am",
+      "bkk": "Thu 5 · 19:00",
+      "event": "Bank of England rate decision",
       "impact": "neutral",
       "key": false,
-      "note": "Bank Rate 3.75%, per the Bank of England. Newsquawk expects a 0.25-point hike; CMC Markets expects no change. Jobless claims consensus 197K, prior 194K, per Trading Economics."
+      "note": "Bank Rate 3.75%. Trading Economics consensus is a hike to 4.00%; Newsquawk also expects a 0.25-point hike."
     },
     {
-      "et": "Fri 6 Nov · time not given",
-      "bkk": "Fri 6 · time not given",
-      "event": "Bitcoin options expiry",
+      "et": "Thu 5 Nov · 8:30am",
+      "bkk": "Thu 5 · 20:30",
+      "event": "US jobless claims; Fed's Hammack at 8:50am ET (20:50 Bangkok); IREN results call at 5:00pm ET (05:00 Fri Bangkok)",
+      "impact": "neutral",
+      "key": false,
+      "note": "Claims consensus 197K, prior 194K, per Trading Economics."
+    },
+    {
+      "et": "Fri 6 Nov · 3:00am",
+      "bkk": "Fri 6 · 15:00",
+      "event": "Deribit weekly options expiry",
       "impact": "volatile",
       "key": false,
-      "note": "BigGo puts the bitcoin expiry at about $1.29B."
+      "note": "Expiry is 08:00 UTC per Deribit. TokenPost put the bitcoin expiry at about $2.07B notional on 31 Oct."
     },
     {
       "et": "Fri 6 Nov · 8:30am",
@@ -205,7 +216,7 @@
       "event": "US October jobs report",
       "impact": "volatile",
       "key": true,
-      "note": "Prior +29K jobs and 4.2% unemployment. Payrolls consensus differs: Trading Economics +65K, Newsquawk +55K. Unemployment consensus 4.2%. UMich sentiment at 10:00am ET (22:00 Bangkok): prior 48.0, consensus 47.3 per Trading Economics."
+      "note": "Prior +29K jobs, unemployment 4.2%. Payrolls consensus differs: Newsquawk 55K, Trading Economics 65K. UMich sentiment at 10:00am ET (22:00 Bangkok): consensus 47.3, prior 48.0, per Trading Economics."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -213,14 +224,14 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": false,
-      "note": "8-9 December, with new economic projections, per the Federal Reserve."
+      "note": "Listed at 2:00pm ET Wed 9 Dec (02:00 Thu 10 Dec Bangkok), press conference 2:30pm ET, per the Federal Reserve."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-01T08:06:28Z",
-    "claimsChecked": 102,
-    "claimsRemoved": 17,
+    "checkedAt": "2026-11-01T12:09:40Z",
+    "claimsChecked": 107,
+    "claimsRemoved": 1,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
