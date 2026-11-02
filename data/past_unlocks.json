@@ -3619,6 +3619,69 @@
       }
      ],
      "gaps": "Amount disagreement across trackers (36.82M / 38.35M / 39.02M); 36.82M kept because it is the only figure the primary 4% rule reproduces."
+    },
+    {
+     "date": "2026-11-01",
+     "timeUTC": null,
+     "amountTokens": 36820000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.4636,
+      "investors": 0.5364,
+      "community": 0,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko EIGEN page (vi locale) unlock widget, Tokenomist data: 1 Nov, 36.82M EIGEN ($6.92M); Investors 19.75M, Early Contributors 17.07M",
+       "url": "https://www.coingecko.com/vi/ty_gia/eigencloud",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist EIGEN page (same feed as CoinGecko widget, counted once): next unlock 1 Nov 2026, Early Contributors",
+       "url": "https://tokenomist.ai/eigenlayer",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "Eigen Foundation docs: investor and core contributor tokens locked 1 year after 30 Sep 2024 transferability, then 4% per month, fully unlocked after 3 years",
+       "url": "https://docs.eigenfoundation.org/eigen-token/token",
+       "kind": "primary",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "CryptoTicker (DefiLlama model): 1 Nov 2026 = 37,825,418 EIGEN; monthly on the 1st at 00:00 UTC; cliff 30 Sep 2025",
+       "url": "https://cryptoticker.io/en/eigenlayer-eigen-unlock-monthly-schedule/",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "time"
+       ]
+      },
+      {
+       "label": "CoinGecko EIGEN page (en): price $0.1906, mcap $193.7M, 24h vol $17.06M, circ 1.016B, total 1.859B, max unlimited, API ID eigenlayer",
+       "url": "https://www.coingecko.com/coins/eigencloud",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 2.96,
+      "confidence": 55,
+      "scoredAt": "2026-11-02T08:14:10Z"
+     }
     }
    ],
    "gaps": "First insider unlock (cliff end, 4%) was 30 Sep/1 Oct 2025, before the window, so all window events are routine tranches. Trackers disagree on tranche size: Tokenomist 36.82M flat; DefiLlama emissions model varies (37.8-39.5M, investors 20.19M = 4% of 504.73M). Foundation service providers share the same lock but their allocation is not published separately. Time of day differs by tracker (00:00, 04:00, ~05:30 UTC). Tokenomist/DefiLlama pages were not reachable directly this pass (allowlist), so their figures come via Bitrue/KuCoin/PANews. listed 2024-10 rests on transferability 30 Sep 2024 (KuCoin) with exchange trading from 1 Oct 2024. CoinGecko id 'eigenlayer' (web slug now also 'eigencloud' after rebrand).",
@@ -12404,6 +12467,50 @@
       }
      ],
      "gaps": "Baltex (Tokenomics.com data) gives ~23.4M on Oct 3 including stake subsidies. DeFiLlama dates the Mysten Labs tranche separately (e.g. Oct 31 02:31 UTC). Bucket mapping: Series B -> investors; Early Contributors -> team; Community Reserve -> ecosystem (Foundation-held reserve for grants/ecosystem; Tokenomics.com instead files it under 'Community'); Mysten Labs Treasury -> ecosystem (Coinglass/Tokenomics.com group it under 'Foundation'; it could arguably be 'team' since Mysten Labs is the founding company)."
+    },
+    {
+     "date": "2026-11-01",
+     "timeUTC": null,
+     "amountTokens": 13147499,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": null,
+     "sources": [
+      {
+       "label": "CryptoTicker (DE, 24 Oct, upd. 27 Oct 2026): Tokenomist 1 Nov 13,147,499 SUI Early Contributors; CoinGlass 1 Nov Early Contributors (no amount); tokenomics.com 3 Nov 22,617,401 SUI; DefiLlama 31 Oct ~2.07M SUI Mysten Labs treasury; no tracker gives a time",
+       "url": "https://cryptoticker.io/de/sui-token-unlock-sperrfrist/",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Pluang (24 Oct 2026): early November unlock of 2.07M to 22.6M SUI, no exact day",
+       "url": "https://pluang.com/en/news-feed/sui-token-unlock-tiga-pelacak-tiga-tanggal",
+       "kind": "news",
+       "confirms": []
+      },
+      {
+       "label": "KuCoin blog: early contributors received 8.60M SUI on 1 May 2026; ~64M SUI/month unlocks through 2026; claims many new tokens are restaked",
+       "url": "https://www.kucoin.com/blog/th-sui-price-prediction-for-late-2026-can-post-vesting-tokenomics-trigger-a-breakout",
+       "kind": "news",
+       "confirms": []
+      },
+      {
+       "label": "CoinMarketCap SUI page: $0.9005, mcap $3.709B, 24h vol $198.5M, circ 4,118,270,448, max 10B; unlock section did not load",
+       "url": "https://coinmarketcap.com/currencies/Sui/",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "Low",
+      "points": -0.5,
+      "confidence": 30,
+      "scoredAt": "2026-11-02T08:14:10Z"
+     }
     }
    ],
    "gaps": "coingeckoId was not confirmed from a CoinGecko URL in this session; the likely id is 'sui' (unverified). Dec 2025 and Feb 2026 token counts are unconfirmed. March, June and July 2026 bucket splits were not found. Monthly totals here follow Tokenomist (via PANews/BeInCrypto) and exclude stake subsidies. Max supply comes from Tokenomist and sui.io. 'listed' comes from Tokenomist's listing feed (10 May 2023) and Sui mainnet on 3 May 2023.",
@@ -16047,6 +16154,68 @@
       "points": 6.67,
       "confidence": 62,
       "scoredAt": "2026-10-30T04:29:52Z"
+     }
+    }
+   ],
+   "harvested": true
+  },
+  {
+   "token": "M",
+   "name": "MemeCore",
+   "coingeckoId": "memecore",
+   "events": [
+    {
+     "date": "2026-11-01",
+     "timeUTC": "23:44",
+     "amountTokens": 56111112,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.1361,
+      "investors": 0.2228,
+      "community": 0.4332,
+      "ecosystem": 0.2079,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinEdition (ID): unlock 1 Nov 2026 23:44 UTC (2 Nov 06:44 WIB), ~56.11M M, 2.45% of circulating; community ~24.31M, investors 12.50M, foundation ~11.67M, team ~7.64M; schedule taken from DefiLlama (estimate)",
+       "url": "https://coinedition.com/id/prediksi-harga-memecore-token-unlock-november/",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "time",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "KuCoin News: 2 Sep 2026 tranche 56,111,112 M (community 24,305,556 / investors 12,500,000 / foundation 11,666,667 / team 7,638,889); monthly since Dec 2025; time drifts (block-height based); early Nov tranche expected, no exact date",
+       "url": "https://www.kucoin.com/news/flash/memecore-unlocks-56m-m-tokens-on-september-2-2026",
+       "kind": "news",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinGecko MemeCore page: price, supply, API ID memecore; no unlock widget",
+       "url": "https://coingecko.com/coins/memecore",
+       "kind": "aggregator",
+       "confirms": []
+      },
+      {
+       "label": "CoinMarketCap MemeCore page: price $0.9514, circ 2,292,402,115; unlock section empty",
+       "url": "https://coinmarketcap.com/currencies/memecore/",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 5.32,
+      "confidence": 54,
+      "scoredAt": "2026-11-02T08:14:10Z"
      }
     }
    ],
