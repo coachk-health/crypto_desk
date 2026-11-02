@@ -1,63 +1,63 @@
 {
   "date": "2026-11-02",
-  "updated": "2026-11-02T08:07:27Z",
-  "headline": "Binance says outflows are stabilising after its record hack, while the hacker moved about $293M of stolen XRP early Monday and the market waits for Tuesday's midterms.",
+  "updated": "2026-11-02T12:05:01Z",
+  "headline": "Binance's assets keep falling as it waits to publish Tuesday's proof of reserves, while the hacker's funds keep moving and bitcoin holds near $78K before the US midterms.",
   "market": {
-    "asOf": "Live price feeds could not be read this run; snapshot from a CoinDesk report published 04:42 UTC Mon 2 Nov (11:42 Bangkok). Use the live prices at the top of the page.",
+    "asOf": "Live price feeds could not be read this run; BTC and ETH from a Reuters report at 04:45 ET (16:45 Bangkok) Mon 2 Nov, via MarketScreener. Use the live prices at the top of the page.",
     "btc": {
-      "price": 78600,
-      "chg24h": null
+      "price": 78184,
+      "chg24h": 0.5
     },
     "eth": {
+      "price": 2296.44,
+      "chg24h": 1.5
+    },
+    "sol": {
       "price": null,
       "chg24h": null
     },
-    "sol": {
-      "price": 95,
-      "chg24h": null
-    },
-    "fearGreed": "37, up from 34 yesterday, on the Crypto Fear & Greed Index, per CoinGabbar"
+    "fearGreed": "37 (Fear), up from 34 yesterday, on the Alternative.me Crypto Fear & Greed Index, per CoinGabbar; KuCoin also reports 37 but gives the previous value as 30"
   },
   "stories": [
     {
-      "title": "Binance says outflows are stabilising; 95% of the stolen funds replaced, full reserves proof due Tuesday",
+      "title": "Binance's assets keep falling while it waits on Tuesday's proof of reserves",
       "mood": "volatile",
-      "summary": "Binance reopened withdrawals in stages on Sunday after the roughly $6.3B hack. It says outflows are now stabilising and that it has replaced 95% of the stolen funds with its own money. Its full proof of reserves (a public check that customer balances are fully backed) is promised by Tuesday 3 Nov (UTC).",
+      "summary": "Binance reopened withdrawals on 1 Nov after the record hack. Its own figures show a $3.64B net outflow in the first hours, and outside trackers show a larger drop in total assets. The full proof of reserves (a public check that customer balances are fully backed) is due Tuesday 3 Nov (UTC).",
       "points": [
-        "In the first 9.5 hours after reopening, $4.65B was withdrawn and $1.01B deposited: about $3.64B net, or 2.1% of $171B in assets, per Binance via The Block.",
-        "Outside data disagrees: DefiLlama showed a $4.05B net outflow over 24 hours (The Block), while Reuters cites DefiLlama at $5.81B, a figure Binance called inaccurate.",
-        "Binance has covered 95% of the stolen funds, up from 80% Friday and 90% Saturday; the last 5% is less-liquid tokens it is still buying, per Brad Feld and Reuters.",
-        "The theft size also differs by source: about $6.3B per Binance, $6.43B per Elliptic.",
-        "The full proof takes 40 to 50 hours of computing, so Binance moved it from Monday to Tuesday 3 Nov (UTC), per Brad Feld."
+        "From 06:00 to 15:30 UTC on 1 Nov, Binance processed $4.649B in withdrawals and $1.01B in deposits: $3.64B net, about 2.1% of its $171B in assets, per Unchained.",
+        "Binance says about 95% of the loss is now covered, up from 90% on 31 Oct, with ten assets including BTC, ETH, SOL, USDT and USDC fully backed, per Unchained.",
+        "DefiLlama shows Binance's tracked assets fell from about $144.9B on 29 Oct to about $128.3B early 2 Nov, a figure that also includes falling prices, per Bitcoin.com. Rivals gained: OKX about $450M net and Bybit about $134M, per Decrypt.",
+        "The hack size differs by source: about $6.3B by Binance's estimate per Unchained, $6.36B per The Daily Hodl.",
+        "Only 15 networks and assets reopened in phase 1, with no date for phase 2. The full proof needs 40 to 50 hours of computing, so it is due Tuesday, per Bitcoin.com."
       ],
       "sources": [
         {
-          "label": "The Block: $3.64B net outflows",
-          "url": "https://www.theblock.co/news/business/2026-11-01-binance-sees-3-64-billion-in-net-outflows-after-reopening-withdrawals-following-record-hack-432259"
+          "label": "Unchained: net outflow 2.1% of $171B",
+          "url": "https://unchainedcrypto.com/binance-puts-net-outflow-at-2-1-of-its-171-billion-in-assets-as-withdrawals-restart/"
         },
         {
-          "label": "Reuters via Lufkin Daily News: outflows stabilising",
-          "url": "https://lufkindailynews.com/news_reuters/business/binance-sees-outflows-stabilising-as-exchange-returns-online-after-6-3-billion-heist/article_ac88c57e-e2ad-55fd-bb7a-7d2ab9a5f029.html"
+          "label": "Bitcoin.com: proof of reserves Tuesday",
+          "url": "https://news.bitcoin.com/exchanges/binance-sheds-15-7b-proof-of-reserves-tuesday/"
         },
         {
-          "label": "Brad Feld: Binance hack update",
-          "url": "https://feld.com/archives/2026/11/binance-hack-update"
+          "label": "Decrypt: FBI blames North Korea",
+          "url": "https://decrypt.co/382316/fbi-blames-north-korea-for-6b-binance-hack-as-exchange-reopens-withdrawals"
         },
         {
-          "label": "Elliptic: largest hack in history",
-          "url": "https://www.elliptic.co/insights/binance-largest-hack-in-history/"
+          "label": "The Daily Hodl: phased withdrawals",
+          "url": "https://dailyhodl.com/2026/11/02/binance-resumes-phased-bitcoin-and-crypto-withdrawals-after-record-6360000000-hack/"
         }
       ]
     },
     {
-      "title": "Hacker moves about $293M of stolen XRP as North Korea's laundering continues",
+      "title": "Stolen funds keep moving as the FBI presses THORChain",
       "mood": "bearish",
-      "summary": "About 233.46M stolen XRP moved to six new wallets early Monday, after sitting still for about 80 hours. The FBI has named North Korea's TraderTraitor group. Investigators are tracking laundering through Tron and cross-chain swap services.",
+      "summary": "The FBI blames North Korea for the Binance hack. Stolen XRP moved early Monday, and money is leaving Tron through swap and bridge services. The FBI has asked THORChain node operators to block the hacker's addresses.",
       "points": [
-        "The XRP (about $293M) moved in large transfers between 03:52 and 04:00 UTC on 2 Nov; none had moved onward as of 04:37 UTC, per Bitcoin.com.",
-        "On Tron, Tether froze 378.7M USDT, but about $242M moved in two days, mostly out through Relay, THORChain, Chainflip and Symbiosis, per The Block.",
-        "The attacker began converting 970,522 SOL (about $96M) into BTC on Sunday; 18,270 stolen BTC have not moved since Thursday, per CoinDesk.",
-        "Binance says about $3B has been frozen; Elliptic counts $2.85B verified frozen or seized, about 44% of the theft."
+        "Bitcoin.com says all 233.46M stolen XRP (about $293M) moved to six new wallets between 03:52 and 04:00 UTC; Whale Alert data cited by BigGo shows only 80M XRP (about $100.9M) moving.",
+        "About $242M was laundered through Tron in two days and about $194M left via bridges and swaps; the largest exits were Relay ($48M), THORChain ($44M), Chainflip ($32.1M) and Symbiosis ($16M), per CryptoTicker. Chainalysis puts Tron flows above $500M, per Decrypt.",
+        "THORChain co-founder Chad Barraford did not commit to blocking the FBI's listed addresses, per CoinCentral.",
+        "Elliptic says $2.85B, about 44% of the theft, has been frozen or seized, per CryptoTicker."
       ],
       "sources": [
         {
@@ -65,97 +65,93 @@
           "url": "https://news.bitcoin.com/security/binance-hacker-moves-293m-stolen-xrp/"
         },
         {
-          "label": "The Block: $242M laundered via Tron",
-          "url": "https://www.theblock.co/news/defi/2026-11-01-north-korean-hackers-launder-242-million-of-binance-loot-via-tron-as-fbi-presses-thorchain-analyst-432257"
+          "label": "BigGo: Whale Alert XRP transfers",
+          "url": "https://finance.biggo.com/news/2a3aa276-d396-4b36-8edb-762267ce894a"
         },
         {
-          "label": "CoinDesk: SOL to BTC, unmoved BTC",
-          "url": "https://www.coindesk.com/tech/2026/11/02/strangers-are-begging-the-binance-hacker-for-bitcoin-one-help-me-bro-at-a-time"
+          "label": "CryptoTicker: Tron laundering and THORChain",
+          "url": "https://cryptoticker.io/en/thorchain-swap-pause-bitcoin-ether-laundering/"
         },
         {
-          "label": "Investing.com: Binance resumes withdrawals",
-          "url": "https://ph.investing.com/news/cryptocurrency-news/bitcoin-steadies-at-78k-after-october-losses-binance-resumes-withdrawals-2665699"
+          "label": "CoinCentral: FBI pushes THORChain",
+          "url": "https://coincentral.com/binance-hack-north-korea-moves-242m-through-tron-while-fbi-pushes-thorchain-to-act"
         },
         {
-          "label": "Elliptic: frozen funds",
-          "url": "https://www.elliptic.co/insights/binance-largest-hack-in-history/"
+          "label": "Decrypt: Chainalysis Tron figure",
+          "url": "https://decrypt.co/382316/fbi-blames-north-korea-for-6b-binance-hack-as-exchange-reopens-withdrawals"
         }
       ]
     },
     {
-      "title": "Bitcoin steadies before Tuesday's midterms after a $643M ETF outflow",
-      "mood": "volatile",
-      "summary": "Bitcoin was near $78,600 early Monday, its third straight daily gain, per CoinDesk. US spot bitcoin ETFs lost $643.3M on Friday, the most since June. Traders now face Tuesday's US midterm elections.",
+      "title": "Bitcoin holds near $78K before Tuesday's midterms after a $643M ETF outflow",
+      "mood": "neutral",
+      "summary": "Reuters had bitcoin up 0.5% at $78,184 and ether up 1.5% at $2,296.44 at 04:45 ET Monday. US spot bitcoin ETFs lost about $643M on Friday. Traders face Tuesday's US midterm elections and Friday's jobs report.",
       "points": [
-        "Friday's ETF outflow erased about 63.6% of 2026's roughly $1B net inflow; IBIT lost $233.7M and FBTC $201.4M, per CoinDesk using SoSoValue data.",
-        "Binance order-book depth fell 25-30% after the hack but buyers returned within hours, Talos' Kelly Ye said in a Bloomberg report.",
-        "Cook Political Report says Democrats will likely win the House and rates the Senate a tossup, per CoinDesk.",
-        "Crypto PACs spent over $170M on the election per CoinDesk; a Reuters investigation put it at about $176M."
+        "The dollar fell to a one-month low ahead of the midterms, per Reuters via MarketScreener.",
+        "Spot bitcoin ETFs lost $643.2M on Friday, with IBIT down $233.7M, leaving October about $516M negative, per Blockonomi.",
+        "Prediction markets Kalshi and Polymarket gave Democrats about 92-94% odds for the House and about 69% for the Senate as of 30 Oct, per CryptoTicker.",
+        "The CLARITY Act (crypto market-structure bill) failed a Senate procedural vote 49-50 on 15 Sep, per CryptoTicker."
       ],
       "sources": [
         {
-          "label": "CoinDesk: bitcoin claws back toward $79K",
-          "url": "https://www.coindesk.com/markets/2026/11/02/bitcoin-claws-back-toward-usd79-000-as-markets-shake-off-crypto-s-biggest-hack"
+          "label": "Reuters via MarketScreener: bitcoin stabilises",
+          "url": "https://www.marketscreener.com/news/dollar-pulls-back-ahead-of-us-midterms-bitcoin-stabilises-after-crypto-heist-ce785fd8de8dfe2d"
         },
         {
-          "label": "CoinDesk: ETFs lost $643M Friday",
-          "url": "https://www.coindesk.com/markets/2026/11/02/bitcoin-etfs-lost-usd643-million-in-outflows-friday-and-2026-is-barely-green-now"
+          "label": "Blockonomi: ETFs lose $643M",
+          "url": "https://blockonomi.com/michael-saylor-hints-at-new-strategy-bitcoin-purchase-as-etfs-lose-643-million"
         },
         {
-          "label": "Bloomberg via Business Standard: lingering jitters",
-          "url": "https://business-standard.com/amp/world-news/bitcoin-s-resilience-after-binance-hack-masks-lingering-market-jitters-126110200359_1.html"
+          "label": "CryptoTicker: midterms and crypto",
+          "url": "https://cryptoticker.io/en/midterm-elections-2026-bitcoin-crypto/"
         },
         {
-          "label": "CoinDesk: reader's guide to the midterms",
-          "url": "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto"
-        },
-        {
-          "label": "crypto.news: Reuters $176M figure",
-          "url": "https://crypto.news/crypto-industry-176-million-us-midterm-elections/"
+          "label": "CoinDesk: crypto week ahead",
+          "url": "https://www.coindesk.com/markets/2026/11/02/binance-hack-fallout-u-s-midterms-and-jobs-report-crypto-week-ahead"
         }
       ]
     }
   ],
   "briefs": [
     {
+      "title": "THORChain halts most chains after an Ethereum reorg",
+      "summary": "A separate Ethereum reorg halted 10 of THORChain's 13 chains; BTC, ETH and SOL were still halted and RUNE fell 18.4% to $0.507, per CryptoTicker.",
+      "url": "https://cryptoticker.io/en/thorchain-swap-pause-bitcoin-ether-laundering/"
+    },
+    {
       "title": "BTCPay Server tells users to switch off servers",
-      "summary": "Attackers logged in as admins on servers older than v2.4.2 and drained hot wallets; BTCPay's own servers run v2.4.7 and were not hit. No loss total has been given, per CoinDesk.",
+      "summary": "Founder Nicolas Dorier says thefts appear to involve releases older than 2.4.2; there is no fix and no loss total yet, per CoinDesk.",
       "url": "https://www.coindesk.com/tech/2026/11/02/btcpay-a-bitcoin-payment-tool-tells-users-to-switch-off-their-servers-after-reports-of-drained-wallets"
     },
     {
-      "title": "Coinbase premium stays negative",
-      "summary": "Bitfire puts the Coinbase premium at -0.18% to -0.27%, a sign of weaker US demand, per CoinDesk.",
-      "url": "https://www.coindesk.com/markets/2026/11/02/bitcoin-etfs-lost-usd643-million-in-outflows-friday-and-2026-is-barely-green-now"
+      "title": "Saylor hints at another Strategy buy",
+      "summary": "Saylor posted \"We found room for even more orange\" on Sunday; Strategy held 848,517 BTC as of 25 Oct. No new purchase had been announced as of this update.",
+      "url": "https://blockonomi.com/michael-saylor-hints-at-new-strategy-bitcoin-purchase-as-etfs-lose-643-million"
+    },
+    {
+      "title": "Coinbase adds its 18,000th bitcoin",
+      "summary": "Brian Armstrong said Coinbase added its 18,000th BTC to its treasury, in a 2 Nov post wishing bitcoin a happy 18th birthday.",
+      "url": "https://gokhshtein.com/news/2026-11-02-brian-armstrong-says-coinbase-added-18000th-bitcoin-to"
+    },
+    {
+      "title": "Hacker's bitcoin stash tops Coinbase's",
+      "summary": "Bitquery traced 18,270 BTC to the attacker, more than Coinbase's 18,071 BTC as of 30 Sep, plus 508,621 ETH, per Cointelegraph.",
+      "url": "https://cointelegraph.com/news/binance-hacker-bitcoin-holdings-exceed-coinbase-btc-treasury"
     },
     {
       "title": "Spot ether ETFs see outflows too",
-      "summary": "Spot ETH ETFs lost about $156M, per KuCoin's daily market report.",
+      "summary": "About $156M left spot ETH ETFs, per KuCoin's daily market report.",
       "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-2-2026"
     },
     {
-      "title": "Companies object to OKXICE tokenized stocks",
-      "summary": "OKXICE's 28 Oct notice listed 38 objecting companies, up from 9 on 15 Oct, per crypto.news.",
-      "url": "https://crypto.news/nasdaq-okxice-tokenized-stock-trading-objections"
+      "title": "OnePay accepts USDC deposits",
+      "summary": "OnePay and Stripe launched USDC deposits with direct USDC-to-dollar conversion across 12 blockchains, per KuCoin.",
+      "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-2-2026"
     },
     {
-      "title": "Walmart-backed OnePay accepts USDC",
-      "summary": "Some US users can deposit USDC from 12 blockchains into OnePay checking, converted to dollars by Stripe's Bridge, with no exchange fee at launch.",
-      "url": "https://www.digitaltoday.co.kr/en/view/122229/stripe-to-provide-stablecoin-deposit-function-for-walmart-backed-financial-services-platform-onepay"
-    },
-    {
-      "title": "Saylor hints at another Strategy buy",
-      "summary": "Strategy holds 848,517 BTC and MSCI decides on index exclusions on 11 Nov; no new purchase had been announced as of this update, per Yahoo/24/7 Wall St.",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/saylor-hinting-another-bitcoin-buy-180109202.html"
-    },
-    {
-      "title": "China adds crypto to its anti-graft drive",
-      "summary": "A party resolution adopted 29 Oct calls to \"resolutely combat corruption committed via the internet, virtual currency, cross-border capital, and blockchain\". It changes no law.",
-      "url": "https://www.yahoo.com/news/world/articles/china-puts-crypto-anti-corruption-143009392.html"
-    },
-    {
-      "title": "Brazil's crypto licensing deadline passes",
-      "summary": "About 40 of an expected 150-200 firms applied by the 30 Oct deadline; banks must stop serving unlicensed providers from 6 Nov, per CoinGabbar.",
-      "url": "https://www.coingabbar.com/en/crypto-news-november-2-bitcoin-ethereum-fear-greed-us-midterms"
+      "title": "Lighter jumps on US licence plans",
+      "summary": "Lighter's LIT token rose about 12% on plans to apply for US CFTC derivatives licences, per KuCoin.",
+      "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-2-2026"
     }
   ],
   "calendar": [
@@ -173,7 +169,7 @@
       "event": "US ISM manufacturing; Fed's Goolsbee at 11:15am ET (23:15 Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 54.7, prior 54.5, per Trading Economics."
+      "note": "Consensus 54.7, prior 54.5, per Finviz."
     },
     {
       "et": "Mon 2 Nov · 5:00pm",
@@ -181,15 +177,15 @@
       "event": "Apple fiscal Q4 results call",
       "impact": "neutral",
       "key": false,
-      "note": "Fiscal Q4 results confirmed for 2 Nov, per MacTrast."
+      "note": "Confirmed for 2 Nov at 2pm PT, per MacTrast."
     },
     {
-      "et": "Tue 3 Nov (Australia)",
-      "bkk": "Tue 3 Nov",
+      "et": "Mon 2 Nov · 10:30pm",
+      "bkk": "Tue 3 · 10:30",
       "event": "Reserve Bank of Australia rate decision",
       "impact": "neutral",
       "key": false,
-      "note": "Cash rate 4.60%; a rate rise is the most likely outcome, per RBA Rate Watch."
+      "note": "Cash rate 4.60%; markets price about 69% odds of a hike, per RBA Rate Watch."
     },
     {
       "et": "Tue 3 Nov",
@@ -197,15 +193,15 @@
       "event": "Binance full proof of reserves (zero-knowledge proof)",
       "impact": "volatile",
       "key": true,
-      "note": "Binance says it will be ready by Tuesday 3 Nov (UTC), a day later than first promised, per Brad Feld."
+      "note": "Due Tuesday 3 Nov (UTC), no hour given; moved from Monday because it needs 40-50 hours of computing, per Bitcoin.com."
     },
     {
       "et": "Tue 3 Nov · 10:00am",
       "bkk": "Tue 3 · 22:00",
-      "event": "US midterm elections; JOLTS job openings; AMD results after the close (call 5:00pm ET)",
+      "event": "US midterm elections (polls open all day); JOLTS job openings; AMD results call 5:00pm ET",
       "impact": "volatile",
       "key": true,
-      "note": "JOLTS consensus 7.10M, prior 7.079M, per Trading Economics. First polls close 6:00pm ET (06:00 Wed Bangkok), per Political.org."
+      "note": "JOLTS consensus 7.10M, prior 7.079M, per Finviz. First polls close 6:00pm ET (06:00 Wed Bangkok), per Political.org."
     },
     {
       "et": "Wed 4 Nov · 8:00am",
@@ -213,7 +209,7 @@
       "event": "Circle and Riot results calls, Hut 8 at 8:30am ET; ADP jobs 8:15am ET (20:15 Bangkok); ISM services 10:00am ET (22:00 Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "ADP consensus 65K, prior 90K. ISM services consensus 54.8, prior 54.9. Per Trading Economics."
+      "note": "ADP consensus 65K, prior 90K. ISM services consensus 54.8, prior 54.9. Per Finviz."
     },
     {
       "et": "Thu 5 Nov · 7:00am",
@@ -226,10 +222,10 @@
     {
       "et": "Thu 5 Nov · 8:30am",
       "bkk": "Thu 5 · 20:30",
-      "event": "US jobless claims; Fed's Hammack 8:50am ET and Barkin 9:10am ET; IREN results call 5:00pm ET (05:00 Fri Bangkok)",
+      "event": "US jobless claims; Fed's Hammack 8:50am and Barkin 9:10am ET; IREN results call 5:00pm ET (05:00 Fri Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Claims consensus 197K, prior 194K, per Trading Economics."
+      "note": "Claims consensus 197K, prior 194K, per Finviz."
     },
     {
       "et": "Fri 6 Nov",
@@ -245,7 +241,7 @@
       "event": "US October jobs report",
       "impact": "volatile",
       "key": true,
-      "note": "Payrolls consensus 65K, prior 29K; unemployment consensus 4.2%, prior 4.2%. UMich sentiment 10:00am ET (22:00 Bangkok): consensus 47.3, prior 48.0. Per Trading Economics."
+      "note": "Payrolls consensus 65K, prior 29K; unemployment consensus 4.2%, prior 4.2%. UMich sentiment 10:00am ET (22:00 Bangkok): consensus 47.3, prior 48.0. Per Finviz."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -253,14 +249,14 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": false,
-      "note": "Decision 2:00pm ET Wed 9 Dec (02:00 Thu Bangkok), per the Federal Reserve."
+      "note": "Decision 2:00pm ET Wed 9 Dec (02:00 Thu Bangkok), press conference 2:30pm ET, per the Federal Reserve."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-02T08:13:37Z",
-    "claimsChecked": 103,
-    "claimsRemoved": 3,
+    "checkedAt": "2026-11-02T12:10:16Z",
+    "claimsChecked": 91,
+    "claimsRemoved": 6,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
