@@ -15,8 +15,32 @@
     "first"
    ],
    "setup": "A",
-   "history": [],
-   "status": "watching"
+   "history": [
+    {
+     "at": "2026-11-03T08:04:18+00:00",
+     "event": "check day: called"
+    }
+   ],
+   "decision": {
+    "confidence": 75,
+    "pctCirculating": 38.07,
+    "investorsShare": 0.64,
+    "firstInsiderUnlock": true,
+    "usdM": 25.38,
+    "amount": "160.22M ALLO (102.47M Early Backers + 57.75M Core Contributors)",
+    "frozenAt": "2026-11-03T08:04:18+00:00"
+   },
+   "plan": {
+    "stop": 12,
+    "target": 30,
+    "cover": 10,
+    "zone": 1.0,
+    "rr": 2.5,
+    "riskPct": 12.66,
+    "pumpPct": 30.0,
+    "fromSignals": "2026-11-02T08:33:42Z"
+   },
+   "status": "called"
   },
   {
    "id": "PIEVERSE-2026-11-14",
@@ -151,6 +175,22 @@
    "status": "watching"
   },
   {
+   "id": "SIGN-2026-11-28",
+   "token": "SIGN",
+   "name": "Sign",
+   "coingeckoId": "sign-global",
+   "unlockDate": "2026-11-28",
+   "checkDate": "2026-11-20",
+   "entryDate": "2026-11-21",
+   "coverDate": "2026-12-08",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [],
+   "status": "watching"
+  },
+  {
    "id": "LIT-2026-12-27",
    "token": "LIT",
    "name": "Lighter",
@@ -167,7 +207,7 @@
    "status": "watching"
   }
  ],
- "updatedAt": "2026-11-02T22:23:46Z",
+ "updatedAt": "2026-11-03T08:04:18Z",
  "summary": {
   "closed": 0,
   "won": 0,
