@@ -71,6 +71,57 @@
      ],
      "gaps": "How the split was assigned: Jump Crypto + Institutions = investors; Malbec Labs + Team + Contributors = team; Builders + Validators Sale = community. Jump Crypto is also a contributor to DoubleZero, so it could arguably go under team. DefiLlama values it at $49.8M at the Oct 2026 price; $113.23M is Tokenomist's figure as of 2026-09-27.",
      "fixNote": "Tokenomist digest describes Jump Crypto (575M) as a core contributor, not an investor; team = Jump+Malbec+Team+Contributors 1275M, investors = Institutions 300M, community = Builders+Validators 80M"
+    },
+    {
+     "date": "2026-11-02",
+     "timeUTC": null,
+     "amountTokens": 135394000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.785,
+      "investors": 0.185,
+      "community": 0.03,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com DoubleZero vesting page (read 2 Nov 2026 ~04:00 UTC): TGE 2 Oct 2025; Jump/Malbec/Institutions/Team/Contributors/Builders 12-mo cliff then 36-mo linear; next unlock for those pools '1 Days'; circ 5,250,523,582. (Unlocks sub-page with the 135,394,000 figure was blocked today; amount reproduced by arithmetic: Institutions 1.2B x 75% / 36 = 25.0M = 18.5% of 135.39M)",
+       "url": "https://app.tokenomics.com/tokenomics/doublezero",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Blockworks Token Transparency filing v1.1 (23 Jun 2026): Standard Lockup = 4-year gradual unlock from launch with 1-year cliff; launch 2 Oct 2025; Institutional sale Mar 2025 1.2B 2Z for $28.5M at $400M FDV (token warrants); no insider selling disclosed",
+       "url": "https://blockworks.com/token-transparency/filing/doublezero",
+       "kind": "primary",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist DoubleZero page and unlock-events page: ~5.25B unlocked, schedule into 2029; event table paywalled; FAQ contradictory ('fully unlocked')",
+       "url": "https://tokenomist.ai/doublezero",
+       "kind": "aggregator",
+       "confirms": []
+      },
+      {
+       "label": "CoinMarketCap 2Z page (read 2 Nov 2026): $0.02496, mcap $86.66M, 24h vol $4.85M, circ 3.47B (filing basis, excludes Foundation), max 10B; unlocked mcap $131.06M (~5.25B tokens); unlock section did not load",
+       "url": "https://coinmarketcap.com/currencies/doublezero/",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 3.29,
+      "confidence": 42,
+      "scoredAt": "2026-11-03T08:14:09Z"
+     }
     }
    ],
    "gaps": "coingeckoId 'doublezero' comes from Zerion's CoinGecko link; the CoinGecko page itself was not opened (not reachable). Max 10B (DefiLlama, Zerion). Listing: 2Z/USDT went live 2025-10-02 13:00 UTC (Bybit press release).",
@@ -4555,6 +4606,63 @@
       }
      ],
      "gaps": "Ethena did not publish the accelerated token count; 1.40625B is schedule arithmetic. Unvested tokens of 14 bought-out seed wallets go to the Ethena Foundation, not original holders, and that share is undisclosed, so the investor fraction overstates tokens reaching third-party investors. Tokenomist notes the figure would be 1,484,375,000 if the Sep 5 tranche had not released (the Sep digest indicates it did). StablecoinX's ~3.0B ENA lock-up also lifted 5 Oct (contractual, not vesting) and is NOT included in amountTokens. Type set to cliff because the accelerated part is a one-day release."
+    },
+    {
+     "date": "2026-11-02",
+     "timeUTC": null,
+     "amountTokens": 40625000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": null,
+     "sources": [
+      {
+       "label": "CoinGecko ENA page unlock widget (Tokenomist data), read 2 Nov 2026 ~04:00 UTC: next unlock 2 Nov, ~10 hours away, 40.63M ENA (~$7.4M), Foundation, 0.27% of supply; price $0.1822, mcap $2.442B, 24h vol $203.76M, circ 13.406B, max 15B, API ID ethena",
+       "url": "https://www.coingecko.com/coins/ethena",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients",
+        "time"
+       ]
+      },
+      {
+       "label": "Tokenomist Ethena page and upcoming unlock-events page (same feed as above): next unlock 2 Nov 2026 to Core Contributors; no amount (paywalled); circ 13,406,250,000",
+       "url": "https://tokenomist.ai/ethena/unlock-events?event-type=upcoming",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "Crowdfund Insider: remaining investor vesting ends early; no investor tokens locked from 5 Oct 2026; team keeps original vesting; ~12% of supply locked across team, ecosystem and Foundation",
+       "url": "https://www.crowdfundinsider.com/?p=302640",
+       "kind": "news",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "KuCoin blog: investor vesting accelerated to 5 Oct 2026; Foundation bought locked ENA from seed investors who sold after 10 Oct 2025; non-sellers offered exit at original purchase price, none accepted",
+       "url": "https://www.kucoin.com/blog/ethena-ena-tokenomics-buyback-vc-unlocks",
+       "kind": "news",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "CryptoTicker DE (citing tokenomics.com): 275,015,625 ENA on 1 Nov 2026, described as remaining investor shares; Pluang republishes it",
+       "url": "https://cryptoticker.io/de/ethena-unlock-rueckkauf-schwelle/",
+       "kind": "news",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "Low",
+      "points": -0.5,
+      "confidence": 37,
+      "scoredAt": "2026-11-03T08:14:09Z"
+     }
     }
    ],
    "gaps": "No Ethena primary document opened this run; schedule rests on Tokenomist research plus news confirmations for specific months (Jan 5, May 2, Jun 2, Sep 2/5, Oct 2/5 2026). Months without a named source are included on the strength of the fixed monthly schedule. Ecosystem/airdrop allocation has no published schedule and is not listed. The 2nd-of-month recipient is disputed (Foundation per Tokenomist research vs 'Core Contributors' per Bittime). Listed month 2024-04 from earlier desk notes (The Defiant, 2 Apr 2024) and consistent with Tokenomist's April 2025 one-year cliff.",
@@ -16216,6 +16324,135 @@
       "points": 5.32,
       "confidence": 54,
       "scoredAt": "2026-11-02T08:14:10Z"
+     }
+    }
+   ],
+   "harvested": true
+  },
+  {
+   "token": "BTW",
+   "name": "Bitway",
+   "coingeckoId": "bitway",
+   "events": [
+    {
+     "date": "2026-11-02",
+     "timeUTC": null,
+     "amountTokens": 101628455,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0,
+      "investors": 0,
+      "community": 0.592,
+      "ecosystem": 0.408,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko Bitway page unlock widget (Tokenomist data), read 2 Nov 2026 ~04:00 UTC: 2 Nov, ~9 hours away, 101.63M BTW = 60.17M Community + 41.46M Ecosystem (~$109.54M); price $1.08, mcap $1.623B, 24h vol $3.32M, circ 1.506B, max 10B, API ID bitway",
+       "url": "https://coingecko.com/coins/bitway",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Phemex blog (updated 24 Oct 2026), on-chain contract reads: two vesting contracts release 60.17M and 41.46M BTW on the 2nd of each month (Apr 2026-Aug 2029); two more (55.56M, 68.05M) start Mar 2027 after 12-month cliff; owners are 4-of-6 and 2-of-3 multisigs",
+       "url": "https://phemex.com/blogs/bitway-btw-price-prediction-unlock-calendar",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount"
+       ]
+      },
+      {
+       "label": "CryptoTicker FR: 2 Nov 2026 08:00 UTC; CMC splits ~60.2M community + ~41.5M ecosystem; tokenomics.com 101,622,256; Tokenomist labels it 'backers'",
+       "url": "https://cryptoticker.io/fr/bitway-deblocage-tokens-novembre/",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients",
+        "time"
+       ]
+      },
+      {
+       "label": "Tokenomist Bitway competitor analysis (prior pass): next unlock 2 Nov labelled 'Backers'; same feed as CoinGecko widget",
+       "url": "https://tokenomist.ai/bitway/competitor-analysis",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 5.89,
+      "confidence": 62,
+      "scoredAt": "2026-11-03T08:14:09Z"
+     }
+    }
+   ],
+   "harvested": true
+  },
+  {
+   "token": "Q",
+   "name": "Quack AI",
+   "coingeckoId": "quack-ai",
+   "events": [
+    {
+     "date": "2026-11-02",
+     "timeUTC": null,
+     "amountTokens": 225666389,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.185,
+      "investors": 0.203,
+      "community": 0.369,
+      "ecosystem": 0.243,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com Quack AI vesting page (read 2 Nov 2026): TGE 2 Sep 2025; Community 30% 36-mo; Ecosystem & Partnerships 15% (15.1% TGE) 36-mo; Treasury 11% (36.4% TGE) 36-mo; Investors & Advisors 11% and Core Team 10% 12-mo cliff then 24-mo; next unlock '1 Days'; circ 4,706,888,967. Monthly sum by arithmetic = 225.6M",
+       "url": "https://app.tokenomics.com/tokenomics/quack-ai",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "AMBCrypto (26 Oct 2026): ~241.28M Q on 2 Nov 2026, monthly vesting across community, ecosystem, treasury, team and investors; no source cited",
+       "url": "https://ambcrypto.com/?p=644364",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinGecko Quack AI page: $0.03113, mcap $146.5M, 24h vol $59.71M, circ 4.707B, max 10B, API ID quack-ai; unlock widget empty",
+       "url": "https://www.coingecko.com/en/coins/quack-ai",
+       "kind": "aggregator",
+       "confirms": []
+      },
+      {
+       "label": "Tokenomist unlock events: table paywalled; circ 4,706,888,967; schedule into 2028",
+       "url": "https://tokenomist.ai/quack-ai/unlock-events",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "Moderate",
+      "points": 1.32,
+      "confidence": 50,
+      "scoredAt": "2026-11-03T08:14:09Z"
      }
     }
    ],
