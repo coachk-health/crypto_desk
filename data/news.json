@@ -1,34 +1,34 @@
 {
   "date": "2026-11-03",
-  "updated": "2026-11-03T08:14:09Z",
-  "headline": "Binance reopened withdrawals for 51 more tokens today but has spent half its emergency bitcoin fund, while bitcoin funds kept losing money and Americans vote in the midterms.",
+  "updated": "2026-11-03T12:15:41Z",
+  "headline": "Binance says deposits now outpace withdrawals as it reopens more tokens, while bitcoin funds keep losing money and Americans vote in the midterms.",
   "market": {
-    "asOf": "BTC read from crypto.news at 06:40 UTC Tue 3 Nov (13:40 Bangkok); ETH and SOL could not be read from a price page this run. Use the live prices at the top of the page.",
+    "asOf": "Read from CoinGecko between 11:55 and 12:00 UTC Tue 3 Nov (18:55-19:00 Bangkok). Use the live prices at the top of the page.",
     "btc": {
-      "price": 76455.56,
-      "chg24h": -2.19
+      "price": 76979.77,
+      "chg24h": -1.3
     },
     "eth": {
-      "price": null,
-      "chg24h": null
+      "price": 2267.4,
+      "chg24h": -0.8
     },
     "sol": {
-      "price": null,
-      "chg24h": null
+      "price": 92.12,
+      "chg24h": -2.3
     },
-    "fearGreed": "26 (Fear), down from 37 the day before, on the Alternative.me Crypto Fear & Greed Index, per CoinGabbar (Tue 3 Nov)"
+    "fearGreed": "37 (Fear), up from 34 the day before, on the Alternative.me Crypto Fear & Greed Index (read 3 Nov, about 12:00 UTC)"
   },
   "stories": [
     {
-      "title": "Binance reopens 51 more tokens, but its emergency fund is half spent",
+      "title": "Binance says deposits now beat withdrawals as more tokens reopen",
       "mood": "volatile",
-      "summary": "Binance's second withdrawal phase began at 04:00 UTC today, bringing back 51 tokens on Ethereum and Solana, with more networks still to come. On-chain data shows it spent half the bitcoin in its SAFU user-protection fund to cover the hack, and it has given no date to refill it. The next reserve snapshot is Wednesday.",
+      "summary": "Binance's latest withdrawal phase began at 04:00 UTC today, bringing back 51 tokens on Ethereum and Solana, and the exchange says hourly deposits now exceed withdrawals. Its SAFU emergency fund is still about half spent, and several networks have not reopened. North Korea has denied the FBI's claim that it was behind the hack.",
       "points": [
-        "Restored today: 31 more Ethereum tokens and 20 Solana tokens, including LINK, SHIB, ONDO, BONK and TRUMP, after an earlier update brought back five Ethereum stablecoins, per crypto.news.",
-        "Still to come: BNB Chain, XRP Ledger, Sui, Arbitrum, Optimism, Tron and Base, per crypto.news.",
-        "The SAFU wallet holds just over 7,500 BTC (about $580M), down from 15,000 BTC, after four transactions on 31 Oct, per CoinDesk.",
-        "Binance says about 95% of hacked assets have been replaced; the next proof-of-reserves snapshot is 4 Nov, with about 40-50 hours to produce the proof, per crypto.news.",
-        "DefiLlama's 24-hour net outflow fell to about $3.5B from an intraday peak of about $7B, per PANews (2 Nov)."
+        "Restored today: 31 more Ethereum tokens and 20 Solana tokens, including LINK, SHIB, ONDO, BONK and TRUMP; still to come are BNB Chain, XRP Ledger, Sui, Arbitrum, Optimism, Tron and Base, per crypto.news.",
+        "Binance says hourly deposits have exceeded withdrawals since about 03:00 UTC on 3 Nov, per Altcoin Buzz.",
+        "Binance's own data shows $10.97B withdrawn and $5.695B deposited from 1 to 3 Nov, a net outflow of about $5.3B, per Altcoin Buzz.",
+        "The SAFU fund holds about 7,500 BTC, down from about 15,000, with no refill timeline, per Cointelegraph.",
+        "North Korea called the FBI's attribution \"absurd rhetoric\", per CoinDesk."
       ],
       "sources": [
         {
@@ -36,58 +36,56 @@
           "url": "https://crypto.news/binance-restores-withdrawals-for-more-ethereum-solana-tokens-after-6-3b-hack/"
         },
         {
-          "label": "CoinDesk: Binance spent half its SAFU bitcoin",
-          "url": "https://www.coindesk.com/markets/2026/11/03/binance-has-spent-half-its-safu-bitcoin-about-usd580-million-worth-data-shows"
+          "label": "Altcoin Buzz: deposits overtake withdrawals",
+          "url": "https://www.altcoinbuzz.io/binance-deposits-overtake-withdrawals-after-6-billion-hack"
         },
         {
-          "label": "PANews: DefiLlama outflow data",
-          "url": "https://panews.io/articles/01a19c91-8bae-7003-b16c-453e398a609a"
+          "label": "CoinDesk: North Korea denies role",
+          "url": "https://coindesk.com/business/2026/11/03/north-korea-denies-role-in-usd6-4-billion-binance-hack-after-fbi-points-to-tradertraitor"
+        },
+        {
+          "label": "Cointelegraph: SAFU bitcoin balance halves",
+          "url": "https://cointelegraph.com/news/binance-safu-btc-balance-halves-recovery-unclear"
         }
       ]
     },
     {
-      "title": "Bitcoin funds lose money for a second day as a chip-stock rout drags crypto",
+      "title": "Bitcoin funds lose money again and Coinbase gets a downgrade",
       "mood": "bearish",
-      "summary": "US spot bitcoin funds had about $399M of net outflows on Monday after $643M on Friday, and ether funds lost $140M. Bitcoin slipped below $77,000 in Asian trading as a sell-off in chip stocks deepened.",
+      "summary": "US spot bitcoin funds had about $399M of net outflows on Monday, and ether funds lost money for a sixth straight session. Bitcoin dipped to about $76,300 in the European morning before steadying near $76,900, on track for a fifth weekly loss as chip stocks and an Apple warning weighed on markets.",
       "points": [
-        "Spot bitcoin ETFs: about -$398.6M on 2 Nov, with BlackRock's IBIT at -$405M and Fidelity's FBTC at +$6.68M, per SoSoValue data via KuCoin.",
-        "Ether ETFs lost about $140M, making about $539M combined with bitcoin, per KuCoin and crypto.news.",
-        "Bitcoin was $76,455.56 at 06:40 UTC, down 2.19% in 24 hours, per crypto.news, with nearly $100M of mostly long positions liquidated per CoinGlass.",
-        "The US chip index is down 12% in three days and the Nasdaq 100 is about 10% off its peak, per CoinDesk.",
-        "Morgan Stanley cut Coinbase to underweight with a $120 price target, down from $258, per CoinDesk."
+        "Spot bitcoin ETFs: -$398.6M on 2 Nov, with BlackRock's IBIT at -$405.3M and Fidelity's FBTC at +$6.7M, per CoinCentral citing Farside.",
+        "Ether ETFs: -$139.7M on 2 Nov, mostly from BlackRock's ETHA (-$138.3M), per CoinCentral.",
+        "Bitcoin was near $76,900 at about 11:30 UTC after a low near $76,300, per CoinDesk; liquidations over 24 hours were $382.6M, per the same report.",
+        "Morgan Stanley cut Coinbase to underweight and its price target to $120 from $258, per CoinDesk."
       ],
       "sources": [
         {
-          "label": "KuCoin: bitcoin ETFs -$399M on 2 Nov",
-          "url": "https://www.kucoin.com/news/flash/bitcoin-spot-etfs-record-399m-net-outflow-on-nov-2-ibit-leads-in-daily-outflow"
+          "label": "CoinCentral: bitcoin ETFs -$399M",
+          "url": "https://coincentral.com/us-bitcoin-etfs-face-399-million-in-withdrawals-as-ether-funds-struggle"
         },
         {
-          "label": "KuCoin: BTC + ETH ETFs -$539M",
-          "url": "https://www.kucoin.com/news/flash/u-s-bitcoin-and-ethereum-etfs-record-539m-in-net-outflows-on-november-2"
+          "label": "CoinDesk: bitcoin steadies after dip to $76,300",
+          "url": "https://www.coindesk.com/markets/2026/11/03/bitcoin-steadies-after-dip-to-usd76-300-as-etf-outflows-and-midterm-elections-weigh-on-crypto"
         },
         {
-          "label": "crypto.news: why bitcoin is down today",
-          "url": "https://crypto.news/why-is-bitcoin-price-down-today-btc-76000-support/"
+          "label": "CoinDesk live: fifth weekly loss, Apple warning",
+          "url": "https://www.coindesk.com/markets/2026/11/03/live-news-bitcoin-faces-fifth-weekly-loss-as-midterm-uncertainty-and-apple-warning-weigh-on-markets"
         },
         {
-          "label": "CoinDesk: bitcoin below $77K as chip rout deepens",
-          "url": "https://www.coindesk.com/markets/2026/11/03/bitcoin-drops-below-usd77-000-as-chip-rout-deepens-ahead-of-u-s-midterm-vote"
-        },
-        {
-          "label": "CoinDesk live blog: Morgan Stanley on Coinbase",
-          "url": "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings"
+          "label": "CoinDesk: Morgan Stanley downgrades Coinbase",
+          "url": "https://www.coindesk.com/markets/2026/11/02/morgan-stanley-downgrades-coinbase-slashes-price-target-53-on-weak-earnings-outlook"
         }
       ]
     },
     {
-      "title": "Americans vote in the midterms today after record crypto spending",
+      "title": "Americans vote in the midterms today after heavy crypto spending",
       "mood": "volatile",
-      "summary": "Control of Congress is decided today. The three biggest crypto super PACs spent nearly $170M, mostly backing Republicans. First results are expected as Asian markets open on Wednesday.",
+      "summary": "Control of Congress is decided today, and the result shapes whether a US crypto market-structure law passes soon or starts over. Crypto super PACs spent heavily, mostly backing Republicans, while prediction markets favour Democrats. First results arrive early Wednesday Bangkok time.",
       "points": [
-        "The three leading crypto super PACs spent nearly $170M; Fairshake spent about $154M and keeps a $56M reserve, per CoinDesk.",
-        "Fairshake committed about $56M to defeating Sherrod Brown in Ohio, per CoinDesk.",
-        "Kalshi markets gave about a 70% chance of Democrats winning both chambers, per CoinDesk.",
-        "Future crypto bills will need Democratic votes to clear the Senate's 60-vote bar after the CLARITY Act stalled, per CoinDesk.",
+        "The three leading crypto super PACs spent nearly $170M, with Fairshake at about $154M, per CoinDesk.",
+        "Polymarket gave Democrats about 69% to win the Senate and 94% the House, per Newsquawk.",
+        "The CLARITY Act passed the House 294-134 but failed a Senate vote to open debate, 49-50, per Tokenist.",
         "First polls close at 6:00pm ET (06:00 Wed Bangkok) and the last, in Alaska, at 1:00am ET (13:00 Wed Bangkok), per 270toWin."
       ],
       "sources": [
@@ -96,8 +94,12 @@
           "url": "https://www.coindesk.com/policy/2026/11/01/crypto-pacs-made-big-republican-push-in-final-weeks-before-november-3-election"
         },
         {
-          "label": "CoinDesk: results expected as Asia opens",
-          "url": "https://www.coindesk.com/markets/2026/11/03/bitcoin-drops-below-usd77-000-as-chip-rout-deepens-ahead-of-u-s-midterm-vote"
+          "label": "Newsquawk: week in focus",
+          "url": "https://www.newsquawk.com/headlines/week-in-focus-2nd-6th-november-2026-highlights-include-us-midterm-election-nfp-ism-pmis-rba-boe-and-ez-cpi-"
+        },
+        {
+          "label": "Tokenist: what the midterms mean for crypto laws",
+          "url": "https://tokenist.com/bitcoin-midterms-democrats-crypto-laws"
         },
         {
           "label": "270toWin: poll closing times",
@@ -108,39 +110,34 @@
   ],
   "briefs": [
     {
-      "title": "Arbitrum council moves $30M of hack funds",
-      "summary": "Arbitrum's 12-member Security Council used emergency powers to move about 8,425 ETH and 74M ARB (about $30M) from an address tied to the Binance exploit, without the hacker's key, per CoinDesk.",
-      "url": "https://www.coindesk.com/tech/2026/11/03/arbitrum-s-council-moved-usd30-million-of-binance-hack-funds-without-the-hacker-s-key"
+      "title": "Mercado Bitcoin hacked",
+      "summary": "Brazil's Mercado Bitcoin estimates about $38M was affected, while Chainalysis puts it near $49M across 17 chains; about $11M has been blocked and services are suspended, per The Cryptonomist.",
+      "url": "https://en.cryptonomist.ch/2026/11/03/mercado-bitcoin-hack-blocked-assets/"
     },
     {
-      "title": "OKX gains most from Binance outflows",
-      "summary": "OKX took about $445M of 24-hour net inflows, followed by Bybit at $112M, per Cointelegraph citing DefiLlama.",
-      "url": "https://cointelegraph.com/news/okx-leads-crypto-exchanges-445m-inflows"
+      "title": "Elliptic: $2.85B of Binance hack funds frozen or seized",
+      "summary": "Blockchain analysis firm Elliptic says $2.85B of the stolen funds has been frozen or seized, per CoinDesk.",
+      "url": "https://coindesk.com/business/2026/11/03/north-korea-denies-role-in-usd6-4-billion-binance-hack-after-fbi-points-to-tradertraitor"
+    },
+    {
+      "title": "Binance warns of withdrawal scams",
+      "summary": "Binance warned users about fake offers of priority processing and fake compensation claims during the reopening, per CoinCentral.",
+      "url": "https://coincentral.com/binance-warns-users-of-withdrawal-scams-as-reopening-continues"
+    },
+    {
+      "title": "Tether says it holds 150,000 BTC",
+      "summary": "Tether's CEO says it holds about 150,000 BTC, roughly 50,000 more than its Q3 reserve report implies, per Cryptonews.",
+      "url": "https://cryptonews.net/news/bitcoin/33694528/"
+    },
+    {
+      "title": "Liquid's bitcoin token fully backed again",
+      "summary": "The Blockstream-led Liquid sidechain restored 1:1 backing for LBTC, nearly two months after an exploit drained about 4,000 BTC, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/03/live-news-bitcoin-faces-fifth-weekly-loss-as-midterm-uncertainty-and-apple-warning-weigh-on-markets"
     },
     {
       "title": "Record month of ether ETF outflows",
-      "summary": "Ether ETFs lost $1.61B in October, a monthly record, and bitcoin ETFs lost $515M, per CoinDesk.",
-      "url": "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings"
-    },
-    {
-      "title": "Strategy adds 810 BTC",
-      "summary": "Strategy now holds 849,327 BTC, per CoinDesk.",
-      "url": "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings"
-    },
-    {
-      "title": "Brazil's crypto licence deadline nears",
-      "summary": "About 40 crypto firms have applied, against 150 to 200 expected, and unlicensed providers must stop by 29 Nov, per CoinGabbar.",
-      "url": "https://www.coingabbar.com/en/crypto-news-nov-3-bitcoin-ethereum-price-fear-index-us-midterms"
-    },
-    {
-      "title": "Akash votes to move from Cosmos to Solana",
-      "summary": "Proposal 346 passed with about 97.27% support; AKT will swap 1:1 for two years after an audit, per CoinGabbar.",
-      "url": "https://www.coingabbar.com/en/crypto-news-nov-3-bitcoin-ethereum-price-fear-index-us-midterms"
-    },
-    {
-      "title": "NEAR holders vote to cut inflation",
-      "summary": "Maximum yearly issuance would fall from 2.5% to 1.6% over 24 months, pending review, per CoinGabbar.",
-      "url": "https://www.coingabbar.com/en/crypto-news-nov-3-bitcoin-ethereum-price-fear-index-us-midterms"
+      "summary": "Ether ETFs lost $1.61B in October, a monthly record, per CoinCentral.",
+      "url": "https://coincentral.com/us-bitcoin-etfs-face-399-million-in-withdrawals-as-ether-funds-struggle"
     }
   ],
   "calendar": [
@@ -150,7 +147,7 @@
       "event": "US JOLTS job openings (Sep)",
       "impact": "neutral",
       "key": false,
-      "note": "Prior 7.079M; consensus 7.11M, per Investing.com."
+      "note": "Prior 7.079M; consensus 7.13M per TradingEconomics."
     },
     {
       "et": "Tue 3 – Tue 10 Nov",
@@ -171,10 +168,10 @@
     {
       "et": "Wed 4 Nov",
       "bkk": "Wed 4 Nov",
-      "event": "Binance's next proof-of-reserves snapshot; US Treasury quarterly refunding announcement",
-      "impact": "volatile",
-      "key": true,
-      "note": "The full Binance proof takes about 40-50 hours after the snapshot, per crypto.news. Treasury's Q4 borrowing estimate is $628bn, per Newsquawk."
+      "event": "US Treasury quarterly refunding announcement",
+      "impact": "neutral",
+      "key": false,
+      "note": "Date confirmed by the US Treasury."
     },
     {
       "et": "Wed 4 Nov · 8:00am",
@@ -182,7 +179,7 @@
       "event": "Circle and Riot results calls, Hut 8 at 8:30am ET; ADP jobs 8:15am ET (20:15 Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "ADP prior +90K; consensus +68K per Investing.com, about +65K per Blockhead."
+      "note": "ADP prior +90K; consensus +65K per TradingEconomics and Continuum Economics."
     },
     {
       "et": "Wed 4 Nov · 10:00am",
@@ -190,7 +187,7 @@
       "event": "US ISM services (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "Prior 54.9; consensus 54.8 per Investing.com, 54.7 per Newsquawk."
+      "note": "Prior 54.9; consensus 54.8 per TradingEconomics, 54.7 per Newsquawk."
     },
     {
       "et": "Thu 5 Nov · 7:00am",
@@ -198,15 +195,23 @@
       "event": "Bank of England rate decision",
       "impact": "neutral",
       "key": false,
-      "note": "Bank Rate 3.75%; a 25bp hike to 4.00% is expected, per Forex Fundamentals. Newsquawk also expects a 25bp hike."
+      "note": "Bank Rate 3.75%; a hike to 4.00% is expected, per Forex Fundamentals. Newsquawk also expects a 25bp hike."
     },
     {
       "et": "Thu 5 Nov · 8:30am",
       "bkk": "Thu 5 · 20:30",
-      "event": "US jobless claims; Fed's Hammack (8:50am ET) and Barkin (9:10am ET) speak; IREN results call 5:00pm ET (05:00 Fri Bangkok)",
+      "event": "US jobless claims; Fed's Barkin speaks 9:10am ET; IREN results call 5:00pm ET (05:00 Fri Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Claims prior 194K; consensus 197K per Investing.com, 195K per TradingEconomics. Fed's Logan speaks 7:00pm ET (07:00 Fri Bangkok)."
+      "note": "Claims prior 194K; consensus 195K per TradingEconomics."
+    },
+    {
+      "et": "Fri 6 Nov · 3:00am",
+      "bkk": "Fri 6 · 15:00",
+      "event": "Deribit weekly bitcoin and ether options expiry",
+      "impact": "volatile",
+      "key": false,
+      "note": "Settles 08:00 UTC; the first expiry after the election."
     },
     {
       "et": "Fri 6 Nov · 8:30am",
@@ -214,15 +219,15 @@
       "event": "US October jobs report",
       "impact": "volatile",
       "key": true,
-      "note": "Payrolls prior +29K; consensus +63K per Investing.com, +55K per Newsquawk. Unemployment consensus 4.2%, prior 4.2%. UMich sentiment 10:00am ET, prior 48.0, consensus 47.8 per Investing.com. Fed's Williams (4:30am ET) and Bowman (12:15pm ET) also speak."
+      "note": "Payrolls prior +29K; consensus +65K per TradingEconomics, +55K per Newsquawk. Unemployment expected 4.2%, prior 4.2%. UMich sentiment 10:00am ET, prior 48.0, consensus 48.2 per TradingEconomics."
     },
     {
-      "et": "Tue 10 Nov",
-      "bkk": "Tue 10 Nov",
+      "et": "Tue 10 Nov · 8:30am",
+      "bkk": "Tue 10 · 20:30",
       "event": "US CPI inflation (Oct)",
       "impact": "volatile",
       "key": true,
-      "note": "September CPI rose 3.7%, per Blockhead; no consensus published yet."
+      "note": "September CPI rose 3.7% from a year earlier, per TradingEconomics; no consensus published yet."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -235,9 +240,9 @@
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-03T08:14:09Z",
-    "claimsChecked": 81,
-    "claimsRemoved": 6,
+    "checkedAt": "2026-11-03T12:15:41Z",
+    "claimsChecked": 125,
+    "claimsRemoved": 5,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
