@@ -1,7 +1,7 @@
 {
   "date": "2026-11-04",
-  "updated": "2026-11-03T20:12:17Z",
-  "headline": "US midterm results start arriving this morning Bangkok time, Binance says deposits now beat withdrawals after its hack, and bitcoin sits near $77,000.",
+  "updated": "2026-11-04T00:15:46Z",
+  "headline": "US midterm votes are being counted with no major race called yet, Binance's hack report blames a fake job interview, and Block says its bitcoin profit halved after a fee cut.",
   "market": {
     "asOf": "Not refreshed this run (price sources unreachable). Last read from CoinGecko between 11:55 and 12:00 UTC Tue 3 Nov (18:55-19:00 Bangkok). Use the live prices at the top of the page.",
     "btc": {
@@ -20,79 +20,72 @@
   },
   "stories": [
     {
-      "title": "Midterm results start tonight, with crypto's market bill at stake",
+      "title": "Midterm votes are being counted, with crypto's market bill at stake",
       "mood": "volatile",
-      "summary": "Americans voted on Tuesday for control of Congress. The result shapes whether the CLARITY Act, the US crypto market-structure bill, can still pass. Prediction markets favour Democrats, and the first polls close at 06:00 Wednesday Bangkok time.",
+      "summary": "Polls are closing across the US and the count for control of Congress has begun. The result shapes whether the CLARITY Act, the US crypto market-structure bill, can still pass. Prediction markets favour Democrats, but no race had been called when CoinDesk's live blog opened at 7:00pm ET (07:00 Wed Bangkok).",
       "points": [
-        "Polymarket at 19:01 UTC priced Democratic control at 95 cents for the House and 75 cents for the Senate, per TS2.",
-        "Earlier on Tuesday, Kalshi gave Democrats 76% and Polymarket 77% to control the Senate, per Forbes.",
-        "The CLARITY Act passed the House 294-134 in July 2025, failed a Senate procedural vote 49-50 on 15 Sept, and dies if not passed before 3 Jan, per Bitcoin Magazine.",
-        "TD Cowen sees a Democratic sweep as the least favourable outcome for crypto, per Bitcoin Magazine.",
-        "First polls close at 6:00pm ET (06:00 Wed Bangkok), the biggest wave at 8:00pm ET (08:00 Wed Bangkok), and the last, in Alaska, at 1:00am ET (13:00 Wed Bangkok), per Universal Time Date."
+        "Kalshi's live markets priced Democratic control at 93% for the House and 73% for the Senate when read for this edition (about 00:00 UTC Wed, 07:00 Bangkok).",
+        "At about 4pm ET Tuesday, Forbes reported Polymarket at 95% for a Democratic House and 75% for a Democratic sweep of both chambers, with Kalshi at 72% for a sweep.",
+        "Republicans hold the Senate 53-45, with 2 independents; Democrats need a net gain of 4 Senate seats and 3 House seats, per Cointelegraph.",
+        "Cointelegraph describes the CLARITY Act as \"stalled\".",
+        "Most of Alaska votes until 1:00am ET (13:00 Wed Bangkok), and CoinDesk says not every race may be called by Wednesday morning."
       ],
       "sources": [
         {
-          "label": "TS2: Polymarket election-day odds",
-          "url": "https://ts2.tech/en/polymarkets-house-market-draws-2-2-times-senate-turnover-on-election-day/"
+          "label": "CoinDesk: election night crypto live blog",
+          "url": "https://www.coindesk.com/tech/2026/11/03/election-2026-coindesk-live-blog"
         },
         {
-          "label": "Forbes: Democratic Senate odds surge",
-          "url": "https://www.forbes.com/sites/siladityaray/2026/11/03/online-betting-odds-of-democratic-senate-win-surge-on-election-day/"
+          "label": "Kalshi: House control market",
+          "url": "https://kalshi.com/markets/controlh/house-winner/controlh-2026"
         },
         {
-          "label": "Bitcoin Magazine: bitcoin near $77,500 into the midterms",
-          "url": "https://bitcoinmagazine.com/markets/bitcoin-price-trades-near-77500-midterm"
+          "label": "Kalshi: Senate control market",
+          "url": "https://kalshi.com/markets/controls/senate-winner/controls-2026"
         },
         {
-          "label": "Universal Time Date: poll closing times",
-          "url": "https://www.universaltimedate.com/articles/election-day-2026"
+          "label": "Forbes: Democratic sweep odds top 70%",
+          "url": "https://www.forbes.com/sites/antoniopequenoiv/2026/11/03/election-betting-odds-democratic-sweep-tops-70-live-updates/"
+        },
+        {
+          "label": "Cointelegraph: midterms and what they mean for crypto",
+          "url": "https://cointelegraph.com/news/us-midterms-2026-live-results-and-what-they-mean-for-crypto"
         }
       ]
     },
     {
-      "title": "Binance: deposits now beat withdrawals after the $6.34B hack",
+      "title": "Binance hack report: a fake job interview opened the door",
       "mood": "volatile",
-      "summary": "After days of heavy withdrawals, money is flowing back into Binance on a net basis, and its co-CEO says flows have pretty much normalized. Binance's report says North Korean hackers got in through a fake job interview and a tampered software package. North Korea calls the US allegation absurd.",
+      "summary": "Binance says North Korean hackers posed as recruiters and tricked an engineer into downloading an interview \"assignment\", while a tampered software download hit a second engineer. Together that let them take over several wallets. North Korea denies any role. Money has started flowing back into the exchange.",
       "points": [
-        "DefiLlama shows about $2.3B of net inflows to Binance over the past 24 hours, after more than $7B of net outflows on Monday, per Cointelegraph (3 Nov).",
-        "Binance says net customer withdrawals were $4.72B as of 2 Nov, about 3% of platform assets, per Reuters via GMA News.",
-        "About $2.85B has been frozen or intercepted, per The Block. Sources differ on how much has been replaced: 98% per The Block, 95% per co-CEO Richard Teng speaking to Reuters.",
-        "Binance warns that anyone offering to speed up withdrawals for a fee is a scammer, per Cointelegraph.",
-        "Kim Yo Jong called the US allegations \"absurd rhetoric\", per KCNA via GMA News."
+        "Binance said \"This should not have happened\" and says it blocked 57 North Korea-linked hacking attempts in 2026, per Fortune.",
+        "The FBI blames the North Korean group TraderTraitor, and Elliptic agrees; Kim Yo Jong denied involvement through state media, per CoinDesk.",
+        "Sources differ on the size: about $6.3B stolen per Fortune citing Binance, $6.4B per Elliptic via CoinDesk. Frozen or recovered: about $2.5B per Fortune, $2.85B per Elliptic.",
+        "DefiLlama showed about $2.3B of net inflows to Binance over 24 hours, after more than $7B of net outflows on Monday, per Cointelegraph."
       ],
       "sources": [
         {
+          "label": "Fortune: how the Binance hack happened",
+          "url": "https://fortune.com/2026/11/03/binance-hack-details-linkedin/"
+        },
+        {
+          "label": "CoinDesk: North Korea denies role",
+          "url": "https://www.coindesk.com/business/2026/11/03/north-korea-denies-role-in-usd6-4-billion-binance-hack-after-fbi-points-to-tradertraitor"
+        },
+        {
           "label": "Cointelegraph: Binance daily inflows turn positive",
           "url": "https://cointelegraph.com/news/binances-daily-inflows-positive-18b-withdrawals"
-        },
-        {
-          "label": "GMA News (Reuters): outflows normalized, North Korea rejects allegation",
-          "url": "https://www.gmanetwork.com/news/money/companies/1008137/binance-says-outflows-normalized-north-korea-rejects-us-allegation-over-heist/story/"
-        },
-        {
-          "label": "The Block: Binance incident report",
-          "url": "https://www.theblock.co/news/business/2026-11-03-binance-hack-incident-report-north-korea-fake-job-interview-ai-tool-432406"
-        },
-        {
-          "label": "MarketScreener (Reuters): co-CEO says Binance in strong health",
-          "url": "https://www.marketscreener.com/news/binance-co-ceo-says-company-in-strong-health-after-6-3-billion-heist-ce785fded988f52c"
-        },
-        {
-          "label": "Cointelegraph: second withdrawal phase and scam warning",
-          "url": "https://cointelegraph.com/news/binance-begins-second-withdrawal-phase-following-record-hack"
         }
       ]
     },
     {
       "title": "Bitcoin holds near $77,000 as options traders pay up for the election",
       "mood": "bearish",
-      "summary": "Bitcoin dipped to about $76,300 in the European morning on Tuesday and was circling $77,000 by 15:44 UTC. US spot bitcoin funds lost about $399M on Monday, their second straight day of outflows, and options prices show traders expect bigger moves around the election.",
+      "summary": "Bitcoin dipped to about $76,300 in the European morning on Tuesday and then steadied. US spot bitcoin funds lost about $399M on Monday, their second straight day of outflows, and options prices show traders expect bigger moves around the election.",
       "points": [
-        "Spot bitcoin ETFs: -$398.6M on 2 Nov; BlackRock's IBIT -$405.3M, Fidelity's FBTC +$6.68M, per crypto.news.",
-        "IBIT's outflow was its largest since June, per CoinDesk citing Farside.",
-        "Near-dated bitcoin implied volatility rose to about 51% from about 43.5%, which CoinDesk calls an election premium.",
-        "Liquidations over 24 hours were $382.6M, per CoinDesk.",
-        "Bitcoin was circling $77,000, up about 0.7% on Tuesday, per Cointelegraph (15:44 UTC)."
+        "Spot bitcoin ETFs saw about $399M of outflows on 2 Nov; BlackRock's IBIT lost $405M, its biggest daily outflow since June, per CoinDesk.",
+        "Near-dated bitcoin implied volatility rose to about 51% from about 43.5% the day before, per CoinDesk.",
+        "Liquidations over 24 hours rose 171% to $382.6M, per CoinDesk."
       ],
       "sources": [
         {
@@ -100,74 +93,52 @@
           "url": "https://www.coindesk.com/markets/2026/11/03/bitcoin-steadies-after-dip-to-usd76-300-as-etf-outflows-and-midterm-elections-weigh-on-crypto"
         },
         {
-          "label": "crypto.news: why bitcoin is down today",
-          "url": "https://crypto.news/why-is-bitcoin-price-down-today-btc-76000-support/"
-        },
-        {
-          "label": "Cointelegraph: bitcoin defends $76K lows",
-          "url": "https://cointelegraph.com/markets/bitcoin-price-defends-76k-lows-as-analysis-sees-stocks-pricing-in-political-gridlock"
+          "label": "Bitcoin Magazine: bitcoin near $77,500 into the midterms",
+          "url": "https://bitcoinmagazine.com/markets/bitcoin-price-trades-near-77500-midterm"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "CFTC clears perpetual futures on US stocks",
-      "summary": "CFTC Chair Selig said \"equity perps\" are deemed approved as security futures under joint CFTC and SEC oversight; no exchanges or launch date were named, per CoinDesk.",
-      "url": "https://www.coindesk.com/policy/2026/11/03/cftc-clears-perpetual-futures-on-stocks-bringing-crypto-trading-model-to-wall-street"
+      "title": "Wall Street groups sue the CFTC over stock perps",
+      "summary": "A new trade group backed by firms including Cboe and Citadel Securities sued the CFTC, arguing the single-stock perpetual futures it cleared on Tuesday belong under the SEC, per CoinDesk.",
+      "url": "https://www.coindesk.com/policy/2026/11/03/cftc-gets-into-legal-clash-over-stock-perps-after-having-cleared-path-for-crypto-version"
     },
     {
-      "title": "South Korea tells exchanges to hold more in cold wallets",
-      "summary": "After the Binance hack, South Korea's Financial Services Commission told local exchanges to keep more funds offline and tighten withdrawal controls; the legal minimum is 80%, per Cointelegraph.",
-      "url": "https://cointelegraph.com/news/south-korea-urges-exchanges-to-boost-cold-storage-after-binance-hack"
+      "title": "SEC staff call Canton Coin a \"digital commodity\"",
+      "summary": "A no-action letter says SEC staff will not recommend enforcement over Canton Coin's programmatic issuance; it reflects staff position, not a court ruling, per The Block.",
+      "url": "https://www.theblock.co/news/regulation/2026-11-03-sec-no-action-letter-canton-coin-digital-commodity-432492"
     },
     {
-      "title": "Suspected theft from an EU firm raised to $133M",
-      "summary": "ZachXBT raised his estimate from $106M and says about $30.5M has already been moved; the victim is not confirmed, per Cointelegraph.",
-      "url": "https://cointelegraph.com/news/zachxbt-eu-crypto-theft-133m-alleged-cover-up"
+      "title": "Block: bitcoin gross profit halves after a Cash App fee cut",
+      "summary": "Block reported Q3 revenue of $6.72B; bitcoin revenue fell 11% to $1.80B and bitcoin gross profit fell 50% to $52M, per its shareholder letter.",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001512673/000162828026069513/q32026shareholderletter.htm"
     },
     {
-      "title": "Mercado Bitcoin says it will refund users after hack",
-      "summary": "Brazil's largest exchange puts its loss at about $38M and has blocked $11M with Tether, Circle and Paxos; deposits and withdrawals are still paused, per Decrypt.",
-      "url": "https://decrypt.co/382459/brazil-mercado-bitcoin-will-refund-users-40-million-hack"
+      "title": "AMD tops its own guidance",
+      "summary": "AMD reported Q3 revenue of $13.38B, up 45% from a year earlier, and guided Q4 revenue to about $17B, per its SEC filing.",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000188/q32026991.htm"
     },
     {
-      "title": "Coinbase stock bounces after Morgan Stanley downgrade",
-      "summary": "COIN rose 5.84% to $145.89 at 10:31am ET on Tuesday, a day after Morgan Stanley told investors to steer clear of the stock, per 24/7 Wall St citing CNBC.",
-      "url": "https://247wallst.com/investing/etf/2026/11/03/coinbase-stock-rallies-again-heres-how-much-crypto-risk-is-hiding-in-your-etfs/"
+      "title": "Justin Sun seeks sanctions against World Liberty",
+      "summary": "Sun, who invested $45M in WLFI tokens, says the Trump-linked firm disclosed UAE ties in its ownership only months into the case and now uses them to contest jurisdiction, per CoinDesk.",
+      "url": "https://www.coindesk.com/policy/2026/11/03/justin-sun-seeks-sanctions-against-trump-linked-world-liberty-financial-over-uae-ties"
     },
     {
-      "title": "Liquid's bitcoin token fully backed again",
-      "summary": "Blockstream paid in the last 550 BTC, restoring full backing for Liquid's LBTC after the 6 Sep exploit of about 4,000 BTC, per The Block.",
-      "url": "https://www.theblock.co/news/ecosystems/2026-11-03-liquid-network-restores-full-bitcoin-backing-following-exploit-432387"
-    },
-    {
-      "title": "Strategy buys 811 more bitcoin",
-      "summary": "Strategy bought 811 BTC for $65.5M in the week to 1 Nov, taking its holdings to 849,327 BTC at an average cost of $75,451, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-02-we-found-room-for-even-more-orange-michael-saylor-strategy-bitcoin-btc-432275"
-    },
-    {
-      "title": "NEAR votes to cut new token issuance",
-      "summary": "NEAR governance approved lowering the yearly issuance ceiling from 2.5% to 1.6% over 24 months, per The Block.",
-      "url": "https://www.theblock.co/news/defi/2026-11-03-near-governance-approves-proposal-to-cut-token-issuance-432378"
+      "title": "Big companies object to OKX-ICE tokenized stocks",
+      "summary": "Amazon, Tesla, SpaceX and others joined objections to 24/7 tokenized versions of their shares, taking disclosed objections to 56, per CoinDesk.",
+      "url": "https://coindesk.com/business/2026/11/03/amazon-tesla-and-spacex-join-okx-ice-tokenized-stock-objections-as-deadline-looms"
     }
   ],
   "calendar": [
     {
-      "et": "Tue 3 Nov · 5:00pm",
-      "bkk": "Wed 4 · 05:00",
-      "event": "AMD and Block results calls",
-      "impact": "neutral",
-      "key": false,
-      "note": "AMD consensus EPS $1.68, per StockTitan."
-    },
-    {
-      "et": "Tue 3 Nov · 6:00pm",
-      "bkk": "Wed 4 · 06:00",
-      "event": "US midterm elections: first polls close",
+      "et": "Tue 3 Nov · 6:00pm – Wed 4 · 1:00am",
+      "bkk": "Wed 4 · 06:00 – 13:00",
+      "event": "US midterm elections: polls close and results arrive",
       "impact": "volatile",
       "key": true,
-      "note": "Biggest wave of closings at 8:00pm ET (08:00 Wed Bangkok); last polls in Alaska close 1:00am ET (13:00 Wed Bangkok), per Universal Time Date."
+      "note": "No race had been called at 7:00pm ET, per CoinDesk. Most of Alaska closes at 1:00am ET (13:00 Bangkok), per Türkiye Today."
     },
     {
       "et": "Wed 4 – Tue 10 Nov",
@@ -180,18 +151,18 @@
     {
       "et": "Wed 4 Nov · 8:00am",
       "bkk": "Wed 4 · 20:00",
-      "event": "Circle and Riot results calls; ADP jobs 8:15am ET; Hut 8 call and Treasury quarterly refunding 8:30am ET",
+      "event": "Circle and Riot results calls; ADP jobs 8:15am ET; Hut 8 call 8:30am ET; Treasury quarterly refunding the same day",
       "impact": "neutral",
       "key": false,
-      "note": "ADP prior +90K, per ADP; consensus +70K, per Yahoo Finance."
+      "note": "ADP prior +90K; consensus +67K per ZeroHedge, +65K per FinanceCalendar."
     },
     {
-      "et": "Wed 4 Nov",
-      "bkk": "Wed 4",
+      "et": "Wed 4 Nov · 10:00am",
+      "bkk": "Wed 4 · 22:00",
       "event": "US ISM services (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "Prior 54.9; consensus 54.7, per Yahoo Finance."
+      "note": "Prior 54.9; consensus 54.9, per ZeroHedge."
     },
     {
       "et": "Thu 5 Nov · 7:00am",
@@ -199,7 +170,7 @@
       "event": "Bank of England rate decision",
       "impact": "neutral",
       "key": false,
-      "note": "Bank Rate 3.75%; a hike to 4.00% is widely expected, per IG."
+      "note": "Bank Rate 3.75%. Economists polled by Reuters expect a hike to 4.00%, per FinanceCalendar; CMC Markets expects a hold."
     },
     {
       "et": "Thu 5 Nov · 8:30am",
@@ -207,15 +178,15 @@
       "event": "US jobless claims; Fed's Hammack 8:50am and Barkin 9:10am ET; IREN results call 5:00pm ET (05:00 Fri Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Claims prior 194K, per the Labor Department."
+      "note": "Claims prior 194K, consensus 195K, per ZeroHedge."
     },
     {
       "et": "Fri 6 Nov · 3:00am",
       "bkk": "Fri 6 · 15:00",
-      "event": "Deribit weekly bitcoin options expiry",
+      "event": "Deribit weekly bitcoin and ether options expiry",
       "impact": "volatile",
       "key": false,
-      "note": "Settles 08:00 UTC, per CryptoTicker."
+      "note": "Settles 08:00 UTC every Friday, per Deribit."
     },
     {
       "et": "Fri 6 Nov · 8:30am",
@@ -223,7 +194,7 @@
       "event": "US October jobs report",
       "impact": "volatile",
       "key": true,
-      "note": "Payrolls prior +29K, consensus +55K; unemployment prior 4.2%, consensus 4.2%, per Yahoo Finance. UMich sentiment (prelim) the same day, prior 48.0, consensus 47.3."
+      "note": "Payrolls prior +29K; consensus +62K per ZeroHedge, about +60K per CMC Markets. Unemployment prior 4.2%, consensus 4.2%. UMich sentiment (prelim) the same day: prior 48.0; Deutsche Bank expects 45.7, per ZeroHedge."
     },
     {
       "et": "Mon 9 Nov · 10:00am",
@@ -239,7 +210,15 @@
       "event": "US CPI inflation (Oct)",
       "impact": "volatile",
       "key": true,
-      "note": "September CPI rose 3.7% from a year earlier, core 2.6%. The Cleveland Fed nowcast (3 Nov) points to 3.74% headline and 2.48% core."
+      "note": "The Cleveland Fed nowcast (3 Nov) points to 3.74% headline and 2.48% core, year on year."
+    },
+    {
+      "et": "Wed 11 Nov",
+      "bkk": "Wed 11",
+      "event": "Veterans Day: US bond market closed",
+      "impact": "neutral",
+      "key": false,
+      "note": "SIFMA recommends a full close of US-dollar bond markets."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -252,9 +231,9 @@
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-03T20:12:17Z",
-    "claimsChecked": 109,
-    "claimsRemoved": 7,
+    "checkedAt": "2026-11-04T00:15:46Z",
+    "claimsChecked": 119,
+    "claimsRemoved": 16,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
