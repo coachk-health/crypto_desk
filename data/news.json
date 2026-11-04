@@ -1,156 +1,134 @@
 {
   "date": "2026-11-04",
-  "updated": "2026-11-04T08:16:00Z",
-  "headline": "Democrats win the US Senate while the House count goes on, bitcoin dips then recovers toward $78,000, and more exchanges report hacks after Binance.",
+  "updated": "2026-11-04T12:16:25Z",
+  "headline": "Democrats now hold both the House and the Senate, bitcoin is back near $78,000 after its election dip, and a French bank is named in a $133M crypto theft.",
   "market": {
-    "asOf": "Read from the price ticker on a CoinDesk bitcoin article about 08:10 UTC Wed 4 Nov (15:10 Bangkok); CoinDesk's ticker does not label the period of its % change. For current prices, use the live prices on this page. The same CoinDesk article said bitcoin was 0.5% higher on the day when it was written, about 06:30 UTC.",
+    "asOf": "Read from CoinMarketCap about 11:54 UTC Wed 4 Nov (18:54 Bangkok); changes are over 24 hours. For current prices, use the live prices on this page.",
     "btc": {
-      "price": 77950.27,
-      "chg24h": 1.6
+      "price": 77833.62,
+      "chg24h": 1.38
     },
     "eth": {
-      "price": 2300.56,
-      "chg24h": 2.0
+      "price": 2251.07,
+      "chg24h": -0.05
     },
     "sol": {
-      "price": 92.88,
-      "chg24h": 1.0
+      "price": 93.36,
+      "chg24h": 1.21
     },
-    "fearGreed": "34, up from 26, on the Crypto Fear & Greed Index as reported by CoinGabbar (4 Nov, 04:00 UTC)"
+    "fearGreed": "26 (Fear), down from 37 yesterday, on the Alternative.me Crypto Fear & Greed Index (read 11:54 UTC 4 Nov). CoinMarketCap's own index showed 37, per CoinDesk."
   },
   "stories": [
     {
-      "title": "Democrats win the Senate; the House is still being counted",
-      "mood": "volatile",
-      "summary": "The AP called the Senate for Democrats late Tuesday night ET after Josh Turek won Iowa, giving Democrats and the independents who vote with them 51 seats. The House was still too early to call. From January, Democrats will run the Senate committees that handle crypto bills, so the window for the CLARITY Act market-structure bill is now the lame-duck session.",
+      "title": "Democrats win the House as well as the Senate; a top crypto critic returns",
+      "mood": "bearish",
+      "summary": "The AP called the House for Democrats early Wednesday, after calling the Senate late Tuesday when Iowa came in. Sherrod Brown won back an Ohio Senate seat despite heavy crypto industry spending against him.",
       "points": [
-        "Democrats and allied independents reached 51 Senate seats when the AP called it after Iowa, per Cointelegraph.",
-        "Before the election the Senate was 53 Republicans, 45 Democrats and 2 independents, per ABC News.",
-        "The AP said the House was still too early to call at 11:46pm ET Tuesday, per PBS.",
-        "Sherrod Brown beat Jon Husted in Ohio despite $30M spent against him by the crypto super PAC Fairshake, per The Block.",
-        "The CLARITY Act failed a Senate procedural vote 49-50 in September; if it does not pass by January, the next Congress starts over, per Cointelegraph."
+        "The AP called the House for Democrats early on 4 Nov, after calling Senate control late Tuesday following Iowa, per Forbes.",
+        "Sherrod Brown beat Senator Jon Husted in Ohio; crypto groups Fairshake and Digital Freedom Fund spent about $63M against him, per CoinDesk.",
+        "Elizabeth Warren is positioned to lead the Senate Banking Committee, and Brown could get a senior role on the Agriculture Committee, which oversees the CFTC, per CoinDesk.",
+        "Saxo says a Democratic Senate from January \"changes the arithmetic\" for the CLARITY Act market-structure bill, stalled since September.",
+        "The CLARITY Act stalled after the Senate rejected a key procedural vote 49-50 in September, per AMBCrypto."
       ],
       "sources": [
         {
-          "label": "Cointelegraph: Democrats flip the Senate as crypto faces a policy reset",
-          "url": "https://cointelegraph.com/news/democrats-flip-us-senate-as-crypto-industry-faces-policy-reset"
+          "label": "Forbes: midterm results live updates",
+          "url": "https://www.forbes.com/sites/saradorn/2026/11/04/midterm-election-results-live-updates-democrats-sweep-house-and-senate-in-stunning-rout/"
         },
         {
-          "label": "PBS NewsHour (AP): Democrats take control of the Senate",
-          "url": "https://www.pbs.org/newshour/politics/democrats-take-control-of-the-senate-after-winning-key-midterm-races"
+          "label": "CoinDesk (via Yahoo): crypto groups spent $63 million against Brown",
+          "url": "https://www.yahoo.com/news/politics/articles/crypto-groups-spent-63-million-113547204.html"
         },
         {
-          "label": "ABC News: balance of power in Congress",
-          "url": "https://abcnews.com/Politics/balance-power-congress-stake-2026-midterm-elections/story?id=137777679"
+          "label": "Saxo: market quick take, 4 Nov",
+          "url": "https://www.home.saxo/en-gb/content/articles/macro/market-quick-take---democrats-take-control-of-house-and-senate---4-november-2026-04112026"
         },
         {
-          "label": "The Block: Sherrod Brown defeats Jon Husted",
-          "url": "https://theblock.co/news/regulation/2026-11-03-sherrod-brown-defeats-jon-husted-432495"
+          "label": "AMBCrypto: CLARITY Act stalls after 49-50 Senate vote",
+          "url": "https://ambcrypto.com/clarity-act-stalls-after-senate-rejects-key-vote-49-50/"
         }
       ]
     },
     {
-      "title": "Bitcoin dips to about $75,700 on the Democratic sweep, then climbs back toward $78,000",
+      "title": "Bitcoin recovers from its election dip, but money keeps leaving bitcoin ETFs",
       "mood": "volatile",
-      "summary": "Bitcoin fell as early results pointed to a Democratic sweep, alongside a drop in US stock futures, then recovered in Asian hours as the result became clear. US spot bitcoin funds are still seeing outflows.",
+      "summary": "Bitcoin fell below $76,000 as the results came in, then bounced back above $78,000 once the outcome was clear. DeFi tokens led the rebound. US spot bitcoin funds are still seeing outflows and sentiment gauges still read fear.",
       "points": [
-        "Bitcoin briefly fell to about $75,700 while S&P 500 futures were down 1.3% and Nasdaq 100 futures 2.3%, per CoinDesk.",
-        "By early Wednesday it was back near $78,000, per CoinDesk.",
-        "US spot bitcoin ETFs had a net outflow of about $116M on 3 Nov, per KuCoin citing ChainCatcher.",
-        "US spot bitcoin ETFs lost $515M in October and about the same again in the first two trading days of November, per CoinDesk citing SoSoValue.",
-        "About $660M of bitcoin options block trades went through on election day, per CoinDesk."
+        "Bitcoin fell to about $75,600 and then recovered to about $78,300, per CoinDesk.",
+        "CoinDesk's DeFi Select Index rose about 5% and ether about 2%, while TRUMP fell 7.1% and WLFI 5%; liquidations reached $469M, per CoinDesk.",
+        "US spot bitcoin ETFs had a net outflow of $115.56M on 3 Nov, the third day in a row, led by BlackRock's IBIT at -$94.98M, per TokenPost citing SoSoValue.",
+        "Spot bitcoin ETFs lost about $515M in October and about the same again in the first two trading days of November, per CoinDesk citing SoSoValue."
       ],
       "sources": [
         {
-          "label": "CoinDesk: bitcoin briefly sinks to $75,700",
-          "url": "https://www.coindesk.com/markets/2026/11/04/bitcoin-briefly-sinks-to-usd75-700-as-bets-on-a-democratic-sweep-rattle-markets"
-        },
-        {
-          "label": "CoinDesk: bitcoin knocks on $78,000",
+          "label": "CoinDesk: bitcoin knocks on $78,000 in V-shaped comeback",
           "url": "https://www.coindesk.com/markets/2026/11/04/bitcoin-knocks-on-usd78-000-in-v-shaped-comeback-as-midterm-uncertainty-fades"
         },
         {
-          "label": "KuCoin: spot bitcoin ETFs see $116M net outflow on 3 Nov",
-          "url": "https://www.kucoin.com/news/flash/bitcoin-spot-etfs-see-116m-net-outflow-on-nov-3-blackrock-s-ibit-leads-with-95m-exit"
+          "label": "CoinDesk: bitcoin rebounds as DeFi leads gains",
+          "url": "https://www.coindesk.com/markets/2026/11/04/bitcoin-rebounds-from-midterm-dip-as-defi-leads-gains"
+        },
+        {
+          "label": "TokenPost: spot bitcoin ETF flows, 3 Nov",
+          "url": "https://www.tokenpost.com/news/investing/48350"
         }
       ]
     },
     {
-      "title": "More exchange hacks after Binance: Mercado Bitcoin and BitMart hit",
+      "title": "A French bank is named in a $133M crypto theft, the latest in a run of hacks",
       "mood": "bearish",
-      "summary": "Days after the Binance heist, Brazil's Mercado Bitcoin lost funds from its hot wallets and pledged to cover every customer. BitMart's founder then confirmed a small hack, which onchain tracing links to an address used in the Mercado attack. Exchanges are being targeted one after another.",
+      "summary": "Onchain investigator ZachXBT named Crédit Mutuel Arkéa as the suspected victim of a theft of more than $133M, with funds pulled out through big exchanges and laundered. It follows the Binance heist and the Mercado Bitcoin hack, keeping security at the top of users' worries.",
       "points": [
-        "Sources differ on Mercado Bitcoin's loss: about $38M by the exchange's own count per CoinDesk, $46M per The Block. About $11M was frozen, per CoinDesk.",
-        "About $391K was taken from BitMart, which is restructuring, per The Defiant.",
-        "Binance's own losses: about $6.34B taken, about $2.85B frozen or intercepted, 98% of assets replenished, per KuCoin's daily report.",
-        "Binance's attack chain began with a malware-laced download, then a fake job interview in September, before the theft on 29 Oct; the FBI blames North Korea, per ABC Australia.",
-        "South Korean regulators plan to raise the share of exchange assets held in cold storage from 80% to about 99%, per KuCoin's daily report."
+        "ZachXBT first flagged more than $106M on 1-2 Nov, then found about $27M more, for over $133M, per CoinDesk.",
+        "Bitquery traced $108.8M in USDC withdrawn from Kraken, Crypto.com and OKX over 21 hours, per CoinDesk.",
+        "Sources differ on whether the bank has confirmed: CoinDesk reports it confirmed \"an attack\" with no financial consequences for clients; Decrypt says it has not publicly confirmed any theft.",
+        "More than $30M was laundered, partly through Monero, per Decrypt; ZachXBT has \"high confidence\" North Korea's Lazarus Group was not behind it, per CoinDesk.",
+        "Brazil's Mercado Bitcoin says it lost about $38M and will cover all customer losses; about $11M has been frozen, per CoinDesk."
       ],
       "sources": [
         {
+          "label": "CoinDesk: ZachXBT names Crédit Mutuel Arkéa as suspected victim",
+          "url": "https://www.coindesk.com/business/2026/11/04/zachxbt-names-french-bank-credit-mutuel-arkea-as-suspected-victim-of-usd133-million-crypto-theft"
+        },
+        {
+          "label": "Decrypt: ZachXBT names French bank as alleged victim",
+          "url": "https://decrypt.co/382486/zachxbt-names-french-bank-credit-mutuel-arkea-as-alleged-victim-of-133m-crypto-theft"
+        },
+        {
           "label": "CoinDesk: Mercado Bitcoin pledges to cover all user losses",
           "url": "https://www.coindesk.com/business/2026/11/03/mercado-bitcoin-pledges-to-cover-all-user-losses-after-near-usd40-million-hack"
-        },
-        {
-          "label": "The Block: Mercado Bitcoin hack",
-          "url": "https://www.theblock.co/news/defi/2026-11-02-mercado-bitcoin-hack-46-million-brazil-exchange-432333"
-        },
-        {
-          "label": "The Defiant: BitMart founder confirms hack",
-          "url": "https://thedefiant.io/news/hacks/bitmart-founder-confirms-hack-during-restructuring"
-        },
-        {
-          "label": "ABC Australia: Binance details the largest crypto heist",
-          "url": "https://www.abc.net.au/news/2026-11-04/binance-released-details-of-largest-crypto-heist/107345208"
-        },
-        {
-          "label": "KuCoin: crypto daily market report, 4 Nov",
-          "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-4-2026"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Circle reports Q3 results today",
-      "summary": "Circle reports Q3 2026 results on Wed 4 Nov with a webcast at 8:00am ET (20:00 Bangkok), per the company.",
-      "url": "https://www.circle.com/pressroom/circle-to-announce-q3-2026-financial-results-on-november-4-2026"
+      "title": "Circle reports Q3 results",
+      "summary": "Circle reported Q3 revenue of $865M, up 17% from a year earlier, with $73.9B of USDC in circulation at quarter-end; Binance is making a $100M equity investment, per Circle's release.",
+      "url": "https://www.stocktitan.net/news/CRCL/circle-reports-third-quarter-2026-zmwyuetdvzp4.html"
+    },
+    {
+      "title": "Hut 8 Q3: lower revenue, big paper gains",
+      "summary": "Hut 8's revenue fell to $71.1M from $83.5M, while net income of $189.5M included $413.8M of mostly unrealized digital-asset gains; its buyback was raised to $1.0B, per the company.",
+      "url": "https://www.prnewswire.com/news-releases/hut-8-reports-third-quarter-2026-results-302928583.html"
     },
     {
       "title": "CFTC sued over stock perps",
-      "summary": "The Capital Markets Alliance sued the CFTC in New York federal court, arguing single-stock perpetual futures belong under the SEC, per CoinDesk.",
-      "url": "https://www.coindesk.com/markets/2026/11/03/live-news-bitcoin-faces-fifth-weekly-loss-as-midterm-uncertainty-and-apple-warning-weigh-on-markets"
+      "summary": "The Capital Markets Alliance, backed by Cboe and Citadel Securities, sued the CFTC in New York federal court, arguing single-stock perpetual futures belong under the SEC, per CoinDesk.",
+      "url": "https://www.coindesk.com/policy/2026/11/03/cftc-gets-into-legal-clash-over-stock-perps-after-having-cleared-path-for-crypto-version"
     },
     {
-      "title": "BlackRock: midterms won't change its crypto plans",
-      "summary": "BlackRock's Robert Mitchnick said the election won't change its crypto strategy; the firm manages about $75B across its crypto ETFs, per CoinDesk.",
-      "url": "https://www.coindesk.com/markets/2026/11/03/live-news-bitcoin-faces-fifth-weekly-loss-as-midterm-uncertainty-and-apple-warning-weigh-on-markets"
+      "title": "Treasury refunding due today",
+      "summary": "The US Treasury's quarterly refunding statement is due at 13:30 GMT (8:30am ET, 20:30 Bangkok) today, per Saxo.",
+      "url": "https://www.home.saxo/en-gb/content/articles/macro/market-quick-take---democrats-take-control-of-house-and-senate---4-november-2026-04112026"
     },
     {
-      "title": "Polymarket unit gets NFA approval",
-      "summary": "A Polymarket subsidiary was approved by the NFA to register as a futures commission merchant; CFTC approval is still pending, per KuCoin's daily report.",
-      "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-4-2026"
-    },
-    {
-      "title": "Treasury quarterly refunding today",
-      "summary": "The US Treasury announces its quarterly refunding on 4 Nov; in August it kept guidance to hold coupon auction sizes unchanged \"for at least the next several quarters\", per Treasury.",
-      "url": "https://home.treasury.gov/news/press-releases/sb0590"
-    },
-    {
-      "title": "AI data-center stocks rally",
-      "summary": "Cipher, CleanSpark and Hut 8, which CoinDesk groups with AI data-center builders, posted double-digit gains on 3 Nov, per CoinDesk.",
-      "url": "https://www.coindesk.com/markets/2026/11/03/live-news-bitcoin-faces-fifth-weekly-loss-as-midterm-uncertainty-and-apple-warning-weigh-on-markets"
+      "title": "Miner stocks jump before earnings",
+      "summary": "Riot and Cipher each rose more than 18% on Tuesday ahead of earnings; Riot holds its Q3 call today, per Saxo.",
+      "url": "https://www.home.saxo/en-gb/content/articles/macro/market-quick-take---democrats-take-control-of-house-and-senate---4-november-2026-04112026"
     }
   ],
   "calendar": [
-    {
-      "et": "Wed 4 Nov",
-      "bkk": "Wed 4",
-      "event": "US midterm results: House count continues",
-      "impact": "volatile",
-      "key": true,
-      "note": "The AP called the Senate for Democrats; the House was still too early to call, per PBS."
-    },
     {
       "et": "Wed 4 – Wed 11 Nov",
       "bkk": "Wed 4 – Wed 11 Nov",
@@ -162,26 +140,18 @@
     {
       "et": "Wed 4 Nov · 8:00am",
       "bkk": "Wed 4 · 20:00",
-      "event": "Circle and Riot results calls; ADP jobs 8:15am ET; Hut 8 call, Treasury refunding and trade balance 8:30am ET",
+      "event": "Circle and Riot results calls; ADP jobs 8:15am ET; Hut 8 call and Treasury refunding 8:30am ET; US trade balance and ISM services also due",
       "impact": "neutral",
       "key": false,
-      "note": "ADP prior +90K; consensus +67K per ZeroHedge, 69K per Finviz."
-    },
-    {
-      "et": "Wed 4 Nov · 10:00am",
-      "bkk": "Wed 4 · 22:00",
-      "event": "US ISM services (Oct)",
-      "impact": "neutral",
-      "key": false,
-      "note": "Prior 54.9; consensus 54.9 per ZeroHedge, 54.8 per Finviz."
+      "note": "ADP prior +90K; consensus 75K per Bitcoin Sistemi. Trade balance forecast -$107.9B, prior -$105.6B, per Continuum Economics. ISM services prior 54.9, consensus 54.7, per Newsquawk."
     },
     {
       "et": "Thu 5 Nov · 7:00am",
       "bkk": "Thu 5 · 19:00",
       "event": "Bank of England rate decision",
       "impact": "neutral",
-      "key": false,
-      "note": "Bank Rate 3.75%; a Reuters poll expects a rise to 4.00%, per FinanceCalendar."
+      "key": true,
+      "note": "Bank Rate 3.75%; consensus is a rise to 4.00%, per Newsquawk."
     },
     {
       "et": "Thu 5 Nov · 8:30am",
@@ -189,7 +159,7 @@
       "event": "US jobless claims; Fed's Hammack 8:50am and Barkin 9:10am ET; IREN results 5:00pm ET (05:00 Fri Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Claims prior 194K; consensus 195K per ZeroHedge, 196K per Finviz."
+      "note": "Claims prior 194K for the week to 24 Oct."
     },
     {
       "et": "Fri 6 Nov · 3:00am",
@@ -197,15 +167,15 @@
       "event": "Weekly bitcoin options expiry (Deribit, 08:00 UTC)",
       "impact": "volatile",
       "key": false,
-      "note": "About $2.07B of bitcoin options expire on 6 Nov, per TokenPost."
+      "note": "About $2.07B of bitcoin options expire, per TokenPost."
     },
     {
       "et": "Fri 6 Nov · 8:30am",
       "bkk": "Fri 6 · 20:30",
-      "event": "US October jobs report; UMich sentiment (prelim) 10:00am ET",
+      "event": "US October jobs report; UMich consumer sentiment (prelim) also due",
       "impact": "volatile",
       "key": true,
-      "note": "Payrolls prior +29K; consensus +62K per ZeroHedge, +65K per Finviz. Unemployment prior 4.2%, consensus 4.2%. UMich prior 48.0."
+      "note": "Payrolls prior +29K; consensus +55K per Newsquawk, +65K per Bitcoin Sistemi. Unemployment prior 4.2%, consensus 4.2%. UMich prior 48.0."
     },
     {
       "et": "Mon 9 Nov · 10:00am",
@@ -221,7 +191,7 @@
       "event": "US CPI inflation (Oct)",
       "impact": "volatile",
       "key": true,
-      "note": "The Cleveland Fed nowcast (3 Nov) points to 3.74% headline and 2.48% core, year on year."
+      "note": "Prior 3.5% headline, 2.6% core, year on year. Cleveland Fed nowcast: 3.75% headline, 2.48% core; Continuum Economics forecasts 3.9% and 2.8%."
     },
     {
       "et": "Wed 11 Nov",
@@ -229,7 +199,7 @@
       "event": "Veterans Day: SIFMA recommends a US bond market close",
       "impact": "neutral",
       "key": false,
-      "note": "SIFMA recommends a full close of US-dollar bond markets."
+      "note": "Full close of US-dollar bond markets recommended, per SIFMA."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -242,9 +212,9 @@
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-04T08:16:00Z",
-    "claimsChecked": 108,
-    "claimsRemoved": 12,
+    "checkedAt": "2026-11-04T12:16:25Z",
+    "claimsChecked": 140,
+    "claimsRemoved": 13,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
