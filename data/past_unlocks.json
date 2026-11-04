@@ -16457,6 +16457,137 @@
     }
    ],
    "harvested": true
+  },
+  {
+   "token": "ICNT",
+   "name": "Impossible Cloud Network",
+   "coingeckoId": "impossible-cloud-network-token",
+   "events": [
+    {
+     "date": "2026-11-03",
+     "timeUTC": "00:00",
+     "amountTokens": 19460000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.377,
+      "investors": 0.385,
+      "community": 0.238,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko ICNT page (Tokenomist unlock widget)",
+       "url": "https://www.coingecko.com/en/coins/impossible-cloud-network-token",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "tokenomics.com ICNT unlocks",
+       "url": "https://app.tokenomics.com/tokenomics/impossible-cloud-network/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Bitcoinsistemi weekly unlock schedule (1 Nov 2026)",
+       "url": "https://en.bitcoinsistemi.com/watch-out-major-token-unlocks-are-coming-for-12-altcoins-this-week-here-s-the-day-by-day-hour-by-hou/",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "time"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 4.63,
+      "confidence": 67,
+      "scoredAt": "2026-11-04T04:19:03Z"
+     }
+    }
+   ],
+   "harvested": true
+  },
+  {
+   "token": "KITE",
+   "name": "Kite AI",
+   "coingeckoId": "kite-2",
+   "events": [
+    {
+     "date": "2026-11-03",
+     "timeUTC": null,
+     "amountTokens": 800000000,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0.625,
+      "investors": 0.375,
+      "community": 0,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "DropsTab KITE (read 3 Nov 2026, vi mirror): 3 Nov 2026 800M KITE = 500M Team + 300M Investors after 12-month cliff; Team 2B, Investors 1.2B; monthly ~41.7M team + ~25M investors from 3 Dec 2026",
+       "url": "https://dropstab.com/vi/coins/kite-2",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CryptoTicker (17 Oct 2026, upd. 20 Oct; German edition read): team 500M + investors 300M first release after 12-month lock, derived from the Kite MiCA white paper, inside a ~1.11B early-November release with 200M airdrop, 50M modules, ~60.4M ecosystem; exact day uncertain (1, 3 or 17 Nov)",
+       "url": "https://cryptoticker.io/de/kite-unlock-cliff-verkaufsdruck/",
+       "kind": "news",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinGecko kite-2 page, unlock widget (Tokenomist data), read 3 Nov 2026: 3 Nov, ~8h away at snapshot, 640M KITE = 400M Team/Advisors/Early Contributors + 240M Investors",
+       "url": "https://www.coingecko.com/coins/kite-2",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist KITE competitor analysis: next unlock 3 Nov 2026, labelled Ecosystem & Community, no amount (same feed as CoinGecko widget)",
+       "url": "https://tokenomist.ai/kite-2/competitor-analysis",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "AMBCrypto: unlocks begin 1 Nov 2026, first unlock ~$201M, then ~$32.7M monthly to Oct 2029; no recipient split",
+       "url": "https://ambcrypto.com/?p=578453",
+       "kind": "news",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 9.12,
+      "confidence": 62,
+      "scoredAt": "2026-11-04T04:19:03Z"
+     }
+    }
+   ],
+   "harvested": true
   }
  ],
  "dropped": [
