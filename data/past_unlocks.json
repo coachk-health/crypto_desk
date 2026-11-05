@@ -16588,6 +16588,78 @@
     }
    ],
    "harvested": true
+  },
+  {
+   "token": "LA",
+   "name": "Lagrange",
+   "coingeckoId": "lagrange",
+   "events": [
+    {
+     "date": "2026-11-04",
+     "timeUTC": null,
+     "amountTokens": 30331350,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.349,
+      "investors": 0.255,
+      "community": 0.204,
+      "ecosystem": 0.192,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com LA unlocks (read 4 Nov 2026): 4 Nov 2026, 30,331,350 LA, ~$1.8M, Private Investors 25.5% / Insiders 34.9% / Community 20.4% / Foundation 19.2%; next tranches 24.5M from 4 Dec 2026 (no foundation)",
+       "url": "https://app.tokenomics.com/tokenomics/lagrange/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "tokenomics.com LA overview (same site as above): Contributors 25.38% and Investors 18.54% 12-mo cliff + 24-mo linear (20.8% released = 5 of 24 tranches); Community & Ecosystem 34.78% (14.4% TGE, 6-mo cliff, 48-mo linear); Foundation 11.30% (38.1% TGE, 6-mo cliff, 12-mo linear, 94.8% released); TGE 3 Jun 2025; circ 357,170,459",
+       "url": "https://app.tokenomics.com/tokenomics/lagrange",
+       "kind": "aggregator",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "TokenPost weekly unlocks (2 Nov 2026, CryptoRank data): LA unlock on 4 Nov, 8.13% of market cap",
+       "url": "https://www.tokenpost.com/news/investing/46375",
+       "kind": "news",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "KuCoin news 'This week's token unlocks Nov 1-7, 2026' (2 Nov 2026): LA listed among 4 Nov unlocks, no detail",
+       "url": "https://www.kucoin.com/news/insight/HYPE/6ae82bccbbcb52000745818d",
+       "kind": "news",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "tokenradar.ai LA tokenomics (4 Nov 2026): models a ~961K LA daily release on 4 Nov from all five pools; investor/contributor 1-yr lock then 2-yr release; price $0.059 at 03:00 UTC",
+       "url": "https://tokenradar.ai/tokens/lagrange/tokenomics",
+       "kind": "aggregator",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 4.56,
+      "confidence": 50,
+      "scoredAt": "2026-11-05T08:16:06Z"
+     }
+    }
+   ],
+   "harvested": true
   }
  ],
  "dropped": [
