@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-05",
-  "updated": "2026-11-05T16:15:07Z",
-  "headline": "Bitcoin gave up its post-election bounce on Thursday afternoon, sliding to about $76,500 as US tech stocks sold off, while Polygon weighs a hard fork to return funds stolen in the Binance and Polymarket hacks.",
+  "date": "2026-11-06",
+  "updated": "2026-11-05T20:20:11Z",
+  "headline": "Bitcoin slid to about $75,600 on Thursday as chip and AI stocks crashed, wiping out leveraged bets, while the fallout from the $6.3B Binance hack reached US bank regulators.",
   "market": {
-    "asOf": "Bitcoin level read from CoinDesk's live coverage at 15:24 UTC Thu 5 Nov; Fear & Greed read about 16:00 UTC. The market was moving fast, so use the live prices on this page.",
+    "asOf": "Bitcoin read from CoinGecko about 20:05 UTC Thu 5 Nov. Ether, Solana and Fear & Greed could not be read this run. Use the live prices on this page.",
     "btc": {
-      "price": 76500,
-      "chg24h": -5.0
+      "price": 76134,
+      "chg24h": -5.4
     },
     "eth": {
       "price": null,
@@ -16,107 +16,130 @@
       "price": null,
       "chg24h": null
     },
-    "fearGreed": "43 on the CoinMarketCap Crypto Fear & Greed Index, read about 16:00 UTC (the page showed no timestamp)."
+    "fearGreed": "Not available this run: the index page could not be opened."
   },
   "stories": [
     {
-      "title": "Bitcoin loses $80,000 and slides toward $76,000 as tech stocks tumble",
+      "title": "Bitcoin slides toward $75,500 as chip stocks crash",
       "mood": "bearish",
-      "summary": "Bitcoin was back above $80,000 early Thursday, but it reversed after the US stock market opened and AI-chip stocks sold off. Bitcoin moved almost tick for tick with the Nasdaq, a reminder that crypto still trades like a high-risk tech stock. Many traders who had borrowed to bet on higher prices were forced out.",
+      "summary": "Wednesday's post-election bounce reversed on Thursday. Chip and AI stocks fell hard after the US open and bitcoin dropped more than 5%, moving in step with the Nasdaq. Traders who had borrowed to bet on higher prices were forced out, which made the drop faster.",
       "points": [
-        "Bitcoin was down about 5% over 24 hours at about $76,500 at 15:24 UTC, per CoinDesk; earlier it had climbed back above $80,000.",
-        "The Nasdaq Composite fell as much as 3.9%, and bitcoin dropped from above $80,800 to a low near $76,100, per Bitcoin Magazine.",
-        "Liquidation counts differ: Bitcoin Magazine says about $370M of leveraged positions, mostly longs, were wiped out in roughly an hour; CryptoPotato, citing CoinGlass, says over $560M in the past hour, $530M of it longs.",
-        "Ether fell below $2,300 and gold rose 1.1% to $4,116 an ounce, per CoinDesk.",
-        "Weekly US jobless claims fell to 189,000 from 195,000, which Bitcoin Magazine says gives the Fed little reason to ease."
+        "Bitcoin fell from above $80,800 to near $76,100 within about two hours of the US open, per Bitcoin Magazine.",
+        "CoinGecko showed bitcoin at $76,133.86, down 5.4% over 24 hours, with a 24-hour low of $75,572.68.",
+        "Liquidation counts differ: crypto.news, citing CoinGlass, reports $1.08B in 24 hours ($954M of it longs); TheStreet, also citing CoinGlass, reports $878M in 4 hours; Bitcoin Magazine says about $370M in roughly an hour.",
+        "Crypto stocks fell with it, per 24/7 Wall St: Coinbase down 10% to $135.93, Strategy down 10% to $128.54 and Circle down 12% to $67.25.",
+        "The chip index fell about 10% and the S&P 500 was on pace for its worst day since the April 2025 tariff selloff, per Yahoo Finance."
       ],
       "sources": [
         {
-          "label": "CoinDesk: live updates, 5 Nov",
-          "url": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
+          "label": "Bitcoin Magazine: bitcoin drops below $75,000",
+          "url": "https://bitcoinmagazine.com/markets/bitcoin-price-drops-below-75000-tech"
         },
         {
-          "label": "Bitcoin Magazine: bitcoin drops below $77,000 as tech sells off",
-          "url": "https://bitcoinmagazine.com/markets/bitcoin-price-drops-below-77000-tech"
+          "label": "crypto.news: liquidations top $1B",
+          "url": "https://crypto.news/crypto-crash-long-short-liquidations-bitcoin-stocks/"
         },
         {
-          "label": "CryptoPotato: hourly liquidations near $600M",
-          "url": "https://cryptopotato.com/bitcoin-price-suddenly-plunges-to-76k-as-hourly-liquidations-near-600m/"
+          "label": "TheStreet: bitcoin and stocks erase post-election rally",
+          "url": "https://www.thestreet.com/crypto/markets/bitcoin-stocks-crash-as-markets-erase-post-election-rally"
+        },
+        {
+          "label": "24/7 Wall St: crypto stocks tumble",
+          "url": "https://247wallst.com/investing/2026/11/05/circle-sinks-12-coinbase-and-strategy-tumble-10-as-bitcoin-slide-hits-crypto-stocks/"
+        },
+        {
+          "label": "Yahoo Finance: chip stocks sell off",
+          "url": "https://finance.yahoo.com/markets/article/chip-stocks-get-slaughtered-as-wall-street-heads-for-its-worst-post-midterm-day-since-1896-163413900.html"
+        },
+        {
+          "label": "CoinGecko: bitcoin",
+          "url": "https://www.coingecko.com/en/coins/bitcoin"
         }
       ]
     },
     {
-      "title": "Polygon weighs a hard fork to return about $6.8M of POL stolen in the Binance and Polymarket hacks",
+      "title": "Binance hack fallout: US bank regulators step in as Binance asks Arbitrum and Polygon to return frozen funds",
       "mood": "neutral",
-      "summary": "Binance and Polymarket have proposed a Polygon hard fork that would move POL out of blocked attacker addresses and into recovery wallets, without changing total supply. It was due at Polygon's governance call at 14:30 UTC today; no outcome had been reported when this page was updated.",
+      "summary": "After the roughly $6.3B theft from Binance on 29 Oct, US bank regulators began asking banks about suspicious transactions, according to a Reuters report. Binance is also asking blockchain communities to release stolen funds that were frozen.",
       "points": [
-        "The fork would recover about 70.49M POL (about $6.8M): 46.63M POL for Binance and 23.86M POL for Polymarket, per Cointelegraph. Blockonomi puts the value at roughly $6.5M.",
-        "If approved, development and testing would take about two weeks, per Blockonomi.",
-        "The attacker offered validators cash to help unblock a transaction, per Blockonomi.",
-        "The Binance hack on 29 Oct was the largest on record; Cointelegraph puts it at $6.3B."
+        "The Fed and the OCC began contacting US banks on 2 Nov about suspicious transactions and cyber weaknesses, per Bitcoin.com News, summarizing Reuters.",
+        "Binance asked Arbitrum's DAO to release 8,425.997 ETH and 74.56M ARB that were frozen, in a process of about 49 days or more, per crypto.news.",
+        "A Polygon proposal would hard-fork to move 70.49M POL (46.63M linked to Binance, 23.86M to Polymarket) to recovery wallets; Cointelegraph values it at about $6.8M.",
+        "The proposal was discussed on Polygon's governance call on Thursday; no outcome had been reported when this page was updated."
       ],
       "sources": [
         {
-          "label": "Cointelegraph: Polygon hard fork for Binance and Polymarket",
+          "label": "Bitcoin.com News: Fed and OCC probe bank security",
+          "url": "https://news.bitcoin.com/finance/fed-occ-probe-bank-security-after-binance-6-3b-hack-report/"
+        },
+        {
+          "label": "crypto.news: Binance frozen ETH and ARB recovery",
+          "url": "https://crypto.news/binance-frozen-eth-arb-recovery-proposal/"
+        },
+        {
+          "label": "Cointelegraph: Polygon hard fork proposal",
           "url": "https://cointelegraph.com/news/polygon-hard-fork-binance-polymarket-6-8m-hack-recovery"
         },
         {
-          "label": "Blockonomi: Polygon hard fork plan targets hacker",
-          "url": "https://blockonomi.com/polygon-hard-fork-plan-targets-hacker-who-tried-to-bribe-validators-over-frozen-pol"
+          "label": "The Merkle: Polygon governance call",
+          "url": "https://themerkle.com/polygon-governance-call-takes-up-recovery-fork-for-polymarket-and-binance-hack-funds"
+        },
+        {
+          "label": "Polygon forum: recovery proposal",
+          "url": "https://forum.polygon.technology/t/pip-proposal-recovery-of-funds-held-in-blocked-addresses-following-the-polymarket-and-binance-incidents/22497"
         }
       ]
     },
     {
-      "title": "Democrats' win in Congress puts crypto and Trump-linked tokens under pressure",
+      "title": "Democrats' Congress puts the crypto market-structure bill on hold",
       "mood": "bearish",
-      "summary": "Democrats will control Congress when it sits in January and plan investigations, including into the Trump family's crypto ventures. Crypto super PACs spent heavily and lost key races, including Ohio, where Sherrod Brown won. Crypto bills may move more slowly, but laws already passed, such as the stablecoin law, still stand.",
+      "summary": "With Democrats set to control both chambers of Congress, analysts expect the main crypto market-structure bill to stall and more investigations of crypto firms. House Democrats are discussing their own bill that would give the SEC a bigger role.",
       "points": [
-        "Crypto super PACs spent about $176M across 100 seats; Fairshake and its affiliates spent $154.5M across 89 races and have over $67M left for 2028, per Cointelegraph.",
-        "More than $64M was spent to keep Jon Husted's Ohio seat, which Sherrod Brown won, per Cointelegraph.",
-        "Rep. Robert Garcia, expected to chair the House Oversight Committee, said the president has a crypto scheme making him billions, per Cointelegraph.",
-        "On 4 Nov the TRUMP memecoin fell 17% to $1.33 and WLFI fell over 7% to $0.047, per Cointelegraph."
+        "Stifel's Brian Gardner said the CLARITY Act is off the table for the lame-duck session and expects investigations of crypto firms, per 24/7 Wall St.",
+        "House Democrats are discussing turning Rep. Maxine Waters' crypto investor bill of rights into a full market-structure bill with more SEC oversight and ethics limits on officials, per Decrypt.",
+        "Democrats plan to look into the Trump family's crypto ventures, per Cointelegraph."
       ],
       "sources": [
         {
+          "label": "24/7 Wall St: crypto stocks tumble",
+          "url": "https://247wallst.com/investing/2026/11/05/circle-sinks-12-coinbase-and-strategy-tumble-10-as-bitcoin-slide-hits-crypto-stocks/"
+        },
+        {
+          "label": "Decrypt: Morning Minute",
+          "url": "https://decrypt.co/382603/morning-minute-democrat-sweep-pumps-crypto-as-clarity-act-resurfaces"
+        },
+        {
           "label": "Cointelegraph: Democrats target Trump and Big Tech",
           "url": "https://cointelegraph.com/news/lawyer-up-democrats-target-trump-big-tech-after-midterm-sweep"
-        },
-        {
-          "label": "Cointelegraph: crypto super PACs in the midterms",
-          "url": "https://cointelegraph.com/news/crypto-superpac-midterms"
-        },
-        {
-          "label": "Cointelegraph: Trump-linked tokens lead losses",
-          "url": "https://cointelegraph.com/news/trump-linked-tokens-lead-crypto-losses-after-democrats-sweep-in-the-us-midterms"
         }
       ]
     }
   ],
   "briefs": [
     {
+      "title": "Circle's quarterly beat leaned on a one-off",
+      "summary": "Circle earned $0.84 a share vs $0.38 expected, but a $182M Arc token presale drove most of it; USDC supply was flat at $73.9B, per 24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/05/circle-sinks-12-coinbase-and-strategy-tumble-10-as-bitcoin-slide-hits-crypto-stocks/"
+    },
+    {
+      "title": "Riot signs a 15-year AI data center lease",
+      "summary": "Riot disclosed a 15-year lease of 910 MW at its Corsicana campus to an unnamed AI lab, in its third-quarter release filed with the SEC.",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001167419/000110465926122368/riot-ex99d1.htm"
+    },
+    {
       "title": "ETF flows turned positive on 4 Nov",
-      "summary": "Bitcoin ETFs took in $74.6M and ether funds $53M on Wednesday; BlackRock's IBIT lost another $201.2M, while Fidelity's FBTC led inflows with about $237M, per Cointelegraph.",
+      "summary": "Bitcoin ETFs took in $74.6M and ether funds $53M on Wednesday, before Thursday's selloff; Fidelity's FBTC led with about $237M while BlackRock's IBIT lost $201.2M, per Cointelegraph.",
       "url": "https://cointelegraph.com/markets/bitcoin-ether-etfs-turn-green-post-election-rebound"
     },
     {
-      "title": "HYPE drops about 15%",
-      "summary": "Hyperliquid's token fell about 15% from its recent $96 high to just above $81, per CoinDesk's live coverage.",
-      "url": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
-    },
-    {
-      "title": "Staked Injective ETF approved for Nasdaq",
-      "summary": "Nasdaq approved Canary Capital's staked INJ ETF, which would trade as INJC, and INJ rose about 10% in 24 hours before the afternoon selloff, per CoinDesk.",
-      "url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-holds-above-usd80-000-after-wednesday-s-jump-as-injective-rallies-on-staked-etf-listing"
-    },
-    {
-      "title": "Arkansas sues Kalshi",
-      "summary": "Arkansas's attorney general sued the prediction market, calling it illegal gambling; Kalshi has argued its contracts are CFTC-regulated derivatives, per CoinDesk.",
-      "url": "https://www.coindesk.com/policy/2026/11/05/the-pile-of-lawsuits-against-kalshi-just-grew-by-one"
-    },
-    {
-      "title": "Crédit Mutuel Arkéa resumes operations after attack",
-      "summary": "The French bank says customer funds were unaffected and would not confirm ZachXBT's estimate of more than $133M in suspicious withdrawals, per Cointelegraph.",
+      "title": "Crédit Mutuel Arkéa resumes operations",
+      "summary": "The French bank says customer funds were unaffected; ZachXBT puts suspected stolen crypto above $133M, per Cointelegraph.",
       "url": "https://cointelegraph.com/news/credit-mutuel-arkea-resumes-operations-133m-crypto-theft"
+    },
+    {
+      "title": "France drops stablecoin tax plans",
+      "summary": "The National Assembly rejected the revenue section of the 2027 budget, so crypto amendments fell out of the version sent to the Senate, per Cointelegraph.",
+      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today"
     },
     {
       "title": "South Korea moves to delay its crypto tax to 2029",
@@ -124,15 +147,15 @@
       "url": "https://cointelegraph.com/news/south-korea-crypto-tax-fourth-delay-2029"
     },
     {
-      "title": "Mercado Bitcoin and BitMart hacks linked",
-      "summary": "Mercado Bitcoin estimates about $38M affected and says customers won't bear the losses; BitMart's founder says the same group targeted its wallets, per The Cryptonomist.",
-      "url": "https://en.cryptonomist.ch/2026/11/04/bitmart-security-breach-mercado-bitcoin/"
+      "title": "Arkansas sues Kalshi",
+      "summary": "Arkansas's attorney general sued the prediction market over its sports event contracts, per Decrypt.",
+      "url": "https://decrypt.co/382603/morning-minute-democrat-sweep-pumps-crypto-as-clarity-act-resurfaces"
     }
   ],
   "calendar": [
     {
-      "et": "Thu 5 – Thu 12 Nov",
-      "bkk": "Thu 5 – Thu 12 Nov",
+      "et": "Fri 6 – Thu 12 Nov",
+      "bkk": "Fri 6 – Thu 12 Nov",
       "event": "Token unlocks: GF, HYPE, JTO, AVAX, MOVE, ADI, BABY, RAIN, WLD, ALLO, PUMP, APT",
       "impact": "bearish",
       "key": false,
@@ -144,15 +167,7 @@
       "event": "IREN Q1 FY27 results call",
       "impact": "neutral",
       "key": false,
-      "note": "Results for the quarter to 30 Sep are released the same day, per the company. Earlier today, jobless claims came in at 189K vs about 196K expected (prior 195K)."
-    },
-    {
-      "et": "Fri 6 Nov · 3:00am",
-      "bkk": "Fri 6 · 15:00",
-      "event": "Weekly bitcoin options expiry (Deribit, 08:00 UTC)",
-      "impact": "volatile",
-      "key": false,
-      "note": "24,912 calls and 8,223 puts (about $2.65B) expire, with max pain $79,000 and put/call 0.33, per CryptoTicker."
+      "note": "Results for the quarter to 30 Sep, per the company."
     },
     {
       "et": "Fri 6 Nov · 8:30am",
@@ -160,15 +175,7 @@
       "event": "US October jobs report",
       "impact": "volatile",
       "key": true,
-      "note": "Payrolls consensus 59K per Kiplinger (others 55K-65K); prior +29K. Unemployment expected 4.2%, prior 4.2%."
-    },
-    {
-      "et": "Fri 6 Nov · 10:00am",
-      "bkk": "Fri 6 · 22:00",
-      "event": "UMich consumer sentiment (Nov prelim); Fed's Bowman 12:15pm ET (00:15 Sat Bangkok)",
-      "impact": "neutral",
-      "key": false,
-      "note": "Sentiment prior 48.0."
+      "note": "Prior: payrolls +29K and unemployment 4.2%. On schedule per the BLS."
     },
     {
       "et": "Mon 9 Nov · 10:00am",
@@ -184,7 +191,7 @@
       "event": "US CPI inflation (Oct); Bitdeer Q3 results call 8:00am ET (20:00 Bangkok)",
       "impact": "volatile",
       "key": true,
-      "note": "September headline was 3.7% year on year and core 2.6%, per Trading Economics."
+      "note": "September headline was 3.7% year on year and core 2.6%."
     },
     {
       "et": "Wed 11 Nov",
@@ -192,15 +199,7 @@
       "event": "MSCI November index review announcement",
       "impact": "volatile",
       "key": true,
-      "note": "Strategy and Metaplanet are among potential removals under MSCI's new criteria for companies that mainly hold digital assets, per KuCoin News. Changes take effect after the close on 30 Nov."
-    },
-    {
-      "et": "Thu 12 Nov · 8:30am",
-      "bkk": "Thu 12 · 20:30",
-      "event": "US weekly jobless claims",
-      "impact": "neutral",
-      "key": false,
-      "note": "Prior 189K."
+      "note": "KuCoin News reports MSCI will remove Strategy and Metaplanet under its rules for non-operating companies that mainly hold digital assets. MSCI's calendar lists the review as effective 1 Dec, after the close on 30 Nov. US bond market closed for Veterans Day."
     },
     {
       "et": "Thu 12 Nov · 11:15am",
@@ -216,14 +215,14 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": false,
-      "note": "Decision due Wed 9 Dec. The Fed held at 3.75-4.00% on 28 Oct."
+      "note": "Decision due Wed 9 Dec at 2:00pm ET (02:00 Thu Bangkok). The Fed held at 3.75-4.00% on 28 Oct; two members voted for a hike."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-05T16:15:07Z",
-    "claimsChecked": 68,
-    "claimsRemoved": 7,
+    "checkedAt": "2026-11-05T20:20:11Z",
+    "claimsChecked": 77,
+    "claimsRemoved": 13,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
