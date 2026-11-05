@@ -1,68 +1,63 @@
 {
   "date": "2026-11-05",
-  "updated": "2026-11-05T08:16:06Z",
-  "headline": "US bitcoin funds took in money on Wednesday for the first time in four sessions, while Binance's own report says a fake job interview helped hackers pull off its record theft.",
+  "updated": "2026-11-05T12:22:25Z",
+  "headline": "Bitcoin is holding just above $80,000 after Wednesday's short squeeze, while Binance cut off a third-party trading tool's API keys as the fallout from last week's hack continues.",
   "market": {
-    "asOf": "Read about 08:15 UTC Thu 5 Nov from the price ticker on crypto.news (CoinGecko, CoinMarketCap and the Alternative.me index could not be opened this run). For current prices, use the live prices on this page.",
+    "asOf": "Read about 11:30 UTC Thu 5 Nov from a CoinDesk market report (CoinGecko and CoinMarketCap price pages could not be opened this run). For current prices, use the live prices on this page.",
     "btc": {
-      "price": 80596,
-      "chg24h": 3.37
+      "price": 80250,
+      "chg24h": 2.5
     },
     "eth": {
-      "price": 2426.86,
-      "chg24h": 5.69
+      "price": null,
+      "chg24h": 4.0
     },
     "sol": {
-      "price": 96.12,
-      "chg24h": 3.53
+      "price": null,
+      "chg24h": null
     },
-    "fearGreed": "Not available this run: the Fear & Greed index pages could not be opened."
+    "fearGreed": "42 (neutral), up from 37, on the CoinMarketCap Fear & Greed index, per CoinDesk."
   },
   "stories": [
     {
-      "title": "US bitcoin funds take in money again after three days of outflows, as a short squeeze lifts bitcoin back over $80,000",
+      "title": "Bitcoin holds just above $80,000 after a short squeeze and the first ETF inflow in four days",
       "mood": "volatile",
-      "summary": "US spot bitcoin ETFs had a net inflow of $74.6M on Wednesday 4 November, ending three straight sessions of outflows that added up to about $1.16B. Bitcoin had dropped to about $75,600 around the US election before climbing back above $80,000 as traders who had bet on further falls were forced to buy back. One day of inflows has not undone the earlier selling, and BlackRock's IBIT still lost money.",
+      "summary": "Bitcoin is holding above $80,000 after Wednesday's jump, which came mostly from traders who had bet on falling prices being forced to buy back. US spot bitcoin ETFs took in $74.6M on 4 November after three days of outflows, but the flows were split: Fidelity's fund took in money while BlackRock's IBIT lost money.",
       "points": [
-        "Net ETF flows: -$643.2M on 30 Oct, -$398.6M on 2 Nov, -$115.6M on 3 Nov, then +$74.6M on 4 Nov, per Farside Investors data cited by crypto.news.",
-        "On 4 Nov Fidelity's FBTC took in $236.7M while BlackRock's IBIT lost $201.2M, per crypto.news.",
-        "About $378M of bets on falling prices were liquidated in one hour, and almost $747M in total, per CoinGlass data cited by crypto.news.",
-        "Bitcoin traded around $80,320 and ether around $2,425 when crypto.news published at 07:19 UTC on 5 Nov."
+        "Bitcoin was about $80,250 at 11:30 UTC on 5 Nov, up about 2.5% over 24 hours, and ether was up about 4%, per CoinDesk.",
+        "Net ETF flows on 4 Nov were +$74.6M: Fidelity's FBTC +$236.7M, BlackRock's IBIT -$201.2M, per crypto.news. The three days of outflows before that added up to about $1.16B.",
+        "About $378M of bets on falling prices were liquidated in one hour, per crypto.news; CoinDesk puts liquidations across crypto at about $715M over 24 hours, about 65% of them short bets.",
+        "Bitcoin's 24-hour range was about $77,949 to $81,004, after a dip to about $75,600 during the 3 Nov election count, per crypto.news."
       ],
       "sources": [
         {
-          "label": "crypto.news: why bitcoin is up today, ETF inflows return",
-          "url": "https://crypto.news/why-is-bitcoin-price-up-today-etf-inflows-btc-80000/"
+          "label": "CoinDesk: bitcoin holds above $80,000 after Wednesday's jump",
+          "url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-holds-above-usd80-000-after-wednesday-s-jump-as-injective-rallies-on-staked-etf-listing"
         },
         {
-          "label": "The Block: bitcoin recovers after the midterms and Binance hack",
-          "url": "https://www.theblock.co/news/markets/2026-11-04-bitcoin-price-midterm-elections-binance-hack-recovery-433030"
+          "label": "crypto.news: why bitcoin is up today, ETF inflows return",
+          "url": "https://crypto.news/why-is-bitcoin-price-up-today-etf-inflows-btc-80000/"
         }
       ]
     },
     {
-      "title": "Binance says a fake job interview helped hackers in its record theft; billions are still in their wallets",
+      "title": "Binance revokes a trading tool's API keys as it works through the fallout from its record hack",
       "mood": "bearish",
-      "summary": "Binance released its investigation into the 29 October theft: attackers approached an engineer with a fake job interview, and the attack itself ran for about four hours. Co-CEO Richard Teng says about $2.85 billion has been frozen or intercepted and customers will not bear the losses. Blockchain tracker Elliptic puts the total stolen at $6.43 billion, with about $3.21 billion still in addresses tied to the theft. The lesson for ordinary users: a convincing job offer or file can be the way in.",
+      "summary": "On 5 November Binance revoked API keys linked to SignalPlus, a third-party trading tool, after SignalPlus reported a possible security issue; Binance says its own systems and customer funds are not affected. This comes a week after the 29 October theft. A proposal to hard-fork Polygon and return a small slice of the stolen funds is up for discussion at 14:30 UTC today. For ordinary users, the lesson is that any outside tool connected to an exchange account is a possible way in.",
       "points": [
-        "Elliptic puts the theft at $6.43B across 11 blockchains, with about 44% ($2.85B) frozen or seized and about $3.21B still in addresses tied to the theft.",
-        "18,270 BTC sits in 19 addresses, unmoved since 29 Oct, and about 4,600 ETH ($10.7M) was swapped into bitcoin through THORChain overnight, per Elliptic.",
-        "Binance says 98% of affected assets have been replaced and deposits now exceed withdrawals hour by hour, per The Daily Hodl.",
-        "Attackers took their first steps in June with a tampered software download, then approached a Binance engineer in September with a fake job interview, per Malay Mail.",
-        "A Polygon proposal to hard-fork the chain and return about 70.49M POL (about $6.5M) is on the agenda of a call at 14:30 UTC on 5 Nov, per crypto.news."
+        "About $6.34B was affected and about $2.85B has been frozen or intercepted, per crypto.news.",
+        "Binance has replenished about 98% of the affected holdings, per crypto.news.",
+        "The Polygon fork would return 70.49M POL (about $6.8M): 46.63M POL to Binance and 23.86M POL to Polymarket, per Cointelegraph.",
+        "The Polygon proposal is discussed at 14:30 UTC on 5 Nov; if approved, developers would need about two weeks of work and testing, per crypto.news's Polygon report."
       ],
       "sources": [
         {
-          "label": "Elliptic: how North Korea is laundering the $6.4B stolen from Binance",
-          "url": "https://www.elliptic.co/insights/how-north-korea-is-laundering-the-6-4-billion-stolen-from-binance/"
+          "label": "crypto.news: Binance revokes SignalPlus API keys",
+          "url": "https://crypto.news/binance-revokes-signalplus-api-keys-after-potential-security-issue"
         },
         {
-          "label": "The Daily Hodl: $2.85B frozen or intercepted, says Teng",
-          "url": "https://dailyhodl.com/2026/11/04/2850000000-in-crypto-involved-in-binance-hack-frozen-or-intercepted-says-ceo-richard-teng/"
-        },
-        {
-          "label": "Malay Mail: one fake interview, four hours, $6B gone",
-          "url": "https://www.malaymail.com/news/tech-gadgets/2026/11/04/one-fake-interview-four-hours-us6b-gone-binance-explains-the-hack/241896"
+          "label": "Cointelegraph: Polygon hard fork for Binance and Polymarket",
+          "url": "https://cointelegraph.com/news/polygon-hard-fork-binance-polymarket-6-8m-hack-recovery"
         },
         {
           "label": "crypto.news: Polygon hard fork proposal",
@@ -71,99 +66,86 @@
       ]
     },
     {
-      "title": "After the midterm sweep, the crypto lobby regroups as Democrats sketch a bill with a bigger SEC role",
+      "title": "After the Democratic sweep, crypto's path in Washington gets harder",
       "mood": "bearish",
-      "summary": "Democrats won both chambers of Congress, and House Democrats are discussing their own crypto market-structure bill for the next Congress that would give the SEC more power and the CFTC less. There is no bill text yet. The industry-backed CLARITY Act dies on 3 January unless it moves in the lame-duck session, while the stablecoin law (GENIUS Act) still takes effect on 18 January.",
+      "summary": "Democrats are set to control both chambers of Congress. House Democrats are reportedly discussing their own crypto market-structure bill that would give the SEC more responsibility and narrow the CFTC's role; no bill has been introduced. The industry group Digital Chamber called Sherrod Brown's Senate win in Ohio the most consequential unfavorable result for crypto.",
       "points": [
-        "CLARITY passed the House 294-134 in July 2025 and failed a Senate cloture vote 49-50, per Bitcoin Magazine.",
-        "Fairshake, the industry's main super PAC, spent $56M against Sherrod Brown in Ohio, and he won, per CoinDesk.",
-        "Brown could be sworn in as early as 15 Dec, per The Block.",
-        "The GENIUS Act takes effect on 18 Jan and SEC tokenization work continues, per CoinDesk."
+        "Crypto PACs spent more than $63M backing Brown's opponent, Jon Husted, per the Digital Chamber, as reported by The Block.",
+        "The Digital Chamber still sees openings on tax reporting, custody, stablecoin implementation and consumer asset segregation (keeping customer assets separate), per The Block.",
+        "The TRUMP memecoin fell about 14% and WLFI about 4% over 24 hours, per CoinDesk."
       ],
       "sources": [
         {
-          "label": "Bitcoin Magazine: House Democrats eye market-structure bill",
-          "url": "https://bitcoinmagazine.com/news/house-democrats-crypto-market-structure"
+          "label": "The Block: Digital Chamber on Sherrod Brown's win",
+          "url": "https://www.theblock.co/news/regulation/2026-11-04-digital-chamber-sherrod-brown-win-434371"
         },
         {
-          "label": "CoinDesk: Fairshake found its kryptonite",
-          "url": "https://www.coindesk.com/news-analysis/2026/11/04/crypto-s-powerhouse-super-pac-fairshake-found-its-kryptonite"
+          "label": "CoinDesk: market update, 5 Nov",
+          "url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-holds-above-usd80-000-after-wednesday-s-jump-as-injective-rallies-on-staked-etf-listing"
         },
         {
-          "label": "The Block: Democratic sweep forces a crypto rethink",
-          "url": "https://www.theblock.co/news/regulation/2026-11-04-democratic-sweep-congress-forces-crypto-industry-rethink-washington-strategy-434362"
-        },
-        {
-          "label": "CoinDesk: tokenization and stablecoins may weather the sweep",
-          "url": "https://www.coindesk.com/policy/2026/11/04/tokenization-and-stablecoins-may-weather-democrats-sweep-as-broader-crypto-rules-face-uncertainty"
+          "label": "The Currency Analytics: House Democrats draft crypto bill",
+          "url": "https://thecurrencyanalytics.com/regulations/house-democrats-draft-crypto-bill-sec-307883"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Cboe and Citadel back a suit against the CFTC over stock perpetual futures",
-      "summary": "A lawsuit filed 3 Nov in New York federal court argues the CFTC-cleared single-stock perpetual futures are security-based swaps that belong to the SEC, per crypto.news.",
-      "url": "https://crypto.news/cboe-citadel-sue-cftc-stock-perpetual-futures/"
+      "title": "Trump Media moves 4,259 BTC to Crypto.com",
+      "summary": "About 4,259 BTC, roughly 30% of the 14,139 BTC the company reported holding on 31 July, moved to Crypto.com on 5 Nov; a move is not proof of a sale, and noteholders can demand repayment of about $1B on 30 Nov, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/05/trump-media-moves-usd434-million-in-bitcoin-to-crypto-com-blockchain-data-show"
     },
     {
-      "title": "Trump Media moves about 4,259 BTC",
-      "summary": "About 4,259 BTC (about $344M) moved from Trump Media wallets to a Crypto.com-linked address on 5 Nov; it is not confirmed as a sale, and noteholders can demand repayment of about $1B on 30 Nov, per crypto.news.",
-      "url": "https://crypto.news/trump-media-bitcoin-transfer-crypto-com-debt-deadline/"
+      "title": "Staked Injective ETF lists on Nasdaq",
+      "summary": "Canary Capital's staked INJ fund (ticker INJC) was cleared for Nasdaq, and INJ rose about 10% in 24 hours, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-holds-above-usd80-000-after-wednesday-s-jump-as-injective-rallies-on-staked-etf-listing"
+    },
+    {
+      "title": "American Bitcoin swings to a quarterly profit",
+      "summary": "The Eric Trump-linked miner reported Q3 net income of $126M, driven by a $197.3M gain on its crypto holdings, while mining revenue fell 5.4% to $63.4M, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-05-american-bitcoin-swings-to-profit-434413"
+    },
+    {
+      "title": "Arkansas sues Kalshi",
+      "summary": "Arkansas's attorney general sued the prediction market, calling it illegal gambling, about a week after Utah filed criminal charges against Kalshi, per The Block.",
+      "url": "https://theblock.co/news/regulation/2026-11-05-arkansas-sues-kalshi-434407"
     },
     {
       "title": "French bank hit by a cyberattack that ended in crypto",
-      "summary": "Crédit Mutuel Arkéa confirmed a cyberattack in which fraudulent transfers were converted into crypto; ZachXBT puts losses above $133M, and the bank says client assets were not affected, per The Block.",
+      "summary": "Crédit Mutuel Arkéa confirmed a cyberattack in which fraudulent transfers were converted into crypto; ZachXBT puts losses above $133M, per The Block.",
       "url": "https://theblock.co/news/business/2026-11-04-french-bank-confirms-cyberattack-434372"
-    },
-    {
-      "title": "Stripe adds stablecoin payouts for US businesses",
-      "summary": "Eligible US businesses (not New York) can now send USDC payouts to crypto wallets in more than 160 markets, for $0.50 plus 0.5% per payout, per crypto.news.",
-      "url": "https://crypto.news/stripe-us-stablecoin-payouts-160-markets"
     },
     {
       "title": "Circle reports $865M in quarterly revenue and cuts 5% of staff",
       "summary": "Circle reported $865M in Q3 revenue and reserve income and disclosed a 5% workforce reduction, per The Block.",
       "url": "https://www.theblock.co/news/business/2026-11-04-circle-reports-865-million-in-q3-revenue-and-reserve-income-discloses-5-workforce-reduction-432671"
-    },
-    {
-      "title": "Brazil's Mercado Bitcoin halts withdrawals after a heist",
-      "summary": "Mercado Bitcoin halted deposits and withdrawals on 2 Nov after more than $46M left the platform, per blockchain security firms, and Tether froze about $4.5M, per The Record.",
-      "url": "https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist"
     }
   ],
   "calendar": [
     {
-      "et": "Thu 5 – Wed 11 Nov",
-      "bkk": "Thu 5 – Wed 11 Nov",
-      "event": "Token unlocks: GF, HYPE, JTO, AVAX, MOVE, ADI, BABY, RAIN, WLD, ALLO",
+      "et": "Thu 5 – Thu 12 Nov",
+      "bkk": "Thu 5 – Thu 12 Nov",
+      "event": "Token unlocks: GF, HYPE, JTO, AVAX, MOVE, ADI, BABY, RAIN, WLD, ALLO, PUMP, APT",
       "impact": "bearish",
       "key": false,
       "note": "See the unlock table on this page for sizes, dates and confidence."
     },
     {
-      "et": "Thu 5 Nov · 7:00am",
-      "bkk": "Thu 5 · 19:00",
-      "event": "Bank of England rate decision; Bailey press conference 7:30am ET (19:30 Bangkok)",
-      "impact": "neutral",
-      "key": true,
-      "note": "Bank Rate 3.75%; 54 of 63 economists in a Reuters poll expect a rise to 4.00%. The last vote was 6-3 to hold."
-    },
-    {
       "et": "Thu 5 Nov · 8:30am",
       "bkk": "Thu 5 · 20:30",
-      "event": "US jobless claims and Q3 productivity; Core Scientific results call; Fed's Hammack 8:50am, Barkin 9:10am ET",
+      "event": "US jobless claims; Core Scientific results call",
       "impact": "neutral",
       "key": false,
-      "note": "Claims consensus 197K, prior 194K. Productivity consensus 3.1%, prior 1.4% (ActionForex)."
+      "note": "Claims consensus about 197K (FinanceCalendar notes a consensus was not yet final), prior 194K."
     },
     {
       "et": "Thu 5 Nov · 5:00pm",
       "bkk": "Fri 6 · 05:00",
-      "event": "IREN results call; Fed's Logan 7:00pm ET (07:00 Fri Bangkok)",
+      "event": "IREN Q1 FY27 results call",
       "impact": "neutral",
       "key": false,
-      "note": "IREN reports Q1 FY27, per the company."
+      "note": "Results are released the same day, per the company."
     },
     {
       "et": "Fri 6 Nov · 3:00am",
@@ -171,15 +153,15 @@
       "event": "Weekly bitcoin options expiry (Deribit, 08:00 UTC)",
       "impact": "volatile",
       "key": false,
-      "note": "31,377 contracts (about $2.46B) expire with max pain $79,000 and put/call 0.35, per CryptoTicker."
+      "note": "24,912 calls and 8,223 puts (about $2.65B) expire, with max pain $79,000 and put/call 0.33, per CryptoTicker."
     },
     {
       "et": "Fri 6 Nov · 8:30am",
       "bkk": "Fri 6 · 20:30",
-      "event": "US October jobs report; UMich sentiment (prelim) 10:00am ET; Fed's Bowman 12:15pm ET (00:15 Sat Bangkok)",
+      "event": "US October jobs report; UMich sentiment (prelim); Fed's Bowman 12:15pm ET (00:15 Sat Bangkok)",
       "impact": "volatile",
       "key": true,
-      "note": "Payrolls consensus 56K (ActionForex) or 65K (Bloomberg consensus, via TD); prior 29K. Unemployment consensus and prior 4.2%. UMich consensus 47.3, prior 48.0."
+      "note": "Payrolls consensus +65K (FinancialJuice); prior +29K. Unemployment consensus and prior 4.2%. UMich prior 48.0."
     },
     {
       "et": "Mon 9 Nov · 10:00am",
@@ -187,23 +169,23 @@
       "event": "Fed's Goolsbee speaks in Chicago; MARA results call 5:00pm ET (05:00 Tue Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Leadership Greater Chicago event."
+      "note": "Leadership Greater Chicago event, livestreamed, per the Chicago Fed."
     },
     {
-      "et": "Tue 10 Nov",
-      "bkk": "Tue 10",
+      "et": "Tue 10 Nov · 8:30am",
+      "bkk": "Tue 10 · 20:30",
       "event": "US CPI inflation (Oct); Bitdeer results call 8:00am ET (20:00 Bangkok)",
       "impact": "volatile",
       "key": true,
-      "note": "September: 3.7% headline and 2.6% core, year on year, per TD (Continuum says 3.5% headline). Continuum forecasts about +0.2% month on month for both."
+      "note": "September headline was 3.7% year on year. The Cleveland Fed nowcast points to about 3.74% headline and 2.48% core year on year."
     },
     {
-      "et": "Wed 11 Nov",
-      "bkk": "Wed 11",
-      "event": "Veterans Day US bond market close; MSCI index review and final list of crypto-treasury companies that could be dropped (Strategy at risk)",
-      "impact": "neutral",
-      "key": false,
-      "note": "SIFMA recommends a full bond-market close. MSCI's review takes effect 1 Dec."
+      "et": "Wed 11 Nov · about 5:00pm",
+      "bkk": "Thu 12 · about 05:00",
+      "event": "MSCI November index review announcement",
+      "impact": "volatile",
+      "key": true,
+      "note": "The Block reports the final list of crypto-treasury companies that could be affected (Strategy among them) is due 11 Nov. Changes take effect at the close on 30 Nov, per MSCI."
     },
     {
       "et": "Thu 12 Nov · 11:30am",
@@ -224,9 +206,9 @@
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-05T08:16:06Z",
-    "claimsChecked": 86,
-    "claimsRemoved": 3,
+    "checkedAt": "2026-11-05T12:22:25Z",
+    "claimsChecked": 102,
+    "claimsRemoved": 12,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
