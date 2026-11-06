@@ -1,130 +1,156 @@
 {
   "date": "2026-11-06",
-  "updated": "2026-11-06T12:17:33Z",
-  "headline": "Bitcoin is holding near $75,700-76,200 after Thursday's selloff, US Nasdaq futures are bouncing, and the US jobs report lands at 20:30 Bangkok time.",
+  "updated": "2026-11-06T16:16:27Z",
+  "headline": "A much stronger US jobs report raised bets on a December Fed rate hike; bitcoin is holding near $76,000 while US tech stocks bounce.",
   "market": {
-    "asOf": "All three from CoinGecko, read about 11:55 UTC Fri 6 Nov. CoinMarketCap showed similar prices at the same time (BTC $75,441, -6.33%; ETH $2,224, -8.13%; SOL $89.91, -6.92%). Use the live prices on this page.",
+    "asOf": "All three from CoinMarketCap, read about 16:00 UTC Fri 6 Nov (CoinGecko could not be reached this run). Use the live prices on this page.",
     "btc": {
-      "price": 75670,
-      "chg24h": -5.8
+      "price": 76129,
+      "chg24h": -5.2
     },
     "eth": {
-      "price": 2231,
-      "chg24h": -8.6
+      "price": 2238,
+      "chg24h": -7.3
     },
     "sol": {
-      "price": 89.89,
-      "chg24h": -6.3
+      "price": 90.05,
+      "chg24h": -6.9
     },
-    "fearGreed": "Two indexes, both in Fear: Alternative.me's Crypto Fear & Greed Index is 28 (Fear), down from 50 (Neutral) yesterday, per its data feed; CoinMarketCap's own index shows 34."
+    "fearGreed": "Both in Fear: CoinMarketCap's own index read 32 at about 16:00 UTC; KuCoin's daily report showed a Fear & Greed Index of 28, down from 50, as of 00:00 UTC."
   },
   "stories": [
     {
-      "title": "US tech futures bounce after the Asia rout; bitcoin waits near $76,000 for the jobs report",
+      "title": "US jobs smash forecasts, Fed hike bets rise; bitcoin holds near $76,000",
       "mood": "volatile",
-      "summary": "After Thursday's US chip-stock fall and Friday's more-than-6% drop in Seoul, US Nasdaq futures turned higher on Friday morning while European stocks fell. Bitcoin is near its lowest level since mid-September as traders wait for the US jobs report at 8:30am ET (20:30 Bangkok).",
+      "summary": "The US added 165,000 jobs in October, far more than expected, and unemployment fell to 4.1%. Traders now see a higher chance the Fed raises rates on 9 December. Bitcoin dipped briefly after the release, then settled back near $76,000 while tech stocks rebounded from Thursday's sell-off.",
       "points": [
-        "At 05:15 ET, Nasdaq futures were up 1.8% and S&P 500 futures up 0.6%, while Dow futures fell 0.55% and Europe's Stoxx 600 fell 1%, per Dow Jones via MarketScreener.",
-        "South Korea's Kospi closed more than 6% lower, its worst day since 2025, per the same report.",
-        "Coinspeaker put bitcoin at $76,160, down 5.1% over 24 hours; Thursday's low of $75,208 was the lowest since 16 September.",
-        "More than $1B of leveraged bets were forcibly closed across crypto, including over $210M on ether, mostly bets on rising prices, per crypto.news.",
-        "Polymarket put the odds of a Fed rate hike on 9 Dec at 69%, down from 80% a day earlier, per Coinspeaker."
+        "Payrolls rose 165,000 against a 65,000 estimate per CoinDesk; Bitcoin Magazine and CryptoPotato put the forecast at 59,000. September was revised up to 60,000 and unemployment was 4.1% versus 4.2% expected.",
+        "Average hourly earnings rose 0.4% on the month and 3.1% on the year, both above forecasts, per CoinDesk.",
+        "Odds of a December Fed hike rose to about 79% per CME FedWatch (via Bitcoin Magazine) and 78% per BNN Bloomberg, from about 70% before the report.",
+        "Bitcoin fell from $76,000 to $75,200 right after the release, then erased almost all of the losses, per CryptoPotato; CoinDesk described a tight range near $76,000 at 9:53am ET.",
+        "After the open, the Nasdaq was up 2% and the S&P 500 up 1%, with a chip-stock ETF up 6.5%, while the 10-year Treasury yield rose to 4.877%, per CoinDesk at 9:53am ET."
       ],
       "sources": [
         {
-          "label": "MarketScreener (Dow Jones): Nasdaq futures rally after Asian AI rout",
-          "url": "https://www.marketscreener.com/news/nasdaq-futures-rally-after-asian-ai-rout-as-investors-brace-for-jobs-day-update-ce785fddd088ff20"
+          "label": "CoinDesk: live updates, jobs day",
+          "url": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
         },
         {
-          "label": "Coinspeaker: bitcoin falls ahead of jobs report",
-          "url": "https://www.coinspeaker.com/bitcoin-news-btc-falls-ahead-of-jobs-report/"
+          "label": "Bitcoin Magazine: bitcoin holds near $75,800 after jobs",
+          "url": "https://bitcoinmagazine.com/markets/bitcoin-price-holds-near-75800-jobs"
         },
         {
-          "label": "crypto.news: why ether is down",
-          "url": "https://crypto.news/why-is-ethereum-price-down-today-eth-etf-liquidations/"
+          "label": "CryptoPotato: bitcoin price after jobs report",
+          "url": "https://cryptopotato.com/bitcoin-price-goes-wild-again-as-us-jobs-report-smashes-expectations/"
+        },
+        {
+          "label": "BNN Bloomberg (Dow Jones): Nasdaq eyes higher open",
+          "url": "https://www.bnnbloomberg.ca/markets/dow-jones/2026/11/06/nasdaq-eyes-higher-open-as-chips-pare-losses-rate-hike-fears-linger/"
         }
       ]
     },
     {
-      "title": "US bitcoin funds lose $430M on 5 Nov and are now negative for the year",
+      "title": "US bitcoin funds lose $430M on 5 Nov; November outflows near $870M",
       "mood": "bearish",
-      "summary": "US bitcoin and ether funds (ETFs) saw large withdrawals on Thursday as markets fell, wiping out the buying after the midterm elections.",
+      "summary": "US spot bitcoin funds (ETFs) saw large withdrawals on Thursday. When money leaves these funds there are fewer big buyers in the market.",
       "points": [
-        "Bitcoin ETFs: about -$430M on 5 Nov; Fidelity's FBTC lost about $200M a day after taking in about $237M, and BlackRock's IBIT lost $105M, per Cointelegraph citing SoSoValue and Farside.",
-        "IBIT has had five straight days of outflows, more than $1B since 30 Oct, per Cointelegraph.",
-        "Bitcoin ETFs are now about $510M net negative for 2026, per Cointelegraph.",
-        "Ether ETFs: about -$100M, reversing a +$53M inflow the day before; BlackRock's ETHA lost $75.2M, per crypto.news citing SoSoValue."
+        "Net outflow of $430.2M on 5 Nov, led by Fidelity's FBTC (-$199.9M) and BlackRock's IBIT (-$105M), per Gate citing Farside.",
+        "Outflows were $1.513B over five trading days and $869.8M so far in November, per the same report.",
+        "For the year, PANews citing Farside puts net outflows at about $416M.",
+        "More than $1.27B of leveraged bets were forcibly closed in 24 hours, over $1.1B of them bets on rising prices, per CoinDesk's Daybook."
       ],
       "sources": [
         {
-          "label": "Cointelegraph: bitcoin and ether ETFs lose post-election gains",
-          "url": "https://cointelegraph.com/markets/bitcoin-ether-etfs-lose-post-election-gains-erased"
+          "label": "Gate (Farside data): 5 Nov bitcoin ETF flows",
+          "url": "https://www.gate.com/news/detail/BTC/us-bitcoin-spot-etfs-see-4302m-net-outflow-on-november-5-25446616"
         },
         {
-          "label": "crypto.news: ETH ETF outflows",
-          "url": "https://crypto.news/why-is-ethereum-price-down-today-eth-etf-liquidations/"
+          "label": "PANews: year-to-date ETF flows",
+          "url": "https://panews.io/articles/01a1b184-cda1-77fb-b0dd-8bdf17e5caf0"
+        },
+        {
+          "label": "CoinDesk Daybook: $1B of bullish bets liquidated",
+          "url": "https://www.coindesk.com/daybook-us/2026/11/06/over-usd1-billion-in-bullish-bets-liquidated-while-etf-flows-suggest-no-help-in-spot-market"
         }
       ]
     },
     {
-      "title": "Binance recovery: another batch of withdrawals reopens",
-      "mood": "neutral",
-      "summary": "Binance is reopening withdrawals in stages after its security incident. Its ninth recovery update reopened more coins on Friday, though some withdrawals may be delayed.",
+      "title": "Binance hack: attackers may have had eight weeks of access",
+      "mood": "bearish",
+      "summary": "New research says the hackers behind Binance's roughly $6.3B loss were inside its systems for weeks before the 29 October attack, and stolen coins are still being moved. Binance says almost all customer funds have been replaced.",
       "points": [
-        "Update #9 began reopening withdrawals at 12:00 Beijing time (04:00 UTC) Friday for assets including USDE, PENDLE, ZRO, XRP and CAKE, per PANews.",
-        "The reopened networks include BSC, Base, Ethereum, Optimism, Polygon and Arbitrum; Binance chose assets by user demand over the past week, per PANews.",
-        "Binance estimates about $6.34B was affected; about 95% had been replenished as of 2 Nov and about $2.85B frozen or intercepted as of 3 Nov, per TokenPost."
+        "Security Alliance (SEAL) estimates about eight weeks of access beginning in September, per Cointelegraph; Binance says it started with a fake job interview that compromised an employee's device.",
+        "Elliptic traced about 42 million XRP (about $50M) swapped into bitcoin, mostly through THORChain, with about $3.11B still in traced addresses, per CoinTurk.",
+        "Binance has frozen or intercepted about $2.85B and puts total losses at $6.34B, per the same report.",
+        "About 98% had been replenished as of 4 Nov, and Binance's proof of reserves now covers 44 tokens, per CoinGabbar."
       ],
       "sources": [
         {
-          "label": "PANews: Binance recovery update #9",
-          "url": "https://panews.io/articles/01a1aed3-ee1a-7055-9e05-37209371d217"
+          "label": "Cointelegraph: hackers had 8 weeks of access",
+          "url": "https://cointelegraph.com/news/binance-hackers-8-weeks-access-63b-exploit-security-alliance"
         },
         {
-          "label": "TokenPost: Binance recovery figures",
-          "url": "https://www.tokenpost.com/news/technology/48161"
+          "label": "CoinTurk: Elliptic traces stolen XRP",
+          "url": "https://en.coin-turk.com/elliptic-binance-hackers-swap-50-million-in-stolen-xrp-into-bitcoin/"
+        },
+        {
+          "label": "CoinGabbar: Binance proof of reserves",
+          "url": "https://www.coingabbar.com/en/binance-security-incident-proof-of-reserves-bnb-price-today"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Nigeria sets stablecoin licensing rules",
-      "summary": "Nigeria's central bank bans algorithmic stablecoins and gives existing operators 180 days to apply for a licence, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-06-nigerias-central-bank-introduces-stablecoin-licensing-rules-bans-algorithmic-versions-435867"
+      "title": "White House reviews SEC crypto broker rule",
+      "summary": "An SEC draft changing broker-dealer capital and custody rules for crypto went to the White House regulatory office on 3 Nov; the text is not public yet, per Unchained.",
+      "url": "https://unchainedcrypto.com/white-house-begins-review-of-economically-significant-sec-crypto-broker-dealer-draft/"
     },
     {
-      "title": "Court limits Kalshi sports contracts",
-      "summary": "A federal judge barred Kalshi from offering sports-event contracts on two California tribes' lands, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-06-kalshi-injunction-california-tribal-lands-435813"
+      "title": "401(k) investment rule reaches final review",
+      "summary": "The Labor Department's final rule on choosing 401(k) options went to the White House on 5 Nov; it could make room for crypto in retirement plans, per crypto.news.",
+      "url": "https://crypto.news/crypto-401k-rule-white-house-final-review"
     },
     {
-      "title": "IREN shifts from mining to AI",
-      "summary": "IREN's mining revenue fell 58% from the prior quarter to $28M while AI cloud revenue rose 182% to about $200M; it aims to largely exit mining by 31 Dec, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-05-irens-mining-revenue-drops-435783"
+      "title": "House Democrats weigh their own crypto bill",
+      "summary": "With Democrats set to control Congress, they are discussing a market-structure bill with a bigger SEC role; the Clarity Act failed a Senate cloture vote 49-50 on 15 Sept, per Bitcoin Magazine.",
+      "url": "https://bitcoinmagazine.com/news/house-democrats-crypto-market-structure"
     },
     {
-      "title": "Ark buys Coinbase after its drop",
-      "summary": "Coinbase fell 9.69% to $136.82 on Thursday; Ark bought 17,806 shares (about $2.44M) and trimmed Bullish and Bitmine, per The Block.",
-      "url": "https://www.theblock.co/news/markets/2026-11-05-ark-invest-buys-coinbase-trims-bullish-bitmine-435769"
+      "title": "Robinhood and SoFi slide with bitcoin",
+      "summary": "On 5 Nov Robinhood fell 12% and SoFi 9% as bitcoin dropped and an analyst said the Clarity Act is off the table for the lame-duck session, per 24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/05/robinhood-sinks-12-sofi-tumbles-9-affirm-drops-8-as-bitcoin-slides-and-democratic-congress-weighs-on-fintech"
     },
     {
-      "title": "Greece passes a 10% crypto gains tax",
-      "summary": "Greece will tax crypto gains at 10% from 1 Jan 2027, per KuCoin's daily report.",
+      "title": "Korean stocks plunge overnight",
+      "summary": "Korea's Kospi fell as much as 8.8%, triggering a 20-minute trading halt, per CoinDesk.",
+      "url": "https://www.coindesk.com/daybook-us/2026/11/06/over-usd1-billion-in-bullish-bets-liquidated-while-etf-flows-suggest-no-help-in-spot-market"
+    },
+    {
+      "title": "World Liberty plans a token buyback",
+      "summary": "WLFI plans to buy back tokens after a 66% slide this year, per CoinDesk.",
+      "url": "https://www.coindesk.com/daybook-us/2026/11/06/over-usd1-billion-in-bullish-bets-liquidated-while-etf-flows-suggest-no-help-in-spot-market"
+    },
+    {
+      "title": "Greece taxes crypto gains at 10%",
+      "summary": "Greece approved a 10% tax on crypto gains and a 15% levy on DeFi income, per CoinDesk.",
+      "url": "https://www.coindesk.com/daybook-us/2026/11/06/over-usd1-billion-in-bullish-bets-liquidated-while-etf-flows-suggest-no-help-in-spot-market"
+    },
+    {
+      "title": "Staking INJ fund lists on Nasdaq",
+      "summary": "Canary's staking-enabled Injective (INJ) ETF began trading on Nasdaq and INJ rose more than 10% intraday, per KuCoin's daily report.",
       "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-6-2026"
-    },
-    {
-      "title": "Zcash NU7 upgrade goes live",
-      "summary": "The upgrade cuts Zcash block times from 75 to 25 seconds and sends 60% of fees to a reserve, per The Block.",
-      "url": "https://www.theblock.co/news/defi/2026-11-06-zcashs-nu7-goes-live-435807"
-    },
-    {
-      "title": "Hyperliquid Strategies seeks CFTC registration",
-      "summary": "The company filed to become a CFTC-registered futures broker (FCM) and reported $13.3M of quarterly revenue, per The Block.",
-      "url": "https://www.theblock.co/news/markets/2026-11-05-hyperliquid-strategies-files-become-cftc-registered-fcm-posts-13-3-million-quaterly-revenue-435455"
     }
   ],
   "calendar": [
+    {
+      "et": "Fri 6 Nov · 12:15pm",
+      "bkk": "Sat 7 · 00:15",
+      "event": "Fed Vice Chair for Supervision Bowman on supervision and regulation",
+      "impact": "neutral",
+      "key": false,
+      "note": "Earlier today: October jobs +165K, unemployment 4.1%. University of Michigan sentiment came in at 51.0 vs 48.1 expected and 48.0 prior, with year-ahead inflation expectations down to 4.3% from 4.7%."
+    },
     {
       "et": "Sat 7 – Fri 13 Nov",
       "bkk": "Sat 7 – Fri 13 Nov",
@@ -134,28 +160,12 @@
       "note": "See the unlock table on this page for sizes, dates and confidence."
     },
     {
-      "et": "Fri 6 Nov · 8:30am",
-      "bkk": "Fri 6 · 20:30",
-      "event": "US October jobs report",
-      "impact": "volatile",
-      "key": true,
-      "note": "Expected: +65K payrolls and 4.2% unemployment (Bloomberg survey, per Yahoo Finance; Saxo the same); Kiplinger's consensus is +59K. Prior: +29K and 4.2%. On schedule per the BLS."
-    },
-    {
-      "et": "Fri 6 Nov · 10:00am",
-      "bkk": "Fri 6 · 22:00",
-      "event": "University of Michigan consumer sentiment (Nov, preliminary); Fed's Bowman 12:15pm ET (00:15 Sat Bangkok)",
-      "impact": "neutral",
-      "key": false,
-      "note": "Saxo expects about 48. October final was 48.0."
-    },
-    {
       "et": "Mon 9 Nov · 10:00am",
       "bkk": "Mon 9 · 22:00",
       "event": "Fed's Goolsbee in Chicago (Bowman 8:40am ET); MARA results call 5:00pm ET (05:00 Tue Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Goolsbee takes moderated questions, per the Chicago Fed."
+      "note": "Goolsbee takes questions at a Leadership Greater Chicago event, per the Chicago Fed."
     },
     {
       "et": "Tue 10 Nov · 4:00am",
@@ -171,23 +181,23 @@
       "event": "US CPI inflation (Oct); Bitdeer results call 8:00am ET (20:00 Bangkok)",
       "impact": "volatile",
       "key": true,
-      "note": "September: 3.7% headline and 2.6% core year on year, per First Trust. Continuum Economics forecasts +0.2% month on month for headline and core, and says the year-on-year rate can't be computed accurately because October 2025 data was never published."
+      "note": "Expected: +0.3% on the month (3.7% on the year) and core +0.2% (2.6%), per Economic Weekly. September: 3.7% headline and 2.6% core, per Investing.com. CoreWeave reports after the close."
     },
     {
-      "et": "Wed 11 Nov",
-      "bkk": "Wed 11 / Thu 12 Nov",
-      "event": "MSCI November index review announcement; Veterans Day (US federal holiday)",
+      "et": "Wed 11 Nov · about 5:00pm",
+      "bkk": "Thu 12 · about 05:00",
+      "event": "MSCI November index review announcement",
       "impact": "volatile",
       "key": true,
-      "note": "MSCI's calendar lists the announcement on 11 Nov. Strategy and Metaplanet are among companies on the list that could be removed under MSCI's new test, per Yahoo Finance and KuCoin."
+      "note": "MSCI says shortly after 11:00pm Central European Time. Its rules could exclude Strategy, Metaplanet and SharpLink, per The Block; nothing is decided until the announcement."
     },
     {
       "et": "Thu 12 Nov · 8:30am",
       "bkk": "Thu 12 · 20:30",
-      "event": "Bit Digital results call 8:30am ET; US weekly jobless claims; Fed's Barr 10:00am ET (22:00 Bangkok); Goolsbee at Yahoo Finance Invest",
+      "event": "US weekly jobless claims; Bit Digital results call 8:30am ET; Fed's Barr 10:00am ET (22:00 Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Jobless claims prior: 189K, per Trading Economics. Gemini reports results after the US close."
+      "note": "Claims expected 193K, prior 189K, per Economic Weekly. Gemini reports results after the US close."
     },
     {
       "et": "Fri 13 Nov · 3:00am",
@@ -195,7 +205,7 @@
       "event": "Deribit weekly bitcoin and ether options expiry",
       "impact": "volatile",
       "key": false,
-      "note": "Expires at 08:00 UTC, per Deribit. Size not yet reported."
+      "note": "Weekly options expire at 08:00 UTC each Friday, per Deribit. Size not yet reported."
     },
     {
       "et": "Fri 13 Nov · 8:30am",
@@ -203,28 +213,21 @@
       "event": "US producer prices (PPI, Oct); Gemini results call 8:30am ET",
       "impact": "volatile",
       "key": false,
-      "note": "September: +1.3% month on month and +6.3% year on year, per First Trust."
+      "note": "Expected: +0.3% headline and core on the month, per Economic Weekly. September: +1.3% on the month and 6.3% on the year, per PNC."
     },
     {
       "et": "Wed 9 Dec",
       "bkk": "Thu 10 Dec",
       "event": "Next Fed rate decision (meeting 8–9 Dec)",
       "impact": "volatile",
-      "key": false,
-      "note": "The Fed held at 3.75-4.00% on 28 Oct, with two members voting for a hike. Odds of a December hike: about 66% per CME FedWatch (via Pomegra), 67% per Yahoo Finance; Polymarket 69% per Coinspeaker."
+      "key": true,
+      "note": "The Fed held at 3.75-4.00% on 28 Oct in a 10-2 vote, with Cook and Hammack voting for a hike. After the jobs report, hike odds are about 79% per CME FedWatch (via Bitcoin Magazine); Polymarket showed 70%."
     }
   ],
-  "breaking": [
-    {
-      "at": "2026-11-06T13:30:00Z",
-      "title": "US added 165,000 jobs in October, far above the 65,000 forecast",
-      "summary": "The Labor Department's October report showed nonfarm payrolls up 165,000 against a 65,000 estimate, with unemployment at 4.1% versus 4.2% expected and September revised up to 60,000 from 29,000. Bitcoin edged down to about $75,800 right after the release.",
-      "url": "https://www.bls.gov/news.release/archives/empsit_11062026.htm"
-    }
-  ],
+  "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-06T12:17:33Z",
-    "claimsChecked": 97,
+    "checkedAt": "2026-11-06T16:16:27Z",
+    "claimsChecked": 113,
     "claimsRemoved": 8,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
