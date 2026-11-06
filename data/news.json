@@ -1,155 +1,149 @@
 {
   "date": "2026-11-06",
-  "updated": "2026-11-05T20:20:11Z",
-  "headline": "Bitcoin slid to about $75,600 on Thursday as chip and AI stocks crashed, wiping out leveraged bets, while the fallout from the $6.3B Binance hack reached US bank regulators.",
+  "updated": "2026-11-06T00:16:23Z",
+  "headline": "Bitcoin ended Thursday near $75,900, down almost 6%, as Wall Street's sharpest selloff in months hit chip and AI stocks; the US jobs report lands Friday at 20:30 Bangkok time.",
   "market": {
-    "asOf": "Bitcoin read from CoinGecko about 20:05 UTC Thu 5 Nov. Ether, Solana and Fear & Greed could not be read this run. Use the live prices on this page.",
+    "asOf": "Bitcoin, Ether and Solana from Motley Fool's report at about 22:25 UTC Thu 5 Nov. Fear & Greed could not be read this run. Use the live prices on this page.",
     "btc": {
-      "price": 76134,
-      "chg24h": -5.4
+      "price": 75881,
+      "chg24h": -5.65
     },
     "eth": {
-      "price": null,
-      "chg24h": null
+      "price": 2234,
+      "chg24h": -7.8
     },
     "sol": {
-      "price": null,
-      "chg24h": null
+      "price": 89.55,
+      "chg24h": -6.22
     },
     "fearGreed": "Not available this run: the index page could not be opened."
   },
   "stories": [
     {
-      "title": "Bitcoin slides toward $75,500 as chip stocks crash",
+      "title": "Bitcoin gives back its election rally as Wall Street's tech selloff deepens",
       "mood": "bearish",
-      "summary": "Wednesday's post-election bounce reversed on Thursday. Chip and AI stocks fell hard after the US open and bitcoin dropped more than 5%, moving in step with the Nasdaq. Traders who had borrowed to bet on higher prices were forced out, which made the drop faster.",
+      "summary": "Wednesday's post-election bounce reversed on Thursday. Chip and AI stocks fell hard and bitcoin fell with them, moving like a tech stock. Traders who had borrowed to bet on higher prices were forced out, which made the drop faster.",
       "points": [
-        "Bitcoin fell from above $80,800 to near $76,100 within about two hours of the US open, per Bitcoin Magazine.",
-        "CoinGecko showed bitcoin at $76,133.86, down 5.4% over 24 hours, with a 24-hour low of $75,572.68.",
-        "Liquidation counts differ: crypto.news, citing CoinGlass, reports $1.08B in 24 hours ($954M of it longs); TheStreet, also citing CoinGlass, reports $878M in 4 hours; Bitcoin Magazine says about $370M in roughly an hour.",
-        "Crypto stocks fell with it, per 24/7 Wall St: Coinbase down 10% to $135.93, Strategy down 10% to $128.54 and Circle down 12% to $67.25.",
-        "The chip index fell about 10% and the S&P 500 was on pace for its worst day since the April 2025 tariff selloff, per Yahoo Finance."
+        "Bitcoin hit an intraday low of $75,568, and nearly $1.1B of leveraged bets were forcibly closed over 24 hours, per The Block.",
+        "Most of the losses hit bets on rising prices: CoinGlass data cited by crypto.news shows $954.38M of longs liquidated vs $127.30M of shorts.",
+        "Late Thursday, Motley Fool had bitcoin down 5.65% at $75,880.60 and ether down 7.80% at $2,233.79.",
+        "The Nasdaq closed down 5.52% and the S&P 500 down 4.36%, per JournalArta's market close report.",
+        "Crypto stocks fell hard: Coinbase and Strategy were down about 10% and Circle 12% in the afternoon, per 24/7 Wall St; CoinDesk shows closes of $136.68, $129.32 and $69.44."
       ],
       "sources": [
         {
-          "label": "Bitcoin Magazine: bitcoin drops below $75,000",
-          "url": "https://bitcoinmagazine.com/markets/bitcoin-price-drops-below-75000-tech"
+          "label": "The Block: bitcoin erases post-election gains",
+          "url": "https://theblock.co/news/markets/2026-11-05-bitcoin-erases-post-election-gains-wall-street-selloff-liquidations-435434"
         },
         {
           "label": "crypto.news: liquidations top $1B",
           "url": "https://crypto.news/crypto-crash-long-short-liquidations-bitcoin-stocks/"
         },
         {
-          "label": "TheStreet: bitcoin and stocks erase post-election rally",
-          "url": "https://www.thestreet.com/crypto/markets/bitcoin-stocks-crash-as-markets-erase-post-election-rally"
+          "label": "Motley Fool: crypto market today, 5 Nov",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/11/05/crypto-market-today-nov-5-bitcoin-erases-post-election-rally-as-wall-street-suffers-worst-day-in-18-months/"
+        },
+        {
+          "label": "JournalArta: Wall Street close",
+          "url": "https://journalarta.com/en/2026/11/06/wall-street-close-nasdaq-sinks-5-52-and-sp-500-falls-4-36-as-ai-stocks-slide/"
+        },
+        {
+          "label": "CoinDesk: live updates",
+          "url": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
         },
         {
           "label": "24/7 Wall St: crypto stocks tumble",
           "url": "https://247wallst.com/investing/2026/11/05/circle-sinks-12-coinbase-and-strategy-tumble-10-as-bitcoin-slide-hits-crypto-stocks/"
-        },
-        {
-          "label": "Yahoo Finance: chip stocks sell off",
-          "url": "https://finance.yahoo.com/markets/article/chip-stocks-get-slaughtered-as-wall-street-heads-for-its-worst-post-midterm-day-since-1896-163413900.html"
-        },
-        {
-          "label": "CoinGecko: bitcoin",
-          "url": "https://www.coingecko.com/en/coins/bitcoin"
         }
       ]
     },
     {
-      "title": "Binance hack fallout: US bank regulators step in as Binance asks Arbitrum and Polygon to return frozen funds",
-      "mood": "neutral",
-      "summary": "After the roughly $6.3B theft from Binance on 29 Oct, US bank regulators began asking banks about suspicious transactions, according to a Reuters report. Binance is also asking blockchain communities to release stolen funds that were frozen.",
+      "title": "Binance hack fallout: US bank regulators check in, and frozen-fund recovery votes are weeks away",
+      "mood": "bearish",
+      "summary": "After the record theft from Binance, US bank regulators began asking banks about unusual activity, per Reuters reporting relayed by Cointelegraph. Binance is also asking the Arbitrum and Polygon communities to release stolen funds those networks froze.",
       "points": [
-        "The Fed and the OCC began contacting US banks on 2 Nov about suspicious transactions and cyber weaknesses, per Bitcoin.com News, summarizing Reuters.",
-        "Binance asked Arbitrum's DAO to release 8,425.997 ETH and 74.56M ARB that were frozen, in a process of about 49 days or more, per crypto.news.",
-        "A Polygon proposal would hard-fork to move 70.49M POL (46.63M linked to Binance, 23.86M to Polymarket) to recovery wallets; Cointelegraph values it at about $6.8M.",
-        "The proposal was discussed on Polygon's governance call on Thursday; no outcome had been reported when this page was updated."
+        "About $6.34B was affected and $2.85B had been frozen or intercepted, per Binance's 3 Nov incident report as cited by Cointelegraph.",
+        "Fed and OCC officials began contacting US banks on Monday about unusual activity, per Cointelegraph, citing Reuters.",
+        "Binance asked Arbitrum's DAO to return 8,425.997 ETH and 74.56M ARB; it expects the process to take seven weeks or longer, per crypto.news.",
+        "A Polygon proposal would move about 70.49M POL to recovery wallets (46.63M linked to Binance, 23.86M to Polymarket), valued at about $6.5M by The Merkle.",
+        "Polygon's governance call took it up on 5 Nov; no outcome had been reported when this page was updated. If approved, The Merkle says rollout would take about two weeks."
       ],
       "sources": [
         {
-          "label": "Bitcoin.com News: Fed and OCC probe bank security",
-          "url": "https://news.bitcoin.com/finance/fed-occ-probe-bank-security-after-binance-6-3b-hack-report/"
+          "label": "Cointelegraph via TradingView: Fed and OCC check US banks",
+          "url": "https://www.tradingview.com/news/cointelegraph:c30a659ef094b:0-fed-occ-check-us-banks-after-binance-hack-as-experts-flag-security-risks/"
         },
         {
           "label": "crypto.news: Binance frozen ETH and ARB recovery",
           "url": "https://crypto.news/binance-frozen-eth-arb-recovery-proposal/"
         },
         {
-          "label": "Cointelegraph: Polygon hard fork proposal",
-          "url": "https://cointelegraph.com/news/polygon-hard-fork-binance-polymarket-6-8m-hack-recovery"
-        },
-        {
           "label": "The Merkle: Polygon governance call",
           "url": "https://themerkle.com/polygon-governance-call-takes-up-recovery-fork-for-polymarket-and-binance-hack-funds"
-        },
-        {
-          "label": "Polygon forum: recovery proposal",
-          "url": "https://forum.polygon.technology/t/pip-proposal-recovery-of-funds-held-in-blocked-addresses-following-the-polymarket-and-binance-incidents/22497"
         }
       ]
     },
     {
-      "title": "Democrats' Congress puts the crypto market-structure bill on hold",
+      "title": "Democrats' Congress stalls the crypto market-structure bill",
       "mood": "bearish",
-      "summary": "With Democrats set to control both chambers of Congress, analysts expect the main crypto market-structure bill to stall and more investigations of crypto firms. House Democrats are discussing their own bill that would give the SEC a bigger role.",
+      "summary": "After Democrats' sweeping midterm wins, analysts say passing the CLARITY Act has become tougher. House Democrats are discussing their own bill that would give the SEC more power over crypto markets.",
       "points": [
         "Stifel's Brian Gardner said the CLARITY Act is off the table for the lame-duck session and expects investigations of crypto firms, per 24/7 Wall St.",
-        "House Democrats are discussing turning Rep. Maxine Waters' crypto investor bill of rights into a full market-structure bill with more SEC oversight and ethics limits on officials, per Decrypt.",
-        "Democrats plan to look into the Trump family's crypto ventures, per Cointelegraph."
+        "House Democrats are discussing expanding Rep. Maxine Waters' Crypto Investor Consumer Bill of Rights into a broader market-structure bill, with more power for the SEC, per Decrypt.",
+        "GSR's Carlos Guzman told Decrypt it is not game over for CLARITY, but passing it has become tougher."
       ],
       "sources": [
         {
+          "label": "Decrypt: Democrats to push broader crypto bill",
+          "url": "https://decrypt.co/382602/democrats-to-push-broader-crypto-market-structure-bill-after-sweeping-us-midterms-report"
+        },
+        {
           "label": "24/7 Wall St: crypto stocks tumble",
           "url": "https://247wallst.com/investing/2026/11/05/circle-sinks-12-coinbase-and-strategy-tumble-10-as-bitcoin-slide-hits-crypto-stocks/"
-        },
-        {
-          "label": "Decrypt: Morning Minute",
-          "url": "https://decrypt.co/382603/morning-minute-democrat-sweep-pumps-crypto-as-clarity-act-resurfaces"
-        },
-        {
-          "label": "Cointelegraph: Democrats target Trump and Big Tech",
-          "url": "https://cointelegraph.com/news/lawyer-up-democrats-target-trump-big-tech-after-midterm-sweep"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Circle's quarterly beat leaned on a one-off",
-      "summary": "Circle earned $0.84 a share vs $0.38 expected, but a $182M Arc token presale drove most of it; USDC supply was flat at $73.9B, per 24/7 Wall St.",
-      "url": "https://247wallst.com/investing/2026/11/05/circle-sinks-12-coinbase-and-strategy-tumble-10-as-bitcoin-slide-hits-crypto-stocks/"
+      "title": "IREN's AI cloud revenue jumps",
+      "summary": "IREN reported $228M in quarterly revenue, $200M of it from AI cloud, and moved its target of more than $4B in annual recurring revenue to January 2027, per its results release.",
+      "url": "https://www.globenewswire.com/news-release/2026/11/05/3397020/0/en/iren-reports-q1-fy27-results.html"
     },
     {
-      "title": "Riot signs a 15-year AI data center lease",
-      "summary": "Riot disclosed a 15-year lease of 910 MW at its Corsicana campus to an unnamed AI lab, in its third-quarter release filed with the SEC.",
-      "url": "https://www.sec.gov/Archives/edgar/data/0001167419/000110465926122368/riot-ex99d1.htm"
+      "title": "Hyperliquid Strategies seeks CFTC broker status",
+      "summary": "The company filed to become a CFTC-registered futures broker and posted $13.3M in quarterly revenue, per The Block.",
+      "url": "https://www.theblock.co/news/markets/2026-11-05-hyperliquid-strategies-files-become-cftc-registered-fcm-posts-13-3-million-quaterly-revenue-435455"
     },
     {
       "title": "ETF flows turned positive on 4 Nov",
-      "summary": "Bitcoin ETFs took in $74.6M and ether funds $53M on Wednesday, before Thursday's selloff; Fidelity's FBTC led with about $237M while BlackRock's IBIT lost $201.2M, per Cointelegraph.",
-      "url": "https://cointelegraph.com/markets/bitcoin-ether-etfs-turn-green-post-election-rebound"
+      "summary": "Spot bitcoin ETFs took in about $74.6M and ether ETFs about $53M on Wednesday, before Thursday's selloff, per Bitcoinhaber citing SoSoValue and Farside.",
+      "url": "https://en.bitcoinhaber.net/bitcoin-and-ether-etfs-in-u-s-record-fresh-inflows-after-election-relief"
     },
     {
-      "title": "Crédit Mutuel Arkéa resumes operations",
-      "summary": "The French bank says customer funds were unaffected; ZachXBT puts suspected stolen crypto above $133M, per Cointelegraph.",
-      "url": "https://cointelegraph.com/news/credit-mutuel-arkea-resumes-operations-133m-crypto-theft"
+      "title": "Staked Injective ETF debuts",
+      "summary": "Canary's staked INJ ETF began trading on Nasdaq under the ticker INJC, per The Block.",
+      "url": "https://www.theblock.co/news/markets/2026-11-05-canary-staked-inj-etf-launches-nasdaq-injc-435115"
     },
     {
-      "title": "France drops stablecoin tax plans",
-      "summary": "The National Assembly rejected the revenue section of the 2027 budget, so crypto amendments fell out of the version sent to the Senate, per Cointelegraph.",
-      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today"
+      "title": "Samsung Wallet adds USDC accounts",
+      "summary": "Eligible US Galaxy users can now open USDC accounts on Solana inside Samsung Wallet, except in New York, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-05-samsung-wallet-launches-usdc-accounts-solana-us-galaxy-users-434523"
     },
     {
-      "title": "South Korea moves to delay its crypto tax to 2029",
-      "summary": "The plan would postpone a 22% tax on yearly crypto gains above 2.5M won by another two years, its fourth delay, per Cointelegraph.",
-      "url": "https://cointelegraph.com/news/south-korea-crypto-tax-fourth-delay-2029"
+      "title": "Anchorage applies to be a CFTC swap dealer",
+      "summary": "Anchorage Digital is seeking swap-dealer registration to grow its crypto options business, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-05-anchorage-digital-seeks-cftc-swap-dealer-registration-for-crypto-options-business-434437"
     },
     {
-      "title": "Arkansas sues Kalshi",
-      "summary": "Arkansas's attorney general sued the prediction market over its sports event contracts, per Decrypt.",
-      "url": "https://decrypt.co/382603/morning-minute-democrat-sweep-pumps-crypto-as-clarity-act-resurfaces"
+      "title": "SEC staff call Canton Coin a digital commodity",
+      "summary": "The view came in a 3 Nov no-action letter, per Lowenstein Sandler's 5 Nov crypto brief.",
+      "url": "https://www.lowenstein.com/news-insights/newsletters/crypto-brief-november-5-2026"
+    },
+    {
+      "title": "Circle's quarterly beat leaned on a one-off",
+      "summary": "Circle earned $0.84 a share vs $0.38 expected, but a $182M Arc token presale drove most of it; USDC supply was flat at $73.9B, per 24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/05/circle-sinks-12-coinbase-and-strategy-tumble-10-as-bitcoin-slide-hits-crypto-stocks/"
     }
   ],
   "calendar": [
@@ -162,12 +156,20 @@
       "note": "See the unlock table on this page for sizes, dates and confidence."
     },
     {
-      "et": "Thu 5 Nov · 5:00pm",
-      "bkk": "Fri 6 · 05:00",
-      "event": "IREN Q1 FY27 results call",
+      "et": "Fri 6 Nov · 3:00am",
+      "bkk": "Fri 6 · 15:00",
+      "event": "Deribit bitcoin options expiry",
+      "impact": "volatile",
+      "key": false,
+      "note": "About $2.7B of bitcoin options expire at 08:00 UTC, per CryptoSlate; max pain $79,000."
+    },
+    {
+      "et": "Fri 6 Nov · 8:00am",
+      "bkk": "Fri 6 · 20:00",
+      "event": "TeraWulf Q3 results call",
       "impact": "neutral",
       "key": false,
-      "note": "Results for the quarter to 30 Sep, per the company."
+      "note": "Per the company's announcement."
     },
     {
       "et": "Fri 6 Nov · 8:30am",
@@ -175,15 +177,23 @@
       "event": "US October jobs report",
       "impact": "volatile",
       "key": true,
-      "note": "Prior: payrolls +29K and unemployment 4.2%. On schedule per the BLS."
+      "note": "Expected: +65K payrolls (Bloomberg survey) and 4.2% unemployment. Prior: +29K and 4.2%. On schedule per the BLS."
     },
     {
       "et": "Mon 9 Nov · 10:00am",
       "bkk": "Mon 9 · 22:00",
-      "event": "Fed's Goolsbee speaks in Chicago; MARA results call 5:00pm ET (05:00 Tue Bangkok)",
+      "event": "Fed's Goolsbee speaks in Chicago; Barkin 12:15pm ET; MARA results call 5:00pm ET (05:00 Tue Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Leadership Greater Chicago event, livestreamed, per the Chicago Fed."
+      "note": "Goolsbee livestreams from the Chicago Fed site; Barkin speaks on inflation and policy, per the Richmond Fed."
+    },
+    {
+      "et": "Tue 10 Nov · 4:00am",
+      "bkk": "Tue 10 · 16:00",
+      "event": "Fed Governor Waller on the economic outlook (London)",
+      "impact": "neutral",
+      "key": false,
+      "note": "Per the Fed's November calendar."
     },
     {
       "et": "Tue 10 Nov · 8:30am",
@@ -191,23 +201,31 @@
       "event": "US CPI inflation (Oct); Bitdeer Q3 results call 8:00am ET (20:00 Bangkok)",
       "impact": "volatile",
       "key": true,
-      "note": "September headline was 3.7% year on year and core 2.6%."
+      "note": "September headline was 3.7% year on year and core 2.6%, per the BLS. No published consensus found this run."
     },
     {
       "et": "Wed 11 Nov",
       "bkk": "Wed 11 / Thu 12 Nov",
-      "event": "MSCI November index review announcement",
+      "event": "MSCI November index review announcement; US bond market closed for Veterans Day",
       "impact": "volatile",
       "key": true,
-      "note": "KuCoin News reports MSCI will remove Strategy and Metaplanet under its rules for non-operating companies that mainly hold digital assets. MSCI's calendar lists the review as effective 1 Dec, after the close on 30 Nov. US bond market closed for Veterans Day."
+      "note": "MSCI's calendar lists the announcement on 11 Nov, effective 1 Dec. KuCoin News reports Strategy and Metaplanet face potential removal under MSCI's non-operating company rule."
     },
     {
-      "et": "Thu 12 Nov · 11:15am",
-      "bkk": "Thu 12 · 23:15",
-      "event": "Fed's Goolsbee at Yahoo Finance Invest",
+      "et": "Thu 12 Nov · 8:30am",
+      "bkk": "Thu 12 · 20:30",
+      "event": "US weekly jobless claims; Fed's Goolsbee at Yahoo Finance Invest 11:15am ET (23:15 Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Virtual Q&A; the Chicago Fed page lists both 11:15 and 11:30am ET."
+      "note": "Goolsbee is a virtual Q&A, per the Chicago Fed."
+    },
+    {
+      "et": "Fri 13 Nov · 8:30am",
+      "bkk": "Fri 13 · 20:30",
+      "event": "US producer prices (PPI, Oct)",
+      "impact": "volatile",
+      "key": false,
+      "note": "On the BLS release schedule."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -215,14 +233,14 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": false,
-      "note": "Decision due Wed 9 Dec at 2:00pm ET (02:00 Thu Bangkok). The Fed held at 3.75-4.00% on 28 Oct; two members voted for a hike."
+      "note": "Decision Wed 9 Dec at 2:00pm ET (02:00 Thu Bangkok). The Fed held at 3.75-4.00% on 28 Oct; two members voted for a hike."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-05T20:20:11Z",
-    "claimsChecked": 77,
-    "claimsRemoved": 13,
+    "checkedAt": "2026-11-06T00:16:23Z",
+    "claimsChecked": 106,
+    "claimsRemoved": 8,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
