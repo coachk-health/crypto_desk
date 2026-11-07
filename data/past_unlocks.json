@@ -5950,6 +5950,61 @@
       }
      ],
      "gaps": "Desk snapshot also cites Crypto Briefing (3.75M unstaked, 1.875M to five OTC wallets), not re-opened this session. Buyer, price and lock-up undisclosed."
+    },
+    {
+     "date": "2026-11-06",
+     "timeUTC": null,
+     "amountTokens": 180000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 1,
+      "investors": 0,
+      "community": 0,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "Bloomingbit (28 Oct 2026): Hyperliquid Labs announced on Discord ~180,000 HYPE for the team, distribution on 6 Nov",
+       "url": "https://en.bloomingbit.io/feed/news/123124",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Buildix blog (26 Oct 2026): 6 Nov core contributor unlock; 9,916,666 HYPE/month schedule (238M over 24 months); past claims Nov 2025 1.75M, Jan 1.13M, Feb 140K, Mar 173K, Apr ~330K, Oct 3.75M; Oct batch sold OTC",
+       "url": "https://www.buildix.trade/blog/hype-unlock-november-6-team-claim-otc-2026",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist homepage (read 6 Nov 2026): HYPE 'Cliff Unlocks Next 7D' $14.06M (fits ~180K x ~$78)",
+       "url": "https://tokenomist.ai/",
+       "kind": "aggregator",
+       "confirms": [
+        "amount"
+       ]
+      },
+      {
+       "label": "BTC-ECHO (29 Nov 2025): first core contributor unlock 29 Nov 2025; Hyperlabs restaked 854,253 HYPE; team wallet moved 2.6M HYPE from staking to spot",
+       "url": "https://www.btc-echo.de/schlagzeilen/hype-kurs-trotzt-unlock-angst-team-restaked-millionenbetraege-220589/",
+       "kind": "news",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "Moderate",
+      "points": 2.5,
+      "confidence": 62,
+      "scoredAt": "2026-11-07T04:14:41Z"
+     }
     }
    ],
    "gaps": "amountTokens is the amount the team actually claimed/committed, not the 9,916,666 monthly vesting ceiling trackers show (kept as scheduledTokens). Token counts for May, Jun, Jul and Sep 2026 not found (USD committed only for May-Jul; nothing for Sep). Most monthly figures trace to Tokenomist alone. No times of day. Dec 2025 had no separate distribution (Tokenomist). Search budget ran out before more news could be checked.",
