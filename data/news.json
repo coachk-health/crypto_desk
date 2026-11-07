@@ -1,38 +1,42 @@
 {
-  "date": "2026-11-07",
-  "updated": "2026-11-07T16:06:18Z",
-  "headline": "MEXC has paused some USDT withdrawals after the US Treasury moved to cut it off, while bitcoin holds near $76,000 ahead of Tuesday's US inflation report.",
+  "date": "2026-11-08",
+  "updated": "2026-11-07T20:03:41Z",
+  "headline": "Bitcoin sits near $76,000 as the main crypto sentiment gauge slips to Extreme Fear, while MEXC's USDT withdrawals stay disrupted after a US Treasury cut-off order.",
   "market": {
-    "asOf": "From CoinCodex at about 16:00 UTC Sat 7 Nov (23:00 Bangkok). Use the live prices on this page.",
+    "asOf": "Read by the desk from CoinGecko at about 19:52 UTC Sat 7 Nov (02:52 Sun Bangkok). Use the live prices on this page.",
     "btc": {
-      "price": 76032,
-      "chg24h": 0.77
+      "price": 76067.8,
+      "chg24h": 0.5
     },
     "eth": {
-      "price": 2243.4,
-      "chg24h": 1.05
+      "price": 2234.94,
+      "chg24h": 0.6
     },
     "sol": {
-      "price": 89.91,
-      "chg24h": -0.8
+      "price": 89.68,
+      "chg24h": null
     },
-    "fearGreed": "Fear: CoinCodex's Fear & Greed Index read 28 (Fear) at about 16:00 UTC Sat 7 Nov."
+    "fearGreed": "Extreme Fear: the alternative.me Crypto Fear & Greed Index read 25 (Extreme Fear) when checked at about 19:51 UTC Sat 7 Nov, down from 28 (Fear) the day before."
   },
   "stories": [
     {
-      "title": "MEXC pauses some USDT withdrawals after the US Treasury orders a cut-off",
+      "title": "MEXC's USDT withdrawals stay disrupted after the US Treasury orders a cut-off",
       "mood": "bearish",
-      "summary": "The US Treasury's financial-crimes unit, FinCEN, ordered US banks and payment firms to stop handling transfers involving crypto exchange MEXC, alleging billions in illicit flows. On Saturday MEXC paused withdrawals of the USDT stablecoin on several blockchains, calling it routine maintenance, and money has been flowing out of the exchange.",
+      "summary": "The US Treasury's financial-crimes unit, FinCEN, issued a final rule barring US banks and payment firms from handling transfers involving crypto exchange MEXC. MEXC says some USDT stablecoin withdrawals are paused for routine network maintenance, and money has been flowing out of the exchange.",
       "points": [
-        "FinCEN alleges at least $16B in illicit transactions linked to sanctions evasion by Iran, North Korea and Russia, and to cybercrime.",
-        "An independent tracker showed only 6 of 18 USDT withdrawal networks working on Saturday; Ethereum still worked while TRON, Solana, BNB Chain, Arbitrum and Polygon were down, per FinanceFeeds.",
-        "MEXC saw $126.03M of net outflows over 24 hours, per DefiLlama data cited by cryptonews.net.",
-        "The order takes effect 30 days after it is published in the Federal Register, per Cointelegraph."
+        "FinCEN says MEXC has facilitated at least $16 billion in illicit transactions.",
+        "The order takes effect 30 days after it is published in the Federal Register.",
+        "An independent tracker showed only 6 of 18 USDT withdrawal networks working; Ethereum was up while TRON, Solana, BNB Chain, Arbitrum and Polygon were down, per FinanceFeeds.",
+        "MEXC saw about $126M of net outflows over 24 hours, per DefiLlama data cited by cryptonews.net."
       ],
       "sources": [
         {
           "label": "FinCEN: order against MEXC Global",
           "url": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system"
+        },
+        {
+          "label": "FinCEN: final rule (Federal Register notice)",
+          "url": "https://www.fincen.gov/resources/statutes-regulations/federal-register-notices/imposition-special-measure-prohibiting-4"
         },
         {
           "label": "FinanceFeeds: MEXC USDT withdrawals disrupted",
@@ -43,92 +47,103 @@
           "url": "https://cryptonews.net/news/market/33718670/"
         },
         {
-          "label": "Cointelegraph: what happened in crypto today",
-          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today"
+          "label": "Cointelegraph: US Treasury bans MEXC",
+          "url": "https://cointelegraph.com/news/us-treasury-bans-mexc-over-alleged-16b-illicit-transactions"
         }
       ]
     },
     {
-      "title": "Bitcoin holds near $76,000 in a fearful weekend market",
+      "title": "Bitcoin holds near $76,000 as sentiment slips to Extreme Fear",
       "mood": "bearish",
-      "summary": "Bitcoin has barely moved on Saturday, and a popular sentiment gauge still reads Fear. Tuesday's US inflation report is the next big data point.",
+      "summary": "Bitcoin has barely moved on Saturday, but the most-watched sentiment gauge has dropped into Extreme Fear and money is still leaving US bitcoin funds. Tuesday's US inflation report is the next big data point.",
       "points": [
-        "Bitcoin was $76,032 on CoinCodex at about 16:00 UTC Saturday, up 0.77% over 24 hours.",
-        "Ether was $2,243.40 (up 1.05%) and Solana $89.91 (down 0.80%) on CoinCodex at the same time.",
-        "CoinCodex's Fear & Greed Index read 28, labelled Fear.",
-        "Forecasters on the Finviz calendar expect October US consumer prices to rise 0.3%, after 0.6% in September; the report is due Tuesday at 8:30am ET."
+        "Bitcoin was $76,067.80 on CoinGecko at about 19:52 UTC Saturday, up 0.5% over 24 hours.",
+        "The alternative.me Fear & Greed Index read 25, Extreme Fear, down from 28 (Fear) a day earlier.",
+        "US spot bitcoin ETFs had $411.9M of net outflows on 6 Nov and about $1.28B over the 2-6 Nov week, per crypto.news.",
+        "Friday's low of $74,762 was the lowest since 21 Aug, per Cointelegraph."
       ],
       "sources": [
         {
-          "label": "CoinCodex: bitcoin",
-          "url": "https://coincodex.com/crypto/bitcoin"
+          "label": "CoinGecko: bitcoin",
+          "url": "https://www.coingecko.com/coins/bitcoin"
         },
         {
-          "label": "CoinCodex: ethereum",
-          "url": "https://www.coincodex.com/crypto/ethereum/"
+          "label": "alternative.me: Fear & Greed Index",
+          "url": "https://alternative.me/crypto/fear-and-greed-index/"
         },
         {
-          "label": "CoinCodex: solana",
-          "url": "https://www.coincodex.com/crypto/solana"
+          "label": "crypto.news: bitcoin and ETF outflows",
+          "url": "https://crypto.news/bitcoin-price-76000-etf-outflows-75000-support"
         },
         {
-          "label": "Finviz: economic calendar",
-          "url": "https://finviz.com/calendar/economic?dateFrom=2026-11-09"
+          "label": "Cointelegraph: bitcoin under $75K",
+          "url": "https://cointelegraph.com/markets/bitcoin-price-under-75k-crypto-markets-tech-stock"
         }
       ]
     },
     {
-      "title": "Binance hack: plan to reopen six more withdrawals by end of next week",
+      "title": "Binance hack: hackers now hold about 2,300 newly bought bitcoin",
       "mood": "volatile",
-      "summary": "Binance's Richard Teng confirmed the plan to reopen withdrawals for six more coins by the end of next week. Blockchain analysts at Elliptic say $2.85B of the $6.43B stolen has been frozen, while the hackers convert some of the rest into bitcoin.",
+      "summary": "The people behind the Binance hack keep converting stolen tokens into bitcoin, according to blockchain analysts, though trackers disagree on how much. Binance is still working to reopen withdrawals for all tokens on restored networks.",
       "points": [
-        "Binance aims to reopen HYPE, INJ, APT, PLASMA, NEAR and LTC withdrawals by the end of next week, per The Coin Republic.",
-        "Binance says it has replaced 98% of the stolen assets, and LTC and NEAR can already be withdrawn as tokens on BNB Chain, per CryptoTicker.",
-        "Elliptic puts the theft at $6.43B, with $2.85B verified frozen.",
-        "About $124M of stolen tokens has been swapped into bitcoin, per The Block."
+        "Elliptic says stolen altcoins have been converted into roughly 2,300 BTC, worth about $175M, in new addresses; Arkham data cited by Bitcoin.com shows no matching 2,300 BTC addition.",
+        "Elliptic puts the theft at $6.43B, with $2.85B frozen or seized and $3.11B still in linked addresses, per Decrypt.",
+        "Binance aims to restore withdrawals for all tokens on restored networks by the end of the week of 9 Nov, per Decrypt.",
+        "TRM Labs attributes the hack to North Korean hackers, per Cointelegraph."
       ],
       "sources": [
         {
-          "label": "The Coin Republic: Teng confirms withdrawal timeline",
-          "url": "https://www.thecoinrepublic.com/2026/11/07/binance-news-richard-teng-confirms-withdrawal-timeline-for-6-altcoins-after-binance-hack/"
+          "label": "Bitcoin.com: hackers amass 2,300 bitcoin",
+          "url": "https://news.bitcoin.com/featured/binance-hack-takes-another-twist-as-hackers-amass-2300-more-bitcoin/"
         },
         {
-          "label": "CryptoTicker: Binance withdrawals phase 3",
-          "url": "https://cryptoticker.io/en/binance-withdrawals-phase-3-hype-aptos-litecoin/"
+          "label": "Decrypt: $3.1B yet to be laundered",
+          "url": "https://decrypt.co/382711/3-1b-in-stolen-binance-crypto-has-yet-to-be-laundered-elliptic"
         },
         {
-          "label": "Elliptic: the Binance hack laundering",
-          "url": "https://www.elliptic.co/insights/the-binance-hack-is-laundering-on-autopilot"
-        },
-        {
-          "label": "The Block: hackers swap $124M into bitcoin",
-          "url": "https://www.theblock.co/news/markets/2026-11-06-binance-hackers-swap-stolen-tokens-124-million-bitcoin-exchange-plans-withdrawal-reopenings-435930"
+          "label": "Cointelegraph: TRM Labs interview",
+          "url": "https://cointelegraph.com/interview/trm-labs-binance-hack-interview"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Nigeria's new stablecoin rules take effect",
-      "summary": "Nigeria's central bank rules took effect on 5 Nov: dollar-stablecoin issuers need ₦15B in capital, exchanges and wallet providers ₦1B, and existing operators have 30 days to register, per Techpoint Africa.",
-      "url": "https://techpoint.africa/news/cbn-stablecoin-p2p-rules/"
+      "title": "Prediction-market bet before a poll draws a probe",
+      "summary": "Vanderbilt researchers flagged a Polymarket bet of almost $200K placed about an hour before a NYT/Siena poll came out; Polymarket is investigating, per Cointelegraph.",
+      "url": "https://cointelegraph.com/news/suspicious-prediction-market-activity-seen-before-election-poll-release-nyt"
     },
     {
-      "title": "Treasury drops $250 crypto Travel Rule plan",
-      "summary": "FinCEN and the Fed withdrew a 2020 proposal to lower the threshold for collecting transfer data from $3,000 to $250, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-06-us-treasury-walks-back-crypto-surveillance-travel-rule-proposal-435951"
+      "title": "Crypto-in-401(k) rule reaches the White House",
+      "summary": "The Labor Department's rule to ease alternative assets such as crypto into 401(k) plans is at the White House for final review, which can take up to 90 days, per Cointelegraph.",
+      "url": "https://cointelegraph.com/news/us-401k-proposal-leaves-door-open-altcoins-hurdles"
     },
     {
-      "title": "Zcash upgrade cuts block time to 25 seconds",
-      "summary": "Zcash's NU7 upgrade went live on 6 Nov at block 3,543,405, cutting the target time between blocks from 75 to 25 seconds, per Bytes Europe.",
-      "url": "https://www.byteseu.com/2503961/"
+      "title": "Gnosis Pay data breach",
+      "summary": "Leaked Gnosis Pay data includes card numbers, CVVs, names, addresses and linked wallet addresses; funds are reported safe, per Cointelegraph.",
+      "url": "https://cointelegraph.com/news/gnosis-pay-breach-exposes-card-details-personal-data-crypto-wallet-information"
+    },
+    {
+      "title": "Strive adds 15,124 bitcoin",
+      "summary": "Strive bought 15,124 BTC in October, bringing its holdings to 43,124 BTC, per Cointelegraph.",
+      "url": "https://cointelegraph.com/news/strive-buys-bitcoin-october-top-btc-corporate-holders"
+    },
+    {
+      "title": "Russia opens retail crypto trading on 17 Nov",
+      "summary": "Retail BTC, ETH and USDT trading starts 17 Nov, with non-qualified investors capped at 300,000 rubles a year per intermediary, per Cointelegraph.",
+      "url": "https://cointelegraph.com/news/russia-finalizes-crypto-trading-rules-november-rollout"
+    },
+    {
+      "title": "Greece approves a 10% crypto gains tax",
+      "summary": "Greece approved a 10% tax on crypto gains and 15% on staking and DeFi income from 1 Jan 2027, with a €500 yearly exemption, per Cointelegraph.",
+      "url": "https://cointelegraph.com/news/greece-approves-10-tax-crypto-gains-2027"
     }
   ],
   "calendar": [
     {
-      "et": "Sat 7 – Sat 14 Nov",
-      "bkk": "Sat 7 – Sat 14 Nov",
-      "event": "Token unlocks: JTO, L1X, AVAX, MOVE, ADI, BABY, RAIN, ALLO, APT, PUMP, PIEVERSE, YZY",
+      "et": "Sun 8 – Sat 14 Nov",
+      "bkk": "Sun 8 – Sat 14 Nov",
+      "event": "Token unlocks: AVAX, MOVE, ADI, BABY, RAIN, ALLO, APT, PUMP, PIEVERSE, YZY",
       "impact": "bearish",
       "key": false,
       "note": "See the unlock table on this page for sizes, dates and confidence."
@@ -139,15 +154,15 @@
       "event": "China CPI and PPI (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "09:30 Beijing time, marked as an estimated time by FinanceCalendar. September CPI: +0.2% on the month, +0.9% on the year, per LiteFinance."
+      "note": "CPI: consensus +0.8% on the year (September +0.9%), per Trading Economics."
     },
     {
-      "et": "Mon 9 Nov · 10:00am",
-      "bkk": "Mon 9 · 22:00",
-      "event": "Fed's Goolsbee (10:00am) and Barkin (12:15pm ET); MARA results call 5:00pm ET (05:00 Tue Bangkok)",
+      "et": "Mon 9 Nov · 8:40am",
+      "bkk": "Mon 9 · 20:40",
+      "event": "Fed speakers: Bowman (8:40am), Goolsbee (10:00am), Barkin (12:15pm ET); MARA results call 5:00pm ET (05:00 Tue Bangkok)",
       "impact": "neutral",
       "key": false,
-      "note": "Speaker times per the Finviz economic calendar."
+      "note": "Speaker times per Trading Economics."
     },
     {
       "et": "Tue 10 Nov · 8:30am",
@@ -155,7 +170,7 @@
       "event": "US CPI inflation (Oct); Bitdeer results call 8:00am ET (20:00 Bangkok)",
       "impact": "volatile",
       "key": true,
-      "note": "Finviz consensus: +0.3% headline (September +0.6%) and +0.2% core (September +0.3%). Continuum Economics forecasts +0.2% for both. Fed's Logan 9:35am and Schmid 1:30pm ET; CoreWeave call 5:00pm ET."
+      "note": "Consensus: +0.3% headline (September +0.6%) and +0.2% core (September +0.3%), per Trading Economics. Continuum Economics forecasts +0.2% for both. Fed's Logan 9:35am and Schmid 1:30pm ET; CoreWeave call 5:00pm ET."
     },
     {
       "et": "Wed 11 Nov",
@@ -163,7 +178,7 @@
       "event": "MSCI publishes the list of crypto-holding companies hit by its new index rules",
       "impact": "volatile",
       "key": true,
-      "note": "The new rules could remove Strategy from MSCI indexes, per The Block. Changes take effect after the 30 Nov close, per crypto.news. Release time not confirmed. Veterans Day: US bond market closed, stocks open."
+      "note": "The new rules could remove Strategy from MSCI indexes, per The Block. Release time not confirmed. Veterans Day: US bond market closed, stocks open."
     },
     {
       "et": "Thu 12 Nov · 8:30am",
@@ -176,10 +191,10 @@
     {
       "et": "Thu 12 Nov · 9:00am",
       "bkk": "Thu 12 · 21:00",
-      "event": "Fed speakers: Hammack (9:00am), Goolsbee (11:30am), Daly (1:10pm), Williams (6:30pm ET)",
+      "event": "Fed speakers: Hammack (9:00am), Barr (10:00am), Goolsbee (11:30am), Daly (1:10pm), Williams (6:30pm ET)",
       "impact": "neutral",
       "key": false,
-      "note": "Times per the Finviz economic calendar. Williams speaks at 06:30 Fri Bangkok."
+      "note": "Times per Trading Economics. Williams speaks at 06:30 Fri Bangkok."
     },
     {
       "et": "Fri 13 Nov · 8:30am",
@@ -187,7 +202,7 @@
       "event": "US producer prices (PPI, Oct); Gemini results call 8:30am ET",
       "impact": "volatile",
       "key": false,
-      "note": "Finviz consensus: +0.4% on the month (September +1.3%) and +0.3% for core PPI, excluding food and energy (September +0.7%). Fed's Daly speaks at 12:00pm ET."
+      "note": "Consensus: +0.4% on the month (September +1.3%) and +0.3% for core PPI (September +0.7%), per Trading Economics. Fed's Daly speaks at 12:00pm ET."
     },
     {
       "et": "Wed 9 Dec · 2:00pm",
@@ -195,14 +210,14 @@
       "event": "Next Fed rate decision",
       "impact": "volatile",
       "key": true,
-      "note": "Press conference 2:30pm ET. The Fed held at 3.75-4.00% on 28 Oct in a 10-2 vote; Cook and Hammack dissented in favour of a hike, per Fortune."
+      "note": "The Fed held at 3.75-4.00% on 28 Oct in a 10-2 vote; Cook and Hammack dissented in favour of a hike, per the Fed."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-07T16:06:18Z",
-    "claimsChecked": 79,
-    "claimsRemoved": 10,
+    "checkedAt": "2026-11-07T20:03:41Z",
+    "claimsChecked": 93,
+    "claimsRemoved": 1,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
