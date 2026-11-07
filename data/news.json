@@ -1,62 +1,56 @@
 {
  "date": "2026-11-07",
- "updated": "2026-11-07T08:09:02Z",
- "headline": "Bitcoin is holding near $76,000 on a quiet Saturday after Friday's 11-week low, as US bitcoin funds lost another $412M on Friday and MEXC faces a US Treasury cut-off order.",
+ "updated": "2026-11-07T12:10:45Z",
+ "headline": "Bitcoin is flat near $76,000 on Saturday after US bitcoin funds lost $1.28B over the week, with Tuesday's US inflation report the next big test.",
  "market": {
-  "asOf": "From CoinGecko at about 07:55 UTC Sat 7 Nov (14:55 Bangkok). Use the live prices on this page.",
+  "asOf": "From CoinGecko at about 11:57-11:59 UTC Sat 7 Nov (18:57 Bangkok). Use the live prices on this page.",
   "btc": {
-   "price": 75959.36,
-   "chg24h": 0.6
+   "price": 76067.8,
+   "chg24h": 0.5
   },
   "eth": {
-   "price": 2240.54,
-   "chg24h": 0.4
+   "price": 2245.12,
+   "chg24h": 0.9
   },
   "sol": {
    "price": 90.13,
    "chg24h": 0.7
   },
-  "fearGreed": "Fear: CoinMarketCap's Fear & Greed Index read 31 (Fear band) at about 07:55 UTC Sat 7 Nov; ChainCatcher's 7 Nov morning report put the Fear & Greed Index at 27 (Fear)."
+  "fearGreed": "Fear: the Alternative.me Crypto Fear & Greed Index read 28 (Fear) and CoinMarketCap's Fear & Greed read 32, both at about 12:00 UTC Sat 7 Nov."
  },
  "stories": [
   {
-   "title": "Bitcoin holds near $76,000 as US bitcoin funds see a second straight day of outflows",
+   "title": "Bitcoin flat near $76,000 after US bitcoin funds lose $1.28B in a week",
    "mood": "bearish",
-   "summary": "A much stronger than expected US jobs report raised the odds that the Fed raises interest rates in December, and bitcoin briefly fell below $75,000 on Friday. It has been roughly flat since. US spot bitcoin funds lost money for a second straight day on Friday.",
+   "summary": "Bitcoin has barely moved on Saturday after a weak week. A much stronger than expected US jobs report raised the odds of a Fed rate hike in December, and US spot bitcoin funds lost money on four of the week's five trading days. Tuesday's inflation report is the next big data point.",
    "points": [
-    "Bitcoin was $75,959 on CoinGecko at about 07:55 UTC Saturday, with a 24h range of $74,921 to $76,266.",
-    "Friday's low was $74,762 per Cointelegraph, the weakest since 21 August.",
-    "US payrolls rose 165,000 in October against a 65,000 forecast and unemployment fell to 4.1%, per Cointelegraph.",
-    "Odds of a December rate hike rose from 66.9% to 76.8% on CME FedWatch after the data, per Cointelegraph.",
-    "US spot bitcoin funds lost a net $411.92M on Friday, with BlackRock's IBIT at -$403M and Fidelity's FBTC the only inflow at +$42.82M, per SoSoValue data via TokenPost."
+    "Bitcoin was $75,926.73 on CoinDesk at 6:53am ET Saturday, down 0.16% over 24 hours.",
+    "US spot bitcoin funds lost a net $1.28B over the week of 2-6 Nov, including $411.9M on Friday; BlackRock's IBIT lost $1.21B over the week, per crypto.news citing Farside data.",
+    "US payrolls rose 165,000 in October and unemployment fell to 4.1%, per InvestmentNews.",
+    "Odds of a December rate hike were 76.8% on CME FedWatch after the jobs data, per InvestmentNews."
    ],
    "sources": [
     {
-     "label": "Cointelegraph: bitcoin dips under $75K",
-     "url": "https://cointelegraph.com/markets/bitcoin-price-under-75k-crypto-markets-tech-stock"
+     "label": "CoinDesk: bitcoin price",
+     "url": "https://www.coindesk.com/price/bitcoin"
     },
     {
-     "label": "TokenPost: bitcoin ETFs lose $412M on 6 Nov",
-     "url": "https://www.tokenpost.com/news/investing/50601"
+     "label": "crypto.news: weekly ETF outflows",
+     "url": "https://crypto.news/bitcoin-ether-etfs-weekly-outflows-blackrock-november/"
     },
     {
-     "label": "CoinGecko: bitcoin",
-     "url": "https://www.coingecko.com/en/coins/bitcoin/usd"
-    },
-    {
-     "label": "CoinDesk: live updates 6 Nov",
-     "url": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
+     "label": "InvestmentNews: October jobs report",
+     "url": "https://www.investmentnews.com/fixed-income/october-jobs-report-beats-forecasts-lifting-december-fed-hike-odds/268915"
     }
    ]
   },
   {
-   "title": "US Treasury cuts crypto exchange MEXC off from the US financial system, and a partner pulls out",
+   "title": "MEXC says it is operating normally after the US Treasury orders a cut-off",
    "mood": "bearish",
-   "summary": "The US Treasury issued an order cutting crypto exchange MEXC Global off from the US financial system, alleging about $16B in transactions linked to Iran, North Korea and Russia. Reserve said it will stop providing liquidity for two tokens, LCAP and CMC20, on MEXC.",
+   "summary": "The US Treasury moved to cut crypto exchange MEXC off from the US financial system, alleging about $16B of flows linked to Iran, North Korea and Russia. MEXC says assets are secure and services are operating normally.",
    "points": [
     "The Treasury alleges about $16B of transactions connected to Iran, North Korea and Russia went through MEXC, per The Block.",
-    "MEXC says it has anti-money-laundering controls and will block users in Iran, North Korea and other countries, per The Block.",
-    "Reserve is halting liquidity for its LCAP and CMC20 tokens on MEXC and says it will soon withdraw the funds it committed, per ChainCatcher."
+    "MEXC says assets are secure and services are operating normally, per The Defiant."
    ],
    "sources": [
     {
@@ -64,22 +58,26 @@
      "url": "https://www.theblock.co/news/regulation/2026-11-06-treasury-cuts-off-mexc-global-over-alleged-16-billion-in-transactions-linked-to-iran-north-korea-and-russia-435957"
     },
     {
-     "label": "ChainCatcher: Reserve pulls MEXC liquidity",
-     "url": "https://www.chaincatcher.com/en/article/2302550"
+     "label": "The Defiant: MEXC says withdrawals continue",
+     "url": "https://thedefiant.io/news/cefi/mexc-says-withdrawals-continue-as-fincen-orders-us-financial-cutoff"
     }
    ]
   },
   {
-   "title": "Binance hack: $3.1B still in hacker wallets as Binance plans to reopen withdrawals",
+   "title": "Binance hack: plan to reopen six more withdrawals by end of next week",
    "mood": "volatile",
-   "summary": "Blockchain analysts at Elliptic say the hackers behind the Binance theft are slowly converting stolen coins into bitcoin, but only a negligible amount has likely been cashed out. Binance says it has replaced virtually all stolen assets and plans to reopen more withdrawals by the end of next week.",
+   "summary": "Binance's Richard Teng confirmed the plan to reopen withdrawals for six more coins by the end of next week. Blockchain analysts at Elliptic say the hackers are slowly converting stolen coins into bitcoin, but only a negligible amount has likely been cashed out.",
    "points": [
+    "Binance aims to reopen HYPE, INJ, APT, PLASMA, NEAR and LTC withdrawals by the end of next week, per The Coin Republic.",
     "About $3.11B sits in addresses linked to the theft, $2.85B is frozen and $470M is unaccounted for, per The Block citing Elliptic.",
     "About $124M of stolen tokens has been swapped into bitcoin, across more than 20,000 wallets on 16 blockchains, per The Block.",
-    "The Block puts the total breach at $6.43B, citing Elliptic.",
-    "Binance aims to reopen HYPE, INJ, APT, PLASMA, NEAR and LTC withdrawals by the end of next week, per The Block."
+    "The Block puts the total breach at $6.43B, citing Elliptic."
    ],
    "sources": [
+    {
+     "label": "The Coin Republic: Teng confirms withdrawal timeline",
+     "url": "https://www.thecoinrepublic.com/2026/11/07/binance-news-richard-teng-confirms-withdrawal-timeline-for-6-altcoins-after-binance-hack/"
+    },
     {
      "label": "The Block: hackers swap $124M into bitcoin",
      "url": "https://www.theblock.co/news/markets/2026-11-06-binance-hackers-swap-stolen-tokens-124-million-bitcoin-exchange-plans-withdrawal-reopenings-435930"
@@ -89,19 +87,19 @@
  ],
  "briefs": [
   {
-   "title": "Ether ETFs: second day of outflows",
-   "summary": "US spot ether funds lost a net $93.19M on Friday 6 Nov, led by BlackRock's ETHA at -$90.76M, per SoSoValue data via TokenPost.",
-   "url": "https://www.tokenpost.com/news/investing/50600"
+   "title": "Ether ETFs lose $365M over the week",
+   "summary": "US spot ether funds lost a net $365.2M over the week of 2-6 Nov, including $93.3M on Friday, per crypto.news citing Farside data.",
+   "url": "https://crypto.news/bitcoin-ether-etfs-weekly-outflows-blackrock-november/"
   },
   {
-   "title": "US sanctions 8 Canadian money services firms",
-   "summary": "OFAC sanctioned eight Canadian money services businesses it says turned Iranian rials and drug money into crypto, per the US Treasury.",
-   "url": "https://home.treasury.gov/news/press-releases/sb0686"
+   "title": "Binance France to close all accounts on 31 Dec",
+   "summary": "Binance France will close all accounts on 31 December after failing to secure an EU licence, and will charge monthly fees from 29 November, per Bitcoin.com News.",
+   "url": "https://news.bitcoin.com/exchanges/binance-france-closes-accounts-december-31-fees/"
   },
   {
-   "title": "China halts a Solana event in Shanghai",
-   "summary": "A People's Bank of China official said authorities stopped Solana's \"Accelerate\" event over unauthorized promotion, per Cointelegraph.",
-   "url": "https://cointelegraph.com/news/solana-shanghai-event-halted-unauthorized-promotion"
+   "title": "Nubank and Mercado Pago pause crypto transfers",
+   "summary": "Brazil's Nubank halted crypto deposits and withdrawals and Mercado Pago partly blocked transfers, both citing a problem at an outside provider, per PYMNTS.",
+   "url": "https://www.pymnts.com/cryptocurrency/2026/nubank-mercado-pago-pause-crypto-operations-following-provider-issues/"
   },
   {
    "title": "Treasury drops $250 crypto Travel Rule plan",
@@ -109,13 +107,8 @@
    "url": "https://www.theblock.co/news/regulation/2026-11-06-us-treasury-walks-back-crypto-surveillance-travel-rule-proposal-435951"
   },
   {
-   "title": "Crypto-in-401(k) rule moves to White House review",
-   "summary": "The Labor Department sent a proposed rule on alternative assets, including crypto, in 401(k) plans to the White House for review, per The Block.",
-   "url": "https://www.theblock.co/news/regulation/2026-11-06-trump-administration-moves-closer-allowing-crypto-401k-retirement-plans-435939"
-  },
-  {
    "title": "Strive posts a $509M quarterly profit on bitcoin",
-   "summary": "Strive reported Q3 net income of $509M, driven entirely by paper gains on its bitcoin, and now holds 43,124 BTC after buying 15,124 in October, per The Block.",
+   "summary": "Strive reported Q3 net income of $509M, driven by paper gains on its bitcoin, and now holds 43,124 BTC, per The Block.",
    "url": "https://theblock.co/news/business/2026-11-06-strives-bitcoin-gains-509-million-q3-profit-btc-buying-ramps-up-435907"
   }
  ],
@@ -129,12 +122,20 @@
    "note": "See the unlock table on this page for sizes, dates and confidence."
   },
   {
+   "et": "Mon 9 Nov",
+   "bkk": "Mon 9 Nov",
+   "event": "China CPI and PPI (Oct)",
+   "impact": "neutral",
+   "key": false,
+   "note": "China's monthly inflation figures are due on 9 Nov, per BigGo Finance."
+  },
+  {
    "et": "Mon 9 Nov · 8:40am",
    "bkk": "Mon 9 · 20:40",
    "event": "Fed's Bowman (8:40am), Goolsbee (10:00am) and Barkin (12:15pm ET); MARA results call 5:00pm ET (05:00 Tue Bangkok)",
    "impact": "neutral",
    "key": false,
-   "note": "NY Fed consumer inflation expectations survey at 11:00am ET (23:00 Bangkok); in September one-year expectations were 3.9%, per the New York Fed."
+   "note": "Listed on the Fed's November calendar and the Chicago and Richmond Fed websites."
   },
   {
    "et": "Tue 10 Nov · 4:00am",
@@ -150,20 +151,20 @@
    "event": "US CPI inflation (Oct); Bitdeer results call 8:00am ET (20:00 Bangkok)",
    "impact": "volatile",
    "key": true,
-   "note": "Expected: +0.3% on the month and core +0.2%; RBC expects core +0.3%, per StockTitan. September: +0.6% headline and +0.3% core. BLS will not publish yearly rates where October 2025 data are missing, per StockTitan. CoreWeave call 5:00pm ET."
+   "note": "RBC expects core +0.3%, per StockTitan. September: +0.6% headline and +0.3% core. BLS will not publish yearly rates where October 2025 data are missing, per StockTitan. CoreWeave call 5:00pm ET."
   },
   {
-   "et": "Wed 11 Nov · ~5:00pm",
-   "bkk": "Thu 12 · ~05:00",
-   "event": "MSCI November index review results",
+   "et": "Wed 11 Nov",
+   "bkk": "Wed 11 – Thu 12 Nov",
+   "event": "MSCI publishes the list of crypto-holding companies hit by its new index rules",
    "impact": "volatile",
    "key": true,
-   "note": "Released just after 11pm CET, per MSCI. New rules for companies that mainly hold crypto take effect with this review and Strategy is at risk of removal, per The Block. Changes take effect at the close on 30 Nov. Veterans Day."
+   "note": "The new rules could remove Strategy from MSCI indexes, per The Block. Changes take effect after the 30 Nov close, per DL News. Release time not confirmed. Veterans Day."
   },
   {
    "et": "Thu 12 Nov · 8:30am",
    "bkk": "Thu 12 · 20:30",
-   "event": "US weekly jobless claims; Bit Digital results call 8:30am ET; Fed's Barr 10:00am ET; Goolsbee 11:15am ET",
+   "event": "US weekly jobless claims; Bit Digital results call 8:30am ET; Fed's Barr 10:00am ET",
    "impact": "neutral",
    "key": false,
    "note": "Claims expected 195K, prior 189K, per Trading Economics. Gemini reports results after the US close."
@@ -182,7 +183,7 @@
    "event": "US producer prices (PPI, Oct); Gemini results call 8:30am ET",
    "impact": "volatile",
    "key": false,
-   "note": "Expected: +0.4% on the month, core +0.3%, per Trading Economics. September: +1.3%, and +0.7% excluding food and energy, per the Labor Department."
+   "note": "Continuum Economics forecasts +0.4% on the month and +0.3% excluding food and energy. September: +1.3%, and +0.7% excluding food and energy."
   },
   {
    "et": "Fri 13 Nov · 10:50am",
@@ -203,10 +204,10 @@
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-11-07T08:09:02Z",
-  "claimsChecked": 159,
-  "claimsRemoved": 24,
-  "rounds": 3,
+  "checkedAt": "2026-11-07T12:10:45Z",
+  "claimsChecked": 128,
+  "claimsRemoved": 14,
+  "rounds": 2,
   "method": "Independent source check: every claim re-opened at its cited URL"
  }
 }
