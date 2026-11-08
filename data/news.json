@@ -1,34 +1,59 @@
 {
   "date": "2026-11-08",
-  "updated": "2026-11-08T12:13:05Z",
-  "headline": "Binance reopens HYPE and APT withdrawals after its $6.3B hack, MEXC says it is operating normally after a US Treasury cut-off order, and bitcoin heads into its weekly close after a $1.28B ETF outflow week.",
+  "updated": "2026-11-08T15:58:40Z",
+  "headline": "Bitcoin heads into tonight's weekly close needing $78,232 to snap a four-week losing run, Binance's CFO steps down as hack withdrawals reopen, and MEXC sees $126M leave after a US Treasury cut-off order.",
   "market": {
-    "asOf": "Prices were not re-read this run; the snapshot below is from about 07:55 UTC Sun 8 Nov (14:55 Bangkok): BTC from CoinMarketCap, ETH and SOL from CoinGecko. Use the live prices on this page.",
+    "asOf": "Read about 15:55 UTC Sun 8 Nov (22:55 Bangkok) from CoinGecko coin pages. Use the live prices on this page.",
     "btc": {
-      "price": 75650,
-      "chg24h": -0.26
+      "price": 75813.62,
+      "chg24h": -0.3
     },
     "eth": {
-      "price": 2232.54,
-      "chg24h": null
+      "price": 2237.77,
+      "chg24h": -0.3
     },
     "sol": {
-      "price": 88.96,
-      "chg24h": null
+      "price": 89.17,
+      "chg24h": -0.9
     },
-    "fearGreed": "Extreme Fear: the alternative.me Crypto Fear & Greed Index's latest reading is 25 (Extreme Fear), dated Sat 7 Nov, after 28 on 6 Nov and 30 on 31 Oct. The next reading was not out yet when checked."
+    "fearGreed": "Fear: the alternative.me Crypto Fear & Greed Index reads 28 (Fear) for Sun 8 Nov, up from 25 (Extreme Fear) on 7 Nov. CoinMarketCap's own index shows 31."
   },
   "stories": [
     {
-      "title": "Binance reopens HYPE and APT withdrawals as hack clean-up continues",
-      "mood": "neutral",
-      "summary": "Binance restored withdrawals for Hyperliquid (HYPE) and Aptos (APT) on 8 November, the latest step in reopening after its $6.3B hack. It aims to reopen the rest of its six named coins by the end of next week. That is a target, not a fixed date.",
+      "title": "Bitcoin needs a close above $78,232 tonight to avoid a fifth losing week",
+      "mood": "bearish",
+      "summary": "Bitcoin's weekly candle closes at 00:00 UTC Monday (07:00 Bangkok). It opened the week at $78,232, per CryptoTicker, so a close below that makes five red weeks in a row. US spot bitcoin ETFs lost a net $1.28 billion over 2-6 November, per crypto.news.",
       "points": [
-        "Earlier phases reopened BTC plus 15 networks on 1 Nov and stablecoins and tokens such as LINK, SHIB and ONDO on 3 Nov, per crypto.news.",
-        "INJ, Plasma (XPL), NEAR and LTC were also on Binance's list of six coins to reopen by the end of next week, per CoinStats.",
-        "Sources differ on how much has been replaced: about 95% per crypto.news on 8 Nov, 98% per CoinStats citing Binance's 4 Nov update.",
-        "The hack's size is given as $6.3B by crypto.news; about $2.85B has been frozen or intercepted, per crypto.news.",
-        "Binance has committed to refill its SAFU emergency fund to about $1B, per crypto.news."
+        "The week's high was $81,131 on Wednesday and the low $74,722 on Friday, per CryptoTicker.",
+        "Weekly closes have fallen from $86,507 on 4 Oct to $78,231 on 1 Nov, per CryptoTicker.",
+        "BlackRock's IBIT accounted for $1.21B of the week's ETF outflows, per crypto.news citing Farside. All US spot bitcoin ETFs together lost $411.9M on Friday alone.",
+        "Ether ETFs lost $365.2M over the same week, per crypto.news.",
+        "Altcoins fell harder over 7 days: NEAR -15.21%, ENA -18.6%, HYPE -11.96%, per crypto.news (read 12:32 UTC)."
+      ],
+      "sources": [
+        {
+          "label": "CryptoTicker: fifth losing week looms",
+          "url": "https://cryptoticker.io/en/bitcoin-price-fifth-losing-week-weekly-close/"
+        },
+        {
+          "label": "crypto.news: weekly ETF outflows",
+          "url": "https://crypto.news/bitcoin-ether-etfs-weekly-outflows-blackrock-november/"
+        },
+        {
+          "label": "crypto.news: bitcoin and altcoin weekend watch",
+          "url": "https://crypto.news/bitcoin-price-76000-altcoin-losses-weekend-watch/"
+        }
+      ]
+    },
+    {
+      "title": "Binance's CFO steps down as hack withdrawals keep reopening",
+      "mood": "neutral",
+      "summary": "Binance restored HYPE and APT withdrawals on 8 November and aims to reopen INJ, Plasma, NEAR and LTC by the end of next week, a target rather than a fixed date. Separately, CFO Kaiser Ng is leaving; co-CEO Yi He says the handover was planned about six months ago, before the hack, per The Block.",
+      "points": [
+        "Justin Yek, formerly VP of finance at Airwallex, replaces Ng, per The Block.",
+        "Sources differ on the hack's size: about $6.3B per crypto.news, $6.43B per The Block.",
+        "About $2.85B has been frozen, per The Block; about $124M of stolen altcoins were swapped into bitcoin, per The Block citing Elliptic.",
+        "Binance plans to rebuild its SAFU emergency fund to about $1B, per crypto.news."
       ],
       "sources": [
         {
@@ -36,89 +61,92 @@
           "url": "https://crypto.news/binance-restores-hype-apt-withdrawals-after-hack/"
         },
         {
-          "label": "CoinStats: Binance withdrawals phase 3",
-          "url": "https://coinstats.app/news/f36674336d96a00ad44ed32e45eb0c00288c30ba0d5b8530fc0e5d50300f509b_Binance-withdrawals-phase-3-HYPE-Aptos-and-Litecoin-due-by-midNovember/"
+          "label": "The Block: Binance CFO steps down",
+          "url": "https://www.theblock.co/news/business/2026-11-07-binance-cfo-steps-down-nine-days-after-record-hack-co-ceo-says-transition-was-planned-six-months-ago-435992"
         },
         {
-          "label": "crypto.news: weekly recap",
-          "url": "https://crypto.news/weekly-recap-binance-recovery-crypto-bill-bitcoin-etf/"
+          "label": "The Block: hackers swap $124M into bitcoin",
+          "url": "https://www.theblock.co/news/markets/2026-11-06-binance-hackers-swap-stolen-tokens-124-million-bitcoin-exchange-plans-withdrawal-reopenings-435930"
         }
       ]
     },
     {
-      "title": "MEXC says it is operating normally after the US Treasury moves to cut it off",
+      "title": "Money leaves MEXC after the US Treasury moves to cut it off",
       "mood": "bearish",
-      "summary": "The Treasury's financial-crimes unit, FinCEN, ordered US financial institutions to stop processing transfers involving MEXC Global, alleging at least $16 billion in illicit flows. MEXC says user assets are secure and it is reviewing the order. The ban starts 30 days after it is published in the Federal Register, and that date is not yet set.",
+      "summary": "The US Treasury ordered US financial institutions to stop moving funds to or from MEXC Global, alleging at least $16 billion in illicit transactions. The cut-off starts 30 days after the order is published in the Federal Register. MEXC says it is operating normally and user assets are secure.",
       "points": [
-        "FinCEN alleges at least $16B in illicit transactions, per FinCEN.",
-        "That includes about $1B with more than 40 Iranian exchanges, per crypto.news.",
-        "Nearly $1.5B is tied to evading Russian sanctions, per 24/7 Wall St.",
-        "This is not an asset freeze: US users could see failed bank transfers once the order is in force, per 24/7 Wall St.",
-        "MEXC has started an independent review of its anti-money-laundering controls, per crypto.news."
+        "Sources differ on the total: at least $16B per the Treasury, $16.7B per CryptoSlate citing the order.",
+        "The Treasury ties about $1.5B to Russia and about $1B to more than 40 Iranian exchanges.",
+        "MEXC saw $126.03M of net outflows in 24 hours, with about $4.353B of tracked assets left, per CryptoSlate citing DefiLlama.",
+        "Only 6 of 18 USDT withdrawal networks were open on 7 Nov, per FinanceFeeds citing the Cexorer tracker; MEXC calls it routine maintenance.",
+        "MEXC CEO Vugar Usi says the order does not freeze or seize assets held on the exchange, per CryptoSlate."
       ],
       "sources": [
         {
-          "label": "FinCEN: Operation Economic Outcast and MEXC",
-          "url": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system"
+          "label": "US Treasury press release",
+          "url": "https://home.treasury.gov/news/press-releases/sb0685"
         },
         {
-          "label": "crypto.news: MEXC, FinCEN and Iran sanctions",
-          "url": "https://crypto.news/mexc-fincen-16-billion-iran-sanctions-canadian-firms"
+          "label": "MEXC statement on the FinCEN order",
+          "url": "https://www.mexc.com/announcements/article/statement-regarding-fincen-s-november-6-order-17827791539626"
         },
         {
-          "label": "24/7 Wall St: what happens to crypto held on MEXC",
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/11/07/treasury-is-cutting-mexc-off-from-u-s-banks-over-16-billion-in-illicit-transactions-what-happens-to-the-crypto-held-there/"
-        }
-      ]
-    },
-    {
-      "title": "Bitcoin heads for a fifth losing week after $1.28B left US bitcoin funds",
-      "mood": "bearish",
-      "summary": "Investors pulled a net $1.28 billion from US spot bitcoin ETFs in the week of 2-6 November, per crypto.news. Bitcoin has had four losing weeks in a row; a weekly close tonight below the week's open would make it five.",
-      "points": [
-        "BlackRock's IBIT lost $1.21B over the week, while Fidelity's FBTC took in $93.1M, per crypto.news citing Farside.",
-        "Ether ETFs lost $365.2M over the same week, with BlackRock's ETHA down $345.9M, per crypto.news.",
-        "The week's open is $78,232 per CryptoTicker and $78,354 per crypto.news; the week's low was $74,888 per crypto.news and $74,722 per CryptoTicker."
-      ],
-      "sources": [
-        {
-          "label": "crypto.news: weekly ETF outflows",
-          "url": "https://crypto.news/bitcoin-ether-etfs-weekly-outflows-blackrock-november/"
+          "label": "CryptoSlate: MEXC sees $126M outflows",
+          "url": "https://cryptoslate.com/mexc-sees-126-million-outflows-as-us-targets-exchange-over-16-7-billion-in-suspected-illicit-transactions/"
         },
         {
-          "label": "CryptoTicker: fifth losing week",
-          "url": "https://cryptoticker.io/en/bitcoin-price-fifth-losing-week-weekly-close/"
-        },
-        {
-          "label": "crypto.news: bitcoin price and support",
-          "url": "https://crypto.news/bitcoin-price-76000-etf-outflows-75000-support/"
+          "label": "FinanceFeeds: MEXC USDT withdrawals disrupted",
+          "url": "https://financefeeds.com/mexc-usdt-withdrawals-disrupted-as-fincen-orders-u-s-cutoff/"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Strategy buys 811 more bitcoin",
-      "summary": "Strategy bought 811 BTC for $65.5M and now holds 849,327 BTC, per crypto.news.",
-      "url": "https://crypto.news/weekly-recap-binance-recovery-crypto-bill-bitcoin-etf/"
+      "title": "Keplr social-login wallets drained",
+      "summary": "A failure at login provider Web3Auth let attackers drain Keplr wallets created with Google or Apple sign-in; about $6.01M moved, per Bitquery data cited by crypto.news. Seed-phrase and hardware wallets were not affected.",
+      "url": "https://crypto.news/keplr-wallet-hack-web3auth-google-apple-login/"
     },
     {
-      "title": "SEC opens trading in third-party tokenized US stocks",
-      "summary": "A temporary SEC order lets some venues trade tokenized US shares made by third parties; issuers get 30 days to object, and OKX is seeking approval for 63 stocks, per crypto.news.",
-      "url": "https://crypto.news/can-companies-stop-third-parties-trading-tokenized-us-shares/"
+      "title": "Saylor hints at another Strategy buy",
+      "summary": "Michael Saylor posted his Sunday bitcoin tracker chart, which usually comes before a Monday purchase notice. Strategy holds 849,327 BTC, per crypto.news.",
+      "url": "https://crypto.news/michael-saylor-strategy-bitcoin-buy-hint-strc/"
+    },
+    {
+      "title": "Travel-rule rollback published 9 Nov",
+      "summary": "A Federal Register notice formally withdraws the 2020 plan to cut the crypto record-keeping threshold from $3,000 to $250.",
+      "url": "https://public-inspection.federalregister.gov/2026-22809.pdf"
+    },
+    {
+      "title": "Big Tech blocks tokenized shares on OKX-ICE",
+      "summary": "All of the 'Magnificent Seven', including Apple and Meta, have objected to third-party tokens of their shares trading on the OKX-ICE venue, per Decrypt.",
+      "url": "https://decrypt.co/382768/apple-meta-every-magnificent-seven-stock-opts-out-okx-ice-venue"
+    },
+    {
+      "title": "Crypto-in-401(k) rule reaches the White House",
+      "summary": "The Labor Department sent its final rule to the White House regulatory review office on 5 Nov, per crypto.news.",
+      "url": "https://crypto.news/crypto-401k-rule-white-house-final-review/"
+    },
+    {
+      "title": "Trump Media moves 4,259 BTC to Crypto.com",
+      "summary": "The coins, worth about $343.7M, back convertible notes whose holders can demand up to about $1B on 30 Nov; no sale is confirmed, per crypto.news.",
+      "url": "https://crypto.news/trump-media-bitcoin-transfer-crypto-com-debt-deadline/"
     },
     {
       "title": "Kalshi midterm markets top $2.5B",
-      "summary": "Kalshi says its 2026 midterm markets traded more than $2.5B, about double 2024's $1.3B, per crypto.news.",
-      "url": "https://crypto.news/kalshi-midterm-election-trading-volume-2-5-billion/"
-    },
-    {
-      "title": "Travel-rule plan withdrawal takes effect 9 Nov",
-      "summary": "The withdrawal of the proposal to cut the travel-rule threshold from $3,000 to $250 takes effect 9 Nov, per crypto.news.",
-      "url": "https://crypto.news/weekly-recap-binance-recovery-crypto-bill-bitcoin-etf/"
+      "summary": "Kalshi says its 2026 midterm markets traded more than $2.5B, up from $1.3B in 2024.",
+      "url": "https://news.kalshi.com/p/2026-midterms-recap-the-mega-mega-blue-tsunami"
     }
   ],
   "calendar": [
+    {
+      "et": "Sun 8 Nov · 7:00pm",
+      "bkk": "Mon 9 · 07:00",
+      "event": "Bitcoin weekly close (00:00 UTC)",
+      "impact": "volatile",
+      "key": true,
+      "note": "The week opened at $78,232; a close below it would be a fifth straight losing week, per CryptoTicker."
+    },
     {
       "et": "Sun 8 – Sun 15 Nov",
       "bkk": "Sun 8 – Sun 15 Nov",
@@ -133,7 +161,7 @@
       "event": "China CPI and PPI (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "CPI consensus +0.8% on the year (September 0.9%) and PPI consensus +5.4% (September 5.0%), per BigGo Finance."
+      "note": "CPI consensus +0.8% on the year (September 0.9%). PPI consensus +5.3% per Trading Economics or +5.4% per BigGo Finance (September 5.0%)."
     },
     {
       "et": "Mon 9 Nov · 8:40am",
@@ -141,7 +169,7 @@
       "event": "Fed speakers: Bowman, then Goolsbee at 10:00am ET",
       "impact": "neutral",
       "key": false,
-      "note": "Times per the Fed and Chicago Fed calendars. Bitcoin miner MARA holds its third-quarter call at 5:00pm ET (Tue 05:00 Bangkok), per MARA."
+      "note": "Per the Fed and Trading Economics calendars. Bitcoin miner MARA holds its third-quarter call at 5:00pm ET (Tue 05:00 Bangkok)."
     },
     {
       "et": "Tue 10 Nov · 8:30am",
@@ -149,15 +177,15 @@
       "event": "US CPI inflation (Oct)",
       "impact": "volatile",
       "key": true,
-      "note": "Consensus +0.3% headline (September +0.6%) and +0.2% core (September +0.3%) on the month, per Trading Economics. No official yearly rate this month, per BigGo Finance. Fed Governor Waller speaks 4:00am ET; Bitdeer call 8:00am ET; eToro webcast 8:30am ET; CoreWeave call 5:00pm ET."
+      "note": "Consensus +0.3% headline (September +0.6%) and +0.2% core (September +0.3%) on the month, per Trading Economics. Fed Governor Waller speaks 4:00am ET; Bitdeer holds its call at 8:00am ET and eToro its webcast at 8:30am ET; CoreWeave call 5:00pm ET."
     },
     {
       "et": "Wed 11 Nov",
       "bkk": "Wed 11 – Thu 12 Nov",
-      "event": "MSCI publishes its final list of crypto-holding companies hit by its new index rules",
+      "event": "MSCI publishes its final list of crypto-treasury companies to exclude from its indexes",
       "impact": "volatile",
       "key": true,
-      "note": "Strategy (MSTR) and Metaplanet were flagged in MSCI's test run, per CoinDesk; changes take effect at the 30 Nov close. Release time not published. US bond market closed for Veterans Day; stocks open."
+      "note": "Strategy (MSTR) could be affected, per The Block. Release time not published. The Fed moves its data releases due that day to Thu 12 Nov for the holiday."
     },
     {
       "et": "Thu 12 Nov · 8:30am",
@@ -165,7 +193,7 @@
       "event": "US weekly jobless claims",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 195K, prior 189K, per Trading Economics. Fed's Barr speaks 10:00am ET and Goolsbee 11:15am ET. Gemini reports after the US close, with its call Fri 13 Nov 8:30am ET."
+      "note": "Consensus 195K, prior 189K, per Trading Economics. Fed's Barr speaks 10:00am ET and Goolsbee 11:30am ET. Gemini reports after the US close, with its call Fri 13 Nov 8:30am ET."
     },
     {
       "et": "Fri 13 Nov · 8:30am",
@@ -181,7 +209,7 @@
       "event": "SEC final deadline on VanEck's JitoSOL (Solana staking) ETF",
       "impact": "volatile",
       "key": false,
-      "note": "Per Coinranking."
+      "note": "The SEC has no extensions left, per Coinranking."
     },
     {
       "et": "Tue 17 Nov · 8:30am",
@@ -204,15 +232,15 @@
       "bkk": "Thu 10 Dec · 02:00",
       "event": "Next Fed rate decision",
       "impact": "volatile",
-      "key": true,
-      "note": "The meeting runs 8-9 Dec, per the Fed. The Fed held at 3.75-4.00% on 28 Oct in a 10-2 vote; Cook and Hammack dissented in favour of a hike, per the Fed."
+      "key": false,
+      "note": "The meeting runs 8-9 Dec, per the Fed. The Fed held at 3.75-4.00% on 28 Oct in a 10-2 vote; Cook and Hammack dissented in favour of a hike, per investinglive."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-08T12:13:05Z",
-    "claimsChecked": 98,
-    "claimsRemoved": 20,
+    "checkedAt": "2026-11-08T16:07:17Z",
+    "claimsChecked": 101,
+    "claimsRemoved": 5,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
