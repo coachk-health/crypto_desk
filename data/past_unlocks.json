@@ -6426,6 +6426,60 @@
       }
      ],
      "gaps": "tokenomics.com shows this date by % of mcap only (no token count)."
+    },
+    {
+     "date": "2026-11-07",
+     "timeUTC": null,
+     "amountTokens": 16958333,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.602,
+      "investors": 0.398,
+      "community": 0,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com JTO unlocks (read 7 Nov 2026): 7 Nov 2026 all-day, 16,958,333 JTO, 1.7% of supply; Insiders 60.2% / Private Investors 39.8%; last of 36 events, vesting ends 7 Nov 2026",
+       "url": "https://app.tokenomics.com/tokenomics/jito/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Bitrue blog (read 7 Nov 2026): 7 Nov 2026 ~16,958,333 JTO, called the final event of the original schedule; Oct/Sep split 60.2% insiders / 39.8% private investors",
+       "url": "https://www.bitrue.com/blog/jto-token-unlock-detailed",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinGecko JTO page (read 7 Nov 2026): API ID jito-governance-token; $0.3416, mcap $184.8M, 24h vol $16.5M, circ 541.09M, total 1B; Tokenomist widget empty",
+       "url": "https://coingecko.com/en/coins/jito-governance-token",
+       "kind": "aggregator",
+       "confirms": []
+      },
+      {
+       "label": "CoinMarketCap JTO (read 7 Nov 2026): $0.3437, mcap $185.85M, 24h vol $28.49M, circ 540.72M",
+       "url": "https://coinmarketcap.com/currencies/jito/",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 3.1,
+      "confidence": 62,
+      "scoredAt": "2026-11-08T04:12:11Z"
+     }
     }
    ],
    "gaps": "First insider unlock was the 1-year cliff on 7 Dec 2024 (outside window); all window events are routine monthly tranches. Open question: DefiLlama (per earlier desk research, not re-opened - page blocked this pass) models the post-cliff vesting as continuous linear (~1.04M + 1.57M JTO/week) with no dated events, whereas PANews/Token Unlocks and tokenomics.com treat it as discrete monthly steps on the 7th; the Jito docs do not say which. tokenomics.com lists a final 16.96M tranche on 7 Nov 2026, implying the schedule ends a month earlier than the 7 Dec 2026 the terms suggest - unresolved; does not affect window amounts unless tranche sizes differ from 11.31M. CoinGecko id: Tokenomist slug is 'jito-governance-token' and that is used here; CoinGecko's web page was also seen at /coins/jito - verify the API id before pulling prices. listed 2023-12 from the Dec 2023 TGE (airdrop snapshot 25 Nov 2023 in docs; cliff on 7 Dec 2024).",
@@ -16711,6 +16765,60 @@
       "points": 4.56,
       "confidence": 50,
       "scoredAt": "2026-11-05T08:16:06Z"
+     }
+    }
+   ],
+   "harvested": true
+  },
+  {
+   "token": "L1X",
+   "name": "Layer One X",
+   "coingeckoId": "layer-one-x-2",
+   "events": [
+    {
+     "date": "2026-11-07",
+     "timeUTC": null,
+     "amountTokens": 16944444,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.5,
+      "investors": 0.328,
+      "community": 0.074,
+      "ecosystem": 0.098,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com L1X unlocks (read 7 Nov 2026): 7 Nov 2026 all-day, 16,944,444 L1X ($115.7M, 1.7% of supply); Insiders 50.0% / Private Investors 32.8% / Foundation 9.8% / Community 7.4%; circ 142.9M of 1B; monthly unlocks on the 7th through May 2034",
+       "url": "https://app.tokenomics.com/tokenomics/layer-one-x/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "L1X Foundation tokenomics docs (read 7 Nov 2026): Team 22.5% with 12-month cliff + 36-month vesting; Growth Raise 20%; Strategic Raise tranche prices $1.00-$8.00",
+       "url": "https://l1x-sdk.gitbook.io/l1x-foundation/l1x-tokenomics",
+       "kind": "primary",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinGecko L1X (read 7 Nov 2026): API ID layer-one-x-2; $7.00; 24h vol $64.1K; circulating not reported; total 582.4M; max 1B",
+       "url": "https://www.coingecko.com/en/coins/layer-one-x-2",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 8.85,
+      "confidence": 42,
+      "scoredAt": "2026-11-08T04:12:11Z"
      }
     }
    ],
