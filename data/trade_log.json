@@ -96,10 +96,10 @@
     "target": 0.11172
    },
    "mark": {
-    "date": "2026-11-06",
-    "price": 0.15194,
-    "pnl": 4.61,
-    "r": 0.36
+    "date": "2026-11-07",
+    "price": 0.15167,
+    "pnl": 4.75,
+    "r": 0.38
    },
    "worstAgainst": 5.29
   },
@@ -204,6 +204,22 @@
    "status": "watching"
   },
   {
+   "id": "H-2026-11-25",
+   "token": "H",
+   "name": "Humanity Protocol",
+   "coingeckoId": "humanity",
+   "unlockDate": "2026-11-25",
+   "checkDate": "2026-11-17",
+   "entryDate": "2026-11-18",
+   "coverDate": "2026-12-05",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [],
+   "status": "watching"
+  },
+  {
    "id": "IRYS-2026-11-25",
    "token": "IRYS",
    "name": "Irys",
@@ -254,22 +270,6 @@
    "status": "watching"
   },
   {
-   "id": "SIGN-2026-11-28",
-   "token": "SIGN",
-   "name": "Sign",
-   "coingeckoId": "sign-global",
-   "unlockDate": "2026-11-28",
-   "checkDate": "2026-11-20",
-   "entryDate": "2026-11-21",
-   "coverDate": "2026-12-08",
-   "rules": [
-    "big"
-   ],
-   "setup": "B",
-   "history": [],
-   "status": "watching"
-  },
-  {
    "id": "LIT-2026-12-29",
    "token": "LIT",
    "name": "Lighter",
@@ -286,7 +286,7 @@
    "status": "watching"
   }
  ],
- "updatedAt": "2026-11-07T18:07:32Z",
+ "updatedAt": "2026-11-08T07:33:56Z",
  "summary": {
   "closed": 0,
   "won": 0,
