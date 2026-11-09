@@ -1848,6 +1848,78 @@
       }
      ],
      "gaps": "Only source for the date was opened by the earlier desk pass and could not be re-opened here. Time not found."
+    },
+    {
+     "date": "2026-11-08",
+     "timeUTC": null,
+     "amountTokens": 1666800,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0,
+      "investors": 0,
+      "community": 0,
+      "ecosystem": 1,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "Coinranking news (published 31 Oct 2026 12:09 UTC, updated 1 Nov 2026): 8 Nov 2026, 1,666,800 AVAX from the Avalanche Foundation allocation; no time of day",
+       "url": "https://coinranking.com/news/avalanche-token-unlock-releases-1-67-million-avax-november-8",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist AVAX claim page (read 8 Nov 2026): next unlock 8 Nov 2026 to Foundation; no amount or time shown; circ 443,948,414; max 720M",
+       "url": "https://tokenomist.ai/avalanche-2/claim",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Bitrue AVAX November unlock outlook (read 8 Nov 2026): ~1.67M AVAX to the Avalanche Foundation on 8 Nov per Tokenomist/CoinGecko; says other trackers differ. Relays Tokenomist, so not independent of it",
+       "url": "https://www.bitrue.com/blog/avax-price-outlook-november-unlock",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "DefiLlama AVAX unlocks (read 8 Nov 2026): recurring 1.67M AVAX Foundation cliff; next listed 24 Jan 2027 03:47 UTC; no Nov 2026 event listed",
+       "url": "https://defillama.com/unlocks/avalanche",
+       "kind": "aggregator",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "tokenomics.com AVAX unlocks (read 8 Nov 2026): no 8 Nov event shown; lists 21 Nov 2026, 3,584,842 AVAX (Community 83.7% / Foundation 16.3%)",
+       "url": "https://app.tokenomics.com/tokenomics/avalanche/unlocks",
+       "kind": "aggregator",
+       "confirms": []
+      },
+      {
+       "label": "CoinGecko AVAX page (read 8 Nov 2026 ~04:00 UTC): API ID avalanche-2; market data only, unlock widget showed no data",
+       "url": "https://www.coingecko.com/coins/avalanche",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "Low",
+      "points": -0.5,
+      "confidence": 30,
+      "scoredAt": "2026-11-09T04:19:06Z"
+     }
     }
    ],
    "gaps": "CoinGecko id: the API id is 'avalanche-2' (used in Tokenomist's URL tokenomist.ai/avalanche-2); the CoinGecko web page slug is 'avalanche'. The previous quarterly tranche (~13 Nov 2025) is before the window. tokenomics.com also models monthly AVAX events on the 21st (~3.58M, mostly community/staking) per the earlier pass; these look like staking-reward emissions rather than a vesting unlock and were not included; not re-checked. No source in this run gives times for May/Aug. DefiLlama's dates could not be opened (earlier pass saw a conflicting 24 Oct 2026 entry).",
