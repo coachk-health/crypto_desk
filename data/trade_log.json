@@ -43,6 +43,48 @@
    "skipReason": "not logged before its entry day, so not counted"
   },
   {
+   "id": "JCT-2026-11-10",
+   "token": "JCT",
+   "name": "Janction",
+   "coingeckoId": "janction",
+   "unlockDate": "2026-11-10",
+   "checkDate": "2026-11-02",
+   "entryDate": "2026-11-03",
+   "coverDate": "2026-11-20",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "setup": "B",
+   "history": [
+    {
+     "at": "2026-11-09T08:11:02+00:00",
+     "event": "check day: missed (not logged before its entry day, so not counted)"
+    }
+   ],
+   "decision": {
+    "confidence": 67,
+    "pctCirculating": 10.24,
+    "investorsShare": 0.224,
+    "firstInsiderUnlock": true,
+    "usdM": 14.2,
+    "amount": "1.18B JCT",
+    "frozenAt": "2026-11-09T08:11:02+00:00"
+   },
+   "plan": {
+    "stop": 12,
+    "target": 30,
+    "cover": 10,
+    "zone": 1.0,
+    "rr": 2.5,
+    "riskPct": 12.66,
+    "pumpPct": 30.0,
+    "fromSignals": "2026-11-08T08:17:28Z"
+   },
+   "status": "missed",
+   "skipReason": "not logged before its entry day, so not counted"
+  },
+  {
    "id": "ALLO-2026-11-11",
    "token": "ALLO",
    "name": "Allora",
@@ -204,22 +246,6 @@
    "status": "watching"
   },
   {
-   "id": "H-2026-11-25",
-   "token": "H",
-   "name": "Humanity Protocol",
-   "coingeckoId": "humanity",
-   "unlockDate": "2026-11-25",
-   "checkDate": "2026-11-17",
-   "entryDate": "2026-11-18",
-   "coverDate": "2026-12-05",
-   "rules": [
-    "big"
-   ],
-   "setup": "B",
-   "history": [],
-   "status": "watching"
-  },
-  {
    "id": "IRYS-2026-11-25",
    "token": "IRYS",
    "name": "Irys",
@@ -270,6 +296,23 @@
    "status": "watching"
   },
   {
+   "id": "ADI-2026-12-09",
+   "token": "ADI",
+   "name": "ADI (ADI Chain)",
+   "coingeckoId": "adi-token",
+   "unlockDate": "2026-12-09",
+   "checkDate": "2026-12-01",
+   "entryDate": "2026-12-02",
+   "coverDate": "2026-12-19",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "setup": "B",
+   "history": [],
+   "status": "watching"
+  },
+  {
    "id": "LIT-2026-12-29",
    "token": "LIT",
    "name": "Lighter",
@@ -286,7 +329,7 @@
    "status": "watching"
   }
  ],
- "updatedAt": "2026-11-08T18:25:05Z",
+ "updatedAt": "2026-11-09T08:11:02Z",
  "summary": {
   "closed": 0,
   "won": 0,
