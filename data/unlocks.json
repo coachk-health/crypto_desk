@@ -333,7 +333,7 @@
      "label": "Recently re-checked",
      "points": 0,
      "max": 15,
-     "detail": "independently re-checked 16 days ago"
+     "detail": "independently re-checked 17 days ago"
     }
    ],
    "impact": {
@@ -514,7 +514,7 @@
      "label": "Recently re-checked",
      "points": 0,
      "max": 15,
-     "detail": "independently re-checked 16 days ago"
+     "detail": "independently re-checked 17 days ago"
     }
    ],
    "impact": {
@@ -702,7 +702,7 @@
      "label": "Recently re-checked",
      "points": 0,
      "max": 15,
-     "detail": "independently re-checked 15 days ago"
+     "detail": "independently re-checked 16 days ago"
     }
    ],
    "impact": {
@@ -845,7 +845,7 @@
     "status": "confirmed",
     "notes": "tokenomics.com (19,537,438 COAI on 25 Oct, Community 42.4% / Insiders 35% / Private Investors 22.6%) and TokenPost via CMC AI (~19.55M at 3 a.m. ET = 07:00 UTC, still ahead at ~04:30 UTC) agree on date and amount. The vesting terms reproduce the 19.54M and the mix, and The Block's $0.26 / 188M circ / 1B supply supports usdM and pct. The time comes from one secondary source only, and the community/ecosystem split inside the 42.4% is worked out, not stated."
    },
-   "confidenceScore": 53,
+   "confidenceScore": 48,
    "confidenceLabel": "Low",
    "confidenceParts": [
     {
@@ -880,9 +880,9 @@
     },
     {
      "label": "Recently re-checked",
-     "points": 5,
+     "points": 0,
      "max": 15,
-     "detail": "independently re-checked 14 days ago"
+     "detail": "independently re-checked 15 days ago"
     }
    ],
    "impact": {
@@ -1025,8 +1025,8 @@
     "status": "partial",
     "notes": "The 25 Oct date is confirmed by CryptoTicker, tokenomics.com and DefiLlama (16:17 UTC). CryptoTicker's 227,777,777 (88.89M ecosystem + 69.44M team + 69.44M investors) fits tokenomics.com's vesting terms and its 4.533B unlocked figure, but tokenomics.com's own event row says 160.705M and DefiLlama shows only the 88.89M ecosystem part, so the full amount and the team/investor share are not independently confirmed."
    },
-   "confidenceScore": 40,
-   "confidenceLabel": "Low",
+   "confidenceScore": 35,
+   "confidenceLabel": "Unverified",
    "confidenceParts": [
     {
      "label": "Date",
@@ -1060,9 +1060,9 @@
     },
     {
      "label": "Recently re-checked",
-     "points": 5,
+     "points": 0,
      "max": 15,
-     "detail": "independently re-checked 14 days ago"
+     "detail": "independently re-checked 15 days ago"
     }
    ],
    "impact": {
@@ -1249,7 +1249,7 @@
      "label": "Recently re-checked",
      "points": 5,
      "max": 15,
-     "detail": "independently re-checked 13 days ago"
+     "detail": "independently re-checked 14 days ago"
     },
     {
      "label": "Re-check found a conflict",
@@ -1819,7 +1819,7 @@
      "label": "Recently re-checked",
      "points": 5,
      "max": 15,
-     "detail": "independently re-checked 9 days ago"
+     "detail": "independently re-checked 10 days ago"
     }
    ],
    "impact": {
@@ -1991,7 +1991,7 @@
      "label": "Recently re-checked",
      "points": 5,
      "max": 15,
-     "detail": "independently re-checked 9 days ago"
+     "detail": "independently re-checked 10 days ago"
     }
    ],
    "impact": {
@@ -2139,7 +2139,7 @@
     "status": "partial",
     "notes": "Amount (56,111,112 M), split, 2.45% of circulating and usdM all check out against KuCoin, CoinEdition and the CoinGecko/CMC figures ($0.9524, circ 2.292B, 10B max). The 1 Nov 23:44 UTC date and time come only from DefiLlama's block-height model via CoinEdition (the DefiLlama page was blocked when I tried it), so I could not confirm them independently. The 'no intent to sell' point comes from the S-3 prospectus, not the 8-K."
    },
-   "confidenceScore": 49,
+   "confidenceScore": 44,
    "confidenceLabel": "Low",
    "confidenceParts": [
     {
@@ -2174,9 +2174,9 @@
     },
     {
      "label": "Recently re-checked",
-     "points": 10,
+     "points": 5,
      "max": 15,
-     "detail": "independently re-checked 7 days ago"
+     "detail": "independently re-checked 8 days ago"
     }
    ],
    "impact": {
@@ -2334,7 +2334,7 @@
     "status": "partial",
     "notes": "The Tokenomist feed (CoinGecko widget plus Tokenomist page) and the DefiLlama model (via CryptoTicker) both give 1 Nov, but they differ on amount: 36.82M vs 37,825,418. The Eigen docs confirm the 4%/month rule, and the market data matches CoinGecko en ($0.1906, circ 1.016B). If DefiLlama's 00:00 UTC time is right the unlock has already happened, so I could not confirm it is still upcoming. The Block says the 2024 seller only potentially broke the lock-up."
    },
-   "confidenceScore": 50,
+   "confidenceScore": 45,
    "confidenceLabel": "Low",
    "confidenceParts": [
     {
@@ -2369,9 +2369,9 @@
     },
     {
      "label": "Recently re-checked",
-     "points": 10,
+     "points": 5,
      "max": 15,
-     "detail": "independently re-checked 7 days ago"
+     "detail": "independently re-checked 8 days ago"
     }
    ],
    "impact": {
@@ -2495,7 +2495,7 @@
     "status": "contradicted",
     "notes": "The row's Tokenomist figure (13,147,499 SUI, Early Contributors) reaches us only through CryptoTicker. Tokenomist's own unlock-events page labels the 1 Nov event Community Reserve, not Early Contributors, and its main SUI page now shows the next unlock as 1 Dec 2026 (Community Reserve). The other trackers disagree too (tokenomics.com 3 Nov 22.6M; DefiLlama 31 Oct ~2.07M). Price and pct maths check out on CMC ($0.9005, circ 4.118B)."
    },
-   "confidenceScore": 28,
+   "confidenceScore": 23,
    "confidenceLabel": "Unverified",
    "confidenceParts": [
     {
@@ -2530,9 +2530,9 @@
     },
     {
      "label": "Recently re-checked",
-     "points": 10,
+     "points": 5,
      "max": 15,
-     "detail": "independently re-checked 7 days ago"
+     "detail": "independently re-checked 8 days ago"
     },
     {
      "label": "Re-check found a conflict",
@@ -2704,7 +2704,7 @@
      "label": "Recently re-checked",
      "points": 10,
      "max": 15,
-     "detail": "independently re-checked 6 days ago"
+     "detail": "independently re-checked 7 days ago"
     }
    ],
    "impact": {
@@ -2889,7 +2889,7 @@
      "label": "Recently re-checked",
      "points": 10,
      "max": 15,
-     "detail": "independently re-checked 6 days ago"
+     "detail": "independently re-checked 7 days ago"
     }
    ],
    "impact": {
@@ -3077,7 +3077,7 @@
      "label": "Recently re-checked",
      "points": 10,
      "max": 15,
-     "detail": "independently re-checked 6 days ago"
+     "detail": "independently re-checked 7 days ago"
     }
    ],
    "impact": {
@@ -3246,7 +3246,7 @@
      "label": "Recently re-checked",
      "points": 10,
      "max": 15,
-     "detail": "independently re-checked 6 days ago"
+     "detail": "independently re-checked 7 days ago"
     }
    ],
    "impact": {
@@ -3418,7 +3418,7 @@
      "label": "Recently re-checked",
      "points": 10,
      "max": 15,
-     "detail": "independently re-checked 6 days ago"
+     "detail": "independently re-checked 7 days ago"
     }
    ],
    "impact": {
@@ -3627,7 +3627,7 @@
      "label": "Recently re-checked",
      "points": 10,
      "max": 15,
-     "detail": "independently re-checked 5 days ago"
+     "detail": "independently re-checked 6 days ago"
     }
    ],
    "impact": {
@@ -3988,7 +3988,7 @@
      "label": "Recently re-checked",
      "points": 15,
      "max": 15,
-     "detail": "independently re-checked 2 days ago"
+     "detail": "independently re-checked 3 days ago"
     }
    ],
    "impact": {
@@ -9080,7 +9080,7 @@
      "label": "Recently re-checked",
      "points": 15,
      "max": 15,
-     "detail": "independently re-checked 2 days ago"
+     "detail": "independently re-checked 3 days ago"
     }
    ],
    "impact": {
@@ -9797,7 +9797,7 @@
      "label": "Recently re-checked",
      "points": 15,
      "max": 15,
-     "detail": "independently re-checked 2 days ago"
+     "detail": "independently re-checked 3 days ago"
     }
    ],
    "impact": {
@@ -10519,7 +10519,7 @@
      "label": "Recently re-checked",
      "points": 15,
      "max": 15,
-     "detail": "independently re-checked 2 days ago"
+     "detail": "independently re-checked 3 days ago"
     }
    ],
    "impact": {
@@ -10892,7 +10892,7 @@
      "label": "Recently re-checked",
      "points": 15,
      "max": 15,
-     "detail": "independently re-checked 2 days ago"
+     "detail": "independently re-checked 3 days ago"
     }
    ],
    "impact": {
@@ -11423,7 +11423,7 @@
      "label": "Recently re-checked",
      "points": 15,
      "max": 15,
-     "detail": "independently re-checked 2 days ago"
+     "detail": "independently re-checked 3 days ago"
     }
    ],
    "impact": {
@@ -12980,7 +12980,7 @@
      "label": "Recently re-checked",
      "points": 5,
      "max": 15,
-     "detail": "independently re-checked 9 days ago"
+     "detail": "independently re-checked 10 days ago"
     }
    ],
    "impact": {
@@ -13176,7 +13176,7 @@
      "label": "Recently re-checked",
      "points": 10,
      "max": 15,
-     "detail": "independently re-checked 6 days ago"
+     "detail": "independently re-checked 7 days ago"
     }
    ],
    "impact": {
@@ -13520,7 +13520,7 @@
     "status": "partial",
     "notes": "DefiLlama shows 29 Dec 2026 05:48 UTC, 3.19M LIT/week linear (team 1.66M, investors 1.53M), which fits 260M+240M over 156 weeks. Market data, usdM, pctCirculating, the implied $1.50 Series B figure and all sellerNotes claims (no insider selling, ~16.0M LIT bought back for ~$23.0M by 17 Jul, 15.64M burned 10 Jul) check out against Tokenomist. The start day still conflicts: Tokenomist says 27 Dec, and no primary source gives the exact day."
    },
-   "confidenceScore": 67,
+   "confidenceScore": 62,
    "confidenceLabel": "Good",
    "confidenceParts": [
     {
@@ -13555,9 +13555,9 @@
     },
     {
      "label": "Recently re-checked",
-     "points": 15,
+     "points": 10,
      "max": 15,
-     "detail": "independently re-checked 3 days ago"
+     "detail": "independently re-checked 4 days ago"
     }
    ],
    "impact": {
@@ -14275,7 +14275,7 @@
   }
  ],
  "checkedAt": "2026-11-09T04:12:46Z",
- "scoredAt": "2026-11-09T04:19:06Z",
+ "scoredAt": "2026-11-09T12:08:16Z",
  "scoring": {
   "version": 1,
   "evidence": {

@@ -1,170 +1,175 @@
 {
   "date": "2026-11-09",
-  "updated": "2026-11-09T04:19:06Z",
-  "headline": "Bitcoin dropped to its lowest level since August late on Sunday before bouncing back above $75,000, as more than $1 billion of leveraged bets were wiped out and customers kept pulling funds from Binance after its record hack.",
+  "updated": "2026-11-09T12:08:16Z",
+  "headline": "Crypto slid again early on Monday, with ether down about 6% in a day and bitcoin near $74,000, as an Nvidia-led tech sell-off weighed on the market.",
   "market": {
-    "asOf": "BTC and ETH read from CoinGecko at about 04:00 UTC Mon 9 Nov (11:00 Bangkok), SOL at about 04:30 UTC. ETH sources disagree: CoinMarketCap showed $2,230 and -0.04% at the same time. Use the live prices on this page.",
+    "asOf": "Read from CoinGecko at about 11:56 UTC Mon 9 Nov (18:56 Bangkok). CoinMarketCap at the same time showed BTC $74,139 (-2.1%), ETH $2,102 (-5.9%), SOL $86.22 (-3.7%). Use the live prices on this page.",
     "btc": {
-      "price": 75024.75,
-      "chg24h": -0.9
+      "price": 74086.41,
+      "chg24h": -2.3
     },
     "eth": {
-      "price": 2148.47,
-      "chg24h": -3.7
+      "price": 2105.56,
+      "chg24h": -5.8
     },
     "sol": {
-      "price": 87.55,
-      "chg24h": -1.8
+      "price": 86.35,
+      "chg24h": -3.2
     },
-    "fearGreed": "Fear: the alternative.me Crypto Fear & Greed Index read 28 (Fear), up from 25 (Extreme Fear) the day before. CoinMarketCap's own Fear & Greed index showed 32/100."
+    "fearGreed": "Fear: the alternative.me Crypto Fear & Greed Index read 28 (Fear), up from 25 (Extreme Fear) the day before. CoinMarketCap's own index showed 27 (Fear)."
   },
   "stories": [
     {
-      "title": "Bitcoin hits its lowest since August in a Sunday-night drop, then bounces",
+      "title": "Crypto slides again before the US open as Nvidia sinks; ether hit hardest",
       "mood": "volatile",
-      "summary": "Late on Sunday (US time) bitcoin fell to about $73,761, its lowest since August, per CoinDesk, then climbed back above $75,000. Reuters put the low at $73,708. More than $1 billion of leveraged trades were forcibly closed in 24 hours, most of them bets on higher prices. CoinDesk linked the drop to a scandal at Nvidia and stalled US-Iran talks; Reuters also pointed to worries that the new Democrat-controlled Congress will tighten crypto rules.",
+      "summary": "After bouncing above $75,000 overnight, bitcoin slipped back to about $74,400 by 11:42 UTC, per CoinDesk, while ether fell 5.9% to about $2,100 and XRP fell 7.3%. Nvidia shares fell 4.5% before the US open after it opened an internal investigation into whether CEO Jensen Huang had been targeted by a foreign intelligence effort, per Reuters. CoinDesk says only five of the top 100 cryptocurrencies were up 1% or more over 24 hours.",
       "points": [
-        "Of the more than $1B liquidated, $913M was long (bullish) positions; ether liquidations ($448M) were about twice bitcoin's ($272M), per CoinGlass data cited by CoinDesk.",
-        "Nvidia's board opened an independent probe into reports about CEO Jensen Huang; Nvidia says there is no sign secrets were compromised, per CoinDesk. Secretary of State Rubio said Iran talks had stalled.",
-        "US spot bitcoin ETFs lost about $1.28B last week, the worst week since June, turning 2026 year-to-date flows negative at about -$914M, per The Block.",
-        "CoinDesk names about $73,150 (the 200-day average) and about $77,430 (the 100-day average) as the levels traders watch, and says the bounce depends on how US stocks open on Monday."
+        "About $1.1B of leveraged positions were liquidated in 24 hours, about $501M of it in ether and mostly bets on higher prices, per CoinDesk; Cointelegraph counts $1.12B through 09:00 UTC Monday.",
+        "Sources differ on the weekend low: about $73,761 per CoinDesk, about $73,500 (lowest since 21 Aug) per Cointelegraph.",
+        "Bitcoin's one-week implied volatility rose to about 43% from about 33%, a sign traders are paying up for protection, per CoinDesk.",
+        "US stock futures were higher (S&P 500 E-minis +0.40%) even as Nvidia fell, per Reuters at 5:10am ET.",
+        "CoinDesk names the 200-day average near $73,150 as the level traders watch."
       ],
       "sources": [
         {
-          "label": "CoinDesk: bitcoin drops then pops on Nvidia scandal and failed Iran talks",
-          "url": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
+          "label": "CoinDesk: tech sell-off weighs on crypto majors",
+          "url": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
         },
         {
-          "label": "Reuters via Investing.com: cryptocurrencies slide to two-month lows",
-          "url": "https://investing.com/news/forex-news/cryptocurrencies-slide-to-twomonth-lows-after-us-midterms-5010335"
+          "label": "Cointelegraph: three things for bitcoin this week",
+          "url": "https://cointelegraph.com/markets/btc-price-nvidia-volatility-three-things-bitcoin-this-week"
+        },
+        {
+          "label": "Reuters via Investing.com: Wall St futures rise but Nvidia unsettles investors",
+          "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-rise-after-rough-week-but-nvidia-unsettles-investors-5011103"
+        },
+        {
+          "label": "CoinDesk: bitcoin drops then pops",
+          "url": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
+        }
+      ]
+    },
+    {
+      "title": "Bitcoin dips below Strategy's average cost as US bitcoin ETFs turn negative for 2026",
+      "mood": "bearish",
+      "summary": "Strategy (MSTR), the biggest corporate bitcoin holder, owns 849,327 BTC bought at an average of $75,451, per its 2 Nov SEC filing. With bitcoin trading around $74,000 on Monday, that stake is now below its cost, per CryptoTicker. Meanwhile US spot bitcoin ETFs had their worst week since late June, losing about $1.28B and turning 2026 flows negative.",
+      "points": [
+        "Strategy's total cost is $64.08B; last week it bought 811 BTC for $65.5M at about $80,846 each, per the filing.",
+        "As of Monday morning no new Strategy purchase filing had appeared at the SEC, per CryptoTicker.",
+        "ETF flows for 2026 are now about -$914M; Friday alone was -$411.9M, with BlackRock's IBIT -$403M, per The Block.",
+        "US spot ether ETFs lost about $365M last week, per crypto.news citing Farside.",
+        "MSCI publishes its index review on Wed 11 Nov; Strategy is among the firms that could be removed, per TechTimes."
+      ],
+      "sources": [
+        {
+          "label": "Strategy 8-K filing (SEC), 2 Nov",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001050446/000119312526442707/mstr-20261102.htm"
+        },
+        {
+          "label": "CryptoTicker: bitcoin below Strategy's cost basis",
+          "url": "https://cryptoticker.io/en/bitcoin-price-prediction-strategy-cost-basis-november-9-2026"
         },
         {
           "label": "The Block: bitcoin ETFs flip negative for 2026",
           "url": "https://www.theblock.co/news/markets/2026-11-07-bitcoin-etfs-flip-negative-for-2026-after-1-28-billion-outflow-week-worst-since-june-435984"
+        },
+        {
+          "label": "crypto.news: ether liquidations and outflows",
+          "url": "https://crypto.news/ethereum-price-down-today-eth-liquidations-outflows/"
+        },
+        {
+          "label": "TechTimes: MSCI review could drop Strategy",
+          "url": "https://www.techtimes.com/articles/330275/20261109/msci-index-removal-list-wednesday-can-delete-bitcoin-firm-strategy-after-two-failed-annual-filings.htm"
         }
       ]
     },
     {
-      "title": "Binance hack fallout: withdrawals reopen, but customers keep pulling funds",
+      "title": "Binance hack fallout: new CFO, withdrawals reopening, reserves still lower",
       "mood": "bearish",
-      "summary": "Binance re-enabled HYPE and APT withdrawals on Sunday, ahead of its target, while INJ, Plasma, NEAR and LTC are due by the end of next week, per Bitcoin.com News. CryptoQuant data shows Binance's reserves have shrunk sharply since the 29 Oct hack, though the latest daily outflows are slowing. Elliptic, which puts the theft at $6.4B, says about $2.85B has been frozen or seized.",
+      "summary": "Binance's new CFO Justin Yek, formerly at Airwallex, replaces Kaiser Ng; Binance says the change was planned six months ago and is unrelated to the hack, per Fortune. On Sunday Binance re-enabled HYPE and APT withdrawals. CryptoQuant data shows its reserves have fallen sharply since the 29 Oct hack, though daily outflows have slowed.",
       "points": [
-        "Since the hack Binance's BTC reserves are down about 56,000 BTC (7.7%) and its ETH reserves about 400,000 ETH (11.5%), per CryptoQuant via Bitcoin.com News.",
-        "ETH-based stablecoins on Binance are down about $9B (22%) to about $32B, per the same data.",
-        "Elliptic says about $175M of stolen funds has been turned into about 2,300 BTC, largely through THORChain, and about $3.13B still sits in addresses linked to the theft.",
-        "CFO Kaiser Ng has left and Justin Yek replaces him; the FBI attributes the attack to North Korea's TraderTraitor group, per The Block.",
-        "Binance has told French users their accounts will close on 31 December, per Cointelegraph."
+        "Fortune puts the theft at about $6.3B and says Tether and Circle froze about $2.5B; Binance says users will not bear losses.",
+        "Since the hack Binance's BTC reserves are down about 56,000 BTC (7.7%) and ETH reserves about 11.5%, per CryptoQuant via Bitcoin.com News.",
+        "ETH-based stablecoins on Binance fell about $9B (22%) to about $32B, per the same data.",
+        "crypto.news puts net customer withdrawals since the restart at $4.72B."
       ],
       "sources": [
         {
-          "label": "Bitcoin.com News: Binance restores HYPE, APT as reserve outflows mount",
+          "label": "Fortune: Binance's new CFO",
+          "url": "https://fortune.com/2026/11/09/binances-new-cfo-inherits-a-test-that-goes-beyond-the-balance-sheet/"
+        },
+        {
+          "label": "Bitcoin.com News: Binance restores HYPE, APT",
           "url": "https://news.bitcoin.com/crypto-news/binance-restores-hype-apt-as-data-reveals-billions-in-reserve-outflows/"
         },
         {
-          "label": "Elliptic: how North Korea is laundering the stolen funds",
-          "url": "https://www.elliptic.co/insights/how-north-korea-is-laundering-the-6-4-billion-stolen-from-binance"
-        },
-        {
-          "label": "The Block: Binance CFO steps down",
-          "url": "https://www.theblock.co/news/business/2026-11-07-binance-cfo-steps-down-nine-days-after-record-hack-co-ceo-says-transition-was-planned-six-months-ago-435992"
-        },
-        {
-          "label": "Cointelegraph: Binance France account closures",
-          "url": "https://cointelegraph.com/news/binance-france-emails-announce-closure-of-its-users-accounts-on-dec-31"
-        }
-      ]
-    },
-    {
-      "title": "MEXC sees $126M of outflows as the US moves to cut it off from American banks",
-      "mood": "bearish",
-      "summary": "The US Treasury's FinCEN ordered US financial institutions to stop processing transfers involving MEXC Global, saying it facilitated at least $16B of illicit transactions linked to Iran, North Korea, Russia and cybercrime. The order takes effect 30 days after it is published in the Federal Register. MEXC saw about $126M of net outflows in 24 hours, per DefiLlama data cited by CryptoSlate.",
-      "points": [
-        "MEXC still holds about $4.35B in tracked assets, per DefiLlama via CryptoSlate.",
-        "MEXC says operations are normal and funds are secure, and has started an independent anti-money-laundering review; its CEO says the order does not freeze or seize assets, per CryptoSlate.",
-        "Users report Binance, OKX and Gate holding deposits that came from MEXC for compliance checks; no exchange-wide block is confirmed, per Blockonomi.",
-        "About $1.5B of the activity is tied to Russian sanctions evasion, per Treasury."
-      ],
-      "sources": [
-        {
-          "label": "FinCEN: order severing MEXC's US access",
-          "url": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system"
-        },
-        {
-          "label": "US Treasury press release",
-          "url": "https://home.treasury.gov/news/press-releases/sb0685"
-        },
-        {
-          "label": "CryptoSlate: MEXC sees $126M outflows",
-          "url": "https://cryptoslate.com/mexc-sees-126-million-outflows-as-us-targets-exchange-over-16-7-billion-in-suspected-illicit-transactions/"
-        },
-        {
-          "label": "Blockonomi: users report held MEXC deposits",
-          "url": "https://blockonomi.com/binance-okx-users-report-frozen-mexc-deposits-after-u-s-treasury-action/"
+          "label": "crypto.news: why the crypto market is down",
+          "url": "https://crypto.news/why-is-the-crypto-market-down-today-bitcoin-ethereum-in-red/"
         }
       ]
     }
   ],
   "briefs": [
     {
+      "title": "US withdraws a proposed travel-rule change for fund transfers",
+      "summary": "FinCEN and the Federal Reserve withdrew a proposed rule on record-keeping and the 'travel rule' for funds transfers, including crypto transfers, per FinCEN.",
+      "url": "https://www.fincen.gov/news/news-releases/fincen-announces-withdrawal-proposed-rule-related-recordkeeping-and-travel-rule"
+    },
+    {
+      "title": "MEXC to be cut off from US banks",
+      "summary": "FinCEN says MEXC facilitated at least $16B in illicit transactions and its order stops US financial institutions from processing transfers involving the exchange.",
+      "url": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system"
+    },
+    {
+      "title": "Payments tokens lead altcoin losses",
+      "summary": "XRP fell 7.3% to about $1.08 and Binance's Nvidia perpetual futures volume jumped more than 200% to over $500M as traders bet on Nvidia around the clock, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
+    },
+    {
+      "title": "SpaceX plans a $24B Texas supercomputer",
+      "summary": "The project is worth about 17 times SpaceX's 18,712 BTC (about $1.39B), per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/09/spacex-proposes-a-usd24-billion-texas-supercomputer-worth-17-times-its-bitcoin-pile"
+    },
+    {
+      "title": "ACryptoS vaults drained",
+      "summary": "About $665,000 was taken from 77 vaults across 5 chains through a missing input check; the protocol is being wound down, per crypto.news citing SlowMist.",
+      "url": "https://crypto.news/how-small-deposits-drained-77-acryptos-vaults-and-what-users-can-still-withdraw/"
+    },
+    {
+      "title": "Europe's bank regulator takes over USDC reserve supervision",
+      "summary": "The European Banking Authority takes over supervision of USDC reserves on 12 Nov, and Gemini reports earnings the same day, per CoinDesk's week ahead.",
+      "url": "https://www.coindesk.com/markets/2026/11/09/u-s-inflation-corporate-earnings-crypto-week-ahead"
+    },
+    {
       "title": "Democrats plan a broader crypto market-structure bill",
-      "summary": "After sweeping the midterms, House Democrats reportedly plan a broader crypto bill that would give the SEC more power and limit the CFTC; Stand With Crypto's endorsed candidates went 27 won, 12 lost, per Decrypt.",
+      "summary": "After sweeping the midterms, House Democrats reportedly plan a broader crypto bill that would give the SEC more power and limit the CFTC, per Decrypt.",
       "url": "https://decrypt.co/382602/democrats-to-push-broader-crypto-market-structure-bill-after-sweeping-us-midterms-report"
-    },
-    {
-      "title": "Crypto in 401(k)s moves a step closer",
-      "summary": "The Labor Department sent a proposed rule opening 401(k) plans to crypto and other alternative assets to the White House for review, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-06-trump-administration-moves-closer-allowing-crypto-401k-retirement-plans-435939"
-    },
-    {
-      "title": "Gnosis Pay card system breached",
-      "summary": "Gnosis Pay found unauthorized access to the legacy system behind its consumer cards on 3 Nov; customer data was exposed but not funds, per Decrypt.",
-      "url": "https://decrypt.co/382718/crypto-card-provider-gnosis-pay-hackers-customer-data"
-    },
-    {
-      "title": "US sanctions 45 more targets tied to Prince Group",
-      "summary": "Treasury added 45 targets linked to the Cambodia-based scam network; the US is seeking forfeiture of about $14B in bitcoin tied to the group, per Decrypt.",
-      "url": "https://decrypt.co/382730/us-sanctions-45-more-targets-tied-to-alleged-crypto-scam-empire-prince-group"
-    },
-    {
-      "title": "Ex-FBI agent pleads guilty to crypto theft",
-      "summary": "A former FBI agent admitted stealing about $2.47M in crypto using wallet credentials from 35 FBI investigations, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-07-ex-fbi-agent-pleads-guilty-to-stealing-2-47-million-in-crypto-from-wallets-tied-to-35-investigations-435988"
-    },
-    {
-      "title": "Vitalik: value ETH as a store of value, not a fee-burner",
-      "summary": "Buterin says ETH should be valued as a store of value rather than a fee-burning token, per The Block.",
-      "url": "https://www.theblock.co/news/ecosystems/2026-11-08-vitalik-buterin-says-eth-should-be-valued-as-a-store-of-value-not-a-fee-burning-token-436022"
-    },
-    {
-      "title": "China's factory-gate prices rise faster than expected",
-      "summary": "China's October producer prices rose 5.7% on the year against a 5.3% forecast, while consumer prices rose 0.7% against 0.8% expected, per Discovery Alert.",
-      "url": "https://discoveryalert.com/news/china-ppi-iron-ore-cpi-gap-november-2026/"
     }
   ],
   "calendar": [
     {
-      "et": "Sun 8 Nov · 8:30pm",
-      "bkk": "Mon 9 · 08:30",
-      "event": "China CPI and PPI (Oct): released",
+      "et": "Mon 9 Nov · 8:40am",
+      "bkk": "Mon 9 · 20:40",
+      "event": "Fed speakers: Bowman (8:40am), Goolsbee (10:00am), Barkin (12:15pm)",
       "impact": "neutral",
       "key": false,
-      "note": "Actual: CPI +0.7% on the year (consensus +0.8%, September +0.9%); PPI +5.7% (consensus +5.3%, September +5.0%), per Discovery Alert."
+      "note": "Times per Finobird and the Chicago Fed; Trading Economics lists Bowman and Barkin at the same times. Crypto miner MARA reports after the close, per CoinDesk."
     },
     {
-      "et": "Mon 9 – Sun 15 Nov",
-      "bkk": "Mon 9 – Sun 15 Nov",
-      "event": "Token unlocks: MOVE, ADI, JCT, DOS, BABY, RAIN, ALLO, APT, PUMP, AZTEC, PIEVERSE, YZY, ARB, STRK, SEI, CONX",
+      "et": "Mon 9 – Mon 16 Nov",
+      "bkk": "Mon 9 – Mon 16 Nov",
+      "event": "Token unlocks: MOVE, ADI, JCT, DOS, BABY, RAIN, ALLO, APT, PUMP, AZTEC, PIEVERSE, YZY, ARB, STRK, SEI, CONX, CRO, STBL",
       "impact": "bearish",
       "key": false,
       "note": "See the unlock table on this page for sizes, dates and confidence."
     },
     {
-      "et": "Mon 9 Nov · 8:40am",
-      "bkk": "Mon 9 · 20:40",
-      "event": "Fed speakers: Bowman, Goolsbee (10:00am), Barkin (12:15pm)",
+      "et": "Tue 10 Nov · 4:00am",
+      "bkk": "Tue 10 · 16:00",
+      "event": "Fed Governor Waller speaks",
       "impact": "neutral",
       "key": false,
-      "note": "Times per Trading Economics."
+      "note": "Time per Trading Economics."
     },
     {
       "et": "Tue 10 Nov · 8:30am",
@@ -172,15 +177,15 @@
       "event": "US CPI inflation (Oct)",
       "impact": "volatile",
       "key": true,
-      "note": "Consensus +0.3% headline and +0.2% core on the month (September +0.6% and +0.3%), per Trading Economics and FXEmpire. The Cleveland Fed nowcast is +0.24% and +0.21%, per Yardeni. Fed Governor Waller speaks 4:00am ET."
+      "note": "Consensus +0.3% on the month per Trading Economics and FXEmpire (via heygotrade); FactSet says +0.2%, per crypto.news. Core +0.2% (September +0.6% headline, +0.3% core). Yearly: 3.9% expected vs 3.7% in September, per Trading Economics."
     },
     {
       "et": "Tue 10 Nov · after close",
-      "bkk": "Wed 11 · 05:00",
-      "event": "CoreWeave Q3 earnings (call 5:00pm ET)",
+      "bkk": "Wed 11 · morning",
+      "event": "CoreWeave Q3 earnings",
       "impact": "neutral",
       "key": false,
-      "note": "Per Vanderbilt Report."
+      "note": "Consensus a loss of $1.45 per share, per heygotrade."
     },
     {
       "et": "Wed 11 Nov · 5:00pm",
@@ -188,7 +193,7 @@
       "event": "MSCI November index review results",
       "impact": "volatile",
       "key": true,
-      "note": "MSCI posts results shortly after 11:00pm CET; changes take effect at the close on 30 Nov, per MSCI. Strategy (MSTR) and Metaplanet are at risk of exclusion as crypto-treasury firms, per The Block. Veterans Day: US bond market closed, stocks open."
+      "note": "Strategy, Metaplanet and Upexi are among possible deletions; changes take effect at the close on 30 Nov, per TechTimes. Veterans Day: US bond market closed, stocks open."
     },
     {
       "et": "Thu 12 Nov · 8:30am",
@@ -196,15 +201,15 @@
       "event": "US weekly jobless claims",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 195K per Trading Economics, 194K per FXEmpire; prior 189K."
+      "note": "Consensus 195K, prior 189K, per Trading Economics. Gemini reports earnings this day, per CoinDesk."
     },
     {
       "et": "Fri 13 Nov · 3:00am",
       "bkk": "Fri 13 · 15:00",
-      "event": "Deribit weekly bitcoin options expiry",
+      "event": "Weekly bitcoin options expiry (Deribit, OKX, Bybit)",
       "impact": "volatile",
       "key": false,
-      "note": "Open interest 7,889 BTC in calls and 10,213 BTC in puts as of 4 Nov, per CryptoTicker."
+      "note": "About $3.17B notional across Deribit, OKX and Bybit, put/call ratio 0.78, max pain $78,000, as of 00:20 UTC 9 Nov, per CryptoKeyhole."
     },
     {
       "et": "Fri 13 Nov · 8:30am",
@@ -212,7 +217,7 @@
       "event": "US producer prices (PPI, Oct)",
       "impact": "volatile",
       "key": true,
-      "note": "Consensus +0.4% on the month (September +1.3%) and +0.3% core (September +0.7%), per Trading Economics and FXEmpire."
+      "note": "Consensus +0.4% on the month (September +1.3%) and +0.3% core (September +0.7%), per Trading Economics."
     },
     {
       "et": "Sun 15 Nov",
@@ -220,7 +225,7 @@
       "event": "SEC final deadline on VanEck's JitoSOL (Solana staking) ETF",
       "impact": "volatile",
       "key": false,
-      "note": "The SEC has no extensions left, per Coinranking."
+      "note": "Per SimpleFX."
     },
     {
       "et": "Tue 17 Nov · 5:00pm",
@@ -232,18 +237,18 @@
     },
     {
       "et": "Wed 9 Dec",
-      "bkk": "Wed 9 – Thu 10 Dec",
+      "bkk": "Thu 10 Dec",
       "event": "Next Fed rate decision",
       "impact": "volatile",
       "key": false,
-      "note": "The meeting runs 8-9 Dec, per the Fed; statement time not listed on the calendar. Trading Economics says markets price a 25bp rate hike for December; FXEmpire puts the odds near 80%."
+      "note": "Meeting runs 8-9 Dec. CME FedWatch shows 78.8% odds of a 25bp rate hike, per Cointelegraph; heygotrade says futures price roughly 80%."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-09T04:19:06Z",
-    "claimsChecked": 69,
-    "claimsRemoved": 4,
+    "checkedAt": "2026-11-09T12:08:16Z",
+    "claimsChecked": 128,
+    "claimsRemoved": 6,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
