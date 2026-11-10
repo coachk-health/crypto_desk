@@ -138,12 +138,53 @@
     "target": 0.11172
    },
    "mark": {
-    "date": "2026-11-08",
-    "price": 0.1447,
-    "pnl": 9.09,
-    "r": 0.72
+    "date": "2026-11-09",
+    "price": 0.14784,
+    "pnl": 7.09,
+    "r": 0.56
    },
    "worstAgainst": 5.29
+  },
+  {
+   "id": "CENT-2026-11-12",
+   "token": "CENT",
+   "name": "Incentiv",
+   "coingeckoId": "incentiv",
+   "unlockDate": "2026-11-12",
+   "checkDate": "2026-11-04",
+   "entryDate": "2026-11-05",
+   "coverDate": "2026-11-22",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [
+    {
+     "at": "2026-11-10T08:31:02+00:00",
+     "event": "check day: missed (not logged before its entry day, so not counted)"
+    }
+   ],
+   "decision": {
+    "confidence": 45,
+    "pctCirculating": 13.57,
+    "investorsShare": null,
+    "firstInsiderUnlock": false,
+    "usdM": 3.7,
+    "amount": "~1.33B CENT",
+    "frozenAt": "2026-11-10T08:31:02+00:00"
+   },
+   "plan": {
+    "stop": 12,
+    "target": 30,
+    "cover": 10,
+    "zone": 1.0,
+    "rr": 2.5,
+    "riskPct": 12.66,
+    "pumpPct": 30.0,
+    "fromSignals": "2026-11-09T08:59:51Z"
+   },
+   "status": "missed",
+   "skipReason": "not logged before its entry day, so not counted"
   },
   {
    "id": "AZTEC-2026-11-13",
@@ -329,7 +370,7 @@
    "status": "watching"
   }
  ],
- "updatedAt": "2026-11-09T23:03:07Z",
+ "updatedAt": "2026-11-10T08:31:02Z",
  "summary": {
   "closed": 0,
   "won": 0,
