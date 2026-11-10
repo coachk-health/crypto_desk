@@ -1,90 +1,104 @@
 {
   "date": "2026-11-10",
-  "updated": "2026-11-10T08:12:18Z",
-  "headline": "US inflation data lands at 8:30am ET today, with crypto in 'fear' after Monday's ETF outflows, while Strategy keeps buying ahead of Wednesday's MSCI decision.",
+  "updated": "2026-11-10T12:01:06Z",
+  "headline": "US inflation data lands at 8:30am ET today after Fed Governor Waller backed a December rate hike, with crypto in 'fear' and MSCI's decision on Strategy due Wednesday.",
   "market": {
-    "asOf": "Read at about 07:58 UTC Tue 10 Nov (14:58 Bangkok) from CoinMarketCap coin pages; CoinGecko could not be opened this run. Use the live prices on this page.",
+    "asOf": "Read at about 11:56 UTC Tue 10 Nov (18:56 Bangkok) from CoinGecko coin pages. CoinMarketCap showed bigger 24h drops (BTC -1.93%, SOL $86.21, -3.68%). Use the live prices on this page.",
     "btc": {
-      "price": 74801.32,
-      "chg24h": 1.17
+      "price": 74166.96,
+      "chg24h": -0.7
     },
     "eth": {
-      "price": 2118.18,
-      "chg24h": 1.29
+      "price": 2096.94,
+      "chg24h": -1.0
     },
     "sol": {
-      "price": 86.22,
-      "chg24h": -3.69
+      "price": 85.05,
+      "chg24h": -1.2
     },
-    "fearGreed": "Fear: Alternative.me Crypto Fear & Greed Index 29 (\"Fear\"); CoinMarketCap's own index read 28. Read this run; neither page shows an update time."
+    "fearGreed": "Fear: Alternative.me Crypto Fear & Greed Index 29 (\"Fear\"), its latest published daily value (dated 9 Nov); CoinMarketCap's own index read 28. Read this run."
   },
   "stories": [
     {
-      "title": "October inflation report today at 8:30am ET",
+      "title": "October inflation report at 8:30am ET, after Waller backs a December hike",
       "mood": "volatile",
-      "summary": "The US consumer price report for October comes out Tuesday at 8:30am ET (20:30 Bangkok). It shapes whether the Fed raises rates in December, which matters for risk assets like crypto. Because October 2025 prices were never collected during the government shutdown, there will be no official year-over-year rate this time, so the monthly numbers are what to watch.",
+      "summary": "The US consumer price report for October comes out Tuesday at 8:30am ET (20:30 Bangkok). Earlier today Fed Governor Waller said he still supports a rate increase in December and that a bigger one should be considered if prices run hot. Because October 2025 prices were never collected during the government shutdown, the monthly numbers are what to watch.",
       "points": [
-        "Consensus is +0.3% for the month (September +0.6%) and core +0.2% (September +0.3%), per ZeroHedge.",
-        "Goldman expects +0.21% headline and +0.16% core, per ZeroHedge; the Cleveland Fed nowcast is 0.24% headline and 0.21% core, per BYDFi.",
-        "September's last official yearly rates were 3.7% headline and 2.6% core, per CryptoTicker.",
-        "Producer prices (PPI) follow on Friday at 8:30am ET, forecast +0.4% for the month (prior +1.3%), per ZeroHedge."
+        "Consensus is +0.3% for the month (September +0.6%) and core +0.2% (September +0.3%), per CoinDesk; FactSet's estimate for the headline is +0.2%, per CoinDesk's week-ahead.",
+        "Waller said he would support a 25 basis point increase in December and that a 50 basis point move should be considered if October core inflation runs hot, per Investing.com.",
+        "After his speech, CME FedWatch odds of a December hike rose from 76.3% to 96.3%, per Cointelegraph.",
+        "September's last official yearly rates were 3.7% headline and 2.6% core, per CoinDesk."
       ],
       "sources": [
         {
-          "label": "ZeroHedge: key events this week",
-          "url": "https://www.zerohedge.com/markets/key-events-week-cpi-ppi-fed-speakers-galore-and-end-earnings-season"
+          "label": "CoinDesk: bitcoin slips before inflation report",
+          "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-slips-before-u-s-inflation-report-as-traders-price-in-fed-rate-increase"
         },
         {
-          "label": "BYDFi: October CPI preview",
-          "url": "https://www.bydfi.com/market-intelligence/article/us-october-2026-cpi-preview-1/1424"
+          "label": "Investing.com: Waller on a larger hike",
+          "url": "https://uk.investing.com/news/economy-news/feds-waller-says-larger-hike-should-be-considered-if-october-cpi-runs-hot-4971098"
         },
         {
-          "label": "CryptoTicker: CPI with no annual rate",
-          "url": "https://cryptoticker.io/en/bitcoin-price-us-cpi-no-annual-rate/"
+          "label": "Cointelegraph: hike odds after Waller",
+          "url": "https://cointelegraph.com/markets/bitcoin-price-eyes-74k-fed-rate-hike-expected-after-waller-speech"
+        },
+        {
+          "label": "CoinDesk: crypto week ahead",
+          "url": "https://www.coindesk.com/markets/2026/11/09/u-s-inflation-corporate-earnings-crypto-week-ahead"
         }
       ]
     },
     {
-      "title": "Bitcoin and ether funds see Monday outflows; $1.2B of bets wiped out",
+      "title": "Bitcoin and ether funds keep losing money; forced selling calms down",
       "mood": "bearish",
-      "summary": "US spot bitcoin and ether funds both had net outflows on Monday, and about $1.2 billion of leveraged positions were wiped out, most of them bets on higher prices.",
+      "summary": "US spot bitcoin and ether funds had net outflows again on Monday, and BlackRock's bitcoin fund has now had seven straight days of redemptions. The wave of forced selling of leveraged bets has eased since Monday.",
       "points": [
-        "Monday 9 Nov: US spot bitcoin ETFs -$201M net, led by BlackRock's IBIT at -$213.2M, per Farside data via KuCoin News.",
-        "Monday 9 Nov: US spot ether ETFs -$184.6M net, led by BlackRock's ETHA at -$119.3M, per the same report.",
-        "About $1.2B of positions were liquidated, $1.04B of them longs; ether accounted for $507M and bitcoin $324M, per Coinglass via KuCoin News."
+        "Monday 9 Nov: US spot bitcoin ETFs -$201M net, led by BlackRock's IBIT at -$213.2M, per CoinDesk.",
+        "Monday 9 Nov: US spot ether ETFs -$184.6M net, per CoinDesk.",
+        "Over $1.2B of positions were liquidated on Monday, $1.04B of them bets on higher prices, per Coinglass via KuCoin News.",
+        "Liquidations then fell about 84% to $184M, per CoinDesk."
       ],
       "sources": [
         {
-          "label": "KuCoin News: ETF flows 9 Nov",
-          "url": "https://www.kucoin.com/news/flash/us-bitcoin-and-ethereum-spot-etfs-recorded-net-outflows-of-201m-and-184-6m-on-nov-9"
+          "label": "CoinDesk: bitcoin lags stock rebound",
+          "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
         },
         {
           "label": "KuCoin News: $1.2B liquidations",
           "url": "https://www.kucoin.com/news/flash/over-1-2-billion-in-crypto-market-liquidations-on-november-10"
+        },
+        {
+          "label": "The Block: ETF flows and Ark trades",
+          "url": "https://www.theblock.co/news/business/2026-11-10-ark-invest-trims-block-bullish-holdings-437003"
         }
       ]
     },
     {
-      "title": "Strategy buys 1,036 BTC days before MSCI's index decision",
+      "title": "MSCI decides Wednesday on Strategy; its bitcoin is now worth less than it paid",
       "mood": "volatile",
-      "summary": "Strategy, a bitcoin treasury company, filed with the SEC that it bought more bitcoin last week by selling its own shares. On Wednesday MSCI announces whether it will drop crypto-treasury companies like Strategy from its indexes, which could force index funds to sell the stock.",
+      "summary": "On Wednesday MSCI announces whether it will drop crypto-treasury companies like Strategy from its indexes, which could force index funds to sell the stock. Strategy kept buying bitcoin last week, but with bitcoin below its average cost its holdings are now under water on paper.",
       "points": [
-        "Strategy bought 1,036 BTC for $81.9M between 2 and 8 Nov, an average of $79,012 each, per its SEC filing.",
-        "It now holds 850,364 BTC bought for $64.16B in total, an average cost of $75,456, per the filing.",
+        "Strategy bought 1,036 BTC for $81.9M at an average of $79,012 each, per The Block.",
+        "It now holds 850,364 BTC bought for about $64.2B, an average of $75,456 each, per The Block.",
+        "With bitcoin near $74,650 when Blockhead published on Tuesday, those holdings were below cost, per Blockhead.",
         "MSCI results come shortly after 11:00pm CET on Wed 11 Nov, with changes effective at the close on 30 Nov, per MSCI.",
-        "In 2025 JPMorgan estimated up to $2.8B of selling in Strategy shares if it were removed, or $8.8B if other index providers followed, per DL News citing Bloomberg."
+        "JPMorgan estimated about $2.8B of selling in Strategy shares if it were removed, or up to $8.8B if other index providers followed, per DL News."
       ],
       "sources": [
         {
-          "label": "SEC: Strategy 8-K, 9 Nov",
-          "url": "https://www.sec.gov/Archives/edgar/data/0001050446/000119312526452693/mstr-20261109.htm"
+          "label": "The Block: Strategy buys 1,036 BTC",
+          "url": "https://www.theblock.co/news/business/2026-11-09-connecting-the-dots-michael-saylor-strategy-bitcoin-436094"
+        },
+        {
+          "label": "Blockhead: Strategy's bitcoin under water",
+          "url": "https://www.blockhead.co/2026/11/10/strategys-bitcoin-underwater-the-day-before-msci-names-who-is-out/"
         },
         {
           "label": "MSCI: November review announcement",
           "url": "https://www.msci.com/downloads/documents/press-releases/media-room/MSCI_Nov_2026_IR_Pre-Ann_PR_Doc.pdf"
         },
         {
-          "label": "DL News: Strategy faces 11 Nov MSCI decision",
+          "label": "DL News: Strategy faces MSCI decision",
           "url": "https://www.dlnews.com/articles/markets/strategy-msci-index-exclusion-risk/"
         }
       ]
@@ -92,35 +106,42 @@
   ],
   "briefs": [
     {
-      "title": "PNC Bank pilots incoming USDC payments",
-      "summary": "Eligible corporate clients can receive USDC on Ethereum through Coinbase Payments, converted 1:1 into US dollars in a PNC account, per PNC.",
-      "url": "https://www.prnewswire.com/news-releases/pnc-bank-launches-incoming-stablecoin-payments-for-corporate-and-institutional-banking-clients-302932728.html"
+      "title": "Coinbase, Kalshi and others back the CFTC in court",
+      "summary": "They asked to file a brief supporting the CFTC's approval of single-stock perpetual futures, which a lawsuit is challenging, per The Block.",
+      "url": "https://www.theblock.co/news/regulation/2026-11-10-coinbase-kalshi-payward-back-cftc-perps-436971"
+    },
+    {
+      "title": "NEAR AI reports a security breach",
+      "summary": "A flaw in open-source software exposed account details of about 100 users, per The Block.",
+      "url": "https://theblock.co/news/defi/2026-11-10-near-ai-security-breach-437002"
     },
     {
       "title": "BitMine adds 9,587 ETH",
-      "summary": "It now holds 6,070,092 ETH, about 4.97% of supply, per crypto.news.",
+      "summary": "It now holds 6,070,092 ETH, per crypto.news.",
       "url": "https://crypto.news/why-is-ethereum-price-down-today-november-10-2026/"
     },
     {
-      "title": "NYSE-linked tokenized platform picks Avalanche",
-      "summary": "A proposed NYSE-affiliated tokenized securities platform would use Avalanche for its clearinghouse ledger, pending regulatory approval, per KuCoin News.",
-      "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-10-2026"
+      "title": "Avalanche rises on NYSE platform pick",
+      "summary": "AVAX rose about 5% after a planned NYSE tokenized securities platform chose Avalanche, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-lags-stock-rebound-in-advance-of-u-s-inflation-report"
     },
     {
-      "title": "European banks' euro stablecoin cleared",
-      "summary": "Qivalis, a group of 37 European banks, was authorized by the Dutch central bank and plans a euro stablecoin, per KuCoin News.",
-      "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-10-2026"
+      "title": "Trump Media posts a Q3 profit on crypto gains",
+      "summary": "It reported a $409.7M profit, mostly from non-cash gains, on $3M of revenue, per The Block.",
+      "url": "https://theblock.co/news/business/2026-11-09-trump-media-q3-profit-436964"
+    },
+    {
+      "title": "BitGo revenue halves",
+      "summary": "Q3 revenue fell 50.9% to $2.85B in a soft trading market, while net income rose to $44.1M, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-10-bitgo-revenue-falls-q3-436986"
+    },
+    {
+      "title": "EU banking regulator to supervise USDC",
+      "summary": "The European Banking Authority takes over supervision of USDC on 12 Nov, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/09/u-s-inflation-corporate-earnings-crypto-week-ahead"
     }
   ],
   "calendar": [
-    {
-      "et": "Tue 10 Nov · 4:00am",
-      "bkk": "Tue 10 · 16:00",
-      "event": "Fed Governor Waller speaks on the economic outlook",
-      "impact": "neutral",
-      "key": false,
-      "note": "Per ZeroHedge and Investing.com."
-    },
     {
       "et": "Tue 10 – Tue 17 Nov",
       "bkk": "Tue 10 – Tue 17 Nov",
@@ -135,7 +156,15 @@
       "event": "US CPI inflation (Oct)",
       "impact": "volatile",
       "key": true,
-      "note": "Consensus +0.3% on the month (prior +0.6%), core +0.2% (prior +0.3%), per ZeroHedge. No official yearly rate this time, per BYDFi. Dallas Fed's Logan speaks later: 10:50am ET per ZeroHedge, 9:35am per Investing.com."
+      "note": "Consensus +0.3% on the month (prior +0.6%), core +0.2% (prior +0.3%), per Business Standard citing Bloomberg. Bloomberg and BYDFi say there will be no yearly rate; some calendars (Forex Fundamentals) still list one. Time per BLS."
+    },
+    {
+      "et": "Tue 10 Nov · 9:35am or 10:50am",
+      "bkk": "Tue 10 · 21:35 or 22:50",
+      "event": "Dallas Fed's Logan speaks",
+      "impact": "volatile",
+      "key": false,
+      "note": "9:35am per Investing.com, 10:50am per ZeroHedge."
     },
     {
       "et": "Tue 10 Nov · 3:30pm",
@@ -143,7 +172,7 @@
       "event": "Fed's Bowman speaks; CoreWeave Q3 call at 5:00pm",
       "impact": "neutral",
       "key": false,
-      "note": "Bowman at the Council on Foreign Relations, per ZeroHedge. CoreWeave call time per Regards of Wall Street."
+      "note": "Bowman on the economic outlook, per the Federal Reserve calendar. CoreWeave call time per CoreWeave."
     },
     {
       "et": "Wed 11 Nov · ~5:00pm",
@@ -159,7 +188,7 @@
       "event": "US weekly jobless claims",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 195K, prior 189K, per ZeroHedge. Gemini reports Q3 after the close, call Fri 8:30am ET, per Gemini via Finviz."
+      "note": "Consensus 195K, prior 189K, per ZeroHedge. Gemini reports Q3 that day, call Fri 8:30am ET, per Gemini via Finviz."
     },
     {
       "et": "Fri 13 Nov · 3:00am",
@@ -167,7 +196,7 @@
       "event": "Weekly crypto options expiry (08:00 UTC)",
       "impact": "volatile",
       "key": false,
-      "note": "About $3.13B of BTC options, max pain $77,000, put/call 0.69 (read 10 Nov), per CryptoKeyhole."
+      "note": "About $3.13B of BTC options, max pain $77,000, put/call 0.69 (updated 10 Nov), per CryptoKeyhole."
     },
     {
       "et": "Fri 13 Nov · 8:30am",
@@ -175,7 +204,7 @@
       "event": "US producer prices (PPI, Oct)",
       "impact": "volatile",
       "key": true,
-      "note": "Forecast +0.4% on the month (prior +1.3%), core +0.3% (prior +0.7%), per ZeroHedge."
+      "note": "Forecast +0.4% on the month (prior +1.3%), core +0.3% (prior +0.7%), per ZeroHedge. Time per BLS."
     },
     {
       "et": "Sun 15 Nov",
@@ -194,28 +223,28 @@
       "note": "Prior +0.8%; no consensus published yet, per Forex Fundamentals."
     },
     {
-      "et": "Tue 17 Nov · ~4:20pm",
-      "bkk": "Wed 18 · ~04:20",
-      "event": "Nvidia Q3 results",
+      "et": "Tue 17 Nov · 5:00pm",
+      "bkk": "Wed 18 · 05:00",
+      "event": "Nvidia Q3 results call",
       "impact": "volatile",
       "key": false,
-      "note": "Conference call at 5:00pm ET, per Nvidia."
+      "note": "Call at 2pm PT (5pm ET), per Nvidia."
     },
     {
-      "et": "Wed 9 Dec · 2:00pm",
-      "bkk": "Thu 10 Dec · 02:00",
+      "et": "Wed 9 Dec",
+      "bkk": "Thu 10 Dec",
       "event": "Next Fed rate decision",
       "impact": "volatile",
       "key": false,
-      "note": "Meeting 8–9 Dec, press conference 2:30pm ET, per the Federal Reserve."
+      "note": "Meeting 8–9 Dec, per the Federal Reserve."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-10T08:12:18Z",
-    "claimsChecked": 73,
-    "claimsRemoved": 8,
-    "rounds": 2,
+    "checkedAt": "2026-11-10T12:12:00Z",
+    "claimsChecked": 68,
+    "claimsRemoved": 2,
+    "rounds": 1,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
 }
