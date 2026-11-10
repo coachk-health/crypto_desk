@@ -1,12 +1,12 @@
 {
   "date": "2026-11-10",
-  "updated": "2026-11-09T20:08:46Z",
-  "headline": "US stocks had their best day in weeks on Monday but bitcoin stayed stuck below $75,000, with traders bracing for Tuesday's inflation report.",
+  "updated": "2026-11-10T00:14:14Z",
+  "headline": "Stocks rallied Monday but crypto lagged, a big bitcoin miner sold 13,597 BTC, and Tuesday's inflation report is next.",
   "market": {
-    "asOf": "Read from CoinGecko coin pages at about 19:56-19:58 UTC Mon 9 Nov (02:56 Bangkok Tue 10 Nov). Fear & Greed from Alternative.me at about 19:58 UTC. Use the live prices on this page.",
+    "asOf": "Read from CoinGecko coin pages at about 00:05 UTC Tue 10 Nov (07:05 Bangkok). The ETH and SOL pages showed the same figures as at 20:00 UTC, so they may be a few hours old. Fear & Greed from Alternative.me at the same time. Use the live prices on this page.",
     "btc": {
-      "price": 74907.55,
-      "chg24h": -1.4
+      "price": 74677.86,
+      "chg24h": -1.5
     },
     "eth": {
       "price": 2124.57,
@@ -20,15 +20,15 @@
   },
   "stories": [
     {
-      "title": "Stocks rally hard, bitcoin stays stuck below $75,000",
+      "title": "Stocks jump, crypto lags, and miner MARA sells 13,597 BTC",
       "mood": "bearish",
-      "summary": "US stocks jumped on Monday, with the Nasdaq closing in on a 3% gain by 2:48pm ET as oil fell on Iran headlines, but bitcoin was still trading below $75,000, per CoinDesk. Crypto had sold off over the weekend, and the leverage clear-out hit ether traders hardest.",
+      "summary": "US stocks rose more than 2% on Monday as oil fell on Iran headlines, but bitcoin slipped about 1% and ether fell about 5%, per CoinDesk. After the close, bitcoin miner MARA said it sold 13,597 BTC to fully pay off its bitcoin-backed loans. When crypto falls on a strong day for stocks, the selling is coming from inside crypto.",
       "points": [
-        "On Monday afternoon the S&P 500 was up 2.38%, while Nvidia was down 5.19% at 1:55pm ET on its CEO probe, per Yahoo Finance.",
-        "Bitcoin closed Sunday below its 50-week average ($75,488), ending a seven-week streak above it, per The Block.",
-        "Sunday night's low of $73,761 sat just above the 200-day average of $73,151, per CoinDesk.",
-        "About $1.15B of bets were liquidated in 24 hours, $1.04B of them bets on higher prices, with ether over $500M, per The Block.",
-        "Ether closed Sunday below its 200-day average for the first time since 18 Aug, per CoinDesk."
+        "Late Monday afternoon the Nasdaq was up 2.75%, the S&P 500 up 2.35% and Nvidia down 4.3%, while BTC was down 1.1% near $74,800, per CoinDesk.",
+        "Bitcoin's Sunday low of about $73,761 was its lowest since August and held just above its 200-day average (about $73,150), per CoinDesk.",
+        "About $1.19B of bets were liquidated in 24 hours, $1.04B of them bets on higher prices; ether accounted for $505M, per CoinGlass data via PANews.",
+        "MARA used $750M of the sale to fully repay its bitcoin-backed loans and reported Q3 net profit of $634.4M, per The Block; the sale leaves it with 20,415 BTC, per CoinDesk.",
+        "Strategy went the other way, buying 1,036 BTC for $81.9M and now holding 850,364 BTC, per The Block."
       ],
       "sources": [
         {
@@ -36,69 +36,65 @@
           "url": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average"
         },
         {
-          "label": "The Block: bitcoin loses 50-week average",
-          "url": "https://www.theblock.co/news/markets/2026-11-09-bitcoin-loses-50-week-moving-average-as-24-hour-crypto-long-liquidations-top-1-billion-436102"
+          "label": "CoinDesk: bitcoin drops then pops",
+          "url": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
         },
         {
-          "label": "CoinDesk: tech sell-off weighs on crypto majors",
-          "url": "https://coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
+          "label": "PANews: 24h liquidations",
+          "url": "https://panews.io/articles/01a1c0ee-39be-7241-88df-39f930112582"
         },
         {
-          "label": "Yahoo Finance: stock market today, 9 Nov",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
+          "label": "The Block: MARA Q3 and bitcoin sale",
+          "url": "https://www.theblock.co/news/business/2026-11-09-mara-q3-earnings-net-profit-bitcoin-sale-ai-pivot-436950"
+        },
+        {
+          "label": "The Block: Strategy buys 1,036 BTC",
+          "url": "https://www.theblock.co/news/business/2026-11-09-connecting-the-dots-michael-saylor-strategy-bitcoin-436094"
         }
       ]
     },
     {
-      "title": "Inflation report Tuesday at 8:30am ET lands on a nervous market",
+      "title": "Inflation report today at 8:30am ET, with a December rate hike seen as likely",
       "mood": "volatile",
-      "summary": "October's US consumer price report comes out Tuesday at 8:30am ET (20:30 Bangkok). Hotter inflation would make a Fed rate hike more likely, which usually weighs on crypto. Investors pulled money from bitcoin funds last week and options traders are paying up for protection against further falls.",
+      "summary": "October's US consumer price report comes out Tuesday at 8:30am ET (20:30 Bangkok). Markets already expect the Fed to raise rates in December, and a hot number would add to that, which usually weighs on crypto. Because of last year's government shutdown, there will be no official year-over-year inflation rate this time, so watch the monthly figure.",
       "points": [
-        "Forecasts differ: CoinDesk's live blog cites +0.3% for the month (core +0.2%), while CoinDesk's week-ahead piece says 0.2%; September was +0.6%.",
-        "Markets price about an 81% chance of a quarter-point rate hike in December, up from about 72% before Friday's jobs report, per CCN via Yahoo Finance.",
-        "US spot bitcoin ETFs lost $1.28B last week, the most since late June; ether ETFs lost about $365M, per CCN via Yahoo Finance.",
-        "Bitcoin's one-week implied volatility rose to about 43% from about 33%, and four of the six most-traded options were $70,000-$72,000 puts, per CoinDesk."
+        "Consensus is +0.3% for the month (September +0.6%) and core +0.2% (September +0.3%), per investingLive; the Cleveland Fed nowcast is about 0.2% for both.",
+        "CME FedWatch put the odds of a December rate hike at 85% on Monday afternoon, per CoinDesk.",
+        "Chicago Fed President Goolsbee said \"We've got to come to terms with inflation failure,\" per CoinDesk.",
+        "US spot bitcoin ETFs lost $1.28B last week, the biggest weekly outflow since late June, per SoSoValue data via CoinDesk."
       ],
       "sources": [
+        {
+          "label": "investingLive: CPI preview",
+          "url": "https://investinglive.com/news/us-cpi-preview-43-day-shutdown-leaves-no-official-annual-rate-as-monthly-pace-seen-easing"
+        },
         {
           "label": "CoinDesk live blog, 9 Nov",
           "url": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average"
         },
         {
-          "label": "CoinDesk: crypto week ahead",
-          "url": "https://www.coindesk.com/markets/2026/11/09/u-s-inflation-corporate-earnings-crypto-week-ahead"
-        },
-        {
-          "label": "Yahoo Finance (CCN): bitcoin ETF outflows",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-etf-outflows-hit-1-102515678.html"
-        },
-        {
-          "label": "CoinDesk: tech sell-off weighs on crypto majors",
-          "url": "https://coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
+          "label": "CoinDesk: bitcoin bulls can't rely on ETF flows",
+          "url": "https://www.coindesk.com/daybook-us/2026/11/09/bitcoin-bulls-can-t-rely-on-etf-flows"
         }
       ]
     },
     {
-      "title": "Washington turns tougher on crypto after the midterms",
+      "title": "Warren sets out her Senate Banking agenda, with Trump crypto ventures in view",
       "mood": "bearish",
-      "summary": "Democrats won the midterms despite about $170M in crypto PAC spending, per Fortune, and Senator Elizabeth Warren is widely expected to chair the Senate Banking Committee in January. Separately, CME Group is suing the CFTC to overturn its approval of US crypto perpetual futures.",
+      "summary": "Sen. Elizabeth Warren will chair the Senate Banking Committee in the new year. Her aide listed priorities including prediction markets and accountability, and named Trump-family crypto businesses as targets, per The Block. Expect hearings and document requests rather than friendly new crypto laws.",
       "points": [
-        "Fortune says crypto firms seeking or holding bank charters face the most risk, while Trump-appointed heads of the SEC, CFTC and OCC stay in place.",
-        "Sen. Blumenthal sent letters to Binance, Tether, World Liberty Financial and the company behind the TRUMP memecoin, asking for documents by 30 Nov and in full by 4 Jan, per Cointribune.",
-        "CME argues perpetual futures are swaps; Coinbase, Robinhood and Kalshi offer US perps, per Reuters via PiQ."
+        "The priorities named are affordability, AI, prediction markets, a potential financial crisis and accountability, per The Block.",
+        "Sherrod Brown is expected to lead Senate Agriculture and Maxine Waters House Financial Services, both key committees for crypto, per The Block.",
+        "In a 60 Minutes interview, Trump said he knows \"nothing\" about a UAE-linked investment in World Liberty Financial, per The Block."
       ],
       "sources": [
         {
-          "label": "Fortune: crypto industry and the Senate Banking Committee",
-          "url": "https://fortune.com/2026/11/09/crypto-industry-elizabeth-warren-senate-banking-committee-regulation-charters-midterm-elections-2026/"
+          "label": "The Block: Warren's Senate Banking scrutiny",
+          "url": "https://www.theblock.co/news/regulation/2026-11-09-senate-banking-elizabeth-warren-scrutiny-prediction-markets-trump-crypto-ventures-436898"
         },
         {
-          "label": "Cointribune: Senate demands records from Binance, Tether, WLFI",
-          "url": "https://www.cointribune.com/en/binance-tether-and-wlfi-senate-demands-records-by-january"
-        },
-        {
-          "label": "PiQ (Reuters): CME sues CFTC over crypto perps",
-          "url": "https://piqmarkets.com/story/cme-sues-cftc-over-crypto-perpetual-futures-approval-as-exchanges-warn-of-risk"
+          "label": "The Block: Trump on UAE-linked WLF investment",
+          "url": "https://www.theblock.co/news/business/2026-11-09-trump-says-he-knows-nothing-about-uae-linked-investment-in-his-crypto-firm-436079"
         }
       ]
     }
@@ -106,18 +102,13 @@
   "briefs": [
     {
       "title": "Strategy faces MSCI decision Wednesday",
-      "summary": "MSCI's review on Wed 11 Nov could drop Strategy from its indexes, with any changes taking effect after the close on 30 Nov, per TechTimes.",
-      "url": "https://www.techtimes.com/articles/330275/20261109/msci-index-removal-list-wednesday-can-delete-bitcoin-firm-strategy-after-two-failed-annual-filings.htm"
+      "summary": "MSCI publishes the final list of companies affected by its new index rules on Wed 11 Nov, and Strategy could be removed, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-10-15-msci-rules-could-exclude-strategy-mstr-from-indexes-418729"
     },
     {
       "title": "NYSE picks Avalanche for tokenized stocks",
-      "summary": "Avalanche will be the core ledger for a planned 24/7 tokenized securities platform, pending regulatory approval, per The Block.",
+      "summary": "Avalanche will be the settlement ledger for a planned 24/7 tokenized stock venue, pending regulatory approval, per The Block.",
       "url": "https://www.theblock.co/news/business/2026-11-09-nyse-settle-tokenized-stocks-avalanche-planned-24-7-market-436208"
-    },
-    {
-      "title": "PNC pilots USDC payments for corporate clients",
-      "summary": "Incoming USDC converts 1:1 into dollars in the client's PNC account, using Coinbase's payment tools, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-09-coinbase-pnc-bank-expand-partnership-with-usdc-payments-corporate-clients-436466"
     },
     {
       "title": "Schwab clients can now trade SOL, AVAX and LINK",
@@ -125,19 +116,24 @@
       "url": "https://www.coindesk.com/tech/2026/11/09/live-news-nvidia-slides-on-ceo-allegations-as-bitcoin-hovers-just-above-its-200-day-average"
     },
     {
+      "title": "PNC pilots USDC payments for corporate clients",
+      "summary": "Incoming USDC converts 1:1 into dollars in the client's PNC account, using Coinbase's payment tools, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-09-coinbase-pnc-bank-expand-partnership-with-usdc-payments-corporate-clients-436466"
+    },
+    {
+      "title": "Bitmine nears 5% of all ether",
+      "summary": "Bitmine bought 9,587 ETH last week and now holds 6.07M ETH, about 4.97% of supply, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-09-tom-lee-bitmine-nears-ethereum-supply-target-20-million-eth-tokenization-ai-supercycle-436219"
+    },
+    {
       "title": "Nvidia CEO probe drove the risk-off mood",
-      "summary": "Nvidia's board opened an independent probe into reports about Jensen Huang's relationship with an executive; Nvidia says it has no reason to believe secrets were compromised, per CoinDesk.",
+      "summary": "Nvidia's board opened an independent probe into reports about Jensen Huang's relationship with a business executive; Nvidia says it has no reason to believe secrets were compromised, per CoinDesk.",
       "url": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
     },
     {
-      "title": "Old Coldcard wallets: about $116M lost to weak seeds",
-      "summary": "TRM Labs tied about $116M in losses to weak randomness in older Coldcard seeds; affected users need a new seed and must move funds, per crypto.news.",
-      "url": "https://crypto.news/coldcard-116m-exploit-nvk-security-review-dispute/"
-    },
-    {
-      "title": "Traders are cutting leverage",
-      "summary": "Crypto futures volume jumped more than 200% to $180B in 24 hours while open interest fell 3%, a sign positions were being closed, per CoinDesk.",
-      "url": "https://coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors"
+      "title": "Binance hackers launder through homemade memecoins",
+      "summary": "Elliptic says the North Korean group behind the Binance hack created six memecoins to move about 117K NEAR of stolen funds, per The Block.",
+      "url": "https://www.theblock.co/news/ecosystems/2026-11-09-binance-hack-launderers-mint-homemade-elon-musk-animal-memecoins-move-stolen-funds-elliptic-436440"
     }
   ],
   "calendar": [
@@ -147,7 +143,7 @@
       "event": "Fed Governor Waller speaks",
       "impact": "neutral",
       "key": false,
-      "note": "Per Finviz. Logan speaks at 9:35am ET; Bowman at 1:30pm and 6:30pm ET, per Finviz."
+      "note": "Per Finviz. Logan at 9:35am ET per Finviz (ZeroHedge lists 10:50am); Bowman at 1:30pm (ZeroHedge: 3:30pm) and 6:30pm ET."
     },
     {
       "et": "Tue 10 – Mon 16 Nov",
@@ -163,7 +159,7 @@
       "event": "US CPI inflation (Oct)",
       "impact": "volatile",
       "key": true,
-      "note": "Consensus +0.3% on the month (September +0.6%), core +0.2% (September +0.3%), per Finviz; CoinDesk's week-ahead says 0.2%. No accurate yearly comparison this time because no October 2025 CPI was released during the shutdown, per Continuum Economics. eToro reports before the open."
+      "note": "Consensus +0.3% on the month (September +0.6%), core +0.2% (September +0.3%), per Finviz. Cleveland Fed nowcast 0.24% headline, 0.21% core, per BYDFi. No official yearly rate this time, per investingLive. eToro reports before the open."
     },
     {
       "et": "Tue 10 Nov · 5:00pm",
@@ -171,7 +167,7 @@
       "event": "CoreWeave Q3 earnings call",
       "impact": "neutral",
       "key": false,
-      "note": "Call time per CoreWeave. Expected loss about $1.57 a share (GAAP, EarningsWhispers) or $1.17 (non-GAAP, Finviz)."
+      "note": "Call time per CoreWeave."
     },
     {
       "et": "Wed 11 Nov · 5:00pm",
@@ -179,7 +175,7 @@
       "event": "MSCI November index review results",
       "impact": "volatile",
       "key": true,
-      "note": "Published shortly after 11:00pm CET, per MSCI. Strategy could be removed; changes take effect at the close on 30 Nov, per TechTimes. Veterans Day: bond market closed, stocks open."
+      "note": "Published shortly after 11:00pm CET, per MSCI; changes effective at the close on 30 Nov. Strategy could be removed, per The Block. Veterans Day: bond market closed, stocks open."
     },
     {
       "et": "Thu 12 Nov · 8:30am",
@@ -188,6 +184,14 @@
       "impact": "neutral",
       "key": false,
       "note": "Consensus 195K, prior 189K, per Finviz. Gemini reports Q3 after the close; call Fri 8:30am ET."
+    },
+    {
+      "et": "Fri 13 Nov · 3:00am",
+      "bkk": "Fri 13 · 15:00",
+      "event": "Weekly crypto options expiry (08:00 UTC)",
+      "impact": "volatile",
+      "key": false,
+      "note": "About $3.17B of BTC options across Deribit, OKX and Bybit, max pain $78,000, put/call 0.78 (read 9 Nov), per CryptoKeyhole."
     },
     {
       "et": "Fri 13 Nov · 8:30am",
@@ -206,36 +210,20 @@
       "note": "No extensions left, per Coinranking."
     },
     {
-      "et": "Tue 17 Nov · 5:00pm",
-      "bkk": "Wed 18 · 05:00",
-      "event": "Nvidia Q3 earnings call",
-      "impact": "volatile",
-      "key": false,
-      "note": "Call time per Nvidia. US retail sales (Oct) at 8:30am ET, prior +0.8%, per ForexFundamentals."
-    },
-    {
-      "et": "Wed 18 Nov · 8:30am",
-      "bkk": "Wed 18 · 20:30",
-      "event": "Bullish (BLSH) Q3 results and call",
-      "impact": "neutral",
-      "key": false,
-      "note": "Per Bullish via Finviz."
-    },
-    {
-      "et": "Wed 9 Dec · 2:00pm",
-      "bkk": "Thu 10 Dec · 02:00",
+      "et": "Wed 9 Dec",
+      "bkk": "Wed 9 – Thu 10 Dec",
       "event": "Next Fed rate decision",
       "impact": "volatile",
       "key": false,
-      "note": "Prediction markets put a 25bp hike at about 80% (Kalshi/Polymarket average, DeFiRate, 9 Nov)."
+      "note": "Fed meeting 8–9 Dec, per PrimeRates. CME FedWatch put the odds of a December move at 85% on 9 Nov, per CoinDesk; Kalshi shows 81% for a 25bp hike, per CoinStats."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-09T20:08:46Z",
-    "claimsChecked": 61,
-    "claimsRemoved": 2,
-    "rounds": 2,
+    "checkedAt": "2026-11-10T00:14:14Z",
+    "claimsChecked": 99,
+    "claimsRemoved": 7,
+    "rounds": 3,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
 }
