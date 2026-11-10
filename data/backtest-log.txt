@@ -1,4 +1,4 @@
-harvested 1 past rows from the live page
+harvested 2 past rows from the live page
 2Z (doublezero): 2 events
   prices: binance-futures 2ZUSDT (CoinGecko differed by a median 0.2%, at most 4.9%)
 ALLO (allora): 11 events
@@ -69,7 +69,7 @@ MBG (mbg-by-multibank-group): 1 events
   prices: coingecko  (CoinGecko differed by a median None%, at most None%)
 ME (magic-eden): 1 events
   prices: binance-futures MEUSDT (CoinGecko differed by a median 0.2%, at most 86.3%)
-MOVE (movement): 11 events
+MOVE (movement): 12 events
   prices: binance-futures MOVEUSDT (CoinGecko differed by a median 0.2%, at most 42.8%)
 NEWT (newton-protocol): 1 events
   prices: binance-futures NEWTUSDT (CoinGecko differed by a median 0.2%, at most 59.0%)
@@ -149,4 +149,6 @@ LA (lagrange): 1 events
   prices: binance-futures LAUSDT (CoinGecko differed by a median 0.2%, at most 16.0%)
 L1X (layer-one-x-2): 1 events
   prices: coingecko  (CoinGecko differed by a median None%, at most None%)
-measured 320 events, skipped 4
+ADI (adi-token): 1 events
+  prices: coingecko  (CoinGecko differed by a median None%, at most None%)
+measured 322 events, skipped 2

@@ -8915,6 +8915,56 @@
       }
      ],
      "gaps": "Amount not printed for this month by any source opened; time not found (DefiLlama shows 01:08 UTC for Nov 2026, PANews showed 12:00 UTC for Jan/Feb 2026)."
+    },
+    {
+     "date": "2026-11-09",
+     "timeUTC": null,
+     "amountTokens": 164583333,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.2215,
+      "investors": 0.3797,
+      "community": 0.3038,
+      "ecosystem": 0.095,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko MOVE page, unlock widget (Tokenomist data), read 9 Nov 2026: 9 Nov, 164.58M MOVE (~$1.01M, 1.6% of total): Early Backers 62.5M, Ecosystem+Community 50M, Early Contributors 36.46M, Foundation 15.63M. Widget said '4 days away', so the page served was a cached snapshot from about 5 Nov",
+       "url": "https://www.coingecko.com/en/coins/movement",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist MOVE claim page, read 9 Nov 2026: next unlock 9 Nov 2026 to Early Backers; no amount or time shown. Same feed as the CoinGecko widget, counted as one source",
+       "url": "https://tokenomist.ai/movement/claim",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "tokenomics.com MOVE unlocks, read 9 Nov 2026: 9 Nov 2026 (all-day), 164,583,333 MOVE ($965.7K); Private Investors 38.0% / Community 30.4% / Insiders 22.1% / Foundation 9.5%; Early Backers 12m cliff + 36m linear, Early Contributors 12m cliff + 48m linear; TGE 9 Dec 2024; 23 of 61 events past",
+       "url": "https://app.tokenomics.com/tokenomics/movement-labs/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 2.58,
+      "confidence": 62,
+      "scoredAt": "2026-11-10T08:12:18Z"
+     }
     }
    ],
    "gaps": "No Movement primary tokenomics page could be opened (the KuCoin article links movementnetwork.xyz/article/movement-foundation-move-token, not fetchable here); vesting terms come from tokenomics.com, cross-checked against DefiLlama pool sizes and circulating supply. 'Ecosystem & Community' (50M a month) is put in community following tokenomics.com; it could equally be ecosystem. Mar-Oct 2026 amounts are schedule-derived; only Jan and Feb 2026 amounts and times are printed by news. Dec 2025 amount conflicts (161.84M vs 164.58M). CoinGecko id 'movement' is from the coingecko.com/hi/coins/movement URL in the desk data, not re-opened.",
@@ -16891,6 +16941,68 @@
       "points": 8.85,
       "confidence": 42,
       "scoredAt": "2026-11-08T04:12:11Z"
+     }
+    }
+   ],
+   "harvested": true
+  },
+  {
+   "token": "ADI",
+   "name": "ADI Chain",
+   "coingeckoId": "adi-token",
+   "events": [
+    {
+     "date": "2026-11-09",
+     "timeUTC": null,
+     "amountTokens": 6992616,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0,
+      "investors": 0,
+      "community": 0.6855,
+      "ecosystem": 0.3145,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com ADI unlocks (read 9 Nov 2026 ~04:00 UTC): 9 Nov 2026, 6,992,616 ADI ($56.2M, 0.7% of supply); Community 68.5% / Foundation 31.4%; countdown under one day; next event 9 Dec 2026 11.4M incl. Private Investors 15% / Insiders 12%; Team and Private Investors 12-mo cliff + 72-mo linear; circulating 97.36M",
+       "url": "https://app.tokenomics.com/tokenomics/adi-chain/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Bitrue ADI unlock blog (read 9 Nov 2026): monthly unlocks on the 9th through Dec 2034; 6,992,616 ADI per tranche, Community 68.5% / Foundation 31.4% (stated for the Sep tranche); TGE 9 Dec 2025; Community Fund 35% (1.4% TGE + 72-mo linear), Treasury Reserves 25% (5% TGE + 108-mo linear); Team and Private Investors 12-mo cliff",
+       "url": "https://www.bitrue.com/blog/adi-chain-token-unlock",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinGecko ADI (read 9 Nov 2026): API ID adi-token; $8.03, mcap $75.79M, 24h vol $5.77M, circ 9.435M, max 1B; no unlock widget",
+       "url": "https://www.coingecko.com/en/coins/adi-token",
+       "kind": "aggregator",
+       "confirms": []
+      },
+      {
+       "label": "CoinMarketCap ADI (read 9 Nov 2026): $8.03, mcap $75.79M, 24h vol $5.95M, circ 9,434,511, max 999.99M; 'unlocked market cap' $1.34B; unlock section did not load",
+       "url": "https://coinmarketcap.com/currencies/adi-token/",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 4.03,
+      "confidence": 62,
+      "scoredAt": "2026-11-10T08:12:18Z"
      }
     }
    ],

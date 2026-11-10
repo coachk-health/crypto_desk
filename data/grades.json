@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-09T09:02:28Z",
+ "generatedAt": "2026-11-10T09:12:37Z",
  "plan": {
   "stop": 12,
   "target": 30,
@@ -745,7 +745,7 @@
    "token": "ALLO",
    "name": "Allora",
    "date": "2026-11-11",
-   "usdM": 23.42,
+   "usdM": 23.6,
    "entry": "2026-11-04",
    "grade": "AAA",
    "edgeCount": 2,
@@ -763,7 +763,7 @@
    "momentum": -34.8,
    "vsLaunch": -80.3,
    "priceAsOf": "2026-11-04",
-   "confidenceScore": 75
+   "confidenceScore": 90
   },
   {
    "token": "MON",
@@ -783,9 +783,9 @@
    "missing": [],
    "unknown": [],
    "pumped": false,
-   "momentum": -31.3,
-   "vsLaunch": -87.9,
-   "priceAsOf": "2026-11-09",
+   "momentum": -23.7,
+   "vsLaunch": -87.2,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 70
   },
   {
@@ -806,9 +806,9 @@
    "missing": [],
    "unknown": [],
    "pumped": true,
-   "momentum": 32.2,
-   "vsLaunch": -45.7,
-   "priceAsOf": "2026-11-09",
+   "momentum": 33.0,
+   "vsLaunch": -46.7,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 67
   },
   {
@@ -829,16 +829,16 @@
    "missing": [],
    "unknown": [],
    "pumped": false,
-   "momentum": -62.3,
-   "vsLaunch": -87.6,
-   "priceAsOf": "2026-11-09",
+   "momentum": -64.8,
+   "vsLaunch": -88.2,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 62
   },
   {
    "token": "KNTQ",
    "name": "Kinetiq",
    "date": "2026-11-27",
-   "usdM": 5.83,
+   "usdM": 5.19,
    "entry": "2026-11-20",
    "grade": "AAA",
    "edgeCount": 2,
@@ -886,7 +886,7 @@
    "token": "JCT",
    "name": "Janction",
    "date": "2026-11-10",
-   "usdM": 14.2,
+   "usdM": 12.7,
    "entry": "2026-11-03",
    "grade": "AA",
    "edgeCount": 1,
@@ -905,6 +905,54 @@
    "vsLaunch": 9.2,
    "priceAsOf": "2026-11-03",
    "confidenceScore": 67
+  },
+  {
+   "token": "HOLO",
+   "name": "Holoworld AI",
+   "date": "2026-11-11",
+   "usdM": 1.53,
+   "entry": "2026-11-04",
+   "grade": "AA",
+   "edgeCount": 1,
+   "has": [
+    "cliff",
+    "waited"
+   ],
+   "missing": [
+    "first",
+    "big",
+    "team"
+   ],
+   "unknown": [],
+   "pumped": false,
+   "momentum": -11.2,
+   "vsLaunch": -92.2,
+   "priceAsOf": "2026-11-04",
+   "confidenceScore": 51
+  },
+  {
+   "token": "PEAQ",
+   "name": "peaq",
+   "date": "2026-11-12",
+   "usdM": 2.32,
+   "entry": "2026-11-05",
+   "grade": "AA",
+   "edgeCount": 1,
+   "has": [
+    "cliff",
+    "waited"
+   ],
+   "missing": [
+    "first",
+    "big",
+    "team"
+   ],
+   "unknown": [],
+   "pumped": false,
+   "momentum": null,
+   "vsLaunch": null,
+   "priceAsOf": null,
+   "confidenceScore": 63
   },
   {
    "token": "PIEVERSE",
@@ -934,17 +982,17 @@
    "token": "ADI",
    "name": "ADI (ADI Chain)",
    "date": "2026-12-09",
-   "usdM": 91.5,
+   "usdM": 91.8,
    "entry": "2026-12-02",
    "grade": "AA",
    "edgeCount": 1,
    "has": [
     "first",
     "big",
+    "cliff",
     "waited"
    ],
    "missing": [
-    "cliff",
     "team"
    ],
    "unknown": [],
@@ -952,7 +1000,56 @@
    "momentum": null,
    "vsLaunch": null,
    "priceAsOf": null,
-   "confidenceScore": 37
+   "confidenceScore": 62
+  },
+  {
+   "token": "KUB",
+   "name": "Bitkub Coin",
+   "date": "2026-11-11",
+   "usdM": 1.75,
+   "entry": "2026-11-04",
+   "grade": "A",
+   "edgeCount": 0,
+   "has": [
+    "cliff"
+   ],
+   "missing": [
+    "first",
+    "big",
+    "team"
+   ],
+   "unknown": [
+    "waited"
+   ],
+   "pumped": false,
+   "momentum": null,
+   "vsLaunch": null,
+   "priceAsOf": null,
+   "confidenceScore": 58
+  },
+  {
+   "token": "CENT",
+   "name": "Incentiv",
+   "date": "2026-11-12",
+   "usdM": 3.7,
+   "entry": "2026-11-05",
+   "grade": "A",
+   "edgeCount": 0,
+   "has": [
+    "big",
+    "cliff"
+   ],
+   "missing": [
+    "first",
+    "team",
+    "waited"
+   ],
+   "unknown": [],
+   "pumped": false,
+   "momentum": null,
+   "vsLaunch": null,
+   "priceAsOf": null,
+   "confidenceScore": 45
   },
   {
    "token": "AZTEC",
@@ -968,41 +1065,15 @@
    ],
    "missing": [
     "first",
-    "team"
-   ],
-   "unknown": [
+    "team",
     "waited"
    ],
+   "unknown": [],
    "pumped": false,
    "momentum": -33.3,
    "vsLaunch": -48.9,
    "priceAsOf": "2026-11-06",
-   "confidenceScore": 56
-  },
-  {
-   "token": "M",
-   "name": "MemeCore",
-   "date": "2026-12-02",
-   "usdM": 43.46,
-   "entry": "2026-11-25",
-   "grade": "A",
-   "edgeCount": 0,
-   "has": [
-    "cliff"
-   ],
-   "missing": [
-    "first",
-    "big",
-    "team"
-   ],
-   "unknown": [
-    "waited"
-   ],
-   "pumped": false,
-   "momentum": -2.2,
-   "vsLaunch": 363.2,
-   "priceAsOf": "2026-11-09",
-   "confidenceScore": 37
+   "confidenceScore": 30
   },
   {
    "token": "TON",
@@ -1026,55 +1097,8 @@
    "pumped": false,
    "momentum": 0.0,
    "vsLaunch": -46.9,
-   "priceAsOf": "2026-11-09",
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 70
-  },
-  {
-   "token": "MOVE",
-   "name": "Movement",
-   "date": "2026-11-09",
-   "usdM": 1.01,
-   "entry": "2026-11-02",
-   "grade": null,
-   "edgeCount": 0,
-   "has": [
-    "waited"
-   ],
-   "missing": [
-    "first",
-    "big",
-    "cliff",
-    "team"
-   ],
-   "unknown": [],
-   "pumped": false,
-   "momentum": -31.6,
-   "vsLaunch": -99.0,
-   "priceAsOf": "2026-11-02",
-   "confidenceScore": 62
-  },
-  {
-   "token": "ADI",
-   "name": "ADI Chain",
-   "date": "2026-11-09",
-   "usdM": 56.15,
-   "entry": "2026-11-02",
-   "grade": null,
-   "edgeCount": 0,
-   "has": [],
-   "missing": [
-    "first",
-    "big",
-    "cliff",
-    "team",
-    "waited"
-   ],
-   "unknown": [],
-   "pumped": false,
-   "momentum": null,
-   "vsLaunch": null,
-   "priceAsOf": null,
-   "confidenceScore": 62
   },
   {
    "token": "DOS",
@@ -1103,7 +1127,7 @@
    "token": "BABY",
    "name": "Babylon",
    "date": "2026-11-10",
-   "usdM": 1.47,
+   "usdM": 1.36,
    "entry": "2026-11-03",
    "grade": null,
    "edgeCount": 0,
@@ -1121,13 +1145,13 @@
    "momentum": -12.4,
    "vsLaunch": -84.1,
    "priceAsOf": "2026-11-03",
-   "confidenceScore": 75
+   "confidenceScore": 70
   },
   {
    "token": "RAIN",
    "name": "Rain",
    "date": "2026-11-10",
-   "usdM": 184.05,
+   "usdM": 169.6,
    "entry": "2026-11-03",
    "grade": null,
    "edgeCount": 0,
@@ -1145,37 +1169,13 @@
    "momentum": null,
    "vsLaunch": null,
    "priceAsOf": null,
-   "confidenceScore": 37
-  },
-  {
-   "token": "APT",
-   "name": "Aptos",
-   "date": "2026-11-11",
-   "usdM": 2.7,
-   "entry": "2026-11-04",
-   "grade": null,
-   "edgeCount": 0,
-   "has": [
-    "waited"
-   ],
-   "missing": [
-    "first",
-    "big",
-    "cliff",
-    "team"
-   ],
-   "unknown": [],
-   "pumped": false,
-   "momentum": -31.4,
-   "vsLaunch": -92.3,
-   "priceAsOf": "2026-11-04",
-   "confidenceScore": 67
+   "confidenceScore": 50
   },
   {
    "token": "PUMP",
    "name": "Pump.fun",
    "date": "2026-11-11",
-   "usdM": 25.69,
+   "usdM": 24.85,
    "entry": "2026-11-04",
    "grade": null,
    "edgeCount": 0,
@@ -1193,14 +1193,14 @@
    "momentum": -23.1,
    "vsLaunch": -95.5,
    "priceAsOf": "2026-11-04",
-   "confidenceScore": 62
+   "confidenceScore": 30
   },
   {
-   "token": "YZY",
-   "name": "YZY Money",
-   "date": "2026-11-14",
-   "usdM": 8.4,
-   "entry": "2026-11-07",
+   "token": "APT",
+   "name": "Aptos",
+   "date": "2026-11-12",
+   "usdM": 2.68,
+   "entry": "2026-11-05",
    "grade": null,
    "edgeCount": 0,
    "has": [
@@ -1214,16 +1214,16 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": null,
-   "vsLaunch": null,
-   "priceAsOf": null,
-   "confidenceScore": 33
+   "momentum": -19.2,
+   "vsLaunch": -92.0,
+   "priceAsOf": "2026-11-05",
+   "confidenceScore": 72
   },
   {
    "token": "ARB",
    "name": "Arbitrum",
    "date": "2026-11-15",
-   "usdM": 15.75,
+   "usdM": 17.0,
    "entry": "2026-11-08",
    "grade": null,
    "edgeCount": 0,
@@ -1241,13 +1241,13 @@
    "momentum": -13.5,
    "vsLaunch": -87.5,
    "priceAsOf": "2026-11-08",
-   "confidenceScore": 30
+   "confidenceScore": 67
   },
   {
    "token": "STRK",
    "name": "Starknet",
    "date": "2026-11-15",
-   "usdM": 4.99,
+   "usdM": 4.87,
    "entry": "2026-11-08",
    "grade": null,
    "edgeCount": 0,
@@ -1271,7 +1271,7 @@
    "token": "SEI",
    "name": "Sei",
    "date": "2026-11-15",
-   "usdM": 4.83,
+   "usdM": 5.0,
    "entry": "2026-11-08",
    "grade": null,
    "edgeCount": 0,
@@ -1292,34 +1292,10 @@
    "confidenceScore": 50
   },
   {
-   "token": "CONX",
-   "name": "Connex",
-   "date": "2026-11-15",
-   "usdM": 15.01,
-   "entry": "2026-11-08",
-   "grade": null,
-   "edgeCount": 0,
-   "has": [
-    "waited"
-   ],
-   "missing": [
-    "first",
-    "big",
-    "cliff",
-    "team"
-   ],
-   "unknown": [],
-   "pumped": false,
-   "momentum": null,
-   "vsLaunch": null,
-   "priceAsOf": null,
-   "confidenceScore": 62
-  },
-  {
    "token": "CRO",
    "name": "Cronos",
    "date": "2026-11-16",
-   "usdM": 56.18,
+   "usdM": 56.24,
    "entry": "2026-11-09",
    "grade": null,
    "edgeCount": 0,
@@ -1337,37 +1313,13 @@
    "momentum": null,
    "vsLaunch": null,
    "priceAsOf": null,
-   "confidenceScore": 49
-  },
-  {
-   "token": "STBL",
-   "name": "STBL",
-   "date": "2026-11-16",
-   "usdM": null,
-   "entry": "2026-11-09",
-   "grade": null,
-   "edgeCount": 0,
-   "has": [
-    "waited"
-   ],
-   "missing": [
-    "first",
-    "big",
-    "cliff",
-    "team"
-   ],
-   "unknown": [],
-   "pumped": false,
-   "momentum": -6.2,
-   "vsLaunch": -87.4,
-   "priceAsOf": "2026-11-09",
    "confidenceScore": 62
   },
   {
    "token": "ZK",
    "name": "ZKsync",
    "date": "2026-11-17",
-   "usdM": 1.64,
+   "usdM": 1.56,
    "entry": "2026-11-10",
    "grade": null,
    "edgeCount": 0,
@@ -1382,16 +1334,16 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -43.7,
-   "vsLaunch": -96.1,
-   "priceAsOf": "2026-11-09",
+   "momentum": -40.2,
+   "vsLaunch": -96.2,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 67
   },
   {
    "token": "PENGU",
    "name": "Pudgy Penguins",
    "date": "2026-11-17",
-   "usdM": 4.5,
+   "usdM": 4.55,
    "entry": "2026-11-10",
    "grade": null,
    "edgeCount": 0,
@@ -1406,9 +1358,9 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -19.3,
-   "vsLaunch": -81.7,
-   "priceAsOf": "2026-11-09",
+   "momentum": -15.5,
+   "vsLaunch": -81.1,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 62
   },
   {
@@ -1430,9 +1382,9 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -19.8,
-   "vsLaunch": -54.9,
-   "priceAsOf": "2026-11-09",
+   "momentum": -20.9,
+   "vsLaunch": -59.4,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 67
   },
   {
@@ -1454,9 +1406,9 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -32.5,
-   "vsLaunch": -86.7,
-   "priceAsOf": "2026-11-09",
+   "momentum": -29.0,
+   "vsLaunch": -86.5,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 62
   },
   {
@@ -1478,9 +1430,9 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -82.9,
-   "vsLaunch": 253.8,
-   "priceAsOf": "2026-11-09",
+   "momentum": -90.6,
+   "vsLaunch": 94.0,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 67
   },
   {
@@ -1502,16 +1454,16 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -15.4,
-   "vsLaunch": 48.5,
-   "priceAsOf": "2026-11-09",
+   "momentum": -13.9,
+   "vsLaunch": 51.0,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 62
   },
   {
    "token": "SOON",
    "name": "SOON",
    "date": "2026-11-23",
-   "usdM": 5.13,
+   "usdM": 4.93,
    "entry": "2026-11-16",
    "grade": null,
    "edgeCount": 0,
@@ -1526,9 +1478,9 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -16.0,
-   "vsLaunch": -47.1,
-   "priceAsOf": "2026-11-09",
+   "momentum": -21.1,
+   "vsLaunch": -50.2,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 67
   },
   {
@@ -1550,9 +1502,9 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -18.3,
-   "vsLaunch": -79.8,
-   "priceAsOf": "2026-11-09",
+   "momentum": -7.7,
+   "vsLaunch": -78.6,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 62
   },
   {
@@ -1583,7 +1535,7 @@
    "token": "XPL",
    "name": "Plasma",
    "date": "2026-11-25",
-   "usdM": 13.52,
+   "usdM": 11.52,
    "entry": "2026-11-18",
    "grade": null,
    "edgeCount": 0,
@@ -1598,16 +1550,16 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -31.0,
-   "vsLaunch": -86.4,
-   "priceAsOf": "2026-11-09",
-   "confidenceScore": 70
+   "momentum": -34.2,
+   "vsLaunch": -87.7,
+   "priceAsOf": "2026-11-10",
+   "confidenceScore": 67
   },
   {
    "token": "H",
    "name": "Humanity Protocol",
    "date": "2026-11-25",
-   "usdM": 11.3,
+   "usdM": 10.15,
    "entry": "2026-11-18",
    "grade": null,
    "edgeCount": 0,
@@ -1622,10 +1574,10 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -12.6,
-   "vsLaunch": 43.2,
-   "priceAsOf": "2026-11-09",
-   "confidenceScore": 30
+   "momentum": -15.6,
+   "vsLaunch": 38.6,
+   "priceAsOf": "2026-11-10",
+   "confidenceScore": 62
   },
   {
    "token": "SIGN",
@@ -1646,16 +1598,16 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -26.3,
-   "vsLaunch": -88.4,
-   "priceAsOf": "2026-11-09",
+   "momentum": -24.0,
+   "vsLaunch": -88.1,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 62
   },
   {
    "token": "FF",
    "name": "Falcon Finance",
    "date": "2026-11-29",
-   "usdM": 17.52,
+   "usdM": 17.57,
    "entry": "2026-11-22",
    "grade": null,
    "edgeCount": 0,
@@ -1670,10 +1622,10 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -20.0,
-   "vsLaunch": -81.1,
-   "priceAsOf": "2026-11-09",
-   "confidenceScore": 67
+   "momentum": -16.6,
+   "vsLaunch": -80.9,
+   "priceAsOf": "2026-11-10",
+   "confidenceScore": 62
   },
   {
    "token": "KMNO",
@@ -1694,16 +1646,16 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -14.7,
-   "vsLaunch": -80.8,
-   "priceAsOf": "2026-11-09",
+   "momentum": -16.3,
+   "vsLaunch": -80.4,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 75
   },
   {
    "token": "EIGEN",
    "name": "EigenCloud",
    "date": "2026-12-01",
-   "usdM": 6.33,
+   "usdM": 6.02,
    "entry": "2026-11-24",
    "grade": null,
    "edgeCount": 0,
@@ -1718,33 +1670,57 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -37.8,
-   "vsLaunch": -96.1,
-   "priceAsOf": "2026-11-09",
+   "momentum": -35.9,
+   "vsLaunch": -96.0,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 72
   },
   {
    "token": "SUI",
    "name": "Sui",
    "date": "2026-12-01",
-   "usdM": 10.69,
+   "usdM": null,
    "entry": "2026-11-24",
    "grade": null,
    "edgeCount": 0,
    "has": [
-    "team",
     "waited"
    ],
    "missing": [
     "first",
     "big",
-    "cliff"
+    "cliff",
+    "team"
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -16.1,
-   "vsLaunch": -39.0,
-   "priceAsOf": "2026-11-09",
+   "momentum": -13.4,
+   "vsLaunch": -39.8,
+   "priceAsOf": "2026-11-10",
+   "confidenceScore": 37
+  },
+  {
+   "token": "M",
+   "name": "MemeCore",
+   "date": "2026-12-02",
+   "usdM": 42.93,
+   "entry": "2026-11-25",
+   "grade": null,
+   "edgeCount": 0,
+   "has": [
+    "waited"
+   ],
+   "missing": [
+    "first",
+    "big",
+    "cliff",
+    "team"
+   ],
+   "unknown": [],
+   "pumped": false,
+   "momentum": 4.2,
+   "vsLaunch": 369.6,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 37
   },
   {
@@ -1765,16 +1741,16 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -40.9,
-   "vsLaunch": 5696.9,
-   "priceAsOf": "2026-11-09",
+   "momentum": -59.0,
+   "vsLaunch": 4978.4,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 62
   },
   {
    "token": "ENA",
    "name": "Ethena",
    "date": "2026-12-02",
-   "usdM": 6.23,
+   "usdM": 6.2,
    "entry": "2026-11-25",
    "grade": null,
    "edgeCount": 0,
@@ -1789,10 +1765,10 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -25.2,
-   "vsLaunch": -76.0,
-   "priceAsOf": "2026-11-09",
-   "confidenceScore": 49
+   "momentum": -18.6,
+   "vsLaunch": -75.2,
+   "priceAsOf": "2026-11-10",
+   "confidenceScore": 37
   },
   {
    "token": "ENA",
@@ -1813,9 +1789,9 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -25.2,
-   "vsLaunch": -76.0,
-   "priceAsOf": "2026-11-09",
+   "momentum": -18.6,
+   "vsLaunch": -75.2,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 62
   },
   {
@@ -1837,9 +1813,9 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -7.2,
-   "vsLaunch": 123.2,
-   "priceAsOf": "2026-11-09",
+   "momentum": -3.7,
+   "vsLaunch": 125.1,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 50
   },
   {
@@ -1861,9 +1837,9 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -13.2,
-   "vsLaunch": -87.7,
-   "priceAsOf": "2026-11-09",
+   "momentum": -3.6,
+   "vsLaunch": -87.1,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 70
   },
   {
@@ -1885,10 +1861,10 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -19.8,
-   "vsLaunch": -54.9,
-   "priceAsOf": "2026-11-09",
-   "confidenceScore": 62
+   "momentum": -20.9,
+   "vsLaunch": -59.4,
+   "priceAsOf": "2026-11-10",
+   "confidenceScore": 57
   },
   {
    "token": "MON",
@@ -1909,9 +1885,9 @@
    ],
    "unknown": [],
    "pumped": false,
-   "momentum": -31.3,
-   "vsLaunch": -87.9,
-   "priceAsOf": "2026-11-09",
+   "momentum": -23.7,
+   "vsLaunch": -87.2,
+   "priceAsOf": "2026-11-10",
    "confidenceScore": 54
   }
  ],
@@ -2204,6 +2180,31 @@
   },
   {
    "date": "2026-11-09",
+   "trades": 276,
+   "confirmed": [
+    "first",
+    "big",
+    "cliff"
+   ],
+   "boosters": [
+    "team",
+    "waited"
+   ],
+   "meanR": {
+    "AAA": 0.39,
+    "AA": 0.57,
+    "A": -0.23,
+    "none": -0.08
+   },
+   "wfMeanR": {
+    "AAA": -0.47,
+    "AA": -0.55,
+    "A": -0.25,
+    "none": -0.11
+   }
+  },
+  {
+   "date": "2026-11-10",
    "trades": 276,
    "confirmed": [
     "first",
