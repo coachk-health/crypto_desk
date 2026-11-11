@@ -1,80 +1,80 @@
 {
   "date": "2026-11-11",
-  "updated": "2026-11-11T12:02:30Z",
-  "headline": "Bitcoin is steady near $74,000 while stocks bounce, as traders put the odds of a December Fed rate hike at about 90%; MSCI says at about 5pm ET Wednesday (05:00 Thursday Bangkok) whether it will drop Strategy from its indexes.",
+  "updated": "2026-11-11T16:10:00Z",
+  "headline": "Bitcoin is stuck near $73,500 after hot US inflation, with traders betting on a December Fed rate hike and options traders buying protection against a drop; MSCI says at about 5pm ET today (05:00 Thursday Bangkok) whether it will drop Strategy from its indexes.",
   "market": {
-    "asOf": "Read from CoinMarketCap (BTC, SOL), CoinGecko (ETH) and alternative.me at about 11:58 UTC Wed 11 Nov (18:58 Bangkok; 6:58am ET). Use the live prices on this page.",
+    "asOf": "Read from CoinGecko and alternative.me at about 16:05 UTC Wed 11 Nov (23:05 Bangkok; 11:05am ET). 24h changes left blank because the pages showed conflicting figures. Use the live prices on this page.",
     "btc": {
-      "price": 73961,
-      "chg24h": -0.49
+      "price": 73917,
+      "chg24h": null
     },
     "eth": {
-      "price": 2067,
-      "chg24h": -2.6
+      "price": 2056,
+      "chg24h": null
     },
     "sol": {
-      "price": 83.98,
-      "chg24h": -0.77
+      "price": 84.76,
+      "chg24h": null
     },
-    "fearGreed": "32, Fear (alternative.me Crypto Fear & Greed Index); 29 the day before. CoinDesk cites a Fear and Greed Index reading of 26."
+    "fearGreed": "32, Fear (alternative.me Crypto Fear & Greed Index); 29 the day before."
   },
   "stories": [
     {
-      "title": "Bitcoin sits out a stock rebound as traders bet on a December rate hike",
+      "title": "Bitcoin stuck near $73,500 as traders bet on a December rate hike",
       "mood": "bearish",
-      "summary": "After hotter-than-expected US inflation on Tuesday, bitcoin dipped to about $72,700 and then steadied near $74,000, even as US stock futures rose. Traders now see a Fed rate hike on 9 December as very likely. Higher rates make borrowing dearer and safe bonds pay more, which tends to weigh on risky assets like crypto.",
+      "summary": "Bitcoin has barely moved since Tuesday's hotter-than-expected US inflation report and is sitting near its 200-day average, while US stock futures bounced. Traders now see a Fed rate hike in December as very likely, and options traders are paying more for protection against a fall. Higher rates make borrowing dearer and safe bonds pay more, which tends to weigh on risky assets like crypto.",
       "points": [
-        "October consumer prices rose 0.4% against a 0.3% forecast; core prices (without food and energy) rose 0.3% against 0.2%, per CoinDesk and KuCoin.",
-        "CME FedWatch odds of a December hike rose to 90%, per CoinDesk.",
-        "Bitcoin briefly fell to $72,727 on Tuesday, per Ted Pillows' market report, and was little changed around $74,000 early Wednesday, per CoinDesk.",
-        "About $725M of crypto bets were forcibly closed in 24 hours; bitcoin's share was $200.5M, 85% of them bets on rising prices, per CoinDesk.",
-        "Nasdaq-100 futures rose 1.7% after CoreWeave's results beat forecasts, per CoinDesk."
+        "October consumer prices rose 0.4% against a 0.3% forecast; core prices (without food and energy) rose 0.3% against 0.2%, per Decrypt.",
+        "CME FedWatch odds of a December quarter-point hike are about 90%, per CoinDesk.",
+        "Bitcoin was around $73,500 on Wednesday, per The Block; CryptoQuant puts its 200-day average near $73,200, per CoinDesk.",
+        "On the options platform Derive, the odds of bitcoin below $70,000 at Christmas rose to 31% from 15% a week ago; above $80,000 fell to 26% from 53%, per The Block.",
+        "About $725M of crypto bets were forcibly closed in 24 hours, per CoinGlass data cited by CoinDesk."
       ],
       "sources": [
         {
-          "label": "CoinDesk: bitcoin sits out stock rebound",
-          "url": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
+          "label": "CoinDesk: bitcoin barely flinches at hot CPI",
+          "url": "https://www.coindesk.com/daybook-us/2026/11/11/bitcoin-barely-flinches-at-hot-cpi-as-etf-selling-slows"
         },
         {
-          "label": "KuCoin: daily market report, 11 Nov",
-          "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-11-2026"
+          "label": "The Block: options traders raise odds of sub-$70,000",
+          "url": "https://www.theblock.co/news/markets/2026-11-11-bitcoin-ripe-for-squeeze-options-traders-raise-odds-sub-70000-christmas-437897"
         },
         {
-          "label": "Ted Pillows: market report",
-          "url": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-fd3"
+          "label": "Decrypt: hot US inflation",
+          "url": "https://decrypt.co/382950/bitcoin-falls-hot-us-inflation-fears-bigger-fed-rate-hike"
         }
       ]
     },
     {
       "title": "Bitcoin funds lose money for a fourth day in a row",
       "mood": "bearish",
-      "summary": "US spot bitcoin funds had net outflows again on Tuesday, though about half Monday's size. These funds are how most US retail and adviser money reaches bitcoin, so steady outflows mean less buying support.",
+      "summary": "US spot bitcoin funds had net outflows again on Tuesday, though less than half Monday's size, and they are now negative for 2026. These funds are how most US retail and adviser money reaches bitcoin, so steady outflows mean less buying support.",
       "points": [
         "Tuesday 10 Nov: US spot bitcoin ETFs lost $95M net, the fourth day of outflows in a row, per SoSoValue data cited by Bitcoin.com.",
-        "BlackRock's IBIT accounted for $78M, its eighth straight day of redemptions, per CoinDesk.",
-        "Monday 9 Nov: $201.1M left, with IBIT down $213.2M, per Bitcoin.com.",
+        "Monday 9 Nov: $201.1M left, with BlackRock's IBIT down $213.2M, per Bitcoin.com.",
+        "November outflows total about $1.58B so far, and total assets are $92.82B, per Bitcoin.com.",
         "US spot ether ETFs also had a fourth day of outflows, about $1.3M on 10 Nov, per Bitcoin.com."
       ],
       "sources": [
         {
           "label": "Bitcoin.com: fourth straight day of outflows",
-          "url": "https://news.bitcoin.com/bitcoin-etf/bitcoin-etfs-outflows-fourth-straight-day-2026"
+          "url": "https://news.bitcoin.com/bitcoin-etf/bitcoin-etfs-outflows-fourth-straight-day-2026/"
         },
         {
-          "label": "CoinDesk: bitcoin sits out stock rebound",
-          "url": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
+          "label": "CoinDesk: ETF selling slows",
+          "url": "https://www.coindesk.com/daybook-us/2026/11/11/bitcoin-barely-flinches-at-hot-cpi-as-etf-selling-slows"
         }
       ]
     },
     {
       "title": "MSCI decides tonight whether to drop Strategy from its indexes",
       "mood": "volatile",
-      "summary": "At about 5pm ET on Wednesday (05:00 Thursday Bangkok), MSCI announces its November index changes under new rules for 'non-operating companies'. Strategy, the biggest corporate bitcoin buyer, is a candidate for removal. Funds that copy the index would then need to sell the stock; it would stay listed on Nasdaq.",
+      "summary": "At about 5pm ET on Wednesday (05:00 Thursday Bangkok), MSCI announces its November index changes under new rules for 'non-operating companies'. Strategy, which holds 850,364 BTC per Bitcoin.com, is a candidate for removal. Funds that copy the index would then need to sell the stock; it would stay listed on Nasdaq.",
       "points": [
         "Results come shortly after 11:00pm CET Wed 11 Nov; changes take effect at the close on 30 Nov, per MSCI.",
-        "Strategy bought 1,036 BTC last week and now holds 850,364 BTC, per Bitcoin.com.",
-        "Strategy shares closed at $121.07 on 10 Nov, down from $145.16 on 28 Oct, per Bitcoin.com.",
-        "JPMorgan estimated about $2.8B of selling by index funds, an estimate made for an earlier version of the rules, per Bitcoin.com."
+        "JPMorgan estimated about $2.8B of selling by index funds, an estimate made for an earlier version of the rules, per Bitcoin.com.",
+        "Funds tracking MSCI held about 13M Strategy shares, 3.1% of the company, per Bitcoin.com.",
+        "Strategy shares closed at $121.07 on 10 Nov, down from $145.16 on 28 Oct, per Bitcoin.com."
       ],
       "sources": [
         {
@@ -90,29 +90,34 @@
   ],
   "briefs": [
     {
-      "title": "Initia hacked for $3.27M",
-      "summary": "An attacker got into Initia's infrastructure and approved forged withdrawals from five rollups; Initia halted its network and says no INIT was taken, per CryptoTicker.",
-      "url": "https://cryptoticker.io/en/initia-cloud-key-exploit/"
+      "title": "Across hit by a domain hijack",
+      "summary": "Attackers took over the cross-chain protocol's web address and sent users to a phishing page; GoPlus estimates about $350K was drained and Across says victims will be made whole, per The Block.",
+      "url": "https://www.theblock.co/news/defi/2026-11-11-crosschain-protocol-across-restores-systems-after-domain-hijack-437843"
     },
     {
-      "title": "Zcash keeps sliding",
-      "summary": "ZEC fell 11.8% in 24 hours to about $1,014, leading the day's declines, per Analytics Insight.",
-      "url": "https://www.analyticsinsight.net/price-analysis/crypto-prices-today-bitcoin-slips-near-usd-73800-as-zcash-and-solana-lead-declines"
+      "title": "OKX and ICE set a 23 Nov launch for tokenized stocks",
+      "summary": "Their venture plans to open a tokenized-securities venue on 23 Nov under the SEC's innovation exemption, with 70 assets confirmed so far plus 59 ETFs, per The Block.",
+      "url": "https://www.theblock.co/news/regulation/2026-11-11-okxice-sets-nov-23-launch-for-tokenized-securities-venue-under-sec-innovation-exemption-437342"
     },
     {
-      "title": "Tougher US crypto rules may be coming",
-      "summary": "House Democrats are reported to be preparing a market structure bill with a bigger role for the SEC; no draft has been published yet, per Forbes.",
-      "url": "https://www.forbes.com/sites/murtuza-merchant/2026/11/11/tougher-crypto-rules-are-coming-and-wall-street-may-welcome-them/"
+      "title": "Bitcoin Core discloses three fixed bugs",
+      "summary": "One is a high-severity mining bug; all were fixed in versions 30.0 and 29.2, per The Block.",
+      "url": "https://www.theblock.co/news/ecosystems/2026-11-11-bitcoin-core-discloses-three-patched-security-flaws-including-high-severity-mining-bug-437862"
     },
     {
-      "title": "Options on crypto funds get easier to list",
-      "summary": "The SEC cleared Nasdaq ISE to list options on exchange-traded products that hold digital commodities, per Genfinity.",
-      "url": "https://genfinity.io/2026/11/10/sec-clears-nasdaq-ise-options-digital-commodity-etps/"
+      "title": "Deutsche Bank starts crypto custody",
+      "summary": "The bank now holds BTC, ETH, USDC and other tokens for European institutional clients, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-11-deutsche-bank-goes-live-with-digital-asset-custody-service-signs-asset-management-deal-437851"
     },
     {
-      "title": "Kraken adds 200+ tokenized European and UK stocks",
-      "summary": "Kraken's parent Payward expanded its xStocks offering, which is not available to US persons, per The Block.",
-      "url": "https://theblock.co/news/business/2026-11-11-kraken-parent-payward-adds-200-tokenized-uk-and-european-equities-to-xstocks-offering-437837"
+      "title": "Prediction market loses in New York court",
+      "summary": "A federal judge ruled Novig's sports event contracts are not swaps, so New York gambling law can apply, per The Block.",
+      "url": "https://www.theblock.co/news/regulation/2026-11-11-new-york-judge-denies-novig-injunction-bid-437828"
+    },
+    {
+      "title": "Tether supply shrinks",
+      "summary": "USDT's market value fell $6.6B in 60 days, the biggest 60-day drop since 2022, per CryptoQuant data cited by CoinDesk.",
+      "url": "https://www.coindesk.com/daybook-us/2026/11/11/bitcoin-barely-flinches-at-hot-cpi-as-etf-selling-slows"
     },
     {
       "title": "Coinbase wins final approval for a national trust bank",
@@ -122,14 +127,6 @@
   ],
   "calendar": [
     {
-      "et": "Wed 11 – Tue 17 Nov",
-      "bkk": "Wed 11 – Tue 17 Nov",
-      "event": "Token unlocks: APT, KUB, PEAQ, PUMP, CENT, AZTEC, PIEVERSE, ARB, SEI, STRK, CRO, ZK, PENGU",
-      "impact": "bearish",
-      "key": false,
-      "note": "See the unlock table on this page for sizes, dates and confidence."
-    },
-    {
       "et": "Wed 11 Nov · ~5:00pm",
       "bkk": "Thu 12 · ~05:00",
       "event": "MSCI November index review results",
@@ -138,12 +135,20 @@
       "note": "Published shortly after 11:00pm CET, per MSCI; changes effective at the close on 30 Nov. Veterans Day: SIFMA recommends a full close of US bond markets."
     },
     {
+      "et": "Wed 11 – Tue 17 Nov",
+      "bkk": "Wed 11 – Tue 17 Nov",
+      "event": "Token unlocks: APT, KUB, PEAQ, PUMP, CENT, AZTEC, PIEVERSE, ARB, SEI, STRK, CRO, ZK, PENGU",
+      "impact": "bearish",
+      "key": false,
+      "note": "See the unlock table on this page for sizes, dates and confidence."
+    },
+    {
       "et": "Thu 12 Nov · 8:30am",
       "bkk": "Thu 12 · 20:30",
       "event": "US weekly jobless claims",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 195K, prior 189K, per TD Economics. Fed Governor Barr speaks at 10:00am, per the Federal Reserve."
+      "note": "Consensus 195K, prior 189K, per TD Economics. Fed's Goolsbee takes questions at 11:30am and Daly speaks at 1:10pm, per TD Economics."
     },
     {
       "et": "Thu 12 Nov · after close",
@@ -167,7 +172,7 @@
       "event": "US producer prices (PPI, Oct)",
       "impact": "volatile",
       "key": true,
-      "note": "Consensus +0.4% on the month (prior +1.3%), core +0.3% (prior +0.7%), per TD Economics. Fed's Bowman takes part in a discussion at 10:50am, per the Federal Reserve."
+      "note": "Consensus +0.4% on the month (prior +1.3%), core +0.3% (prior +0.7%), per TD Economics."
     },
     {
       "et": "Sun 15 Nov",
@@ -207,7 +212,7 @@
       "event": "Fed minutes from the October meeting",
       "impact": "volatile",
       "key": false,
-      "note": "Minutes of the 27–28 Oct meeting, per the Federal Reserve."
+      "note": "Minutes of the 27–28 Oct meeting, per FedRateCalc's calendar."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -220,9 +225,9 @@
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-11T12:07:37Z",
-    "claimsChecked": 79,
-    "claimsRemoved": 10,
+    "checkedAt": "2026-11-11T16:14:19Z",
+    "claimsChecked": 55,
+    "claimsRemoved": 4,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
