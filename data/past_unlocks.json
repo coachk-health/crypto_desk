@@ -2121,6 +2121,60 @@
       }
      ],
      "gaps": null
+    },
+    {
+     "date": "2026-11-10",
+     "timeUTC": "00:00",
+     "amountTokens": 136110000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.3776,
+      "investors": 0.6224,
+      "community": 0,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "Babylon Genesis tokenomics docs (read 10 Nov 2026): Early Private Investors 3.05B, Team 1.5B, Advisors 350M; 36 monthly 1/36 unlocks from 10 May 2026 to Apr 2029",
+       "url": "https://docs.babylonlabs.io/guides/overview/babylon_genesis/baby_tokenomics/",
+       "kind": "primary",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "KuCoin news (8 Nov 2026): BABY 10 Nov 03:00 UTC+3, $2.43M",
+       "url": "https://www.kucoin.com/news/flash/15-altcoins-to-face-major-token-unlocks-worth-144m-this-week",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "time"
+       ]
+      },
+      {
+       "label": "tokenradar: next release window 10-30 Nov 2026, includes investors, team, advisors plus ecosystem/R&D/staking pools",
+       "url": "https://tokenradar.ai/tokens/babylon/tokenomics",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "CoinMarketCap BABY: market data",
+       "url": "https://coinmarketcap.com/currencies/babylon/",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 2.88,
+      "confidence": 70,
+      "scoredAt": "2026-11-11T08:14:10Z"
+     }
     }
    ],
    "gaps": "Babylon docs, CoinGecko, Tokenomist and tokenomics.com pages were blocked for me this pass; the schedule rests on the desk's earlier verified reading of the docs plus PANews for 10 Oct. Only the 10 Oct 2026 tranche is confirmed by a source I opened. tokenomics.com (per desk record) lists larger monthly rows (e.g. 248.6M for 10 Nov 2026) that add community/foundation linear buckets - those buckets' release pattern is not confirmed, so they are not counted. Staking inflation (continuous) exists but its rate was not confirmed - not listed. listed is null: the TGE/listing month was not confirmed by any source opened (the 36-monthly schedule starting May 2026 after a 1-year lock suggests Apr 2025, unconfirmed).",
@@ -10274,10 +10328,73 @@
   {
    "token": "RAIN",
    "name": "Rain",
-   "coingeckoId": null,
+   "coingeckoId": "rain",
    "maxSupply": null,
    "listed": null,
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-10",
+     "timeUTC": null,
+     "amountTokens": 37234218954,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.2902,
+      "investors": 0.3475,
+      "community": 0.3451,
+      "ecosystem": 0,
+      "other": 0.0172
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com Rain unlocks (read 10 Nov 2026): 10 Nov 2026, 37,234,218,954 RAIN; Private Investors 34.8% / Community 34.5% / Insiders 29.0% / Public Investors 1.7%; past unlocks on the 10th Apr-Oct 2026",
+       "url": "https://app.tokenomics.com/tokenomics/rain/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Blockworks Token Transparency filing (19 Aug 2026): allocations, 6-24 month lockups, buyback-and-burn, $23M Credit Refund buy-and-burn",
+       "url": "https://blockworks.com/token-transparency/filing/rain",
+       "kind": "aggregator",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "DEV Community supply analysis (June 2026): cliffs fall on the 10th, vesting began 10 Mar 2026",
+       "url": "https://dev.to/mrnasdog/rain-inflation-analysis-june-2026-supply-growing-projected-to-keep-growing-48ad",
+       "kind": "news",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "AMBCrypto (11 Feb 2026): unlock on 10 Feb 2026",
+       "url": "https://ambcrypto.com/can-rain-crypto-continue-its-18-rally-after-338m-token-unlock/",
+       "kind": "news",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "CoinDesk RAIN price (9 Nov 2026 23:01 EST)",
+       "url": "https://www.coindesk.com/fil/price/rain",
+       "kind": "news",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 5.78,
+      "confidence": 50,
+      "scoredAt": "2026-11-11T08:14:10Z"
+     }
+    }
+   ],
    "gaps": "Continuous release, so no single-day event. Listed only so it can be excluded."
   },
   {
@@ -17003,6 +17120,140 @@
       "points": 4.03,
       "confidence": 62,
       "scoredAt": "2026-11-10T08:12:18Z"
+     }
+    }
+   ],
+   "harvested": true
+  },
+  {
+   "token": "JCT",
+   "name": "Janction",
+   "coingeckoId": "janction",
+   "events": [
+    {
+     "date": "2026-11-10",
+     "timeUTC": "00:00",
+     "amountTokens": 1176602500,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0.062,
+      "investors": 0.224,
+      "community": 0.408,
+      "ecosystem": 0.306,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com Janction unlocks (read 10 Nov 2026): 10 Nov 2026, 1,176,602,500 JCT, Community 40.8% / Foundation 30.6% / Private Investors 22.4% / Insiders 6.2%; TGE 10 Nov 2025",
+       "url": "https://app.tokenomics.com/tokenomics/janction/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "KuCoin news (8 Nov 2026) weekly list Nov 9-15: JCT 10 Nov 03:00 UTC+3, $5.43M",
+       "url": "https://www.kucoin.com/news/flash/15-altcoins-to-face-major-token-unlocks-worth-144m-this-week",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "time"
+       ]
+      },
+      {
+       "label": "CMC AI latest updates: ~1.18B JCT on 10 Nov 2026 from ecosystem, foundation, investor and advisor allocations; Binance trading starts same day",
+       "url": "https://coinmarketcap.com/cmc-ai/janction/latest-updates/",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Phemex blog: 1-year cliff for ecosystem, foundation, investors, advisors ends early Nov 2026; team cliff 18 months (May 2027); wallet data",
+       "url": "https://phemex.com/blogs/janction-jct-price-prediction-2026-2030-unlock-schedule",
+       "kind": "news",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 4.6,
+      "confidence": 67,
+      "scoredAt": "2026-11-11T08:14:10Z"
+     }
+    }
+   ],
+   "harvested": true
+  },
+  {
+   "token": "DOS",
+   "name": "DappOS",
+   "coingeckoId": "dappos",
+   "events": [
+    {
+     "date": "2026-11-10",
+     "timeUTC": "00:00",
+     "amountTokens": 14583333,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": null,
+     "sources": [
+      {
+       "label": "tokenomics.com DappOS unlocks (read 10 Nov 2026): 10 Nov 2026, 14,583,333 DOS, Community 88.6% / Foundation 11.4%; past unlocks 10 Sep and 10 Oct; TGE 10 Aug 2026",
+       "url": "https://app.tokenomics.com/tokenomics/dappos/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "KuCoin news (8 Nov 2026): DOS 10 Nov 03:00 UTC+3, $2.86M",
+       "url": "https://www.kucoin.com/news/flash/15-altcoins-to-face-major-token-unlocks-worth-144m-this-week",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "time",
+        "amount"
+       ]
+      },
+      {
+       "label": "Bitrue blog: per-pool vesting; team and investors 12-month cliff to 10 Aug 2027; Sep tranche 14,583,333 DOS",
+       "url": "https://www.bitrue.com/blog/dos-token-unlock-schedule-2026",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Phemex blog: on-chain vesting contract holds 820M DOS, releases 19.58M in Nov 2026 on the 11th (10th US time), no tokens withdrawn by late Oct",
+       "url": "https://phemex.com/blogs/dappos-dos-price-prediction-unlock-schedule",
+       "kind": "news",
+       "confirms": []
+      },
+      {
+       "label": "CoinMarketCap DOS page: market data; team/investor 12-month cliff",
+       "url": "https://coinmarketcap.com/currencies/dappos/",
+       "kind": "aggregator",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 3.5,
+      "confidence": 67,
+      "scoredAt": "2026-11-11T08:14:10Z"
      }
     }
    ],
