@@ -1,116 +1,120 @@
 {
   "date": "2026-11-12",
-  "updated": "2026-11-12T04:22:05Z",
-  "headline": "Bitcoin is holding near $73,700 as futures markets price in a Fed rate hike in December, while MSCI's decision to drop Strategy from its indexes weighs on the biggest corporate bitcoin buyer.",
+  "updated": "2026-11-12T08:13:19Z",
+  "headline": "Bitcoin is flat near $73,600 as money keeps leaving US bitcoin funds for a fifth day and turmoil at Nvidia rattles tech stocks.",
   "market": {
-    "asOf": "Read from the CoinGecko markets table and CoinMarketCap at about 03:58-04:00 UTC Thu 12 Nov (10:58 Bangkok; 10:58pm ET Wed). BTC: CoinGecko $73,702.89, CoinMarketCap $73,681.68. Prices were within about half a percent of a day earlier, but the direction of the 24h change could not be confirmed, so it is left blank. Use the live prices on this page.",
+    "asOf": "Read about 07:56-07:59 UTC Thu 12 Nov (14:56 Bangkok; 2:56am ET). BTC: CoinLore $73,627 (-0.46% in 24h), CoinGecko $73,549.82. ETH: CoinGecko $2,041.97; its 24h change was shown inconsistently, so it is left blank. SOL: CoinLore $82.95 (-0.08%). Use the live prices on this page.",
     "btc": {
-      "price": 73702.89,
-      "chg24h": null
+      "price": 73627,
+      "chg24h": -0.46
     },
     "eth": {
-      "price": 2051.97,
+      "price": 2041.97,
       "chg24h": null
     },
     "sol": {
-      "price": 83.18,
-      "chg24h": null
+      "price": 82.95,
+      "chg24h": -0.08
     },
-    "fearGreed": "29, Fear (alternative.me Crypto Fear & Greed Index); 32 the day before and 69 (Greed) a month ago."
+    "fearGreed": "29, Fear (alternative.me Crypto Fear & Greed Index); 32 yesterday and 34 a week ago."
   },
   "stories": [
     {
-      "title": "Bitcoin stuck near $74,000 as a December rate hike looks almost certain",
+      "title": "Money leaves US bitcoin funds for a fifth straight day",
       "mood": "bearish",
-      "summary": "Bitcoin and ether slipped in Asian trading on Thursday after Tuesday's hotter-than-expected US inflation report. Futures markets now price a Fed rate hike at the 9 December meeting as all but certain, and the US dollar is at its strongest in about 19 months. Higher rates make savings and bonds pay more, which tends to pull money away from risky assets like crypto.",
+      "summary": "US spot bitcoin funds had about $300M of net outflows on Wednesday 11 November, the fifth day in a row and bigger than Tuesday's. These funds are the main way US investors buy bitcoin through a brokerage account, so steady selling removes a key source of demand.",
       "points": [
-        "In Asian trading bitcoin slipped 0.9% to $73,617.58 and ether fell 0.9% to $2,049.44, per Business Standard.",
-        "CME FedWatch shows an 87.3% chance of a quarter-point December hike and 12.7% for a half-point hike, per Business Standard.",
-        "The dollar index held at 102.87, its highest since 9 April last year, per Business Standard.",
-        "October consumer prices rose 0.4% on the month against 0.3% expected, per Toobit.",
-        "Bitcoin dipped to about $72,700 intraday and about $723M of crypto bets were forcibly closed, per Why It Moved."
+        "Net outflow on 11 Nov was $299.90M, per SoSoValue data reported by TokenPost; Trader T's tally was $299.87M, per KuCoin.",
+        "BlackRock's IBIT lost $269.73M and Grayscale's GBTC $39.13M, while Morgan Stanley's MSBT took in $8.96M, per TokenPost.",
+        "The funds now hold $93.70B in total, per TokenPost."
       ],
       "sources": [
         {
-          "label": "Business Standard: Asian stocks fragile, 12 Nov",
-          "url": "https://www.business-standard.com/amp/markets/news/asian-stocks-fragile-nvidia-plummets-as-board-to-decide-ceo-s-fate-126111200065_1.html"
+          "label": "TokenPost: bitcoin ETF outflows, 11 Nov",
+          "url": "https://www.tokenpost.com/news/investing/55014"
         },
         {
-          "label": "KuCoin: crypto daily market report, 12 Nov",
-          "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-12-2026"
-        },
-        {
-          "label": "Why It Moved: daily market report",
-          "url": "https://whyitmoved.substack.com/p/daily-market-report-thursday-november-5b8"
-        },
-        {
-          "label": "Toobit: crypto market recap, 11 Nov",
-          "url": "https://www.toobit.com/en-US/news/crypto-market-daily-recap-11-nov-2026"
+          "label": "KuCoin: $299.87M outflow on 11 Nov",
+          "url": "https://www.kucoin.com/news/flash/us-bitcoin-spot-etfs-recorded-299-87m-net-outflow-on-november-11"
         }
       ]
     },
     {
-      "title": "MSCI will drop Strategy from its indexes on 30 November; Strategy pushes back",
-      "mood": "bearish",
-      "summary": "MSCI confirmed it will remove Strategy (MSTR), the biggest bitcoin-holding company, from its global indexes, including MSCI USA, after the close on 30 November. It is the first review under MSCI's new rule for 'non-operating companies'. Funds that copy MSCI indexes will have to sell their Strategy shares. Strategy has said MSCI's proposal was 'misguided, flawed' but not material to its business, per Yahoo Finance.",
+      "title": "Nvidia shares fall after hours on reports its board may remove Jensen Huang",
+      "mood": "volatile",
+      "summary": "Nvidia's stock fell more than 8% in after-hours trading on Wednesday after reports that its board is preparing to remove CEO Jensen Huang. Nvidia has not announced a decision. Nvidia is the bellwether for AI and tech stocks, and bitcoin has recently moved with tech, so a messy leadership fight a week before Nvidia's 17 November results could spill into crypto.",
       "points": [
-        "SharpLink is on MSCI's watch list, per investingLive.",
-        "Index trackers hold about 13M Strategy shares, roughly 3.1% of its basic shares, by Strategy's own figure, per investingLive.",
-        "Strategy closed Wednesday at $122.35 and slipped 0.85% after hours to $121.31, per Yahoo Finance.",
-        "JPMorgan's earlier estimate was about $2.8B of index-fund selling, up to $8.8B if other index providers follow; it was based on MSCI's earlier proposal, per Yahoo Finance.",
-        "The removal does not force Strategy to sell any of its 850,364 BTC, per KuCoin and Yahoo Finance."
+        "After hours the stock fell 8.61% to $158.78, after closing the regular session 2.92% higher at $173.73, per Forbes.",
+        "Nvidia's market value has fallen more than $450B since an investigation was announced on 8 November, per CBS News.",
+        "The board has 11 directors, and a majority can remove the CEO with or without cause, per The Korea Times.",
+        "On 8 November the board said it 'has confidence in Jensen', per Nvidia."
       ],
       "sources": [
         {
-          "label": "investingLive: Strategy to be removed from MSCI indexes",
-          "url": "https://investinglive.com/stocks/strategy-mstr-is-to-be-removed-from-msci-global-investable-market-indexes-following-msci-s-implementation-of-a-new-non-operating-company-rule/"
+          "label": "Forbes: Nvidia shares plunge",
+          "url": "https://www.forbes.com/sites/siladityaray/2026/11/12/nvidia-shares-plunge-as-board-reportedly-prepares-to-oust-ceo-jensen-huang/"
         },
         {
-          "label": "Yahoo Finance: MSCI drops Strategy from US index",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/msci-drops-strategy-us-index-220741050.html"
+          "label": "CBS News: Nvidia stock dives",
+          "url": "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/"
         },
         {
-          "label": "KuCoin: crypto daily market report, 12 Nov",
-          "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-12-2026"
+          "label": "The Korea Times: Nvidia board meets",
+          "url": "https://www.koreatimes.co.kr/world/20261112/nvidia-board-meets-to-decide-ceo-huangs-future-as-leadership-crisis-deepens"
+        },
+        {
+          "label": "Nvidia: statement from the board",
+          "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors"
         }
       ]
     },
     {
-      "title": "Money keeps leaving bitcoin funds, but the outflows are shrinking",
+      "title": "Bitcoin stuck near $73,700 as a December rate hike stays priced in",
       "mood": "bearish",
-      "summary": "US spot bitcoin funds had a fourth straight day of net outflows on Tuesday, though each day's outflow was smaller than the one before. These funds are the main way US investors buy bitcoin through a brokerage account, so steady selling removes a key source of demand. Wednesday's figure was not yet published when this was written.",
+      "summary": "Bitcoin has gone sideways for a day, but it is still down about 8% on the week. Futures markets keep pricing a Fed rate hike at the 9 December meeting as very likely after Tuesday's hot inflation report. Higher rates make savings and bonds pay more, which tends to pull money away from risky assets like crypto.",
       "points": [
-        "Daily net outflows: $430.2M on 5 Nov, $411.9M on 6 Nov, $201.1M on 9 Nov and $95.0M on 10 Nov, per TFTC's ETF tracker.",
-        "On 10 Nov BlackRock's IBIT lost $78.2M and Fidelity's FBTC $36.8M, while Morgan Stanley's MSBT took in $20.0M, per TFTC.",
-        "The four days together lost about $1.14B, per The Coin Republic.",
-        "Since launch the funds have taken in about $55.4B net, per Toobit."
+        "Bitcoin was about $73,710 and roughly flat over 24 hours, in a range of $73,366 to $74,695, and down about 8.27% on the week, at 04:59 UTC per crypto.news.",
+        "CME FedWatch showed 88.8% odds of a quarter-point December hike and 11.2% for a half-point hike on 10 Nov, per Investing.com via Yahoo Finance.",
+        "Funding rates are still positive, meaning traders keep adding bets on higher prices even as the price falls, per crypto.news.",
+        "Open interest in Binance's BTC-USDT contract fell from $9.4B to $7.2B since mid-October, per crypto.news."
       ],
       "sources": [
         {
-          "label": "TFTC: bitcoin ETF flows",
-          "url": "https://www.tftc.io/bitcoin-etf-flows"
+          "label": "crypto.news: bitcoin stuck at $73,700",
+          "url": "https://crypto.news/bitcoin-price-stuck-73700-leverage-etf-outflows/"
         },
         {
-          "label": "The Coin Republic: bitcoin ETFs lose $1.14B in four days",
-          "url": "https://www.thecoinrepublic.com/2026/11/11/bitcoin-etfs-lose-114b-in-four-days-as-btc-falls-below-74k/"
-        },
-        {
-          "label": "Toobit: crypto market recap, 11 Nov",
-          "url": "https://www.toobit.com/en-US/news/crypto-market-daily-recap-11-nov-2026"
+          "label": "Yahoo Finance: Fed rate hike odds",
+          "url": "https://sg.finance.yahoo.com/news/fed-rate-hike-odds-december-035134676.html"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Nvidia falls after hours on reports about Jensen Huang",
-      "summary": "Nvidia fell as much as about 8% after hours on reports its board was considering replacing Jensen Huang; no decision has been announced, per KuCoin.",
-      "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-12-2026"
+      "title": "Strategy shares slip after MSCI confirms 30 Nov removal",
+      "summary": "Strategy (MSTR) fell 2.6% to $119.06 after hours on Wednesday after MSCI confirmed it will drop the company from its indexes after the 30 November close; index funds hold about 13M shares, per CoinCentral.",
+      "url": "https://coincentral.com/strategy-mstr-stock-drops-3-after-msci-confirms-nov-30-index-removal/"
     },
     {
-      "title": "Russia sets 22 Nov start for crypto trading on exchanges",
-      "summary": "Retail investors will be limited to BTC, ETH and USDT, capped at 300,000 rubles a year per intermediary, per Coin Turk.",
-      "url": "https://en.coin-turk.com/russia-to-allow-crypto-trading-on-exchanges-from-november-22-2026"
+      "title": "Crypto market bill stalls until January",
+      "summary": "The CLARITY Act, the main US crypto market-structure bill, is effectively tabled until January after a 49-50 Senate vote, per Forbes.",
+      "url": "https://www.forbes.com/sites/digital-assets/2026/11/11/the-clarity-act-is-effectively-tabled-until-january-after-a-49-50-senate-defeat-and-a-democratic-midterm-sweep/"
+    },
+    {
+      "title": "Group proposes moving Ethereum's quantum-safety upgrade to 2027",
+      "summary": "Ethlabs, founded by former Ethereum Foundation researchers, proposes bringing the post-quantum upgrade forward from the Foundation's 2029 target, per The Block.",
+      "url": "https://www.theblock.co/news/defi/2026-11-12-ethlabs-proposes-ethereum-post-quantum-2027-438494"
+    },
+    {
+      "title": "Initia says hack losses rose to $3.27M",
+      "summary": "The Initia network says about $3.27M was stolen after a cloud key was compromised, leading it to halt the chain, per CoinCentral.",
+      "url": "https://coincentral.com/initia-says-stolen-funds-rose-to-3-27m-after-cloud-key-breach-led-to-network-halt"
+    },
+    {
+      "title": "Mercado Bitcoin crypto withdrawals still frozen after hack",
+      "summary": "One of Brazil's largest crypto exchanges says cash withdrawals in reais via Pix resume next week after a $49M hack, per Cointelegraph.",
+      "url": "https://cointelegraph.com/news/pix-withdrawals-resume-mercado-bitcoin-hack"
     },
     {
       "title": "Stablecoin supply shrinks fastest since 2022",
@@ -120,21 +124,6 @@
     {
       "title": "Deutsche Bank goes live with crypto custody",
       "summary": "The bank launched custody for BTC, ETH, USDC and other assets for its clients, per KuCoin.",
-      "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-12-2026"
-    },
-    {
-      "title": "OKX and ICE tokenized stock platform set for 23 Nov",
-      "summary": "The launch date was confirmed and OKX's OKB token rose about 5% in 24 hours, per KuCoin.",
-      "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-12-2026"
-    },
-    {
-      "title": "Coinbase, Kalshi and Kraken's parent ask to back the CFTC in court",
-      "summary": "They asked a federal court for permission to file a brief supporting the CFTC's approval of never-expiring futures on single stocks; DRW, Jump and Paradigm joined them, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-10-coinbase-kalshi-payward-back-cftc-perps-436971"
-    },
-    {
-      "title": "Germany wants crypto accounts in its account-lookup system",
-      "summary": "The proposal would add crypto accounts to the system authorities use to look up bank accounts, per KuCoin.",
       "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-12-2026"
     }
   ],
@@ -153,15 +142,15 @@
       "event": "US weekly jobless claims",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 195K, prior 189K, per TD Economics. Fed speakers: Hammack 9am, Barr 10am, Daly 1:10pm and Williams 6:30pm, per TD Economics and the Federal Reserve; Goolsbee about 11:15am, per the Chicago Fed."
+      "note": "Consensus 195K, prior 189K, per TD Economics. Existing home sales 10am (consensus 3.9M, prior 4.0M), per TD Economics. Fed speakers: Hammack 9am and Daly 1:10pm and Williams 6:30pm, per TD Economics; Barr 10am, per the Federal Reserve."
     },
     {
       "et": "Thu 12 Nov · after close",
       "bkk": "Fri 13 · ~04:00",
-      "event": "Gemini (GEMI) Q3 results",
+      "event": "Gemini (GEMI) Q3 results; Cisco and Applied Materials also report",
       "impact": "neutral",
       "key": false,
-      "note": "Call Fri 13 Nov 8:30am ET, per Gemini via Finviz."
+      "note": "Gemini call Fri 13 Nov 8:30am ET, per Gemini via Finviz. Cisco and Applied Materials after the close, per Thrive in Markets."
     },
     {
       "et": "Fri 13 Nov · 3:00am",
@@ -169,7 +158,7 @@
       "event": "Weekly bitcoin and ether options expiry on Deribit",
       "impact": "volatile",
       "key": false,
-      "note": "Deribit options expire at 08:00 UTC every Friday; the monthly expiry is the last Friday, 27 Nov, per Deribit."
+      "note": "Deribit options expire at 08:00 UTC on Fridays; the monthly expiry is the last Friday of the month."
     },
     {
       "et": "Fri 13 Nov · 8:30am",
@@ -185,7 +174,7 @@
       "event": "SEC final deadline on VanEck's JitoSOL ETF",
       "impact": "volatile",
       "key": false,
-      "note": "Final deadline after the last extension, per Coinranking. Solana's Breakpoint conference runs 15-17 Nov in London, per Solana Compass."
+      "note": "Final deadline with no extensions left, per Coinranking. Solana's Breakpoint conference runs 15-17 Nov in London, per Solana Compass."
     },
     {
       "et": "Tue 17 Nov · 8:30am",
@@ -193,15 +182,15 @@
       "event": "US retail sales (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "Prior +0.8%; no consensus published yet, per Finviz. Industrial production at 9:15am (prior +0.7%), per Finviz and the Federal Reserve."
+      "note": "Prior +0.8%; no consensus published yet, per Forex Fundamentals. Industrial production at 9:15am (prior +0.7%), per the Federal Reserve."
     },
     {
       "et": "Tue 17 Nov · ~4:20pm",
       "bkk": "Wed 18 · ~04:20",
       "event": "Nvidia Q3 results",
       "impact": "volatile",
-      "key": false,
-      "note": "Results about 4:20pm ET, call at 5pm ET, per Nvidia."
+      "key": true,
+      "note": "Results about 4:20pm ET, call at 5pm ET, per Nvidia. Extra attention this time after reports the board is weighing CEO Jensen Huang's future."
     },
     {
       "et": "Wed 18 Nov · 8:30am",
@@ -220,12 +209,12 @@
       "note": "Minutes of the 27-28 Oct meeting, per the Federal Reserve."
     },
     {
-      "et": "Thu 19 Nov · 8:30am",
-      "bkk": "Thu 19 · 20:30",
-      "event": "US jobless claims and Philly Fed manufacturing index",
+      "et": "Thu 19 Nov · 12:30pm",
+      "bkk": "Fri 20 · 00:30",
+      "event": "Fed's Goolsbee speaks",
       "impact": "neutral",
       "key": false,
-      "note": "Philly Fed prior 20.9, per Finviz. Fed's Goolsbee speaks at 12:30pm, per the Chicago Fed."
+      "note": "At the Economic Club of Indiana, per the Chicago Fed."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -233,14 +222,14 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": true,
-      "note": "Decision 2:00pm ET Wed 9 Dec (02:00 Thu Bangkok), press conference 2:30pm ET, per the Federal Reserve."
+      "note": "Two-day meeting on 8-9 Dec, per the Federal Reserve's FOMC calendar; the rate decision comes at its end."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-12T04:22:05Z",
-    "claimsChecked": 74,
-    "claimsRemoved": 4,
+    "checkedAt": "2026-11-12T08:13:19Z",
+    "claimsChecked": 104,
+    "claimsRemoved": 10,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
