@@ -1167,6 +1167,97 @@
       }
      ],
      "gaps": "Last insider tranche (final core-contributor and investor step); still a routine tranche, not a cliff end. No time of day published."
+    },
+    {
+     "date": "2026-11-11",
+     "timeUTC": "06:00",
+     "amountTokens": 4540000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0,
+      "investors": 0,
+      "community": 0.707,
+      "ecosystem": 0.293,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "PANews (8 Nov 2026): APT 11 Nov 14:00 Beijing (06:00 UTC), ~4.54M, ~$2.7M, 0.51% of circulating",
+       "url": "https://panews.io/articles/01a1bb04-4173-7641-b54c-6dbe20bc8a6c",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "time",
+        "amount"
+       ]
+      },
+      {
+       "label": "TokenPost (9 Nov 2026): APT Wed 11 Nov 1:00 AM ET (06:00 UTC), ~4.54M",
+       "url": "https://www.tokenpost.com/news/investing/52388",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "time",
+        "amount"
+       ]
+      },
+      {
+       "label": "CoinGecko APT unlock widget (Tokenomist data): 11 Nov, 4.54M APT: Community 3.21M, Foundation 1.33M",
+       "url": "https://coingecko.com/en/coins/aptos",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist APT unlock events: next unlock 11 Nov 2026 to Community",
+       "url": "https://tokenomist.ai/aptos/unlock-events",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "Altcoin Buzz (14 Oct 2026): investor/core contributor schedule ended; ~4.54M APT/month from Community and Foundation pools, 1/120 of remaining balance monthly through 2032",
+       "url": "https://www.altcoinbuzz.io/aptos-ends-four-year-token-unlocks-as-monthly-releases-fall-60",
+       "kind": "news",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Aptos Network blog 'Aptos Tokenomics Update' (18 Feb 2026): investor and core contributor unlock cycle concludes October 2026; Foundation to permanently lock and stake 210M APT",
+       "url": "https://aptosnetwork.com/currents/aptos-tokenomics-update",
+       "kind": "primary",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "tokenomics.com APT unlocks: 12 Nov 2026, 14.38M APT incl. insider/investor slices; past unlocks on the 12th (Jun-Oct 2026)",
+       "url": "https://app.tokenomics.com/tokenomics/aptos/unlocks",
+       "kind": "aggregator",
+       "confirms": []
+      },
+      {
+       "label": "KuCoin weekly list (Nov 9-15 2026): APT 12 Nov 03:00 UTC+3 (00:00 UTC), $2.68M",
+       "url": "https://www.kucoin.com/news/flash/15-altcoins-to-face-major-token-unlocks-worth-144m-this-week",
+       "kind": "news",
+       "confirms": [
+        "amount"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Low",
+      "points": 0.06,
+      "confidence": 70,
+      "scoredAt": "2026-11-12T08:13:19Z"
+     }
     }
    ],
    "gaps": "10 monthly tranches in the window (12 Dec 2025 to 12 Sep 2026); 12 Oct 2026 falls after the window end. Main gap: the day. Tokenomist-fed news put Dec on the 11th, Jan on the 11th (02:00 UTC) and Feb on the 10th (12:00 UTC); the primary rule and tokenomics.com point to the 12th, which is used for every month. No source gives a time of day. The 2.1B max supply is from CoinGecko (Tokenomist and tokenomics.com also show 2.1B); the 2022 launch doc set no cap. Bucket mapping: the 'Community' pool is mostly held by the Aptos Foundation for ecosystem use, but it is kept as 'community' (its label); move it to 'ecosystem' if you map by function. Listing month: mainnet 12 Oct 2022 (primary); exchange listing month not separately confirmed in this run.",
@@ -17254,6 +17345,64 @@
       "points": 3.5,
       "confidence": 67,
       "scoredAt": "2026-11-11T08:14:10Z"
+     }
+    }
+   ],
+   "harvested": true
+  },
+  {
+   "token": "KUB",
+   "name": "Bitkub Coin (KUB Coin)",
+   "coingeckoId": "bitkub-coin",
+   "events": [
+    {
+     "date": "2026-11-11",
+     "timeUTC": null,
+     "amountTokens": 3310000,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0,
+      "investors": 0,
+      "community": 0,
+      "ecosystem": 1.0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko KUB unlock widget (Tokenomist data): 11 Nov, 3.31M KUB (~$1.75M), 3.0% of total supply, to BCGH's Reserve Fund",
+       "url": "https://www.coingecko.com/en/coins/bitkub-coin",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist KUB unlock events: next unlock 11 Nov 2026 to BCGH's Reserve Fund (same feed as CoinGecko widget)",
+       "url": "https://tokenomist.ai/bitkub-coin/unlock-events",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "TechFlow weekly unlocks (9 Nov 2026, Token Unlocks/Tokenomist data): KUB 11 Nov, ~$1.75M, 3.35% of circulating",
+       "url": "https://www.techflowpost.com/en-US/newsletter/143613",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 3.5,
+      "confidence": 58,
+      "scoredAt": "2026-11-12T08:13:19Z"
      }
     }
    ],
