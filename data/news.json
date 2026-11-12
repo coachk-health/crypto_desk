@@ -1,152 +1,157 @@
 {
-  "date": "2026-11-12",
-  "updated": "2026-11-12T16:14:43Z",
-  "headline": "Nvidia CEO Jensen Huang has resigned, bitcoin slipped to about $71,000 alongside tech stocks, and markets still price a December Fed rate hike as near-certain.",
+  "date": "2026-11-13",
+  "updated": "2026-11-12T20:21:14Z",
+  "headline": "Bitcoin hit a 12-week low near $71,200 after Nvidia's CEO resigned, Fed officials kept talking up more rate hikes, and Binance says it has fully covered customers hit by last month's hack.",
   "market": {
-    "asOf": "Read about 15:54-15:58 UTC Thu 12 Nov (22:54 Bangkok; 10:54am ET). BTC: CoinGecko $71,479.65 (-2.80% in 24h). ETH: CoinGecko $2,001.51 (-2.70%). SOL: CoinLore $81.41 (-4.04%). Prices were moving fast; use the live prices on this page.",
+    "asOf": "Read about 19:56-20:00 UTC Thu 12 Nov (02:56-03:00 Fri Bangkok; about 3pm ET). BTC and SOL from their CoinGecko pages; ETH from the CoinGecko home page, which showed no direction for its 24h change, so it is left out. Use the live prices on this page.",
     "btc": {
       "price": 71479.65,
       "chg24h": -2.8
     },
     "eth": {
-      "price": 2001.51,
-      "chg24h": -2.7
+      "price": 2014.12,
+      "chg24h": null
     },
     "sol": {
-      "price": 81.41,
-      "chg24h": -4.04
+      "price": 81.4,
+      "chg24h": -4.2
     },
-    "fearGreed": "29, Fear (alternative.me Crypto Fear & Greed Index); 32 yesterday, 34 a week ago and 69 (Greed) a month ago."
+    "fearGreed": "28, Fear (alternative.me Crypto Fear & Greed Index); 29 yesterday, 50 (Neutral) last week and 57 (Greed) last month."
   },
   "stories": [
     {
-      "title": "Nvidia CEO Jensen Huang resigns; CFO Colette Kress is interim CEO",
+      "title": "Nvidia CEO Jensen Huang resigns; bitcoin falls to a 12-week low",
       "mood": "volatile",
-      "summary": "Nvidia said Jensen Huang has resigned as president, CEO and board member, effective immediately, and CFO Colette Kress is interim CEO while the board searches for a permanent one. Bitcoin fell with tech shares after the news. Nvidia's own statement gives no reason.",
+      "summary": "Nvidia said Jensen Huang has stepped down as president, CEO and board member, effective immediately, and CFO Colette Kress is interim CEO while the board looks for a permanent one. Bitcoin fell alongside tech shares to its lowest level in nearly 12 weeks. When big AI stocks get hit, crypto has often moved with them.",
       "points": [
-        "Kress stays on as CFO; former Synopsys CEO Harvey C. Jones becomes Nvidia's board chair, per Nvidia.",
-        "Q3 results remain on Tue 17 November, as previously scheduled, per Nvidia.",
-        "Nvidia shares fell as much as 13% early and were about 5% lower around 10:51am ET, per Yahoo Finance; CoinDesk had them about 7% lower at 10:00am ET.",
-        "Bitcoin was about $72,400 when the news broke and hit $71,300 at 10:00am ET, its lowest since mid-to-late August, per CoinDesk."
+        "Kress stays on as CFO; Harvey C. Jones becomes board chair, and Q3 results are still set for 17 November, per Nvidia's SEC filing.",
+        "Nvidia shares fell as much as about 13% early and were about 5% lower around 1:45pm ET, per Yahoo Finance.",
+        "Bitcoin hit a low of $71,200, its lowest in nearly 12 weeks, per The Block at 12:40pm ET.",
+        "Over $750M of crypto bets were force-closed (liquidated) in 24 hours, most of them bets on rising prices, per CoinGlass data reported by The Block.",
+        "Ether dipped below $2,000 for the first time since August, per 24/7 Wall St."
       ],
       "sources": [
         {
-          "label": "Nvidia: CEO transition",
-          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx"
+          "label": "Nvidia SEC filing: CEO transition",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"
         },
         {
-          "label": "Yahoo Finance: Nvidia live updates",
-          "url": "https://finance.yahoo.com/technology/live/nvidia-live-updates-jensen-huang-resigns-cfo-colette-kress-to-serve-as-interim-ceo-140341430.html"
+          "label": "The Block: bitcoin at 12-week low",
+          "url": "https://www.theblock.co/news/markets/2026-11-12-bitcoin-12-week-low-jensen-huang-exit-nvidia-438992"
         },
         {
-          "label": "CoinDesk: live markets, 12 Nov",
-          "url": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+          "label": "Yahoo Finance: stock market today",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-slides-jensen-huang-resigns-invest-165632931.html"
+        },
+        {
+          "label": "24/7 Wall St.: ether below $2,000",
+          "url": "https://247wallst.com/investing/cryptocurrency/2026/11/12/ethereum-fell-below-2000-for-the-first-time-since-august-while-staking-hit-an-all-time-high-of-36-why-are-holders-locking-up-more-eth/"
         }
       ]
     },
     {
-      "title": "Bitcoin funds lose $1.44B in five days",
+      "title": "Fed officials keep signalling more rate hikes",
       "mood": "bearish",
-      "summary": "US spot bitcoin funds had net outflows for a fifth straight trading day on Wednesday 11 November, about $300M. Bitcoin now trades well below what the average fund buyer paid, so many fund holders are sitting on losses.",
+      "summary": "Several Fed officials said on Thursday that interest rates probably need to go higher to beat inflation, and futures markets treat a quarter-point hike at the 8-9 December meeting as close to certain. Higher rates make safe savings pay more, which tends to pull money away from risky assets like crypto.",
       "points": [
-        "Net outflow on 11 Nov was about $299.9M per SoSoValue data reported by Bitcoinist; CoinDesk says about $300M.",
-        "BlackRock's IBIT lost about $270M and Grayscale's GBTC $39M, while Morgan Stanley's MSBT took in about $9M, per CoinDesk.",
-        "The five-day streak totals about $1.44B, per Bitcoinist.",
-        "Glassnode puts the average fund buyer's cost at about $81,500, per CoinDesk.",
-        "Ether funds lost about $145M the same day, per CoinDesk."
+        "San Francisco Fed President Daly said \"further tightening will be needed\", though Investing.com reports she sees no immediate rush.",
+        "Kansas City Fed President Schmid said the Fed still hasn't beaten inflation, per a Newsquawk headline.",
+        "CME FedWatch showed a 100% implied chance of a December hike, per KuCoin; CoinDesk had 94% for a quarter-point hike at 10:55am ET.",
+        "The 10-year Treasury yield rose to about 5.09%, per Yahoo Finance."
       ],
       "sources": [
         {
-          "label": "Bitcoinist: ETF outflows reach $1.44B",
-          "url": "https://bitcoinist.com/bitcoin-falls-alongside-nvidia-as-etf-outflows-reach-1-44-billion"
+          "label": "Investing.com: Daly",
+          "url": "https://www.investing.com/news/economy-news/feds-daly-says-more-rate-hikes-likely-needed-to-fight-inflation-5022988"
+        },
+        {
+          "label": "Newsquawk: Schmid",
+          "url": "https://www.newsquawk.com/headlines/feds-schmid-says-the-fed-still-hasnt-beat-the-inflation-enemy"
+        },
+        {
+          "label": "KuCoin: CME FedWatch",
+          "url": "https://www.kucoin.com/news/flash/cme-fedwatch-shows-100-probability-of-fed-hike-in-december-bitcoin-faces-pressure"
         },
         {
           "label": "CoinDesk: live markets, 12 Nov",
           "url": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+        },
+        {
+          "label": "Yahoo Finance: stock market today",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-slides-jensen-huang-resigns-invest-165632931.html"
         }
       ]
     },
     {
-      "title": "Markets treat a December Fed rate hike as near-certain",
-      "mood": "bearish",
-      "summary": "Futures markets price a quarter-point rate increase at the 8-9 December Fed meeting as almost certain, and Cleveland Fed President Hammack said on Thursday she favours small, frequent hikes. Higher rates and a stronger dollar tend to pull money away from risky assets like crypto.",
+      "title": "Binance says it has fully covered the $6.3B lost in its October hack",
+      "mood": "neutral",
+      "summary": "Binance says it has finished covering customer assets hit by the 29 October security breach and published a new proof-of-reserves snapshot. Proof of reserves is a public check that an exchange holds enough coins to back customer balances. Binance did not say the stolen crypto has been recovered.",
       "points": [
-        "Markets priced a 94% chance of a quarter-point hike in December, per CoinDesk at 10:55am ET; CME FedWatch put the chance of any hike at 100%, per U.Today.",
-        "Hammack said policy needs to become restrictive and that inflation data is moving in the wrong direction, per Reuters via WBOW.",
-        "The 10-year Treasury yield was above 5% and the dollar index above 103, per CoinDesk.",
-        "Weekly jobless claims rose to 200,000, above the 195,000 forecast, per Reuters via Investing.com."
+        "The money came from Binance's SAFU emergency fund, its futures insurance funds and its company treasury, per crypto.news.",
+        "Coverage reached 90% on 31 October and about 98% by 4 November, per crypto.news.",
+        "The zero-knowledge proof that would let users check 1:1 backing themselves is still pending, with no date, per crypto.news."
       ],
       "sources": [
         {
-          "label": "CoinDesk: live markets, 12 Nov",
-          "url": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
-        },
-        {
-          "label": "Reuters via WBOW: Hammack",
-          "url": "https://1027wbow.com/2026/11/12/feds-hammack-signals-support-for-gradual-rate-hike-path/"
-        },
-        {
-          "label": "U.Today: FedWatch shows 100% odds",
-          "url": "https://u.today/whats-next-for-bitcoin-btc-cme-fedwatch-shows-100-odds-of-a-december-fed-rate-hike"
-        },
-        {
-          "label": "Reuters via Investing.com: jobless claims",
-          "url": "https://www.investing.com/news/economic-indicators/us-weekly-jobless-claims-increase-but-labor-market-firming-5021926"
+          "label": "crypto.news: Binance hack assets covered",
+          "url": "https://crypto.news/binance-hack-assets-covered-proof-of-reserves/"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "MSCI confirms Strategy and Metaplanet removals",
-      "summary": "Strategy leaves the MSCI USA Index and Metaplanet the Japan Small Cap Index after the 30 November close, per The Block.",
-      "url": "https://www.theblock.co/news/markets/2026-11-11-strategy-metaplanet-lose-msci-index-membership-november-reshuffle-438437"
+      "title": "New York sets crypto advertising rules",
+      "summary": "New York's financial regulator told crypto firms not to make misleading \"no fee\" claims and to disclose paid testimonials, with review processes due by 10 May 2027, per The Block.",
+      "url": "https://www.theblock.co/news/regulation/2026-11-12-nydfs-sets-fresh-advertising-standards-crypto-firms-439014"
     },
     {
-      "title": "Polymarket cuts staff",
-      "summary": "The prediction market confirmed a company-wide reduction in force as rival Kalshi pulls ahead in monthly volume, per CoinDesk.",
-      "url": "https://www.coindesk.com/business/2026/11/12/polymarket-trims-workforce-under-investor-pressure-as-kalshi-surges-ahead"
+      "title": "Bitcoin fund outflows reach $1.44B in five days",
+      "summary": "US spot bitcoin funds lost $299.8M on Wednesday 11 November, a fifth straight day of outflows totalling about $1.44B; Thursday's figures were not yet complete, per NewsBTC on TradingView.",
+      "url": "https://www.tradingview.com/news/newsbtc:66063f8c8094b:0-bitcoin-etfs-lose-299-8m-as-five-session-outflow-streak-reaches-1-44b/"
     },
     {
-      "title": "Crypto firms back challenge to Illinois crypto tax",
-      "summary": "a16z, Paradigm, Uniswap and the DeFi Education Fund filed a supporting brief against Illinois's 0.2% digital asset transaction tax, per The Block.",
-      "url": "https://theblock.co/news/regulation/2026-11-12-andreessen-horowitz-defi-education-fund-push-back-against-illinois-crypto-tax-438573"
+      "title": "MSCI to drop Strategy and Metaplanet",
+      "summary": "Both companies leave MSCI indexes after the 30 November close; Strategy estimated up to about $2.8B of passive fund selling, per KuCoin's daily report.",
+      "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-12-2026"
     },
     {
-      "title": "Indian exchange Unocoin keeps logins suspended",
-      "summary": "Logins have been suspended since 9 November and the exchange flagged outgoing ETH from a BitGo address; it says over 90% of customer funds are in cold storage, per The Block.",
-      "url": "https://theblock.co/news/ecosystems/2026-11-12-unocoin-login-suspension-continues-as-exchange-flags-outgoing-bitgo-eth-transactions-438654"
+      "title": "DTCC plans tokenized securities on Solana",
+      "summary": "DTCC, whose DTC unit held $114 trillion in securities in 2025, plans blockchain versions of eligible securities on Solana in the second half of 2027, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-12-dtcc-plans-bring-tokenized-securities-solana-second-half-of-2027-438559"
+    },
+    {
+      "title": "Visa adds Western Union's stablecoin",
+      "summary": "Visa will accept Western Union's USDPT stablecoin, issued by Anchorage Digital Bank, to settle VisaNet obligations, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-12-visa-adds-western-unions-usdpt-stablecoin-to-its-settlement-network-in-anchorage-tie-up-438520"
+    },
+    {
+      "title": "a16z backs challenge to Illinois crypto tax",
+      "summary": "a16z and the DeFi Education Fund filed a brief against Illinois's 0.2% crypto transaction tax, which has been pushed back to July 2027, per The Block.",
+      "url": "https://www.theblock.co/news/regulation/2026-11-12-andreessen-horowitz-defi-education-fund-push-back-against-illinois-crypto-tax-438573"
     },
     {
       "title": "US home sales hit lowest since 2010",
-      "summary": "Existing home sales fell 5.5% in October to a 3.75M annual rate, the lowest since August 2010, per the National Association of Realtors.",
-      "url": "https://www.globenewswire.com/news-release/2026/11/12/3401799/0/en/existing-home-sales-decreased-5-5-in-october-according-to-nar-report.html"
+      "summary": "Existing home sales fell to 3.75M in October, the lowest since August 2010, and weekly jobless claims were 200,000 against 195,000 expected, per CoinDesk.",
+      "url": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
     }
   ],
   "calendar": [
     {
-      "et": "Thu 12 – Thu 19 Nov",
-      "bkk": "Thu 12 – Fri 20 Nov",
-      "event": "Token unlocks: PEAQ, PUMP, AZTEC, PIEVERSE, YZY, ARB, SEI, STRK, CRO, ZK, PENGU, ZRO, KAITO",
+      "et": "Thu 12 Nov · after close",
+      "bkk": "Fri 13 · ~04:00",
+      "event": "Gemini (GEMI), Cisco and Applied Materials results; Fed's Williams 6:30pm",
+      "impact": "neutral",
+      "key": false,
+      "note": "Gemini call Fri 13 Nov 8:30am ET, per Gemini. Cisco and Applied Materials calls 4:30pm ET (04:30 Fri Bangkok), per their investor pages. Williams speaks 6:30pm ET (06:30 Fri Bangkok), per Newsquawk. Earlier today Daly said more tightening will likely be needed, per Investing.com."
+    },
+    {
+      "et": "Fri 13 – Fri 20 Nov",
+      "bkk": "Fri 13 – Fri 20 Nov",
+      "event": "Token unlocks: AZTEC, PIEVERSE, YZY, ARB, SEI, STRK, CRO, ZK, PENGU, ZRO, KAITO",
       "impact": "bearish",
       "key": false,
       "note": "See the unlock table on this page for sizes, dates and confidence."
-    },
-    {
-      "et": "Thu 12 Nov · 1:10pm",
-      "bkk": "Fri 13 · 01:10",
-      "event": "Fed speakers: Daly, Schmid, Williams",
-      "impact": "neutral",
-      "key": false,
-      "note": "Daly 1:10pm, Schmid 1:30pm, Williams 6:30pm ET, per Newsquawk. Earlier today: jobless claims 200K (forecast 195K, prior 191K), per Reuters via Investing.com; existing home sales 3.75M, per NAR."
-    },
-    {
-      "et": "Thu 12 Nov · after close",
-      "bkk": "Fri 13 · ~04:00",
-      "event": "Gemini (GEMI) Q3 results; Cisco and Applied Materials also report",
-      "impact": "neutral",
-      "key": false,
-      "note": "Gemini call Fri 13 Nov 8:30am ET. Cisco and Applied Materials calls 4:30pm ET (04:30 Fri Bangkok), per their investor pages."
     },
     {
       "et": "Fri 13 Nov",
@@ -154,7 +159,7 @@
       "event": "Weekly bitcoin and ether options expiry",
       "impact": "volatile",
       "key": false,
-      "note": "About $2.48B of BTC options (max pain $76,000) and $300M of ETH options (max pain $2,200) expire, per Greeks.live data reported by Phemex."
+      "note": "About $2.48B of BTC options (max pain $76,000) and $300M of ETH options (max pain $2,200) expire, per Greeks.live data reported by KuCoin."
     },
     {
       "et": "Fri 13 Nov · 8:30am",
@@ -162,7 +167,7 @@
       "event": "US producer prices (PPI, Oct)",
       "impact": "volatile",
       "key": true,
-      "note": "Consensus +0.4% on the month (prior +1.3%), core +0.3% (prior +0.7%), per TD Economics. Fed's Bowman 10:50am and Jefferson 7pm (07:00 Sat Bangkok), per the Federal Reserve."
+      "note": "Consensus +0.4% on the month (prior +1.3%), core +0.3% (prior +0.7%), per TD Economics. Fed's Bowman 10:50am and Jefferson 7pm (07:00 Sat Bangkok), per the Federal Reserve; Collins 9:10am and Daly also speak, per Newsquawk."
     },
     {
       "et": "Sun 15 – Tue 17 Nov",
@@ -170,7 +175,15 @@
       "event": "Solana Breakpoint conference, London",
       "impact": "neutral",
       "key": false,
-      "note": "Runs 15-17 Nov in London, per Solana."
+      "note": "Runs 15-17 Nov at Olympia London, per Solana Compass."
+    },
+    {
+      "et": "Mon 16 Nov · 12:00pm",
+      "bkk": "Tue 17 · 00:00",
+      "event": "Fed Chair Warsh gives opening remarks",
+      "impact": "volatile",
+      "key": false,
+      "note": "Williams also speaks at 9:05am ET, per Newsquawk."
     },
     {
       "et": "Tue 17 Nov · 8:30am",
@@ -178,7 +191,7 @@
       "event": "US retail sales (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "Prior +0.8%, per the Census Bureau; no consensus published yet. Industrial production at 9:15am, per the Federal Reserve."
+      "note": "Prior +0.8%, per InvestingLive; release at 8:30am ET, per the Census Bureau. Industrial production at 9:15am (prior +0.7%), per the Federal Reserve."
     },
     {
       "et": "Tue 17 Nov · ~4:20pm",
@@ -186,7 +199,7 @@
       "event": "Nvidia Q3 results",
       "impact": "volatile",
       "key": true,
-      "note": "First report under interim CEO Colette Kress; date unchanged, per Nvidia. Call at 5pm ET (05:00 Wed Bangkok)."
+      "note": "First report since Jensen Huang's resignation; call at 5pm ET (05:00 Wed Bangkok), per Nvidia."
     },
     {
       "et": "Wed 18 Nov · 8:30am",
@@ -194,7 +207,7 @@
       "event": "Bullish (BLSH) Q3 results call; US housing starts (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "Bullish call 8:30am ET, per Investing News Network. Prior housing starts 1.221M, per the Census Bureau."
+      "note": "Bullish call 8:30am ET, per Bullish via Finviz. Prior housing starts 1.221M, per InvestingLive."
     },
     {
       "et": "Wed 18 Nov · 2:00pm",
@@ -205,12 +218,12 @@
       "note": "Minutes of the 27-28 Oct meeting, per the Federal Reserve."
     },
     {
-      "et": "Thu 19 Nov · 12:30pm",
-      "bkk": "Fri 20 · 00:30",
-      "event": "Fed's Goolsbee speaks",
+      "et": "Thu 19 Nov · 8:30am",
+      "bkk": "Thu 19 · 20:30",
+      "event": "US jobless claims; Fed's Goolsbee 12:30pm",
       "impact": "neutral",
       "key": false,
-      "note": "At the Economic Club of Indiana, per the Chicago Fed. The Philly Fed survey is also due (prior 20.9), per the Philadelphia Fed."
+      "note": "Claims were 200,000 last week, per CoinDesk. Goolsbee at the Economic Club of Indiana 12:30pm ET (00:30 Fri Bangkok), per the Chicago Fed."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -218,15 +231,15 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": true,
-      "note": "Two-day meeting with new economic projections; statement Wed 9 Dec 2:00pm ET (02:00 Thu Bangkok), per the Federal Reserve."
+      "note": "Two-day meeting with new economic projections, per the Federal Reserve."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-12T16:14:43Z",
-    "claimsChecked": 108,
-    "claimsRemoved": 14,
-    "rounds": 1,
+    "checkedAt": "2026-11-12T20:21:14Z",
+    "claimsChecked": 129,
+    "claimsRemoved": 7,
+    "rounds": 3,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
 }
