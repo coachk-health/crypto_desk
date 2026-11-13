@@ -87,6 +87,8 @@ PLUME (plume): 1 events
   prices: binance-futures PLUMEUSDT (CoinGecko differed by a median 0.2%, at most 616.0%)
 PROVE (succinct): 1 events
   prices: binance-futures PROVEUSDT (CoinGecko differed by a median 0.1%, at most 5.6%)
+PUMP (pump-fun): 1 events
+  prices: binance-futures PUMPUSDT (CoinGecko differed by a median 0.1%, at most 5.8%)
 PYTH (pyth-network): 1 events
   prices: binance-futures PYTHUSDT (CoinGecko differed by a median 0.1%, at most 32.5%)
 RAIN (rain): 1 events
@@ -159,4 +161,6 @@ DOS (dappos): 1 events
   prices: binance-futures DOSUSDT (CoinGecko differed by a median 0.2%, at most 12.9%)
 KUB (bitkub-coin): 1 events
   prices: coingecko  (CoinGecko differed by a median None%, at most None%)
-measured 323 events, skipped 3
+PEAQ (peaq-2): 1 events
+  prices: coingecko  (CoinGecko differed by a median None%, at most None%)
+measured 324 events, skipped 4

@@ -10315,10 +10315,65 @@
   {
    "token": "PUMP",
    "name": "Pump.fun",
-   "coingeckoId": null,
+   "coingeckoId": "pump-fun",
    "maxSupply": null,
    "listed": null,
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-12",
+     "timeUTC": "06:00",
+     "amountTokens": 6875000000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.606,
+      "investors": 0.394,
+      "community": 0,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "Bitrue PUMP unlock (modified 10 Nov 2026): date not settled (DefiLlama 11 Nov, tokenomics.com 12 Nov, Blockworks 14 Nov); 6.875B (4.167B team / 2.708B investors) vs tokenomics.com ~9.2B",
+       "url": "https://www.bitrue.com/blog/pump-token-unlock",
+       "kind": "news",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Four Pillars: 14 Jul 2026 cliff 52.7B PUMP to 84 wallets; 4.03B (7.6%) sold in 27 days; 6.87B PUMP per month from 11 Aug to July 2029",
+       "url": "https://research.4pillars.io/en/data/content/pump-insiders-kept-92-of-the-july-unlock",
+       "kind": "news",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist Pump.fun page (updated 12 Nov 2026 03:54 UTC): 'no upcoming cliff unlock scheduled', 45.98% still locked vesting into 2029; circulating 458.40B",
+       "url": "https://www.tokenomist.ai/pump-fun",
+       "kind": "aggregator",
+       "confirms": []
+      },
+      {
+       "label": "edgeX (22 Jul 2026): team 50B / existing investors 32.5B, 36-month linear monthly to July 2029",
+       "url": "https://pro.edgex.exchange/en-US/news/article/pump-token-insider-vesting-unlock",
+       "kind": "news",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 3.11,
+      "confidence": 37,
+      "scoredAt": "2026-11-13T08:11:05Z"
+     }
+    }
+   ],
    "gaps": "INCOMPLETE: the web-search budget ran out. One event is known only from a Tokenomist digest title, so the date is null. Other PUMP tranches (e.g. monthly vesting after the July 2026 cliff, Aug-Oct 2026) are not researched. coingeckoId (likely 'pump-fun'), supply (likely 1T total) and listed (likely 2025-07) are unverified."
   },
   {
@@ -17403,6 +17458,72 @@
       "points": 3.5,
       "confidence": 58,
       "scoredAt": "2026-11-12T08:13:19Z"
+     }
+    }
+   ],
+   "harvested": true
+  },
+  {
+   "token": "PEAQ",
+   "name": "peaq",
+   "coingeckoId": "peaq-2",
+   "events": [
+    {
+     "date": "2026-11-12",
+     "timeUTC": "00:00",
+     "amountTokens": 82210000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.284,
+      "investors": 0.716,
+      "community": 0,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko peaq page unlock widget (Tokenomist feed): 12 Nov, 82.21M PEAQ (~$2.12M), Core Contributors 23.33M, Investors 58.88M",
+       "url": "https://www.coingecko.com/en/coins/peaq-2",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist peaq unlock events (updated 12 Nov 2026 03:59 UTC): next unlock now listed as 12 Dec 2026 to Investors and Core Contributors, i.e. the 12 Nov event is treated as past; amounts paywalled. Same feed as the CoinGecko widget, counted once.",
+       "url": "https://tokenomist.ai/peaq-2/unlock-events",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "tokenomics.com peaq unlocks: 12 Nov 2026 'Unlock Today', 96.4M PEAQ ($2.6M), Private Investors 67% / Insiders 24% / Foundation 9%; next 12 Dec 2026 44.1M; TGE 12 Nov 2024",
+       "url": "https://app.tokenomics.com/tokenomics/peaq/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "peaq docs tokenomics: per-block vesting via vesting pallet (vesting month = 438,000 blocks, ~30.4 days); investors 6-month lock then 18 or 24 months linear; Core Contributors 483M and EoT Labs 357M, 9-month lock then 36 months linear (483M+357M)/36 = 23.33M per vesting month",
+       "url": "https://docs.peaq.xyz/peaqchain/learn/tokenomics",
+       "kind": "primary",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 3.78,
+      "confidence": 55,
+      "scoredAt": "2026-11-13T08:11:05Z"
      }
     }
    ],
