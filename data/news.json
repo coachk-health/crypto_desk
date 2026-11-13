@@ -1,170 +1,126 @@
 {
   "date": "2026-11-13",
-  "updated": "2026-11-13T12:14:38Z",
-  "headline": "Bitcoin fell to a 12-week low near $67,500 and below its 200-week average as more than $1.6B of leveraged bets were force-closed, with US producer prices due at 8:30am ET (20:30 Bangkok) tonight.",
+  "updated": "2026-11-13T16:38:04Z",
+  "headline": "US wholesale inflation came in a touch cooler than expected, but bitcoin's brief bounce faded as tech stocks fell, and US bitcoin ETFs saw a sixth straight day of outflows.",
   "market": {
-    "asOf": "Read about 11:57-12:00 UTC Fri 13 Nov (19:00 Bangkok; 7am ET) from CoinMarketCap's bitcoin page and home page (CoinGecko did not load for this read). Use the live prices on this page.",
+    "asOf": "Read about 16:21-16:24 UTC Fri 13 Nov (23:21 Bangkok; 11:21am ET) from CoinGecko's coin pages. Use the live prices on this page.",
     "btc": {
-      "price": 69293.26,
-      "chg24h": -5.97
+      "price": 68743.8,
+      "chg24h": -3.7
     },
     "eth": {
-      "price": 1958.0,
-      "chg24h": null
+      "price": 1932.84,
+      "chg24h": -5.5
     },
     "sol": {
-      "price": 80.48,
-      "chg24h": null
+      "price": 79.51,
+      "chg24h": -2.9
     },
-    "fearGreed": "28, Fear (alternative.me Crypto Fear & Greed Index, read about 12:15 UTC)."
+    "fearGreed": "28, Fear (alternative.me Crypto Fear & Greed Index, read about 16:21 UTC); CoinMarketCap's own index was at 20, per KuCoin News."
   },
   "stories": [
     {
-      "title": "Bitcoin hits a 12-week low and slips below its 200-week average",
-      "mood": "bearish",
-      "summary": "Bitcoin fell to about $67,500, its lowest level since about 19-20 August, before recovering part of the drop. CoinDesk says it is now below its 200-week moving average of about $68,000, a long-term trend line many traders watch. Forced selling added to the fall: traders who borrowed to bet on rising prices had their positions closed automatically by exchanges as prices fell. A HashKey analyst told Decrypt the drop was directly triggered by a wave of these forced closures. Ether dropped 6% to about $1,921, per The Block.",
-      "points": [
-        "The low depends on the data source: $67,449 on CoinGlass data per Cointribune, and $67,652 per CoinDesk.",
-        "The Block calls it the lowest since 20 August; CoinDesk says since 19 August.",
-        "Leveraged bets force-closed in 24 hours reached $1.64B, $1.46B of them bets on rising prices, per CoinGlass data cited by Cointribune; The Block gave $1.47B earlier in the day.",
-        "Average funding rates on perpetual futures turned negative for the first time in a month, per CoinDesk: more traders are now paying to bet on falling prices.",
-        "Prices were read at about 7am ET; use the live prices on this page for the current level."
-      ],
-      "sources": [
-        {
-          "label": "CoinDesk live: bitcoin below 200-week average",
-          "url": "https://www.coindesk.com/tech/2026/11/13/live-news-bitcoin-drops-below-200-week-moving-average-as-dollar-strength-pressures-risk-assets"
-        },
-        {
-          "label": "Cointribune: bitcoin below $69,000 as extreme fear grips market",
-          "url": "https://www.cointribune.com/en/bitcoin-crashes-below-69000-as-extreme-fear-grips-the-crypto-market"
-        },
-        {
-          "label": "Decrypt: bitcoin drops to $69K",
-          "url": "https://decrypt.co/383214/bitcoin-drops-to-69k-on-concentrated-liquidation-and-weakening-demand"
-        },
-        {
-          "label": "The Block: bitcoin tumbles below $69,000",
-          "url": "https://www.theblock.co/news/markets/2026-11-13-bitcoin-tumbles-below-69000-439643"
-        },
-        {
-          "label": "CoinDesk: bitcoin dips below $70,000",
-          "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-dips-below-usd70-000-as-selloff-gathers-pace"
-        }
-      ]
-    },
-    {
-      "title": "US producer prices tonight, with the dollar and bond yields climbing",
+      "title": "US wholesale inflation a touch cooler than expected; bitcoin's bounce fades",
       "mood": "volatile",
-      "summary": "The October producer price index (PPI), a measure of inflation at the wholesale level, comes out at 8:30am ET (20:30 Bangkok). Traders already expect the Fed to raise rates. Higher rates and a stronger dollar make safe US assets pay more, which tends to pull money away from risky assets like crypto. A hot number could add to that pressure; a cool one could ease it. Separately, Iran's Revolutionary Guard says it destroyed a US early-warning radar in Bahrain, a claim the AP could not independently verify.",
+      "summary": "The October producer price index (PPI), which tracks inflation at the wholesale level, rose 0.3% on the month against 0.4% expected. Bitcoin edged up to about $69,500 right after the release, then gave the gain back as tech stocks fell, per CoinDesk. Markets still expect the Fed to raise rates in December, and higher rates tend to pull money away from risky assets like crypto.",
       "points": [
-        "Consensus is +0.4% on the month (prior +1.3%), core +0.3% (prior +0.7%), and 6.6% on the year (prior 6.3%), per Finviz.",
-        "The US Dollar Index climbed above 103 and the 10-year Treasury yield was 5.125%, per CoinDesk.",
-        "CME FedWatch shows 88% odds of a quarter-point hike and 12% of a half-point hike, per Decrypt.",
-        "Saxo says options markets price about a 1% move in stocks around the release."
+        "Headline PPI: +0.3% on the month (0.4% expected), per Seoul Economic Daily, and 6.5% on the year, the highest yearly rate since November 2022, per ANI; The Coin Republic says 6.6% was expected.",
+        "Core PPI, without food and energy, rose 0.3% on the month, in line with forecasts, per The Coin Republic.",
+        "Bitcoin was back at about $68,700 by 10:24am ET as the Nasdaq fell 2%, with AMD down 9% and Nvidia down 3.3%, per CoinDesk.",
+        "The 10-year Treasury yield was 5.14% after the release, heading for its worst week since April 2025, per CoinDesk.",
+        "CME FedWatch odds of a December hike were 89.4% after the release, per Seoul Economic Daily."
       ],
       "sources": [
         {
-          "label": "Finviz economic calendar",
-          "url": "https://finviz.com/calendar/economic?dateFrom=2026-11-13"
+          "label": "Seoul Economic Daily: producer prices rise 0.3%",
+          "url": "https://en.sedaily.com/world/2026/11/13/us-producer-prices-rise-03-percent-in-october-below-forecast"
         },
         {
-          "label": "CoinDesk live: dollar strength",
+          "label": "ANI: producer prices up 6.5% on the year",
+          "url": "https://aninews.in/news/business/us-producer-prices-rise-65-pc-annually-in-october-highest-since-november-202220261113191551/"
+        },
+        {
+          "label": "The Coin Republic: PPI and Fed hike odds",
+          "url": "https://www.thecoinrepublic.com/2026/11/13/us-ppi-inflation-rises-65-as-markets-weigh-size-of-december-fed-rate-hike/"
+        },
+        {
+          "label": "CoinDesk live blog, 13 Nov",
           "url": "https://www.coindesk.com/tech/2026/11/13/live-news-bitcoin-drops-below-200-week-moving-average-as-dollar-strength-pressures-risk-assets"
-        },
-        {
-          "label": "Decrypt: bitcoin drops to $69K",
-          "url": "https://decrypt.co/383214/bitcoin-drops-to-69k-on-concentrated-liquidation-and-weakening-demand"
-        },
-        {
-          "label": "Saxo: market quick take, 13 Nov",
-          "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---nvidia-earnings-up-next-tuesday---13-november-2026-13112026"
-        },
-        {
-          "label": "AP via ABC News: Iran's Guard and Bahrain radar",
-          "url": "https://abcnews.com/International/wireStory/irans-revolutionary-guard-destroyed-us-radar-bahrain-mideast-138102943"
         }
       ]
     },
     {
-      "title": "Big-money exits: ETF outflows, MSCI dropping Strategy, Nvidia CEO exit",
+      "title": "Bitcoin holds near $68,000-69,000 after slipping below its 200-week average",
       "mood": "bearish",
-      "summary": "Money kept leaving US bitcoin funds, and index provider MSCI will remove Strategy (MSTR), a company that holds large amounts of bitcoin, from its indexes on 30 November, which can bring selling from funds that track those indexes. Nvidia's CEO Jensen Huang resigned, with CFO Colette Kress as interim CEO, adding to the risk-off mood ahead of Nvidia's results on Tuesday.",
+      "summary": "Bitcoin dropped early on Friday to $67,652, per CoinDesk, falling below its 200-week moving average of about $68,000, a long-term trend line many traders watch. Exchanges force-closed more than a billion dollars of leveraged bets, mostly bets on rising prices. CoinDesk notes bitcoin is down more than 21% this year after falling 6.3% in 2025, so it is on course for its first back-to-back losing years.",
       "points": [
-        "US spot bitcoin ETFs lost $299.8M on Wednesday, $269.7M of it from BlackRock's IBIT, per Farside data cited by Cointribune.",
-        "Thursday's figures are still partial: bitcoin ETFs showed $47.7M of outflows before BlackRock and Fidelity reported, per FinanceFeeds.",
-        "Strategy shares closed Thursday at $114.41, down about 6.5%, per The Block.",
-        "Huang resigned as president, CEO and board member effective immediately, per CoinCentral."
+        "Friday's low depends on the source: $67,652 per CoinDesk; KuCoin News says briefly below $68,000, its lowest since 19 August.",
+        "Leveraged bets force-closed in 24 hours: $1.65B per CoinGlass data cited by KuCoin News; CoinCentral gave $1.47B earlier in the day.",
+        "To finish 2026 up, bitcoin would need to close the year above $87,500, per CoinDesk.",
+        "Average funding rates on perpetual futures turned negative for the first time in a month, per Glassnode via CoinDesk: more traders are paying to bet on falling prices.",
+        "Prices above were read around 11am ET; use the live prices on this page for the current level."
       ],
       "sources": [
         {
-          "label": "Cointribune: ETF outflows",
-          "url": "https://www.cointribune.com/en/bitcoin-crashes-below-69000-as-extreme-fear-grips-the-crypto-market"
+          "label": "CoinDesk live blog, 13 Nov",
+          "url": "https://www.coindesk.com/tech/2026/11/13/live-news-bitcoin-drops-below-200-week-moving-average-as-dollar-strength-pressures-risk-assets"
         },
         {
-          "label": "FinanceFeeds: Thursday ETF flows",
-          "url": "https://financefeeds.com/bitcoin-and-ethereum-etfs-record-55-7-million-in-outflows-as-crypto-market-sell-off-deepens/"
+          "label": "KuCoin News: bitcoin falls below $68,000",
+          "url": "https://www.kucoin.com/news/flash/bitcoin-falls-below-68-000-as-fear-grips-crypto-market"
         },
         {
-          "label": "CoinCentral: Nvidia CEO exit and MSCI",
-          "url": "https://coincentral.com/bitcoin-btc-price-slips-to-67500-as-nvidia-ceo-exit-and-msci-strategy-removal-weigh-on-markets"
+          "label": "CoinCentral: why crypto is dropping today",
+          "url": "https://coincentral.com/why-is-crypto-dropping-today-november-13-2026"
+        }
+      ]
+    },
+    {
+      "title": "Six straight days of ETF outflows; new SEC and CFTC nominees named",
+      "mood": "bearish",
+      "summary": "US spot bitcoin and ether funds both lost money for a sixth day in a row on Thursday, taking away a key source of steady buying. Separately, the White House sent the Senate four nominees for the SEC and CFTC, the two main US market regulators for crypto, including a replacement for Hester Peirce, who led the SEC's crypto task force.",
+      "points": [
+        "Bitcoin ETFs had $284M of net outflows on 12 November, $204M of it from BlackRock's IBIT, per SoSoValue data reported by KuCoin News.",
+        "Ether ETFs lost $70.57M the same day, $62.01M of it from BlackRock's ETHA, per PANews.",
+        "SEC nominees: Steven Levine (Republican, to succeed Peirce) and Kristin Johnson (Democrat, a former CFTC commissioner), per The Block.",
+        "CFTC nominees: Nathan Anonick (Republican) and Matthew Rowland (Democrat), both of whom worked on the Clarity Act, per The Block."
+      ],
+      "sources": [
+        {
+          "label": "KuCoin News: bitcoin ETFs $284M outflow on 12 Nov",
+          "url": "https://kucoin.com/news/flash/bitcoin-spot-etfs-record-284m-net-outflow-on-november-12-marking-6th-consecutive-day-of-outflows"
         },
         {
-          "label": "The Block: JPMorgan's Strategy holdings",
-          "url": "https://www.theblock.co/news/business/2026-11-13-jpmorgan-reports-36-rise-in-strategy-share-holdings-and-540-million-in-blackrocks-bitcoin-etf-439671"
+          "label": "PANews: ether ETF flows",
+          "url": "https://panews.io/articles/01a1d545-1799-766f-af8f-24be866a4d28"
         },
         {
-          "label": "The Block: Strategy and Metaplanet lose MSCI membership",
-          "url": "https://www.theblock.co/news/markets/2026-11-11-strategy-metaplanet-lose-msci-index-membership-november-reshuffle-438437"
+          "label": "The Block: White House SEC and CFTC picks",
+          "url": "https://theblock.co/news/regulation/2026-11-12-white-house-crypto-picks-sec-cftc-439175"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "DOJ and CFTC sue Arkansas over Kalshi",
-      "summary": "The agencies argue federal law gives the CFTC exclusive power over event contracts, so Arkansas cannot act against Kalshi, and are seeking injunctions, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-13-doj-cftc-sue-arkansas-to-block-state-enforcement-action-against-kalshi-439669"
-    },
-    {
-      "title": "Thailand proposes a daily stablecoin cap",
-      "summary": "A Thai SEC draft would limit each customer's stablecoin deposits and withdrawals to 5M baht (about $147,750) per operator per day; comments are due 26 November, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-13-thailand-seeks-daily-stablecoin-cap-439676"
-    },
-    {
-      "title": "JPMorgan raised its Strategy stake 36%",
-      "summary": "A filing shows JPMorgan held 848,932 Strategy shares and about $540M of BlackRock's bitcoin ETF as of 30 September, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-13-jpmorgan-reports-36-rise-in-strategy-share-holdings-and-540-million-in-blackrocks-bitcoin-etf-439671"
-    },
-    {
-      "title": "SpaceX-Tesla merger talk puts their bitcoin in focus",
-      "summary": "Citing Bloomberg, CoinDesk says a merger could be announced as soon as December; the two hold about 30,220 BTC between them.",
-      "url": "https://www.coindesk.com/markets/2026/11/13/spacex-tesla-merger-talks-put-30-000-bitcoin-back-in-focus"
-    },
-    {
-      "title": "US moves to seize $1.2B stolen in the Binance hack",
-      "summary": "A court approved seizing or holding more than $1.2B tied to October's Binance hack, part of more than $2.7B frozen so far, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-12-doj-seize-1-2-billion-binance-hack-north-korea-facestealer-439065"
+      "title": "South Korea lets exchanges freeze on suspected hacks",
+      "summary": "South Korea's Financial Services Commission will let exchanges pause deposits and withdrawals when they only suspect a hack, per crypto.news.",
+      "url": "https://crypto.news/south-korea-crypto-withdrawal-freezes-hacking-threats/"
     },
     {
       "title": "Stablecoin supply shrinks fastest since 2022",
       "summary": "Stablecoin supply fell $14.2B in the 30 days to 9 November, the biggest drop since June 2022, per Glassnode data reported by crypto.news.",
       "url": "https://crypto.news/why-is-crypto-market-crashing-bitcoin-ethereum-xrp"
-    },
-    {
-      "title": "TRM Labs launches tool to freeze stolen crypto faster",
-      "summary": "TRM's Beacon Concierge has helped freeze more than $35M across 15 cases with 14 agencies; DefiLlama counts $8.78B lost to 341 hacks this year, per The Block.",
-      "url": "https://www.theblock.co/news/defi/2026-11-13-trm-labs-beacon-concierge-439609"
     }
   ],
   "calendar": [
     {
-      "et": "Fri 13 Nov · 8:30am",
-      "bkk": "Fri 13 · 20:30",
-      "event": "US producer prices (PPI, Oct)",
-      "impact": "volatile",
-      "key": true,
-      "note": "Consensus +0.4% on the month (prior +1.3%), core +0.3% (prior +0.7%), per Finviz. Fed speakers: Bowman 10:50am, Daly 12:00pm (00:00 Sat Bangkok), Jefferson 7pm (07:00 Sat Bangkok), per the Fed's calendar and Finviz."
+      "et": "Fri 13 Nov · 7:00pm",
+      "bkk": "Sat 14 · 07:00",
+      "event": "Fed Vice Chair Jefferson speaks",
+      "impact": "neutral",
+      "key": false,
+      "note": "On productivity, per the Fed's calendar. Earlier today October PPI came in at +0.3% on the month (0.4% expected), per Seoul Economic Daily, and 6.5% on the year, per ANI; The Coin Republic says 6.6% was expected."
     },
     {
       "et": "Sat 14 – Fri 20 Nov",
@@ -188,7 +144,7 @@
       "event": "Fed Chair Warsh gives opening remarks",
       "impact": "volatile",
       "key": false,
-      "note": "At a San Francisco Fed conference, per the Fed's calendar. Empire State manufacturing at 8:30am ET (prior 25.5), per Finviz."
+      "note": "At a San Francisco Fed conference on productivity and jobs, per the San Francisco Fed. Empire State manufacturing at 8:30am ET (prior 25.5), per Finviz."
     },
     {
       "et": "Tue 17 Nov · 8:30am",
@@ -196,7 +152,7 @@
       "event": "US retail sales (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 0.0%, prior +0.8%, per ForexFundamentals. Waller speaks at 9:10am and industrial production is out at 9:15am ET (prior +0.7%), per the Fed and Finviz."
+      "note": "Consensus 0.0%, prior +0.8%, per Finviz. Waller speaks at 9:10am and industrial production is out at 9:15am ET (consensus +0.1%, prior +0.7%), per the Fed and Finviz."
     },
     {
       "et": "Tue 17 Nov · ~4:20pm",
@@ -204,7 +160,7 @@
       "event": "Nvidia Q3 results",
       "impact": "volatile",
       "key": true,
-      "note": "First report since Jensen Huang's resignation; call at 5pm ET (05:00 Wed Bangkok), per Nvidia."
+      "note": "Call at 5pm ET (05:00 Wed Bangkok), per Nvidia."
     },
     {
       "et": "Wed 18 Nov · 8:30am",
@@ -212,7 +168,7 @@
       "event": "Bullish (BLSH) Q3 results call",
       "impact": "neutral",
       "key": false,
-      "note": "Per Bullish via Finviz. US housing starts at the same time (prior 1.221M), per Finviz."
+      "note": "Per Bullish via Finviz. US housing starts at the same time (consensus 1.23M, prior 1.221M), per Finviz."
     },
     {
       "et": "Wed 18 Nov · 2:00pm",
@@ -228,7 +184,7 @@
       "event": "US jobless claims and Philly Fed survey",
       "impact": "neutral",
       "key": false,
-      "note": "Last week's claims were 200,000 against 195,000 expected; Philly Fed prior 20.9, per Finviz. Goolsbee speaks at 12:30pm ET (00:30 Fri Bangkok), per the Chicago Fed."
+      "note": "Claims consensus 200,000 (prior 200,000); Philly Fed prior 20.9, per Finviz. Goolsbee speaks at 12:30pm ET (00:30 Fri Bangkok), per the Chicago Fed."
     },
     {
       "et": "Fri 20 Nov · 10:00am",
@@ -237,6 +193,14 @@
       "impact": "neutral",
       "key": false,
       "note": "Consensus 51.0, prior 48.0, per Finviz. Fed's Cook speaks at 12:15pm ET, per the Fed."
+    },
+    {
+      "et": "Fri 27 Nov · 3:00am",
+      "bkk": "Fri 27 · 15:00",
+      "event": "Monthly bitcoin options expiry",
+      "impact": "volatile",
+      "key": true,
+      "note": "Size estimates differ: about $6.73B across Deribit, OKX and Bybit per CryptoKeyhole, about $5.6B per CryptoTicker. Settles 08:00 UTC."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -249,9 +213,9 @@
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-13T12:14:38Z",
-    "claimsChecked": 122,
-    "claimsRemoved": 9,
+    "checkedAt": "2026-11-13T16:38:04Z",
+    "claimsChecked": 87,
+    "claimsRemoved": 12,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
