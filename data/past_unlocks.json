@@ -17528,6 +17528,98 @@
     }
    ],
    "harvested": true
+  },
+  {
+   "token": "AZTEC",
+   "name": "Aztec",
+   "coingeckoId": "aztec",
+   "events": [
+    {
+     "date": "2026-11-13",
+     "timeUTC": "00:00",
+     "amountTokens": null,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0,
+      "investors": 0,
+      "community": 0,
+      "ecosystem": 1.0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko Aztec unlock widget (Tokenomist feed): 13 Nov, '1 days away', 797.5M AZTEC ($10.1M), 7.7% of total supply, for Foundation",
+       "url": "https://www.coingecko.com/en/coins/aztec",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist Aztec unlock events (updated 12 Nov 2026 04:00 UTC): next unlock 13 Nov 2026 to Foundation; amount paywalled; circulating 2.995B vs unlocked 2.507B. Same feed as CoinGecko, counted once.",
+       "url": "https://tokenomist.ai/aztec/unlock-events",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Mitrade / BeInCrypto (9 Nov 2026): AZTEC 13 Nov, 797.50M, $9.88M, all to Foundation; Tokenomist lists it as pending verification (repeats Tokenomist)",
+       "url": "https://www.mitrade.com/en/articulo/news/live-news/article-3-2240663-20261109",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Bitrue AZTEC unlock (9 Nov 2026): 13 Nov 00:00 UTC, ~797.5M to Foundation; notes trackers disagree on mechanics; genesis sequencer tokens withdrawable from 13 Nov 2026",
+       "url": "https://www.bitrue.com/blog/aztec-token-unlock",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "time",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Aztec governance forum TGE reference: NCATP Staker WITHDRAWAL_TIMESTAMP 1794578400 = 13 Nov 2026 14:00 UTC; TGE payload moves it to the past only for non-genesis NCATP holders (>=200k), so genesis sequencer withdrawals still open 13 Nov",
+       "url": "https://forum.aztec.network/t/reference-for-triggering-the-aztec-token-generation-event-tge/8366",
+       "kind": "primary",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "ChainCatcher: allocation (investors 27.26%, team 21.06%, Foundation 11.71%, genesis sequencer sale 1.93%, ...); 13 Nov 2026 is 12 months after the sale start",
+       "url": "https://www.chaincatcher.com/en/article/2220222",
+       "kind": "news",
+       "confirms": []
+      },
+      {
+       "label": "Tokenomist weekly digest Nov 9-15 2026: names AZTEC among the week's larger releases, no figures",
+       "url": "https://tokenomist.ai/research/weekly-unlock-digest-nov-9-15-2026-alloras-first-year-cliff-2",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Not enough data",
+      "points": 0.5,
+      "confidence": 70,
+      "scoredAt": "2026-11-14T04:28:17Z"
+     }
+    }
+   ],
+   "harvested": true
   }
  ],
  "dropped": [
