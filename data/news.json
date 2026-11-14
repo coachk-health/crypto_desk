@@ -1,61 +1,68 @@
 {
   "date": "2026-11-14",
-  "updated": "2026-11-13T20:14:46Z",
-  "headline": "Bitcoin is stuck near its lowest level since August as the Nvidia CEO's exit and rising bond yields drag on tech stocks, while US bitcoin ETFs extend a six-day run of outflows.",
+  "updated": "2026-11-14T00:11:03Z",
+  "headline": "Bitcoin ended Friday near $68,000 after falling below $70,000 for the first time in nearly three months, as higher bond yields and the Nvidia shake-up weighed on tech and Strategy faces removal from MSCI indexes.",
   "market": {
-    "asOf": "Bitcoin read from Yahoo Finance's live blog, last updated 8:57am PST (16:57 UTC, 23:57 Bangkok) Fri 13 Nov. Ether and Solana could not be read this run. Use the live prices on this page.",
+    "asOf": "Read about 23:57 UTC Fri 13 Nov (06:57 Sat 14 Nov Bangkok): BTC and SOL from CoinGecko, ETH from CoinMarketCap. CoinMarketCap showed BTC at $69,293 (-5.97%) at the same time. Use the live prices on this page.",
     "btc": {
-      "price": 68469.32,
-      "chg24h": -4.67
+      "price": 68327.09,
+      "chg24h": -4.1
     },
-    "eth": null,
-    "sol": null,
-    "fearGreed": "20, the lowest since 8 July, per Bitcoin Magazine via KuCoin News (Fri 13 Nov)."
+    "eth": {
+      "price": 1922.62,
+      "chg24h": -4.61
+    },
+    "sol": {
+      "price": 77.98,
+      "chg24h": -4.4
+    },
+    "fearGreed": "20, Extreme Fear, on the Alternative.me Crypto Fear & Greed Index (28 the day before); CoinMarketCap's own index read 19."
   },
   "stories": [
     {
-      "title": "Bitcoin near 12-week lows as Nvidia shock and higher yields hit tech",
+      "title": "Bitcoin ends the week near $68,000 as yields and Nvidia turmoil hit risk assets",
       "mood": "bearish",
-      "summary": "Bitcoin fell below $70,000 for the first time since August, per TheStreet. US stocks turned lower as chip makers sold off after Nvidia's CEO Jensen Huang resigned on Thursday, and the 10-year Treasury yield climbed. Higher yields and a likely Fed rate hike in December make risky assets like crypto less attractive.",
+      "summary": "Bitcoin fell below $70,000 on Friday for the first time in nearly three months, per Yahoo Finance, and slipped under its 200-week moving average, per CoinDesk. Rising Treasury yields and hotter-than-hoped inflation have markets expecting a Fed rate hike in December, and chip stocks fell again as investors digested Jensen Huang's exit as Nvidia CEO. Higher rates make risky assets like crypto less attractive.",
       "points": [
-        "Friday's low differs by source: $67,628 per BigGo, about $67,555 per Bitcoin Magazine via KuCoin News.",
-        "Bitcoin was at $68,867 at 10:25am ET per TheStreet; use the live prices on this page for the current level.",
-        "At 11:31am ET the Nasdaq was down 1.45% and AMD 9.9%, per Motley Fool.",
-        "The 10-year Treasury yield rose as high as 5.17%, its highest since October, per Yahoo Finance.",
-        "October wholesale prices (PPI) rose 0.3% on the month against 0.4% expected and 6.5% on the year, per Bitcoin Magazine via KuCoin News, which puts CME FedWatch odds at 88% for a quarter-point December hike and 12% for a half-point one."
+        "Friday's low differs by source: $67,652 in CoinDesk's 4:17am ET update, $67,922 per CryptoTicker (CoinGecko data).",
+        "At 5:55pm ET Friday bitcoin was $68,369 (-4.21%), ether $1,930 (-4.34%) and solana $78.24 (-4.18%), per Business Upturn.",
+        "More than $1.3B of leveraged bets were forcibly closed in 24 hours, about $677M of them on bitcoin, per CoinGlass via CryptoTicker.",
+        "At the close the Nasdaq fell 0.9% and the S&P 500 0.4%, while the Dow rose 0.1%; the 10-year Treasury yield touched 5.17%, per Yahoo Finance.",
+        "After October's wholesale prices (PPI) rose 0.3% on the month and 6.5% on the year, CME FedWatch showed 89.7% odds of a quarter-point December hike and 10.3% for a half-point, per InvestmentNews."
       ],
       "sources": [
-        {
-          "label": "TheStreet: stock market today, 13 Nov",
-          "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-13-2026"
-        },
         {
           "label": "Yahoo Finance live blog, 13 Nov",
           "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
         },
         {
-          "label": "KuCoin News (Bitcoin Magazine): bitcoin drops to $67,555",
-          "url": "https://www.kucoin.com/news/flash/bitcoin-price-drops-to-67-555-lowest-since-mid-august"
+          "label": "CoinDesk live: bitcoin drops below 200-week average",
+          "url": "https://www.coindesk.com/tech/2026/11/13/live-news-bitcoin-drops-below-200-week-moving-average-as-dollar-strength-pressures-risk-assets"
         },
         {
-          "label": "BigGo: bitcoin hits lowest since August",
-          "url": "https://finance.biggo.com/news/b447f895-b334-473a-955c-77524955c977"
+          "label": "CryptoTicker: liquidations and ETF outflows, 13 Nov",
+          "url": "https://cryptoticker.io/en/crypto-news-bitcoin-crash-liquidations-etf-outflows-november-13-2026/"
         },
         {
-          "label": "Motley Fool: midday 13 Nov",
-          "url": "https://www.fool.com/coverage/stock-market-today/2026/11/13/stock-market-midday-nov-13-nasdaq-plunges-as-nvidia-turmoil-deepens-and-treasury-yields-hit-5/"
+          "label": "Business Upturn: Friday evening sell-off",
+          "url": "https://businessupturn.com/usa/money/cryptocurrency/crypto-markets-plunge-across-the-board-in-friday-evening-sell-off/"
+        },
+        {
+          "label": "InvestmentNews: PPI and December hike odds",
+          "url": "https://www.investmentnews.com/equities/ppi-still-uncomfortably-high-as-december-rate-hike-looms/269002"
         }
       ]
     },
     {
-      "title": "ETF outflows hit six days; Strategy to be dropped from MSCI indexes",
+      "title": "Money keeps leaving bitcoin funds; Strategy to be dropped from MSCI indexes",
       "mood": "bearish",
-      "summary": "US spot bitcoin funds lost money for a sixth straight day on Thursday, removing a key source of steady buying. Separately, index provider MSCI will remove Strategy (MSTR), the largest publicly traded corporate holder of bitcoin per Yahoo Finance, from its indexes at the end of November, which could force index funds to sell its shares.",
+      "summary": "US spot bitcoin ETFs, the main way many Americans hold bitcoin through a brokerage, have had a run of daily outflows. Separately, MSCI will remove Strategy (MSTR), the largest corporate holder of bitcoin, from its indexes at the end of November, which could force index funds to sell its shares. CoinDesk also quotes Xapo Bank's CEO saying investors may be selling bitcoin to fund the Anthropic IPO.",
       "points": [
-        "Bitcoin ETFs had $284M of net outflows on 12 November, $204M of it from BlackRock's IBIT, per SoSoValue data reported by KuCoin News.",
-        "A smaller $47.7M figure shared Friday morning was preliminary and left out BlackRock and Fidelity, per CoinGlass via KuCoin.",
-        "MSCI will remove Strategy after the close on 30 November; Strategy estimates about $2.8B of its shares could be sold, and J.P. Morgan says up to $8.8B if other index providers follow, per Yahoo Finance.",
-        "Strategy shares were down 3.64% at $110.24 at 10:05am ET Friday, per Yahoo Finance."
+        "Bitcoin ETFs had $284M of net outflows on 12 November, the sixth day in a row, with $204M from BlackRock's IBIT, per SoSoValue data reported by KuCoin News.",
+        "MSCI removes Strategy after the close on 30 November, per CoinDesk.",
+        "Estimates of the forced selling differ: about $1.6B per CoinDesk (citing BloFin and Strategy's analysis); about $2.8B per Strategy's estimate as reported by Yahoo Finance, which cites J.P. Morgan at up to $8.8B if other index providers follow.",
+        "Strategy shares were down 3.64% at $110.24 at 10:05am ET Friday, per Yahoo Finance.",
+        "Anthropic's IPO could raise up to $64.4B, per CoinDesk, which quotes Xapo Bank's CEO saying investors may be selling bitcoin and other liquid assets to fund allocations."
       ],
       "sources": [
         {
@@ -63,77 +70,79 @@
           "url": "https://www.kucoin.com/news/flash/bitcoin-spot-etfs-record-284m-net-outflow-on-november-12-marking-6th-consecutive-day-of-outflows"
         },
         {
-          "label": "KuCoin insight: preliminary ETF flow figure",
-          "url": "https://www.kucoin.com/news/insight/BTC/6af7300740903b0007ade320"
+          "label": "CoinDesk: MSCI is dropping Strategy",
+          "url": "https://www.coindesk.com/markets/2026/11/12/msci-is-dropping-strategy-from-its-index-and-the-exclusion-could-hit-its-bitcoin-buying-machine"
         },
         {
           "label": "Yahoo Finance: Strategy shares fall 3.64%",
           "url": "https://finance.yahoo.com/markets/stocks/articles/strategy-stocks-fall-3-64-163819811.html"
         },
         {
-          "label": "Yahoo Finance live blog, 13 Nov",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
+          "label": "CoinDesk: bitcoin slides to $68K as Nvidia turmoil and Anthropic IPO weigh",
+          "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-slides-to-usd68k-as-nvidia-turmoil-anthropic-ipo-fuel-broader-market-sell-off"
         }
       ]
     },
     {
-      "title": "US moves to seize $1.2B stolen in North Korea's Binance hack",
+      "title": "US government sues Arkansas to protect prediction markets like Kalshi",
       "mood": "neutral",
-      "summary": "The US Justice Department says it has court approval to seize or restrain more than $1.2B of crypto stolen from Binance in a hack the FBI blames on North Korean hackers. Getting stolen coins frozen lowers the chance they are dumped on the market, but the case is a reminder that even the biggest exchanges can be hacked.",
+      "summary": "The US government and the CFTC sued Arkansas, arguing federal law overrides the state's gambling law for federally regulated prediction-market exchanges. Prediction markets let people trade on outcomes like elections or sports through regulated apps, and the fight decides whether states can ban them. There is no ruling yet.",
       "points": [
-        "More than $6B was stolen in the Binance theft, per the Justice Department.",
-        "Joint government and private-sector efforts have frozen more than $2.7B so far, per the Justice Department.",
-        "The department also disrupted a deepfake scam operation it calls FaceStealer, which it says stole more than $400M in 18 months.",
-        "Binance put the stolen amount at about $6.34B, per Decrypt."
+        "The suit was filed on 12 November in the US District Court for the Eastern District of Arkansas, per InvestmentNews.",
+        "Arkansas filed its own action against Kalshi on 4 November; its law allows penalties of up to $10,000 per violation, per InvestmentNews.",
+        "The federal government has similar actions against 10 other states, and early injunctions have favored it in Arizona, Illinois and Minnesota, per InvestmentNews.",
+        "Robinhood's prediction-market contracts rose 136% from a year earlier in October, per its monthly operating data."
       ],
       "sources": [
         {
-          "label": "US Justice Department press release, 12 Nov",
-          "url": "https://www.justice.gov/opa/pr/justice-department-announces-actions-disrupt-north-koreas-massive-theft-cryptocurrency"
+          "label": "InvestmentNews: feds and CFTC sue Arkansas",
+          "url": "https://www.investmentnews.com/regulation-legal-compliance/feds-and-cftc-sue-arkansas-over-prediction-market-crackdown/269005"
         },
         {
-          "label": "Decrypt: Morning Minute",
-          "url": "https://decrypt.co/383222/morning-minute-crypto-plummets-as-jensen-huang-exits-nvidia"
+          "label": "Investing News: Robinhood October 2026 operating data",
+          "url": "https://investingnews.com/robinhood-markets-inc-reports-october-2026-operating-data/"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Jensen Huang quits as Nvidia CEO",
-      "summary": "Huang resigned as CEO and from the board effectively immediately on Thursday, with CFO Colette Kress as interim CEO, per Decrypt.",
-      "url": "https://decrypt.co/383222/morning-minute-crypto-plummets-as-jensen-huang-exits-nvidia"
+      "title": "US moves to seize $1.2B from North Korea's Binance hack",
+      "summary": "The Justice Department has court approval to seize or restrain more than $1.2B stolen in the Binance hack and disrupted a deepfake scam it calls FaceStealer, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-12-doj-seize-1-2-billion-binance-hack-north-korea-facestealer-439065"
     },
     {
-      "title": "Anthropic IPO set for next week",
-      "summary": "Anthropic plans to start trading as ANT on Thursday 19 November, per Yahoo Finance; CoinDesk reports some traders link crypto selling to money moving into the IPO.",
-      "url": "https://finance.yahoo.com/technology/article/anthropic-ipo-claude-maker-to-begin-trading-on-thursday-nov-19-173550865.html"
+      "title": "Nvidia falls again after Huang's exit",
+      "summary": "HSBC downgraded Nvidia to hold, Apple passed it as the most valuable company and AMD fell 8.8% on Friday, per Forbes. Nvidia reports results on Tuesday.",
+      "url": "https://www.forbes.com/sites/fionariley/2026/11/13/ai-and-chip-stocks-finish-down-on-friday-as-markets-digest-nvidia-turmoil/"
     },
     {
-      "title": "DTCC picks Solana for tokenized securities",
-      "summary": "DTCC plans to let tokenized securities it holds run on Solana, with the integration slated for the second half of 2027, per AltcoinBuzz.",
-      "url": "https://www.altcoinbuzz.io/crypto-market-today-bitcoin-falls-below-69k-liquidations-top-1-3b-dtcc-picks-solana"
+      "title": "Ether drops below $2,000",
+      "summary": "Ether fell 4.34% to $1,929.81 on Friday evening, per Business Upturn.",
+      "url": "https://businessupturn.com/usa/money/cryptocurrency/crypto-markets-plunge-across-the-board-in-friday-evening-sell-off/"
     },
     {
-      "title": "Robinhood crypto volume falls 48%",
-      "summary": "Robinhood's October crypto trading volume was $17.0B, down 48% from a year earlier, while prediction-market volume rose 136%, per Yahoo Finance.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/robinhood-stocks-fall-3-87-161250697.html"
+      "title": "Anthropic IPO set for Thursday",
+      "summary": "Anthropic is offering 825M shares at $70-78 each, raising up to $64.4B, per The Next Web; first trading is listed for 19 November.",
+      "url": "https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation"
     },
     {
-      "title": "New SEC and CFTC nominees named",
-      "summary": "The White House sent the Senate four nominees for the SEC and CFTC, including Steven Levine to succeed Hester Peirce at the SEC, per The Block.",
-      "url": "https://theblock.co/news/regulation/2026-11-12-white-house-crypto-picks-sec-cftc-439175"
+      "title": "DTCC to connect tokenization service to Solana",
+      "summary": "DTCC says its tokenization service will connect to Solana in the second half of 2027.",
+      "url": "https://www.dtcc.com/press-releases/2026/dtcc-tokenization-service-to-connect-with-solana"
+    },
+    {
+      "title": "Robinhood crypto volume falls",
+      "summary": "Robinhood's October crypto trading volume was $17.0B, down 21% from September and 48% from a year earlier.",
+      "url": "https://investingnews.com/robinhood-markets-inc-reports-october-2026-operating-data/"
+    },
+    {
+      "title": "New SEC and CFTC nominees",
+      "summary": "Kristin Johnson and Steven Levine were nominated to the SEC and Matthew Rowland and Nathan Anonick to the CFTC; Senate confirmation is pending, per Banking Dive.",
+      "url": "https://bankingdive.com/news/trump-nominates-democrats-kristin-johnson-sec-rowland-cftc-anonick-levine-republican/874638"
     }
   ],
   "calendar": [
-    {
-      "et": "Fri 13 Nov · 7:00pm",
-      "bkk": "Sat 14 · 07:00",
-      "event": "Fed Vice Chair Jefferson speaks",
-      "impact": "neutral",
-      "key": false,
-      "note": "On productivity, per the Fed's calendar."
-    },
     {
       "et": "Sat 14 – Fri 20 Nov",
       "bkk": "Sat 14 – Fri 20 Nov",
@@ -148,7 +157,7 @@
       "event": "Fed Chair Warsh gives opening remarks",
       "impact": "volatile",
       "key": false,
-      "note": "At a San Francisco Fed conference on productivity and jobs, per the Fed's calendar. Empire State manufacturing at 8:30am ET (consensus 19, prior 25.5, per Economic Weekly and Investing.com); NY Fed's Williams at 9:05am ET, per Investing.com."
+      "note": "At the SF Fed's Productivity and Jobs Task Force conference, per the Fed's calendar. Empire State manufacturing at 8:30am ET (prior 25.5, per Finviz)."
     },
     {
       "et": "Tue 17 Nov · 8:30am",
@@ -156,7 +165,7 @@
       "event": "US retail sales (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "Prior +0.8%. Consensus differs: 0.0% per Forex Fundamentals, +0.2% per Economic Weekly. Industrial production also out on 17 Nov (consensus +0.1%, prior +0.7%)."
+      "note": "Consensus 0.0% per Finviz; prior +0.8% per the Census Bureau. Fed's Waller speaks on payments at 9:10am ET; industrial production at 9:15am ET (consensus +0.1%, prior +0.7%, per Finviz)."
     },
     {
       "et": "Tue 17 Nov · ~4:20pm",
@@ -169,10 +178,10 @@
     {
       "et": "Wed 18 Nov · 8:30am",
       "bkk": "Wed 18 · 20:30",
-      "event": "Bullish (BLSH) Q3 call; US housing starts (Oct) out the same day",
+      "event": "Bullish (BLSH) Q3 results; US housing starts (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "Call time per Bullish via Finviz. Continuum Economics forecasts housing starts of 1.240M, prior 1.221M per the Census Bureau."
+      "note": "Bullish call per Finviz. Housing starts consensus 1.23M per Finviz, prior 1.221M per the Census Bureau."
     },
     {
       "et": "Wed 18 Nov · 2:00pm",
@@ -183,51 +192,51 @@
       "note": "Minutes of the 27-28 October meeting, per the Fed's calendar."
     },
     {
-      "et": "Thu 19 Nov",
-      "bkk": "Thu 19 – Fri 20",
-      "event": "Anthropic shares start trading (ANT)",
-      "impact": "volatile",
-      "key": false,
-      "note": "Per Yahoo Finance. Some traders link recent crypto selling to demand for the IPO, per CoinDesk."
-    },
-    {
-      "et": "Thu 19 Nov",
-      "bkk": "Thu 19",
+      "et": "Thu 19 Nov · 8:30am",
+      "bkk": "Thu 19 · 20:30",
       "event": "US jobless claims and Philly Fed survey",
       "impact": "neutral",
       "key": false,
-      "note": "Claims consensus 197,000 per Economic Weekly (prior 200,000); Philly Fed consensus 23, prior 20.9. Goolsbee speaks at 12:30pm ET (00:30 Fri Bangkok), per the Chicago Fed."
+      "note": "Claims consensus 200,000, prior 200,000; Philly Fed prior 20.9, per Finviz. Goolsbee speaks at 12:30pm ET (00:30 Fri Bangkok), per the Chicago Fed."
     },
     {
-      "et": "Fri 20 Nov",
-      "bkk": "Fri 20",
+      "et": "Thu 19 Nov",
+      "bkk": "Thu 19 – Fri 20",
+      "event": "Anthropic shares start trading",
+      "impact": "volatile",
+      "key": true,
+      "note": "Up to $64.4B raised at $70-78 a share, per The Next Web. CoinDesk quotes Xapo Bank's CEO saying investors may be selling bitcoin to fund IPO allocations."
+    },
+    {
+      "et": "Fri 20 Nov · 10:00am",
+      "bkk": "Fri 20 · 22:00",
       "event": "University of Michigan consumer sentiment (Nov, final)",
       "impact": "neutral",
       "key": false,
-      "note": "Preliminary reading 51.0 (48.0 expected), per InvestingLive; consensus for the final 53.3, per Economic Weekly. Fed's Cook speaks at 12:15pm ET, per the Fed."
+      "note": "Consensus 51.0 per Finviz. Fed's Cook speaks at 12:15pm ET (00:15 Sat Bangkok), per the Fed."
     },
     {
-      "et": "Fri 27 Nov · 3:00am",
-      "bkk": "Fri 27 · 15:00",
+      "et": "Fri 27 Nov",
+      "bkk": "Fri 27",
       "event": "Monthly bitcoin options expiry",
       "impact": "volatile",
-      "key": true,
-      "note": "About $5.6B on Deribit per CryptoTicker (13 Nov snapshot). Settles 08:00 UTC."
+      "key": false,
+      "note": "About $5.6B notional expiring, per CryptoTicker (13 Nov snapshot of Deribit data)."
     },
     {
-      "et": "Wed 9 Dec · 2:00pm",
-      "bkk": "Thu 10 Dec · 02:00",
+      "et": "Tue 8 – Wed 9 Dec",
+      "bkk": "Wed 9 – Thu 10 Dec",
       "event": "Next Fed rate decision",
       "impact": "volatile",
       "key": false,
-      "note": "Meeting 8-9 December; statement and projections at 2:00pm ET, press conference 2:30pm ET, per FedRateCalc. Markets price a likely hike, per TheStreet."
+      "note": "Meeting 8-9 December with new projections, per the Fed. Markets price a likely hike, per InvestmentNews."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-13T20:14:46Z",
-    "claimsChecked": 85,
-    "claimsRemoved": 11,
+    "checkedAt": "2026-11-14T00:11:03Z",
+    "claimsChecked": 91,
+    "claimsRemoved": 5,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
