@@ -10168,7 +10168,71 @@
    "coingeckoId": "pieverse",
    "maxSupply": 1000000000,
    "listed": "2025-11",
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-14",
+     "timeUTC": "00:00",
+     "amountTokens": null,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": null,
+     "sources": [
+      {
+       "label": "tokenomics.com Pieverse unlocks (read 2026-11-13): 14 Nov 2026, 33,411,329 PIEVERSE ($54.1M); Community 33.5% / Insiders 24.9% / Private Investors 24.9% / Foundation 16.6%; Team & Advisors 200M, 12m cliff + 24m linear; Private Investors 150M, 12m cliff + 18m linear; Foundation 100M, 6m cliff + 18m linear; TGE 14 Nov 2025; no time of day",
+       "url": "https://app.tokenomics.com/tokenomics/pieverse/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CryptoTicker (4 Nov 2026), citing CoinMarketCap: 14 Nov 2026 00:00 UTC, ~86.38M (investors 25.0M, foundation reserve 25.0M, ecosystem & marketing 19.75M, team & advisers 8.33M, community growth 8.3M); says Pieverse has not confirmed amounts",
+       "url": "https://cryptoticker.io/en/pieverse-unlock-november-14-vesting-cliff/",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "time",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Coinranking news (10 Nov 2026): team, advisor, investor and core contributor allocations exit 12-month lockup on 14 Nov 2026 and start linear vesting; size of first release not disclosed",
+       "url": "https://coinranking.com/news/pieverse-insider-token-lockup-ends-november-14-starting-linear",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Bitrue (9 Nov 2026): 14 Nov; two unnamed trackers give ~86.38M vs ~33.4M; end of 12-month lock for team, advisers, private investors",
+       "url": "https://www.bitrue.com/blog/pieverse-token-unlock",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount"
+       ]
+      },
+      {
+       "label": "MEXC / PANews (8 Nov 2025): allocations Community 27.6%, Ecosystem & Marketing 27.4%, Team & Advisors 20%, Investors 15%, Foundation 10%; team, advisors, investors, core contributors 12-month lock-up",
+       "url": "https://www.mexc.com/news/158742",
+       "kind": "news",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Not enough data",
+      "points": 1,
+      "confidence": 67,
+      "scoredAt": "2026-11-15T08:10:41Z"
+     }
+    }
+   ],
    "gaps": "No events listed. TGE was 14 Nov 2025; team, advisors and investors are locked 12 months, so the first insider unlock (14 Nov 2026, ~33.41M per tokenomics.com) is outside the window. tokenomics.com treats community growth (~6.56M), ecosystem & marketing (~4.63M) and foundation reserve (~5.56M) as ongoing monthly pools, which would make ~16.75M (~5-6% of circulating) monthly releases in Dec 2025 - Oct 2026 events. But no source opened this run (or recorded by the desk) gives those pools' start dates or cliffs, or confirms any in-window month, so none are listed. Needs a follow-up pass."
   },
   {
@@ -15719,6 +15783,65 @@
       }
      ],
      "gaps": "Recipient is entirely Yeezy Investments LLC. Tokenomist labels it 'Private Investors' (mapped to investors), but the entity is tied to the issuer, so it is arguably team. Not first: an earlier cliff was on 2026-02-17. The $35.22M USD figure is confirmed by BeInCrypto (see PROVE)."
+    },
+    {
+     "date": "2026-11-14",
+     "timeUTC": null,
+     "amountTokens": 29170000,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0,
+      "investors": 1.0,
+      "community": 0,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko YZY page unlock widget (Tokenomist feed, read 2026-11-13): 14 Nov, '1 days away', 29.17M YZY ($8.4M), 2.9% of total; Yeezy Investments LLC Vesting 1 12.5M, Vesting 2 8.33M, Vesting 3 8.33M",
+       "url": "https://coingecko.com/en/coins/yzy",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist YZY unlock events: next unlock 14 Nov 2026 to Yeezy Investments LLC Vesting 1/2/3 (same feed as the CoinGecko widget, counted once)",
+       "url": "https://tokenomist.ai/yzy/unlock-events",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "tokenomics.com YZY unlocks: next unlock 21 Nov 2026, 28.0M YZY ($8.1M), Private Investors 100%; Yeezy Investments 1 (30%, 3m cliff + 24m linear), 2 (20%, 6m cliff + 24m), 3 (20%, 12m cliff + 24m); TGE 21 Aug 2025. Per-month math 300M/24 + 200M/24 + 200M/24 = 29.17M supports the Tokenomist amount",
+       "url": "https://app.tokenomics.com/tokenomics/yzy/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Bitrue (updated 14 Sep 2026): 16 Aug 2026 03:00 UTC 120.83M; 15 Sep 2026 03:00 UTC ~29.17M; ~$8.5M monthly through July 2027 to Yeezy Investments LLC",
+       "url": "https://www.bitrue.com/blog/yzy-token-unlock-date-amount-price-impact",
+       "kind": "news",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 7.0,
+      "confidence": 49,
+      "scoredAt": "2026-11-15T08:10:41Z"
+     }
     }
    ],
    "gaps": "CoinGecko (yzy) confirms YZY, max 1B. Listing month from Tokenomist 'Announced: 21 Aug 2025' (memecoin launched at announcement, so treat as approximate).",
