@@ -1,67 +1,67 @@
 {
   "date": "2026-11-15",
-  "updated": "2026-11-14T20:15:32Z",
-  "headline": "Bitcoin fell below $65,000 on Saturday, its lowest in about three months, as more than $1B of leveraged bets were force-closed and bitcoin funds logged a second straight week of $1B-plus withdrawals.",
+  "updated": "2026-11-15T00:19:02Z",
+  "headline": "Bitcoin fell to about $63,400 late Saturday, its weakest level since August, as a wave of forced selling hit leveraged traders and markets priced in a near-certain Fed rate hike in December.",
   "market": {
-    "asOf": "CoinGecko figures at 17:00 UTC Sat 14 Nov (00:00 Sun Bangkok), as reported by Trending Topics. Prices have moved since; use the live prices on this page.",
+    "asOf": "CoinGecko coin pages read at about 00:05 UTC Sun 15 Nov (07:05 Bangkok). Prices have moved since; use the live prices on this page.",
     "btc": {
-      "price": 65080,
-      "chg24h": -5.33
+      "price": 63757.9,
+      "chg24h": -6.7
     },
     "eth": {
-      "price": 1814.07,
-      "chg24h": -6.04
+      "price": 1752.42,
+      "chg24h": -9.1
     },
     "sol": {
-      "price": 72.07,
-      "chg24h": -9.54
+      "price": 70.09,
+      "chg24h": -10.1
     },
-    "fearGreed": "Extreme fear, but indexes differ: CoinMarketCap's Fear and Greed Index showed 16 out of 100 at about 20:05 UTC, while Trending Topics reported a reading of 13 on Saturday (20 on Friday, 28 on Thursday)."
+    "fearGreed": "Extreme fear, but indexes differ: alternative.me's Crypto Fear and Greed Index shows 13 (20 a day earlier), while CoinMarketCap's Fear and Greed Index shows 16 out of 100, both read at about 00:05 UTC Sunday."
   },
   "stories": [
     {
-      "title": "Bitcoin slips below $65,000, a three-month low, as $1B of leveraged bets are wiped out",
+      "title": "Bitcoin hits a fresh three-month low near $63,400 as a late-night wave of forced selling hits",
       "mood": "bearish",
-      "summary": "Selling carried on through Saturday. Bitcoin went under $65,000 for the first time in about three months, and ether, XRP and solana fell even harder. Most of the losses hit traders who had borrowed to bet on rising prices; their positions were closed automatically.",
+      "summary": "Selling got worse late on Saturday. Bitcoin touched about $63,400, its weakest level since August, and ether slipped under $1,800. In one hour, hundreds of millions of dollars of borrowed bets on rising prices were closed automatically.",
       "points": [
-        "Bitcoin traded at 64,995 in USDT (a dollar-pegged stablecoin) on Saturday morning US time, down 4.86% on the day, per TokenPost (11:56am ET).",
-        "At 17:00 UTC CoinGecko showed bitcoin down 13.59% in seven days, ether down 18.29% and solana down 18.95%, per Trending Topics.",
-        "About $1.01B of crypto bets were liquidated (force-closed) in 24 hours, 93% of them bets on rising prices, per CoinGlass data reported by Trending Topics; another count, CoinGlass data analysed by Altcoin Buzz and cited by CryptoTicker, put it at about $1.23B.",
-        "Bitcoin is about 49% below its record of about $126,000 from October 2025, per Trending Topics.",
-        "Traders fully expect a quarter-point Fed rate hike at the 8-9 December meeting, per CME FedWatch data cited by Bitcoin Magazine."
+        "Bitcoin touched a fresh three-month low of $63,400, per CoinDesk; Investing.com put the intraday low at $63,403.1, its weakest level since August.",
+        "About $691M of crypto bets were liquidated (force-closed) in a single hour, $671M of them bets on rising prices, per TokenPost.",
+        "Over 24 hours, liquidations totalled about $1.47B, including $1.31B of bets on rising prices, per CoinGlass data cited by Investing.com; CryptoTicker's count was lower, at about $1B.",
+        "Ether fell to $1,746 at 5:52pm ET, down 9.60% in 24 hours, per TokenPost.",
+        "At 23:03 UTC, CoinGecko data showed bitcoin 49.6% below its record of $126,080 and the total crypto market at about $2.16T, per CryptoTicker."
       ],
       "sources": [
-        {
-          "label": "TokenPost: bitcoin below $65,000",
-          "url": "https://www.tokenpost.com/news/investing/57470"
-        },
         {
           "label": "CoinDesk: fresh three-month low",
           "url": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst"
         },
         {
-          "label": "Trending Topics: prices and liquidations",
-          "url": "https://www.trendingtopics.eu/bitcoin-65000-dollars-liquidations/"
+          "label": "Investing.com: weakest since August",
+          "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slides-below-68000-as-anthropic-ipo-frenzy-drains-market-liquidity-5027106"
         },
         {
-          "label": "CryptoTicker: later liquidation count",
-          "url": "https://cryptoticker.io/en/bnb-price-falls-below-600-dollars/"
+          "label": "TokenPost: $691M in one hour",
+          "url": "https://www.tokenpost.com/news/investing/57533"
         },
         {
-          "label": "Bitcoin Magazine: rate-hike bets",
-          "url": "https://bitcoinmagazine.com/markets/bitcoin-price-crashes-13-percent-65600"
+          "label": "TokenPost: ether below $1,800",
+          "url": "https://www.tokenpost.com/news/investing/57550"
+        },
+        {
+          "label": "CryptoTicker: late Saturday snapshot",
+          "url": "https://cryptoticker.io/en/crypto-news-bitcoin-falls-to-63500-fed-hike-bets-november-14-2026/"
         }
       ]
     },
     {
-      "title": "Bitcoin funds lose over $1B for a second straight week and are now negative for 2026",
+      "title": "Bitcoin funds lose over $1B for a second straight week, with seven days of withdrawals in a row",
       "mood": "bearish",
-      "summary": "US spot bitcoin ETFs, the way many Americans hold bitcoin in a brokerage account, saw more money leave than arrive for a second week running. When fund holders sell, the fund sells bitcoin, removing buying support. Ether funds also lost money on the week, though their daily losing streak ended on Friday.",
+      "summary": "US spot bitcoin ETFs, the way many Americans hold bitcoin in a brokerage account, saw more money leave than arrive for a second week running. When fund holders sell, the fund sells bitcoin, removing buying support.",
       "points": [
-        "Spot bitcoin ETFs had $1.07B of net outflows in the week to 13 November, after $1.28B the week before, per The Block.",
-        "That leaves bitcoin ETFs about $1.98B in net outflows for 2026 so far, per The Block.",
-        "Friday saw $185.5M leave, led by BlackRock's IBIT ($143.5M) and Fidelity's FBTC ($41.9M), per The Block.",
-        "Spot ether ETFs lost $398.9M on the week, their seventh losing week in a row, but took in $2.4M on Friday, ending a six-day outflow streak, per The Block."
+        "Spot bitcoin ETFs had $1.07B of net outflows last week, per The Block.",
+        "The funds have seen outflows for seven straight trading days, per The Block.",
+        "BlackRock's IBIT lost $143.5M on Friday, about 77% of that day's outflows, per The Block.",
+        "Spot ether ETFs lost $398.9M on the week, their seventh losing week in a row, per The Block."
       ],
       "sources": [
         {
@@ -71,41 +71,47 @@
       ]
     },
     {
-      "title": "Strategy's 850,364 bitcoin are now worth less than it paid for them",
-      "mood": "volatile",
-      "summary": "With bitcoin well below Strategy's average purchase price, the biggest corporate bitcoin holder now shows a paper loss on its whole stack.",
+      "title": "Markets now price a December Fed rate hike as close to certain",
+      "mood": "bearish",
+      "summary": "Higher interest rates make borrowing more expensive and tend to pull money away from riskier assets such as crypto. After hotter-than-expected inflation and jobs data, futures markets now expect the Fed to raise rates at its 8-9 December meeting rather than hold. These are market bets, not a Fed decision.",
       "points": [
-        "Strategy holds 850,364 BTC bought at an average of $75,456 each, about $64.16B in total, per Bitcoin.com News.",
-        "That put it about $7.2B underwater, with the holding valued at about $56.9B, per Bitcoin.com News.",
-        "Its latest disclosed move was buying 1,036 BTC for $81.9M, per crypto.news."
+        "CME FedWatch showed 88.5% odds of a quarter-point hike in December and 11.5% for a half-point hike, per Bitcoin.com News.",
+        "Prediction markets agreed: Kalshi at 89% and Polymarket at 88% for a quarter-point hike, per Bitcoin.com News.",
+        "October consumer prices rose 0.4% against a 0.3% forecast, and payrolls rose 165,000 against about 65,000 expected, per Bitcoin.com News.",
+        "The Fed's target range is currently 3.75% to 4.00%, per the Fed."
       ],
       "sources": [
         {
-          "label": "Bitcoin.com News: Strategy underwater",
-          "url": "https://news.bitcoin.com/featured/saylor-strategy-7-billion-underwater-bitcoin/"
+          "label": "Bitcoin.com News: hike odds near certain",
+          "url": "https://news.bitcoin.com/market-updates/fed-rate-hike-odds-reach-near-certainty-as-bitcoin-price-falls-to-65k/"
         },
         {
-          "label": "crypto.news: weekly recap",
-          "url": "https://crypto.news/bitcoin-70k-coinbase-charter-nyse-weekly-recap/"
+          "label": "Federal Reserve: October decision",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Bitcoin mining gets 9% easier",
-      "summary": "Mining difficulty fell 9.13% to 134.82T as computing power on the network dropped to about 907 EH/s, per TokenPost.",
-      "url": "https://www.tokenpost.com/news/investing/57374"
+      "title": "Kava Lend hacked for about $3.8M",
+      "summary": "An attacker drained about 55.2M KAVA through a dormant BUSD market, and the KAVA token fell nearly 40%, per The Block.",
+      "url": "https://www.theblock.co/news/defi/2026-11-14-kava-lend-loses-roughly-3-8-million-to-hack-sending-kava-token-down-nearly-40-440350"
     },
     {
-      "title": "BNB falls below $600",
-      "summary": "BNB dropped to $584, down 7.3% in 24 hours and about 23% since the 29 October Binance hack, per CryptoTicker.",
-      "url": "https://cryptoticker.io/en/bnb-price-falls-below-600-dollars/"
+      "title": "Binance reopens withdrawals on 87 networks",
+      "summary": "After the 29 October hack, Binance reopened 87 networks and aims to restore all remaining networks and assets by the end of next week, per Coinpaper.",
+      "url": "https://coinpaper.com/38857/binance-reopens-87-crypto-networks-after-6-3-b-hack-targets-full-withdrawals-next-week"
     },
     {
-      "title": "Louisiana's attorney general hits back at the CFTC",
-      "summary": "After the CFTC sued the state over prediction markets, Louisiana's AG called CFTC chair Michael Selig an \"obsequious standard bearer\" for the industry; a hearing is set for 30 November, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-14-louisiana-ag-calls-cftc-chair-an-obsequious-standard-bearer-for-prediction-markets-following-agency-lawsuit-440342"
+      "title": "Altcoins fall harder than bitcoin",
+      "summary": "XRP fell 9.1%, solana 10.9%, dogecoin 10.4% and cardano 11.7% on Saturday, per Investing.com.",
+      "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slides-below-68000-as-anthropic-ipo-frenzy-drains-market-liquidity-5027106"
+    },
+    {
+      "title": "Stablecoin supply shrinks by a record amount",
+      "summary": "The supply of USDT, USDC and DAI fell by a record $11.5B over 30 days, per Coinbase Institutional data cited by Coinpaper.",
+      "url": "https://coinpaper.com/38863/why-is-bitcoin-crashing-btc-breaks-below-64-k-as-ethereum-falls-toward-1-800"
     },
     {
       "title": "Options hedging may be making swings bigger",
@@ -113,19 +119,14 @@
       "url": "https://coindesk.com/markets/2026/11/14/a-behind-the-scenes-force-may-amplify-bitcoin-and-ether-price-volatility"
     },
     {
-      "title": "JPMorgan raises its Strategy stake",
-      "summary": "JPMorgan's latest quarterly filing shows its Strategy holding up 36% to 848,932 shares, per The Block.",
-      "url": "https://www.theblock.co/newsletters/the-daily/2026-11-14-meta-prediction-market-app-doj-binance-hack-more-crypto-news-440304"
+      "title": "Louisiana's attorney general hits back at the CFTC",
+      "summary": "After the CFTC sued the state over prediction markets, Louisiana's AG called CFTC chair Michael Selig an \"obsequious standard bearer\" for the industry, per The Block.",
+      "url": "https://www.theblock.co/news/regulation/2026-11-14-louisiana-ag-calls-cftc-chair-an-obsequious-standard-bearer-for-prediction-markets-following-agency-lawsuit-440342"
     },
     {
       "title": "Meta tests a prediction-market app",
-      "summary": "Called \"Takes\", it is being tested with employees and uses points rather than real money, per the WSJ via The Block.",
-      "url": "https://www.theblock.co/newsletters/the-daily/2026-11-14-meta-prediction-market-app-doj-binance-hack-more-crypto-news-440304"
-    },
-    {
-      "title": "Bitcoin mined in 2010 moves",
-      "summary": "Two addresses untouched for over 16 years moved a combined 100 BTC, each from 50 BTC mining rewards in September 2010, per The Block.",
-      "url": "https://www.theblock.co/newsletters/the-daily/2026-11-14-meta-prediction-market-app-doj-binance-hack-more-crypto-news-440304"
+      "summary": "Meta is testing a prediction-market app that uses \"cred\" points instead of cash, per the WSJ via The Block.",
+      "url": "https://www.theblock.co/news/markets/2026-11-13-meta-tests-prediction-market-app-using-cred-points-instead-cash-wsj-440215"
     }
   ],
   "calendar": [
@@ -151,7 +152,7 @@
       "event": "Empire State manufacturing survey (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 19, per Economic Weekly; prior 25.5, per investingLive."
+      "note": "Consensus 19, per Economic Weekly; prior 25.5, per the New York Fed. Fed's Williams speaks at 9:05am ET (21:05 Bangkok), per Finviz."
     },
     {
       "et": "Mon 16 Nov · 12:00pm",
@@ -159,7 +160,7 @@
       "event": "Fed Chair Warsh gives opening remarks",
       "impact": "volatile",
       "key": false,
-      "note": "At the Productivity and Jobs Task Force conference at the San Francisco Fed, per the Fed's calendar."
+      "note": "At the Productivity and Jobs Task Force conference at the San Francisco Fed, 9:00am PT, per the San Francisco Fed."
     },
     {
       "et": "Tue 17 Nov · 8:30am",
@@ -167,7 +168,7 @@
       "event": "US retail sales (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "Forecasts differ: +0.2% per Newsquawk and Economic Weekly, 0% per Forex Fundamentals; prior +0.8%. Industrial production at 9:15am ET (consensus +0.1%, per Economic Weekly). Home Depot reports before the open."
+      "note": "Forecasts differ: +0.2% per Newsquawk and Economic Weekly, 0% per Forex Fundamentals; prior +0.8%. Industrial production at 9:15am ET (consensus +0.1%, per Economic Weekly). Fed's Waller speaks at 9:20am ET, per Finviz."
     },
     {
       "et": "Tue 17 Nov · ~4:20pm",
@@ -175,7 +176,7 @@
       "event": "Nvidia Q3 results",
       "impact": "volatile",
       "key": true,
-      "note": "Call at 5pm ET (05:00 Wed Bangkok), per Nvidia. Revenue forecasts: about $109.2B per LSEG data cited by IG, $108.84B per MarketPulse."
+      "note": "Call at 5pm ET (05:00 Wed Bangkok), per Nvidia. Revenue forecasts: about $109.2B per LSEG data cited by IG, $108.84B per MarketPulse. First results since Jensen Huang stepped down as CEO on 12 November, per IG."
     },
     {
       "et": "Wed 18 Nov · 2:00pm",
@@ -183,7 +184,15 @@
       "event": "Fed minutes from the October meeting",
       "impact": "volatile",
       "key": true,
-      "note": "Minutes of the 27-28 October meeting, where rates were held at 3.75-4.00% on a 10-2 vote; Cook and Hammack dissented in favour of a hike, per the Fed. Earlier, Bullish (BLSH) holds its Q3 call at 8:30am ET and Target reports before the open."
+      "note": "Minutes of the October meeting, where rates were held at 3.75-4.00% on a 10-2 vote; Cook and Hammack dissented in favour of a hike, per the Fed. Bullish (BLSH) reports Q3 results the same day, with a call at 8:30am ET."
+    },
+    {
+      "et": "Wed 18 – Thu 19 Nov",
+      "bkk": "Wed 18 – Thu 19 Nov",
+      "event": "Trump–Xi meeting at APEC, Shenzhen",
+      "impact": "volatile",
+      "key": false,
+      "note": "Per learn2.trade's week-ahead preview."
     },
     {
       "et": "Thu 19 Nov",
@@ -199,7 +208,7 @@
       "event": "US jobless claims and Philly Fed survey",
       "impact": "neutral",
       "key": false,
-      "note": "Claims consensus 197,000 (prior 200,000); Philly Fed consensus 23 (prior 20.9), per Economic Weekly. Walmart reports earnings the same day. Goolsbee speaks at 12:30pm ET (00:30 Fri Bangkok), per the Chicago Fed."
+      "note": "Claims consensus 197,000 per Economic Weekly (200,000 per Finviz), prior 200,000; Philly Fed consensus 23 (prior 20.9), per Economic Weekly. Walmart's results materials are due about 6:00am CT (7:00am ET), with a call at 7:00am CT, per Walmart. Goolsbee speaks at 12:30pm ET (00:30 Fri Bangkok), per Finviz."
     },
     {
       "et": "Fri 20 Nov · 10:00am",
@@ -207,7 +216,7 @@
       "event": "University of Michigan consumer sentiment (Nov, final)",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 53.3, per Economic Weekly; preliminary reading 51.0 (October 48.0), per StockAnalysis. Fed's Cook speaks at 12:15pm ET (00:15 Sat Bangkok), per the Fed."
+      "note": "Consensus 53.3, per Economic Weekly; preliminary reading 51.0 (October 48.0), per StockAnalysis. Monthly US stock options expire the same day. Fed's Cook speaks at 12:15pm ET (00:15 Sat Bangkok), per Finviz."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -220,9 +229,9 @@
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-14T20:15:32Z",
-    "claimsChecked": 97,
-    "claimsRemoved": 11,
+    "checkedAt": "2026-11-15T00:19:02Z",
+    "claimsChecked": 148,
+    "claimsRemoved": 8,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
