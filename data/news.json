@@ -1,156 +1,151 @@
 {
   "date": "2026-11-16",
-  "updated": "2026-11-16T04:26:10Z",
-  "headline": "Bitcoin is holding near $65,000 in Asian trading on Monday after its weekend drop to about $62,000, with fear still extreme and futures traders now pricing a roughly 94-95% chance of a December Fed rate hike.",
+  "updated": "2026-11-16T08:18:38Z",
+  "headline": "Bitcoin is holding just under $65,000 into Monday's European morning with fear still extreme, and the biggest bitcoin options bet is now protection against a fall below $60,000 ahead of Fed Chair Warsh's remarks at noon ET.",
   "market": {
-    "asOf": "Read at about 04:00 UTC Mon 16 Nov (11:00 Bangkok) from CoinGecko coin pages; CoinMarketCap and Alternative.me could not be opened this run. Prices move fast; use the live prices on this page.",
+    "asOf": "Read at about 08:01 UTC Mon 16 Nov (15:01 Bangkok) from CoinGecko's homepage table. The 24-hour direction could not be confirmed this run: CoinMarketCap's pages showed BTC down 2.73% and ETH down 6.05%, which CoinGecko did not match. Prices move fast; use the live prices on this page.",
     "btc": {
-      "price": 65033.82,
-      "chg24h": 1.2
+      "price": 64863.93,
+      "chg24h": null
     },
     "eth": {
-      "price": 1824.63,
-      "chg24h": 4.1
+      "price": 1818.32,
+      "chg24h": null
     },
     "sol": {
-      "price": 72.16,
-      "chg24h": 1.3
+      "price": 71.09,
+      "chg24h": null
     },
-    "fearGreed": "Extreme fear: CoinGecko's Fear & Greed gauge read 19 out of 100 (Extreme Fear) on its homepage and 21 on its bitcoin page at about 04:00 UTC; KuCoin's daily report put Fear & Greed at 10 as of 00:00 UTC."
+    "fearGreed": "Extreme fear: CoinGecko's gauge read 19 out of 100 (Extreme Fear) at about 08:01 UTC; CoinMarketCap's index showed 12/100 at about 08:04 UTC; Alternative.me's index was 10 on Monday, against 29 a week ago, per Coin Gabbar."
   },
   "stories": [
     {
-      "title": "Bitcoin holds near $65,000 in Asia after a weekend low near $62,000",
+      "title": "Bitcoin stuck near $65,000 as the biggest options bet becomes a fall below $60,000",
       "mood": "volatile",
-      "summary": "Bitcoin bounced from its weekend low and was trading around $65,000 in the Asian session on Monday, while Asian stock markets fell. The weekend drop forced out more than $2B of borrowed bets, most of them bets on higher prices. Ether and Solana fell harder than bitcoin over the week.",
+      "summary": "Bitcoin has steadied after its weekend low near $62,000 but has not recovered, trading in a narrow range around $65,000 into Europe's morning. In bitcoin options, the most popular contract is now a bet that the price falls below $60,000, not one that it rises above $100,000. A renewed sell-off in AI-linked stocks hit Asian markets.",
       "points": [
-        "Bitcoin was at $65,206 at 9:27pm ET Sunday (02:27 UTC Monday), per TokenPost, which also said the MSCI Asia-Pacific index fell more than 1% and South Korean tech-heavy indexes more than 3%.",
-        "The weekend low was $61,946 on Coinbase, per CryptoTicker; Cointelegraph gave a 24-hour low of $62,080.91 using CoinGecko data.",
-        "The weekly fall was 14.2% to $64,910 by late Sunday afternoon, per The Block; Cointelegraph's weekly roundup had a 12.4% loss at $65,116.",
-        "About $2.02B of crypto bets were force-closed (liquidated) from 8am ET Saturday to 8am ET Sunday, $1.68B of them bets on higher prices, per The Block.",
-        "Ether fell 18.2% on the week to $1,815 and Solana 19.7% to $71.68, per The Block; ether's low was $1,715 at 01:45 UTC on 15 November, per CryptoTicker."
+        "Bitcoin was up 0.6% at $64,866.50 and ether up about 1% at $1,817.23 at 05:25 GMT, per Investing.com.",
+        "The weekend low was $61,970.30 per The Crypto Basic and \"as low as $62,000\" per The Block; The Block put the weekly fall at 14.2% to $64,910.",
+        "On Deribit, the $60,000 put (a bet on a fall) has about $900M in open interest against about $867M for the $100,000 call, per CoinDesk, which said Paradigm saw over $1B of put block trades in two days.",
+        "Volmex's 30-day bitcoin implied-volatility index, a gauge of expected price swings, hit 57.13 on Sunday, its highest since June, before easing to 44, per CoinDesk.",
+        "Tech-heavy stock indexes in Japan, Korea and Taiwan fell, with Taiwan's Taiex down more than 4%, and Nasdaq 100 futures were down 0.5%, per Reuters."
       ],
       "sources": [
         {
-          "label": "TokenPost: Monday price and Asian stocks",
-          "url": "https://www.tokenpost.com/news/investing/58000"
+          "label": "CoinDesk: options positioning",
+          "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-biggest-bet-is-now-a-drop-below-usd60-000-not-a-rally-above-usd100-000"
         },
         {
-          "label": "The Block: weekly fall and liquidations",
+          "label": "Investing.com via Yahoo: Monday prices",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-pinned-below-65k-crypto-061112106.html"
+        },
+        {
+          "label": "The Crypto Basic: weekend range",
+          "url": "https://thecryptobasic.com/2026/11/16/crypto-price-analysis-btc-eth-cc-qnt-and-zec-nov-16-canton-and-quant-gain-as-bitcoin-rebounds-from-61970/"
+        },
+        {
+          "label": "The Block: weekly fall",
           "url": "https://www.theblock.co/news/markets/2026-11-15-cz-denies-binance-sold-crypto-as-bitcoin-bounces-from-four-month-low-near-62000-440807"
         },
         {
-          "label": "CryptoTicker: weekend low",
-          "url": "https://cryptoticker.io/en/bitcoin-price-overnight-low-weekly-close-november-15-2026/"
-        },
-        {
-          "label": "Cointelegraph: weekly roundup",
-          "url": "https://cointelegraph.com/magazine/us-sellers-drive-bitcoin-crash-jensen-plots-comeback-hodlers-digest"
-        },
-        {
-          "label": "Cointelegraph: 24-hour low",
-          "url": "https://cointelegraph.com/markets/bitcoin-four-month-low-62k-crypto-market-selloff"
-        },
-        {
-          "label": "CryptoTicker: ether low",
-          "url": "https://cryptoticker.io/en/ethereum-price-crash-1715-63-percent-below-record-november-15-2026/"
+          "label": "Reuters Morning Bid via Yahoo: Asian stocks",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/morning-bid-ai-selloff-resumes-053223150.html"
         }
       ]
     },
     {
-      "title": "Fed hike odds climb to about 94-95% as money keeps leaving crypto funds",
+      "title": "Big week for interest rates: Warsh speaks today, December hike odds near 94%, ETFs after $1.91B of outflows",
       "mood": "bearish",
-      "summary": "Futures traders now see a December interest-rate rise by the Fed as very likely; that is a market bet, not a Fed decision, and Fed Chair Warsh speaks later today. US bitcoin and ether funds have been losing money for weeks, and the supply of the big dollar stablecoins is shrinking.",
+      "summary": "Fed Chair Warsh gives remarks at noon ET today, and futures traders see a December interest-rate rise as very likely; that is a market bet, not a Fed decision. US spot bitcoin ETFs reopen after seven straight days of withdrawals. Retail sales, Nvidia results, the Fed's minutes and Anthropic's share listing all land this week.",
       "points": [
-        "Markets price a 94% chance of a 0.25-point hike in December and a 6% chance of a 0.5-point move, per Business Recorder; KuCoin, citing CME FedWatch, put the 0.25-point odds at 95%, up from 88.5% on Saturday per CryptoTicker.",
-        "US spot bitcoin ETFs lost $1.07B last week, $1.91B over a seven-day outflow streak since 5 November and $2.35B over two weeks, per The Block; BlackRock's IBIT lost $143.5M on Friday.",
+        "CME FedWatch showed a 94% chance of a 0.25-point hike in December and 6% for a 0.5-point move, per Investing.com; Reuters put the half-point odds at about 8%.",
+        "US spot bitcoin ETFs lost $1.91B over seven sessions through 13 November, per The Block; last week's outflow was $1.07B after $1.28B the week before, per FXStreet citing SoSoValue.",
         "US ether ETFs lost $398.9M, their seventh straight week of withdrawals, per The Block.",
-        "Stablecoin supply fell $17B over the last month, the steepest drop since 2022, leaving USDT and USDC at $244B, their lowest since September 2025, per Glassnode data cited by CoinDesk; Coinbase Institutional counted a record $11.5B fall for USDT, USDC and DAI in 30 days, per CryptoTicker."
+        "Stablecoin supply fell about $17B over the month, per KuCoin's daily report citing Glassnode.",
+        "The Fed voted 10-2 in October to hold rates at 3.75-4.00%; minutes of that meeting are due Wednesday at 2pm ET, per crypto.news."
       ],
       "sources": [
         {
-          "label": "Business Recorder: Fed odds",
-          "url": "https://www.brecorder.com/news/40449130/gold-edges-higher-as-investors-await-warsh-remarks-for-rate-signals"
+          "label": "Investing.com: FedWatch odds",
+          "url": "https://uk.investing.com/news/commodities-news/gold-falls-below-3900-as-december-fed-hike-bets-build-warsh-in-focus-4983517"
         },
         {
-          "label": "KuCoin: CME FedWatch odds",
-          "url": "https://kucoin.com/news/flash/fed-s-december-25-basis-point-rate-hike-probability-at-95"
-        },
-        {
-          "label": "CryptoTicker: Saturday odds, stablecoins",
-          "url": "https://cryptoticker.io/en/ethereum-price-crash-1715-63-percent-below-record-november-15-2026/"
+          "label": "crypto.news: week ahead",
+          "url": "https://crypto.news/bitcoin-fed-nvidia-anthropic-ipo-crypto-week-ahead/"
         },
         {
           "label": "The Block: ETF flows",
           "url": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-continue-bleeding-440337"
         },
         {
-          "label": "CoinDesk: stablecoin supply",
-          "url": "https://coindesk.com/markets/2026/11/15/xrp-crashes-to-its-lowest-since-november-2024-as-money-leaves-crypto"
+          "label": "FXStreet via Mitrade: weekly ETF flows",
+          "url": "https://www.mitrade.com/au/insights/news/live-news/article-3-2255927-20261116"
+        },
+        {
+          "label": "KuCoin: daily report",
+          "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-16-2026"
+        },
+        {
+          "label": "Reuters Morning Bid via Yahoo: half-point odds",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/morning-bid-ai-selloff-resumes-053223150.html"
         }
       ]
     },
     {
-      "title": "Bitcoin-holding companies under pressure: Saylor hints at a buy, Metaplanet books a loss, MSCI removals near",
-      "mood": "bearish",
-      "summary": "Strategy chairman Michael Saylor posted a hint of another bitcoin purchase, but nothing is confirmed until the company discloses a buy. Strategy's bitcoin is worth less than it paid. Japan's Metaplanet reported a loss after selling bitcoin, and both companies leave MSCI indexes after 30 November.",
+      "title": "Binance aims to reopen all withdrawals this week after its $6.3B hack; CZ says it did not sell crypto",
+      "mood": "neutral",
+      "summary": "The world's largest crypto exchange is still restoring withdrawals after the 29 October hack, the largest crypto theft on record. Binance reopened 87 networks on 14 November and is targeting the rest by the end of this week; that is a target, not a guarantee. Founder CZ denied rumours that Binance sold crypto during the crash.",
       "points": [
-        "Saylor posted \"This dip could use a little orange\"; Strategy holds 850,364 BTC at an average cost of $75,456, an implied paper loss of about $8.46B (a tracker showed $8.69B), per Bitcoin.com News.",
-        "MSCI is removing Strategy, Metaplanet and Upexi at the 30 November close, and JPMorgan estimated about $2.8B of selling pressure from Strategy's removal alone, per Cointelegraph.",
-        "Metaplanet reported a nine-month net loss of 27.16 billion yen (about $170M), including a 19.17 billion yen loss on selling 10,000 BTC; it held 44,000 BTC at the end of September, per Cointelegraph."
+        "Binance reopened withdrawals for 87 networks on 14 November and aims to reopen all remaining networks and assets by the end of the following week, per PYMNTS.",
+        "The loss is put at $6.3B by PYMNTS and Bitcoin.com News, $6.34B by BigGo Finance; Binance says its reserves cover all losses, per PYMNTS.",
+        "Stolen assets included about 167,464 ETH and about $1.6B of USDT, and about $3B was frozen by third parties, per Bitcoin.com News; BigGo cites the AP at over $2.7B frozen and the FBI at over $1.2B seized.",
+        "CZ said \"No, Binance did not sell crypto,\" and that he had been buying with stablecoins, per The Block."
       ],
       "sources": [
         {
-          "label": "Bitcoin.com News: Saylor hint",
-          "url": "https://news.bitcoin.com/featured/michael-saylor-hints-at-another-strategy-bitcoin-buy-as-btc-slides/"
+          "label": "PYMNTS: reopening target",
+          "url": "https://www.pymnts.com/cryptocurrency/2026/binance-aims-to-reopen-withdrawals-after-6-3-billion-hack/"
         },
         {
-          "label": "Cointelegraph via TradingView: Metaplanet, MSCI",
-          "url": "https://www.tradingview.com/news/cointelegraph:f9e40fda2094b:0-metaplanet-swings-to-170m-loss-as-bitcoin-sale-hits-earnings/"
+          "label": "Bitcoin.com News: 87 networks",
+          "url": "https://news.bitcoin.com/featured/binance-reopens-87-networks-following-historic-6-3-billion-breach/"
+        },
+        {
+          "label": "BigGo Finance: seizures",
+          "url": "https://finance.biggo.com/news/1856ef2a-06a6-4e09-913e-a00d469ba6c0"
+        },
+        {
+          "label": "The Block: CZ denial",
+          "url": "https://www.theblock.co/news/markets/2026-11-15-cz-denies-binance-sold-crypto-as-bitcoin-bounces-from-four-month-low-near-62000-440807"
         }
       ]
     }
   ],
   "briefs": [
     {
+      "title": "Strategy's latest disclosed bitcoin buy",
+      "summary": "Strategy's most recent purchase filing, dated 9 November, shows 1,036 BTC bought for $81.9M, taking holdings to 850,364 BTC at an average cost of $75,456.",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001050446/000119312526452693/mstr-20261109.htm"
+    },
+    {
+      "title": "Mining pool Luxor hit by an attack",
+      "summary": "Mining power from over a dozen client accounts was redirected to another pool; Luxor patched the hole within 2 hours and will compensate clients, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-15-luxor-attack-client-hashrate-440810"
+    },
+    {
       "title": "Kava Lend exploited",
-      "summary": "An attacker borrowed about 55.2M KAVA, worth about $3.76M before the attack, on 14 November; Upbit, Bithumb and Coinone paused KAVA deposits and withdrawals, KAVA fell about 39% to $0.042, and 612,416 USDT was blocked at a bridge, per FinanceFeeds.",
-      "url": "https://financefeeds.com/kava-lend-exploit-drains-3-76-million-as-612k-in-proceeds-is-blocked/"
+      "summary": "About 55.2M KAVA (about $3.76M) was drained; about 49.2M was bridged out and most of it sold for about $2.09M, and KAVA fell about 39% to $0.042, per The Block.",
+      "url": "https://www.theblock.co/news/defi/2026-11-14-kava-lend-loses-roughly-3-8-million-to-hack-sending-kava-token-down-nearly-40-440350"
     },
     {
-      "title": "Bitcoin mining machines hijacked, but no block mined",
-      "summary": "About 64,000 machines with about 13 EH/s of mining power were redirected to the OCEAN pool with payouts to an attacker; the attack stopped before any block was found, per TokenPost.",
-      "url": "https://tokenpost.com/news/technology/57777"
+      "title": "Cardano holders reject a copper purchase",
+      "summary": "A proposal to spend 22M ADA (about $5M) of treasury funds, about two-thirds of it on physical copper, was voted down 2.86B ADA against to about 20M ADA in favour, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/16/cardano-holders-vote-down-usd5-million-bid-to-buy-warehouse-copper"
     },
     {
-      "title": "Wallet linked to the Ethereum Foundation sells 7,500 ETH",
-      "summary": "A wallet that Lookonchain links to the Ethereum Foundation sold 7,500 ETH (about $14.52M) over four days; ownership is not confirmed, per Analytics Insight.",
-      "url": "https://www.analyticsinsight.net/news/ethereum-price-drops-below-usd-1800-after-foundation-linked-wallet-sells-7500-eth"
-    },
-    {
-      "title": "Zcash dev-fund vote opens today",
-      "summary": "The Zcash Community Grants vote runs 16-30 November; ZEC was $892.80 on 14 November after a 30.5% weekly drop, per CryptoTicker.",
-      "url": "https://cryptoticker.io/en/zcash-below-900-dollars-zcsh-outflows/"
-    },
-    {
-      "title": "US regulators sue Arkansas over prediction markets",
-      "summary": "The Justice Department and CFTC sued Arkansas on 12 November to stop its case against Kalshi, the 11th state the CFTC has sued, per crypto.news.",
-      "url": "https://crypto.news/doj-cftc-sue-arkansas-kalshi-prediction-markets/"
-    },
-    {
-      "title": "XRP hits its lowest since November 2024",
-      "summary": "XRP fell to a low of 89 cents, and US XRP ETFs had a $19.13M weekly outflow, their largest since March, per CoinDesk citing SoSoValue.",
-      "url": "https://coindesk.com/markets/2026/11/15/xrp-crashes-to-its-lowest-since-november-2024-as-money-leaves-crypto"
-    },
-    {
-      "title": "MegaETH cuts staff",
-      "summary": "MegaETH reduced its workforce by 20% and committed $30M to AI products, per Cointelegraph.",
-      "url": "https://cointelegraph.com/magazine/us-sellers-drive-bitcoin-crash-jensen-plots-comeback-hodlers-digest"
-    },
-    {
-      "title": "Senate hearing on two SEC nominees on Thursday",
-      "summary": "The Senate Banking Committee holds a nomination hearing on 19 November at 10am ET, including SEC nominees Kristin Johnson and Steven Levine, per the committee.",
-      "url": "https://www.banking.senate.gov/hearings/11/12/2026/nomination-hearing"
+      "title": "TRUMP memecoin falls below $1",
+      "summary": "The TRUMP memecoin dropped below $1 for the first time since its 2025 launch, per Investing.com.",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-pinned-below-65k-crypto-061112106.html"
     }
   ],
   "calendar": [
@@ -184,7 +179,7 @@
       "event": "US retail sales (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 0.0% per Finviz, +0.2% per Newsquawk; prior +0.8%. Industrial production at 9:15am ET (consensus +0.1%, prior +0.7%, per Finviz). Fed's Waller speaks at 9:10am ET per the Fed, 9:20am per Finviz."
+      "note": "Consensus 0.0%, prior +0.8%, per Finviz. Industrial production at 9:15am ET (consensus +0.1%, prior +0.7%, per Finviz). Fed's Waller speaks at 9:10am ET per the Fed, 9:20am per Finviz."
     },
     {
       "et": "Tue 17 Nov · ~4:20pm",
@@ -192,7 +187,7 @@
       "event": "Nvidia Q3 results",
       "impact": "volatile",
       "key": true,
-      "note": "Conference call at 2:00pm PT / 5:00pm ET (05:00 Wed Bangkok), per Nvidia. Analysts expect revenue of $108.84B, per MarketPulse."
+      "note": "Conference call at 2:00pm PT / 5:00pm ET (05:00 Wed Bangkok), per Nvidia. Analysts expect revenue of $108.84B and earnings of $2.47 a share, per MarketPulse."
     },
     {
       "et": "Wed 18 Nov · 2:00pm",
@@ -216,7 +211,7 @@
       "event": "Anthropic shares expected to start trading",
       "impact": "volatile",
       "key": true,
-      "note": "Nasdaq ticker ANT, 825M shares at an indicated $70-78, with 19 November reported as the first trading day, per FinanceFeeds. The date is reported, not set in the filing, and can change."
+      "note": "Nasdaq ticker ANT, 825M shares at an indicated $70-78, per RTTNews; crypto.news and KuCoin report pricing on 18 November and trading on 19 November. The dates are reported, not fixed, and can change."
     },
     {
       "et": "Thu 19 Nov · 8:30am",
@@ -224,7 +219,7 @@
       "event": "US jobless claims and Philly Fed survey",
       "impact": "neutral",
       "key": false,
-      "note": "Claims consensus 200,000, prior 200,000; Philly Fed consensus 19.2, prior 20.9, per Finviz. Senate Banking hearing on two SEC nominees at 10am ET (22:00 Bangkok), per the committee."
+      "note": "Claims consensus 200,000 per Finviz, 188,000 per one newsletter calendar; prior 200,000. Philly Fed consensus 19.2, prior 20.9, per Finviz. Senate Banking Committee hearing on SEC nominees Steven Levine and Kristin Johnson the same day, per CoinDesk."
     },
     {
       "et": "Fri 20 Nov · 3:00am",
@@ -232,7 +227,7 @@
       "event": "Bitcoin options expiry on Deribit",
       "impact": "volatile",
       "key": false,
-      "note": "About 28,300 BTC of options expire at 08:00 UTC, per CryptoTicker. A bigger expiry of about 88,000 BTC follows on 27 November."
+      "note": "About 28,300 BTC of options (about $1.8B) expire at 08:00 UTC, per CryptoTicker. A bigger expiry of about 88,000 BTC follows on 27 November."
     },
     {
       "et": "Fri 20 Nov · 10:00am",
@@ -248,14 +243,14 @@
       "event": "Next Fed rate decision",
       "impact": "volatile",
       "key": false,
-      "note": "Decision Wednesday 9 December at 2:00pm ET (02:00 Thursday Bangkok), per Thrive; the Fed's calendar lists the 8-9 December meeting with new economic projections."
+      "note": "Decision Wednesday 9 December at 2:00pm ET (02:00 Thursday Bangkok) with new economic projections, per the Fed."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-16T04:26:10Z",
-    "claimsChecked": 126,
-    "claimsRemoved": 6,
+    "checkedAt": "2026-11-16T08:18:38Z",
+    "claimsChecked": 143,
+    "claimsRemoved": 13,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
