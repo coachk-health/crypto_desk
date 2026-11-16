@@ -8014,138 +8014,36 @@
   },
   "MON": {
    "id": "monad",
-   "rise": -28.1,
+   "rise": -28.0,
    "to": "2026-11-16",
-   "ref": 0.0154304,
+   "ref": 0.0154532,
    "source": "binance-futures"
   },
   "HUMA": {
    "id": "huma-finance",
    "rise": -75.4,
    "to": "2026-11-16",
-   "ref": 0.00645604,
+   "ref": 0.0064504,
    "source": "binance-futures"
   },
   "KNTQ": {
    "id": "kinetiq",
-   "rise": -39.9,
+   "rise": -40.0,
    "to": "2026-11-16",
-   "ref": 0.2406,
+   "ref": 0.240359,
    "source": "coingecko"
   },
   "GRVT": {
    "id": "grvt",
-   "rise": -27.7,
+   "rise": -27.5,
    "to": "2026-11-16",
-   "ref": 0.165779,
+   "ref": 0.16635,
    "source": "binance-futures"
   }
  },
- "pumpCheckedAt": "2026-11-16T08:39:24Z",
+ "pumpCheckedAt": "2026-11-16T08:45:20Z",
  "method": "Fixed playbook applied to every past unlock in the track record. Entry and exit use CoinGecko daily prices at 00:00 UTC; day 0 is the unlock date. Profit is for a short: positive when the price fell. Costs assumed: 0.10% fees for the round trip and 0.03% funding per day held. The 'with stop' version covers at the first daily close 20% above entry, so a real stop-loss order could fill earlier or later. The account curve books $1,000 per trade on its exit date. Trades are skipped when the token rose 30% or more from 30 days before the unlock to the entry day; that guard was chosen after seeing the worst losses, so results are shown with and without it. Rules were chosen from published research and this same year of data, so the first-half and second-half results and the live-tracked trades are the fairer test.",
  "context": {
-  "KITE": {
-   "asOf": "2026-11-16",
-   "resistance": [
-    {
-     "price": 0.14707,
-     "pct": 3.0,
-     "date": "2026-09-02"
-    },
-    {
-     "price": 0.15862,
-     "pct": 11.1,
-     "date": "2026-10-04"
-    }
-   ],
-   "support": [
-    {
-     "price": 0.13259,
-     "pct": -7.2,
-     "date": "2026-09-29"
-    },
-    {
-     "price": 0.11823,
-     "pct": -17.2,
-     "date": "2026-10-09"
-    }
-   ],
-   "high": 0.15981,
-   "low": 0.08955,
-   "ref": 0.14281,
-   "source": "binance-futures KITEUSDT"
-  },
-  "L1X": {
-   "asOf": "2026-11-16",
-   "resistance": [],
-   "support": [],
-   "high": null,
-   "low": null,
-   "ref": 7.00269,
-   "source": "coingecko"
-  },
-  "JCT": {
-   "asOf": "2026-11-16",
-   "resistance": [
-    {
-     "price": 0.00233,
-     "pct": 5.6,
-     "date": "2026-10-16"
-    },
-    {
-     "price": 0.002457,
-     "pct": 11.4,
-     "date": "2026-08-26"
-    }
-   ],
-   "support": [
-    {
-     "price": 0.001885,
-     "pct": -14.6,
-     "date": "2026-10-23"
-    },
-    {
-     "price": 0.001744,
-     "pct": -20.9,
-     "date": "2026-10-18"
-    }
-   ],
-   "high": 0.021344,
-   "low": 0.001218,
-   "ref": 0.002206,
-   "source": "binance-futures JCTUSDT"
-  },
-  "PIEVERSE": {
-   "asOf": "2026-11-16",
-   "resistance": [
-    {
-     "price": 2.0406,
-     "pct": 8.9,
-     "date": "2026-09-21"
-    },
-    {
-     "price": 2.274,
-     "pct": 21.3,
-     "date": "2026-11-09"
-    }
-   ],
-   "support": [
-    {
-     "price": 1.2509,
-     "pct": -33.3,
-     "date": "2026-10-08"
-    },
-    {
-     "price": 1.0684,
-     "pct": -43.0,
-     "date": "2026-09-17"
-    }
-   ],
-   "high": 2.274,
-   "low": 0.6241,
-   "ref": 1.8744,
-   "source": "binance-futures PIEVERSEUSDT"
-  },
   "MON": {
    "asOf": "2026-11-16",
    "resistance": [
@@ -8216,7 +8114,7 @@
    "support": [],
    "high": null,
    "low": null,
-   "ref": 0.240622,
+   "ref": 0.24049,
    "source": "coingecko",
    "last": {
     "pre30": 128.2,
@@ -8274,7 +8172,7 @@
    "support": [],
    "high": null,
    "low": null,
-   "ref": 7.36902,
+   "ref": 7.3689,
    "source": "coingecko",
    "last": {
     "pre30": -5.1,
@@ -8289,6 +8187,51 @@
     "source": "coingecko",
     "what": "Community Fund + Foundation Treasury Reserves (ecosystem/foundation)",
     "kind": "monthly"
+   }
+  },
+  "JCT": {
+   "asOf": "2026-11-16",
+   "resistance": [
+    {
+     "price": 0.00233,
+     "pct": 5.6,
+     "date": "2026-10-16"
+    },
+    {
+     "price": 0.002457,
+     "pct": 11.4,
+     "date": "2026-08-26"
+    }
+   ],
+   "support": [
+    {
+     "price": 0.001885,
+     "pct": -14.6,
+     "date": "2026-10-23"
+    },
+    {
+     "price": 0.001744,
+     "pct": -20.9,
+     "date": "2026-10-18"
+    }
+   ],
+   "high": 0.021344,
+   "low": 0.001218,
+   "ref": 0.002206,
+   "source": "binance-futures JCTUSDT",
+   "last": {
+    "pre30": 483.8,
+    "pre14": 48.9,
+    "pre7": 123.5,
+    "post7": null,
+    "post14": null,
+    "pumpedInto": true,
+    "after": null,
+    "date": "2026-11-10",
+    "basis": "researched",
+    "source": "binance-futures JCTUSDT",
+    "what": "Community (ecosystem), Foundation, Private Investors, Insiders (advisors): end of 12-month cliffs, first monthly tranche; team stays locked",
+    "kind": "cliff"
    }
   },
   "CYS": {
@@ -8359,6 +8302,77 @@
     "date": null,
     "note": "no unlock since TGE (2025-12-30)"
    }
+  },
+  "KITE": {
+   "asOf": "2026-11-16",
+   "resistance": [
+    {
+     "price": 0.14707,
+     "pct": 3.0,
+     "date": "2026-09-02"
+    },
+    {
+     "price": 0.15862,
+     "pct": 11.1,
+     "date": "2026-10-04"
+    }
+   ],
+   "support": [
+    {
+     "price": 0.13259,
+     "pct": -7.2,
+     "date": "2026-09-29"
+    },
+    {
+     "price": 0.11823,
+     "pct": -17.2,
+     "date": "2026-10-09"
+    }
+   ],
+   "high": 0.15981,
+   "low": 0.08955,
+   "ref": 0.14281,
+   "source": "binance-futures KITEUSDT"
+  },
+  "L1X": {
+   "asOf": "2026-11-16",
+   "resistance": [],
+   "support": [],
+   "high": null,
+   "low": null,
+   "ref": 7.00828,
+   "source": "coingecko"
+  },
+  "PIEVERSE": {
+   "asOf": "2026-11-16",
+   "resistance": [
+    {
+     "price": 2.0406,
+     "pct": 8.9,
+     "date": "2026-09-21"
+    },
+    {
+     "price": 2.274,
+     "pct": 21.3,
+     "date": "2026-11-09"
+    }
+   ],
+   "support": [
+    {
+     "price": 1.2509,
+     "pct": -33.3,
+     "date": "2026-10-08"
+    },
+    {
+     "price": 1.0684,
+     "pct": -43.0,
+     "date": "2026-09-17"
+    }
+   ],
+   "high": 2.274,
+   "low": 0.6241,
+   "ref": 1.8744,
+   "source": "binance-futures PIEVERSEUSDT"
   }
  }
 }
