@@ -8014,34 +8014,34 @@
   },
   "MON": {
    "id": "monad",
-   "rise": -28.0,
+   "rise": -29.3,
    "to": "2026-11-16",
-   "ref": 0.0154532,
+   "ref": 0.015162,
    "source": "binance-futures"
   },
   "HUMA": {
    "id": "huma-finance",
-   "rise": -75.4,
+   "rise": -62.5,
    "to": "2026-11-16",
-   "ref": 0.0064504,
+   "ref": 0.00983633,
    "source": "binance-futures"
   },
   "KNTQ": {
    "id": "kinetiq",
-   "rise": -40.0,
+   "rise": -43.9,
    "to": "2026-11-16",
-   "ref": 0.240359,
+   "ref": 0.224426,
    "source": "coingecko"
   },
   "GRVT": {
    "id": "grvt",
-   "rise": -27.5,
+   "rise": -28.8,
    "to": "2026-11-16",
-   "ref": 0.16635,
+   "ref": 0.163292,
    "source": "binance-futures"
   }
  },
- "pumpCheckedAt": "2026-11-16T08:45:20Z",
+ "pumpCheckedAt": "2026-11-16T22:58:42Z",
  "method": "Fixed playbook applied to every past unlock in the track record. Entry and exit use CoinGecko daily prices at 00:00 UTC; day 0 is the unlock date. Profit is for a short: positive when the price fell. Costs assumed: 0.10% fees for the round trip and 0.03% funding per day held. The 'with stop' version covers at the first daily close 20% above entry, so a real stop-loss order could fill earlier or later. The account curve books $1,000 per trade on its exit date. Trades are skipped when the token rose 30% or more from 30 days before the unlock to the entry day; that guard was chosen after seeing the worst losses, so results are shown with and without it. Rules were chosen from published research and this same year of data, so the first-half and second-half results and the live-tracked trades are the fairer test.",
  "context": {
   "MON": {
@@ -8114,7 +8114,7 @@
    "support": [],
    "high": null,
    "low": null,
-   "ref": 0.24049,
+   "ref": 0.224439,
    "source": "coingecko",
    "last": {
     "pre30": 128.2,
@@ -8172,13 +8172,13 @@
    "support": [],
    "high": null,
    "low": null,
-   "ref": 7.3689,
+   "ref": 7.42655,
    "source": "coingecko",
    "last": {
     "pre30": -5.1,
     "pre14": -0.3,
     "pre7": 0.0,
-    "post7": -8.2,
+    "post7": -7.5,
     "post14": null,
     "pumpedInto": false,
     "after": null,
@@ -8340,7 +8340,7 @@
    "support": [],
    "high": null,
    "low": null,
-   "ref": 7.00828,
+   "ref": 7.01273,
    "source": "coingecko"
   },
   "PIEVERSE": {
