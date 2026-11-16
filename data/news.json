@@ -1,56 +1,67 @@
 {
   "date": "2026-11-16",
-  "updated": "2026-11-16T12:11:02Z",
-  "headline": "Bitcoin has slipped back to about $64,000 after a $2B weekend wipe-out of leveraged bets, its sixth straight weekly loss, with fear at extreme levels ahead of Fed Chair Warsh's remarks at noon ET.",
+  "updated": "2026-11-16T16:06:55Z",
+  "headline": "Bitcoin is holding near $64,500 after a weekend drop below $62,000, with fear at extreme levels as traders wait for Fed Chair Warsh at noon ET and the biggest options bet now on a fall below $60,000.",
   "market": {
-    "asOf": "Read at about 12:00 UTC Mon 16 Nov (19:00 Bangkok) from CoinGecko's coin pages. The 24-hour change is left out because the sources disagree on direction: CoinGecko showed BTC down 1.0%, ETH down 1.3% and SOL down 1.5%, while CoinMarketCap's charts page showed all three up. Prices move fast; use the live prices on this page.",
+    "asOf": "Read at about 15:57-15:59 UTC Mon 16 Nov (about 23:00 Bangkok) from CoinGecko's pages. The 24-hour change is left out because sources disagree: CoinGecko's bitcoin page showed down 1.60% while CoinMarketCap's homepage showed up 2.02%. Prices move fast; use the live prices on this page.",
     "btc": {
-      "price": 64619.58,
+      "price": 64132.44,
       "chg24h": null
     },
     "eth": {
-      "price": 1805.48,
+      "price": 1815.82,
       "chg24h": null
     },
     "sol": {
-      "price": 71.41,
+      "price": 72.04,
       "chg24h": null
     },
-    "fearGreed": "Extreme fear, read at about 12:00 UTC: Alternative.me's index 10 (Extreme Fear), CoinGecko's own index 21 (Extreme Fear, from 27 yesterday); CoinMarketCap's index showed 12 out of 100. They are different indexes, so the numbers do not match."
+    "fearGreed": "Extreme fear, read at about 15:58 UTC: Alternative.me's index 10 (Extreme Fear, 13 yesterday), CoinMarketCap's index 12, CoinGecko's own index 21 (27 yesterday). They are different indexes, so the numbers do not match."
   },
   "stories": [
     {
-      "title": "Bitcoin slips back to about $64,000 after a $2B weekend flush",
+      "title": "Bitcoin holds near $64,500 after a weekend drop below $62,000; the biggest options bet is now on a fall",
       "mood": "bearish",
-      "summary": "Bitcoin bounced from its Sunday low near $62,000 but slid again on Monday, and has now fallen six weeks in a row. About $2B of bets made with borrowed money were force-closed over the weekend. That kind of selling has calmed down for now, and traders betting on a fall are now the ones paying to hold their positions.",
+      "summary": "Bitcoin fell below $62,000 over the weekend, its lowest in about four months, bounced to about $65,500 after the US stock market opened and later traded near $64,500. It has now lost ground six weeks in a row. On the options market, where traders pay for the right to buy or sell later at a set price, the single biggest bet is now protection against bitcoin falling below $60,000.",
       "points": [
-        "Bitcoin was around $64,300, down 1.6% since midnight UTC, per CoinDesk at 11:03 UTC; Cointelegraph put it near $64,500.",
-        "The weekend low was $62,100, the lowest since 14 July, per CoinDesk; Cointelegraph says $61,950 on Bitstamp.",
-        "About $2B of positions were liquidated (force-closed) over the weekend, mostly bets on a rise, and liquidations in the latest 24 hours fell to $176M, per CoinDesk.",
-        "Bitcoin is below its 200-week average, a long-term trend line, which Cointelegraph puts at $68,186.",
-        "The most-traded bitcoin options expire on 27 November; the biggest bets on a fall are at $50,000, $52,000 and $58,000, per CoinDesk."
+        "The weekend low was $61,950 on Bitstamp, a four-month low, per Cointelegraph; Coinbase's low was $61,998.26, per The Crypto Basic.",
+        "Bitcoin rose to about $65,500 after the US open, per CoinDesk's live coverage at 9:39am ET, which calls this its sixth weekly loss.",
+        "Bitcoin is down 17% in November per CoinDesk's live coverage, 16% per CoinDesk's Daybook.",
+        "Open interest, the total value of open futures bets, fell 9.1% to $20.98B from Friday to 10:00 UTC Monday, per CryptoQuant data cited by Cointelegraph.",
+        "The largest bitcoin option position on Deribit is the $60,000 put (a bet on a fall), about $900M, ahead of the $100,000 call at about $867M, per CoinDesk."
       ],
       "sources": [
         {
-          "label": "CoinDesk: Monday slide",
-          "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-slips-to-usd64-000-after-usd2-billion-weekend-flush"
+          "label": "CoinDesk: live updates",
+          "url": "https://www.coindesk.com/tech/2026/11/16/live-news-bitcoin-posts-sixth-weekly-loss-as-tech-stocks-and-metals-slide"
         },
         {
           "label": "Cointelegraph: week ahead for BTC",
           "url": "https://cointelegraph.com/markets/btc-price-18-week-low-nvidia-three-things-know-bitcoin-this-week"
+        },
+        {
+          "label": "CoinDesk: biggest options bet",
+          "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-biggest-bet-is-now-a-drop-below-usd60-000-not-a-rally-above-usd100-000"
+        },
+        {
+          "label": "CoinDesk Daybook",
+          "url": "https://www.coindesk.com/daybook-us/2026/11/16/bitcoin-was-supposed-to-gain-as-ai-faltered-but-it-crashed-here-s-why"
+        },
+        {
+          "label": "The Crypto Basic: Coinbase low",
+          "url": "https://thecryptobasic.com/2026/11/16/cz-explain-why-crypto-is-falling-says-he-bought-crypto-and-denies-binance-sold/"
         }
       ]
     },
     {
-      "title": "Rates week: Warsh speaks at noon ET as traders price in a December hike; ETF outflows hit seven days",
+      "title": "Rates week: Warsh speaks at noon ET, a December hike is priced in, and the 10-year yield is above 5%",
       "mood": "bearish",
-      "summary": "Fed Chair Warsh gives opening remarks at a San Francisco Fed conference today. Futures traders see a December interest-rate rise as close to certain; that is a market bet, not a Fed decision. Higher rates pull money away from risky assets like crypto. US spot bitcoin ETFs have had seven straight days of withdrawals.",
+      "summary": "Fed Chair Warsh gives opening remarks at a San Francisco Fed conference at noon ET today; he had not spoken when this was written. Futures traders see a December interest-rate rise as close to certain; that is a market bet, not a Fed decision. Higher rates and bond yields pull money away from risky assets like crypto, and US spot bitcoin ETFs have had seven straight days of withdrawals.",
       "points": [
         "CME FedWatch odds for a December hike are put at 92% for a 0.25-point rise and 8% for 0.5 points by KuCoin, and at 100% by the Motley Fool using data as of 12 November.",
-        "US spot bitcoin ETFs lost $185M on Friday 13 November, their seventh straight day of outflows, about $1.91B in total, per CoinDesk.",
-        "Bitcoin ETFs lost about $829M for the week and about $2.1B so far in November, per Decrypt.",
-        "Ether ETFs took in $2.3M on Friday, ending a six-day outflow streak, but lost $336M for the week, per Decrypt.",
-        "Also this week: US retail sales Tuesday, Nvidia results Tuesday after the close and Fed minutes Wednesday, per CoinDesk."
+        "The US 10-year Treasury yield was 5.116%, versus 4.83% a week ago, and the Nasdaq was down about 2% in the first hour of trading, per CoinDesk's live coverage.",
+        "US spot bitcoin ETFs lost $185.4M on Friday 13 November, their seventh straight day of outflows, about $1.91B in total, per Farside data cited by CryptoTicker.",
+        "Fed minutes from the October meeting are due Wednesday at 2pm ET, and US retail sales Tuesday, per CoinDesk."
       ],
       "sources": [
         {
@@ -62,12 +73,12 @@
           "url": "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/"
         },
         {
-          "label": "CoinDesk: ETF flows",
-          "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-slips-to-usd64-000-after-usd2-billion-weekend-flush"
+          "label": "CoinDesk: live updates",
+          "url": "https://www.coindesk.com/tech/2026/11/16/live-news-bitcoin-posts-sixth-weekly-loss-as-tech-stocks-and-metals-slide"
         },
         {
-          "label": "Decrypt: weekly ETF flows",
-          "url": "https://decrypt.co/383282/bitcoin-etfs-lose-2-1-billion-november-outflow-streak-seven-days"
+          "label": "CryptoTicker: Warsh day and ETF flows",
+          "url": "https://cryptoticker.io/en/bitcoin-price-warsh-speech-productivity-jobs-november-16-2026/"
         },
         {
           "label": "CoinDesk: crypto week ahead",
@@ -76,46 +87,37 @@
       ]
     },
     {
-      "title": "Binance still restoring withdrawals after its $6.3B hack; Arbitrum vote on frozen funds ends today",
+      "title": "Strategy buys only 485 bitcoin as most of its stock sale goes to buying back preferred shares",
       "mood": "neutral",
-      "summary": "The world's largest crypto exchange is still reopening withdrawals after the 29 October hack. It has reopened 87 networks and aims to reopen the rest this week; that is a target, not a guarantee. Arbitrum's community is voting on whether to hand frozen stolen funds back to Binance.",
+      "summary": "Strategy, the largest corporate holder of bitcoin, kept buying last week but in a small amount. Its filing shows most of the money it raised by selling its own shares went to buying back its preferred stock, not to bitcoin. Its average cost per bitcoin is now above the market price.",
       "points": [
-        "Binance reopened withdrawals on 87 networks, per Bitcoin.com News.",
-        "About $6.3B was stolen, including about 167,464 ETH and about $1.6B of USDT, and about $3B was reportedly frozen by third parties, per Bitcoin.com News.",
-        "An Arbitrum DAO vote on returning 8,425.997 ETH and 74,559,805.2 ARB to Binance for user losses, conditional on legal protection, ends 16 November, per CoinDesk.",
-        "Until withdrawals reopen, coins on the affected networks stay on the exchange; ignore anyone offering paid or faster withdrawals."
+        "Strategy bought 485 BTC for $33.4M, at an average $68,887, between 9 and 15 November, per its SEC filing.",
+        "It now holds 850,849 BTC bought for $64.20B in total, an average of $75,452 per coin, per the filing.",
+        "It sold 2,087,040 of its own shares for $244.7M; $206.3M went to buying back STRC preferred stock, per the filing. CoinDesk puts that buyback at $228.1M.",
+        "Strategy's shares were down 8.3% before the US market opened, per CoinDesk."
       ],
       "sources": [
         {
-          "label": "Bitcoin.com News: 87 networks",
-          "url": "https://news.bitcoin.com/featured/binance-reopens-87-networks-following-historic-6-3-billion-breach/"
+          "label": "SEC: Strategy 8-K, 16 Nov",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001050446/000119312526462151/mstr-20261116.htm"
         },
         {
-          "label": "CoinDesk: Arbitrum vote",
-          "url": "https://www.coindesk.com/markets/2026/11/16/fomc-minutes-nvidia-earnings-russia-s-retail-crypto-rules-crypto-week-ahead"
-        },
-        {
-          "label": "crypto.news: why a vote is needed",
-          "url": "https://crypto.news/arbitrum-moved-stolen-binance-funds-returning-them-takes-a-vote/"
+          "label": "CoinDesk: live updates",
+          "url": "https://www.coindesk.com/tech/2026/11/16/live-news-bitcoin-posts-sixth-weekly-loss-as-tech-stocks-and-metals-slide"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Strategy's latest disclosed bitcoin buy",
-      "summary": "Strategy's most recent purchase filing, dated 9 November, shows 1,036 BTC bought for $81.9M, taking holdings to 850,364 BTC at an average cost of $75,456.",
-      "url": "https://www.sec.gov/Archives/edgar/data/0001050446/000119312526452693/mstr-20261109.htm"
+      "title": "Binance hack recovery and the Arbitrum vote",
+      "summary": "Binance says withdrawals are back on 87 networks and aims to restore the rest by the end of next week after the $6.3B hack, per Investing.com; an Arbitrum DAO vote on returning 8,425.997 ETH and 74.56M ARB of frozen funds ends 16 November, per CoinDesk.",
+      "url": "https://uk.investing.com/news/company-news/binance-aims-to-restore-all-withdrawals-next-week-after-63-billion-hack-4982619"
     },
     {
-      "title": "Russia opens crypto to ordinary investors",
-      "summary": "Bank of Russia rules taking effect 17 November let non-qualified retail investors buy BTC, ETH and USDT up to an annual cap, per CoinDesk.",
-      "url": "https://www.coindesk.com/markets/2026/11/16/fomc-minutes-nvidia-earnings-russia-s-retail-crypto-rules-crypto-week-ahead"
-    },
-    {
-      "title": "Crypto bill stalled; new SEC and CFTC picks",
-      "summary": "The CLARITY market-structure bill is stalled after a failed 49-50 Senate vote on 15 September; Trump nominated Levine and Johnson to the SEC and Anonick and Rowland to the CFTC on 12 November, per crypto.news.",
-      "url": "https://crypto.news/clarity-act-congress-lame-duck-sec-cftc-nominations"
+      "title": "US moves to seize $1.2B tied to the Binance hack",
+      "summary": "The Justice Department got court approval to seize or restrain more than $1.2B linked to the hack and says more than $2.7B has been frozen in total, per NewsBTC.",
+      "url": "https://newsbtc.com/security/doj-binance-hack-one-point-two-billion-seizure-order"
     },
     {
       "title": "Bitcoin miners hijacked at Luxor",
@@ -123,34 +125,39 @@
       "url": "https://www.coindesk.com/tech/2026/11/16/bitcoin-miners-were-hijacked-and-their-btc-rewards-redirected-to-an-attacker"
     },
     {
-      "title": "JPMorgan and DBS link tokenized deposits",
-      "summary": "The banks launched 24/7 instant transfers of tokenized US dollar deposits between the US and Singapore, with Ant International as the first client, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-16-dbs-jpmorgan-launch-tokenized-deposit-transfers-440854"
+      "title": "OKX and Binance founders trade blame",
+      "summary": "OKX's Star Xu blamed Binance for crashes; CZ denied Binance sold and said he bought; Binance co-founder Yi He disclosed a $97.3M trading loss, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-slide-reopens-an-old-feud-between-crypto-s-most-powerful-founders"
     },
     {
-      "title": "Upbit owner swings to a loss",
-      "summary": "Dunamu posted a Q3 net loss of 18.6B won (about $13.8M) and revenue fell 60.7%, a sign of how much trading has cooled, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-16-upbit-parent-dunamu-q3-net-loss-440876"
+      "title": "Solana ETFs see six weeks of outflows",
+      "summary": "SOL hit a weekend low of $67.41 and US Solana ETFs have had six straight weekly outflows totalling $197.4M, per crypto.news.",
+      "url": "https://crypto.news/why-is-solana-price-down-today-sol-etf-outflows"
     },
     {
-      "title": "Vitalik backs higher fees for new accounts",
-      "summary": "Buterin supports EIP-8037 for Ethereum's Glamsterdam upgrade, raising the gas cost of creating a new account from 36,600 to 197,900, per The Block.",
-      "url": "https://theblock.co/news/ecosystems/2026-11-16-vitalik-buterin-backs-higher-gas-costs-for-creating-accounts-and-deploying-smart-contracts-to-help-ethereum-scale-440870"
+      "title": "Bitmine keeps adding ether",
+      "summary": "Bitmine bought 7,653 ETH (about $15M), taking its holdings to about 6.07M ETH, per CoinDesk.",
+      "url": "https://www.coindesk.com/tech/2026/11/16/live-news-bitcoin-posts-sixth-weekly-loss-as-tech-stocks-and-metals-slide"
     },
     {
-      "title": "Cardano holders reject a copper purchase",
-      "summary": "A proposal to spend 22M ADA (about $5M) of treasury funds, about two-thirds of it on physical copper, was voted down, per CoinDesk.",
-      "url": "https://www.coindesk.com/markets/2026/11/16/cardano-holders-vote-down-usd5-million-bid-to-buy-warehouse-copper"
+      "title": "Upbit owner swings to a loss; XRP treasury firm writes down",
+      "summary": "Dunamu posted a Q3 net loss of 18.6B won and Evernorth recorded $271M of impairments on its XRP over nine months, per Analytics Insight.",
+      "url": "https://analyticsinsight.net/news/crypto-news-today-bitcoin-outflow-evernorth-records-asset-impairment-dunamu-posts-q3-net-loss"
+    },
+    {
+      "title": "Russia opens crypto to ordinary investors",
+      "summary": "From 17 November non-qualified retail investors in Russia can buy BTC, ETH and USDT up to an annual cap, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/16/fomc-minutes-nvidia-earnings-russia-s-retail-crypto-rules-crypto-week-ahead"
     }
   ],
   "calendar": [
     {
       "et": "Mon 16 Nov · 8:30am",
       "bkk": "Mon 16 · 20:30",
-      "event": "Empire State manufacturing survey (Nov)",
-      "impact": "neutral",
+      "event": "Empire State manufacturing survey (Nov): released",
+      "impact": "bearish",
       "key": false,
-      "note": "Consensus 17.6 per Finviz, 19.4 per Thrive; prior 25.5 per the New York Fed. Fed's Williams speaks at 9:05am ET (21:05 Bangkok), per Finviz."
+      "note": "Actual 7.8, well below consensus of 18 (per Newsquawk); prior 25.5. New orders fell to 3.0 from 23.2, per the New York Fed."
     },
     {
       "et": "Mon 16 Nov · 12:00pm",
@@ -158,7 +165,7 @@
       "event": "Fed Chair Warsh gives opening remarks",
       "impact": "volatile",
       "key": true,
-      "note": "At the Productivity and Jobs Task Force conference at the San Francisco Fed, per the Fed's calendar; the SF Fed agenda shows him moderating panels until 12:15pm PT (03:15 Tue Bangkok)."
+      "note": "At the Productivity and Jobs Task Force conference at the San Francisco Fed; he then moderates panels and a fireside chat until 12:15pm PT (03:15 Tue Bangkok), per the SF Fed agenda."
     },
     {
       "et": "Tue 17 – Mon 23 Nov",
@@ -174,7 +181,7 @@
       "event": "US retail sales (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 0.0%, prior +0.8%, per Finviz and ForexFundamentals. Industrial production at 9:15am ET (consensus +0.1%, prior +0.7%). Fed's Waller speaks at 9:10am ET per the Fed, 9:20am per Finviz."
+      "note": "Consensus +0.2% per Finviz, 0% per CoinDesk; prior +0.8%. Industrial production at 9:15am ET (consensus +0.1%, prior +0.7%), per Finviz."
     },
     {
       "et": "Tue 17 Nov · ~4:20pm",
@@ -182,7 +189,7 @@
       "event": "Nvidia Q3 results",
       "impact": "volatile",
       "key": true,
-      "note": "Conference call at 2:00pm PT / 5:00pm ET (05:00 Wed Bangkok), per Nvidia. Revenue consensus $108.84B and earnings $2.47 a share per MarketPulse; about $109B and $2.49 per Earnings Whispers."
+      "note": "Conference call at 2:00pm PT / 5:00pm ET (05:00 Wed Bangkok), per Nvidia. Revenue consensus $108.84B and earnings $2.47 a share per MarketPulse."
     },
     {
       "et": "Wed 18 Nov · 2:00pm",
@@ -190,15 +197,15 @@
       "event": "Fed minutes from the October meeting",
       "impact": "volatile",
       "key": true,
-      "note": "Minutes of the 27-28 October meeting, per the Fed's calendar. Earlier: housing starts at 8:30am ET (consensus 1.23M, prior 1.221M, per Finviz)."
+      "note": "Minutes of the 27-28 October meeting. Earlier: housing starts at 8:30am ET (consensus 1.27M, prior 1.221M), per Finviz."
     },
     {
       "et": "Thu 19 Nov",
       "bkk": "Thu 19 – Fri 20",
       "event": "Anthropic shares expected to start trading",
       "impact": "volatile",
-      "key": true,
-      "note": "Nasdaq ticker ANT, 825M shares at an indicated $70-78, per RTTNews; The Next Web and IPOX report trading on 19 November. The date is reported, not fixed, and can change."
+      "key": false,
+      "note": "Nasdaq ticker ANT, 825M shares at an indicated $70-78, per TradingKey. The date is reported, not fixed, and can change."
     },
     {
       "et": "Thu 19 Nov · 8:30am",
@@ -206,7 +213,7 @@
       "event": "US jobless claims and Philly Fed survey",
       "impact": "neutral",
       "key": false,
-      "note": "Claims consensus 200,000, prior 200,000; Philly Fed consensus 19.2, prior 20.9, per Finviz. Senate Banking hearing on SEC nominees at 10am ET, per crypto.news."
+      "note": "Claims consensus 196,000 per Finviz, prior 200,000; Philly Fed consensus 19.2 per Finviz, prior 20.9. Senate Banking hearing on SEC nominees Johnson and Levine the same day, per PANews."
     },
     {
       "et": "Fri 20 Nov · 3:00am",
@@ -222,7 +229,7 @@
       "event": "University of Michigan consumer sentiment (Nov, final)",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 51.0, prior 48.0, per Finviz. Fed's Cook speaks at 12:15pm ET (00:15 Sat Bangkok), per the Fed."
+      "note": "Consensus 52 per Finviz, 53.3 per Yahoo Finance; preliminary reading 48.0 per Finviz, 51 per Yahoo Finance. Fed's Cook speaks at 12:15pm ET (00:15 Sat Bangkok), per Finviz."
     },
     {
       "et": "Mon 23 Nov · 9:45am",
@@ -230,7 +237,7 @@
       "event": "S&P Global flash US PMIs (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "Release date per S&P Global."
+      "note": "Release date and time per MTS Insights."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -238,15 +245,15 @@
       "event": "Next Fed rate decision",
       "impact": "volatile",
       "key": false,
-      "note": "Decision Wednesday 9 December at 2:00pm ET (02:00 Thursday Bangkok) with new economic projections, per FedRateCalc's FOMC schedule."
+      "note": "Decision Wednesday 9 December at 2:00pm ET (02:00 Thursday Bangkok), press conference at 2:30pm ET, per the Federal Reserve."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-16T12:11:02Z",
-    "claimsChecked": 80,
-    "claimsRemoved": 2,
-    "rounds": 2,
+    "checkedAt": "2026-11-16T16:06:55Z",
+    "claimsChecked": 108,
+    "claimsRemoved": 0,
+    "rounds": 1,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
 }
