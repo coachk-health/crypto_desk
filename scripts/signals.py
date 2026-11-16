@@ -34,6 +34,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 import levels  # noqa: E402
 import candles as levels_candles  # noqa: E402
+import setup_context  # noqa: E402
 BT = ROOT / "data" / "backtest.json"
 OUT = ROOT / "data" / "signals.json"
 
@@ -185,6 +186,29 @@ def pump_checks(rules_hits):
     return out
 
 
+def upcoming_context(bt):
+    """Last-distribution moves and chart levels for upcoming signals with entry within 45 days."""
+    up = json.loads((ROOT / "data" / "unlocks.json").read_text()).get("upcoming", [])
+    today = datetime.now(timezone.utc).date()
+    rows = []
+    for r in up:
+        pc = r.get("pctCirculating")
+        if pc is None and r.get("pctBasis") == "of circulating":
+            pc = r.get("pct")
+        f = {"pctCirculating": pc, "investorsShare": investors_share(r.get("recipientsMix")), "firstInsiderUnlock": r.get("firstInsiderUnlock") is True}
+        d0 = datetime.strptime(r["date"], "%Y-%m-%d").date()
+        if matched(f) and -14 <= (d0 - today).days <= 52:
+            rows.append(r)
+    past = {}
+    for e in bt["events"]:
+        past.setdefault(e["token"], []).append(e["date"])
+    try:
+        return setup_context.context(rows, past)
+    except Exception as e:  # never let context break the daily signals run
+        print(f"context failed: {e}")
+        return {}
+
+
 def main():
     bt = json.loads(BT.read_text())
     past = json.loads((ROOT / "data" / "past_unlocks.json").read_text())
@@ -306,6 +330,7 @@ def main():
         "curve": pts, "curveStop": pts_s, "curveNoGuard": curve(every)[0], "trades": every, "levels": lv,
         "ids": ids,
         "pumpChecks": pump_checks(lambda f: matched(f)),
+        "context": upcoming_context(bt),
         "pumpCheckedAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "method": ("Fixed playbook applied to every past unlock in the track record. Entry and exit use CoinGecko "
                    "daily prices at 00:00 UTC; day 0 is the unlock date. Profit is for a short: positive when the "
@@ -320,5 +345,17 @@ def main():
     print(f"{len(trades)} signal trades")
 
 
+def refresh_live():
+    """Refresh only the parts that depend on today's prices (pump checks, setup context) in
+    the existing data/signals.json; the backtest-based results are left as they are."""
+    sig = json.loads(OUT.read_text())
+    bt = json.loads(BT.read_text())
+    sig["pumpChecks"] = pump_checks(lambda f: matched(f))
+    sig["pumpCheckedAt"] = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    sig["context"] = upcoming_context(bt)
+    OUT.write_text(json.dumps(sig, indent=1, ensure_ascii=False) + "\n")
+    print(f"refreshed {len(sig['pumpChecks'])} price checks, {len(sig['context'])} setup contexts")
+
+
 if __name__ == "__main__":
-    main()
+    refresh_live() if "--live" in sys.argv else main()

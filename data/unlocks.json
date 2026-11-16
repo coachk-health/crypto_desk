@@ -9191,7 +9191,23 @@
       "evidence": "tokenomist"
      }
     ]
-   }
+   },
+   "lastDistributionNote": "no unlock since TGE (2025-11-24)",
+   "lastDistributionSources": [
+    {
+     "label": "Monad blog: MON tokenomics overview",
+     "url": "https://monad.xyz/blog/mon-tokenomics-overview"
+    },
+    {
+     "label": "tokenomics.com Monad unlocks (only past event: TGE 24 Nov 2025)",
+     "url": "https://app.tokenomics.com/tokenomics/monad/unlocks"
+    },
+    {
+     "label": "Tokenomist Monad unlock events",
+     "url": "https://tokenomist.ai/monad/unlock-events"
+    }
+   ],
+   "lastDistributionGap": "Official docs: team, investor and treasury tokens are all locked until the first anniversary (24 Nov 2026). Ecosystem/airdrop/public sale were unlocked at TGE, with no further vesting. The CMC AI '170M MON unlock' in late April 2026 has no date, recipient or primary source, and no tracker shows it, so it is treated as unconfirmed. Next-unlock size disagrees between sources (tokenomics.com 16.61B vs CoinGecko/Tokenomist 6.66B vs CMC community 16.8B); this does not affect the past-distribution answer. Validator-delegation staking rewards from the Ecosystem bucket are continuous, not discrete events."
   },
   {
    "date": "2026-11-24",
@@ -10141,7 +10157,28 @@
       "evidence": "tokenomist"
      }
     ]
-   }
+   },
+   "lastDistribution": {
+    "date": "2026-09-26",
+    "amount": "~126.25M HUMA (my calculation from the tokenomics.com Protocol Treasury terms: 8 equal quarterly tranches; the page shows no token amount)",
+    "recipients": "Protocol Treasury (foundation/ecosystem)",
+    "kind": "quarterly"
+   },
+   "lastDistributionSources": [
+    {
+     "label": "Tokenomist digest May 25-31 2026: HUMA lockup extension",
+     "url": "https://tokenomist.ai/research/weekly-unlock-digest-may-25-31-2026-humas-lockup-extension"
+    },
+    {
+     "label": "tokenomics.com HUMA unlocks (history incl. 26 May, 26 Jun, 26 Aug, 26 Sep 2026)",
+     "url": "https://app.tokenomics.com/tokenomics/huma-finance/unlocks"
+    },
+    {
+     "label": "tokenomics.com HUMA vesting terms",
+     "url": "https://app.tokenomics.com/tokenomics/huma-finance"
+    }
+   ],
+   "lastDistributionGap": "26 May 2026 question: the team/advisor/investor first unlock (Investors 171.67M + Team & Advisors 160.83M) did NOT happen. In April 2026 it was moved to 26 Nov 2026, with the lock-up going from 12 to 18 months. The 458.75M 'May 26' figure in BeInCrypto/cryptonews (25 May) was pre-extension data. The same 458.75M was later re-labelled '26 Aug' (Altcoinbuzz, Tokenomist Aug digest, Bitrue) and is now '26 Nov' on CoinGecko, so it is one deferred tranche rolled forward, not three releases. Something smaller did happen on 26 May 2026: tokenomics.com logs a single-recipient event that day (5.6% of mcap), which fits the scheduled LP & Ecosystem quarterly release (~169M, my calculation). Tokenomist says the Protocol Treasury portion 'appears to remain on the original schedule', but its own CoinGecko widget puts Treasury 126.25M inside the 26 Nov tranche. So the treasury timing is disputed. tokenomics.com's model (Treasury quarterly on the 26th of Mar/Jun/Sep/Dec, LP & Ecosystem on the 26th of Feb/May/Aug/Nov) underlies the Sep 26 and Aug 26 entries above. Tokenomist's model would instead treat Treasury as not yet released. None of the past amounts are published by any source; all are my calculations. No on-chain confirmation found."
   },
   {
    "date": "2026-11-27",
@@ -10299,7 +10336,28 @@
       "evidence": "tokenomist"
      }
     ]
-   }
+   },
+   "lastDistribution": {
+    "date": "2026-10-01",
+    "amount": "up to 50M KNTQ (5% of max supply) sold to kPoints holders at a fixed $0.26 (USDC on HyperEVM), no lockup; 10-day claim window opened 12:01 UTC 1 Oct 2026; unclaimed tokens return to the Kinetiq Foundation",
+    "recipients": "community (kPoints holders), paid claim: the 'final kPoints distribution'",
+    "kind": "other"
+   },
+   "lastDistributionSources": [
+    {
+     "label": "Kinetiq docs: KNTQ (genesis 27 Nov 2025; 1y cliff + 2y monthly for contributors/investors)",
+     "url": "https://kinetiq.xyz/docs/kntq"
+    },
+    {
+     "label": "Altcoinbuzz: Kinetiq ends kPoints (offer began 1 Oct 2026)",
+     "url": "https://www.altcoinbuzz.io/kinetiq-ends-kpoints-after-kntq-drops-more-than-20"
+    },
+    {
+     "label": "The Defiant: paid claim, 50M at $0.26",
+     "url": "https://thedefiant.io/news/defi/kinetiq-ends-kpoints-with-paid-claim-as-kntq-drops-23"
+    }
+   ],
+   "lastDistributionGap": "No vesting unlock since genesis: insider tokens are on a 1-year cliff to 27 Nov 2026. The Oct 2026 event is a paid community claim, not a vesting unlock. The amount actually claimed is not reported, and no source says which allocation the 50M came from. Whether earlier kPoints-based KNTQ distributions happened between Nov 2025 and Oct 2026 is not confirmed (36.8M kPoints were issued over 46 weeks; these are points, not tokens). Tokenomist, CryptoRank and DefiLlama pages were not reachable or not found. CMC and CoinGecko circulating figures disagree (559M vs 324M)."
   },
   {
    "date": "2026-11-28",
@@ -11147,7 +11205,23 @@
       "evidence": "tokenomist"
      }
     ]
-   }
+   },
+   "lastDistributionNote": "no unlock since TGE (2026-07-30)",
+   "lastDistributionSources": [
+    {
+     "label": "KuCoin: Grvt TGE 30 Jul 2026, airdrop in batches over 12 months",
+     "url": "https://www.kucoin.com/news/flash/grvt-announces-tge-details-grvt-airdrop-claims-open-on-july-30"
+    },
+    {
+     "label": "tokenomics.com GRVT unlocks (models past events 30 Aug and 30 Sep 2026)",
+     "url": "https://app.tokenomics.com/tokenomics/grvt/unlocks"
+    },
+    {
+     "label": "Valuethemarkets: 40% airdrop at TGE, 20% Aug 29, 20% Nov 29 (4 Aug 2026)",
+     "url": "https://www.valuethemarkets.com/cryptocurrency/news/grvt-token-generation-event-and-its-implications-for-investors"
+    }
+   ],
+   "lastDistributionGap": "Sources disagree. tokenomics.com logs past community unlocks on 30 Aug 2026 (15% of mcap) and 30 Sep 2026 (13% of mcap), with no amounts. Valuethemarkets said the next airdrop batch was due 29 Aug. But Cryptoticker, re-checking GRVT's own help page on 30 Aug and 4 Oct 2026, found no second-tranche date published. CMC and CoinGecko still show ~114.3M circulating, the same as at TGE, and the 20 Oct buyback release put 1.1M at ~1% of circulating (~114M). So no post-TGE release can be confirmed; the Aug/Sep events look like tracker models. Investor/team cliffs (12 months) and the ecosystem cliff (6 months, to ~30 Jan 2027) have not passed."
   },
   {
    "date": "2026-12-01",
@@ -12681,7 +12755,28 @@
       "evidence": "tokenomist"
      }
     ]
-   }
+   },
+   "lastDistribution": {
+    "date": "2026-11-09",
+    "amount": "~6.99M ADI (the monthly linear tranche, 6,992,616 ADI on 9 Sep; same schedule each month), ~$56.13M per TokenPost",
+    "recipients": "Community Fund + Foundation Treasury Reserves (ecosystem/foundation)",
+    "kind": "monthly"
+   },
+   "lastDistributionSources": [
+    {
+     "label": "tokenomics.com ADI Chain unlocks (monthly on the 9th; past events May-Nov 2026)",
+     "url": "https://app.tokenomics.com/tokenomics/adi-chain/unlocks"
+    },
+    {
+     "label": "Bitrue: ADI Sep 9 2026 unlock 6,992,616 ADI, Community 68.5% / Foundation 31.4%",
+     "url": "https://www.bitrue.com/blog/adi-chain-token-unlock"
+    },
+    {
+     "label": "CMC AI ADI updates (9 Nov unlock ~$56.13M)",
+     "url": "https://coinmarketcap.com/cmc-ai/adi-token/latest-updates/"
+    }
+   ],
+   "lastDistributionGap": "The 9 Nov and 9 Oct amounts are not published per event. They assume the same linear monthly amount as 9 Sep (Bitrue). pctCirculating is tokenomics.com's '% of MCAP'. TGE was 9 Dec 2025. The 12-month cliffs (team, investors, partnerships) first hit on 9 Dec 2026, so all releases so far are community/treasury linear vesting. CMC and CoinGecko circulating (8.65M) look stale against Bitrue's ~97.4M circulating (Sep 2026). The official ADI docs page could not be fetched (not on the allowlist)."
   },
   {
    "date": "2026-12-10",
@@ -12858,7 +12953,28 @@
       "evidence": "keyrock"
      }
     ]
-   }
+   },
+   "lastDistribution": {
+    "date": "2026-11-10",
+    "amount": "~1.2B JCT (~2.4% of max supply; Bitrue); tokenomics.com shows 10.2% of mcap; CoinGecko news calls it a '$10.4M token unlock'",
+    "recipients": "Community (ecosystem), Foundation, Private Investors, Insiders (advisors): end of 12-month cliffs, first monthly tranche; team stays locked",
+    "kind": "cliff"
+   },
+   "lastDistributionSources": [
+    {
+     "label": "tokenomics.com Janction unlocks (past: TGE 10 Nov 2025, 10 Nov 2026)",
+     "url": "https://app.tokenomics.com/tokenomics/janction/unlocks"
+    },
+    {
+     "label": "Bitrue: JCT token unlock Nov 10 2026, 1.2B JCT",
+     "url": "https://www.bitrue.com/blog/jct-token-unlock"
+    },
+    {
+     "label": "CoinGecko Janction",
+     "url": "https://www.coingecko.com/en/coins/janction"
+    }
+   ],
+   "lastDistributionGap": "No unlock between TGE (10 Nov 2025) and 10 Nov 2026, per tokenomics.com, which lists only those two past events. The exact 10 Nov amount is not given by tokenomics.com: its next tranche (10 Dec) is 1,176,602,500, and Bitrue rounds the 10 Nov one to 1.2B. pctCirculating is tokenomics.com's '% of MCAP'; Bitrue's own maths gives ~10.4% of the ~11.5B circulating. The dollar values ($10.4M vs tokenomics.com $2.3M for the next one) reflect an ~82% price drop after the unlock."
   },
   {
    "date": "2026-12-11",
@@ -13029,7 +13145,28 @@
       "evidence": "reasoning"
      }
     ]
-   }
+   },
+   "lastDistribution": {
+    "date": "2026-11-11",
+    "amount": "~3.35M CYS (my calculation: 40.19% Ecosystem Incentives / 120 months; tokenomics.com shows no amount)",
+    "recipients": "Ecosystem Incentives (community)",
+    "kind": "monthly"
+   },
+   "lastDistributionSources": [
+    {
+     "label": "tokenomics.com Cysic unlocks (single-recipient events on the 11th, May-Nov 2026)",
+     "url": "https://app.tokenomics.com/tokenomics/cysic/unlocks"
+    },
+    {
+     "label": "Bitget News: CYS allocation, Ecosystem Incentives 10-year linear",
+     "url": "https://www.bitget.cloud/news/detail/12560605106527"
+    },
+    {
+     "label": "ChainCatcher: CYS allocations, 160.8M at TGE",
+     "url": "https://www.chaincatcher.com/en/article/2227626"
+    }
+   ],
+   "lastDistributionGap": "There has been no cliff unlock since TGE (~11 Dec 2025). Investor, contributor and foundation 12-month cliffs first hit on 11 Dec 2026. The only post-TGE releases are the Ecosystem Incentives linear vest. The project says only '10-year linear release', with no cadence, and tokenomics.com models it as monthly tranches on the 11th. It may in practice be continuous or discretionary, in which case the honest answer is 'no discrete unlock since TGE'. CMC and CoinGecko circulating is still 160.8M, exactly the TGE float, so those ecosystem releases are not reflected in circulating supply. The amounts are my calculations."
   },
   {
    "date": "2026-12-15",
@@ -13921,7 +14058,23 @@
       "evidence": "reasoning"
      }
     ]
-   }
+   },
+   "lastDistributionNote": "no unlock since TGE (2025-11-24)",
+   "lastDistributionSources": [
+    {
+     "label": "Monad blog: MON tokenomics overview",
+     "url": "https://monad.xyz/blog/mon-tokenomics-overview"
+    },
+    {
+     "label": "tokenomics.com Monad unlocks (only past event: TGE 24 Nov 2025)",
+     "url": "https://app.tokenomics.com/tokenomics/monad/unlocks"
+    },
+    {
+     "label": "Tokenomist Monad unlock events",
+     "url": "https://tokenomist.ai/monad/unlock-events"
+    }
+   ],
+   "lastDistributionGap": "Official docs: team, investor and treasury tokens are all locked until the first anniversary (24 Nov 2026). Ecosystem/airdrop/public sale were unlocked at TGE, with no further vesting. The CMC AI '170M MON unlock' in late April 2026 has no date, recipient or primary source, and no tracker shows it, so it is treated as unconfirmed. Next-unlock size disagrees between sources (tokenomics.com 16.61B vs CoinGecko/Tokenomist 6.66B vs CMC community 16.8B); this does not affect the past-distribution answer. Validator-delegation staking rewards from the Ecosystem bucket are continuous, not discrete events."
   },
   {
    "date": "2026-12-29",
@@ -14124,7 +14277,23 @@
       "evidence": "reasoning"
      }
     ]
-   }
+   },
+   "lastDistributionNote": "no unlock since TGE (2025-12-30)",
+   "lastDistributionSources": [
+    {
+     "label": "Tokenomist research: LIT tokenomics and the Dec 2026 cliff (18 Jul 2026)",
+     "url": "https://www.tokenomist.ai/research/lighter-lit-tokenomics-robinhood-hype-a-real-burn-and-the-december-2026-cliff-2"
+    },
+    {
+     "label": "tokenomics.com Lighter (only TGE 250M released; team/investor next in ~45 days)",
+     "url": "https://app.tokenomics.com/tokenomics/lighter"
+    },
+    {
+     "label": "The Block: Lighter launches LIT (30 Dec 2025)",
+     "url": "https://www.theblock.co/news/ecosystems/2025-12-30-lighter-native-token-lit-383940"
+    }
+   ],
+   "lastDistributionGap": "The team (260M) and investor (240M) 1-year cliff has not happened yet. Sources disagree on its date: Tokenomist says 27 Dec 2026, tokenomics.com says ~45 days from 16 Nov (~31 Dec), and our input says 29 Dec. The 25% Ecosystem reserve has no schedule ('TBD') and funds staking rewards (continuous), points seasons and the $11M Robinhood incentive. These are discretionary or continuous payouts, not discrete unlocks, and none is quantified. A 15.6M LIT burn (10 Jul 2026) reduced supply."
   },
   {
    "date": "2027-05-11",

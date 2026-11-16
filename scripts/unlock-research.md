@@ -45,6 +45,10 @@ If you cannot confirm a value, set it to null and say why in `gaps`.
    tokens unlock (the end of their cliff), false if it is a routine later tranche, null if
    no source says. Past data shows first insider unlocks fell hardest, so get this right.
 9. **CoinGecko API id**: shown as "API ID" on the coin's CoinGecko page. It can differ from the web address (Avalanche's web page is /coins/avalanche but its API id is avalanche-2), so use the API id.
+10. **Last distribution**: the token's most recent PAST discrete unlock before this one (cliff,
+   monthly/quarterly tranche, or TGE/airdrop release; not a continuous daily emission): date, amount,
+   recipients, kind. Check CoinMarketCap's and CoinGecko's unlock sections plus Tokenomist; give both if
+   they disagree. If nothing has unlocked since TGE, set it to null and say "no unlock since TGE" in gaps.
 
 ## Output
 
@@ -53,6 +57,7 @@ Write a JSON array to the output path you were given, one object per input row:
 ```json
 {
   "token": "ARB", "name": "Arbitrum", "coingeckoId": "arbitrum", "firstInsiderUnlock": false,
+  "lastDistribution": {"date": "2026-10-16", "amount": "92.65M ARB", "recipients": "team + investors", "kind": "monthly"} or null,
   "date": "2026-11-16", "timeUTC": "13:00" or null,
   "stillUpcoming": true,
   "amountTokens": 92650000, "amountText": "92.65M ARB",

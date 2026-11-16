@@ -155,6 +155,8 @@ details.logp h4 { margin: 18px 0 6px; font-size: 15px; } table.sig small.why { c
 .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin: 14px 0 18px; }
 .tile { background: var(--panel, #1b2350); border-radius: 10px; padding: 10px 14px; } .tile small { display: block; color: var(--muted); font-size: 12.5px; } .tile b { font-size: 20px; }
 ul.plain { list-style: none; padding: 0; margin: 0; } ul.plain li { padding: 6px 0; border-top: 1px solid rgba(255,255,255,.06); }
+tr.ctx td { background: rgba(255,255,255,.03); font-size: 13.5px; line-height: 1.7; padding: 10px 14px; } tr.ctx[hidden] { display: none; }
+.ctxbtn { background: none; border: 0; color: var(--muted); font-size: 12px; padding: 2px 0; cursor: pointer; } .ctxbtn:hover { color: var(--text); }
 .tierA { color: var(--sun); font-weight: 700; font-size: 12px; }
 .pc { font-weight: 600; font-size: 13.5px; } .pc.ok { color: var(--bull); } .pc.bad { color: var(--bear); } .pc.na { color: var(--muted); font-weight: 500; }
 details.logp summary { cursor: pointer; list-style: none; } details.logp summary h3 { display: inline; } details.logp summary::after { content: ' (show)'; color: var(--sun); font-size: 14px; } details.logp[open] summary::after { content: ' (hide)'; }
@@ -994,8 +996,26 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
             } else if (dEntry <= 0) inTrade.textContent = 'Price check failed';
           });
           else if (dEntry <= 0) inTrade.textContent = '—';
-          return row;
-        }))])]) : el('p', { text: 'No upcoming unlocks match the playbook right now.' })]);
+          // reference context behind a click: last distribution and chart levels
+          const cx = (S.context || {})[x.u.token];
+          if (!cx) return [row];
+          const sp = v => v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(0) + '%';
+          const lv = (arr, cls) => arr && arr.length ? arr.map(z => el('span', { class: 'num ' + cls, text: fmtPx(z.price) + ' (' + sp(z.pct) + ')' })).reduce((acc, n, i) => acc.concat(i ? [', ', n] : [n]), []) : [el('span', { class: 'na', text: 'none in 120 days' })];
+          const last = cx.last;
+          const lastLine = last && last.date ? [el('b', { text: 'Last unlock ' + fmtDay(last.date) }), (last.what ? ' (' + last.what + ')' : '') + ': ',
+              'into it ', el('span', { class: 'num', text: '30d ' + sp(last.pre30) + ' · 14d ' + sp(last.pre14) + ' · 7d ' + sp(last.pre7) }), '; after ', el('span', { class: 'num', text: '7d ' + sp(last.post7) + ' · 14d ' + sp(last.post14) }),
+              last.pumpedInto ? el('span', { class: 'tierA', text: '  Pumped into it' }) : null,
+              last.after === 'pumped' ? el('span', { class: 'down', text: '  Rose 15%+ after: shorts were squeezed last time' }) : last.after === 'dumped' ? el('span', { class: 'up', text: '  Fell 15%+ after' }) : null]
+            : [el('b', { text: 'Last unlock: ' }), last && last.note ? last.note : 'none on record'];
+          const ctxRow = el('tr', { class: 'ctx', hidden: '' }, [el('td', { colspan: '10' }, [
+            el('div', null, lastLine),
+            el('div', null, [el('b', { text: 'Chart (120 days, from ' + fmtPx(cx.ref) + '): ' }), 'resistance above ', ...lv(cx.resistance, 'down'), ' · support below ', ...lv(cx.support, 'up')]),
+            el('div', { class: 'small' }, ['For reference, not rules: on 41 past signal trades, stops set above resistance and targets at support made less than the fixed ' + (P ? P.stop + '% stop and ' + P.target + '% target' : 'levels') + ', and a pump at the last unlock did not predict the next. Use them to see where the price may stall. Prices: ' + (cx.source || '—') + '.'])])]);
+          const tg = el('button', { class: 'ctxbtn', 'aria-expanded': 'false', title: 'Last unlock and chart levels', text: '▸ history' });
+          tg.onclick = () => { const open = ctxRow.hidden; ctxRow.hidden = !open; tg.setAttribute('aria-expanded', String(open)); tg.textContent = (open ? '▾' : '▸') + ' history'; };
+          row.children[0].append(el('br'), tg);
+          return [row, ctxRow];
+        }).flat())])]) : el('p', { text: 'No upcoming unlocks match the playbook right now.' })]);
 
     // headline
     const A = PS ? PS.all : null;

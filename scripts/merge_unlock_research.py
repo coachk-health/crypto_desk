@@ -16,7 +16,7 @@ from pathlib import Path
 DATA = Path(__file__).resolve().parent.parent / "data" / "unlocks.json"
 FIELDS = ["date", "timeUTC", "token", "name", "coingeckoId", "amountTokens", "amountText", "usdM", "type", "pctCirculating",
           "sources", "sourceDisagreements", "recipients", "recipientsMix", "market", "investorEntry",
-          "sellerNotes", "sellerSources", "gaps", "firstInsiderUnlock"]
+          "sellerNotes", "sellerSources", "gaps", "firstInsiderUnlock", "lastDistribution"]
 
 
 def d(s):
@@ -61,7 +61,7 @@ def main():
             n = len(r.get("sources") or [])
             new["confidence"] = "confirmed" if prim or n >= 2 else "reported" if n == 1 else "estimated"
             if i is not None:
-                for keep in ("coingeckoId", "firstInsiderUnlock", "firstInsiderNote", "firstInsiderSources"):
+                for keep in ("coingeckoId", "firstInsiderUnlock", "firstInsiderNote", "firstInsiderSources", "lastDistribution", "lastDistributionNote", "lastDistributionSources"):
                     if new.get(keep) is None and rows[i].get(keep) is not None:
                         new[keep] = rows[i][keep]  # keep a checked value when new research leaves it blank
             if i is None:
