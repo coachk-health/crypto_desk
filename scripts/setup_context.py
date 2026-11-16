@@ -86,6 +86,8 @@ def context(rows, past_dates):
     """rows: upcoming signal rows (dicts from unlocks.json). past_dates: {token: [dates]} of past events on file."""
     today = datetime.now(timezone.utc).date()
     out = {}
+    # one context per token: its next unlock still ahead (or the latest one if all have passed)
+    rows = sorted(rows, key=lambda r: (r["date"] < today.isoformat(), r["date"]))
     for r in rows:
         tok, cg_id = r["token"], r.get("coingeckoId")
         if tok in out or not cg_id:

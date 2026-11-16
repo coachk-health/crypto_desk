@@ -1000,7 +1000,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
           const cx = (S.context || {})[x.u.token];
           if (!cx) return [row];
           const sp = v => v == null ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(0) + '%';
-          const lv = (arr, cls) => arr && arr.length ? arr.map(z => el('span', { class: 'num ' + cls, text: fmtPx(z.price) + ' (' + sp(z.pct) + ')' })).reduce((acc, n, i) => acc.concat(i ? [', ', n] : [n]), []) : [el('span', { class: 'na', text: 'none in 120 days' })];
+          const lv = (arr, cls) => arr && arr.length ? arr.map(z => el('span', { class: 'num ' + cls, text: fmtPx(z.price) + ' (' + sp(z.pct) + ')' })).reduce((acc, n, i) => acc.concat(i ? [', ', n] : [n]), []) : [el('span', { class: 'na', text: /coingecko/.test(cx.source || '') ? 'needs daily highs and lows (not on Binance)' : 'none in 120 days' })];
           const last = cx.last;
           const lastLine = last && last.date ? [el('b', { text: 'Last unlock ' + fmtDay(last.date) }), (last.what ? ' (' + last.what + ')' : '') + ': ',
               'into it ', el('span', { class: 'num', text: '30d ' + sp(last.pre30) + ' · 14d ' + sp(last.pre14) + ' · 7d ' + sp(last.pre7) }), '; after ', el('span', { class: 'num', text: '7d ' + sp(last.post7) + ' · 14d ' + sp(last.post14) }),
