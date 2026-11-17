@@ -143,7 +143,13 @@
     "pnl": 5.32,
     "r": 0.42
    },
-   "worstAgainst": 5.29
+   "worstAgainst": 5.29,
+   "weekMove": null,
+   "tags": [
+    "first",
+    "size25",
+    "core"
+   ]
   },
   {
    "id": "CENT-2026-11-12",
@@ -270,6 +276,47 @@
    "skipReason": "unlock data not confirmed (confidence 33)"
   },
   {
+   "id": "KAITO-2026-11-20",
+   "token": "KAITO",
+   "name": "Kaito",
+   "coingeckoId": "kaito",
+   "unlockDate": "2026-11-20",
+   "checkDate": "2026-11-12",
+   "entryDate": "2026-11-13",
+   "coverDate": "2026-12-04",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [
+    {
+     "at": "2026-11-17T07:40:37+00:00",
+     "event": "check day: missed (not logged before its entry day, so not counted)"
+    }
+   ],
+   "decision": {
+    "confidence": 67,
+    "pctCirculating": 11.26,
+    "investorsShare": 0.085,
+    "firstInsiderUnlock": false,
+    "usdM": 4.89,
+    "amount": "17.6M KAITO (Tokenomist widget) vs 27.18M (tokenomics.com); insider part ~9.25M agreed",
+    "frozenAt": "2026-11-17T07:40:37+00:00"
+   },
+   "plan": {
+    "stop": 12,
+    "target": 35,
+    "cover": 14,
+    "zone": 1.0,
+    "rr": 2.92,
+    "riskPct": 12.66,
+    "pumpPct": 30.0,
+    "fromSignals": "2026-11-17T07:17:03Z"
+   },
+   "status": "missed",
+   "skipReason": "not logged before its entry day, so not counted"
+  },
+  {
    "id": "MON-2026-11-24",
    "token": "MON",
    "name": "Monad",
@@ -377,6 +424,22 @@
    "status": "watching"
   },
   {
+   "id": "WET-2026-12-09",
+   "token": "WET",
+   "name": "HumidiFi",
+   "coingeckoId": "humidifi",
+   "unlockDate": "2026-12-09",
+   "checkDate": "2026-12-01",
+   "entryDate": "2026-12-02",
+   "coverDate": "2026-12-23",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [],
+   "status": "watching"
+  },
+  {
    "id": "JCT-2026-12-10",
    "token": "JCT",
    "name": "Janction",
@@ -410,6 +473,22 @@
    "status": "watching"
   },
   {
+   "id": "PIEVERSE-2026-12-14",
+   "token": "PIEVERSE",
+   "name": "Pieverse",
+   "coingeckoId": "pieverse",
+   "unlockDate": "2026-12-14",
+   "checkDate": "2026-12-06",
+   "entryDate": "2026-12-07",
+   "coverDate": "2026-12-28",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [],
+   "status": "watching"
+  },
+  {
    "id": "LIT-2026-12-29",
    "token": "LIT",
    "name": "Lighter",
@@ -435,15 +514,14 @@
    "entryDate": "2027-05-04",
    "coverDate": "2027-05-25",
    "rules": [
-    "big",
-    "first"
+    "big"
    ],
-   "setup": "A",
+   "setup": "B",
    "history": [],
    "status": "watching"
   }
  ],
- "updatedAt": "2026-11-16T22:57:10Z",
+ "updatedAt": "2026-11-17T07:40:37Z",
  "summary": {
   "closed": 0,
   "won": 0,
@@ -452,7 +530,8 @@
   "totalUsd": 0,
   "open": 1,
   "skipped": 2,
-  "watching": 8
+  "watching": 10,
+  "byTag": {}
  },
  "method": "Live trade log: every unlock short the page calls from now on, with the levels it showed\nand what actually happened. Nothing in it is rewritten later: a call's decision, entry price,\nstop and target are frozen when they are made, and only its result is filled in afterwards.\n\nLife of a call (days are relative to the unlock date):\n  watching  the unlock matches the playbook; its check day has not come yet. Not frozen.\n  check day (day -8): the decision is frozen with the unlock data as it stood then:\n              confidence under 60  -> skipped (\"data not confirmed\")\n              otherwise            -> called, waiting for the entry price\n  entry (day -7): R = the 00:00 UTC price that day (Binance daily open; CoinGecko if the token is\n              not on Binance). Pump check: up 30%+ from day -30 to R -> skipped (\"pumped\").\n              Otherwise open, with zone R to R x 1.01, stop R x (1 + stop%), target R x (1 - target%),\n              using the stop, target and cover day the page showed on the check day.\n  open      checked against each completed day's high and low (same rules as the backtest:\n              a day that reaches the stop counts as stopped first; stops fill 0.5% worse).\n  closed    stop, target, or covered at 00:00 UTC on the plan's cover day. Result after 0.10% fees\n              and 0.03% funding a day, also in R (1R = what a stopped trade loses).\nA call whose check day passed before this script saw it (for example a missed run) is logged as\n\"missed\" and not counted, so a late entry can never use hindsight.\n\nRuns on GitHub Actions twice a day. Needs api.coingecko.com and data.binance.vision.\nOutput: data/trade_log.json"
 }
