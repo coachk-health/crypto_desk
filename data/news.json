@@ -1,71 +1,84 @@
 {
   "date": "2026-11-17",
-  "updated": "2026-11-17T00:07:41Z",
-  "headline": "Bitcoin holds near $65,000 after a steep Wall Street sell-off led by chip stocks, December Fed rate-hike odds stay above 90%, and the CFTC approves blockchain-based US derivatives exchanges.",
+  "updated": "2026-11-17T06:37:56Z",
+  "headline": "Bitcoin hovers near $65,000 after Monday's tech-led sell-off, with Nvidia's results due tonight US time and a December Fed rate rise almost fully priced in.",
   "market": {
-    "asOf": "Read at about 23:56 UTC Mon 16 Nov (about 06:56 Tue Bangkok) from the CoinGecko homepage and CoinMarketCap's charts page; CoinGecko prices shown. CoinMarketCap had BTC at $65,251. The 24-hour change is left out because the pages read did not show whether it was up or down. Prices move fast; use the live prices on this page.",
+    "asOf": "Read at about 06:13 UTC Tue 17 Nov (about 13:13 Bangkok) from the CoinGecko coin pages; CoinGecko prices shown. CoinMarketCap had BTC $64,206.54 (down 1.60% in 24 hours), ETH $1,806.76 (up 0.38%) and SOL $71.25 (up 2.28%). Prices move fast; use the live prices on this page.",
     "btc": {
-      "price": 64943.69,
-      "chg24h": null
+      "price": 64626.95,
+      "chg24h": -0.6
     },
     "eth": {
-      "price": 1816.76,
-      "chg24h": null
+      "price": 1838.64,
+      "chg24h": 1.1
     },
     "sol": {
-      "price": 71.12,
-      "chg24h": null
+      "price": 72.65,
+      "chg24h": 2.2
     },
-    "fearGreed": "Extreme fear: CoinMarketCap's Fear & Greed index read 13 at about 23:56 UTC Mon 16 Nov. CoinDesk reported the index at 12 ('extreme fear') earlier on Monday."
+    "fearGreed": "Extreme fear on all three indexes read at about 06:10 UTC Tue 17 Nov: alternative.me's Crypto Fear & Greed Index 10, CoinMarketCap's index 13, CoinGecko's own gauge 22."
   },
   "stories": [
     {
-      "title": "Wall Street sell-off led by chip stocks keeps bitcoin pinned near $65,000",
+      "title": "Bitcoin stuck near $65,000 as markets wait for Nvidia's results tonight",
       "mood": "bearish",
-      "summary": "US stocks fell sharply on Monday, led by chipmakers, a day before Nvidia reports results. Bitcoin was roughly flat near $65,000, while shares of crypto companies fell much harder. Nvidia's numbers on Tuesday evening US time are the next big event for markets.",
+      "summary": "Bitcoin traded around $65,000 in Asian hours after Monday's tech-led sell-off on Wall Street. Nvidia, the AI chip maker, reports results after the US close today, its first report since its CEO Jensen Huang resigned.",
       "points": [
-        "The Nasdaq closed down 2.5% at 24,509.76 and the S&P 500 down 1.9% at 7,416.59, its third straight loss, per the AP's market table.",
-        "Chip stocks led the fall: Nvidia -4.12%, Micron -7.62% and Intel -7.02%, per StockTitan.",
-        "Bitcoin was at $65,225 (down 0.2%) at 6pm ET, per Investing.com. Over seven days BTC is down 13.2%, ETH 14.6% and SOL 17.5%, per Yahoo Finance.",
-        "Strategy shares fell 8% to $102.50 and Coinbase 7% to $118.40 in Monday morning trading, per Yahoo Finance."
+        "Bitcoin was at $64,959 at around 04:40 UTC, with a 24-hour range of $63,879 to $65,502, per CryptoTicker.",
+        "Asian stocks fell: Japan's Nikkei -1.2%, South Korea's Kospi -1.1% and Hong Kong's Hang Seng -1.3%, per Digital Journal.",
+        "Nvidia's results come about 4:20pm ET (about 04:20 Wed Bangkok) with the call at 5pm ET. Revenue forecasts: $108.84B per MarketPulse, $108.7B per Seeking Alpha; earnings $2.47 a share.",
+        "Huang resigned on 12 November and CFO Colette Kress is interim CEO, per Nvidia's filing with the SEC."
       ],
       "sources": [
         {
-          "label": "AP via mymotherlode: how US indexes fared",
-          "url": "https://mymotherlode.com/news/national/11315541/how-major-us-stock-indexes-fared-monday-11-16-2026.html"
+          "label": "CryptoTicker: bitcoin price, Waller, rate hike",
+          "url": "https://cryptoticker.io/en/bitcoin-price-waller-rate-hike-november-17-2026/"
         },
         {
-          "label": "StockTitan: stock market today",
-          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-16-2026"
+          "label": "Digital Journal: Asian stocks sink",
+          "url": "https://www.digitaljournal.com/article/asian-stocks-sink-as-scandal-hit-nvidia-prepares-for-earnings/"
         },
         {
-          "label": "Investing.com: bitcoin pinned below $65K",
-          "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-pinned-below-65k-as-crypto-sentiment-dithers-etf-outflows-persist-5028381"
+          "label": "Nvidia: SEC filing on CEO transition",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"
         },
         {
-          "label": "Yahoo Finance: crypto market today",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/crypto-market-today-nov-16-230002837.html"
+          "label": "Nvidia: Q3 conference call",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873"
         },
         {
-          "label": "Yahoo Finance: Strategy sinks 8%",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/strategy-sinks-8-bitcoin-selloff-140825125.html"
+          "label": "Seeking Alpha: Nvidia's first test without Huang",
+          "url": "https://seekingalpha.com/news/4673036-nvidia-braces-for-first-earnings-test-without-huang-in-33-years"
         }
       ]
     },
     {
-      "title": "December Fed rate rise priced in as long-term US yields stay above 5%; Fed minutes due Wednesday",
+      "title": "Traders now price a December Fed rate rise as near-certain; US retail sales and Fed's Waller today",
       "mood": "bearish",
-      "summary": "Traders expect the Fed to raise interest rates in December, and the 10-year US Treasury yield is above 5%. Higher rates make assets that pay no interest, like bitcoin, less attractive. Wednesday's minutes from the October Fed meeting are the next clue.",
+      "summary": "Futures markets now bet the Fed will raise interest rates on 9 December, and some bets are on a bigger half-point move. The 10-year US Treasury yield is above 5%. Higher rates make assets that pay no interest, like bitcoin, less attractive. Today's US retail sales and a speech by Fed Governor Waller are the next clues.",
       "points": [
-        "CME FedWatch showed a 92% chance of a 0.25-point rise on 9 December, per Finwire. That is a market bet, not a Fed decision.",
-        "October core inflation rose 0.3% on the month, above the 0.2% forecast, per Finwire.",
-        "Treasury Secretary Bessent urged the Fed to look past energy-driven inflation; Chicago Fed President Goolsbee said price pressures go beyond energy, per Finwire.",
-        "Fed Governor Waller speaks Tuesday at 9:10am ET, per the Federal Reserve, and the October minutes come out Wednesday at 2pm ET."
+        "CME FedWatch showed about a 90.7% chance of a 0.25-point rise and about 9.3% for a 0.5-point rise on 9 December, per CryptoTicker. That is a market bet, not a Fed decision.",
+        "The 10-year Treasury yield was 5.116% on Monday morning, up from 4.83% a week earlier, per CoinDesk.",
+        "On prediction market Kalshi, a 0.25-point rise was at 89%, per CoinGabbar.",
+        "US retail sales for October come at 8:30am ET (20:30 Bangkok): consensus +0.2%, prior +0.8%, per Finviz. Waller speaks at 9:10am ET (21:10 Bangkok), per the Federal Reserve.",
+        "Minutes of the October Fed meeting come out Wednesday at 2pm ET (02:00 Thursday Bangkok), per the Federal Reserve."
       ],
       "sources": [
         {
-          "label": "Finwire: Bessent urges Fed restraint",
-          "url": "https://finwire.io/news/crypto-news/bessent-urges-fed-restraint-asia-session-roundup"
+          "label": "CryptoTicker: bitcoin price, Waller, rate hike",
+          "url": "https://cryptoticker.io/en/bitcoin-price-waller-rate-hike-november-17-2026/"
+        },
+        {
+          "label": "CoinDesk: live news, sixth weekly loss",
+          "url": "https://www.coindesk.com/tech/2026/11/16/live-news-bitcoin-posts-sixth-weekly-loss-as-tech-stocks-and-metals-slide"
+        },
+        {
+          "label": "CoinGabbar: crypto news 17 Nov",
+          "url": "https://www.coingabbar.com/en/crypto-news-nov-17-bitcoin-eth-defi-fear-index-fed-rate-hike"
+        },
+        {
+          "label": "Finviz: economic calendar",
+          "url": "https://finviz.com/calendar/economic"
         },
         {
           "label": "Federal Reserve: November calendar",
@@ -74,15 +87,28 @@
       ]
     },
     {
-      "title": "US regulator approves blockchain-based derivatives exchanges run by Backpack and tZERO",
-      "mood": "bullish",
-      "summary": "The CFTC, the US regulator for futures and other derivatives, approved Backpack and tZERO to run regulated exchanges and clearinghouses that trade and settle on blockchain systems. The CFTC chair said such approvals show 'there is a regulated pathway for a new generation of market infrastructure'.",
+      "title": "CFTC in focus: Senate hearing for two nominees today, and Democrats push back on its prediction-market order",
+      "mood": "neutral",
+      "summary": "The CFTC, the US regulator for futures and derivatives, including much of crypto trading, has only one sitting commissioner. The Senate Agriculture Committee holds a hearing today on two nominees to join it. Separately, Democratic senators asked the CFTC to reverse an order on prediction markets such as Kalshi.",
       "points": [
-        "CFTC Chair Michael Selig called the approvals 'an important milestone in the evolution of American financial markets'; his statement did not name the firms, per The Block.",
-        "tZERO's exchange approval came the week before and it already held clearinghouse approval; Backpack announced its approval on Monday, per The Block.",
-        "Selig is the CFTC's only sitting commissioner; a Senate Agriculture hearing for two nominees, Nathan Anonick and Matthew Rowland, is set for Tuesday, per The Block."
+        "The hearing on nominees Nathan Anonick and Matthew Rowland is listed for 3:00pm ET (03:00 Wednesday Bangkok), per the Senate Agriculture Committee.",
+        "Chair Michael Selig is the CFTC's only sitting commissioner, per KuCoin News.",
+        "Democrats on the committee want the CFTC to reverse its order that platforms like Kalshi stop blocking users in some states within 30 days; they say it conflicts with court orders in several states, per Cryptonews.",
+        "The CFTC has also approved blockchain-based derivatives exchanges run by Backpack (announced Monday) and tZERO (the week before), per The Block."
       ],
       "sources": [
+        {
+          "label": "Senate Agriculture Committee: nomination hearing",
+          "url": "https://www.agriculture.senate.gov/hearings/nomination-hearing-11-17-2026"
+        },
+        {
+          "label": "KuCoin News: CFTC nominees hearing",
+          "url": "https://www.kucoin.com/news/flash/senate-panel-to-hold-cftc-nominees-hearing-as-agency-faces-staffing-shortage"
+        },
+        {
+          "label": "Cryptonews: senators' letter on prediction markets",
+          "url": "https://cryptonews.net/news/legal/33761383/"
+        },
         {
           "label": "The Block: CFTC approves Backpack and tZERO",
           "url": "https://www.theblock.co/news/regulation/2026-11-16-cftc-blockchain-derivatives-exchange-approval-backpack-tzero-441591"
@@ -92,44 +118,44 @@
   ],
   "briefs": [
     {
+      "title": "Judge acquits MEV bot brothers",
+      "summary": "A US judge acquitted Anton and James Peraire-Bueno of wire fraud and related charges over a $25M Ethereum trading-bot exploit in April 2023, per The Block.",
+      "url": "https://www.theblock.co/news/regulation/2026-11-16-peraire-bueno-brothers-acquitted-ethereum-mev-wire-fraud-441425"
+    },
+    {
+      "title": "Zelle picks Solana for its stablecoin",
+      "summary": "Early Warning, the bank-owned company behind Zelle, will issue its ZelleUSD stablecoin on Solana with Anchorage Digital Bank as issuer, starting with payments to India, per BigGo Finance.",
+      "url": "https://finance.biggo.com/news/4942c6ac-4807-4fc0-ba01-c0e68556afc8"
+    },
+    {
+      "title": "Wells Fargo doubles reported bitcoin ETF holding",
+      "summary": "Wells Fargo reported 49.58M shares of BlackRock's bitcoin ETF (IBIT), worth about $2.35B on 30 September, up from 24.4M shares at the end of June, per CoinDesk. The figure may include client holdings.",
+      "url": "https://www.coindesk.com/markets/2026/11/17/wells-fargo-s-reported-blackrock-bitcoin-etf-holdings-double-to-usd2-35-billion"
+    },
+    {
+      "title": "Strategy keeps buying",
+      "summary": "Strategy bought 485 BTC at an average $68,887, taking it to 850,849 BTC at an average cost of $75,452, above the current price, per CoinDesk.",
+      "url": "https://www.coindesk.com/tech/2026/11/16/live-news-bitcoin-posts-sixth-weekly-loss-as-tech-stocks-and-metals-slide"
+    },
+    {
       "title": "Lighter resumes withdrawals",
-      "summary": "Lighter turned off its withdrawal pause and returned about $5M USDC to the affected trader. The total loss is still unconfirmed: $10.4M traced, or up to $15.5M across two accounts by other estimates, per Crypto Briefing.",
-      "url": "https://cryptonews.net/news/security/33761628/"
+      "summary": "Lighter recovered about $5M in USDC and turned withdrawals back on after an exploit, per Crypto Economy.",
+      "url": "https://crypto-economy.com/lighter-restores-withdrawals-after-recovering-5-million-from-api-exploit/"
     },
     {
-      "title": "$2B weekend liquidation flush",
-      "summary": "About $2B of trades, mostly bets on rising prices, were forcibly closed over the weekend as bitcoin fell to $62,100, its lowest since 14 July, per CoinDesk.",
-      "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-slips-to-usd64-000-after-usd2-billion-weekend-flush"
+      "title": "$6.45M taken from a Safe wallet",
+      "summary": "About $6.45M left a Safe multisig wallet through a third-party add-on after a probable key compromise; Safe says its own contracts and app were not affected, per crypto.news.",
+      "url": "https://crypto.news/safe-wallet-6-45m-theft-zodiac-role-key/"
     },
     {
-      "title": "Bitcoin ETF outflows: seven days running",
-      "summary": "US spot bitcoin ETFs lost $185.4M on Friday 13 November, their seventh straight day of outflows, per Farside data cited by CoinReporter. Monday's figures had not been confirmed when this was written.",
-      "url": "https://www.coinreporter.io/2026/11/bitcoin-etfs-shed-2-35-billion-two-weeks-blackrock-ibit/"
+      "title": "Ex-Robinhood engineer pleads guilty",
+      "summary": "A former Robinhood engineer pleaded guilty to wire fraud for using confidential listing plans to trade on Hyperliquid, and agreed to forfeit $125,523, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/16/former-robinhood-engineer-pleads-guilty-to-insider-trading-scheme-on-hyperliquid"
     },
     {
-      "title": "Strategy below its average cost",
-      "summary": "Strategy holds 850,849 BTC at an average cost of $75,452, above the current price, and MSCI drops it from its indexes after the close on 30 November, per Yahoo Finance.",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/strategy-sinks-8-bitcoin-selloff-140825125.html"
-    },
-    {
-      "title": "Senators question SEC tokenized-stock exemption",
-      "summary": "Four Democratic senators wrote to SEC Chair Atkins about anti-money-laundering gaps in the SEC's exemption for tokenized stocks, per The Block.",
-      "url": "https://theblock.co/news/regulation/2026-11-16-democratic-senators-warn-secs-tokenized-stock-exemption-illicit-finance-gaps-441432"
-    },
-    {
-      "title": "Kava Lend exploit",
-      "summary": "An attacker borrowed about 55.2M KAVA (about $3.76M) through a little-used market, and KAVA fell about 40% in 24 hours, per BitcoinWorld.",
-      "url": "https://bitcoinworld.co.in/kava-lend-exploit-drains-3-8m-kava-price-plunges/"
-    },
-    {
-      "title": "Russia opens crypto to ordinary investors",
-      "summary": "From 17 November non-qualified retail investors in Russia can buy BTC, ETH and USDT up to annual limits, per CoinDesk.",
-      "url": "https://www.coindesk.com/markets/2026/11/16/fomc-minutes-nvidia-earnings-russia-s-retail-crypto-rules-crypto-week-ahead"
-    },
-    {
-      "title": "Arbitrum vote on frozen Binance-hack funds",
-      "summary": "An Arbitrum DAO vote on returning 8,425.997 ETH and about 74.56M ARB to Binance, subject to legal indemnification, was due to end 16 November, per CoinDesk. No result had been reported when this was written.",
-      "url": "https://www.coindesk.com/markets/2026/11/16/fomc-minutes-nvidia-earnings-russia-s-retail-crypto-rules-crypto-week-ahead"
+      "title": "Supreme Court turns away Custodia Bank",
+      "summary": "The Supreme Court declined to hear crypto bank Custodia's case, leaving in place a ruling that Fed banks can refuse it a master account, per Bitcoin Magazine.",
+      "url": "https://bitcoinmagazine.com/news/supreme-court-ends-custodia-fed-master"
     }
   ],
   "calendar": [
@@ -139,7 +165,7 @@
       "event": "Token unlocks: ZK, PENGU, ZRO, KAITO, AKE, ARIA, SOON, MON, SOSO",
       "impact": "bearish",
       "key": false,
-      "note": "ZK and PENGU on Tuesday, ZRO and KAITO on Friday, AKE and ARIA on Saturday, SOON next Monday, MON and SOSO on 24 November. See the unlock table on this page for sizes, dates and confidence. (Dates from this desk's unlock data.)"
+      "note": "PENGU and ZK on Tuesday, ZRO and KAITO on Friday, AKE and ARIA on Saturday, SOON next Monday, MON and SOSO on 24 November. See the unlock table on this page for sizes, dates and confidence. (Dates from this desk's unlock data.)"
     },
     {
       "et": "Tue 17 Nov · 8:30am",
@@ -150,12 +176,20 @@
       "note": "Consensus +0.2%, prior +0.8%, per Finviz. Fed's Waller speaks at 9:10am ET, per the Federal Reserve. Industrial production at 9:15am ET (consensus +0.1%, prior +0.7%), per Finviz."
     },
     {
+      "et": "Tue 17 Nov · 3:00pm",
+      "bkk": "Wed 18 · 03:00",
+      "event": "Senate hearing on CFTC nominees",
+      "impact": "neutral",
+      "key": false,
+      "note": "Nathan Anonick and Matthew Rowland before the Senate Agriculture Committee, per the committee's page."
+    },
+    {
       "et": "Tue 17 Nov · ~4:20pm",
       "bkk": "Wed 18 · ~04:20",
       "event": "Nvidia Q3 results",
       "impact": "volatile",
       "key": true,
-      "note": "Results about 1:20pm PT; conference call 2:00pm PT / 5:00pm ET (05:00 Wed Bangkok), per Nvidia. Revenue consensus $108.84B and earnings $2.47 a share, per MarketPulse."
+      "note": "Results about 1:20pm PT; conference call 2:00pm PT / 5:00pm ET (05:00 Wed Bangkok), per Nvidia. Revenue consensus $108.84B per MarketPulse ($108.7B per Seeking Alpha); earnings $2.47 a share."
     },
     {
       "et": "Wed 18 Nov · 8:00-8:30am",
@@ -163,7 +197,7 @@
       "event": "CoinShares and Bullish Q3 results; US housing starts",
       "impact": "neutral",
       "key": false,
-      "note": "CoinShares webcast 8:00am ET and Bullish call 8:30am ET, per their announcements on Finviz. Housing starts at 8:30am ET: consensus 1.27M, prior 1.221M, per Finviz."
+      "note": "CoinShares webcast 8:00am ET and Bullish call 8:30am ET, per their announcements on Finviz. Housing starts at 8:30am ET: consensus 1.27M per Finviz (1.250M per Wells Fargo), prior 1.221M."
     },
     {
       "et": "Wed 18 Nov · 2:00pm",
@@ -179,7 +213,7 @@
       "event": "US jobless claims and Philly Fed survey",
       "impact": "neutral",
       "key": false,
-      "note": "Claims consensus 196,000, prior 200,000; Philly Fed consensus 19.2, prior 20.9, per Finviz. Senate Banking holds its hearing on SEC nominees Johnson and Levine the same day, per OneBullEx."
+      "note": "Claims consensus 196,000 per Finviz (198,000 per ZeroHedge), prior 200,000. Philly Fed consensus 19.2 per Finviz (21.5 per ZeroHedge), prior 20.9. Senate Banking hearing on SEC nominees Kristin Johnson and Steven Levine at 10:00am ET, per Bitcoin Magazine."
     },
     {
       "et": "Thu 19 Nov",
@@ -187,7 +221,7 @@
       "event": "Anthropic shares expected to start trading",
       "impact": "volatile",
       "key": false,
-      "note": "Nasdaq ticker ANT, price range $70-78, per RTTNews. The company calls the dates indicative, so they can change, per Democrata."
+      "note": "Nasdaq ticker ANT, price range $70-78, pricing expected 18 November and trading 19 November, per Newsquawk."
     },
     {
       "et": "Fri 20 Nov · 3:00am",
@@ -195,7 +229,7 @@
       "event": "Bitcoin options expiry on Deribit",
       "impact": "volatile",
       "key": false,
-      "note": "About 28,300 BTC of options (about $1.8B) expire at 08:00 UTC, per CryptoTicker. A bigger expiry of about 88,000 BTC follows on 27 November."
+      "note": "About 28,300 BTC of options (about $1.8B) expire on Deribit at 08:00 UTC, per CryptoTicker. A bigger monthly expiry of about 88,000 BTC follows on 27 November, per CryptoTicker."
     },
     {
       "et": "Fri 20 Nov · 10:00am",
@@ -203,15 +237,7 @@
       "event": "University of Michigan consumer sentiment (Nov, final)",
       "impact": "neutral",
       "key": false,
-      "note": "Consensus 52, per Finviz; preliminary November reading 51.0, per FinanceCalendar. Fed's Cook speaks at 12:15pm ET (00:15 Sat Bangkok), per the Federal Reserve."
-    },
-    {
-      "et": "Mon 23 Nov · 9:45am",
-      "bkk": "Mon 23 · 21:45",
-      "event": "S&P Global flash US PMIs (Nov)",
-      "impact": "neutral",
-      "key": false,
-      "note": "Date and 9:45am time per MTS Insights, which does not state a time zone."
+      "note": "Consensus 52.0, per Finviz; preliminary November reading 51.0, per StockAnalysis. Fed's Cook speaks at 12:15pm ET (00:15 Sat Bangkok), per the Federal Reserve."
     },
     {
       "et": "Wed 9 Dec · 2:00pm",
@@ -219,13 +245,13 @@
       "event": "Next Fed rate decision",
       "impact": "volatile",
       "key": true,
-      "note": "Meeting 8-9 December; decision Wednesday 9 December at 2:00pm ET, press conference 2:30pm ET, per FedRateCalc. Markets put a 92% chance on a rise, per Finwire."
+      "note": "Meeting 8-9 December; statement 2:00pm ET and press conference 2:30pm ET, per the Federal Reserve. Markets put about a 90.7% chance on a 0.25-point rise and 9.3% on 0.5 point, per CryptoTicker."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-17T00:07:41Z",
-    "claimsChecked": 119,
+    "checkedAt": "2026-11-17T06:37:56Z",
+    "claimsChecked": 86,
     "claimsRemoved": 6,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
