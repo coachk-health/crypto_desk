@@ -3848,6 +3848,66 @@
       }
      ],
      "gaps": "Tokenomist names the DAO Treasury as recipient, which conflicts with the primary docs (the team/investor tranche) and with the 56.13M/36.52M split reported for Jul and Aug. Amount and time not printed by any source opened."
+    },
+    {
+     "date": "2026-11-15",
+     "timeUTC": "00:29",
+     "amountTokens": 92650000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.606,
+      "investors": 0.394,
+      "community": 0,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "Arbitrum Foundation docs, token supply (read 2026-11-14): team & contributors 2.694B, investors 1.753B; 4-year unlock from 16 Mar 2023, first unlock 16 Mar 2024 (673.5M team, 438.25M investors), monthly cadence after; footnote defines a month as seconds in a year / 12 from 16 Mar 2024. (2.694B + 1.753B) x 0.75 / 36 = 92.65M; 16 Mar 2024 + 32 x 2,629,800 s = 15 Nov 2026 00:00 UTC",
+       "url": "https://docs.arbitrum.foundation/token-supply",
+       "kind": "primary",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "DefiLlama ARB unlocks (read 2026-11-14): next 15 Nov 2026 00:29 UTC, 92.65M ARB; Team, Contributors & Advisors 56.13M, Investors 36.52M; 1.34% of float (USD value priced at 28 Oct)",
+       "url": "https://defillama.com/unlocks/arbitrum",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "time",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinGecko ARB unlock widget (Tokenomist feed, read 2026-11-14): 16 Nov, '2 days away', 92.65M ARB ($13.69M), 0.93% of total; Team, Future Team + Advisors 56.13M, Investors 36.52M",
+       "url": "https://www.coingecko.com/en/coins/arbitrum",
+       "kind": "aggregator",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "24/7 Wall St (2 Oct 2026): 92.6M ARB unlocks monthly until early 2027; cites ~1.1B ARB March 2024 cliff (gives a different split incl. 12M to treasury)",
+       "url": "https://247wallst.com/investing/cryptocurrency/2026/10/02/arbitrum-is-up-more-than-100-since-august-and-92-6-million-arb-unlocks-every-month-until-early-2027-can-the-rally-survive-the-supply/",
+       "kind": "news",
+       "confirms": [
+        "amount"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Moderate",
+      "points": 2.11,
+      "confidence": 90,
+      "scoredAt": "2026-11-17T00:07:41Z"
+     }
     }
    ],
    "gaps": "Day of month: Tokenomist-fed round-ups use the 16th (13:00 UTC where stated); the desk's earlier pass saw DefiLlama on the 15th at 00:29 UTC, and the primary docs define months as a year's seconds / 12 from 16 Mar 2024, so the exact second can drift. DefiLlama could not be opened in this run. May and Jun 2026 have no source printing the date. Some feeds (459099, blockeden, Tokenomist) describe a DAO-treasury flow or a 96M/123.53M total; the primary docs give no DAO-treasury unlock schedule. Web search budget ran out mid-run, so per-month round-ups for May, Jun and Sep could not be searched for.",
@@ -10064,7 +10124,67 @@
    "coingeckoId": "crypto-com-chain",
    "maxSupply": 100000000000,
    "listed": null,
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-16",
+     "timeUTC": null,
+     "amountTokens": 1170000000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0,
+      "investors": 0,
+      "community": 0,
+      "ecosystem": 1.0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko CRO page, Tokenomist unlock widget (read 16 Nov 2026 ~04:00 UTC): 16 Nov, '7 hours away', 1.17B CRO (~$50.09M), 1.2% of total, to Cronos Strategic Reserve; API ID crypto-com-chain",
+       "url": "https://coingecko.com/coins/crypto-com-chain",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Analytics Insight (23 Oct 2026): ~1.17B CRO scheduled for 16 Nov under the Strategic Reserve vesting plan running to 2030; cites Tokenomist, so not independent of the widget",
+       "url": "https://www.analyticsinsight.net/amp/story/news/cronos-price-prediction-can-cro-hold-usd-0055-ahead-of-november-token-unlock",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Cryptoticker (19 Oct 2026): ~1.17B CRO left the Strategic Reserve overnight into 17 Oct 2026 on a fixed monthly rhythm; next date not published by the project",
+       "url": "https://cryptoticker.io/en/cronos-cro-unlock-strategic-reserve/",
+       "kind": "news",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "The Block (3 Mar 2025): 70B reissued CRO to a strategic reserve wallet with a five-year vesting schedule (70B/60 months = ~1.167B a month, own arithmetic)",
+       "url": "https://www.theblock.co/amp/post/344141/crypto-coms-cronos-blockchain-considers-proposal-to-reissue-70-billion-previously-burned-tokens",
+       "kind": "news",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 3.0,
+      "confidence": 62,
+      "scoredAt": "2026-11-17T00:07:41Z"
+     }
+    }
+   ],
    "gaps": "No events listed. CRO has ~monthly Strategic Reserve releases of ~1.17B CRO (Tokenomist digest Oct 12-18 2026: Oct 17 2026 cliff ~$71M, 2.33% of unlocked supply; that date is outside the window). Earlier in-window tranche dates could not be confirmed: the cadence is ~30.4 days, not a fixed calendar day (Oct 17 01:03 UTC, then Nov 16 per Tokenomist), so monthly dates cannot be derived with certainty, and the reserve vesting start date was not found (governance proposal page not reachable). Search budget ran out before CRO-specific sources (PANews weekly lists for Dec 2025 - Sep 2026) could be found. Recipient would be 100% ecosystem (Cronos Strategic Reserve). Listed month not confirmed from an opened source. Needs a follow-up pass."
   },
   {
@@ -35338,7 +35458,66 @@
    "coingeckoId": "sei-network",
    "maxSupply": 10000000000,
    "listed": "2023-08",
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-15",
+     "timeUTC": null,
+     "amountTokens": null,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": null,
+     "sources": [
+      {
+       "label": "CoinGecko SEI unlock widget (Tokenomist feed, read 2026-11-14): 15 Nov, '1 day away', 55.56M SEI ($2.41M), 0.56% of total, recipient Team. Tokenomist unlock-events page also says 15 Nov to Team (amount not shown); counted once",
+       "url": "https://www.coingecko.com/en/coins/sei",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "tokenomics.com SEI unlocks (read 2026-11-14): 15 Nov 2026, 111,527,778 SEI ($4.8M), 1.1% of supply; Private Investors ~49.8%, Insiders ~37.9%, Community ~12.3%; private sale 20% with 12m cliff + 36m linear; team (2-4y) 15.2% 12m cliff + 36m linear; ecosystem reserve 48% 120m linear",
+       "url": "https://app.tokenomics.com/tokenomics/sei/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Bitrue blog (updated 13 Oct 2026): lists monthly releases on 15 Oct, 15 Nov, 15 Dec 2026; repeats tokenomics.com 111.5M split (55.6M private / 42.2M insiders / 13.8M community) and notes a separate 55.56M dashboard figure (derived from the two aggregators above, not independent)",
+       "url": "https://www.bitrue.com/blog/sei-token-unlock",
+       "kind": "news",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "DefiLlama SEI unlocks (read 2026-11-14): only November event shown is 13 Nov 2026 00:52 UTC, 22.08M SEI (Staking Rewards 13.75M, Strategic Allocation 8.33M); no 15 Nov event",
+       "url": "https://defillama.com/unlocks/sei",
+       "kind": "aggregator",
+       "confirms": []
+      },
+      {
+       "label": "ICO Drops SEI (data updated Apr 2024): Private Sale 2B, 74.91% unlocked, ~275 days left; Team 2B, 44.94% unlocked; seed Q3 2022 at $0.00308, Series A 11 Apr 2023 at $0.08; TGE 15 Aug 2023",
+       "url": "https://icodrops.com/sei-network/",
+       "kind": "aggregator",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Not enough data",
+      "points": -0.5,
+      "confidence": 62,
+      "scoredAt": "2026-11-17T00:07:41Z"
+     }
+    }
+   ],
    "gaps": "No events listed. SEI appears to have monthly unlocks around the 13th-15th, but no source opened this run confirms any in-window tranche, and the aggregators read for the desk on 21-26 Oct 2026 disagree on amount, date and recipients (Nov 2026 example: 111.53M to investors/insiders/community per tokenomics.com on the 15th; 55.56M to Team per the CoinGecko/Tokenomist widget on the 15th; 22.08M staking rewards + strategic on the 13th 00:52 UTC per DefiLlama). Official Sei vesting docs could not be opened. This run's web-search budget ran out before SEI-specific sources could be found, and tokenomics.com/Tokenomist/DefiLlama SEI pages were not on the fetch allowlist. Needs a follow-up pass. Listed month 2023-08 from earlier desk notes (CoinGecko), not re-checked."
   },
   {
@@ -38270,6 +38449,58 @@
       }
      ],
      "gaps": "Split 52.45/47.55 taken from Bitrue's Oct 2026 tranche and the 20.04%/18.17% allocations; both groups vest on the same schedule, so applied pro rata."
+    },
+    {
+     "date": "2026-11-15",
+     "timeUTC": null,
+     "amountTokens": 127000000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.5245,
+      "investors": 0.4755,
+      "community": 0,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "Starknet docs, STRK page (read 2026-11-14): investors and early contributors unlock up to 127M STRK (1.27%) monthly on the 15th from 15 Apr 2025 to 15 Mar 2027 (64M/month 15 Apr 2024-15 Mar 2025); no time of day",
+       "url": "https://docs.starknet.io/learn/protocol/strk",
+       "kind": "primary",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinGecko STRK widget (Tokenomist feed, read 2026-11-14): 15 Nov, '1 day away', 127M STRK (~$4.62M): Early Contributors 66.61M, Investors 60.39M; API ID starknet",
+       "url": "https://www.coingecko.com/en/coins/starknet",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CryptoTicker (6 Nov 2026): 127M STRK on 15 Nov 2026 to early contributors and investors, citing Tokenomist; says the schedule gives no split; no time (not independent of Tokenomist)",
+       "url": "https://cryptoticker.io/en/starknet-strk-unlock-november-15-trading-volume/",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Moderate",
+      "points": 2.02,
+      "confidence": 85,
+      "scoredAt": "2026-11-17T00:07:41Z"
+     }
     }
    ],
    "gaps": "Day of month disputed: official schedule and PANews/Token Unlocks say the 15th (00:00 UTC); tokenomics.com lists the 20th and DefiLlama ~13th 23:29 UTC (desk snapshot). Apr-Jul 2026 rest on the schedule only (no month-specific report read; search budget ran out). coingeckoId 'starknet' not re-opened on CoinGecko this session. Listed month from tokenomics.com TGE 20 Feb 2024.",

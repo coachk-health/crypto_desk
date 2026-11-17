@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-15T08:52:51Z",
+ "generatedAt": "2026-11-17T07:17:03Z",
  "plan": {
   "stop": 12,
   "target": 35,
@@ -13,94 +13,67 @@
   "minLift": 0.1,
   "minWithR": 0.15,
   "pumpPct": 30.0,
-  "split": "2026-05-02",
+  "split": "2026-05-11",
   "wfMinHistory": 60
  },
  "sample": {
-  "trades": 283,
-  "tokens": 51,
-  "from": "2025-11-21",
-  "to": "2026-10-23"
+  "trades": 828,
+  "tokens": 119,
+  "from": "2025-11-10",
+  "to": "2026-10-25"
  },
  "edges": [
-  {
-   "key": "liquid",
-   "label": "1+ day of volume",
-   "plain": "The unlock is worth at least one full day of trading volume.",
-   "with": {
-    "n": 15,
-    "tokens": 12,
-    "win": 60,
-    "meanR": 0.6,
-    "totalR": 9.0,
-    "medianR": 0.89
-   },
-   "without": {
-    "n": 268,
-    "tokens": 44,
-    "win": 40,
-    "meanR": -0.0,
-    "totalR": -0.4,
-    "medianR": -1.0
-   },
-   "lift": 0.6,
-   "halves": [
-    0.34,
-    0.82
-   ],
-   "status": "confirmed"
-  },
-  {
-   "key": "big",
-   "label": "10%+ of supply",
-   "plain": "The unlock adds 10% or more to the tokens already trading.",
-   "with": {
-    "n": 34,
-    "tokens": 26,
-    "win": 53,
-    "meanR": 0.5,
-    "totalR": 17.0,
-    "medianR": 0.66
-   },
-   "without": {
-    "n": 249,
-    "tokens": 32,
-    "win": 39,
-    "meanR": -0.03,
-    "totalR": -8.4,
-    "medianR": -1.0
-   },
-   "lift": 0.53,
-   "halves": [
-    0.07,
-    0.97
-   ],
-   "status": "confirmed"
-  },
   {
    "key": "first",
    "label": "First insider unlock",
    "plain": "The first time the team or investors can sell.",
    "with": {
-    "n": 24,
-    "tokens": 24,
-    "win": 54,
-    "meanR": 0.39,
-    "totalR": 9.5,
-    "medianR": 0.36
+    "n": 57,
+    "tokens": 57,
+    "win": 51,
+    "meanR": 0.35,
+    "totalR": 19.7,
+    "medianR": 0.05
    },
    "without": {
-    "n": 259,
-    "tokens": 40,
-    "win": 40,
-    "meanR": -0.0,
-    "totalR": -0.9,
+    "n": 771,
+    "tokens": 104,
+    "win": 38,
+    "meanR": -0.05,
+    "totalR": -37.5,
     "medianR": -1.0
    },
-   "lift": 0.39,
+   "lift": 0.4,
    "halves": [
-    0.51,
-    0.24
+    0.45,
+    0.33
+   ],
+   "status": "confirmed"
+  },
+  {
+   "key": "liquid",
+   "label": "1+ day of volume",
+   "plain": "The unlock is worth at least one full day of trading volume.",
+   "with": {
+    "n": 27,
+    "tokens": 21,
+    "win": 48,
+    "meanR": 0.26,
+    "totalR": 7.0,
+    "medianR": -0.14
+   },
+   "without": {
+    "n": 801,
+    "tokens": 109,
+    "win": 39,
+    "meanR": -0.03,
+    "totalR": -24.8,
+    "medianR": -1.0
+   },
+   "lift": 0.29,
+   "halves": [
+    0.61,
+    0.19
    ],
    "status": "confirmed"
   },
@@ -109,52 +82,52 @@
    "label": "One-day cliff",
    "plain": "Released in one go, not drip-fed monthly.",
    "with": {
-    "n": 43,
-    "tokens": 33,
-    "win": 49,
-    "meanR": 0.32,
-    "totalR": 13.8,
+    "n": 85,
+    "tokens": 61,
+    "win": 47,
+    "meanR": 0.18,
+    "totalR": 15.3,
     "medianR": -1.0
    },
    "without": {
-    "n": 240,
-    "tokens": 26,
-    "win": 40,
-    "meanR": -0.02,
-    "totalR": -5.2,
+    "n": 743,
+    "tokens": 82,
+    "win": 38,
+    "meanR": -0.04,
+    "totalR": -33.2,
     "medianR": -1.0
    },
-   "lift": 0.34,
+   "lift": 0.22,
    "halves": [
-    0.21,
-    0.49
+    0.36,
+    0.12
    ],
    "status": "confirmed"
   },
   {
-   "key": "falling",
-   "label": "Already falling",
-   "plain": "The price fell over the 3 weeks before entry.",
+   "key": "big",
+   "label": "10%+ of supply",
+   "plain": "The unlock adds 10% or more to the tokens already trading.",
    "with": {
-    "n": 193,
-    "tokens": 46,
-    "win": 42,
-    "meanR": 0.05,
-    "totalR": 10.4,
+    "n": 106,
+    "tokens": 49,
+    "win": 44,
+    "meanR": 0.15,
+    "totalR": 15.5,
     "medianR": -1.0
    },
    "without": {
-    "n": 86,
-    "tokens": 30,
+    "n": 722,
+    "tokens": 92,
     "win": 38,
-    "meanR": -0.03,
-    "totalR": -2.5,
+    "meanR": -0.05,
+    "totalR": -33.4,
     "medianR": -1.0
    },
-   "lift": 0.08,
+   "lift": 0.2,
    "halves": [
-    0.22,
-    -0.1
+    -0.07,
+    0.42
    ],
    "status": "watching"
   },
@@ -163,52 +136,133 @@
    "label": "Team gets 30%+",
    "plain": "At least 30% of the unlock goes to the team and advisors.",
    "with": {
-    "n": 129,
-    "tokens": 26,
-    "win": 43,
-    "meanR": 0.03,
-    "totalR": 3.6,
+    "n": 306,
+    "tokens": 61,
+    "win": 42,
+    "meanR": 0.07,
+    "totalR": 20.3,
     "medianR": -1.0
    },
    "without": {
-    "n": 154,
-    "tokens": 30,
-    "win": 40,
-    "meanR": 0.03,
-    "totalR": 4.9,
+    "n": 522,
+    "tokens": 82,
+    "win": 37,
+    "meanR": -0.07,
+    "totalR": -38.1,
     "medianR": -1.0
    },
-   "lift": 0.0,
+   "lift": 0.14,
    "halves": [
-    0.02,
-    -0.01
+    0.2,
+    0.1
    ],
-   "status": "hurts"
+   "status": "watching"
   },
   {
    "key": "waited",
    "label": "Waited 12+ months",
    "plain": "The token has been trading for a year or more, so insiders have waited out a cliff.",
    "with": {
-    "n": 223,
-    "tokens": 39,
-    "win": 41,
-    "meanR": 0.02,
-    "totalR": 5.3,
+    "n": 588,
+    "tokens": 101,
+    "win": 40,
+    "meanR": 0.0,
+    "totalR": 1.4,
     "medianR": -1.0
    },
    "without": {
-    "n": 49,
-    "tokens": 13,
-    "win": 39,
-    "meanR": 0.06,
-    "totalR": 2.9,
+    "n": 222,
+    "tokens": 46,
+    "win": 35,
+    "meanR": -0.09,
+    "totalR": -20.3,
     "medianR": -1.0
    },
-   "lift": -0.04,
+   "lift": 0.09,
    "halves": [
-    0.12,
-    -0.11
+    0.11,
+    0.1
+   ],
+   "status": "watching"
+  },
+  {
+   "key": "investors",
+   "label": "Investors get 30%+",
+   "plain": "At least 30% of the unlock goes to private investors.",
+   "with": {
+    "n": 290,
+    "tokens": 57,
+    "win": 40,
+    "meanR": -0.0,
+    "totalR": -0.6,
+    "medianR": -1.0
+   },
+   "without": {
+    "n": 538,
+    "tokens": 87,
+    "win": 39,
+    "meanR": -0.03,
+    "totalR": -17.2,
+    "medianR": -1.0
+   },
+   "lift": 0.03,
+   "halves": [
+    0.19,
+    -0.12
+   ],
+   "status": "watching"
+  },
+  {
+   "key": "inProfit",
+   "label": "Holders in profit",
+   "plain": "Price on the check day is above the token's first Binance price, so early holders can sell at a profit.",
+   "with": {
+    "n": 36,
+    "tokens": 16,
+    "win": 36,
+    "meanR": -0.02,
+    "totalR": -0.6,
+    "medianR": -1.0
+   },
+   "without": {
+    "n": 792,
+    "tokens": 114,
+    "win": 39,
+    "meanR": -0.02,
+    "totalR": -17.2,
+    "medianR": -1.0
+   },
+   "lift": 0.0,
+   "halves": [
+    0.11,
+    -0.22
+   ],
+   "status": "hurts"
+  },
+  {
+   "key": "falling",
+   "label": "Already falling",
+   "plain": "The price fell over the 3 weeks before entry.",
+   "with": {
+    "n": 586,
+    "tokens": 112,
+    "win": 39,
+    "meanR": -0.04,
+    "totalR": -21.9,
+    "medianR": -1.0
+   },
+   "without": {
+    "n": 240,
+    "tokens": 85,
+    "win": 40,
+    "meanR": 0.03,
+    "totalR": 6.1,
+    "medianR": -1.0
+   },
+   "lift": -0.07,
+   "halves": [
+    0.05,
+    -0.17
    ],
    "status": "hurts"
   },
@@ -217,117 +271,171 @@
    "label": "Under 30% circulating",
    "plain": "Less than 30% of the max supply is trading, so a lot more is still to come.",
    "with": {
-    "n": 86,
-    "tokens": 28,
-    "win": 37,
-    "meanR": -0.05,
-    "totalR": -4.0,
+    "n": 335,
+    "tokens": 69,
+    "win": 36,
+    "meanR": -0.1,
+    "totalR": -32.4,
     "medianR": -1.0
    },
    "without": {
-    "n": 191,
-    "tokens": 28,
+    "n": 476,
+    "tokens": 69,
     "win": 41,
-    "meanR": 0.0,
-    "totalR": 0.3,
+    "meanR": 0.01,
+    "totalR": 4.3,
     "medianR": -1.0
    },
-   "lift": -0.05,
+   "lift": -0.11,
    "halves": [
-    -0.28,
-    0.16
-   ],
-   "status": "hurts"
-  },
-  {
-   "key": "investors",
-   "label": "Investors get 30%+",
-   "plain": "At least 30% of the unlock goes to private investors.",
-   "with": {
-    "n": 111,
-    "tokens": 20,
-    "win": 39,
-    "meanR": -0.02,
-    "totalR": -2.7,
-    "medianR": -1.0
-   },
-   "without": {
-    "n": 172,
-    "tokens": 36,
-    "win": 42,
-    "meanR": 0.07,
-    "totalR": 11.2,
-    "medianR": -1.0
-   },
-   "lift": -0.09,
-   "halves": [
-    0.01,
-    -0.22
-   ],
-   "status": "hurts"
-  },
-  {
-   "key": "inProfit",
-   "label": "Holders in profit",
-   "plain": "Price on the check day is above the token's first Binance price, so early holders can sell at a profit.",
-   "with": {
-    "n": 18,
-    "tokens": 7,
-    "win": 33,
-    "meanR": -0.12,
-    "totalR": -2.2,
-    "medianR": -1.01
-   },
-   "without": {
-    "n": 265,
-    "tokens": 47,
-    "win": 42,
-    "meanR": 0.04,
-    "totalR": 10.8,
-    "medianR": -1.0
-   },
-   "lift": -0.16,
-   "halves": [
-    -0.02,
-    -0.32
+    -0.18,
+    -0.04
    ],
    "status": "hurts"
   }
  ],
  "confirmed": [
   "first",
-  "big",
   "cliff",
   "liquid"
  ],
  "boosters": [
-  "liquid"
+  "first",
+  "falling"
  ],
  "boosterTests": [
   {
-   "key": "waited",
-   "label": "Waited 12+ months",
-   "plain": "The token has been trading for a year or more, so insiders have waited out a cliff.",
+   "key": "first",
+   "label": "First insider unlock",
+   "plain": "The first time the team or investors can sell.",
    "with": {
-    "n": 41,
-    "tokens": 27,
-    "win": 54,
-    "meanR": 0.44,
-    "totalR": 18.2,
-    "medianR": 0.65
+    "n": 57,
+    "tokens": 57,
+    "win": 51,
+    "meanR": 0.35,
+    "totalR": 19.7,
+    "medianR": 0.05
    },
    "without": {
-    "n": 8,
-    "tokens": 7,
-    "win": 38,
+    "n": 55,
+    "tokens": 39,
+    "win": 40,
     "meanR": 0.01,
-    "totalR": 0.1,
+    "totalR": 0.4,
     "medianR": -1.0
    },
-   "lift": 0.43,
+   "lift": 0.34,
    "halves": [
-    0.69,
-    -0.24
+    0.41,
+    0.25
+   ],
+   "status": "confirmed"
+  },
+  {
+   "key": "falling",
+   "label": "Already falling",
+   "plain": "The price fell over the 3 weeks before entry.",
+   "with": {
+    "n": 80,
+    "tokens": 62,
+    "win": 46,
+    "meanR": 0.26,
+    "totalR": 20.6,
+    "medianR": -1.0
+   },
+   "without": {
+    "n": 30,
+    "tokens": 25,
+    "win": 47,
+    "meanR": 0.05,
+    "totalR": 1.6,
+    "medianR": -1.0
+   },
+   "lift": 0.21,
+   "halves": [
+    0.05,
+    0.39
+   ],
+   "status": "confirmed"
+  },
+  {
+   "key": "team",
+   "label": "Team gets 30%+",
+   "plain": "At least 30% of the unlock goes to the team and advisors.",
+   "with": {
+    "n": 43,
+    "tokens": 37,
+    "win": 51,
+    "meanR": 0.29,
+    "totalR": 12.3,
+    "medianR": 0.03
+   },
+   "without": {
+    "n": 69,
+    "tokens": 48,
+    "win": 42,
+    "meanR": 0.11,
+    "totalR": 7.8,
+    "medianR": -1.0
+   },
+   "lift": 0.18,
+   "halves": [
+    0.0,
+    0.35
+   ],
+   "status": "watching"
+  },
+  {
+   "key": "big",
+   "label": "10%+ of supply",
+   "plain": "The unlock adds 10% or more to the tokens already trading.",
+   "with": {
+    "n": 54,
+    "tokens": 43,
+    "win": 48,
+    "meanR": 0.26,
+    "totalR": 13.8,
+    "medianR": -0.39
+   },
+   "without": {
+    "n": 58,
+    "tokens": 43,
+    "win": 43,
+    "meanR": 0.11,
+    "totalR": 6.3,
+    "medianR": -1.0
+   },
+   "lift": 0.15,
+   "halves": [
+    0.0,
+    0.29
+   ],
+   "status": "watching"
+  },
+  {
+   "key": "inProfit",
+   "label": "Holders in profit",
+   "plain": "Price on the check day is above the token's first Binance price, so early holders can sell at a profit.",
+   "with": {
+    "n": 12,
+    "tokens": 9,
+    "win": 42,
+    "meanR": 0.3,
+    "totalR": 3.6,
+    "medianR": -1.0
+   },
+   "without": {
+    "n": 100,
+    "tokens": 73,
+    "win": 46,
+    "meanR": 0.17,
+    "totalR": 16.5,
+    "medianR": -1.0
+   },
+   "lift": 0.13,
+   "halves": [
+    0.16,
+    0.11
    ],
    "status": "watching"
   },
@@ -336,160 +444,79 @@
    "label": "1+ day of volume",
    "plain": "The unlock is worth at least one full day of trading volume.",
    "with": {
-    "n": 15,
-    "tokens": 12,
-    "win": 60,
-    "meanR": 0.6,
-    "totalR": 9.0,
-    "medianR": 0.89
-   },
-   "without": {
-    "n": 39,
-    "tokens": 28,
-    "win": 49,
-    "meanR": 0.32,
-    "totalR": 12.6,
-    "medianR": -1.0
-   },
-   "lift": 0.28,
-   "halves": [
-    0.16,
-    0.36
-   ],
-   "status": "confirmed"
-  },
-  {
-   "key": "big",
-   "label": "10%+ of supply",
-   "plain": "The unlock adds 10% or more to the tokens already trading.",
-   "with": {
-    "n": 34,
-    "tokens": 26,
-    "win": 53,
-    "meanR": 0.5,
-    "totalR": 17.0,
-    "medianR": 0.66
-   },
-   "without": {
-    "n": 20,
-    "tokens": 15,
-    "win": 50,
-    "meanR": 0.23,
-    "totalR": 4.6,
-    "medianR": -0.47
-   },
-   "lift": 0.27,
-   "halves": [
-    -0.82,
-    1.29
-   ],
-   "status": "watching"
-  },
-  {
-   "key": "team",
-   "label": "Team gets 30%+",
-   "plain": "At least 30% of the unlock goes to the team and advisors.",
-   "with": {
-    "n": 22,
-    "tokens": 15,
-    "win": 59,
-    "meanR": 0.47,
-    "totalR": 10.4,
-    "medianR": 0.88
-   },
-   "without": {
-    "n": 32,
-    "tokens": 23,
-    "win": 47,
-    "meanR": 0.35,
-    "totalR": 11.2,
-    "medianR": -1.0
-   },
-   "lift": 0.12,
-   "halves": [
-    0.39,
-    -0.13
-   ],
-   "status": "watching"
-  },
-  {
-   "key": "falling",
-   "label": "Already falling",
-   "plain": "The price fell over the 3 weeks before entry.",
-   "with": {
-    "n": 36,
-    "tokens": 28,
-    "win": 53,
-    "meanR": 0.44,
-    "totalR": 15.9,
-    "medianR": 0.59
-   },
-   "without": {
-    "n": 16,
-    "tokens": 12,
-    "win": 50,
-    "meanR": 0.34,
-    "totalR": 5.5,
-    "medianR": -0.47
-   },
-   "lift": 0.1,
-   "halves": [
-    0.06,
-    0.14
-   ],
-   "status": "watching"
-  },
-  {
-   "key": "first",
-   "label": "First insider unlock",
-   "plain": "The first time the team or investors can sell.",
-   "with": {
-    "n": 24,
-    "tokens": 24,
-    "win": 54,
-    "meanR": 0.39,
-    "totalR": 9.5,
-    "medianR": 0.36
-   },
-   "without": {
-    "n": 30,
+    "n": 27,
     "tokens": 21,
-    "win": 50,
-    "meanR": 0.4,
-    "totalR": 12.1,
-    "medianR": -0.23
+    "win": 48,
+    "meanR": 0.26,
+    "totalR": 7.0,
+    "medianR": -0.14
    },
-   "lift": -0.01,
+   "without": {
+    "n": 85,
+    "tokens": 65,
+    "win": 45,
+    "meanR": 0.15,
+    "totalR": 13.1,
+    "medianR": -1.0
+   },
+   "lift": 0.11,
    "halves": [
-    0.51,
-    -0.54
+    0.75,
+    -0.2
    ],
-   "status": "hurts"
+   "status": "watching"
   },
   {
    "key": "investors",
    "label": "Investors get 30%+",
    "plain": "At least 30% of the unlock goes to private investors.",
    "with": {
-    "n": 17,
-    "tokens": 10,
+    "n": 46,
+    "tokens": 34,
+    "win": 48,
+    "meanR": 0.24,
+    "totalR": 10.8,
+    "medianR": -0.82
+   },
+   "without": {
+    "n": 66,
+    "tokens": 50,
+    "win": 44,
+    "meanR": 0.14,
+    "totalR": 9.3,
+    "medianR": -1.0
+   },
+   "lift": 0.1,
+   "halves": [
+    0.36,
+    -0.16
+   ],
+   "status": "watching"
+  },
+  {
+   "key": "cliff",
+   "label": "One-day cliff",
+   "plain": "Released in one go, not drip-fed monthly.",
+   "with": {
+    "n": 85,
+    "tokens": 61,
     "win": 47,
-    "meanR": 0.37,
-    "totalR": 6.2,
+    "meanR": 0.18,
+    "totalR": 15.3,
     "medianR": -1.0
    },
    "without": {
-    "n": 37,
-    "tokens": 29,
-    "win": 54,
-    "meanR": 0.41,
-    "totalR": 15.3,
-    "medianR": 0.53
+    "n": 27,
+    "tokens": 22,
+    "win": 41,
+    "meanR": 0.18,
+    "totalR": 4.8,
+    "medianR": -1.0
    },
-   "lift": -0.04,
+   "lift": 0.0,
    "halves": [
-    0.27,
-    -0.42
+    0.25,
+    -0.24
    ],
    "status": "hurts"
   },
@@ -498,79 +525,52 @@
    "label": "Under 30% circulating",
    "plain": "Less than 30% of the max supply is trading, so a lot more is still to come.",
    "with": {
-    "n": 34,
-    "tokens": 23,
-    "win": 50,
-    "meanR": 0.29,
-    "totalR": 9.9,
-    "medianR": -0.23
+    "n": 66,
+    "tokens": 47,
+    "win": 42,
+    "meanR": 0.06,
+    "totalR": 3.8,
+    "medianR": -1.0
+   },
+   "without": {
+    "n": 42,
+    "tokens": 33,
+    "win": 48,
+    "meanR": 0.22,
+    "totalR": 9.1,
+    "medianR": -0.82
+   },
+   "lift": -0.16,
+   "halves": [
+    0.01,
+    -0.33
+   ],
+   "status": "hurts"
+  },
+  {
+   "key": "waited",
+   "label": "Waited 12+ months",
+   "plain": "The token has been trading for a year or more, so insiders have waited out a cliff.",
+   "with": {
+    "n": 87,
+    "tokens": 65,
+    "win": 44,
+    "meanR": 0.08,
+    "totalR": 7.1,
+    "medianR": -1.0
    },
    "without": {
     "n": 18,
-    "tokens": 13,
+    "tokens": 16,
     "win": 50,
-    "meanR": 0.34,
-    "totalR": 6.2,
-    "medianR": -0.47
+    "meanR": 0.44,
+    "totalR": 8.0,
+    "medianR": -0.27
    },
-   "lift": -0.05,
+   "lift": -0.36,
    "halves": [
-    -0.31,
-    0.14
-   ],
-   "status": "hurts"
-  },
-  {
-   "key": "cliff",
-   "label": "One-day cliff",
-   "plain": "Released in one go, not drip-fed monthly.",
-   "with": {
-    "n": 43,
-    "tokens": 33,
-    "win": 49,
-    "meanR": 0.32,
-    "totalR": 13.8,
-    "medianR": -1.0
-   },
-   "without": {
-    "n": 11,
-    "tokens": 5,
-    "win": 64,
-    "meanR": 0.71,
-    "totalR": 7.8,
-    "medianR": 0.65
-   },
-   "lift": -0.39,
-   "halves": [
-    -0.64,
-    -0.12
-   ],
-   "status": "hurts"
-  },
-  {
-   "key": "inProfit",
-   "label": "Holders in profit",
-   "plain": "Price on the check day is above the token's first Binance price, so early holders can sell at a profit.",
-   "with": {
-    "n": 8,
-    "tokens": 5,
-    "win": 38,
-    "meanR": 0.01,
-    "totalR": 0.1,
-    "medianR": -1.0
-   },
-   "without": {
-    "n": 46,
-    "tokens": 32,
-    "win": 54,
-    "meanR": 0.47,
-    "totalR": 21.5,
-    "medianR": 0.59
-   },
-   "lift": -0.46,
-   "halves": [
-    -0.33,
-    -0.58
+    -0.19,
+    -0.76
    ],
    "status": "hurts"
   }
@@ -581,102 +581,135 @@
   "minLift": 0.15
  },
  "ladder": {
-  "AAA": null,
+  "AAA": {
+   "n": 40,
+   "tokens": 40,
+   "win": 50,
+   "meanR": 0.45,
+   "totalR": 18.1,
+   "medianR": 0.01
+  },
   "AA": {
-   "n": 15,
-   "tokens": 12,
-   "win": 60,
-   "meanR": 0.6,
-   "totalR": 9.0,
-   "medianR": 0.89
+   "n": 57,
+   "tokens": 42,
+   "win": 46,
+   "meanR": 0.07,
+   "totalR": 4.1,
+   "medianR": -1.0
   },
   "A": {
-   "n": 39,
-   "tokens": 28,
-   "win": 49,
-   "meanR": 0.32,
-   "totalR": 12.6,
+   "n": 15,
+   "tokens": 12,
+   "win": 33,
+   "meanR": -0.14,
+   "totalR": -2.0,
    "medianR": -1.0
   },
   "none": {
-   "n": 229,
-   "tokens": 26,
+   "n": 716,
+   "tokens": 81,
    "win": 38,
-   "meanR": -0.06,
-   "totalR": -13.0,
+   "meanR": -0.05,
+   "totalR": -38.0,
    "medianR": -1.0
   }
  },
- "ladderHolds": true,
+ "ladderHolds": false,
  "walkForward": {
   "ladder": {
    "AAA": {
-    "n": 8,
-    "tokens": 7,
-    "win": 38,
-    "meanR": -0.06,
-    "totalR": -0.5,
+    "n": 31,
+    "tokens": 30,
+    "win": 45,
+    "meanR": 0.23,
+    "totalR": 7.2,
     "medianR": -1.0
    },
    "AA": {
-    "n": 30,
-    "tokens": 24,
-    "win": 30,
-    "meanR": -0.23,
-    "totalR": -7.0,
-    "medianR": -1.01
+    "n": 64,
+    "tokens": 51,
+    "win": 34,
+    "meanR": -0.13,
+    "totalR": -8.2,
+    "medianR": -1.0
    },
    "A": {
-    "n": 24,
-    "tokens": 20,
-    "win": 79,
-    "meanR": 0.96,
-    "totalR": 23.0,
-    "medianR": 1.02
+    "n": 184,
+    "tokens": 65,
+    "win": 42,
+    "meanR": 0.07,
+    "totalR": 13.1,
+    "medianR": -1.0
    },
    "none": {
-    "n": 131,
-    "tokens": 32,
-    "win": 29,
-    "meanR": -0.38,
-    "totalR": -49.2,
+    "n": 441,
+    "tokens": 89,
+    "win": 37,
+    "meanR": -0.08,
+    "totalR": -37.2,
     "medianR": -1.0
    }
   },
   "holds": false,
-  "trades": 193,
+  "trades": 720,
   "months": [
+   {
+    "month": "2026-01",
+    "edges": [
+     "investors",
+     "team"
+    ],
+    "boosters": [],
+    "trades": 75
+   },
+   {
+    "month": "2026-02",
+    "edges": [
+     "first",
+     "investors",
+     "team",
+     "cliff"
+    ],
+    "boosters": [
+     "first"
+    ],
+    "trades": 67
+   },
    {
     "month": "2026-03",
     "edges": [
-     "team",
-     "waited"
-    ],
-    "boosters": [
+     "investors",
      "team"
     ],
-    "trades": 29
+    "boosters": [],
+    "trades": 76
    },
    {
     "month": "2026-04",
-    "edges": [],
-    "boosters": [],
-    "trades": 28
+    "edges": [
+     "first",
+     "investors",
+     "team"
+    ],
+    "boosters": [
+     "first",
+     "investors"
+    ],
+    "trades": 78
    },
    {
     "month": "2026-05",
     "edges": [
      "first",
-     "cliff",
-     "waited",
-     "falling"
+     "team",
+     "cliff"
     ],
     "boosters": [
      "first",
-     "cliff",
+     "investors",
      "falling"
     ],
-    "trades": 25
+    "trades": 75
    },
    {
     "month": "2026-06",
@@ -685,125 +718,160 @@
      "cliff"
     ],
     "boosters": [
-     "waited"
+     "investors"
     ],
-    "trades": 23
+    "trades": 68
    },
    {
     "month": "2026-07",
     "edges": [
-     "first"
+     "first",
+     "team",
+     "cliff",
+     "liquid"
     ],
-    "boosters": [],
-    "trades": 29
+    "boosters": [
+     "first",
+     "liquid"
+    ],
+    "trades": 79
    },
    {
     "month": "2026-08",
     "edges": [
-     "first"
+     "first",
+     "team",
+     "cliff",
+     "liquid"
     ],
-    "boosters": [],
-    "trades": 24
+    "boosters": [
+     "first",
+     "liquid"
+    ],
+    "trades": 71
    },
    {
     "month": "2026-09",
     "edges": [
      "first",
-     "cliff"
+     "cliff",
+     "liquid"
     ],
     "boosters": [
-     "investors",
+     "first",
      "team",
-     "waited"
+     "liquid",
+     "falling"
     ],
-    "trades": 25
+    "trades": 71
    },
    {
     "month": "2026-10",
     "edges": [
      "first",
-     "big",
-     "cliff",
      "liquid"
     ],
     "boosters": [
-     "team",
-     "liquid",
-     "waited"
+     "investors",
+     "big"
     ],
-    "trades": 10
+    "trades": 60
    }
   ],
-  "from": "2026-03"
+  "from": "2026-01"
  },
  "upcoming": [
   {
    "token": "MON",
    "name": "Monad",
    "date": "2026-11-24",
-   "usdM": 276.9,
+   "usdM": 256.1,
    "entry": "2026-11-17",
-   "grade": "A",
-   "edgeCount": 0,
+   "grade": "AAA",
+   "edgeCount": 2,
    "has": [
     "first",
-    "big",
-    "cliff"
+    "cliff",
+    "falling"
    ],
    "missing": [],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -27.7,
-   "vsLaunch": -88.3,
-   "priceAsOf": "2026-11-15",
+   "momentum": -28.2,
+   "vsLaunch": -88.0,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 70
-  },
-  {
-   "token": "IRYS",
-   "name": "Irys",
-   "date": "2026-11-25",
-   "usdM": 19.22,
-   "entry": "2026-11-18",
-   "grade": "A",
-   "edgeCount": 0,
-   "has": [
-    "first",
-    "big",
-    "cliff"
-   ],
-   "missing": [],
-   "unknown": [
-    "liquid"
-   ],
-   "pumped": false,
-   "momentum": -29.8,
-   "vsLaunch": -54.8,
-   "priceAsOf": "2026-11-15",
-   "confidenceScore": 67
   },
   {
    "token": "HUMA",
    "name": "Huma Finance",
    "date": "2026-11-26",
-   "usdM": 3.65,
+   "usdM": 2.9,
    "entry": "2026-11-19",
-   "grade": "A",
-   "edgeCount": 0,
+   "grade": "AAA",
+   "edgeCount": 2,
    "has": [
     "first",
-    "big",
-    "cliff"
+    "cliff",
+    "falling"
    ],
    "missing": [],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -74.6,
+   "momentum": -73.2,
    "vsLaunch": -92.2,
-   "priceAsOf": "2026-11-15",
+   "priceAsOf": "2026-11-17",
+   "confidenceScore": 62
+  },
+  {
+   "token": "CYS",
+   "name": "Cysic",
+   "date": "2026-12-11",
+   "usdM": 1.85,
+   "entry": "2026-12-04",
+   "grade": "AAA",
+   "edgeCount": 2,
+   "has": [
+    "first",
+    "cliff",
+    "falling"
+   ],
+   "missing": [],
+   "unknown": [
+    "liquid"
+   ],
+   "pumped": false,
+   "momentum": -46.6,
+   "vsLaunch": -80.9,
+   "priceAsOf": "2026-11-17",
+   "confidenceScore": 37
+  },
+  {
+   "token": "LIT",
+   "name": "Lighter",
+   "date": "2026-12-29",
+   "usdM": 10.3,
+   "entry": "2026-12-22",
+   "grade": "AAA",
+   "edgeCount": 2,
+   "has": [
+    "first",
+    "falling"
+   ],
+   "missing": [
+    "cliff"
+   ],
+   "unknown": [
+    "liquid"
+   ],
+   "pumped": false,
+   "momentum": -12.3,
+   "vsLaunch": 378.1,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 62
   },
   {
@@ -812,17 +880,16 @@
    "date": "2026-11-27",
    "usdM": 5.1,
    "entry": "2026-11-20",
-   "grade": "A",
-   "edgeCount": 0,
+   "grade": "AA",
+   "edgeCount": 1,
    "has": [
     "first",
     "cliff"
    ],
-   "missing": [
-    "big"
-   ],
+   "missing": [],
    "unknown": [
-    "liquid"
+    "liquid",
+    "falling"
    ],
    "pumped": false,
    "momentum": null,
@@ -831,40 +898,16 @@
    "confidenceScore": 65
   },
   {
-   "token": "CARDS",
-   "name": "Collector Crypt",
-   "date": "2026-11-29",
-   "usdM": 11.32,
-   "entry": "2026-11-22",
-   "grade": "A",
-   "edgeCount": 0,
-   "has": [
-    "cliff"
-   ],
-   "missing": [
-    "first",
-    "big"
-   ],
-   "unknown": [
-    "liquid"
-   ],
-   "pumped": false,
-   "momentum": null,
-   "vsLaunch": null,
-   "priceAsOf": null,
-   "confidenceScore": 62
-  },
-  {
    "token": "GRVT",
    "name": "Grvt",
    "date": "2026-11-30",
-   "usdM": 5.86,
+   "usdM": 5.96,
    "entry": "2026-11-23",
-   "grade": "A",
-   "edgeCount": 0,
+   "grade": "AA",
+   "edgeCount": 1,
    "has": [
-    "big",
-    "cliff"
+    "cliff",
+    "falling"
    ],
    "missing": [
     "first"
@@ -873,9 +916,9 @@
     "liquid"
    ],
    "pumped": false,
-   "momentum": -25.5,
-   "vsLaunch": -33.8,
-   "priceAsOf": "2026-11-15",
+   "momentum": -21.2,
+   "vsLaunch": -34.5,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 37
   },
   {
@@ -884,198 +927,132 @@
    "date": "2026-12-09",
    "usdM": 89.6,
    "entry": "2026-12-02",
-   "grade": "A",
-   "edgeCount": 0,
+   "grade": "AA",
+   "edgeCount": 1,
    "has": [
     "first",
-    "big",
     "cliff"
    ],
    "missing": [],
    "unknown": [
-    "liquid"
+    "liquid",
+    "falling"
    ],
    "pumped": false,
    "momentum": null,
    "vsLaunch": null,
    "priceAsOf": null,
    "confidenceScore": 62
-  },
-  {
-   "token": "JCT",
-   "name": "Janction",
-   "date": "2026-12-10",
-   "usdM": 2.38,
-   "entry": "2026-12-03",
-   "grade": "A",
-   "edgeCount": 0,
-   "has": [
-    "big"
-   ],
-   "missing": [
-    "first",
-    "cliff"
-   ],
-   "unknown": [
-    "liquid"
-   ],
-   "pumped": false,
-   "momentum": -55.4,
-   "vsLaunch": -54.1,
-   "priceAsOf": "2026-11-15",
-   "confidenceScore": 49
-  },
-  {
-   "token": "CYS",
-   "name": "Cysic",
-   "date": "2026-12-11",
-   "usdM": 2.23,
-   "entry": "2026-12-04",
-   "grade": "A",
-   "edgeCount": 0,
-   "has": [
-    "first",
-    "big",
-    "cliff"
-   ],
-   "missing": [],
-   "unknown": [
-    "liquid"
-   ],
-   "pumped": false,
-   "momentum": -44.1,
-   "vsLaunch": -81.0,
-   "priceAsOf": "2026-11-15",
-   "confidenceScore": 60
-  },
-  {
-   "token": "LIT",
-   "name": "Lighter",
-   "date": "2026-12-29",
-   "usdM": 10.3,
-   "entry": "2026-12-22",
-   "grade": "A",
-   "edgeCount": 0,
-   "has": [
-    "first"
-   ],
-   "missing": [
-    "big",
-    "cliff"
-   ],
-   "unknown": [
-    "liquid"
-   ],
-   "pumped": false,
-   "momentum": -15.0,
-   "vsLaunch": 385.9,
-   "priceAsOf": "2026-11-15",
-   "confidenceScore": 62
-  },
-  {
-   "token": "ARB",
-   "name": "Arbitrum",
-   "date": "2026-11-15",
-   "usdM": 13.68,
-   "entry": "2026-11-08",
-   "grade": null,
-   "edgeCount": 0,
-   "has": [],
-   "missing": [
-    "first",
-    "big",
-    "cliff"
-   ],
-   "unknown": [
-    "liquid"
-   ],
-   "pumped": false,
-   "momentum": -13.5,
-   "vsLaunch": -87.5,
-   "priceAsOf": "2026-11-08",
-   "confidenceScore": 90
   },
   {
    "token": "SEI",
    "name": "Sei",
-   "date": "2026-11-15",
-   "usdM": null,
-   "entry": "2026-11-08",
-   "grade": null,
-   "edgeCount": 0,
-   "has": [],
+   "date": "2026-12-15",
+   "usdM": 3.87,
+   "entry": "2026-12-08",
+   "grade": "AA",
+   "edgeCount": 1,
+   "has": [
+    "cliff",
+    "falling"
+   ],
    "missing": [
-    "first",
-    "big",
-    "cliff"
+    "first"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -27.0,
-   "vsLaunch": -79.4,
-   "priceAsOf": "2026-11-08",
-   "confidenceScore": 62
+   "momentum": -26.8,
+   "vsLaunch": -82.1,
+   "priceAsOf": "2026-11-17",
+   "confidenceScore": 50
   },
   {
-   "token": "STRK",
-   "name": "Starknet",
-   "date": "2026-11-15",
-   "usdM": 4.62,
-   "entry": "2026-11-08",
-   "grade": null,
+   "token": "ARIA",
+   "name": "Aria.AI",
+   "date": "2026-11-21",
+   "usdM": 8.71,
+   "entry": "2026-11-14",
+   "grade": "A",
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "cliff"
+   ],
    "missing": [
     "first",
-    "big",
-    "cliff"
+    "falling"
    ],
    "unknown": [
     "liquid"
    ],
-   "pumped": false,
-   "momentum": -53.5,
-   "vsLaunch": -98.1,
-   "priceAsOf": "2026-11-08",
-   "confidenceScore": 85
+   "pumped": true,
+   "momentum": 209.8,
+   "vsLaunch": 100.1,
+   "priceAsOf": "2026-11-14",
+   "confidenceScore": 42
   },
   {
-   "token": "CRO",
-   "name": "Cronos",
-   "date": "2026-11-16",
-   "usdM": 51.7,
-   "entry": "2026-11-09",
-   "grade": null,
+   "token": "CARDS",
+   "name": "Collector Crypt",
+   "date": "2026-11-29",
+   "usdM": 7.27,
+   "entry": "2026-11-22",
+   "grade": "A",
    "edgeCount": 0,
-   "has": [],
-   "missing": [
-    "first",
-    "big",
+   "has": [
     "cliff"
    ],
+   "missing": [
+    "first"
+   ],
    "unknown": [
-    "liquid"
+    "liquid",
+    "falling"
    ],
    "pumped": false,
    "momentum": null,
    "vsLaunch": null,
    "priceAsOf": null,
    "confidenceScore": 62
+  },
+  {
+   "token": "PENGU",
+   "name": "Pudgy Penguins",
+   "date": "2026-11-17",
+   "usdM": 3.52,
+   "entry": "2026-11-10",
+   "grade": null,
+   "edgeCount": 0,
+   "has": [
+    "falling"
+   ],
+   "missing": [
+    "first",
+    "cliff"
+   ],
+   "unknown": [
+    "liquid"
+   ],
+   "pumped": false,
+   "momentum": -15.4,
+   "vsLaunch": -81.1,
+   "priceAsOf": "2026-11-10",
+   "confidenceScore": 49
   },
   {
    "token": "ZK",
    "name": "ZKsync",
    "date": "2026-11-17",
-   "usdM": 1.81,
+   "usdM": 1.47,
    "entry": "2026-11-10",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
@@ -1088,52 +1065,6 @@
    "confidenceScore": 70
   },
   {
-   "token": "PENGU",
-   "name": "Pudgy Penguins",
-   "date": "2026-11-17",
-   "usdM": 3.37,
-   "entry": "2026-11-10",
-   "grade": null,
-   "edgeCount": 0,
-   "has": [],
-   "missing": [
-    "first",
-    "big",
-    "cliff"
-   ],
-   "unknown": [
-    "liquid"
-   ],
-   "pumped": false,
-   "momentum": -15.4,
-   "vsLaunch": -81.1,
-   "priceAsOf": "2026-11-10",
-   "confidenceScore": 37
-  },
-  {
-   "token": "ZRO",
-   "name": "LayerZero",
-   "date": "2026-11-20",
-   "usdM": 31.89,
-   "entry": "2026-11-13",
-   "grade": null,
-   "edgeCount": 0,
-   "has": [],
-   "missing": [
-    "first",
-    "big",
-    "cliff"
-   ],
-   "unknown": [
-    "liquid"
-   ],
-   "pumped": false,
-   "momentum": -22.9,
-   "vsLaunch": -57.5,
-   "priceAsOf": "2026-11-13",
-   "confidenceScore": 67
-  },
-  {
    "token": "KAITO",
    "name": "Kaito",
    "date": "2026-11-20",
@@ -1141,10 +1072,11 @@
    "entry": "2026-11-13",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
@@ -1154,7 +1086,31 @@
    "momentum": -26.7,
    "vsLaunch": -86.3,
    "priceAsOf": "2026-11-13",
-   "confidenceScore": 50
+   "confidenceScore": 62
+  },
+  {
+   "token": "ZRO",
+   "name": "LayerZero",
+   "date": "2026-11-20",
+   "usdM": 29.84,
+   "entry": "2026-11-13",
+   "grade": null,
+   "edgeCount": 0,
+   "has": [
+    "falling"
+   ],
+   "missing": [
+    "first",
+    "cliff"
+   ],
+   "unknown": [
+    "liquid"
+   ],
+   "pumped": false,
+   "momentum": -22.9,
+   "vsLaunch": -57.5,
+   "priceAsOf": "2026-11-13",
+   "confidenceScore": 30
   },
   {
    "token": "AKE",
@@ -1164,10 +1120,11 @@
    "entry": "2026-11-14",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
@@ -1180,40 +1137,18 @@
    "confidenceScore": 62
   },
   {
-   "token": "MORPHO",
-   "name": "Morpho",
-   "date": "2026-11-21",
-   "usdM": 16.24,
-   "entry": "2026-11-14",
-   "grade": null,
-   "edgeCount": 0,
-   "has": [],
-   "missing": [
-    "first",
-    "big",
-    "cliff"
-   ],
-   "unknown": [
-    "liquid"
-   ],
-   "pumped": false,
-   "momentum": -17.0,
-   "vsLaunch": 43.3,
-   "priceAsOf": "2026-11-14",
-   "confidenceScore": 62
-  },
-  {
    "token": "SOON",
    "name": "SOON",
    "date": "2026-11-23",
-   "usdM": 4.36,
+   "usdM": 4.45,
    "entry": "2026-11-16",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
@@ -1221,32 +1156,9 @@
    ],
    "pumped": false,
    "momentum": -27.6,
-   "vsLaunch": -55.9,
-   "priceAsOf": "2026-11-15",
+   "vsLaunch": -55.3,
+   "priceAsOf": "2026-11-16",
    "confidenceScore": 77
-  },
-  {
-   "token": "MET",
-   "name": "Meteora",
-   "date": "2026-11-23",
-   "usdM": 2.15,
-   "entry": "2026-11-16",
-   "grade": null,
-   "edgeCount": 0,
-   "has": [],
-   "missing": [
-    "first",
-    "big",
-    "cliff"
-   ],
-   "unknown": [
-    "liquid"
-   ],
-   "pumped": false,
-   "momentum": -21.3,
-   "vsLaunch": -82.6,
-   "priceAsOf": "2026-11-15",
-   "confidenceScore": 62
   },
   {
    "token": "SOSO",
@@ -1259,11 +1171,11 @@
    "has": [],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
-    "liquid"
+    "liquid",
+    "falling"
    ],
    "pumped": false,
    "momentum": null,
@@ -1279,43 +1191,69 @@
    "entry": "2026-11-18",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -42.4,
-   "vsLaunch": -89.6,
-   "priceAsOf": "2026-11-15",
+   "momentum": -39.9,
+   "vsLaunch": -89.4,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 80
   },
   {
    "token": "H",
    "name": "Humanity Protocol",
    "date": "2026-11-25",
-   "usdM": 4.06,
+   "usdM": 3.58,
    "entry": "2026-11-18",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -69.8,
-   "vsLaunch": -52.4,
-   "priceAsOf": "2026-11-15",
+   "momentum": -68.1,
+   "vsLaunch": -51.4,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 37
+  },
+  {
+   "token": "IRYS",
+   "name": "Irys",
+   "date": "2026-11-25",
+   "usdM": 1.06,
+   "entry": "2026-11-18",
+   "grade": null,
+   "edgeCount": 0,
+   "has": [
+    "falling"
+   ],
+   "missing": [
+    "first",
+    "cliff"
+   ],
+   "unknown": [
+    "liquid"
+   ],
+   "pumped": false,
+   "momentum": -63.7,
+   "vsLaunch": -54.2,
+   "priceAsOf": "2026-11-17",
+   "confidenceScore": 30
   },
   {
    "token": "SIGN",
@@ -1325,43 +1263,44 @@
    "entry": "2026-11-21",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -17.9,
-   "vsLaunch": -88.6,
-   "priceAsOf": "2026-11-15",
+   "momentum": -20.0,
+   "vsLaunch": -88.2,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 62
   },
   {
    "token": "FF",
    "name": "Falcon Finance",
    "date": "2026-11-29",
-   "usdM": 18.75,
+   "usdM": 19.46,
    "entry": "2026-11-22",
    "grade": null,
    "edgeCount": 0,
    "has": [],
    "missing": [
     "first",
-    "big",
-    "cliff"
+    "cliff",
+    "falling"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -10.0,
-   "vsLaunch": -79.8,
-   "priceAsOf": "2026-11-15",
-   "confidenceScore": 50
+   "momentum": 1.2,
+   "vsLaunch": -77.9,
+   "priceAsOf": "2026-11-17",
+   "confidenceScore": 62
   },
   {
    "token": "KMNO",
@@ -1371,19 +1310,20 @@
    "entry": "2026-11-23",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -25.9,
-   "vsLaunch": -83.3,
-   "priceAsOf": "2026-11-15",
+   "momentum": -30.1,
+   "vsLaunch": -82.8,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 75
   },
   {
@@ -1394,134 +1334,140 @@
    "entry": "2026-11-24",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -39.8,
+   "momentum": -34.6,
    "vsLaunch": -96.7,
-   "priceAsOf": "2026-11-15",
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 63
   },
   {
    "token": "SUI",
    "name": "Sui",
    "date": "2026-12-01",
-   "usdM": 9.07,
+   "usdM": 9.51,
    "entry": "2026-11-24",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -27.9,
-   "vsLaunch": -50.1,
-   "priceAsOf": "2026-11-15",
+   "momentum": -21.4,
+   "vsLaunch": -47.5,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 37
   },
   {
    "token": "M",
    "name": "MemeCore",
    "date": "2026-12-02",
-   "usdM": 45.36,
+   "usdM": 46.35,
    "entry": "2026-11-25",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -6.6,
-   "vsLaunch": 387.8,
-   "priceAsOf": "2026-11-15",
-   "confidenceScore": 37
+   "momentum": -8.2,
+   "vsLaunch": 406.0,
+   "priceAsOf": "2026-11-17",
+   "confidenceScore": 33
   },
   {
    "token": "BTW",
    "name": "Bitway",
    "date": "2026-12-02",
-   "usdM": 102.65,
+   "usdM": 48.97,
    "entry": "2026-11-25",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -63.2,
-   "vsLaunch": 3558.5,
-   "priceAsOf": "2026-11-15",
-   "confidenceScore": 62
+   "momentum": -68.9,
+   "vsLaunch": 2610.4,
+   "priceAsOf": "2026-11-17",
+   "confidenceScore": 58
   },
   {
    "token": "ENA",
    "name": "Ethena",
    "date": "2026-12-02",
-   "usdM": 4.85,
+   "usdM": 4.92,
    "entry": "2026-11-25",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -42.0,
-   "vsLaunch": -81.4,
-   "priceAsOf": "2026-11-15",
+   "momentum": -37.9,
+   "vsLaunch": -80.4,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 49
   },
   {
    "token": "ENA",
    "name": "Ethena",
    "date": "2026-12-05",
-   "usdM": 13.61,
+   "usdM": 11.36,
    "entry": "2026-11-28",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -42.0,
-   "vsLaunch": -81.4,
-   "priceAsOf": "2026-11-15",
+   "momentum": -37.9,
+   "vsLaunch": -80.4,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 75
   },
   {
@@ -1532,19 +1478,20 @@
    "entry": "2026-11-29",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -16.9,
-   "vsLaunch": 92.8,
-   "priceAsOf": "2026-11-15",
+   "momentum": -11.1,
+   "vsLaunch": 104.0,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 50
   },
   {
@@ -1558,8 +1505,8 @@
    "has": [],
    "missing": [
     "first",
-    "big",
-    "cliff"
+    "cliff",
+    "falling"
    ],
    "unknown": [
     "liquid"
@@ -1567,8 +1514,32 @@
    "pumped": false,
    "momentum": 0.0,
    "vsLaunch": -46.9,
-   "priceAsOf": "2026-11-15",
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 70
+  },
+  {
+   "token": "JCT",
+   "name": "Janction",
+   "date": "2026-12-10",
+   "usdM": 2.62,
+   "entry": "2026-12-03",
+   "grade": null,
+   "edgeCount": 0,
+   "has": [
+    "falling"
+   ],
+   "missing": [
+    "first",
+    "cliff"
+   ],
+   "unknown": [
+    "liquid"
+   ],
+   "pumped": false,
+   "momentum": -68.6,
+   "vsLaunch": -49.9,
+   "priceAsOf": "2026-11-17",
+   "confidenceScore": 49
   },
   {
    "token": "STRK",
@@ -1578,43 +1549,45 @@
    "entry": "2026-12-08",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -37.5,
-   "vsLaunch": -98.4,
-   "priceAsOf": "2026-11-15",
+   "momentum": -25.9,
+   "vsLaunch": -98.3,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 62
   },
   {
    "token": "ARB",
    "name": "Arbitrum",
    "date": "2026-12-16",
-   "usdM": 15.45,
+   "usdM": 12.49,
    "entry": "2026-12-09",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -28.5,
-   "vsLaunch": -90.5,
-   "priceAsOf": "2026-11-15",
-   "confidenceScore": 70
+   "momentum": -20.4,
+   "vsLaunch": -90.0,
+   "priceAsOf": "2026-11-17",
+   "confidenceScore": 62
   },
   {
    "token": "ZRO",
@@ -1624,19 +1597,20 @@
    "entry": "2026-12-13",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -21.0,
-   "vsLaunch": -61.3,
-   "priceAsOf": "2026-11-15",
+   "momentum": -20.0,
+   "vsLaunch": -61.5,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 55
   },
   {
@@ -1647,23 +1621,109 @@
    "entry": "2026-12-17",
    "grade": null,
    "edgeCount": 0,
-   "has": [],
+   "has": [
+    "falling"
+   ],
    "missing": [
     "first",
-    "big",
     "cliff"
    ],
    "unknown": [
     "liquid"
    ],
    "pumped": false,
-   "momentum": -27.7,
-   "vsLaunch": -88.3,
-   "priceAsOf": "2026-11-15",
+   "momentum": -28.2,
+   "vsLaunch": -88.0,
+   "priceAsOf": "2026-11-17",
    "confidenceScore": 42
   }
  ],
- "recentAAA": [],
+ "recentAAA": [
+  {
+   "token": "AT",
+   "unlockDate": "2026-10-23",
+   "r": -1.01,
+   "why": "stop",
+   "vsLaunch": -69.9
+  },
+  {
+   "token": "ZBT",
+   "unlockDate": "2026-10-17",
+   "r": 0.94,
+   "why": "time",
+   "vsLaunch": -89.4
+  },
+  {
+   "token": "2Z",
+   "unlockDate": "2026-10-02",
+   "r": -1.0,
+   "why": "stop",
+   "vsLaunch": -94.6
+  },
+  {
+   "token": "HEMI",
+   "unlockDate": "2026-09-29",
+   "r": 0.83,
+   "why": "time",
+   "vsLaunch": -71.7
+  },
+  {
+   "token": "FOGO",
+   "unlockDate": "2026-09-26",
+   "r": 2.71,
+   "why": "target",
+   "vsLaunch": -93.0
+  },
+  {
+   "token": "XPL",
+   "unlockDate": "2026-09-25",
+   "r": -1.01,
+   "why": "stop",
+   "vsLaunch": -80.7
+  },
+  {
+   "token": "HOLO",
+   "unlockDate": "2026-09-11",
+   "r": -0.64,
+   "why": "time",
+   "vsLaunch": -91.3
+  },
+  {
+   "token": "AVNT",
+   "unlockDate": "2026-09-09",
+   "r": -1.01,
+   "why": "stop",
+   "vsLaunch": -59.5
+  },
+  {
+   "token": "OPEN",
+   "unlockDate": "2026-09-08",
+   "r": -1.04,
+   "why": "stop",
+   "vsLaunch": -75.0
+  },
+  {
+   "token": "SAPIEN",
+   "unlockDate": "2026-08-20",
+   "r": -1.02,
+   "why": "stop",
+   "vsLaunch": -55.9
+  },
+  {
+   "token": "PROVE",
+   "unlockDate": "2026-08-05",
+   "r": 0.89,
+   "why": "time",
+   "vsLaunch": -76.4
+  },
+  {
+   "token": "ERA",
+   "unlockDate": "2026-07-17",
+   "r": -1.03,
+   "why": "stop",
+   "vsLaunch": -90.7
+  }
+ ],
  "history": [
   {
    "date": "2026-11-01",
@@ -2039,6 +2099,31 @@
     "AA": -0.23,
     "A": 0.96,
     "none": -0.38
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "trades": 828,
+   "confirmed": [
+    "first",
+    "cliff",
+    "liquid"
+   ],
+   "boosters": [
+    "first",
+    "falling"
+   ],
+   "meanR": {
+    "AAA": 0.45,
+    "AA": 0.07,
+    "A": -0.14,
+    "none": -0.05
+   },
+   "wfMeanR": {
+    "AAA": 0.23,
+    "AA": -0.13,
+    "A": 0.07,
+    "none": -0.08
    }
   }
  ],
