@@ -251,7 +251,7 @@ def main():
                            "target": float(f"{R * (1 - pl['target'] / 100):.6g}") if pl.get("target") else None}
             c["status"] = "open"
             c["history"].append({"at": NOW.isoformat(timespec="seconds"), "event": f"entry: short at {c['ref']:.6g} ({src})"})
-        if c.get("ref") and "tags" not in c:  # calls opened before tags existed
+        if c.get("ref") and c.get("weekMove") is None:  # calls opened before tags existed, or week price missing
             w0 = days.get(iso(D(c["entryDate"]) - timedelta(days=7)))
             c["weekMove"] = round((c["ref"] / w0["o"] - 1) * 100, 1) if w0 else None
             c["tags"] = tags_for(c)
