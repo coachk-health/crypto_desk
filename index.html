@@ -1208,6 +1208,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     );
     try { D.backtest = await fetch('data/backtest.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.backtest = null; }
     try { D.signals = await fetch('data/signals.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.signals = null; }
+    try { const lv = await fetch('data/signals_live.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); if (lv && D.signals) { D.signals.pumpChecks = lv.pumpChecks || {}; D.signals.context = lv.context || {}; D.signals.pumpCheckedAt = lv.pumpCheckedAt; } } catch (e) { /* live checks are optional */ }
     try { D.grades = await fetch('data/grades.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.grades = null; }
     try { D.tradelog = await fetch('data/trade_log.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.tradelog = null; }
     P = await Desk.prices(D.news.market);

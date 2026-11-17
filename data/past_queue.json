@@ -1,0 +1,589 @@
+{
+ "tokens": {
+  "DYDX": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 7
+  },
+  "APE": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 5
+  },
+  "AXS": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window. All insider and treasury allocations finished earlier (Sky Mavis and Play-to-Earn by May 2025, advisors May 2024, ecosystem fund Nov 2024 per tokenradar's reading of the whitepaper table). Tokenomics.com does list two rows - 2026-01-07 (0.70% of market cap) and 2026-04-07 (0.50%), one recipient group each, vesting end 2026-04-07 - but these are quarter-end totals "
+  },
+  "IMX": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No unlock in the window: IMX became fully unlocked just before it. The final 24.52M IMX tranche was dated Oct 31, 2025 (GNcrypto round-up) and Immutable said that day no more IMX would enter the market (Blockchain Reporter, Oct 31, 2025; BlockchainGamer, Nov 5, 2025; Tokenomist: 'unlock schedule ended in 2025'). Conflict: Tokenomics.com still models monthly rows on the 5th through 2026-03-05 (1.10"
+  },
+  "ID": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "ARKM": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window: the insider cliff ended in July 2024 and Arkham's own docs describe everything since as linear, with no unlock days. Tokenomics.com models the same vesting as monthly steps on the 18th (about 17.85M ARKM a month, 2.5-3.0% of market cap; e.g. Apr 18-Oct 18, 2026: insiders 35.8%, investors 27.2%, ecosystem incentives 25.5%, foundation 11.5%) - not listed because the"
+  },
+  "CYBER": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "BLUR": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window: the one insider cliff was June 2023 and everything since is a daily stream (three aggregators agree; Tokenomist calls June 2023 'the one and only cliff'). Tokenomics.com models the same vesting as monthly steps on the 14th (40,375,000 BLUR a month, about 1.5-1.7% of market cap: insiders 46.8%, investors 29.1%, community treasury 24.1%) - not listed because it is a"
+  },
+  "GMT": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window: insider cliffs ended March 2023 and releases since are daily. Tokenomics.com models monthly steps on the 9th (35,750,000 GMT a month from Apr 2026, 0.70% of market cap: team 49.6%, ecosystem/treasury 50.4%) - not listed because sources that describe the mechanism say daily. The daily rate inside the window is not confirmed by a dated source, and aggregators disagr"
+  },
+  "HOOK": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "MAV": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "NTRN": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock day could be confirmed, so no events are listed. Aggregators that DO discretise the same stream disagree on the day: tokenomics.com shows 9,444,444 NTRN on the 16th of each month (ending Jul 2027); CryptoRank (via a BeInCrypto round-up, Feb 2025: 9.96M NTRN on Feb 3 to team/investors/advisors) and DropsTab (allocation completions dated the 3rd; ending May 2027) imply the 3rd. Ne"
+  },
+  "EDU": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "YGG": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "MEME": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "ACE": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "NFP": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "SAND": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No unlock in the window: the vesting schedule finished before it. tokenomics.com shows 11 of 11 semi-annual unlock events complete, the last on 2025-08-14 ('All Unlocks Complete', 0 remaining; https://app.tokenomics.com/tokenomics/the-sandbox/unlocks). Tokenomist agrees: 'The Sandbox is fully unlocked', 'the unlock schedule ended in 2025' (https://tokenomist.ai/the-sandbox/unlock-events). ~62M SAN"
+  },
+  "XAI": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window: the project's own docs say team, investor and ecosystem tokens unlock daily, so there is no single unlock day. The 6-month cliff end (first insider unlock, ~2024-07-09) is before the window. Worth knowing for the price study: the investor stream ended around 2026-07-09, roughly halving daily insider emission. Sentry-node/esXAI rewards are also continuous. coingeck"
+  },
+  "ALT": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "ZETA": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "DYM": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No confirmed discrete unlock in the window. The docs say only 'linear' without a step size; two of three aggregators (DefiLlama, Tokenomist) show no dated unlock events, one (tokenomics.com) shows monthly steps. If the main session wants to treat the tokenomics.com steps as events, they are the 29th of each month at ~17.9M DYM, but that is not verified. The insider cliff ended Jan/Feb 2025, before"
+  },
+  "PIXEL": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "PORTAL": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No confirmed discrete unlock in the window, and no primary vesting doc was found (the 'Portal Tokenomics Overview' page that search returns is a different project, Portal to Bitcoin / PTB; DefiLlama's /unlocks/portal page is Wormhole). The only source showing dated events is tokenomics.com's monthly discretisation; Tokenomist treats the vesting as linear. Whether Portal actually releases on the 29"
+  },
+  "AEVO": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No unlock in the window: fully vested. Tokenomist states 'Aevo is fully unlocked' with the schedule ended in 2024; tokenomics.com (which uses the original Ribbon/RBN schedule from 2021-05-24) shows the final unlock on 2025-04-24 and 0% locked. Both end dates are before the window; which is right was not resolved. Not an unlock but relevant to supply: Aevo burned 69M AEVO (6.9% of supply) under AGP"
+  },
+  "ETHFI": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No confirmed discrete unlock in the window; vesting is linear after the March 2025 cliff end (first insider unlock, before the window). Unresolved conflict on investors: the Blockworks filing says investors and core contributors both unlock over months 13-36 (to 2027-02-18), while TokenRadar and tokenomics.com say investors had a 2-year schedule that finished around Mar 2026. If the latter, inside"
+  },
+  "AXL": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No confirmed discrete unlock in the window. Aggregators disagree on form: tokenomics.com and CryptoRank-based round-ups show monthly steps on the 27th, Tokenomist and TokenRadar treat it as linear. The primary post puts exact team/backer terms in an image I could not read, so step size is unconfirmed; about three quarters of each modelled step is Foundation-held community/company allocation, not t"
+  },
+  "TNSR": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window: insider cliff ended ~Apr 2025 and the remainder vests linearly (Tokenomist: no cliff events; TokenRadar: daily). Tokenomics.com alone shows monthly steps on the 8th (~15.6M TNSR); treat as a model, not confirmed events. The Nov 21 2025 Tensor Foundation deal burned 21.6% of unvested founder/Labs tokens and relocked founders' vested tokens for 3 years; the resultin"
+  },
+  "SAGA": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window: the only cliff was 2025-04-09; since then team and investor tokens vest continuously (DefiLlama weekly rate, Tokenomist shows no cliff events). Tokenomics.com's monthly 9th-of-month steps conflict with both and were not used. Saga's own post gives only '3 year lockup with 1 year cliff' and does not state the release frequency. Ecosystem and Foundation tokens are u"
+  },
+  "REZ": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "BB": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "IO": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "LISTA": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "Four quarterly unlocks (20 Dec 2025, 20 Mar, 20 Jun, 20 Sep 2026) are dated with confidence, but their sizes are null: the August 2025 burn of 200M LISTA (LIP 021) cut the investor/team/treasury allocations and the per-allocation table was only an image; aggregators still show pre-burn (about 32M) or partial post-burn (treasury 3.13M) figures. Likely size 24M-30M LISTA, mostly investors. First ins"
+  },
+  "G": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "CATI": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No confirmed discrete unlock in the window: the insider cliff ended about 2025-09-20 and the published terms are a 48-month linear release with no stated step; Tokenomist shows no cliff events. Tokenomics.com alone models monthly steps on the 20th (10.5M CATI; about 30M in quarter-end months when the airdrop reserve is added). Catizen's own docs were not fetched, and the dates of the quarterly air"
+  },
+  "HMSTR": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No confirmed discrete unlock in the window: team and grants tokens vest linearly (DropsTab models daily; only Tokenomics.com steps them monthly on the 26th, about 347M HMSTR or 0.5% of float). The whitepaper could not be opened, so the real release frequency is unconfirmed, as is whether the last slice of the Season 1 vested airdrop landed around 2025-11-25/26. Season 2 rewards (15%) are undated. "
+  },
+  "SCR": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 1
+  },
+  "SAFE": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window: linear vesting only. By Tokenomics.com's terms the 4-year insider vests (contributors, backers) ran out around Sep 28, 2026, leaving only treasury streams. 'listed' left null: sources here give only genesis 2022 and 'launch year 2024' (TokenRadar), not the month trading began. coingeckoId taken from tracker slugs, not checked on CoinGecko (blocked here)."
+  },
+  "COW": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No dated discrete unlock confirmed. One real lump exists but its day is unknown: TokenRadar reports a 25M COW performance award (CIP-83 milestone tranche, DAO treasury to the team grant Safe, about 4% of circulating) transferred in May 2026; the exact date was not found, so it is not listed. maxSupply is the 1B issued at TGE (governance may inflate up to 3%/yr). coingeckoId taken from tracker slug"
+  },
+  "DRIFT": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window. The team's 18-month lock ended Nov 15-16, 2025, one to two days BEFORE the window opens, and it started a linear stream rather than a lump. Monthly rate above is DefiLlama's 3.36M/week converted. coingeckoId taken from tracker slugs, not checked on CoinGecko (blocked here)."
+  },
+  "MORPHO": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock confirmed in the window. Two things to know: (1) the stream start dates Nov 21, 2025 (investor cohort 3) and ~May 17, 2026 (founders) are supply-regime changes, not lumps; sources disagree on the founders' lockup anchor (official sheet label says 12 months from Nov 21, 2024; Tokenomics.com and a DEV post say relock from May 17, 2025 running to May 17, 2028). (2) DefiLlama lists "
+  },
+  "MOCA": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "VANA": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "USUAL": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 1
+  },
+  "BIO": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock confirmed in the window. The team's deferred cliff began streaming Nov 14, 2025, three days BEFORE the window, and ended May 14, 2026 (team release rate roughly halves after that). Main gap: investor and advisor cliff dates are not published; if their 1-year cliff ran from the Jan 3, 2025 listing there could have been an insider cliff around Jan 3, 2026, but no source confirms i"
+  },
+  "S": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No dated cliff found in the window: TokenRadar's latest dated tranche is 2025-09-04 (US expansion mint) and Tokenomist shows Sonic as having no scheduled unlock. NOT confirmed either way: whether the second annual 47,625,000 S ongoing-funding mint happened around June 2026 (docs say yearly for six years, first on 2025-06-18; TokenRadar lists the rest as 'timing not yet established' and reports Son"
+  },
+  "LAYER": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 3
+  },
+  "IP": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No insider unlock happened in the window. The first Early Backers (21.6%) / Core Contributors (20%) unlock was due 2026-02-13, was moved to 2026-08-13 (announced 2026-02-02), then moved again to 2028-02-13 (25% cliff, then linear to Feb 2031). Sources: https://decrypt.co/356618/story-updates-ip-unlock-schedule-as-the-network-evolves-toward-ai-driven-use-cases , https://tokenomist.ai/research/weekl"
+  },
+  "SHELL": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock could be confirmed. The insider cliff (team, advisors, private sale) ended around 2026-02-13 and linear vesting began; no lump sum is documented and no news item on it was found. tokenomics.com models the vesting as monthly steps on the 13th (for example 16,222,389 SHELL on 2026-11-13: private investors 49.7%, insiders 20.6%, community 23.6%, foundation 6.2%; its 60-step model i"
+  },
+  "GPS": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "BMT": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "FORM": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No vesting or unlock schedule found: CoinMarketCap lists none (max 580M, total 572.3M, circulating 381.87M) and no tracker page for FORM surfaced. About 190M FORM is non-circulating but no release schedule for it was found, so 'no discrete unlock' is the absence of evidence, not a confirmed fact. 'listed' is the month of the 1:1 BNX-to-FORM swap (March 2025); BNX itself traded for years before. co"
+  },
+  "WAL": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 1
+  },
+  "ATH": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock confirmed. The team/advisor 18-month cliff ended about 2025-12-12 (inside the window) and their linear vesting began; no lump sum is documented. Investors began unlocking in mid-2025, so that was the first insider unlock. tokenomics.com models the flow as monthly steps on the 12th: 471,041,667 ATH (private investors 42.7%, insiders 43.3%, community 13.9%) once team vesting is in"
+  },
+  "INIT": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 3
+  },
+  "WCT": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "KERNEL": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 7
+  },
+  "STO": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 7
+  },
+  "HYPER": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 7
+  },
+  "DEEP": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No confirmed discrete unlock in the window. tokenomics.com lists monthly insider steps on the 14th (2025-12-14 to 2026-10-14, each 39,486,111 DEEP, ~0.4% of supply), but its terms (14% at TGE, 12-month cliff, 72-month linear on the insider pool) contradict the Coinone primer, so those rows were not used. The first insider unlock (lock-up end) was about 2025-10-14, outside the window. DeepBook's ow"
+  },
+  "DOLO": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 6
+  },
+  "HAEDAL": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "SYRUP": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window: the team and seed-investor allocations date from the 2021 MPL launch and are fully vested, and all three trackers show no scheduled events. Supply is uncapped; the figure is tokenomics.com's total supply (the docs project 1,267,875,000 by September 2026). Whether the inflation is minted daily or in periodic batches, and what happens after the schedule's September "
+  },
+  "NXPC": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 3
+  },
+  "SOPH": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "MERL": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No dated events returned because the unlock day could not be confirmed. tokenomics.com shows monthly steps on the 1st (12 in the window, 1 Dec 2025-1 Nov 2026), but it anchors them on a 1 Apr 2024 TGE while the token actually launched 19 Apr 2024; the project's own schedule gives month numbers only; Tokenomist shows no cliff events at all (linear). The team's 24-month lockup ended in April 2026 (1"
+  },
+  "B2": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "A": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window: continuous reserve emissions only. 'listed' is the month the A ticker replaced EOS (swap began 14 May 2025); EOS itself is much older. Token Radar's daily amounts are its own estimates; discretionary foundation/treasury transfers are not scheduled anywhere I could find."
+  },
+  "RESOLV": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 6
+  },
+  "SPK": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 1
+  },
+  "TAIKO": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock found in the window: the only insider cliff was 5 Jun 2025, and the remainder is described as linear by both the project and Tokenomist with no tranche dates. Not checked: whether any tracker (tokenomics.com, DropsTab) buckets it into dated steps, and whether DAO Treasury / Foundation Reserve / Grants made one-off releases - those pages could not be opened before the search budg"
+  },
+  "SQD": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No dated events returned because the calendar anchor could not be confirmed. The project docs give terms relative to TGE with no dates ('date estimates'), and the only dated schedule is tokenomics.com's, anchored on a 24 Mar 2024 TGE that I could not verify against an exchange listing (my recollection, unverified, is that SQD began trading in May 2024, which would shift every step and move the end"
+  },
+  "MYX": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "Only one in-window unlock could be tied to a source, and only to a month. MYX's own tokenomics page (myxfinance.gitbook.io/myx/protocol/tokenomics) could not be opened in this session, and CryptoRank/Tokenomist/DefiLlama/CoinLaunch pages for MYX were unreachable. Allocation (TokenRadar, citing the gitbook): team/advisors/contractors 20%, private sale 17.5%, airdrops & bounty 11.7%, treasury 1.8%, "
+  },
+  "ERA": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "C": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "TAC": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "TA": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "ZORA": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "TOWNS": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "NOT a confirmed 'no unlocks' result: no dated unlock schedule for TOWNS could be found, so no events are listed. No unlock tracker page for TOWNS was reachable (Tokenomics.com/TokenRadar/DropsTab/Tokenomist/DefiLlama/CryptoRank did not surface; Binance Research's distribution and release-schedule tables did not load; the Towns Notion tokenomics page needs JavaScript; RootData was behind a captcha)"
+  },
+  "IN": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "CARV": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "SAPIEN": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "WLFI": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock found in the window. Tokenomist's update log lists no unlock or burn event between Nov 2025 and Nov 2026 and shows no upcoming cliff. The only supply event was governance: a proposal (posted 15 Apr 2026, vote 29 Apr-7 May 2026, 99.95% in favour at the time of reporting) put 62,282,252,205 locked WLFI on fixed schedules - early supporters (17.04B) 24-month cliff to 6 May 2028 the"
+  },
+  "SOMI": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "BAS": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No unlock event could be established. No published allocation/vesting schedule was found (IQ.wiki and Yellow both say detailed vesting tables are not available; none of Tokenomics.com, Tokenomist, CryptoRank or DefiLlama pages could be reached for BAS). altFINS reports circulating supply of 2.5B of 10B max as of 2 Sep 2026 - the same 2.5B other pages cite - which suggests no tracked supply increas"
+  },
+  "HEMI": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "OPEN": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "FLOCK": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "AVNT": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "HOLO": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 6
+  },
+  "ZKC": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "0G": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock confirmed in the window. The first team and backer release was due 22 Oct 2026 but on 24 Sep 2026 0G moved it to 22 Oct 2027, so no insider tokens unlocked. Everything else is a gradual community/ecosystem/node-reward release with no published unlock day. tokenomics.com alone models these as monthly events on the 22nd (~11.5M 0G, Dec 2025-Aug 2026) and still lists insider tranch"
+  },
+  "MIRA": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "AKE": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "EDEN": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 1
+  },
+  "NOM": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 2
+  },
+  "MET": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 12
+  },
+  "YB": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 1
+  },
+  "ENSO": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock confirmed in the window. Enso's docs say insider tokens release block by block after the 1-year lockup, so 14 Oct 2026 is the start of a stream, not a one-day unlock (it is still the first day any insider tokens became liquid). Ecosystem and foundation releases have no published dates: tokenomics.com models them on the 14th of each month, while the only observed transfers (an X "
+  },
+  "RECALL": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 1
+  },
+  "ZBT": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 2
+  },
+  "TURTLE": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 2
+  },
+  "AT": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 2
+  },
+  "MMT": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No confirmed discrete unlock in the window. The first insider unlock (Early Backers / investors, 24.78%, end of the 12-month cliff) fell on 2026-11-04, two days AFTER the window closes, so it is not listed; it is the event to pick up if the window is extended. Sources disagree wildly on its size: tokenomics.com 12.3M (monthly step), Tokenomist's unlocked total jumped by roughly 134M across that da"
+  },
+  "STABLE": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window: only the ecosystem stream, and all insider cliffs are still ahead. Worth knowing: a whitepaper update reported by KuCoin on 2026-08-22 moved 82% of supply (team 25B, investors & advisers 25B, ~32B ecosystem/foundation) into a 'Universal Lock' that releases in seven stages starting 2027-12-08, each vesting daily, with a possible delay if the 30-day VWAP is under $0"
+  },
+  "FOLKS": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "One dated event: the start of the first insider (Strategic Supporters) release on 2026-05-06, with no lump amount. The larger insider unlocks are outside the window: Seed Supporters (21.83%) began 2026-11-06, Core Contributors and Advisors begin about 2027-02-06. The docs' schedule charts are images I could not read, so per-bucket lock lengths come from tokenomics.com. Supply figures disagree (Coi"
+  },
+  "IRYS": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No confirmed discrete unlock in the window: all insider cliffs are still ahead. The first insider unlock is 2026-11-25 per tokenomics.com and DropsTab (about 1.18B IRYS, 11.8% of supply: Investors ~632.5M, Core Team & Advisors ~470M, released quarterly per DropsTab) or 2026-12-25 per Tokenomist; either way it is after the window and is the one to watch. The monthly ecosystem/foundation steps shown"
+  },
+  "SENT": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window: SENT only listed on 2026-01-22, the community/ecosystem release is a linear stream, and the first insider unlock (Team 22% and Investors 12.45%, end of the 1-year cliff) is 2027-01-22, still ahead. If the main session wants tokenomics.com's monthly steps anyway, they are the 22nd of each month at 318,436,034 SENT. Sentient's own tokenomics page was not read (terms"
+  },
+  "NIGHT": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock in the window (17 Nov 2025-2 Nov 2026). The only supply release is the randomized Glacier Drop/Scavenger Mine thaw, which is continuous by design (official blog). Midnight Foundation (8.4B) and TGE (3.66B) allocations have no published lock terms and are counted as circulating from day 1; Reserve, Treasury and Lost-and-Found are condition-locked (Binance Research), with no dated"
+  },
+  "ZAMA": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 9
+  },
+  "FOGO": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 2
+  },
+  "MEGA": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock found in the window. MEGA only launched on 30 Apr 2026 (Tokenomist weekly digest; Decrypt, 30 Apr 2026: 1.129B circulating at launch). Tokenomist's MegaETH page (read 17 Nov 2026) says 'no upcoming cliff unlock scheduled', shows ~1.1B (11%) unlocked and circulating supply 1,129,792,788, i.e. unchanged since launch, so no tranche has been released since TGE. 53.3% of supply is KP"
+  },
+  "BREV": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 9
+  },
+  "DOOD": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 6
+  },
+  "BANK": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "FHE": {
+   "status": "added",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "events": 11
+  },
+  "SONIC": {
+   "status": "no_events",
+   "checkedAt": "2026-11-17T06:29:11Z",
+   "why": "No discrete unlock listed. The symbol SONICUSDT is Sonic SVM (not Sonic/S, the former Fantom, which is Tokenomist's 'sonic-3'). The first insider unlock began inside the window, about 7 Jan 2026, but as the start of a linear stream with no lump on the day (lock-up then 24 months linear, per Sonic's terms as summarised by Bitrue and as modelled by DropsTab), so there is no one-day event to grade. C"
+  }
+ }
+}

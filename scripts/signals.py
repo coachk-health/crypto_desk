@@ -37,6 +37,7 @@ import candles as levels_candles  # noqa: E402
 import setup_context  # noqa: E402
 BT = ROOT / "data" / "backtest.json"
 OUT = ROOT / "data" / "signals.json"
+LIVE = ROOT / "data" / "signals_live.json"
 
 RULES = {
     "big": {"label": "10%+ of circulating supply", "field": "pctCirculating", "min": 10},
@@ -48,6 +49,7 @@ FEES = 0.10          # % round trip
 FUNDING_DAY = 0.03   # % per day held (assumption: shorts usually pay on unlock tokens)
 STOP = 20.0          # % adverse close that closes the trade in the 'with stop' version
 NOTIONAL = 1000      # $ per trade in the account curve
+FROZEN_PLAN = {"stop": 12, "target": 35, "cover": 14}   # % stop above entry, % target below, cover day after the unlock
 RISK_USD = 100       # $ risked per trade when stop and target are used (position = risk / stop distance)
 PUMP = 30.0          # % rise from day -30 to entry that blocks the trade
 
@@ -269,6 +271,15 @@ def main():
     with_c = [t for t in trades if t.get("ohlc")]
     cells = levels.grid(with_c, split) if with_c and split else []
     plan, plan_score = levels.pick(cells) if cells else (None, None)
+    # The plan is FROZEN. Re-picking the best stop and target every day lets the plan drift toward
+    # whatever fitted the latest data (it moved from 12/30/day+10 to 12/35/day+14 in Nov 2026), and
+    # live calls would then be judged against a moving target. The optimiser's current favourite is
+    # kept as "wouldPick" for information; changing FROZEN_PLAN is a deliberate, reviewed decision.
+    would_pick = {k: plan[k] for k in ("stop", "target", "cover")} if plan else None
+    frozen = next((c for c in cells if c["mode"] == "market" and c["stop"] == FROZEN_PLAN["stop"]
+                   and c["target"] == FROZEN_PLAN["target"] and c["cover"] == FROZEN_PLAN["cover"]), None)
+    if frozen:
+        plan = frozen
     lv = None
     if plan:
         P = {k: plan[k] for k in ("mode", "zone", "stop", "target", "cover")}
@@ -297,7 +308,7 @@ def main():
             by_setup[tier] = levels.stats(rows) if rows else None
         c_plan, dd_plan = risk_curve(P["stop"], P["target"], P["cover"])
         c_wide, dd_wide = risk_curve(35, 30, 7)
-        lv = {"plan": P, "planStats": plan, "baseline": base, "wide": wide, "riskUsd": RISK_USD, "bySetup": by_setup,
+        lv = {"plan": P, "planFrozen": True, "wouldPick": would_pick, "planStats": plan, "baseline": base, "wide": wide, "riskUsd": RISK_USD, "bySetup": by_setup,
               "withCandles": len(with_c), "withoutCandles": len(trades) - len(with_c), "minRR": levels.MIN_RR,
               "stops": levels.STOPS, "targets": levels.TARGETS, "covers": levels.COVERS,
               "modes": [{"mode": c["mode"], "zone": c["zone"], "win": c["all"]["win"], "rTotal": c["all"].get("rTotal"),
@@ -329,9 +340,6 @@ def main():
         "live": stats([t for t in trades if t["live"]]),
         "curve": pts, "curveStop": pts_s, "curveNoGuard": curve(every)[0], "trades": every, "levels": lv,
         "ids": ids,
-        "pumpChecks": pump_checks(lambda f: matched(f)),
-        "context": upcoming_context(bt),
-        "pumpCheckedAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "method": ("Fixed playbook applied to every past unlock in the track record. Entry and exit use CoinGecko "
                    "daily prices at 00:00 UTC; day 0 is the unlock date. Profit is for a short: positive when the "
                    "price fell. Costs assumed: 0.10% fees for the round trip and 0.03% funding per day held. The "
@@ -346,15 +354,14 @@ def main():
 
 
 def refresh_live():
-    """Refresh only the parts that depend on today's prices (pump checks, setup context) in
-    the existing data/signals.json; the backtest-based results are left as they are."""
-    sig = json.loads(OUT.read_text())
+    """Today's price checks and setup context, in their own file (data/signals_live.json) so the
+    twice-daily refresh never collides with the daily track-record run that writes signals.json."""
     bt = json.loads(BT.read_text())
-    sig["pumpChecks"] = pump_checks(lambda f: matched(f))
-    sig["pumpCheckedAt"] = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
-    sig["context"] = upcoming_context(bt)
-    OUT.write_text(json.dumps(sig, indent=1, ensure_ascii=False) + "\n")
-    print(f"refreshed {len(sig['pumpChecks'])} price checks, {len(sig['context'])} setup contexts")
+    live = {"generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+            "pumpChecks": pump_checks(lambda f: matched(f)), "context": upcoming_context(bt)}
+    live["pumpCheckedAt"] = live["generatedAt"]
+    LIVE.write_text(json.dumps(live, indent=1, ensure_ascii=False) + "\n")
+    print(f"refreshed {len(live['pumpChecks'])} price checks, {len(live['context'])} setup contexts")
 
 
 if __name__ == "__main__":

@@ -21,7 +21,7 @@ concurrency:
 jobs:
   backtest:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 170
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -47,10 +47,13 @@ jobs:
           git add data/backtest.json data/backtest-log.txt data/past_unlocks.json data/signals.json data/grades.json
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "Track record update $(date -u +%Y-%m-%d)"
-          for i in 1 2 3; do
-            git pull --rebase origin main && git push origin HEAD:main && break
-            sleep 5
+          pushed=0
+          for i in 1 2 3 4; do
+            if git pull --rebase origin main && git push origin HEAD:main; then pushed=1; break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep 8
           done
+          if [ "$pushed" != "1" ]; then echo "::error::could not push the results"; exit 1; fi
           # Pushes made by this workflow do not trigger the publish workflow, so copy to gh-pages here.
           git push --force origin HEAD:gh-pages
       - name: Keep the price downloads for checking

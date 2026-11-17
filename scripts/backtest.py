@@ -101,7 +101,9 @@ def exchange_series(token, cg):
     history is wrong for some tokens on some days). Market cap and volume stay CoinGecko's
     (all exchanges); cgPrice is kept so circulating supply = market cap / CoinGecko price.
     Only exchange days are kept, so a series never jumps between two sources."""
-    start = (NOW - timedelta(days=366)).date()
+    # 45 extra days so the month before an unlock is priced even for unlocks a full year back
+    # (CoinGecko's free history stops at 365 days; Binance's files do not).
+    start = (NOW - timedelta(days=366 + 45)).date()
     src, sym, bn = candles.token_days(token, start, NOW.date(), cg)
     if not src:
         return cg, {"source": "coingecko", "symbol": None, "cgGapMedianPct": None, "cgGapMaxPct": None}
@@ -297,11 +299,38 @@ def summarise(evs):
     }
 
 
+def event_key(token, e):
+    """Identity of a researched event. If research later corrects its date, size, recipients or
+    first-unlock flag, the key changes and the event is measured again."""
+    return "|".join([token, e.get("date") or "", str(e.get("amountTokens")), str(bool(e.get("firstInsiderUnlock"))),
+                     json.dumps(e.get("recipientsMix"), sort_keys=True)])
+
+
+def carried(prev, t, e):
+    """A finished measurement from the last run, with its check status refreshed. CoinGecko's free
+    history only reaches back 365 days, so without this the oldest unlocks would drop out of the
+    track record one day at a time. Prices that old never change, so the old measurement stands."""
+    r = prev.get(event_key(t["token"], e))
+    if not r:
+        return None
+    r = dict(r, check=(t.get("verify") or {}).get("status"), checkNotes=(t.get("verify") or {}).get("notes"),
+             sources=e.get("sources") or r.get("sources") or [])
+    return r
+
+
 def main():
     past = harvest()
+    prev = {}
+    if OUT.exists():
+        try:
+            for r in json.loads(OUT.read_text()).get("events") or []:
+                prev[event_key(r["token"], r)] = r
+        except Exception as e:
+            log(f"could not read the previous results: {e}")
     btc, _ = exchange_series("BTC", series("bitcoin"))
     events, skipped = [], []
     sources = {}
+    kept = 0
     for t in past["tokens"]:
         cg = t.get("coingeckoId")
         evs = [e for e in t.get("events") or [] if e.get("date") and e.get("type") != "continuous"]
@@ -313,8 +342,12 @@ def main():
         try:
             s, info = exchange_series(t["token"], series(cg))
         except Exception as e:
-            log(f"  skipped: {e}")
-            skipped.append({"token": t["token"], "why": f"price data unavailable ({e})"})
+            old = [r for r in (carried(prev, t, e2) for e2 in evs) if r]
+            events.extend(old)
+            kept += len(old)
+            log(f"  price data unavailable ({e}); kept {len(old)} earlier measurements")
+            if not old:
+                skipped.append({"token": t["token"], "why": f"price data unavailable ({e})"})
             continue
         sources[t["token"]] = info
         log(f"  prices: {info['source']} {info['symbol'] or ''} (CoinGecko differed by a median {info['cgGapMedianPct']}%, at most {info['cgGapMaxPct']}%)")
@@ -333,9 +366,19 @@ def main():
             d0 = datetime.strptime(e["date"], "%Y-%m-%d").replace(tzinfo=timezone.utc)
             if d0 + timedelta(days=POST) > NOW:
                 continue  # not enough days after yet; it will be measured later
+            # Settled long ago and already measured in full: reuse it (see carried()).
+            old = carried(prev, t, e) if d0 + timedelta(days=POST + 45) < NOW else None
+            if old and (old.get("pathUsd") or {}).get("-30") is not None and old.get("pctCirculating") is not None:
+                events.append(old)
+                kept += 1
+                continue
             p0 = at(s, d0, 0)
             if p0 is None or at(s, d0, -7) is None or at(s, d0, POST) is None:
-                skipped.append({"token": t["token"], "date": e["date"], "why": "no price around the date (outside the 365-day free history)"})
+                if old:
+                    events.append(old)
+                    kept += 1
+                else:
+                    skipped.append({"token": t["token"], "date": e["date"], "why": "no price around the date"})
                 continue
             vols = [at(s, d0, -i, "vol") for i in range(1, 31)]
             vols = [v for v in vols if v]
@@ -414,7 +457,7 @@ def main():
                 "token": t["token"], "name": t.get("name"), "date": e["date"],
                 "amountTokens": amt, "usdM": usdM, "pctCirculating": row["pctCirculating"],
                 "advDays": round(usdM / row["market"]["advUsdM"], 3) if usdM and row["market"]["advUsdM"] else None,
-                "type": e.get("type"), "firstInsiderUnlock": bool(e.get("firstInsiderUnlock")),
+                "type": e.get("type"), "shape": e.get("shape"), "firstInsiderUnlock": bool(e.get("firstInsiderUnlock")),
                 "recipientsMix": e.get("recipientsMix"), "who": who(e.get("recipientsMix")),
                 "grade": imp["grade"], "points": imp["points"], "factors": imp["factors"],
                 "predicted": e.get("predicted"),
@@ -427,7 +470,7 @@ def main():
                 "checkNotes": (t.get("verify") or {}).get("notes"),
             })
     events.sort(key=lambda e: e["date"], reverse=True)
-    log(f"measured {len(events)} events, skipped {len(skipped)}")
+    log(f"measured {len(events)} events ({kept} kept from earlier runs), skipped {len(skipped)}")
 
     groups = {"All unlocks": summarise(events)}
     def add(prefix, key):
