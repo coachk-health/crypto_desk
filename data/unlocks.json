@@ -15264,14 +15264,14 @@
     "https://www.tokenpost.com/news/investing/54534"
    ],
    "gaps": "The Allora blog post announcing the delay could not be opened (fetch blocked); its terms are confirmed by PANews, TokenPost and KuCoin, and the post's title and date by the Allora blog index. No time of day. pctCirculating uses today's 420.9M circulating, which will change by May 2027. Investor entry implied from round valuations. 24h volume only. Listing month from the 12-month lock ending 11 Nov 2026 (CMC AI citing Allora's X post).",
-   "firstInsiderUnlock": true,
+   "firstInsiderUnlock": false,
    "amount": "~242.75M ALLO (50% of 485.5M Core Contributor + Backer allocations), delayed from 11 Nov 2026",
    "source": "https://panews.io/articles/01a1c834-655c-7034-9c0e-4f7bd1e49d2e",
    "pct": 57.67,
    "pctBasis": "of circulating",
    "note": "Trackers had not caught up: tokenomics.com (read 12 Nov) still shows an 11 Nov 2026 event of 169.9M ALLO and monthly 23.8M from 11 Dec 2026; Tokenomist's Nov 9-15 digest and CMC AI still describe the 11 Nov cliff; CoinGecko's Tokenomist widget is now empty while its news feed reports the delay. The three news reports agree with each other on the new terms. PANews/TokenPost say 'supporters' (Backers).",
    "confidence": "confirmed",
-   "firstInsiderNote": "Investors (early backers) and team (core contributors) both first: lock extended six months to 11 May 2027, then 50% unlocks and the rest vests linearly over 18 months to Nov 2028 (original terms were a 12-month lock, 33% at cliff, 24-month linear).",
+   "firstInsiderNote": "Not the first: insider tokens first unlocked on 2026-11-11.",
    "firstInsiderSources": [
     {
      "label": "Allora Foundation tokenomics blog (12-month lock, 33% unlock, 24-month linear)",
@@ -16034,7 +16034,7 @@
   }
  ],
  "checkedAt": "2026-11-17T06:35:58Z",
- "scoredAt": "2026-11-17T06:38:41Z",
+ "scoredAt": "2026-11-17T07:36:05Z",
  "scoring": {
   "version": 1,
   "evidence": {

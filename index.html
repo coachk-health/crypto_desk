@@ -157,6 +157,16 @@ details.logp h4 { margin: 18px 0 6px; font-size: 15px; } table.sig small.why { c
 ul.plain { list-style: none; padding: 0; margin: 0; } ul.plain li { padding: 6px 0; border-top: 1px solid rgba(255,255,255,.06); }
 tr.ctx td { background: rgba(255,255,255,.03); font-size: 13.5px; line-height: 1.7; padding: 10px 14px; } tr.ctx[hidden] { display: none; }
 .ctxbtn { background: none; border: 0; color: var(--muted); font-size: 12px; padding: 2px 0; cursor: pointer; } .ctxbtn:hover { color: var(--text); }
+table.sig tr.avoid td { background: rgba(255,99,99,.07); } table.sig tr.avoid td:first-child { box-shadow: inset 3px 0 0 #ff6363; }
+table.sig td:first-child { min-width: 168px; } .scard { border: 1px solid rgba(255,255,255,.08); border-radius: 10px; padding: 10px 14px; margin: 8px 0; } .scard.dim { opacity: .65; } .scard.avoid { border-color: #ff6363; background: rgba(255,99,99,.06); }
+.cl1 { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 17px; } .cl1 .vd { margin-left: auto; } .cl2 { color: var(--muted); font-size: 14px; margin-top: 3px; } .cl2 b { color: var(--text); } .cl3 { font-size: 13.5px; margin-top: 3px; }
+.vd { font-size: 12.5px; font-weight: 700; border-radius: 999px; padding: 3px 11px; } .v-sig { background: rgba(57,135,229,.22); color: #9cc7ff; } .v-strong { background: #199e70; color: #fff; } .v-bad { background: #ff6363; color: #1b1030; } .v-none { background: rgba(255,255,255,.07); color: var(--muted); }
+details.more { margin-top: 8px; } details.more > summary { cursor: pointer; color: var(--muted); font-size: 14px; padding: 4px 0; }
+details.fold > summary { cursor: pointer; list-style: none; } details.fold > summary h3 { display: inline; } details.fold > summary::after { content: '  show'; color: var(--sun); font-size: 13px; } details.fold[open] > summary::after { content: '  hide'; } details.fold .panel { box-shadow: none; padding-left: 0; padding-right: 0; background: none; }
+.szb { white-space: nowrap; display: inline-block; font-size: 11.5px; font-weight: 700; border-radius: 5px; padding: 1px 6px; margin: 2px 0; letter-spacing: .01em; }
+.szb.sz0 { color: var(--muted); font-weight: 500; padding-left: 0; } .szb.sz1 { background: rgba(255,181,71,.14); color: #ffcf87; }
+.szb.sz2 { background: rgba(236,133,71,.25); color: #ffb88f; } .szb.sz3 { background: #ec8547; color: #1b1030; }
+.pc.warn { color: #ffcf87; } .status.bad { color: #ff8a8a; font-weight: 700; }
 .tierA { color: var(--sun); font-weight: 700; font-size: 12px; }
 .pc { font-weight: 600; font-size: 13.5px; } .pc.ok { color: var(--bull); } .pc.bad { color: var(--bear); } .pc.na { color: var(--muted); font-weight: 500; }
 details.logp summary { cursor: pointer; list-style: none; } details.logp summary h3 { display: inline; } details.logp summary::after { content: ' (show)'; color: var(--sun); font-size: 14px; } details.logp[open] summary::after { content: ' (hide)'; }
@@ -745,7 +755,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       };
       const hits = Object.keys(R).filter(k => { const r = R[k], v = facts[r.field]; return r.equals !== undefined ? v === r.equals : (typeof v === 'number' && v >= r.min); });
       const setup = facts.firstInsiderUnlock && (facts.investorsShare || 0) >= 0.3 ? 'A' : 'B';
-      return { u, hits, setup, entry: addDays(u.date, pb.entry), exit: addDays(u.date, (S.levels && S.levels.plan.cover) || pb.exit), id: u.coingeckoId || (S.ids || {})[u.token] };
+      return { u, hits, setup, pct: facts.pctCirculating, first: facts.firstInsiderUnlock, entry: addDays(u.date, pb.entry), exit: addDays(u.date, (S.levels && S.levels.plan.cover) || pb.exit), id: u.coingeckoId || (S.ids || {})[u.token] };
     }).filter(x => x.hits.length && daysFromToday(x.exit) >= 0).sort((a, b) => a.entry.localeCompare(b.entry));
   }
 
@@ -755,7 +765,22 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
   }
 
   function pumpVerdict(rise, pumpPct) {
-    return rise >= pumpPct ? { text: 'Up ' + rise.toFixed(0) + '% in 3 weeks: skip', cls: 'bad' } : { text: (rise >= 0 ? 'Up ' : 'Down ') + Math.abs(rise).toFixed(0) + '% in 3 weeks: OK', cls: 'ok' };
+    // 123-token test (17 Nov 2026): shorts opened after a 30%+ run-up averaged -0.22R over 73 unlocks.
+    // The price usually did come down, but only after stopping the short out first.
+    if (rise >= pumpPct) return { text: '⚠ AVOID: pumping, up ' + rise.toFixed(0) + '% in 3 weeks', cls: 'bad', avoid: true };
+    if (rise >= pumpPct / 2) return { text: 'Caution: up ' + rise.toFixed(0) + '% in 3 weeks', cls: 'warn' };
+    return { text: (rise >= 0 ? 'Up ' : 'Down ') + Math.abs(rise).toFixed(0) + '% in 3 weeks: OK', cls: 'ok' };
+  }
+  // Size of the unlock against the tokens already trading. Under 25% a repeat tranche showed no edge.
+  function sizeBadge(pct) {
+    if (pct == null) return null;
+    const t = pct >= 50 ? ['sz3', 'HUGE'] : pct >= 25 ? ['sz2', 'VERY LARGE'] : pct >= 10 ? ['sz1', 'Large'] : ['sz0', ''];
+    return el('span', { class: 'szb ' + t[0], title: 'Unlock size as a share of circulating supply. Past unlocks of 25%+ fell in 87% of cases by day +14; 10–25% repeat tranches showed no edge.', text: (t[1] ? t[1] + ' · ' : '') + (pct >= 100 ? pct.toFixed(0) : pct.toFixed(pct < 10 ? 1 : 0)) + '% of supply' });
+  }
+  function weekChip(week) {
+    if (week == null) return null;
+    return week <= -5 ? el('small', { class: 'pc ok', title: 'Signals that had already fallen 5%+ in the week before entry won 79% of the time in the past record (29 trades). Tracked live; not yet a rule.', text: 'Down ' + Math.abs(week).toFixed(0) + '% this week: already selling' })
+      : el('small', { class: 'pc na', title: 'Signals that were flat or rising in the week before entry showed no edge in the past record (36 trades).', text: (week >= 0 ? 'Up ' : 'Down ') + Math.abs(week).toFixed(0) + '% this week: not selling off yet' });
   }
   async function pumpCheck(sig, pumpPct) {
     // The check: rise over the 23 days up to the entry day (or today, if entry is still ahead), and the
@@ -764,7 +789,8 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     if (pumpCache[sig.u.token]) return pumpCache[sig.u.token];
     const endDay = daysFromToday(sig.entry) > 0 ? new Date().toISOString().slice(0, 10) : sig.entry;
     const saved = (D.signals.pumpChecks || {})[sig.u.token];
-    const fromSaved = note => Object.assign(pumpVerdict(saved.rise, pumpPct), { rise: saved.rise, ref: saved.ref, refDay: saved.to, final: saved.to >= sig.entry, note });
+    const fromSaved = note => Object.assign(pumpVerdict(saved.rise, pumpPct), { rise: saved.rise, week: saved.week, ref: saved.ref, refDay: saved.to, final: saved.to >= sig.entry, note });
+    const wk = (z, day) => { const w = px[addDays(day, -7)]; return z && w ? (z / w - 1) * 100 : null; };
     // The check is frozen once the entry day has passed, but an open trade still needs today's prices.
     const frozen = saved && saved.ref && saved.to >= sig.entry;
     const turn = pumpQueue; let done; pumpQueue = new Promise(r => done = r);
@@ -789,11 +815,11 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       }
     }
     setTimeout(done, 1500);
-    if (frozen) return (pumpCache[sig.u.token] = Object.assign(fromSaved(''), { live: px._live, hl }));
+    if (frozen) { const r = fromSaved(''); if (r.week == null) r.week = wk(px[sig.entry], sig.entry); return (pumpCache[sig.u.token] = Object.assign(r, { live: px._live, hl })); }
     const a = px[addDays(endDay, -23)], z = daysFromToday(sig.entry) > 0 ? px._live : px[sig.entry];
     if (a && z) {
       const rise = (z / a - 1) * 100;
-      return (pumpCache[sig.u.token] = Object.assign(pumpVerdict(rise, pumpPct), { rise, ref: z, refDay: endDay, final: daysFromToday(sig.entry) <= 0, live: px._live, hl }));
+      return (pumpCache[sig.u.token] = Object.assign(pumpVerdict(rise, pumpPct), { rise, week: wk(z, endDay), ref: z, refDay: endDay, final: daysFromToday(sig.entry) <= 0, live: px._live, hl }));
     }
     if (saved) return (pumpCache[sig.u.token] = Object.assign(fromSaved(' (as of ' + fmtDay(saved.to) + ')'), { live: px._live, hl }));
     return { text: 'Price check failed, check by hand', cls: 'na' };
@@ -948,6 +974,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
 
     // upcoming
     const ups = upcomingSignals(S);
+    const pcP = {}, pcOnce = x => pcP[x.u.token + x.entry] || (pcP[x.u.token + x.entry] = pumpCheck(x, pb.pumpPct));
     const nowPx = {};
     // Price now: one CoinGecko call for every row; a Binance futures price from the check above replaces it.
     setTimeout(async () => {
@@ -975,15 +1002,18 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
           const pxNow = el('td', { class: 'num', text: '…' }), inTrade = el('td', { class: 'na', text: dEntry > 0 ? 'Not open yet' : '…' });
           if (x.id) nowPx[x.id] = (nowPx[x.id] || []).concat(pxNow);
           const row = el('tr', null, [
-            el('td', null, [gradeBadge(x.u.token, x.u.date), el('b', { text: x.u.token }), el('small', { text: (x.u.usdM ? ' ' + Desk.usd(x.u.usdM) : '') }), el('br'), x.setup === 'A' ? el('small', { class: 'tierA', text: 'Setup A ' }) : null, el('small', { class: 'why', text: x.hits.map(h => RULE_SHORT[h]).join(', ') })]),
+            el('td', null, [gradeBadge(x.u.token, x.u.date), el('b', { text: x.u.token }), el('small', { text: (x.u.usdM ? ' ' + Desk.usd(x.u.usdM) : '') }), el('br'), sizeBadge(x.pct), el('br'), x.setup === 'A' ? el('small', { class: 'tierA', text: 'Setup A ' }) : null, el('small', { class: 'why', text: x.hits.map(h => RULE_SHORT[h]).join(', ') }),
+              !x.first && x.pct != null && x.pct < 25 ? el('small', { class: 'why', title: '70 past repeat tranches of 10–25% averaged +0.01R; on the 58 from tokens never used to choose a rule, −0.09R.', text: ' · repeat tranche under 25%: no edge in the bigger test' }) : null]),
             el('td', { class: 'num', text: fmtDay(x.u.date) }), el('td', { class: 'num', text: fmtDay(addDays(x.entry, -1)) }),
             ...lvCells(null, false),
             el('td', { class: 'num', text: fmtDay(x.exit) }),
             pxNow, inTrade,
             el('td', null, [el('span', { class: 'status ' + (dEntry <= 3 && dEntry > 0 ? 'soon' : dEntry <= 0 ? 'open' : ''), text: status }), el('br'),
               el('small', { class: 'cchip c-' + (x.u.confidenceLabel || 'unverified').toLowerCase(), title: 'Confidence in the unlock data' }, ['data ', el('b', { text: String(conf) }), conf >= 60 ? ' ok' : ' confirm first']), ' ', pc])]);
-          if (dEntry <= 14) pumpCheck(x, pb.pumpPct).then(r => {
+          if (dEntry <= 14) pcOnce(x).then(r => {
             pc.textContent = r.text + (r.note || ''); pc.className = 'pc ' + r.cls;
+            if (r.avoid && dEntry > 0) { row.classList.add('avoid'); const st = row.querySelector('span.status'); if (st) { st.textContent = 'Avoid: pumping into the unlock'; st.className = 'status bad'; } }
+            const wc = weekChip(r.week); if (wc) pc.after(el('br'), wc);
             if (r.ref) { const cells = lvCells(r.ref, r.final); [3, 4, 5].forEach((i, j) => row.replaceChild(cells[j], row.children[i])); }
             if (r.live) { pxNow.textContent = fmtPx(r.live); pxNow.dataset.live = '1'; }
             const t = ifInTrade(x, r, P, pb, L ? L.riskUsd : 100);
@@ -1105,7 +1135,41 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
           el('td', { class: 'n' }, [t.momentum == null ? el('span', { class: 'na', text: '—' }) : el('span', { class: t.skipped ? 'down' : '', text: (t.momentum > 0 ? '+' : '') + t.momentum.toFixed(0) + '%' + (t.skipped ? ' skip' : '') })]),
           el('td', { text: t.priceSource === 'coingecko' ? 'CoinGecko' : 'Binance' })])))])])]);
 
-    return el('section', { 'aria-label': 'Trade signals' }, [...(gradesPanel(rf, usd) || []), upList, lead, warn, plan, curveP, stab, gridP, exitP, logP,
+    // ---- Simple view: one card per setup, everything else behind one click ----
+    const card = x => {
+      const dEntry = daysFromToday(x.entry), dExit = daysFromToday(x.exit), conf = x.u.confidenceScore ?? 0;
+      const core = x.first || (x.pct || 0) >= 25;
+      const verdict = el('span', { class: 'vd ' + (core ? 'v-sig' : 'v-none'), text: core ? (conf >= 60 ? 'Signal' : 'Confirm data first') : 'No edge' });
+      const when = dEntry > 0 ? 'short in ' + dEntry + ' day' + (dEntry === 1 ? '' : 's') + ' (' + fmtDay(x.entry) + ')' : dExit > 0 ? 'open now, cover in ' + dExit + ' day' + (dExit === 1 ? '' : 's') : 'cover today';
+      const lv = el('div', { class: 'cl2 na', text: P ? 'Stop +' + P.stop + '% · target −' + P.target + '% from the entry price' : '' });
+      const note = el('div', { class: 'cl3' });
+      const why = [x.first ? 'first insider unlock' : null, (x.pct || 0) >= 25 ? 'very large' : null].filter(Boolean).join(' + ') || 'repeat tranche under 25% of supply';
+      const c = el('div', { class: 'scard' + (core ? '' : ' dim') }, [
+        el('div', { class: 'cl1' }, [el('b', { text: x.u.token }), sizeBadge(x.pct), verdict]),
+        el('div', { class: 'cl2' }, ['Unlock ' + fmtDay(x.u.date) + ' · ' + when + ' · ' + why]), lv, note]);
+      if (dEntry <= 14) pcOnce(x).then(r => {
+        if (r.ref && P) { lv.className = 'cl2'; lv.textContent = ''; lv.append('Entry ', el('b', { class: 'num', text: fmtPx(r.ref) }), ' · stop ', el('b', { class: 'num down', text: fmtPx(r.ref * (1 + P.stop / 100)) }), ' · target ', el('b', { class: 'num up', text: fmtPx(r.ref * (1 - P.target / 100)) }), r.final ? '' : ' (from today’s price)'); }
+        if (r.avoid && dEntry > 0) { verdict.textContent = 'AVOID: pumping'; verdict.className = 'vd v-bad'; c.classList.add('avoid'); note.append(el('span', { class: 'down', text: 'Up ' + r.rise.toFixed(0) + '% in 3 weeks. Shorts into pumps got stopped out.' })); }
+        else if (core && conf >= 60 && r.week != null && r.week <= -5) { verdict.textContent = 'STRONG'; verdict.className = 'vd v-strong'; note.append(el('span', { class: 'up', text: 'Already down ' + Math.abs(r.week).toFixed(0) + '% this week.' })); }
+        else if (r.week != null && core) note.append(el('span', { class: 'na', text: (r.week >= 0 ? 'Up ' : 'Down ') + Math.abs(r.week).toFixed(0) + '% this week: not selling off yet.' }));
+        const t = ifInTrade(x, r, P, pb, L ? L.riskUsd : 100);
+        if (t) note.append(' ', el('span', { class: 'num ' + (t.pnl < 0 ? 'down' : 'up'), text: 'In the trade: ' + rf(t.r) }), el('span', { class: 'na', text: ' (' + t.state.toLowerCase() + ')' }));
+      });
+      return c;
+    };
+    const soon = ups.filter(x => daysFromToday(x.entry) <= 21), later = ups.filter(x => daysFromToday(x.entry) > 21);
+    const coreOf = x => x.first || (x.pct || 0) >= 25;
+    const simple = el('div', { class: 'panel' }, [el('h3', { text: 'Setups' }),
+      el('p', { class: 'small', text: 'Short 7 days before the unlock. Signal = first insider unlock or 25%+ of supply. STRONG = a signal already falling 5%+ in the week before entry. AVOID = up ' + pb.pumpPct + '%+ in three weeks.' }),
+      ...soon.filter(coreOf).map(card),
+      soon.some(x => !coreOf(x)) ? el('details', { class: 'more' }, [el('summary', { text: 'No edge (' + soon.filter(x => !coreOf(x)).length + ')' }), ...soon.filter(x => !coreOf(x)).map(card)]) : null,
+      later.length ? el('details', { class: 'more' }, [el('summary', { text: 'Later (' + later.length + ')' }), ...later.map(card)]) : null,
+      !ups.length ? el('p', { text: 'No upcoming unlocks match right now.' }) : null].filter(Boolean));
+    const fold = (title, kids) => el('details', { class: 'panel fold' }, [el('summary', null, [el('h3', { text: title })]), ...kids.filter(Boolean)]);
+    return el('section', { 'aria-label': 'Trade signals' }, [simple, lead,
+      fold('The playbook', [plan, warn]),
+      fold('Full table and setup grades', [upList, ...(gradesPanel(rf, usd) || [])]),
+      fold('Track record and evidence', [curveP, stab, gridP, exitP, logP]),
       el('details', { class: 'method' }, [el('summary', { text: 'How this is calculated' }), el('div', { class: 'mbody' }, [el('p', { text: S.method }),
         L ? el('p', { style: 'white-space:pre-line', text: L.method }) : null,
         el('p', { text: 'This is a record of what a fixed rule set would have done, not a recommendation to trade. Past results in one year and one market phase may not repeat. Real fills, funding rates, borrow availability and exchange listings will differ.' })])])].filter(Boolean));
@@ -1160,7 +1224,9 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       const last = (c.history || []).slice(-1)[0];
       return el('tr', null, [
         el('td', { class: 'num', text: fmtDay(c.checkDate) }),
-        el('td', null, [el('b', { text: c.token }), el('small', { text: ' unlock ' + fmtDay(c.unlockDate) }), el('br'), c.setup === 'A' ? el('small', { class: 'tierA', text: 'Setup A ' }) : null, el('small', { class: 'why', text: c.rules.map(h => RULE_SHORT[h]).join(', ') + (c.decision ? ' · data ' + c.decision.confidence : '') })]),
+        el('td', null, [el('b', { text: c.token }), el('small', { text: ' unlock ' + fmtDay(c.unlockDate) }), el('br'), c.setup === 'A' ? el('small', { class: 'tierA', text: 'Setup A ' }) : null, el('small', { class: 'why', text: c.rules.map(h => RULE_SHORT[h]).join(', ') + (c.decision ? ' · data ' + c.decision.confidence : '') }),
+          c.decision && c.decision.pctCirculating != null ? el('br') : null, c.decision ? sizeBadge(c.decision.pctCirculating) : null,
+          c.weekMove != null ? el('small', { class: 'why', title: 'Move over the 7 days before entry. Tracked to test whether signals that are already falling do better live, as they did in the past record.', text: ' · week before entry ' + (c.weekMove > 0 ? '+' : '') + c.weekMove.toFixed(0) + '%' + ((c.tags || []).includes('strong') ? ' (strong setup)' : '') }) : null]),
         el('td', { class: 'num', text: c.ref ? fmtPx(lv.zoneLow) + '–' + fmtPx(lv.zoneHigh) : '—' }),
         el('td', { class: 'num', text: lv.stop ? fmtPx(lv.stop) : c.plan ? '+' + c.plan.stop + '%' : '—' }),
         el('td', { class: 'num', text: (lv.target ? fmtPx(lv.target) : c.plan && c.plan.target ? '−' + c.plan.target + '%' : '—') + (c.plan && c.plan.rr ? ' (' + c.plan.rr + 'R)' : '') }),

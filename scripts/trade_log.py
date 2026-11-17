@@ -104,6 +104,23 @@ def prices(call):
     return None, {}
 
 
+def tags_for(c):
+    """Labels used to split the live record later. They never change whether a call is taken."""
+    d = c.get("decision") or {}
+    pct, t = d.get("pctCirculating") or 0, []
+    if d.get("firstInsiderUnlock"):
+        t.append("first")
+    t.append("size50" if pct >= 50 else "size25" if pct >= 25 else "size10" if pct >= 10 else "sizeSmall")
+    if c.get("weekMove") is not None:
+        t.append("weekDown" if c["weekMove"] <= -5 else "weekFlatUp")
+    # the stricter rule under test: first insider unlock or 25%+ of supply, AND already falling
+    core = d.get("firstInsiderUnlock") or pct >= 25
+    t.append("core" if core else "repeat10to25")
+    if core and c.get("weekMove") is not None and c["weekMove"] <= -5:
+        t.append("strong")
+    return t
+
+
 def walk(call, days):
     """Apply the stop, target and day +7 cover to completed days from the entry day on."""
     R, lv = call["ref"], call["levels"]
@@ -219,6 +236,11 @@ def main():
             R = e["o"]
             c["ref"], c["refSource"] = float(f"{R:.6g}"), src
             c["pump"] = round((R / p0["o"] - 1) * 100, 1) if p0 else None
+            # Tracked, not yet a rule: the move over the 7 days before entry. In the 123-token test
+            # (17 Nov 2026) signals that had already fallen 5%+ carried almost the whole edge.
+            w0 = days.get(iso(D(c["entryDate"]) - timedelta(days=7)))
+            c["weekMove"] = round((R / w0["o"] - 1) * 100, 1) if w0 else None
+            c["tags"] = tags_for(c)
             if c["pump"] is not None and c["pump"] >= c["plan"]["pumpPct"]:
                 c.update(status="skipped", skipReason=f"pumped {c['pump']:.0f}% in the 3 weeks before entry")
                 c["history"].append({"at": NOW.isoformat(timespec="seconds"), "event": "entry day: skipped, " + c["skipReason"]})
@@ -229,6 +251,10 @@ def main():
                            "target": float(f"{R * (1 - pl['target'] / 100):.6g}") if pl.get("target") else None}
             c["status"] = "open"
             c["history"].append({"at": NOW.isoformat(timespec="seconds"), "event": f"entry: short at {c['ref']:.6g} ({src})"})
+        if c.get("ref") and "tags" not in c:  # calls opened before tags existed
+            w0 = days.get(iso(D(c["entryDate"]) - timedelta(days=7)))
+            c["weekMove"] = round((c["ref"] / w0["o"] - 1) * 100, 1) if w0 else None
+            c["tags"] = tags_for(c)
         walk(c, days)
 
     out = sorted(calls.values(), key=lambda c: (c["checkDate"], c["token"]))
@@ -239,7 +265,10 @@ def main():
                         "rTotal": round(sum(v), 2) if v else 0, "totalUsd": round(sum(v) * RISK_USD) if v else 0,
                         "open": sum(1 for c in out if c["status"] == "open"),
                         "skipped": sum(1 for c in out if c["status"] == "skipped"),
-                        "watching": sum(1 for c in out if c["status"] == "watching")},
+                        "watching": sum(1 for c in out if c["status"] == "watching"),
+                        "byTag": {t: {"closed": len(x), "won": sum(1 for r in x if r > 0), "rTotal": round(sum(x), 2)}
+                                  for t in ("strong", "core", "repeat10to25", "weekDown", "weekFlatUp", "size25", "size50", "first")
+                                  for x in [[c["r"] for c in closed if t in (c.get("tags") or [])]] if x}},
                method=__doc__.strip())
     LOG.write_text(json.dumps(log, indent=1, ensure_ascii=False) + "\n")
     print(json.dumps(log["summary"]))

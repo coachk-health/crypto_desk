@@ -43,7 +43,10 @@ If you cannot confirm a value, set it to null and say why in `gaps`.
 
 8. **First insider unlock?** true if this tranche is the first time team or investor
    tokens unlock (the end of their cliff), false if it is a routine later tranche, null if
-   no source says. Past data shows first insider unlocks fell hardest, so get this right.
+   no source says. A token has only ONE first insider unlock: if any earlier unlock of this token
+   already released team or investor tokens, the answer is false. Also say whether a one-off
+   block is released that day ("lump") or only a slow linear stream starts ("stream").
+   Past data shows first insider unlocks are the one trigger that held up, so get this right.
 9. **CoinGecko API id**: shown as "API ID" on the coin's CoinGecko page. It can differ from the web address (Avalanche's web page is /coins/avalanche but its API id is avalanche-2), so use the API id.
 10. **Last distribution**: the token's most recent PAST discrete unlock before this one (cliff,
    monthly/quarterly tranche, or TGE/airdrop release; not a continuous daily emission): date, amount,

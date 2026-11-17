@@ -62,6 +62,10 @@ EDGES = {
     "waited":    {"label": "Waited 12+ months", "plain": "The token has been trading for a year or more, so insiders have waited out a cliff."},
     "thinFloat": {"label": "Under 30% circulating", "plain": "Less than 30% of the max supply is trading, so a lot more is still to come."},
     "falling":   {"label": "Already falling", "plain": "The price fell over the 3 weeks before entry."},
+    # Added 17 Nov 2026 after the audit on 123 tokens: the two conditions that held up on tokens
+    # that were never used to choose a rule.
+    "vbig":      {"label": "25%+ of supply", "plain": "The unlock adds a quarter or more to the tokens already trading."},
+    "weekDown":  {"label": "Fell 5%+ the week before", "plain": "The price dropped 5% or more over the 7 days before entry (day -14 to day -7): the market is already selling the unlock."},
 }
 
 
@@ -151,6 +155,9 @@ def facts_past(e, listed):
     p = e.get("path") or {}
     p30, pen = p.get("-30"), p.get(str(ENTRY))
     mom = ((1 + pen / 100) / (1 + p30 / 100) - 1) * 100 if p30 is not None and pen is not None else None
+    pu = e.get("pathUsd") or {}
+    u14, u7 = pu.get("-14"), pu.get(str(ENTRY))
+    wk = ((1 + u7 / 100) / (1 + u14 / 100) - 1) * 100 if u14 is not None and u7 is not None else None
     inv, team = share(e.get("recipientsMix"), "investors"), share(e.get("recipientsMix"), "team")
     lp, _ = launch_price(e["token"], listed) if e.get("priceSource", "").startswith("binance") else (None, None)
     px, _ = day_open(e["token"], entry - timedelta(days=1)) if lp else (None, None)
@@ -167,8 +174,10 @@ def facts_past(e, listed):
         "waited": (age >= 12) if age is not None else None,
         "thinFloat": (fl < 30) if fl is not None else None,
         "falling": (mom < 0) if mom is not None else None,
+        "vbig": (e.get("pctCirculating") or 0) >= 25,
+        "weekDown": (wk <= -5) if wk is not None else None,
     }
-    extra = {"momentum": round(mom, 1) if mom is not None else None, "vsLaunch": round((px / lp - 1) * 100, 1) if px and lp else None,
+    extra = {"weekMove": round(wk, 1) if wk is not None else None, "momentum": round(mom, 1) if mom is not None else None, "vsLaunch": round((px / lp - 1) * 100, 1) if px and lp else None,
              "monthsListed": age, "floatPct": fl}
     return f, extra
 
@@ -312,6 +321,8 @@ def main():
             px = days[max(days)]["c"]  # today's open not published yet: latest close
         a = days.get((ref_day - timedelta(days=23)).isoformat()) if days else None
         mom = (px / a["o"] - 1) * 100 if (px and a) else None
+        a7 = days.get((ref_day - timedelta(days=7)).isoformat()) if days else None
+        wk = (px / a7["o"] - 1) * 100 if (px and a7) else None   # provisional until the entry day
         adv = u["usdM"] / m["advUsdM"] if u.get("usdM") and m.get("advUsdM") and m.get("advBasis") and "24h" not in m["advBasis"].lower() else None
         age = months_between(lst, d0) if lst else None
         cpm = m.get("circPctOfMax")
@@ -328,6 +339,8 @@ def main():
             "waited": (age >= 12) if age is not None else None,
             "thinFloat": (cpm < 30) if isinstance(cpm, (int, float)) else None,
             "falling": (mom < 0) if mom is not None else None,
+            "vbig": (u.get("pctCirculating") or (u.get("pct") if u.get("pctBasis") == "of circulating" else 0) or 0) >= 25,
+            "weekDown": (wk <= -5) if wk is not None else None,
         }
         g, n = grade_of(f, base, boosters)
         keys = base + [k for k in boosters if k not in base]

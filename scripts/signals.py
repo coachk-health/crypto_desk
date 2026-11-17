@@ -182,7 +182,9 @@ def pump_checks(rules_hits):
             print(f"binance candles {r['token']}: {e}")
         a, z = px.get(end - timedelta(days=23)), px.get(end) or (list(px.values())[-1] if px else None)
         if a and z:
+            w = px.get(end - timedelta(days=7))
             out[r["token"]] = {"id": r["coingeckoId"], "rise": round((z / a - 1) * 100, 1), "to": end.isoformat(),
+                               "week": round((z / w - 1) * 100, 1) if w else None,  # move over the 7 days before
                                "ref": float(f"{z:.6g}"), "source": src}  # ref sets the entry zone, stop and target
         time.sleep(13)
     return out
