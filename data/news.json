@@ -1,248 +1,260 @@
 {
- "date": "2026-11-18",
- "updated": "2026-11-18T08:15:01Z",
- "headline": "Bitcoin is flat in the mid-$64,000s with fear still extreme, as US bitcoin funds saw fresh outflows and the Fed's minutes and Anthropic's record share sale both land overnight Bangkok time.",
- "market": {
-  "asOf": "Read at about 07:55-08:00 UTC Wed 18 Nov (about 15:00 Bangkok) on CoinGecko: BTC $64,581.44 (down 0.30% in 24 hours), ETH $1,809.53 (down 0.60%), SOL $75.12 (up 3.10%). Prices move fast; use the live prices on this page.",
-  "btc": {
-   "price": 64581.44,
-   "chg24h": -0.3
+  "date": "2026-11-18",
+  "updated": "2026-11-18T12:14:43Z",
+  "headline": "Bitcoin is holding in the mid-$64,000s with fear still extreme, as the Fed's October minutes land overnight Bangkok time and Anthropic's giant share sale is set to price above its range.",
+  "market": {
+    "asOf": "Read at about 11:55-11:58 UTC Wed 18 Nov (about 18:55 Bangkok): BTC $64,220 (down 1.09% in 24 hours) on CoinLore, $64,198.95 (down 1.15%) on Binance.US; ETH $1,800 (down 1.10%) on CoinLore; SOL $74.38 (up 2.30%) on CoinGecko. Prices move fast; use the live prices on this page.",
+    "btc": {
+      "price": 64220,
+      "chg24h": -1.09
+    },
+    "eth": {
+      "price": 1800,
+      "chg24h": -1.1
+    },
+    "sol": {
+      "price": 74.38,
+      "chg24h": 2.3
+    },
+    "fearGreed": "Extreme fear: alternative.me's Crypto Fear & Greed Index 12 (10 yesterday, 32 a week ago, 53 a month ago), read at about 11:55 UTC Wed 18 Nov."
   },
-  "eth": {
-   "price": 1809.53,
-   "chg24h": -0.6
-  },
-  "sol": {
-   "price": 75.12,
-   "chg24h": 3.1
-  },
-  "fearGreed": "Extreme fear: alternative.me's Crypto Fear & Greed Index 12 (10 yesterday, 32 a week ago, 53 a month ago), read at about 07:57 UTC Wed 18 Nov."
- },
- "stories": [
-  {
-   "title": "Bitcoin stuck below $65,000 as US bitcoin funds see outflows ahead of the Fed's minutes",
-   "mood": "bearish",
-   "summary": "Bitcoin is barely moving just under $65,000 while traders wait for minutes of the Fed's October meeting, out later today. US spot bitcoin funds lost money on Tuesday, and markets now see a December Fed rate rise as close to certain.",
-   "points": [
-    "Bitcoin was at $64,801.52, up 0.16%, in CoinDesk's live coverage on Wednesday morning.",
-    "US spot bitcoin ETFs had net outflows of $239.9 million on Tuesday 17 Nov, led by BlackRock's IBIT at $209.5 million; spot ether ETFs lost $29.1 million, per Farside data reported by MarsBit via KuCoin.",
-    "CME FedWatch showed a 96% chance of a 0.25-point December rate rise, to 4.25%, per CoinDesk. These are market bets, not a Fed decision.",
-    "Bitcoin fell 12.6% last week and closed below its 200-week average, about $68,000, per CoinDesk.",
-    "Minutes of the Fed's 27-28 October meeting are due at 2:00pm ET Wednesday (02:00 Thursday Bangkok), per CoinDesk."
-   ],
-   "sources": [
+  "stories": [
     {
-     "label": "CoinDesk: live updates 18 Nov",
-     "url": "https://www.coindesk.com/business/2026/11/18/live-updates-bitcoin-stuck-near-usd65-000-as-popular-basis-trade-returns-dry-up"
+      "title": "Bitcoin holds in the mid-$64,000s in 'extreme fear' as fund outflows and a likely Fed rate rise weigh",
+      "mood": "bearish",
+      "summary": "Bitcoin is still stuck in the range it has held since 15 November while traders wait for minutes of the Fed's October meeting, out tonight Bangkok time. US bitcoin funds lost money on Tuesday, stablecoin balances are shrinking, and markets see a December rate rise as close to certain.",
+      "points": [
+        "Bitcoin was back in 'its $64,000-$66,000 range' it has held since 15 Nov, above Sunday's 18-week low of $62,000, per Cryptonews at 11:43 UTC Wednesday.",
+        "US spot bitcoin ETFs had net outflows of $239.94 million on Tuesday 17 Nov, led by BlackRock's IBIT at $209.54 million; spot ether ETFs lost $29.1 million, per Farside data reported by FinanceFeeds.",
+        "CME FedWatch showed a 95.7% chance of a 0.25-point December rate rise and 4.3% for a 0.5-point rise, per FinanceFeeds. These are market bets, not a Fed decision.",
+        "Total stablecoin supply fell 5.3% in 30 days to $284.24 billion, the steepest drop since Terra in 2022, per CoinDesk. Less stablecoin money usually means less fresh buying power for crypto.",
+        "Minutes of the Fed's 27-28 October meeting are due at 2:00pm ET Wednesday (02:00 Thursday Bangkok), per the Federal Reserve's calendar."
+      ],
+      "sources": [
+        {
+          "label": "Cryptonews: bitcoin range, 18 Nov",
+          "url": "https://cryptonews.net/news/bitcoin/33770910/"
+        },
+        {
+          "label": "FinanceFeeds: ETF flows 17 Nov",
+          "url": "https://financefeeds.com/bitcoin-etfs-lose-239-9-million-as-blackrock-leads-renewed-crypto-etf-outflows/"
+        },
+        {
+          "label": "FinanceFeeds: bitcoin, Nvidia and Fed minutes",
+          "url": "https://financefeeds.com/bitcoin-price-nvidia-fed-minutes/"
+        },
+        {
+          "label": "CoinDesk: stablecoin supply falling",
+          "url": "https://www.coindesk.com/daybook-us/2026/11/17/crypto-s-casino-chips-are-disappearing-adding-to-pain-from-spot-etf-outflows"
+        },
+        {
+          "label": "Federal Reserve: November calendar",
+          "url": "https://www.federalreserve.gov/newsevents/2026-November.htm"
+        },
+        {
+          "label": "alternative.me: Crypto Fear & Greed Index",
+          "url": "https://alternative.me/crypto/fear-and-greed-index/"
+        }
+      ]
     },
     {
-     "label": "KuCoin (MarsBit/Farside): ETF flows 17 Nov",
-     "url": "https://www.kucoin.com/news/flash/us-bitcoin-and-ethereum-spot-etfs-recorded-net-outflows-of-239-9m-and-29-1m-on-nov-17"
+      "title": "Anthropic's giant share sale is set to price above its range tonight, with Nasdaq trading as ANT on Thursday",
+      "mood": "volatile",
+      "summary": "AI company Anthropic is due to set the price of its first public share sale on Wednesday, and reports say strong demand could push it above the top of its $70-78 range. Its shares are due to start trading on Nasdaq on Thursday.",
+      "points": [
+        "The Wall Street Journal reports Anthropic expects to price above $80 a share, which would value it at about $1.5-1.6 trillion, per Yahoo Finance.",
+        "The offer is 825 million shares plus a $26 billion private placement with Google, Amazon and Nvidia; up to 20% of the shares may go to individual investors, per Yahoo Finance.",
+        "At $78 a share the deal would raise about $90.4 billion including the placement, and orders came in about 7 times the shares on offer, per Seoul Economic Daily.",
+        "Shares are due to start trading on Nasdaq as ANT on Thursday 19 Nov. Seoul Economic Daily says trading starts at 9:30am ET (21:30 Bangkok); StockTitan says Nasdaq opens a new listing only when the lead bank is ready, so the first trade may come later."
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance: Anthropic eyes price above range",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-eyes-ipo-price-above-181809115.html"
+        },
+        {
+          "label": "Seoul Economic Daily: Anthropic IPO",
+          "url": "https://en.sedaily.com/world/2026/11/18/anthropic-ipo-price-set-to-top-range-as-big-money-piles-in"
+        },
+        {
+          "label": "StockTitan: ANT first trading day",
+          "url": "https://www.stocktitan.net/articles/anthropic-ipo-live-ant-first-trading-day-2026"
+        }
+      ]
     },
     {
-     "label": "CoinDesk: 200-week average",
-     "url": "https://www.coindesk.com/markets/2026/11/18/bitcoin-s-rare-12-crash-through-its-200-week-average-has-a-bullish-track-record"
-    },
-    {
-     "label": "CoinDesk: crypto week ahead",
-     "url": "https://www.coindesk.com/markets/2026/11/16/fomc-minutes-nvidia-earnings-russia-s-retail-crypto-rules-crypto-week-ahead"
+      "title": "Nvidia beats forecasts and raises its outlook, but says Jensen Huang will not return as CEO",
+      "mood": "volatile",
+      "summary": "Nvidia's sales came in well above forecasts and it guided higher, lifting its shares before the US open. But its board ruled out bringing back Jensen Huang, and the Wall Street Journal reports an SEC investigation.",
+      "points": [
+        "Quarterly revenue was $115.84 billion, up 103.2%, against $108.85 billion expected; adjusted earnings were $2.68 a share against $2.47, per Investing.com.",
+        "Nvidia guided next-quarter revenue to $130 billion, per Investing.com.",
+        "Chairman Harvey Jones said the board 'does not intend to reinstate Jensen as CEO'; Colette Kress is interim CEO and stays CFO, per Yahoo Finance.",
+        "The Wall Street Journal reports an SEC civil investigation; the SEC declined to comment, per Yahoo Finance.",
+        "Shares were up about 3% before the open and Nasdaq 100 futures were up 1%, per Cryptonews."
+      ],
+      "sources": [
+        {
+          "label": "Investing.com: Nvidia results",
+          "url": "https://www.investing.com/news/earnings/nvidia-quarterly-results-beat-estimates-5033943"
+        },
+        {
+          "label": "Yahoo Finance: Nvidia earnings and leadership",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-posts-strong-earnings-amid-215454858.html"
+        },
+        {
+          "label": "Cryptonews: markets 18 Nov",
+          "url": "https://cryptonews.net/news/bitcoin/33770910/"
+        }
+      ]
     }
-   ]
-  },
-  {
-   "title": "Anthropic's giant share sale prices today after orders reportedly came in about 7 times over",
-   "mood": "volatile",
-   "summary": "AI company Anthropic is due to set the price of its first public share sale on Wednesday, with Nasdaq trading as ANT from Thursday. Reports say demand was strong enough to price at or above the top of its range.",
-   "points": [
-    "Bloomberg reports Anthropic will price at or above the top of its $70-78 range after orders of close to 7 times the shares on offer; the Wall Street Journal reports it could go above $80, per PYMNTS.",
-    "At $78 it would be valued near $1.4 trillion and raise $90.4 billion, made of a $64.4 billion base offering and a $26 billion private placement, per PYMNTS.",
-    "The order book was set to close at 4:00pm ET, per KuCoin.",
-    "Nasdaq has confirmed Anthropic's first trading day as Thursday 19 Nov on the Nasdaq Global Select Market, per its trader notice."
-   ],
-   "sources": [
+  ],
+  "briefs": [
     {
-     "label": "PYMNTS: Anthropic eyes higher price",
-     "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-eyes-higher-ipo-price-as-investors-scramble-for-shares/"
+      "title": "DBS and Circle open 24/7 USDC minting in Asia",
+      "summary": "Eligible DBS institutional clients can now swap dollars for USDC and back at any hour, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-18-dbs-circle-usdc-asia-442970"
     },
     {
-     "label": "KuCoin: order book closes",
-     "url": "https://www.kucoin.com/news/flash/anthropic-ipo-order-book-closes-at-4-p-m-et-deal-oversubscribed-six-times"
+      "title": "Etherscan warns of phishing after support-desk break-in attempt",
+      "summary": "Someone tried to break into Etherscan's support ticket system; it has not said whether data was exposed and says staff will never ask for a private key or seed phrase, per TokenPost.",
+      "url": "https://www.tokenpost.com/news/technology/60283"
     },
     {
-     "label": "Nasdaq Trader: listing notice",
-     "url": "https://nasdaqtrader.com/TraderNews.aspx?id=DTN2026-28"
+      "title": "Polygon weighs buying banking licenses",
+      "summary": "Co-founder Sandeep Nailwal says Polygon plans to spend about $50M-$100M per acquisition on banking and payments licenses in several regions, per TokenPost.",
+      "url": "https://www.tokenpost.com/news/business/60280"
+    },
+    {
+      "title": "XRP and other altcoin funds also saw outflows",
+      "summary": "On 17 Nov, XRP ETFs lost $6.14M, Hyperliquid $1.53M and Chainlink $1.33M, per FinanceFeeds.",
+      "url": "https://financefeeds.com/bitcoin-etfs-lose-239-9-million-as-blackrock-leads-renewed-crypto-etf-outflows/"
+    },
+    {
+      "title": "Judge clears the 'MEV brothers' in $25M Ethereum case",
+      "summary": "US District Judge Jessica Clarke acquitted Anton and James Peraire-Bueno of fraud and money-laundering conspiracy over an alleged $25M exploit of trading bots, ending the first US criminal case over MEV, per CoinDesk.",
+      "url": "https://www.coindesk.com/policy/2026/11/18/u-s-judge-says-ethereum-has-no-terms-of-use-clears-mit-brothers-of-usd25-million-fraud"
+    },
+    {
+      "title": "CFTC orders Kalshi to halt Trump 'mention' markets",
+      "summary": "The CFTC ordered Kalshi to stop listing contracts on what President Trump will say and opened proceedings; Kalshi says it is complying, per CoinDesk.",
+      "url": "https://www.coindesk.com/policy/2026/11/17/predictions-platform-kalshi-complies-with-order-to-halt-trump-mention-contracts"
+    },
+    {
+      "title": "Coinbase crypto-backed loans now in all 50 US states",
+      "summary": "New York was the last state added; users can borrow USDC against BTC, ETH or SOL, and the product has made over $3.4B in loans since January 2025, per The Block.",
+      "url": "https://www.theblock.co/newsletters/the-daily/2026-11-18-ark-invest-crypto-stocks-nvidia-coinbase-loans-new-york-crypto-news-442902"
+    },
+    {
+      "title": "Solana Foundation takes majority stake in CoinGecko",
+      "summary": "The price was not disclosed; the foundation plans to add Solana-powered trading to CoinGecko's site and app, which has 18M registered users, per CoinDesk.",
+      "url": "https://www.coindesk.com/business/2026/11/17/solana-foundation-takes-majority-stake-in-crypto-data-provider-coingecko"
     }
-   ]
-  },
-  {
-   "title": "Nvidia beats and raises its outlook, but an SEC probe report and leadership turmoil cloud the picture",
-   "mood": "volatile",
-   "summary": "Nvidia reported sales well above forecasts, gave guidance ahead of analysts' estimates and added $150 billion to its share buyback. Its shares rose after hours, but a report of an SEC investigation and the exit of Jensen Huang keep the risk high.",
-   "points": [
-    "Revenue was $115.8 billion against $108.8 billion expected, and earnings $2.68 a share against $2.47, per CoinDesk.",
-    "Data center revenue was $107.6 billion, per CoinDesk.",
-    "Nvidia guided next quarter's revenue to $127.4-132.6 billion, against the $125.3 billion analysts expected, per CoinDesk.",
-    "The Wall Street Journal reported the SEC opened a civil probe into whether Nvidia's disclosures misled investors, per TechCrunch.",
-    "The company added $150 billion to its buyback authorization and shares rose more than 4% after hours, per CoinDesk."
-   ],
-   "sources": [
+  ],
+  "calendar": [
     {
-     "label": "CoinDesk: Nvidia tops estimates",
-     "url": "https://www.coindesk.com/markets/2026/11/17/nvidia-tops-estimates-issues-strong-guidance-adds-usd150-billion-to-buyback-authorization"
+      "et": "Wed 18 Nov · 8:00-8:30am",
+      "bkk": "Wed 18 · 20:00-20:30",
+      "event": "CoinShares and Bullish Q3 results; US housing starts",
+      "impact": "neutral",
+      "key": false,
+      "note": "CoinShares webcast at 8:00am ET and Bullish call at 8:30am ET, per their announcements on Finviz. Housing starts at 8:30am ET: forecast 1.27M (Finviz) or 1.240M (consensus in TD Economics' table), prior 1.221M."
     },
     {
-     "label": "TechCrunch: SEC reportedly investigating Nvidia",
-     "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/"
+      "et": "Wed 18 Nov · 2:00pm",
+      "bkk": "Thu 19 · 02:00",
+      "event": "Fed minutes from the October meeting",
+      "impact": "volatile",
+      "key": true,
+      "note": "Minutes of the 27-28 October meeting, per the Federal Reserve. Fed's Barr speaks at 1:35pm ET, Williams at 2:30pm ET and Kashkari at 4:15pm ET, per Finviz and TD Economics."
+    },
+    {
+      "et": "Wed 18 Nov (evening) – Thu 19 Nov",
+      "bkk": "Thu 19 Nov",
+      "event": "Anthropic share sale priced, then first Nasdaq trading as ANT",
+      "impact": "volatile",
+      "key": true,
+      "note": "Range $70-78; the WSJ reports it may price above $80, per Yahoo Finance. First trading Thursday: 9:30am ET (21:30 Bangkok) per Seoul Economic Daily, though StockTitan notes the first trade comes when the lead bank is ready."
+    },
+    {
+      "et": "Thu 19 Nov · 8:30am",
+      "bkk": "Thu 19 · 20:30",
+      "event": "US jobless claims and Philly Fed survey",
+      "impact": "neutral",
+      "key": false,
+      "note": "Claims forecast 196,000 (Finviz) or 197,000 (consensus in TD Economics' table), prior 200,000; Philly Fed forecast 19.2, prior 20.9, per Finviz. Fed's Hammack speaks at 8:50am ET, per Finviz; Vice Chair Jefferson at 9:25am ET, per the Federal Reserve."
+    },
+    {
+      "et": "Thu 19 Nov · 10:00am",
+      "bkk": "Thu 19 · 22:00",
+      "event": "Senate hearing on SEC nominees",
+      "impact": "neutral",
+      "key": false,
+      "note": "Kristin N. Johnson and Steven Levine, nominated to the SEC, appear before the Senate Banking Committee with other nominees, per the committee's page."
+    },
+    {
+      "et": "Thu 19 Nov (evening) – Wed 25 Nov",
+      "bkk": "Fri 20 – Wed 25 Nov",
+      "event": "Token unlocks: KAITO, ZRO, ARIA, AKE, MBG, SOON, MON, SOSO, XPL, H",
+      "impact": "bearish",
+      "key": false,
+      "note": "Unlock dates are UTC. KAITO and ZRO on Friday 20, ARIA and AKE on Saturday 21, MBG on Sunday 22, SOON on Monday 23, MON (the largest, about $252M) and SOSO on Tuesday 24, XPL and H on Wednesday 25 November. KAITO's 00:00 UTC unlock is 7:00pm ET Thursday. See the unlock table on this page for sizes, dates and confidence. (Dates from this desk's unlock data.)"
+    },
+    {
+      "et": "Fri 20 Nov · 3:00am",
+      "bkk": "Fri 20 · 15:00",
+      "event": "Bitcoin options expiry on Deribit",
+      "impact": "volatile",
+      "key": false,
+      "note": "About 28,300 BTC, roughly $1.8B, of options expire, per CryptoTicker. The bigger monthly expiry, about $5.7B, is Fri 27 Nov."
+    },
+    {
+      "et": "Fri 20 Nov · 10:00am",
+      "bkk": "Fri 20 · 22:00",
+      "event": "University of Michigan consumer sentiment (Nov, final)",
+      "impact": "neutral",
+      "key": false,
+      "note": "Forecast 52, per Finviz; the preliminary November reading was 51.0, per StockAnalysis. Fed's Waller speaks at 8:25am ET and Cook at 12:15pm ET (00:15 Sat Bangkok), per the Federal Reserve."
+    },
+    {
+      "et": "Tue 24 Nov · 10:00am",
+      "bkk": "Tue 24 · 22:00",
+      "event": "Conference Board consumer confidence (Nov)",
+      "impact": "neutral",
+      "key": false,
+      "note": "Prior 91.7, per FinanceCalendar. Dell and Workday report after the US close, per IfYouSpent."
+    },
+    {
+      "et": "Wed 25 Nov · 8:30am",
+      "bkk": "Wed 25 · 20:30",
+      "event": "US GDP (Q3 second estimate) and PCE inflation (Oct)",
+      "impact": "volatile",
+      "key": true,
+      "note": "GDP prior 3.4% (the first estimate); PCE prior 3.6% a year (core 3.1%); no consensus yet, per FinanceCalendar. Fed Beige Book at 2:00pm ET, per the Federal Reserve."
+    },
+    {
+      "et": "Thu 26 – Fri 27 Nov",
+      "bkk": "Thu 26 – Sat 28 Nov",
+      "event": "Thanksgiving: US stock market closed, then early close",
+      "impact": "neutral",
+      "key": false,
+      "note": "Stocks closed Thursday and close at 1:00pm ET Friday, per Kiplinger."
+    },
+    {
+      "et": "Tue 8 – Wed 9 Dec",
+      "bkk": "Tue 8 – Thu 10 Dec",
+      "event": "Next Fed meeting and rate decision",
+      "impact": "volatile",
+      "key": true,
+      "note": "Decision expected 2:00pm ET Wed 9 Dec (02:00 Thu 10 Dec Bangkok). CME FedWatch put the odds at 95.7% for a 0.25-point rise, per FinanceFeeds."
     }
-   ]
+  ],
+  "breaking": [],
+  "verification": {
+    "checkedAt": "2026-11-18T12:14:43Z",
+    "claimsChecked": 149,
+    "claimsRemoved": 7,
+    "rounds": 2,
+    "method": "Independent source check: every claim re-opened at its cited URL"
   }
- ],
- "briefs": [
-  {
-   "title": "Judge clears the 'MEV brothers' in $25M Ethereum case",
-   "summary": "US District Judge Jessica Clarke acquitted Anton and James Peraire-Bueno of fraud and money-laundering conspiracy over an alleged $25M exploit of trading bots, ending the first US criminal case over MEV, per CoinDesk.",
-   "url": "https://www.coindesk.com/policy/2026/11/18/u-s-judge-says-ethereum-has-no-terms-of-use-clears-mit-brothers-of-usd25-million-fraud"
-  },
-  {
-   "title": "CFTC orders Kalshi to halt Trump 'mention' markets",
-   "summary": "The CFTC ordered Kalshi to stop listing contracts on what President Trump will say and opened proceedings; Kalshi says it is complying, per CoinDesk.",
-   "url": "https://www.coindesk.com/policy/2026/11/17/predictions-platform-kalshi-complies-with-order-to-halt-trump-mention-contracts"
-  },
-  {
-   "title": "Coinbase crypto-backed loans now in all 50 US states",
-   "summary": "New York was the last state added; users can borrow USDC against BTC, ETH or SOL, and the product has made over $3.4B in loans since January 2025, per The Block.",
-   "url": "https://www.theblock.co/newsletters/the-daily/2026-11-18-ark-invest-crypto-stocks-nvidia-coinbase-loans-new-york-crypto-news-442902"
-  },
-  {
-   "title": "Binance hacker wallets wake up",
-   "summary": "About 74,880 ETH (about $136.8M) moved after two weeks of silence; Elliptic says about $2.85B of the roughly $6.43B 29 Oct theft is frozen or seized, per Decrypt.",
-   "url": "https://decrypt.co/383446/binance-hack-wallets-move-ethereum-after-two-weeks"
-  },
-  {
-   "title": "Solana Foundation takes majority stake in CoinGecko",
-   "summary": "The price was not disclosed; the foundation plans to add Solana-powered trading to CoinGecko's site and app, which has 18M registered users, per CoinDesk.",
-   "url": "https://www.coindesk.com/business/2026/11/17/solana-foundation-takes-majority-stake-in-crypto-data-provider-coingecko"
-  },
-  {
-   "title": "XRP whales moved about $270M, but not to exchanges",
-   "summary": "281M XRP went into two non-exchange wallets during the selloff, which CoinDesk reads as a custody move rather than selling.",
-   "url": "https://www.coindesk.com/markets/2026/11/18/xrp-whales-moved-usd270-million-during-the-selloff-the-coins-didn-t-go-to-exchanges"
-  },
-  {
-   "title": "Tampered hardware wallets reported in Dubai",
-   "summary": "Two owners report thefts from Ledger devices, one bought at an authorized Dubai retailer, including 507,000 USDT, per Cointelegraph. Buy hardware wallets direct from the maker where you can.",
-   "url": "https://cointelegraph.com/news/what-happened-in-crypto-today"
-  },
-  {
-   "title": "Ark buys crypto stocks, sells Nvidia",
-   "summary": "On Monday Ark bought about $23M of Block, $10.4M of Circle and $6.4M of Coinbase shares and sold about $84.8M of Nvidia, per The Block.",
-   "url": "https://www.theblock.co/newsletters/the-daily/2026-11-18-ark-invest-crypto-stocks-nvidia-coinbase-loans-new-york-crypto-news-442902"
-  }
- ],
- "calendar": [
-  {
-   "et": "Wed 18 Nov · 8:00-8:30am",
-   "bkk": "Wed 18 · 20:00-20:30",
-   "event": "CoinShares and Bullish Q3 results; US housing starts",
-   "impact": "neutral",
-   "key": false,
-   "note": "CoinShares call at 8:00am ET and Bullish call at 8:30am ET, per their announcements on Finviz. Housing starts at 8:30am ET: forecast 1.27M (Finviz) or 1.24M (consensus in TD Economics' table), prior 1.221M."
-  },
-  {
-   "et": "Wed 18 Nov · 2:00pm",
-   "bkk": "Thu 19 · 02:00",
-   "event": "Fed minutes from the October meeting",
-   "impact": "volatile",
-   "key": true,
-   "note": "Minutes of the 27-28 October meeting. Fed's Barr speaks at 1:35pm ET, Williams at 2:30pm ET and Kashkari at 4:15pm ET, per Finviz and TD Economics."
-  },
-  {
-   "et": "Wed 18 Nov – Thu 19 Nov",
-   "bkk": "Wed 18 – Thu 19 Nov",
-   "event": "Anthropic share sale priced, then first Nasdaq trading as ANT",
-   "impact": "volatile",
-   "key": true,
-   "note": "Pricing Wednesday, range $70-78, per KuCoin; first trading day Thursday 19 Nov, per Nasdaq's trader notice (no time given; the regular open is 9:30am ET, 21:30 Bangkok)."
-  },
-  {
-   "et": "Thu 19 Nov · 8:30am",
-   "bkk": "Thu 19 · 20:30",
-   "event": "US jobless claims and Philly Fed survey",
-   "impact": "neutral",
-   "key": false,
-   "note": "Claims forecast 196,000 (Finviz) or 197,000 (consensus in TD Economics' table), prior 200,000; Philly Fed forecast 19.2, prior 20.9, per Finviz. Fed's Goolsbee, Barr, Barkin and Paulson speak later in the day."
-  },
-  {
-   "et": "Thu 19 Nov · 10:00am",
-   "bkk": "Thu 19 · 22:00",
-   "event": "Senate hearing on SEC nominees",
-   "impact": "neutral",
-   "key": false,
-   "note": "Kristin Johnson and Steven Levine before the Senate Banking Committee, per the committee's page."
-  },
-  {
-   "et": "Thu 19 Nov (evening) – Wed 25 Nov",
-   "bkk": "Fri 20 – Wed 25 Nov",
-   "event": "Token unlocks: KAITO, ZRO, ARIA, AKE, MBG, SOON, MON, SOSO, XPL, H",
-   "impact": "bearish",
-   "key": false,
-   "note": "Unlock dates are UTC. KAITO and ZRO on Friday 20, ARIA and AKE on Saturday 21, MBG on Sunday 22, SOON on Monday 23, MON (the largest, about $252M) and SOSO on Tuesday 24, XPL and H on Wednesday 25 November. KAITO's 00:00 UTC unlock is 7:00pm ET Thursday. See the unlock table on this page for sizes, dates and confidence. (Dates from this desk's unlock data.)"
-  },
-  {
-   "et": "Fri 20 Nov · 3:00am",
-   "bkk": "Fri 20 · 15:00",
-   "event": "Weekly bitcoin options expiry on Deribit",
-   "impact": "volatile",
-   "key": false,
-   "note": "About 28,300 BTC, roughly $1.8B, of options expire at 08:00 UTC, per CryptoTicker. The bigger monthly expiry, about $5.7B, is Fri 27 Nov."
-  },
-  {
-   "et": "Fri 20 Nov · 10:00am",
-   "bkk": "Fri 20 · 22:00",
-   "event": "University of Michigan consumer sentiment (Nov, final)",
-   "impact": "neutral",
-   "key": false,
-   "note": "Forecast 52 per Finviz, which lists the prior as 48.0; StockAnalysis reports the preliminary November reading as 51.0. Fed's Waller speaks at 8:25am ET and Cook at 12:15pm ET (00:15 Sat Bangkok), per Finviz and TD Economics."
-  },
-  {
-   "et": "Tue 24 Nov · 10:00am",
-   "bkk": "Tue 24 · 22:00",
-   "event": "Conference Board consumer confidence (Nov)",
-   "impact": "neutral",
-   "key": false,
-   "note": "Prior 91.7, per Finviz."
-  },
-  {
-   "et": "Wed 25 Nov · 8:30am",
-   "bkk": "Wed 25 · 20:30",
-   "event": "US GDP (Q3 second estimate), PCE inflation (Oct), jobless claims",
-   "impact": "volatile",
-   "key": true,
-   "note": "GDP forecast 3.4%, per Finviz. PCE prior 3.6% a year (core 3.1%); no consensus yet. Claims move to Wednesday for Thanksgiving. Fed Beige Book at 2:00pm ET, per Finviz."
-  },
-  {
-   "et": "Thu 26 – Fri 27 Nov",
-   "bkk": "Thu 26 – Sat 28 Nov",
-   "event": "Thanksgiving: US stock market closed, then early close",
-   "impact": "neutral",
-   "key": false,
-   "note": "NYSE closed Thursday and closes at 1:00pm ET Friday, per NYSE."
-  },
-  {
-   "et": "Tue 8 – Wed 9 Dec",
-   "bkk": "Tue 8 – Thu 10 Dec",
-   "event": "Next Fed meeting and rate decision",
-   "impact": "volatile",
-   "key": true,
-   "note": "Decision at 2:00pm ET Wed 9 Dec (02:00 Thu 10 Dec Bangkok), press conference 2:30pm ET, per the Federal Reserve. CME FedWatch put the odds at 96% for a 0.25-point rise, per CoinDesk."
-  }
- ],
- "breaking": [],
- "verification": {
-  "checkedAt": "2026-11-18T08:15:01Z",
-  "claimsChecked": 139,
-  "claimsRemoved": 16,
-  "rounds": 2,
-  "method": "Independent source check: every claim re-opened at its cited URL"
- }
 }
