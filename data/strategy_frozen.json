@@ -1,0 +1,21 @@
+{
+ "frozenAt": "2026-11-19",
+ "purpose": "Pre-registered rules for the unlock short. They were chosen on unlocks from 17 Nov 2025 to 2 Nov 2026. They are frozen here BEFORE being tested on older unlocks (Nov 2023 to Nov 2025) and on new tokens, so the test cannot be tuned to its own results. Do not edit; any change gets a new file and a new date.",
+ "setup": {
+  "unlock": "The token's first insider unlock (team or investors receive tokens for the first time), OR a single-day unlock adding 25% or more to circulating supply.",
+  "tradable": "Token trades as a Binance USDT perpetual.",
+  "skipPump": "Skip if the price at entry is 30% or more above the price 30 days before the unlock (day -30 to day -7).",
+  "alreadyFalling": "Take only if the price at entry is 5% or more below the price 7 days earlier (day -14 to day -7)."
+ },
+ "trade": {
+  "entry": "Short at the 00:00 UTC daily open 7 days before the unlock (day -7).",
+  "stopPct": 12,
+  "targetPct": 45,
+  "coverDay": 30,
+  "costs": "0.10% fees round trip, 0.03% funding per day held, stops fill 0.5% worse.",
+  "dailyCandleRule": "A day whose high reaches the stop counts as stopped, even if its low also reached the target."
+ },
+ "sizing": "Risk 1% of the account per trade: position = 1% of account / 12.6%.",
+ "backtestOnChoiceData": {"trades": 29, "won": "72%", "totalR": 36.1, "note": "45% target / day +30 version; the 35% / day +14 version made +28.8R."},
+ "passMark": "The rules pass the out-of-sample test if trades on unseen data average above +0.25R with the token-resampled 90% range above zero. Below that, they are not proven."
+}
