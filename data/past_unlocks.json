@@ -32041,6 +32041,62 @@
       }
      ],
      "gaps": "No news item found; tokenomics.com shows a past event on 17 Sep 2026 (in its price-impact table)."
+    },
+    {
+     "date": "2026-11-17",
+     "timeUTC": "00:00",
+     "amountTokens": 722962963,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.608,
+      "investors": 0,
+      "community": 0,
+      "ecosystem": 0,
+      "other": 0.392
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com PENGU unlocks (read 17 Nov 2026): next unlock 17 Nov 2026, 722,962,963 PENGU, 0.8% of supply, Insiders 100%; previous 17 Oct 2026; TGE 16 Dec 2024",
+       "url": "https://app.tokenomics.com/tokenomics/pudgy-penguins/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "KuCoin News weekly unlock list (15 Nov 2026, Tokenomist data): PENGU 17 Nov 2026 00:00 UTC, $3.49M, 1.12% of market value",
+       "url": "https://www.kucoin.com/news/flash/23-altcoins-to-face-major-token-unlocks-this-week",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "time",
+        "amount"
+       ]
+      },
+      {
+       "label": "KuCoin News (23 May 2026): monthly unlock 712.4M PENGU = 433.1M current/future teams + 279.3M company; Arkham shows team wallets distributed ~$3.4M that week",
+       "url": "https://www.kucoin.com/news/flash/pudgy-penguins-down-14-after-712m-token-unlock",
+       "kind": "news",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinGecko PENGU page (read 17 Nov 2026): market data, API ID pudgy-penguins; unlock widget empty",
+       "url": "https://coingecko.com/coins/pudgy-penguins",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "Moderate",
+      "points": 1.91,
+      "confidence": 67,
+      "scoredAt": "2026-11-18T08:15:01Z"
+     }
     }
    ],
    "gaps": "Settled as monthly steps on the 17th, not continuous: DropsTab, tokenomics.com and the Tokenomist feed (KuCoin) all show monthly tranches, and CoinDesk/DNTV reported a discrete ~703M on-chain release and dispersal on 17 Apr 2026. DefiLlama's daily-stream model is the outlier. 17 Oct 2026 falls after the window. Months backed by news: Apr, May (scheduled), Aug. Dec-Mar and Jun, Jul, Sep rest on the aggregators only. Size disagreement: 703.92M (DropsTab, CoinDesk) vs 722.96M (tokenomics.com) vs 712.4M (AMBCrypto); 703.92M is used. Recipients: team vs Igloo Inc. (parent company, put in 'other') per DropsTab's split. No official Pudgy Penguins vesting document was found. No time published except Aug (00:00 UTC).",
@@ -46628,6 +46684,76 @@
       }
      ],
      "gaps": "Recipient split is pro-rata to the allocation sizes (tokenomics.com 59.4/40.6 = official 4.155B:2.845B); no source gives the actual per-tranche split, and DefiLlama assumes ~52/48. Time of day conflicts across sources (08:00 UTC on the 17th vs 16:00 UTC on the 16th)."
+    },
+    {
+     "date": "2026-11-17",
+     "timeUTC": "10:00",
+     "amountTokens": 173080000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.406,
+      "investors": 0.594,
+      "community": 0,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko ZKsync page, Tokenomist widget (read 17 Nov 2026, '1 days away'): 17 Nov, 173.08M ZK = Investors 89.26M + Team 83.81M; API ID zksync",
+       "url": "https://coingecko.com/coins/zksync",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "KuCoin News weekly list (15 Nov 2026, Tokenomist data, same feed as widget): ZK 17 Nov 2026 10:00 UTC, $1.40M, 1.52% of market value",
+       "url": "https://www.kucoin.com/news/flash/23-altcoins-to-face-major-token-unlocks-this-week",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "time",
+        "amount"
+       ]
+      },
+      {
+       "label": "tokenomics.com ZKsync unlocks: 17 Nov 2026, 173,444,425 ZK, Private Investors 59.4% / Insiders 40.6%; previous 17 Oct 2026; TGE 17 Jun 2024",
+       "url": "https://app.tokenomics.com/tokenomics/zksync/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "DefiLlama zkSync Era unlocks: 16 Nov 2026 16:02 UTC, 173.04M ZK = Investors 89.24M + Team 83.79M (assumes equal proportions); 1.57% of 11.02B float",
+       "url": "https://defillama.com/unlocks/zksync-era",
+       "kind": "aggregator",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Blockworks Token Transparency filing (project-submitted): max ~0.826% (~173.4M ZK) per month to Jun 2028; ~70.5M team tokens per month; rounds Seed $2M/169.2M ZK, A $6M/510.0M, B $50M/1.196B, C $200M/2.279B; no prior OTC or discounted MM sales",
+       "url": "https://blockworks.com/token-transparency/filing/zksync",
+       "kind": "primary",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Moderate",
+      "points": 1.66,
+      "confidence": 80,
+      "scoredAt": "2026-11-18T08:15:01Z"
+     }
     }
    ],
    "gaps": "Official docs give only month and year, so the day (17th) comes from trackers. Time of day is inconsistent: 08:00 UTC on the 17th (Nov 2025, Jan 2026) vs 16:00 UTC on the 16th (ChainCatcher Jun 2026, DefiLlama Nov 2026). Docs say 'maximum 0.8%' monthly (168M), while the derived and tracked figure is 173.44M (0.83%). Ecosystem Initiatives and Token Assembly are minted on demand with no schedule (DefiLlama), so they are not events. The 17 Oct 2026 tranche falls outside the window. coingeckoId confirmed from CoinGecko URLs (coingecko.com/en/coins/zksync).",
