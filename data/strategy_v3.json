@@ -1,0 +1,22 @@
+{
+ "version": "v3",
+ "frozenOn": "2026-11-19",
+ "why": "Rules frozen before live trading so the live record is a clean test. Do not change them after seeing live trades; any change becomes v4 with a new date.",
+ "setups": [
+  {"name": "Big unlock", "rule": "the unlock adds 25% or more of circulating supply"},
+  {"name": "First insider unlock + falling open interest", "rule": "the token's first-ever insider unlock (under 25%), and Binance futures open interest fell 10% or more from day -15 to day -8"}
+ ],
+ "skipIf": [
+  "price up 30% or more from the open 30 days before the unlock to the open on entry day (day -7)",
+  "the token has no Binance USDT perpetual",
+  "the unlock is not confirmed (date, size or recipients unconfirmed by the project or two independent sources)"
+ ],
+ "trade": {"entry": "short at the 00:00 UTC open, 7 days before the unlock", "stopPct": 12, "targetPct": 35, "coverDay": 14,
+           "risk": "1% of the account per trade (position = 1% / 12.6%)"},
+ "costsAssumed": {"feesPct": 0.10, "fundingPctPerDay": 0.03, "stopSlippagePct": 0.5},
+ "backtest": {"trades": 56, "wonPct": 62, "avgR": 0.75, "totalR": 42.0, "range90": [0.42, 1.08],
+              "buildYear": {"trades": 38, "wonPct": 61, "avgR": 0.66}, "unseen2023to25": {"trades": 18, "wonPct": 67, "avgR": 0.93},
+              "account1pct": {"growth": 1.51, "worstDrawdownPct": -3.9, "longestLosingRun": 3},
+              "source": "research/cs5.py, research/v3_trades.json"},
+ "passMark": "After 30 live trades: average above +0.25R. Until then, treat it as a test."
+}

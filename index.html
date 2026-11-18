@@ -242,6 +242,26 @@ footer { margin-top: 48px; padding-top: 18px; border-top: 2px solid var(--line);
 .breaking span.s { grid-column: 2; color: var(--muted); font-size: 15px; }
 html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; background: var(--night); }
 .scene-frame { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+
+/* v3 picks */
+.pk-rule { background: var(--panel); border-radius: 12px; padding: 14px 18px; margin: 0 0 18px; font-size: 15px; }
+.pk-rule b { color: var(--text); }
+.pk-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 0 0 22px; }
+.pk-tile { background: var(--panel); border-radius: 12px; padding: 12px 14px; }
+.pk-tile .k { font-size: 12.5px; color: var(--muted); }
+.pk-tile .v { font-size: 22px; font-weight: 700; margin-top: 2px; }
+.pk-tile .n { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+.pk-list { display: grid; gap: 10px; margin: 0 0 22px; }
+.pk { background: var(--panel); border-radius: 12px; padding: 14px 18px; border-left: 4px solid var(--line); }
+.pk.take { border-left-color: var(--bull); } .pk.watch { border-left-color: var(--sun); } .pk.skip { opacity: .75; }
+.pk .top { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.pk .tok { font-size: 19px; font-weight: 700; }
+.pk .call { font-size: 12.5px; font-weight: 700; padding: 2px 8px; border-radius: 6px; }
+.pk.take .call { color: #08140F; background: var(--bull); } .pk.watch .call { color: #1A1406; background: var(--sun); } .pk.skip .call { color: var(--muted); background: rgba(255,255,255,.06); }
+.pk .meta { font-size: 13.5px; color: var(--muted); margin-top: 4px; }
+.pk .lv { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 8px; font-size: 15px; }
+.pk .lv span { color: var(--muted); font-size: 12.5px; display: block; }
+.pk .why { font-size: 14px; margin-top: 6px; }
 </style>
 </head>
 <body>
@@ -252,7 +272,8 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       <div class="prices" id="prices" aria-live="polite"></div>
     </div>
     <nav class="tabs" role="tablist" aria-label="Sections">
-      <button role="tab" data-tab="news" aria-selected="true">Today</button>
+      <button role="tab" data-tab="picks" aria-selected="true">Picks</button>
+      <button role="tab" data-tab="news" aria-selected="false">Today</button>
       <button role="tab" data-tab="unlocks" aria-selected="false">Token unlocks</button>
       <button role="tab" data-tab="past" aria-selected="false">Past unlocks</button>
       <button role="tab" data-tab="signals" aria-selected="false">Trade signals</button>
@@ -283,8 +304,8 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
   if (sceneRoute()) return;
   const { el } = Desk;
   const main = document.getElementById('main');
-  let D, P, tab = 'news', uRange = 30, uView = 'upcoming', sortKey = 'revenueUsdM', open = null, cdTimer;
-  try { const h = location.hash.slice(1); if (['news', 'unlocks', 'past', 'signals', 'log', 'week', 'supply'].includes(h)) tab = h; } catch (e) {}
+  let D, P, tab = 'picks', uRange = 30, uView = 'upcoming', sortKey = 'revenueUsdM', open = null, cdTimer;
+  try { const h = location.hash.slice(1); if (['picks', 'news', 'unlocks', 'past', 'signals', 'log', 'week', 'supply'].includes(h)) tab = h; } catch (e) {}
 
   function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : ''; }
 
@@ -337,6 +358,69 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       (n.briefs || []).length ? el('h2', { text: 'Also today' }) : null,
       el('div', { class: 'briefs' }, (n.briefs || []).map(b => el('a', { href: b.url, target: '_blank', rel: 'noopener' }, [el('b', { text: b.title }), el('span', { text: b.summary })])))
     ]);
+  }
+
+
+  function picks() {
+    const K = D.picks;
+    if (!K) return el('p', { class: 'state', text: 'The picks file isn’t ready yet. It updates twice a day.' });
+    const R = K.rules, bt = R.backtest, L = K.live;
+    const d = s => s ? new Date(s + 'T00:00:00Z').toLocaleDateString(undefined, { day: 'numeric', month: 'short', timeZone: 'UTC' }) : '';
+    const px = v => v == null ? '–' : '$' + (v >= 1 ? v.toLocaleString(undefined, { maximumFractionDigits: 4 }) : v.toPrecision(4));
+    const r2 = v => (v > 0 ? '+' : '') + v.toFixed(2) + 'R';
+    const tile = (k, v, n) => el('div', { class: 'pk-tile' }, [el('div', { class: 'k', text: k }), el('div', { class: 'v', text: v }), n ? el('div', { class: 'n', text: n }) : null]);
+    const today = new Date().toISOString().slice(0, 10);
+    const log = (K.log || []).filter(c => c.call === 'TAKE');
+    const openT = log.filter(c => (c.result || {}).status !== 'closed');
+    const card = (p, res) => {
+      const cls = p.call === 'TAKE' ? 'take' : p.call === 'WATCH' ? 'watch' : 'skip';
+      const lbl = p.call === 'TAKE' ? (res && res.status === 'closed' ? 'CLOSED' : 'SHORT') : p.call;
+      const size = p.pctCirculating != null ? Math.round(p.pctCirculating) + '% of circulating' : 'size not published';
+      const meta = p.setup + ' · ' + size + ' · unlock ' + d(p.unlockDate) + ' · entry ' + d(p.entryDate) + ' 00:00 UTC · out by ' + d(p.coverDate);
+      const kids = [el('div', { class: 'top' }, [el('span', { class: 'tok', text: p.token }), el('span', { class: 'call', text: lbl }),
+        p.lateCall ? el('span', { class: 'small', text: 'called after entry day, not counted in the live record' }) : null]),
+        el('div', { class: 'meta', text: meta })];
+      if (p.call === 'TAKE') {
+        kids.push(el('div', { class: 'lv' }, [
+          el('div', null, [el('span', { text: 'Short at' }), p.entry ? px(p.entry) : 'entry-day open (fills in tomorrow)']),
+          el('div', null, [el('span', { text: 'Stop (+12%)' }), px(p.stop)]),
+          el('div', null, [el('span', { text: 'Target (−35%)' }), px(p.target)]),
+          res ? el('div', null, [el('span', { text: 'Result' }), res.status === 'closed' ? r2(res.R) + ' (' + ({ stop: 'stopped', target: 'target hit', time: 'closed day +14' }[res.exit] || res.exit) + ')'
+            : (res.openPct != null ? 'short ' + (res.openPct > 0 ? 'up ' : 'down ') + Math.abs(res.openPct) + '% so far (' + d(res.asOf) + ' close)' : 'open')]) : null]));
+      }
+      const checks = [];
+      if (p.pump != null) checks.push('price ' + (p.pump > 0 ? '+' : '') + Math.round(p.pump) + '% since day −30');
+      if (p.oiChange != null) checks.push('open interest ' + (p.oiChange > 0 ? '+' : '') + Math.round(p.oiChange) + '% in the week to ' + d(p.oiTo));
+      kids.push(el('div', { class: 'why', text: (p.call === 'WATCH' ? 'Decided at the ' + d(p.entryDate) + ' open. ' : '') + cap(p.why) + (checks.length ? ' · ' + checks.join(' · ') : '') }));
+      return el('article', { class: 'pk ' + cls }, kids);
+    };
+    const byKey = {}; (K.log || []).forEach(c => byKey[c.token + c.unlockDate] = c);
+    const isClosed = p => ((byKey[p.token + p.unlockDate] || {}).result || {}).status === 'closed';
+    const live = K.picks.filter(p => p.call === 'TAKE' && !isClosed(p)).map(p => card({ ...p, ...(byKey[p.token + p.unlockDate] || {}) }, (byKey[p.token + p.unlockDate] || {}).result));
+    const watch = K.picks.filter(p => p.call === 'WATCH').map(p => card(p));
+    const skip = K.picks.filter(p => p.call === 'SKIP').map(p => card(p));
+    const closed = log.filter(c => (c.result || {}).status === 'closed').sort((a, b) => b.unlockDate.localeCompare(a.unlockDate));
+    return el('section', { 'aria-label': 'Picks' }, [
+      el('p', { class: 'lead', text: 'Only these unlocks get shorted.' }),
+      el('div', { class: 'pk-rule' }, [el('b', { text: 'Take: ' }), 'an unlock adding 25%+ of circulating supply, or a first insider unlock where open interest fell 10%+ the week before. ',
+        el('b', { text: 'Skip: ' }), 'price up 30%+ going in, or no Binance perpetual. ',
+        el('b', { text: 'Trade: ' }), 'short at the 00:00 UTC open 7 days before the unlock, stop 12% above, target 35% below, out 14 days after. Risk 1% a trade.']),
+      el('div', { class: 'pk-tiles' }, [
+        tile('Live record', L.closed ? L.won + ' of ' + L.closed + ' won' : 'no closed trades yet', L.closed ? r2(L.totalR) + ' total · ' + L.taken + ' taken' : 'rules frozen ' + d(R.frozenOn)),
+        tile('Backtest', bt.wonPct + '% won', bt.trades + ' trades · ' + r2(bt.avgR) + ' a trade'),
+        tile('At 1% risk (backtest)', '+' + Math.round((bt.account1pct.growth - 1) * 100) + '%', 'worst drawdown ' + bt.account1pct.worstDrawdownPct + '%')]),
+      live.length ? el('h2', { text: 'Open shorts' }) : null,
+      live.length ? el('div', { class: 'pk-list' }, live) : null,
+      el('h2', { text: 'Coming up' }),
+      watch.length ? el('div', { class: 'pk-list' }, watch) : el('p', { class: 'small', text: 'Nothing in the next three weeks matches the rules.' }),
+      closed.length ? el('h2', { text: 'Closed' }) : null,
+      closed.length ? el('div', { class: 'pk-list' }, closed.map(c => card(c, c.result))) : null,
+      skip.length ? el('details', { class: 'method' }, [el('summary', { text: 'Skipped, and why (' + skip.length + ')' }), el('div', { class: 'pk-list' }, skip)]) : null,
+      el('details', { class: 'method' }, [el('summary', { text: 'How the rules were found' }), el('div', { class: 'mbody' }, [
+        el('p', { text: 'Tested on 917 past unlocks (Nov 2023 to Nov 2026), priced on Binance daily candles, with fees, funding and stop slippage. Routine unlocks lost money; big unlocks and first insider unlocks with falling open interest made money in both the year the rules were built on and in 2023–25 data they never saw.' }),
+        el('p', { text: 'Backtest: ' + bt.trades + ' trades, ' + bt.wonPct + '% won, ' + r2(bt.avgR) + ' a trade, longest losing run ' + bt.account1pct.longestLosingRun + '. About 4 in 10 trades lose 1R; the winners pay for them.' }),
+        el('p', { text: 'Rules frozen on ' + d(R.frozenOn) + ' so the live record is a clean test. ' + R.passMark + ' Each call is made once, on entry day, from data known before entry, and is never changed afterwards. Past results are not a promise and this is not financial advice.' })])])
+    ].filter(Boolean));
   }
 
   const PRESSURE = { 'Low': 'p-low', 'Moderate': 'p-mod', 'High': 'p-high', 'Very high': 'p-vhigh', 'Not enough data': 'p-na' };
@@ -1246,7 +1330,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
 
   function render() {
     document.querySelectorAll('nav.tabs button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === tab)));
-    const view = { news, unlocks, past, signals, log: tradeLog, week, supply }[tab]();
+    const view = { picks, news, unlocks, past, signals, log: tradeLog, week, supply }[tab]();
     main.replaceChildren(view);
     clearInterval(cdTimer);
     if (tab === 'unlocks' && uView === 'upcoming') {
@@ -1276,12 +1360,13 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     try { D.signals = await fetch('data/signals.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.signals = null; }
     try { const lv = await fetch('data/signals_live.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); if (lv && D.signals) { D.signals.pumpChecks = lv.pumpChecks || {}; D.signals.context = lv.context || {}; D.signals.pumpCheckedAt = lv.pumpCheckedAt; } } catch (e) { /* live checks are optional */ }
     try { D.grades = await fetch('data/grades.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.grades = null; }
+    try { D.picks = await fetch('data/picks.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.picks = null; }
     try { D.tradelog = await fetch('data/trade_log.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.tradelog = null; }
     P = await Desk.prices(D.news.market);
     renderPrices();
     render();
     setInterval(async () => { P = await Desk.prices(D.news.market); renderPrices(); }, 60000);
-    setInterval(async () => { try { const bt = D.backtest, sg = D.signals, tl = D.tradelog, gr = D.grades; D = await Desk.load(''); D.backtest = bt; D.signals = sg; D.tradelog = tl; D.grades = gr; render(); } catch (e) {} }, 300000);
+    setInterval(async () => { try { const bt = D.backtest, sg = D.signals, tl = D.tradelog, gr = D.grades, pk = D.picks; D = await Desk.load(''); D.backtest = bt; D.signals = sg; D.tradelog = tl; D.grades = gr; D.picks = pk; render(); } catch (e) {} }, 300000);
   }
   boot();
 })();
