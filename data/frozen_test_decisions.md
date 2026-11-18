@@ -1,0 +1,22 @@
+Data decisions made BEFORE any prices were looked at (19 Nov 2026):
+- JUP 2025-01-31 team cliff: dropped; team re-locked the tokens for 2 more years, no supply reached the market.
+- WLD 2024-07-24: kept (first insider unlock, frozen rule), but it was a daily stream; shown also in a side check without streams.
+- MORPHO 2024-11-21: dropped; that was the day the token became transferable (launch), with no prior circulating supply or market.
+- SCR 2025-10-22: kept; 43% of circulating that day (ecosystem/foundation) plus the start of the insider stream.
+- ACE 2024-12-18 and NFP 2024-12-27: dropped from the main test; no source gives the date, it was inferred from a 12-month cliff. Entry depends on the exact day, so a guessed date is not usable.
+- XAI 2024-07-09: kept (first insider unlock, ~36%), marked as a stream (released over ~30 days).
+- General rule (set now, before pricing): an event is dropped from the main test if sources disagree on its date by more than 2 days. Applies to OMNI 2025-05-02 vs 05-17 (dropped). ARKM 07-17 vs 07-18 kept, using 07-18.
+- HOOK 2023-12-01: kept (first insider unlock, date from the whitepaper schedule), flagged as low-confidence.
+- Date rule clarified (still before pricing): when the project's own statement gives a date, it beats news reports. SUI 2024-05-03 kept on that basis (Sui Foundation says May 3; one Cointelegraph line says May 31). OMNI stays dropped (two trackers disagree, no project statement).
+- SEI 2024-08-15: dropped; date only inferred from a 12-month cliff, nothing confirms it (same rule as ACE/NFP).
+- PORTAL 2024-02-29: dropped; launch day, no prior market (same as MORPHO).
+- MANTA 2025-01-18: dropped; a news report says the tokens moved to a new contract and stayed locked, so the real release day is unknown.
+- ETHFI 2025-03-18, DYM 2025-02-06, PIXEL 2025-02-19: kept as first insider unlocks (dates sourced); ETHFI and DYM marked as streams.
+- TNSR 2025-04-08: dropped; no source names the day (only "week of Apr 7-14", possibly March).
+- REZ 2025-04-30: dropped; DefiLlama says Apr 24 (>2 days apart, no project statement).
+- BB 2025-06-12: dropped; cliff could be May 13 or Jun 12.
+- AEVO 2024-05-15: kept (sourced date, first insider unlock), flagged: part of it was an RBN-to-AEVO migration, so the 752% overstates new supply.
+- SAGA 2025-04-09 kept. IO 2025-07-11 kept, flagged (first-ness inferred).
+- AI 2025-01-04: dropped; date worked out from tracker progress, no source names it.
+- MAVIA 2025-02-06 (41%) kept. MAVIA 2024-05-06 kept as first insider unlock, flagged (amount unknown, cut by 80%).
+- USUAL: dropped; project roadmap says 2025-11-25 (outside window), project statement wins.

@@ -1,0 +1,2487 @@
+[
+ {
+  "token": "ARB",
+  "events": [
+   {
+    "date": "2024-03-16",
+    "amountTokens": 1111750000,
+    "amountHow": "Daily Hodl (citing TokenUnlocks): team/future team/advisors 673.5M + investors 438.25M = 1,111.75M; FXStreet and CoinDesk report 1.11B cliff unlock",
+    "circulatingBefore": 1449000000,
+    "circulatingHow": "Derived from FXStreet (13 Mar 2024) stating 1.11B = 76.62% of circulating supply, so about 1.449B. CoinDesk (Aug 2023) said 87% of a then 1.275B circulating supply, which is stale for March 2024. Daily Hodl's 'nearly 42%' looks like a post-unlock base.",
+    "pctCirculating": 76.6,
+    "shape": "lump",
+    "recipients": "team, future team and advisors 673.5M; investors 438.25M",
+    "recipientsMix": {
+     "team": 0.606,
+     "investors": 0.394,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 2.05,
+    "priceSource": "https://www.fxstreet.com/cryptocurrencies/news/arbitrum-price-readies-for-one-of-the-biggest-token-unlocks-of-2024-202403130200 ($2.0476 on 2024-03-13; Daily Hodl gives $1.56 on 2024-03-19)",
+    "sources": [
+     {
+      "label": "CoinDesk: Arbitrum will unlock $1.2B ARB in March 2024",
+      "url": "https://www.coindesk.com/markets/2023/08/16/arbitrum-will-unlock-12b-arb-in-march-2024-token-unlocks",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "cliff",
+       "team and investors"
+      ]
+     },
+     {
+      "label": "FXStreet: Arbitrum readies for one of the biggest unlocks of 2024",
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/arbitrum-price-readies-for-one-of-the-biggest-token-unlocks-of-2024-202403130200",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct 76.62%",
+       "price"
+      ]
+     },
+     {
+      "label": "Daily Hodl: whales deposit ARB after unlock (TokenUnlocks data)",
+      "url": "https://dailyhodl.com/2024/03/19/whales-deposit-over-58000000-worth-of-arbitrum-arb-to-crypto-exchanges-after-token-unlock",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "recipient split"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore is back-calculated from a reported %, not taken from a dated CMC/CoinGecko snapshot; sources disagree on the % (87% on Aug-2023 supply, 76.62% in March 2024, ~42% post-unlock)"
+   }
+  ]
+ },
+ {
+  "token": "OP",
+  "events": []
+ },
+ {
+  "token": "APT",
+  "events": []
+ },
+ {
+  "token": "SUI",
+  "events": [
+   {
+    "date": "2024-05-03",
+    "amountTokens": 1040000000,
+    "amountHow": "Daily Hodl (beehiiv mirror): May 2024 unlock of 1.04B SUI (10.4% of the 10B max supply). Cointelegraph (citing Token Unlocks) says 'almost one billion' tokens for Series A/B investors, early contributors, Mysten Labs treasury and community reserve. The Sui Foundation said the mainnet one-year unlock completed on May 3 (ChainCatcher).",
+    "circulatingBefore": 1290000000,
+    "circulatingHow": "Estimate. FXStreet (1 Apr 2024) implies ~1.28B (34.62M = 2.7% of circ) before the 3 Apr 34.62M tranche. Daily Hodl gives ~2.33B circulating on 2024-05-06, and 2.33B - 1.04B = 1.29B. Both are consistent with a pre-unlock base of ~1.29-1.31B.",
+    "pctCirculating": 80.6,
+    "shape": "lump",
+    "recipients": "Series A and Series B investors, early contributors, Mysten Labs treasury, community reserve (no per-group split found)",
+    "recipientsMix": null,
+    "firstInsiderUnlock": true,
+    "priceUsd": 1.13,
+    "priceSource": "https://dailyhodl.com/2024/05/06/sui-network-clarifies-tokenomics-of-sui-says-coins-locked-within-third-party-custodians-and-cannot-be-moved/amp ($1.13 on 2024-05-06)",
+    "sources": [
+     {
+      "label": "ChainCatcher: Sui mainnet one-year unlock completed on May 3",
+      "url": "https://chaincatcher.com/en/article/2124613",
+      "kind": "news",
+      "confirms": [
+       "date"
+      ]
+     },
+     {
+      "label": "Cointelegraph: May crypto vesting, Sui and Pyth (Token Unlocks data)",
+      "url": "https://cointelegraph.com/news/may-crypto-vesting-sui-pyth-network-unlock-tokens",
+      "kind": "news",
+      "confirms": [
+       "amount ~1B",
+       "recipients"
+      ]
+     },
+     {
+      "label": "Daily Hodl (beehiiv mirror): Sui explodes 148% despite large token unlocks",
+      "url": "https://theinformerpost.beehiiv.com/p/solana-rival-sui-explodes-148-from-lows-in-sudden-resurgence-despite-large-token-unlocks",
+      "kind": "news",
+      "confirms": [
+       "amount 1.04B in May"
+      ]
+     },
+     {
+      "label": "Daily Hodl: Sui clarifies tokenomics (circ 2.33B, price)",
+      "url": "https://dailyhodl.com/2024/05/06/sui-network-clarifies-tokenomics-of-sui-says-coins-locked-within-third-party-custodians-and-cannot-be-moved/amp",
+      "kind": "news",
+      "confirms": [
+       "post-unlock circ",
+       "price"
+      ]
+     },
+     {
+      "label": "FXStreet: SUI Community Access Program unlock (April 2024)",
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/sui-price-could-record-a-new-peak-as-sui-incentivizes-community-access-program-202404012100",
+      "kind": "news",
+      "confirms": [
+       "pre-unlock circ ~1.28B"
+      ]
+     },
+     {
+      "label": "tokenomics.com SUI unlocks (12-month cliffs for Series A/B and early contributors)",
+      "url": "https://app.tokenomics.com/tokenomics/sui/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "insider cliffs 12 months from May 2023 TGE"
+      ]
+     }
+    ],
+    "gap": "No source gives an exact per-allocation amount or split for the day. 1.04B is a monthly total that includes non-insider buckets (community reserve, Mysten treasury). Cointelegraph's text says 'May 31', while the Foundation says the one-year unlock completed May 3, so the date rests on the Foundation statement. circulatingBefore is an estimate."
+   }
+  ]
+ },
+ {
+  "token": "STRK",
+  "events": [
+   {
+    "date": "2024-04-15",
+    "amountTokens": 64000000,
+    "amountHow": "StarkWare revised schedule (The Block, Cointelegraph, Decrypt; Feb 2024): first early-contributor/investor unlock of 64M (0.64% of supply) on 2024-04-15, replacing a planned 1.3B cliff",
+    "circulatingBefore": 727000000,
+    "circulatingHow": "Back-calculated from FXStreet and Crypto Briefing stating 64M = 8.8% of circulating supply",
+    "pctCirculating": 8.8,
+    "shape": "stream",
+    "recipients": "early contributors and investors (first of 64M monthly tranches)",
+    "recipientsMix": null,
+    "firstInsiderUnlock": true,
+    "priceUsd": 1.83,
+    "priceSource": "https://www.fxstreet.com/cryptocurrencies/news/arb-strk-axs-three-token-unlocks-worth-over-350-million-to-watch-out-for-ahead-of-bitcoin-halving-week-202404130600 (implied from $117.12M / 64M on 2024-04-13; Crypto Briefing implies ~$1.94)",
+    "sources": [
+     {
+      "label": "The Block: StarkWare opts to gradually release STRK",
+      "url": "https://www.theblock.co/post/278714/starkware-opts-to-gradually-release-strk-token-following-user-feedback",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "recipients",
+       "schedule"
+      ]
+     },
+     {
+      "label": "Cointelegraph: StarkWare changes investor unlock schedule",
+      "url": "https://cointelegraph.com/news/starkware-changes-controversial-investor-starknet-token-unlock-schedule",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "recipients"
+      ]
+     },
+     {
+      "label": "FXStreet: ARB, STRK, AXS unlocks ahead of halving",
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/arb-strk-axs-three-token-unlocks-worth-over-350-million-to-watch-out-for-ahead-of-bitcoin-halving-week-202404130600",
+      "kind": "news",
+      "confirms": [
+       "pct 8.8%",
+       "price"
+      ]
+     },
+     {
+      "label": "Crypto Briefing: April 2024 unlocks",
+      "url": "https://cryptobriefing.com/token-unlock-april-2024",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct"
+      ]
+     }
+    ],
+    "gap": "Monthly tranche (the first of a schedule), not a cliff lump; 8.8% of circ, so below the 25% threshold. Listed only because it is the first insider unlock. Shape set to 'stream' because it begins a monthly schedule; treat it as a discrete monthly tranche. Contributor/investor split per tranche not found."
+   }
+  ]
+ },
+ {
+  "token": "ZK",
+  "events": [
+   {
+    "date": "2025-06-17",
+    "amountTokens": 770000000,
+    "amountHow": "BeInCrypto (June 2025): 770M ZK (3.67% of max supply): investors 397.20M + team 372.80M. ZK Nation docs: one-year cliff ending June 2025, when 3.6% of total supply unlocks from team and investor allocations.",
+    "circulatingBefore": 3675000000,
+    "circulatingHow": "BeInCrypto states 3.675B ZK circulating before the unlock",
+    "pctCirculating": 20.95,
+    "shape": "lump",
+    "recipients": "investors 397.2M, team (Matter Labs) 372.8M",
+    "recipientsMix": {
+     "team": 0.484,
+     "investors": 0.516,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.05394,
+    "priceSource": "https://beincrypto.com/major-token-unlocks-for-june-2025 ($0.05394, late May/early June 2025)",
+    "sources": [
+     {
+      "label": "ZK Nation docs: ZK token lock-ups",
+      "url": "https://docs.zknation.io/zk-token/zk-token.md",
+      "kind": "primary",
+      "confirms": [
+       "first insider unlock June 2025",
+       "one-year cliff",
+       "3.6% of supply",
+       "0.8% monthly cap after"
+      ]
+     },
+     {
+      "label": "BeInCrypto: Major token unlocks for June 2025",
+      "url": "https://beincrypto.com/major-token-unlocks-for-june-2025",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "split",
+       "circulating",
+       "price"
+      ]
+     }
+    ],
+    "gap": "Exact day (June 17) comes from BeInCrypto; the docs say only 'June 2025'. 20.95% of circ, so below the 25% threshold. Listed as the first insider unlock."
+   }
+  ]
+ },
+ {
+  "token": "SEI",
+  "events": []
+ },
+ {
+  "token": "TIA",
+  "events": [
+   {
+    "date": "2024-10-30",
+    "amountTokens": 175560000,
+    "amountHow": "The Block October 2024 preview: 175.56M TIA unlocking Oct 30, 2024 at 13:59 UTC; CoinDesk: 175M TIA (58M core contributors + 65M Series A/B + 52M seed); ChainCatcher citing Token Unlocks: 'over 175 million', 17.68% of total supply.",
+    "circulatingBefore": 214254000,
+    "circulatingHow": "Derived: 175.56M / 0.8194 (The Block states the unlock = 81.94% of circulating supply). Cross-checks: Invezz 80.23% (implies ~218.8M), CoinDesk 'about 80%'.",
+    "pctCirculating": 81.9,
+    "shape": "lump",
+    "shapeNote": "CoinDesk: a single event; The Block: the unlock then starts daily emissions of 998,580 TIA for the next year.",
+    "recipients": "core contributors 58M, Series A/B investors 65M, seed investors 52M (CoinDesk)",
+    "recipientsMix": {
+     "team": 0.33,
+     "investors": 0.67,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 5.0,
+    "priceSource": "https://hotfix.coindesk.com/markets/2024/10/29/celestias-tia-braces-for-price-volatility-amid-900m-token-unlock (Oct 29, 2024: 'slightly above $5'); The Block (Sep 29, 2024) value implies ~$5.98; Invezz (Oct 21, 2024) $6.04",
+    "sources": [
+     {
+      "label": "The Block - October preview: Celestia set to unlock $1 billion",
+      "url": "https://www.theblock.co/news/markets/2024-09-29-october-preview-celestia-set-to-unlock-1-billion-in-tokens-alongside-these-projects-318599",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "time",
+       "amount",
+       "pct",
+       "linear emissions after"
+      ]
+     },
+     {
+      "label": "CoinDesk - Celestia's TIA braces for volatility amid $900M token unlock (Oct 29, 2024)",
+      "url": "https://hotfix.coindesk.com/markets/2024/10/29/celestias-tia-braces-for-price-volatility-amid-900m-token-unlock",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct (~80%)",
+       "recipients",
+       "shape",
+       "price"
+      ]
+     },
+     {
+      "label": "Invezz - Celestia to release over 80% of circulating supply (Oct 21, 2024)",
+      "url": "https://invezz.com/news/2024/10/21/celestia-to-release-over-80-of-circulating-supply-in-ten-days-whats-next-for-tia-price/",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct (80.23%)",
+       "price"
+      ]
+     },
+     {
+      "label": "ChainCatcher citing Token Unlocks",
+      "url": "https://www.chaincatcher.com/en/article/2145186",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount (17.68% of total supply)"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore is derived from The Block's percentage, not a direct snapshot; sources differ slightly (80.2%-81.9%). Price is an approximate reported figure. Project docs and tokenomist.ai could not be fetched (not on allowlist)."
+   }
+  ]
+ },
+ {
+  "token": "DYDX",
+  "events": [
+   {
+    "date": "2023-12-01",
+    "amountTokens": 150000000,
+    "amountHow": "Forklog: investor/employee/consultant unlock delayed from Feb 3, 2023 to Dec 1, 2023, 30% of the 500M insider allocation = 150M; ChainCatcher (Lookonchain) and FXStreet confirm 150M on Dec 1.",
+    "circulatingBefore": 180290000,
+    "circulatingHow": "Derived: 150M / 0.832 (FXStreet: unlock equal to 83.2% of circulating supply). Cross-checks: ChainCatcher 81.63% (implies ~183.8M); Blockworks 'roughly 80%'.",
+    "pctCirculating": 83.2,
+    "shape": "lump",
+    "shapeNote": "30% cliff tranche released at once; Forklog says the next 40% followed in equal monthly parts over six months, then 20% during 2024 and 10% during 2025.",
+    "recipients": "investors 83.19M (ChainCatcher/Lookonchain; e.g. a16z, Polychain, Defiance); remaining ~66.8M to founders, employees, advisors and consultants (derived 150M - 83.19M)",
+    "recipientsMix": {
+     "team": 0.445,
+     "investors": 0.555,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 3.099,
+    "priceSource": "https://www.fxstreet.com/cryptocurrencies/news/dydx-price-expected-to-fall-further-as-whales-dump-tokens-after-massive-unlock-event-202312010817 ($3.099 at time of writing, Dec 1, 2023)",
+    "sources": [
+     {
+      "label": "Forklog - dYdX delays $282 million token unlock",
+      "url": "https://forklog.com/en/dydx-delays-282-million-token-unlock/",
+      "kind": "news",
+      "confirms": [
+       "first insider unlock (delayed from Feb 3, 2023)",
+       "date",
+       "amount",
+       "later schedule"
+      ]
+     },
+     {
+      "label": "ChainCatcher - 150 million DYDX unlocked Dec 1, 83.19M to investors",
+      "url": "https://www.chaincatcher.com/en/article/2106999",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct (81.63%)",
+       "investor share"
+      ]
+     },
+     {
+      "label": "FXStreet - DYDX price expected to fall further after unlock (Dec 1, 2023)",
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/dydx-price-expected-to-fall-further-as-whales-dump-tokens-after-massive-unlock-event-202312010817",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct (83.2%)",
+       "price"
+      ]
+     },
+     {
+      "label": "Blockworks - Why DYDX insiders are unlikely to sell their $490M unlock",
+      "url": "https://blockworks.co/news/dydx-unlocked-tokens-supply",
+      "kind": "news",
+      "confirms": [
+       "amount",
+       "pct (~80%)",
+       "majority to investors"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore derived from reported % (sources 80%-83.2%). Team-vs-investor split of the non-investor 66.8M is derived, not reported. Exact UTC hour not confirmed."
+   }
+  ]
+ },
+ {
+  "token": "IMX",
+  "events": []
+ },
+ {
+  "token": "APE",
+  "events": []
+ },
+ {
+  "token": "AXS",
+  "events": []
+ },
+ {
+  "token": "SAND",
+  "events": []
+ },
+ {
+  "token": "GMT",
+  "events": []
+ },
+ {
+  "token": "ID",
+  "events": [
+   {
+    "date": "2024-03-22",
+    "amountTokens": 78490000,
+    "amountHow": "News reports: 78.49M ID unlocked on 22 Mar 2024 (finbold, ChainCatcher). The total equals the 12-month-cliff quarterly tranches for seed (20M), advisors (11.67M), core team (300M/20 = 15M) and strategic (160M/12 = 13.33M), plus monthly ecosystem, foundation, marketing and airdrop vesting (18.49M). Allocations and cliffs are from tokenomist.ai and tokenomics.com; TGE was 22 Mar 2023.",
+    "circulatingBefore": 485730000,
+    "pctCirculating": 16.2,
+    "shape": "lump",
+    "recipients": "First post-cliff quarterly tranche to insiders: seed 20M, advisors 11.67M, core team ~15M, strategic ~13.33M (~60M insiders), plus the regular monthly ecosystem/foundation/marketing/airdrop vesting (~18.49M)",
+    "recipientsMix": {
+     "team": 0.34,
+     "investors": 0.425,
+     "community": 0.074,
+     "ecosystem": 0.099,
+     "other": 0.062
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 1.58,
+    "priceSource": "https://finbold.com/major-sell-off-incoming-this-crypto-will-unlock-120-million-in-tokens (price on 20 Mar 2024)",
+    "sources": [
+     {
+      "label": "finbold: Space ID unlocks 78.49M ID on 22 Mar (noon UTC), 16% of the 485.73M circulating",
+      "url": "https://finbold.com/major-sell-off-incoming-this-crypto-will-unlock-120-million-in-tokens",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct",
+       "circulatingBefore",
+       "price",
+       "recipients"
+      ]
+     },
+     {
+      "label": "ChainCatcher 18 Mar 2024: 78.49M ID on 22 Mar, 18.23% of circulating",
+      "url": "https://www.chaincatcher.com/en/article/2117478",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct"
+      ]
+     },
+     {
+      "label": "Tokenomist research: 12-month cliffs for seed, strategic, advisors and core team, then quarterly vesting",
+      "url": "https://tokenomist.ai/research/tokenomics-insight-space-id",
+      "kind": "aggregator",
+      "confirms": [
+       "recipients",
+       "firstInsider"
+      ]
+     },
+     {
+      "label": "tokenomics.com SPACE ID: TGE 22 Mar 2023; cliffs and tranche counts",
+      "url": "https://app.tokenomics.com/tokenomics/space-id",
+      "kind": "aggregator",
+      "confirms": [
+       "firstInsider",
+       "recipients"
+      ]
+     }
+    ],
+    "gap": "Circulating supply before the unlock differs by source: 485.73M (finbold, 16.2%) vs ~430.6M implied by ChainCatcher's 18.23%. Either way it is under 25%. finbold also says the team got 40.99M (52%), which does not fit the allocation maths. The recipient mix is worked out from the vesting terms, not taken from a reported breakdown."
+   }
+  ]
+ },
+ {
+  "token": "CYBER",
+  "events": [
+   {
+    "date": "2024-08-14",
+    "amountTokens": 1990000,
+    "amountHow": "Estimate only: $6.26M unlock value divided by the $3.15 price, both reported by CoinTurk and BitcoinHaber on 14 Aug 2024. This matches the private-sale schedule: 25.12M over 12 quarterly tranches = ~2.09M per tranche, after a 12-month cliff from the 14 Aug 2023 TGE (tokenomics.com, ChainCatcher Apr 2023).",
+    "circulatingBefore": null,
+    "pctCirculating": 8.54,
+    "shape": "lump",
+    "recipients": "First quarterly tranche for private-sale investors after the 12-month cliff. The team and advisors cliff is 15 months, so their first tranche came around 14 Nov 2024.",
+    "recipientsMix": {
+     "team": 0,
+     "investors": 1.0,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 3.15,
+    "priceSource": "https://en.coin-turk.com/investors-monitor-token-unlock-events-in-the-crypto-market-4/",
+    "sources": [
+     {
+      "label": "CoinTurk 14 Aug 2024: CYBER unlock on 14 Aug at 15:00, $6.26M, '8.54% of total supply', price $3.15",
+      "url": "https://en.coin-turk.com/investors-monitor-token-unlock-events-in-the-crypto-market-4/",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "value",
+       "price"
+      ]
+     },
+     {
+      "label": "BitcoinHaber 14 Aug 2024: same figures",
+      "url": "https://en.bitcoinhaber.net/?p=40955",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "value",
+       "price"
+      ]
+     },
+     {
+      "label": "tokenomics.com CYBER: TGE 14 Aug 2023; private sale 12-month cliff then 12 quarterly tranches; team 15-month cliff",
+      "url": "https://app.tokenomics.com/tokenomics/cyber",
+      "kind": "aggregator",
+      "confirms": [
+       "firstInsider",
+       "recipients"
+      ]
+     },
+     {
+      "label": "ChainCatcher 28 Apr 2023: CyberConnect vesting terms; circulating at launch 11.04M",
+      "url": "https://www.chaincatcher.com/en/article/2092118",
+      "kind": "news",
+      "confirms": [
+       "recipients",
+       "schedule"
+      ]
+     }
+    ],
+    "gap": "No source gives the exact token count or the circulating supply on the day. The '8.54% of total supply' wording cannot be right, because ~2M is 2% of the 100M total. It most likely means 8.54% of circulating (implying ~23M circulating), but that is unconfirmed. It is under 25% in any reading."
+   }
+  ]
+ },
+ {
+  "token": "BLUR",
+  "events": []
+ },
+ {
+  "token": "PYTH",
+  "events": [
+   {
+    "date": "2024-05-20",
+    "amountTokens": 2130000000,
+    "amountHow": "The Block, Decrypt and BeInCrypto all report 2.13B PYTH unlocking on 20 May 2024 (Decrypt: 2pm UTC, cliff unlock), the first tranche of locked tokens 6 months after the Nov 2023 launch.",
+    "circulatingBefore": 1500000000,
+    "pctCirculating": 142.0,
+    "shape": "lump",
+    "recipients": "Ecosystem growth just over half, publisher rewards about a quarter, the rest protocol development and private-sale investors (Decrypt)",
+    "recipientsMix": {
+     "team": 0.115,
+     "investors": 0.115,
+     "community": 0,
+     "ecosystem": 0.52,
+     "other": 0.25
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.58,
+    "priceSource": "https://decrypt.co/228564/3-billion-token-unlocks-may-2024 (implied: $1.24B / 2.13B; The Block implies $0.59)",
+    "sources": [
+     {
+      "label": "The Block May preview: 2.13B PYTH on 20 May, more than doubling the 1.5B circulating",
+      "url": "https://www.theblock.co/post/291313/may-preview-1-25-billion-pyth-unlock-leads-major-token-unlocks-from-avalanche-aptos-arbitrum-and-more",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "circulatingBefore",
+       "pct"
+      ]
+     },
+     {
+      "label": "Decrypt: 2.13B PYTH cliff on 20 May 2pm UTC; ecosystem growth just over half, publishers a quarter",
+      "url": "https://decrypt.co/228564/3-billion-token-unlocks-may-2024",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "shape",
+       "recipients"
+      ]
+     },
+     {
+      "label": "BeInCrypto: 2.13B vs 1.5B circulating (141.67%); ~800M to private sale and publishers",
+      "url": "https://beincrypto.com/token-unlocks-may-20-26",
+      "kind": "news",
+      "confirms": [
+       "amount",
+       "pct",
+       "recipients"
+      ]
+     }
+    ],
+    "gap": "Price is worked out from the reported USD value, not quoted directly. The 0.23 that is not ecosystem growth or publisher rewards is split evenly between protocol development (team) and private sales (investors); that split is assumed, not confirmed."
+   },
+   {
+    "date": "2025-05-20",
+    "amountTokens": 2130000000,
+    "amountHow": "FXStreet, Tokenomist and CryptoRank all report 2.13B PYTH, the second annual tranche (18 months after launch).",
+    "circulatingBefore": 3620000000,
+    "pctCirculating": 58.8,
+    "shape": "lump",
+    "recipients": "Ecosystem growth, publisher rewards, private sales and protocol development (Tokenomist)",
+    "recipientsMix": null,
+    "firstInsiderUnlock": false,
+    "priceUsd": 0.135,
+    "priceSource": "https://www.fxstreet.com/cryptocurrencies/news/pyth-network-could-extend-losses-targeting-01-ahead-of-mega-298-million-token-unlock-202505191701 (19 May 2025)",
+    "sources": [
+     {
+      "label": "FXStreet 19 May 2025: 2.13B PYTH on Tuesday (20 May); circulating 3.62B rising to 6.38B; price $0.135",
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/pyth-network-could-extend-losses-targeting-01-ahead-of-mega-298-million-token-unlock-202505191701",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "circulatingBefore",
+       "price"
+      ]
+     },
+     {
+      "label": "Tokenomist weekly digest: PYTH unlock 58.62% of circulating supply",
+      "url": "https://tokenomist.ai/research/weekly-unlock-digest-week-3-may",
+      "kind": "aggregator",
+      "confirms": [
+       "pct",
+       "recipients"
+      ]
+     },
+     {
+      "label": "CryptoRank: 2.13B PYTH, $324M, 58.62%",
+      "url": "https://cryptorank.io/news/feed/1dede-pyth-altlayer-lead-token-unlocks-this-week",
+      "kind": "news",
+      "confirms": [
+       "amount",
+       "pct"
+      ]
+     }
+    ],
+    "gap": "The date conflicts: Tokenomist says 19 May 2025, while FXStreet's 19 May article says 'Tuesday', which is 20 May. 20 May follows the 2024 anniversary. No per-allocation amounts were found for 2025."
+   }
+  ]
+ },
+ {
+  "token": "JTO",
+  "events": [
+   {
+    "date": "2024-12-07",
+    "amountTokens": 135710000,
+    "amountHow": "BeInCrypto and Crypto Briefing report 135.71M JTO on 7 Dec 2024: core contributors 81.67M (one-third of 24.5%) and investors 54.05M (one-third of 16.2%), the 1-year cliff. CryptoRank reports 137.44M for the 2-9 Dec week, which includes other vesting.",
+    "circulatingBefore": 131750000,
+    "pctCirculating": 103.0,
+    "shape": "lump",
+    "recipients": "Core contributors 81.67M, investors 54.05M",
+    "recipientsMix": {
+     "team": 0.6,
+     "investors": 0.4,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 3.8,
+    "priceSource": "https://cryptobriefing.com/crypto-token-unlocks-december",
+    "sources": [
+     {
+      "label": "BeInCrypto December cliff unlocks: 135.71M JTO on 7 Dec; core contributors 81.67M, investors 54.05M; larger than circulating",
+      "url": "https://beincrypto.com/december-cliff-token-unlocks",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "recipients"
+      ]
+     },
+     {
+      "label": "Crypto Briefing: 135.71M JTO on 7 Dec, ~103% of circulating, to core contributors and investors; price $3.8",
+      "url": "https://cryptobriefing.com/crypto-token-unlocks-december",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct",
+       "recipients",
+       "price"
+      ]
+     },
+     {
+      "label": "CryptoRank: 137.44M JTO = 104.32% of circulating",
+      "url": "https://cryptorank.io/news/feed/75f32-jito-tops-1-14-billion-token-unlocks",
+      "kind": "news",
+      "confirms": [
+       "pct",
+       "circulatingBefore"
+      ]
+     },
+     {
+      "label": "TokenRadar: core contributors 24.5%, investors 16.2%, 1-year cliff, 3-year unlock",
+      "url": "https://tokenradar.ai/tokens/jito/tokenomics",
+      "kind": "aggregator",
+      "confirms": [
+       "firstInsider",
+       "recipients"
+      ]
+     }
+    ],
+    "gap": "Circulating before is derived from CryptoRank (137.44M / 1.0432 = 131.75M), so it is approximate."
+   }
+  ]
+ },
+ {
+  "token": "JUP",
+  "events": [
+   {
+    "date": "2025-01-22",
+    "amountTokens": 700000000,
+    "amountHow": "Jupuary 2025 airdrop of ~700M JUP from 22 Jan 2025 (CoinMarketCap Academy, Tokenomist). The Jupiter forum audit says 508.1M JUP was actually loaded from Community Hot for the drop.",
+    "circulatingBefore": 1680000000,
+    "pctCirculating": 41.7,
+    "shape": "lump",
+    "recipients": "Community airdrop (swap users 425M, stakers 75M, plus governance and other allocations)",
+    "recipientsMix": {
+     "team": 0,
+     "investors": 0,
+     "community": 1.0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": false,
+    "priceUsd": 0.88,
+    "priceSource": "https://coinmarketcap.com/academy/article/jupiters-jupuary-airdrop-dollar616-million-in-tokens-to-be-distributed-today",
+    "sources": [
+     {
+      "label": "CoinMarketCap Academy: ~700M JUP Jupuary airdrop 'today'; circulating 1.68B; price $0.88",
+      "url": "https://coinmarketcap.com/academy/article/jupiters-jupuary-airdrop-dollar616-million-in-tokens-to-be-distributed-today",
+      "kind": "aggregator",
+      "confirms": [
+       "amount",
+       "circulatingBefore",
+       "price"
+      ]
+     },
+     {
+      "label": "Tokenomist: Jupuary 2025 700M JUP, drop began 22 Jan 2025",
+      "url": "https://tokenomist.ai/research/jupiter-planned-its-2026-airdrop-three-ways-todays-chart-shows-only-the-last-one",
+      "kind": "aggregator",
+      "confirms": [
+       "date",
+       "amount"
+      ]
+     },
+     {
+      "label": "Jupiter forum community audit Feb 2025: 508.1M JUP loaded for the airdrop; main drop began 22 Jan",
+      "url": "https://discuss.jup.ag/t/jup-community-audit-feb-2025/34764",
+      "kind": "primary",
+      "confirms": [
+       "date",
+       "amount"
+      ]
+     }
+    ],
+    "gap": "This is a community airdrop, not a vesting unlock. It is included because it was a single-day release of 25% or more of circulating supply. The amount conflicts: 700M announced vs 508.1M loaded, which is 30.2% of 1.68B. The CMC article's own date was not confirmed on the page."
+   }
+  ]
+ },
+ {
+  "token": "WLD",
+  "events": [
+   {
+    "date": "2024-07-24",
+    "amountTokens": 2000000,
+    "amountHow": "BeInCrypto: 2M WLD released daily from 24 Jul 2024 (down from 3.3M/day) to team members and investors. The Block: 80% of TFH team and investor WLD moved from a 3-year to a 5-year schedule, unlocking daily in a linear way from 24 Jul. The amount given is the first day's release.",
+    "circulatingBefore": 275000000,
+    "pctCirculating": 0.73,
+    "shape": "stream",
+    "recipients": "Tools for Humanity team members and investors (linear daily vesting)",
+    "recipientsMix": null,
+    "firstInsiderUnlock": true,
+    "priceUsd": 2.84,
+    "priceSource": "https://beincrypto.com/2-million-worldcoin-token-unlock-daily/",
+    "sources": [
+     {
+      "label": "The Block: early contributor unlock starts 24 Jul 2024, daily linear, extended from 3 to 5 years; 275M WLD circulating; $2.44",
+      "url": "https://www.theblock.co/post/305632/worldcoin-token-jumps-20-with-unlock-for-early-contributors-starting-next-week-period-extended",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "shape",
+       "circulatingBefore",
+       "recipients"
+      ]
+     },
+     {
+      "label": "BeInCrypto: 2M WLD daily from 24 Jul 2024 to team and investors; 275M circulating; $2.84",
+      "url": "https://beincrypto.com/2-million-worldcoin-token-unlock-daily/",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "circulatingBefore",
+       "price"
+      ]
+     }
+    ],
+    "gap": "No source reports a lump on day one; the release was linear and daily. The team/investor split was not found."
+   }
+  ]
+ },
+ {
+  "token": "ENA",
+  "events": [
+   {
+    "date": "2025-03-05",
+    "amountTokens": 2070000000,
+    "amountHow": "News reports state 2.07B ENA released on 5 Mar 2025 (crypto.news, AMBCrypto, MyToken). Consistent with docs terms: 25% of core contributors (4.5B) + 25% of investors (3.75B) at the 1-year cliff = 1.125B + 0.9375B = 2.0625B (own calculation from Nansen-quoted allocations).",
+    "circulatingBefore": 3130000000,
+    "pctCirculating": 66.1,
+    "shape": "lump",
+    "recipients": "core contributors ~1.125B and investors ~0.9375B (one-year cliff release; split computed from allocation sizes, not stated by news)",
+    "recipientsMix": {
+     "team": 0.545,
+     "investors": 0.455,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.3476,
+    "priceSource": "https://crypto.news/ethena-gears-up-for-massive-token-unlock-can-ena-price-withstand-the-sell-pressure/",
+    "sources": [
+     {
+      "label": "crypto.news: Ethena token unlock 2.07B ENA on March 5 (pub. 2025-03-04); 3.13B circulating; price $0.3476",
+      "url": "https://crypto.news/ethena-token-unlock-ena-tokens-march-5-ena-price-2025/",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "circulatingBefore",
+       "price"
+      ]
+     },
+     {
+      "label": "AMBCrypto: on 5 March 2025 Ethena released 2.07B ENA; price ~$0.40-0.41 before drop to $0.379",
+      "url": "https://ambcrypto.com/ethena-breaking-down-impact-of-2-07b-ena-unlock-on-prices/",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount"
+      ]
+     },
+     {
+      "label": "MyToken: 2.07B ENA unlocked 5 Mar 2025 = 39.17% of circulating (apparently measured against post-unlock supply ~5.3B)",
+      "url": "https://mytoken.io/en/news/492100.html",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount"
+      ]
+     },
+     {
+      "label": "Nansen Research: core contributors 4.5B (30%), investors 3.75B (25%), 1-year cliff, ~171.875M/month after; ~5.3B circulating post-cliff",
+      "url": "https://research.nansen.ai/articles/ena-roadmap-vs-unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "recipients",
+       "shape"
+      ]
+     },
+     {
+      "label": "BeInCrypto via iTiger: ENA circulating 2.93B (late Dec 2024) and 3.03B (late Jan 2025), corroborating ~3.1B before the cliff",
+      "url": "https://itiger.com/hant/news/2506592273",
+      "kind": "news",
+      "confirms": [
+       "circulatingBefore"
+      ]
+     }
+    ],
+    "gap": "pctCirculating is my calculation 2.07B/3.13B. crypto.news labels the 2.07B as '66.19% of total supply' citing Tokenomist, which is evidently % of circulating mislabeled. Nansen says vesting started 2 Apr 2024 (TGE), yet the cliff release actually happened 5 Mar 2025 per three news reports; the date used is 5 Mar 2025."
+   }
+  ]
+ },
+ {
+  "token": "ETHFI",
+  "events": [
+   {
+    "date": "2025-03-18",
+    "amountTokens": null,
+    "amountHow": "No source gives a token amount for the cliff day. Dropstab says team and investor/advisor tokens 'began unlocking linearly after a one-year cliff', which ended 18 Mar 2025. Its current daily rate is ~888,007 (investors) + 318,184 (team) ETHFI, but that is today's rate and not confirmed for March 2025.",
+    "circulatingBefore": null,
+    "pctCirculating": null,
+    "shape": "stream",
+    "recipients": "investors (33.7% of supply: 12-month cliff, then 12-month linear) and core contributors (21.5%: 12-month cliff, then 24-month linear)",
+    "recipientsMix": null,
+    "firstInsiderUnlock": true,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "Dropstab ether.fi: one-year cliff ended 18 Mar 2025, then linear unlocking",
+      "url": "https://dropstab.com/coins/ether-fi-ico",
+      "kind": "aggregator",
+      "confirms": [
+       "date",
+       "shape"
+      ]
+     },
+     {
+      "label": "Blockworks token transparency: investors and core contributors (55.1%) fully locked for first 12 months after TGE, unlock over months 13-36",
+      "url": "https://blockworks.com/token-transparency/filing/ether-fi",
+      "kind": "aggregator",
+      "confirms": [
+       "date",
+       "shape",
+       "recipients"
+      ]
+     },
+     {
+      "label": "Tokenomics.com: TGE Mar 2024; Investors 12M cliff + 12M linear; Core Contributors 12M cliff + 24M linear",
+      "url": "https://app.tokenomics.com/tokenomics/ether-fi/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "shape",
+       "recipients"
+      ]
+     }
+    ],
+    "gap": "There was no lump at the cliff, only linear vesting starting. The cadence is unconfirmed: Dropstab shows daily amounts, Tokenomics.com shows monthly (15th) events. Circulating supply just before and price on the day were not found (CMC/CoinGecko history was not reachable). Exact day has \u00b1few-day uncertainty: Tokenomics.com gives TGE 14 Mar 2024, Dropstab gives cliff end 18 Mar 2025."
+   }
+  ]
+ },
+ {
+  "token": "PORTAL",
+  "events": []
+ },
+ {
+  "token": "PIXEL",
+  "events": [
+   {
+    "date": "2025-02-19",
+    "amountTokens": 91180000,
+    "amountHow": "Cryptorank news (week of 17-24 Feb 2025) says PIXEL releases 91.18M tokens. Cryptopolitan gives 89.37M for a Feb 19 tranche split among ecosystem, treasury, team, private sale and advisors. Team + private portion \u2248 625M/36 + 700M/36 \u2248 36.8M (own calculation from Tokenomics.com terms). The Sep 2024 tranche was 54.38M (Coingape), so the ~37M jump matches team/private vesting starting here.",
+    "circulatingBefore": 770800000,
+    "pctCirculating": 11.83,
+    "shape": "stream",
+    "recipients": "first monthly tranche of team (12.5%) and private sale (14%) after their 12-month cliff, plus regular ecosystem, treasury and advisor tranches",
+    "recipientsMix": {
+     "team": 0.19,
+     "investors": 0.22,
+     "community": 0,
+     "ecosystem": 0.31,
+     "other": 0.28
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.067,
+    "priceSource": "https://cryptorank.io/news/feed/39bd3-mura-melania-meme-coin-lead-token-unlocks",
+    "sources": [
+     {
+      "label": "Cryptorank news: PIXEL releases 91.18M tokens worth $6.13M = 11.83% of supply (week of Feb 17-24, 2025)",
+      "url": "https://cryptorank.io/news/feed/39bd3-mura-melania-meme-coin-lead-token-unlocks",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct",
+       "price"
+      ]
+     },
+     {
+      "label": "Tokenomics.com Pixels: TGE 19 Feb 2024; Team 12M cliff + 36M linear; Private Sale 12M cliff + 36M linear; Advisors 15.7% at TGE",
+      "url": "https://app.tokenomics.com/tokenomics/pixels/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "date",
+       "shape",
+       "recipients"
+      ]
+     },
+     {
+      "label": "Cryptopolitan: Feb 19 unlock of 89.37M PIXEL (1.79% of max supply) split among ecosystem, treasury, team, private sales, advisors",
+      "url": "https://www.cryptopolitan.com/pixels-games-token-pixel-next-token-unlock-to-release-1-79-of-the-coins-token-supply/",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "recipients"
+      ]
+     },
+     {
+      "label": "Coingape (19 Sep 2024): 54.38M PIXEL unlock = 7.05% of circulating, price $0.1445",
+      "url": "https://coingape.com/animoca-brands-whales-dumping-this-token-ahead-unlock-crash-imminent/amp/",
+      "kind": "news",
+      "confirms": [
+       "circulating reference"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore (770.8M) is implied from Cryptorank's 11.83% and equals PIXEL's TGE float of 771M (also implied by Coingape Sep 2024). So it is probably a stale tracker figure, the true circulating supply was higher, and the true % lower. The price is implied ($6.13M/91.18M). recipientsMix is modeled from Tokenomics.com terms (advisors+treasury in 'other'). The Cryptopolitan article's year is not stated. Shape 'stream': this is the first 1/36 monthly tranche, not a cliff lump."
+   }
+  ]
+ },
+ {
+  "token": "ALT",
+  "events": [
+   {
+    "date": "2024-07-25",
+    "amountTokens": 684210000,
+    "amountHow": "crypto.news and BeInCrypto (week of Jul 22-28) give 684.21M ALT; BeInCrypto's same-day article gives 684.33M with a per-recipient breakdown; Cointelegraph/KuCoin give 684M.",
+    "circulatingBefore": 1620000000,
+    "pctCirculating": 42.2,
+    "shape": "lump",
+    "recipients": "investors 308M, team 188M, advisors 83M, treasury 44.83M, protocol development 35.5M, community 25M",
+    "recipientsMix": {
+     "team": 0.275,
+     "investors": 0.45,
+     "community": 0.037,
+     "ecosystem": 0.052,
+     "other": 0.187
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.16,
+    "priceSource": "https://crypto.news/altlayer-vesting-alt-unlock",
+    "sources": [
+     {
+      "label": "crypto.news (23 Jul 2024): 'the first ALT token unlock is scheduled for July 25, 2024'; 684.21M ALT = 42.08% of circulating per TokenUnlocks; price ~$0.16; 6-month pause until 25 Jan 2025 afterwards",
+      "url": "https://crypto.news/altlayer-vesting-alt-unlock",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct",
+       "price",
+       "firstInsider"
+      ]
+     },
+     {
+      "label": "BeInCrypto (25 Jul 2024): 684.33M ALT unlocked today, +42.09% circulating; team 188M, investors 308M, advisors 83M, protocol dev 35.5M, community 25M, treasury 44.83M",
+      "url": "https://beincrypto.com/altlayer-100-million-token-unlock",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct",
+       "recipients"
+      ]
+     },
+     {
+      "label": "BeInCrypto weekly (Jul 22-28): 684.21M ALT = 42% of current circulating supply 1.62B",
+      "url": "https://beincrypto.com/token-unlocks-july-22-28",
+      "kind": "news",
+      "confirms": [
+       "amount",
+       "circulatingBefore",
+       "pct"
+      ]
+     },
+     {
+      "label": "Cointelegraph July 2024 unlocks: 684M ALT on July 25 to team, investors, advisers, protocol development, treasury, community; price ~$0.18 (28 Jun)",
+      "url": "https://cointelegraph.com/news/crypto-token-unlocks-july-2024",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "recipients"
+      ]
+     }
+    ],
+    "gap": "Advisors are counted in 'other' in recipientsMix (with treasury)."
+   }
+  ]
+ },
+ {
+  "token": "MANTA",
+  "events": []
+ },
+ {
+  "token": "DYM",
+  "events": [
+   {
+    "date": "2025-02-06",
+    "amountTokens": null,
+    "amountHow": "No lump. DefiLlama lists an unlock event on 6 Feb 2025 00:00 UTC, then weekly releases of ~1.34M (backers) + ~1.92M (core contributors) DYM. Dropstab shows both at 89.18% unlocked with 79 days left as of 2026-11-19, which fits a 24-month linear vest starting ~2025-02-06 (own calculation).",
+    "circulatingBefore": null,
+    "pctCirculating": null,
+    "shape": "stream",
+    "recipients": "core contributing team (20% of supply) and backers (14%): 12-month lockup, then 24-month linear vesting",
+    "recipientsMix": {
+     "team": 0.59,
+     "investors": 0.41,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.9385,
+    "priceSource": "https://coinlore.com/coin/dymension/historical-data",
+    "sources": [
+     {
+      "label": "Dymension docs: Core Contributing Team 20% and Backers 14%, '12-month lockup, followed by a 24-month linear vesting'",
+      "url": "https://docs.dymension.xyz/learn/dym/distribution",
+      "kind": "primary",
+      "confirms": [
+       "shape",
+       "recipients"
+      ]
+     },
+     {
+      "label": "DefiLlama unlocks: event listed Feb 6, 2025 00:00 UTC; weekly backers 1.34M + core contributors 1.92M DYM",
+      "url": "https://DeFillama.com/unlocks/dymension",
+      "kind": "aggregator",
+      "confirms": [
+       "date",
+       "shape"
+      ]
+     },
+     {
+      "label": "Dropstab vesting: Backers and Team linear 24 months, 89.18% unlocked with 79 days left",
+      "url": "https://dropstab.com/coins/dymension/vesting",
+      "kind": "aggregator",
+      "confirms": [
+       "shape"
+      ]
+     },
+     {
+      "label": "Coinlore: February 2025 monthly open $0.9385, close $0.4482",
+      "url": "https://coinlore.com/coin/dymension/historical-data",
+      "kind": "aggregator",
+      "confirms": [
+       "price"
+      ]
+     }
+    ],
+    "gap": "Price is Coinlore's Feb 2025 monthly open (1 Feb), not the 6 Feb price. Circulating supply just before was not found (Coinlore only gives a 2025 average of 284.3M). recipientsMix is the share of the two allocations (200M:140M)."
+   }
+  ]
+ },
+ {
+  "token": "AEVO",
+  "events": [
+   {
+    "date": "2024-05-15",
+    "amountTokens": 827600000,
+    "amountHow": "Token Unlocks alert quoted by FXStreet and Decrypt/Crypto Briefing May-2024 round-ups: 827.6M AEVO cliff on May 15 (followed by 6.13M AEVO/day for 9 days)",
+    "circulatingBefore": 110000000,
+    "pctCirculating": 752.4,
+    "shape": "lump",
+    "recipients": "RBN->AEVO conversion opened: DAO Treasury (largest share), team, initial private-sale investors (seed + Series A) and remaining RBN holders; team and backers then voluntarily re-locked ~15% of supply until end of 2024",
+    "recipientsMix": {
+     "team": 0.26,
+     "investors": 0.21,
+     "community": 0.12,
+     "ecosystem": 0.41,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 1.18,
+    "priceSource": "https://fxstreet.com/amp/cryptocurrencies/news/aevo-price-could-bottom-out-here-as-team-backers-announce-plan-to-voluntarily-re-lock-nearly-15-of-supply-202405162100 (embedded Token Unlocks alert: 827.6M AEVO = $976.56M -> ~$1.18; article also reports an ATL of $0.75 on May 15)",
+    "sources": [
+     {
+      "label": "FXStreet: AEVO team, backers re-lock ~15% of supply (Token Unlocks alert 827.6M AEVO, 752.36% of circulating)",
+      "url": "https://fxstreet.com/amp/cryptocurrencies/news/aevo-price-could-bottom-out-here-as-team-backers-announce-plan-to-voluntarily-re-lock-nearly-15-of-supply-202405162100",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct",
+       "recipients",
+       "price"
+      ]
+     },
+     {
+      "label": "Decrypt: More than $3 billion in token unlocks in May 2024",
+      "url": "https://decrypt.co/228564/3-billion-token-unlocks-may-2024?amp=1",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "recipients",
+       "shape"
+      ]
+     },
+     {
+      "label": "Crypto Briefing: May 2024 token unlocks",
+      "url": "https://cryptobriefing.com/token-unlock-may-2024",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "recipients"
+      ]
+     },
+     {
+      "label": "ChainCatcher: Aevo RBN conversion and 15% re-lock",
+      "url": "https://www.chaincatcher.com/en/article/2124656",
+      "kind": "news",
+      "confirms": [
+       "recipients",
+       "pct"
+      ]
+     },
+     {
+      "label": "Tokenomist AEVO allocations",
+      "url": "https://tokenomist.ai/aevo-exchange/tokenomics",
+      "kind": "aggregator",
+      "confirms": [
+       "recipients"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore derived from Token Unlocks' 752.36% (827.6M/7.5236); ChainCatcher cites 770% of circulating market cap. recipientsMix is approximate, scaled from allocation shares (DAO 36%, team 23%, investors 18.5%, remaining RBN 10.3%); no source splits the 827.6M exactly. Some argue this was a migration of already-vested RBN rather than a classic cliff, and ~15% was re-locked by team/backers to end-2024. Price sources disagree ($1.18 implied vs $0.75 ATL print)."
+   }
+  ]
+ },
+ {
+  "token": "SAGA",
+  "events": [
+   {
+    "date": "2025-04-09",
+    "amountTokens": 133333333,
+    "amountHow": "DefiLlama unlocks: cliff 09 Apr 2025 00:00 UTC = 13.33% of total supply, Core Contributors 66.67M + Fundraising 66.67M SAGA; consistent with tokenomics.com (core contributors 20% and investors 20%, 12-month cliff then 24-month linear => 1/3 at cliff)",
+    "circulatingBefore": 112400000,
+    "pctCirculating": 118.6,
+    "shape": "lump",
+    "recipients": "core contributors 66.67M, investors (fundraising) 66.67M; weekly linear vesting (~1.28M each per week) follows",
+    "recipientsMix": {
+     "team": 0.5,
+     "investors": 0.5,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.265,
+    "priceSource": "https://cryptorank.io/news/feed/d3645-over-100-million-in-tokens-unlocking-this-week-saga-apt-tnsr-affected (Tokenomist: unlock worth $35.37M; /133.33M = ~$0.265)",
+    "sources": [
+     {
+      "label": "DefiLlama SAGA unlocks",
+      "url": "https://defillama.com/unlocks/saga",
+      "kind": "aggregator",
+      "confirms": [
+       "date",
+       "amount",
+       "recipients",
+       "shape"
+      ]
+     },
+     {
+      "label": "CryptoRank/Tokenomist: over $100M unlocking this week, SAGA 118.62% of circulating",
+      "url": "https://cryptorank.io/news/feed/d3645-over-100-million-in-tokens-unlocking-this-week-saga-apt-tnsr-affected",
+      "kind": "news",
+      "confirms": [
+       "pct",
+       "price"
+      ]
+     },
+     {
+      "label": "cryptonews.net (Apr 4, 2025) same Tokenomist figures",
+      "url": "https://cryptonews.net/news/altcoins/30768853/",
+      "kind": "news",
+      "confirms": [
+       "pct"
+      ]
+     },
+     {
+      "label": "tokenomics.com SAGA vesting (TGE Apr 9 2024; 12m cliff + 24m linear for contributors and investors)",
+      "url": "https://app.tokenomics.com/tokenomics/saga",
+      "kind": "aggregator",
+      "confirms": [
+       "recipients",
+       "date"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore derived from Tokenomist's 118.62% (133.33M/1.1862); not directly quoted. Price implied from USD value."
+   }
+  ]
+ },
+ {
+  "token": "TNSR",
+  "events": []
+ },
+ {
+  "token": "REZ",
+  "events": []
+ },
+ {
+  "token": "BB",
+  "events": []
+ },
+ {
+  "token": "IO",
+  "events": [
+   {
+    "date": "2025-07-11",
+    "amountTokens": 13290000,
+    "amountHow": "PANews/Token Unlocks via MEXC News (Jul 6, 2025): IO unlocks ~13.29M tokens on July 11 (20:00 Beijing = 12:00 UTC), 7.87% of circulating, ~$9.1M; flagged as an insider unlock week (DePIN Hub, Jul 7, 2025). June 11, 2025 tranche was only 3.22M (community emissions).",
+    "circulatingBefore": 168900000,
+    "pctCirculating": 7.9,
+    "shape": "stream",
+    "recipients": "first monthly tranche for early backers (seed + Series A) and core contributors after 12-month cliff, plus community emissions; modelled ~7.55M investors, ~2.5M contributors, ~3.2M community",
+    "recipientsMix": {
+     "team": 0.19,
+     "investors": 0.57,
+     "community": 0.24,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.685,
+    "priceSource": "https://www.mexc.com/news/data-cheel-apt-imx-and-other-tokens-will-be-unlocked-in-large-amounts-next-week-of-which-cheel-unlocked-value/37157 ($9.1M / 13.29M)",
+    "sources": [
+     {
+      "label": "MEXC News / PANews: CHEEL, APT, IMX and other large unlocks next week (IO 13.29M, 7.87%)",
+      "url": "https://www.mexc.com/news/data-cheel-apt-imx-and-other-tokens-will-be-unlocked-in-large-amounts-next-week-of-which-cheel-unlocked-value/37157",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct",
+       "price"
+      ]
+     },
+     {
+      "label": "DePIN Hub (Jul 7, 2025): io.net among tokens set for major insider unlocks",
+      "url": "https://9o1hbtdj3x.depinhub.io/news/ionet-among-tokens-set-for-major-insider-unlocks-releases-totaling-over-219-million-expected-23432",
+      "kind": "news",
+      "confirms": [
+       "recipients"
+      ]
+     },
+     {
+      "label": "tokenomics.com IO vesting (TGE Jun 10 2024; investors 12m cliff + 24m linear; team 12m cliff + 36m linear; unlocks on the 11th)",
+      "url": "https://app.tokenomics.com/tokenomics/io-net/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "recipients",
+       "shape"
+      ]
+     },
+     {
+      "label": "Tokenlon token-unlocks-this-week (IO 11 June: 3.22M, $2.46M)",
+      "url": "https://tokenlon.gitbook.io/docs/docs.en/blog/whatsnew/market-update/2025/token-unlocks-this-week",
+      "kind": "aggregator",
+      "confirms": [
+       "date"
+      ]
+     }
+    ],
+    "gap": "No source explicitly states 'first insider unlock'; inferred from 12-month cliff, the June 11 tranche being only 3.22M, and July 11 being reported as an insider unlock whose size matches investor+contributor+community tranches. recipientsMix modelled. Could be June 11, 2025 if the cliff tranche fell then - unresolved."
+   }
+  ]
+ },
+ {
+  "token": "NOT",
+  "events": []
+ },
+ {
+  "token": "W",
+  "events": [
+   {
+    "date": "2024-08-03",
+    "amountTokens": 600000000,
+    "amountHow": "KuCoin Aug-2024 unlock preview and FXStreet both give 600M W on Aug 3 (Community & Launch 6% released 4 months after TGE, per Wormhole tokenomics blog)",
+    "circulatingBefore": 1800000000,
+    "pctCirculating": 33.33,
+    "shape": "lump",
+    "recipients": "Community & Launch allocation (remaining 6% of supply), managed by Wormhole Foundation for community programmes",
+    "recipientsMix": {
+     "team": 0,
+     "investors": 0,
+     "community": 1.0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": false,
+    "priceUsd": 0.25,
+    "priceSource": "implied from KuCoin's $151.67M value / 600M (FXStreet implies ~$0.23 from $138M); no direct quote found",
+    "sources": [
+     {
+      "label": "KuCoin: Token Unlocks to Watch in August 2024",
+      "url": "https://www.kucoin.com/news/articles/token-unlocks-to-watch-in-august-2024-market-impact-and-key-events-to-know",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct"
+      ]
+     },
+     {
+      "label": "FXStreet: Wormhole, XAI, IMX set to partake in next week's token unlocks",
+      "url": "https://www.fxstreet.com/amp/cryptocurrencies/news/wormhole-xai-imx-set-to-partake-in-next-weeks-token-unlocks-worth-over-200-million-202408030129",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct"
+      ]
+     },
+     {
+      "label": "Wormhole W tokenomics blog",
+      "url": "https://wormhole.com/blog/wormhole-w-tokenomics",
+      "kind": "primary",
+      "confirms": [
+       "recipients",
+       "initial circulating 1.8B",
+       "6% community 4 months after TGE"
+      ]
+     },
+     {
+      "label": "BeInCrypto token unlocks July-Aug",
+      "url": "https://beincrypto.com/token-unlocks-july-august",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount"
+      ]
+     }
+    ],
+    "gap": "price is implied from reported USD value, not a direct quote"
+   },
+   {
+    "date": "2025-04-03",
+    "amountTokens": 1390000000,
+    "amountHow": "Tokenomist figure reported by NFT Evening (1.39B W, cliff, ~$116.12M). MEXC news reports 1.28B W instead; tokenradar lists cliffs of 290M strategic + 650M ecosystem + 127.5M guardians plus a yearly core-contributor release (amount not stated)",
+    "circulatingBefore": 3004000000,
+    "pctCirculating": 46.27,
+    "shape": "lump",
+    "recipients": "Strategic network participants 290M (25% cliff), Ecosystem & Incubation 650M, Guardian nodes 127.5M, Core contributors first yearly tranche (~322.5M by residual, unconfirmed)",
+    "recipientsMix": {
+     "team": 0.23,
+     "investors": 0.21,
+     "community": 0,
+     "ecosystem": 0.47,
+     "other": 0.09
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.0835,
+    "priceSource": "implied from Tokenomist $116.12M / 1.39B as reported by NFT Evening (https://nftevening.com/massive-token-unlocks-this-week-april/); no direct quote found",
+    "sources": [
+     {
+      "label": "NFT Evening: Massive token unlocks this week (Tokenomist data)",
+      "url": "https://nftevening.com/massive-token-unlocks-this-week-april/",
+      "kind": "news",
+      "confirms": [
+       "amount",
+       "pct",
+       "shape"
+      ]
+     },
+     {
+      "label": "MEXC news: Wormhole April 3 cliff unlock",
+      "url": "https://www.mexc.com/news/987816",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "shape",
+       "amount (1.28B, conflicting)"
+      ]
+     },
+     {
+      "label": "tokenradar.ai Wormhole tokenomics",
+      "url": "https://tokenradar.ai/tokens/wormhole/tokenomics",
+      "kind": "aggregator",
+      "confirms": [
+       "recipients",
+       "April 2025 cliffs"
+      ]
+     },
+     {
+      "label": "CoinGape: Wormhole plans major W token unlock",
+      "url": "https://coingape.com/wormhole-plans-major-w-token-unlock",
+      "kind": "news",
+      "confirms": [
+       "next major unlock Apr 3 2025 involves strategic participants, core contributors, guardians, ecosystem"
+      ]
+     }
+    ],
+    "gap": "amount conflict 1.39B (Tokenomist) vs 1.28B (MEXC); circulatingBefore derived as 1.39B/46.27%; core-contributor amount and recipientsMix are residual estimates"
+   }
+  ]
+ },
+ {
+  "token": "ZRO",
+  "events": [
+   {
+    "date": "2025-06-20",
+    "amountTokens": 25710000,
+    "amountHow": "Tokenomist value ~$46M at ~$1.80 implies ~25.6M; CoinMarketCal lists the recurring monthly tranche as 25.71M ZRO (20 Jul 2025 listing); exact June token count not found stated directly",
+    "circulatingBefore": 111150000,
+    "pctCirculating": 23.13,
+    "shape": "lump",
+    "recipients": "Insiders: strategic partners, core contributors and 'token repurchased'; first of 24 monthly tranches after the 1-year lock",
+    "recipientsMix": null,
+    "firstInsiderUnlock": true,
+    "priceUsd": 1.8,
+    "priceSource": "https://crypto.news/layerzero-price-dips-ahead-of-fee-vote-huge-zro-token-unlock/ (ZRO fell to $1.80 on June 19, 2025)",
+    "sources": [
+     {
+      "label": "Tokenomist weekly unlock digest week 3 June 2025",
+      "url": "https://tokenomist.ai/research/weekly-unlock-digest-week-3-june-2025",
+      "kind": "aggregator",
+      "confirms": [
+       "date",
+       "pct",
+       "recipients",
+       "start of insider unlocks"
+      ]
+     },
+     {
+      "label": "crypto.news: LayerZero price dips ahead of huge ZRO unlock",
+      "url": "https://crypto.news/layerzero-price-dips-ahead-of-fee-vote-huge-zro-token-unlock/",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "pct",
+       "value",
+       "price"
+      ]
+     },
+     {
+      "label": "MEXC news (Tokenomist): 2-year monthly vesting begins June 20",
+      "url": "https://www.mexc.com/news/11593",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "pct",
+       "2-year monthly vesting start"
+      ]
+     },
+     {
+      "label": "CoinMarketCal via TradingView: ZRO 25.71MM unlock 20 Jul 2025",
+      "url": "https://it.tradingview.com/news/coinmarketcal:40cef9f4a094b:0-layerzero-zro-25-71mm-token-unlock-20-jul-2025",
+      "kind": "aggregator",
+      "confirms": [
+       "monthly tranche size"
+      ]
+     }
+    ],
+    "gap": "23.13% is below 25% so this is listed only as the first insider unlock; mytoken.io reported 20.25%/21.63% instead; circulatingBefore derived as 25.71M/23.13%; recipient split not found"
+   }
+  ]
+ },
+ {
+  "token": "LISTA",
+  "events": [
+   {
+    "date": "2025-06-20",
+    "amountTokens": 33440000,
+    "amountHow": "PANews / Token Unlocks data via MEXC news: ~33.44M LISTA at 17:00 Beijing time June 20, 2025 (~$7M)",
+    "circulatingBefore": 172730000,
+    "pctCirculating": 19.36,
+    "shape": "lump",
+    "recipients": "End of 1-year cliff for Investors & Advisors (18% locked to June 2025, then quarterly) and Team (3.5%, quarterly from June 2025), plus quarterly DAO Treasury/Ecosystem tranches",
+    "recipientsMix": {
+     "team": 0.07,
+     "investors": 0.67,
+     "community": 0,
+     "ecosystem": 0.26,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.21,
+    "priceSource": "implied from ~$7M / 33.44M in MEXC/PANews report (https://www.mexc.com/news/6011); no direct quote found",
+    "sources": [
+     {
+      "label": "MEXC news citing PANews/Token Unlocks",
+      "url": "https://www.mexc.com/news/6011",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct",
+       "value"
+      ]
+     },
+     {
+      "label": "Lista DAO Medium: LISTA unlocking schedule",
+      "url": "https://medium.com/listadao/product-update-lista-unlocking-schedule-99a65d77204c",
+      "kind": "primary",
+      "confirms": [
+       "investor and team 1-year cliff to June 2025",
+       "quarterly vesting"
+      ]
+     },
+     {
+      "label": "TechFlow: Lista DAO unlock schedule announcement",
+      "url": "https://www.techflowpost.com/en-US/newsletter/53826",
+      "kind": "news",
+      "confirms": [
+       "schedule",
+       "initial circ 230M"
+      ]
+     },
+     {
+      "label": "mytoken.io insider unlock week (Tokenomist)",
+      "url": "https://mytoken.io/en/news/511420.html",
+      "kind": "news",
+      "confirms": [
+       "week of unlock (conflicting 5.20M / 14.29%)"
+      ]
+     }
+    ],
+    "gap": "recipientsMix is derived from the published schedule (8 equal investor quarters, 16 team quarters), not a reported split; mytoken.io gives a conflicting 5.20M / 14.29%; circulatingBefore derived from 33.44M/19.36%"
+   }
+  ]
+ },
+ {
+  "token": "ZETA",
+  "events": [
+   {
+    "date": "2024-08-01",
+    "amountTokens": 53890000,
+    "amountHow": "BeInCrypto July-Aug 2024 unlock preview: 53.89M ZETA on Aug 1 against 284.81M circulating; ZetaChain docs give a 6-month cliff for Core Contributors and Purchasers/Advisors from the Feb 1 2024 launch",
+    "circulatingBefore": 284810000,
+    "pctCirculating": 18.92,
+    "shape": "lump",
+    "recipients": "Core contributors and purchasers/advisors (first release after 6-month cliff, 1/18 each), plus user growth pool, ecosystem growth fund and liquidity incentives",
+    "recipientsMix": {
+     "team": 0.49,
+     "investors": 0.35,
+     "community": 0.08,
+     "ecosystem": 0.08,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.65,
+    "priceSource": "implied from KuCoin's ~$35M value for the Aug 1 ZETA unlock / 53.89M; no direct quote found",
+    "sources": [
+     {
+      "label": "BeInCrypto: token unlocks July-August 2024",
+      "url": "https://beincrypto.com/token-unlocks-july-august",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "circulating",
+       "recipients"
+      ]
+     },
+     {
+      "label": "ZetaChain docs: token distribution",
+      "url": "https://zetachain-docs.vercel.app/about/token-utility/distribution",
+      "kind": "primary",
+      "confirms": [
+       "6-month cliff for core contributors and purchasers",
+       "1/18 monthly"
+      ]
+     },
+     {
+      "label": "KuCoin: Token Unlocks to Watch in August 2024",
+      "url": "https://www.kucoin.com/news/articles/token-unlocks-to-watch-in-august-2024-market-impact-and-key-events-to-know",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "USD value"
+      ]
+     }
+    ],
+    "gap": "recipientsMix derived from docs (472.5M/18 core, 336M/18 purchasers, remainder other pools), not a reported split; price implied"
+   }
+  ]
+ },
+ {
+  "token": "XAI",
+  "events": [
+   {
+    "date": "2024-07-09",
+    "amountTokens": 107900000,
+    "amountHow": "Xai's revised figures (TechFlow, CoinTurk): ~107.9M released across July after the team relocked its July tokens for 6 months; Token Unlocks had originally listed a 198.4M cliff (BeInCrypto 71.6%, The Block ~72% of circ)",
+    "circulatingBefore": 300000000,
+    "pctCirculating": 35.97,
+    "shape": "stream",
+    "recipients": "Investors ~72.3M, Team ~17.7M, Advisors ~4.2M, DAC ~5.2M, Xai Foundation ~8.5M; released daily over ~30 days from July 9",
+    "recipientsMix": {
+     "team": 0.16,
+     "investors": 0.67,
+     "community": 0,
+     "ecosystem": 0.05,
+     "other": 0.12
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.35,
+    "priceSource": "implied from The Block's ~$70M / ~200M (Decrypt implies ~$0.31 from $60.76M/198.4M); no direct quote found",
+    "sources": [
+     {
+      "label": "TechFlow: Xai July unlock revised",
+      "url": "https://www.techflowpost.com/en-US/newsletter/52373",
+      "kind": "news",
+      "confirms": [
+       "amount",
+       "recipients",
+       "circ ~300M",
+       "+36%"
+      ]
+     },
+     {
+      "label": "Decrypt: Xai, Immutable, Pixels among July's biggest gaming unlocks",
+      "url": "https://decrypt.co/238915/xai-immutable-pixels-ethereum-gaming-token-unlocks",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "original 198.4M",
+       "30-day release"
+      ]
+     },
+     {
+      "label": "The Block: July's $350M token unlocks",
+      "url": "https://www.theblock.co/news/markets/2024-07-07-julys-350-million-worth-of-token-unlocks-includes-worldcoin-xai-arbitrum-aptos-and-more-303837",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "original amount",
+       "72% pct"
+      ]
+     },
+     {
+      "label": "CoinTurk: altcoin lock release decisions",
+      "url": "https://en.coin-turk.com/altcoin-lock-release-decisions-affect-market-prices/",
+      "kind": "news",
+      "confirms": [
+       "daily unlock",
+       "recipients"
+      ]
+     }
+    ],
+    "gap": "shape is a ~30-day daily stream, not a one-day lump; pct uses Xai's approximate ~300M circulating; The Block calls it the 'second' XAI unlock event (TGE counted first); first-insider status inferred from 6-month post-TGE cliff"
+   }
+  ]
+ },
+ {
+  "token": "ACE",
+  "events": []
+ },
+ {
+  "token": "NFP",
+  "events": []
+ },
+ {
+  "token": "ONDO",
+  "events": [
+   {
+    "date": "2025-01-18",
+    "amountTokens": 1939420000,
+    "amountHow": "Annual cliff tranche per DropsTab vesting page: Private Sales 322.50M + Protocol Development 825.00M + Ecosystem Growth 791.92M = 1,939.42M; CoinDesk reports 1.94B ONDO on Jan 18; crypto.news reports >1.9B (792M ecosystem, 825M protocol development, rest private sales).",
+    "circulatingBefore": 1447000000,
+    "pctCirculating": 134.0,
+    "shape": "lump",
+    "recipients": "protocol development (core team/Ondo) ~825M, ecosystem growth ~792M, private-sale investors ~322.5M",
+    "recipientsMix": {
+     "team": 0.425,
+     "investors": 0.166,
+     "community": 0,
+     "ecosystem": 0.408,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 1.25,
+    "priceSource": "https://crypto.news/ondo-poised-for-1-9b-token-unlock/",
+    "sources": [
+     {
+      "label": "CoinDesk, 2025-01-13: Altcoin market could heat up with $3B token unlock schedule, ONDO leads",
+      "url": "https://hotfix.coindesk.com/markets/2025/01/13/altcoin-market-could-heat-up-this-week-with-3-b-token-unlock-schedule",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct (over 130% of ~1.4B circulating)"
+      ]
+     },
+     {
+      "label": "crypto.news: ONDO poised for $1.9B token unlock (Tokenomist data)",
+      "url": "https://crypto.news/ondo-poised-for-1-9b-token-unlock/",
+      "kind": "news",
+      "confirms": [
+       "date (Jan 17 7PM EST = Jan 18 00:00 UTC)",
+       "amount",
+       "pct (134% influx)",
+       "recipients",
+       "price"
+      ]
+     },
+     {
+      "label": "DropsTab ONDO vesting",
+      "url": "https://dropstab.com/coins/ondo-finance/vesting",
+      "kind": "aggregator",
+      "confirms": [
+       "allocation tranche sizes",
+       "Private Sales and Protocol Development 0% at TGE, cliff then vest (first insider release)"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore derived as 1,939.42M / 1.34 from the 134% figure (crypto.news citing Tokenomist); CoinDesk gives ~1.4B (would be ~138%). Recipients split mixes stated figures (792M, 825M) and DropsTab tranche sizes."
+   }
+  ]
+ },
+ {
+  "token": "ARKM",
+  "events": [
+   {
+    "date": "2024-07-18",
+    "amountTokens": null,
+    "amountHow": "No lump: Arkham docs say Core Contributors (200M), Investors (175M) and Advisors (30M) are locked 1 year after listing then unlock linearly over 3 years (~405M/36 months). Outpost newsletter: ~498,140 ARKM/day across illiquid allocations once the linear unlocks begin. DefiLlama shows ongoing weekly insider releases (core 958.2k, investors 1.12M, advisors 191.6k per week) and a dated event 17 Jul 2024 00:00 UTC.",
+    "circulatingBefore": null,
+    "pctCirculating": null,
+    "shape": "stream",
+    "recipients": "core contributors, investors and advisors begin linear vesting",
+    "recipientsMix": {
+     "team": 0.568,
+     "investors": 0.432,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "Arkham Codex tokenomics (official)",
+      "url": "https://codex.arkm.com/tokenomics",
+      "kind": "primary",
+      "confirms": [
+       "1-year lock after listing then 3-year linear for core contributors, investors, advisors",
+       "allocation sizes"
+      ]
+     },
+     {
+      "label": "Tokenomics.com ARKM unlocks",
+      "url": "https://app.tokenomics.com/tokenomics/arkham/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "TGE 2023-07-17",
+       "12-month cliff + 36-month linear"
+      ]
+     },
+     {
+      "label": "CoinMarketCal via TradingView: Arkham token unlock 18 Jul 2024",
+      "url": "https://it.tradingview.com/news/coinmarketcal%3Aca2a5505d094b%3A0-arkham-arkm-token-unlock-18-jul-2024",
+      "kind": "news",
+      "confirms": [
+       "date"
+      ]
+     },
+     {
+      "label": "DefiLlama Arkham unlocks",
+      "url": "https://defillama.com/unlocks/arkham",
+      "kind": "aggregator",
+      "confirms": [
+       "linear weekly insider releases",
+       "event dated 17 Jul 2024"
+      ]
+     },
+     {
+      "label": "Onchain Outpost: major upcoming AI token unlocks",
+      "url": "https://onchain-outpost.beehiiv.com/p/major-upcoming-ai-token-unlocks",
+      "kind": "news",
+      "confirms": [
+       "linear daily unlock ~498,140 ARKM/day",
+       "shape"
+      ]
+     }
+    ],
+    "gap": "Date is 2024-07-17 (DefiLlama, UTC) or 2024-07-18 (CoinMarketCal); circulating supply in July 2024 and price on the day not confirmed. recipientsMix is the share of the 405M insider pool (200+30 team/advisors vs 175 investors), from Arkham docs. A linear start of a few hundred thousand tokens/day cannot be 25% of circulating."
+   }
+  ]
+ },
+ {
+  "token": "MAV",
+  "events": [
+   {
+    "date": "2024-07-01",
+    "amountTokens": 39870000,
+    "amountHow": "CoinGape (2024-06-29): 39.87M MAV unlocking July 1. Maverick docs monthly schedule shows unlocked share rising from 15.2124% (1 Jun 2024) to 17.7829% (1 Jul 2024) of 2B = ~51.4M including non-insider pools.",
+    "circulatingBefore": 250000000,
+    "pctCirculating": 15.95,
+    "shape": "lump",
+    "recipients": "end of 12-month cliff: first quarterly investor and advisor tranche (1/12 each) plus first monthly team release (1/60), alongside ongoing liquidity-mining/public-goods/treasury vesting",
+    "recipientsMix": {
+     "team": 0.25,
+     "investors": 0.57,
+     "community": 0.1,
+     "ecosystem": 0.08,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.2579,
+    "priceSource": "https://coingape.com/altcoins-to-sell-based-on-token-unlocks-ahead",
+    "sources": [
+     {
+      "label": "CoinGape 2024-06-29: Altcoins to sell based on token unlocks ahead",
+      "url": "https://coingape.com/altcoins-to-sell-based-on-token-unlocks-ahead",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct (15.95% of circulating)",
+       "price"
+      ]
+     },
+     {
+      "label": "Maverick docs: MAV token & tokenomics (monthly unlock table)",
+      "url": "https://docs.mav.xyz/mav-token/mav-token-and-tokenomics",
+      "kind": "primary",
+      "confirms": [
+       "unlocks on 1st of month",
+       "jump on 1 Jul 2024 (15.21% -> 17.78% of supply)",
+       "allocations"
+      ]
+     },
+     {
+      "label": "Tokenomics.com Maverick Protocol",
+      "url": "https://app.tokenomics.com/tokenomics/maverick-protocol",
+      "kind": "aggregator",
+      "confirms": [
+       "TGE 2023-06-27",
+       "team 12-month cliff + 60-month linear",
+       "investors/advisors 12-month cliff then every 3 months x12"
+      ]
+     }
+    ],
+    "gap": "Amount conflict: news 39.87M vs docs schedule ~51.4M; circulatingBefore 250M is implied by the 15.95% figure (docs schedule implies ~304M unlocked). Either way <25%. recipientsMix is an estimate from vesting terms, not a stated breakdown."
+   }
+  ]
+ },
+ {
+  "token": "EDU",
+  "events": []
+ },
+ {
+  "token": "HOOK",
+  "events": [
+   {
+    "date": "2023-12-01",
+    "amountTokens": 15833333,
+    "amountHow": "Hooked whitepaper release table: circulating share 19.17% (Nov-23) -> 22.33% (Dec-23) of 500M; per category: private sale +2.00% (10M, the 10% cliff release), team +0.33% (~1.67M, first of 60 monthly), community +0.42%, ecosystem +0.42%.",
+    "circulatingBefore": 95833333,
+    "pctCirculating": 16.5,
+    "shape": "lump",
+    "recipients": "private-sale investors 10M cliff release, team ~1.67M first monthly release, plus ongoing community and ecosystem monthly vesting ~4.17M",
+    "recipientsMix": {
+     "team": 0.105,
+     "investors": 0.632,
+     "community": 0.132,
+     "ecosystem": 0.132,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "Hooked Protocol whitepaper: Emissions and Distribution",
+      "url": "https://hooked-protocol.gitbook.io/hooked-protocol-whitepaper/hooked-tokenomics/hook/emissions-and-distribution",
+      "kind": "primary",
+      "confirms": [
+       "private sale 10% at 1-year cliff",
+       "team 1-year cliff",
+       "monthly schedule Nov-23/Dec-23 circulating %"
+      ]
+     },
+     {
+      "label": "Tokenomics.com Hooked Protocol unlocks",
+      "url": "https://app.tokenomics.com/tokenomics/hooked-protocol/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "TGE 2022-11-30",
+       "12-month cliffs",
+       "unlocks on 1st of month"
+      ]
+     },
+     {
+      "label": "The Big Whale: Hooked Protocol",
+      "url": "https://thebigwhale.io/tokens/hooked-protocol",
+      "kind": "aggregator",
+      "confirms": [
+       "launch 2022-12-01"
+      ]
+     }
+    ],
+    "gap": "No news coverage of this unlock found; circulatingBefore is the whitepaper scheduled float, not a market snapshot (Tokenomics.com now shows market circulating far below unlocked supply, so actual float may have differed). Price on the day not found."
+   }
+  ]
+ },
+ {
+  "token": "MEME",
+  "events": [
+   {
+    "date": "2024-05-03",
+    "amountTokens": 5318000000,
+    "amountHow": "BeInCrypto May 2024 preview: airdrop 3.45B + advisory 1.04B + investors 828M (sum 5.318B); FXStreet and Crypto Briefing report 5.31B.",
+    "circulatingBefore": 16610000000,
+    "pctCirculating": 31.97,
+    "shape": "lump",
+    "recipients": "airdrop tranche 3.45B (community), advisory 1.04B, investors 828M (end of 6-month investor cliff); a daily linear release of 49.47M also began",
+    "recipientsMix": {
+     "team": 0.196,
+     "investors": 0.156,
+     "community": 0.649,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.024,
+    "priceSource": "https://en.coin-turk.com/key-meme-coin-unlock-event-approaches/",
+    "sources": [
+     {
+      "label": "FXStreet 2024-04-27: Nearly $450 million worth of tokens unlock",
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/nearly-450-million-worth-of-tokens-unlock-to-look-forward-to-this-weekend-and-into-next-week-202404270200",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct (31.97% of circulating)",
+       "recipients (airdrop, advisory, investors)"
+      ]
+     },
+     {
+      "label": "BeInCrypto: May 2024 token unlocks",
+      "url": "https://beincrypto.com/token-unlocks-may/",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "recipient breakdown"
+      ]
+     },
+     {
+      "label": "Crypto Briefing: token unlock May 2024",
+      "url": "https://cryptobriefing.com/token-unlock-may-2024",
+      "kind": "news",
+      "confirms": [
+       "amount",
+       "pct (~31%)"
+      ]
+     },
+     {
+      "label": "CoinTurk 2024-05-02: key meme coin unlock approaches",
+      "url": "https://en.coin-turk.com/key-meme-coin-unlock-event-approaches/",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "price"
+      ]
+     },
+     {
+      "label": "Tokenomics.com Memecoin unlocks",
+      "url": "https://app.tokenomics.com/tokenomics/memecoin/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "TGE 2023-11-02/03",
+       "investors 6-month cliff",
+       "contributors 12-month cliff"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore derived as 5.31B / 0.3197. Advisory counted as team in recipientsMix."
+   }
+  ]
+ },
+ {
+  "token": "OMNI",
+  "events": []
+ },
+ {
+  "token": "EIGEN",
+  "events": [
+   {
+    "date": "2025-10-01",
+    "amountTokens": 36820000,
+    "amountHow": "News round-ups (BeInCrypto, Pintu, ChainCatcher) state 36.82M EIGEN on Oct 1 2025: investors 19.75M + early contributors 17.07M. Matches the official terms (1-year lockup from the EIGEN Unlock, then 4% of each recipient's allocation; 4% of 920.5M investor+contributor tokens = 36.82M).",
+    "circulatingBefore": 339490000,
+    "pctCirculating": 10.85,
+    "shape": "lump",
+    "recipients": "investors 19.75M, early contributors 17.07M",
+    "recipientsMix": {
+     "team": 0.464,
+     "investors": 0.536,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 1.76,
+    "priceSource": "https://beincrypto.com/crypto-token-unlocks-first-week-of-october (implied: $64.80M / 36.82M tokens; ChainCatcher says price was $1.82 a few days later, before the Oct 10 crash)",
+    "sources": [
+     {
+      "label": "EigenFoundation docs: key info (1-year lockup from EIGEN Unlock, then 4% at anniversary and 4% monthly)",
+      "url": "https://docs.eigenfoundation.org/eigen-token/key-info",
+      "kind": "primary",
+      "confirms": [
+       "first insider unlock",
+       "shape"
+      ]
+     },
+     {
+      "label": "BeInCrypto: token unlocks first week of October",
+      "url": "https://beincrypto.com/crypto-token-unlocks-first-week-of-october",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "recipients",
+       "circulating 339.49M",
+       "value"
+      ]
+     },
+     {
+      "label": "ChainCatcher: 'On October 1, 2025, the first 36.82 million EIGEN will unlock'",
+      "url": "https://www.chaincatcher.com/en/article/2213320",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "first unlock"
+      ]
+     },
+     {
+      "label": "Pintu: 3 token unlocks early Oct 2025 (13.77% of released supply)",
+      "url": "https://pintu.co.id/en/news/211664-3-token-unlocks-in-early-october-2025-that-are-worth-to-watch/amp",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "recipients"
+      ]
+     },
+     {
+      "label": "DropsTab EIGEN vesting (investor/contributor linear vest starting Oct 2025)",
+      "url": "https://dropstab.com/coins/eigen/vesting",
+      "kind": "aggregator",
+      "confirms": [
+       "start Oct 2025",
+       "recipients"
+      ]
+     }
+    ],
+    "gap": "Circulating before differs by source: BeInCrypto states 339.49M (10.85%); Tokenomist-based 13.77% of released supply implies ~267M; so pct is 10.8-13.8%. Under 25% either way; listed only as the first insider unlock. Time of day not confirmed (sources say Oct 1; on-chain anniversary of the Sep 30/Oct 1 2024 transferability)."
+   }
+  ]
+ },
+ {
+  "token": "SCR",
+  "events": [
+   {
+    "date": "2025-10-22",
+    "amountTokens": 82500000,
+    "amountHow": "MEXC/PANews weekly round-up: ~82.5M SCR at 08:00 Beijing (00:00 UTC) Oct 22, 43.42% of circulating; GN Crypto: 82.5M to Scroll Foundation and ecosystem; DropsTab splits it 62.5M Ecosystem & Growth + 20M Foundation Treasury (annual anniversary tranche).",
+    "circulatingBefore": 190000000,
+    "pctCirculating": 43.42,
+    "shape": "lump",
+    "recipients": "Ecosystem & Growth 62.5M, Scroll Foundation Treasury 20M (not insiders)",
+    "recipientsMix": {
+     "team": 0,
+     "investors": 0,
+     "community": 0,
+     "ecosystem": 0.758,
+     "other": 0.242
+    },
+    "firstInsiderUnlock": false,
+    "priceUsd": 0.175,
+    "priceSource": "https://www.mexc.com/news/134994 (implied: ~$14.4M / 82.5M; GN Crypto implies ~$0.19)",
+    "sources": [
+     {
+      "label": "MEXC news (PANews data): ZRO, XPL, MBG etc. unlocks next week",
+      "url": "https://www.mexc.com/news/134994",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "time",
+       "amount",
+       "pct 43.42%",
+       "value"
+      ]
+     },
+     {
+      "label": "GN Crypto: $1B+ in unlocks Oct 20-26: LayerZero, Plasma, Scroll",
+      "url": "https://www.gncrypto.news/news/layerzero-plasma-scroll-token-unlocks/",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "recipients"
+      ]
+     },
+     {
+      "label": "DropsTab Scroll vesting (82.5M = 20M Treasury + 62.5M Ecosystem; circulating 190M)",
+      "url": "https://dropstab.com/fr/coins/scroll/vesting",
+      "kind": "aggregator",
+      "confirms": [
+       "recipients",
+       "circulating"
+      ]
+     },
+     {
+      "label": "Tokenomics.com Scroll (circulating 190M = TGE unlocks; 1-yr cliff on team/investors)",
+      "url": "https://app.tokenomics.com/tokenomics/scroll",
+      "kind": "aggregator",
+      "confirms": [
+       "circulating",
+       "insider cliff"
+      ]
+     }
+    ],
+    "gap": "pct uses the 190M circulating that the round-up's 43.42% implies; trackers report 190M circulating even in Nov 2026, so their circulating figure may not count unlocked-but-unsold ecosystem tokens."
+   },
+   {
+    "date": "2025-10-22",
+    "amountTokens": 364634,
+    "amountHow": "Derived, not stated by a source: DropsTab shows daily linear releases of ~154,969 (investors) + ~209,665 (core contributors) SCR, 35.82% vested ~13 months later, which puts the start of the 36-month stream at ~Oct 22 2025 (1-year cliff from Oct 22 2024 TGE).",
+    "circulatingBefore": 190000000,
+    "pctCirculating": 0.19,
+    "shape": "stream",
+    "recipients": "investors (170M allocation) and core contributors (230M allocation), 36-month linear vest after 1-year cliff",
+    "recipientsMix": {
+     "team": 0.575,
+     "investors": 0.425,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.175,
+    "priceSource": "https://www.mexc.com/news/134994 (implied, same week)",
+    "sources": [
+     {
+      "label": "DropsTab Scroll vesting (cliff then linear 36 months; daily amounts)",
+      "url": "https://dropstab.com/fr/coins/scroll/vesting",
+      "kind": "aggregator",
+      "confirms": [
+       "shape",
+       "recipients",
+       "daily amount"
+      ]
+     },
+     {
+      "label": "KuCoin Research: investors unlock after one year",
+      "url": "https://www.kucoin.com/research/project-reports/scroll-scr",
+      "kind": "aggregator",
+      "confirms": [
+       "1-year lock"
+      ]
+     },
+     {
+      "label": "Tokenomics.com Scroll (team & investors 12-month cliff, 36-month linear)",
+      "url": "https://app.tokenomics.com/tokenomics/scroll",
+      "kind": "aggregator",
+      "confirms": [
+       "cliff",
+       "shape"
+      ]
+     }
+    ],
+    "gap": "The exact start date of the insider stream is derived (no source names the day); Tokenomics.com uses an Oct 11 TGE and monthly steps on the 11th, which would put it at 2025-10-11 instead. No lump at the cliff end found."
+   }
+  ]
+ },
+ {
+  "token": "GRASS",
+  "events": [
+   {
+    "date": "2025-10-28",
+    "amountTokens": 181000000,
+    "amountHow": "BeInCrypto and Pintu: 181M GRASS on Oct 28 2025 (early investors 126M, contributors 55M), the first major release since the Oct 2024 TGE; MEXC/PANews: 21:30 Beijing (13:30 UTC), 72.4% of circulating.",
+    "circulatingBefore": 250000000,
+    "pctCirculating": 72.4,
+    "shape": "lump",
+    "recipients": "early investors 126M, contributors 55M",
+    "recipientsMix": {
+     "team": 0.304,
+     "investors": 0.696,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "priceUsd": 0.44,
+    "priceSource": "https://beincrypto.com/major-crypto-token-unlocks-grass-jupiter-zora (implied: $80.24M / 181M)",
+    "sources": [
+     {
+      "label": "BeInCrypto: major token unlocks Grass, Jupiter, Zora",
+      "url": "https://beincrypto.com/major-crypto-token-unlocks-grass-jupiter-zora",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "recipients",
+       "value",
+       "first major unlock since TGE"
+      ]
+     },
+     {
+      "label": "MEXC news (PANews data): SUI, GRASS, EIGEN unlocks next week",
+      "url": "https://www.mexc.com/news/142854",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "time 13:30 UTC",
+       "amount",
+       "pct 72.4% of circulating"
+      ]
+     },
+     {
+      "label": "Pintu: 3 major token unlocks late Oct 2025",
+      "url": "https://pintu.co.id/en/news/221901-3-major-token-unlocks-to-watch-late-oct-2025/amp",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "recipients",
+       "first release since TGE"
+      ]
+     },
+     {
+      "label": "GN Crypto: $460M October unlocks (Tokenomist allocation: early investors 252M, contributors 220M)",
+      "url": "https://www.gncrypto.news/news/october-2025-token-unlocks-sui-grass-aethir-460m/",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "allocation sizes"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore 250M is implied by the 72.4% figure (Tokenomist basis); BeInCrypto/Pintu cite 313.3M market circulating supply, which gives 57.8%. Either way well above 25%."
+   }
+  ]
+ },
+ {
+  "token": "DRIFT",
+  "events": []
+ },
+ {
+  "token": "COW",
+  "events": []
+ },
+ {
+  "token": "CETUS",
+  "events": []
+ },
+ {
+  "token": "MORPHO",
+  "events": []
+ },
+ {
+  "token": "AI",
+  "events": []
+ },
+ {
+  "token": "MAVIA",
+  "events": [
+   {
+    "date": "2024-05-06",
+    "amountTokens": 1530000,
+    "amountHow": "Derived. The pre-revision Token Unlocks figure was 7.66M MAVIA (25.13% of circulating; FXStreet 4 May 2024). The project's 25 Apr 2024 update cut the next 3 Private Sale, Community & Ecosystem and Gameplay unlocks by 80% and said circulating stays under 14% until Feb 2025. 20% x 7.66M = ~1.53M. Not reported directly.",
+    "circulatingBefore": 30480000,
+    "pctCirculating": 5.0,
+    "shape": "lump",
+    "recipients": "First post-TGE quarterly release for Private Sale investors (3-month cliff; 6.7% had been released at TGE), plus Community & Ecosystem and Gameplay Rewards, all cut by 80%. Team and advisors excluded (cliff extended to Feb 2025).",
+    "recipientsMix": null,
+    "firstInsiderUnlock": true,
+    "priceUsd": 4.02,
+    "priceSource": "https://en.coin-turk.com/key-insights-on-upcoming-mavia-token-unlock-event/ (5 May 2024, $4.02)",
+    "sources": [
+     {
+      "label": "Heroes of Mavia Medium, 25 Apr 2024: updated emission schedule (80% cut on next 3 unlocks; team/advisor cliff to Feb 2025; circulating <14% until Feb 2025)",
+      "url": "https://medium.com/heroes-of-mavia/updated-emission-schedule-for-mavia-token-138e54d23aba",
+      "kind": "primary",
+      "confirms": [
+       "recipients",
+       "amount reduction"
+      ]
+     },
+     {
+      "label": "FXStreet 4 May 2024: 7.66M MAVIA on 6 May, 25.13% of circulating (pre-revision tracker figure)",
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/mavia-hft-eul-gal-holders-brace-for-volatility-ahead-of-55million-worth-of-cliff-token-unlocks-next-week-202405040200",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "circulatingBefore (implied 30.5M)"
+      ]
+     },
+     {
+      "label": "Tokenomics.com: TGE 2024-02-06; Private Sale 6.7% at TGE, 3-month cliff, quarterly; Team 6-month cliff (original)",
+      "url": "https://app.tokenomics.com/tokenomics/heroes-of-mavia",
+      "kind": "aggregator",
+      "confirms": [
+       "date",
+       "recipients"
+      ]
+     },
+     {
+      "label": "Decrypt 26 Apr 2024: unlock cuts; price $3.72",
+      "url": "https://decrypt.co/228271/heroes-mavia-delays-ethereum-token-unlocks?amp=1",
+      "kind": "news",
+      "confirms": [
+       "recipients",
+       "price"
+      ]
+     }
+    ],
+    "gap": "Actual tokens released on 6 May 2024 are not reported anywhere I found. 1.53M is derived from the 80% cut. If trackers' 7.66M (25.13%) had actually been released this would qualify as a B event, but the project said it would not be. Private Sale investors first received tokens at TGE (2024-02-06, 6.7% of their allocation, part of the 30M initial float). I treat the end of their 3-month cliff as the first insider unlock. Team/advisors first unlocked 2025-02-06 (next event)."
+   },
+   {
+    "date": "2025-02-06",
+    "amountTokens": 13040000,
+    "amountHow": "MEXC news 2 Feb 2025 (Token Unlocks data): about 13.04M MAVIA unlocking 6 Feb 2025, 08:00 Beijing time (00:00 UTC), worth ~$5.4M",
+    "circulatingBefore": 31540000,
+    "pctCirculating": 41.35,
+    "shape": "lump",
+    "recipients": "Team and advisors' first unlock (cliff extended to Feb 2025), plus resumption of normal quarterly vesting for Private Sale, Community & Ecosystem and Gameplay Rewards. The insider (team/advisor/private) part was ~$3.19M of the ~$5.4M.",
+    "recipientsMix": null,
+    "firstInsiderUnlock": false,
+    "priceUsd": 0.414,
+    "priceSource": "https://www.mexc.com/news/480 (implied: $5.4M / 13.04M)",
+    "sources": [
+     {
+      "label": "MEXC news 2 Feb 2025: 13.04M MAVIA on 6 Feb, 41.35% of circulating, ~$5.4M",
+      "url": "https://www.mexc.com/news/480",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amount",
+       "pct",
+       "price"
+      ]
+     },
+     {
+      "label": "Heroes of Mavia Medium 25 Apr 2024: team & advisor first unlock Feb 2025; normal vesting resumes Feb 2025; circulating <14% (~35M) until then",
+      "url": "https://medium.com/heroes-of-mavia/updated-emission-schedule-for-mavia-token-138e54d23aba",
+      "kind": "primary",
+      "confirms": [
+       "date",
+       "recipients",
+       "circulatingBefore (consistent)"
+      ]
+     },
+     {
+      "label": "Cryptonews / Tokenomist weekly insider unlocks 3-9 Feb 2025: MAVIA insider portion $3.19M (13.38% in text, 19.90% in embedded post)",
+      "url": "https://cryptonews.net/news/altcoins/30465353/",
+      "kind": "news",
+      "confirms": [
+       "date (week)",
+       "recipients (insider share)"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore is derived (13.04M / 0.4135). The per-group split isn't published, so recipientsMix is null. The insider value share is ~59% by $ (3.19/5.4), but the insider % figures in the source conflict. I treated this as a B event (not the first insider unlock) because Private Sale investors had released earlier. It IS the team's first unlock."
+   }
+  ]
+ },
+ {
+  "token": "MOVE",
+  "events": []
+ },
+ {
+  "token": "ME",
+  "events": []
+ },
+ {
+  "token": "USUAL",
+  "events": []
+ },
+ {
+  "token": "VANA",
+  "events": []
+ }
+]
