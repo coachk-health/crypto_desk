@@ -1,0 +1,939 @@
+{
+ "frozenRules": "data/strategy_frozen.json",
+ "window": [
+  "2023-11-15",
+  "2025-11-16"
+ ],
+ "rulesPass": {
+  "n": 16,
+  "tokens": 16,
+  "won": 44,
+  "meanR": 0.73,
+  "totalR": 11.68,
+  "range90": [
+   -0.097,
+   1.565
+  ],
+  "stops": 9,
+  "targets": 2
+ },
+ "rulesPass_v1exits": {
+  "n": 16,
+  "tokens": 16,
+  "won": 56,
+  "meanR": 0.879,
+  "totalR": 14.06,
+  "range90": [
+   0.147,
+   1.607
+  ],
+  "stops": 7,
+  "targets": 7
+ },
+ "coreAnyWeek": {
+  "n": 29,
+  "tokens": 28,
+  "won": 41,
+  "meanR": 0.481,
+  "totalR": 13.96,
+  "range90": [
+   -0.104,
+   1.083
+  ],
+  "stops": 16,
+  "targets": 4
+ },
+ "coreFlatOrUp": {
+  "n": 13,
+  "tokens": 13,
+  "won": 38,
+  "meanR": 0.176,
+  "totalR": 2.28,
+  "range90": [
+   -0.528,
+   0.986
+  ],
+  "stops": 7,
+  "targets": 2
+ },
+ "corePumped": {
+  "n": 5,
+  "tokens": 5,
+  "won": 20,
+  "meanR": -0.112,
+  "totalR": -0.56,
+  "range90": [
+   -1.013,
+   1.678
+  ],
+  "stops": 4,
+  "targets": 1
+ },
+ "allResearched": {
+  "n": 34,
+  "tokens": 32,
+  "won": 38,
+  "meanR": 0.394,
+  "totalR": 13.4,
+  "range90": [
+   -0.111,
+   0.908
+  ],
+  "stops": 20,
+  "targets": 5
+ },
+ "trades": [
+  {
+   "token": "ALT",
+   "date": "2024-07-25",
+   "first": true,
+   "pct": 42.2,
+   "shape": "lump",
+   "pump": -18.0,
+   "week": 17.5,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": 3.506,
+    "why": "target",
+    "exitDay": 10,
+    "pnlPct": 44.39
+   },
+   "v1": {
+    "R": 2.721,
+    "why": "target",
+    "exitDay": 8,
+    "pnlPct": 34.45
+   }
+  },
+  {
+   "token": "ARB",
+   "date": "2024-03-16",
+   "first": true,
+   "pct": 76.6,
+   "shape": "lump",
+   "pump": 1.1,
+   "week": 7.3,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": 3.466,
+    "why": "target",
+    "exitDay": 27,
+    "pnlPct": 43.88
+   },
+   "v1": {
+    "R": 1.757,
+    "why": "time",
+    "exitDay": 14,
+    "pnlPct": 22.24
+   }
+  },
+  {
+   "token": "ARKM",
+   "date": "2024-07-18",
+   "first": true,
+   "pct": null,
+   "shape": "stream",
+   "pump": -13.5,
+   "week": -7.8,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": -1.009,
+    "why": "stop",
+    "exitDay": -3,
+    "pnlPct": -12.78
+   },
+   "v1": {
+    "R": -1.009,
+    "why": "stop",
+    "exitDay": -3,
+    "pnlPct": -12.78
+   }
+  },
+  {
+   "token": "CYBER",
+   "date": "2024-08-14",
+   "first": true,
+   "pct": 8.54,
+   "shape": "lump",
+   "pump": -34.7,
+   "week": -30.4,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": -1.009,
+    "why": "stop",
+    "exitDay": -3,
+    "pnlPct": -12.78
+   },
+   "v1": {
+    "R": -1.009,
+    "why": "stop",
+    "exitDay": -3,
+    "pnlPct": -12.78
+   }
+  },
+  {
+   "token": "DYDX",
+   "date": "2023-12-01",
+   "first": true,
+   "pct": 83.2,
+   "shape": "lump",
+   "pump": 43.2,
+   "week": -8.9,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": -1.002,
+    "why": "stop",
+    "exitDay": -7,
+    "pnlPct": -12.69
+   },
+   "v1": {
+    "R": -1.002,
+    "why": "stop",
+    "exitDay": -7,
+    "pnlPct": -12.69
+   }
+  },
+  {
+   "token": "EIGEN",
+   "date": "2025-10-01",
+   "first": true,
+   "pct": 10.85,
+   "shape": "lump",
+   "pump": 39.4,
+   "week": 8.5,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": -1.002,
+    "why": "stop",
+    "exitDay": -7,
+    "pnlPct": -12.69
+   },
+   "v1": {
+    "R": -1.002,
+    "why": "stop",
+    "exitDay": -7,
+    "pnlPct": -12.69
+   }
+  },
+  {
+   "token": "ENA",
+   "date": "2025-03-05",
+   "first": true,
+   "pct": 66.1,
+   "shape": "lump",
+   "pump": -29.6,
+   "week": -3.8,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": -1.009,
+    "why": "stop",
+    "exitDay": -3,
+    "pnlPct": -12.78
+   },
+   "v1": {
+    "R": -1.009,
+    "why": "stop",
+    "exitDay": -3,
+    "pnlPct": -12.78
+   }
+  },
+  {
+   "token": "ETHFI",
+   "date": "2025-03-18",
+   "first": true,
+   "pct": null,
+   "shape": "stream",
+   "pump": -41.7,
+   "week": -24.1,
+   "priceChecked": false,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": 2.65,
+    "why": "time",
+    "exitDay": 30,
+    "pnlPct": 33.55
+   },
+   "v1": {
+    "R": 0.791,
+    "why": "time",
+    "exitDay": 14,
+    "pnlPct": 10.01
+   }
+  },
+  {
+   "token": "GRASS",
+   "date": "2025-10-28",
+   "first": true,
+   "pct": 57.8,
+   "shape": "lump",
+   "pump": -48.7,
+   "week": -24.7,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": -1.071,
+    "why": "stop",
+    "exitDay": 23,
+    "pnlPct": -13.56
+   },
+   "v1": {
+    "R": 2.726,
+    "why": "target",
+    "exitDay": 6,
+    "pnlPct": 34.51
+   }
+  },
+  {
+   "token": "HOOK",
+   "date": "2023-12-01",
+   "first": true,
+   "pct": 27.07,
+   "shape": "lump",
+   "pump": -1.8,
+   "week": -5.3,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": -1.007,
+    "why": "stop",
+    "exitDay": -4,
+    "pnlPct": -12.75
+   },
+   "v1": {
+    "R": -1.007,
+    "why": "stop",
+    "exitDay": -4,
+    "pnlPct": -12.75
+   }
+  },
+  {
+   "token": "ID",
+   "date": "2024-03-22",
+   "first": true,
+   "pct": 16.2,
+   "shape": "lump",
+   "pump": 144.4,
+   "week": 117.8,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": -1.005,
+    "why": "stop",
+    "exitDay": -5,
+    "pnlPct": -12.72
+   },
+   "v1": {
+    "R": -1.005,
+    "why": "stop",
+    "exitDay": -5,
+    "pnlPct": -12.72
+   }
+  },
+  {
+   "token": "IO",
+   "date": "2025-07-11",
+   "first": true,
+   "pct": 7.9,
+   "shape": "stream",
+   "pump": -12.2,
+   "week": 13.0,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": -1.014,
+    "why": "stop",
+    "exitDay": -1,
+    "pnlPct": -12.84
+   },
+   "v1": {
+    "R": -1.014,
+    "why": "stop",
+    "exitDay": -1,
+    "pnlPct": -12.84
+   }
+  },
+  {
+   "token": "JTO",
+   "date": "2024-12-07",
+   "first": true,
+   "pct": 103.0,
+   "shape": "lump",
+   "pump": 57.9,
+   "week": 2.2,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": -1.026,
+    "why": "stop",
+    "exitDay": 4,
+    "pnlPct": -12.99
+   },
+   "v1": {
+    "R": -1.026,
+    "why": "stop",
+    "exitDay": 4,
+    "pnlPct": -12.99
+   }
+  },
+  {
+   "token": "JUP",
+   "date": "2025-01-22",
+   "first": false,
+   "pct": 41.7,
+   "shape": "lump",
+   "pump": -1.6,
+   "week": -6.9,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": -1.007,
+    "why": "stop",
+    "exitDay": -4,
+    "pnlPct": -12.75
+   },
+   "v1": {
+    "R": -1.007,
+    "why": "stop",
+    "exitDay": -4,
+    "pnlPct": -12.75
+   }
+  },
+  {
+   "token": "LISTA",
+   "date": "2025-06-20",
+   "first": true,
+   "pct": 19.36,
+   "shape": "lump",
+   "pump": 13.6,
+   "week": -3.1,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": -1.045,
+    "why": "stop",
+    "exitDay": 12,
+    "pnlPct": -13.23
+   },
+   "v1": {
+    "R": -1.045,
+    "why": "stop",
+    "exitDay": 12,
+    "pnlPct": -13.23
+   }
+  },
+  {
+   "token": "MAV",
+   "date": "2024-07-01",
+   "first": true,
+   "pct": 15.95,
+   "shape": "lump",
+   "pump": -31.6,
+   "week": -25.7,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": 2.319,
+    "why": "time",
+    "exitDay": 30,
+    "pnlPct": 29.36
+   },
+   "v1": {
+    "R": 2.731,
+    "why": "target",
+    "exitDay": 4,
+    "pnlPct": 34.57
+   }
+  },
+  {
+   "token": "MAVIA",
+   "date": "2024-05-06",
+   "first": true,
+   "pct": 5.0,
+   "shape": "lump",
+   "pump": -19.5,
+   "week": 9.5,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": 0.981,
+    "why": "time",
+    "exitDay": 30,
+    "pnlPct": 12.43
+   },
+   "v1": {
+    "R": 1.71,
+    "why": "time",
+    "exitDay": 14,
+    "pnlPct": 21.65
+   }
+  },
+  {
+   "token": "MEME",
+   "date": "2024-05-03",
+   "first": true,
+   "pct": 31.97,
+   "shape": "lump",
+   "pump": -25.1,
+   "week": 13.5,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": -1.078,
+    "why": "stop",
+    "exitDay": 26,
+    "pnlPct": -13.65
+   },
+   "v1": {
+    "R": 1.042,
+    "why": "time",
+    "exitDay": 14,
+    "pnlPct": 13.2
+   }
+  },
+  {
+   "token": "ONDO",
+   "date": "2025-01-18",
+   "first": true,
+   "pct": 134.0,
+   "shape": "lump",
+   "pump": -30.3,
+   "week": -21.2,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": -1.017,
+    "why": "stop",
+    "exitDay": 0,
+    "pnlPct": -12.87
+   },
+   "v1": {
+    "R": -1.017,
+    "why": "stop",
+    "exitDay": 0,
+    "pnlPct": -12.87
+   }
+  },
+  {
+   "token": "PIXEL",
+   "date": "2025-02-19",
+   "first": true,
+   "pct": 11.83,
+   "shape": "stream",
+   "pump": -47.7,
+   "week": -8.2,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": 3.485,
+    "why": "target",
+    "exitDay": 19,
+    "pnlPct": 44.12
+   },
+   "v1": {
+    "R": 2.709,
+    "why": "target",
+    "exitDay": 13,
+    "pnlPct": 34.3
+   }
+  },
+  {
+   "token": "PYTH",
+   "date": "2024-05-20",
+   "first": true,
+   "pct": 142.0,
+   "shape": "lump",
+   "pump": -26.7,
+   "week": -21.3,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": -1.019,
+    "why": "stop",
+    "exitDay": 1,
+    "pnlPct": -12.9
+   },
+   "v1": {
+    "R": -1.019,
+    "why": "stop",
+    "exitDay": 1,
+    "pnlPct": -12.9
+   }
+  },
+  {
+   "token": "PYTH",
+   "date": "2025-05-20",
+   "first": false,
+   "pct": 58.8,
+   "shape": "lump",
+   "pump": 35.7,
+   "week": 37.8,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": 3.473,
+    "why": "target",
+    "exitDay": 24,
+    "pnlPct": 43.97
+   },
+   "v1": {
+    "R": 2.74,
+    "why": "target",
+    "exitDay": 0,
+    "pnlPct": 34.69
+   }
+  },
+  {
+   "token": "SAGA",
+   "date": "2025-04-09",
+   "first": true,
+   "pct": 118.6,
+   "shape": "lump",
+   "pump": -13.6,
+   "week": -24.4,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": -1.057,
+    "why": "stop",
+    "exitDay": 17,
+    "pnlPct": -13.38
+   },
+   "v1": {
+    "R": 2.724,
+    "why": "target",
+    "exitDay": 7,
+    "pnlPct": 34.48
+   }
+  },
+  {
+   "token": "SCR",
+   "date": "2025-10-22",
+   "first": false,
+   "pct": 43.42,
+   "shape": "lump",
+   "pump": -39.5,
+   "week": -29.1,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": 3.326,
+    "why": "time",
+    "exitDay": 30,
+    "pnlPct": 42.1
+   },
+   "v1": {
+    "R": 1.271,
+    "why": "time",
+    "exitDay": 14,
+    "pnlPct": 16.09
+   }
+  },
+  {
+   "token": "STRK",
+   "date": "2024-04-15",
+   "first": true,
+   "pct": 8.8,
+   "shape": "stream",
+   "pump": -10.2,
+   "week": -9.4,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": 3.203,
+    "why": "time",
+    "exitDay": 30,
+    "pnlPct": 40.55
+   },
+   "v1": {
+    "R": 2.747,
+    "why": "target",
+    "exitDay": -3,
+    "pnlPct": 34.78
+   }
+  },
+  {
+   "token": "SUI",
+   "date": "2024-05-03",
+   "first": true,
+   "pct": 80.6,
+   "shape": "lump",
+   "pump": -29.5,
+   "week": -2.5,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": 1.191,
+    "why": "time",
+    "exitDay": 30,
+    "pnlPct": 15.08
+   },
+   "v1": {
+    "R": 1.23,
+    "why": "time",
+    "exitDay": 14,
+    "pnlPct": 15.57
+   }
+  },
+  {
+   "token": "TIA",
+   "date": "2024-10-30",
+   "first": true,
+   "pct": 81.9,
+   "shape": "lump",
+   "pump": -3.7,
+   "week": -4.5,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": -1.073,
+    "why": "stop",
+    "exitDay": 24,
+    "pnlPct": -13.59
+   },
+   "v1": {
+    "R": 0.357,
+    "why": "time",
+    "exitDay": 14,
+    "pnlPct": 4.52
+   }
+  },
+  {
+   "token": "W",
+   "date": "2024-08-03",
+   "first": false,
+   "pct": 33.33,
+   "shape": "lump",
+   "pump": -11.3,
+   "week": -14.5,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": 2.407,
+    "why": "time",
+    "exitDay": 30,
+    "pnlPct": 30.47
+   },
+   "v1": {
+    "R": 2.735,
+    "why": "target",
+    "exitDay": 2,
+    "pnlPct": 34.63
+   }
+  },
+  {
+   "token": "W",
+   "date": "2025-04-03",
+   "first": true,
+   "pct": 46.27,
+   "shape": "lump",
+   "pump": -11.6,
+   "week": 16.9,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": 1.057,
+    "why": "time",
+    "exitDay": 30,
+    "pnlPct": 13.38
+   },
+   "v1": {
+    "R": 2.731,
+    "why": "target",
+    "exitDay": 4,
+    "pnlPct": 34.57
+   }
+  },
+  {
+   "token": "WLD",
+   "date": "2024-07-24",
+   "first": true,
+   "pct": 0.73,
+   "shape": "stream",
+   "pump": -0.0,
+   "week": 46.5,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": -1.002,
+    "why": "stop",
+    "exitDay": -7,
+    "pnlPct": -12.69
+   },
+   "v1": {
+    "R": -1.002,
+    "why": "stop",
+    "exitDay": -7,
+    "pnlPct": -12.69
+   }
+  },
+  {
+   "token": "XAI",
+   "date": "2024-07-09",
+   "first": true,
+   "pct": 35.97,
+   "shape": "stream",
+   "pump": -48.1,
+   "week": -22.4,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": -1.038,
+    "why": "stop",
+    "exitDay": 9,
+    "pnlPct": -13.14
+   },
+   "v1": {
+    "R": -1.038,
+    "why": "stop",
+    "exitDay": 9,
+    "pnlPct": -13.14
+   }
+  },
+  {
+   "token": "ZETA",
+   "date": "2024-08-01",
+   "first": true,
+   "pct": 18.92,
+   "shape": "lump",
+   "pump": -22.7,
+   "week": -9.5,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": true,
+   "frozen": {
+    "R": 3.521,
+    "why": "target",
+    "exitDay": 4,
+    "pnlPct": 44.57
+   },
+   "v1": {
+    "R": 2.733,
+    "why": "target",
+    "exitDay": 3,
+    "pnlPct": 34.6
+   }
+  },
+  {
+   "token": "ZK",
+   "date": "2025-06-17",
+   "first": true,
+   "pct": 20.95,
+   "shape": "lump",
+   "pump": -12.6,
+   "week": 2.4,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": -0.619,
+    "why": "time",
+    "exitDay": 30,
+    "pnlPct": -7.84
+   },
+   "v1": {
+    "R": 2.728,
+    "why": "target",
+    "exitDay": 5,
+    "pnlPct": 34.54
+   }
+  },
+  {
+   "token": "ZRO",
+   "date": "2025-06-20",
+   "first": true,
+   "pct": 23.13,
+   "shape": "lump",
+   "pump": -24.1,
+   "week": -2.2,
+   "priceChecked": true,
+   "source": "binance-futures",
+   "core": true,
+   "passes": false,
+   "frozen": {
+    "R": -1.078,
+    "why": "stop",
+    "exitDay": 26,
+    "pnlPct": -13.65
+   },
+   "v1": {
+    "R": 0.447,
+    "why": "time",
+    "exitDay": 14,
+    "pnlPct": 5.66
+   }
+  }
+ ],
+ "dropped": [],
+ "verdict": "NOT PROVEN"
+}

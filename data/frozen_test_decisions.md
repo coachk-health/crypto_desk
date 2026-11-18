@@ -20,3 +20,9 @@ Data decisions made BEFORE any prices were looked at (19 Nov 2026):
 - AI 2025-01-04: dropped; date worked out from tracker progress, no source names it.
 - MAVIA 2025-02-06 (41%) kept. MAVIA 2024-05-06 kept as first insider unlock, flagged (amount unknown, cut by 80%).
 - USUAL: dropped; project roadmap says 2025-11-25 (outside window), project statement wins.
+
+Independent re-check (3 agents, no price outcomes shown), applied 19 Nov 2026:
+- Main test uses the checkers' strict "first insider" meaning: the first time ANY insider group (team, investors, advisors) got transferable tokens. An event qualifies only if the date is confirmed AND (first insider = true OR >= 25% of circulating).
+- Dropped: AEVO (not a real insider unlock: RBN migration + DAO treasury, per Aevo's own statement), MAVIA 2024-05-06 and 2025-02-06, LISTA, PIXEL (insiders already got tokens at launch; under 25%), CYBER and MAV (first insider unknown; under 25%), DYM (date unverifiable).
+- Kept with corrections: HOOK now 27% (qualifies either way), GRASS 57.8%, STRK lump, JUP (airdrop but 41.7%, the 25% rule covers any unlock).
+- Side check ("loose"): the meaning used in the first run (each insider group's main post-lockup release), which keeps LISTA, PIXEL, MAVIA 2024, CYBER, MAV.

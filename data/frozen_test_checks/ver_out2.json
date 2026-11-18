@@ -1,0 +1,250 @@
+[
+ {
+  "token": "SCR",
+  "claimedDate": "2025-10-22",
+  "verdict": "confirmed",
+  "date": "2025-10-22",
+  "dateSources": [
+   "https://www.mexc.com/news/134994",
+   "https://www.mexc.com/news/135197",
+   "https://icodrops.com/scroll"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": false,
+  "pctCirculating": 43.42,
+  "amountTokens": 82500000,
+  "circulatingBefore": 190000000,
+  "shape": "lump",
+  "priceUsd": 0.1745,
+  "priceSource": "https://www.mexc.com/news/134994 (PANews, 2025-10-19: ~82.5M SCR valued ~US$14.4M -> ~$0.1745; implied, not a CoinGecko/CMC daily row)",
+  "notes": "PANews (via MEXC, 2025-10-19): ~82.5M SCR at 08:00 Beijing (00:00 UTC) Oct 22, 43.42% of circulating, ~$14.4M. Second MEXC unlock list gives Oct 22 2025 03:00 UTC+3 (=00:00 UTC), $14.67M. ICO Drops shows Ecosystem & Growth and Foundation Treasury unlock in annual tranches of 62.5M + 20M = 82.5M on the Oct 22 anniversary, so this lump went to ecosystem/foundation, not insiders. Circulating 190M from CMC Academy/Tokenomist (190M at launch). Daily-price pages tried (CoinGecko blocked, Coinlore/Coinglass did not show 2025 rows); the price is implied from the article's value figure."
+ },
+ {
+  "token": "SCR",
+  "claimedDate": "2025-10-22",
+  "verdict": "confirmed",
+  "date": "2025-10-22",
+  "dateSources": [
+   "https://coinmarketcap.com/academy/article/what-is-scroll-the-bytecode-level-evm-compatible-zkevm-chain",
+   "https://icodrops.com/scroll",
+   "https://app.tokenomics.com/tokenomics/scroll/unlocks"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 0.19,
+  "amountTokens": 364630,
+  "circulatingBefore": 190000000,
+  "shape": "stream",
+  "priceUsd": 0.1745,
+  "priceSource": "https://www.mexc.com/news/134994 (implied from PANews value figure, 2025-10-19)",
+  "notes": "Investors (17%) and Scroll Contributors (23%) have a one-year cliff from the Oct 22 2024 TGE, then 3-year vesting (CMC Academy; tokenomics.com: 12-month cliff + 36-month linear). ICO Drops shows daily unlocks of 154.97K (investors) + 209.66K (contributors) = ~364.6K SCR/day, 35.73% unlocked with 705 days left as of the fetch; back-calculating puts the vesting start at Oct 22 2025. The date is derived from cliff terms plus the daily counter; no source states 'insider vesting starts 2025-10-22' in so many words. 0.19% = one day's release (~364.6K) / 190M circulating. No source shows insiders getting tokens at TGE. tokenomics.com lists monthly dates on the 11th, which does not match; ICO Drops' daily figures look more reliable."
+ },
+ {
+  "token": "STRK",
+  "claimedDate": "2024-04-15",
+  "verdict": "confirmed",
+  "date": "2024-04-15",
+  "dateSources": [
+   "https://theblock.co/news/business/2024-02-22-starkware-opts-to-gradually-release-strk-token-following-user-feedback-278714",
+   "https://cointelegraph.com/news/starkware-changes-controversial-investor-starknet-token-unlock-schedule",
+   "https://www.fxstreet.com/cryptocurrencies/news/arb-strk-axs-three-token-unlocks-worth-over-350-million-to-watch-out-for-ahead-of-bitcoin-halving-week-202404130600",
+   "https://en.coin-turk.com/significant-token-unlock-event-for-ethereum-layer-2-network-starknets-strk/"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 8.8,
+  "amountTokens": 64000000,
+  "circulatingBefore": 728000000,
+  "shape": "lump",
+  "priceUsd": 1.49,
+  "priceSource": "https://en.coin-turk.com/significant-token-unlock-event-for-ethereum-layer-2-network-starknets-strk/ (CoinTurk, 2024-04-14 12:03: 'trading at $1.49'); FXStreet 2024-04-13 implies ~$1.83 (64M = $117.12M)",
+  "notes": "The Block/Cointelegraph (2024-02-22): the revised schedule unlocks 64M STRK (0.64% of 10B) to early contributors and investors on Apr 15 2024, then 64M every month until Mar 15 2025, then 127M/month to Mar 15 2027. The first insider unlock had already been delayed (original Nov 29 2023, then ~1.3B on Apr 15 2024), and it was cut down before it happened. FXStreet: 64M = 8.8% of circulating. Circulating ~728M = the airdrop amount (The Block 2024-02-20). SHAPE: each tranche is a single-day monthly lump on the 15th, not a daily/weekly stream; the claimed 'stream' is wrong under the lump/stream definitions (a monthly cadence at best). PRICE: the claimed $1.83 matches FXStreet's implied 2024-04-13 value; CoinTurk quotes $1.49 on 2024-04-14. No daily-close row for Apr 15 was fetched (CMC/CoinGecko pages blocked). Ticker STRK is correct (~$1.5-1.8 range)."
+ },
+ {
+  "token": "SUI",
+  "claimedDate": "2024-05-03",
+  "verdict": "confirmed",
+  "date": "2024-05-03",
+  "dateSources": [
+   "https://chaincatcher.com/en/article/2124613",
+   "https://dailyhodl.com/2024/05/06/sui-network-clarifies-tokenomics-of-sui-says-coins-locked-within-third-party-custodians-and-cannot-be-moved/amp",
+   "https://cointelegraph.com/news/may-crypto-vesting-sui-pyth-network-unlock-tokens",
+   "https://www.blockmedia.co.kr/archives/533945"
+  ],
+  "dateDisagreementDays": 28,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 80.6,
+  "amountTokens": 1040000000,
+  "circulatingBefore": 1290000000,
+  "shape": "lump",
+  "priceUsd": 1.13,
+  "priceSource": "https://dailyhodl.com/2024/05/06/sui-network-clarifies-tokenomics-of-sui-says-coins-locked-within-third-party-custodians-and-cannot-be-moved/amp (Daily Hodl 2024-05-06: SUI $1.13, circ 2.33B); note this is May 6, not May 3",
+  "notes": "Project statement (Sui Network X post, reported by ChainCatcher 2024-05-16): 'the Sui mainnet one-year unlock was completed on May 3', and the Foundation was asking trackers to fix their May data. Cointelegraph (citing Token Unlocks, 2024-05-03) and Blockmedia (2024-05-13) put the ~1B-token unlock for Series A/B, early contributors, the Mysten treasury and the community reserve on May 31, 28 days off, so trackers were wrong at the time. The project statement wins. Amount and circulating are approximate and not stated by any one source: FXStreet (2024-04-01) gives 34.62M = 2.7% of circulating, which implies ~1.28B; Daily Hodl (2024-05-06) gives 2.33B circulating after the unlock. ~1.04B / ~1.29B = ~80.6%, consistent with the claim but derived. The unlock also included non-insider buckets (community reserve, Mysten treasury). First insider: Series A/B and early contributors had a 1-year cliff from the May 3 2023 mainnet (KuCoin blog); no earlier insider release was found."
+ },
+ {
+  "token": "TIA",
+  "claimedDate": "2024-10-30",
+  "verdict": "confirmed",
+  "date": "2024-10-30",
+  "dateSources": [
+   "https://www.theblock.co/news/markets/2024-09-29-october-preview-celestia-set-to-unlock-1-billion-in-tokens-alongside-these-projects-318599",
+   "https://hotfix.coindesk.com/markets/2024/10/29/celestias-tia-braces-for-price-volatility-amid-900m-token-unlock",
+   "https://dailyhodl.com/2024/10/30/celestia-corrects-as-tia-absorbs-890000000-in-token-unlocks-worth-80-of-supply"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 81.94,
+  "amountTokens": 175560000,
+  "circulatingBefore": 214250000,
+  "shape": "lump",
+  "priceUsd": 5.0,
+  "priceSource": "https://hotfix.coindesk.com/markets/2024/10/29/celestias-tia-braces-for-price-volatility-amid-900m-token-unlock (CoinDesk 2024-10-29: 'slightly above $5')",
+  "notes": "The Block (2024-09-29): 175.56M TIA unlocks Oct 30 2024 at 13:59 UTC, 81.94% of circulating, followed by a daily emission of 998,580 TIA for a year. CoinDesk breakdown: core contributors 58M, Series A/B 65M, seed 52M, so all of it went to insiders. Circulating before (~214M) is derived from 175.56M / 0.8194. This is the one-year cliff from the Oct 31 2023 genesis; no earlier insider release was found. The lump is followed by a daily stream, but the event itself is a lump. One CoinDesk quote calls it 'Thursday's' unlock, while Oct 30 2024 was a Wednesday; the dated statements all say Oct 30."
+ },
+ {
+  "token": "W",
+  "claimedDate": "2024-08-03",
+  "verdict": "confirmed",
+  "date": "2024-08-03",
+  "dateSources": [
+   "https://chaincatcher.com/en/article/2136525",
+   "https://www.theblock.co/news/markets/2024-07-28-august-preview-nearly-1-billion-in-unlocks-planned-for-these-token-projects-307939",
+   "https://fxstreet.com/amp/cryptocurrencies/news/wormhole-xai-imx-set-to-partake-in-next-weeks-token-unlocks-worth-over-200-million-202408030129",
+   "https://coingape.com/wormhole-plans-major-w-token-unlock"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": false,
+  "pctCirculating": 33.33,
+  "amountTokens": 600000000,
+  "circulatingBefore": 1800000000,
+  "shape": "lump",
+  "priceUsd": 0.23,
+  "priceSource": "https://fxstreet.com/amp/cryptocurrencies/news/wormhole-xai-imx-set-to-partake-in-next-weeks-token-unlocks-worth-over-200-million-202408030129 (FXStreet 2024-08-03: 600M W = $138M -> ~$0.23; The Block 2024-07-28 implied ~$0.30 from 'over $180M')",
+  "notes": "Project statement (Wormhole X post, relayed by ChainCatcher 2024-08-01): 6% of W unlocks Aug 3 2024, held by the Wormhole Foundation for future community projects only. The Block: 600M = 'an exact third' of circulating. CCN names the category 'Community & Launch'. Not insiders: core contributors, strategic network participants and guardians stayed locked until Apr 3 2025, per the same Wormhole post. Caveat: the tokens went to a foundation-held community bucket, not straight to holders, so the sell pressure that actually reached the market may have been small even though this is a real scheduled unlock. Price: the claimed $0.25 sits between the implied $0.23 (Aug 3) and $0.30 (Jul 28); no daily-close row was fetched."
+ },
+ {
+  "token": "W",
+  "claimedDate": "2025-04-03",
+  "verdict": "confirmed",
+  "date": "2025-04-03",
+  "dateSources": [
+   "https://chaincatcher.com/en/article/2136525",
+   "https://tradersunion.com/news/cryptocurrency-news/show/182497-tokens-worth-642m-set",
+   "https://cryptoast.fr/?p=173867",
+   "https://tokenradar.ai/tokens/wormhole/tokenomics"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 46.27,
+  "amountTokens": 1390000000,
+  "circulatingBefore": 3000000000,
+  "shape": "lump",
+  "priceUsd": 0.085,
+  "priceSource": "https://tradersunion.com/news/cryptocurrency-news/show/182497-tokens-worth-642m-set (2025-03-31: 1.39B W = $118.12M -> ~$0.085); Cryptoast 2025-04-03 implies ~$0.076 (1.63B = $123.34M)",
+  "notes": "Wormhole's own post (relayed by ChainCatcher 2024-08-01) put the next unlock for strategic network participants, core contributors, guardian nodes and ecosystem on April 3 2025, the first anniversary of the Apr 3 2024 TGE. Decrypt/the Wormhole tokenomics blog: guardians, core contributors and strategic network participants got nothing at TGE, so this is the first insider unlock. TradersUnion (2025-03-31, Mar 31-Apr 7 window): 1.39B W, '46.27%', which matches the claim but is worded ambiguously ('of W's unlock allocation'). Cryptoast (2025-04-03) instead says 1.63B W = 56.88% of market cap, so sources disagree on amount and %. TokenRadar's breakdown of the April 2025 cliffs: ecosystem 650M + SNP 290M + guardians 127.5M + the first core-contributor yearly tranche, roughly 1.37B, consistent with 1.39B. A large share (650M) went to the non-insider ecosystem bucket. Circulating before (~3.0B) is derived from 1.39B / 0.4627, not sourced directly. Later change: in Sept 2025 (W 2.0) contributors and guardians agreed to extend lockups to Oct 2028 with biweekly unlocks from Oct 3 2025 (Blockmedia 2025-09-18). That does not affect the Apr 2025 event."
+ },
+ {
+  "token": "WLD",
+  "claimedDate": "2024-07-24",
+  "verdict": "confirmed",
+  "date": "2024-07-24",
+  "dateSources": [
+   "https://www.theblock.co/post/305632/worldcoin-token-jumps-20-with-unlock-for-early-contributors-starting-next-week-period-extended",
+   "https://beincrypto.com/2-million-worldcoin-token-unlock-daily/",
+   "https://coinmarketcap.com/academy/article/worldcoin-token-unlock-schedule-extended-to-2028-wld-surges-27percent",
+   "https://coingape.com/wld-price-slips-7-ahead-of-massive-wld-unlock"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 0.73,
+  "amountTokens": 2000000,
+  "circulatingBefore": 275000000,
+  "shape": "stream",
+  "priceUsd": 2.37,
+  "priceSource": "https://coingape.com/wld-price-slips-7-ahead-of-massive-wld-unlock (CoinGape 2024-07-23: intraday range $2.26-$2.47; 2.37 is my midpoint of that range, not a quoted figure). BeInCrypto/CMC Academy quote $2.84-$2.87 on 2024-07-17.",
+  "notes": "Linear daily unlock for TFH team and investors (80% of their WLD) starts Jul 24 2024. The Jul 2024 change stretched it from 3 to 5 years (unlocks run to Jul 2028). Before the change the original 1-year lock would also have ended Jul 24 2024; no earlier insider release was found. Daily amount differs: BeInCrypto says 2M/day (down from 3.3M), CoinGape says 1.63M/day (2.38B over 4 years). 0.73% = 2M / 275M circulating (the circulating figure is from the foundation via The Block/CMC Academy). At 1.63M/day it would be ~0.59%. PRICE: the claimed $2.84 is the Jul 17 announcement-day price (BeInCrypto), not Jul 24. The Jul 23 range was $2.26-2.47. Ticker is correct."
+ },
+ {
+  "token": "XAI",
+  "claimedDate": "2024-07-09",
+  "verdict": "confirmed",
+  "date": "2024-07-09",
+  "dateSources": [
+   "https://www.theblock.co/news/markets/2024-07-07-julys-350-million-worth-of-token-unlocks-includes-worldcoin-xai-arbitrum-aptos-and-more-303837",
+   "https://decrypt.co/238915/xai-immutable-pixels-ethereum-gaming-token-unlocks",
+   "https://en.coin-turk.com/altcoin-lock-release-decisions-affect-market-prices/",
+   "https://www.bittime.com/en/blog/unlock-token-xai-di-bulan-juli"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 35.97,
+  "amountTokens": 107900000,
+  "circulatingBefore": 300000000,
+  "shape": "stream",
+  "priceUsd": 0.31,
+  "priceSource": "https://decrypt.co/238915/xai-immutable-pixels-ethereum-gaming-token-unlocks (Decrypt 2024-07-08: 198.4M XAI = $60.76M -> ~$0.31, implied); The Block 2024-07-07 implies ~$0.35 (~200M = ~$70M)",
+  "notes": "Xai's own figures (relayed by CoinTurk 2024-07-08 and Bittime; Decrypt updated 2024-07-10): ~107.9M XAI unlocks DAILY over the July window starting Jul 9 (Decrypt: 'over a 30-day period starting July 9'), ~36% increase on ~300M circulating. Breakdown: investors ~72.3M, team ~17.7M, advisors ~4.2M, DAC ~5.2M, foundation ~8.5M. The team relocked most of its July tokens for 6 months (85M -> 17.7M). Trackers (TokenUnlocks via Decrypt; The Block) had reported a ~198-200M cliff (~72% of circulating) on Jul 9; Xai disputed this. tokenomics.com: investors and team have a 6-month cliff from the Jan 9 2024 TGE, so Jul 9 is the first insider release. The Block calls it XAI's 'second token unlock event' without naming the first (probably the TGE); no earlier insider release was found. 35.97% = 107.9M / ~300M, spread over ~30 days (about 1.2%/day), not a single-day hit."
+ },
+ {
+  "token": "ZETA",
+  "claimedDate": "2024-08-01",
+  "verdict": "confirmed",
+  "date": "2024-08-01",
+  "dateSources": [
+   "https://www.theblock.co/news/markets/2024-07-28-august-preview-nearly-1-billion-in-unlocks-planned-for-these-token-projects-307939",
+   "https://beincrypto.com/token-unlocks-july-august",
+   "https://www.ccn.com/analysis/crypto/august-token-unlocks-w-zeta-prices/",
+   "https://zetachain-docs.vercel.app/about/token-utility/distribution"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 18.92,
+  "amountTokens": 53890000,
+  "circulatingBefore": 284810000,
+  "shape": "lump",
+  "priceUsd": 0.65,
+  "priceSource": "https://www.theblock.co/news/markets/2024-07-28-august-preview-nearly-1-billion-in-unlocks-planned-for-these-token-projects-307939 (The Block 2024-07-28: ~54M ZETA = ~$35M -> ~$0.65, implied); CCN gives a $0.57 close on 2024-07-29",
+  "notes": "ZetaChain docs: core contributors, and advisors & purchasers, get nothing until 6 months after launch (Feb 1 2024 mainnet/TGE), then 1/18 per month for 6 months, then 1/36 per month. Aug 1 2024 is therefore the first insider release and the start of monthly tranches (each tranche is a single-day lump). The Block: ~54M = 18.92% of circulating. BeInCrypto: 53.89M, circulating 284.81M. CCN: core contributors and advisors get the largest share, plus treasury/user growth/ecosystem. Timing caveat: a later (2026) crypto.news piece puts ZETA's monthly unlock at midnight Beijing on the 1st (= 16:00 UTC on the last day of the prior month), so the UTC day could be Jul 31 2024. That is within 1 day. Price: the claimed $0.65 matches The Block's implied value. CCN's Jul 29 close of $0.57 suggests the spot price was lower around the date."
+ },
+ {
+  "token": "ZK",
+  "claimedDate": "2025-06-17",
+  "verdict": "confirmed",
+  "date": "2025-06-17",
+  "dateSources": [
+   "https://docs.zknation.io/zk-token/zk-token",
+   "https://beincrypto.com/major-token-unlocks-for-june-2025",
+   "https://www.mexc.com/news/6011"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 20.95,
+  "amountTokens": 770000000,
+  "circulatingBefore": 3675000000,
+  "shape": "lump",
+  "priceUsd": 0.0508,
+  "priceSource": "https://www.mexc.com/news/6011 (2025-06-15: ~768M ZK = ~US$39M -> ~$0.0508, implied); BeInCrypto (late May 2025) quotes $0.05394",
+  "notes": "ZK Nation docs (primary): investor and team tokens unlock over 4 years from June 2024 to June 2028 with a one-year cliff. In June 2025, 3.6% of total supply unlocks, then at most 0.8%/month. BeInCrypto: Jun 17, 770M ZK (investors 397.2M + team 372.8M), circulating 3.675B (770/3675 = 20.95%). MEXC/PANews-style list (2025-06-15): ~768M at 16:00 Beijing (08:00 UTC) Jun 17, 20.91% of circulating. The cliff is a lump, followed by a monthly stream. Price: the claimed $0.05394 is BeInCrypto's late-May quote. The Jun 15 implied price is ~$0.051, so same ticker and close."
+ },
+ {
+  "token": "ZRO",
+  "claimedDate": "2025-06-20",
+  "verdict": "confirmed",
+  "date": "2025-06-20",
+  "dateSources": [
+   "https://tokenomist.ai/insights/weekly-unlock-digest-week-3-june-2025",
+   "https://crypto.news/layerzero-price-dips-ahead-of-fee-vote-huge-zro-token-unlock/",
+   "https://www.theblock.co/news/ecosystems/2024-06-20-layerzero-foundation-to-begin-zro-token-airdrop-claims-today-300951",
+   "https://coinlive.com/news/understanding-layerzero-zro-token-economics-in-one-article"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 23.13,
+  "amountTokens": 25710000,
+  "circulatingBefore": 111200000,
+  "shape": "lump",
+  "priceUsd": 1.8,
+  "priceSource": "https://crypto.news/layerzero-price-dips-ahead-of-fee-vote-huge-zro-token-unlock/ (crypto.news 2025-06-19: ZRO $1.80)",
+  "notes": "Tokenomist digest (week 3, June 2025): the Jun 20 2025 event is 'the very beginning of insider unlocks', covering strategic partners and core contributors (plus repurchased tokens), 23.13% of circulating, after which released supply 'will now enter a 2-year monthly vesting schedule'. crypto.news (2025-06-19) cites Tokenomist: ~$46M, 23.13%, $1.80, so it is not independent of Tokenomist. The date is independently backed by the vesting terms: The Block (2024-06-20) and the LayerZero Foundation tokenomics (via Coinlive) give strategic partners 32.2% and core contributors 25.5%, a 1-year lock from the Jun 20 2024 TGE, then monthly unlocks for 2 years. Amount 25.71M (13.42M strategic partners + 10.63M core contributors + 1.67M repurchased) comes from the OKX/Aperture learn page. That page calls it 'about 8% of circulating', which is the later-month figure, so it conflicts on %. Circulating before (~111M) is derived from 25.71M / 0.2313. This is the first monthly tranche, a single-day lump repeated monthly, not a one-off cliff."
+ }
+]

@@ -1,0 +1,267 @@
+[
+ {
+  "token": "IO",
+  "claimedDate": "2025-07-11",
+  "verdict": "confirmed",
+  "date": "2025-07-11",
+  "dateSources": [
+   "https://io.net/docs/guides/coin/coin-restrictions",
+   "https://www.mexc.com/news/data-cheel-apt-imx-and-other-tokens-will-be-unlocked-in-large-amounts-next-week-of-which-cheel-unlocked-value/37157",
+   "https://tokenomist.ai/io/updates"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 7.87,
+  "amountTokens": 13290000,
+  "circulatingBefore": 168900000,
+  "shape": "lump",
+  "priceUsd": 0.685,
+  "priceSource": "https://www.mexc.com/news/data-cheel-apt-imx-and-other-tokens-will-be-unlocked-in-large-amounts-next-week-of-which-cheel-unlocked-value/37157 (implied: ~US$9.1M / 13.29M IO quoted just before the unlock)",
+  "notes": "Primary: io.net coin-restrictions doc says investor tokens lift restrictions in 24 equal tranches and employee tokens in 36 equal tranches 'starting at the end of the 13th month' after the Initial Distribution Date (IO launched/listed 11 Jun 2024 per Tokenomist listing log) -> 11 Jul 2025. PANews/MEXC: ~13.29M IO at 20:00 Beijing (12:00 UTC) 11 Jul, 7.87% of circulating, ~$9.1M. Circulating (~168.9M) is derived from 13.29M/7.87%, not separately sourced. Shape: each event is a single-day monthly cliff tranche (lump on the day), recurring monthly on the 11th - the claimed 'stream' is only right in the sense of a monthly schedule, not daily/weekly. No re-lock/schedule change logged on Tokenomist (vesting v1 announced 7 May 2024). Only one secondary article found for the exact amount/pct."
+ },
+ {
+  "token": "JTO",
+  "claimedDate": "2024-12-07",
+  "verdict": "confirmed",
+  "date": "2024-12-07",
+  "dateSources": [
+   "https://coinedition.com/jito-and-neon-lead-574m-token-unlock-wave-set-for-december-2024/",
+   "https://cryptobriefing.com/crypto-token-unlocks-december",
+   "https://chaincatcher.com/en/article/2154616",
+   "https://www.jito.network/docs/governance/the-jito-governance-token-jto/"
+  ],
+  "dateDisagreementDays": 1,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 103.3,
+  "amountTokens": 135710000,
+  "circulatingBefore": 131350000,
+  "shape": "lump",
+  "priceUsd": 3.84,
+  "priceSource": "https://chaincatcher.com/en/article/2154616 and https://cryptobriefing.com/crypto-token-unlocks-december (implied: ~$518-521M / ~135-135.7M JTO quoted just before the unlock; CoinEdition quoted $3.59 ~1 week earlier)",
+  "notes": "Jito docs/blog (primary): investor and core contributor tokens 'unlock over 3 years, with a 1-year cliff' -> first insider transferability at the 1-year cliff after the Dec 2023 launch. CoinEdition: 135.71M JTO 'scheduled for December 7, 2024', 103.32% of circulating, 'allocated to private investors and the founding team'. Crypto Briefing: 7 Dec, ~103%, core contributors and investors. ChainCatcher says 'December 8 at 00:00' (almost certainly Beijing time = 7 Dec 16:00 UTC; timezone not stated on page) - hence disagreement listed as 1 day. Circulating before (~131.35M) derived from 135.71M/103.32%. Exact launch date of Dec 2023 not re-verified from a primary page (blog only gives 25 Nov 2023 snapshot)."
+ },
+ {
+  "token": "JUP",
+  "claimedDate": "2025-01-22",
+  "verdict": "confirmed",
+  "date": "2025-01-22",
+  "dateSources": [
+   "https://www.theblock.co/news/defi/2025-01-22-jupiter-to-distribute-over-600-million-in-jupuary-airdrop-today-336297",
+   "https://decrypt.co/302054/jupiter-drop-630-million-solana-airdrop-claim"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": false,
+  "pctCirculating": 41.7,
+  "amountTokens": 700000000,
+  "circulatingBefore": 1680000000,
+  "shape": "lump",
+  "priceUsd": 0.88,
+  "priceSource": "https://www.theblock.co/news/defi/2025-01-22-jupiter-to-distribute-over-600-million-in-jupuary-airdrop-today-336297 (JUP 'changes hands at $0.88' on 22 Jan 2025; Decrypt quoted $0.90 on 21 Jan)",
+  "notes": "This event is the 'Jupuary' community AIRDROP, not an insider (team/investor) unlock - so firstInsiderUnlock=false is right, but it should not be treated as an insider-unlock sample. Decrypt: claims open 'Wednesday, January 22 at 10:30am ET' (15:30 UTC); The Block (22 Jan): ~700M JUP to ~2M wallets, circulating 1.68B -> 700M/1.68B = 41.7%. Caveat: airdropped tokens only become circulating as wallets claim, so the full 700M did not hit the market at once. Jupiter docs: team on 1-year cliff + 3-year linear (on-chain via Jupiter Lock). A CoinMarketCal/TradingView listing put a ~700M (41.51%) unlock on 31 Jan 2025 - conflicting/likely duplicate entry, not supported by The Block/Decrypt. DefiLlama notes a 3B JUP burn on 26 Jan 2025 (team+community), which changes supply math just after this date."
+ },
+ {
+  "token": "LISTA",
+  "claimedDate": "2025-06-20",
+  "verdict": "not_first_insider",
+  "date": "2025-06-20",
+  "dateSources": [
+   "https://www.mexc.com/news/6011",
+   "https://medium.com/listadao/product-update-lista-unlocking-schedule-99a65d77204c",
+   "https://defillama.com/protocol/unlocks/lista-dao"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": false,
+  "pctCirculating": 19.36,
+  "amountTokens": 33440000,
+  "circulatingBefore": 172700000,
+  "shape": "lump",
+  "priceUsd": 0.209,
+  "priceSource": "https://www.mexc.com/news/6011 (implied: ~US$7M / ~33.44M LISTA quoted just before the unlock)",
+  "notes": "Date is solid: PANews/MEXC says ~33.44M LISTA at 17:00 Beijing (09:00 UTC) 20 Jun 2025, 19.36% of circulating, ~$7M; Lista DAO's own Medium post gives TGE 20 Jun 2024 and says investor/advisor and team tokens are locked for a one-year cliff 'until June 2025', then unlock quarterly (DefiLlama shows later quarterly events on the 20th). BUT it was not the first insider transferability: the same Lista post says for Investors & advisors (19%) 'At Launch, 1% of the total token supply was unlocked' - so some investor/advisor tokens were liquid from TGE. It WAS the first unlock for the Team (3.5%, 100% locked until June 2025) and the first post-cliff investor tranche. Circulating (~172.7M) derived from 33.44M/19.36%. Conflict: MyToken's weekly roundup lists LISTA as '5.20 million tokens, 14.29% of the supply' that week - inconsistent with PANews; not resolved. Note Lista burned 20% of supply in Aug 2025 (DefiLlama), after this event."
+ },
+ {
+  "token": "MAV",
+  "claimedDate": "2024-07-01",
+  "verdict": "confirmed",
+  "date": "2024-07-01",
+  "dateSources": [
+   "https://docs.mav.xyz/mav-token/mav-token-and-tokenomics",
+   "https://coingape.com/altcoins-to-sell-based-on-token-unlocks-ahead/amp",
+   "https://www.odaily.news/en/post/5196399",
+   "https://coinlive.com/news/understanding-the-token-unlocking-event-in-july-2024"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": "unknown",
+  "pctCirculating": 15.95,
+  "amountTokens": 39870000,
+  "circulatingBefore": 250000000,
+  "shape": "lump",
+  "priceUsd": 0.2579,
+  "priceSource": "https://coingape.com/altcoins-to-sell-based-on-token-unlocks-ahead/amp ('MAV traded at $0.2579', article dated 29 Jun 2024); Odaily implies ~$0.263 ($10.48M/39.85M)",
+  "notes": "Date: Maverick docs (primary) say 'All token unlocks occur on the first day of the relevant calendar month' and the official unlock table jumps from 15.2124% (1 Jun 2024) to 17.7829% (1 Jul 2024) of 2B supply - the biggest monthly step to that point. Coingape: 39.87M MAV on July 1, 15.95% of circulating. Odaily (30 Jun 2024): 39.85M next week, of which investors 30M and advisors 6.4M. First-insider: likely the first investor/advisor cliff tranche (~1 year after June 2023 launch) but NOT proven - docs table shows small monthly unlocks already from 1 Jan 2024 (allocation not identified), and no allocation-level schedule could be retrieved (Tokenomist/CryptoRank paywalled/empty). PCT CAVEAT: 15.95% implies a 250M circulating base, which equals the 250M circulating AT LISTING (Binance Research) - probably stale; the official table shows ~304M (15.21%) unlocked by 1 Jun 2024, giving ~13.1%, and the table's 1 Jul step itself is ~51.4M (~16.9% of 304M). Treat pct as roughly 13-17%. Shape: single-day cliff on the 1st (later steps appear quarterly, e.g. 1 Oct 2024)."
+ },
+ {
+  "token": "MAVIA",
+  "claimedDate": "2024-05-06",
+  "verdict": "not_first_insider",
+  "date": "2024-05-06",
+  "dateSources": [
+   "https://www.fxstreet.com/cryptocurrencies/news/mavia-hft-eul-gal-holders-brace-for-volatility-ahead-of-55million-worth-of-cliff-token-unlocks-next-week-202405040200",
+   "https://coinlive.com/news-flash/506855",
+   "https://en.coin-turk.com/key-insights-on-upcoming-mavia-token-unlock-event/",
+   "https://medium.com/heroes-of-mavia/updated-emission-schedule-for-mavia-token-138e54d23aba"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": false,
+  "pctCirculating": 5.0,
+  "amountTokens": 1530000,
+  "circulatingBefore": 30500000,
+  "shape": "lump",
+  "priceUsd": 4.02,
+  "priceSource": "https://en.coin-turk.com/key-insights-on-upcoming-mavia-token-unlock-event/ ('MAVIA tokens were trading at $4.02', 5 May 2024); Decrypt quoted $3.72 on ~25-26 Apr 2024",
+  "notes": "Date: CoinLive '8 am Beijing time on May 6' (= 00:00 UTC 6 May); FXStreet 'Monday, May 6'; CoinTurk 'tomorrow at 03:00' (5 May article). BUT these trackers quote the ORIGINAL schedule (7.66M MAVIA, ~24-25% of circulating, to presale/gameplay rewards/community & ecosystem). Heroes of Mavia's own Medium post (25 Apr 2024) cut the 'next 3 unlocks' of Private Sale, Gameplay Rewards and Community & Ecosystem by 80% and pushed Team/Advisor cliffs to Feb 2025. So the actual release was ~20% of 7.66M = ~1.53M = ~5.0% of ~30.5M circulating - this 5.0% is DERIVED (7.66M x 0.2; circulating from 7.66M/25.13%), no source states it directly, and I found no post-event confirmation of the exact amount. Not first insider: DropsTab shows the Pre-Sale allocation had a 6.67% TGE unlock (6 Feb 2024), and 'next 3 unlocks' wording implies investors were already on a schedule; team/advisors received nothing at this date. Not a big insider cliff - mostly presale + ecosystem/rewards tranche."
+ },
+ {
+  "token": "MAVIA",
+  "claimedDate": "2025-02-06",
+  "verdict": "unverifiable",
+  "date": "2025-02-06",
+  "dateSources": [
+   "https://medium.com/heroes-of-mavia/updated-emission-schedule-for-mavia-token-138e54d23aba",
+   "https://coinedition.com/79-95m-in-crypto-set-to-unlock-a-token-shake-up-in-feb-2025/",
+   "https://cryptonews.net/news/altcoins/30465353/",
+   "https://tokenomist.ai/heroes-of-mavia/tokenomics"
+  ],
+  "dateDisagreementDays": null,
+  "firstInsiderUnlock": false,
+  "pctCirculating": "13.38 or 19.90 (sources conflict); claimed 41.35 not supported",
+  "amountTokens": null,
+  "circulatingBefore": null,
+  "shape": "lump",
+  "priceUsd": null,
+  "priceSource": "No day-level price source retrieved. CoinLore monthly table: Feb 2025 open $0.5076 (https://coinlore.com/coin/heroes-of-mavia/historical-data); claimed $0.414 not verified.",
+  "notes": "Primary (Mavia Medium, 25 Apr 2024): Team and Advisor cliffs extended to 1 year, 'first unlock in February 2025', and normal Private Sale/ecosystem vesting 'resuming in February 2025' - supports the MONTH only. Coin Edition (3 Feb 2025) puts a MAVIA insider unlock of $3.19M in the week of 3-9 Feb 2025, quoting '13.38% of its circulating supply' in text while the embedded Tokenomist post says '$MAVIA (19.90%)'. The 6th is a strong inference (TGE 6 Feb 2024, prior quarterly unlock 6 May 2024, Tokenomist next unlock 6 Feb 2027 for Team/Pre-Sale/Advisors) but no source I could fetch names 6 Feb 2025 explicitly - so strict rule not met. firstInsiderUnlock: false for investors (Pre-Sale had a TGE unlock, and private sale tranches ran through 2024 at 80% cut) - but this WAS the first unlock for Team (22%) and Advisors (3%). Claimed 41.35% of circulating is 2-3x higher than both sources found; $3.19M at ~$0.41-0.50 implies only ~6-8M MAVIA. Token amount/circulating not found."
+ },
+ {
+  "token": "MEME",
+  "claimedDate": "2024-05-03",
+  "verdict": "confirmed",
+  "date": "2024-05-03",
+  "dateSources": [
+   "https://www.fxstreet.com/cryptocurrencies/news/nearly-450-million-worth-of-tokens-unlock-to-look-forward-to-this-weekend-and-into-next-week-202404270200",
+   "https://www.theblock.co/news/markets/2024-04-28-may-preview-1-25-billion-pyth-unlock-leads-major-token-unlocks-from-avalanche-aptos-arbitrum-and-more-291313",
+   "https://en.coin-turk.com/key-meme-coin-unlock-event-approaches/"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 31.97,
+  "amountTokens": 5310000000,
+  "circulatingBefore": 16610000000,
+  "shape": "lump",
+  "priceUsd": 0.024,
+  "priceSource": "https://en.coin-turk.com/key-meme-coin-unlock-event-approaches/ (MEME 'was trading at $0.024', 2 May 2024); FXStreet's 27 Apr figures imply ~$0.029",
+  "notes": "FXStreet: 'Over 5.31 billion MEME tokens worth $155.98 million to be unlocked on May 3', '31.97% of the circulating supply', 'cliff unlock event', going to community airdrop, advisory and investors. The Block: May 3, 'beginning regular unlocks for investors and advisors'. CoinTurk: 'Tomorrow (May 3rd) at 11:00 AM' (timezone not stated). First insider: DropsTab shows Investors (12%), Advisory (3%) and Contributors (17%) all 0% at TGE (3 Nov 2023) with cliffs; investors' 18-month linear ending Nov 2025 implies start ~May 2024, so this is the first investor/advisor release (team/contributors start later, ~Nov 2024). No primary Memeland vesting doc could be fetched. PCT CONFLICT: The Block says '8.30% of its circulating supply' (~$148M) - inconsistent with FXStreet; CoinTurk says '31.38% of MEME's total supply' (almost certainly mislabeled circulating). Circulating (~16.6B) derived from 5.31B/31.97%. Shape: lump on the cliff day; after it, investor/airdrop tranches continue on a linear schedule."
+ },
+ {
+  "token": "ONDO",
+  "claimedDate": "2025-01-18",
+  "verdict": "confirmed",
+  "date": "2025-01-18",
+  "dateSources": [
+   "https://hotfix.coindesk.com/markets/2025/01/13/altcoin-market-could-heat-up-this-week-with-3-b-token-unlock-schedule",
+   "https://cryptoast.fr/ondo-apprete-a-liberer-3-milliards-dollars-tokens-ondo-quels-sont-unlocks-a-surveiller-janvier/"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 134.0,
+  "amountTokens": 1940000000,
+  "circulatingBefore": 1450000000,
+  "shape": "lump",
+  "priceUsd": 1.14,
+  "priceSource": "https://hotfix.coindesk.com/markets/2025/01/13/altcoin-market-could-heat-up-this-week-with-3-b-token-unlock-schedule (ONDO $1.14 at press time, 13 Jan 2025 - 5 days before the unlock; no exact 18 Jan price retrieved; Cryptoast's ~$3B/1.94B on 6 Jan implies ~$1.5)",
+  "notes": "CoinDesk (13 Jan 2025): 1.94B ONDO on Jan 18, 'over 130%' of ~1.4B circulating. Cryptoast (6 Jan 2025, citing Tokenomist): 18 Jan, 1.94B ONDO, '134%' of circulating, ~80% ecosystem / ~20% investors. First insider: Ondo Foundation proposal coverage (Cryptopolitan) says only Community Access Sale unlocked immediately at launch, with private-sale and core-contributor tokens released over a 12-60 month schedule -> the 12-month mark (Jan 2025) is the first insider transferability; DL News (Jan 2026) calls the Jan 2026 event the 'third round' (rounds: Jan 2024 launch, Jan 2025, Jan 2026). CAUTION: some search hits (BeInCrypto '57.23% of released supply, $772M', Cointelegraph 'Jan 19, $840M') describe the Jan 2026 unlock of the same size, NOT 2025 - don't mix them. Most of this unlock was Ecosystem Growth/Protocol Development (foundation-controlled), not freely sold insider tokens; private sales ~322.6M. Circulating (~1.45B) derived from 1.94B/134%. Claimed price $1.25 not matched exactly by a source found."
+ },
+ {
+  "token": "PIXEL",
+  "claimedDate": "2025-02-19",
+  "verdict": "not_first_insider",
+  "date": "2025-02-19",
+  "dateSources": [
+   "https://ec2-13-251-157-120.ap-southeast-1.compute.amazonaws.com/flash-news/upcoming-token-unlocks-solv-protocol-leads-february-releases/",
+   "https://www.cryptopolitan.com/pixels-games-token-pixel-next-token-unlock-to-release-1-79-of-the-coins-token-supply/",
+   "https://app.tokenomics.com/tokenomics/pixels/unlocks"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": false,
+  "pctCirculating": "11.83 claimed (implies ~755M circulating, close to the ~771M reported circulating) - but only ~6.2% of the 1.45B already-unlocked supply; no source states % of circulating",
+  "amountTokens": 89370000,
+  "circulatingBefore": null,
+  "shape": "lump",
+  "priceUsd": 0.065,
+  "priceSource": "https://ec2-13-251-157-120.ap-southeast-1.compute.amazonaws.com/flash-news/upcoming-token-unlocks-solv-protocol-leads-february-releases/ (implied: '89.37M tokens worth $5.81M on February 19th', 17 Feb 2025); Cryptopolitan quoted 'a little over $0.07482' around the same time",
+  "notes": "Date: flash news dated 17 Feb 2025: 'Pixels ($PIXEL) will see an unlock of 89.37M tokens worth $5.81M on February 19th'; Cryptopolitan (early 2025): Feb 19, 89.37M = 1.79% of max supply, to ecosystem rewards, treasury, team, private sales and advisors. Tokenomics.com: TGE 19 Feb 2024, unlocks monthly on the 19th; Team and Private Sale 12-month cliff then 36-month linear -> first team/investor tranche 19 Feb 2025 (my inference from stated terms). NOT first insider overall: Advisors (9.5%, counted as insiders) got 15.7% at TGE plus 48-month linear vesting from 2024 (tokenomics.com; DropsTab similar). Shape: one-day monthly tranche of a linear schedule (no catch-up lump at cliff end) - 'stream' is right only at schedule level; each event is a single-day release. Circulating base unresolved: Cryptopolitan says 1.45B unlocked (29% of max) before this event, while Tokenomist/aggregators report circulating ~771M."
+ },
+ {
+  "token": "PYTH",
+  "claimedDate": "2024-05-20",
+  "verdict": "confirmed",
+  "date": "2024-05-20",
+  "dateSources": [
+   "https://docs.pyth.network/pyth-token/pyth-distribution",
+   "https://www.theblock.co/news/markets/2024-04-28-may-preview-1-25-billion-pyth-unlock-leads-major-token-unlocks-from-avalanche-aptos-arbitrum-and-more-291313",
+   "https://fxstreet.com/cryptocurrencies/news/pyth-avax-pixel-among-135-billion-worth-of-token-unlocks-next-week-202405180200",
+   "https://beincrypto.com/token-unlocks-may-20-26",
+   "https://unchainedcrypto.com/pyth-and-avalanche-to-unlock-over-1-billion-in-tokens-this-week/"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 142.0,
+  "amountTokens": 2130000000,
+  "circulatingBefore": 1500000000,
+  "shape": "lump",
+  "priceUsd": 0.46,
+  "priceSource": "https://unchainedcrypto.com/pyth-and-avalanche-to-unlock-over-1-billion-in-tokens-this-week/ ('$0.46 per CoinGecko', article 20 May 2024). FXStreet 18 May implies ~$0.43; The Block 28 Apr implies ~$0.59 - claimed $0.58 looks like the late-April figure, not the unlock-day price.",
+  "notes": "Primary (Pyth docs): initial circulating 1.5B (Nov 2023); 'locked tokens will unlock 6, 18, 30 and 42 months after the initial token launch' -> 6 months = 20 May 2024. Private Sales: 'All of 1B PYTH Tokens are locked' -> this is the first private-investor unlock. Caveat: Protocol Development (contributors) had 150M of 1B unlocked at launch, so contributor-side tokens were partly liquid before; private investors' first. Amount: The Block/FXStreet/BeInCrypto say 2.13B (~141.67-142% of 1.5B circulating). Unchained (20 May 2024) instead says 1.58B (~105% circulating) - likely excluding publisher-reward tokens, which are distributed over time; so effective market-ready amount may be ~1.58B. Price claim ($0.58) is ~25% above unlock-day sources."
+ },
+ {
+  "token": "PYTH",
+  "claimedDate": "2025-05-20",
+  "verdict": "confirmed",
+  "date": "2025-05-20",
+  "dateSources": [
+   "https://docs.pyth.network/pyth-token/pyth-distribution",
+   "https://beincrypto.com/token-unlocks-to-watch-fourth-week-may-2025",
+   "https://www.fxstreet.com/amp/cryptocurrencies/news/pyth-network-could-extend-losses-targeting-01-ahead-of-mega-298-million-token-unlock-202505191701"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": false,
+  "pctCirculating": 58.8,
+  "amountTokens": 2130000000,
+  "circulatingBefore": 3620000000,
+  "shape": "lump",
+  "priceUsd": 0.135,
+  "priceSource": "https://www.fxstreet.com/amp/cryptocurrencies/news/pyth-network-could-extend-losses-targeting-01-ahead-of-mega-298-million-token-unlock-202505191701 (PYTH $0.135 on 19 May 2025, day before unlock); BeInCrypto implies ~$0.136",
+  "notes": "Primary: Pyth docs schedule (6/18/30/42 months after Nov 2023 launch) -> 18 months = May 2025. BeInCrypto: 'Unlock Date: May 20', 2.13B PYTH (21.3% of total), circulating 3.62B -> 58.8%; recipients ecosystem growth 1.13B, publisher rewards 537.53M, protocol development 212.5M, private sale 250M. FXStreet (19 May 2025): ~2.13B 'on Tuesday' (= 20 May). Not first insider (second tranche after 20 May 2024). As in 2024, publisher-reward portion may not hit market immediately."
+ },
+ {
+  "token": "SAGA",
+  "claimedDate": "2025-04-09",
+  "verdict": "confirmed",
+  "date": "2025-04-09",
+  "dateSources": [
+   "https://defillama.com/unlocks/saga",
+   "https://coinedition.com/april-crypto-cliff-658m-in-token-unlocks-for-sol-saga-apt-trump/",
+   "https://medium.com/saga-foundation/sagas-high-level-tokenomics-8da4e22c28d8",
+   "https://decrypt.co/224891/saga-gaming-token-binance-users-stake-3-9-billion?amp=1"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 118.62,
+  "amountTokens": 133330000,
+  "circulatingBefore": 112400000,
+  "shape": "lump",
+  "priceUsd": 0.2655,
+  "priceSource": "https://cryptonews.net/news/altcoins/30768853/ (implied: $35.37M for the ~133.2M unlock, article 4 Apr 2025); CryptoRank window piece implies ~$0.25; Coin Edition quoted $0.3555 on 22 Mar 2025",
+  "notes": "Primary (Saga Foundation Medium): Core Contributors and Fundraising tokens 'subject to a 3 year lockup with a 1 year cliff starting at TGE'; no insider unlock at TGE mentioned (only airdrop + Binance Launchpool distributed at TGE). Decrypt: Binance listed SAGA on April 9 (2024) -> cliff 9 Apr 2025. DefiLlama: cliff unlock 09 Apr 2025 00:00 UTC = 66.67M Core Contributors + 66.67M Fundraising (13.33% of supply), followed by weekly linear release (~1.28M/week each). Coin Edition: 'On April 9, Saga ($SAGA) will unlock... 133.2 million tokens'. Shape: lump on the cliff day, then a weekly stream. PCT CONFLICT: cryptonews/Coin Edition 4 Apr: '118.62% of its current circulating supply'; CryptoRank: '222.22% to SAGA's current supply'; Coin Edition 22 Mar: '119% of its current market capitalization'. Circulating (~112.4M) derived from 133.33M/118.62%."
+ }
+]

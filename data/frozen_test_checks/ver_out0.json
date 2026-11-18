@@ -1,0 +1,270 @@
+[
+ {
+  "token": "AEVO",
+  "claimedDate": "2024-05-15",
+  "verdict": "not_a_real_unlock",
+  "date": "2024-05-15",
+  "dateSources": [
+   "https://decrypt.co/228564/3-billion-token-unlocks-may-2024",
+   "https://cryptoslate.com/aevo-and-pyth-lead-mays-3-billion-crypto-token-unlock-wave/",
+   "https://www.ccn.com/analysis/crypto/aevo-price-all-time-low-token-unlock-circulating-supply/",
+   "https://www.chaincatcher.com/en/article/2124656"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": "unknown",
+  "pctCirculating": 752.4,
+  "amountTokens": 827600000,
+  "circulatingBefore": 110000000,
+  "shape": "lump",
+  "priceUsd": 0.97,
+  "priceSource": "https://www.ccn.com/analysis/crypto/aevo-price-all-time-low-token-unlock-circulating-supply/ (intraday all-time low on May 15; not a close)",
+  "notes": "Date May 15 2024 is well supported (Decrypt, CryptoSlate, CCN, ChainCatcher), followed by 6.13M/day for 9 days. But Aevo stated on May 16 this 'is not a typical insider/VC/team unlocking' - it was the end of the 2-month lockup on RBN->AEVO 1:1 conversion (ChainCatcher, Odaily https://www.odaily.news/en/post/5195293, FXStreet). Odaily argues it was a conversion because RBN was already freely tradable; most of the 827.6M was DAO treasury (Decrypt: majority to DAO Treasury, then team and private investors; FXStreet: ~40% DAO converting). Whether team/investor RBN was vested before is not established -> firstInsiderUnlock unknown. Team and backers voluntarily re-locked ~15% of supply until end of 2024 (announced May 16). 752% figure = 827.6M vs ~110M circulating (CCN, FXStreet). Claimed price $1.18 not confirmed: CCN gives $0.97 low on May 15; Decrypt (Apr 29) implied ~$1.50."
+ },
+ {
+  "token": "ALT",
+  "claimedDate": "2024-07-25",
+  "verdict": "confirmed",
+  "date": "2024-07-25",
+  "dateSources": [
+   "https://t.me/s/altlayer/190",
+   "https://crypto.news/altlayer-vesting-alt-unlock",
+   "https://beincrypto.com/altlayer-100-million-token-unlock"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 42.09,
+  "amountTokens": 684330000,
+  "circulatingBefore": 1626000000,
+  "shape": "lump",
+  "priceUsd": 0.147,
+  "priceSource": "https://beincrypto.com/altlayer-100-million-token-unlock (implied: $100.37M / 684.33M ALT on Jul 25); crypto.news (Jul 23) quotes ~$0.16",
+  "notes": "Project's own Telegram post lists July 25 2024 as 'First unlock', then vesting paused for all stakeholders Jul 26 2024 - Jan 24 2025, resuming monthly from Jan 25 2025 (2y investors/partners, 3y team/treasury). crypto.news quotes AltLayer: 'the first ALT token unlock is scheduled for July 25, 2024' (TGE was Jan 25 2024). Split per BeInCrypto: team 188M, investors 308M, advisors 83M, protocol dev 35.5M, community 25M, treasury 44.83M. Amount 684.21-684.33M = 42.08-42.09% of circulating (TokenUnlocks via crypto.news/BeInCrypto); circulatingBefore is derived (684.33M/0.4209), not directly sourced. Claimed 42.2% is within rounding."
+ },
+ {
+  "token": "ARB",
+  "claimedDate": "2024-03-16",
+  "verdict": "confirmed",
+  "date": "2024-03-16",
+  "dateSources": [
+   "https://www.coindesk.com/markets/2023/08/16/arbitrum-will-unlock-12b-arb-in-march-2024-token-unlocks",
+   "https://unchainedcrypto.com/arbitrum-to-unlock-2-billion-in-arb-tokens-to-offchain-labs-on-saturday/",
+   "https://www.fxstreet.com/cryptocurrencies/news/arbitrum-price-readies-for-one-of-the-biggest-token-unlocks-of-2024-202403130200"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 76.62,
+  "amountTokens": 1110000000,
+  "circulatingBefore": 1450000000,
+  "shape": "lump",
+  "priceUsd": 1.88,
+  "priceSource": "https://unchainedcrypto.com/arbitrum-to-unlock-2-billion-in-arb-tokens-to-offchain-labs-on-saturday/ (CoinGecko price at writing, days before Mar 16); FXStreet Mar 13 quotes $2.0476",
+  "notes": "Cliff unlock of 1.11B ARB on Saturday Mar 16 2024: 673.5M to team/advisors of Offchain Labs, 438.25M to investors (Unchained, citing Messari). CoinDesk (Aug 2023) describes it as the cliff kicking off four years of monthly unlocks -> first insider unlock. 76.62% of circulating per FXStreet; circulating ~1.45B per CoinGecko via Unchained. No primary project doc fetched, but three independent secondaries agree. Claimed price $2.05 matches FXStreet's Mar 13 quote, not a Mar 16 price; no exact Mar 16 price found."
+ },
+ {
+  "token": "ARKM",
+  "claimedDate": "2024-07-18",
+  "verdict": "confirmed",
+  "date": "2024-07-18",
+  "dateSources": [
+   "https://codex.arkm.com/tokenomics",
+   "https://coingape.com/arkham-shifts-487m-arkm-to-coinbase-prime-heres-why",
+   "https://it.tradingview.com/news/coinmarketcal%3Aca2a5505d094b%3A0-arkham-arkm-token-unlock-18-jul-2024",
+   "https://cointelegraph.com/news/arkham-transfers-304-million-arkm-coinbase-prime-custody",
+   "https://defillama.com/unlocks/arkham"
+  ],
+  "dateDisagreementDays": 1,
+  "firstInsiderUnlock": true,
+  "pctCirculating": null,
+  "amountTokens": 324200,
+  "circulatingBefore": null,
+  "shape": "stream",
+  "priceUsd": 1.6,
+  "priceSource": "https://cointelegraph.com/news/arkham-transfers-304-million-arkm-coinbase-prime-custody (implied $487.24M / 304.5M ARKM, Jul 20-21 2024); Coingape quotes $1.61",
+  "notes": "Project tokenomics page: investor, core contributor and advisor tokens 'locked for 1 year after listing', then 3 years linear (20% / 17.5% / 3% of 1B). Listing was Jul 18 2023, so first insider unlock = Jul 18 2024 (Coingape, CoinMarketCal). Cointelegraph and DefiLlama put the start at Jul 17 -> 1-day disagreement, within tolerance. Linear ~324,200 ARKM/day (Cointelegraph, Coingape); amountTokens is the daily rate. Arkham moved 304.5M ARKM of insider allocation from the vesting contract to Coinbase Prime custody on ~Jul 18-20 citing tax/compliance, so on-chain vesting is no longer observable; it says the 3-year schedule is unchanged. Circulating supply just before not found in a dated source, so pctCirculating left null."
+ },
+ {
+  "token": "CYBER",
+  "claimedDate": "2024-08-14",
+  "verdict": "confirmed",
+  "date": "2024-08-14",
+  "dateSources": [
+   "https://www.chaincatcher.com/en/article/2137928",
+   "https://en.coin-turk.com/investors-monitor-token-unlock-events-in-the-crypto-market-4/",
+   "https://en.bitcoinhaber.net/?p=40955"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": "unknown",
+  "pctCirculating": 8.54,
+  "amountTokens": 1990000,
+  "circulatingBefore": 23300000,
+  "shape": "lump",
+  "priceUsd": 3.15,
+  "priceSource": "https://en.coin-turk.com/investors-monitor-token-unlock-events-in-the-crypto-market-4/ ('CYBER was trading at $3.15 at the time of writing', published Aug 14 2024)",
+  "notes": "ChainCatcher: ~1.99M CYBER unlock at 8:00 PM Beijing time Aug 14 (=12:00 UTC Aug 14), 8.54% of current circulation, ~$6M. CoinTurk/Bitcoinhaber give the same date (15:00 Turkey time) but wrongly call 8.54% 'of total supply'. circulatingBefore derived (1.99M/0.0854). Recipients not named in any source found. Tokenomics.com lists Private Sale Investors '12 Month Cliff, Linear Vesting Every 3 Months x12' (~2.09M per quarter, first ~Aug 14 2024) and Team & Advisors '15 Month Cliff' (first ~Nov 2024). So this is most likely the first private-investor tranche (insider-ish), but team/advisors had NOT unlocked yet, and the recipient split is inferred, not stated -> firstInsiderUnlock left unknown. Earlier cliffs (e.g. Jan 14 2024) went to treasury/ecosystem/public sale per FXStreet."
+ },
+ {
+  "token": "DYDX",
+  "claimedDate": "2023-12-01",
+  "verdict": "confirmed",
+  "date": "2023-12-01",
+  "dateSources": [
+   "https://dydx.foundation/blog/update-on-dydx-unlock",
+   "https://www.theblock.co/post/264697/dydx-to-unlock-500-million-of-tokens-30-of-supply",
+   "https://cointelegraph.com/news/750-m-locked-crypto-tokens-released-december"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 83.2,
+  "amountTokens": 150000000,
+  "circulatingBefore": 180300000,
+  "shape": "lump",
+  "priceUsd": 3.099,
+  "priceSource": "https://www.fxstreet.com/cryptocurrencies/news/dydx-price-expected-to-fall-further-as-whales-dump-tokens-after-massive-unlock-event-202312010817 (price at time of writing, Dec 1 2023)",
+  "notes": "Primary: dYdX Foundation blog - Amendment postponed the Initial Unlock Date for warrant investors, founders, employees, advisors and consultants to Dec 1 2023 00:00 UTC; 30% (up to 150M, 15% of total supply) released then, then 40% monthly Jan-Jun 2024, 20% monthly Jul 2024-Jun 2025, 10% monthly Jul 2025-Jun 2026. Originally scheduled for Feb 2023 (The Block Jan 2023: delayed from February) -> delayed, not re-locked after release. The Block calls it dYdX's 'first significant emission'. 83.2% of circulating per FXStreet; BitPinas says 83.21% of circulating and 15% of total. circulatingBefore derived (150M/0.832)."
+ },
+ {
+  "token": "DYM",
+  "claimedDate": "2025-02-06",
+  "verdict": "unverifiable",
+  "date": null,
+  "dateSources": [
+   "https://docs.dymension.xyz/learn/dym/distribution",
+   "https://app.tokenomics.com/tokenomics/dymension/unlocks",
+   "https://dropstab.com/coins/dymension/vesting",
+   "https://coindesk-coindesk-prod.cdn.arcpublishing.com/tech/2024/02/07/rollup-platform-dymensions-dym-reaches-52b-market-cap-after-botched-start"
+  ],
+  "dateDisagreementDays": 8,
+  "firstInsiderUnlock": true,
+  "pctCirculating": null,
+  "amountTokens": null,
+  "circulatingBefore": null,
+  "shape": "stream",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "Project docs: Core Contributing Team (20%) and Backers (14%) each have a '12-month lockup, followed by a 24-month linear vesting' - so the first insider release is the end of the 12-month lockup and is a linear stream (true first insider unlock, stream shape). But no source found states the calendar date: docs do not say whether the 12 months count from genesis or listing. CoinDesk (Feb 7 2024) implies trading went live Tue Feb 6 2024, which would put the cliff end ~Feb 6 2025 (matches claim, and DropsTab's '79 days left' as of Nov 19 2026 implies an end ~Feb 6 2027 = start Feb 6 2025, my inference). Tokenomics.com gives TGE Jan 29 2024 (implying ~Jan 29 2025). No dated news article, project announcement or Tokenomist event row (paywalled) confirms the day; disagreement ~8 days with no project statement. DropsTab daily rates today ~274k (team) + ~192k (backers) DYM, but no figure just before the start. Price not verified (CoinGecko/CMC history pages not reachable)."
+ },
+ {
+  "token": "EIGEN",
+  "claimedDate": "2025-10-01",
+  "verdict": "confirmed",
+  "date": "2025-10-01",
+  "dateSources": [
+   "https://docs.eigenfoundation.org/eigen-token/token",
+   "https://beincrypto.com/crypto-token-unlocks-first-week-of-october",
+   "https://www.chaincatcher.com/en/article/2213320",
+   "https://it.tradingview.com/news/coinmarketcal%3Aa60bc1887094b%3A0-eigencloud-eigen-36-82mm-token-unlock-01-oct-2025"
+  ],
+  "dateDisagreementDays": 1,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 10.85,
+  "amountTokens": 36820000,
+  "circulatingBefore": 339490000,
+  "shape": "lump",
+  "priceUsd": 1.76,
+  "priceSource": "https://beincrypto.com/crypto-token-unlocks-first-week-of-october (implied: $64.80M / 36.82M EIGEN, pre-unlock)",
+  "notes": "Eigen Foundation docs: EIGEN transferable Sep 30 2024; investor and early-contributor tokens 'remain fully locked up for 1 year AFTER' that, then 'unlock 4% per month', fully unlocked 3 years after transferability. ChainCatcher calls Oct 1 2025 the first 36.82M unlock, monthly thereafter; BeInCrypto splits it 19.75M investors / 17.07M early contributors and gives circulating 339.49M (36.82/339.49 = 10.85%). Docs-implied date is Sep 30/Oct 1 -> within 1 day. Shape: first of monthly 4% tranches (each a one-day lump). Caveats: investors could stake locked EIGEN and earn rewards before this (Protos), and The Block (Oct 4 2024) reported a wallet suspected of breaching lockup - neither changes that locked principal first became transferable here. BeInCrypto also states '13.77% of released supply', which conflicts with its own circulating figure."
+ },
+ {
+  "token": "ENA",
+  "claimedDate": "2025-03-05",
+  "verdict": "confirmed",
+  "date": "2025-03-05",
+  "dateSources": [
+   "https://docs.ethena.fi/ena/tokenomics",
+   "https://crypto.news/ethena-token-unlock-ena-tokens-march-5-ena-price-2025/",
+   "https://invezz.com/news/2025/03/05/ethena-ena-rebounds-by-double-digits-but-risks-remain-with-todays-token-unlock/"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 66.1,
+  "amountTokens": 2070000000,
+  "circulatingBefore": 3130000000,
+  "shape": "lump",
+  "priceUsd": 0.3791,
+  "priceSource": "https://invezz.com/news/2025/03/05/ethena-ena-rebounds-by-double-digits-but-risks-remain-with-todays-token-unlock/ (price at writing on Mar 5 2025); crypto.news Mar 4 quoted $0.3476",
+  "notes": "Ethena docs: core contributors (30%) and investors each 1-year cliff from TGE Mar 5 2024 with 25% at the cliff, 'No core contributor tokens are unlocked prior to the 1yr cliff' / same for investors; then 3-year monthly linear. Invezz split: ~1.13B core contributors, 937.5M investors, 7.93M ecosystem. 66.1% = 2.07B / 3.13B circulating (crypto.news, which mislabels it '66.19% of total supply'). Invezz instead says ~39% of circulating, which matches dividing by post-unlock supply (~5.2B) - sources disagree on the denominator; 66.1% is correct for 'circulating just before'. Claimed price $0.3476 is crypto.news's Mar 4 writing-time quote, not a Mar 5 price."
+ },
+ {
+  "token": "ETHFI",
+  "claimedDate": "2025-03-18",
+  "verdict": "confirmed",
+  "date": "2025-03-18",
+  "dateSources": [
+   "https://etherfi.gitbook.io/gov/ethfi-allocations",
+   "https://dropstab.com/coins/ether-fi-ico",
+   "https://www.thebigwhale.io/article/etherfi-ethfi-analysis-of-the-leader-in-liquid-restaking",
+   "https://blockworks.com/token-transparency/filing/ether-fi",
+   "https://www.theblock.co/post/282962/ether-fi-announces-airdrop-will-adjust-token-allocation-following-community-complaints"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": null,
+  "amountTokens": null,
+  "circulatingBefore": null,
+  "shape": "stream",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "Project governance docs: '1 year cliff for all vested ETHFI holders'; investors vest over 2 years, core contributors over 3. Token/airdrop launched Mar 18 2024 (The Block). Blockworks Token Transparency filing (project-submitted): investors and core contributors (55.1%) 'fully locked for the first 12 months after TGE', unlocking over months 13-36. DropsTab: 'Team and Investor & Advisor tokens began unlocking linearly after a one-year cliff on 2025-03-18', daily ~888k (investors/advisors) + ~318k (team). TheBigWhale: 'cannot be sold for one year from 18 March 2024'. Caveat on shape: DropsTab says daily linear, but Blockworks' end date Feb 18 2027 fits 24 monthly tranches Mar 2025-Feb 2027, so it may be monthly - not resolved. Day-one amount and circulating just before not found in a dated source. Price on Mar 18 2025 not found (CoinGecko/CMC history pages not reachable)."
+ },
+ {
+  "token": "GRASS",
+  "claimedDate": "2025-10-28",
+  "verdict": "confirmed",
+  "date": "2025-10-28",
+  "dateSources": [
+   "https://beincrypto.com/major-crypto-token-unlocks-grass-jupiter-zora",
+   "https://www.gncrypto.news/news/october-2025-token-unlocks-sui-grass-aethir-460m/",
+   "https://pintu.co.id/en/news/221901-3-major-token-unlocks-to-watch-late-oct-2025/amp",
+   "https://grass-foundation.gitbook.io/grass-docs/introduction/grass/grass-tokenomics"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 57.8,
+  "amountTokens": 181000000,
+  "circulatingBefore": 313300000,
+  "shape": "lump",
+  "priceUsd": 0.44,
+  "priceSource": "https://beincrypto.com/major-crypto-token-unlocks-grass-jupiter-zora (implied: $80.24M / 181M GRASS, days before unlock); GNcrypto (Oct 1) implied ~$0.78",
+  "notes": "Grass docs: Early Investors (252M) and Contributors (220M) both have a 1-year cliff (contributors then 3-yr vesting); TGE Oct 2024. BeInCrypto/Pintu/MEXC: 181M GRASS on Oct 28 (126M early investors, 55M contributors), 'first major unlock after its TGE in October 2024'. GNcrypto independently gives Oct 28 and 181M (Tokenomist data). PCT DISAGREEMENT: sources say '72.4% of the released supply' (matches ~250M Tokenomist-unlocked base), but the same articles give circulating 313.3M, which gives 57.8%. I report 57.8% against stated circulating; the claimed 72.4% is the 'released supply' basis. Pintu/MEXC appear to reuse BeInCrypto's text, so independence is limited, but GNcrypto plus the project's cliff terms support the date."
+ },
+ {
+  "token": "HOOK",
+  "claimedDate": "2023-12-01",
+  "verdict": "confirmed",
+  "date": "2023-12-01",
+  "dateSources": [
+   "https://hooked-protocol.gitbook.io/hooked-protocol-whitepaper/hooked-tokenomics/hook/emissions-and-distribution",
+   "https://en.bitcoinsistemi.com/watch-out-31-altcoins-have-massive-token-unlocks-in-the-coming-week-here-is-the-list-and-dates-of-the-critical-week/amp",
+   "https://coincodex.com/article/21917/hooked-protocol-price-hits-2-as-binance-opens-hook-pairs"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": null,
+  "amountTokens": null,
+  "circulatingBefore": null,
+  "shape": "lump",
+  "priceUsd": 1.09,
+  "priceSource": "https://forklog.com/en/hooked-protocol-team-suspected-of-insider-trading/ (implied: ~$5.4M / 4.94M HOOK at time of writing, Dec 1 2023; article also says price rose to $1.24 then ~$1.05)",
+  "notes": "Project whitepaper: Team 1-year cliff then monthly linear over 60 months; Private Sale 1-year cliff with 10% (10M HOOK) at cliff then 2.5%/month over 36 months; both from TGE, with first Team/Private releases shown in Dec-23. TGE/Binance trading Dec 1 2022 (CoinCodex price data 'collected on December 1, 2022'). BitcoinSistemi (Nov 26 2023): HOOK unlock Dec 1 2023 17:00 UTC+3 (=14:00 UTC), $15.56M, '27.07% of the market value' ($57.52M mcap). PCT NOT CONFIRMED: claimed 16.5% conflicts with BitcoinSistemi's 27.07% of market cap; no source gave token amount or circulating supply. Shape: cliff tranche on day 1 then monthly. The Dec 1 2023 date also coincides with the ForkLog-reported insider-trading allegation (team multisig sent ~4.94M HOOK to Binance before a $50M fund announcement) - a confound for any event study."
+ },
+ {
+  "token": "ID",
+  "claimedDate": "2024-03-22",
+  "verdict": "confirmed",
+  "date": "2024-03-22",
+  "dateSources": [
+   "https://finbold.com/major-sell-off-incoming-this-crypto-will-unlock-120-million-in-tokens",
+   "https://www.chaincatcher.com/en/article/2117478",
+   "https://tokenomist.ai/research/tokenomics-insight-space-id"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 16.16,
+  "amountTokens": 78490000,
+  "circulatingBefore": 485730000,
+  "shape": "lump",
+  "priceUsd": 1.58,
+  "priceSource": "https://finbold.com/major-sell-off-incoming-this-crypto-will-unlock-120-million-in-tokens (price at writing, Mar 20 2024)",
+  "notes": "Finbold: 78.49M ID on Mar 22 2024 at noon UTC = 16% of circulating 485.73M; includes Team, Strategic Sales, Seed Sale (20M) and Advisors (11.67M) plus ecosystem/foundation/marketing/airdrop. ChainCatcher (Mar 18 2024): same amount, Mar 22 at 8 AM (likely UTC+8 = 00:00 UTC), but 18.23% of circulating - denominators differ (~430M vs 485.7M). Tokenomist research: core team, seed, strategic and advisors all '1-year cliff' then quarterly vesting; TGE was Mar 22 2023, and the Sep 22 2023 cliff (FXStreet) went only to airdrop/ecosystem/foundation/marketing - so Mar 22 2024 is the first insider unlock (TGE/Binance Launchpad trading Mar 22 2023 per CoinDesk https://hotfix.coindesk.com/business/2023/03/22/binance-launchpad-for-space-id-tokens-receives-over-28b-in-bnb-commitments - search-result title/URL only, page not fetched). Price is Mar 20, not Mar 22."
+ }
+]
