@@ -138,10 +138,10 @@
     "target": 0.11172
    },
    "mark": {
-    "date": "2026-11-17",
-    "price": 0.14499,
-    "pnl": 8.63,
-    "r": 0.68
+    "date": "2026-11-18",
+    "price": 0.1436,
+    "pnl": 9.48,
+    "r": 0.75
    },
    "worstAgainst": 5.29,
    "weekMove": null,
@@ -378,12 +378,53 @@
     "target": 0.0097565
    },
    "mark": {
-    "date": "2026-11-17",
-    "price": 0.01544,
-    "pnl": -2.99,
-    "r": -0.24
+    "date": "2026-11-18",
+    "price": 0.01424,
+    "pnl": 4.97,
+    "r": 0.39
    },
    "worstAgainst": 3.46
+  },
+  {
+   "id": "H-2026-11-25",
+   "token": "H",
+   "name": "Humanity Protocol",
+   "coingeckoId": "humanity",
+   "unlockDate": "2026-11-25",
+   "checkDate": "2026-11-17",
+   "entryDate": "2026-11-18",
+   "coverDate": "2026-12-09",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [
+    {
+     "at": "2026-11-19T08:56:00+00:00",
+     "event": "check day: missed (not logged before its entry day, so not counted)"
+    }
+   ],
+   "decision": {
+    "confidence": 62,
+    "pctCirculating": 12.34,
+    "investorsShare": 0.2085,
+    "firstInsiderUnlock": false,
+    "usdM": 4.06,
+    "amount": "266.47M H per both aggregators (includes a 55.56M investor slice that may be outdated; ~210.91M without it)",
+    "frozenAt": "2026-11-19T08:56:00+00:00"
+   },
+   "plan": {
+    "stop": 12,
+    "target": 35,
+    "cover": 14,
+    "zone": 1.0,
+    "rr": 2.92,
+    "riskPct": 12.66,
+    "pumpPct": 30.0,
+    "fromSignals": "2026-11-18T09:55:08Z"
+   },
+   "status": "missed",
+   "skipReason": "not logged before its entry day, so not counted"
   },
   {
    "id": "HUMA-2026-11-26",
@@ -439,8 +480,32 @@
     "first"
    ],
    "setup": "B",
-   "history": [],
-   "status": "watching"
+   "history": [
+    {
+     "at": "2026-11-19T08:56:00+00:00",
+     "event": "check day: called"
+    }
+   ],
+   "decision": {
+    "confidence": 65,
+    "pctCirculating": null,
+    "investorsShare": 0.242,
+    "firstInsiderUnlock": true,
+    "usdM": null,
+    "amount": "Unknown: end of 1-year cliff for 235M core contributor + 75M investor KNTQ; no source states the cliff release size",
+    "frozenAt": "2026-11-19T08:56:00+00:00"
+   },
+   "plan": {
+    "stop": 12,
+    "target": 35,
+    "cover": 14,
+    "zone": 1.0,
+    "rr": 2.92,
+    "riskPct": 12.66,
+    "pumpPct": 30.0,
+    "fromSignals": "2026-11-18T09:55:08Z"
+   },
+   "status": "called"
   },
   {
    "id": "GRVT-2026-11-30",
@@ -541,14 +606,14 @@
    "status": "watching"
   },
   {
-   "id": "LIT-2026-12-29",
+   "id": "LIT-2026-12-27",
    "token": "LIT",
    "name": "Lighter",
    "coingeckoId": "lighter",
-   "unlockDate": "2026-12-29",
-   "checkDate": "2026-12-21",
-   "entryDate": "2026-12-22",
-   "coverDate": "2027-01-12",
+   "unlockDate": "2026-12-27",
+   "checkDate": "2026-12-19",
+   "entryDate": "2026-12-20",
+   "coverDate": "2027-01-10",
    "rules": [
     "first"
    ],
@@ -573,7 +638,7 @@
    "status": "watching"
   }
  ],
- "updatedAt": "2026-11-18T21:28:42Z",
+ "updatedAt": "2026-11-19T08:56:00Z",
  "summary": {
   "closed": 0,
   "won": 0,
@@ -582,7 +647,7 @@
   "totalUsd": 0,
   "open": 2,
   "skipped": 2,
-  "watching": 9,
+  "watching": 8,
   "byTag": {}
  },
  "method": "Live trade log: every unlock short the page calls from now on, with the levels it showed\nand what actually happened. Nothing in it is rewritten later: a call's decision, entry price,\nstop and target are frozen when they are made, and only its result is filled in afterwards.\n\nLife of a call (days are relative to the unlock date):\n  watching  the unlock matches the playbook; its check day has not come yet. Not frozen.\n  check day (day -8): the decision is frozen with the unlock data as it stood then:\n              confidence under 60  -> skipped (\"data not confirmed\")\n              otherwise            -> called, waiting for the entry price\n  entry (day -7): R = the 00:00 UTC price that day (Binance daily open; CoinGecko if the token is\n              not on Binance). Pump check: up 30%+ from day -30 to R -> skipped (\"pumped\").\n              Otherwise open, with zone R to R x 1.01, stop R x (1 + stop%), target R x (1 - target%),\n              using the stop, target and cover day the page showed on the check day.\n  open      checked against each completed day's high and low (same rules as the backtest:\n              a day that reaches the stop counts as stopped first; stops fill 0.5% worse).\n  closed    stop, target, or covered at 00:00 UTC on the plan's cover day. Result after 0.10% fees\n              and 0.03% funding a day, also in R (1R = what a stopped trade loses).\nA call whose check day passed before this script saw it (for example a missed run) is logged as\n\"missed\" and not counted, so a late entry can never use hindsight.\n\nRuns on GitHub Actions twice a day. Needs api.coingecko.com and data.binance.vision.\nOutput: data/trade_log.json"

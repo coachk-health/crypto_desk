@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T21:29:09Z",
+ "generatedAt": "2026-11-19T08:56:42Z",
  "pumpChecks": {
   "PIEVERSE": {
    "id": "pieverse",
@@ -25,72 +25,88 @@
    "ref": 0.01501,
    "source": "binance-futures"
   },
+  "H": {
+   "id": "humanity",
+   "rise": -71.6,
+   "to": "2026-11-18",
+   "week": -56.7,
+   "ref": 0.01523,
+   "source": "binance-futures"
+  },
   "HUMA": {
    "id": "huma-finance",
-   "rise": -63.5,
-   "to": "2026-11-18",
-   "week": -6.1,
-   "ref": 0.00845484,
+   "rise": -63.9,
+   "to": "2026-11-19",
+   "week": 2.2,
+   "ref": 0.00819587,
    "source": "binance-futures"
   },
   "KNTQ": {
    "id": "kinetiq",
-   "rise": -43.3,
-   "to": "2026-11-18",
-   "week": -37.1,
-   "ref": 0.216316,
+   "rise": -41.6,
+   "to": "2026-11-19",
+   "week": -25.0,
+   "ref": 0.238451,
    "source": "coingecko"
   },
   "GRVT": {
    "id": "grvt",
-   "rise": -19.7,
-   "to": "2026-11-18",
-   "week": -18.4,
-   "ref": 0.159929,
+   "rise": -27.4,
+   "to": "2026-11-19",
+   "week": -15.2,
+   "ref": 0.154756,
    "source": "binance-futures"
   },
   "ADI": {
    "id": "adi-token",
-   "rise": -8.3,
-   "to": "2026-11-18",
-   "week": -7.9,
-   "ref": 7.38953,
+   "rise": -8.2,
+   "to": "2026-11-19",
+   "week": -7.1,
+   "ref": 7.38307,
    "source": "coingecko"
   },
   "WET": {
    "id": "humidifi",
-   "rise": -17.3,
-   "to": "2026-11-18",
-   "week": -13.5,
-   "ref": 0.0405837,
+   "rise": -15.7,
+   "to": "2026-11-19",
+   "week": -11.2,
+   "ref": 0.0409416,
+   "source": "binance-futures"
+  },
+  "JCT": {
+   "id": "janction",
+   "rise": -71.0,
+   "to": "2026-11-19",
+   "week": -58.4,
+   "ref": 0.00208953,
    "source": "binance-futures"
   }
  },
  "context": {
   "KAITO": {
-   "asOf": "2026-11-18",
+   "asOf": "2026-11-19",
    "resistance": [
     {
      "price": 0.2433,
-     "pct": 32.0,
+     "pct": 37.6,
      "date": "2026-11-04"
     },
     {
      "price": 0.2623,
-     "pct": 42.3,
+     "pct": 48.4,
      "date": "2026-10-28"
     }
    ],
    "support": [
     {
      "price": 0.1668,
-     "pct": -9.5,
+     "pct": -5.7,
      "date": "2026-11-14"
     }
    ],
    "high": 1.3785,
    "low": 0.1668,
-   "ref": 0.1843,
+   "ref": 0.1768,
    "source": "binance-futures KAITOUSDT",
    "last": {
     "pre30": -20.3,
@@ -108,58 +124,81 @@
    }
   },
   "MON": {
-   "asOf": "2026-11-18",
+   "asOf": "2026-11-19",
    "resistance": [
     {
      "price": 0.01775,
-     "pct": 15.0,
+     "pct": 24.6,
      "date": "2026-11-12"
     },
     {
      "price": 0.02193,
-     "pct": 42.0,
+     "pct": 54.0,
      "date": "2026-07-30"
     }
    ],
-   "support": [
-    {
-     "price": 0.01514,
-     "pct": -1.9,
-     "date": "2026-11-08"
-    },
-    {
-     "price": 0.01418,
-     "pct": -8.2,
-     "date": "2026-11-14"
-    }
-   ],
+   "support": [],
    "high": 0.03586,
-   "low": 0.01418,
-   "ref": 0.01544,
+   "low": 0.01396,
+   "ref": 0.01424,
    "source": "binance-futures MONUSDT",
    "last": {
     "date": null,
     "note": "no unlock since TGE (2025-11-24)"
    }
   },
+  "H": {
+   "asOf": "2026-11-19",
+   "resistance": [
+    {
+     "price": 0.05581,
+     "pct": 267.2,
+     "date": "2026-11-08"
+    },
+    {
+     "price": 0.05926,
+     "pct": 289.9,
+     "date": "2026-10-28"
+    }
+   ],
+   "support": [],
+   "high": 0.17017,
+   "low": 0.01447,
+   "ref": 0.0152,
+   "source": "binance-futures HUSDT",
+   "last": {
+    "pre30": -18.8,
+    "pre14": -13.6,
+    "pre7": -7.2,
+    "post7": 3.8,
+    "post14": 1.2,
+    "pumpedInto": false,
+    "after": "flat",
+    "date": "2026-10-25",
+    "basis": "researched",
+    "source": "binance-futures HUSDT",
+    "what": "4 groups (names not shown for past events)",
+    "kind": "monthly"
+   }
+  },
   "HUMA": {
-   "asOf": "2026-11-18",
+   "asOf": "2026-11-19",
    "resistance": [
     {
      "price": 0.021918,
-     "pct": 195.7,
+     "pct": 159.0,
      "date": "2026-08-15"
     },
     {
-     "price": 0.022312,
-     "pct": 201.1,
-     "date": "2026-07-24"
+     "price": 0.022824,
+     "pct": 169.7,
+     "date": "2026-08-09"
     }
    ],
    "support": [],
    "high": 0.036552,
    "low": 0.006228,
-   "ref": 0.007411,
+   "ref": 0.008462,
    "source": "binance-futures HUMAUSDT",
    "last": {
     "pre30": 10.3,
@@ -172,27 +211,27 @@
     "date": "2026-09-26",
     "basis": "researched",
     "source": "binance-futures HUMAUSDT",
-    "what": "Protocol Treasury (foundation/ecosystem)",
+    "what": "one group, likely Protocol Treasury (foundation) per tokenomics.com's model",
     "kind": "quarterly"
    }
   },
   "KNTQ": {
-   "asOf": "2026-11-18",
+   "asOf": "2026-11-19",
    "resistance": [],
    "support": [],
    "high": null,
    "low": null,
-   "ref": 0.216214,
+   "ref": 0.238753,
    "source": "coingecko",
    "last": {
-    "pre30": 86.9,
-    "pre14": 50.6,
-    "pre7": 4.0,
-    "post7": -13.0,
-    "post14": -7.6,
+    "pre30": 128.2,
+    "pre14": 107.5,
+    "pre7": 20.7,
+    "post7": -24.0,
+    "post14": -24.6,
     "pumpedInto": true,
-    "after": "flat",
-    "date": "2026-10-02",
+    "after": "dumped",
+    "date": "2026-10-01",
     "basis": "researched",
     "source": "coingecko",
     "what": "community (kPoints holders)",
@@ -200,34 +239,34 @@
    }
   },
   "GRVT": {
-   "asOf": "2026-11-18",
+   "asOf": "2026-11-19",
    "resistance": [
     {
      "price": 0.1769,
-     "pct": 5.7,
+     "pct": 9.9,
      "date": "2026-09-07"
     },
     {
      "price": 0.1798,
-     "pct": 7.5,
+     "pct": 11.7,
      "date": "2026-09-11"
     }
    ],
    "support": [
     {
      "price": 0.1591,
-     "pct": -4.9,
+     "pct": -1.1,
      "date": "2026-09-16"
     },
     {
      "price": 0.1568,
-     "pct": -6.3,
+     "pct": -2.5,
      "date": "2026-08-28"
     }
    ],
    "high": 0.4088,
    "low": 0.1456,
-   "ref": 0.1673,
+   "ref": 0.1609,
    "source": "binance-futures GRVTUSDT",
    "last": {
     "date": null,
@@ -235,12 +274,12 @@
    }
   },
   "ADI": {
-   "asOf": "2026-11-18",
+   "asOf": "2026-11-19",
    "resistance": [],
    "support": [],
    "high": null,
    "low": null,
-   "ref": 7.39047,
+   "ref": 7.38245,
    "source": "coingecko",
    "last": {
     "pre30": -5.1,
@@ -258,29 +297,29 @@
    }
   },
   "WET": {
-   "asOf": "2026-11-18",
+   "asOf": "2026-11-19",
    "resistance": [
     {
      "price": 0.06474,
-     "pct": 61.2,
+     "pct": 58.5,
      "date": "2026-09-13"
     },
     {
      "price": 0.06695,
-     "pct": 66.7,
+     "pct": 63.9,
      "date": "2026-09-09"
     }
    ],
    "support": [
     {
      "price": 0.03668,
-     "pct": -8.6,
+     "pct": -10.2,
      "date": "2026-11-14"
     }
    ],
    "high": 0.0806,
    "low": 0.03668,
-   "ref": 0.04015,
+   "ref": 0.04085,
    "source": "binance-futures WETUSDT",
    "last": {
     "pre30": -42.2,
@@ -298,34 +337,34 @@
    }
   },
   "JCT": {
-   "asOf": "2026-11-18",
+   "asOf": "2026-11-19",
    "resistance": [
     {
-     "price": 0.00233,
-     "pct": 12.9,
-     "date": "2026-10-16"
+     "price": 0.002013,
+     "pct": 1.5,
+     "date": "2026-09-23"
     },
     {
-     "price": 0.002457,
-     "pct": 19.0,
-     "date": "2026-08-26"
+     "price": 0.002044,
+     "pct": 3.1,
+     "date": "2026-09-06"
     }
    ],
    "support": [
     {
      "price": 0.001885,
-     "pct": -8.7,
+     "pct": -4.9,
      "date": "2026-10-23"
     },
     {
      "price": 0.001805,
-     "pct": -12.5,
+     "pct": -9.0,
      "date": "2026-11-14"
     }
    ],
    "high": 0.021344,
    "low": 0.001218,
-   "ref": 0.002064,
+   "ref": 0.001983,
    "source": "binance-futures JCTUSDT",
    "last": {
     "pre30": 483.8,
@@ -343,29 +382,29 @@
    }
   },
   "CYS": {
-   "asOf": "2026-11-18",
+   "asOf": "2026-11-19",
    "resistance": [
     {
      "price": 0.1264,
-     "pct": 105.9,
+     "pct": 122.5,
      "date": "2026-10-24"
     },
     {
      "price": 0.1285,
-     "pct": 109.3,
+     "pct": 126.2,
      "date": "2026-10-28"
     }
    ],
    "support": [],
    "high": 1.84,
-   "low": 0.0578,
-   "ref": 0.0614,
+   "low": 0.0555,
+   "ref": 0.05682,
    "source": "binance-futures CYSUSDT",
    "last": {
     "pre30": -45.8,
     "pre14": -33.0,
     "pre7": -20.9,
-    "post7": null,
+    "post7": -24.2,
     "post14": null,
     "pumpedInto": false,
     "after": null,
@@ -377,29 +416,23 @@
    }
   },
   "PIEVERSE": {
-   "asOf": "2026-11-18",
-   "resistance": [
-    {
-     "price": 2.274,
-     "pct": 10.7,
-     "date": "2026-11-09"
-    }
-   ],
+   "asOf": "2026-11-19",
+   "resistance": [],
    "support": [
     {
      "price": 1.5638,
-     "pct": -23.9,
+     "pct": -55.7,
      "date": "2026-11-13"
     },
     {
      "price": 1.2509,
-     "pct": -39.1,
+     "pct": -64.5,
      "date": "2026-10-08"
     }
    ],
-   "high": 2.274,
+   "high": 3.6382,
    "low": 0.6253,
-   "ref": 2.0536,
+   "ref": 3.5276,
    "source": "binance-futures PIEVERSEUSDT",
    "last": {
     "pre30": 38.5,
@@ -417,34 +450,34 @@
    }
   },
   "LIT": {
-   "asOf": "2026-11-18",
+   "asOf": "2026-11-19",
    "resistance": [
     {
      "price": 3.352,
-     "pct": 15.9,
+     "pct": 23.2,
      "date": "2026-10-29"
     },
     {
      "price": 3.5271,
-     "pct": 22.0,
+     "pct": 29.6,
      "date": "2026-11-11"
     }
    ],
    "support": [
     {
-     "price": 2.8258,
-     "pct": -2.3,
-     "date": "2026-10-18"
+     "price": 2.5862,
+     "pct": -4.9,
+     "date": "2026-10-30"
     },
     {
-     "price": 2.5862,
-     "pct": -10.5,
-     "date": "2026-10-30"
+     "price": 2.1913,
+     "pct": -19.5,
+     "date": "2026-08-14"
     }
    ],
    "high": 5.5666,
    "low": 1.9416,
-   "ref": 2.8912,
+   "ref": 2.7207,
    "source": "binance-futures LITUSDT",
    "last": {
     "date": null,
@@ -452,14 +485,14 @@
    }
   },
   "L1X": {
-   "asOf": "2026-11-18",
+   "asOf": "2026-11-19",
    "resistance": [],
    "support": [],
    "high": null,
    "low": null,
-   "ref": 6.96416,
+   "ref": 6.99859,
    "source": "coingecko"
   }
  },
- "pumpCheckedAt": "2026-11-18T21:29:09Z"
+ "pumpCheckedAt": "2026-11-19T08:56:42Z"
 }

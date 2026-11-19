@@ -98,9 +98,32 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.01544,
-    "openPct": -2.9,
-    "asOf": "2026-11-17"
+    "lastClose": 0.01424,
+    "openPct": 5.1,
+    "asOf": "2026-11-18"
+   }
+  },
+  {
+   "token": "HUMA",
+   "name": "Huma Finance",
+   "unlockDate": "2026-11-26",
+   "entryDate": "2026-11-19",
+   "coverDate": "2026-12-10",
+   "pctCirculating": 26.47,
+   "firstInsider": true,
+   "setup": "Big unlock",
+   "recipients": "First quarterly release for private investors (~171.7M) and team & advisors (~160.8M) after their lock was extended from 12 to 18 months, plus a third slice that is either Protocol Treasury 126.25M (Tokenomist) or ~146M LP & Ecosystem/community (tokenomics.com).",
+   "confidence": "confirmed",
+   "source": "https://www.coingecko.com/en/coins/huma-finance/usd",
+   "symbol": "HUMAUSDT",
+   "pump": -67.4,
+   "pumpTo": "2026-11-18",
+   "call": "TAKE",
+   "why": "passes every rule",
+   "calledAt": "2026-11-19T08:56:42Z",
+   "lateCall": false,
+   "result": {
+    "status": "open"
    }
   }
  ]

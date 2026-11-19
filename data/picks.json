@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T21:29:09Z",
+ "generatedAt": "2026-11-19T08:56:42Z",
  "rules": {
   "version": "v3",
   "frozenOn": "2026-11-19",
@@ -90,7 +90,7 @@
    "pctCirculating": 140.5,
    "firstInsider": true,
    "setup": "Big unlock",
-   "recipients": "Team (~10.7B per the official '~10.7% of initial supply' wording), investors (~4.92B) and the Category Labs Treasury (~0.99B; intended for future employee compensation per Monad).",
+   "recipients": "Team (~10.7B per Monad's '~10.7% of initial supply' wording; Tokenomist models only ~750M), investors (~4.92B) and the Category Labs Treasury (~0.99B; Monad says it is for future employee compensation).",
    "confidence": "confirmed",
    "source": "https://monad.xyz/blog/mon-tokenomics-overview",
    "symbol": "MONUSDT",
@@ -111,14 +111,14 @@
    "pctCirculating": 26.47,
    "firstInsider": true,
    "setup": "Big unlock",
-   "recipients": "First quarterly release for private investors (~171.7M) and team & advisors (~160.8M) after their lock was extended from 12 to 18 months, plus a Protocol Treasury quarterly release (~126.25M, per Tokenomist).",
+   "recipients": "First quarterly release for private investors (~171.7M) and team & advisors (~160.8M) after their lock was extended from 12 to 18 months, plus a third slice that is either Protocol Treasury 126.25M (Tokenomist) or ~146M LP & Ecosystem/community (tokenomics.com).",
    "confidence": "confirmed",
    "source": "https://www.coingecko.com/en/coins/huma-finance/usd",
    "symbol": "HUMAUSDT",
-   "pump": -56.9,
-   "pumpTo": "2026-11-17",
-   "call": "WATCH",
-   "why": "passes so far"
+   "pump": -67.4,
+   "pumpTo": "2026-11-18",
+   "call": "TAKE",
+   "why": "passes every rule"
   },
   {
    "token": "GRVT",
@@ -129,12 +129,12 @@
    "pctCirculating": 29.99,
    "firstInsider": false,
    "setup": "Big unlock",
-   "recipients": "Airdrop/community recipients (Month-4 tranche, including users who chose the 2x multiplier plan). Team, investor and ecosystem tokens are still in their cliffs.",
+   "recipients": "Airdrop/community recipients (month-4 tranche). Team, investor and ecosystem tokens are still in their cliffs per tokenomics.com.",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/grvt/unlocks",
    "symbol": "GRVTUSDT",
-   "pump": -25.4,
-   "pumpTo": "2026-11-17",
+   "pump": -23.3,
+   "pumpTo": "2026-11-18",
    "call": "WATCH",
    "why": "passes so far"
   },
@@ -151,8 +151,8 @@
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/humidifi/unlocks",
    "symbol": "WETUSDT",
-   "pump": -19.8,
-   "pumpTo": "2026-11-17",
+   "pump": -16.3,
+   "pumpTo": "2026-11-18",
    "call": "WATCH",
    "why": "passes so far"
   },
@@ -169,8 +169,8 @@
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/cysic/unlocks",
    "symbol": "CYSUSDT",
-   "pump": -24.7,
-   "pumpTo": "2026-11-17",
+   "pump": -24.2,
+   "pumpTo": "2026-11-18",
    "oiChange": null,
    "oiTo": null,
    "call": "WATCH",
@@ -225,7 +225,7 @@
    "pctCirculating": null,
    "firstInsider": true,
    "setup": "First insider unlock",
-   "recipients": "Core contributors (235M total) and investors (75M total, seed backers Maven11 and Susquehanna Crypto): the end of their one-year cliff.",
+   "recipients": "Core contributors (235M total) and investors (75M total; seed backers Maven11 Capital and Susquehanna Crypto) at the end of their one-year cliff.",
    "confidence": "confirmed",
    "source": "https://kinetiq.xyz/docs/kntq",
    "call": "SKIP",
@@ -248,7 +248,7 @@
   }
  ],
  "live": {
-  "taken": 0,
+  "taken": 1,
   "closed": 0,
   "won": 0,
   "totalR": 0,
@@ -352,9 +352,32 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.01544,
-    "openPct": -2.9,
-    "asOf": "2026-11-17"
+    "lastClose": 0.01424,
+    "openPct": 5.1,
+    "asOf": "2026-11-18"
+   }
+  },
+  {
+   "token": "HUMA",
+   "name": "Huma Finance",
+   "unlockDate": "2026-11-26",
+   "entryDate": "2026-11-19",
+   "coverDate": "2026-12-10",
+   "pctCirculating": 26.47,
+   "firstInsider": true,
+   "setup": "Big unlock",
+   "recipients": "First quarterly release for private investors (~171.7M) and team & advisors (~160.8M) after their lock was extended from 12 to 18 months, plus a third slice that is either Protocol Treasury 126.25M (Tokenomist) or ~146M LP & Ecosystem/community (tokenomics.com).",
+   "confidence": "confirmed",
+   "source": "https://www.coingecko.com/en/coins/huma-finance/usd",
+   "symbol": "HUMAUSDT",
+   "pump": -67.4,
+   "pumpTo": "2026-11-18",
+   "call": "TAKE",
+   "why": "passes every rule",
+   "calledAt": "2026-11-19T08:56:42Z",
+   "lateCall": false,
+   "result": {
+    "status": "open"
    }
   }
  ]
