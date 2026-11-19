@@ -1,0 +1,247 @@
+[
+ {
+  "token": "APT",
+  "claimedDate": "2023-11-12",
+  "verdict": "confirmed",
+  "date": "2023-11-12",
+  "dateSources": [
+   "https://aptosnetwork.com/currents/aptos-tokenomics-overview",
+   "https://www.theblock.co/news/ecosystems/2023-11-01-aptos-avalanche-dominate-450-million-november-token-unlocks-260336",
+   "https://ambcrypto.com/aptos-dips-2-following-novembers-token-unlock/",
+   "https://www.fxstreet.com/cryptocurrencies/news/aptos-price-readies-for-volatility-as-18135-million-apt-tokens-are-due-to-flood-markets-in-a-cliff-unlock-202311100200"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 9.96,
+  "amountTokens": 24840000,
+  "circulatingBefore": 249383461,
+  "shape": "lump",
+  "priceUsd": 7.5,
+  "priceSource": "https://ambcrypto.com/aptos-dips-2-following-novembers-token-unlock/ (approx. $7.5 at press time on 2023-11-12; The Block quoted $6.93 on 2023-11-01, Daily Hodl $8.02 on 2023-11-13)",
+  "notes": "DATE: Aptos Foundation tokenomics page: core contributors and investors get no APT for the first 12 months after the 2022-10-12 mainnet; 3/48 unlocks in month 13 then monthly to month 18, then 1/48 monthly. The Block (2023-11-01), FXStreet and AMBCrypto all give 2023-11-12. AMOUNT: 24.84M APT = Foundation 1.33M, core contributors 11.88M, investors 8.42M, community 3.21M (Daily Hodl 2023-11-13). FXStreet body text says 24.48M (typo; its bullets say 24.84M). PCT: 9.96% is stated by AMBCrypto (2023-11-12), using CoinMarketCap circulating supply of 249,383,461 at press time. That is the source's own figure, not my arithmetic. Check: AMBCrypto on 2023-10-31 gave 247,475,382 circulating, which would make it 10.04% (my arithmetic). CMC's figure only rose about 1.9M between the two dates, so 249.38M looks like the pre-unlock supply. Caveat: FXStreet's 'almost 10% of the entire supply' is wrong; it is about 10% of circulating, about 2.3% of total. FIRST INSIDER: true for principal. The Aptos page says no core contributor or investor APT for 12 months, and the October 2023 unlock (4.5M, The Block) was community and Foundation only. Caveat: the same page says the lock-up excludes staking rewards, so insiders who staked locked APT could have earned transferable reward APT before this date. PRICE: AMBCrypto about $7.5 on the day. The claimed $7.6683 is the right ticker and order of magnitude, but I could not match the exact figure because CoinGecko/CMC history pages were not reachable."
+ },
+ {
+  "token": "ATA",
+  "claimedDate": "2021-11-07",
+  "verdict": "unverifiable",
+  "date": null,
+  "dateSources": [
+   "https://app.tokenomics.com/tokenomics/automata-network",
+   "https://app.tokenomics.com/tokenomics/automata-network/unlocks",
+   "https://icodrops.com/automata",
+   "https://dropstab.com/coins/automata/vesting",
+   "https://www.binance.com/research/projects/automata-network",
+   "https://cryptorank.io/ico/automata-network",
+   "https://www.coinlore.com/coin/automata"
+  ],
+  "dateDisagreementDays": null,
+  "firstInsiderUnlock": false,
+  "pctCirculating": null,
+  "amountTokens": null,
+  "circulatingBefore": null,
+  "shape": "lump",
+  "priceUsd": null,
+  "priceSource": "https://coinlore.com/coin/automata/historical-data (monthly only: Nov 2021 open $1.07, close $1.13. No daily row was reachable, so the claimed $1.1039 is the right ticker and range but is not checked to the day.)",
+  "notes": "DATE: I found no project announcement, news article or vesting-contract reference giving an exact Nov 2021 unlock day. Tokenomics.com says TGE was 2021-06-06, with a 5-month cliff for team, advisors, seed and strategic, then quarterly releases. ICO Drops says TGE concluded 2021-06-07 00:00 UTC+3, which is 2021-06-06 21:00 UTC. Adding 5 months gives about 2021-11-06, which is within 1 day of the claim. That date is my own inference; no source states it, so it is not confirmed. FIRST INSIDER: false. Tokenomics.com and DropsTab both show seed (12.6%) and strategic (16.66-16.7%) investors receiving tokens at TGE in June 2021. Team and advisors had 0% at TGE, so for those two groups this would be the first release. AMOUNT/PCT: no source gives the Nov 2021 amount or circulating supply. My own arithmetic from the tokenomics.com terms: team 150M/18 = 8.33M, advisors 50M/18 = 2.78M, seed 43.7M/6 = 7.28M, strategic 50M/6 = 8.33M, so about 26.7M from insiders per tranche. Protocol Reserve and Ecosystem quarterly tranches would add roughly 15.5M and 21.8M, but whether those fall on the same day is not sourced. Binance Research gives 172.25M ATA initial circulating at listing. Whether the claimed 29.7% is right depends on circulating supply in Nov 2021, which I could not source. Unverified. SHAPE: quarterly cliff tranches, so lump per event. Retry (follow-up): CryptoRank ICO page confirms 172.25M initial circulating and 1.00B total, but gives no vesting or Nov 2021 event. TheBigWhale has no vesting data. The amount and circulating supply in Nov 2021 are still unverified, and searches were blocked by the exhausted budget. Retry 2 (fresh budget): one more search plus CoinLore and CMC news pages. CoinLore's only 2021 supply figure is a yearly 172.3M, and CMC's unlock widget did not load. No source gives the Nov 2021 tranche size or the circulating supply just before it. Context only: if circulating was still about 172.25M, the claimed 29.7% implies about 51.2M ATA unlocked (my back-calculation). My sourced insider-tranche estimate is about 26.7M; adding Reserve/Ecosystem quarterly tranches of unsourced timing gives about 64M. Still unverified."
+ },
+ {
+  "token": "AUDIO",
+  "claimedDate": "2021-10-23",
+  "verdict": "unverifiable",
+  "date": null,
+  "dateSources": [
+   "https://www.iq.wiki/en/wiki/audius",
+   "https://www.binance.com/research/projects/audius"
+  ],
+  "dateDisagreementDays": null,
+  "firstInsiderUnlock": false,
+  "pctCirculating": null,
+  "amountTokens": null,
+  "circulatingBefore": null,
+  "shape": "lump",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "DATE: Binance Research gives launch as October 2020 (report dated 2020-10-23) and allocations of investors 360M, team & advisors 405M, Foundation 180M and airdrop 55M. IQ.wiki says advisors and investors had a six-month lockup ending April 23 (2021 by implication) and 120M AUDIO circulating at launch. I found no source, primary or secondary, that states quarterly tranches or a 2021-10-23 unlock, or the size of any October 2021 release. The Audius Medium token announcement promised details later and gives none. October 23 is plausible as the third quarterly date after 2021-04-23, but that is inference, not sourced. FIRST INSIDER: false. IQ.wiki shows investors and advisors became transferable when the lockup ended around 2021-04-23, six months before this date. AMOUNT/PCT: not found. The claim leaves pct null and gives about 88.4M AUDIO for insiders; I found no source for that number. Only data point: a Stratmont substack (2022-04-13) gives 615M circulating in April 2022. PRICE: no daily price source reached for 2021-10-23. SHAPE: 'lump' (quarterly tranche) is the claim; the release mechanism is unverified."
+ },
+ {
+  "token": "BLUR",
+  "claimedDate": "2023-06-14",
+  "verdict": "confirmed",
+  "date": "2023-06-14",
+  "dateSources": [
+   "https://www.theblock.co/news/web3/2023-06-13-blur-token-unlock-40-percent-234422",
+   "https://forklog.com/en/nft-marketplace-blur-unlocks-196-million-blur-tokens/",
+   "https://coinjournal.net/news/blur-to-unlock-196-million-tokens-increasing-circulating-supply-by-40",
+   "https://www.iq.wiki/en/wiki/blur"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 40,
+  "amountTokens": 196000000,
+  "circulatingBefore": 495200000,
+  "shape": "lump",
+  "priceUsd": 0.32,
+  "priceSource": "https://www.theblock.co/news/web3/2023-06-13-blur-token-unlock-40-percent-234422 ($0.32 on 2023-06-13; Forklog about $0.31, CoinJournal $0.309)",
+  "notes": "DATE: The Block (2023-06-13, calling it 'tomorrow'), Forklog and CoinJournal all give 2023-06-14. These are three independent secondary sources. IQ.wiki notes a 4-month transfer cliff for core contributors, which fits the 2023-02-14 token launch. I found no project-run page giving the exact date. AMOUNT: about 196M BLUR = core contributors 115.6M, investors 75.4M, advisors 4.9M (The Block, citing Token Unlocks; Forklog). PCT: 'about 40%' is the sources' own figure. CoinJournal gives circulating 'just over 495.2M' before the unlock. My arithmetic: 196 / 495.2 = 39.6%, which is consistent. FIRST INSIDER: true. IQ.wiki says core contributors had a 4-month transfer cliff and advisors a 4-16 month cliff. No source mentions any earlier insider release, and the token launched four months earlier. Caveat: no source explicitly says 'first'. SHAPE: lump; four months of accrued vesting released in one day."
+ },
+ {
+  "token": "HFT",
+  "claimedDate": "2023-11-07",
+  "verdict": "confirmed",
+  "date": "2023-11-07",
+  "dateSources": [
+   "https://www.theblock.co/news/ecosystems/2023-11-01-aptos-avalanche-dominate-450-million-november-token-unlocks-260336",
+   "https://coinmarketcap.com/academy/article/4a135844-bfc5-4f71-b09c-ce2c4c2f3cea",
+   "https://invezz.com/news/2023/11/07/hashflow-hft-metrics-bearish-following-massive-token-unlock/",
+   "https://gl.app/dao/hashflowdao.eth/proposals/0xfb6e120bc7eb0922728f9873625d7d9f2d8574885903483bdb8cb83f9f48b0eb"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 73.9,
+  "amountTokens": 160380000,
+  "circulatingBefore": 217000000,
+  "shape": "lump",
+  "priceUsd": 0.28,
+  "priceSource": "https://coinmarketcap.com/academy/article/4a135844-bfc5-4f71-b09c-ce2c4c2f3cea (implied: $44.97M / 160.38M = about $0.28, my arithmetic); The Block quoted $0.26 on 2023-11-01",
+  "notes": "DATE: The Block (2023-11-01), CoinMarketCap Academy and Invezz (2023-11-07) all give 2023-11-07, and FXStreet calls it a 'cliff unlock'. The Hashflow DAO 'NFT sanctuary' proposal also places a one-year cliff on 2023-11-07 for NFT-held HFT, framed as aligning with team and early backers. AMOUNT: 160.38M HFT = early investors 62.50M, core team 48.30M, ecosystem development 49.16M, community rewards 0.417M (CMC Academy). PCT: The Block states 73.9% of circulating supply; that is the source's figure. circulatingBefore is my own arithmetic: 160.4M / 0.739 = about 217M. Binance Research gives 175,229,156 HFT circulating at the Nov 2022 listing. Invezz wrongly calls it 74% of total supply; FXStreet correctly gives about 16% of total. FIRST INSIDER: true, but inferred. No source explicitly says investors or the core team had nothing transferable before. Supporting evidence: the DAO proposal treats 2023-11-07 as the one-year cliff for 'team and early backers', and The Block says the prior month's unlock was only 3.2M HFT. Caveat: I could not reach Hashflow's own vesting terms or the Binance Research release schedule."
+ },
+ {
+  "token": "OP",
+  "claimedDate": "2023-05-31",
+  "verdict": "confirmed",
+  "date": "2023-05-31",
+  "dateSources": [
+   "https://cointelegraph.com/news/optimism-unlock-millions-op-token-may-price-pressure",
+   "https://www.theblock.co/news/ecosystems/2023-05-30-optimism-sui-set-for-large-token-unlocks-worth-a-combined-650-million-232511",
+   "https://www.coindesk.com/markets/2023/05/30/optimism-token-prices-slide-7-ahead-of-580m-op-unlock-doubling-token-supply/"
+  ],
+  "dateDisagreementDays": 1,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 115,
+  "amountTokens": 386000000,
+  "circulatingBefore": 335000000,
+  "shape": "lump",
+  "priceUsd": 1.51,
+  "priceSource": "https://cointelegraph.com/news/optimism-unlock-millions-op-token-may-price-pressure ($1.51; CoinDesk quoted $1.50 on 2023-05-30, The Block about $1.52)",
+  "notes": "DATE: Cointelegraph and The Block give 2023-05-31, one year after OP's 2022-05-31 launch. CoinDesk (published 2023-05-30 05:57 UTC) says the initial vesting period 'ends today' (2023-05-30). That is a 1-day disagreement and within tolerance. I could not reach the Optimism docs allocation page (it redirects elsewhere), so no primary source was fetched. AMOUNT: more than 386M OP (Cointelegraph, CoinDesk); The Block says 387M. PCT: CoinDesk and Cointelegraph give about 335M circulating before. 386 / 335 = 115% is my arithmetic; The Block independently states a 114% increase. FIRST INSIDER: true. Cointelegraph quotes Token Terminal: 'This is the 1st unlock for core contributors & investors', and CoinDesk says the initial vesting period for early investors and contributors ends. No source suggests earlier transferable insider OP. SHAPE: lump (cliff)."
+ },
+ {
+  "token": "RAY",
+  "claimedDate": "2022-02-21",
+  "verdict": "confirmed",
+  "date": "2022-02-21",
+  "dateSources": [
+   "https://docs.raydium.io/raydium/protocol/the-ray-token",
+   "https://blockworks.com/token-transparency/filing/raydium",
+   "https://app.tokenomics.com/tokenomics/raydium/unlocks"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": null,
+  "amountTokens": null,
+  "circulatingBefore": null,
+  "shape": "stream",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "DATE: The Raydium docs (primary) say team and seed tokens were 'fully locked for the first 12 months after TGE and unlocked linearly each day over months 13-36', with vesting concluding 2024-02-21. Tokenomics.com gives TGE as 2021-02-21. So the start of the linear unlock is 2022-02-21. That is my derivation from those two stated anchors (TGE + 12 months), not a sentence any source wrote. Blockworks' transparency filing repeats the same terms and end date, and says Bonfida community-sale tokens were fully vested 2022-02-21. Inconsistencies: Blockworks section 15 says seed was fully vested 2023-02-21, and Tokenomics.com gives the vesting end as 2024-01-21. FIRST INSIDER: true for team (20%) and seed. Caveat on advisors (2%, 11.1M): Raydium docs label them 'Unallocated' with no terms, but Tokenomics.com lists advisors as 100% unlocked at TGE. If that aggregator is right, an insider group had transferable RAY before this date. I went with the primary source. AMOUNT/PCT: this is a daily linear stream, so there is no single-day lump. My arithmetic: 111M team over about 730 days = about 152k RAY/day, plus seed. I found no circulating-supply figure for Feb 2022, so pct is left null, matching the claim. PRICE: the shared web-search budget ran out during this item, so I could not find a 2022-02-21 price source."
+ },
+ {
+  "token": "ROSE",
+  "claimedDate": "2022-05-18",
+  "verdict": "confirmed",
+  "date": "2022-05-18",
+  "dateSources": [
+   "https://oasis.net/blog/oasis-mainnet-ushering-in-a-new-era-of-privacy-and-scalability",
+   "https://app.tokenomics.com/tokenomics/oasis",
+   "https://lr.eu.psf.lt/r/oasisnetwork/wiki/index",
+   "https://unlockscalendar.substack.com/p/oasis-network-rose-token-unlocks"
+  ],
+  "dateDisagreementDays": 1,
+  "firstInsiderUnlock": false,
+  "pctCirculating": 32.9,
+  "amountTokens": 1152000000,
+  "circulatingBefore": 3500000000,
+  "shape": "lump",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "DATE: Oasis's own mainnet post says the mainnet upgrade, which enabled ROSE transfers, was at 4pm UTC on November 18 (2020); that is T0. The r/oasisnetwork wiki (community, not official) explicitly says 'A token unlock on T18 (May 18, 2022) leaves circulating ROSE at 5 billion'. Tokenomics.com puts TGE at 2020-11-17, which implies about 2022-05-17 (a 1-day disagreement). The Unlocks Calendar post is dated 2022-05-17, but its dates are paywalled. Confirmed as T0 (primary) + 18 months, plus the explicit wiki date; no project statement of the exact unlock day was found. FIRST INSIDER: false. Tokenomics.com shows backers got 33% at TGE (Nov 2020) and 33% at month 12 (Nov 2021), so T18 is their final 34%. Core contributors had 0% at TGE, a 12-month cliff, then quarterly releases, so they were also already receiving tokens. AMOUNT: Community & Ecosystem is 18.5% = 1.85B (tokenradar); 20% of that = 370M, matching the claim (my arithmetic). For backers, 34% of 2.3B = 782M only if backers are 23% of supply. I found no source for the backers' allocation size, so 782M is unverified. The total of about 1.152B is the claim's sum, not a sourced figure. CIRCULATING BEFORE: the wiki says T12 (Nov 2021) left circulating at 3.5B, and Unlocks Calendar says circulating was 35% (3.5B of 10B) as of 2022-05-18 per CoinGecko. pct = 1.152B / 3.5B = 32.9% is my arithmetic. It matches the claim but depends on the unverified backers amount. Other quarterly/staking emissions also land around then. PRICE: not found for 2022-05-18. Coinjournal/BeInCrypto articles found were about the May 2023 unlock, not this one."
+ },
+ {
+  "token": "SAND",
+  "claimedDate": "2021-08-14",
+  "verdict": "unverifiable",
+  "date": null,
+  "dateSources": [
+   "https://medium.com/sandbox-game/the-sandbox-game-to-launch-3m-ieo-on-binance-launchpad-7811e9f69ba0",
+   "https://app.tokenomics.com/tokenomics/the-sandbox/unlocks",
+   "https://www.binance.com/fr/research/projects/the-sandbox"
+  ],
+  "dateDisagreementDays": null,
+  "firstInsiderUnlock": "unknown",
+  "pctCirculating": null,
+  "amountTokens": null,
+  "circulatingBefore": null,
+  "shape": "lump",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "DATE: no source states an August 2021 unlock day. Tokenomics.com gives TGE as 2020-08-14 and lists no Aug 2021 event, which is odd. Sandbox's own IEO post: seed and strategic are '100% locked for 3 years vesting with 12 month cliff'; founders, team and advisors are '100% locked for 5 years vesting and 12-month cliff'. Launchpad sale was 2020-08-13 06:00 UTC. TGE + 12 months gives about 2021-08-14, but that is my inference. Every unlock news piece found was for 2022 or 2023. FIRST INSIDER: the sources conflict, so unknown. Sandbox's own post puts advisors on a 12-month cliff, which would make Aug 2021 the first insider unlock (claim 'false' would be wrong). Tokenomics.com puts advisors and the company reserve on a 6-month cliff with 6-monthly releases (first about Feb 2021), which would make the claim 'false' right and fits the claim's 'second advisor tranche'. I found no news of a Feb 2021 SAND unlock. AMOUNT/PCT: not found; the claim leaves pct null. Binance Research gives 705M SAND circulating as of 2020-08-05, but tokenomics.com says initial float was 0% of the vesting pools; that figure includes the 360M Launchpad sale. Allocations (Binance Research): seed 515.28M, strategic 120M, team 19%, advisors 10%, Foundation 12%, company reserve 25.82%. PRICE: not found."
+ },
+ {
+  "token": "SAND",
+  "claimedDate": "2022-08-14",
+  "verdict": "confirmed",
+  "date": "2022-08-14",
+  "dateSources": [
+   "https://www.blocktempo.com/?p=174490",
+   "https://beincrypto.com/?p=268195",
+   "https://app.tokenomics.com/tokenomics/the-sandbox/unlocks"
+  ],
+  "dateDisagreementDays": 1,
+  "firstInsiderUnlock": false,
+  "pctCirculating": 29.1,
+  "amountTokens": 372715715,
+  "circulatingBefore": 1281000000,
+  "shape": "lump",
+  "priceUsd": 1.36,
+  "priceSource": "https://www.blocktempo.com/?p=174490 ($1.36 on 2022-08-11)",
+  "notes": "DATE: BeInCrypto (early 2023) refers to 'the last unlock on Aug. 14, 2022', and Tokenomics.com lists an event on 2022-08-14. BlockTempo (2022-08-11) gives the unlock as 2022-08-13 16:00 Taipei time, which is 2022-08-13 08:00 UTC. That is a 1-day disagreement, so the exact UTC day is 13 or 14, both within 1 day of the claim. AMOUNT: BlockTempo gives 372,715,715 SAND = company reserve 83,785,715; advisors 50,400,000; team 71,250,000; Sand Foundation 40,200,000; strategic 24,000,000; seed 103,080,000. This exactly matches the claim. It is 12.424% of total supply. PCT: Tokenomics.com states the 2022-08-14 event as '29.10% of MCAP' (i.e. of circulating). That is the aggregator's figure; no news source gives circulating supply. circulatingBefore is my arithmetic: 372.7M / 0.291 = about 1.281B. FIRST INSIDER: false. Seed and strategic had 12-month cliffs from Aug 2020 with 6-monthly releases (Sandbox IEO post; Tokenomics.com). BeInCrypto cites earlier unlocks, and this release includes repeat tranches for every insider group. PRICE: BlockTempo quotes $1.36 two days before, matching the claim."
+ },
+ {
+  "token": "SOL",
+  "claimedDate": "2021-01-07",
+  "verdict": "confirmed",
+  "date": "2021-01-07",
+  "dateSources": [
+   "https://solana.com/news/solana-foundation-transparency-reports"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": null,
+  "amountTokens": 215672478,
+  "circulatingBefore": null,
+  "shape": "lump",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "DATE: primary source, the Solana Foundation transparency reports (Jun-Aug 2020). SAFT investor tokens (176,949,616 SOL) unlock 'around January 7, 2021'; half of founders' tokens (31,250,000) unlock then, with the rest monthly over 24 months; 7,172,862 earned employee/service-provider tokens and up to 300,000 validator tokens unlock on January 7th, 2021. Caveat from the same page: 'The exact time is determined by the stake-weighted average of dates submitted by validators', so the on-chain moment could drift slightly from the calendar date. No secondary/news source for the day was found. AMOUNT: 176,949,616 + 31,250,000 + 7,172,862 + 300,000 = 215,672,478 SOL. That sum is my arithmetic; the validator figure is a maximum. All four parts match the claim. The page also projects total unlocked supply of about 457,384,933 SOL by Jan 7, 2021 (excluding inflation), which includes Foundation/Labs holdings that were never in lockup contracts. PCT: NOT VERIFIED. The latest dated circulating figure on the page is 24,444,413 SOL (2020-08-04); I found no circulating figure for just before 2021-01-07. The claimed 462.8% implies about 46.6M circulating before (my back-calculation), which I cannot source. FIRST INSIDER: the primary source contradicts the claim (claimed false). The page says SAFT investor tokens delivered in May 2020 sat in locked stake accounts that 'cannot be withdrawn into a wallet address for sale on an exchange'. Inflation rewards on stakes locked until Jan 7, 2021 could not be withdrawn. Founder and employee tokens unlock on Jan 7, 2021, and no earlier founder or employee release is described. Only CoinList auction buyers (public), validators (62k unlocked fee tokens) and airdrop/market-maker-loan recipients had transferable SOL earlier. Caveat: Solana Labs and Foundation holdings were 'not locked in a smart contract'; if Solana Labs counts as 'team', insiders had liquid SOL earlier (the FTX-era page notes Labs sold to Alameda). Investors and founders personally: first transferable on this date. PRICE: not found."
+ },
+ {
+  "token": "SRM",
+  "claimedDate": "2021-08-11",
+  "verdict": "confirmed",
+  "date": "2021-08-11",
+  "dateSources": [
+   "https://wiki.defillama.com/wiki/Serum",
+   "https://medium.com/coinmonks/buyback-flow-model-a-way-to-model-crypto-buybacks-through-the-srm-case-study-cf8ca92a0e2f",
+   "https://coinbureau.com/review/serum-srm"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 8.0,
+  "amountTokens": 4000000,
+  "circulatingBefore": 50000000,
+  "shape": "stream",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "DATE: DefiLlama wiki: 90% of SRM is 'fully locked for the first year' then unlocks linearly over six years (about 1/2190 per day), starting 11 August 2021. Coinmonks: locked supply 'will remain locked until August 11th 2021' and the vesting schedule 'begins ... on August 11th 2021'. Coin Bureau says locked until August 2021. That is two independent secondaries giving the exact day. The Serum docs (serum.gitbook.io) redirect to a domain that was not fetchable, so no primary was read. AMOUNT: a stream, not a lump. Coinmonks says about 4M SRM per day; my check is 9B / 2190 = about 4.1M/day. PCT: the 8.0% is my own arithmetic: 4M first-day unlock / about 50M circulating. Circulating source: Investing.com (2021-05-04) says '50 million out of 10 billion SRM tokens are currently in circulation', and Coinmonks also gives about 50M in circulation. I found no figure for exactly 2021-08-10. The claim's 8.0% evidently uses the same daily-vs-circulating basis. FIRST INSIDER: true for team, advisors, project contributors and seed. Coin Bureau lists team & advisors 20% and project contributors 22% within the locked 90%, and DefiLlama says 'All seed sales were locked'. Caveat: 10% started unlocked, mainly ecosystem (825M) and reserve (125M) held by the project/foundation side (FTX/Alameda-linked), not by named team or investors. If foundation-controlled tokens count as insider, they were liquid earlier. Coin Bureau also notes SBF's blog mentioned seven-year vesting, versus six elsewhere. PRICE: no 2021-08-11 price source found."
+ }
+]

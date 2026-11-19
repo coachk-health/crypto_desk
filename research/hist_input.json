@@ -1,0 +1,606 @@
+[
+ {
+  "token": "RAY",
+  "firstInsiderUnlock": {
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2022-02-21",
+    "amountTokens": 212786,
+    "circulatingBefore": null,
+    "pctCirculating": null,
+    "shape": "stream",
+    "recipients": "Team (20%), advisors (2%) and seed investors (grouped by DeFiLlama as 'Community & Seed' 6%): 12-month full lock after TGE, then linear daily unlock over months 13-36. Same day, the community Bonfida pool sale (1.1% of supply, ~6.1M RAY, public buyers not insiders) unlocked in full after its 1-year lock.",
+    "recipientsMix": {
+     "team": 0.71,
+     "investors": 0.21,
+     "community": null,
+     "ecosystem": null,
+     "other": 0.07
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "Raydium docs - RAY token",
+      "url": "https://docs.raydium.io/raydium/protocol/the-ray-token",
+      "kind": "primary",
+      "confirms": [
+       "team/seed fully locked 12 months after TGE then linear daily over months 13-36",
+       "vesting concluded 2024-02-21",
+       "allocations"
+      ]
+     },
+     {
+      "label": "Raydium docs (older revision) - RAY token",
+      "url": "https://docs.raydium.io/raydium/~/changes/OcecwDgjQ79sS22yb7Gx/ray_token/the-ray-token",
+      "kind": "primary",
+      "confirms": [
+       "team, advisors and seed 25.9% locked 12 months then daily over months 13-36",
+       "Bonfida pool sale 1.1% fully unlocked after 1-year lock"
+      ]
+     },
+     {
+      "label": "Blockworks token transparency report - Raydium",
+      "url": "https://blockworks.com/api/transparency-report/raydium",
+      "kind": "primary",
+      "confirms": [
+       "Bonfida sale fully vested 2022-02-21",
+       "team/seed vesting concluded 2024-02-21"
+      ]
+     },
+     {
+      "label": "DefiLlama unlocks - Raydium",
+      "url": "https://defillama.com/protocol/unlocks/raydium",
+      "kind": "aggregator",
+      "confirms": [
+       "2022-02-21 start",
+       "daily rates: team 152,000, community&seed 45,586, advisors 15,200 RAY/day",
+       "linear over 2 years"
+      ]
+     },
+     {
+      "label": "tokenomics.com - Raydium unlocks",
+      "url": "https://app.tokenomics.com/tokenomics/raydium/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "TGE 2021-02-21",
+       "team and community&seed 12-month cliff then 24-month linear"
+      ]
+     }
+    ],
+    "gap": "amountTokens is the first-day insider stream from DeFiLlama's daily rates (152,000 + 45,586 + 15,200), excluding the ~6.1M RAY Bonfida public-sale lump (1.1% of 555M, computed). circulatingBefore, pctCirculating and price on 2022-02-21 could not be confirmed from any fetched page, so they are null. Even the Bonfida lump plus the first-day stream (~6.3M RAY) is far below 25% of any plausible circulating supply, but that is not confirmed with a figure. recipientsMix is the split of the daily rate (team 152,000 / investors 45,586 / advisors 15,200 as 'other'); DeFiLlama labels the 6% bucket 'Community & Seed', so part of the 'investors' share may be community. Advisors: Raydium's current docs and Blockworks call the advisor allocation 'unallocated', while tokenomics.com says advisors were 100% at TGE (which would make launch the first insider unlock); the older Raydium docs and DeFiLlama put advisors on the 12-month-lock schedule, so the project docs were followed."
+   }
+  ]
+ },
+ {
+  "token": "HFT",
+  "firstInsiderUnlock": {
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2023-11-07",
+    "amountTokens": 160380000,
+    "circulatingBefore": 216700000,
+    "pctCirculating": 74,
+    "shape": "lump",
+    "recipients": "One-year cliff: early investors 62.50M HFT, core team 48.30M, ecosystem development 49.16M, community rewards 0.417M",
+    "recipientsMix": {
+     "team": 0.301,
+     "investors": 0.39,
+     "community": 0.003,
+     "ecosystem": 0.306,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": 0.28,
+    "priceSource": "https://coinmarketcap.com/academy/article/4a135844-bfc5-4f71-b09c-ce2c4c2f3cea",
+    "sources": [
+     {
+      "label": "CoinMarketCap Academy / Token Unlocks: HFT to unlock 74% of circulating supply on Nov 7",
+      "url": "https://coinmarketcap.com/academy/article/4a135844-bfc5-4f71-b09c-ce2c4c2f3cea",
+      "kind": "aggregator",
+      "confirms": [
+       "date Nov 7",
+       "160.38M HFT",
+       "74% of circulating",
+       "recipient split",
+       "$44.97M value"
+      ]
+     },
+     {
+      "label": "Invezz: HFT metrics bearish following massive unlock (2023-11-07)",
+      "url": "https://invezz.com/news/2023/11/07/hashflow-hft-metrics-bearish-following-massive-token-unlock/",
+      "kind": "news",
+      "confirms": [
+       "date 2023-11-07",
+       "160.38M HFT",
+       "early investors, core team, ecosystem recipients"
+      ]
+     },
+     {
+      "label": "Ouroboros Research Catalysts #3",
+      "url": "https://ouroborosresearch.substack.com/p/ouroboros-catalysts-issue-3-upbit",
+      "kind": "news",
+      "confirms": [
+       "7 Nov 2023 ~160M HFT cliff",
+       "~40% investors, ~30% team, ~30% ecosystem"
+      ]
+     },
+     {
+      "label": "Binance Launchpool announcement",
+      "url": "https://www.binance.com/en/support/announcement/73d44e64598c446cb4ec2f83b776c2f0",
+      "kind": "primary",
+      "confirms": [
+       "listing 2022-11-07 13:00 UTC",
+       "initial circulating 175,229,156"
+      ]
+     },
+     {
+      "label": "Binance Research Hashflow",
+      "url": "https://www.binance.com/ja/research/projects/hashflow",
+      "kind": "aggregator",
+      "confirms": [
+       "allocation incl. investors 25%, team 19.32%, advisors 1.5%"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore (~216.7M) is derived from CMC/Token Unlocks' 74% figure (160.38M/0.74), not directly stated. FXStreet calls 160.38M about 16% of total supply, and Invezz loosely says '74% of total supply'; the math only works as % of circulating. Price $0.28 is implied by CMC's $44.97M / 160.38M. First-insider status: CMC Academy says team and investors have 4-year vesting, and Token Unlocks shows their first tokens in this cliff (62.5M = 25% of the 250M investor allocation, consistent with a 1-year cliff). Advisors (1.5%) are not itemised in any fetched source, so an earlier advisor unlock at TGE (2022-11-07) cannot be fully ruled out. The NFT-holder vesting change (Snapshot, Jan 2023) set its cliff portion to vest linearly over 60 days from 2023-11-07; that is community, not insider."
+   }
+  ]
+ },
+ {
+  "token": "OP",
+  "firstInsiderUnlock": {
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2023-05-31",
+    "amountTokens": 386000000,
+    "circulatingBefore": 335000000,
+    "pctCirculating": 115,
+    "shape": "lump",
+    "recipients": "One-year cliff for core contributors and investors (first unlock for both groups)",
+    "recipientsMix": null,
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": 1.51,
+    "priceSource": "https://cointelegraph.com/news/optimism-unlock-millions-op-token-may-price-pressure",
+    "sources": [
+     {
+      "label": "Cointelegraph: Optimism to unlock millions of OP tokens",
+      "url": "https://cointelegraph.com/news/optimism-unlock-millions-op-token-may-price-pressure",
+      "kind": "news",
+      "confirms": [
+       "date 2023-05-31",
+       "386M+ OP",
+       "early contributors and investors, initial vesting ends",
+       "circulating ~335M",
+       "price $1.51",
+       "Token Terminal: 1st unlock for core contributors & investors"
+      ]
+     },
+     {
+      "label": "The Block: Optimism, Sui set for large token unlocks",
+      "url": "https://www.theblock.co/post/232511/optimism-sui-set-for-large-token-unlocks-worth-a-combined-650-million",
+      "kind": "news",
+      "confirms": [
+       "date May 31",
+       "387M OP $590M",
+       "114% of circulating",
+       "core contributors and investors",
+       "price $1.52"
+      ]
+     },
+     {
+      "label": "CoinDesk: OP slides 7% ahead of $580M unlock (2023-05-30)",
+      "url": "https://www.coindesk.com/markets/2023/05/30/optimism-token-prices-slide-7-ahead-of-580m-op-unlock-doubling-token-supply/",
+      "kind": "news",
+      "confirms": [
+       "386M+ OP",
+       "circulating 335M",
+       "early contributors and investors",
+       "price $1.50"
+      ]
+     },
+     {
+      "label": "The Block: Oct 2023 unlocks round-up",
+      "url": "https://www.theblock.co/post/253792/axie-infinity-optimism-aptos-token-unlocks",
+      "kind": "news",
+      "confirms": [
+       "later monthly tranches 24.2M OP ~3% (Sep 30 / Oct 30 2023), not qualifying"
+      ]
+     }
+    ],
+    "gap": "No Optimism Foundation statement was fetched. The 2023-05-31 date comes from Cointelegraph and The Block (one year after the 2022-05-31 OP launch). CoinDesk's 2023-05-30 article can be read as saying the unlock was that day, but the gap is <=1 day, so dateConflict is false. pctCirculating = 386M/335M (Cointelegraph/CoinDesk circulating figure); The Block says 114%. The split between core contributors and investors is not given in any fetched article, so recipientsMix is null."
+   }
+  ]
+ },
+ {
+  "token": "ROSE",
+  "firstInsiderUnlock": {
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2022-05-18",
+    "amountTokens": 1152000000,
+    "circulatingBefore": 3500000000,
+    "pctCirculating": null,
+    "shape": "lump",
+    "recipients": "Month-18 (T18) tranche: Backers' final 34% (~782M) and Community & Ecosystem 20% tranche (~370M), per tokenomics.com terms.",
+    "recipientsMix": {
+     "team": 0,
+     "investors": 0.68,
+     "community": 0,
+     "ecosystem": 0.32,
+     "other": 0
+    },
+    "firstInsiderUnlock": false,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "r/oasisnetwork wiki (circulation schedule)",
+      "url": "https://lr.eu.psf.lt/r/oasisnetwork/wiki/index",
+      "kind": "primary",
+      "confirms": [
+       "T18 May 18 2022 unlock",
+       "circulating ~3.5B to ~5B",
+       "release takes ~12-15 hours"
+      ]
+     },
+     {
+      "label": "tokenomics.com Oasis unlocks",
+      "url": "https://app.tokenomics.com/tokenomics/oasis/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "Backers 34% at M18",
+       "Community 20% at M18"
+      ]
+     },
+     {
+      "label": "Unlocks Calendar substack: Oasis ROSE token unlocks",
+      "url": "https://unlockscalendar.substack.com/p/oasis-network-rose-token-unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "circulating ~35% as of 18 May 2022 (CoinGecko)"
+      ]
+     }
+    ],
+    "gap": "The amount is derived from tokenomics.com percentages. The wiki gives the jump as ~1.5B (3.5B to 5B), so pct is ~33-43% depending on which figure is used. circulatingBefore 3.5B is the wiki's approximate post-T12 figure. Price not fetched."
+   }
+  ]
+ },
+ {
+  "token": "SRM",
+  "firstInsiderUnlock": {
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2021-08-11",
+    "amountTokens": 4000000,
+    "circulatingBefore": 50000000,
+    "pctCirculating": 8.0,
+    "shape": "stream",
+    "recipients": "Start of linear vesting of the locked SRM supply (founders/team and advisors, project contributors and other locked holders) after the one-year lock from the August 2020 launch. About 4M SRM per day over 6 years.",
+    "recipientsMix": null,
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "Coinmonks Medium (2021-05-06): locked supply stays locked until August 11, 2021, then unlocks linearly over 6 years at 4M tokens per day; circulating ~50M SRM",
+      "url": "https://medium.com/coinmonks/buyback-flow-model-a-way-to-model-crypto-buybacks-through-the-srm-case-study-cf8ca92a0e2f",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "daily amount",
+       "shape stream",
+       "circulatingBefore (as of May 2021)",
+       "locked holders: founders, advisors"
+      ]
+     },
+     {
+      "label": "Coin Bureau review: the ~90% not circulating fully locked until August 2021, then unlocks linearly over six years (7-year total per SBF)",
+      "url": "https://coinbureau.com/review/serum-srm",
+      "kind": "news",
+      "confirms": [
+       "lock to Aug 2021",
+       "6-year linear",
+       "allocations: team & advisors 20%, contributors 22%"
+      ]
+     },
+     {
+      "label": "CoinDesk 2021-04-28: SRM ~$9.27, market cap ~$500M (implies ~54M circulating)",
+      "url": "https://dev.coindesk.com/markets/2021/04/28/serum-token-becomes-latest-project-in-bankman-fried-empire-to-turn-heads",
+      "kind": "news",
+      "confirms": [
+       "circulating cross-check (derived)"
+      ]
+     }
+    ],
+    "gap": "Not a >=25% event: a linear stream of ~4M SRM/day began 2021-08-11 (first-day tranche about 8% of a ~50M float). circulatingBefore (~50M) is from a May 2021 write-up, not measured on 2021-08-10. CoinDesk's April 2021 market cap/price implies ~54M (my division). The exact day comes from one secondary source (Coinmonks); Coin Bureau says only 'August 2021'. No project post was fetched (Serum docs redirect to docs.projectserum.com, which could not be fetched). recipientsMix unknown: the locked pool mixes team/advisors (20%), project contributors (22%) and possibly ecosystem/partner funds. No price source near 2021-08-11 was found, so priceUsd is null."
+   }
+  ]
+ },
+ {
+  "token": "SOL",
+  "firstInsiderUnlock": {
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2021-01-07",
+    "amountTokens": 215672478,
+    "circulatingBefore": 46600000,
+    "pctCirculating": 462.8,
+    "shape": "lump",
+    "recipients": "SAFT (seed/founding/validator/strategic sale) investors \u25ce176,949,616 (all at once), founders \u25ce31,250,000 (half of founder tokens; other half monthly over 24 months), earned employee/service-provider tokens \u25ce7,172,862, validators up to \u25ce300,000",
+    "recipientsMix": {
+     "team": 0.178,
+     "investors": 0.82,
+     "community": 0.0,
+     "ecosystem": 0.0,
+     "other": 0.001
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "Solana Foundation transparency reports (June-Aug 2020)",
+      "url": "https://solana.com/news/solana-foundation-transparency-reports",
+      "kind": "primary",
+      "confirms": [
+       "'All of the SAFT investor tokens will be unlocked at the same time on approximately January 7th, 2021'",
+       "SAFT \u25ce176,949,616; founders \u25ce31,250,000 on Jan 7 2021; employees earned \u25ce7,172,862; validators up to \u25ce300,000",
+       "circulating \u25ce24,444,413 as of Aug 4 2020; Foundation releases capped at \u25ce8M/month through 2020"
+      ]
+     },
+     {
+      "label": "TradingView idea 'Promising Project Bad Timing' (posted 7 Jan 2021)",
+      "url": "https://in.tradingview.com/chart/SOLUSD/rtRHGscB-Promising-Project-Bad-Timing",
+      "kind": "news",
+      "confirms": [
+       "'There are currently 46.6M coins in the circulating supply' just before the unlock",
+       "same-day update: '~215M coins were added to the current supply'"
+      ]
+     },
+     {
+      "label": "Solana Foundation - Ecosystem facts related to FTX bankruptcy",
+      "url": "https://solana.com/news/solana-facts-ftx-bankruptcy",
+      "kind": "primary",
+      "confirms": [
+       "Jan 7 2021 Foundation sale of 34,524,833 SOL to Alameda/FTX was locked (linear monthly unlock Jan 2022 - Jan 2028), so not part of this unlock"
+      ]
+     }
+    ],
+    "gap": "amountTokens is my sum of the Foundation's per-category Jan 7 2021 figures (validators taken at the 'up to \u25ce300,000' cap); it matches the TradingView author's same-day '~215M added'. circulatingBefore (46.6M) comes only from a user-written TradingView post, not a primary source; the Foundation's own last figure is 24.4M (Aug 2020) plus <=8M/month after, so pct is >300% on any basis (my calculation). Foundation says 'approximately January 7th'; the TradingView post (written Jan 7, 'Starting tomorrow') implies Jan 8 - within 2 days, no conflict flagged. Price on the date not confirmed from a fetched page (null)."
+   }
+  ]
+ },
+ {
+  "token": "SAND",
+  "firstInsiderUnlock": {
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2022-08-14",
+    "amountTokens": 372715715,
+    "circulatingBefore": 1281000000,
+    "circulatingHow": "Back-solved from tokenomics.com's 29.1%-of-mcap figure for this event (372.7M / 0.291 = ~1.28B). Cross-check: about 1.94B circulating before Aug 2023 (Binance Square: 332.55M = 17.19%), minus the Feb 2023 (372.5M) and Aug 2022 tranches, gives about 1.19B, so 29-31%.",
+    "pctCirculating": 29.1,
+    "shape": "lump",
+    "recipients": "Company reserve 83,785,715; advisors 50,400,000; team 71,250,000; Sand Foundation 40,200,000; strategic sale 24,000,000; seed 103,080,000 (BlockTempo).",
+    "recipientsMix": {
+     "team": 0.191,
+     "investors": 0.341,
+     "community": 0.0,
+     "ecosystem": 0.108,
+     "other": 0.36
+    },
+    "firstInsiderUnlock": false,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": 1.36,
+    "priceSource": "https://www.blocktempo.com/?p=174490",
+    "sources": [
+     {
+      "label": "BlockTempo, 11 Aug 2022: 372,715,715 SAND unlocks 13 Aug 2022 16:00 Taiwan time (08:00 UTC) with a per-recipient breakdown",
+      "url": "https://www.blocktempo.com/?p=174490",
+      "kind": "news",
+      "confirms": [
+       "amountTokens",
+       "recipients",
+       "priceUsd"
+      ]
+     },
+     {
+      "label": "tokenomics.com: event on 14 Aug 2022 = 29.10% of mcap",
+      "url": "https://app.tokenomics.com/tokenomics/the-sandbox/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "date",
+       "pctCirculating"
+      ]
+     },
+     {
+      "label": "Binance Square (Aug 2023 tranche = 17.19% of circulating), used to cross-check circulating supply",
+      "url": "https://www.binance.com/en/square/post/889120",
+      "kind": "news",
+      "confirms": [
+       "circulatingBefore (cross-check)"
+      ]
+     }
+    ],
+    "gap": "Date: BlockTempo gives 13 Aug 2022 16:00 Taiwan time (08:00 UTC 13 Aug); tokenomics.com gives 14 Aug 2022. That is within 2 days, so dateConflict is false. I used the 14th to match the schedule; use 2022-08-13 if you go by the BlockTempo timestamp. In recipientsMix, 'other' is advisors (50.4M, insiders) plus the company reserve (83.8M); 'ecosystem' is the Sand Foundation. circulatingBefore is back-solved, not quoted."
+   }
+  ]
+ },
+ {
+  "token": "APT",
+  "firstInsiderUnlock": {
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2023-11-12",
+    "amountTokens": 24840000,
+    "circulatingBefore": 249383461,
+    "pctCirculating": 9.96,
+    "shape": "lump",
+    "recipients": "First principal unlock for core contributors (11.88M) and investors (8.42M) after the 12-month lock from the 2022-10-12 mainnet (3/48 of their allocation per month for months 13-18), plus the regular monthly community (3.21M) and Foundation (1.33M) tranches",
+    "recipientsMix": {
+     "team": 0.478,
+     "investors": 0.339,
+     "community": 0.129,
+     "ecosystem": 0.054,
+     "other": 0.0
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": 7.6683,
+    "priceSource": "https://data.binance.vision/data/spot/monthly/klines/APTUSDT/1d/APTUSDT-1d-2023-11.zip",
+    "sources": [
+     {
+      "label": "Aptos Foundation - Aptos Tokenomics Overview (2022-10-17)",
+      "url": "https://aptosnetwork.com/currents/aptos-tokenomics-overview",
+      "kind": "primary",
+      "confirms": [
+       "4-year lock for core contributors and investors",
+       "no APT for first 12 months",
+       "3/48 per month in months 13-18 then 1/48"
+      ]
+     },
+     {
+      "label": "The Block - Aptos and Avalanche dominate among $450 million in November token unlocks",
+      "url": "https://www.theblock.co/news/ecosystems/2023-11-01-aptos-avalanche-dominate-450-million-november-token-unlocks-260336",
+      "kind": "news",
+      "confirms": [
+       "date 2023-11-12",
+       "24.8M APT",
+       "~10% of circulating",
+       "recipient split",
+       "October 2023 release was only 4.5M (community/foundation)"
+      ]
+     },
+     {
+      "label": "AMBCrypto - Aptos dips 2% following November's token unlock",
+      "url": "https://ambcrypto.com/aptos-dips-2-following-novembers-token-unlock/",
+      "kind": "news",
+      "confirms": [
+       "date 2023-11-12",
+       "24.84M APT",
+       "recipient amounts 11.88M/8.42M/3.21M/1.33M",
+       "circulating 249,383,461 (CMC)",
+       "9.96%"
+      ]
+     },
+     {
+      "label": "Ouroboros Research - Catalysts Issue #2",
+      "url": "https://ouroborosresearch.substack.com/p/ouroboros-catalysts-issue-2-aptos",
+      "kind": "aggregator",
+      "confirms": [
+       "unlocks accelerate from 12 Nov 2023 from 4.5M to 24.8M/month",
+       "before this, unlocks went only to community (70%) and foundation (30%)"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore is CoinMarketCap's figure quoted at press time by AMBCrypto right after the unlock and may already include part of it; The Block (pre-unlock) also put it at ~10% of circulating. Far below the 25% threshold, so listed only as event A."
+   }
+  ]
+ },
+ {
+  "token": "BLUR",
+  "firstInsiderUnlock": {
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2023-06-14",
+    "amountTokens": 195980000,
+    "circulatingBefore": 490000000,
+    "pctCirculating": 40,
+    "shape": "lump",
+    "recipients": "End of 4-month cliff for past/future core contributors (~115.68M), investors (~75.4M) and advisors (~4.9M); accrued vesting released in one day",
+    "recipientsMix": {
+     "team": 0.59,
+     "investors": 0.385,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0.025
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": 0.3225,
+    "priceSource": "https://coingape.com/blurs-196-million-token-unlock-tomorrow-will-blur-price-crash",
+    "sources": [
+     {
+      "label": "The Block: Blur set to increase circulating supply by 40% (2023-06-13, data from Token Unlocks)",
+      "url": "https://www.theblock.co/post/234422/blur-token-unlock-40-percent",
+      "kind": "news",
+      "confirms": [
+       "date 2023-06-14 (tomorrow)",
+       "~196M BLUR",
+       "~40% of circulating",
+       "recipients contributors 115.6M / investors 75.4M / advisors 4.9M"
+      ]
+     },
+     {
+      "label": "CoinGape: BLUR's 196 Million Token Unlock Tomorrow (2023-06-13)",
+      "url": "https://coingape.com/blurs-196-million-token-unlock-tomorrow-will-blur-price-crash",
+      "kind": "news",
+      "confirms": [
+       "196M BLUR",
+       "~40% of circulating",
+       "recipient breakdown 115.68M/75.4M/4.9M",
+       "price $0.3225"
+      ]
+     },
+     {
+      "label": "Unlocks Calendar newsletter: 14th June Blur unlock",
+      "url": "https://unlockscalendar.beehiiv.com/p/14th-june-blur-unlock",
+      "kind": "aggregator",
+      "confirms": [
+       "date 14 June 2023",
+       "~195M",
+       "~4 months after Feb 2023 airdrop",
+       "says +30% circulating (conflicts with 40%)"
+      ]
+     },
+     {
+      "label": "IQ.wiki Blur",
+      "url": "https://www.iq.wiki/en/wiki/blur",
+      "kind": "aggregator",
+      "confirms": [
+       "token live 2023-02-14 with 360M airdrop",
+       "core contributors 4-month transfer cliff",
+       "advisors 4-16 month cliff"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore not stated by any source; 490M is derived from The Block/CoinGape '~40% of circulating' (196M/0.40). Unlocks Calendar says +30% (implies ~650M). pctCirculating is 30-40% either way. Bitget blog claims contributors had no cliff, but Token Unlocks/The Block show contributor tokens released on 2023-06-14 and IQ.wiki/Markets Alpha describe a 4-month contributor cliff; no project primary doc fetched."
+   }
+  ]
+ }
+]
