@@ -1,0 +1,380 @@
+[
+ {
+  "token": "ARIA",
+  "name": "AriaAI (ARIA.AI), BNB Chain, contract 0x5d3a12c42e5372b2cc3264ab3cdcf660a1555238",
+  "binanceFuturesSymbol": "ARIAUSDT",
+  "firstInsiderUnlock": {
+   "date": "2026-08-21",
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "TGE/Gate listing 2025-08-21 (Gate announcement; games.gg tokenomics article). Published tokenomics (games.gg, mirrored by DropsTab): Team 15% 0% at TGE, 12-month lock then 36-month linear (originally a 6-month cliff, extended); Investors 8.5% 0% at TGE, 12-month cliff then quarterly releases over 12 months; no advisor allocation listed. So first insider unlock = end of 12-month cliff, computed as 2026-08-21 from TGE + 12 months; the exact day of the first investor tranche was not confirmed from a fetched page (DropsTab shows the next investor tranche as 17.00M = 20% of the 85M allocation, without a calendar date), and it is outside the window anyway. At TGE: Liquidity 50M (100%), Marketing 81.5% of 108M (~88M), Community 8.8% of 510M (~44.9M) => ~183M circulating, which matches CryptoRank/CoinGecko 183M. Marketing and liquidity are not insider groups under the brief. In-window candidate checked and rejected: 2025-09-21 marketing remainder (18.5% of 108M = ~20M, ~11% of ~183M circulating) - below 25%. DropsTab shows the full 108M marketing on 21 Sep 2025, which conflicts with the 81.5%-at-TGE table on the same page and with the 183M circulating figure; the larger reading is treated as a DropsTab data error. No single-day unlock of >=25% of circulating found between 2025-08-01 and 2025-11-16. Note: tokenomics.com/tokenomics/aria is a different token (Aria Protocol, ARIAIP, TGE 2025-11-07) - do not confuse.",
+  "sourcesChecked": [
+   {
+    "label": "Gate initial listing announcement (ARIA spot 2025-08-21, BSC contract)",
+    "url": "https://www.gate.com/announcements/article/46641",
+    "kind": "primary"
+   },
+   {
+    "label": "games.gg: AriaAI updates $ARIA tokenomics",
+    "url": "https://games.gg/hi/news/ariaai-updates-aria-tokenomics/",
+    "kind": "news"
+   },
+   {
+    "label": "DropsTab ARIA vesting",
+    "url": "https://dropstab.com/coins/aria/vesting",
+    "kind": "aggregator"
+   },
+   {
+    "label": "CryptoRank ARIA (183M circulating)",
+    "url": "https://cryptorank.io/price/aria",
+    "kind": "aggregator"
+   }
+  ]
+ },
+ {
+  "token": "BIO",
+  "name": "BIO Protocol",
+  "binanceFuturesSymbol": "BIOUSDT",
+  "firstInsiderUnlock": {
+   "date": "2026-01-03",
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "Spot launch 2025-01-03 10:00 UTC on Binance with 1,296,529,168 BIO circulating (39.05% of 3.32B) (Binance listing announcement). Vesting per KuCoin Research and tokenomics.com: Core Contributors 21.2%, Advisors 4.2% and Investors 13.6% all have a 12-month cliff (then 6-year / 6-year / 4-year vesting); Community Auction 50% at TGE + 12-month linear; Ecosystem Incentives 25% 100% at TGE (DAO-controlled); Molecule 5% and Molecule Ecosystem Fund 5% 48-month linear with no cliff listed. First insider unlock is therefore the 12-month cliff end, computed as 2026-01-03 (TGE + 12 months); no fetched page states the exact claim day or the tranche size, and it is outside the window. Caveat: Molecule (the company that incubated BIO, 5%) appears to stream from TGE; tokenomics.com classes it as 'Foundation', so it is not treated as an insider here - if it is counted as team, the first insider unlock would be the launch day (atLaunch true, stream). In-window check: the only flows between 2025-01-03 and 2025-11-16 are the auction 12-month linear stream and the Molecule streams; no single-day unlock of >=25% of circulating (~325M+ tokens) was found. Tokenomist event tables are paywalled; its 2026 figures (78% unlocked, 'no upcoming cliff') do not fit a 1+6-year schedule and were not used. The tokenomics.com page shows TGE as 'January 3, 2024', a typo for 2025.",
+  "sourcesChecked": [
+   {
+    "label": "Binance: BIO on Launchpool, listing 2025-01-03 10:00 UTC, circulating 1,296,529,168",
+    "url": "https://www.binance.com/en/support/articles/f4717985d5d549c8adf284ef4fbd9107",
+    "kind": "primary"
+   },
+   {
+    "label": "KuCoin Research BIO report (cliffs/vesting)",
+    "url": "https://kucoin.com/research/project-reports/bio-protocol-bio",
+    "kind": "aggregator"
+   },
+   {
+    "label": "tokenomics.com BIO unlocks",
+    "url": "https://app.tokenomics.com/tokenomics/bio-protocol/unlocks",
+    "kind": "aggregator"
+   },
+   {
+    "label": "Binance Research BIO",
+    "url": "https://www.binance.com/research/projects/Bio-Protocol",
+    "kind": "aggregator"
+   }
+  ]
+ },
+ {
+  "token": "DEEP",
+  "name": "DeepBook Protocol (Sui)",
+  "binanceFuturesSymbol": "DEEPUSDT",
+  "firstInsiderUnlock": {
+   "date": "2025-10-14",
+   "inWindow": true,
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2025-10-14",
+    "amountTokens": 613330000,
+    "circulatingBefore": 2500000000,
+    "pctCirculating": 24.53,
+    "shape": "lump",
+    "recipients": "12-month cliff release to private-sale investors (363.33M DEEP) and early contributors (250M DEEP); monthly insider tranches (~39.5M) follow",
+    "recipientsMix": {
+     "team": 0.408,
+     "investors": 0.592,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "DefiLlama DeepBook unlocks: Oct 14 2025 05:30 GMT, Investors 363.33m + Early Contributors 250m, 6.13% of supply, 24.53% of float",
+      "url": "https://defillama.com/protocol/unlocks/deepbook",
+      "kind": "aggregator",
+      "confirms": [
+       "date",
+       "amountTokens",
+       "recipients",
+       "pctCirculating"
+      ]
+     },
+     {
+      "label": "tokenomics.com DeepBook: TGE 2024-10-13, insiders 28.4% with 12-month cliff then 72-month linear",
+      "url": "https://app.tokenomics.com/tokenomics/deepbook/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "cliff length",
+       "recipients"
+      ]
+     },
+     {
+      "label": "Sui blog: DEEP launches on CEXs Oct 14 2024 10:00 UTC",
+      "url": "https://www.sui.io/blog/deepbook-version3-deep-token",
+      "kind": "primary",
+      "confirms": [
+       "launch date (cliff anchor)"
+      ]
+     },
+     {
+      "label": "Decrypt: 2.5B DEEP circulating at launch out of 10B",
+      "url": "https://kakapo.decrypt.co/285223/sui-defi-platform-deepbook-reveals-token-launch-plans",
+      "kind": "news",
+      "confirms": [
+       "circulating at launch"
+      ]
+     }
+    ],
+    "gap": "Only one aggregator (DefiLlama) gives the date and size; no project announcement or news round-up of the Oct 2025 cliff was found. circulatingBefore = DefiLlama's 2.5B float (613.33M / 24.53%), which may be stale: an undated mytoken.io page (article dated 2025-04-23) shows 3.058B circulating, which would make this ~20%. Either way it is just under the 25% bar, so it is listed only as the first insider unlock. Price on/near 2025-10-14 not found on a fetched page (DefiLlama USD values appear to use a later price). Conflict: tokenomics.com's allocation table says insiders got 14% at TGE, but its own FAQ says 0% initial float for them; the Sui whitepaper and blog give no vesting terms. If insiders did receive tokens at TGE, the first insider unlock would be 2024-10-14 (atLaunch true)."
+   }
+  ],
+  "gap": "Launch 2024-10-14 (Sui blog). Allocation: ~10% airdrop, ~28-31% core contributors + early backers, ~59-62% community/grants (Sui whitepaper PDF, MEXC). No other single-day unlock >=25% of circulating found between 2024-10-01 and 2025-11-16; after the cliff, insider tokens vest monthly (~0.4% of supply). Community/ecosystem pool releases are governance/program driven and were not found as dated single-day cliffs. Tokenomist event table is paywalled."
+ },
+ {
+  "token": "FLUX",
+  "name": "Flux (RunOnFlux, formerly ZelCash/ZEL)",
+  "binanceFuturesSymbol": "FLUXUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": null
+  },
+  "events": [],
+  "gap": "Flux is a mined proof-of-work + node-reward coin with no investor/VC vesting schedule. It began as ZelCash, 'launched in January 2018' (Penguin FA Medium review; exact day not found), with an 11M ZEL (5%) premined Development Fund: Zel Foundation 7.9M (790k unlocked per year) and core team 3.1M ('50% unlocked each year over two years'). Zelwiki (Zel Foundation page) gives the dev fund as ~13.2M ZEL. The first insider unlock is therefore the first core-team dev-fund release in 2018-2019; the exact date could not be confirmed (null), and it is well before the window. ZEL was swapped 1:1 into FLUX by hard fork on 2021-03-27 (runonflux.com primer; a 'migration' outside the window); at the fork the foundation got a locked 10M FLUX airdrop with no release date given. Window 2022-05-01 to 2025-11-16: new supply comes only from block rewards (halvings 2023-02-08 and 2025-08) and parallel-asset mining; a Nov 2023 allocation snapshot (Bitkub help page) shows only 0.7% team and 2.9% foundation. No vesting cliff or single-day unlock of >=25% of circulating exists or was reported, so no qualifying events.",
+  "sourcesChecked": [
+   {
+    "label": "Zelwiki: Zel Foundation / development fund",
+    "url": "https://zelcash.github.io/zelwiki/foundation/zelfoundation",
+    "kind": "primary"
+   },
+   {
+    "label": "Penguin FA: ZelCash review (launch Jan 2018, dev fund split)",
+    "url": "https://medium.com/p/1a1779d6ef51",
+    "kind": "news"
+   },
+   {
+    "label": "RunOnFlux: primer on parallel assets and economics (fork 2021-03-27)",
+    "url": "https://runonflux.com/a-primer-on-flux-parallel-asset-distribution-economics-and-more/",
+    "kind": "primary"
+   },
+   {
+    "label": "Bitkub: FLUX circulation and allocation",
+    "url": "https://bitkubexchange.freshdesk.com/en/support/solutions/articles/151000171315-flux-circulation-and-allocation",
+    "kind": "aggregator"
+   }
+  ]
+ },
+ {
+  "token": "LUMIA",
+  "name": "Lumia (formerly Orion Protocol, ORN)",
+  "binanceFuturesSymbol": "LUMIAUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": null
+  },
+  "events": [],
+  "gap": "LUMIA is a 1:1 rebrand/swap of ORN (Binance suspended ORN 2024-10-15 03:30 UTC, LUMIA deposits from 2024-10-18 08:00 UTC per The Defiant/Binance press release; KuCoin snapshot 2024-11-11 12:00 UTC) - a 'migration', not an unlock. The first insider unlock belongs to the ORN era: ORN listed on BitMax 2020-07-14 (IQ.wiki) after a ~$300K seed round and a $3.45M DYCO via DAO Maker (The Block, 2020-07-21); no fetched page gives the team/seed lockup or when insiders first received transferable ORN, so the date is null (it is years before the window either way). New LUMIA supply: 238,888,888 total, of which 92,631,255 came from swapped ORN and 146,257,633 is new: node rewards 73.44M vested over 20 years and ecosystem/community 72.82M over 10 years, with quarterly releases and 0% to the team (IQ.wiki, Pintu citing Pineverse). These are small, gradual releases; no single-day unlock of >=25% of circulating was found between 2024-10-01 and 2025-11-16. Unresolved: the ORN-era team/treasury ORN may have become liquid at the swap. MEXC's market cap/price now implies ~184M circulating, more than the 92.6M swapped plus the slow vesting, but no source shows a dated jump. Coinlaunch/Tokenomist vesting pages could not be fetched.",
+  "sourcesChecked": [
+   {
+    "label": "The Defiant: Binance confirms support for Lumia token swap (1:1, Oct 15-18 2024)",
+    "url": "https://thedefiant.io/news/press-releases/binance-confirms-support-for-lumia-token-swap-ahead-of-new-chain-launch",
+    "kind": "news"
+   },
+   {
+    "label": "KuCoin: ORN to LUMIA swap support",
+    "url": "https://www.kucoin.com/announcement/en-kucoin-will-support-the-token-swap-of-orion-protocol-orn-to-lumia-lumia-20241111",
+    "kind": "primary"
+   },
+   {
+    "label": "IQ.wiki Lumia tokenomics",
+    "url": "https://iq.wiki/wiki/lumia",
+    "kind": "aggregator"
+   },
+   {
+    "label": "CryptoRank Orion/Lumia fundraising",
+    "url": "https://cryptorank.io/ico/orionprotocol",
+    "kind": "aggregator"
+   },
+   {
+    "label": "The Block: Orion raises $3.45M in DYCO (2020-07-21)",
+    "url": "https://www.theblock.co/news/markets/2020-07-21-defi-project-orion-protocol-raises-3-45-million-in-dynamic-coin-offering-72386",
+    "kind": "news"
+   }
+  ]
+ },
+ {
+  "token": "ORCA",
+  "name": "Orca (Solana DEX)",
+  "binanceFuturesSymbol": "ORCAUSDT",
+  "firstInsiderUnlock": {
+   "date": "2021-08-09",
+   "inWindow": false,
+   "atLaunch": true
+  },
+  "events": [],
+  "gap": "Orca docs: governance token issued 2021-08-09 with 5.25M initial circulating, including 250,000 ORCA to advisors (e^i Ventures) for sourcing early liquidity. That is ~4.8% of launch circulating (0.25% of total supply), so under the strict rule the launch day is the first insider unlock (atLaunch true); this is outside the window. Team 20%, Value-Add + Advisory 4.3% and future investors: 3-year vesting with a 1-year cliff/lockup. Private sale 9.6% (Sept 2021): 1-year cliff, then 2-year linear. These insider cliffs fell in 2022, before the window, and the linear vesting ended in 2024 (Tokenomist FAQ: 'unlock schedule ended in 2024'). Window 2024-04-01 to 2025-11-16: only the tails of linear vesting plus discretionary treasury/emission releases; no single-day unlock of >=25% of circulating (~60M) was found. Tokenomist's dated event table is paywalled.",
+  "sourcesChecked": [
+   {
+    "label": "Orca docs: Tokenomics",
+    "url": "https://docs.orca.so/token-holder-documentation/orca-for-community/tokenomics",
+    "kind": "primary"
+   },
+   {
+    "label": "Tokenomist ORCA unlock events (FAQ, allocations)",
+    "url": "https://tokenomist.ai/orca/unlock-events",
+    "kind": "aggregator"
+   },
+   {
+    "label": "dev.to: ORCA 100M hard cap, emissions (May 2026 supply figures)",
+    "url": "https://dev.to/mrnasdog/orca-orca-solana-dex-with-a-100m-hard-cap-final-stretch-of-emissions-100g",
+    "kind": "news"
+   }
+  ]
+ },
+ {
+  "token": "RARE",
+  "name": "SuperRare",
+  "binanceFuturesSymbol": "RAREUSDT",
+  "firstInsiderUnlock": {
+   "date": "2022-08-17",
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "SuperRare docs: launch 2021-08-17. At TGE only the community treasury (25% of 400M) and the retroactive airdrop (claimable 90 days later) were released. Team 255M: 3-year vesting with a firm 12-month cliff. Investors 145M: 25% at the 12-month cliff, then monthly over 2 years. Strategic partners 5%: case by case, at least 6 months. First insider unlock = the 12-month cliff, computed as 2022-08-17 (tokenomics.com monthly events fall on the 17th; tokenomics.com gives TGE as 2021-08-16); this is before the window start of 2022-11-01. Window 2022-11-01 to 2025-11-16: only monthly linear tranches (tokenomics.com shows ~1.2-1.3% of market cap per month in 2025) and the treasury's 48-month linear vesting, ending 2025-08-17. No single-day unlock of >=25% of circulating.",
+  "sourcesChecked": [
+   {
+    "label": "SuperRare docs: Token Distribution",
+    "url": "https://docs.superrare.com/the-rare-token/token-distribution",
+    "kind": "primary"
+   },
+   {
+    "label": "tokenomics.com SuperRare unlocks",
+    "url": "https://app.tokenomics.com/tokenomics/superrare/unlocks",
+    "kind": "aggregator"
+   }
+  ]
+ },
+ {
+  "token": "TAIKO",
+  "name": "Taiko",
+  "binanceFuturesSymbol": "TAIKOUSDT",
+  "firstInsiderUnlock": {
+   "date": "2025-06-05",
+   "inWindow": true,
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2025-06-05",
+    "amountTokens": 81550000,
+    "circulatingBefore": 117500000,
+    "pctCirculating": 69.4,
+    "shape": "lump",
+    "recipients": "First 12-month cliff for insiders: Taiko Labs (core team), investors and the Protocol Guild airdrop; 25% of each vested allocation released at the cliff, the remaining 75% linear over 3 years",
+    "recipientsMix": {
+     "team": 0.613,
+     "investors": 0.356,
+     "community": 0.031,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": 0.55,
+    "priceSource": "https://crypto.news/369m-to-be-unleashed-in-token-unlocks-this-week-taiko-and-neon-face-heaviest-sell-pressure/",
+    "sources": [
+     {
+      "label": "Tokenomist weekly unlock digest, week 1 June 2025: TAIKO 2025-06-05, 69.60% of circulating, 'first cliff unlock for insider allocations', Taiko Labs + investors + Protocol Guild airdrop",
+      "url": "https://tokenomist.ai/research/weekly-unlock-digest-week-1-june-2025",
+      "kind": "aggregator",
+      "confirms": [
+       "date",
+       "pctCirculating",
+       "recipients",
+       "firstInsiderUnlock"
+      ]
+     },
+     {
+      "label": "crypto.news: 81.55M TAIKO ($47.4M) cliff unlock week of June 2-9 2025; price ~$0.55 after May 31 drop",
+      "url": "https://crypto.news/369m-to-be-unleashed-in-token-unlocks-this-week-taiko-and-neon-face-heaviest-sell-pressure/",
+      "kind": "news",
+      "confirms": [
+       "amountTokens",
+       "priceUsd"
+      ]
+     },
+     {
+      "label": "OurCryptoTalk: ~81.55M TAIKO on 5 June, ~117.5M circulating before, 69-71% of circulating",
+      "url": "https://ourcryptotalk.com/news/taiko-47m-unlock-on-5-june",
+      "kind": "news",
+      "confirms": [
+       "date",
+       "amountTokens",
+       "circulatingBefore"
+      ]
+     },
+     {
+      "label": "Odaily: TGE 2024-06-05; investors 11.62%, 12-month lock from TGE then 25% unlock, 75% linear over 3 years",
+      "url": "https://www.odaily.news/en/newsflash/382498",
+      "kind": "news",
+      "confirms": [
+       "cliff terms",
+       "TGE date"
+      ]
+     },
+     {
+      "label": "Tokenomist TAIKO tokenomics: allocations (Taiko Labs 20%, Investors 11.62%, Protocol Guild airdrop 1%)",
+      "url": "https://tokenomist.ai/taiko/tokenomics",
+      "kind": "aggregator",
+      "confirms": [
+       "allocation sizes"
+      ]
+     }
+    ],
+    "gap": "The recipient split is derived, not quoted: 25% of investors' 116.2M (29.05M) + 25% of Taiko Labs' 200M (50M) + 25% of the Protocol Guild airdrop's 10M (2.5M) = 81.55M, which matches the reported total exactly. No source gives the UTC hour (OurCryptoTalk's time zones contradict each other). The price is crypto.news's '~$0.55' level just before the unlock; $47.4M / 81.55M implies ~$0.58. pctCirculating uses 117.5M (OurCryptoTalk); Tokenomist says 69.60%."
+   }
+  ],
+  "gap": "TGE 2024-06-05 (Odaily). Insider allocations had a 12-month lock from TGE, so nothing went to insiders at launch, per Tokenomist ('first cliff unlock for insider allocations'). After the cliff, insider tokens vest linearly. No other single-day unlock of >=25% of circulating was found between 2024-06-01 and 2025-11-16; Tokenomist says there is no further cliff."
+ },
+ {
+  "token": "IDOL",
+  "name": "MEET48 (IDOL), BNB Chain",
+  "binanceFuturesSymbol": "IDOLUSDT",
+  "firstInsiderUnlock": {
+   "date": "2026-06-11",
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "TGE 2025-06-11 (Binance Wallet/PancakeSwap TGE 08:00-10:00 UTC; Bitget/Gate/MEXC trading 12:00 UTC, per the Chainwire press release on DL News). Tokenomics (MEXC news article): 4.8B supply; ~1,046.4M at TGE from airdrop, marketing, liquidity, IDO and 96M ecosystem, with none to insiders. Strategic financing 4%, private placement 3% and advisors 2% all have a 12-month lock-up, then 24/24/48-month linear vesting. So the first insider unlock is computed as 2026-06-11 (TGE + 12 months; no page confirms the exact claim day), outside the window. No separate team line appears in the MEXC table. A Wublock Substack overview lists 'team and advisors 15%, 4-year linear' with shares summing to 112%, so it was not used. Within 2025-06-11 to 2025-11-16 nothing is scheduled: community and ecosystem linear vesting starts at month 6-7 (~Dec 2025, after the window, and linear). No single-day unlock of >=25% of circulating. Coinlaunch vesting pages could not be fetched.",
+  "sourcesChecked": [
+   {
+    "label": "DL News (Chainwire): MEET48 announces TGE and IDOL listing June 11",
+    "url": "https://www.dlnews.com/external/meet48-officially-announces-tge-and-idol-listing-on-binance-wallet-bitget-gate-mexc-and-pancakeswap-on-june-11",
+    "kind": "primary"
+   },
+   {
+    "label": "MEXC news: IDOL tokenomics table",
+    "url": "https://www.mexc.com/news/401829",
+    "kind": "aggregator"
+   },
+   {
+    "label": "Wublock: Introducing MEET48",
+    "url": "https://wublock.substack.com/p/introducing-meet48-bnb-chain-powered?r=jbpop",
+    "kind": "news"
+   }
+  ]
+ }
+]

@@ -1,0 +1,92 @@
+{
+ "rules": "data/strategy_v3.json",
+ "note": "Bybit/Gate.io-priced unlocks computed in the browser (same trade rules as research/hist_test.py); Binance-priced ones with hist_test.py",
+ "rows": [
+  {
+   "token": "DBR",
+   "date": "2025-04-17",
+   "venue": "bybit",
+   "pump": -31.9,
+   "week": -19,
+   "oiChg": -10.5,
+   "call": "TAKE big",
+   "R": 2.73,
+   "why": "target"
+  },
+  {
+   "token": "TAIKO",
+   "date": "2025-06-05",
+   "venue": "bybit",
+   "pump": 7.8,
+   "week": -3.8,
+   "oiChg": 6.8,
+   "call": "TAKE big",
+   "R": -1.0,
+   "why": "stop"
+  },
+  {
+   "token": "BOBA",
+   "date": "2022-09-20",
+   "venue": "bybit",
+   "pump": -13,
+   "week": 8.6,
+   "oiChg": -19.5,
+   "call": "TAKE first+OI",
+   "R": 1.04,
+   "why": "time"
+  },
+  {
+   "token": "FLOW",
+   "date": "2021-10-16",
+   "venue": "gate",
+   "pump": -16.7,
+   "week": 3.8,
+   "oiChg": null,
+   "call": "TAKE big",
+   "R": 2.71,
+   "why": "target"
+  },
+  {
+   "token": "ATH",
+   "date": "2025-06-12",
+   "year": "2025",
+   "pct": null,
+   "first": true,
+   "big": false,
+   "shape": null,
+   "flags": [],
+   "mix": null,
+   "pump": 14.8,
+   "week": -1.1,
+   "oiChg": 15.3,
+   "btc30": 10.5,
+   "after": -45.0,
+   "R": 2.72,
+   "why": "target",
+   "exitDay": 7,
+   "call": "SKIP first, OI not falling",
+   "venue": "binance"
+  },
+  {
+   "token": "HAEDAL",
+   "date": "2025-10-29",
+   "year": "2025",
+   "pct": null,
+   "first": true,
+   "big": false,
+   "shape": null,
+   "flags": [],
+   "mix": null,
+   "pump": -31.3,
+   "week": -10.7,
+   "oiChg": -5.1,
+   "btc30": -6.0,
+   "after": -20.6,
+   "R": 1.69,
+   "why": "time",
+   "exitDay": 14,
+   "call": "SKIP first, OI not falling",
+   "venue": "binance"
+  }
+ ]
+}

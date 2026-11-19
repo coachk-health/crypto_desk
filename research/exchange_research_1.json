@@ -1,0 +1,592 @@
+[
+ {
+  "token": "AIOZ",
+  "name": "AIOZ Network",
+  "binanceFuturesSymbol": null,
+  "firstInsiderUnlock": {
+   "date": "2021-04-02",
+   "inWindow": false,
+   "atLaunch": true
+  },
+  "events": [],
+  "gap": "First insider unlock: private-sale investors got 25% at exchange listing (project token-metrics post), and the project's 27 Apr 2021 vesting update lists the rest (5% on 2 May 2021, then 70% linear over 11 months), which fits 25% having been released at listing. IDO was 2 Apr 2021 and the project post-IDO note says Uniswap/PancakeSwap listing happened 'shortly after'; DropStab lists trading start 3 Apr 2021 (1-day difference, so no dateConflict). In window (2024-06-01..2025-11-16) no single-day unlock of >=25% of circulating found: supply grows by continuous inflation (8% then 7%/yr, split validators/treasury), Tokenomist reports no cliff unlock scheduled and ~82% of supply unlocked, with circulating ~1.29B. Tokenomist's dated past-event table is paywalled, so individual past events could not be checked line by line. No Binance perp (binancePerpSince null), so binanceFuturesSymbol null.",
+  "sources": [
+   {
+    "label": "AIOZ blog: Token Metrics Explained (Mar 2020 plan)",
+    "url": "https://aioz.network/blog/aioz-network-token-metrics-explained",
+    "kind": "primary",
+    "confirms": [
+     "private sale 25% at exchange listing",
+     "team 6-month cliff",
+     "advisors 3-month cliff"
+    ]
+   },
+   {
+    "label": "AIOZ blog: vesting schedule updated (27 Apr 2021)",
+    "url": "https://aioz.network/blog/aioz-token-vesting-schedule-updated-learn-more",
+    "kind": "primary",
+    "confirms": [
+     "presale 5% on 2 May 2021 + 70% linear 11 months"
+    ]
+   },
+   {
+    "label": "AIOZ blog: ready for lift off (2 Apr 2021)",
+    "url": "https://aioz.network/blog/ready-for-lift-off-the-aioz-network-starts-in-one-hour",
+    "kind": "primary",
+    "confirms": [
+     "IDO 2 Apr 2021"
+    ]
+   },
+   {
+    "label": "AIOZ blog: post-IDO analysis (5 Apr 2021)",
+    "url": "https://aioz.network/blog/aioz-network-post-ido-analysis",
+    "kind": "primary",
+    "confirms": [
+     "listing shortly after IDO"
+    ]
+   },
+   {
+    "label": "DropStab AIOZ fundraising",
+    "url": "https://dropstab.com/th/coins/aioz-network/fundraising",
+    "kind": "aggregator",
+    "confirms": [
+     "private round 25% at listing",
+     "trading start 3 Apr 2021"
+    ]
+   },
+   {
+    "label": "Tokenomist AIOZ",
+    "url": "https://tokenomist.ai/aioz-network",
+    "kind": "aggregator",
+    "confirms": [
+     "no upcoming cliff",
+     "circulating 1.29B"
+    ]
+   },
+   {
+    "label": "AIOZ docs tokenomics (inflation)",
+    "url": "https://docs.aioz.network/overview/aioz-tokenomics",
+    "kind": "primary",
+    "confirms": [
+     "inflation schedule 8%->5%"
+    ]
+   }
+  ]
+ },
+ {
+  "token": "ATH",
+  "name": "Aethir",
+  "binanceFuturesSymbol": "ATHUSDT",
+  "firstInsiderUnlock": {
+   "date": "2025-06-12",
+   "inWindow": true,
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2025-06-12",
+    "amountTokens": null,
+    "circulatingBefore": null,
+    "pctCirculating": null,
+    "shape": "stream",
+    "recipients": "Investors (12-month cliff after TGE, then 24-month linear vest); advisors possibly on the same schedule (DefiLlama assumes so, Tokenomics.com lists an 18-month cliff for advisors)",
+    "recipientsMix": {
+     "team": 0,
+     "investors": 1.0,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "Aethir docs: token vesting",
+      "url": "https://docs.aethir.com/aethir-tokenomics/token-vesting",
+      "kind": "primary",
+      "confirms": [
+       "investors 12-month cliff, 24-month linear",
+       "team 18-month cliff, 36-month linear",
+       "ecosystem 50% at TGE"
+      ]
+     },
+     {
+      "label": "Tokenomics.com Aethir",
+      "url": "https://app.tokenomics.com/tokenomics/aethir",
+      "kind": "aggregator",
+      "confirms": [
+       "TGE 11 Jun 2024",
+       "9% (3.78B) unlocked at TGE, all community",
+       "0% at TGE for team/investors/advisors"
+      ]
+     },
+     {
+      "label": "DefiLlama unlocks Aethir",
+      "url": "https://defillama.com/unlocks/aethir",
+      "kind": "aggregator",
+      "confirms": [
+       "investors/advisors/team released weekly (linear), no cliff lump",
+       "team weekly stream from 11 Dec 2025"
+      ]
+     }
+    ],
+    "gap": "Date is derived, not announced: TGE 11 Jun 2024 (Tokenomics.com) plus the 12-month investor cliff in Aethir's docs. Tokenomics.com's monthly release dates fall on the 12th, so 2025-06-12 was used; 11 vs 12 June is within 2 days. No fetched page gave a dated announcement, the tokens released on day one, or circulating supply in June 2025. It is a linear stream with no cliff lump, so it cannot be a >=25% single-day event. Price: exchange and CoinGecko APIs were blocked and no fetched page gave a June 2025 price."
+   }
+  ],
+  "gap": "No single-day unlock of >=25% of circulating found in window 2024-06-01..2025-11-16. Largest one-off releases were airdrop seasons (community): S2 630M ATH ~Feb 2025 (Outpost Jul 2024 calls it a 16.67% unlock, which equals 630M/3.78B TGE float), and S3 1.26B ATH on 12 Oct 2025, which BeInCrypto (6 Oct 2025) puts at ~16.08% of released supply against 12.21B circulating (~10.3% of circulating). Team stream starts 11 Dec 2025, outside window. 50% of Ecosystem (15%) unlocked at TGE went to ecosystem, not insiders, so the TGE is not an insider unlock.",
+  "sources": [
+   {
+    "label": "BeInCrypto: token unlocks second week of October (6 Oct 2025)",
+    "url": "https://beincrypto.com/crypto-token-unlocks-in-the-second-week-of-october",
+    "kind": "news",
+    "confirms": [
+     "1.26B ATH on 12 Oct 2025",
+     "circulating 12.21B"
+    ]
+   },
+   {
+    "label": "Coinlive airdrop schedule (8 Jun 2024)",
+    "url": "https://coinlive.com/news-flash/536675",
+    "kind": "news",
+    "confirms": [
+     "airdrop seasons 630M/630M/1.26B at 0/8/16 months"
+    ]
+   },
+   {
+    "label": "Onchain Outpost (17 Jul 2024)",
+    "url": "https://onchain-outpost.beehiiv.com/p/major-upcoming-ai-token-unlocks",
+    "kind": "news",
+    "confirms": [
+     "16.67% cliff Feb 2025"
+    ]
+   }
+  ]
+ },
+ {
+  "token": "CARV",
+  "name": "CARV",
+  "binanceFuturesSymbol": "CARVUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": null,
+   "atLaunch": null
+  },
+  "events": [],
+  "gap": "UNRESOLVED, do not read as 'no event'. TGE/listing was 10 Oct 2024 (CryptoRank news 10 Oct 2024; Bitrue). No fetched page gave per-group TGE %, cliff or start dates: CARV Medium, Kraken asset PDF, Tokenomist, CoinStats and CMC list allocation sizes only (team+advisors 19.459%, early investors 9.246%, private 8.295%, 4-year release). CryptoTicker (4 Oct 2026) says insider pots unlock in ANNUAL tranches on the 10 Oct anniversary (2026 tranche: team 21.62M, early investors 9.04M, private 8.11M, 5.85% of 662.9M circulating). It says that date 'is neither the first nor the last of its kind'. Bitrue's post-unlock totals (team 108.11M, early 56.29M, private 50.5M) imply ~176M insider tokens (team ~44%, investors/private ~51% of their pots) were released before 10 Oct 2026. That points to a large insider release either at TGE (10 Oct 2024) or on the first anniversary (10 Oct 2025, in window), which could be >=25% of circulating. Neither date nor size could be confirmed from a fetched page within the search budget, so firstInsiderUnlock and any B event are left null. Next step: Tokenomist/DropStab/CryptoRank vesting chart or the CARV docs vesting table for Oct 2024 / Oct 2025 tranche sizes and circulating supply before 10 Oct 2025.",
+  "sources": [
+   {
+    "label": "CryptoRank news: CARV launches token (10 Oct 2024)",
+    "url": "https://cryptorank.io/news/feed/7d750-carv-launches-carv-token-listed-on-eight-exchanges",
+    "kind": "news",
+    "confirms": [
+     "launch/listing 10 Oct 2024",
+     "allocation shares"
+    ]
+   },
+   {
+    "label": "CryptoTicker: CARV unlock on October 10 (4 Oct 2026)",
+    "url": "https://cryptoticker.io/en/carv-token-unlock-liquidity/",
+    "kind": "news",
+    "confirms": [
+     "annual insider tranches on 10 Oct",
+     "2026 tranche sizes",
+     "not the first such date"
+    ]
+   },
+   {
+    "label": "Bitrue: CARV token unlock October 10",
+    "url": "https://www.bitrue.com/blog/carv-token-unlock-october-10-2026",
+    "kind": "news",
+    "confirms": [
+     "TGE 10 Oct 2024",
+     "cumulative unlocked per insider pot after Oct 2026"
+    ]
+   },
+   {
+    "label": "Kraken CARV asset disclosure PDF",
+    "url": "https://assets-cms.kraken.com/files/51n36hrp/facade/f1a541e69c4baab0bf8fb9f3aa7915f23bbcfe05.pdf",
+    "kind": "primary",
+    "confirms": [
+     "allocation amounts"
+    ]
+   },
+   {
+    "label": "Tokenomist CARV",
+    "url": "https://tokenomist.ai/carv/tokenomics",
+    "kind": "aggregator",
+    "confirms": [
+     "allocations",
+     "cliff-style releases to 2028"
+    ]
+   }
+  ]
+ },
+ {
+  "token": "DOLO",
+  "name": "Dolomite",
+  "binanceFuturesSymbol": "DOLOUSDT",
+  "firstInsiderUnlock": {
+   "date": "2025-04-24",
+   "inWindow": true,
+   "atLaunch": true
+  },
+  "events": [],
+  "gap": "First insider unlock treated as the TGE (24 Apr 2025; Decrypt/Chainwire release dated 24 Apr 2025 says the TGE airdrop starts 24 Apr; Tokenomics.com lists TGE 23 Apr 2025, 1 day apart, so no dateConflict). Dolomite docs say a short-vest investor tranche (13,933,333 DOLO, 1.39%) 'vests over the first 12 months'. Binance Research (data 28 Aug 2025) shows investors ~0.56% and advisors ~0.03% of supply unlocked by then, which fits linear vesting from TGE. No fetched page states outright that the short tranche started on TGE day, so atLaunch rests on that inference (amount per day ~38k DOLO, far below 1% of supply). The 22% TGE unlock (Tokenomics.com) went to community/foundation. B events: none >=25% of circulating in window 2025-04-01..2025-11-16. Core team (20.2%, 1-yr cliff, 3-yr vest), long-vest investors (13.79%, 1-yr cliff) and advisors (1-yr cliff) first release on 24 Apr 2026 per DefiLlama, outside window.",
+  "sources": [
+   {
+    "label": "Dolomite docs: DOLO distribution",
+    "url": "https://docs.dolomite.io/dolo/distribution",
+    "kind": "primary",
+    "confirms": [
+     "short-vest investors 13.93M over first 12 months",
+     "long-vest investors 1-yr cliff 3 yrs",
+     "team 1-yr cliff 3 yrs",
+     "TGE unlocked 415.4M"
+    ]
+   },
+   {
+    "label": "Binance Research: Dolomite (28 Aug 2025)",
+    "url": "https://www.binance.com/research/projects/dolo",
+    "kind": "aggregator",
+    "confirms": [
+     "investors ~0.56% and advisors ~0.03% unlocked by Aug 2025",
+     "circulating 264.9M at Binance listing"
+    ]
+   },
+   {
+    "label": "Tokenomics.com Dolomite",
+    "url": "https://app.tokenomics.com/tokenomics/dolomite",
+    "kind": "aggregator",
+    "confirms": [
+     "TGE 23 Apr 2025",
+     "22% TGE unlock to community and foundation"
+    ]
+   },
+   {
+    "label": "DefiLlama unlocks Dolomite",
+    "url": "https://defillama.com/unlocks/dolomite",
+    "kind": "aggregator",
+    "confirms": [
+     "team/long-vest investors/advisors cliff 24 Apr 2026"
+    ]
+   },
+   {
+    "label": "Decrypt / Chainwire press release (24 Apr 2025)",
+    "url": "https://decrypt.co/316125/worlds-10th-largest-defi-lending-app-dolomite-launches-200m-token-airdrop-during-tge",
+    "kind": "news",
+    "confirms": [
+     "TGE airdrop starts 24 Apr 2025"
+    ]
+   }
+  ]
+ },
+ {
+  "token": "HAEDAL",
+  "name": "Haedal Protocol",
+  "binanceFuturesSymbol": "HAEDALUSDT",
+  "firstInsiderUnlock": {
+   "date": "2025-10-29",
+   "inWindow": true,
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2025-10-29",
+    "amountTokens": null,
+    "circulatingBefore": null,
+    "pctCirculating": 5.92,
+    "shape": "stream",
+    "recipients": "Investors (15%; 6-month lock after TGE, then 12-month linear vesting, released in monthly steps)",
+    "recipientsMix": {
+     "team": 0,
+     "investors": 1.0,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "Haedal docs: HAEDAL tokenomics",
+      "url": "https://haedal-protocol.gitbook.io/haedal-protocol-docs/tokenomics/haedal",
+      "kind": "primary",
+      "confirms": [
+       "investors 6-month lock then 12-month linear",
+       "team & advisors 12-month lock then 24-month linear"
+      ]
+     },
+     {
+      "label": "MEXC news: weekly unlocks (week of 27 Oct 2025)",
+      "url": "https://www.mexc.com/news/142871",
+      "kind": "news",
+      "confirms": [
+       "HAEDAL unlock 29 Oct 2025 03:00 UTC+3 (00:00 UTC)",
+       "$1.06M, 5.92% of market cap"
+      ]
+     },
+     {
+      "label": "Tokenomics.com HAEDAL unlocks",
+      "url": "https://app.tokenomics.com/tokenomics/haedal/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "TGE 29 Apr 2025",
+       "monthly unlocks on the 29th",
+       "investor 6-month cliff"
+      ]
+     },
+     {
+      "label": "DropStab HAEDAL vesting",
+      "url": "https://dropstab.com/coins/haedal/vesting",
+      "kind": "aggregator",
+      "confirms": [
+       "investors 0% at TGE",
+       "investors fully unlocked 29 Oct 2026",
+       "TGE tranches 29 Apr 2025"
+      ]
+     }
+    ],
+    "gap": "Recipient is not named in the MEXC note. It is inferred as investors because the date is exactly 6 months after the 29 Apr 2025 TGE and matches the docs' investor lock. Token amount not stated in a fetched page; at 1/12 of 150M it would be 12.5M (derived, not confirmed). pctCirculating 5.92 is MEXC's '% of market value', used as a proxy for % of circulating. Price not stated, and price APIs were blocked."
+   }
+  ],
+  "gap": "No single-day unlock of >=25% of circulating in window 2025-04-01..2025-11-16. The TGE on 29 Apr 2025 released only community/incentives and liquidity (195M circulating per Binance Research and DropStab), so no insider got tokens at launch. Team & advisors first unlock 29 Apr 2026, outside window.",
+  "sources": [
+   {
+    "label": "Binance Research: Haedal (22 May 2025)",
+    "url": "https://www.binance.com/de/research/projects/Haedal",
+    "kind": "aggregator",
+    "confirms": [
+     "Day1 circulating 195M, retail + MM/liquidity only"
+    ]
+   }
+  ]
+ },
+ {
+  "token": "METIS",
+  "name": "Metis",
+  "binanceFuturesSymbol": "METISUSDT",
+  "firstInsiderUnlock": {
+   "date": "2021-05-18",
+   "inWindow": false,
+   "atLaunch": true
+  },
+  "events": [],
+  "gap": "First insider unlock is the launch: Seed and Private rounds 10%, Angel 5%, Strategic 10% at TGE (DropStab fundraising; Tokenomics.com vesting list also shows advisors 5% at TGE). Trading/TGE 18 May 2021 (Tokenomics.com TGE date; DropStab trade launch 18 May 2021, after the 13 May 2021 IDO on Gate.io/Paid Ignition). No project primary page fetched for the TGE date. Note: Tokenomics.com contradicts itself (another section says 100% at TGE for seed/private/strategic), but either way insiders got >=1% at launch. Window 2024-01-01..2025-11-16: Tokenomics.com says the vesting schedule ended 18 Aug 2023 with no scheduled unlocks left. The remaining ~18% locked is Transaction Mining / ecosystem emissions, not cliffs. No >=25% single-day unlock in window. (Outside window: Tokenomics.com lists 18 May 2022 at 25.6% of market cap, a 1-year anniversary tranche. Not researched further because it is outside the window.)",
+  "sources": [
+   {
+    "label": "Tokenomics.com METIS",
+    "url": "https://app.tokenomics.com/tokenomics/metis",
+    "kind": "aggregator",
+    "confirms": [
+     "TGE 18 May 2021",
+     "investor/advisor TGE %"
+    ]
+   },
+   {
+    "label": "Tokenomics.com METIS unlocks",
+    "url": "https://app.tokenomics.com/tokenomics/metis/unlocks",
+    "kind": "aggregator",
+    "confirms": [
+     "schedule ended 18 Aug 2023",
+     "no unlocks 2024-2025"
+    ]
+   },
+   {
+    "label": "DropStab METIS fundraising",
+    "url": "https://dropstab.com/coins/metis-token/fundraising",
+    "kind": "aggregator",
+    "confirms": [
+     "seed/private 10% at TGE",
+     "IDO 13 May 2021",
+     "trade launch 18 May 2021"
+    ]
+   },
+   {
+    "label": "CoinCodex: Metis raises $4M ahead of IDO",
+    "url": "https://coincodex.com/article/11232/ethereum-layer-2-scaling-solution-metis-raises-4-million-ahead-of-its-ido",
+    "kind": "news",
+    "confirms": [
+     "IDO 13 May on Paid Ignition and Gate.io"
+    ]
+   },
+   {
+    "label": "Tokenomist METIS",
+    "url": "https://tokenomist.ai/metis-token",
+    "kind": "aggregator",
+    "confirms": [
+     "81% unlocked",
+     "allocations"
+    ]
+   }
+  ]
+ },
+ {
+  "token": "PEAQ",
+  "name": "peaq",
+  "binanceFuturesSymbol": null,
+  "firstInsiderUnlock": {
+   "date": "2024-11-12",
+   "inWindow": true,
+   "atLaunch": true
+  },
+  "events": [],
+  "gap": "First insider unlock is the TGE. peaq docs give month 0 = block 2,634,590 (12 Nov 2024), and all four investor rounds had TGE unlocks totalling 93.45M PEAQ (Pre-Seed 3.75%, Seed 6.25%, Private 7.5%, Pre-launch Private 7.5% of each round), per the docs genesis table and the Blockworks transparency filing. No B events: the docs unlock table vests per block (no monthly cliffs). The biggest one-off step is the 93.45M investor lock-up release six vesting months after TGE (vesting month = 438,000 blocks, so ~mid-May 2025; exact calendar date not confirmed). Against ~744-829M unlocked supply at months 5-6 that is ~11-13%, below 25%. Core contributors and EoT Labs: 9-month cliff, then 36 months linear (stream starting ~Aug 2025, no lump). Get Real (210M) and Early Adopters (106.26M) 3-month lock-ups were moved to the Dynamic Treasury, not released to holders; the docs month-3 step is only +87.36M. The 6 Dec 2024 jump in reported circulating supply (376.98M to 624.51M) was a reporting change (CoinList sale counted per CMC/CoinGecko rules), not an unlock. No Binance perp, so binanceFuturesSymbol null.",
+  "sources": [
+   {
+    "label": "peaq docs: tokenomics",
+    "url": "https://docs.peaq.xyz/peaqchain/learn/tokenomics",
+    "kind": "primary",
+    "confirms": [
+     "month 0 = 12 Nov 2024",
+     "investor TGE amounts 93.45M",
+     "lock-ups and vesting",
+     "per-block vesting",
+     "Dec 6 2024 reporting change"
+    ]
+   },
+   {
+    "label": "peaq docs: tokenomics (markdown)",
+    "url": "https://docs.peaq.xyz/peaqchain/learn/tokenomics.md",
+    "kind": "primary",
+    "confirms": [
+     "unlocked supply by vesting month",
+     "93.45M lock-up release 6 vesting months after TGE"
+    ]
+   },
+   {
+    "label": "Blockworks token transparency filing: peaq",
+    "url": "https://blockworks.com/token-transparency/filing/peaq",
+    "kind": "primary",
+    "confirms": [
+     "investor rounds TGE % and 6-month lockup",
+     "core contributors 9-month cliff 36-month vest"
+    ]
+   }
+  ]
+ },
+ {
+  "token": "SAFE",
+  "name": "Safe",
+  "binanceFuturesSymbol": "SAFEUSDT",
+  "firstInsiderUnlock": {
+   "date": "2024-04-23",
+   "inWindow": true,
+   "atLaunch": true
+  },
+  "events": [],
+  "gap": "SAFE was minted at TGE on 28 Sep 2022 (Tokenomics.com) but not transferable. The contract was unpaused, making the token transferable, on 23 Apr 2024 (The Block 23 Apr 2024; Cointelegraph 30 Apr 2024, price $3.26 on 23 Apr). That is the first day any insider (core contributors 15%, 48-month linear; strategic-raise backers 8%, 1-year lockup then 4 years; Safe Foundation 7%) held transferable tokens, and it is also the market launch (no market before), so atLaunch true and no A event row. The Block puts circulating at 427M at unpause. Vested core-contributor/backer amounts at unpause were not stated in any fetched page. No B events in window 2024-04-01..2025-11-16: every allocation vests linearly (48 or 96 months), the backers' 1-year lockup ended ~Sep 2023, and no fetched page lists a cliff in the window. Unpause exact time/tx not confirmed (Safe forum pages redirected off the allowlist).",
+  "sources": [
+   {
+    "label": "The Block: Safe token trades at $2.8B FDV after becoming transferable (23 Apr 2024)",
+    "url": "https://www.theblock.co/post/290077/safe-token-trades-at-2-8-billion-fdv-after-becoming-transferable",
+    "kind": "news",
+    "confirms": [
+     "unpaused 23 Apr 2024",
+     "circulating 427M",
+     "~$2.8 FDV-implied price"
+    ]
+   },
+   {
+    "label": "Cointelegraph: Safe token drops 42% after enabling transfers (30 Apr 2024)",
+    "url": "https://cointelegraph.com/news/safe-token-drops-42-percent-after-enabling-transfers?rand=26097",
+    "kind": "news",
+    "confirms": [
+     "transfers enabled 23 Apr 2024",
+     "price $3.26 on 23 Apr"
+    ]
+   },
+   {
+    "label": "Safe Foundation blog: SAFE Tokenomics (16 Apr 2024)",
+    "url": "https://safefoundation.org/blog/safe-tokenomics",
+    "kind": "primary",
+    "confirms": [
+     "allocations",
+     "backers 1-year lockup, 4-year vest",
+     "core contributors 4-year vest"
+    ]
+   },
+   {
+    "label": "Tokenomics.com SAFE",
+    "url": "https://app.tokenomics.com/tokenomics/safe",
+    "kind": "aggregator",
+    "confirms": [
+     "TGE 28 Sep 2022",
+     "linear schedules"
+    ]
+   }
+  ]
+ },
+ {
+  "token": "WCT",
+  "name": "WalletConnect Token",
+  "binanceFuturesSymbol": "WCTUSDT",
+  "firstInsiderUnlock": {
+   "date": "2025-11-26",
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "First insider unlock follows the project's Blockworks token-transparency filing: token-warrant holders (early backers) have a 4-year lock-up with a 1-year cliff from 26 Nov 2024, so 25% unlocks on 26 Nov 2025, then monthly linear for 3 years. 25% of 115M = 28.75M is derived, not stated. Early team has a 1-year cliff from each member's Reown start date (dates not disclosed), and WCT docs say team/core development/backers have a 4-year unlock with a 1-year cliff from TGE. That is 26 Nov 2025, one day AFTER the window end (2025-11-16), so it is not listed as an event. DATE CONFLICT to note: Tokenomist's Nov 10-16 2025 digest and MEXC (9 Nov 2025) listed a cliff on 15 Nov 2025 (Team & Token Warrants + private sale + treasury, ~124.9M WCT, ~$15-16M, 65.21% of circulating), which would be in window. CoinGape (23 Nov 2025) later listed 26 Nov 2025 (128.12M WCT, 12.8% of total supply, 68.8% of market cap), which matches the project filing. Project statement preferred, so 26 Nov 2025 is used and dateConflict would be true. If the backtest window is extended past 16 Nov 2025, add a B+A event on 2025-11-26 (~124.9-128.1M WCT, ~65-69% of circulating, shape lump at the 25% cliff then monthly; recipients team + token-warrant backers + private sale + treasury). Exact amount and circulating before still need a primary on-chain or project confirmation. Launch/transferability was 15 Apr 2025 (Blockworks filing). Initial circulating 186.2M was non-insider. Tokenomics.com lists TGE 15 Apr 2025 with a '7-month cliff, 36-month linear' for team/token warrants, which conflicts with the filing.",
+  "sources": [
+   {
+    "label": "Blockworks token transparency filing: WCT",
+    "url": "https://blockworks.com/api/transparency-report/connect-token-wct",
+    "kind": "primary",
+    "confirms": [
+     "transferable 15 Apr 2025",
+     "token warrants 1-yr cliff from 26 Nov 2024, 25% on 26 Nov 2025",
+     "team cliff from member start date",
+     "initial circulating 186.2M"
+    ]
+   },
+   {
+    "label": "WalletConnect docs: token dynamics",
+    "url": "https://docs.walletconnect.network/token-dynamics/",
+    "kind": "primary",
+    "confirms": [
+     "team/core dev/backers 4-year unlock with 1-year cliff from TGE"
+    ]
+   },
+   {
+    "label": "Tokenomist weekly unlock digest Nov 10-16 2025",
+    "url": "https://tokenomist.ai/research/weekly-unlock-digest-nov-10-16-2025",
+    "kind": "aggregator",
+    "confirms": [
+     "15 Nov 2025 cliff listed, 65.21% of circulating, team & token warrants"
+    ]
+   },
+   {
+    "label": "MEXC news (9 Nov 2025)",
+    "url": "https://www.mexc.com/news/159766",
+    "kind": "news",
+    "confirms": [
+     "~124.9M WCT on 15 Nov 2025 00:00 UTC, 65.21% of circulating"
+    ]
+   },
+   {
+    "label": "CoinGape: top token unlocks this week (23 Nov 2025)",
+    "url": "https://coingape.com/trending/top-token-unlocks-to-watch-this-week/amp/",
+    "kind": "news",
+    "confirms": [
+     "128.12M WCT on 26 Nov 2025",
+     "68.8% of market cap"
+    ]
+   },
+   {
+    "label": "Tokenomics.com WCT unlocks",
+    "url": "https://app.tokenomics.com/tokenomics/walletconnect/unlocks",
+    "kind": "aggregator",
+    "confirms": [
+     "TGE 15 Apr 2025",
+     "7-month cliff 36-month linear (conflicting)"
+    ]
+   }
+  ]
+ }
+]

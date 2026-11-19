@@ -1,0 +1,395 @@
+[
+ {
+  "token": "APEX",
+  "name": "ApeX Protocol",
+  "binanceFuturesSymbol": null,
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "First insider unlock not confirmed from a fetched primary page. TokenRadar (https://tokenradar.ai/tokens/apex/tokenomics) gives genesis April 2022 and says the white paper put core team + early investors on a 24-month cliff then 24-month vesting, which would imply a first insider release around April 2024 (outside the window), but no exact date is published and TokenRadar says the team schedule was later changed. No qualifying (>=25% of circulating) single-day unlock found in 2025-09-01..2025-11-16: Tokenomist's feedback thread (https://feedback.tokenomist.ai/b/data-correction-requests/the-unlock-quantity-and-schedule-for-the-apex-token-are-incorrect) quotes the project saying the 2025-02-10 10M APEX release was the last planned unlock; a Crypto Briefing piece republished by Pluang (https://pluang.com/en/news-feed/apex-protocol-koreksi-data-supply-apex) says ApeX states total supply 500M after burns, ~146M circulating, insider vesting complete and no further unlocks planned. Tokenomist's own event table is paywalled. Price check: $1.74 on 2025-09-30 (https://beincrypto.com/apex-token-price-rally-insider-buying-concerns)."
+ },
+ {
+  "token": "BICO",
+  "name": "Biconomy",
+  "binanceFuturesSymbol": "BICOUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": true
+  },
+  "events": [],
+  "gap": "First insider unlock = TGE: DropsTab vesting (https://dropstab.com/coins/biconomy/vesting) lists Private Round (120M) and Strategic Round (5M) with 10% unlocked at TGE, so investors got tokens at launch. Exact TGE day not confirmed: Biconomy's $BICO Token Economics post of 2021-10-29 (https://medium.com/biconomy/bico-token-economics-b33ff71f673d) says 'The TGE happens on 23rd Nov 2021', but the project's 2021-11-09 recap (https://medium.com/biconomy/recap-token-community-call-ep-02-19810705c8dc) says only 'planned around the end of November'; Daily Hodl (https://dailyhodl.com/2021/12/01/coinbase-launches-support-for-little-known-altcoin-project-triggering-instant-78-price-increase/amp/) shows BICO already priced at $6.49 before its 2021-12-01 Coinbase Pro listing, so TGE was on or before 2021-12-01 and most likely before the window start (inWindow false, date left null). Initial circulating 65.4M (project recap; Binance Research 2021-12-09 shows 65,374,608). No single-day unlock >=25% of circulating found in the window: DropsTab models team/advisors, pre-seed, seed, private and foundation as linear (23-26 month) vesting ending Mar-Sep 2024 and community linear to 2025-11-01; the dates DropsTab lists (2024-03-14, 2024-06-14, 2024-09-14) are vesting END dates, not cliff days. Not confirmed: whether team/seed vesting began with a catch-up cliff lump around Oct 2022 (DropsTab's 23-month linear ending 2024-09-14 implies a start ~Oct 2022, which could have been a large cliff vs ~65-200M circulating). The vesting images in the project Medium post could not be read. Price check: ~$5.81 on 2021-12-10 (https://coinmarketcap.com/academy/article/what-is-biconomy-bico-features-tokenomics-and-price-prediction)."
+ },
+ {
+  "token": "DBR",
+  "name": "deBridge",
+  "binanceFuturesSymbol": null,
+  "firstInsiderUnlock": {
+   "date": "2025-04-17",
+   "inWindow": true,
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2025-04-17",
+    "amountTokens": 1110000000,
+    "circulatingBefore": 1160000000,
+    "pctCirculating": 95.7,
+    "shape": "lump",
+    "recipients": "6-month cliff for insiders: 400M DBR core contributors + 340M strategic partners (angels, founders, funds) + 40M validators, plus first quarterly tranches of ecosystem (176.93M), community/launch and foundation; same day LFG/airdrop vested 50% became claimable",
+    "recipientsMix": {
+     "team": 0.36,
+     "investors": 0.306,
+     "community": null,
+     "ecosystem": 0.159,
+     "other": 0.175
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": 0.029,
+    "priceSource": "https://beincrypto.com/token-unlocks-to-watch-april/",
+    "sources": [
+     {
+      "label": "deBridge docs - DBR Tokenomics",
+      "url": "https://docs.debridge.foundation/faq-airdrop-season-1/dbr-tokenomics",
+      "kind": "primary",
+      "confirms": [
+       "core contributors 0 at TGE, 400M unlocks 6 months after TGE",
+       "strategic partners 0 at TGE, 340M unlocks 6 months after TGE",
+       "validators 40M at 6 months",
+       "other allocations quarterly over 3 years starting 6 months after TGE"
+      ]
+     },
+     {
+      "label": "CoinDesk - deBridge token goes live (2024-10-17)",
+      "url": "https://hotfix.coindesk.com/markets/2024/10/17/debridge-token-goes-live-with-dbr-airdropped-to-491k-wallets",
+      "kind": "news",
+      "confirms": [
+       "TGE 2024-10-17",
+       "1.8B DBR circulating at launch",
+       "strategic partners and core contributors locked until six months after TGE",
+       "open price $0.03"
+      ]
+     },
+     {
+      "label": "BeInCrypto - 3 token unlocks to watch for April (2025-03-30)",
+      "url": "https://beincrypto.com/token-unlocks-to-watch-april/",
+      "kind": "news",
+      "confirms": [
+       "date April 17",
+       "1.11B DBR",
+       "1.16B circulating",
+       "400M core contributors, 340M strategic partners, 176.93M ecosystem",
+       "~$32.19M value"
+      ]
+     },
+     {
+      "label": "deBridge Foundation - Vested DBR unlocks for LFG and airdrop recipients (2025-04-17)",
+      "url": "https://debridge.foundation/blog/vested-dbr-unlocks-for-lfg-and-airdrop-recipients",
+      "kind": "primary",
+      "confirms": [
+       "vesting concluded and claims opened 2025-04-17"
+      ]
+     }
+    ],
+    "gap": "recipientsMix computed from BeInCrypto figures (400M/340M/176.93M of 1.11B); the remaining ~193M (community, foundation, validators) is not split, put in 'other'. circulatingBefore 1.16B is the aggregator-measured figure quoted by BeInCrypto; CoinDesk says 1.8B was unlocked at TGE (difference likely foundation/ecosystem tokens not counted), giving ~62% on that base - either way >=25%. priceUsd derived ($32.19M / 1.11B), not a quoted spot price."
+   },
+   {
+    "date": "2025-07-17",
+    "amountTokens": null,
+    "circulatingBefore": null,
+    "pctCirculating": null,
+    "shape": "lump",
+    "recipients": "Second quarterly tranche for all buckets (core contributors, strategic partners, validators, ecosystem, community, foundation)",
+    "recipientsMix": null,
+    "firstInsiderUnlock": false,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "deBridge docs - DBR Tokenomics",
+      "url": "https://docs.debridge.foundation/faq-airdrop-season-1/dbr-tokenomics",
+      "kind": "primary",
+      "confirms": [
+       "quarterly releases over 3 years after the 6-month mark"
+      ]
+     },
+     {
+      "label": "Tokenomist weekly digest Oct 12-18 2026",
+      "url": "https://tokenomist.ai/research/weekly-unlock-digest-oct-12-18-2026-debridge-releases-10-of-cir-supply",
+      "kind": "aggregator",
+      "confirms": [
+       "quarterly tranche size ~605M DBR (Oct 2026 tranche, 'eighth scheduled release counting the October 2024 launch tranche')"
+      ]
+     }
+    ],
+    "gap": "BORDERLINE, not confirmed. No fetched page gives the July 2025 tranche amount or circulating supply. Estimate only: if the quarterly tranche was ~605M (size of the Oct 2026 tranche per Tokenomist) and circulating before was ~2.27B (1.16B + 1.11B April unlock, aggregator basis), it is ~26.6% and qualifies; on the unlocked-supply basis (~2.91B) it is ~20.8% and does not. Date assumed from the quarterly cadence after 2025-04-17 and Tokenomist's tranche count; exact date not seen on a page. Keep or drop per the test's circulating-supply convention."
+   }
+  ],
+  "gap": "The 2025-10-17 quarterly tranche (~605M if same size) would be ~21% or less of circulating (~2.9B+) and is not listed. Tokenomist's own event table is paywalled; DefiLlama unlocks page failed to load. Price: Not Binance-listed; ticker check via CoinDesk launch price $0.03."
+ },
+ {
+  "token": "FLR",
+  "name": "Flare",
+  "binanceFuturesSymbol": null,
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": true,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "First insider unlock date NOT confirmed. Facts found: TDE (launch) was 2023-01-09 with 4.279B FLR (15% of the public allocation) airdropped (ForkLog 2023-03-17, https://forklog.com/en/flare-team-begins-distributing-flr-tokens-worth-714-million/; FIP.01 summary https://medium.com/flarenetwork/flare-improvement-proposal-01-fip-01-summary-implementation-5087dfcec72a, which does not say insiders got tokens at TDE). Flare docs FAQ (https://flare-docs-cookbook.vercel.app/support/flr) says for Flare Foundation and Flare Labs 'their distribution doesn't begin until month six', team members are 'restricted from selling any of their tokens for the first six months' and 'may sell no more than 25% within the first 18 months', and most recipients get allocations 'gradually and consistently over the full 36 months' - implying insider releases began around July 2023 (inside the window) as a gradual stream, but no exact date or amount is published; the sell-restriction wording leaves open whether team wallets held tokens from the TDE. CryptoPotato 2023-10-13 (https://cryptopotato.com/flare-announces-2-1b-flr-burn-to-safeguard-community-holdings-and-attract-new-users/) says remaining backer tokens 'were provided earlier that week' and ~2.1B of backer tokens are burned instead (198.9M at once, 66.29M monthly to Jan 2026). CoinDesk 2024-02-23 (https://coindesk.com/business/2024/02/23/layer-1-network-flare-raises-35m-from-kenetic-aves-lair) says early-investor distribution originally due in 2024 was voluntarily pushed to Q1 2026 with sales capped at 0.5% of daily volume (relocked/delayed, outside window). TokenRadar (https://tokenradar.ai/tokens/flare/tokenomics) has no release dates for team/backers/foundation. No single-day unlock >=25% of circulating confirmed: monthly FlareDrops were 676M FLR (~16% of the ~4.28B circulating right after TDE, shrinking in % thereafter) and are community distributions, not insider; the month-six insider start could not be sized or dated. Price check: ~$0.03 in March 2023 (derived from ForkLog's $714M / 24.2B)."
+ },
+ {
+  "token": "KMNO",
+  "name": "Kamino Finance",
+  "binanceFuturesSymbol": "KMNOUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": true,
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": null,
+    "amountTokens": 229170000,
+    "circulatingBefore": null,
+    "pctCirculating": null,
+    "shape": "lump",
+    "recipients": "First monthly tranche to Key Stakeholders & Advisors (145.83M) and Core Contributors (83.33M) after the 12-month lockup from the 2024-04-30 TGE",
+    "recipientsMix": {
+     "team": 0.364,
+     "investors": 0.636,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "Kamino docs - KMNO",
+      "url": "https://kamino.com/docs/kmno",
+      "kind": "primary",
+      "confirms": [
+       "TGE 2024-04-30",
+       "Core Contributors 20%: 12-month lockup then linear 24 months",
+       "Key Stakeholders & Advisors 35%: 12-month lockup then linear 24 months"
+      ]
+     },
+     {
+      "label": "EconoTimes - Token Unlock Today: Kamino (2025-07-30)",
+      "url": "https://econotimes.com/FxWirePro-Token-Unlock-Today-Kamino-1717528",
+      "kind": "news",
+      "confirms": [
+       "monthly insider tranche 229.17M KMNO = 145.83M advisors/stakeholders + 83.33M core contributors",
+       "~9.5% of 2.4B circulating on 2025-07-30"
+      ]
+     },
+     {
+      "label": "tokenomics.com KMNO unlocks",
+      "url": "https://app.tokenomics.com/tokenomics/kamino/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "insider tranches fall on the 30th of each month",
+       "229.2M insider tranche size"
+      ]
+     }
+    ],
+    "gap": "Exact date of the first insider tranche not confirmed: the 12-month lockup from the 2024-04-30 TGE points to 2025-04-30 (or 2025-05-30 if the first monthly release came one month after lockup end); no fetched page dated it and Tokenomist's event table is paywalled. Size assumed equal to the confirmed monthly 229.17M tranche (5.5B insider tokens / 24). Estimated circulating before ~1.7B (back-calculated from 2.4B on 2025-07-30 minus three prior tranches; my calculation) -> ~13%, so this first insider unlock is NOT a >=25% event and no catch-up lump was reported."
+   }
+  ],
+  "gap": "No single-day unlock >=25% of circulating found in 2024-10-01..2025-11-16: insider releases are monthly ~229M tranches (~9.5% of circulating by July 2025, higher % earlier but est. ~13% at the first one). Community season rewards (e.g. Season 4) are separate small releases. Price check: ~$0.06 implied on 2025-07-30 (EconoTimes $13.8M / 229.17M; derived)."
+ },
+ {
+  "token": "OG",
+  "name": "OG Fan Token",
+  "binanceFuturesSymbol": "OGUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "Ticker check: OG = OG Fan Token (OG Esports, on Chiliz/Socios); Binance Futures OGUSDT perp launched 2025-05-12 (https://thedefiant.io/news/cefi/binance-futures-launches-ogusdt-perpetual-contract-og-fan-token-up-to-50x-on-12-94670192), matching the input. Fan token launched via Socios Fan Token Offering in the week of 2020-03-05 (Decrypt, https://decrypt.co/21502/dota-2-champs-og-launch-fan-token-on-chilizs-socios-com?amp=1). There are no investor or advisor allocations: Binance Research (https://www.binance.com/research/projects/og-fan-token, 2020-12-23) says total supply 5M OG, 1,274,535 sold to fans, Launchpool 652,647, and the remainder held by OG (the club/issuer) on a 'monthly linear vesting schedule of 4 years' of 1.25M OG/year 'starting June 2020' - so the only insider (club) release began as a monthly stream in June 2020, before the window; exact day not published (date null). That 4-year schedule would have ended around mid-2024 and was monthly (~104k OG/month), so no single-day release >=25% of circulating is plausible in 2023-04-01..2025-11-16, and none was found. Not checked in depth: the Sept 2025 Chiliz stake in OG Esports and a 2026 contract migration (outside window) noted on CoinMarketCap (https://coinmarketcap.com/cmc-ai/og-fan-token/latest-updates). No window price fetched."
+ },
+ {
+  "token": "PUFFER",
+  "name": "Puffer Finance",
+  "binanceFuturesSymbol": "PUFFERUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": true,
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": null,
+    "amountTokens": 19170000,
+    "circulatingBefore": null,
+    "pctCirculating": null,
+    "shape": "lump",
+    "recipients": "First monthly tranche after the 1-year cliff: Investors (~10.83M) and Early Contributors & Advisors (~8.33M)",
+    "recipientsMix": {
+     "team": 0.435,
+     "investors": 0.565,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": true,
+    "priceUsd": 0.081,
+    "priceSource": "https://www.kucoin.com/news/flash/puffer-finance-to-unlock-1-56m-in-puffer-tokens-in-one-week",
+    "sources": [
+     {
+      "label": "Puffer docs - The PUFFER Token",
+      "url": "https://docs.puffer.fi/governance/token",
+      "kind": "primary",
+      "confirms": [
+       "Early Contributors & Advisors 20%: 3 years with 1-year cliff",
+       "Investors 26%: 1-year cliff then 2 years vesting",
+       "initial circulating 102.3M (10.23%)"
+      ]
+     },
+     {
+      "label": "KuCoin/ChainCatcher (RootData data) 2025-11-07",
+      "url": "https://www.kucoin.com/news/flash/puffer-finance-to-unlock-1-56m-in-puffer-tokens-in-one-week",
+      "kind": "news",
+      "confirms": [
+       "~19.17M PUFFER unlock on 2025-11-14 00:00 Beijing time (= 2025-11-13 16:00 UTC)",
+       "~$1.56M value"
+      ]
+     },
+     {
+      "label": "tokenomics.com PUFFER unlocks",
+      "url": "https://app.tokenomics.com/tokenomics/puffer-finance/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "TGE 2024-10-13",
+       "insider tranches monthly on the 14th",
+       "12-month cliff, 24-month linear for investors and contributors"
+      ]
+     },
+     {
+      "label": "Tokenomist PUFFER updates",
+      "url": "https://www.tokenomist.ai/puffer-finance/updates",
+      "kind": "aggregator",
+      "confirms": [
+       "Bybit PUFFER perp and spot listings 2024-10-14"
+      ]
+     }
+    ],
+    "gap": "Exact first insider tranche date not confirmed. 1-year cliff from the 2024-10-13/14 TGE implies ~2025-10-14; a 19.17M tranche is confirmed for 2025-11-14 Beijing time (2025-11-13 UTC), which may be the first or second. Day-of-month conflicts between sources: tokenomics.com shows the 14th, while Bitrue/CoinGecko (2026 data, https://www.bitrue.com/blog/why-is-puffer-price-surge) show ~8th-9th and Tokenomist shows the 8th - hence dateConflict true. Size = monthly linear tranche (460M insider tokens / 24 = 19.17M), split per Bitrue/CoinGecko 8.33M contributors + 10.83M investors. No cliff lump. Circulating before not fetched for late 2025 (102.3M at TGE, ~575M by Oct 2026), so pct unknown, but 19.17M cannot reach 25% of any plausible late-2025 circulating figure (>102M). priceUsd derived ($1.56M / 19.17M)."
+   }
+  ],
+  "gap": "No single-day unlock >=25% of circulating found in 2024-10-01..2025-11-16; insider vesting is monthly ~19.17M tranches after a 1-year cliff with no catch-up lump. Launch-day airdrop/community releases are not insider."
+ },
+ {
+  "token": "SYRUP",
+  "name": "Maple Finance (SYRUP, formerly MPL)",
+  "binanceFuturesSymbol": "SYRUPUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": true
+  },
+  "events": [],
+  "gap": "SYRUP is a migration of MPL (1 MPL = 100 SYRUP, ~1.15B SYRUP minted; MIP-010 https://community.maple.finance/t/mip-010-syrup-token-launch-and-mpl-syrup-conversion/334; TokenRadar gives SYRUP genesis Nov 2024). First insider unlock = the original MPL TGE in April 2021 (atLaunch true, outside window): Quinn Thompson's 2021-11-28 research report (https://quinnthompson.substack.com/p/maple-finance-research-report-from) says MPL supply was minted 2021-04-20 and seed investors had '5% unlocked at TGE, then 18-month linear vest', strategic OTC buyers 12-month linear from TGE. Exact TGE/trading day not confirmed (mint date 2021-04-20 is not necessarily the TGE), so date null. No single-day unlock >=25% of circulating possible in 2024-12-01..2025-11-16: the Blockworks Token Transparency filing (https://blockworks.com/token-transparency/filing/maple-finance/dc60bd1d-3554-4c92-9caf-82e8fc10d4c5, 2025-06-30) shows 1,073,833,091 SYRUP circulating of 1,193,569,783 total on 2025-06-21, >90% of team allocation already vested, investor rounds on 12-18 month linear vesting (latest round June 2023, ending ~late 2024); remaining issuance is staking emissions/buyback rewards (TokenRadar https://tokenradar.ai/tokens/maple-finance/tokenomics). Flags note: migration (MPL->SYRUP, Nov 2024). No price fetched for the window."
+ },
+ {
+  "token": "ZORA",
+  "name": "Zora",
+  "binanceFuturesSymbol": "ZORAUSDT",
+  "firstInsiderUnlock": {
+   "date": "2025-10-23",
+   "inWindow": true,
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2025-10-23",
+    "amountTokens": 166670000,
+    "circulatingBefore": 3500000000,
+    "pctCirculating": 4.76,
+    "shape": "lump",
+    "recipients": "First monthly vesting tranche after the 6-month lock: strategic investors 72.5M, team 52.5M, treasury 41.67M",
+    "recipientsMix": {
+     "team": 0.315,
+     "investors": 0.435,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0.25
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": true,
+    "priceUsd": 0.047,
+    "priceSource": "https://crypto.news/is-zora-done-4-8-token-unlock-hits-this-month-as-zora-price-languishes-in-downtrend/",
+    "sources": [
+     {
+      "label": "Zora support - $ZORA token",
+      "url": "https://support.zora.co/en/articles/4797185",
+      "kind": "primary",
+      "confirms": [
+       "team and strategic investors unlock monthly over 36 months starting six months after TGE",
+       "treasury monthly over 48 months starting six months after TGE",
+       "states 'TGE for $ZORA was March 11, 2025'"
+      ]
+     },
+     {
+      "label": "crypto.news 2025-10-01",
+      "url": "https://crypto.news/is-zora-done-4-8-token-unlock-hits-this-month-as-zora-price-languishes-in-downtrend/",
+      "kind": "news",
+      "confirms": [
+       "Oct 23 unlock",
+       "166.67M ZORA",
+       "treasury 41.67M / investors 72.5M / team 52.5M",
+       "~4.76% of circulating"
+      ]
+     },
+     {
+      "label": "MEXC news",
+      "url": "https://www.mexc.com/news/115984",
+      "kind": "news",
+      "confirms": [
+       "Oct 23",
+       "first major vesting unlock since the April 23 TGE"
+      ]
+     },
+     {
+      "label": "BeInCrypto 2025-10-27",
+      "url": "https://beincrypto.com/major-crypto-token-unlocks-grass-jupiter-zora",
+      "kind": "news",
+      "confirms": [
+       "166.67M with same split",
+       "circulating 4.469B",
+       "gives date October 30 (conflict)"
+      ]
+     },
+     {
+      "label": "DefiLlama unlocks - ZORA Protocol",
+      "url": "https://defillama.com/unlocks/zora-protocol",
+      "kind": "aggregator",
+      "confirms": [
+       "team/treasury/investors 6-month cliff then monthly vesting",
+       "states the cliff was in September 2025 and unlocks on the 30th (conflict)"
+      ]
+     }
+    ],
+    "gap": "Date conflict >2 days with no exact project-stated day: crypto.news and MEXC say Oct 23 (= 6 months after the 2025-04-23 trading launch); BeInCrypto says Oct 30; DefiLlama says the cliff was September 2025 with unlocks on the 30th; Zora's own support page says TGE was 2025-03-11 (which would put six months at ~Sept 11) while news reports the TGE/launch as 2025-04-23. KuCoin (https://www.kucoin.com/news/flash/zora-unlocks-166-666-million-tokens-worth-8-936-million) reports a 166.67M tranche around 2025-11-22, consistent with a ~22nd/23rd monthly cadence. circulatingBefore 3.5B is back-calculated from crypto.news's 4.76%; BeInCrypto gives 4.469B (=3.7%). No catch-up lump: each month releases 1/36 of team (1.89B) and investors (2.61B) plus 1/48 of treasury. 'other' in mix = treasury. Price derived from crypto.news dollar values (~$0.047 on 2025-10-01); BeInCrypto's $16.3M implies ~$0.098 - inconsistent."
+   }
+  ],
+  "gap": "No single-day unlock >=25% of circulating in 2025-04-01..2025-11-16: insider releases are monthly ~166.67M tranches (~4-5% of circulating). Launch-day (2025-04-23) airdrop/incentive/liquidity supply was not insider (Zora support lists those as not subject to lockup)."
+ }
+]

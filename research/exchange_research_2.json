@@ -1,0 +1,110 @@
+[
+ {
+  "token": "AKT",
+  "name": "Akash Network",
+  "binanceFuturesSymbol": "AKTUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": null
+  },
+  "events": [],
+  "gap": "First insider unlock not confirmed: Akash's own CEO statement (2020-10-20) says Mainnet 1 launched 2020-09-25 with only 2,800,000 AKT unlocked at Genesis out of a 100M genesis mint, and points to an unlock schedule on the AKT token mini-site, which no longer shows it (akash.network/token has no vesting data; Tokenomist's event table is paywalled). So the date insiders first received transferable AKT (certainly before the 2024-04-01 window start) could not be confirmed from a fetched page. No B event: Tokenradar lists no large cliff in 2024-2025 (only Genesis Mint cliff 2020-09-25 and small community-pool items) and Tokenomist states 'no upcoming cliff unlock scheduled'; supply growth in the window is inflation/staking rewards, not insider cliffs. Sources: https://akash.network/blog/ceo-statement-on-total-akt-token-circulation (primary), https://tokenradar.ai/tokens/akash-network/tokenomics (aggregator), https://tokenomist.ai/akash-network/tokenomics (aggregator)."
+ },
+ {
+  "token": "AUCTION",
+  "name": "Bounce Token",
+  "binanceFuturesSymbol": "AUCTIONUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": null
+  },
+  "events": [],
+  "gap": "No vesting schedule for Bounce found on any fetched page (Binance Research project page of 2020-10-29, CryptoRank, DefiLlama and OneKey carry no allocation or unlock data). Confirmed context: AUCTION is a migration token; Binance announced (2021-02-20) the redenomination 1 BOT = 100 AUCTION, with AUCTION trading opening 2021-02-25 06:00 UTC, i.e. before the 2022-03-01 window. First insider unlock (in the 2020 BOT era) could not be confirmed, so null. No 25%+ single-day unlock in the window was found in any source; aggregators show circulating 6.59M (CryptoRank) / 7.41M (DefiLlama) of a 10M max, but no source lists the schedule, so 'no B event' is unverified rather than confirmed. Sources: https://www.binance.com/en/support/announcement/15d3ee5164424edab3c604501e794701 (primary exchange notice), https://cryptorank.io/price/auction, https://defillama.com/token/AUCTION (aggregators)."
+ },
+ {
+  "token": "CORE",
+  "name": "Core (Core DAO)",
+  "binanceFuturesSymbol": null,
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": null,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "Input shows no Binance perp (binancePerpSince null), so binanceFuturesSymbol is null; trades on Bybit/Gate as CORE perps. Core's own tokenomics post (Medium, 2023-01-09) allocates 315,000,000 CORE (15%) to Contributors and states 'At the time of mainnet, there has been no public or private sales of CORE tokens to investors', so there was no investor allocation at launch (atLaunch false). Contributors vest over four years with a one-year lock (cryptonews.net 2026-07-01; Tokenradar: 'a one-year lock followed by monthly vesting'), implying a first contributor unlock around early 2024, but no fetched page gives the exact date, so date is null and inWindow unknown (it would be inside the 2023-02-01 window if it happened ~2024). No 25%+ single-day unlock found: Tokenradar lists no large single-day unlocks in 2023-2025 (only the modeled Genesis creation of 2.1B in Jan 2023) and shows contributor releases as ~3.5-8.8M monthly; circulating was 886,271,707 CORE on 2024-05-03 (Coinone primer), so a monthly contributor tranche is ~1%. Tokenomist's event table is paywalled. Sources: https://medium.com/@core_dao/the-3d-blockchain-an-introduction-to-cores-distribution-and-tokenomics-c6e987ca5ae7 (primary), https://tokenradar.ai/tokens/core/tokenomics (aggregator), https://cryptonews.net/news/altcoins/33079534/ (news), https://research.coinone.co.kr/primer/CORE_digital_asset_info_50CE436C87D2A66C.pdf (exchange primer)."
+ },
+ {
+  "token": "EUL",
+  "name": "Euler",
+  "binanceFuturesSymbol": "EULUSDT",
+  "firstInsiderUnlock": {
+   "date": "2022-01-01",
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "First insider unlock taken as 2022-01-01, the start of linear (stream) vesting: Euler's own docs say 'Founder vesting linear unlock schedule starting on 01/01/2022' for Euler Labs; DefiLlama shows the schedule starting 'Jan 1, 2022' as daily linear streams for Euler Labs (4,930 EUL/day), Shareholders (12,823 EUL/day), DAO Partners and Encode Incubator; Tokenradar says investor and incubator allocations have linear unlocks beginning January 2022 and dates the genesis mint 2021-12-30. Conflict: DropsTab (which carries an accuracy disclaimer) lists a TGE on 2021-11-26 with 5.55% TGE unlocks for Euler Labs Shareholders and EulerDAO partners; if correct, launch day would be the first insider unlock. The precise date insiders could first transfer EUL is therefore not settled (dateConflict-type issue; both dates are before the 2023-03-01 window). No 25%+ single-day unlock in the window: insider allocations vested as daily linear streams (DefiLlama, Tokenradar list no large single-day unlocks 2023-2025); DropsTab's 2023-04-26 / 2024-04-26 / 2025-10-26 dates appear to be vesting-end markers of linear schedules, not cliffs, and no other source shows a lump on those dates. Euler docs now state strategic-partner tokens are 'fully unlocked'. Sources: https://docs.euler.finance/EUL/overview (primary), https://defillama.com/unlocks/euler (aggregator), https://tokenradar.ai/tokens/euler/tokenomics (aggregator), https://dropstab.com/coins/euler/vesting (aggregator), https://www.binance.com/fr/research/projects/euler (Binance Research, 2025-10-26)."
+ },
+ {
+  "token": "KAIA",
+  "name": "Kaia (ex-Klaytn KLAY + Finschia FNSA)",
+  "binanceFuturesSymbol": "KAIAUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": null
+  },
+  "events": [],
+  "gap": "KAIA is a migration token: per Kaia's transition FAQ, KLAY balances were automatically reflected as KAIA and FNSA holders burned FNSA to claim KAIA; circulating supply rose from ~3.804B to ~5.805B KAIA at the merger. Tokenradar dates the FNSA-holder conversion cliff (1,179,000,000) to 2024-08-29, before the 2024-10-01 window, so it is not listed. First insider unlock belongs to the KLAY era: Klaytn genesis 2019-06-24 (Tokenradar), mainnet live 2019-06-27 (CoinDesk); Binance Research lists Private Sale 18% and Team 5% but its release-schedule section is empty, and Tokenradar says private-sale vesting finished by March 2021 without a start date. Whether investors/team could transfer on launch day, or the first insider release date, could not be confirmed, so null. No B event: Tokenradar finds no single-day unlock in Oct 2024-Nov 2025 (only claim-based portal/reward caps and PoS issuance) and lists no team allocation for KAIA; the FAQ mentions no team/investor lockups. Sources: https://docs.kaia.io/misc/kaia-transition/faq-chain-transition/ (primary), https://tokenradar.ai/tokens/kaia/tokenomics, https://tokenradar.ai/tokens/klaytn/tokenomics (aggregators), https://www.binance.com/research/projects/klaytn (Binance Research), https://hotfix.coindesk.com/markets/2019/06/27/kakaos-klaytn-blockchain-has-gone-live-with-support-from-major-firms (news)."
+ },
+ {
+  "token": "MNT",
+  "name": "Mantle (ex-BitDAO BIT)",
+  "binanceFuturesSymbol": null,
+  "firstInsiderUnlock": {
+   "date": "2021-08-16",
+   "inWindow": false,
+   "atLaunch": true
+  },
+  "events": [],
+  "gap": "Input shows no Binance perp (binancePerpSince null), so binanceFuturesSymbol is null. MNT is a migration token (BIT -> MNT 1:1 per Mantle's AMA recap; Tokenradar dates the MNT creation to 2023-06-20 and says the schedule 'was fully unlocked on July 7, 2023'), all before the 2023-10-01 window. First insider unlock is in the BitDAO era. ICO Drops gives the TGE as 2021-08-16 (IDO on Sushi MISO, no lock-up). Token Terminal (from BitDAO docs/forum) shows 'ByBit Flexible' 1.5B BIT and Launch Partner Rewards 'Fully unlocked on the 15th of July 2021', i.e. before or at TGE. Bybit was BitDAO's founding backer/contributor, so the launch day is treated as the first insider unlock (atLaunch true). If Bybit is not counted as an insider, the first VC unlock is the private-sale lock-up end, 2021-10-15, after which the 500M private-sale BIT vested monthly to 2022-10-15 (Token Terminal; ICO Drops: '3 months cliff, then linear over 12 months'). No B event in the window: Bybit Locked (4.5B) vested monthly 2022-07-15 to 2024-07-15 (~187.5M/month, a few % of supply), the Mantle AMA says Bybit's tokens were 'immediately vested and transferred to the Mantle Treasury', and Tokenradar lists no further scheduled releases or single-day unlocks Oct 2023-Nov 2025 (the treasury is released by governance, not a schedule). Sources: https://bb-add-morpho-tvl.preview.tokenterminal.com/terminal/projects/bitdao/vesting-schedule (aggregator, from BitDAO docs), https://icodrops.com/bitdao (aggregator), https://medium.com/0xmantle/the-new-mantle-token-ama-recap-de6715dc6103 (primary), https://tokenradar.ai/tokens/mantle/tokenomics (aggregator)."
+ },
+ {
+  "token": "PHA",
+  "name": "Phala Network",
+  "binanceFuturesSymbol": "PHAUSDT",
+  "firstInsiderUnlock": {
+   "date": "2020-09-11",
+   "inWindow": false,
+   "atLaunch": true
+  },
+  "events": [],
+  "gap": "First insider unlock: Phala's own Medium post says the first private-sale unlock of 90 million PHA (60% of the private sale) 'happened six months ago (2020, Sep. 11th)', after the PHA listing; Huobi's listing notice says 60% of the private sale and 20% (10,000,000) of the team/developer incentive unlock 'after the mainnet launch or token transfer enabled'; a Phala forum post (2021-09-07) confirms 90M investor and 10M core-team tokens unlocked in September 2020. Insiders therefore got tokens when transfers started, so atLaunch true. The exact listing day is not stated on the fetched pages (only 'around Sept 2020'), so the 2020-09-11 date comes from Phala's own statement. Later insider tranches: 30M on 2021-03-11, the final 30M on 2021-09-11, team 2.5M/month to ~Sept 2021, i.e. all before the 2024-03-01 window. No B event: no insider cliff exists after 2021 on any fetched source; remaining supply is the 70% TEE-mining pool released as ongoing rewards. Sources: https://medium.com/phala-network/the-second-batch-of-the-private-sale-tokens-will-be-unlocked-on-march-11-1f33080f2608 (primary), https://forum.phala.network/t/topic/2656 (primary forum), https://huobiglobal.zendesk.com/hc/en-us/articles/900002522523 (exchange listing notice)."
+ },
+ {
+  "token": "SKY",
+  "name": "Sky (ex-MakerDAO MKR)",
+  "binanceFuturesSymbol": "SKYUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": null
+  },
+  "events": [],
+  "gap": "SKY is a migration token: MKR converts at 1 MKR = 24,000 SKY (The Block, 2025-09-19), the upgrade window for exchanges ran to 2025-09-18 (imToken notice), and a 1% Delayed Upgrade Penalty was voted on from 2025-09-22, rising 1 point every three months. About 81% of MKR had been upgraded by then, with ~176,070 MKR left. Conversions add SKY supply gradually and are not insider unlocks. There is no team/investor vesting schedule for SKY on any fetched page; insider ownership dates back to the MKR era (Maker Foundation, pre-2021), and the first insider unlock date could not be confirmed, so null. No 25%+ single-day unlock to insiders in the 2025-08-01 to 2025-11-16 window was found. The only supply-raising mechanism in the window is the MKR->SKY upgrade (a migration, flag 'migration'), and The Block reports no team/investor emission. Searches spent: 1 (kept low because the token has no vesting structure). Sources: https://www.theblock.co/news/ecosystems/2025-09-19-sky-opens-vote-to-penalize-stragglers-delaying-mkr-to-sky-token-conversion-371401 (news), https://support.token.im/hc/en-us/articles/47889144241177-MKR-SKY-Token-Upgrade-Swap-Your-MKR-for-SKY-by-September-18-2025 (wallet notice, not fetched; title only)."
+ },
+ {
+  "token": "XNY",
+  "name": "Codatta",
+  "binanceFuturesSymbol": "XNYUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": null,
+   "atLaunch": null
+  },
+  "events": [],
+  "gap": "TGE confirmed as 2025-07-23 (Codatta's own docs history page; BingX also says the token 'officially launched on July 23, 2025'). Supply 10,000,000,000 XNY (Binance announcement 2025-06-23). Allocation per Codatta docs: Team 18%, Investors 12.5%, Advisor Incentives 3.5%, plus ecosystem/airdrop pools. The docs say only that unlocks 'follow the published schedule (cliffs + linear vests per pool)', and CoinEx says investors are 'with cliffs' and the team is 'vested over time'. None of Codatta docs, Kraken's crypto-asset statement (2025-07-10), Binance, CoinEx, BingX, DefiLlama or CMC give TGE percentages or cliff lengths. So whether insiders received anything at TGE, and the date of the first insider unlock, are unconfirmed (null). Circulating figures conflict: BingX/CoinEx cite ~8.2B (Aug 2025, CoinGecko), while DefiLlama and BingX market data show ~3.636B now. That gap makes the circulating-supply history unreliable. No 25%+ single-day insider unlock between 2025-07-23 and 2025-11-16 was found in any source. With cliffs on investor allocations, a first insider cliff within four months of TGE is unlikely, but this is not confirmed. Sources: https://codatta.mintlify.app/en/community/history and https://codatta.mintlify.app/en/protocol-token/tokenomics (primary), https://www.binance.com/en/support/announcement/detail/901d960af2134457aa1e9d72ce6e30fd (exchange), https://assets-cms.kraken.com/files/51n36hrp/facade/e92068a3ca09c938899007f60c5dcc1dfc2c218b.pdf (exchange statement), https://bingx.com/en/price/codatta, https://defillama.com/token/XNY (aggregators)."
+ }
+]

@@ -1,0 +1,208 @@
+[
+ {
+  "token": "FLOW",
+  "claimedDate": "2021-10-16",
+  "verdict": "confirmed",
+  "date": "2021-10-16",
+  "dateSources": [
+   "https://www.crowdfundinsider.com/2021/10/181732-flow-trading-and-staking-now-available-to-us-residents-via-coinlist/",
+   "https://www.blocktempo.com/an-epic-trading-war-on-flow-may-be-coming/"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 376.8,
+  "amountTokens": 242800000,
+  "circulatingBefore": 64444582,
+  "shape": "lump",
+  "priceUsd": 17.33,
+  "priceSource": "https://www.blocktempo.com/an-epic-trading-war-on-flow-may-be-coming/ (quotes CoinMarketCap $17.33 at time of writing, article dated 2021-10-15, one day before the unlock)",
+  "notes": "DATE: CoinList's statement (via Crowdfund Insider) says community-sale and auction buyers could access, stake and trade FLOW from 15:00 UTC on 2021-10-16. BlockTempo (2021-10-15) also gives the 16th but notes that no official schedule had been published. Neither source is Flow/Dapper itself, and both describe the sale-buyer unlock. I found nothing showing the backers' 1-year cliff ended on that exact day. FIRST INSIDER: I mark this 'true' on medium evidence. ICO Drops gives backers (large and small) '24 months with a one-year cliff'. The First Mint gives the team '36-month vesting... 1-year cliff'. A Flow forum post from March 2021 says the genesis 1.25B were 'locked until Oct 2021'. So no insider cliff ended before Oct 2021. One open question: flow.com later lists Dapper Labs' 250M as unlocked/circulating, with no lock date given, and I found no evidence on whether those were liquid earlier. PCT: 376.8% is my own division of BlockTempo's two figures: 242.8M unlocked / 64,444,582 circulating (CoinMarketCap) = 3.768x. BlockTempo itself says 'about 3.5x'. Two cautions. (1) BlockTempo's listed pools (private 107M + community 68.57M + auction 25M = ~200.75M) do not add up to 242.8M. (2) In 2022 Flow said the CMC circulating figure had been understated by nearly 3x, so the true percentage may be much lower. SHAPE: lump at the cliff for auction buyers and for 50% of community-sale tokens. The other 50% of community-sale tokens vested monthly over the next year, and backers vest over 24 months after the cliff."
+ },
+ {
+  "token": "ROSE",
+  "claimedDate": "2021-11-18",
+  "verdict": "unverifiable",
+  "date": "2021-11 (day not confirmed; 2021-11-18 is likely but unsourced)",
+  "dateSources": [
+   "https://lr.eu.psf.lt/r/oasisnetwork/wiki/index",
+   "https://app.tokenomics.com/tokenomics/oasis/unlocks",
+   "https://www.hedgeweek.com/coinlist-brings-more-6700-new-token-holders-oasis-network-rose-garden-farming-and/"
+  ],
+  "dateDisagreementDays": null,
+  "firstInsiderUnlock": "unknown",
+  "pctCirculating": null,
+  "amountTokens": null,
+  "circulatingBefore": null,
+  "shape": "lump",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "DATE: I found no project announcement and no dated news article for this unlock. The r/oasisnetwork wiki says 'A token unlock on T12 (Nov 2021) leaves circulating ROSE at 3.5 billion' and 'T18 (May 18, 2022) leaves circulating ROSE at 5 billion', with no day given for T12. Tokenomics.com gives TGE as 2020-11-17 and lists later unlocks on the 18th (Feb/May/Aug/Nov 18), and Hedgeweek says ROSE Farm began on 18 November (2020). Together these suggest the 12-month mark fell on 18 November 2021, but that is my own inference from the schedule's anchor date, not a source that names the day. The CoinCarp '11/18' unlock page is for 2024, not 2021. FIRST INSIDER: unknown. Oasis docs say ~1.5B ROSE circulated at mainnet but do not say which groups held them, and they describe backer tokens only as 'sold directly to backers prior to mainnet launch'. I could not verify the claim of 'false' (that insiders were liquid earlier) either way. PCT: not verified, and I could not reproduce the claimed 77.7%. The only figures I found are ~1.5B circulating at launch and 3.5B after the T12 unlock (Reddit wiki, a community source). The circulating figure just before the unlock (1.5B plus a year of staking rewards) is unknown. If circulating had been exactly 1.5B, the unlock would be 2.0B = 133%, but that is my own arithmetic on an assumption, so I did not report it. SHAPE: described as a single T12 cliff event, so lump (wiki wording only). PRICE: I found no dated price source for 2021-11-18."
+ },
+ {
+  "token": "SAND",
+  "claimedDate": "2022-02-14",
+  "verdict": "unverifiable",
+  "date": "2022-02 (cliff unlock confirmed for the month by one secondary source; day 14 inferred, not sourced)",
+  "dateSources": [
+   "https://space.unlocks.app/assets/1685684a316dd58275b89bc9a7989189.pdf",
+   "https://app.tokenomics.com/tokenomics/the-sandbox/unlocks"
+  ],
+  "dateDisagreementDays": null,
+  "firstInsiderUnlock": "unknown",
+  "pctCirculating": null,
+  "amountTokens": null,
+  "circulatingBefore": null,
+  "shape": "lump",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "DATE: TokenUnlocks' annual report mentions 'a cliff unlock in February 2022' and one in mid-August 2022, and says SAND's unlocks are 'totally cliff unlocks, no linear unlocks'. It gives no day. Tokenomics.com lists later unlocks on the 14th (Aug 14 2022, Feb 14 2023, ... Aug 14 2025) and says there were 11 events in total. It shows only events 5-11, so roughly four events came before Aug 2022, but their dates are not displayed. Feb 14 2022 therefore fits the schedule, but no source I fetched names that day. WARNING: BeInCrypto's 10 Jan 2023 article has a typo bullet reading 'Feb. 14, 2022' for what its body text says is the Feb 14 2023 unlock (348M SAND to seed/strategic investors). The claimed date may have come from that typo, so it needs a clean source. FIRST INSIDER: unknown. The TokenUnlocks report says Seed, Strategic, Advisors and Team make up ~40% of each cliff. With ~4 events before Aug 2022 (Tokenomics.com count), insiders probably received tokens before Feb 2022, which would make the claimed 'false' plausible. However, I found no source naming an earlier insider cliff date. PCT: no amount or pre-unlock circulating figure for Feb 2022 found. The claim is also null. PRICE: no dated price source found for Feb 2022."
+ },
+ {
+  "token": "MOCA",
+  "claimedDate": "2025-07-11",
+  "verdict": "unverifiable",
+  "date": "2025-07-11 (scheduled date only; derived from TGE + 12-month cliff, not confirmed as actually released)",
+  "dateSources": [
+   "https://app.tokenomics.com/tokenomics/moca",
+   "https://app.tokenomics.com/tokenomics/moca/unlocks",
+   "https://thedefiant.io/news/markets/moca-airdrop-claim-to-begin-on-july-11th-4am-utc",
+   "https://coinmarketcap.com/community/post/366628249",
+   "https://coinmarketcap.com/community/post/366882122"
+  ],
+  "dateDisagreementDays": null,
+  "firstInsiderUnlock": true,
+  "pctCirculating": null,
+  "amountTokens": null,
+  "circulatingBefore": null,
+  "shape": "stream",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "DATE: Tokenomics.com gives TGE as 2024-07-11 and Strategic Partners as '13% (12 Month Cliff, 18 Month Linear Vesting)'. Its later unlock history falls on the 11th of each month. The Defiant confirms that the airdrop claim opened 11 July (2024). Together these make 2025-07-11 the scheduled first Strategic Partners tranche, but that is a date worked out from the schedule. I found no source saying the tokens were actually released that day. WARNING, RE-LOCK/DELAY: two CoinMarketCap community posts (8 and 13 Aug 2025) report a tokenomics change dated August 7. They say '90% of investors will not be able to sell their tokens until the end of 2025' (cliff extended to Q4 2025) and that strategic-partner tokens stay locked 'until January 2027' (one post) or until end-2025 'with vesting continuing until January 2027' (the other). These are community posts, not the project's own statement, and I could not fetch the Moca/Animoca primary announcement (bitcoinworld and Telegram attempts failed or held nothing relevant). Whether the July 11 and Aug 11 2025 tranches were released before this change, or were re-locked by it, is unresolved. This is the main reason the item is not confirmed. FIRST INSIDER: true on the original schedule. Tokenomics.com shows no TGE unlock for Strategic Partners, Team (18-month cliff, i.e. Jan 2026) or Launch Contributors & Advisors (18-month cliff). The investor cliff on 2025-07-11 would therefore be the first insider unlock. PCT: not verified. The allocation is 13% x 8,888,888,888 = ~1.156B, and 1.156B / 18 = ~64.2M per tranche (my own arithmetic). I found no source for circulating supply just before 2025-07-11, so I could not check the claimed 1.9%. PRICE: no dated source found."
+ },
+ {
+  "token": "DBR",
+  "claimedDate": "2025-04-17",
+  "verdict": "confirmed",
+  "date": "2025-04-17",
+  "dateSources": [
+   "https://docs.debridge.foundation/faq-airdrop-season-1/dbr-tokenomics",
+   "https://www.theblock.co/post/320895/debridge-dbr-token-launch-jupiter",
+   "https://debridge.foundation/blog/vested-dbr-unlocks-for-lfg-and-airdrop-recipients",
+   "https://beincrypto.com/token-unlocks-to-watch-april/",
+   "https://www.gate.com/news/detail/10024616"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 95.7,
+  "amountTokens": 1110000000,
+  "circulatingBefore": 1160000000,
+  "shape": "lump",
+  "priceUsd": 0.029,
+  "priceSource": "Implied, not quoted: BeInCrypto (https://beincrypto.com/token-unlocks-to-watch-april/) values the 1.11B unlock at ~$32.19M, which works out to ~$0.029/DBR (my division). Tap Chi Bitcoin on Gate (2025-03-31) gives market cap ~$34M on 1.16B circulating, ~$0.029. Both are pre-unlock (late March/early April 2025), not a quote for 2025-04-17 itself. The Block gives the TGE trading start at $0.03.",
+  "notes": "DATE: Primary sources. deBridge docs give a 6-month lump for Core Contributors (400M), Strategic Partners (340M) and Validators (40M), all with 0 at TGE. The Block gives TGE as 8:00 UTC on 2024-10-17, and six months later is 2025-04-17 (my date arithmetic). deBridge's own blog (2025-04-17) says 'the vesting period concluding on April 17, 2025', with LFG holders claiming from 8 AM UTC. BeInCrypto and Tap Chi Bitcoin (on Gate) both list the 1.11B unlock on April 17. FIRST INSIDER: true. Docs list 0 TGE unlock for Core Contributors, Strategic Partners and Validators. Caveat: the deBridge Foundation got 500M (5%) at TGE, which is a project treasury, not team/investors/advisors. PCT: 95.7% is MY arithmetic: 1.11B / 1.16B circulating (both figures from BeInCrypto, which itself says 'roughly 95% more tokens'). Amount check: insider pieces from the docs are 400M + 340M + 40M = 780M, and BeInCrypto adds 176.93M ecosystem plus unspecified community/foundation tranches to reach 1.11B. I did not independently reconcile the 1.11B total against the docs' quarterly figures. Also note that circulating supply counts only ~42% of airdrop DBR as actually claimed (Solanafloor headline), so the effective float may differ. SHAPE: lump at the 6-month mark, then quarterly tranches over 3 years."
+ },
+ {
+  "token": "ATH",
+  "claimedDate": "2025-06-12",
+  "verdict": "confirmed",
+  "date": "2025-06-12 (end of investor 12-month cliff, from primary schedule; first actual transfer could be the first monthly tranche)",
+  "dateSources": [
+   "https://aethir.com/blog-posts/celebrating-aethirs-tge-anniversary-1-6b-ath-staked-to-scale-global-compute",
+   "https://docs.aethir.com/aethir-tokenomics/token-vesting",
+   "https://app.tokenomics.com/tokenomics/aethir/unlocks"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": null,
+  "amountTokens": null,
+  "circulatingBefore": null,
+  "shape": "stream",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "DATE: Primary sources. Aethir's own blog (2025-06-11) says 'On 12 June 2024, we launched ATH', and Aethir docs give Investors '12 Months Cliff, 24 Months Linear Vest' with no TGE unlock. The cliff therefore ends 2025-06-12 (my date arithmetic on those two primary facts). Tokenomics.com shows ATH's recurring unlocks on the 12th of each month and lists Investors as '11.5% (12 Month Cliff, 24 Month Linear Vesting)' = 4.83B ATH. CAVEATS: (a) I found no news or tracker item explicitly reporting an investor unlock on 2025-06-12. Tokenomist's 'Week 2, June 2025' digest (published 2025-06-09) does not list ATH, which suggests no large lump that week. (b) With a 12-month cliff followed by linear vesting, tokens may only have started accruing on 2025-06-12, with the first monthly tranche transferable on 2025-07-12. The sources do not settle this, so it is worth checking on-chain. FIRST INSIDER: true on the schedule. Aethir docs list no TGE unlock and an 18-month cliff for Team. Tokenomics.com gives Advisors '18 Month Cliff, 36 Month Linear', and DefiLlama instead assumes advisors follow the investor schedule. Investors at 12 months would therefore be the first insider group. Unresolved flag: an Onchain Outpost newsletter (2024-07-17) mentions 'a large looming 16.67% of supply unlock next February' (i.e. Feb 2025) for Aethir without naming recipients. If that was an insider pool, this would not be the first insider unlock. I could not identify what it referred to. PCT: not verified. Per-month investor tranche = 4.83B / 24 = ~201M ATH (my arithmetic). I found no source for circulating supply just before June 2025. The claim is also null. PRICE: no dated source found."
+ },
+ {
+  "token": "HAEDAL",
+  "claimedDate": "2025-10-29",
+  "verdict": "confirmed",
+  "date": "2025-10-29",
+  "dateSources": [
+   "https://haedal-protocol.gitbook.io/haedal-protocol-docs/tokenomics/haedal",
+   "https://app.tokenomics.com/tokenomics/haedal/unlocks",
+   "https://www.chaincatcher.com/en/article/2179249"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": null,
+  "amountTokens": 12500000,
+  "circulatingBefore": null,
+  "shape": "stream",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "DATE: Haedal's own docs (primary) say Investors (15%) have a '6-month lock, followed by 12-month linear vesting', and Team & Advisors (20%) a '12-month lock, followed by 24-month linear vesting'. The docs give no TGE date. Tokenomics.com gives TGE as 2025-04-29, and ChainCatcher's tokenomics article is dated 2025-04-29, which fits. 6 months after that is 2025-10-29 (my arithmetic). Supporting inference from Tokenomics.com's past-unlock table: recipient count is 3 from Apr 29 2026 to Sep 29 2026 and drops to 2 on Oct 29 2026. That matches 12 monthly investor tranches running Oct 29 2025 to Sep 29 2026, so the first investor tranche fell on the cliff date. This is my reading of the recipient counts, not a stated fact. I found no news article reporting this specific unlock: it is absent from KuCoin's and GN Crypto's Oct 27 to Nov 2 2025 unlock lists, consistent with a small (~12.5M) tranche. FIRST INSIDER: true. Docs and Tokenomics.com show insiders locked at TGE. Binance Research gives listing float as 195M (19.5%): retail 12.5% plus market-maker/liquidity 7%, with no team or investor tokens. Tokenomics.com shows Ecosystem 17.3% at TGE and Liquidity Fund 100% at TGE, neither of which is an insider pool. The team cliff (Apr 2026) is later. AMOUNT: 150M investor allocation / 12 = 12.5M per month (my arithmetic from Tokenomics.com's 150,000,000 figure). PCT: not verified. Circulating at listing was 195M (Binance Research). I found no sourced figure for 2025-10-28. As MY estimate only: 195M plus 6 months of ecosystem linear vesting (550M x 82.7% / 84 months = ~5.4M per month) gives ~227.5M, so 12.5M / 227.5M = ~5.5%. The claimed 5.92% implies ~211M circulating. I cannot confirm either, so pctCirculating is left null. PRICE: no dated source found."
+ },
+ {
+  "token": "BOBA",
+  "claimedDate": "2022-09-20",
+  "verdict": "confirmed",
+  "date": "2022-09-20",
+  "dateSources": [
+   "https://www.htx.com.de/tokens/BOBA",
+   "https://boba.network/tokenomics",
+   "https://app.tokenomics.com/tokenomics/boba-network/unlocks"
+  ],
+  "dateDisagreementDays": 8,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 17.8,
+  "amountTokens": 29979550,
+  "circulatingBefore": 168830000,
+  "shape": "lump",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "DATE: HTX says '29,979,550 tokens unlocked per quarter starting September 20, 2022' with the 'Final unlock scheduled for June 20, 2025'. Boba's own tokenomics page (primary) independently says 'The last unlock took place on June 20, 2025. Tokens are fully unlocked', which supports a schedule anchored on the 20th. DISAGREEMENT (8 days): Tokenomics.com gives TGE 2021-11-11 and '10 Month Cliff, Linear Vesting Every 3 Months x12' for Treasury, Team and Investors. Its visible quarterly events fall on the 12th (Dec 12 2023 ... Jun 12 2025), which implies a first tranche around 2022-09-12. It does not display a Sep 2022 row. I side with the 20th because the project's own final-unlock date matches HTX. Confirmed on HTX plus the project anchor, but worth an on-chain check if the exact day matters. FIRST INSIDER: true. Tokenomics.com gives a 10-month cliff for Team, Investors and Treasury with no TGE portion. TGE (Nov 2021) float was the airdrop. Check: 12 quarters x 29,979,550 = ~359.75M, which matches Team 100M + Investors 50M + Treasury 210M = 360M (boba.network allocation). That is consistent with this being the first of 12 combined insider/treasury tranches. Caveat: 42% of each tranche is Treasury, not team/investors. PCT: 17.8% is MY arithmetic: 29,979,550 / 168.83M. The 168.83M is the 'Aug-22 month-end' circulating figure in Fundstrat's BOBA report (dated 2022-10-04). The same report also says 'current circulating supply is c.331m', which conflicts. Using 331M would give ~9.1%, so the percentage depends on which supply figure is right. PRICE: no dated price source found for 2022-09-20."
+ },
+ {
+  "token": "DEEP",
+  "claimedDate": "2025-10-14",
+  "verdict": "not_first_insider",
+  "date": "2025-10-14",
+  "dateSources": [
+   "https://defillama.com/protocol/unlocks/deepbook",
+   "https://www.sui.io/blog/deepbook-version3-deep-token.md",
+   "https://alearesearch.substack.com/p/deepbook-sui-liquidity-layer-what",
+   "https://learn.backpack.exchange/articles/what-is-deepbook-a-decentralized-order-book-for-the-sui-ecosystem",
+   "https://app.tokenomics.com/tokenomics/deepbook"
+  ],
+  "dateDisagreementDays": 1,
+  "firstInsiderUnlock": false,
+  "pctCirculating": 24.53,
+  "amountTokens": 613330000,
+  "circulatingBefore": 2500000000,
+  "shape": "lump",
+  "priceUsd": null,
+  "priceSource": null,
+  "notes": "DATE (supported within 1 day): DefiLlama lists the unlock at 2025-10-14 05:30 UTC: Investors 363.33M DEEP plus Early Contributors 250M DEEP = 613.33M (my sum). Sui's own blog (primary) puts the DEEP launch on Monday 14 October (2024), 10:00 UTC. Alea Research and Backpack both describe a 1-year cliff for investors and contributors, which puts the cliff end at ~2025-10-14. Tokenomics.com gives TGE as 2024-10-13, a 1-day difference. Its recurring unlocks fall on the 14th. FIRST INSIDER: FALSE, which is why the verdict is not_first_insider. Alea Research (2024-10-14, launch day) says genesis circulation of 25% comprised '10% airdrop, 14% ecosystem reserve, 1% investors'. Backpack Learn says 'Mysten Labs receives 1% unlocked at TGE'. Tokenomics.com even lists the 'Core Contributors and Early Backers' pool at '14.0% at TGE', though it contradicts itself elsewhere. So at least ~1% of supply in insider/investor hands was transferable from Oct 2024. 2025-10-14 was the first CLIFF release for the private-sale investors and early contributors, but not the first insider liquidity. PCT: 24.53% is DefiLlama's own figure, '24.53% of float', and it equals 613.33M / 2.5B exactly. The 2.5B is the genesis float (Alea/Backpack: 25% of 10B) and is also what DefiLlama shows as current circulating. That looks like a stale float figure, not the circulating supply on 2025-10-13, which should be higher after a year of ecosystem emissions. The true pre-unlock percentage is therefore probably lower than 24.53%, but I found no dated figure. SHAPE: lump at the cliff, followed by monthly insider tranches (Tokenomics.com shows monthly 14th-of-month insider events in 2026). PRICE: DefiLlama's $12.96M valuation implies ~$0.021/DEEP, but that is at DefiLlama's current price, not the 2025-10-14 price, so I did not report it."
+ },
+ {
+  "token": "TAIKO",
+  "claimedDate": "2025-06-05",
+  "verdict": "confirmed",
+  "date": "2025-06-05",
+  "dateSources": [
+   "https://www.odaily.news/en/newsflash/382498",
+   "https://tokenomist.ai/research/weekly-unlock-digest-week-1-june-2025",
+   "https://www.itiger.com/news/2540755150",
+   "https://ourcryptotalk.com/news/taiko-47m-unlock-on-5-june",
+   "https://crypto.news/369m-to-be-unleashed-in-token-unlocks-this-week-taiko-and-neon-face-heaviest-sell-pressure/"
+  ],
+  "dateDisagreementDays": 0,
+  "firstInsiderUnlock": true,
+  "pctCirculating": 69.4,
+  "amountTokens": 81550000,
+  "circulatingBefore": 117500000,
+  "shape": "lump",
+  "priceUsd": 0.575,
+  "priceSource": "Implied, not quoted: BlockBeats (via iTiger, 2 June 2025) gives ~$46.9M for 81.55M TAIKO = ~$0.575 (my division). OurCryptoTalk (4 June 2025) gives ~$47M, i.e. ~$0.58. crypto.news (2 June 2025) says the price was 'dropping to the $0.55 level'. All three are 1-3 days before the unlock.",
+  "notes": "DATE: Odaily (2024-07-27) gives TGE as June 5, 2024 with a 12-month initial lock-up, after which '25% of the vested tokens can be unlocked' and the remaining 75% is linear over 3 years. Tokenomist's Week 1 June 2025 digest lists the unlock on 'June 5, 2025'. BlockBeats/iTiger give 8:00 PM Beijing time on June 5 = 12:00 UTC. OurCryptoTalk also says June 5. That is several independent secondary sources plus a schedule statement, all agreeing. I found no Taiko-published announcement, but the strict rule is met by the secondaries. FIRST INSIDER: true. Odaily describes a 12-month initial lock-up from TGE for investors (11.62%) and the Taiko Labs core team. Tokenomist names the recipients as 'Taiko Labs (Core Team), Investors, and Protocol Guild Airdrop'. I found no evidence of insider tokens transferable before 2025-06-05. AMOUNT check (my arithmetic): 25% x (Taiko Labs 20% + Investors 11.62% + Protocol Guild 1%) of 1B supply = 50M + 29.05M + 2.5M = 81.55M, exactly the reported figure. PCT: BlockBeats gives 69.37% of circulating and Tokenomist gives 69.60%. OurCryptoTalk gives pre-unlock circulating of ~117.5M, and 81.55M / 117.5M = 69.4% (my arithmetic). The claimed 69.4% matches. SHAPE: lump (25% cliff), then linear over 3 years."
+ }
+]

@@ -1,0 +1,225 @@
+[
+ {
+  "token": "AERO",
+  "name": "Aerodrome Finance",
+  "binanceFuturesSymbol": "AEROUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": null,
+   "atLaunch": null
+  },
+  "events": [],
+  "gap": "No investors and no presale (CoinMarketCap Academy; Blockworks transparency filing: 'No prior fundraising, OTC, or discounted MM sales'). Team/Foundation allocation (Blockworks: Foundation 19%/95M; CMC: team 14% locked 2-4 years; Bitrue: 'Development Team Funding (Auto Max-Locked): 95 million') was issued at launch as locked veAERO NFTs, not liquid AERO, and Blockworks says there are 'no token grants to individual contributors'. No source gives a date when insider veAERO locks expired or became liquid, so the first insider unlock date cannot be confirmed (null). Launch date itself conflicts: Bitrue says 2023-08-28, CMC Academy says 'August 29' (no year); outside the window either way. No single-day unlock of >=25% of circulating found: Bitrue states 'Aerodrome does not have a traditional cliff unlock event'; new supply comes from weekly emissions. Sources: https://medium.com/@aerodromefi/aerodrome-launch-tokenomics-30b546654a91 (primary), https://blockworks.com/token-transparency/filing/aerodrome (primary filing), https://www.bitrue.com/blog/aerodrome-finance-aero-token-unlock-details (aggregator), https://coinmarketcap.com/academy/article/what-is-aerodrome (aggregator)."
+ },
+ {
+  "token": "ARK",
+  "name": "ARK (ARK Ecosystem)",
+  "binanceFuturesSymbol": "ARKUSDT",
+  "firstInsiderUnlock": {
+   "date": "2017-03-21",
+   "inWindow": false,
+   "atLaunch": true
+  },
+  "events": [],
+  "gap": "Genesis block 2017-03-21 19:00 UTC per ARK's own press release (newswire.com, primary). The full genesis supply was created at launch: TEC press release (pressat.co.uk, primary) allocates 75% to crowdsale backers and reserves 15% ARK team, 7% ARK Shield, 2% bounties, 1% escrow; no source fetched mentions a team lockup or vesting, so team tokens are treated as received at genesis (atLaunch true). Not fully confirmed that the team share was transferable on day one. Supply figures disagree: TEC release says 125M generated, Coin Bureau says 100M at launch, and Coin Bureau also says 'launched in February 2017', which conflicts with the project's 2017-03-21 statement (project date used). After genesis, new supply comes only from block rewards (~10,800 ARK/day per Coin Bureau), so no single-day unlock of >=25% of circulating exists in the 2023-08-01 to 2025-11-16 window. Sources: https://www.newswire.com/news/ark-mainnet-goes-live-on-march-21-2017-token-distribution-to-follow-18989062 (primary), https://pressat.co.uk/releases/ark-crew-announces-official-ark-token-exchange-campaign-tec-559f29a13d5cc6587c9a398b73ac23f2 (primary), https://cryptobriefing.com/what-is-ark-introduction-ark-ecosystem-token/ (news), https://coinbureau.com/review/ark-coin (aggregator)."
+ },
+ {
+  "token": "BOBA",
+  "name": "Boba Network",
+  "binanceFuturesSymbol": null,
+  "firstInsiderUnlock": {
+   "date": "2022-09-20",
+   "inWindow": true,
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2022-09-20",
+    "amountTokens": 29979550,
+    "circulatingBefore": 168830000,
+    "pctCirculating": 17.8,
+    "shape": "lump",
+    "recipients": "First quarterly tranche after a 10-month cliff for Team (20%), Investors (10%) and Treasury (42%); amount is the HTX per-quarter figure for all three pools combined",
+    "recipientsMix": {
+     "team": 0.278,
+     "investors": 0.139,
+     "community": 0,
+     "ecosystem": 0.583,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "HTX BOBA token page",
+      "url": "https://www.htx.com.de/tokens/BOBA",
+      "kind": "aggregator",
+      "confirms": [
+       "date",
+       "amountTokens"
+      ]
+     },
+     {
+      "label": "Boba Network tokenomics page",
+      "url": "https://boba.network/tokenomics",
+      "kind": "primary",
+      "confirms": [
+       "allocations",
+       "quarterly schedule ends 2025-06-20 (consistent with the 20th-of-month dates)"
+      ]
+     },
+     {
+      "label": "Tokenomics.com BOBA vesting",
+      "url": "https://app.tokenomics.com/tokenomics/boba-network",
+      "kind": "aggregator",
+      "confirms": [
+       "TGE 2021-11-11",
+       "0% TGE, 10-month cliff, 12 quarterly tranches for team/investors/treasury"
+      ]
+     },
+     {
+      "label": "Fundstrat Boba report (month-end circulating supply)",
+      "url": "https://cryptohub.fundstrat.com/pdf/Fundstrat-Boba.pdf",
+      "kind": "aggregator",
+      "confirms": [
+       "circulatingBefore (Aug-22 month-end 168.83M)"
+      ]
+     }
+    ],
+    "gap": "circulatingBefore is the Fundstrat Aug-2022 month-end figure (168.83M), not the exact value on 2022-09-19; Fundstrat's series is noisy (151M to 182M over Mar-Aug 2022). Date: HTX says the first quarterly unlock was 2022-09-20. Tokenomics.com lists later events on the 12th (e.g. 2023-12-12), while Boba's own page gives the final unlock as 2025-06-20. The project date supports the 20th, so dateConflict is false, but no project statement for the first tranche was fetched. The recipient split assumes the HTX per-quarter amount equals one-twelfth of each of the three 0%-TGE pools; no source lists it per pool. Price not found from a fetchable source."
+   }
+  ],
+  "gap": "TGE/airdrop 2021-11-11 (tokenomics.com). All insider pools had 0% at TGE and a 10-month cliff (tokenomics.com), so the first insider unlock is the first quarterly tranche. Each of the 12 quarterly tranches was ~29.98M (about 6% of the 500M supply), and circulating supply was ~150-180M in 2022 and higher after that, so no tranche reached 25% of circulating. No B events. Conflicts: HTX lists Treasury at 28%, but Boba's own page and Fundstrat say 42%. Fundstrat says 'Strategic investors constituted 10% of BOBA tokens at launch', but tokenomics.com says investors had 0% unlocked at TGE. Boba's Series A (April 2022, $45M) is not reflected in any vesting source. BOBA has no Binance perp (binancePerpSince null), so binanceFuturesSymbol is null."
+ },
+ {
+  "token": "DEXE",
+  "name": "DeXe Protocol",
+  "binanceFuturesSymbol": "DEXEUSDT",
+  "firstInsiderUnlock": {
+   "date": "2021-04-18",
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "TGE 2020-10-19 (tokenomics.com). At TGE only the Public Sale (1.5%) and the Market Liquidity Fund (1%) were 100% unlocked. These are public buyers and a liquidity fund, not insiders, so TGE is not counted as an insider unlock. No private or VC round is listed. Team (20%) had a 6-month cliff and then 24 months linear (tokenomics.com). Tokenradar dates the team linear release Apr 18, 2021 - Apr 18, 2023, which puts the first insider unlock at ~2021-04-18, the start of a stream. That is outside the window. TGE + 6 months (~Apr 19-20) agrees within 2 days. No project vesting document was fetchable: dexe.network/sale-details is not on the allowlist, and the Binance Research page only links to it. In the window 2024-07-01 to 2025-11-16, the only scheduled release was the Foundation linear stream (tokenradar: Oct 20, 2021 - Oct 31, 2025). Tokenomics.com shows monthly 2025 events of ~0.8% of mcap each, the last on 2025-09-20, so there are no single-day unlocks of >=25% of circulating. Sources: https://app.tokenomics.com/tokenomics/dexe (aggregator), https://app.tokenomics.com/tokenomics/dexe/unlocks (aggregator), https://tokenradar.ai/tokens/dexe-protocol/tokenomics (aggregator)."
+ },
+ {
+  "token": "GPS",
+  "name": "GoPlus Security",
+  "binanceFuturesSymbol": "GPSUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": null,
+   "atLaunch": null
+  },
+  "events": [],
+  "gap": "TGE 2025-01-16 per the GoPlus whitepaper (primary); tokenomics.com says 2025-01-15. Team (20%): '6-month lockup (cliff) after the January 16, 2025 TGE, followed by 2 years of monthly linear vesting' (whitepaper and GoPlus blog). That puts the first team unlock at ~2025-07-16, but no fetched source confirms the event's date or amount. Early backers (19.33%): the GoPlus blog says their cliff is 'slightly shorter than the team's' with no exact length, so investors may have unlocked before the team. The advisors' (3%) terms are not published in text. Tokenomics.com also notes some allocations show '20% at TGE' without naming them. The first insider unlock date therefore cannot be confirmed and is set to null; it is likely between Feb and Jul 2025, inside the window. Circulating at listing: 1.813B (~18.1%, Binance Research, as of 2025-03-04). The largest 2025 unlock found was 2025-08-01: tokenomist weekly digest gives $11.64M = 20.42% of circulating, all to Marketing/Community/Ecosystem. That is below 25% and not an insider unlock. No >=25% single-day unlock was confirmed in the window. Tokenomist and tokenomics.com 2025 event tables are paywalled or paginated, so 2025 events between Feb and Jul could not be fully checked. Sources: https://whitepaper.gopluslabs.io/goplus-network/ecosystem-and-token/tokenomics (primary), https://blog.gopluslabs.io/2025/01/02/financing/$GPS Tokenomics/ (primary), https://www.binance.com/research/projects/goplus-security (aggregator), https://www.tokenomist.ai/research/weekly-unlock-digest-week-5-july-2025 (aggregator), https://app.tokenomics.com/tokenomics/goplus/unlocks (aggregator)."
+ },
+ {
+  "token": "MERL",
+  "name": "Merlin Chain",
+  "binanceFuturesSymbol": "MERLUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": null,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "Token launch and trading started 2024-04-19 (Decrypt press release; OKX deposits from 2024-04-17). Tokenomics.com gives TGE as 2024-04-01 with 0% initial float. Merlin's own token post (Medium) shows no insider TGE unlock; only the Merlin's Seal airdrop (20%) and the Public Sale (1%) unlocked in month 1. Insider terms: Private Sale A (1.33%) 6-month cliff then 18 months vesting; Advisors (3%) 6-month cliff then 30 months; Private Sale B (13.90%) 12-month cliff then 36 months; Team (4.20%) 24-month cliff then 24 months. The first insider unlock is therefore the end of the Private Sale A / Advisors cliff, about 6 months after TGE. That is ~2024-10-19 if counted from the 2024-04-19 launch, and TradingView shows monthly unlocks on the 19th. No fetched page states the event's date or amount, so the date is null; it is inside the window. Every insider pool vests monthly after its cliff (shape: stream), and the largest pool, Private Sale B (291.9M over 36 months), works out to ~8M/month. TradingView puts total monthly unlocks around Nov 2024 - Apr 2025 at ~17.5M = ~2.08% of circulating. Tokenomics.com 2026 events are each <=3.2% of mcap. No single-day unlock of >=25% of circulating was found in 2024-04-01 to 2025-11-16. Sources: https://medium.com/@merlinchaincrypto/introducing-merlin-chain-token-merl-376fe43f180d (primary), https://decrypt.co/227157/merlin-chain-launches-merl-a-major-leap-forward-in-bitcoin-layer-2-solutions (news/press release), https://app.tokenomics.com/tokenomics/merlin-chain/unlocks (aggregator), https://vn.tradingview.com/chart/MERLUSDT/Od2aLZKj-Merlin-Merl-all-you-have-to-know-is-its-UNLOCKS-MONEY (user post, low reliability)."
+ },
+ {
+  "token": "ORDER",
+  "name": "Orderly Network",
+  "binanceFuturesSymbol": "ORDERUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": null,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "TGE: airdrop claims opened 2024-08-26 08:00 UTC and CEX listings started 10:00 UTC (Coinspeaker); tokenomics.com says 2024-08-25. Orderly docs (primary): Strategic Investors (15%) are 'Locked for the first 6 months after TGE, followed by 3.5-year linear vesting'; Team & Advisors (20%) have a '1-year cliff (25% unlocks), followed by 3-year linear vesting'. No insider TGE unlock is stated; at TGE only the 133M retro airdrop and 38.5M Foundation liquidity were available. The first insider unlock is therefore the start of the investor linear stream around 2025-02-26, but no fetched page dates or sizes it, so the date is null; it is inside the window. Team/Advisors cliff: 25% x 200M = 50M lump about one year after TGE (~2025-08-26), not dated by any fetched page. CoinGecko research puts circulating at ~217M on 2025-01-01 and ~288M on 2025-08-31. 50M against roughly 230-290M circulating is ~17-22%, below 25% but not precisely measurable, so it is not listed as a B event; recheck if exact circulating on 2025-08-25 becomes available. No other >=25% single-day unlock found. Sources: https://orderly.network/docs/introduction/tokenomics/distribution-and-emission-schedule (primary), https://coinspeaker.com/orderly-network-tge-schedule-airdrop (news), https://app.tokenomics.com/tokenomics/orderly-network/unlocks (aggregator), https://www.coingecko.com/research/publications/coingecko-orderly-report (aggregator), https://defillama.com/unlocks/orderly (aggregator)."
+ },
+ {
+  "token": "RED",
+  "name": "RedStone",
+  "binanceFuturesSymbol": "REDUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "TGE 2025-03-06 per The Block. CMC Academy has pre-market trading from 2025-02-28 10:00 UTC, and tokenomics.com gives TGE as 2025-03-03 (a conflict of more than 2 days with no fetched project statement; the RedStone blog redirect target and docs page were not fetchable). Initial circulating was 280M (28%, The Block and CMC Academy). Early Backers (31.7%) and Core Contributors (20%) had 0% at TGE (DropsTab) and a ~12-month cliff (tokenomics.com), so the first insider unlock falls around March 2026. That is after the window ends (2025-11-16), so inWindow is false. The exact date is not confirmed by a fetched page and is set to null. In-window releases were the TGE-day Community & Genesis (100M) and Launchpool (40M) unlocks, which are the launch float and not a post-launch cliff, plus linear Ecosystem / Protocol Development streams (DropsTab: 24-month linear; tokenomics.com: Ecosystem 6-month cliff ~Sep 2025, which is community, not insiders, and has no confirmed lump size). No >=25%-of-circulating single-day unlock was confirmed inside the window. Sources: https://www.theblock.co/post/344910/redstone-launches-red-token (news), https://coinmarketcap.com/academy/article/how-to-farm-redstone-dollarred-the-64th-project-on-binance-launchpool (aggregator), https://dropstab.com/coins/redstone/vesting (aggregator), https://app.tokenomics.com/tokenomics/redstone/unlocks (aggregator)."
+ },
+ {
+  "token": "VELO",
+  "name": "Velo (Velo Labs, Stellar/BNB 'VELO', not Velodrome)",
+  "binanceFuturesSymbol": null,
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": null
+  },
+  "events": [
+   {
+    "date": "2024-09-17",
+    "amountTokens": null,
+    "circulatingBefore": null,
+    "pctCirculating": null,
+    "shape": "lump",
+    "recipients": "Year-4 anniversary cliff (25% tranche) for Founders and the Velo Development Reserve under the 10/10/25/25/30% yearly schedule. Recipients are inferred from the schedule; the news item names none.",
+    "recipientsMix": null,
+    "firstInsiderUnlock": false,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "cryptonews.net, 17 Sep 2024",
+      "url": "https://cryptonews.net/news/altcoins/29794257/",
+      "kind": "news",
+      "confirms": [
+       "date 2024-09-17",
+       "$33.9M value",
+       "9.1% of supply"
+      ]
+     },
+     {
+      "label": "Tokenomics.com VELO vesting terms",
+      "url": "https://app.tokenomics.com/tokenomics/velo",
+      "kind": "aggregator",
+      "confirms": [
+       "Founders and Development Reserve 10/10/25/25/30% at end of Yr1-Yr5"
+      ]
+     },
+     {
+      "label": "Tokenomics.com VELO unlocks",
+      "url": "https://app.tokenomics.com/tokenomics/velo/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "TGE 2020-09-17, anniversary-dated events"
+      ]
+     }
+    ],
+    "gap": "CANDIDATE ONLY: whether this unlock was >=25% of circulating is not confirmed. cryptonews.net gives '$33.9 million ... 9.1% of its supply'. That is ~2.73B VELO if measured against a 30B supply, or ~2.18B against a 24B post-burn supply; the article does not say which. Circulating just before the unlock was not found. Known bounds: the project set circulating to 7,390,475,595.6 in May 2023 (velo.org), and crypto.news implies ~17.6B in Sep 2025. Against those bounds this unlock is roughly 12-37% of circulating. VELO also treats treasury releases as discretionary (velo.org May 2023), so on-chain vesting may not match the modeled schedule. Price not found."
+   }
+  ],
+  "gap": "Which VELO: Velo Labs' VELO (30B original supply, later 24B max after a 20% burn per DefiLlama/DropsTab), not Velodrome. TGE 2020-09-17 with only the 0.67% Listing allocation unlocked (tokenomics.com). Insider terms: Early Backers & Advisors (7.9%) and Private Placement (4.88%) '25% every 6 months over 2 years following listing date'; Strategic Partners (18.28%) 60-month linear; Founders (10%) 10/10/25/25/30% at end of Yr1-Yr5. The first insider unlock was therefore well before the 2023-03-01 window (2020-2021), but its exact date is not confirmed, so it is null. Other anniversary cliffs: (1) Sep 2023 (Yr3, 25% tranche): no fetched page dates or sizes it; by the modeled schedule ~2.5B against ~7.4B circulating (project figure from May 2023), it could have been >=25%, but this is unconfirmed and not listed. (2) Sep 2025 (Yr5, 30%): crypto.news reports '3 billion VELO ... about 17% of the circulating supply' (900M founders + 2.1B development reserve) on 'Sep. 20'. DefiLlama gives 2025-09-20 with 2.4B = 13.67% of float, and tokenomics.com lists 2025-09-17 at 14.6% of mcap. That is below 25%, so it is not listed; the dates conflict by 3 days. No Binance perp for this VELO (binancePerpSince null), so binanceFuturesSymbol is null. Sources: https://velo.org/blog/velo-token-distribution-update-may-2023 (primary), https://crypto.news/will-velo-price-crash-as-a-3-billion-token-unlock-looms/ (news), https://defillama.com/unlocks/velo-finance (aggregator), https://dropstab.com/coins/velo/vesting (aggregator)."
+ },
+ {
+  "token": "RIF",
+  "name": "Rootstock Infrastructure Framework",
+  "binanceFuturesSymbol": "RIFUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": null,
+   "atLaunch": null
+  },
+  "events": [],
+  "gap": "Poorly documented older token. Allocations per tokenomist: RIF Labs Promotion 40%, Private Sale 37.9%, RSK Labs Acquisition 20% (shareholders/founders/management per yellow.com), Early Adopters Incentive 2.1%, with a 1B total supply (Rootstock dev docs). No fetched page gives the token genesis/TGE date (yellow.com dates only the Rootstock beta mainnet, January 2018) or any per-allocation cliff or vesting terms. The first insider unlock date is therefore unknown (null). It is probably long before the 2023-05-01 window, given the 2018 private sale, but that is unconfirmed, so inWindow is null. Tokenomist says 'The unlock schedule ended in 2023' and describes the RIF Labs Promotion allocation as cliff-vested (released in one batch after a waiting period); yellow.com, citing Messari, says supply was 'fully vested as of January 2024'. A large RIF Labs Promotion batch may therefore have landed in 2023, possibly inside the window. But no page gives its date, size or circulating base, and it is an ecosystem/communityFund allocation, not insiders. Tokenomist event history is paywalled. No >=25% single-day unlock could be confirmed. Sources: https://tokenomist.ai/rif-token/tokenomics (aggregator), https://tokenomist.ai/rif-token/unlock-events (aggregator, paywalled), https://yellow.com/asset/rif (aggregator), https://dev.rootstock.io/ko/concepts/rif-suite/token/index.md (primary, supply only)."
+ }
+]

@@ -1,0 +1,246 @@
+[
+ {
+  "token": "ALPINE",
+  "name": "Alpine F1 Team Fan Token",
+  "binanceFuturesSymbol": "ALPINEUSDT",
+  "firstInsiderUnlock": {
+   "date": "2022-02-21",
+   "inWindow": false,
+   "atLaunch": true
+  },
+  "events": [
+   {
+    "date": "2023-03-21",
+    "amountTokens": 7160000,
+    "circulatingBefore": 18520000,
+    "pctCirculating": 38.7,
+    "shape": "lump",
+    "recipients": "Second annual tranche: User Fund, Developer Fund and Loyalty Subscription pools (Socios/Chiliz-controlled community pools, ~80%) plus Team (~20%)",
+    "recipientsMix": {
+     "team": 0.196,
+     "investors": 0,
+     "community": 0.804,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": false,
+    "flags": [
+     "communityFund"
+    ],
+    "dateConflict": false,
+    "priceUsd": 2.27,
+    "priceSource": "https://coinlore.com/coin/alpine-f1-team-fan-token/historical-data",
+    "sources": [
+     {
+      "label": "Tokenomics.com ALPINE unlocks",
+      "url": "https://app.tokenomics.com/tokenomics/alpine-f1-team-fan-token/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "date 2023-03-21",
+       "38.7% of mcap",
+       "annual 12-month tranches over 4 years",
+       "team 22.2% at TGE"
+      ]
+     },
+     {
+      "label": "Binance Research ALPINE project page",
+      "url": "https://www.binance.com/research/projects/alpine-f1",
+      "kind": "primary",
+      "confirms": [
+       "40M total supply",
+       "allocations: sale 10%, team 18%, loyalty 15%, user fund 35%, developer fund 22%",
+       "initial circulating 11.36M",
+       "tokens unlocked every twelve months"
+      ]
+     }
+    ],
+    "gap": "amountTokens and circulatingBefore computed from schedule (28.64M non-TGE tokens / 4 annual tranches = 7.16M; 11.36M TGE + 7.16M Mar-2022 tranche = 18.52M); result matches tokenomics.com 38.7%. CMC/CoinGecko report far lower circulating (11.36M on CoinGecko, ~18.7M on tokenomics.com 'in market' as of 2026) because most community-pool tokens sit in Socios treasury; real float hitting market is much smaller. priceUsd is March-2023 monthly close (open 3.05), no daily price fetched."
+   },
+   {
+    "date": "2024-03-21",
+    "amountTokens": 7160000,
+    "circulatingBefore": 25680000,
+    "pctCirculating": 27.9,
+    "shape": "lump",
+    "recipients": "Third annual tranche: User Fund, Developer Fund, Loyalty Subscription pools (~80%) plus Team (~20%)",
+    "recipientsMix": {
+     "team": 0.196,
+     "investors": 0,
+     "community": 0.804,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": false,
+    "flags": [
+     "communityFund"
+    ],
+    "dateConflict": false,
+    "priceUsd": 2.37,
+    "priceSource": "https://coinlore.com/coin/alpine-f1-team-fan-token/historical-data",
+    "sources": [
+     {
+      "label": "Tokenomics.com ALPINE unlocks",
+      "url": "https://app.tokenomics.com/tokenomics/alpine-f1-team-fan-token/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "date 2024-03-21",
+       "27.9% of mcap"
+      ]
+     },
+     {
+      "label": "Binance Research ALPINE project page",
+      "url": "https://www.binance.com/research/projects/alpine-f1",
+      "kind": "primary",
+      "confirms": [
+       "allocations",
+       "tokens unlocked every twelve months"
+      ]
+     }
+    ],
+    "gap": "Amounts computed from schedule as above; matches tokenomics.com 27.9%. Actual market float smaller than schedule circulating (treasury-held). priceUsd is March-2024 monthly open (close 2.62), no daily price fetched."
+   }
+  ],
+  "gap": "Mar 21 2025 final tranche was ~21.8% of schedule circulating (below 25%), skipped. Mar 21 2022 tranche (63%) is before window. Binance Research gives the release schedule only as an image; per-allocation vesting terms come from tokenomics.com. No exact day confirmed by a project announcement; anniversary date taken from tokenomics.com only."
+ },
+ {
+  "token": "BEAM",
+  "name": "Beam (formerly Merit Circle, MC)",
+  "binanceFuturesSymbol": null,
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": null
+  },
+  "events": [],
+  "gap": "No qualifying event in window. Insider supply (Seed Contributors, Contributors & Builders) and treasury were on linear vesting inherited from MC; DefiLlama shows one linear schedule starting 2021-10-22 over ~4.5 years (https://defillama.com/protocol/unlocks/beam), DropsTab MC vesting shows Seed 36-month linear and Team & Advisors 48-month linear with 0% at TGE (https://dropstab.com/th/coins/merit-circle/vesting); no single-day cliff >=25% of circulating listed by either. DropsTab BEAM page says BEAM has no contractual vesting schedule and is fully unlocked (https://dropstab.com/hi/coins/beam-2). In Feb 2023 initial contributors voluntarily locked 71.7M MC for four years (https://medium.com/@meritcircle/locking-up-the-majority-share-of-initial-contributor-tokens-for-at-least-4-years-2dffeb6ccea8) - a relock, not an unlock. First insider unlock date left null: MC public launch was the Balancer LBP 2-5 Nov 2021 (https://medium.com/@meritcircle/instructions-for-participating-in-the-balancer-liquidity-bootstrapping-pool-blbp-for-the-merit-b506681deb3f); DefiLlama dates the insider linear stream start 2021-10-22 while DropsTab end dates (Seed Nov 2025, Team Nov 2026) imply a later start, so the first insider transferable day conflicts between sources; it is before the window in every reading. The MC->BEAM 1:100 migration (late Oct 2023, swap not unlock) was not dated from a fetched page. Ad hoc DAO-treasury spends are not scheduled unlocks and were not checked day by day."
+ },
+ {
+  "token": "CTC",
+  "name": "Creditcoin",
+  "binanceFuturesSymbol": null,
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": null
+  },
+  "events": [],
+  "gap": "No single-day unlock >=25% of circulating found or confirmable in window. The only schedule found is Token Radar (https://tokenradar.ai/tokens/creditcoin/tokenomics), citing the Sept 2023 whitepaper: 600M genesis issuance (investors 200M, Gluwa 300M, Creditcoin Foundation 100M), charted as a 2019 genesis release but also described as Gluwa/Foundation six-year linear vesting with year-level estimated dates and no dates for investor tranches; it says fully unlocked in 2025. That is internally inconsistent and not a primary source, so neither a first-insider-unlock date nor any cliff could be confirmed; first insider unlock is before the window in either reading (2019-2020 genesis/launch). Creditcoin Foundation Q&A (Apr 2023, https://medium.com/creditcoin-foundation/creditcoin-q-a-april-2023-82e8eadb49ad) and docs (https://docs.creditcoin.org/llms-full.txt) cover only swaps (G-CRE/WCTC -> native CTC 1:1, optional merge with 3.0; GATE -> CTC 2:1), which are migrations, not insider unlocks, and give no unlock schedule. Mainnet CTC is block-reward issued (2 CTC/block), a continuous stream. No Tokenomist/DropsTab/CryptoRank vesting page could be fetched."
+ },
+ {
+  "token": "FLOCK",
+  "name": "FLock.io",
+  "binanceFuturesSymbol": "FLOCKUSDT",
+  "firstInsiderUnlock": {
+   "date": "2025-12-30",
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "No qualifying event in window. Official docs (https://docs.flock.io/flock-tokenomics/token-allocations): investors and Team & Advisors both have a 1-year cliff then 2 years linear; community emissions minted over 60 months with 1% monthly decay (a stream). TGE 2024-12-30 per tokenomics.com (https://app.tokenomics.com/tokenomics/flock/unlocks), so the insider cliff cannot end before ~2025-12-30, after the window end 2025-11-16; exact first insider unlock day and whether it is a lump or the start of monthly vesting could not be confirmed (Tokenomist past-event table is paywalled: https://tokenomist.ai/flock-2/unlock-events; tokenomics.com shows only events from Apr 2026, all monthly ~4-7% of mcap). firstInsiderUnlock.date 2025-12-30 is derived (TGE + 12-month cliff), not confirmed by a project statement; inWindow false either way. TGE itself released only community/ecosystem tokens (launch, no prior circulating) and is not a B event. tokenomics.com has internal inconsistencies (0% float at TGE vs Community 10.6% / Ecosystem 40% at TGE). Binance perp listed 2025-09 per input; symbol assumed FLOCKUSDT, not verified."
+ },
+ {
+  "token": "KAS",
+  "name": "Kaspa",
+  "binanceFuturesSymbol": "KASUSDT",
+  "firstInsiderUnlock": {
+   "date": null,
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "No insider unlocks exist: Kaspa was a fair-launch proof-of-work coin (mainnet November 2021) with no premine, no pre-sale and no team or VC allocation; supply enters only through mining emissions (a continuous stream with smooth monthly 'chromatic' reduction), so no single-day unlock can reach 25% of circulating. Sources: kaspa.org 'No premine. No hidden allocation. Fair launch.' (https://kaspa.org/?p=45929, primary); KuCoin Learn 'fair launch with no pre-sale, no pre-mine, and no token allocations to the team or venture capitalists', launched November 2021 (https://www.kucoin.com/knowledge-base/Concepts/what-is-kaspa-kas, aggregator). firstInsiderUnlock set to null because there is no insider group. Note: input lists binancePerpSince 2023-11, but KAS was not checked for a Binance USDT-M perp listing; symbol KASUSDT unverified."
+ },
+ {
+  "token": "MOCA",
+  "name": "Moca Network (Mocaverse)",
+  "binanceFuturesSymbol": "MOCAUSDT",
+  "firstInsiderUnlock": {
+   "date": "2025-07-11",
+   "inWindow": true,
+   "atLaunch": false
+  },
+  "events": [
+   {
+    "date": "2025-07-11",
+    "amountTokens": 64190000,
+    "circulatingBefore": 3330000000,
+    "pctCirculating": 1.9,
+    "shape": "stream",
+    "recipients": "Strategic Partners (private investors): 12-month cliff ends, first of ~18 monthly linear tranches (1.16B allocation)",
+    "recipientsMix": {
+     "team": 0,
+     "investors": 1,
+     "community": 0,
+     "ecosystem": 0,
+     "other": 0
+    },
+    "firstInsiderUnlock": true,
+    "flags": [],
+    "dateConflict": false,
+    "priceUsd": null,
+    "priceSource": null,
+    "sources": [
+     {
+      "label": "Tokenomics.com MOCA unlocks",
+      "url": "https://app.tokenomics.com/tokenomics/moca/unlocks",
+      "kind": "aggregator",
+      "confirms": [
+       "TGE 2024-07-11",
+       "Strategic Partners 13%, 0% TGE, 12-month cliff, 18-month linear",
+       "Team 12% 18-month cliff; Advisors 7% 18-month cliff",
+       "no shown event >=25% of mcap"
+      ]
+     },
+     {
+      "label": "DropsTab MOCA vesting",
+      "url": "https://dropstab.com/coins/mocaverse/vesting",
+      "kind": "aggregator",
+      "confirms": [
+       "Strategic Partners 1.16B, 0% TGE, cliff then linear",
+       "monthly Strategic Partners tranche 64.19M",
+       "Liquidity fully unlocked 2025-07-11"
+      ]
+     }
+    ],
+    "gap": "Exact first-tranche date inferred as TGE + 12 months (2024-07-11 + 12m) from both aggregators' terms and DropsTab's progress figures (94% of Strategic Partners in linear phase by Nov 2026 = 17 of 18 tranches); no project announcement of this date fetched. Treated as stream because the cliff end releases one monthly tranche (~1/18), not a lump. circulatingBefore is my schedule-based estimate (Network Incentives, OpEx, Ecosystem, Liquidity, Public Sale TGE amounts plus monthly vesting through 2025-06-11 = ~3.33B), not a quoted figure. No price fetched (coinlore shows only +10.4% July-2025 return)."
+   }
+  ],
+  "gap": "No single-day unlock >=25% of circulating found in window: all allocations vest monthly (Network Incentives/OpEx 24m, Ecosystem 48m, Liquidity 12m after 20-50% TGE); tokenomics.com shows only 7 of 29 past events (max 4.7% of mcap) so earlier events are not fully visible. Team (18-month cliff) and Launch Contributors & Advisors (18-month cliff) first unlock ~2026-01-11, after the window. Public Community Sale (1.5%, 5% at TGE, 3m cliff) treated as public, not insider."
+ },
+ {
+  "token": "PLUME",
+  "name": "Plume Network",
+  "binanceFuturesSymbol": "PLUMEUSDT",
+  "firstInsiderUnlock": {
+   "date": "2026-01-21",
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "No qualifying event in window (2025-01-01 to 2025-11-16). tokenomics.com (https://app.tokenomics.com/tokenomics/plume-network/unlocks): TGE 2025-01-21; Private Investors 21% and Core Contributors 20% both 0% at TGE, 12-month cliff with 33% unlock, then 24-month linear; Community & Ecosystem 39% (29.5% at TGE, 36m linear), Airdrop 7% (100% TGE), Foundation 13% (11.5% at TGE, 36m linear) - all non-insider flows are monthly streams. First insider unlock is therefore the 12-month cliff ~2026-01-21 (TGE + 12 months), after the window. Tokenomist weekly digest for Jan 19-25 2026 (https://tokenomist.ai/insights/weekly-unlock-digest-jan-19-25-2026) confirms a January 2026 PLUME insider unlock (investors + core contributors, ~39.75% of circulating, ~$24M) but its day is missing, so the exact day comes from the tokenomics.com TGE date plus cliff, not a project statement."
+ },
+ {
+  "token": "SOLAYER",
+  "name": "Solayer (LAYER)",
+  "binanceFuturesSymbol": null,
+  "firstInsiderUnlock": {
+   "date": "2026-02-10",
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "No qualifying event in window (2025-02-01 to 2025-11-16). Official docs (https://docs.solayer.org/resources/tokenomics.md): Core Contributors 17.11% '1-year cliff, 3 years linear'; Investors 16.66% 1-year cliff then 2 years linear; Community & Ecosystem 51.23% and Foundation 15% vest every 3 months over 4 years; initial circulating 220M (22%). TGE 2025-02-10 per tokenomics.com (https://app.tokenomics.com/tokenomics/solayer/unlocks); Genesis Drop claims started 2025-02-11 (KuCoin news). Insider cliffs therefore end ~Feb 2026, after the window; firstInsiderUnlock.date 2026-02-10 is derived (tokenomics.com TGE + 12-month cliff), not confirmed by a project statement; could be Feb 11 (Genesis Drop start); inWindow false either way. Largest in-window event found: quarterly Foundation + Community & Ecosystem tranche on 2025-05-11 = 12.87% of circulating per Tokenomist digest (https://tokenomist.ai/research/weekly-unlocks-digest-week-1-may-2025), below 25%; later quarterly tranches (Aug/Nov 2025) are smaller relative to a larger float (my schedule estimate ~26.4M LAYER each). Binance perp: input says none; Bybit symbol (LAYERUSDT) not verified."
+ },
+ {
+  "token": "ZBCN",
+  "name": "Zebec Network (ZBCN, formerly ZBC)",
+  "binanceFuturesSymbol": null,
+  "firstInsiderUnlock": {
+   "date": "2022-09-17",
+   "inWindow": false,
+   "atLaunch": false
+  },
+  "events": [],
+  "gap": "No qualifying event in window (2024-04-01 to 2025-11-16). ZBC TGE 2022-03-17 per tokenomics.com (https://app.tokenomics.com/tokenomics/zebec-network): Contributors 20%, Private 11%, Seed 9% each 6-month cliff then 36-month linear; Community & Rewards 50% 48-month linear; Market Making 4% 36-month linear - all streams, no large cliffs. First insider unlock date is derived (TGE + 6-month cliff), not confirmed by a project statement; tokenomics.com has internal inconsistencies (17% vs 2.8% at TGE; all pools shown finished although a 48-month schedule from 2022 runs into 2026). The ZBC->ZBCN 1:10 migration (ZBC trading halted Apr 8, ZBCN trading and swap from Apr 10 to May 10, 2024; ZIP-5 https://medium.com/zebec-protocol/zip-5-proposal-to-migrate-zbc-to-zbcn-380b6cf1072e; docs say no new supply minted, https://docs.zebec.io/zebec-network-archive/zebec-network-archive/zbcn-tokemonics) is a redenomination swap, not an unlock, so not listed. Largest in-window release found: 2.12B ZBCN on 2025-09-16 (CoinChapter, https://coinchapter.com/?p=134533) with ~87.9B circulating after, i.e. ~2.5% - far below 25%. Zebec bought back ~300M ZBC from investors in 2023 (Zebec Medium 2024 update)."
+ }
+]
