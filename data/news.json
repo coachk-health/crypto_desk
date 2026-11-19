@@ -1,47 +1,51 @@
 {
   "date": "2026-11-19",
-  "updated": "2026-11-19T08:16:05Z",
-  "headline": "Anthropic makes its Nasdaq debut today as crypto platforms offer tokens that track its shares, while bitcoin trades near its lowest since July as fear stays extreme and Fed rate-rise worries weigh.",
+  "updated": "2026-11-19T12:20:20Z",
+  "headline": "Anthropic starts trading on Nasdaq today while crypto platforms sell tokens that track its shares; bitcoin is near $64,000 but heading for a seventh straight weekly loss as Fed rate-rise fears weigh.",
   "market": {
-    "asOf": "Read at about 07:55-08:00 UTC Thu 19 Nov (about 15:00 Bangkok). BTC and SOL from CoinGecko's coin pages, ETH from CoinMarketCap's Ethereum page because CoinGecko's would not load. Pages on both sites showed conflicting prices (BTC between about $62,600 and $63,600), so treat these as rough. The 24-hour moves disagreed and are left out. Use the live prices on this page.",
+    "asOf": "Read at about 11:56-11:59 UTC Thu 19 Nov (about 19:00 Bangkok) from CoinGecko's Bitcoin and Ethereum pages. No reliable SOL reading this run. Use the live prices on this page.",
     "btc": {
-      "price": 63588,
-      "chg24h": null
+      "price": 63827,
+      "chg24h": -0.5
     },
     "eth": {
-      "price": 1794,
-      "chg24h": null
+      "price": 1802,
+      "chg24h": -0.8
     },
     "sol": {
-      "price": 74.7,
+      "price": null,
       "chg24h": null
     },
-    "fearGreed": "Extreme fear: alternative.me's Crypto Fear & Greed Index 11 (12 yesterday, 29 a week ago, 59 a month ago); CoinMarketCap's own Fear & Greed Index also 11. Both read at about 08:00 UTC Thu 19 Nov."
+    "fearGreed": "Not read this run: the Fear & Greed index pages would not load."
   },
   "stories": [
     {
-      "title": "Anthropic debuts on Nasdaq today, and crypto platforms launch tokens that track its shares",
+      "title": "Anthropic starts trading on Nasdaq today, and crypto platforms sell tokens that track its shares",
       "mood": "volatile",
-      "summary": "AI company Anthropic priced its shares at $83, above its $70-78 range, and starts trading on Nasdaq as ANT on Thursday. It is the biggest IPO on record. Crypto platforms including Ondo and Binance Wallet are offering tokens that track the share price. These tokens do not make you a shareholder, and many are not open to US residents.",
+      "summary": "AI company Anthropic sold shares at $83, above its $70-78 range, and starts trading on Nasdaq as ANT on Thursday. Counting a private placement, it raised about $107 billion, more than SpaceX's IPO. Crypto platforms are selling tokens that track the share price. These tokens are not shares, and many are not open to US residents.",
       "points": [
-        "Anthropic sold 980 million shares at $83, raising about $81.3 billion at a valuation of about $1.5 trillion, per Yahoo Finance; Reuters, via Investing.com, calls it the biggest IPO on record.",
-        "The first trade may come after the 9:30am ET open: new listings start in Nasdaq's IPO Cross once the lead bank is ready, per Stocktitan.",
-        "Ondo is launching a token tracking ANT for eligible investors outside the US only; holders get price exposure but do not own the stock, per The Block.",
+        "Anthropic sold 980 million shares at $83, raising about $81.3 billion, or about $107.3 billion including a $26 billion private placement, at a valuation of about $1.5 trillion, per Al Jazeera.",
+        "CoinDesk says the total beats SpaceX's $86 billion, and that gray-market trading pointed to an opening as much as 24% higher than the offer price.",
+        "The first trade can come hours after the 9:30am ET open: SpaceX's came at 11:46am, per Stocktitan.",
         "Kraken's page says its tokenized IPO access is not open to US clients, who can buy ANT as a regular stock from its first trading day.",
-        "Binance Wallet's sale had a 500 million USDC cap; its tokens are issued by Backed, are not Anthropic stock and carry no voting or dividend rights, per Bitcoin.com."
+        "CZ says tokenized versions on BNB Chain go live on IPO day, per CoinDesk; Binance Wallet's tokens are issued by Backed, are not Anthropic stock and carry no voting or dividend rights, per Bitcoin.com."
       ],
       "sources": [
         {
-          "label": "Yahoo Finance: Anthropic prices at $83",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-prices-ipo-83-share-014000480.html"
+          "label": "Al Jazeera: biggest IPO of all time",
+          "url": "https://www.aljazeera.com/economy/2026/11/19/anthropic-raises-81-3bn-in-biggest-ipo-of-all-time"
         },
         {
-          "label": "Investing.com (Reuters): biggest IPO ever",
-          "url": "https://www.investing.com/news/stock-market-news/exclusiveanthropic-clinches-biggestever-ipo-with-81-billion-offering-5037350"
+          "label": "CoinDesk: $107B raise tops SpaceX",
+          "url": "https://coindesk.com/markets/2026/11/19/anthropic-s-usd107-billion-raise-set-to-surpass-spacex-s-ipo-haul"
         },
         {
-          "label": "The Block: Ondo tokenized ANT",
-          "url": "https://www.theblock.co/news/markets/2026-11-18-ondo-to-launch-tokenized-anthropic-stock-on-ipo-day-443482"
+          "label": "CoinDesk: live updates 19 Nov",
+          "url": "https://www.coindesk.com/markets/2026/11/19/live-updates-bitcoin-nears-usd64-000-as-anthropic-s-record-ipo-lifts-tech"
+        },
+        {
+          "label": "CoinDesk: tokenized ANT on BNB Chain",
+          "url": "https://www.coindesk.com/markets/2026/11/19/cz-says-tokenized-anthropic-is-coming-to-bnb-chain-on-ipo-day"
         },
         {
           "label": "Kraken: Anthropic IPO page",
@@ -58,49 +62,44 @@
       ]
     },
     {
-      "title": "Bitcoin falls to its lowest since July as Fed rate-rise fears grow and fund outflows continue",
+      "title": "Bitcoin climbs back toward $64,000 but heads for a seventh straight weekly loss",
       "mood": "bearish",
-      "summary": "Minutes of the Fed's October meeting showed nearly all officials expect to raise rates in December, and Governor Waller said a bigger half-point rise should be considered. Bitcoin touched its lowest level since July early Thursday, and money kept leaving US bitcoin funds on Wednesday.",
+      "summary": "Bitcoin fell close to $62,000 overnight, then climbed back toward $64,000 early Thursday as tech stocks rose ahead of Anthropic's debut. It is still on track for a seventh weekly loss in a row. Worries about further Fed rate rises and heavy November outflows from US bitcoin funds keep pressure on.",
       "points": [
-        "Nearly all Fed officials expect a quarter-point rise in December, and Waller backed a half point, per AP via KSAT; CME FedWatch was near 95% for a December rise.",
-        "Waller said inflation is 'headed in the wrong direction', per Investing.com via Yahoo Finance.",
-        "Bitcoin hit its lowest level since July in early Thursday trading, with an intraday low of about $62,399.50, per Investing.com via Yahoo Finance.",
-        "US spot bitcoin funds lost a net $306.5 million on Wednesday 18 Nov, with no fund taking in money; spot ether funds lost $39.8 million, per Farside data reported by KuCoin.",
-        "CryptoQuant says bitcoin is below its 200-day average of about $72,900 and sees $62,000-65,000 as a possible support range, per The Block."
+        "CoinDesk says bitcoin is heading for its seventh straight weekly loss, its second-longest losing run after nine weeks in 2022, having fallen from about $87,500 to $62,000.",
+        "Minutes of the Fed's last meeting showed some officials were ready to raise rates by more than the usual quarter point, per CoinDesk.",
+        "US spot bitcoin funds lost a net $306.5 million on Wednesday 18 Nov, with none of the 12 funds taking in money, and November outflows are near $2.9 billion, per Coinpaper.",
+        "Global stablecoin supply fell about $16 billion in 30 days to $286 billion, per Nansen data reported by crypto.news."
       ],
       "sources": [
         {
-          "label": "KSAT (AP): Fed minutes",
-          "url": "https://www.ksat.com/business/2026/11/18/fed-minutes-higher-interest-rates-needed-in-december-as-inflation-worries-mount/"
+          "label": "CoinDesk: live updates 19 Nov",
+          "url": "https://www.coindesk.com/markets/2026/11/19/live-updates-bitcoin-nears-usd64-000-as-anthropic-s-record-ipo-lifts-tech"
         },
         {
-          "label": "Yahoo Finance: bitcoin lowest since July",
-          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-down-63-5k-amid-071507671.html"
+          "label": "Coinpaper: ETF outflows",
+          "url": "https://coinpaper.com/39052/bitcoin-et-fs-lose-another-306-million-november-outflows-near-2-9-billion"
         },
         {
-          "label": "KuCoin: ETF flows 18 Nov",
-          "url": "https://www.kucoin.com/news/flash/us-bitcoin-and-ethereum-spot-etfs-recorded-net-outflows-of-306-5m-and-39-8m-on-nov-18"
-        },
-        {
-          "label": "The Block: CryptoQuant 'value zone'",
-          "url": "https://www.theblock.co/newsletters/the-daily/2026-11-19-binance-gets-6-5-billion-freezing-order-cryptoquant-says-bitcoin-is-in-a-value-zone-and-more-443511"
+          "label": "crypto.news: stablecoin supply falls",
+          "url": "https://crypto.news/stablecoin-supply-falls-16-billion-bitcoin-selloff/"
         }
       ]
     },
     {
       "title": "Ledger finds tampered hardware wallets sold in Berlin and Dubai",
       "mood": "bearish",
-      "summary": "Ledger widened its investigation into tampered hardware wallets to Germany and the UAE. Attackers bought real devices, added hardware that leaks the recovery phrase during setup, and sent them back into reseller channels. Ledger says its chip and software are not flawed and no device bought on ledger.com is affected. The lesson: buy hardware wallets from the maker and never use a recovery phrase you did not create.",
+      "summary": "Ledger widened its investigation into tampered hardware wallets to Berlin and Dubai. Attackers obtained real devices, physically modified them to capture the recovery phrase during setup, and put them back into reseller channels. Ledger says there is no flaw in its chip or operating system and no confirmed case involving a device bought directly from Ledger.com. It asks anyone who bought a device in Berlin since January to contact support.",
       "points": [
-        "Two tampered units were reported in Dubai and 'a few' in Berlin; Ledger asks anyone who bought a device in Berlin since January to contact support, per The Block.",
-        "Two X users report about $604,000 lost combined from devices bought from an authorized Dubai reseller; Ledger has not confirmed loss figures, per The Block.",
-        "Bitquery estimates about $1.68 million taken from 16 wallets in Dubai and Berlin, after about $102 million from 335 wallets in Southeast Asia earlier, per The Block.",
-        "Ledger says there is 'no flaw in Ledger's secure chip or operating system, and no confirmed case involving a device bought on ledger.com', per The Block."
+        "Tampered units were reported in Dubai and a small number in Berlin, per Cryptowisser.",
+        "Two users report about $604,000 lost combined from devices bought from an authorized Dubai reseller; Ledger has yet to confirm the total, per Cryptowisser.",
+        "Bitquery estimates about $1.68 million taken from 16 wallets in Dubai and Berlin, after about $102 million from 335 wallets in Southeast Asia earlier, per Cryptowisser.",
+        "Ledger says there is no flaw in its secure chip or operating system and no confirmed case involving a device bought directly from Ledger.com, per Cryptowisser."
       ],
       "sources": [
         {
-          "label": "The Block: Ledger incidents in Germany and UAE",
-          "url": "https://www.theblock.co/news/web3/2026-11-18-ledger-new-hardware-incidents-germany-uae-443530"
+          "label": "Cryptowisser: $1.68M traced to Berlin and Dubai",
+          "url": "https://www.cryptowisser.com/news/ledger-tracks-168m-hardware-wallet-tampering-to-berlin-and-dubai/"
         }
       ]
     }
@@ -110,6 +109,16 @@
       "title": "Binance wins $6.5B freezing order over October hack",
       "summary": "An Abu Dhabi court granted a worldwide freezing order; Binance says about $2.85 billion of about $6.34 billion in affected assets has been frozen or intercepted, per The Block.",
       "url": "https://www.theblock.co/newsletters/the-daily/2026-11-19-binance-gets-6-5-billion-freezing-order-cryptoquant-says-bitcoin-is-in-a-value-zone-and-more-443511"
+    },
+    {
+      "title": "Senators ask Treasury to treat state stablecoin issuers equally",
+      "summary": "Senators including Lummis and Gillibrand asked Treasury Secretary Bessent to give state-regulated stablecoin issuers the same safe harbor as federal ones under the GENIUS Act, per KuCoin News.",
+      "url": "https://www.kucoin.com/news/flash/lummis-and-senators-urge-treasury-to-grant-state-level-stablecoin-issuers-equal-safe-harbor"
+    },
+    {
+      "title": "Movie2K defendant offered deal to hand over 40,000 BTC",
+      "summary": "A Leipzig judge offered to drop the case if the defendant gives up 40,000 bitcoin plus €38 million; the trial resumes 3 Dec, per Decrypt.",
+      "url": "https://decrypt.co/383533/movie2k-defendant-could-hand-over-40000-bitcoin-to-end-trial-and-stay-a-billionaire"
     },
     {
       "title": "Coinbase blocks $4.7M headed to a deepfake giveaway",
@@ -127,14 +136,9 @@
       "url": "https://www.theblock.co/newsletters/the-daily/2026-11-19-binance-gets-6-5-billion-freezing-order-cryptoquant-says-bitcoin-is-in-a-value-zone-and-more-443511"
     },
     {
-      "title": "Strategy buys 485 more bitcoin",
-      "summary": "Strategy bought 485 BTC for $33.4 million over 9-15 Nov, bringing its holdings to 850,849 BTC at an average cost of $75,452, per its SEC filing.",
-      "url": "https://www.sec.gov/Archives/edgar/data/0001050446/000119312526462151/mstr-20261116.htm"
-    },
-    {
-      "title": "Kraken's parent agrees to buy Tribe Capital",
-      "summary": "Payward is acquiring Tribe Capital to expand its private-market offerings, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-18-kraken-parent-payward-tribe-capital-443522"
+      "title": "Russia lists 30 licensed crypto operators",
+      "summary": "Russia's central bank register lists 30 operators including Sberbank and VTB, with a 300,000-ruble yearly cap for retail buyers, per BitcoinWorld.",
+      "url": "https://bitcoinworld.co.in/russia-crypto-register-30-operators-retail-rules/"
     }
   ],
   "calendar": [
@@ -144,7 +148,7 @@
       "event": "US jobless claims and Philly Fed survey",
       "impact": "neutral",
       "key": false,
-      "note": "Claims forecast 196,000 (Finviz) or 197,000 (TD Economics), prior 200,000; Philly Fed forecast 20.6, prior 20.9, per Finviz. Walmart reports at 7:00am ET. Fed's Hammack speaks at 8:50am ET, per TD Economics, and Vice Chair Jefferson at 9:25am ET, per the Fed."
+      "note": "Claims forecast 197,000, prior 200,000, per TD Economics. Philly Fed prior 20.9, per Trading Economics; no consensus could be confirmed. Walmart reports at 7:00am ET, per Finviz. Fed's Hammack speaks at 8:50am ET, per TD Economics, and Vice Chair Jefferson at 9:25am ET, per the Fed."
     },
     {
       "et": "Thu 19 Nov · from 9:30am",
@@ -152,7 +156,7 @@
       "event": "Anthropic's first day of trading on Nasdaq as ANT",
       "impact": "volatile",
       "key": true,
-      "note": "Priced at $83, per Yahoo Finance. The market opens at 9:30am ET, but a new listing's first trade comes in Nasdaq's IPO Cross once the lead bank is ready, which can be hours after the open, per Stocktitan."
+      "note": "Priced at $83, per Al Jazeera. The market opens at 9:30am ET, but a new listing's first trade comes in Nasdaq's IPO Cross, which can be hours after the open (SpaceX's came at 11:46am), per Stocktitan."
     },
     {
       "et": "Thu 19 Nov · 10:00am",
@@ -163,7 +167,7 @@
       "note": "SEC nominees Kristin N. Johnson and Steven Levine appear before the Senate Banking Committee with other nominees, per the committee's page. Fed's Goolsbee (12:30pm ET), Barkin (4:00pm ET) and Paulson (6:30pm ET) speak, per TD Economics, and Barr at 2:15pm ET, per the Fed."
     },
     {
-      "et": "Thu 19 Nov (evening) – Thu 26 Nov",
+      "et": "Thu 19 Nov (7:00pm) – Thu 26 Nov",
       "bkk": "Fri 20 – Thu 26 Nov",
       "event": "Token unlocks: KAITO, ZRO, ARIA, AKE, MBG, SOON, MON, SOSO, XPL, H, HUMA",
       "impact": "bearish",
@@ -176,7 +180,7 @@
       "event": "Weekly bitcoin options expiry",
       "impact": "volatile",
       "key": false,
-      "note": "Deribit options settle at 08:00 UTC, per Deribit. CryptoQuant puts Friday's bitcoin expiry at about $2.1 billion. The bigger monthly expiry, about $6.5 billion per CryptoQuant, is Fri 27 Nov."
+      "note": "Deribit options settle at 08:00 UTC, per Deribit. Cryptoticker puts Friday's bitcoin expiry at about 28,300 BTC, roughly $1.8 billion. The bigger monthly expiry, about $5.7 billion per Cryptoticker, is Fri 27 Nov."
     },
     {
       "et": "Fri 20 Nov · 10:00am",
@@ -184,7 +188,7 @@
       "event": "University of Michigan consumer sentiment (Nov, final)",
       "impact": "neutral",
       "key": false,
-      "note": "Forecast 52, per Finviz; the preliminary November reading was 51.0, per StockAnalysis, and October's final was 48.0, per Finviz. Fed's Waller speaks at 8:25am ET and Cook at 12:15pm ET (00:15 Sat Bangkok), per the Fed."
+      "note": "Forecast 51.0 and preliminary November reading 51.0, per FinanceCalendar. October's final reading is 48.0 per FinanceCalendar but 46.3 per InvestingLive. Fed's Waller speaks at 8:25am ET and Cook at 12:15pm ET (00:15 Sat Bangkok), per the Fed."
     },
     {
       "et": "Tue 24 Nov · 10:00am",
@@ -192,7 +196,7 @@
       "event": "Conference Board consumer confidence (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "Prior 91.7, per Finviz; no forecast published there. Dell, Workday and HP report after the US close, per IfYouSpent."
+      "note": "Prior 91.7, per WDBJ7 (AP); no forecast found. Dell, Workday and HP report after the US close, per IfYouSpent."
     },
     {
       "et": "Wed 25 Nov · 8:30am",
@@ -200,7 +204,7 @@
       "event": "US GDP (Q3 second estimate), PCE inflation (Oct), durable goods and jobless claims",
       "impact": "volatile",
       "key": true,
-      "note": "Finviz expects 3.4% for the second estimate of Q3 GDP, against a prior reading of 2.2%. PCE prior 3.6% a year (core 3.1%), per FinanceCalendar. Weekly jobless claims move to Wednesday for Thanksgiving, per Finviz. Fed Beige Book at 2:00pm ET, per the Fed."
+      "note": "BEA confirms Q3 GDP (second estimate) and October personal income and PCE at 8:30am ET. Core PCE prior 3.1% a year, per ForexFundamentals. Durable goods forecast +0.2%, per Continuum Economics. Weekly jobless claims move to Wednesday for Thanksgiving, per FinanceCalendar. Fed Beige Book at 2:00pm ET, per the Fed."
     },
     {
       "et": "Thu 26 – Fri 27 Nov",
@@ -208,7 +212,7 @@
       "event": "Thanksgiving: US stock market closed, then early close",
       "impact": "neutral",
       "key": false,
-      "note": "NYSE closed Thursday and closes at 1:00pm ET Friday, per NYSE. The monthly bitcoin options expiry is Friday at 08:00 UTC (15:00 Bangkok), about $6.5 billion per CryptoQuant."
+      "note": "NYSE closed Thursday and closes at 1:00pm ET Friday, per ICE. The monthly bitcoin options expiry is Friday at 08:00 UTC (15:00 Bangkok), about $5.7 billion per Cryptoticker."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -216,15 +220,15 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": true,
-      "note": "Meeting 8-9 Dec, with the press conference Wed 9 Dec at 2:30pm ET (02:30 Thu Bangkok), per the Fed. CME FedWatch was near 95% for a December rate rise, per AP via KSAT."
+      "note": "Meeting 8-9 Dec, statement 2:00pm ET and press conference 2:30pm ET Wed 9 Dec (02:30 Thu Bangkok), per the Fed. CME FedWatch prices about a 95% chance of a December rate rise, per 24/7 Wall St."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-19T08:16:05Z",
-    "claimsChecked": 86,
-    "claimsRemoved": 4,
-    "rounds": 2,
+    "checkedAt": "2026-11-19T12:20:20Z",
+    "claimsChecked": 113,
+    "claimsRemoved": 20,
+    "rounds": 3,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
 }
