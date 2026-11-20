@@ -138,10 +138,10 @@
     "target": 0.11172
    },
    "mark": {
-    "date": "2026-11-18",
-    "price": 0.1436,
-    "pnl": 9.48,
-    "r": 0.75
+    "date": "2026-11-19",
+    "price": 0.14245,
+    "pnl": 10.17,
+    "r": 0.8
    },
    "worstAgainst": 5.29,
    "weekMove": null,
@@ -378,10 +378,10 @@
     "target": 0.0097565
    },
    "mark": {
-    "date": "2026-11-18",
-    "price": 0.01424,
-    "pnl": 4.97,
-    "r": 0.39
+    "date": "2026-11-19",
+    "price": 0.01367,
+    "pnl": 8.74,
+    "r": 0.69
    },
    "worstAgainst": 3.46
   },
@@ -444,6 +444,14 @@
     {
      "at": "2026-11-18T08:40:50+00:00",
      "event": "check day: called"
+    },
+    {
+     "at": "2026-11-20T08:42:57+00:00",
+     "event": "entry: short at 0.008463 (binance-futures HUMAUSDT)"
+    },
+    {
+     "at": "2026-11-20T08:42:57+00:00",
+     "event": "closed: stop on 2026-11-19 at 0.00952595, -12.69%"
     }
    ],
    "decision": {
@@ -465,7 +473,31 @@
     "pumpPct": 30.0,
     "fromSignals": "2026-11-17T10:31:13Z"
    },
-   "status": "called"
+   "status": "closed",
+   "ref": 0.008463,
+   "refSource": "binance-futures HUMAUSDT",
+   "pump": -62.8,
+   "weekMove": 5.5,
+   "tags": [
+    "first",
+    "size25",
+    "weekFlatUp",
+    "core"
+   ],
+   "levels": {
+    "zoneLow": 0.008463,
+    "zoneHigh": 0.00854763,
+    "stop": 0.00947856,
+    "target": 0.00550095
+   },
+   "exit": {
+    "date": "2026-11-19",
+    "price": 0.00952595,
+    "why": "stop"
+   },
+   "pnl": -12.69,
+   "r": -1.0,
+   "worstAgainst": 13.91
   },
   {
    "id": "KNTQ-2026-11-27",
@@ -484,6 +516,10 @@
     {
      "at": "2026-11-19T08:56:00+00:00",
      "event": "check day: called"
+    },
+    {
+     "at": "2026-11-20T08:42:57+00:00",
+     "event": "entry: short at 0.220374 (coingecko)"
     }
    ],
    "decision": {
@@ -505,7 +541,25 @@
     "pumpPct": 30.0,
     "fromSignals": "2026-11-18T09:55:08Z"
    },
-   "status": "called"
+   "status": "open",
+   "ref": 0.220374,
+   "refSource": "coingecko",
+   "pump": -47.0,
+   "weekMove": -26.6,
+   "tags": [
+    "first",
+    "sizeSmall",
+    "weekDown",
+    "core",
+    "strong"
+   ],
+   "levels": {
+    "zoneLow": 0.220374,
+    "zoneHigh": 0.222578,
+    "stop": 0.246819,
+    "target": 0.143243
+   },
+   "worstAgainst": 0.0
   },
   {
    "id": "GRVT-2026-11-30",
@@ -606,6 +660,22 @@
    "status": "watching"
   },
   {
+   "id": "KNTQ-2026-12-27",
+   "token": "KNTQ",
+   "name": "Kinetiq",
+   "coingeckoId": "kinetiq",
+   "unlockDate": "2026-12-27",
+   "checkDate": "2026-12-19",
+   "entryDate": "2026-12-20",
+   "coverDate": "2027-01-10",
+   "rules": [
+    "first"
+   ],
+   "setup": "B",
+   "history": [],
+   "status": "watching"
+  },
+  {
    "id": "LIT-2026-12-27",
    "token": "LIT",
    "name": "Lighter",
@@ -638,17 +708,38 @@
    "status": "watching"
   }
  ],
- "updatedAt": "2026-11-19T21:41:16Z",
+ "updatedAt": "2026-11-20T08:42:57Z",
  "summary": {
-  "closed": 0,
+  "closed": 1,
   "won": 0,
   "riskUsd": 100,
-  "rTotal": 0,
-  "totalUsd": 0,
-  "open": 2,
+  "rTotal": -1.0,
+  "totalUsd": -100,
+  "open": 3,
   "skipped": 2,
-  "watching": 8,
-  "byTag": {}
+  "watching": 9,
+  "byTag": {
+   "core": {
+    "closed": 1,
+    "won": 0,
+    "rTotal": -1.0
+   },
+   "weekFlatUp": {
+    "closed": 1,
+    "won": 0,
+    "rTotal": -1.0
+   },
+   "size25": {
+    "closed": 1,
+    "won": 0,
+    "rTotal": -1.0
+   },
+   "first": {
+    "closed": 1,
+    "won": 0,
+    "rTotal": -1.0
+   }
+  }
  },
  "method": "Live trade log: every unlock short the page calls from now on, with the levels it showed\nand what actually happened. Nothing in it is rewritten later: a call's decision, entry price,\nstop and target are frozen when they are made, and only its result is filled in afterwards.\n\nLife of a call (days are relative to the unlock date):\n  watching  the unlock matches the playbook; its check day has not come yet. Not frozen.\n  check day (day -8): the decision is frozen with the unlock data as it stood then:\n              confidence under 60  -> skipped (\"data not confirmed\")\n              otherwise            -> called, waiting for the entry price\n  entry (day -7): R = the 00:00 UTC price that day (Binance daily open; CoinGecko if the token is\n              not on Binance). Pump check: up 30%+ from day -30 to R -> skipped (\"pumped\").\n              Otherwise open, with zone R to R x 1.01, stop R x (1 + stop%), target R x (1 - target%),\n              using the stop, target and cover day the page showed on the check day.\n  open      checked against each completed day's high and low (same rules as the backtest:\n              a day that reaches the stop counts as stopped first; stops fill 0.5% worse).\n  closed    stop, target, or covered at 00:00 UTC on the plan's cover day. Result after 0.10% fees\n              and 0.03% funding a day, also in R (1R = what a stopped trade loses).\nA call whose check day passed before this script saw it (for example a missed run) is logged as\n\"missed\" and not counted, so a late entry can never use hindsight.\n\nRuns on GitHub Actions twice a day. Needs api.coingecko.com and data.binance.vision.\nOutput: data/trade_log.json"
 }

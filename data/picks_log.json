@@ -98,9 +98,9 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.01424,
-    "openPct": 5.1,
-    "asOf": "2026-11-18"
+    "lastClose": 0.01367,
+    "openPct": 8.9,
+    "asOf": "2026-11-19"
    }
   },
   {
@@ -123,8 +123,14 @@
    "calledAt": "2026-11-19T08:56:42Z",
    "lateCall": false,
    "result": {
-    "status": "open"
-   }
+    "status": "closed",
+    "R": -1.0,
+    "exit": "stop",
+    "exitDay": -7
+   },
+   "entry": 0.008463,
+   "stop": 0.00947856,
+   "target": 0.00550095
   }
  ]
 }

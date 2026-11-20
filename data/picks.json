@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T21:41:56Z",
+ "generatedAt": "2026-11-20T08:44:06Z",
  "rules": {
   "version": "v3",
   "frozenOn": "2026-11-19",
@@ -61,36 +61,15 @@
  },
  "picks": [
   {
-   "token": "KITE",
-   "name": "Kite AI",
-   "unlockDate": "2026-11-03",
-   "entryDate": "2026-10-27",
-   "coverDate": "2026-11-17",
-   "pctCirculating": 33.46,
-   "firstInsider": true,
-   "setup": "Big unlock",
-   "recipients": "Team, advisors and early contributors plus investors, at the end of their 12-month cliff. Airdrop, module and ecosystem pools may release separately around the same days.",
-   "confidence": "confirmed",
-   "source": "https://dropstab.com/vi/coins/kite-2",
-   "symbol": "KITEUSDT",
-   "pump": -24.2,
-   "pumpTo": "2026-10-27",
-   "call": "TAKE",
-   "why": "passes every rule",
-   "entry": 0.11452,
-   "stop": 0.128262,
-   "target": 0.074438
-  },
-  {
    "token": "MON",
    "name": "Monad",
    "unlockDate": "2026-11-24",
    "entryDate": "2026-11-17",
    "coverDate": "2026-12-08",
-   "pctCirculating": 140.5,
+   "pctCirculating": 140.46,
    "firstInsider": true,
    "setup": "Big unlock",
-   "recipients": "Team (~10.7B per Monad's '~10.7% of initial supply' wording; Tokenomist models only ~750M), investors (~4.92B) and the Category Labs Treasury (~0.99B; Monad says it is for future employee compensation).",
+   "recipients": "Team ~10.7B (Monad Foundation / Category Labs team members), investors ~4.92B, Category Labs Treasury ~0.99B (Monad says it is for future employee compensation).",
    "confidence": "confirmed",
    "source": "https://monad.xyz/blog/mon-tokenomics-overview",
    "symbol": "MONUSDT",
@@ -111,14 +90,17 @@
    "pctCirculating": 26.47,
    "firstInsider": true,
    "setup": "Big unlock",
-   "recipients": "First quarterly release for private investors (~171.7M) and team & advisors (~160.8M) after their lock was extended from 12 to 18 months, plus a third slice that is either Protocol Treasury 126.25M (Tokenomist) or ~146M LP & Ecosystem/community (tokenomics.com).",
+   "recipients": "First quarterly release for private investors (~171.7M) and team & advisors (~160.8M) after their lock was extended from 12 to 18 months, plus a third slice that is either Protocol Treasury 126.25M (Tokenomist) or ~146M LP & Ecosystem (tokenomics.com).",
    "confidence": "confirmed",
    "source": "https://www.coingecko.com/en/coins/huma-finance/usd",
    "symbol": "HUMAUSDT",
-   "pump": -67.4,
-   "pumpTo": "2026-11-18",
+   "pump": -62.8,
+   "pumpTo": "2026-11-19",
    "call": "TAKE",
-   "why": "passes every rule"
+   "why": "passes every rule",
+   "entry": 0.008463,
+   "stop": 0.00947856,
+   "target": 0.00550095
   },
   {
    "token": "GRVT",
@@ -129,12 +111,12 @@
    "pctCirculating": 29.99,
    "firstInsider": false,
    "setup": "Big unlock",
-   "recipients": "Airdrop/community recipients (month-4 tranche). Team, investor and ecosystem tokens are still in their cliffs per tokenomics.com.",
+   "recipients": "Airdrop/community recipients. Team and investor tokens are in a 12-month cliff (to ~Jul 2027) and ecosystem in a 6-month cliff, per tokenomics.com.",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/grvt/unlocks",
    "symbol": "GRVTUSDT",
-   "pump": -23.3,
-   "pumpTo": "2026-11-18",
+   "pump": -26.3,
+   "pumpTo": "2026-11-19",
    "call": "WATCH",
    "why": "passes so far"
   },
@@ -151,8 +133,8 @@
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/humidifi/unlocks",
    "symbol": "WETUSDT",
-   "pump": -16.3,
-   "pumpTo": "2026-11-18",
+   "pump": -14.9,
+   "pumpTo": "2026-11-19",
    "call": "WATCH",
    "why": "passes so far"
   },
@@ -165,12 +147,12 @@
    "pctCirculating": 18.49,
    "firstInsider": true,
    "setup": "First insider unlock",
-   "recipients": "End of the 12-month cliff for seed/pre-A investors (~19.7M), core contributors (~3.4M) and foundation treasury (~3.3M), plus the routine monthly ecosystem-incentive release (~3.3M). Per-group amounts follow from published terms (236.2M/12, 121.1M/36, 80M/24, 401.9M/120) and match the tokenomics.com split.",
+   "recipients": "End of the 12-month cliff for seed/pre-A investors (~19.7M), core contributors (~3.4M) and foundation treasury (~3.3M), plus the routine monthly ecosystem-incentive release (~3.3M). Per-group sizes follow from published terms (236.2M/12, 121.1M/36, 80M/24, 401.9M/120) and match the tokenomics.com split.",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/cysic/unlocks",
    "symbol": "CYSUSDT",
-   "pump": -24.2,
-   "pumpTo": "2026-11-18",
+   "pump": -29.8,
+   "pumpTo": "2026-11-19",
    "oiChange": null,
    "oiTo": null,
    "call": "WATCH",
@@ -217,21 +199,6 @@
    "why": "open interest +2% (needs to fall 10%+)"
   },
   {
-   "token": "KNTQ",
-   "name": "Kinetiq",
-   "unlockDate": "2026-11-27",
-   "entryDate": "2026-11-20",
-   "coverDate": "2026-12-11",
-   "pctCirculating": null,
-   "firstInsider": true,
-   "setup": "First insider unlock",
-   "recipients": "Core contributors (235M total) and investors (75M total; seed backers Maven11 Capital and Susquehanna Crypto) at the end of their one-year cliff.",
-   "confidence": "confirmed",
-   "source": "https://kinetiq.xyz/docs/kntq",
-   "call": "SKIP",
-   "why": "no Binance USDT perpetual"
-  },
-  {
    "token": "ADI",
    "name": "ADI (ADI Chain)",
    "unlockDate": "2026-12-09",
@@ -249,10 +216,10 @@
  ],
  "live": {
   "taken": 1,
-  "closed": 0,
+  "closed": 1,
   "won": 0,
-  "totalR": 0,
-  "avgR": null
+  "totalR": -1.0,
+  "avgR": -1.0
  },
  "log": [
   {
@@ -352,9 +319,9 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.01424,
-    "openPct": 5.1,
-    "asOf": "2026-11-18"
+    "lastClose": 0.01367,
+    "openPct": 8.9,
+    "asOf": "2026-11-19"
    }
   },
   {
@@ -377,8 +344,14 @@
    "calledAt": "2026-11-19T08:56:42Z",
    "lateCall": false,
    "result": {
-    "status": "open"
-   }
+    "status": "closed",
+    "R": -1.0,
+    "exit": "stop",
+    "exitDay": -7
+   },
+   "entry": 0.008463,
+   "stop": 0.00947856,
+   "target": 0.00550095
   }
  ]
 }
