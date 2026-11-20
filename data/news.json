@@ -1,154 +1,138 @@
 {
   "date": "2026-11-20",
-  "updated": "2026-11-20T00:11:46Z",
-  "headline": "Bitcoin fell to its lowest price since July as the Dow dropped about 1,100 points, Sky's USDS stablecoin shrank by more than 30%, and Anthropic ended its first trading day up 17%.",
+  "updated": "2026-11-20T04:33:59Z",
+  "headline": "Bitcoin slid to a four-month low near $61,300 as the tech sell-off spread to Asia, savers in Sky's stUSDS pool still cannot withdraw, and Anthropic shares fell after hours.",
   "market": {
-    "asOf": "Read from CoinMarketCap coin pages around 23:57-23:59 UTC Thu 19 Nov (06:57 Bangkok Fri 20 Nov). CoinGecko's homepage showed slightly lower prices (BTC about $61,869, ETH about $1,753). Use the live prices on this page.",
+    "asOf": "Read around 03:59-04:02 UTC Fri 20 Nov (about 11:00 Bangkok). BTC from CoinMarketCap's chart page; CoinGecko showed about $62,097. ETH and SOL from CoinGecko; CoinGecko did not show ETH's 24h direction clearly, and CoinMarketCap showed SOL higher (about $75.09, +1.22%). Use the live prices on this page.",
     "btc": {
-      "price": 62184,
-      "chg24h": -0.79
+      "price": 62137,
+      "chg24h": -1.48
     },
     "eth": {
-      "price": 1795,
-      "chg24h": -0.71
+      "price": 1746,
+      "chg24h": null
     },
     "sol": {
-      "price": 75.1,
-      "chg24h": 1.22
+      "price": 72.62,
+      "chg24h": -0.7
     },
-    "fearGreed": "10, Extreme Fear (Alternative.me Crypto Fear & Greed Index)"
+    "fearGreed": "10, Extreme Fear (Alternative.me Crypto Fear & Greed Index); CoinGecko's own index showed 22, also Extreme Fear"
   },
   "stories": [
     {
-      "title": "Bitcoin drops to its lowest since July as the Dow falls about 1,100 points",
+      "title": "Bitcoin hits a four-month low near $61,300 as the sell-off spreads to Asia",
       "mood": "bearish",
-      "summary": "US stocks had a heavy sell-off on Thursday on worries about inflation and more Fed rate rises, and bitcoin fell with them to its lowest price since July. Higher interest rates make cash and bonds pay more, which tends to pull money out of risky assets like crypto. Money is also still leaving US bitcoin funds.",
+      "summary": "Bitcoin fell to its lowest price since early July late on Thursday as US tech stocks slid, and more than $600 million of leveraged bets were forced shut. On Friday morning Tokyo stocks dropped almost 4%. Money is also still leaving US bitcoin funds: close to $3 billion so far this month.",
       "points": [
-        "Bitcoin touched $61,658.52 on Coinbase, its lowest since July and 27.3% below its 21 October high, per The Defiant.",
-        "The Dow closed down 1,101.11 points (2.19%) at 49,097.06, the S&P 500 fell 2.02% and the Nasdaq 2.25%; the VIX fear gauge rose 13.79% to 27.98, per Yahoo Finance.",
-        "It was the S&P 500's sixth straight losing day, per Motley Fool.",
-        "Chicago Fed's Goolsbee is keeping a large December rate rise on the table, depending on the data, per Tokenpost's report.",
-        "US spot bitcoin funds lost a net $306.5 million on Wednesday 18 Nov, per Farside data reported by crypto.news. Thursday's figure is not out yet."
+        "Bitcoin fell to nearly $61,300 late Thursday, its lowest since early July, with about $660 million of liquidations, per CoinDesk.",
+        "Japan's Nikkei 225 was down 3.95% at 56,694.34 early Friday, and the US 10-year Treasury yield was 5.052%, per Journal Arta.",
+        "US spot bitcoin funds lost a net $306.5 million on Wednesday 18 Nov, and $2.89 billion in November through 18 Nov, per Farside data reported by crypto.news. Thursday's figure was not available when this was written."
       ],
       "sources": [
         {
-          "label": "The Defiant: bitcoin lowest since July",
-          "url": "https://thedefiant.io/news/markets/bitcoin-falls-below-62-000-to-its-lowest-since-july-on-coinbase"
+          "label": "CoinDesk: bitcoin hits four-month low",
+          "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
         },
         {
-          "label": "Yahoo Finance: stock market today",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html"
+          "label": "Journal Arta: Tokyo stocks slide",
+          "url": "https://journalarta.com/en/2026/11/20/nikkei-225-today-tokyo-stocks-slide-3-95-as-wall-streets-ai-selloff-spreads-to-asia/"
         },
         {
-          "label": "Motley Fool: Dow plunges 1,100 points",
-          "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-dow-plunges-1-100-points-as-the-s-and-p-500-suffers-its-6th-straight-day-of-losses/"
-        },
-        {
-          "label": "Tokenpost: Goolsbee",
-          "url": "https://www.tokenpost.com/news/investing/61730"
-        },
-        {
-          "label": "crypto.news: ETF outflows",
-          "url": "https://crypto.news/bitcoin-etf-outflows-975-million-btc-price-nov-19/"
+          "label": "crypto.news: November ETF outflows",
+          "url": "https://crypto.news/bitcoin-etf-november-outflows-bitfinex-cost-basis/"
         }
       ]
     },
     {
-      "title": "Sky's USDS stablecoin shrinks by more than 30%, and its savings pool runs out of cash for withdrawals",
+      "title": "Sky's stUSDS savers still cannot withdraw, and nearly half the pool's loans sit in vaults linked to a founder address",
       "mood": "bearish",
-      "summary": "After a report that North Korea-linked wallets used Sky's swap system, holders pulled money out fast and the supply of its USDS stablecoin fell by more than 30%. Separately, Sky's high-yield stUSDS savings pool is fully lent out, so depositors cannot withdraw right now. USDS itself is still at $1, and founder Rune Christensen says it is fully backed. The lesson: a savings product with a big yield can lock your money up when everyone wants out at once.",
+      "summary": "Sky's high-yield stUSDS savings pool is fully lent out, so depositors cannot take money out right now. New on-chain reporting says nearly half of what has been borrowed sits in vaults linked to a rune.eth wallet; analysts link it to founder Rune Christensen. Its USDS stablecoin still trades at $1 after its supply shrank by more than 30%. The lesson: a big yield can come with your money being locked when everyone wants out at once.",
       "points": [
-        "USDS supply fell by more than 30% to $3.2 billion as more than $1.5 billion of USDC left Sky's swap reserve, per CoinDesk; Christensen said USDS remains over-collateralised with about $10 billion in backing.",
-        "Inca Digital traced $518 million through the system across 422 flagged wallets, $101.9 million of it tied to North Korea; Sky says flagged activity is under 0.06% of more than $930 billion in volume, per CoinDesk.",
-        "The stUSDS pool holds about $162 million in deposits, is at 100% utilisation and showed $0 available for withdrawals, per Crypto Briefing.",
-        "About half of the pool's borrowing is attributed to Christensen, who calls the concerns overblown, per Protos.",
-        "The SKY token fell about 26% in 24 hours, per Crypto News Flash."
+        "The pool holds about 161 million USDS, all of it lent out, per The Defiant.",
+        "Vaults tied to a rune.eth Safe owe 77.1 million USDS, about 48% of the borrowing, per The Defiant.",
+        "The pool's rate has been stepped up to 24.74%, per The Defiant.",
+        "USDS supply fell by more than 30% to $3.2 billion as more than $1.5 billion of USDC left Sky's swap reserve; Christensen says USDS is over-collateralised with about $10 billion in backing, per CoinDesk.",
+        "The run started after a report that $518 million of illicit-linked activity, $101.9 million of it tied to North Korea, passed through Sky's swap system, per CoinDesk."
       ],
       "sources": [
         {
-          "label": "CoinDesk (via Cryptonews): USDS shrinks",
-          "url": "https://cryptonews.net/news/security/33780446/"
+          "label": "The Defiant (via Cryptonews): stUSDS fully borrowed",
+          "url": "https://cryptonews.net/news/defi/33780764/"
+        },
+        {
+          "label": "CoinDesk: USDS shrinks after illicit-finance report",
+          "url": "https://www.coindesk.com/business/2026/11/19/sky-s-usds-stablecoin-shrinks-35-as-usd1-5-billion-exits-reserves-after-illicit-finance-report"
         },
         {
           "label": "CoinDesk: North Korean hackers used Sky's system",
           "url": "https://www.coindesk.com/business/2026/11/19/north-korean-hackers-used-sky-s-stablecoin-system-putting-billions-at-freeze-risk"
         },
         {
-          "label": "Crypto Briefing (via Cryptonews): stUSDS withdrawals",
-          "url": "https://cryptonews.net/news/defi/33780489/"
-        },
-        {
-          "label": "Protos: stUSDS deposits trapped",
-          "url": "https://protos.com/sky-founders-debt-leaves-160m-stusds-deposits-trapped/"
-        },
-        {
-          "label": "Crypto News Flash (via Cryptonews): SKY falls 26%",
-          "url": "https://cryptonews.net/news/analytics/33779515/"
+          "label": "TokenPost: stUSDS withdrawals",
+          "url": "https://www.tokenpost.com/news/investing/61032"
         }
       ]
     },
     {
-      "title": "Anthropic ends its first trading day up 17% at $97.17, after opening up 34%",
+      "title": "Anthropic falls after hours, and Binance refunds $500M from its tokenized IPO offer",
       "mood": "volatile",
-      "summary": "Anthropic (ticker ANT) sold shares at $83, opened at $111.50 and then gave back about half the gain to close at $97.17 on a weak day for stocks. Crypto platforms let traders bet on its price before the Nasdaq listing; those products are not shares.",
+      "summary": "Anthropic (ticker ANT) closed its first day at $97.17, then fell in after-hours trading. Separately, Binance Wallet's offer to get crypto users into the IPO through tokenized shares secured only a tiny number of shares, so it is giving back all the USDC people put in. Tokenized IPO products are not the same as owning the stock, and they can fail to deliver.",
       "points": [
-        "ANT closed at $97.17, 17.1% above its $83 IPO price, giving a market value of $1.27 trillion, per Forbes.",
-        "It opened just before noon ET at $111.50, per Forbes.",
-        "Perpetual futures tied to Anthropic traded around $105.50 at 10:30am ET on Hyperliquid, before the stock opened, per Forbes.",
-        "After hours it was at $95.69, down 1.52%, per Yahoo Finance.",
-        "The IPO sold 980 million shares at $83, raising $81.34 billion, per Decrypt."
+        "ANT opened at $111.50 and closed at $97.17; after hours it was down 6.3% at $91.05 as of 20:57 ET, per Investing.com.",
+        "Part of the after-hours drop followed a Bloomberg report that Apple is hiring for an AI agent project, per Kotak Neo.",
+        "Binance Wallet is refunding 500,002,764 USDC of subscriptions after receiving only about 2,957 tokenized shares, and blamed \"force majeure factors\", per Phemex's relay of PANews.",
+        "Binance is also handing out $1 million of compensation tokens, per PANews."
       ],
       "sources": [
         {
-          "label": "Forbes: stock closes day at $97",
-          "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/"
+          "label": "Investing.com: Anthropic debut",
+          "url": "https://za.investing.com/news/stock-market-news/anthropic-opens-34-above-ipo-price-reaches-2-trillion-valuation-in-nasdaq-debut-4586914"
         },
         {
-          "label": "Yahoo Finance: stock market today",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html"
+          "label": "Kotak Neo: shares fall after hours",
+          "url": "https://www.kotakneo.com/news/global-markets/anthropic-shares-fall-after-hours-as-apples-reported-ai-agent-plans-raise-competition-concerns/"
         },
         {
-          "label": "Decrypt: bitcoin death cross and Anthropic IPO",
-          "url": "https://decrypt.co/383655/bitcoin-enters-death-cross-anthropic-ipo"
+          "label": "PANews: Binance Wallet refunds",
+          "url": "https://panews.io/articles/01a1f4d8-21e5-776a-add6-c1f465fd20f8"
+        },
+        {
+          "label": "Phemex (PANews relay): refund details",
+          "url": "https://phemex.com/news/article/binance-wallet-fully-refunds-500m-anthropic-ipo-subscriptions-airdrops-1m-in-compensation-tokens-104256"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Ledger tampered-wallet probe spreads to Berlin and Dubai",
-      "summary": "Ledger confirmed tampered devices in Berlin and is checking two in Dubai; an analytics firm estimates about $102 million was taken from 335 wallets in Southeast Asia. Ledger says buy only from ledger.com and it will never ask for your recovery phrase, per Bitcoin Magazine.",
-      "url": "https://bitcoinmagazine.com/news/ledger-tampered-wallets-berlin-dubai"
+      "title": "Binance.US derivatives application moves to full CFTC review",
+      "summary": "The CFTC deemed Binance.US's application \"materially complete\", which starts the review; it is not an approval, and no perpetual futures launch until both registrations are granted, per Cryptonews.",
+      "url": "https://cryptonews.net/news/market/33779862/"
     },
     {
-      "title": "CFTC chair on how onchain venues could enter the US",
-      "summary": "CFTC chair Selig said venues like Hyperliquid must partner with an exchange or get their own exchange licence to serve US users, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-19-cftc-chair-selig-hyperliquid-onchain-venues-the-us-444106"
+      "title": "Binance-hack wallet moves $248M of ETH",
+      "summary": "A wallet flagged by the FBI moved about 137,602 ETH on 19 Nov in wallet-to-wallet transfers, per Lookonchain data reported by The Defiant.",
+      "url": "https://thedefiant.io/news/hacks/binance-hack-wallet-moves-another-248-million-in-eth"
     },
     {
-      "title": "Clarity Act unlikely before the new Congress",
-      "summary": "Asked about the crypto market structure bill's chances this year, Sen. Moreno said \"Zero. Zero.\" and suggested regulators could deliver much of it through rules; Rep. Hill said rules lack the force of law, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-19-hill-moreno-blame-delays-missed-clarity-act-window-split-regulators-fill-gap-443615"
+      "title": "Ledger's CTO to leave at the end of 2026",
+      "summary": "Charles Guillemet says the change was planned for months and did not link it to the probe into tampered Ledger devices, per crypto.news.",
+      "url": "https://crypto.news/ledger-cto-charles-guillemet-to-leave-amid-hardware-wallet-tampering-probe/"
     },
     {
-      "title": "Coinbase reportedly plans its own prediction markets",
-      "summary": "Coinbase aims to run its own prediction markets in-house in the first half of 2027; it now offers them through Kalshi, per Bloomberg as reported by PYMNTS. Coinbase said it had nothing new to announce.",
-      "url": "https://www.pymnts.com/economy/markets/2026/coinbase-eyes-2027-launch-for-in-house-prediction-markets/"
+      "title": "$3.4M drained from a DeFi vault in minutes",
+      "summary": "Attackers manipulated how K3 Capital's sBOLD vault priced its shares; Ethereum block builders ended up with most of the money, per CoinDesk.",
+      "url": "https://coindesk.com/tech/2026/11/19/ethereum-block-builders-received-the-most-in-a-usd3-4-million-vault-hack-data-shows"
     },
     {
-      "title": "Strategy's STRC preferred stock below $100",
-      "summary": "STRC closed at $96.19 on 18 Nov; Saylor said Strategy intends to keep buying it back below $100, after $228.1 million of buybacks from 9 to 15 Nov, per crypto.news.",
-      "url": "https://crypto.news/strategy-strc-buybacks-below-100/"
+      "title": "MARA sold about $1.1B of bitcoin",
+      "summary": "The miner used $750 million to repay bitcoin-backed loans, per Analytics Insight.",
+      "url": "https://analyticsinsight.net/cryptocurrency-analytics-insight/crypto-news-today-bitcoin-sees-outflow-mara-sells-btc-new-york-pension-fund-increases-btc-holdings"
     },
     {
-      "title": "US opens a centre to fight crypto scams",
-      "summary": "The Homeland Security Task Force launched a Threat Disruption Center with TRM Labs as its main tracing platform; the FBI counted more than $11 billion in crypto-related losses in 2025, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-19-us-launches-cybercrime-center-with-trm-labs-to-help-trace-crypto-tied-to-scams-443599"
-    },
-    {
-      "title": "Binance wins $6.5B freezing order over October hack",
-      "summary": "An Abu Dhabi court granted a worldwide freezing order against the hackers behind Binance's 29 Oct breach; a 1 Dec hearing decides whether to extend it, per The Crypto Desk.",
-      "url": "https://thecryptodesk.substack.com/p/the-crypto-desk-thursday-19-november"
+      "title": "Kalshi board member on insider trading in prediction markets",
+      "summary": "Kalshi board member and former CFTC commissioner Quintenz said insider trading is \"just easier to see\" on prediction markets than in stocks, per The Block.",
+      "url": "https://www.theblock.co/news/markets/2026-11-19-kalshi-quintenz-insider-trading-prediction-markets-stocks-444133"
     }
   ],
   "calendar": [
@@ -158,7 +142,7 @@
       "event": "Weekly bitcoin options expiry",
       "impact": "volatile",
       "key": false,
-      "note": "Deribit options settle at 08:00 UTC. Cryptoticker, using Deribit data from 19 Nov, puts it at 34,511 BTC, about $2.2 billion; Loris Tools shows 35,158 BTC, about $2.18 billion."
+      "note": "Deribit options settle at 08:00 UTC. PANews puts the bitcoin expiry at about $2.17 billion, with ETH about $303 million; Aktiencheck, using older Deribit data, says about 28,300 BTC, about $1.8 billion."
     },
     {
       "et": "Fri 20 Nov · 8:25am & 12:15pm",
@@ -177,12 +161,12 @@
       "note": "Consensus 51.0, per 1Trader. Preliminary 51.0 and October 48.0; preliminary one-year inflation expectations 4.3%, per StockAnalysis."
     },
     {
-      "et": "Fri 20 – Fri 27 Nov",
-      "bkk": "Fri 20 – Sat 28 Nov",
-      "event": "Token unlocks: ZRO, ARIA, AKE, MBG, SOON, MON, SOSO, XPL, H, HUMA, KNTQ",
+      "et": "Fri 20 – Thu 26 Nov",
+      "bkk": "Fri 20 – Thu 26 Nov",
+      "event": "Token unlocks: ZRO, ARIA, AKE, MBG, SOON, MON, SOSO, XPL, H, HUMA",
       "impact": "bearish",
       "key": false,
-      "note": "Unlock dates are UTC. ZRO on Friday 20, ARIA and AKE on Saturday 21, MBG on Sunday 22, SOON on Monday 23, MON (the largest, about $247M on this desk's data) and SOSO on Tuesday 24, XPL and H on Wednesday 25, HUMA on Thursday 26 and KNTQ on Friday 27 November. See the unlock table on this page for sizes, dates and confidence. (Dates from this desk's unlock data.)"
+      "note": "Unlock dates are UTC. ZRO on Friday 20, ARIA and AKE on Saturday 21, MBG on Sunday 22, SOON on Monday 23, MON (the largest, about $225M on this desk's data) and SOSO on Tuesday 24, XPL and H on Wednesday 25, and HUMA on Thursday 26 November. KNTQ's next unlock is now listed for 27 December. See the unlock table on this page for sizes, dates and confidence. (Dates from this desk's unlock data.)"
     },
     {
       "et": "Tue 24 Nov · 10:00am",
@@ -190,7 +174,7 @@
       "event": "Conference Board consumer confidence (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "October was 91.7, per FinanceCalendar. Dell, Workday and HP report after the US close, per IfYouSpent."
+      "note": "October was 91.7, per Newsquawk; release time per FinanceCalendar. Dell, HP and Workday report after the US close, per IfYouSpent."
     },
     {
       "et": "Wed 25 Nov · 8:30am",
@@ -198,7 +182,15 @@
       "event": "US PCE inflation (Oct), jobless claims and Q3 GDP (second estimate)",
       "impact": "volatile",
       "key": true,
-      "note": "September PCE inflation was 3.6% a year and core 3.1%, per Fox Business; Oxford Economics' nowcast for October headline is 3.8%. Jobless claims are also due Wednesday (prior 203,000, per 1Trader), and GDP's advance estimate was 3.4%, per FinanceCalendar. Fed Beige Book at 2:00pm ET (02:00 Thu Bangkok), per the Fed."
+      "note": "September PCE inflation was 3.6% a year and core 3.1%, per Fox Business; the Cleveland Fed nowcast for October is 3.81% headline and 3.21% core, per Admiral Markets. Weekly jobless claims are also due Wednesday, per FinanceCalendar (prior 203,000, per 1Trader); GDP's advance estimate was 3.4%, per Fox Business. Fed Beige Book at 2:00pm ET (02:00 Thu Bangkok), per the Fed."
+    },
+    {
+      "et": "Thu 26 Nov",
+      "bkk": "Thu 26 Nov",
+      "event": "Thanksgiving: US stock market closed",
+      "impact": "neutral",
+      "key": false,
+      "note": "NYSE is closed on Thursday and closes early at 1:00pm ET on Friday 27 Nov (01:00 Sat Bangkok), per ICE. Crypto trades all day, but thin trading can mean bigger swings."
     },
     {
       "et": "Fri 27 Nov",
@@ -206,7 +198,7 @@
       "event": "Monthly bitcoin options expiry",
       "impact": "volatile",
       "key": true,
-      "note": "The monthly Deribit expiry is about 105,315 BTC, roughly $6.52 billion, per Loris Tools."
+      "note": "Deribit monthly expiry. CryptoTicker (13 Nov data) puts it at about 81,600 BTC, about $5.6 billion; Aktiencheck (15 Nov data) says about 88,000 BTC, about $5.7 billion."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -214,14 +206,14 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": true,
-      "note": "Decision Wed 9 Dec at 2:00pm ET (02:00 Thu Bangkok), with new projections. The current range is 3.75-4.00%; CME FedWatch odds of a quarter-point rise were about 90% on 19 Nov, with the rest on a half-point rise, per Admiral Markets."
+      "note": "Decision Wed 9 Dec at 2:00pm ET (02:00 Thu Bangkok), per 1Trader. The current range is 3.75-4.00%, per the Fed. CME FedWatch on 14 Nov showed 88.5% odds of a quarter-point rise and 11.5% for a half-point rise, per Bitcoin.com."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-20T00:11:46Z",
-    "claimsChecked": 77,
-    "claimsRemoved": 7,
+    "checkedAt": "2026-11-20T04:33:59Z",
+    "claimsChecked": 85,
+    "claimsRemoved": 6,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
