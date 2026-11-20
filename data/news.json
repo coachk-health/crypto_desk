@@ -1,121 +1,131 @@
 {
   "date": "2026-11-20",
-  "updated": "2026-11-20T08:16:39Z",
-  "headline": "Bitcoin is holding near a four-month low after BlackRock's bitcoin fund had its biggest one-day outflow since launch, Sky's stUSDS savers are still stuck, and Anthropic trades below its first close on crypto venues.",
+  "updated": "2026-11-20T12:10:46Z",
+  "headline": "Bitcoin fell for a third straight day to its lowest since early July, the US Senate voted to ban prediction bets on death and war while Coinbase plans its own prediction contracts, and Anthropic's stock tokens slid further than the real shares.",
   "market": {
-    "asOf": "Read around 08:00 UTC Fri 20 Nov (about 15:00 Bangkok) from CoinGecko. CoinGecko's own 24h figures were inconsistent; Blockchain.com showed BTC at $61,838 (-2.53%) and Binance.US $61,775 (-3.06%). Use the live prices on this page.",
+    "asOf": "Read around 11:45 UTC Fri 20 Nov (about 18:45 Bangkok) from CoinDesk's 11:42 UTC market report; CoinGecko could not be read this run. Binance's price page showed BTC at $61,761 (-3.44%) shortly after. Use the live prices on this page.",
     "btc": {
-      "price": 62055,
-      "chg24h": -0.7
+      "price": 61700,
+      "chg24h": -3.4
     },
     "eth": {
-      "price": 1740,
-      "chg24h": -3.3
+      "price": 1747.59,
+      "chg24h": -3.24
     },
     "sol": {
-      "price": 72.56,
-      "chg24h": -3.1
+      "price": 71.71,
+      "chg24h": -4.13
     },
-    "fearGreed": "11 out of 100 on CoinMarketCap's Fear & Greed Index (read about 08:00 UTC); the Alternative.me index could not be read this run"
+    "fearGreed": "10 out of 100 (Extreme Fear) on the Alternative.me Crypto Fear & Greed Index, dated 19 Nov, per AltcoinBuzz; CoinMarketCap's index could not be read this run"
   },
   "stories": [
     {
-      "title": "Bitcoin holds near a four-month low after the biggest-ever daily outflow from BlackRock's bitcoin fund",
+      "title": "Bitcoin falls for a third straight day to its lowest since early July as leveraged bets are wiped out",
       "mood": "bearish",
-      "summary": "Bitcoin dropped to about $61,300 early Friday in Asia, its lowest since early July, as stock markets in Japan and South Korea sold off hard. Thursday's withdrawals from US bitcoin funds were nearly double Wednesday's, led by a record outflow from BlackRock's fund. When big funds pull money and leveraged traders are forced out, prices can fall fast.",
+      "summary": "Bitcoin slipped to nearly $61,200 on Friday, a little below Thursday's low, before bouncing back above $61,700, as the selloff in tech stocks spread through Asia. More than $700 million of leveraged bets were forced shut in a day, most of them bets on prices rising. When borrowed-money traders and big funds pull out together, prices can fall faster than the news alone would suggest.",
       "points": [
-        "Bitcoin's daily low was $61,273, down 10.8% over seven days, with $699.66 million of leveraged bets forced shut, per CoinGlass data reported by crypto.news.",
-        "US spot bitcoin funds lost a net $582.3 million on Thursday 19 Nov; BlackRock's IBIT lost $541.1 million, its largest daily outflow since launch, per Farside data reported by crypto.news.",
-        "November outflows from US spot bitcoin funds reached $3.47 billion, with money leaving on 12 of 14 trading days, per crypto.news.",
-        "Japan's Nikkei fell as much as 4.85% to a seven-month low and South Korea's KOSPI fell 5%, triggering a trading curb, per Bitcoin.com News."
+        "South Korea's Kospi fell more than 5% and US tech futures were down more than 1% as bitcoin fell, per CoinDesk (11:42 UTC).",
+        "$718.6 million of crypto bets were liquidated in 24 hours, 86.2% of them from traders betting on a rise, per CoinDesk.",
+        "US spot bitcoin funds lost a net $582.19 million on 19 Nov, including $541.08 million from BlackRock's IBIT, per Bloomingbit; CoinDesk says it was IBIT's largest single-day outflow since launch.",
+        "Open interest across crypto futures fell 2.5% to $109.9 billion, and bitcoin funding rates turned broadly negative, meaning more traders are now paying to bet on a fall, per CoinDesk.",
+        "Bitcoin is down more than 20% from about $81,000 at the start of November, per U.Today."
       ],
       "sources": [
         {
-          "label": "crypto.news: four-month low and ETF outflows",
-          "url": "https://crypto.news/bitcoin-price-four-month-low-anthropic-ipo-outflows/"
+          "label": "CoinDesk: bitcoin drops for third straight day",
+          "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-drops-for-third-straight-day-as-asian-tech-shares-slide"
         },
         {
-          "label": "Bitcoin.com News: Asian stocks crash",
-          "url": "https://news.bitcoin.com/market-updates/bitcoin-price-lowest-since-july-asian-stocks-crash-kospi/"
+          "label": "CoinDesk: bitcoin hits four-month low after Anthropic's IPO",
+          "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
+        },
+        {
+          "label": "Bloomingbit: 19 Nov bitcoin ETF flows",
+          "url": "https://en.bloomingbit.io/feed/news/124852"
+        },
+        {
+          "label": "U.Today: bitcoin price analysis 20 Nov",
+          "url": "https://u.today/price-analysis/bitcoin-btc-price-analysis-for-november-20-death-cross-is-here"
         }
       ]
     },
     {
-      "title": "Sky's stUSDS savers are still stuck as the founder-linked debt goes unpaid",
-      "mood": "bearish",
-      "summary": "Sky's high-yield stUSDS savings pool has been fully borrowed for several days, so depositors cannot take their money out. Nearly half of the borrowing sits with a wallet linked to founder Rune Christensen, and very little has been repaid. The lesson: a big yield can come with your money being locked when everyone wants out at once.",
+      "title": "Senate votes to ban prediction bets on death and war as Coinbase plans its own prediction contracts",
+      "mood": "neutral",
+      "summary": "The US Senate passed the Death Bets Act on Thursday, which would ban prediction-market contracts on death, terrorism, assassination and war; it now goes to the House. Separately, Coinbase is aiming to list its own US prediction contracts in the first half of 2027, relying less on its partner Kalshi. Prediction markets are becoming a mainstream product on US crypto apps, and Washington is starting to set limits on what people can bet on.",
       "points": [
-        "About $160 million of deposits are trapped; only about $420,000 has been repaid in 10 days against about $162 million owed, per Protos.",
-        "The borrow rate is about 25% a year, up from 5% last month, and the SKY token fell more than 20% in 24 hours, per Protos.",
-        "A wallet linked to Christensen owes about $77 million, about 48% of the pool's borrowing, against about $185 million of SKY tokens, per CryptoBriefing.",
-        "USDS supply fell by more than 30% to $3.2 billion after a report flagged $518 million of illicit-linked activity in Sky's swap system; USDS still traded near $1, per CoinDesk."
+        "The bill, S.4035, was sponsored by Sen. Schiff and co-sponsored by Sen. Curtis, and would amend the Commodity Exchange Act, per The Block.",
+        "More than a dozen states have taken action against Kalshi, and the CFTC and Justice Department have sued Utah, Arkansas and Louisiana, per The Block.",
+        "Coinbase's Kalshi partnership brought in more than $200 million of annualized net revenue in the third quarter, per CoinDesk, citing a Bloomberg report.",
+        "Average daily prediction-market traders on Coinbase rose more than 60% from the prior quarter, and more than half of third-quarter prediction trades were not on sports, per CoinDesk."
       ],
       "sources": [
         {
-          "label": "Protos: $160M of stUSDS deposits trapped",
-          "url": "https://protos.com/sky-founders-debt-leaves-160m-stusds-deposits-trapped/"
+          "label": "The Block: Senate passes Death Bets Act",
+          "url": "https://www.theblock.co/news/regulation/2026-11-20-senate-death-bets-act-444200"
         },
         {
-          "label": "CryptoBriefing (via KuCoin): founder wallet owes 48%",
-          "url": "https://www.kucoin.com/news/flash/rune-christensen-s-wallet-owes-48-of-sky-s-stusds-lending-pool"
-        },
-        {
-          "label": "CoinDesk: USDS shrinks after illicit-finance report",
-          "url": "https://www.coindesk.com/business/2026/11/19/sky-s-usds-stablecoin-shrinks-35-as-usd1-5-billion-exits-reserves-after-illicit-finance-report"
+          "label": "CoinDesk: Coinbase targets 2027 for its own contracts",
+          "url": "https://www.coindesk.com/business/2026/11/20/coinbase-targets-first-half-2027-for-its-own-prediction-market-contracts"
         }
       ]
     },
     {
-      "title": "Crypto traders price Anthropic below its first close, and Binance Wallet refunds its tokenized IPO offer",
+      "title": "Anthropic shares point lower before Friday's open, and crypto token versions fall much further",
       "mood": "volatile",
-      "summary": "Anthropic closed its first Nasdaq day at $97.17, and on Hyperliquid, a crypto platform that lets people bet on the stock, it was priced lower overnight. Binance Wallet's offer to get crypto users into the IPO with tokenized shares secured only a tiny number of shares, so it is giving the money back. A hot IPO does not guarantee gains for people who buy after the open, and tokenized or contract versions of a stock are not the same as owning it.",
+      "summary": "Anthropic priced its IPO at $83, opened at $111.50 and closed its first Nasdaq day at $97.17. Before Friday's US open the shares were down about 5% to around $92, while a crypto token that tracks the stock fell 21%. A token or contract that follows a stock is not the same as owning the stock, and it can move very differently.",
       "points": [
-        "ANT priced at $83, opened at $111.50, hit $114.99 and closed at $97.17, per CoinDesk.",
-        "ANT contracts on Hyperliquid traded about $1.7 billion in 24 hours and were priced below the Nasdaq close in Asian hours, per CoinDesk.",
-        "Binance Wallet is refunding all the USDC locked in subscriptions in full after receiving only about 2,957 tokenized shares, per PANews."
+        "The IPO raised about $81.3 billion, or $107.3 billion including a $26 billion private placement, per CoinDesk.",
+        "PreStocks' ANT token fell 21% to $69.48, per CoinDesk.",
+        "Hyperliquid's ANT perpetual contract traded in the low $90s, per CoinDesk."
       ],
       "sources": [
         {
-          "label": "CoinDesk: Anthropic below its first close on Hyperliquid",
-          "url": "https://www.coindesk.com/markets/2026/11/20/crypto-traders-have-anthropic-trading-below-its-first-nasdaq-close-on-hyperliquid"
+          "label": "CoinDesk: bitcoin drops as Asian tech shares slide",
+          "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-drops-for-third-straight-day-as-asian-tech-shares-slide"
         },
         {
-          "label": "PANews: Binance Wallet refunds",
-          "url": "https://panews.io/articles/01a1f4d8-21e5-776a-add6-c1f465fd20f8"
+          "label": "CoinDesk: bitcoin hits four-month low after Anthropic's IPO",
+          "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Ether funds keep losing money",
-      "summary": "US spot ether funds lost a net $131.2 million on 19 Nov, a fourth straight day of outflows, and $972.6 million so far in November, per Farside data reported by crypto.news.",
-      "url": "https://crypto.news/ethereum-price-outlook-november-etf-outflows"
+      "title": "Ether funds lose money for a fifth day",
+      "summary": "US spot ether funds lost a net $131 million on 19 Nov, a fifth straight day of outflows; bitcoin and ether funds together lost $713 million, per KuCoin News.",
+      "url": "https://www.kucoin.com/news/flash/bitcoin-and-ethereum-etfs-record-713m-in-net-outflows-on-november-19"
     },
     {
-      "title": "VanEck drops Gemini as a custodian",
-      "summary": "VanEck is removing Gemini as custodian for its bitcoin, ether and Solana funds; Coinbase stays on, per crypto.news.",
-      "url": "https://crypto.news/vaneck-drops-gemini-bitcoin-ethereum-solana-custody"
+      "title": "Sky's stUSDS savers still stuck",
+      "summary": "Sky raised the stUSDS deposit rate to 24.74%, but its app still showed no liquidity for withdrawals; one borrower repaid about 414,000 USDS, per The Defiant.",
+      "url": "https://thedefiant.io/news/defi/sky-raises-stusds-yield-to-24-74-app-shows-0-liquidity"
+    },
+    {
+      "title": "Wrapped Monero token crashes 99%",
+      "summary": "Wagyu's XMR1 token fell from about $488 to about $1 in roughly 30 minutes after a wallet funded by the issuer's address sold about $13.5 million; real Monero was not affected, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/20/wrapped-monero-token-plunges-99-as-issuer-linked-wallet-sells-usd13-5-million"
+    },
+    {
+      "title": "Ethereum's next upgrade slips to 2027",
+      "summary": "The Glamsterdam upgrade moves from December to mid-January 2027 at the earliest while developers fix apps that could break, per CoinCentral.",
+      "url": "https://coincentral.com/ethereums-glamsterdam-upgrade-slips-into-2027-as-developers-fix-apps-that-could-break"
+    },
+    {
+      "title": "MoonPay applies for a US bank charter",
+      "summary": "MoonPay applied to the OCC for a national trust bank charter covering custody and stablecoin issuance, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-20-moonpay-applies-occ-national-bank-charter-444198"
     },
     {
       "title": "CFTC chair on Hyperliquid and US users",
-      "summary": "CFTC Chair Selig said on-chain venues like Hyperliquid can serve US retail by registering as an exchange or partnering with one, per The Block.",
+      "summary": "CFTC Chair Selig said on-chain venues like Hyperliquid can serve US retail only by registering as an exchange or partnering with one, per The Block.",
       "url": "https://www.theblock.co/newsletters/the-daily/2026-11-20-cftc-chair-hyperliquid-ripple-clo-elizabeth-warren-crypto-policy-more-news-444143"
     },
     {
-      "title": "Coinbase backs the CFTC on prediction markets",
-      "summary": "Coinbase filed comments supporting the CFTC's plan to treat event contracts as swaps, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-19-coinbase-backs-cftc-prediction-markets-444152"
-    },
-    {
-      "title": "Court keeps stolen Binance tokens frozen",
-      "summary": "An Abu Dhabi court ordered 18 firms, including Circle, to keep tokens from the 29 Oct Binance hack frozen; the firms are not accused of wrongdoing, per CoinCentral.",
-      "url": "https://coincentral.com/abu-dhabi-court-orders-18-firms-to-keep-stolen-binance-tokens-frozen"
-    },
-    {
-      "title": "SEC charges fake crypto trading platforms",
-      "summary": "The SEC charged eight Colorado entities over fake crypto platforms that took more than $37 million from US investors, per Blockchain.News.",
-      "url": "https://blockchain.news/news/sec-charges-eight-entities-37m-crypto-fraud"
+      "title": "Crypto market-structure bill stalls",
+      "summary": "Rep. French Hill and Sen. Moreno expect little progress on the Clarity Act before the new Congress, per The Block.",
+      "url": "https://www.theblock.co/newsletters/the-daily/2026-11-20-cftc-chair-hyperliquid-ripple-clo-elizabeth-warren-crypto-policy-more-news-444143"
     }
   ],
   "calendar": [
@@ -133,7 +143,7 @@
       "event": "University of Michigan consumer sentiment (Nov, final)",
       "impact": "neutral",
       "key": false,
-      "note": "Preliminary 51.0, October 48.0; preliminary one-year inflation expectations 4.3%, per Admiral Markets. Consensus 51.0 per Admiral Markets, 51.5 per Helious."
+      "note": "Consensus 51.0, same as the preliminary reading; October was 48.0. Preliminary one-year inflation expectations 4.3%, per Investing.com and Admiral Markets."
     },
     {
       "et": "Fri 20 Nov · 12:15pm",
@@ -157,15 +167,15 @@
       "event": "Conference Board consumer confidence (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "October was 91.7, per the Conference Board. Dell, HP and Workday report after the US close (Dell and Workday calls 4:30pm ET, HP 5:00pm ET; 04:30 and 05:00 Wed Bangkok), per the companies."
+      "note": "October was 91.7, per Newsquawk. Dell, HP and Workday report after the US close (around 04:00-05:00 Wed Bangkok)."
     },
     {
       "et": "Wed 25 Nov · 8:30am",
       "bkk": "Wed 25 · 20:30",
-      "event": "US PCE inflation (Oct), Q3 GDP (second estimate) and jobless claims",
+      "event": "US PCE inflation (Oct), Q3 GDP (second estimate), durable goods and jobless claims",
       "impact": "volatile",
       "key": true,
-      "note": "September PCE inflation was 3.6% a year and core 3.1%; the Cleveland Fed nowcast for October is 3.81% headline and 3.21% core. GDP's advance estimate was 3.4%; consensus 3.4% per Helious. Weekly jobless claims are also due Wednesday at 8:30am ET (prior 203,000), per FinanceCalendar. Fed Beige Book at 2:00pm ET (02:00 Thu Bangkok), per the Fed."
+      "note": "September PCE inflation was 3.6% a year and core 3.1%; the Cleveland Fed nowcast for October is 3.81% headline and 3.21% core. GDP's advance estimate was 3.4%. Last week's jobless claims were 203,000. Fed Beige Book at 2:00pm ET (02:00 Thu Bangkok), per the Fed."
     },
     {
       "et": "Thu 26 Nov",
@@ -173,7 +183,7 @@
       "event": "Thanksgiving: US stock market closed",
       "impact": "neutral",
       "key": false,
-      "note": "US stocks and bonds are closed Thursday and close early on Friday 27 Nov, per Helious. Crypto trades all day, but thin trading can mean bigger swings."
+      "note": "US stocks and bonds are closed Thursday; on Friday 27 Nov stocks close early at 1:00pm ET (01:00 Sat Bangkok), per Admiral Markets. Crypto trades all day, but thin trading can mean bigger swings."
     },
     {
       "et": "Fri 27 Nov",
@@ -181,7 +191,7 @@
       "event": "Monthly bitcoin options expiry",
       "impact": "volatile",
       "key": true,
-      "note": "Deribit monthly expiry. Loris Tools' live Deribit page showed about $6.5 billion of open bitcoin options for this expiry (read 20 Nov; the page has no timestamp)."
+      "note": "Deribit monthly expiry. About $5.6 billion of bitcoin options were open for this expiry on 13 Nov, per CryptoTicker; a fresher figure could not be confirmed this run."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -189,15 +199,15 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": true,
-      "note": "Decision Wed 9 Dec at 2:00pm ET (02:00 Thu Bangkok). The current range is 3.75-4.00%. CME FedWatch on 19 Nov showed 90% odds of a quarter-point rise and 10% for a half-point rise, per Admiral Markets; Seoul Economic Daily reported 95.7% for a quarter point the same day."
+      "note": "Decision Wed 9 Dec at 2:00pm ET (02:00 Thu Bangkok). The current range is 3.75-4.00%. Admiral Markets showed CME FedWatch odds of 90% for a quarter-point rise on 19 Nov; Seoul Economic Daily reported 95.7% for a quarter point and 4.3% for a half point the same day (Seoul time). The November jobs report is due Fri 4 Dec."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-20T08:16:39Z",
-    "claimsChecked": 100,
-    "claimsRemoved": 11,
-    "rounds": 2,
+    "checkedAt": "2026-11-20T12:10:46Z",
+    "claimsChecked": 87,
+    "claimsRemoved": 4,
+    "rounds": 3,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
 }
