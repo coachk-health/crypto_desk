@@ -1,126 +1,135 @@
 {
   "date": "2026-11-21",
-  "updated": "2026-11-21T00:17:30Z",
-  "headline": "Bitcoin dropped below $58,000 on Friday before bouncing back near $59,000, as a sell-off in AI and chip stocks pushed the S&P 500 into a correction and fears of a December Fed rate hike kept investors in cash.",
+  "updated": "2026-11-21T04:32:07Z",
+  "headline": "Bitcoin is down about 15% this week after hitting its lowest price since September 2024 on Friday, as a sell-off in AI stocks and expectations of a December Fed rate hike weighed on markets.",
   "market": {
-    "asOf": "BTC and SOL read from CoinMarketCap about 23:57 UTC Fri 20 Nov (06:57 Sat Bangkok); ETH from Bloomingbit (Binance price) at 21:42 UTC, because CoinMarketCap's ether figure disagreed with two other sources. Use the live prices on this page.",
+    "asOf": "BTC read by this desk from CoinMarketCap at about 03:55 UTC Sat 21 Nov (10:55 Bangkok). ETH from Bitcoin.com News at 8:33pm ET Friday (01:33 UTC); CoinMarketCap's ether page showed about $1,733, roughly 7% higher, so sources disagree. SOL not confirmed this run. Use the live prices on this page.",
     "btc": {
-      "price": 58739,
-      "chg24h": -5.04
+      "price": 58280.3,
+      "chg24h": -5.86
     },
     "eth": {
-      "price": 1621.13,
-      "chg24h": -6.79
+      "price": 1618.84,
+      "chg24h": -8.11
     },
-    "sol": {
-      "price": 68.62,
-      "chg24h": -7.21
-    },
-    "fearGreed": "Not confirmed this run: the Alternative.me index could not be opened. The last confirmed reading, about 20:00 UTC 20 Nov, was 12 out of 100 (Extreme Fear)."
+    "sol": null,
+    "fearGreed": "Two readings, both deep in fear: TokenPost reported the Fear & Greed index at 12 out of 100 in an article published 03:00 UTC Sat, and CoinMarketCap's own index showed 8 out of 100 when this desk read it Saturday morning Bangkok time."
   },
   "stories": [
     {
-      "title": "Bitcoin drops below $58,000, then climbs back near $59,000",
+      "title": "Bitcoin heads for a 15% weekly loss after its lowest price since September 2024",
       "mood": "bearish",
-      "summary": "Bitcoin broke below $60,000 on Friday morning in New York and kept falling into the afternoon, touching about $57,800 before bouncing. Traders who had borrowed to bet on higher prices were forced out, and shares of Strategy, Coinbase and Robinhood fell 20% to 30% over the week. Bitcoin is on course for a seventh losing week in a row, per Bitcoin.com News.",
+      "summary": "Bitcoin fell to $57,799 on Friday, its lowest price since September 2024, and is down about 15% on the week. Traders who borrowed to bet on higher prices were forced out, and money kept leaving US bitcoin funds. Ether fell even harder.",
       "points": [
-        "Bitcoin fell to $57,799 on Friday, its lowest price since September 2024, per Bitcoin.com News; CoinDesk had pointed to the $57,700 low from earlier this year as the bear-market floor, so the sources differ on how far back the comparison goes.",
-        "By 21:42 UTC Friday (04:42 Sat Bangkok) it was back at $59,318 on Binance, down 3.83% on the day, per Bloomingbit; it is down about 15% over the past week and about 30% over the month, per BigGo citing CoinGecko.",
-        "Bets wiped out in 24 hours reached $1.9 billion per CoinGlass data cited by Bitcoin.com News, up from \"more than $1.5 billion\" reported by CoinDesk earlier in the afternoon.",
-        "Strategy (MSTR) closed the week at $77.80, about 30% lower than a week earlier, and Coinbase at $101.97, about 20% lower, per Bloomingbit.",
-        "US spot bitcoin ETFs lost $582.2 million on Thursday 19 Nov, their third straight day of outflows, bringing November's total to about $3.47 billion, per The Block. Friday's figure was not out when this was written."
+        "Bitcoin's Friday low was $57,799.29, per Bitcoin.com News; it is down about 15% on the week and 31% on the month, and more than half below its record of $126,080 set in October 2025.",
+        "Ether traded at $1,618.84 at 8:33pm ET Friday (08:33 Sat Bangkok), down 8.11% on the day, with $427.5 million of ether bets wiped out in 24 hours, 87.7% of them bets on higher prices, per Bitcoin.com News.",
+        "Bets wiped out in 24 hours across crypto were about $1.5 billion per CoinGlass data cited by CoinDesk, and $1.9 billion per Bitcoin.com News; the sources differ.",
+        "US spot bitcoin ETFs lost $582.2 million on Thursday 19 Nov, led by $541.1 million from BlackRock's IBIT, per The Block; November's outflows are near $3.5 billion. Friday's figure was not out when this was written.",
+        "Strategy (MSTR) closed Friday at $77.80, its lowest close since February 2024 and about 30% lower on the week, per Bitcoin.com News."
       ],
       "sources": [
         {
           "label": "Bitcoin.com News: bitcoin at a 2-year low",
-          "url": "https://news.bitcoin.com/market-updates/strategy-coinbase-shares-battered-bitcoin-price-2-year-low-ai-stocks-bleed"
+          "url": "https://news.bitcoin.com/market-updates/strategy-coinbase-shares-battered-bitcoin-price-2-year-low-ai-stocks-bleed/"
         },
         {
-          "label": "Bloomingbit: bitcoin recovers $59,000",
-          "url": "https://en.bloomingbit.io/feed/news/124908"
+          "label": "Bitcoin.com News: ether slide and liquidations",
+          "url": "https://news.bitcoin.com/market-updates/peter-schiff-warns-of-weekend-crypto-crash-sending-eth-to-1k/"
         },
         {
-          "label": "Bloomingbit: crypto stocks' weekly losses",
-          "url": "https://en.bloomingbit.io/feed/news/124912"
-        },
-        {
-          "label": "BigGo Finance: market wrap",
-          "url": "https://finance.biggo.com/news/4ca9ac53-47c9-45e8-9ab4-25307d4442bc"
+          "label": "Bitcoin.com News: weekly ETF flows",
+          "url": "https://news.bitcoin.com/bitcoin-etf/blackrock-drives-899m-of-bitcoin-etfs-1-12b-outflows-this-week/"
         },
         {
           "label": "The Block: bitcoin ETF outflows",
           "url": "https://www.theblock.co/news/markets/2026-11-20-us-spot-bitcoin-etfs-see-582-million-in-daily-net-outflows-as-november-total-nears-3-5-billion-444217"
+        },
+        {
+          "label": "KuCoin News (CoinDesk): crypto plunges on Fed and AI fears",
+          "url": "https://www.kucoin.com/news/flash/crypto-market-plunges-amid-fed-rate-hike-fears-and-ai-stock-sell-off"
         }
       ]
     },
     {
-      "title": "AI stock sell-off turns into a Wall Street rout; Nvidia drops 14%",
+      "title": "AI stock rout: Nvidia drops 14% and all three US indexes are in a correction",
       "mood": "bearish",
-      "summary": "US stocks fell hard on Friday after Reuters reported that SEC staff are looking at possible accounting issues at chipmaker Nvidia. The SEC declined to comment, and an inquiry is not a finding of wrongdoing. Crypto has been trading like a risky tech stock, so bitcoin and especially bitcoin miners fell with the chip stocks. Anthropic's shares ended their second day about 7% above the IPO price.",
+      "summary": "US stocks fell hard on Friday after reports of an SEC accounting investigation into chipmaker Nvidia, per The Motley Fool. An investigation is not a finding of wrongdoing. Crypto has been trading like a risky tech stock, so bitcoin and bitcoin miners fell with the chip stocks. US stock markets are closed for the weekend, so these are Friday's closing numbers.",
       "points": [
-        "The Nasdaq Composite closed down 5.28% at 22,617.73 and the S&P 500 down 3.70% at 6,910.39, putting the S&P 500 in a technical correction (10% below its high), per The Motley Fool.",
-        "Nvidia fell 14% on Friday and 23% on the week, its worst week since October 2008, per Stocktwits.",
-        "Anthropic closed at $88.62, down 8.8% from Thursday's $97.17 close and about 7% above its $83 IPO price, per StockTitan.",
-        "Some of the worst losses came from bitcoin miners: at one point MARA was down 18.6%, IREN 18% and Hut 8 17.7%, per CoinDesk's live coverage."
+        "Nvidia closed at $125.53, down 14.01%; AMD fell 13.26% and Broadcom 12.12%, per The Motley Fool.",
+        "The Nasdaq fell 5.3% to 22,617.73, the S&P 500 3.7% to 6,910.39 and the Dow 1.9% to 48,147.33, leaving all three more than 10% below their record highs, per Bitcoin.com News.",
+        "Bitcoin miners were hit hard: Hut 8 fell about 15%, and CleanSpark, Core Scientific and Bitdeer each fell more than 13%, per CoinDesk.",
+        "Anthropic, which closed its first trading day Thursday at $97.17 after an $83 IPO price, fell more than 8% on Friday, per Bitcoin.com News; CoinDesk reported it down more than 14%, so the sources differ."
       ],
       "sources": [
         {
-          "label": "The Motley Fool: stock market today, 20 Nov",
-          "url": "https://www.fool.com/coverage/stock-market-today/2026/11/20/stock-market-today-nov-20-stocks-plunge-as-ai-trade-unwinds/"
+          "label": "The Motley Fool: Nvidia's rout deepens",
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/11/20/stock-market-today-nov-20-nvidia-s-usd2-5-trillion-rout-deepens-as-sec-accounting-probe-adds-to-wall-street-s-ai-sell-off/"
         },
         {
-          "label": "Yahoo Finance: Nvidia falls on Reuters SEC report",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-plunges-12-reuters-201702082.html"
+          "label": "Bitcoin.com News: crypto stocks battered",
+          "url": "https://news.bitcoin.com/market-updates/strategy-coinbase-shares-battered-bitcoin-price-2-year-low-ai-stocks-bleed/"
         },
         {
-          "label": "Stocktwits: Nvidia's worst week since 2008",
-          "url": "https://stocktwits.com/news-articles/markets/equity/nvda-stock-clocks-worst-week-in-18-years-as-sec-reportedly-probes-its-accounting-practices/cNbSDIWR91Q"
-        },
-        {
-          "label": "StockTitan: market live, 20 Nov",
-          "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026"
-        },
-        {
-          "label": "CoinDesk live news, 20 Nov",
-          "url": "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut"
+          "label": "KuCoin News (CoinDesk): miners and AI stocks",
+          "url": "https://www.kucoin.com/news/flash/crypto-market-plunges-amid-fed-rate-hike-fears-and-ai-stock-sell-off"
         }
       ]
     },
     {
-      "title": "A December Fed rate hike looks almost certain, and investors are hiding in cash",
+      "title": "Markets price a December Fed rate hike as almost certain",
       "mood": "volatile",
-      "summary": "The Fed meets on 8-9 December, and markets expect it to raise interest rates, not cut them. On Friday Fed Governor Lisa Cook said she had favored a hike at the October meeting. Higher rates make cash and government bonds pay more, which makes assets that pay no interest, like bitcoin and gold, less attractive.",
+      "summary": "The Fed meets on 8-9 December, and markets expect it to raise interest rates, not cut them. The only open question is whether it raises by a quarter point or a half point. Higher rates make cash and government bonds pay more, which makes assets that pay no interest, like bitcoin and gold, less attractive.",
       "points": [
-        "Speaking in Chile on Friday, Cook said she had favored another rate hike at the October meeting and that \"financial conditions remain too loose,\" per CoinDesk.",
-        "CME FedWatch showed about a 95.7% chance of a quarter-point hike and 4.3% for a half point, per Seoul Economic Daily on 19 Nov; Polymarket showed about 90% for a quarter-point hike.",
-        "\"The place to hide is cash: two-year Treasuries at around 4.7%,\" STS Digital told CoinDesk.",
-        "Gold fell about 2% toward $3,500, its lowest since September 2025, per CoinDesk."
+        "Reuters reported CME FedWatch odds of about 99% for a quarter-point hike, per FinanceFeeds; Seoul Economic Daily put the odds at about 90% for a quarter point and 10% for a half point after Fed Governor Waller raised the idea of a bigger move. The sources differ on the split, but neither shows any real chance of no change.",
+        "At the October meeting the Fed held its rate at 3.75-4.00% on a 10-2 vote, with Cook and Hammack voting for a hike, per the Fed's minutes.",
+        "Gold fell as low as $3,513.54, its lowest since September 2025, and lost about 8% on the week, per FinanceFeeds.",
+        "The 10-year US Treasury yield is near 5%, per FinanceFeeds."
       ],
       "sources": [
         {
-          "label": "CoinDesk live news, 20 Nov",
-          "url": "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut"
+          "label": "FinanceFeeds: gold and Fed hike odds",
+          "url": "https://financefeeds.com/gold-price-near-3560-after-hitting-14-month-low-as-fed-hike-odds-reach-99/"
         },
         {
-          "label": "CoinDesk: rush to cash",
-          "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play"
+          "label": "Seoul Economic Daily: Waller signals possible half-point hike",
+          "url": "https://en.sedaily.com/economy/2026/11/20/feds-waller-signals-possible-half-point-hike-lifting"
         },
         {
-          "label": "Seoul Economic Daily: December hike odds",
-          "url": "https://en.sedaily.com/society/2026/11/19/us-dec-rate-hike-odds-at-957-percent-as-fed-resists-bigger"
+          "label": "Federal Reserve: October meeting minutes",
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
         },
         {
-          "label": "Polymarket: Fed decision in December",
-          "url": "https://polymarket.com/event/fed-decision-in-december-20260729232808632"
+          "label": "Investing.com: the Fed's week, 16-20 Nov",
+          "url": "https://in.investing.com/news/stock-market-news/fed-signals-and-data-what-happened-the-week-of-nov-1620-2026-93CH-5718446"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Strategy's bitcoin is underwater",
-      "summary": "Friday's $57,799 low is well below the average price of about $75,446 that Strategy paid for its bitcoin, per Bloomingbit.",
-      "url": "https://en.bloomingbit.io/feed/news/124912"
+      "title": "Binance hackers move about $860 million in ether",
+      "summary": "Elliptic says about 488,000 ETH left the largest hack wallets from 17 to 20 Nov, and at least 2,310 BTC, about $149 million, has gone through mixers, per Bitcoin.com News.",
+      "url": "https://news.bitcoin.com/security/binance-hackers-move-860-million-ether-bitcoin-laundering-surges/"
+    },
+    {
+      "title": "Wrapped Monero token crashes after an exploit",
+      "summary": "Wagyu's XMR1 token fell from nearly $500 to under $1 in about 30 minutes; Bitquery estimates about $13.5 million was drained. Monero itself was not breached, per Bitcoin.com News.",
+      "url": "https://news.bitcoin.com/security/wrapped-monero-token-xmr1-crashes-13m-exploit-founder-vows-repayment/"
+    },
+    {
+      "title": "Coinbase plans its own prediction markets",
+      "summary": "Bloomberg reports Coinbase is aiming to launch in-house prediction markets in the first half of 2027; Coinbase did not confirm the timeline, per Bitcoin.com News.",
+      "url": "https://news.bitcoin.com/crypto-news/coinbase-targets-2027-launch-in-house-prediction-markets/"
+    },
+    {
+      "title": "Saylor: Strategy could sell bitcoin to defend its preferred stock",
+      "summary": "Michael Saylor says Strategy could shrink its STRC preferred stock toward $5 billion through buybacks, and could sell bitcoin to fund those buybacks under some market conditions, per Bitcoin.com News.",
+      "url": "https://news.bitcoin.com/finance/saylor-strategy-shrink-strc-5-billion-sell-bitcoin/"
+    },
+    {
+      "title": "Ether funds bleed too",
+      "summary": "US spot ether ETFs lost $131.24 million on Thursday, $124.22 million of it from BlackRock's ETHA, per Bitcoin.com News citing SoSoValue.",
+      "url": "https://news.bitcoin.com/bitcoin-etf/blackrock-drives-899m-of-bitcoin-etfs-1-12b-outflows-this-week/"
     },
     {
       "title": "JPMorgan: bitcoin trades far below its mining cost",
@@ -128,39 +137,19 @@
       "url": "https://www.theblock.co/news/markets/2026-11-20-jpmorgan-bitcoin-price-correction-gap-86000-production-cost-444763"
     },
     {
-      "title": "Social mood hits \"Extreme Fear\"",
-      "summary": "Santiment says the ratio of bullish to bearish crypto social media comments fell to 0.59, a level it calls an \"Extreme Fear\" zone, per crypto.news.",
-      "url": "https://crypto.news/bitcoin-below-60000-santiment-extreme-fear"
-    },
-    {
-      "title": "Saylor points to demand for Strategy's preferred shares",
-      "summary": "Michael Saylor says there is $5 billion to $7.5 billion of \"natural, organic\" demand for Strategy's STRC preferred stock at a 12% dividend, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-20-michael-saylor-natural-demand-strategy-strc-444190"
-    },
-    {
-      "title": "Ark buys Anthropic, trims crypto staking funds",
-      "summary": "Cathie Wood's Ark bought 934,968 Anthropic shares, worth about $90.9 million, on its first trading day and trimmed its ether and Solana staking ETF holdings, per The Block.",
-      "url": "https://www.theblock.co/news/markets/2026-11-20-ark-buys-90-million-worth-of-anthropic-shares-on-debut-trims-ethereum-and-solana-staking-etf-holdings-444226"
-    },
-    {
-      "title": "Binance hack funds being mixed",
-      "summary": "Elliptic says launderers of the Binance hack proceeds have pushed at least 2,310 BTC, about $149 million, through mixers, roughly 90% of it since Tuesday, per The Block.",
-      "url": "https://www.theblock.co/news/markets/2026-11-20-binance-hack-laundering-ramps-up-149-million-bitcoin-mixed-coinjoins-elliptic-444758"
-    },
-    {
       "title": "Crypto tax bill may get a House vote",
-      "summary": "Rep. Horsford wants a House vote on the Digital Asset Tax Certainty Act, which cleared committee 38-5, before this Congress ends; paying a fee of $10 or less in crypto would not count as a gain or loss, per The Block.",
+      "summary": "Rep. Horsford wants a House vote on the Digital Asset Tax Certainty Act, which cleared committee 38-5, before this Congress ends, per The Block.",
       "url": "https://www.theblock.co/news/regulation/2026-11-20-rep-horsford-sees-opening-house-vote-crypto-tax-bill-before-congress-ends-444720"
     }
   ],
   "calendar": [
     {
-      "et": "Sat 21 – Sat 28 Nov",
-      "bkk": "Sat 21 – Sat 28 Nov",
-      "event": "Token unlocks: ARIA, AKE, MBG, SOON, MON, SOSO, XPL, H, HUMA, SIGN, PROS, GRASS",
+      "et": "Sat 21 – Sun 29 Nov",
+      "bkk": "Sat 21 – Sun 29 Nov",
+      "event": "Token unlocks: ARIA, AKE, MBG, SOON, MON, SOSO, XPL, H, HUMA, SIGN, PROS, GRASS, FF, CARDS",
       "impact": "bearish",
       "key": false,
-      "note": "Unlock dates are UTC. ARIA and AKE on Saturday 21, MBG on Sunday 22, SOON on Monday 23, MON (the largest, about $225M on this desk's data) and SOSO on Tuesday 24, XPL and H on Wednesday 25, HUMA on Thursday 26, and SIGN, PROS and GRASS on Saturday 28 November. See the unlock table on this page for sizes, dates and confidence. (Dates from this desk's unlock data.)"
+      "note": "Unlock dates are UTC. ARIA and AKE on Saturday 21, MBG on Sunday 22, SOON on Monday 23, MON (the largest, about $225M on this desk's data) and SOSO on Tuesday 24, XPL and H on Wednesday 25, HUMA on Thursday 26, SIGN, PROS and GRASS on Saturday 28, and FF and CARDS on Sunday 29 November. See the unlock table on this page for sizes, dates and confidence. (Dates from this desk's unlock data.)"
     },
     {
       "et": "Mon 23 Nov · 9:45am",
@@ -168,7 +157,15 @@
       "event": "S&P Global US flash PMIs (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "Early read on US factory and services activity, per FinancialJuice and LiteFinance; October's final manufacturing reading was 54.9, per FinancialJuice. Zoom reports after the US close, and HPE also reports Monday. The Fed's November calendar lists no Fed speeches from 21 to 28 Nov."
+      "note": "Early read on US manufacturing activity, at 9:45am ET per FinancialJuice. October's final manufacturing reading was 54.9, per Newsquawk. Zoom reports after the US close."
+    },
+    {
+      "et": "Mon 23 Nov · 4:00pm",
+      "bkk": "Tue 24 · 04:00",
+      "event": "NY Fed President Williams speaks",
+      "impact": "neutral",
+      "key": false,
+      "note": "Remarks on the economic outlook and policy, with Q&A, per the New York Fed."
     },
     {
       "et": "Tue 24 Nov · 10:00am",
@@ -176,7 +173,7 @@
       "event": "Conference Board consumer confidence (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "October came in at 91.7, against 81 expected, per Newsquawk. Workday (call 4:30pm ET, 04:30 Wed Bangkok) and HP Inc (call 5:00pm ET, 05:00 Wed Bangkok) report after the close; Dell also reports Tuesday."
+      "note": "October came in at 91.7, up from 84.2, per WCAX. Workday (call 4:30pm ET, 04:30 Wed Bangkok) and HP Inc (webcast 5:00pm ET, 05:00 Wed Bangkok) report after the close."
     },
     {
       "et": "Wed 25 Nov · 8:30am",
@@ -184,7 +181,7 @@
       "event": "US PCE inflation (Oct), Q3 GDP (second estimate), durable goods and jobless claims",
       "impact": "volatile",
       "key": true,
-      "note": "The Fed's preferred inflation gauge. Core PCE expected 3.2% a year (prior 3.1%) and headline 3.8% (prior 3.6%), per CMC Markets. Q3 GDP growth expected at 3.5% annualized, per HeadTopics. Jobless claims move up a day for Thanksgiving; the last reading was 203,000 for the week to 14 Nov, per Admiral Markets."
+      "note": "October inflation (PCE) and Q3 GDP are both due at 8:30am ET, per the BEA schedule. Core PCE consensus 3.2% a year (prior 3.1%), per Newsquawk; forecasters including RBC put headline PCE near 3.8% (prior 3.6%). Q3 GDP growth expected at 3.5% against the 3.4% first estimate, per Trading Economics. Jobless claims move up a day for Thanksgiving."
     },
     {
       "et": "Wed 25 Nov · 2:00pm",
@@ -200,7 +197,7 @@
       "event": "Thanksgiving: US stock market closed",
       "impact": "neutral",
       "key": false,
-      "note": "On Friday 27 Nov US stocks close early at 1:00pm ET (01:00 Sat Bangkok), per NYSE owner ICE. Crypto trades all day, but thin trading can mean bigger swings."
+      "note": "On Friday 27 Nov US stocks close early at 1:00pm ET (01:00 Sat Bangkok), per Admiral Markets. Crypto trades all day, but thin trading can mean bigger swings."
     },
     {
       "et": "Fri 27 Nov · 3:00am",
@@ -208,7 +205,7 @@
       "event": "Monthly bitcoin options expiry",
       "impact": "volatile",
       "key": true,
-      "note": "Settles at 08:00 UTC, per MEXC. TokenPost puts the bitcoin expiry at about $6.67 billion."
+      "note": "Settles at 08:00 UTC, per MEXC. TokenPost puts the Deribit bitcoin expiry at about $6.67 billion across 105,053 contracts, with the \"max pain\" level at $74,000 (read 20 Nov)."
     },
     {
       "et": "Sat 28 Nov",
@@ -216,7 +213,7 @@
       "event": "Fed quiet period begins",
       "impact": "neutral",
       "key": false,
-      "note": "Fed officials stop public comment on policy until after the December meeting, per the St. Louis Fed's blackout calendar."
+      "note": "Fed officials stop public comment on policy until after the December meeting, per Admiral Markets."
     },
     {
       "et": "Fri 4 Dec · 8:30am",
@@ -224,7 +221,7 @@
       "event": "US jobs report (Nov)",
       "impact": "volatile",
       "key": false,
-      "note": "The last jobs report before the Fed decision, per the BLS schedule. JOLTS job openings come out Tue 1 Dec at 10:00am ET; November CPI is Thu 10 Dec, the day after the Fed."
+      "note": "The last jobs report before the Fed decision, per the BLS schedule. JOLTS job openings come out Tue 1 Dec at 10:00am ET (22:00 Bangkok); November CPI is Thu 10 Dec, the day after the Fed."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -232,15 +229,15 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": true,
-      "note": "The current range is 3.75-4.00%, per the Fed. Markets expect a hike: CME FedWatch odds were about 95.7% for a quarter point and 4.3% for a half point, per Seoul Economic Daily on 19 Nov."
+      "note": "Statement at 2:00pm ET Wed 9 Dec (02:00 Thu Bangkok), per the Fed's December calendar. The current range is 3.75-4.00%, per the Fed. Markets expect a hike; see the Fed story above for the odds."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-21T00:17:30Z",
-    "claimsChecked": 82,
-    "claimsRemoved": 8,
-    "rounds": 2,
+    "checkedAt": "2026-11-21T04:32:07Z",
+    "claimsChecked": 112,
+    "claimsRemoved": 14,
+    "rounds": 3,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
 }
