@@ -23979,6 +23979,90 @@
       }
      ],
      "gaps": null
+    },
+    {
+     "date": "2026-11-20",
+     "timeUTC": "00:00",
+     "amountTokens": 27177405,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.255,
+      "investors": 0.085,
+      "community": 0.352,
+      "ecosystem": 0.308,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko KAITO page, Tokenomist widget (read 19 Nov 2026, '1 days away'): 20 Nov, 17.6M KAITO ($3.18M) = Ecosystem & Network Growth 7.16M, Core Contributors 6.94M, Early Backers 2.31M, Foundation 1.19M; API ID kaito. Same feed as Tokenomist",
+       "url": "https://www.coingecko.com/en/coins/kaito/usd",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist weekly digest Nov 16-22 2026: KAITO 20 Nov, $3.07M, 7.29% of circulating (same feed as CoinGecko widget)",
+       "url": "https://tokenomist.ai/research/weekly-unlock-digest-nov-16-22-2026-layerzeros-34-69m-cliff-lands-ahead-of-zero-mainnet",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "Tokenomist KAITO unlock events: next unlock 20 Nov 2026 (Core Contributors), 241,388,889 circulating",
+       "url": "https://tokenomist.ai/kaito/unlock-events",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "tokenomics.com KAITO unlocks: 20 Nov 2026, 27,177,405 KAITO (~$5.0M), Community 61.5% / Insiders 25.6% / Investors 8.5% / Foundation 4.5%; previous 20 Oct 2026; Creator Incentives 7.5% 6m cliff then every 3 months x8; core contributors and early backers 12m cliff + 36m linear; TGE 20 Feb 2025",
+       "url": "https://app.tokenomics.com/tokenomics/kaito/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "tokenradar KAITO tokenomics: Nov 2026 modelled ~25.93M = Creator Incentives 8.3M, Ecosystem 7.2M, Core Contributors 6.9M, Early Backers 2.3M, Foundation 1.2M (estimate, listed under 'Nov 19-30' period)",
+       "url": "https://tokenradar.ai/tokens/kaito/tokenomics",
+       "kind": "aggregator",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "KuCoin News weekly list (15 Nov 2026, UTC+3, Tokenomist-based): KAITO 20 Nov 03:00 UTC+3 = 00:00 UTC, $4.54M, 10.74% of market value. Bitcoin Sistemi carries the identical table",
+       "url": "https://www.kucoin.com/news/flash/23-altcoins-to-face-major-token-unlocks-this-week",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "time"
+       ]
+      },
+      {
+       "label": "DefiLlama KAITO unlocks: page stale, still shows 20 Jul 2026 10:00 UTC as next (Ecosystem 7.16M, Core Contributors 6.94M, Early Backers 2.31M, Foundation 1.19M)",
+       "url": "https://defillama.com/unlocks/kaito",
+       "kind": "aggregator",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 5.29,
+      "confidence": 67,
+      "scoredAt": "2026-11-21T08:07:01Z"
+     }
     }
    ],
    "gaps": "Kaito's own vesting docs were not reachable; terms come from tokenomics.com and DropsTab, cross-checked by the stated Feb, Aug and Sep breakdowns. Main gap: Dec 2025-Jan 2026 and Apr-Jul 2026 amounts are derived, not stated. Creator-incentive cadence: semi-annual 15M per Bitrue/crypto.news and the Feb/Aug totals; DropsTab models quarterly 8.33M and tokenomics.com 'every 3 months (x8)'. If quarterly were right, May 2026 would also carry a creator tranche; no source shows one. The 20 Nov 2026 size (17.6M vs 27.18M) is disputed but outside the window. Listed month from MEXC tokenomics (TGE 20 Feb 2025).",
@@ -48510,6 +48594,86 @@
      ],
      "gaps": "Amount unknown for Sep 2026; recipientsMix uses DefiLlama's current split (13M SP / 10.63M CC), not confirmed for this month. Amount conflict: Tokenomist/PANews use 25.71M (13.42M Strategic Partners + 10.63M Core Contributors + 1.67M 'Token Repurchased'). LayerZero's own blog says the Sept 2025 50M buyback cut the gross Strategic Partner monthly unlock from 15M to 12.7M, which implies ~23.3M/month if core contributors get 10.63M; DefiLlama now models 23.63M (13M SP + 10.63M CC) and Tron Weekly cited 23.08M for Oct 2026. The aggregator 25.71M may overstate the real on-chain release by ~2.4M. 'Token Repurchased' (1.67M) put in 'other': these are the FTX-estate tokens that the blog says were returned to the Strategic Partner pool.",
      "fixNote": "BeInCrypto (14 Sep 2026) and Coinotag: 25.71M on 20 Sep = 13.42M SP + 10.63M CC + 1.67M repurchased"
+    },
+    {
+     "date": "2026-11-20",
+     "timeUTC": null,
+     "amountTokens": 23280000,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0.4566,
+      "investors": 0.4721,
+      "community": 0,
+      "ecosystem": 0.0713,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko LayerZero page, Tokenomist widget (read 20 Nov 2026, '7 hours away'): 20 Nov, 23.28M ZRO ($29.13M) = Core Contributors 10.63M, Strategic Partners 10.99M, Tokens Repurchased 1.67M; API ID layerzero",
+       "url": "https://www.coingecko.com/coins/layerzero",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist weekly digest Nov 16-22 2026: ZRO 20 Nov, 23.28M ($34.69M), 5.82% of circulating; unlocks on the 20th each month; ~183M stays locked until Zero mainnet. Same feed as the CoinGecko widget (counted as one source)",
+       "url": "https://tokenomist.ai/research/weekly-unlock-digest-nov-16-22-2026-layerzeros-34-69m-cliff-lands-ahead-of-zero-mainnet",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "DefiLlama LayerZero unlocks (snapshot priced 13 Nov 2026): next unlock 19 Nov 2026 16:02 UTC, 23.63M ZRO = Core Contributors 10.63M + Strategic Partners 13M; 399.98M circulating, 1B max",
+       "url": "https://defillama.com/unlocks/layerzero",
+       "kind": "aggregator",
+       "confirms": [
+        "amount",
+        "recipients",
+        "time"
+       ]
+      },
+      {
+       "label": "Mitrade/BeInCrypto (16 Nov 2026): ZRO 20 Nov, 23.28M = 10.99M strategic partners, 10.63M core contributors, 1.67M repurchased; Tokenomist marks it pending verification (Tokenomist-derived)",
+       "url": "https://www.mitrade.com/insights/news/live-news/article-3-2256990-20261116",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinEdition (27 Oct 2026): 20 Oct tranche ~23.63M (10.63M core + 13M partners); ~23.28M due 20 Nov 2026; no clear exchange inflows tracked to unlocked wallets",
+       "url": "https://coinedition.com/layerzero-zro-price-falls-7-is-zro-still-absorbing-octobers-token-unlock/",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "LayerZero blog 'The ZRO Token' (3 Jun 2026): Foundation bought back 50M ZRO from strategic partners (Sep 2025); partners' gross monthly unlock cut from 15M to 12.7M; Foundation's 183M incl. repurchased re-locked until Zero mainnet; investor sales data to 31 May 2026",
+       "url": "https://layerzero.network/blog/the-zro-token",
+       "kind": "primary",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 4.35,
+      "confidence": 67,
+      "scoredAt": "2026-11-21T08:07:01Z"
+     }
     }
    ],
    "gaps": "coingeckoId not confirmed from a fetched CoinGecko page (expected 'layerzero', which is also the DefiLlama/Tokenomist slug; please verify). First insider unlock was 20 Jun 2025 (outside window), so all window events are routine tranches. Main gap: the per-month amount. Aggregators use 25.71M but LayerZero's own blog implies a smaller Strategic Partner tranche (12.7M gross) after the Sept 2025 buyback; no on-chain check was possible. Times: 11:00 UTC stated only for Dec and Feb (PANews); DefiLlama shows 05:33 UTC for Oct 2026 and 16:02 UTC on the 19th for Nov 2026, so the hour may vary. Listed month from KuCoin 'ZRO airdrop starts June 20' (2024). Web search budget ran out mid-task; May/Jun/Sep 2026 amounts could not be searched individually.",
