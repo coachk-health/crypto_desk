@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T08:25:13Z",
+ "generatedAt": "2026-11-21T20:11:02Z",
  "pumpChecks": {
   "PIEVERSE": {
    "id": "pieverse",
@@ -43,34 +43,34 @@
   },
   "ADI": {
    "id": "adi-token",
-   "rise": -12.0,
+   "rise": -11.6,
    "to": "2026-11-21",
-   "week": -7.8,
-   "ref": 7.26263,
+   "week": -7.3,
+   "ref": 7.29758,
    "source": "coingecko"
   },
   "WET": {
    "id": "humidifi",
-   "rise": -28.4,
+   "rise": -26.0,
    "to": "2026-11-21",
-   "week": -13.5,
-   "ref": 0.0375237,
+   "week": -10.6,
+   "ref": 0.0387571,
    "source": "binance-futures"
   },
   "JCT": {
    "id": "janction",
    "rise": -78.8,
    "to": "2026-11-21",
-   "week": -21.1,
-   "ref": 0.00164208,
+   "week": -20.9,
+   "ref": 0.00164619,
    "source": "binance-futures"
   },
   "CYS": {
    "id": "cysic",
-   "rise": -65.2,
+   "rise": -66.1,
    "to": "2026-11-21",
-   "week": -41.7,
-   "ref": 0.043524,
+   "week": -43.2,
+   "ref": 0.0424382,
    "source": "binance-futures"
   }
  },
@@ -179,7 +179,7 @@
    "support": [],
    "high": null,
    "low": null,
-   "ref": 7.26302,
+   "ref": 7.29657,
    "source": "coingecko",
    "last": {
     "pre30": -5.1,
@@ -201,25 +201,25 @@
    "resistance": [
     {
      "price": 0.06474,
-     "pct": 60.4,
+     "pct": 68.2,
      "date": "2026-09-13"
     },
     {
      "price": 0.06695,
-     "pct": 65.9,
+     "pct": 73.9,
      "date": "2026-09-09"
     }
    ],
    "support": [
     {
      "price": 0.03668,
-     "pct": -9.1,
+     "pct": -4.7,
      "date": "2026-11-14"
     }
    ],
    "high": 0.0806,
    "low": 0.03668,
-   "ref": 0.04035,
+   "ref": 0.0385,
    "source": "binance-futures WETUSDT",
    "last": {
     "pre30": -42.2,
@@ -390,7 +390,7 @@
    "support": [],
    "high": null,
    "low": null,
-   "ref": 0.155505,
+   "ref": 0.166367,
    "source": "coingecko",
    "last": {
     "pre30": 86.9,
@@ -413,7 +413,7 @@
    "support": [],
    "high": null,
    "low": null,
-   "ref": 3.79406,
+   "ref": 6.99254,
    "source": "coingecko"
   },
   "KAITO": {
@@ -451,5 +451,5 @@
    }
   }
  },
- "pumpCheckedAt": "2026-11-21T08:25:13Z"
+ "pumpCheckedAt": "2026-11-21T20:11:02Z"
 }
