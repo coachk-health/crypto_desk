@@ -1,69 +1,73 @@
 {
   "date": "2026-11-22",
-  "updated": "2026-11-22T00:02:26Z",
-  "headline": "Bitcoin is holding around $60,000 after Saturday's drop to a two-year low, with US stocks reopening Monday after Friday's sell-off and money still leaving US bitcoin funds.",
+  "updated": "2026-11-22T04:17:20Z",
+  "headline": "Bitcoin is holding near $60,000 on Sunday after falling to a two-year low, with money still leaving US bitcoin funds and a busy US data week ahead.",
   "market": {
-    "asOf": "Read by this desk on Sat 21 Nov at about 23:57-00:00 UTC (about 07:00 Sun Bangkok). Bitcoin and solana from CoinMarketCap; ether from Binance.US because CoinMarketCap's ether page could not be opened and CoinGecko's ether page showed a price that did not match other sources. Prices move fast; use the live prices on this page.",
+    "asOf": "Bitcoin and ether from CoinMarketCap as reported by IT Times at 02:00 UTC on Sun 22 Nov (11:00 Korea, 09:00 Bangkok); ether's change is the figure IT Times gives. Solana from CoinMarketCap, read by this desk at about 03:59 UTC; its 24h change was +1.89% there but about +4.8% on Binance.US. Prices move fast; use the live prices on this page.",
     "btc": {
-      "price": 60159.99,
-      "chg24h": 2.42
+      "price": 60020,
+      "chg24h": 1.85
     },
     "eth": {
-      "price": 1683.35,
-      "chg24h": 4.0
+      "price": 1683.62,
+      "chg24h": 3.71
     },
     "sol": {
-      "price": 70.23,
-      "chg24h": 2.0
+      "price": 70.53,
+      "chg24h": 1.89
     },
-    "fearGreed": "12 out of 100, \"Extreme Fear\", on the Alternative.me Crypto Fear & Greed Index (read at about 23:58 UTC), the same as the day before."
+    "fearGreed": "12 out of 100, \"Extreme Fear\", on the Alternative.me Crypto Fear & Greed Index (read at about 03:59 UTC), the same as the day before."
   },
   "stories": [
     {
-      "title": "Bitcoin bounces back to about $60,000 after its lowest price in two years",
+      "title": "Bitcoin holds around $60,000 after a 12% weekly drop",
       "mood": "volatile",
-      "summary": "Bitcoin fell to its lowest price in about two years early on Saturday, then climbed back to around $60,000 as traders who had bet on further falls were pushed out. Many recent buyers are still sitting on losses, and Monday's US stock open is the next test.",
+      "summary": "Bitcoin fell to its lowest price since September 2024 early on Saturday, then bounced back to about $60,000 and stayed there through Sunday morning in Asia. It still ended the week about 12% lower, and crypto company shares fell even harder.",
       "points": [
-        "Bitcoin fell as low as $55,251.60, its lowest level in two years, then rose back to about $59,952, per Reuters.",
-        "CoinDesk had bitcoin at about $60,300 on Saturday afternoon US time, up 1.5% over 24 hours, after a low of $55,130.",
-        "About $1.8 billion of crypto bets were liquidated over 24 hours, about $1.3 billion of them bets on higher prices, per CoinGlass data cited by CoinDesk.",
-        "Holders locked in more than $11.3 billion of losses over 7 days, about 8 times their gains, per CryptoQuant analyst Darkfost cited by CoinDesk.",
-        "The average cost for recent (short-term) bitcoin buyers is $74,100, per Glassnode cited by crypto.news, so many are underwater."
+        "Bitcoin fell as low as $55,130, its lowest since September 2024, then rose more than 9% to about $60,300, per CoinDesk.",
+        "At 02:00 UTC on Sunday (11:00 in Korea) bitcoin was at $60,020, up 1.85% over 24 hours, per IT Times citing CoinMarketCap.",
+        "Bitcoin ended Saturday near $60,121, about 12% below $68,314 a week earlier, per CEO Economy.",
+        "Forced selling of crypto bets totalled about $1.8 billion over 24 hours per CoinDesk citing CoinGlass, and $2.67 billion over a different 24-hour window per Bitcoin.com.",
+        "Over the week Strategy (MSTR) shares fell 30.3% and Coinbase 20.1%, per CEO Economy."
       ],
       "sources": [
-        {
-          "label": "Reuters via Business Recorder: bitcoin rises after two-year low",
-          "url": "https://www.brecorder.com/news/40450176/bitcoin-rises-after-falling-to-two-year-low"
-        },
         {
           "label": "CoinDesk: bitcoin bounces 9% to retake $60,000",
           "url": "https://www.coindesk.com/markets/2026/11/21/bitcoin-bounces-9-from-two-year-low-to-retake-usd60-000-as-traders-eye-monday-s-stock-open"
         },
         {
-          "label": "crypto.news: what would make the recovery last",
-          "url": "https://crypto.news/bitcoin-price-above-60000-after-crash-what-would-make-the-recovery-last/"
+          "label": "IT Times: Sunday morning prices",
+          "url": "https://www.ittimes.com/news/articleView.html?idxno=88109"
+        },
+        {
+          "label": "CEO Economy: crypto week in review",
+          "url": "https://ceoeconomy.com/article/crypto-week-in-review-nov-21-2026"
+        },
+        {
+          "label": "Bitcoin.com: rebound after crash near $55K",
+          "url": "https://news.bitcoin.com/market-updates/bitcoin-price-rebounds-60k-crash-near-55k-billions-liquidations/"
         }
       ]
     },
     {
       "title": "US bitcoin funds lose about $1.25 billion in a week",
       "mood": "bearish",
-      "summary": "Money kept flowing out of US spot bitcoin ETFs, the funds that let people buy bitcoin through a normal brokerage account. Last week was one of the worst of a bad month, and BlackRock's fund had still not posted its Friday number.",
+      "summary": "Money kept flowing out of US spot bitcoin ETFs, the funds that let people buy bitcoin through a normal brokerage account. November is now on course to be the second-worst month on record, and BlackRock's fund still has not posted its Friday number.",
       "points": [
-        "Bitcoin ETFs lost about $1.25 billion over 16-20 Nov and ether ETFs about $221.7 million, per crypto.news.",
-        "Friday 20 Nov's provisional total was -$124.5 million, with BlackRock's IBIT still blank, per crypto.news using Farside data.",
-        "On Thursday 19 Nov bitcoin ETFs lost $582.3 million, $541.1 million of it from IBIT, per Bitcoin Sistemi via cryptonews.net.",
-        "November bitcoin ETF outflows total about $3.59 billion so far, per crypto.news.",
-        "CoinDesk put the week at about $1.1 billion net and said IBIT's Friday figures were still pending."
+        "On Thursday 19 Nov bitcoin ETFs lost $582.3 million, $541.1 million of it from BlackRock's IBIT, its biggest daily outflow since launch, per Cryptoticker using Farside data.",
+        "Friday 20 Nov's provisional total was -$124.5 million, with IBIT not yet published, per Cryptoticker.",
+        "November outflows are about $3.59 billion so far, second only to June 2026's $4.51 billion, per Cryptoticker.",
+        "Ether ETFs lost about $221.7 million over the week, per CEO Economy.",
+        "CoinDesk put the week's bitcoin ETF outflows at about $1.1 billion."
       ],
       "sources": [
         {
-          "label": "crypto.news: weekly ETF outflows",
-          "url": "https://crypto.news/bitcoin-ether-etf-outflows-nov-16-20-2026/"
+          "label": "Cryptoticker: November bitcoin ETF outflows",
+          "url": "https://cryptoticker.io/en/bitcoin-etf-outflows-november-2026-blackrock-ibit/"
         },
         {
-          "label": "cryptonews.net: Thursday's record IBIT outflow",
-          "url": "https://cryptonews.net/news/bitcoin/33790041/"
+          "label": "CEO Economy: crypto week in review",
+          "url": "https://ceoeconomy.com/article/crypto-week-in-review-nov-21-2026"
         },
         {
           "label": "CoinDesk: bitcoin bounces 9% to retake $60,000",
@@ -72,35 +76,54 @@
       ]
     },
     {
-      "title": "Stock sell-off and Fed hike fears set up a big week for crypto",
-      "mood": "bearish",
-      "summary": "Friday's tech-led sell-off and expectations of a Fed rate hike in December are a big part of why crypto fell. US stocks reopen Monday 23 Nov, and inflation and growth data land on Wednesday 25 Nov before the Thanksgiving holiday.",
+      "title": "Stocks, US inflation data and a big options expiry set up a busy week",
+      "mood": "volatile",
+      "summary": "Last week's tech-led stock slide and expectations of a Fed rate hike in December helped push crypto down. This week US stocks reopen Monday, key inflation and growth data land Wednesday before Thanksgiving, and a large batch of bitcoin options expires Friday.",
       "points": [
-        "In late Friday trading the S&P 500 was down about 3.5% and the Nasdaq about 5%, per Bitcoin Magazine.",
-        "Traders priced a more than 98% chance of a quarter-point December rate hike on Friday afternoon, per Bitcoin Magazine.",
-        "24/7 Wall St put the odds of a December hike at about 92% on Saturday, citing CME FedWatch.",
-        "PCE inflation and Q3 GDP come out on Wed 25 Nov at 8:30am ET (20:30 Bangkok), per the BEA schedule."
+        "The Nasdaq fell about 10% last week, including 5.3% on Friday, per CEO Economy; CoinDesk put Friday's drop at more than 4%.",
+        "The S&P 500 is at 6,910, 11.6% below its 6 Oct record, per Cryptoticker.",
+        "October PCE inflation and Q3 GDP are both due Wed 25 Nov at 8:30am ET (20:30 Bangkok); core PCE is expected at 3.2% a year against 3.1% before, per Newsquawk.",
+        "Bitcoin options covering 112,323 BTC, about $6.76 billion, expire on Deribit on Fri 27 Nov at 08:00 UTC, per Cryptoticker (data from 21 Nov)."
       ],
       "sources": [
         {
-          "label": "Bitcoin Magazine: bitcoin slips as Nasdaq falls",
-          "url": "https://bitcoinmagazine.com/markets/bitcoin-price-slips-58300-nasdaq"
+          "label": "CEO Economy: crypto week in review",
+          "url": "https://ceoeconomy.com/article/crypto-week-in-review-nov-21-2026"
         },
         {
-          "label": "24/7 Wall St: sell-off could block Fed hikes",
-          "url": "https://247wallst.com/investing/2026/11/21/this-stock-market-selloff-could-block-the-feds-rate-hikes/"
+          "label": "Cryptoticker: Tether, Kraken and Monday's open",
+          "url": "https://cryptoticker.io/en/bitcoin-crash-warnings-fact-check-tether-kraken-monday/"
         },
         {
-          "label": "BEA release schedule",
-          "url": "https://www.bea.gov/news/schedule"
+          "label": "Newsquawk: week in focus 23-27 Nov",
+          "url": "https://www.newsquawk.com/headlines/week-in-focus--november-23rd-27th-highlights-include-us-pce-flash-pmis-aussie-cpi-and-ecb-minutes"
+        },
+        {
+          "label": "Cryptoticker: 27 Nov bitcoin options expiry",
+          "url": "https://cryptoticker.io/en/bitcoin-options-expiry-november-27-2026-puts-40000/"
         }
       ]
     }
   ],
   "briefs": [
     {
+      "title": "Kalshi faces a Monday court hearing in New York",
+      "summary": "A Manhattan state court hears New York Attorney General Letitia James's request for a restraining order on Monday 23 Nov at 11:30am ET; Kalshi's lawyer says it would shut the exchange \"for every customer, everywhere\", and a federal judge on Friday denied the CFTC's emergency bid to block New York's case, per The Block.",
+      "url": "https://www.theblock.co/news/regulation/2026-11-21-kalshi-faces-monday-hearing-on-new-york-order-it-says-would-shut-down-its-exchange-nationwide-444813"
+    },
+    {
+      "title": "Kraken's bitcoin-Canadian dollar market briefly crashes",
+      "summary": "Kraken's BTC/CAD pair traded as low as C$24,250 on Saturday morning UTC, about 70% below Kraken's own US dollar bitcoin price, per CoinPaprika.",
+      "url": "https://coinpaprika.com/news/krakens-bitcoin-cad-pair-briefly-trades-70"
+    },
+    {
+      "title": "AI finds a Bitcoin Core bug; no funds at risk",
+      "summary": "A medium-severity flaw let bad actors stall Bitcoin nodes for more than a dozen seconds per message; it affects versions 29.0 to 31.2 and is fixed in 30.5, 31.3 and 32.1, per Bitcoin.com.",
+      "url": "https://news.bitcoin.com/security/ai-finds-bitcoin-core-security-flaw-that-could-temporarily-freeze-nodes/"
+    },
+    {
       "title": "Chainflip drained of $4.86 million",
-      "summary": "An attacker used what looks like Chainflip's own compromised signing key to empty its Ethereum vault of about $4.86 million into Tornado Cash; FLIP fell 34% and the protocol went into safe mode, per The Block.",
+      "summary": "An attacker used what looks like Chainflip's own compromised signing key to empty its Ethereum vault of about $4.86 million; FLIP fell 34% and the protocol went into safe mode, per The Block.",
       "url": "https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804"
     },
     {
@@ -109,24 +132,19 @@
       "url": "https://www.theblock.co/news/defi/2026-11-21-cyber-investigating-suspected-1-million-bridge-exploit-as-upbit-bithumb-freeze-transfers-444810"
     },
     {
-      "title": "Kalshi faces a Monday court hearing in New York",
-      "summary": "A Manhattan state court hears New York Attorney General Letitia James's request for a restraining order on Monday 23 Nov at 11:30am ET; Kalshi says the order would shut its exchange nationwide, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-21-kalshi-faces-monday-hearing-on-new-york-order-it-says-would-shut-down-its-exchange-nationwide-444813"
+      "title": "Questions over Tether's safety cushion",
+      "summary": "Tether's reported reserve buffer was $7.95 billion on 30 Sep; at Saturday's gold and bitcoin prices Cryptoticker estimates it at $2.8-3.6 billion, while USDT traded at $0.9985, per Cryptoticker.",
+      "url": "https://cryptoticker.io/en/bitcoin-crash-warnings-fact-check-tether-kraken-monday/"
     },
     {
-      "title": "XRP stays below $1",
-      "summary": "XRP slid to about $0.87 as bets on higher prices were unwound, per The Crypto Basic.",
-      "url": "https://thecryptobasic.com/2026/11/21/tcb-daily-edition-what-happened-in-crypto-on-november-21-2026/"
+      "title": "XRP back above $0.90",
+      "summary": "XRP was at $0.9307 on Sunday morning in Asia, up 2.41% over 24 hours, per IT Times citing CoinMarketCap.",
+      "url": "https://www.ittimes.com/news/articleView.html?idxno=88109"
     },
     {
-      "title": "Korean buyers pay a premium for bitcoin",
-      "summary": "Bitcoin traded 1.83% higher on Korea's Upbit than on Binance, a gap known as the kimchi premium, per IT Times.",
-      "url": "https://www.ittimes.com/news/articleView.html?idxno=88106"
-    },
-    {
-      "title": "JPMorgan: bitcoin trades far below its mining cost",
-      "summary": "JPMorgan estimates it costs about $86,000 to produce one bitcoin, which squeezes higher-cost miners, per The Block.",
-      "url": "https://www.theblock.co/news/markets/2026-11-20-jpmorgan-bitcoin-price-correction-gap-86000-production-cost-444763"
+      "title": "Wells Fargo is the biggest reported bitcoin ETF holder",
+      "summary": "US institutions held a record 356,491 BTC through ETFs on 30 Sep, with Wells Fargo the largest at 30,553 BTC-equivalent; these are positions from before the recent selling, per Bitcoin.com citing Galaxy.",
+      "url": "https://news.bitcoin.com/finance/wells-fargo-leads-us-institutions-hit-record-356k-bitcoin-holdings/"
     }
   ],
   "calendar": [
@@ -136,7 +154,7 @@
       "event": "Token unlocks: MBG, SOON, MON, SOSO, XPL, H, HUMA, SIGN, PROS, GRASS, FF, CARDS",
       "impact": "bearish",
       "key": false,
-      "note": "MBG on Sunday 22, SOON on Monday 23, MON (the largest, about $225M on this desk's data) and SOSO on Tuesday 24, XPL and H on Wednesday 25, HUMA on Thursday 26, SIGN, PROS and GRASS on Saturday 28, and FF and CARDS on Sunday 29 November. See the unlock table on this page for sizes, dates and confidence. (Dates from this desk's unlock data.)"
+      "note": "MBG on Sunday 22, SOON on Monday 23, MON (the largest, about 16.6 billion tokens worth about $220M on this desk's data) and SOSO on Tuesday 24, XPL and H on Wednesday 25, HUMA on Thursday 26, SIGN, PROS and GRASS on Saturday 28, and FF and CARDS on Sunday 29 November. See the unlock table on this page for sizes, dates and confidence. (Dates from this desk's unlock data.)"
     },
     {
       "et": "Mon 23 Nov · 9:45am",
@@ -144,7 +162,7 @@
       "event": "S&P Global US flash PMIs (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "October's final manufacturing reading was 54.9 and services 56.1, per FXIFY."
+      "note": "October's manufacturing reading was 54.9, per FinancialJuice."
     },
     {
       "et": "Mon 23 Nov · 11:30am",
@@ -152,15 +170,7 @@
       "event": "New York court hearing on Kalshi",
       "impact": "neutral",
       "key": false,
-      "note": "A Manhattan state court hears the New York Attorney General's request for a restraining order; Kalshi says it could shut its exchange nationwide, per The Block."
-    },
-    {
-      "et": "Mon 23 Nov · 4:00pm",
-      "bkk": "Tue 24 · 04:00",
-      "event": "NY Fed President Williams speaks",
-      "impact": "neutral",
-      "key": false,
-      "note": "Remarks on the economic outlook and monetary policy, with Q&A, per the New York Fed."
+      "note": "Justice Melissa Crane hears the New York Attorney General's request for a restraining order; Kalshi says it could shut its exchange nationwide, per The Block."
     },
     {
       "et": "Tue 24 Nov · 10:00am",
@@ -176,7 +186,7 @@
       "event": "Dell, HP Inc and Workday earnings",
       "impact": "volatile",
       "key": false,
-      "note": "Analysts expect Dell revenue of about $50.63 billion, per Finviz. Dates from earnings calendars, not company sites."
+      "note": "Dell's call is at 4:30pm ET (04:30 Bangkok); analysts expect revenue of about $50.63 billion and earnings of $6.63 a share, per Finviz. HP's call is at 5:00pm ET (05:00 Bangkok), per HP."
     },
     {
       "et": "Wed 25 Nov · 8:30am",
@@ -184,7 +194,7 @@
       "event": "US PCE inflation (Oct), Q3 GDP (second estimate), durable goods and jobless claims",
       "impact": "volatile",
       "key": true,
-      "note": "PCE and Q3 GDP are both due at 8:30am ET, per the BEA schedule. Core PCE is expected at 3.2% a year (prior 3.1%), per Newsquawk. Q3 GDP is expected at 3.5% against the 3.4% first estimate, per Economic Weekly. Weekly jobless claims (last 203K) move to Wednesday for the holiday."
+      "note": "Core PCE is expected at 3.2% a year (prior 3.1%), per Newsquawk. Q3 GDP is expected at 3.5% against the 3.4% first estimate, per Trading Economics. Weekly jobless claims come out on Wednesday this week, per FinanceCalendar; the last reading was 203K, per Stock Analysis."
     },
     {
       "et": "Wed 25 Nov · 2:00pm",
@@ -208,7 +218,7 @@
       "event": "Monthly bitcoin options expiry on Deribit",
       "impact": "volatile",
       "key": true,
-      "note": "About $6.76 billion of bitcoin options expire, with the \"max pain\" level at $73,000, per CryptoTicker using Deribit data from 21 Nov."
+      "note": "About $6.76 billion of bitcoin options (112,323 BTC) expire, with the \"max pain\" level at $73,000, per Cryptoticker using Deribit data from 21 Nov."
     },
     {
       "et": "Fri 4 Dec · 8:30am",
@@ -216,7 +226,7 @@
       "event": "US jobs report (Nov)",
       "impact": "volatile",
       "key": false,
-      "note": "The last jobs report before the Fed decision, per the BLS schedule. JOLTS job openings come out Tue 1 Dec at 10:00am ET (22:00 Bangkok); November CPI is Thu 10 Dec, the day after the Fed."
+      "note": "The last jobs report before the Fed decision, per the BLS schedule. November CPI is Thu 10 Dec, the day after the Fed."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -224,14 +234,14 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": true,
-      "note": "Two-day meeting 8-9 Dec, per the Fed's calendar. Odds of a quarter-point hike were about 92% per 24/7 Wall St citing CME FedWatch, and above 98% per Bitcoin Magazine. Fed officials stop public comment on policy from Sat 28 Nov, per the Fed's blackout rules."
+      "note": "Two-day meeting 8-9 Dec with new projections; the statement is at 2:00pm ET Wed 9 Dec (02:00 Thu 10 Dec Bangkok), per the Fed. Fed officials stop public comment on policy from Sat 28 Nov, per the Fed's blackout rules."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-22T00:11:46Z",
-    "claimsChecked": 71,
-    "claimsRemoved": 7,
+    "checkedAt": "2026-11-22T04:17:20Z",
+    "claimsChecked": 108,
+    "claimsRemoved": 4,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
