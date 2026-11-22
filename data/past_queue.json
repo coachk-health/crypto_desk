@@ -586,43 +586,69 @@
    "why": "No discrete unlock listed. The symbol SONICUSDT is Sonic SVM (not Sonic/S, the former Fantom, which is Tokenomist's 'sonic-3'). The first insider unlock began inside the window, about 7 Jan 2026, but as the start of a linear stream with no lump on the day (lock-up then 24 months linear, per Sonic's terms as summarised by Bitrue and as modelled by DropsTab), so there is no one-day event to grade. C"
   },
   "RONIN": {
-   "status": "pending"
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "No dated discrete unlock confirmed in the window. Sky Mavis re-locked ~75% of its unlocked allocation (8.0% of supply) in Jan 2025, vesting 'quarterly over 2 years' (blog.roninchain.com/p/ron-re-lock-and-circulating-supply-update); those would be discrete quarterly tranches of roughly 1% of supply each, some inside the window, but no source opened gives tranche dates or amounts, so none are listed"
   },
   "TON": {
-   "status": "pending"
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "Re-check contradicted, left out: Real withdrawable dates could not be established: the three listed dates (2026-02-21, 04-23, 09-22) all trace to DefiLlama via news, and the 09-22 article itself says Tonviewer shows the next locker payment on 2026-10-07 with 12 of 36 periods done, while Tokenomist shows the next Believers Fund unlock on 2026-12-06. Tonviewer's 10-07 and Tokenomist's 12-06 both fit"
   },
   "METIS": {
-   "status": "pending"
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "No discrete unlock in the window: all team/investor/advisor/foundation vesting ended by 2023-08-18 (app.tokenomics.com: 0 of 18 events remaining; DropsTab per-allocation unlocked dates). DropsTab flags 600,000 METIS (6%) as untracked. coingeckoId is the CoinGecko page slug; the 'API ID' field was not visible in the fetched page. 'listed' is the TGE month (2021-05-18)."
   },
   "TAO": {
-   "status": "pending"
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "No discrete unlock: no source opened mentions any team/investor allocation or vesting; supply enters only through block emission. The halving (2025-12-14, in the window) is a supply-rate cut, not an unlock; its actual execution date was not confirmed after the fact. defillama.com/unlocks/bittensor failed to load. coingeckoId is the CoinGecko page slug; 'API ID' field not visible in the fetched pag"
   },
   "OMNI": {
-   "status": "pending"
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "Left out: Omni Network migrated to Nomina (NOM) at 1:75 in Aug 2025 and its insider tranches are already in the track record under NOM. Trackers also disagree on the tranche date (DefiLlama 2026-10-17, tokenomics.com the 17th of May/Nov, Tokenomist/CryptoRank the 2nd)."
   },
   "NOT": {
-   "status": "pending"
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "No unlock in the window: 100% of supply was unlocked at TGE on 2024-05-16 (Tap-to-Earn 78%, Ecosystem Fund 17.75%, Binance Launchpool 3%, OKX Jumpstart 1.25%); DropsTab shows 0 NOT locked and app.tokenomics.com shows no events after TGE (sources: https://dropstab.com/coins/notcoin/vesting, https://app.tokenomics.com/tokenomics/notcoin/unlocks). About 3.29B NOT (3.2%) is unlocked but not yet in the"
   },
   "RENDER": {
-   "status": "pending"
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "No qualifying discrete unlock found: partner/escrow tranches all ended years ago per app.tokenomics.com terms; only the monthly emission mint remains, at 0.1% of supply per month. It is below 0.25% of circulating supply, but would exceed $1M in any month RENDER traded above about $2.03 - historical prices were not checked, and the per-month token amount is shown only for 2026-11-22, so no events a"
   },
   "BANANA": {
-   "status": "pending"
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "Left out: the monthly team steps (13,889 on the 11th) exist only in tokenomics.com's model and were mostly derived, Tokenomist shows no team unlock until 2031, each step is ~$55k (below the $1M / borderline 0.25% threshold), and news says ~50,000 vested team tokens were burned."
   },
   "POL": {
-   "status": "pending"
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "No dated unlock in window: supply came from 1:1 MATIC migration plus continuous emission; Tokenomist states no cliff unlock scheduled (event table paywalled). Listing month not confirmed from an opened source. Any 2025-26 governance change to emissions not verified. coingeckoId from Tokenomist slug, API ID not confirmed on CoinGecko."
   },
   "AKT": {
-   "status": "pending"
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "No dated unlock found in window; Tokenomist says no cliff unlock scheduled, but its event table and per-allocation terms are paywalled, so completion of team/investor vesting is not confirmed from terms. No primary vesting doc opened (Akash 2020 CEO post only confirms Oct 2020 listing). Current inflation rate not confirmed. coingeckoId from Tokenomist slug, API ID not confirmed on CoinGecko."
   },
   "KAIA": {
-   "status": "pending"
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "No dated unlock in window: issuance is per-block only. Listing month not confirmed from an opened source. Total supply not stated by sources (circulating used). Governance changes to the block reward in the window (tokenomics reform proposals exist) not verified. coingeckoId from Tokenomist slug, API ID not confirmed on CoinGecko."
   },
   "AERO": {
-   "status": "pending"
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "No dated vesting unlock in window. Weekly epoch emissions may each exceed 0.25% of circulating supply, but no opened source gives per-epoch dates and amounts, so they are recorded once as continuous. DefiLlama describes a new AERO token that old AERO and VELO migrate into (99.4% 'Migration'): date and terms of that migration were not researched and it may affect which CoinGecko id and supply apply"
   },
   "ORCA": {
-   "status": "pending"
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "No dated unlock in window: Tokenomist says the unlock schedule ended in 2024 and Orca is fully unlocked; Orca docs give 3-year vesting with 1-year cliff for team/advisors and a Sept 2021 private sale with 1-year cliff + 2-year linear (ends ~Sept 2024). Not checked: treasury/contributor-grant (5M approved Q1 2023) discretionary distributions and liquidity rewards, which have no published schedule. "
   },
   "VIRTUAL": {
    "status": "pending"
@@ -986,6 +1012,21 @@
   },
   "BAL": {
    "status": "pending"
+  },
+  "CYS": {
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "Re-check contradicted, left out: The monthly-on-the-11th steps exist only in app.tokenomics.com's model: the page quotes just '120 Month Linear Vesting' for Ecosystem Incentive (no word 'monthly'), no project doc or second tracker confirming a monthly step was found, and both CoinGecko and CoinMarketCap (opened today) still show circulating supply of 160.8M CYS - exactly the TGE amount - so none o"
+  },
+  "KNTQ": {
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "No dated unlock in window. Genesis event 2025-11-27 (inside the window, but it is the launch/airdrop, not an unlock). Core contributors (23.5%) and investors (7.5%) have a 1-year cliff then 2-year monthly linear vesting per Kinetiq docs, so the first insider unlock falls after the window (cliff end ~2026-11-27; Tokenomist lists next unlock 2026-12-27 to Core Contributors and Investors). Release te"
+  },
+  "PROS": {
+   "status": "no_events",
+   "checkedAt": "2026-11-22T03:03:02Z",
+   "why": "Re-check contradicted, left out: Monthly steps on the 28th are app.tokenomics.com's drawing of 'linear vesting' only: a second tracker, Tokenomist, states 'Pharos has no upcoming cliff unlock scheduled' (so it does not model a 2026-11-28 step) and uses different buckets (Ecosystem & Community 20%, Liquidity Incentives 10%, Node Delegation 4%, Airdrop 1%), and every news source opened says only 'li"
   }
  },
  "note": "Binance USDT-perpetual tokens to check for dated unlocks. status: pending (not researched yet), added (in the track record), no_events (researched: no dated unlock in the window)."
