@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T08:17:29Z",
+ "generatedAt": "2026-11-22T14:41:08Z",
  "rules": {
   "version": "v3",
   "frozenOn": "2026-11-19",
@@ -79,7 +79,63 @@
    "why": "passes every rule",
    "entry": 0.01501,
    "stop": 0.0168112,
-   "target": 0.0097565
+   "target": 0.0097565,
+   "lateCall": true,
+   "practice": {
+    "entries": {
+     "-14": 0.0166,
+     "-7": 0.01501,
+     "-3": 0.01313
+    },
+    "exits": {},
+    "lastClose": 0.01336,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "open",
+     "pct": 11.0,
+     "why": "no target yet",
+     "day": -3
+    }
+   }
+  },
+  {
+   "token": "HUMA",
+   "name": "Huma Finance",
+   "unlockDate": "2026-11-26",
+   "entryDate": "2026-11-19",
+   "coverDate": "2026-12-10",
+   "pctCirculating": 12.96,
+   "firstInsider": true,
+   "setup": "First insider unlock",
+   "recipients": "First release for team & advisors (~160.8M) and private investors (~171.7M) after their lock was extended six months, plus a third slice (Foundation/Protocol Treasury ~126.3M per DropsTab, or Community per tokenomics.com).",
+   "confidence": "confirmed",
+   "source": "https://app.tokenomics.com/tokenomics/huma-finance/unlocks",
+   "symbol": "HUMAUSDT",
+   "pump": -67.4,
+   "pumpTo": "2026-11-18",
+   "oiChange": 29.7,
+   "oiTo": "2026-11-18",
+   "call": "TAKE",
+   "why": "passes every rule",
+   "entry": 0.008463,
+   "stop": 0.00947856,
+   "target": 0.00550095,
+   "lateCall": false,
+   "practice": {
+    "entries": {
+     "-14": 0.008021,
+     "-7": 0.008463
+    },
+    "exits": {},
+    "lastClose": 0.008731,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": -7
+    }
+   }
   },
   {
    "token": "WET",
@@ -97,7 +153,8 @@
    "pump": -19.8,
    "pumpTo": "2026-11-21",
    "call": "WATCH",
-   "why": "passes so far"
+   "why": "passes so far",
+   "practice": null
   },
   {
    "token": "CYS",
@@ -117,7 +174,8 @@
    "oiChange": null,
    "oiTo": null,
    "call": "WATCH",
-   "why": "open interest not available yet"
+   "why": "open interest not available yet",
+   "practice": null
   },
   {
    "token": "JCT",
@@ -137,7 +195,28 @@
    "oiChange": -20.0,
    "oiTo": "2026-11-02",
    "call": "SKIP",
-   "why": "pumped +161% into the unlock"
+   "why": "pumped +161% into the unlock",
+   "lateCall": true,
+   "practice": {
+    "entries": {
+     "-14": 0.00721,
+     "-7": 0.004804,
+     "-3": 0.003233
+    },
+    "exits": {
+     "1": 0.005021,
+     "3": 0.002079,
+     "7": 0.002064
+    },
+    "lastClose": 0.001624,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": -6
+    }
+   }
   },
   {
    "token": "PIEVERSE",
@@ -157,27 +236,28 @@
    "oiChange": 2.4,
    "oiTo": "2026-11-06",
    "call": "SKIP",
-   "why": "open interest +2% (needs to fall 10%+)"
-  },
-  {
-   "token": "HUMA",
-   "name": "Huma Finance",
-   "unlockDate": "2026-11-26",
-   "entryDate": "2026-11-19",
-   "coverDate": "2026-12-10",
-   "pctCirculating": 12.96,
-   "firstInsider": true,
-   "setup": "First insider unlock",
-   "recipients": "First release for team & advisors (~160.8M) and private investors (~171.7M) after their lock was extended six months, plus a third slice (Foundation/Protocol Treasury ~126.3M per DropsTab, or Community per tokenomics.com).",
-   "confidence": "confirmed",
-   "source": "https://app.tokenomics.com/tokenomics/huma-finance/unlocks",
-   "symbol": "HUMAUSDT",
-   "pump": -62.8,
-   "pumpTo": "2026-11-19",
-   "oiChange": 29.7,
-   "oiTo": "2026-11-18",
-   "call": "SKIP",
-   "why": "open interest +30% (needs to fall 10%+)"
+   "why": "open interest +2% (needs to fall 10%+)",
+   "lateCall": true,
+   "practice": {
+    "entries": {
+     "-14": 1.0011,
+     "-7": 1.3939,
+     "-3": 1.8378
+    },
+    "exits": {
+     "1": 1.8744,
+     "3": 2.0536,
+     "7": 3.4039
+    },
+    "lastClose": 3.4039,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": -5
+    }
+   }
   },
   {
    "token": "ADI",
@@ -192,7 +272,8 @@
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/adi-chain/unlocks",
    "call": "SKIP",
-   "why": "no Binance USDT perpetual"
+   "why": "no Binance USDT perpetual",
+   "practice": null
   }
  ],
  "live": {
@@ -230,6 +311,27 @@
     "R": -1.04,
     "exit": "stop",
     "exitDay": 8
+   },
+   "practice": {
+    "entries": {
+     "-14": 0.12278,
+     "-7": 0.11452,
+     "-3": 0.10971
+    },
+    "exits": {
+     "1": 0.11947,
+     "3": 0.1097,
+     "7": 0.11789,
+     "14": 0.12913
+    },
+    "lastClose": 0.13482,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": 8
+    }
    }
   },
   {
@@ -252,7 +354,27 @@
    "call": "SKIP",
    "why": "pumped +161% into the unlock",
    "calledAt": "2026-11-18T19:18:55Z",
-   "lateCall": true
+   "lateCall": true,
+   "practice": {
+    "entries": {
+     "-14": 0.00721,
+     "-7": 0.004804,
+     "-3": 0.003233
+    },
+    "exits": {
+     "1": 0.005021,
+     "3": 0.002079,
+     "7": 0.002064
+    },
+    "lastClose": 0.001624,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": -6
+    }
+   }
   },
   {
    "token": "PIEVERSE",
@@ -274,7 +396,27 @@
    "call": "SKIP",
    "why": "open interest +2% (needs to fall 10%+)",
    "calledAt": "2026-11-18T19:18:55Z",
-   "lateCall": true
+   "lateCall": true,
+   "practice": {
+    "entries": {
+     "-14": 1.0011,
+     "-7": 1.3939,
+     "-3": 1.8378
+    },
+    "exits": {
+     "1": 1.8744,
+     "3": 2.0536,
+     "7": 3.4039
+    },
+    "lastClose": 3.4039,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": -5
+    }
+   }
   },
   {
    "token": "MON",
@@ -303,6 +445,22 @@
     "lastClose": 0.01336,
     "openPct": 11.0,
     "asOf": "2026-11-21"
+   },
+   "practice": {
+    "entries": {
+     "-14": 0.0166,
+     "-7": 0.01501,
+     "-3": 0.01313
+    },
+    "exits": {},
+    "lastClose": 0.01336,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "open",
+     "pct": 11.0,
+     "why": "no target yet",
+     "day": -3
+    }
    }
   },
   {
@@ -332,7 +490,22 @@
    },
    "entry": 0.008463,
    "stop": 0.00947856,
-   "target": 0.00550095
+   "target": 0.00550095,
+   "practice": {
+    "entries": {
+     "-14": 0.008021,
+     "-7": 0.008463
+    },
+    "exits": {},
+    "lastClose": 0.008731,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": -7
+    }
+   }
   }
  ]
 }

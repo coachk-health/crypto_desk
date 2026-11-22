@@ -28,6 +28,27 @@
     "R": -1.04,
     "exit": "stop",
     "exitDay": 8
+   },
+   "practice": {
+    "entries": {
+     "-14": 0.12278,
+     "-7": 0.11452,
+     "-3": 0.10971
+    },
+    "exits": {
+     "1": 0.11947,
+     "3": 0.1097,
+     "7": 0.11789,
+     "14": 0.12913
+    },
+    "lastClose": 0.13482,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": 8
+    }
    }
   },
   {
@@ -50,7 +71,27 @@
    "call": "SKIP",
    "why": "pumped +161% into the unlock",
    "calledAt": "2026-11-18T19:18:55Z",
-   "lateCall": true
+   "lateCall": true,
+   "practice": {
+    "entries": {
+     "-14": 0.00721,
+     "-7": 0.004804,
+     "-3": 0.003233
+    },
+    "exits": {
+     "1": 0.005021,
+     "3": 0.002079,
+     "7": 0.002064
+    },
+    "lastClose": 0.001624,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": -6
+    }
+   }
   },
   {
    "token": "PIEVERSE",
@@ -72,7 +113,27 @@
    "call": "SKIP",
    "why": "open interest +2% (needs to fall 10%+)",
    "calledAt": "2026-11-18T19:18:55Z",
-   "lateCall": true
+   "lateCall": true,
+   "practice": {
+    "entries": {
+     "-14": 1.0011,
+     "-7": 1.3939,
+     "-3": 1.8378
+    },
+    "exits": {
+     "1": 1.8744,
+     "3": 2.0536,
+     "7": 3.4039
+    },
+    "lastClose": 3.4039,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": -5
+    }
+   }
   },
   {
    "token": "MON",
@@ -101,6 +162,22 @@
     "lastClose": 0.01336,
     "openPct": 11.0,
     "asOf": "2026-11-21"
+   },
+   "practice": {
+    "entries": {
+     "-14": 0.0166,
+     "-7": 0.01501,
+     "-3": 0.01313
+    },
+    "exits": {},
+    "lastClose": 0.01336,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "open",
+     "pct": 11.0,
+     "why": "no target yet",
+     "day": -3
+    }
    }
   },
   {
@@ -130,7 +207,22 @@
    },
    "entry": 0.008463,
    "stop": 0.00947856,
-   "target": 0.00550095
+   "target": 0.00550095,
+   "practice": {
+    "entries": {
+     "-14": 0.008021,
+     "-7": 0.008463
+    },
+    "exits": {},
+    "lastClose": 0.008731,
+    "asOf": "2026-11-21",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": -7
+    }
+   }
   }
  ]
 }

@@ -145,6 +145,51 @@ def follow(p, today):
     return {"status": "open"}
 
 
+ENTRY_DAYS, EXIT_DAYS = (-14, -7, -3), (1, 3, 7, 14)
+
+
+def practice(p, today):
+    """Practice comparison for any candidate: the open on days -14/-7/-3 (possible entries) and the
+    close on days +1/+3/+7/+14 (possible exits), plus a shadow of the "60% off at the target, rest
+    trails 10%" exit on the day -7 entry. Prices only; the page works out the % moves."""
+    d0 = date.fromisoformat(p["unlockDate"])
+    if today <= d0 + timedelta(days=-14):
+        return None
+    _, _, days = candles.token_days(p["token"], d0 - timedelta(days=40), min(today - timedelta(days=1), d0 + timedelta(days=30)))
+    b = {(date.fromisoformat(k) - d0).days: v for k, v in days.items()}
+    if not b:
+        return None
+    f = lambda v: float(f"{v:.6g}")
+    out = {"entries": {str(E): f(b[E]["o"]) for E in ENTRY_DAYS if E in b},
+           "exits": {str(X): f(b[X]["c"]) for X in EXIT_DAYS if X in b},
+           "lastClose": f(b[max(b)]["c"]), "asOf": (d0 + timedelta(days=max(b))).isoformat()}
+    if -7 in b:  # shadow exit: 60% at the 35% target, the rest trails 10% above the lowest low, out by day +30
+        P = b[-7]["o"]; sp, tp = P * (1 + STOP / 100), P * (1 - TGT / 100)
+        hit, low, res = False, P, None
+        for d in range(-7, 31):
+            if d not in b:
+                break
+            o, h, l = b[d]["o"], b[d]["h"], b[d]["l"]
+            if not hit:
+                if h >= sp:
+                    res = {"status": "closed", "pct": round(-STOP - 0.6, 1), "why": "stopped", "day": d}; break
+                if l <= tp:
+                    hit, low = True, l
+                continue
+            low = min(low, l); trail = low * 1.10
+            if h >= trail:
+                pct = 0.6 * TGT + 0.4 * (P - max(o, trail)) / P * 100
+                res = {"status": "closed", "pct": round(pct, 1), "why": "target + trailing stop", "day": d}; break
+        if res is None:
+            last = max(k for k in b if k <= 30)
+            now = b[last]["c"]
+            pct = (0.6 * TGT + 0.4 * (P - now) / P * 100) if hit else (P - now) / P * 100
+            res = {"status": "closed" if last >= 30 else "open", "pct": round(pct, 1),
+                   "why": ("60% taken at target, 40% trailing" if hit else "no target yet"), "day": last}
+        out["shadowPartial"] = res
+    return out
+
+
 def main():
     today = datetime.now(timezone.utc).date()
     up = json.loads((ROOT / "data" / "unlocks.json").read_text()).get("upcoming", [])
@@ -160,12 +205,19 @@ def main():
         if not p:
             continue
         key = (p["token"], p["unlockDate"])
+        if key in logged:  # the call made on entry day is final; later data never changes it
+            frozen = next(c for c in log["calls"] if (c["token"], c["unlockDate"]) == key)
+            p.update({k: frozen[k] for k in ("call", "why", "entry", "stop", "target", "pump", "pumpTo", "oiChange", "oiTo", "lateCall") if k in frozen})
         if p["call"] in ("TAKE", "SKIP") and today >= date.fromisoformat(p["entryDate"]) and key not in logged \
                 and p.get("why") != "unlock not confirmed":
             # frozen once, on entry day; later runs only follow the result
             log["calls"].append({**p, "calledAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
                                  "lateCall": today > date.fromisoformat(p["entryDate"])})
             logged.add(key)
+        try:
+            p["practice"] = practice(p, today)
+        except Exception as e:
+            print(f"practice {p['token']}: {e}")
         picks.append(p)
     for c in log["calls"]:
         if c["call"] == "TAKE" and (c.get("result") or {}).get("status") != "closed":
@@ -173,6 +225,12 @@ def main():
                 c["result"] = follow(c, today)
             except Exception as e:
                 print(f"follow {c['token']}: {e}")
+    for c in log["calls"]:
+        if not (c.get("practice") or {}).get("shadowPartial", {}).get("status") == "closed":
+            try:
+                c["practice"] = practice(c, today)
+            except Exception as e:
+                print(f"practice {c['token']}: {e}")
     LOG.write_text(json.dumps(log, indent=1, ensure_ascii=False) + "\n")
     taken = [c for c in log["calls"] if c["call"] == "TAKE" and not c.get("lateCall")]
     closed = [c for c in taken if (c.get("result") or {}).get("status") == "closed"]
