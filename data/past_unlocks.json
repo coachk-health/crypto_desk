@@ -1299,6 +1299,73 @@
       }
      ],
      "gaps": "Mix is tokenomics.com's only. Time 00:00 UTC is from KuCoin only."
+    },
+    {
+     "date": "2026-11-21",
+     "timeUTC": null,
+     "amountTokens": 2107800000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.221,
+      "investors": 0.474,
+      "community": 0.305,
+      "ecosystem": 0,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com AKEDO unlocks (read 21 Nov 2026): 21 Nov 2026, 2,107,800,000 AKE (2.1% of total), Private Investors 47.4% / Community 30.5% / Insiders 22.1%; investors 3m cliff + 24m linear; Early Contributors and Advisors 6m cliff + 42m linear; TGE 21 Aug 2025; monthly events Apr-Oct 2026 on the 21st",
+       "url": "https://app.tokenomics.com/tokenomics/akedo-games/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Bitrue blog AKEDO price analysis: 21 Nov 2026, ~2.11B AKE (~$20.9M), 9.25% of ~22.8B circulating; investors ~999.5M, insiders ~465.2M, community ~642.7M; past-unlock drawdown stats (appear to come from tokenomics.com)",
+       "url": "https://www.bitrue.com/blog/akedo-price-analysis-token-unlock",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "InteractiveCrypto (8 Nov 2026): ~2.1B AKE around 21 Nov, ~9% of circulating, vested team, investor and community allocations",
+       "url": "https://www.interactivecrypto.com/akedo-s-fleeting-rally-96-below-ath-as-billions-of-tokens-unlock",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinMarketCap AI AKEDO updates (dated 20 Nov 2026): TokenPost (16 Nov) ~$24.37M scheduled 21 Nov; CMC Community post (2 Nov) ~2.1B monthly around the 21st; not yet occurred as of page date",
+       "url": "https://coinmarketcap.com/cmc-ai/akedo/latest-updates/",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount"
+       ]
+      },
+      {
+       "label": "CoinGecko AKEDO page: $0.01055, $240.5M mcap, $34.46M 24h vol, 22.796B circulating, 100B max, API ID akedo; unlock widget empty",
+       "url": "https://coingecko.com/coins/akedo",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 4.72,
+      "confidence": 62,
+      "scoredAt": "2026-11-22T08:05:21Z"
+     }
     }
    ],
    "continuous": null,
@@ -48682,6 +48749,68 @@
     "notes": "The monthly rhythm on the 20th is confirmed: PANews 25.71M on 20 Dec 2025 at 11:00 UTC, and BeInCrypto/Coinotag 25.71M on 20 Sep 2026 with the 13.42/10.63/1.67 split, which fills the missing Sep amount. LayerZero's own blog says the Sep 2025 buyback cut the Strategic Partner monthly unlock from 15M to 12.7M, so 25.71M is a tracker figure that may be about 2.4M too high. The blog also says the repurchased FTX tokens were returned to Strategic Partners, so that 1.67M belongs in investors, not other.",
     "checkedAt": "2026-10-26T11:51:16Z"
    }
+  },
+  {
+   "token": "ARIA",
+   "name": "Aria.AI",
+   "coingeckoId": "aria-ai",
+   "events": [
+    {
+     "date": "2026-11-21",
+     "timeUTC": null,
+     "amountTokens": 36670000,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": null,
+     "sources": [
+      {
+       "label": "CoinGlass ARIA vesting (read 21 Nov 2026 ~04:00 UTC): next unlock 2026-11-21, 36.67M ARIA (3.67% of total), ~$8.51M, Investors and Community & Airdrop; countdown 'in 1 days'; 440.00M circulating; 450.62M unlocked",
+       "url": "https://www.coinglass.com/currencies/ARIA/vesting",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinMarketCap AI ARIA updates (dated 19 Nov 2026, citing TokenPost): unlock scheduled 21 Nov 2026, ~8.15M ARIA (~20% of mcap per page); recipients not named",
+       "url": "https://coinmarketcap.com/cmc-ai/aria-ai/latest-updates/",
+       "kind": "news",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "Games.gg AriaAI tokenomics (18 Aug 2025): TGE 21 Aug (Gate.io); investors 8.5%, nothing at TGE, 12m cliff then quarterly over next 12 months; team 15%, 12m lock then 36m linear; community 51% (8.8% at TGE, rest over 36m); ecosystem 9.7% over 36m; $5M raise, no price",
+       "url": "https://games.gg/hi/news/ariaai-updates-aria-tokenomics/",
+       "kind": "news",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "DropsTab ARIA vesting (read 21 Nov 2026): next unlock shown as 21.05M ARIA (2 rounds) with a zeroed countdown and no date; investors 85M 0% unlocked; team 150M 0% unlocked; market data on page stale ($0.087). Conflicts with CoinGlass",
+       "url": "https://dropstab.com/coins/aria/vesting",
+       "kind": "aggregator",
+       "confirms": []
+      },
+      {
+       "label": "CoinMarketCap Aria.AI page (read 21 Nov 2026): $0.2610, $114.86M mcap, $18.2M 24h vol, 439.99M circulating, 1B max; unlock section shows placeholders",
+       "url": "https://coinmarketcap.com/currencies/aria-ai",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 3,
+      "confidence": 50,
+      "scoredAt": "2026-11-22T08:05:21Z"
+     }
+    }
+   ],
+   "harvested": true
   }
  ],
  "dropped": [
