@@ -106,6 +106,10 @@
     {
      "at": "2026-11-05T07:59:33+00:00",
      "event": "entry: short at 0.1596 (binance-futures ALLOUSDT)"
+    },
+    {
+     "at": "2026-11-22T08:16:34+00:00",
+     "event": "closed: time on 2026-11-21 at 0.12638, +20.20%"
     }
    ],
    "decision": {
@@ -127,7 +131,7 @@
     "pumpPct": 30.0,
     "fromSignals": "2026-11-02T08:33:42Z"
    },
-   "status": "open",
+   "status": "closed",
    "ref": 0.1596,
    "refSource": "binance-futures ALLOUSDT",
    "pump": -34.8,
@@ -137,19 +141,20 @@
     "stop": 0.178752,
     "target": 0.11172
    },
-   "mark": {
-    "date": "2026-11-20",
-    "price": 0.12635,
-    "pnl": 20.22,
-    "r": 1.6
-   },
    "worstAgainst": 5.29,
    "weekMove": null,
    "tags": [
     "first",
     "size25",
     "core"
-   ]
+   ],
+   "exit": {
+    "date": "2026-11-21",
+    "price": 0.12638,
+    "why": "time"
+   },
+   "pnl": 20.2,
+   "r": 1.6
   },
   {
    "id": "CENT-2026-11-12",
@@ -378,10 +383,10 @@
     "target": 0.0097565
    },
    "mark": {
-    "date": "2026-11-20",
-    "price": 0.01313,
-    "pnl": 12.3,
-    "r": 0.97
+    "date": "2026-11-21",
+    "price": 0.01336,
+    "pnl": 10.74,
+    "r": 0.85
    },
    "worstAgainst": 3.46
   },
@@ -561,11 +566,52 @@
    },
    "worstAgainst": 2.51,
    "mark": {
-    "date": "2026-11-20",
-    "price": 0.190924,
-    "pnl": 13.23,
-    "r": 1.05
+    "date": "2026-11-21",
+    "price": 0.164316,
+    "pnl": 25.28,
+    "r": 2.0
    }
+  },
+  {
+   "id": "CARDS-2026-11-29",
+   "token": "CARDS",
+   "name": "Collector Crypt",
+   "coingeckoId": "collector-crypt",
+   "unlockDate": "2026-11-29",
+   "checkDate": "2026-11-21",
+   "entryDate": "2026-11-22",
+   "coverDate": "2026-12-13",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [
+    {
+     "at": "2026-11-22T08:16:34+00:00",
+     "event": "check day: skipped (unlock data not confirmed (confidence 58))"
+    }
+   ],
+   "decision": {
+    "confidence": 58,
+    "pctCirculating": 10.74,
+    "investorsShare": 0.1106,
+    "firstInsiderUnlock": false,
+    "usdM": 6.59,
+    "amount": "~44.59M CARDS contract vesting (team 32.87M, advisors 6.79M, seed 4.93M); CoinGecko/Tokenomist estimate 59.26M incl. 14.58M community",
+    "frozenAt": "2026-11-22T08:16:34+00:00"
+   },
+   "plan": {
+    "stop": 12,
+    "target": 35,
+    "cover": 14,
+    "zone": 1.0,
+    "rr": 2.92,
+    "riskPct": 12.66,
+    "pumpPct": 30.0,
+    "fromSignals": "2026-11-21T11:10:00Z"
+   },
+   "status": "skipped",
+   "skipReason": "unlock data not confirmed (confidence 58)"
   },
   {
    "id": "ADI-2026-12-09",
@@ -666,14 +712,14 @@
    "status": "watching"
   },
   {
-   "id": "LIT-2026-12-27",
+   "id": "LIT-2026-12-30",
    "token": "LIT",
    "name": "Lighter",
    "coingeckoId": "lighter",
-   "unlockDate": "2026-12-27",
-   "checkDate": "2026-12-19",
-   "entryDate": "2026-12-20",
-   "coverDate": "2027-01-10",
+   "unlockDate": "2026-12-30",
+   "checkDate": "2026-12-22",
+   "entryDate": "2026-12-23",
+   "coverDate": "2027-01-13",
    "rules": [
     "first"
    ],
@@ -698,21 +744,21 @@
    "status": "watching"
   }
  ],
- "updatedAt": "2026-11-21T20:10:07Z",
+ "updatedAt": "2026-11-22T08:16:34Z",
  "summary": {
-  "closed": 1,
-  "won": 0,
+  "closed": 2,
+  "won": 1,
   "riskUsd": 100,
-  "rTotal": -1.0,
-  "totalUsd": -100,
-  "open": 3,
-  "skipped": 2,
+  "rTotal": 0.6,
+  "totalUsd": 60,
+  "open": 2,
+  "skipped": 3,
   "watching": 8,
   "byTag": {
    "core": {
-    "closed": 1,
-    "won": 0,
-    "rTotal": -1.0
+    "closed": 2,
+    "won": 1,
+    "rTotal": 0.6
    },
    "weekFlatUp": {
     "closed": 1,
@@ -720,14 +766,14 @@
     "rTotal": -1.0
    },
    "size25": {
-    "closed": 1,
-    "won": 0,
-    "rTotal": -1.0
+    "closed": 2,
+    "won": 1,
+    "rTotal": 0.6
    },
    "first": {
-    "closed": 1,
-    "won": 0,
-    "rTotal": -1.0
+    "closed": 2,
+    "won": 1,
+    "rTotal": 0.6
    }
   }
  },

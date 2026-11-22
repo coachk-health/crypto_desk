@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T20:11:02Z",
+ "generatedAt": "2026-11-22T08:17:29Z",
  "rules": {
   "version": "v3",
   "frozenOn": "2026-11-19",
@@ -69,7 +69,7 @@
    "pctCirculating": 140.46,
    "firstInsider": true,
    "setup": "Big unlock",
-   "recipients": "Team ~10.7B (Monad Foundation / Category Labs team), investors ~4.92B, Category Labs Treasury ~0.99B.",
+   "recipients": "Team ~10.7B, investors ~4.92B, Category Labs Treasury ~0.99B.",
    "confidence": "confirmed",
    "source": "https://monad.xyz/blog/mon-tokenomics-overview",
    "symbol": "MONUSDT",
@@ -94,8 +94,8 @@
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/humidifi/unlocks",
    "symbol": "WETUSDT",
-   "pump": -15.9,
-   "pumpTo": "2026-11-20",
+   "pump": -19.8,
+   "pumpTo": "2026-11-21",
    "call": "WATCH",
    "why": "passes so far"
   },
@@ -108,12 +108,12 @@
    "pctCirculating": 18.49,
    "firstInsider": true,
    "setup": "First insider unlock",
-   "recipients": "End of the 12-month cliff: first monthly tranche for seed/Series A investors (~19.7M = 236.2M/12), core contributors (~3.4M = 121.1M/36) and foundation treasury (~3.3M = 80M/24), plus the routine monthly ecosystem-incentive release (~3.3M = 401.9M/120). Matches the tokenomics.com split.",
+   "recipients": "End of the 12-month cliff: first monthly tranche for seed/Series A investors (~19.7M), core contributors (~3.4M) and foundation treasury (~3.3M), plus the routine monthly ecosystem-incentive release (~3.3M).",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/cysic/unlocks",
    "symbol": "CYSUSDT",
-   "pump": -31.4,
-   "pumpTo": "2026-11-20",
+   "pump": -43.5,
+   "pumpTo": "2026-11-21",
    "oiChange": null,
    "oiTo": null,
    "call": "WATCH",
@@ -168,7 +168,7 @@
    "pctCirculating": 12.96,
    "firstInsider": true,
    "setup": "First insider unlock",
-   "recipients": "First quarterly release for private investors (~171.7M) and team & advisors (~160.8M) after their lock was extended from 12 to 18 months, plus a third slice that is either Protocol Treasury 126.25M (Tokenomist) or ~146M LP & Ecosystem (tokenomics.com).",
+   "recipients": "First release for team & advisors (~160.8M) and private investors (~171.7M) after their lock was extended six months, plus a third slice (Foundation/Protocol Treasury ~126.3M per DropsTab, or Community per tokenomics.com).",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/huma-finance/unlocks",
    "symbol": "HUMAUSDT",
@@ -185,10 +185,10 @@
    "unlockDate": "2026-12-09",
    "entryDate": "2026-12-02",
    "coverDate": "2026-12-23",
-   "pctCirculating": 11.7,
+   "pctCirculating": 11.75,
    "firstInsider": true,
    "setup": "First insider unlock",
-   "recipients": "End of the 12-month cliff (TGE 9 Dec 2025) for private investors, team and partnerships (first monthly instalment each), plus the ongoing monthly Community Fund and Treasury Reserve releases.",
+   "recipients": "End of the 12-month cliff (TGE 9 Dec 2025) for private investors, team and partnerships (first monthly instalment of 72-month linear vesting each), plus the ongoing monthly Community Fund and Treasury Reserve releases.",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/adi-chain/unlocks",
    "call": "SKIP",
@@ -300,9 +300,9 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.01313,
-    "openPct": 12.5,
-    "asOf": "2026-11-20"
+    "lastClose": 0.01336,
+    "openPct": 11.0,
+    "asOf": "2026-11-21"
    }
   },
   {
