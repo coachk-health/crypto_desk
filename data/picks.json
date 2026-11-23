@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T20:25:19Z",
+ "generatedAt": "2026-11-23T09:17:25Z",
  "rules": {
   "version": "v3",
   "frozenOn": "2026-11-19",
@@ -69,7 +69,7 @@
    "pctCirculating": 140.46,
    "firstInsider": true,
    "setup": "Big unlock",
-   "recipients": "Team ~10.7B, investors ~4.92B, Category Labs Treasury ~0.99B.",
+   "recipients": "Team ~10.7B, investors ~4.91B, Category Labs Treasury (future employee compensation) ~1.0B.",
    "confidence": "confirmed",
    "source": "https://monad.xyz/blog/mon-tokenomics-overview",
    "symbol": "MONUSDT",
@@ -88,13 +88,50 @@
      "-3": 0.01313
     },
     "exits": {},
-    "lastClose": 0.01336,
-    "asOf": "2026-11-21",
+    "lastClose": 0.01252,
+    "asOf": "2026-11-22",
     "shadowPartial": {
      "status": "open",
-     "pct": 11.0,
+     "pct": 16.6,
      "why": "no target yet",
-     "day": -3
+     "day": -2
+    }
+   }
+  },
+  {
+   "token": "IRYS",
+   "name": "Irys",
+   "unlockDate": "2026-11-25",
+   "entryDate": "2026-11-18",
+   "coverDate": "2026-12-09",
+   "pctCirculating": 46.0,
+   "firstInsider": true,
+   "setup": "Big unlock",
+   "recipients": "End of the one-year lock for core team & advisors and investors, plus small ecosystem and foundation tranches.",
+   "confidence": "confirmed",
+   "source": "https://app.tokenomics.com/tokenomics/irys/unlocks",
+   "symbol": "IRYSUSDT",
+   "pump": -61.0,
+   "pumpTo": "2026-11-18",
+   "call": "TAKE",
+   "why": "passes every rule",
+   "entry": 0.01481,
+   "stop": 0.0165872,
+   "target": 0.0096265,
+   "practice": {
+    "entries": {
+     "-14": 0.017,
+     "-7": 0.01481,
+     "-3": 0.01891
+    },
+    "exits": {},
+    "lastClose": 0.01909,
+    "asOf": "2026-11-22",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": -7
     }
    }
   },
@@ -107,9 +144,9 @@
    "pctCirculating": 12.96,
    "firstInsider": true,
    "setup": "First insider unlock",
-   "recipients": "First release for team & advisors (~160.8M) and private investors (~171.7M) after their lock was extended six months, plus a third slice (Foundation/Protocol Treasury ~126.3M per DropsTab, or Community per tokenomics.com).",
+   "recipients": "First release for team & advisors (~160.8M) and private investors (~171.7M) after the six-month lock extension, plus a Foundation/Protocol Treasury slice (~126.3M per DropsTab).",
    "confidence": "confirmed",
-   "source": "https://app.tokenomics.com/tokenomics/huma-finance/unlocks",
+   "source": "https://dropstab.com/id/coins/huma-finance/vesting",
    "symbol": "HUMAUSDT",
    "pump": -67.4,
    "pumpTo": "2026-11-18",
@@ -127,12 +164,48 @@
      "-7": 0.008463
     },
     "exits": {},
-    "lastClose": 0.008731,
-    "asOf": "2026-11-21",
+    "lastClose": 0.00836,
+    "asOf": "2026-11-22",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
      "why": "stopped",
+     "day": -7
+    }
+   }
+  },
+  {
+   "token": "GRVT",
+   "name": "Grvt",
+   "unlockDate": "2026-11-29",
+   "entryDate": "2026-11-22",
+   "coverDate": "2026-12-13",
+   "pctCirculating": 30.0,
+   "firstInsider": false,
+   "setup": "Big unlock",
+   "recipients": "Vested tranches from the GRVTVesting vault contracts (airdrop/community per tokenomics.com), possibly plus an ecosystem tranche.",
+   "confidence": "confirmed",
+   "source": "https://app.tokenomics.com/tokenomics/grvt/unlocks",
+   "symbol": "GRVTUSDT",
+   "pump": -28.1,
+   "pumpTo": "2026-11-22",
+   "call": "TAKE",
+   "why": "passes every rule",
+   "entry": 0.1555,
+   "stop": 0.17416,
+   "target": 0.101075,
+   "practice": {
+    "entries": {
+     "-14": 0.1747,
+     "-7": 0.1555
+    },
+    "exits": {},
+    "lastClose": 0.1458,
+    "asOf": "2026-11-22",
+    "shadowPartial": {
+     "status": "open",
+     "pct": 6.2,
+     "why": "no target yet",
      "day": -7
     }
    }
@@ -150,8 +223,8 @@
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/humidifi/unlocks",
    "symbol": "WETUSDT",
-   "pump": -19.8,
-   "pumpTo": "2026-11-21",
+   "pump": -19.3,
+   "pumpTo": "2026-11-22",
    "call": "WATCH",
    "why": "passes so far",
    "practice": null
@@ -165,12 +238,12 @@
    "pctCirculating": 18.49,
    "firstInsider": true,
    "setup": "First insider unlock",
-   "recipients": "End of the 12-month cliff: first monthly tranche for seed/Series A investors (~19.7M), core contributors (~3.4M) and foundation treasury (~3.3M), plus the routine monthly ecosystem-incentive release (~3.3M).",
+   "recipients": "End of the 12-month cliffs: first monthly tranche for seed/Pre-A investors (~19.7M), core contributors (~3.4M) and foundation treasury (~3.3M), plus the routine monthly ecosystem-incentive release (~3.3M).",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/cysic/unlocks",
    "symbol": "CYSUSDT",
-   "pump": -43.5,
-   "pumpTo": "2026-11-21",
+   "pump": -48.2,
+   "pumpTo": "2026-11-22",
    "oiChange": null,
    "oiTo": null,
    "call": "WATCH",
@@ -208,8 +281,8 @@
      "3": 0.002079,
      "7": 0.002064
     },
-    "lastClose": 0.001624,
-    "asOf": "2026-11-21",
+    "lastClose": 0.001594,
+    "asOf": "2026-11-22",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -249,8 +322,8 @@
      "3": 2.0536,
      "7": 3.4039
     },
-    "lastClose": 3.4039,
-    "asOf": "2026-11-21",
+    "lastClose": 3.6909,
+    "asOf": "2026-11-22",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -442,9 +515,9 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.01336,
-    "openPct": 11.0,
-    "asOf": "2026-11-21"
+    "lastClose": 0.01252,
+    "openPct": 16.6,
+    "asOf": "2026-11-22"
    },
    "practice": {
     "entries": {
@@ -453,13 +526,13 @@
      "-3": 0.01313
     },
     "exits": {},
-    "lastClose": 0.01336,
-    "asOf": "2026-11-21",
+    "lastClose": 0.01252,
+    "asOf": "2026-11-22",
     "shadowPartial": {
      "status": "open",
-     "pct": 11.0,
+     "pct": 16.6,
      "why": "no target yet",
-     "day": -3
+     "day": -2
     }
    }
   },
@@ -503,6 +576,95 @@
      "status": "closed",
      "pct": -12.6,
      "why": "stopped",
+     "day": -7
+    }
+   }
+  },
+  {
+   "token": "IRYS",
+   "name": "Irys",
+   "unlockDate": "2026-11-25",
+   "entryDate": "2026-11-18",
+   "coverDate": "2026-12-09",
+   "pctCirculating": 46.0,
+   "firstInsider": true,
+   "setup": "Big unlock",
+   "recipients": "End of the one-year lock for core team & advisors and investors, plus small ecosystem and foundation tranches.",
+   "confidence": "confirmed",
+   "source": "https://app.tokenomics.com/tokenomics/irys/unlocks",
+   "symbol": "IRYSUSDT",
+   "pump": -61.0,
+   "pumpTo": "2026-11-18",
+   "call": "TAKE",
+   "why": "passes every rule",
+   "entry": 0.01481,
+   "stop": 0.0165872,
+   "target": 0.0096265,
+   "calledAt": "2026-11-23T09:17:24Z",
+   "lateCall": true,
+   "result": {
+    "status": "closed",
+    "R": -1.0,
+    "exit": "stop",
+    "exitDay": -7
+   },
+   "practice": {
+    "entries": {
+     "-14": 0.017,
+     "-7": 0.01481,
+     "-3": 0.01891
+    },
+    "exits": {},
+    "lastClose": 0.01909,
+    "asOf": "2026-11-22",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": -7
+    }
+   }
+  },
+  {
+   "token": "GRVT",
+   "name": "Grvt",
+   "unlockDate": "2026-11-29",
+   "entryDate": "2026-11-22",
+   "coverDate": "2026-12-13",
+   "pctCirculating": 30.0,
+   "firstInsider": false,
+   "setup": "Big unlock",
+   "recipients": "Vested tranches from the GRVTVesting vault contracts (airdrop/community per tokenomics.com), possibly plus an ecosystem tranche.",
+   "confidence": "confirmed",
+   "source": "https://app.tokenomics.com/tokenomics/grvt/unlocks",
+   "symbol": "GRVTUSDT",
+   "pump": -28.1,
+   "pumpTo": "2026-11-22",
+   "call": "TAKE",
+   "why": "passes every rule",
+   "entry": 0.1555,
+   "stop": 0.17416,
+   "target": 0.101075,
+   "calledAt": "2026-11-23T09:17:25Z",
+   "lateCall": true,
+   "result": {
+    "status": "open",
+    "lastClose": 0.1458,
+    "openPct": 6.2,
+    "asOf": "2026-11-22"
+   },
+   "practice": {
+    "entries": {
+     "-14": 0.1747,
+     "-7": 0.1555
+    },
+    "exits": {},
+    "lastClose": 0.1458,
+    "asOf": "2026-11-22",
+    "shadowPartial": {
+     "status": "open",
+     "pct": 6.2,
+     "why": "no target yet",
      "day": -7
     }
    }

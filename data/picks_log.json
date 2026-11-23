@@ -159,9 +159,9 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.01336,
-    "openPct": 11.0,
-    "asOf": "2026-11-21"
+    "lastClose": 0.01252,
+    "openPct": 16.6,
+    "asOf": "2026-11-22"
    },
    "practice": {
     "entries": {
@@ -170,13 +170,13 @@
      "-3": 0.01313
     },
     "exits": {},
-    "lastClose": 0.01336,
-    "asOf": "2026-11-21",
+    "lastClose": 0.01252,
+    "asOf": "2026-11-22",
     "shadowPartial": {
      "status": "open",
-     "pct": 11.0,
+     "pct": 16.6,
      "why": "no target yet",
-     "day": -3
+     "day": -2
     }
    }
   },
@@ -220,6 +220,95 @@
      "status": "closed",
      "pct": -12.6,
      "why": "stopped",
+     "day": -7
+    }
+   }
+  },
+  {
+   "token": "IRYS",
+   "name": "Irys",
+   "unlockDate": "2026-11-25",
+   "entryDate": "2026-11-18",
+   "coverDate": "2026-12-09",
+   "pctCirculating": 46.0,
+   "firstInsider": true,
+   "setup": "Big unlock",
+   "recipients": "End of the one-year lock for core team & advisors and investors, plus small ecosystem and foundation tranches.",
+   "confidence": "confirmed",
+   "source": "https://app.tokenomics.com/tokenomics/irys/unlocks",
+   "symbol": "IRYSUSDT",
+   "pump": -61.0,
+   "pumpTo": "2026-11-18",
+   "call": "TAKE",
+   "why": "passes every rule",
+   "entry": 0.01481,
+   "stop": 0.0165872,
+   "target": 0.0096265,
+   "calledAt": "2026-11-23T09:17:24Z",
+   "lateCall": true,
+   "result": {
+    "status": "closed",
+    "R": -1.0,
+    "exit": "stop",
+    "exitDay": -7
+   },
+   "practice": {
+    "entries": {
+     "-14": 0.017,
+     "-7": 0.01481,
+     "-3": 0.01891
+    },
+    "exits": {},
+    "lastClose": 0.01909,
+    "asOf": "2026-11-22",
+    "shadowPartial": {
+     "status": "closed",
+     "pct": -12.6,
+     "why": "stopped",
+     "day": -7
+    }
+   }
+  },
+  {
+   "token": "GRVT",
+   "name": "Grvt",
+   "unlockDate": "2026-11-29",
+   "entryDate": "2026-11-22",
+   "coverDate": "2026-12-13",
+   "pctCirculating": 30.0,
+   "firstInsider": false,
+   "setup": "Big unlock",
+   "recipients": "Vested tranches from the GRVTVesting vault contracts (airdrop/community per tokenomics.com), possibly plus an ecosystem tranche.",
+   "confidence": "confirmed",
+   "source": "https://app.tokenomics.com/tokenomics/grvt/unlocks",
+   "symbol": "GRVTUSDT",
+   "pump": -28.1,
+   "pumpTo": "2026-11-22",
+   "call": "TAKE",
+   "why": "passes every rule",
+   "entry": 0.1555,
+   "stop": 0.17416,
+   "target": 0.101075,
+   "calledAt": "2026-11-23T09:17:25Z",
+   "lateCall": true,
+   "result": {
+    "status": "open",
+    "lastClose": 0.1458,
+    "openPct": 6.2,
+    "asOf": "2026-11-22"
+   },
+   "practice": {
+    "entries": {
+     "-14": 0.1747,
+     "-7": 0.1555
+    },
+    "exits": {},
+    "lastClose": 0.1458,
+    "asOf": "2026-11-22",
+    "shadowPartial": {
+     "status": "open",
+     "pct": 6.2,
+     "why": "no target yet",
      "day": -7
     }
    }

@@ -383,10 +383,10 @@
     "target": 0.0097565
    },
    "mark": {
-    "date": "2026-11-21",
-    "price": 0.01336,
-    "pnl": 10.74,
-    "r": 0.85
+    "date": "2026-11-22",
+    "price": 0.01252,
+    "pnl": 16.31,
+    "r": 1.29
    },
    "worstAgainst": 3.46
   },
@@ -427,6 +427,48 @@
     "riskPct": 12.66,
     "pumpPct": 30.0,
     "fromSignals": "2026-11-18T09:55:08Z"
+   },
+   "status": "missed",
+   "skipReason": "not logged before its entry day, so not counted"
+  },
+  {
+   "id": "IRYS-2026-11-25",
+   "token": "IRYS",
+   "name": "Irys",
+   "coingeckoId": "irys",
+   "unlockDate": "2026-11-25",
+   "checkDate": "2026-11-17",
+   "entryDate": "2026-11-18",
+   "coverDate": "2026-12-09",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "setup": "A",
+   "history": [
+    {
+     "at": "2026-11-23T09:16:38+00:00",
+     "event": "check day: missed (not logged before its entry day, so not counted)"
+    }
+   ],
+   "decision": {
+    "confidence": 30,
+    "pctCirculating": 46.0,
+    "investorsShare": 0.537,
+    "firstInsiderUnlock": true,
+    "usdM": 22.2,
+    "amount": "1.18B IRYS",
+    "frozenAt": "2026-11-23T09:16:38+00:00"
+   },
+   "plan": {
+    "stop": 12,
+    "target": 35,
+    "cover": 14,
+    "zone": 1.0,
+    "rr": 2.92,
+    "riskPct": 12.66,
+    "pumpPct": 30.0,
+    "fromSignals": "2026-11-22T09:40:58Z"
    },
    "status": "missed",
    "skipReason": "not logged before its entry day, so not counted"
@@ -566,10 +608,10 @@
    },
    "worstAgainst": 2.51,
    "mark": {
-    "date": "2026-11-21",
-    "price": 0.164316,
-    "pnl": 25.28,
-    "r": 2.0
+    "date": "2026-11-22",
+    "price": 0.16963,
+    "pnl": 22.84,
+    "r": 1.8
    }
   },
   {
@@ -612,6 +654,47 @@
    },
    "status": "skipped",
    "skipReason": "unlock data not confirmed (confidence 58)"
+  },
+  {
+   "id": "GRVT-2026-11-29",
+   "token": "GRVT",
+   "name": "Grvt",
+   "coingeckoId": "grvt",
+   "unlockDate": "2026-11-29",
+   "checkDate": "2026-11-21",
+   "entryDate": "2026-11-22",
+   "coverDate": "2026-12-13",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [
+    {
+     "at": "2026-11-23T09:16:38+00:00",
+     "event": "check day: missed (not logged before its entry day, so not counted)"
+    }
+   ],
+   "decision": {
+    "confidence": 51,
+    "pctCirculating": 30.0,
+    "investorsShare": null,
+    "firstInsiderUnlock": false,
+    "usdM": 7.2,
+    "amount": "34.28M GRVT (up to ~73.6M with other tranches)",
+    "frozenAt": "2026-11-23T09:16:38+00:00"
+   },
+   "plan": {
+    "stop": 12,
+    "target": 35,
+    "cover": 14,
+    "zone": 1.0,
+    "rr": 2.92,
+    "riskPct": 12.66,
+    "pumpPct": 30.0,
+    "fromSignals": "2026-11-22T09:40:58Z"
+   },
+   "status": "missed",
+   "skipReason": "not logged before its entry day, so not counted"
   },
   {
    "id": "ADI-2026-12-09",
@@ -744,7 +827,7 @@
    "status": "watching"
   }
  ],
- "updatedAt": "2026-11-22T20:24:40Z",
+ "updatedAt": "2026-11-23T09:16:38Z",
  "summary": {
   "closed": 2,
   "won": 1,
