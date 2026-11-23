@@ -26793,6 +26793,67 @@
       }
      ],
      "gaps": "CONFLICT: the Tokenomist roundup gives 48.73M / $19.20M / 23.90% for the Jan 19-26 week, about double. That may be two tranches or a different basis. MBG also had cliffs in the Mar 16-23 week ($9.42M), late April and Aug 17-23, none dated."
+    },
+    {
+     "date": "2026-11-22",
+     "timeUTC": null,
+     "amountTokens": 23600000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.2474,
+      "investors": 0.0,
+      "community": 0.0,
+      "ecosystem": 0.7526,
+      "other": 0.0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko MBG page, Tokenomist-fed unlock widget (snapshot ~20 Nov 2026, '2 days away'): 22 Nov, 23.6M MBG ($2.39M) = Ecosystem 12.29M, MultiBank Reserve 5.48M, Advisory 3.06M, Team 2.78M; API ID mbg-by-multibank-group",
+       "url": "https://www.coingecko.com/en/coins/mbg-by-multibank-group",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist MBG unlock events: next unlock 22 Nov 2026 to Ecosystem, MultiBank Reserve, Advisory and Team; no amount/time; history paywalled (same feed as CoinGecko widget, counted as one)",
+       "url": "https://tokenomist.ai/mbg-by-multibank-group/unlock-events",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "tokenomics.com MBG tokenomics: TGE 22 Jul 2025; Team 10% 6m cliff + 36m linear; Reserve 20% 6m cliff + 36m; Advisors 4% 6m cliff + 12m; Ecosystem Rewards 32% 24m linear; Private Rounds 23% quarterly x4 (100% released). Team 100M/36 = 2.78M matches the widget's Team slice; no dated Nov event shown",
+       "url": "https://app.tokenomics.com/tokenomics/mbg-token",
+       "kind": "aggregator",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinMarketCap MBG page: $0.1011, $33.29M mcap, $5.03M 24h vol, 329.19M circ, 1B max; unlock section did not load",
+       "url": "https://coinmarketcap.com/currencies/multibank-group",
+       "kind": "aggregator",
+       "confirms": []
+      },
+      {
+       "label": "KuCoin News (22 Dec 2025): 15.84M MBG unlock on 22 Dec 2025 mainly to Private Round 4; first burn of 4.86M MBG in Aug 2025 under $440M four-year buyback-and-burn",
+       "url": "https://www.kucoin.com/news/articles/mbg-token-unlock-alert-multibank-group-to-release-8-1m-in-tokens-market-volatility-ahead",
+       "kind": "news",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 2.62,
+      "confidence": 37,
+      "scoredAt": "2026-11-23T08:09:58Z"
+     }
     }
    ],
    "gaps": "coingeckoId from Zerion's CoinGecko link (mbg-by-multibank-group; Zerion name '$MBG Token'); the CoinGecko page itself was not opened. Max 1B per Tokenomist. Tokenomics.com TGE 2025-07-22. The Jan 22 amount conflict (24.72M vs 48.73M) is unresolved.",

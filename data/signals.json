@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T09:40:58Z",
+ "generatedAt": "2026-11-23T10:45:42Z",
  "playbook": {
   "entry": -7,
   "exit": 7,
@@ -22,40 +22,40 @@
   }
  },
  "summary": {
-  "n": 148,
-  "tokens": 85,
+  "n": 149,
+  "tokens": 86,
   "win": 66,
-  "median": 6.98,
-  "mean": 3.31,
+  "median": 7.08,
+  "mean": 3.33,
   "best": 65.73,
   "worst": -172.83,
-  "profitFactor": 1.48,
-  "totalUsd": 4893,
-  "totalUsdWithoutBest3": 3137
+  "profitFactor": 1.49,
+  "totalUsd": 4968,
+  "totalUsdWithoutBest3": 3212
  },
  "summaryStop": {
-  "n": 148,
-  "tokens": 85,
+  "n": 149,
+  "tokens": 86,
   "win": 62,
-  "median": 5.21,
-  "mean": 1.49,
+  "median": 5.68,
+  "mean": 1.53,
   "best": 65.73,
   "worst": -106.79,
   "profitFactor": 1.19,
-  "totalUsd": 2201,
-  "totalUsdWithoutBest3": 444
+  "totalUsd": 2276,
+  "totalUsdWithoutBest3": 519
  },
  "summaryNoGuard": {
-  "n": 162,
-  "tokens": 92,
+  "n": 163,
+  "tokens": 93,
   "win": 66,
-  "median": 7.19,
-  "mean": 4.16,
+  "median": 7.29,
+  "mean": 4.18,
   "best": 65.73,
   "worst": -172.83,
-  "profitFactor": 1.61,
-  "totalUsd": 6739,
-  "totalUsdWithoutBest3": 4851
+  "profitFactor": 1.62,
+  "totalUsd": 6814,
+  "totalUsdWithoutBest3": 4926
  },
  "skippedStats": {
   "n": 14,
@@ -73,7 +73,7 @@
  "drawdownUsd": -2324,
  "drawdownUsdStop": -2552,
  "maxOpen": 12,
- "medianEdgeVsRandom": 2.05,
+ "medianEdgeVsRandom": 2.13,
  "halves": {
   "split": "2026-05-19",
   "first": {
@@ -89,30 +89,30 @@
    "totalUsdWithoutBest3": -714
   },
   "second": {
-   "n": 74,
-   "tokens": 47,
+   "n": 75,
+   "tokens": 48,
    "win": 68,
-   "median": 7.19,
-   "mean": 5.72,
+   "median": 7.29,
+   "mean": 5.75,
    "best": 65.73,
    "worst": -31.69,
-   "profitFactor": 2.38,
-   "totalUsd": 4236,
-   "totalUsdWithoutBest3": 2622
+   "profitFactor": 2.41,
+   "totalUsd": 4311,
+   "totalUsdWithoutBest3": 2697
   }
  },
  "byRule": {
   "big": {
-   "n": 119,
-   "tokens": 59,
+   "n": 120,
+   "tokens": 60,
    "win": 66,
-   "median": 6.77,
-   "mean": 1.58,
+   "median": 6.83,
+   "mean": 1.63,
    "best": 60.31,
    "worst": -172.83,
-   "profitFactor": 1.2,
-   "totalUsd": 1883,
-   "totalUsdWithoutBest3": 325
+   "profitFactor": 1.21,
+   "totalUsd": 1958,
+   "totalUsdWithoutBest3": 400
   },
   "first": {
    "n": 59,
@@ -129,65 +129,65 @@
  },
  "exitCompare": {
   "0": {
-   "n": 148,
-   "tokens": 85,
-   "win": 66,
-   "median": 3.5,
-   "mean": 5.44,
+   "n": 149,
+   "tokens": 86,
+   "win": 65,
+   "median": 3.41,
+   "mean": 5.4,
    "best": 69.04,
    "worst": -48.37,
    "profitFactor": 2.93,
-   "totalUsd": 8056,
-   "totalUsdWithoutBest3": 6462
+   "totalUsd": 8052,
+   "totalUsdWithoutBest3": 6458
   },
   "3": {
-   "n": 148,
-   "tokens": 85,
+   "n": 149,
+   "tokens": 86,
    "win": 68,
-   "median": 5.72,
-   "mean": 5.15,
+   "median": 5.68,
+   "mean": 5.12,
    "best": 71.39,
    "worst": -106.79,
    "profitFactor": 2.2,
-   "totalUsd": 7629,
-   "totalUsdWithoutBest3": 5932
+   "totalUsd": 7635,
+   "totalUsdWithoutBest3": 5938
   },
   "7": {
-   "n": 148,
-   "tokens": 85,
+   "n": 149,
+   "tokens": 86,
    "win": 66,
-   "median": 6.98,
-   "mean": 3.31,
+   "median": 7.08,
+   "mean": 3.33,
    "best": 65.73,
    "worst": -172.83,
-   "profitFactor": 1.48,
-   "totalUsd": 4893,
-   "totalUsdWithoutBest3": 3137
+   "profitFactor": 1.49,
+   "totalUsd": 4968,
+   "totalUsdWithoutBest3": 3212
   },
   "14": {
-   "n": 148,
-   "tokens": 85,
+   "n": 149,
+   "tokens": 86,
    "win": 70,
-   "median": 8.32,
-   "mean": 5.62,
+   "median": 8.4,
+   "mean": 5.64,
    "best": 74.91,
    "worst": -156.41,
-   "profitFactor": 1.82,
-   "totalUsd": 8323,
-   "totalUsdWithoutBest3": 6292
+   "profitFactor": 1.83,
+   "totalUsd": 8407,
+   "totalUsdWithoutBest3": 6376
   }
  },
  "live": {
-  "n": 3,
-  "tokens": 3,
-  "win": 67,
-  "median": 0.42,
-  "mean": -7.27,
-  "best": 3.96,
+  "n": 4,
+  "tokens": 4,
+  "win": 75,
+  "median": 2.19,
+  "mean": -3.58,
+  "best": 7.5,
   "worst": -26.2,
-  "profitFactor": 0.17,
-  "totalUsd": -218,
-  "totalUsdWithoutBest3": null
+  "profitFactor": 0.45,
+  "totalUsd": -143,
+  "totalUsdWithoutBest3": -262
  },
  "curve": [
   {
@@ -929,6 +929,11 @@
    "date": "2026-11-10",
    "cum": 4893,
    "token": "KITE"
+  },
+  {
+   "date": "2026-11-16",
+   "cum": 4968,
+   "token": "ADI"
   }
  ],
  "curveStop": [
@@ -1671,6 +1676,11 @@
    "date": "2026-11-10",
    "cum": 2201,
    "token": "KITE"
+  },
+  {
+   "date": "2026-11-16",
+   "cum": 2276,
+   "token": "ADI"
   }
  ],
  "curveNoGuard": [
@@ -2483,9 +2493,50 @@
    "date": "2026-11-10",
    "cum": 6739,
    "token": "KITE"
+  },
+  {
+   "date": "2026-11-16",
+   "cum": 6814,
+   "token": "ADI"
   }
  ],
  "trades": [
+  {
+   "token": "ADI",
+   "name": "ADI Chain",
+   "unlockDate": "2026-11-09",
+   "entryDate": "2026-11-02",
+   "exitDate": "2026-11-16",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 56.156,
+   "pctCirculating": 74.117,
+   "advDays": 11.627,
+   "investorsShare": 0.0,
+   "setup": "B",
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -0.03,
+   "pnl": 7.5,
+   "worstAgainst": 0.4,
+   "held": 14,
+   "pnlStop": 7.5,
+   "stopped": false,
+   "exits": {
+    "0": -0.34,
+    "3": 0.58,
+    "7": 7.5,
+    "14": 8.4
+   },
+   "edgeVsRandom": 11.13,
+   "priceSource": "coingecko",
+   "live": true,
+   "check": null,
+   "momentum": -5.11,
+   "skipped": false,
+   "plan": null
+  },
   {
    "token": "KITE",
    "name": "Kite AI",
@@ -2514,7 +2565,7 @@
     "7": 0.42,
     "14": -10.17
    },
-   "edgeVsRandom": 1.56,
+   "edgeVsRandom": 1.61,
    "priceSource": "binance-futures",
    "live": true,
    "check": null,
@@ -2557,7 +2608,7 @@
     "7": 10.22,
     "14": 19.09
    },
-   "edgeVsRandom": -0.1,
+   "edgeVsRandom": -0.14,
    "priceSource": "binance-futures",
    "live": false,
    "check": "unchecked",
@@ -2600,7 +2651,7 @@
     "7": 3.96,
     "14": 10.99
    },
-   "edgeVsRandom": -0.26,
+   "edgeVsRandom": -0.39,
    "priceSource": "binance-futures",
    "live": true,
    "check": "partial",
@@ -2643,7 +2694,7 @@
     "7": -26.2,
     "14": 4.83
    },
-   "edgeVsRandom": -29.31,
+   "edgeVsRandom": -29.36,
    "priceSource": "binance-futures",
    "live": true,
    "check": null,
@@ -2686,7 +2737,7 @@
     "7": -3.61,
     "14": 27.95
    },
-   "edgeVsRandom": -4.85,
+   "edgeVsRandom": -4.87,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -2729,7 +2780,7 @@
     "7": 4.04,
     "14": 10.29
    },
-   "edgeVsRandom": -2.64,
+   "edgeVsRandom": -2.6,
    "priceSource": "binance-futures",
    "live": false,
    "check": "unchecked",
@@ -2772,7 +2823,7 @@
     "7": -29.4,
     "14": -43.97
    },
-   "edgeVsRandom": -28.74,
+   "edgeVsRandom": -28.85,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -2815,7 +2866,7 @@
     "7": 15.28,
     "14": 24.83
    },
-   "edgeVsRandom": 11.59,
+   "edgeVsRandom": 11.55,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -2858,7 +2909,7 @@
     "7": 19.37,
     "14": 28.71
    },
-   "edgeVsRandom": 12.12,
+   "edgeVsRandom": 12.11,
    "priceSource": "binance-futures",
    "live": false,
    "check": "unchecked",
@@ -2901,7 +2952,7 @@
     "7": -17.09,
     "14": -6.77
    },
-   "edgeVsRandom": -21.58,
+   "edgeVsRandom": -21.51,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -2944,7 +2995,7 @@
     "7": 11.37,
     "14": 11.89
    },
-   "edgeVsRandom": 3.81,
+   "edgeVsRandom": 3.8,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -2987,7 +3038,7 @@
     "7": 16.28,
     "14": 11.62
    },
-   "edgeVsRandom": 10.49,
+   "edgeVsRandom": 10.23,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3030,7 +3081,7 @@
     "7": 17.93,
     "14": 18.52
    },
-   "edgeVsRandom": 13.42,
+   "edgeVsRandom": 13.39,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -3073,7 +3124,7 @@
     "7": 12.28,
     "14": 30.13
    },
-   "edgeVsRandom": 5.57,
+   "edgeVsRandom": 5.54,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3117,7 +3168,7 @@
     "7": 35.39,
     "14": 39.89
    },
-   "edgeVsRandom": 28.14,
+   "edgeVsRandom": 28.1,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -3160,7 +3211,7 @@
     "7": 8.25,
     "14": 13.54
    },
-   "edgeVsRandom": 5.02,
+   "edgeVsRandom": 5.05,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3203,7 +3254,7 @@
     "7": 4.13,
     "14": 13.15
    },
-   "edgeVsRandom": -1.33,
+   "edgeVsRandom": -1.36,
    "priceSource": "binance-futures",
    "live": false,
    "check": "unchecked",
@@ -3247,7 +3298,7 @@
     "7": 7.9,
     "14": 10.55
    },
-   "edgeVsRandom": -2.69,
+   "edgeVsRandom": -2.71,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3290,7 +3341,7 @@
     "7": 23.19,
     "14": 30.66
    },
-   "edgeVsRandom": 11.51,
+   "edgeVsRandom": 11.45,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3333,7 +3384,7 @@
     "7": -7.84,
     "14": -2.55
    },
-   "edgeVsRandom": -13.42,
+   "edgeVsRandom": -13.49,
    "priceSource": "binance-futures",
    "live": false,
    "check": "unchecked",
@@ -3376,7 +3427,7 @@
     "7": -2.21,
     "14": 3.76
    },
-   "edgeVsRandom": -7.63,
+   "edgeVsRandom": -7.8,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -5035,7 +5086,7 @@
     "7": 65.73,
     "14": 66.34
    },
-   "edgeVsRandom": 61.42,
+   "edgeVsRandom": 61.29,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -7402,7 +7453,7 @@
     "7": -5.93,
     "14": -20.31
    },
-   "edgeVsRandom": -7.02,
+   "edgeVsRandom": -7.04,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -9132,7 +9183,7 @@
     "7": -119.95,
     "14": -118.18
    },
-   "edgeVsRandom": -118.29,
+   "edgeVsRandom": -118.81,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -9615,7 +9666,7 @@
    }
   },
   "withCandles": 137,
-  "withoutCandles": 11,
+  "withoutCandles": 12,
   "minRR": 1.5,
   "stops": [
    null,
