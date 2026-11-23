@@ -1,0 +1,111 @@
+{
+ "about": "Running record of what we have done on the desk: every change, test and decision, newest first. Entries are only ever added, never edited or removed. Add one entry per working session (see CLAUDE.md).",
+ "entries": [
+  {
+   "date": "2026-11-23",
+   "title": "History tab and this journal",
+   "did": [
+    "ARIA (unlock 21 Nov) disappeared from Trade signals once its date passed. Added the History tab: a permanent, searchable log of every unlock the desk has shown (data/archive.json, scripts/archive.py), rebuilt from the repo history: 104 unlocks.",
+    "Started this journal so every change and decision stays findable."
+   ],
+   "found": [
+    "ARIA was graded AA but flagged pumped (+210% in 30 days) and was never a v3 pick (8.3% of circulating, not a first insider unlock). The standard short was stopped on entry day; ARIA was +38% from the day −7 open by the day after the unlock."
+   ],
+   "decided": ["Nothing is deleted from History or this journal; both update twice a day or whenever we work."],
+   "files": ["data/archive.json", "scripts/archive.py", "data/journal.json", "index.html"]
+  },
+  {
+   "date": "2026-11-22",
+   "title": "Entry days, exit days and taking profit early",
+   "did": [
+    "Tested shorting 14, 7 and 3 days before the unlock against covering 1, 3, 7 and 14 days after, an entry zone (thirds at −14/−7/−3), and closing 60% at the 35% target with a trailing stop on the rest.",
+    "Added 'Compare entries and exits' to every pick: profit from each entry day to each exit day, a live 'now' price, and a shadow result for the 60% + trailing exit."
+   ],
+   "found": [
+    "Fair test (each trade picked only with what was known on its entry day): day −7 +0.74R a trade, day −14 +0.28R, day −3 +0.42R. A first run that made day −14 look best was using day −7 information.",
+    "Entry zone: more winners (64%) but less profit (+0.64R).",
+    "60% at target + 40% trailing 10%: +0.86R vs +0.81R for the current exit — inside the noise."
+   ],
+   "decided": ["Keep day −7 entry and the current exit. Track the 60%/trailing exit as a shadow result; adopt only if live trades back it (would be v4)."],
+   "files": ["research/entry_exit.py", "research/entry_fair.py", "scripts/picks.py", "index.html"]
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Bybit and Gate.io perpetuals",
+   "did": [
+    "Mapped which tokens had a Bybit or Gate.io perpetual before Binance (75) and researched 55 new ones; independent re-check of every qualifying unlock; priced them from Bybit/Gate through Coach K's browser."
+   ],
+   "found": [
+    "4 more v3 trades with unchanged rules: 3 won, +5.5R (DBR, FLOW, BOBA won; TAIKO stopped then fell 43%).",
+    "The open-interest rule skipped three first-insider unlocks that all won (RAY, ATH, HAEDAL) — a watch item."
+   ],
+   "decided": ["Keep the frozen rules. Live picks stay Binance-only because Bybit/Gate block the cloud servers; proposed running a small script on the Mac mini (no answer yet)."],
+   "files": ["research/exchange_test.json", "research/exchange_listings.json", "research/hist_decisions.md"]
+  },
+  {
+   "date": "2026-11-19",
+   "title": "2021–2025 history test",
+   "did": ["Researched 122 tokens with Binance perpetuals back to 2021; re-checked every tradeable unlock before pricing."],
+   "found": [
+    "Big one-day unlocks are mostly a 2023+ thing; many 2021–22 big unlocks had no perpetual to short; about a third of 'unlocks' were swaps, re-locks, delays or launches.",
+    "v3 took 5 trades: 3 won, +5.5R. Both losses came with BTC up 28–47% the month before."
+   ],
+   "decided": ["No rule change; BTC trend is a watch item."],
+   "files": ["research/hist_test.py", "research/hist_test.json", "research/hist_decisions.md"]
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Picks tab and live test start (v3 rules frozen)",
+   "did": [
+    "Froze the v3 rules in data/strategy_v3.json. Picks tab: only v3 setups, called once on entry day and logged in data/picks_log.json, never rewritten.",
+    "First live call: HUMA (taken 19 Nov), stopped on entry day (−1R). The desk's data later cut HUMA's size from 26% to 13%, so on today's data it would not qualify; the call stays as made."
+   ],
+   "found": [],
+   "decided": ["Pass mark: after 30 live trades, average above +0.25R. Any rule change becomes v4 with a new date."],
+   "files": ["data/strategy_v3.json", "scripts/picks.py", "data/picks_log.json"]
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Chart study: open interest is the tell (v3)",
+   "did": ["Tested chart, volume, funding and open-interest signals on 917 unlocks using Binance's free files."],
+   "found": [
+    "Open interest falling 10%+ the week before entry turns first insider unlocks under 25% from break-even (+0.07R) into winners (+0.78R, 69% won); confirmed on 818 routine unlocks it wasn't found on.",
+    "v3 backtest: 56 trades, 62% won, +0.75R a trade, worst drawdown −3.9% at 1% risk."
+   ],
+   "decided": ["v3: take 25%+ unlocks, and first insider unlocks only if open interest fell 10%+; skip anything pumped 30%+."],
+   "files": ["research/charts.py", "research/cs3.py", "research/cs4.py", "research/cs5.py", "research/v3_trades.json"]
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Take / skip groups and the backtest journal sheet",
+   "did": ["Sorted every past unlock into take full size, take half size and skip; built the shareable journal sheet."],
+   "found": ["Only 25%+ unlocks that weren't pumped made money in both data sets on their own; routine unlocks lost (−50.7R over 820)."],
+   "decided": ["Dropped 'already falling the week before' as a rule (did not hold on unseen data)."],
+   "files": ["research/tiers.py", "research/journal.xlsx", "https://claude.ai/artifact/ShUA8ksjPAokad8wH3XaXT"]
+  },
+  {
+   "date": "2026-11-19",
+   "title": "First unseen-data test (2023–25)",
+   "did": ["Froze the 18 Nov rules, researched 62 big Binance tokens, re-checked every unlock independently, priced them."],
+   "found": ["The strict rule was NOT PROVEN after the re-check: 13 trades, +0.53R a trade, bad-case range below zero."],
+   "decided": ["Keep testing; don't sell the strategy to followers until proven."],
+   "files": ["data/strategy_frozen.json", "data/frozen_test.json", "data/frozen_test_decisions.md"]
+  },
+  {
+   "date": "2026-11-18",
+   "title": "Pump study and best/worst trades",
+   "did": ["Studied what pumps into and after unlocks do, the best and worst trades and why; tested trailing stops."],
+   "found": ["Tokens pumped 30%+ going in lose; most losers were right on direction but squeezed through the stop first; trailing stops didn't help."],
+   "decided": ["Skip anything pumped 30%+ into the unlock."],
+   "files": ["research/", "claude/unlock-audit-2026-11-17.md"]
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Rules into the tracker, more past tokens, simpler dashboard",
+   "did": ["Added the new rules and pump warnings to the tracker and signals; looped in 69 past tokens; size badges for big unlocks; moved the busy panels behind clicks."],
+   "found": [],
+   "decided": ["Keep the dashboard simple with extras behind a click."],
+   "files": ["index.html", "scripts/signals.py", "scripts/merge_past_research.py"]
+  }
+ ]
+}

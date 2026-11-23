@@ -279,6 +279,12 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
 .hist-row .meta { font-size: 13px; color: var(--muted); margin-top: 3px; }
 .hist-row .res { font-size: 14px; margin-top: 4px; }
 .hist-row .up { color: var(--bear); } .hist-row .dn { color: var(--bull); }
+
+.jr { background: var(--panel); border-radius: 10px; padding: 12px 16px; margin: 0 0 8px; }
+.jr .when { font-size: 12.5px; color: var(--muted); }
+.jr .ttl { font-weight: 700; font-size: 16px; margin: 2px 0 4px; }
+.jr ul { margin: 4px 0 0 18px; padding: 0; font-size: 14px; }
+.jr .lbl { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
 </style>
 </head>
 <body>
@@ -496,8 +502,15 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     const box = el('input', { class: 'hist-search', type: 'search', placeholder: 'Search a token, e.g. ARIA', value: histQuery });
     box.addEventListener('input', () => { histQuery = box.value; draw(); });
     draw();
+    const J = (D.journal && D.journal.entries) || [];
+    const jcard = j => el('div', { class: 'jr' }, [el('div', { class: 'when', text: d(j.date) }), el('div', { class: 'ttl', text: j.title }),
+      ...[['What we did', j.did], ['What we found', j.found], ['What we decided', j.decided]].filter(x => x[1] && x[1].length)
+        .flatMap(([l, xs]) => [el('div', { class: 'lbl', text: l }), el('ul', null, xs.map(x => el('li', { text: x })))])]);
     return el('section', { 'aria-label': 'History' }, [
-      el('p', { class: 'lead', text: 'Every unlock the desk has ever shown.' }),
+      el('h2', { text: 'What we’ve done' }),
+      ...J.slice(0, 3).map(jcard),
+      J.length > 3 ? el('details', { class: 'method' }, [el('summary', { text: 'Earlier (' + (J.length - 3) + ')' }), el('div', null, J.slice(3).map(jcard))]) : null,
+      el('h2', { text: 'Every unlock the desk has shown' }),
       el('p', { class: 'small', text: all.length + ' unlocks, kept after their date passes. “Graded” is the setup grade on the Trade signals tab; “Picks” is the v3 call. The standard short is the day −7 open with a 12% stop and 35% target, out day +14. Updated ' + d(A.generatedAt) + '.' }),
       box, list]);
   }
@@ -1439,6 +1452,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     try { D.signals = await fetch('data/signals.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.signals = null; }
     try { const lv = await fetch('data/signals_live.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); if (lv && D.signals) { D.signals.pumpChecks = lv.pumpChecks || {}; D.signals.context = lv.context || {}; D.signals.pumpCheckedAt = lv.pumpCheckedAt; } } catch (e) { /* live checks are optional */ }
     try { D.grades = await fetch('data/grades.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.grades = null; }
+    try { D.journal = await fetch('data/journal.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.journal = null; }
     try { D.archive = await fetch('data/archive.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.archive = null; }
     try { D.picks = await fetch('data/picks.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.picks = null; }
     try { D.tradelog = await fetch('data/trade_log.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.tradelog = null; }
