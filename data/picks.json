@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T09:17:25Z",
+ "generatedAt": "2026-11-23T09:50:50Z",
  "rules": {
   "version": "v3",
   "frozenOn": "2026-11-19",
@@ -118,6 +118,7 @@
    "entry": 0.01481,
    "stop": 0.0165872,
    "target": 0.0096265,
+   "lateCall": true,
    "practice": {
     "entries": {
      "-14": 0.017,
@@ -194,6 +195,7 @@
    "entry": 0.1555,
    "stop": 0.17416,
    "target": 0.101075,
+   "lateCall": true,
    "practice": {
     "entries": {
      "-14": 0.1747,
