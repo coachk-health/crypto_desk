@@ -1,0 +1,4189 @@
+{
+ "entries": {
+  "ZRO|2026-10-20": {
+   "token": "ZRO",
+   "unlockDate": "2026-10-20",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 3.83,
+    "usdM": 43.3,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors, strategic partners"
+   },
+   "asLastShown": {
+    "pct": 3.83,
+    "usdM": 43.3,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors, strategic partners"
+   },
+   "name": "LayerZero",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "ZROUSDT",
+    "entryOpen": 2.0697,
+    "pump30": 85.6,
+    "move": {
+     "+1": -5.8,
+     "+3": -17.6,
+     "+7": -19.0,
+     "+14": -9.4
+    },
+    "maxRise": 10.2,
+    "maxDrop": -31.6,
+    "lastClose": 1.875,
+    "asOf": "2026-11-03",
+    "status": "closed",
+    "planR": 1.25,
+    "planExit": "time",
+    "planExitDay": 14
+   }
+  },
+  "KAITO|2026-10-20": {
+   "token": "KAITO",
+   "unlockDate": "2026-10-20",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 3.69,
+    "usdM": 5.0,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors"
+   },
+   "asLastShown": {
+    "pct": 3.69,
+    "usdM": 5.0,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors"
+   },
+   "name": "Kaito",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "KAITOUSDT",
+    "entryOpen": 0.3034,
+    "pump30": -12.7,
+    "move": {
+     "+1": -7.4,
+     "+3": -14.4,
+     "+7": -15.9,
+     "+14": -22.8
+    },
+    "maxRise": 3.8,
+    "maxDrop": -29.4,
+    "lastClose": 0.2341,
+    "asOf": "2026-11-03",
+    "status": "closed",
+    "planR": 1.8,
+    "planExit": "time",
+    "planExitDay": 14
+   }
+  },
+  "SOON|2026-10-23": {
+   "token": "SOON",
+   "unlockDate": "2026-10-23",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 5.96,
+    "usdM": 6.09,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche across seven pools: SOON Squad 6.67M, Ecosystem 4.17M, Team & Co-builders 2.78M, Community Incentives for Future Products 2.22M, SOON Pill 2.22M, Foundation/Treasury 1.67M, Airdrop/Liquidity 0.52M. No investor pool in this tranche."
+   },
+   "asLastShown": {
+    "pct": 5.96,
+    "usdM": 6.09,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche across seven pools: SOON Squad 6.67M, Ecosystem 4.17M, Team & Co-builders 2.78M, Community Incentives for Future Products 2.22M, SOON Pill 2.22M, Foundation/Treasury 1.67M, Airdrop/Liquidity 0.52M. No investor pool in this tranche."
+   },
+   "name": "SOON",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "SOONUSDT",
+    "entryOpen": 0.3039,
+    "pump30": 51.0,
+    "move": {
+     "+1": 4.1,
+     "+3": 2.2,
+     "+7": 1.0,
+     "+14": -13.4
+    },
+    "maxRise": 14.0,
+    "maxDrop": -25.2,
+    "lastClose": 0.2633,
+    "asOf": "2026-11-06",
+    "status": "closed",
+    "planR": -1.01,
+    "planExit": "stop",
+    "planExitDay": -2
+   }
+  },
+  "APR|2026-10-23": {
+   "token": "APR",
+   "unlockDate": "2026-10-23",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 33.4,
+    "usdM": 2.37,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Originally the end of the one-year lock for Early Backers (52.8M) and Core Contributors (40.0M). Capricorn bought back ~5.3% of supply from early investors in Aug 2026 and says it will redirect those tokens to community incentives and ecosystem growth, so the investor share of this unlock is uncertain."
+   },
+   "asLastShown": {
+    "pct": 33.4,
+    "usdM": 2.37,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Originally the end of the one-year lock for Early Backers (52.8M) and Core Contributors (40.0M). Capricorn bought back ~5.3% of supply from early investors in Aug 2026 and says it will redirect those tokens to community incentives and ecosystem growth, so the investor share of this unlock is uncertain."
+   },
+   "name": "Capricorn (formerly aPriori)",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "APRUSDT",
+    "entryOpen": 0.04447,
+    "pump30": -69.5,
+    "move": {
+     "+1": -37.5,
+     "+3": -27.9,
+     "+7": 20.0,
+     "+14": 0.3
+    },
+    "maxRise": 75.1,
+    "maxDrop": -49.4,
+    "lastClose": 0.04462,
+    "asOf": "2026-11-06",
+    "status": "closed",
+    "planR": 2.75,
+    "planExit": "target",
+    "planExitDay": -5
+   }
+  },
+  "SOSO|2026-10-24": {
+   "token": "SOSO",
+   "unlockDate": "2026-10-24",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 6.86,
+    "usdM": 6.96,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche: core contributors 9.17M, private investors 9.17M, ecosystem & airdrop 2.58M, foundation 1.58M, partners 0.97M."
+   },
+   "asLastShown": {
+    "pct": 6.86,
+    "usdM": 6.96,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche: core contributors 9.17M, private investors 9.17M, ecosystem & airdrop 2.58M, foundation 1.58M, partners 0.97M."
+   },
+   "name": "SoSoValue",
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "COAI|2026-10-25": {
+   "token": "COAI",
+   "unlockDate": "2026-10-25",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 10.39,
+    "usdM": 5.08,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche: core team and contributors ~6.42M and advisors ~0.42M, early backers ~4.42M (all 12-month cliff from 25 Sep 2025 TGE then 36 months linear), ecosystem development ~4.43M and community incentives ~3.85M (48 months linear)."
+   },
+   "asLastShown": {
+    "pct": 10.39,
+    "usdM": 5.08,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche: core team and contributors ~6.42M and advisors ~0.42M, early backers ~4.42M (all 12-month cliff from 25 Sep 2025 TGE then 36 months linear), ecosystem development ~4.43M and community incentives ~3.85M (48 months linear)."
+   },
+   "name": "ChainOpera AI",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "COAIUSDT",
+    "entryOpen": 0.2619,
+    "pump30": -19.0,
+    "move": {
+     "+1": -5.1,
+     "+3": -2.3,
+     "+7": -3.4,
+     "+14": -19.5
+    },
+    "maxRise": 5.2,
+    "maxDrop": -22.1,
+    "lastClose": 0.2108,
+    "asOf": "2026-11-08",
+    "status": "closed",
+    "planR": 0.87,
+    "planExit": "time",
+    "planExitDay": 14
+   }
+  },
+  "XPL|2026-10-25": {
+   "token": "XPL",
+   "unlockDate": "2026-10-25",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 5.02,
+    "usdM": 16.86,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ecosystem & Growth monthly tranche 88.89M, plus the first monthly team (69.44M) and investor (69.44M) tranches after the 25 Sep 2026 one-year cliff."
+   },
+   "asLastShown": {
+    "pct": 5.02,
+    "usdM": 16.86,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ecosystem & Growth monthly tranche 88.89M, plus the first monthly team (69.44M) and investor (69.44M) tranches after the 25 Sep 2026 one-year cliff."
+   },
+   "name": "Plasma",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "XPLUSDT",
+    "entryOpen": 0.0787,
+    "pump30": -29.0,
+    "move": {
+     "+1": -7.3,
+     "+3": -2.5,
+     "+7": -9.6,
+     "+14": -34.6
+    },
+    "maxRise": 10.0,
+    "maxDrop": -37.1,
+    "lastClose": 0.05145,
+    "asOf": "2026-11-08",
+    "status": "closed",
+    "planR": 2.11,
+    "planExit": "time",
+    "planExitDay": 14
+   }
+  },
+  "SAHARA|2026-10-26": {
+   "token": "SAHARA",
+   "unlockDate": "2026-10-26",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 2.87,
+    "usdM": 0.96,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Per Tokenomist: Ecosystem Development 53.02M, Early Backers (investors) 41.15M, Core Team & Contributors 31.25M, Community Incentives 31.25M. The team share may not actually unlock today if the announced six-month team delay applies."
+   },
+   "asLastShown": {
+    "pct": 2.87,
+    "usdM": 0.96,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Per Tokenomist: Ecosystem Development 53.02M, Early Backers (investors) 41.15M, Core Team & Contributors 31.25M, Community Incentives 31.25M. The team share may not actually unlock today if the announced six-month team delay applies."
+   },
+   "name": "Sahara AI",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "SAHARAUSDT",
+    "entryOpen": 0.007483,
+    "pump30": -24.1,
+    "move": {
+     "+1": 3.2,
+     "+3": -2.0,
+     "+7": -6.8,
+     "+14": -16.7
+    },
+    "maxRise": 15.2,
+    "maxDrop": -19.8,
+    "lastClose": 0.006234,
+    "asOf": "2026-11-09",
+    "status": "closed",
+    "planR": -1.01,
+    "planExit": "stop",
+    "planExitDay": -2
+   }
+  },
+  "FF|2026-10-29": {
+   "token": "FF",
+   "unlockDate": "2026-10-29",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 6.07,
+    "usdM": 19.17,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ecosystem 75M and Foundation 60M (both project-controlled), core team and early contributors 55.56M, investors 12.5M."
+   },
+   "asLastShown": {
+    "pct": 6.07,
+    "usdM": 19.17,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ecosystem 75M and Foundation 60M (both project-controlled), core team and early contributors 55.56M, investors 12.5M."
+   },
+   "name": "Falcon Finance",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "FFUSDT",
+    "entryOpen": 0.10701,
+    "pump30": -13.0,
+    "move": {
+     "+1": -15.9,
+     "+3": -15.5,
+     "+7": -19.0,
+     "+14": -20.5
+    },
+    "maxRise": 1.3,
+    "maxDrop": -21.7,
+    "lastClose": 0.08504,
+    "asOf": "2026-11-12",
+    "status": "closed",
+    "planR": 1.62,
+    "planExit": "time",
+    "planExitDay": 14
+   }
+  },
+  "CARDS|2026-10-29": {
+   "token": "CARDS",
+   "unlockDate": "2026-10-29",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 6.69,
+    "usdM": 17.67,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Team 32.5M, community 14.58M, advisors 7.01M, seed investors 5.16M (Tokenomist via CoinGecko)."
+   },
+   "asLastShown": {
+    "pct": 6.69,
+    "usdM": 17.67,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Team 32.5M, community 14.58M, advisors 7.01M, seed investors 5.16M (Tokenomist via CoinGecko)."
+   },
+   "name": "Collector Crypt",
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "W|2026-10-30": {
+   "token": "W",
+   "unlockDate": "2026-10-30",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 0.76,
+    "usdM": 0.63,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ecosystem & Incubation 24.68M, Strategic Network Participants (private-sale buyers incl. angels, builders, partners, funds) 11.01M, core contributors 9.87M (released to Foundation escrow; contributors stay time-locked under their legal agreements), Guardian Nodes 4.84M."
+   },
+   "asLastShown": {
+    "pct": 0.76,
+    "usdM": 0.63,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ecosystem & Incubation 24.68M, Strategic Network Participants (private-sale buyers incl. angels, builders, partners, funds) 11.01M, core contributors 9.87M (released to Foundation escrow; contributors stay time-locked under their legal agreements), Guardian Nodes 4.84M."
+   },
+   "name": "Wormhole",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "WUSDT",
+    "entryOpen": 0.013164,
+    "pump30": -3.0,
+    "move": {
+     "+1": -12.8,
+     "+3": -18.5,
+     "+7": -13.7,
+     "+14": -25.5
+    },
+    "maxRise": 5.7,
+    "maxDrop": -28.6,
+    "lastClose": 0.009812,
+    "asOf": "2026-11-13",
+    "status": "closed",
+    "planR": 1.96,
+    "planExit": "time",
+    "planExitDay": 14
+   }
+  },
+  "KMNO|2026-10-30": {
+   "token": "KMNO",
+   "unlockDate": "2026-10-30",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 3.9,
+    "usdM": 8.39,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Insiders only: Key Stakeholders & Advisors 145.83M (pool mixing backers and advisors; split not published) and Core Contributors 83.33M."
+   },
+   "asLastShown": {
+    "pct": 3.9,
+    "usdM": 8.39,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Insiders only: Key Stakeholders & Advisors 145.83M (pool mixing backers and advisors; split not published) and Core Contributors 83.33M."
+   },
+   "name": "Kamino",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "KMNOUSDT",
+    "entryOpen": 0.03821,
+    "pump30": -13.1,
+    "move": {
+     "+1": -14.5,
+     "+3": -22.5,
+     "+7": -10.2,
+     "+14": -20.4
+    },
+    "maxRise": 16.0,
+    "maxDrop": -24.1,
+    "lastClose": 0.03042,
+    "asOf": "2026-11-13",
+    "status": "closed",
+    "planR": -1.0,
+    "planExit": "stop",
+    "planExitDay": -6
+   }
+  },
+  "M|2026-11-01": {
+   "token": "M",
+   "unlockDate": "2026-11-01",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 2.45,
+    "usdM": 53.44,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly release: community ~24.31M, investors 12.50M, foundation ~11.67M, team ~7.64M."
+   },
+   "asLastShown": {
+    "pct": 2.45,
+    "usdM": 53.44,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly release: community ~24.31M, investors 12.50M, foundation ~11.67M, team ~7.64M."
+   },
+   "name": "MemeCore",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "MUSDT",
+    "entryOpen": 0.9149,
+    "pump30": -13.0,
+    "move": {
+     "+1": -7.4,
+     "+3": -5.8,
+     "+7": -16.0,
+     "+14": -8.2
+    },
+    "maxRise": 25.2,
+    "maxDrop": -18.2,
+    "lastClose": 0.84,
+    "asOf": "2026-11-15",
+    "status": "closed",
+    "planR": -1.0,
+    "planExit": "stop",
+    "planExitDay": -5
+   }
+  },
+  "EIGEN|2026-11-01": {
+   "token": "EIGEN",
+   "unlockDate": "2026-11-01",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 3.62,
+    "usdM": 7.02,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Investors (19.75M) and early contributors (17.07M); routine monthly instalment after the Sep 2025 cliff."
+   },
+   "asLastShown": {
+    "pct": 3.62,
+    "usdM": 7.02,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Investors (19.75M) and early contributors (17.07M); routine monthly instalment after the Sep 2025 cliff."
+   },
+   "name": "EigenCloud (prev. EigenLayer)",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "EIGENUSDT",
+    "entryOpen": 0.2038,
+    "pump30": -17.4,
+    "move": {
+     "+1": -10.5,
+     "+3": -9.7,
+     "+7": -23.1,
+     "+14": -34.6
+    },
+    "maxRise": 3.2,
+    "maxDrop": -39.0,
+    "lastClose": 0.1333,
+    "asOf": "2026-11-15",
+    "status": "closed",
+    "planR": 2.71,
+    "planExit": "target",
+    "planExitDay": 13
+   }
+  },
+  "SUI|2026-11-01": {
+   "token": "SUI",
+   "unlockDate": "2026-11-01",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 0.32,
+    "usdM": 11.84,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Disputed: Early Contributors per Tokenomist/CoinGlass as relayed by CryptoTicker; Tokenomist's own unlock-events page says Community Reserve. Amount and date unresolved across trackers."
+   },
+   "asLastShown": {
+    "pct": 0.32,
+    "usdM": 11.84,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Disputed: Early Contributors per Tokenomist/CoinGlass as relayed by CryptoTicker; Tokenomist's own unlock-events page says Community Reserve. Amount and date unresolved across trackers."
+   },
+   "name": "Sui",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "SUIUSDT",
+    "entryOpen": 0.9382,
+    "pump30": -20.3,
+    "move": {
+     "+1": -7.0,
+     "+3": -1.0,
+     "+7": -12.5,
+     "+14": -21.4
+    },
+    "maxRise": 3.1,
+    "maxDrop": -28.2,
+    "lastClose": 0.7371,
+    "asOf": "2026-11-15",
+    "status": "closed",
+    "planR": 1.94,
+    "planExit": "time",
+    "planExitDay": 14
+   }
+  },
+  "2Z|2026-11-02": {
+   "token": "2Z",
+   "unlockDate": "2026-11-02",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 2.58,
+    "usdM": 3.38,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly post-cliff linear tranche of the Standard Lockup: insider pools (Jump Crypto, Malbec Labs, team, contributors) ~78.5%, institutional token-sale buyers ~18.5%, community/builders/validators ~3.1% (split per tokenomics.com from prior pass; institutional share reproduced by arithmetic today)."
+   },
+   "asLastShown": {
+    "pct": 2.58,
+    "usdM": 3.38,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly post-cliff linear tranche of the Standard Lockup: insider pools (Jump Crypto, Malbec Labs, team, contributors) ~78.5%, institutional token-sale buyers ~18.5%, community/builders/validators ~3.1% (split per tokenomics.com from prior pass; institutional share reproduced by arithmetic today)."
+   },
+   "name": "DoubleZero",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "2ZUSDT",
+    "entryOpen": 0.02888,
+    "pump30": -36.8,
+    "move": {
+     "+1": -17.6,
+     "+3": -27.4,
+     "+7": -32.3,
+     "+14": -44.1
+    },
+    "maxRise": 2.4,
+    "maxDrop": -47.3,
+    "lastClose": 0.01613,
+    "asOf": "2026-11-16",
+    "status": "closed",
+    "planR": 2.72,
+    "planExit": "target",
+    "planExitDay": 8
+   }
+  },
+  "ENA|2026-11-02": {
+   "token": "ENA",
+   "unlockDate": "2026-11-02",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 0.3,
+    "usdM": 7.4,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ethena Foundation monthly tranche per the CoinGecko/Tokenomist widget; Tokenomist's event page instead names Core Contributors. No investor vesting remains after 5 Oct 2026."
+   },
+   "asLastShown": {
+    "pct": 0.3,
+    "usdM": 7.4,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ethena Foundation monthly tranche per the CoinGecko/Tokenomist widget; Tokenomist's event page instead names Core Contributors. No investor vesting remains after 5 Oct 2026."
+   },
+   "name": "Ethena",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "ENAUSDT",
+    "entryOpen": 0.20685,
+    "pump30": -10.9,
+    "move": {
+     "+1": -15.5,
+     "+3": -22.5,
+     "+7": -25.9,
+     "+14": -44.5
+    },
+    "maxRise": 5.3,
+    "maxDrop": -46.9,
+    "lastClose": 0.11474,
+    "asOf": "2026-11-16",
+    "status": "closed",
+    "planR": 2.71,
+    "planExit": "target",
+    "planExitDay": 11
+   }
+  },
+  "BTW|2026-11-02": {
+   "token": "BTW",
+   "unlockDate": "2026-11-02",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 6.75,
+    "usdM": 109.76,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly linear release from the Community pool (~60.17M) and the Ecosystem pool (~41.46M). Team and backers stay locked until about Mar 2027."
+   },
+   "asLastShown": {
+    "pct": 6.75,
+    "usdM": 109.76,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly linear release from the Community pool (~60.17M) and the Ecosystem pool (~41.46M). Team and backers stay locked until about Mar 2027."
+   },
+   "name": "Bitway",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "BTWUSDT",
+    "entryOpen": 1.6335,
+    "pump30": 18.1,
+    "move": {
+     "+1": -40.7,
+     "+3": -32.7,
+     "+7": -38.9,
+     "+14": -77.4
+    },
+    "maxRise": 15.1,
+    "maxDrop": -77.9,
+    "lastClose": 0.3694,
+    "asOf": "2026-11-16",
+    "status": "closed",
+    "planR": 2.75,
+    "planExit": "target",
+    "planExitDay": -7
+   }
+  },
+  "Q|2026-11-02": {
+   "token": "Q",
+   "unlockDate": "2026-11-02",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 4.79,
+    "usdM": 7.03,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly linear tranche: Community ~83.3M, Investors & Advisors ~45.8M, Core Team ~41.7M, Ecosystem & Partnerships ~35.4M, Treasury ~19.4M (derived from tokenomics.com vesting table)."
+   },
+   "asLastShown": {
+    "pct": 4.79,
+    "usdM": 7.03,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly linear tranche: Community ~83.3M, Investors & Advisors ~45.8M, Core Team ~41.7M, Ecosystem & Partnerships ~35.4M, Treasury ~19.4M (derived from tokenomics.com vesting table)."
+   },
+   "name": "Quack AI",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "QUSDT",
+    "entryOpen": 0.057318,
+    "pump30": 161.9,
+    "move": {
+     "+1": -49.9,
+     "+3": -54.7,
+     "+7": -56.7,
+     "+14": -58.0
+    },
+    "maxRise": 311.8,
+    "maxDrop": -60.5,
+    "lastClose": 0.02405,
+    "asOf": "2026-11-16",
+    "status": "closed",
+    "planR": -1.0,
+    "planExit": "stop",
+    "planExitDay": -7
+   }
+  },
+  "ICNT|2026-11-03": {
+   "token": "ICNT",
+   "unlockDate": "2026-11-03",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 7.69,
+    "usdM": 3.56,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Investors, team, node-sale and partner allocations. This is a routine monthly tranche (another of about 19.7M follows on 3 Dec)."
+   },
+   "asLastShown": {
+    "pct": 7.69,
+    "usdM": 3.56,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Investors, team, node-sale and partner allocations. This is a routine monthly tranche (another of about 19.7M follows on 3 Dec)."
+   },
+   "name": "Impossible Cloud Network",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "ICNTUSDT",
+    "entryOpen": 0.1947,
+    "pump30": 99.5,
+    "move": {
+     "+1": 12.8,
+     "+3": 52.4,
+     "+7": 48.6,
+     "+14": 41.9
+    },
+    "maxRise": 103.6,
+    "maxDrop": -15.9,
+    "lastClose": 0.2763,
+    "asOf": "2026-11-17",
+    "status": "closed",
+    "planR": -1.02,
+    "planExit": "stop",
+    "planExitDay": 0
+   }
+  },
+  "KITE|2026-11-03": {
+   "token": "KITE",
+   "unlockDate": "2026-11-03",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 33.46,
+    "usdM": 92.8,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Team, advisors and early contributors plus investors, at the end of their 12-month cliff. Airdrop, module and ecosystem pools may release separately around the same days."
+   },
+   "asLastShown": {
+    "pct": 33.46,
+    "usdM": 92.8,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Team, advisors and early contributors plus investors, at the end of their 12-month cliff. Airdrop, module and ecosystem pools may release separately around the same days."
+   },
+   "name": "Kite AI",
+   "v3Call": "TAKE",
+   "v3Why": "passes every rule",
+   "v3At": "2026-11-19 21:46",
+   "v3Final": true,
+   "v3LateCall": true,
+   "v3Result": {
+    "status": "closed",
+    "R": -1.04,
+    "exit": "stop",
+    "exitDay": 8
+   },
+   "result": {
+    "source": "binance-futures",
+    "symbol": "KITEUSDT",
+    "entryOpen": 0.11452,
+    "pump30": -24.2,
+    "move": {
+     "+1": 4.3,
+     "+3": -4.2,
+     "+7": 2.9,
+     "+14": 12.8
+    },
+    "maxRise": 26.2,
+    "maxDrop": -11.6,
+    "lastClose": 0.12913,
+    "asOf": "2026-11-17",
+    "status": "closed",
+    "planR": -1.04,
+    "planExit": "stop",
+    "planExitDay": 8
+   }
+  },
+  "LA|2026-11-04": {
+   "token": "LA",
+   "unlockDate": "2026-11-04",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 8.49,
+    "usdM": 1.79,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche to early contributors (~10.58M), private/seed/Series A investors (~7.73M), Community & Ecosystem pool (~6.20M) and the Lagrange Foundation (~5.83M). Insider cliff ended June 2026; this is the 6th insider tranche. The foundation's 12-month vesting appears to finish with this tranche (94.8% released; foundation absent from December tranches)."
+   },
+   "asLastShown": {
+    "pct": 8.49,
+    "usdM": 1.79,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche to early contributors (~10.58M), private/seed/Series A investors (~7.73M), Community & Ecosystem pool (~6.20M) and the Lagrange Foundation (~5.83M). Insider cliff ended June 2026; this is the 6th insider tranche. The foundation's 12-month vesting appears to finish with this tranche (94.8% released; foundation absent from December tranches)."
+   },
+   "name": "Lagrange",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "LAUSDT",
+    "entryOpen": 0.06019,
+    "pump30": -11.0,
+    "move": {
+     "+1": -5.7,
+     "+3": -9.6,
+     "+7": -19.0,
+     "+14": -26.4
+    },
+    "maxRise": 4.5,
+    "maxDrop": -33.9,
+    "lastClose": 0.04432,
+    "asOf": "2026-11-18",
+    "status": "closed",
+    "planR": 2.12,
+    "planExit": "time",
+    "planExitDay": 14
+   }
+  },
+  "HYPE|2026-11-06": {
+   "token": "HYPE",
+   "unlockDate": "2026-11-06",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 0.07,
+    "usdM": 13.9,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (Hyperliquid Labs team), monthly distribution around the 6th. No VC allocation."
+   },
+   "asLastShown": {
+    "pct": 0.07,
+    "usdM": 13.9,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (Hyperliquid Labs team), monthly distribution around the 6th. No VC allocation."
+   },
+   "name": "Hyperliquid",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "HYPEUSDT",
+    "entryOpen": 89.038,
+    "pump30": -3.1,
+    "move": {
+     "+1": -12.6,
+     "+3": -15.6,
+     "+7": -19.5,
+     "+14": -31.5
+    },
+    "maxRise": 5.6,
+    "maxDrop": -32.9,
+    "lastClose": 61.03,
+    "asOf": "2026-11-20",
+    "status": "closed",
+    "planR": 1.92,
+    "planExit": "time",
+    "planExitDay": 14
+   }
+  },
+  "JTO|2026-11-07": {
+   "token": "JTO",
+   "unlockDate": "2026-11-07",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 3.13,
+    "usdM": 5.79,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Final scheduled tranche of the insider vest: core contributors/insiders 60.2%, private investors 39.8% (tokenomics.com, stated for this tranche)."
+   },
+   "asLastShown": {
+    "pct": 3.13,
+    "usdM": 5.79,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Final scheduled tranche of the insider vest: core contributors/insiders 60.2%, private investors 39.8% (tokenomics.com, stated for this tranche)."
+   },
+   "name": "Jito",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "JTOUSDT",
+    "entryOpen": 0.3827,
+    "pump30": -30.0,
+    "move": {
+     "+1": -16.1,
+     "+3": -12.8,
+     "+7": -30.0,
+     "+14": -41.8
+    },
+    "maxRise": 0.3,
+    "maxDrop": -45.5,
+    "lastClose": 0.2226,
+    "asOf": "2026-11-21",
+    "status": "closed",
+    "planR": 2.72,
+    "planExit": "target",
+    "planExitDay": 10
+   }
+  },
+  "L1X|2026-11-07": {
+   "token": "L1X",
+   "unlockDate": "2026-11-07",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 11.86,
+    "usdM": 118.6,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Per tokenomics.com: insiders (team/developers/advisors) 50%, private investors 32.8%, foundation 9.8%, community 7.4%."
+   },
+   "asLastShown": {
+    "pct": 11.86,
+    "usdM": 118.6,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Per tokenomics.com: insiders (team/developers/advisors) 50%, private investors 32.8%, foundation 9.8%, community 7.4%."
+   },
+   "name": "Layer One X",
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "AVAX|2026-11-08": {
+   "token": "AVAX",
+   "unlockDate": "2026-11-08",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 0.37,
+    "usdM": 13.63,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Avalanche Foundation. Recurring release of the same size. No team or investor tokens in this tranche."
+   },
+   "asLastShown": {
+    "pct": 0.37,
+    "usdM": 13.63,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Avalanche Foundation. Recurring release of the same size. No team or investor tokens in this tranche."
+   },
+   "name": "Avalanche",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "AVAXUSDT",
+    "entryOpen": 8.565,
+    "pump30": -14.9,
+    "move": {
+     "+1": 1.0,
+     "+3": -0.7,
+     "+7": -14.7,
+     "+14": -21.9
+    },
+    "maxRise": 7.1,
+    "maxDrop": -29.9,
+    "lastClose": 6.685,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": 1.77,
+    "planExit": "time",
+    "planExitDay": 14
+   }
+  },
+  "MOVE|2026-11-09": {
+   "token": "MOVE",
+   "unlockDate": "2026-11-09",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 3.53,
+    "usdM": 1.01,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly post-cliff tranche: Early Backers (investors) 62.5M, Ecosystem+Community 50M, Early Contributors (team) 36.46M, Movement Network Foundation 15.63M."
+   },
+   "asLastShown": {
+    "pct": 3.53,
+    "usdM": 1.01,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly post-cliff tranche: Early Backers (investors) 62.5M, Ecosystem+Community 50M, Early Contributors (team) 36.46M, Movement Network Foundation 15.63M."
+   },
+   "name": "Movement",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "MOVEUSDT",
+    "entryOpen": 0.006205,
+    "pump30": -31.6,
+    "move": {
+     "+1": -10.1,
+     "+3": -11.7,
+     "+7": -23.2,
+     "+14": null
+    },
+    "maxRise": 2.8,
+    "maxDrop": -31.2,
+    "lastClose": 0.004552,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "ADI|2026-11-09": {
+   "token": "ADI",
+   "unlockDate": "2026-11-09",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": null,
+    "usdM": 56.15,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly linear release from the Community Fund (~4.79M, 68.5%) and the foundation's Treasury Reserves (~2.20M, 31.4%). No team or investor tokens; their 12-month cliff ends with the 9 Dec 2026 tranche."
+   },
+   "asLastShown": {
+    "pct": null,
+    "usdM": 56.15,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly linear release from the Community Fund (~4.79M, 68.5%) and the foundation's Treasury Reserves (~2.20M, 31.4%). No team or investor tokens; their 12-month cliff ends with the 9 Dec 2026 tranche."
+   },
+   "name": "ADI Chain",
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "JCT|2026-11-10": {
+   "token": "JCT",
+   "unlockDate": "2026-11-10",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 10.24,
+    "usdM": 12.7,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "tokenomics.com split for this tranche: Community 40.8%, Foundation 30.6%, Private Investors 22.4%, Insiders 6.2%. Team cliff runs to May 2027 (Phemex), so the 'Insiders' slice is most likely advisors."
+   },
+   "asLastShown": {
+    "pct": 10.24,
+    "usdM": 12.7,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "tokenomics.com split for this tranche: Community 40.8%, Foundation 30.6%, Private Investors 22.4%, Insiders 6.2%. Team cliff runs to May 2027 (Phemex), so the 'Insiders' slice is most likely advisors."
+   },
+   "name": "Janction",
+   "v3Call": "SKIP",
+   "v3Why": "pumped +161% into the unlock",
+   "v3At": "2026-11-23 09:46",
+   "v3Final": true,
+   "v3LateCall": true,
+   "v3Result": {},
+   "result": {
+    "source": "binance-futures",
+    "symbol": "JCTUSDT",
+    "entryOpen": 0.004804,
+    "pump30": 161.2,
+    "move": {
+     "+1": 4.5,
+     "+3": -56.7,
+     "+7": -57.0,
+     "+14": null
+    },
+    "maxRise": 344.3,
+    "maxDrop": -70.5,
+    "lastClose": 0.001594,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": -1.0,
+    "planExit": "stop",
+    "planExitDay": -6
+   }
+  },
+  "DOS|2026-11-10": {
+   "token": "DOS",
+   "unlockDate": "2026-11-10",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 7.29,
+    "usdM": 2.94,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Non-insider pools only (community/ecosystem, airdrop remainder, marketing, foundation treasury). tokenomics.com: Community 88.6%, Foundation 11.4%. Team and investor cliffs end 10 Aug 2027."
+   },
+   "asLastShown": {
+    "pct": 7.29,
+    "usdM": 2.94,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Non-insider pools only (community/ecosystem, airdrop remainder, marketing, foundation treasury). tokenomics.com: Community 88.6%, Foundation 11.4%. Team and investor cliffs end 10 Aug 2027."
+   },
+   "name": "DappOS",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "DOSUSDT",
+    "entryOpen": 0.1935,
+    "pump30": -23.4,
+    "move": {
+     "+1": -12.5,
+     "+3": -21.0,
+     "+7": -20.4,
+     "+14": null
+    },
+    "maxRise": 10.5,
+    "maxDrop": -29.4,
+    "lastClose": 0.1411,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "BABY|2026-11-10": {
+   "token": "BABY",
+   "unlockDate": "2026-11-10",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 2.62,
+    "usdM": 1.36,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly 1/36 insider tranche: early private-round investors ~84.72M, team ~41.67M, advisors ~9.72M BABY. Ecosystem/R&D releases on the same day are not in this amount."
+   },
+   "asLastShown": {
+    "pct": 2.62,
+    "usdM": 1.36,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly 1/36 insider tranche: early private-round investors ~84.72M, team ~41.67M, advisors ~9.72M BABY. Ecosystem/R&D releases on the same day are not in this amount."
+   },
+   "name": "Babylon",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "BABYUSDT",
+    "entryOpen": 0.01161,
+    "pump30": -12.4,
+    "move": {
+     "+1": -16.7,
+     "+3": -19.0,
+     "+7": -28.1,
+     "+14": null
+    },
+    "maxRise": 7.5,
+    "maxDrop": -37.8,
+    "lastClose": 0.007741,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": 2.71,
+    "planExit": "target",
+    "planExitDay": 11
+   }
+  },
+  "RAIN|2026-11-10": {
+   "token": "RAIN",
+   "unlockDate": "2026-11-10",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 5.21,
+    "usdM": 169.6,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly release: strategic-sale investors (~34.8%), Marketing & Development Fund (~34.5%), team plus contributors/advisors/strategic partners (~29.0%), presale (~1.7%)."
+   },
+   "asLastShown": {
+    "pct": 5.21,
+    "usdM": 169.6,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly release: strategic-sale investors (~34.8%), Marketing & Development Fund (~34.5%), team plus contributors/advisors/strategic partners (~29.0%), presale (~1.7%)."
+   },
+   "name": "Rain",
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "APT|2026-11-11": {
+   "token": "APT",
+   "unlockDate": "2026-11-11",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 0.51,
+    "usdM": 2.56,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Community pool (~3.21M) and Aptos Foundation (~1.33M) only; investor and core contributor vesting ended October 2026."
+   },
+   "asLastShown": {
+    "pct": 0.51,
+    "usdM": 2.56,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Community pool (~3.21M) and Aptos Foundation (~1.33M) only; investor and core contributor vesting ended October 2026."
+   },
+   "name": "Aptos",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "APTUSDT",
+    "entryOpen": 0.6178,
+    "pump30": -31.4,
+    "move": {
+     "+1": -10.2,
+     "+3": -27.3,
+     "+7": -30.1,
+     "+14": null
+    },
+    "maxRise": 6.9,
+    "maxDrop": -45.8,
+    "lastClose": 0.3801,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": 2.72,
+    "planExit": "target",
+    "planExitDay": 9
+   }
+  },
+  "KUB|2026-11-11": {
+   "token": "KUB",
+   "unlockDate": "2026-11-11",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 4.8,
+    "usdM": 1.75,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Bitkub Capital Group Holdings (BCGH) reserve fund; no team or investor allocation named for this tranche."
+   },
+   "asLastShown": {
+    "pct": 4.8,
+    "usdM": 1.75,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Bitkub Capital Group Holdings (BCGH) reserve fund; no team or investor allocation named for this tranche."
+   },
+   "name": "Bitkub Coin (KUB Coin)",
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "PEAQ|2026-11-12": {
+   "token": "PEAQ",
+   "unlockDate": "2026-11-12",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 3.15,
+    "usdM": 2.12,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Investors (pre-seed, seed, private, pre-launch private) and core contributors / EoT Labs. Per tokenomics.com the Dec tranche drops to 44.1M, consistent with the 18-month private rounds finishing around now."
+   },
+   "asLastShown": {
+    "pct": 3.15,
+    "usdM": 2.12,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Investors (pre-seed, seed, private, pre-launch private) and core contributors / EoT Labs. Per tokenomics.com the Dec tranche drops to 44.1M, consistent with the 18-month private rounds finishing around now."
+   },
+   "name": "peaq",
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "PUMP|2026-11-12": {
+   "token": "PUMP",
+   "unlockDate": "2026-11-12",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 1.5,
+    "usdM": 23.95,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly linear vesting of the Team and Existing Investors pools after the July 2026 one-year cliff: ~4.17B team, ~2.71B existing investors."
+   },
+   "asLastShown": {
+    "pct": 1.5,
+    "usdM": 23.95,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly linear vesting of the Team and Existing Investors pools after the July 2026 one-year cliff: ~4.17B team, ~2.71B existing investors."
+   },
+   "name": "Pump.fun",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "PUMPUSDT",
+    "entryOpen": 0.004245,
+    "pump30": -14.5,
+    "move": {
+     "+1": -18.8,
+     "+3": -30.0,
+     "+7": -37.7,
+     "+14": null
+    },
+    "maxRise": 3.3,
+    "maxDrop": -48.6,
+    "lastClose": 0.002601,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": 2.74,
+    "planExit": "target",
+    "planExitDay": 2
+   }
+  },
+  "AZTEC|2026-11-13": {
+   "token": "AZTEC",
+   "unlockDate": "2026-11-13",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Aztec Foundation per Tokenomist (only source naming a recipient for the 797.5M). Separately, genesis sequencer sale tokens become withdrawable 13 Nov 14:00 UTC per the Staker contract timestamp."
+   },
+   "asLastShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Aztec Foundation per Tokenomist (only source naming a recipient for the 797.5M). Separately, genesis sequencer sale tokens become withdrawable 13 Nov 14:00 UTC per the Staker contract timestamp."
+   },
+   "name": "Aztec",
+   "grade": "A",
+   "gradeHas": [
+    "cliff"
+   ],
+   "gradeMissing": [
+    "first",
+    "big"
+   ],
+   "pumped": false,
+   "momentum": -33.3,
+   "gradeEntry": "2026-11-06",
+   "gradeAt": "2026-11-14 08:10",
+   "bestGrade": "A",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "AZTECUSDT",
+    "entryOpen": 0.01365,
+    "pump30": -33.3,
+    "move": {
+     "+1": -25.3,
+     "+3": -24.9,
+     "+7": -34.1,
+     "+14": null
+    },
+    "maxRise": 3.9,
+    "maxDrop": -39.3,
+    "lastClose": 0.00921,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": 2.72,
+    "planExit": "target",
+    "planExitDay": 7
+   }
+  },
+  "PIEVERSE|2026-11-14": {
+   "token": "PIEVERSE",
+   "unlockDate": "2026-11-14",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "First release to team & advisors and private investors after the 12-month lock from the 14 Nov 2025 TGE, plus ongoing community, ecosystem/marketing and foundation releases. Pool sizes for this tranche are disputed."
+   },
+   "asLastShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "First release to team & advisors and private investors after the 12-month lock from the 14 Nov 2025 TGE, plus ongoing community, ecosystem/marketing and foundation releases. Pool sizes for this tranche are disputed."
+   },
+   "name": "Pieverse",
+   "grade": "A",
+   "gradeHas": [
+    "first",
+    "cliff"
+   ],
+   "gradeMissing": [
+    "big"
+   ],
+   "pumped": false,
+   "momentum": 17.9,
+   "gradeEntry": "2026-11-07",
+   "gradeAt": "2026-11-14 08:32",
+   "bestGrade": "A",
+   "v3Call": "SKIP",
+   "v3Why": "open interest +2% (needs to fall 10%+)",
+   "v3At": "2026-11-23 09:46",
+   "v3Final": true,
+   "v3LateCall": true,
+   "v3Result": {},
+   "result": {
+    "source": "binance-futures",
+    "symbol": "PIEVERSEUSDT",
+    "entryOpen": 1.3939,
+    "pump30": 17.9,
+    "move": {
+     "+1": 34.5,
+     "+3": 47.3,
+     "+7": 144.2,
+     "+14": null
+    },
+    "maxRise": 285.1,
+    "maxDrop": -3.6,
+    "lastClose": 3.6909,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": -1.0,
+    "planExit": "stop",
+    "planExitDay": -5
+   }
+  },
+  "YZY|2026-11-14": {
+   "token": "YZY",
+   "unlockDate": "2026-11-14",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 9.76,
+    "usdM": 8.4,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Yeezy Investments LLC vesting wallets (Vesting 1, 2 and 3). Aggregators label the allocation 'Private Investors'; Yeezy Investments LLC holds 70% of supply."
+   },
+   "asLastShown": {
+    "pct": 9.76,
+    "usdM": 8.4,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Yeezy Investments LLC vesting wallets (Vesting 1, 2 and 3). Aggregators label the allocation 'Private Investors'; Yeezy Investments LLC holds 70% of supply."
+   },
+   "name": "YZY MONEY",
+   "grade": "A",
+   "gradeHas": [
+    "cliff"
+   ],
+   "gradeMissing": [
+    "first",
+    "big"
+   ],
+   "pumped": false,
+   "momentum": null,
+   "gradeEntry": "2026-11-07",
+   "gradeAt": "2026-11-14 08:32",
+   "bestGrade": "A",
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "ARB|2026-11-15": {
+   "token": "ARB",
+   "unlockDate": "2026-11-15",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 1.34,
+    "usdM": 13.68,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Routine monthly vesting to team, future team and advisors (56.13M) and investors (36.52M)."
+   },
+   "asLastShown": {
+    "pct": 1.34,
+    "usdM": 13.68,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Routine monthly vesting to team, future team and advisors (56.13M) and investors (36.52M)."
+   },
+   "name": "Arbitrum",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "big",
+    "cliff"
+   ],
+   "pumped": false,
+   "momentum": -13.5,
+   "gradeEntry": "2026-11-08",
+   "gradeAt": "2026-11-15 08:58",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "ARBUSDT",
+    "entryOpen": 0.16921,
+    "pump30": -13.5,
+    "move": {
+     "+1": -22.4,
+     "+3": -24.8,
+     "+7": -32.5,
+     "+14": null
+    },
+    "maxRise": 11.1,
+    "maxDrop": -38.5,
+    "lastClose": 0.11429,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": 2.73,
+    "planExit": "target",
+    "planExitDay": 6
+   }
+  },
+  "SEI|2026-11-15": {
+   "token": "SEI",
+   "unlockDate": "2026-11-15",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly vesting step. Tokenomist labels it Team; tokenomics.com splits it among private-sale investors, team (insiders) and community/ecosystem reserve."
+   },
+   "asLastShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly vesting step. Tokenomist labels it Team; tokenomics.com splits it among private-sale investors, team (insiders) and community/ecosystem reserve."
+   },
+   "name": "Sei",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "big",
+    "cliff"
+   ],
+   "pumped": false,
+   "momentum": -27.0,
+   "gradeEntry": "2026-11-08",
+   "gradeAt": "2026-11-15 08:58",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "SEIUSDT",
+    "entryOpen": 0.04569,
+    "pump30": -27.0,
+    "move": {
+     "+1": -14.5,
+     "+3": -14.4,
+     "+7": -24.5,
+     "+14": null
+    },
+    "maxRise": 0.0,
+    "maxDrop": -29.3,
+    "lastClose": 0.0345,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "STRK|2026-11-15": {
+   "token": "STRK",
+   "unlockDate": "2026-11-15",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 1.66,
+    "usdM": 4.62,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Routine monthly release to StarkWare early contributors and investors; Tokenomist splits it 66.61M early contributors / 60.39M investors."
+   },
+   "asLastShown": {
+    "pct": 1.66,
+    "usdM": 4.62,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Routine monthly release to StarkWare early contributors and investors; Tokenomist splits it 66.61M early contributors / 60.39M investors."
+   },
+   "name": "Starknet",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "big",
+    "cliff"
+   ],
+   "pumped": false,
+   "momentum": -53.5,
+   "gradeEntry": "2026-11-08",
+   "gradeAt": "2026-11-15 08:58",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "STRKUSDT",
+    "entryOpen": 0.04023,
+    "pump30": -53.5,
+    "move": {
+     "+1": -14.9,
+     "+3": -19.3,
+     "+7": -21.8,
+     "+14": null
+    },
+    "maxRise": 0.1,
+    "maxDrop": -30.9,
+    "lastClose": 0.03145,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "CRO|2026-11-16": {
+   "token": "CRO",
+   "unlockDate": "2026-11-16",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 2.3,
+    "usdM": 55.77,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Cronos Strategic Reserve (the 70B CRO reissued in 2025, released monthly). No team or investor tokens."
+   },
+   "asLastShown": {
+    "pct": 2.3,
+    "usdM": 50.23,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Cronos Strategic Reserve (network treasury funding validator rewards and growth programmes per Cryptoticker). No team or investor tokens in this tranche."
+   },
+   "name": "Cronos",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "big",
+    "cliff"
+   ],
+   "pumped": false,
+   "momentum": null,
+   "gradeEntry": "2026-11-09",
+   "gradeAt": "2026-11-15 08:58",
+   "bestGrade": null,
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "ZK|2026-11-17": {
+   "token": "ZK",
+   "unlockDate": "2026-11-17",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 1.57,
+    "usdM": 1.57,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Investors (~89.26M) and team (~83.81M); routine monthly tranche running to June 2028."
+   },
+   "asLastShown": {
+    "pct": 1.57,
+    "usdM": 1.38,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "ZKsync investors (~103M) and Matter Labs team (~70.5M); routine monthly tranche running to June 2028."
+   },
+   "name": "ZKsync",
+   "grade": null,
+   "gradeHas": [
+    "falling",
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": -40.2,
+   "gradeEntry": "2026-11-10",
+   "gradeAt": "2026-11-17 14:40",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "ZKUSDT",
+    "entryOpen": 0.009021,
+    "pump30": -40.2,
+    "move": {
+     "+1": -13.2,
+     "+3": -23.1,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 4.6,
+    "maxDrop": -29.6,
+    "lastClose": 0.006803,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "PENGU|2026-11-17": {
+   "token": "PENGU",
+   "unlockDate": "2026-11-17",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 1.15,
+    "usdM": 4.42,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Insiders only: current and future team (~60.8%) and the company Igloo Inc. (~39.2%), per the 17.80%/11.48% allocations and KuCoin's May split. No investor allocation."
+   },
+   "asLastShown": {
+    "pct": 1.15,
+    "usdM": 3.49,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Insiders only: current and future Pudgy Penguins team and the company Igloo Inc., on the same 12-month cliff + 36-month linear schedule. No investor allocation."
+   },
+   "name": "Pudgy Penguins",
+   "grade": null,
+   "gradeHas": [
+    "falling",
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": -15.4,
+   "gradeEntry": "2026-11-10",
+   "gradeAt": "2026-11-17 14:40",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "PENGUUSDT",
+    "entryOpen": 0.006319,
+    "pump30": -15.4,
+    "move": {
+     "+1": -25.4,
+     "+3": -31.2,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 2.1,
+    "maxDrop": -36.7,
+    "lastClose": 0.004267,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": 2.73,
+    "planExit": "target",
+    "planExitDay": 4
+   }
+  },
+  "ZRO|2026-11-20": {
+   "token": "ZRO",
+   "unlockDate": "2026-11-20",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 5.82,
+    "usdM": 36.55,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors 10.63M, strategic partners (early backers) 10.99M, and 1.67M labelled 'Tokens Repurchased' (the partner slice the Foundation bought back in Sept 2025), per Tokenomist."
+   },
+   "asLastShown": {
+    "pct": 5.82,
+    "usdM": 29.1,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (10.63M) and strategic partners (10.99M). The 1.67M 'Tokens Repurchased' slice belongs to the LayerZero Foundation, which says its repurchased tokens stay locked until Zero mainnet."
+   },
+   "name": "LayerZero",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit",
+    "weekDown"
+   ],
+   "pumped": false,
+   "momentum": -22.9,
+   "gradeEntry": "2026-11-13",
+   "gradeAt": "2026-11-20 10:38",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "ZROUSDT",
+    "entryOpen": 1.5508,
+    "pump30": -22.9,
+    "move": {
+     "+1": -24.3,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 5.5,
+    "maxDrop": -31.6,
+    "lastClose": 1.1918,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "KAITO|2026-11-20": {
+   "token": "KAITO",
+   "unlockDate": "2026-11-20",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (~6.94M) and early backers (~2.31M), plus ecosystem/community and foundation allocations whose size differs by tracker."
+   },
+   "asLastShown": {
+    "pct": 11.26,
+    "usdM": 4.91,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (~6.94M) and early backers (~2.31M) on routine monthly vesting, Ecosystem & Network Growth (~7.16M), Foundation (~1.19M), plus a quarterly Long-term Creator Incentives release (~8.3-9.6M depending on tracker)."
+   },
+   "name": "Kaito",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit",
+    "weekDown"
+   ],
+   "pumped": false,
+   "momentum": -26.7,
+   "gradeEntry": "2026-11-13",
+   "gradeAt": "2026-11-20 10:38",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "KAITOUSDT",
+    "entryOpen": 0.2049,
+    "pump30": -26.7,
+    "move": {
+     "+1": -25.4,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 2.2,
+    "maxDrop": -28.7,
+    "lastClose": 0.1598,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "AKE|2026-11-21": {
+   "token": "AKE",
+   "unlockDate": "2026-11-21",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 9.25,
+    "usdM": 26.62,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Private investors (47.4%), community reward vesting (30.5%) and insiders (early contributors and advisors, 22.1%), per tokenomics.com."
+   },
+   "asLastShown": {
+    "pct": 9.25,
+    "usdM": 22.24,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Private investors (~47.4%, ~999.5M), community reward vesting (~30.5%, ~642.7M) and insiders: early contributors and advisors (~22.1%, ~465.2M)."
+   },
+   "name": "AKEDO",
+   "grade": null,
+   "gradeHas": [
+    "inProfit"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "weekDown"
+   ],
+   "pumped": false,
+   "momentum": -48.4,
+   "gradeEntry": "2026-11-14",
+   "gradeAt": "2026-11-21 11:18",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "AKEUSDT",
+    "entryOpen": 0.012349,
+    "pump30": -48.4,
+    "move": {
+     "+1": -77.4,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 46.7,
+    "maxDrop": -79.5,
+    "lastClose": 0.002789,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": -1.0,
+    "planExit": "stop",
+    "planExitDay": -7
+   }
+  },
+  "MORPHO|2026-11-21": {
+   "token": "MORPHO",
+   "unlockDate": "2026-11-21",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-16 00:07",
+   "asFirstShown": {
+    "pct": 1.29,
+    "usdM": 17.34,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Morpho co-founders (relocked, ~69%) and Strategic Partners Cohort 3 investors (~31%), both on daily linear vesting; 21 Nov is a monthly bucketing of a continuous stream."
+   },
+   "asLastShown": {
+    "pct": 1.29,
+    "usdM": 16.24,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Morpho co-founders (relocked, ~6.33M a month) and Strategic Partners Cohort 3 investors (~2.79M a month), both on continuous daily linear vesting; 21 Nov is the monthly bucketing used by aggregators."
+   },
+   "name": "Morpho",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "big",
+    "cliff"
+   ],
+   "pumped": false,
+   "momentum": -17.0,
+   "gradeEntry": "2026-11-14",
+   "gradeAt": "2026-11-15 08:58",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "MORPHOUSDT",
+    "entryOpen": 1.9427,
+    "pump30": -17.0,
+    "move": {
+     "+1": -18.8,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 0.3,
+    "maxDrop": -25.5,
+    "lastClose": 1.5782,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "SOON|2026-11-23": {
+   "token": "SOON",
+   "unlockDate": "2026-11-23",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 5.96,
+    "usdM": 4.93,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Mostly community pools: SOON Squad NFT holders (final monthly tranche, 6.67M), SOON Pill 2.22M, Community Incentives 2.22M, Airdrop/Liquidity 0.52M. Ecosystem 4.17M, Foundation/Treasury 1.67M and Team & Co-builders 2.78M make up the rest. No investor pool is listed in this tranche."
+   },
+   "asLastShown": {
+    "pct": 5.96,
+    "usdM": 4.78,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Mostly community pools (SOON Squad 6.67M, SOON Pill 2.22M, Community Incentives 2.22M, Airdrop/Liquidity 0.52M), plus Ecosystem 4.17M, Foundation/Treasury 1.67M and Team & Co-builders 2.78M. No investor slice."
+   },
+   "name": "SOON",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -27.6,
+   "gradeEntry": "2026-11-16",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "SOONUSDT",
+    "entryOpen": 0.2193,
+    "pump30": -27.6,
+    "move": {
+     "+1": null,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 28.5,
+    "maxDrop": -1.2,
+    "lastClose": 0.2627,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "MET|2026-11-23": {
+   "token": "MET",
+   "unlockDate": "2026-11-23",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-16 00:07",
+   "asFirstShown": {
+    "pct": 1.3,
+    "usdM": 2.15,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly release to the Meteora Ecosystem Reserve (~4.79M MET, for liquidity-mining rewards) and the team (~2.54M MET)."
+   },
+   "asLastShown": {
+    "pct": 1.3,
+    "usdM": 2.15,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly release to the Meteora Ecosystem Reserve (~4.79M MET, for liquidity-mining rewards) and the team (~2.54M MET)."
+   },
+   "name": "Meteora",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "big",
+    "cliff"
+   ],
+   "pumped": false,
+   "momentum": -21.3,
+   "gradeEntry": "2026-11-16",
+   "gradeAt": "2026-11-15 08:58",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "METUSDT",
+    "entryOpen": 0.2723,
+    "pump30": -14.3,
+    "move": {
+     "+1": null,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 1.9,
+    "maxDrop": -18.7,
+    "lastClose": 0.2272,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "MON|2026-11-24": {
+   "token": "MON",
+   "unlockDate": "2026-11-24",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 140.5,
+    "usdM": 276.9,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Team (~10.7B per the official wording), investors (~4.92B) and the Category Labs Treasury (~0.99B; CryptoTicker says it is for future employee compensation)."
+   },
+   "asLastShown": {
+    "pct": 140.46,
+    "usdM": 206.5,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Team ~10.7B, investors ~4.91B, Category Labs Treasury (future employee compensation) ~1.0B."
+   },
+   "name": "Monad",
+   "grade": "AAA",
+   "gradeHas": [
+    "first",
+    "cliff",
+    "vbig",
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -30.7,
+   "gradeEntry": "2026-11-17",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "AAA",
+   "v3Call": "TAKE",
+   "v3Why": "passes every rule",
+   "v3At": "2026-11-23 09:46",
+   "v3Final": true,
+   "v3LateCall": true,
+   "v3Result": {
+    "status": "open",
+    "lastClose": 0.01252,
+    "openPct": 16.6,
+    "asOf": "2026-11-22"
+   },
+   "result": {
+    "source": "binance-futures",
+    "symbol": "MONUSDT",
+    "entryOpen": 0.01501,
+    "pump30": -30.7,
+    "move": {
+     "+1": null,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 3.5,
+    "maxDrop": -19.2,
+    "lastClose": 0.01252,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "SOSO|2026-11-24": {
+   "token": "SOSO",
+   "unlockDate": "2026-11-24",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 6.55,
+    "usdM": 6.76,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Investors 9.17M (~39.1%), Core Contributors 9.17M (~39.1%), Ecosystem & Airdrop 2.58M (~11.0%), Foundation 1.58M (~6.7%), Partners 0.97M (~4.1%), per the CoinGecko/Tokenomist widget; tokenomics.com gives the same investor/insider shares."
+   },
+   "asLastShown": {
+    "pct": 6.55,
+    "usdM": 6.18,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Investors 9.17M, Core Contributors 9.17M, Ecosystem & Airdrop 2.58M, Foundation 1.58M, Partners 0.97M; a routine monthly tranche."
+   },
+   "name": "SoSoValue",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": null,
+   "gradeEntry": "2026-11-17",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null,
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "XPL|2026-11-25": {
+   "token": "XPL",
+   "unlockDate": "2026-11-25",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 4.78,
+    "usdM": 11.52,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ecosystem & Growth 88.89M, Team 69.44M, Investors 69.44M: the second monthly team and investor tranche after the 25 Sep 2026 one-third cliff (the first monthly one was 25 Oct 2026)."
+   },
+   "asLastShown": {
+    "pct": 4.78,
+    "usdM": 10.19,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ecosystem & Growth 88.89M, Team 69.44M, Investors 69.44M: the second monthly team/investor tranche after the 25 Sep 2026 one-third cliff."
+   },
+   "name": "Plasma",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -37.0,
+   "gradeEntry": "2026-11-18",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "XPLUSDT",
+    "entryOpen": 0.04641,
+    "pump30": -37.0,
+    "move": {
+     "+1": null,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 5.3,
+    "maxDrop": -6.6,
+    "lastClose": 0.04479,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "H|2026-11-25": {
+   "token": "H",
+   "unlockDate": "2026-11-25",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 9.95,
+    "usdM": 10.15,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Early Contributors (team) 79.17M, Ecosystem Fund 50M, Human Institute Strategic Reserve 26.39M and Foundation Operations Treasury 12.5M, Identity Verification Rewards (users) 42.86M; plus an aggregator-listed 55.56M investor slice that likely does not apply after the April 2026 vesting change."
+   },
+   "asLastShown": {
+    "pct": 12.6,
+    "usdM": 3.35,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Early Contributors (team) ~76-79M, Ecosystem Fund ~50-65M, Identity Verification Rewards ~42M, Strategic Reserve ~26M, Foundation Treasury ~12.5-24.5M, plus a tracker-listed Investors slice (~53-56M) that may not apply after the restructure."
+   },
+   "name": "Humanity Protocol",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -71.6,
+   "gradeEntry": "2026-11-18",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "HUSDT",
+    "entryOpen": 0.01523,
+    "pump30": -71.6,
+    "move": {
+     "+1": null,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 13.7,
+    "maxDrop": -33.1,
+    "lastClose": 0.01194,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": -1.0,
+    "planExit": "stop",
+    "planExitDay": -6
+   }
+  },
+  "IRYS|2026-11-25": {
+   "token": "IRYS",
+   "unlockDate": "2026-11-25",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 59.0,
+    "usdM": 19.22,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "End of the one-year cliff for private investors (~632.5M) and core team & advisors (~470M), plus routine Ecosystem (~54M) and Foundation (~20M) slices."
+   },
+   "asLastShown": {
+    "pct": 46.0,
+    "usdM": 22.2,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "End of the one-year lock for core team & advisors and investors, plus small ecosystem and foundation tranches."
+   },
+   "name": "Irys",
+   "grade": null,
+   "gradeHas": [
+    "falling"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff"
+   ],
+   "pumped": false,
+   "momentum": -63.7,
+   "gradeEntry": "2026-11-18",
+   "gradeAt": "2026-11-17 07:21",
+   "bestGrade": "A",
+   "v3Call": "TAKE",
+   "v3Why": "passes every rule",
+   "v3At": "2026-11-23 09:46",
+   "v3Final": true,
+   "v3LateCall": true,
+   "v3Result": {
+    "status": "closed",
+    "R": -1.0,
+    "exit": "stop",
+    "exitDay": -7
+   },
+   "result": {
+    "source": "binance-futures",
+    "symbol": "IRYSUSDT",
+    "entryOpen": 0.01481,
+    "pump30": -61.0,
+    "move": {
+     "+1": null,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 72.9,
+    "maxDrop": -2.4,
+    "lastClose": 0.01909,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": -1.0,
+    "planExit": "stop",
+    "planExitDay": -7
+   }
+  },
+  "HUMA|2026-11-26": {
+   "token": "HUMA",
+   "unlockDate": "2026-11-26",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 26.47,
+    "usdM": 3.65,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "First quarterly release for private investors (~171.7M) and team & advisors (~160.8M) after their lock was extended from 12 to 18 months, plus a Protocol Treasury quarterly release (~126.25M)."
+   },
+   "asLastShown": {
+    "pct": 12.96,
+    "usdM": 3.92,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "First release for team & advisors (~160.8M) and private investors (~171.7M) after the six-month lock extension, plus a Foundation/Protocol Treasury slice (~126.3M per DropsTab)."
+   },
+   "name": "Huma Finance",
+   "grade": "AA",
+   "gradeHas": [
+    "first",
+    "cliff"
+   ],
+   "gradeMissing": [
+    "vbig",
+    "inProfit",
+    "weekDown"
+   ],
+   "pumped": false,
+   "momentum": -62.8,
+   "gradeEntry": "2026-11-19",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "AAA",
+   "v3Call": "TAKE",
+   "v3Why": "passes every rule",
+   "v3At": "2026-11-23 09:46",
+   "v3Final": true,
+   "v3LateCall": false,
+   "v3Result": {
+    "status": "closed",
+    "R": -1.0,
+    "exit": "stop",
+    "exitDay": -7
+   },
+   "result": {
+    "source": "binance-futures",
+    "symbol": "HUMAUSDT",
+    "entryOpen": 0.008463,
+    "pump30": -62.8,
+    "move": {
+     "+1": null,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 26.6,
+    "maxDrop": -5.9,
+    "lastClose": 0.00836,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": -1.0,
+    "planExit": "stop",
+    "planExitDay": -7
+   }
+  },
+  "KNTQ|2026-11-27": {
+   "token": "KNTQ",
+   "unlockDate": "2026-11-27",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-20 00:12",
+   "asFirstShown": {
+    "pct": 3.99,
+    "usdM": 5.19,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Core contributors 9,791,667 KNTQ and investors 3,125,000 KNTQ: the first monthly tranche after their one-year cliff."
+   },
+   "asLastShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (235M total) and investors (75M total; seed backers Maven11 Capital and Susquehanna Crypto) at the end of their one-year cliff."
+   },
+   "name": "Kinetiq",
+   "grade": "AA",
+   "gradeHas": [
+    "first",
+    "cliff"
+   ],
+   "gradeMissing": [
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": null,
+   "gradeEntry": "2026-11-20",
+   "gradeAt": "2026-11-19 10:29",
+   "bestGrade": "AA",
+   "v3Call": "SKIP",
+   "v3Why": "no Binance USDT perpetual",
+   "v3At": "2026-11-19 21:46",
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "SIGN|2026-11-28": {
+   "token": "SIGN",
+   "unlockDate": "2026-11-28",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Both sources agree on a community-incentive release of at least 50M. tokenomics.com adds routine backer (~28%), early-team (~9%) and foundation (~32%) slices that Tokenomist does not show."
+   },
+   "asLastShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Disputed. Tokenomist v2: Community Incentive only. tokenomics.com: community, foundation, private investors and insiders."
+   },
+   "name": "Sign",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit",
+    "weekDown"
+   ],
+   "pumped": false,
+   "momentum": -21.2,
+   "gradeEntry": "2026-11-21",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "SIGNUSDT",
+    "entryOpen": 0.008339,
+    "pump30": -21.2,
+    "move": {
+     "+1": null,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 7.1,
+    "maxDrop": -3.8,
+    "lastClose": 0.008671,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "FF|2026-11-29": {
+   "token": "FF",
+   "unlockDate": "2026-11-29",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 5.73,
+    "usdM": 17.57,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Second monthly tranche after the 29 Sep 2026 cliff: ecosystem fund and foundation about two-thirds, core team and early contributors about 27%, investors about 6%."
+   },
+   "asLastShown": {
+    "pct": 5.58,
+    "usdM": 20.48,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Routine post-cliff monthly tranche: ecosystem and foundation (~two-thirds, project-held), core team & early contributors (~27%), investors (~6%)."
+   },
+   "name": "Falcon Finance",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit",
+    "weekDown"
+   ],
+   "pumped": false,
+   "momentum": 7.4,
+   "gradeEntry": "2026-11-22",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "CARDS|2026-11-29": {
+   "token": "CARDS",
+   "unlockDate": "2026-11-29",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 6.65,
+    "usdM": 11.32,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche of the second vesting stage: team, advisors and seed investors, plus a community slice that Tokenomist counts and the project does not treat as vesting."
+   },
+   "asLastShown": {
+    "pct": 10.74,
+    "usdM": 6.79,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche of the second Streamflow stage: team (~74%), advisors (~15%), seed investors (~11%)."
+   },
+   "name": "Collector Crypt",
+   "grade": "A",
+   "gradeHas": [
+    "cliff"
+   ],
+   "gradeMissing": [
+    "first",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": null,
+   "gradeEntry": "2026-11-22",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "A"
+  },
+  "KMNO|2026-11-30": {
+   "token": "KMNO",
+   "unlockDate": "2026-11-30",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 3.83,
+    "usdM": 7.16,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly vesting tranche: 145.83M KMNO to Key Stakeholders & Advisors and 83.33M KMNO to Core Contributors."
+   },
+   "asLastShown": {
+    "pct": 3.74,
+    "usdM": 5.28,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Key Stakeholders & Advisors (~64%) and Core Contributors (~36%) on 24-month linear vesting; routine, not a first unlock."
+   },
+   "name": "Kamino",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -33.8,
+   "gradeEntry": "2026-11-23",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "GRVT|2026-11-30": {
+   "token": "GRVT",
+   "unlockDate": "2026-11-30",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-21 07:18",
+   "asFirstShown": {
+    "pct": 29.99,
+    "usdM": 6.28,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Community/airdrop recipients (100% Community per tokenomics.com); possibly 2x-plan users receiving their deferred first tranche at Month 4."
+   },
+   "asLastShown": {
+    "pct": 29.99,
+    "usdM": 5.42,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Airdrop/community recipients. Team and investor tokens are in a 12-month cliff (to ~Jul 2027) and ecosystem in a 6-month cliff, per tokenomics.com."
+   },
+   "name": "Grvt",
+   "grade": "AAA",
+   "gradeHas": [
+    "cliff",
+    "vbig",
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -29.0,
+   "gradeEntry": "2026-11-23",
+   "gradeAt": "2026-11-20 10:38",
+   "bestGrade": "AAA",
+   "v3Call": "WATCH",
+   "v3Why": "passes so far",
+   "v3At": "2026-11-20 21:27"
+  },
+  "EIGEN|2026-12-01": {
+   "token": "EIGEN",
+   "unlockDate": "2026-12-01",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 3.61,
+    "usdM": 6.02,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly 4% release to investors (~54%) and early contributors (~46%); runs to about Oct 2027."
+   },
+   "asLastShown": {
+    "pct": 3.6,
+    "usdM": 4.2,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly release to investors (19.75M, ~54%) and early contributors (17.07M, ~46%), running to about Oct 2027."
+   },
+   "name": "EigenCloud",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -35.2,
+   "gradeEntry": "2026-11-24",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "SUI|2026-12-01": {
+   "token": "SUI",
+   "unlockDate": "2026-12-01",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 0.31,
+    "usdM": 10.56,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Per Tokenomist: Early Contributors 6.9M, Community Reserve 4M (Sui Foundation-controlled), Mysten Labs Treasury 2.07M."
+   },
+   "asLastShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Early Contributors, Sui Foundation Community Reserve and Mysten Labs Treasury per Tokenomist; DefiLlama shows Early Contributors and Mysten Labs Treasury; tokenomics.com shows Community / Insiders / Foundation."
+   },
+   "name": "Sui",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -25.4,
+   "gradeEntry": "2026-11-24",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "M|2026-12-02": {
+   "token": "M",
+   "unlockDate": "2026-12-02",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 2.44,
+    "usdM": 45.82,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Routine monthly release: community ~24.31M, investors 12.50M, foundation ~11.67M, team ~7.64M."
+   },
+   "asLastShown": {
+    "pct": 2.44,
+    "usdM": 43.35,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Routine monthly release: community/ecosystem ~24.31M, investors 12.50M, foundation ~11.67M, team (core contributors) ~7.64M."
+   },
+   "name": "MemeCore",
+   "grade": null,
+   "gradeHas": [
+    "inProfit"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "weekDown"
+   ],
+   "pumped": false,
+   "momentum": -6.9,
+   "gradeEntry": "2026-11-25",
+   "gradeAt": "2026-11-19 10:29",
+   "bestGrade": null
+  },
+  "BTW|2026-12-02": {
+   "token": "BTW",
+   "unlockDate": "2026-12-02",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 6.75,
+    "usdM": 102.65,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Routine monthly linear release from the Community pool (~60.17M) and Ecosystem pool (~41.46M). Team and backers stay locked until about Mar 2027."
+   },
+   "asLastShown": {
+    "pct": 6.75,
+    "usdM": 66.98,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Routine monthly linear release from the Community (~60.17M) and Ecosystem (~41.46M) pools per CMC; tokenomics.com labels it all Community. One-off monthly block (lump) on the 2nd. Private investor and insider tranches start 2 Mar 2027 per tokenomics.com."
+   },
+   "name": "Bitway",
+   "grade": null,
+   "gradeHas": [
+    "inProfit"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "weekDown"
+   ],
+   "pumped": false,
+   "momentum": -53.8,
+   "gradeEntry": "2026-11-25",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "ENA|2026-12-02": {
+   "token": "ENA",
+   "unlockDate": "2026-12-02",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 0.3,
+    "usdM": 5.55,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ethena Foundation monthly tranche only (team tranche of 93.75M falls on the 5th per Tokenomist; no investor tranche after 5 Oct 2026)."
+   },
+   "asLastShown": {
+    "pct": 0.3,
+    "usdM": 4.16,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ethena Foundation monthly tranche only. The team tranche (93.75M) falls on the 5th; no investor tranches remain after 5 Oct 2026."
+   },
+   "name": "Ethena",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -43.8,
+   "gradeEntry": "2026-11-25",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "ENA|2026-12-05": {
+   "token": "ENA",
+   "unlockDate": "2026-12-05",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 0.69,
+    "usdM": 13.61,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ethena Labs core contributors (team and advisors); routine monthly tranche. Team vesting was left unchanged when investor unlocks were brought forward to 5 Oct 2026."
+   },
+   "asLastShown": {
+    "pct": 0.69,
+    "usdM": 9.83,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ethena Labs core contributors (team and advisors); routine monthly tranche."
+   },
+   "name": "Ethena",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -43.8,
+   "gradeEntry": "2026-11-28",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "HYPE|2026-12-06": {
+   "token": "HYPE",
+   "unlockDate": "2026-12-06",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (Hyperliquid Labs team). The monthly claim is discretionary ('if any') and is announced in Discord shortly before the 6th. No VC investors."
+   },
+   "asLastShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (Hyperliquid Labs team). Monthly distribution is discretionary ('if any') on the 6th. No VC investors."
+   },
+   "name": "Hyperliquid",
+   "grade": null,
+   "gradeHas": [
+    "inProfit"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "weekDown"
+   ],
+   "pumped": false,
+   "momentum": -31.1,
+   "gradeEntry": "2026-11-29",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "TON|2026-12-06": {
+   "token": "TON",
+   "unlockDate": "2026-12-06",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 1.3,
+    "usdM": 42.2,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Depositors in the TON Believers Fund (holders who locked TON in 2023), each receiving a monthly share of their deposit plus rewards."
+   },
+   "asLastShown": {
+    "pct": 1.27,
+    "usdM": 35.9,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Depositors in the TON Believers Fund (holders who locked TON in 2023), receiving monthly shares of deposits plus rewards over 36 periods."
+   },
+   "name": "Gram (prev. Toncoin)",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit",
+    "weekDown"
+   ],
+   "pumped": false,
+   "momentum": 0.0,
+   "gradeEntry": "2026-11-29",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "ADI|2026-12-09": {
+   "token": "ADI",
+   "unlockDate": "2026-12-09",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 11.74,
+    "usdM": 91.8,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "End of the 12-month cliff (TGE 9 Dec 2025) for private investors, team and partners (first 1/72 monthly instalment each, ~1.39-1.67M), plus the ongoing monthly Community Fund (~4.79M) and Treasury Reserve (~2.20M) releases."
+   },
+   "asLastShown": {
+    "pct": 11.75,
+    "usdM": 83.15,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "End of the 12-month cliff (TGE 9 Dec 2025) for private investors, team and partnerships (first monthly instalment of 72-month linear vesting each), plus the ongoing monthly Community Fund and Treasury Reserve releases."
+   },
+   "name": "ADI (ADI Chain)",
+   "grade": "AA",
+   "gradeHas": [
+    "first",
+    "cliff"
+   ],
+   "gradeMissing": [
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": null,
+   "gradeEntry": "2026-12-02",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "AAA",
+   "v3Call": "SKIP",
+   "v3Why": "no Binance USDT perpetual",
+   "v3At": "2026-11-23 09:46"
+  },
+  "CYS|2026-12-11": {
+   "token": "CYS",
+   "unlockDate": "2026-12-11",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 18.47,
+    "usdM": 2.23,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "End of the 12-month cliff for seed/pre-A investors (~19.7M), core contributors (~3.4M) and foundation treasury (~3.3M), plus the routine monthly ecosystem-incentive release (~3.3M). Per-group amounts are computed from the published allocation/vesting terms and match the tokenomics.com split."
+   },
+   "asLastShown": {
+    "pct": 18.49,
+    "usdM": 1.25,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "End of the 12-month cliffs: first monthly tranche for seed/Pre-A investors (~19.7M), core contributors (~3.4M) and foundation treasury (~3.3M), plus the routine monthly ecosystem-incentive release (~3.3M)."
+   },
+   "name": "Cysic",
+   "grade": "AAA",
+   "gradeHas": [
+    "first",
+    "cliff",
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -64.5,
+   "gradeEntry": "2026-12-04",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "AAA",
+   "v3Call": "WATCH",
+   "v3Why": "open interest not available yet",
+   "v3At": "2026-11-23 09:46"
+  },
+  "ARB|2026-12-16": {
+   "token": "ARB",
+   "unlockDate": "2026-12-16",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 1.34,
+    "usdM": 15.45,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly vesting for Offchain Labs team, future team and advisors (~56.13M) and investors (~36.52M)."
+   },
+   "asLastShown": {
+    "pct": 1.32,
+    "usdM": 11.2,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly vesting for Offchain Labs team, future team and advisors (~56.13M) and investors (~36.52M)."
+   },
+   "name": "Arbitrum",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -26.5,
+   "gradeEntry": "2026-12-09",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "ZRO|2026-12-20": {
+   "token": "ZRO",
+   "unlockDate": "2026-12-20",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (team, ~10.6M in recent tranches) and strategic partners (early investors, ~11-13M); Tokenomist shows ~1.67M of the strategic-partner tranche as Foundation-repurchased tokens; tokenomics.com also adds a community slice. December split not published."
+   },
+   "asLastShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (team, ~10.6M/month) and strategic partners (investors, ~11-13M incl. Foundation-repurchased tokens). December split not published."
+   },
+   "name": "LayerZero",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -22.8,
+   "gradeEntry": "2026-12-13",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "MON|2026-12-24": {
+   "token": "MON",
+   "unlockDate": "2026-12-24",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 7.99,
+    "usdM": 15.55,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "First post-cliff monthly release: team (~48%), early investors (~43%, 1/48 of ~19.7B) and the Category Labs treasury (~9%, 1/48 of ~3.95B; earmarked for employee compensation)."
+   },
+   "asLastShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "First post-cliff monthly release: team/insiders, early investors (1/48 of ~19.7B) and Category Labs treasury/foundation."
+   },
+   "name": "Monad",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -29.7,
+   "gradeEntry": "2026-12-17",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "LIT|2026-12-29": {
+   "token": "LIT",
+   "unlockDate": "2026-12-29",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-19 00:14",
+   "asFirstShown": {
+    "pct": 1.28,
+    "usdM": 10.3,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Team (260M, 26% of supply) and investors (240M, 24%), released linearly over three years after a one-year lock; ~3.2M LIT/week combined. No lump sum at the cliff."
+   },
+   "asLastShown": {
+    "pct": 1.28,
+    "usdM": 10.3,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Team (260M, 26% of supply) and investors (240M, 24%), released linearly over three years after a one-year lock; ~3.2M LIT/week combined. No lump sum at the cliff."
+   },
+   "name": "Lighter",
+   "grade": "AAA",
+   "gradeHas": [
+    "first",
+    "inProfit",
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "cliff",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": -8.7,
+   "gradeEntry": "2026-12-22",
+   "gradeAt": "2026-11-18 10:02",
+   "bestGrade": "AAA"
+  },
+  "ALLO|2027-05-11": {
+   "token": "ALLO",
+   "unlockDate": "2027-05-11",
+   "firstSeen": "2026-11-14 08:10",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 57.67,
+    "usdM": 35.95,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (17.5% of supply) and early backers (31.05%): 50% of each allocation at the end of a lock extended from 11 Nov 2026; the rest vests linearly over 18 months to Nov 2028."
+   },
+   "asLastShown": {
+    "pct": 57.67,
+    "usdM": 35.95,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (17.5% of supply) and early backers (31.05%): 50% of each allocation at the end of a lock extended from 11 Nov 2026; the rest vests linearly over 18 months to Nov 2028."
+   },
+   "name": "Allora"
+  },
+  "JCT|2026-12-10": {
+   "token": "JCT",
+   "unlockDate": "2026-12-10",
+   "firstSeen": "2026-11-15 04:21",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 10.24,
+    "usdM": 2.38,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Community/ecosystem pool, foundation, private investors and insiders (per tokenomics.com labels). The Founder and Team pool (25.01%) remains fully locked and is not in this tranche (Bitrue)."
+   },
+   "asLastShown": {
+    "pct": 10.58,
+    "usdM": 1.9,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ecosystem pool (~480M), Foundation (~360M), private investors (~263M) and advisors (~73M); second monthly tranche after the 10 Nov 2026 cliff end. Team pool not included (first release ~May 2027 per DropsTab timer)."
+   },
+   "name": "Janction",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -72.0,
+   "gradeEntry": "2026-12-03",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "A"
+  },
+  "STRK|2026-12-15": {
+   "token": "STRK",
+   "unlockDate": "2026-12-15",
+   "firstSeen": "2026-11-15 04:21",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 1.66,
+    "usdM": 4.54,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Early contributors (StarkWare team/early contributors) and investors: a routine monthly tranche of the revised schedule."
+   },
+   "asLastShown": {
+    "pct": 1.62,
+    "usdM": 3.79,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "StarkWare early contributors and investors: a routine monthly tranche of the revised schedule (ends 15 Mar 2027)."
+   },
+   "name": "Starknet",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -28.6,
+   "gradeEntry": "2026-12-08",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "ARIA|2026-11-21": {
+   "token": "ARIA",
+   "unlockDate": "2026-11-21",
+   "firstSeen": "2026-11-16 04:26",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 8.32,
+    "usdM": 8.71,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Mixed tranche: a quarterly investor release (investors 8.5% of supply, 12-month cliff from the Aug 21, 2025 TGE, then quarterly over 12 months), monthly team vesting (15%, 12-month cliff then 36-month linear), and community/ecosystem linear emissions."
+   },
+   "asLastShown": {
+    "pct": 8.33,
+    "usdM": 9.57,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Investors (quarterly release after a 12-month cliff) and Community & Airdrop emissions per CoinGlass; team and ecosystem may also vest per the published schedule, but no source opened today gives a per-group split for this tranche."
+   },
+   "name": "Aria.AI",
+   "grade": "AA",
+   "gradeHas": [
+    "cliff",
+    "inProfit"
+   ],
+   "gradeMissing": [
+    "first",
+    "vbig",
+    "weekDown"
+   ],
+   "pumped": true,
+   "momentum": 209.8,
+   "gradeEntry": "2026-11-14",
+   "gradeAt": "2026-11-21 11:18",
+   "bestGrade": "AA",
+   "result": {
+    "source": "binance-futures",
+    "symbol": "ARIAUSDT",
+    "entryOpen": 0.19768,
+    "pump30": 209.8,
+    "move": {
+     "+1": 37.9,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 45.3,
+    "maxDrop": -8.2,
+    "lastClose": 0.27263,
+    "asOf": "2026-11-22",
+    "status": "closed",
+    "planR": -1.0,
+    "planExit": "stop",
+    "planExitDay": -7
+   }
+  },
+  "SEI|2026-12-15": {
+   "token": "SEI",
+   "unlockDate": "2026-12-15",
+   "firstSeen": "2026-11-16 04:26",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 1.45,
+    "usdM": 3.87,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly vesting for private investors (20% of supply, 12-month cliff then 36 months) and team (15.2%, 12-month cliff then 36 months), per the Tokenomics.com schedule."
+   },
+   "asLastShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly vesting on the 15th; Team per Tokenomist, team + private investors + community per tokenomics.com. Not settled."
+   },
+   "name": "Sei",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -28.3,
+   "gradeEntry": "2026-12-08",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "AA"
+  },
+  "PROS|2026-11-28": {
+   "token": "PROS",
+   "unlockDate": "2026-11-28",
+   "firstSeen": "2026-11-17 06:38",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 7.26,
+    "usdM": 5.19,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Foundation treasury 53.1%, Community/ecosystem 46.9% (tokenomics.com). Team and investor allocations have a 12-month lockup then 36-month linear (KuCoin); with the Apr 2026 TGE (tokenomics.com) they are not in this tranche."
+   },
+   "asLastShown": {
+    "pct": 7.26,
+    "usdM": 5.56,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Foundation treasury (53.1%) and community (46.9%) per tokenomics.com. Team and private-sale tokens are still inside their 12-month lock-up (KuCoin), so not in this tranche."
+   },
+   "name": "Pharos",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": null,
+   "gradeEntry": "2026-11-21",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null,
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "GRASS|2026-11-28": {
+   "token": "GRASS",
+   "unlockDate": "2026-11-28",
+   "firstSeen": "2026-11-17 06:38",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 1.72,
+    "usdM": 4.91,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Contributors (3-year vest after 1-year cliff per Grass docs) 49.2%, Community 29.8%, Foundation 21.0% (tokenomics.com). Early-investor vesting reportedly finished around Oct 28, 2026."
+   },
+   "asLastShown": {
+    "pct": 1.72,
+    "usdM": 4.45,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Contributors (core team) ~49%, community incentives/router rewards ~30%, Foundation & Ecosystem ~21%. Early investors are fully vested."
+   },
+   "name": "Grass",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -45.7,
+   "gradeEntry": "2026-11-21",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null,
+   "result": {
+    "source": "binance-futures",
+    "symbol": "GRASSUSDT",
+    "entryOpen": 0.3708,
+    "pump30": -45.7,
+    "move": {
+     "+1": null,
+     "+3": null,
+     "+7": null,
+     "+14": null
+    },
+    "maxRise": 5.9,
+    "maxDrop": -8.6,
+    "lastClose": 0.3849,
+    "asOf": "2026-11-22",
+    "status": "open"
+   }
+  },
+  "WET|2026-12-09": {
+   "token": "WET",
+   "unlockDate": "2026-12-09",
+   "firstSeen": "2026-11-17 06:38",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 83.7,
+    "usdM": 7.42,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Foundation 41.6%, Labs/insiders 32.5%, Ecosystem/community allocation 26.0% (tokenomics.com)."
+   },
+   "asLastShown": {
+    "pct": 112.7,
+    "usdM": 7.53,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Foundation ~41.6%, HumidiFi Labs (insiders) ~32.5%, Ecosystem/community allocation ~26.0% (tokenomics.com); one-off six-monthly lump."
+   },
+   "name": "HumidiFi",
+   "grade": "AA",
+   "gradeHas": [
+    "cliff",
+    "vbig"
+   ],
+   "gradeMissing": [
+    "first",
+    "inProfit",
+    "weekDown"
+   ],
+   "pumped": false,
+   "momentum": -23.2,
+   "gradeEntry": "2026-12-02",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "AAA",
+   "v3Call": "WATCH",
+   "v3Why": "passes so far",
+   "v3At": "2026-11-23 09:46"
+  },
+  "PUMP|2026-12-12": {
+   "token": "PUMP",
+   "unlockDate": "2026-12-12",
+   "firstSeen": "2026-11-17 06:38",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 2.0,
+    "usdM": 25.2,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Team/insiders and early private investors, monthly linear release after 12-month cliff that ended July 2026."
+   },
+   "asLastShown": {
+    "pct": 2.01,
+    "usdM": 22.03,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Team/insiders and existing private investors; monthly linear release after the 12-month cliff that ended in mid-July 2026."
+   },
+   "name": "Pump.fun",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -40.5,
+   "gradeEntry": "2026-12-05",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "PIEVERSE|2026-12-14": {
+   "token": "PIEVERSE",
+   "unlockDate": "2026-12-14",
+   "firstSeen": "2026-11-17 06:38",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 12.16,
+    "usdM": 63.5,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche split per tokenomics.com: Community 33.5%, Insiders (team & advisors) 24.9%, Private investors 24.9%, Foundation 16.6%."
+   },
+   "asLastShown": {
+    "pct": 11.14,
+    "usdM": 115.9,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly linear tranche (model): community ~11.2M, team/advisors ~8.3M, private investors ~8.3M, foundation ~5.5M."
+   },
+   "name": "Pieverse",
+   "grade": null,
+   "gradeHas": [
+    "inProfit"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "weekDown"
+   ],
+   "pumped": true,
+   "momentum": 248.2,
+   "gradeEntry": "2026-12-07",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "MBG|2026-11-22": {
+   "token": "MBG",
+   "unlockDate": "2026-11-22",
+   "firstSeen": "2026-11-18 04:25",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 6.47,
+    "usdM": 2.39,
+    "firstInsider": null,
+    "confidence": "confirmed",
+    "recipients": "Ecosystem 12.29M, MultiBank Reserve 5.48M, Advisory 3.06M, Team 2.78M (CoinGecko/Tokenomist widget)."
+   },
+   "asLastShown": {
+    "pct": 6.47,
+    "usdM": 2.39,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Ecosystem pool 12.29M, MultiBank Reserve 5.48M, Advisory 3.06M, Team 2.78M (CoinGecko/Tokenomist). No investor slice."
+   },
+   "name": "MBG By Multibank Group",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": null,
+   "gradeEntry": "2026-11-15",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "A",
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "LIT|2026-12-27": {
+   "token": "LIT",
+   "unlockDate": "2026-12-27",
+   "firstSeen": "2026-11-19 04:31",
+   "lastSeen": "2026-11-22 07:12",
+   "asFirstShown": {
+    "pct": 1.28,
+    "usdM": 8.74,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Team (260M, 26% of supply) and investors (240M, 24%), released linearly over three years after a one-year lock; ~3.2M LIT/week combined. No lump sum."
+   },
+   "asLastShown": {
+    "pct": 1.28,
+    "usdM": 8.74,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Team (260M, 26% of supply) and investors (240M, 24%), released linearly over three years after a one-year lock; ~3.2M LIT/week combined. No lump sum."
+   },
+   "name": "Lighter",
+   "grade": "AAA",
+   "gradeHas": [
+    "first",
+    "inProfit",
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "cliff",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": -19.7,
+   "gradeEntry": "2026-12-20",
+   "gradeAt": "2026-11-21 11:18",
+   "bestGrade": "AAA"
+  },
+  "LINEA|2026-12-10": {
+   "token": "LINEA",
+   "unlockDate": "2026-12-10",
+   "firstSeen": "2026-11-20 04:34",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 1.96,
+    "usdM": 0.87,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Linea Ecosystem Fund managed by the Linea Consortium (long-term alignment program); trackers label it 'Community'. Linea has no team or investor allocation."
+   },
+   "asLastShown": {
+    "pct": 3.36,
+    "usdM": 1.3,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Linea Ecosystem Fund managed by the Linea Consortium (labelled Community by aggregators). Linea has no team or investor allocation per its docs."
+   },
+   "name": "Linea",
+   "grade": "A",
+   "gradeHas": [
+    "cliff"
+   ],
+   "gradeMissing": [
+    "first",
+    "vbig",
+    "inProfit",
+    "weekDown"
+   ],
+   "pumped": false,
+   "momentum": -25.3,
+   "gradeEntry": "2026-12-03",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "AA"
+  },
+  "M|2026-12-12": {
+   "token": "M",
+   "unlockDate": "2026-12-12",
+   "firstSeen": "2026-11-20 04:34",
+   "lastSeen": "2026-11-23 09:46",
+   "asFirstShown": {
+    "pct": 2.44,
+    "usdM": 48.3,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Routine monthly release: community ~24.31M, investors 12.50M, foundation ~11.67M, team (core contributors) ~7.64M."
+   },
+   "asLastShown": {
+    "pct": 2.44,
+    "usdM": 41.66,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Routine monthly release: community ~24.31M, investors 12.50M, foundation ~11.67M, team (core contributors) ~7.64M."
+   },
+   "name": "MemeCore",
+   "grade": null,
+   "gradeHas": [
+    "inProfit",
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": -25.1,
+   "gradeEntry": "2026-12-05",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "CRO|2026-12-16": {
+   "token": "CRO",
+   "unlockDate": "2026-12-16",
+   "firstSeen": "2026-11-20 04:34",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 2.25,
+    "usdM": 49.2,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Cronos Strategic Reserve (re-minted 70B CRO vesting over five years); no team or investor share."
+   },
+   "asLastShown": {
+    "pct": 2.25,
+    "usdM": 47.4,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Cronos Strategic Reserve (re-issued 70B CRO vesting monthly); no team or investor share."
+   },
+   "name": "Cronos",
+   "grade": "A",
+   "gradeHas": [
+    "cliff"
+   ],
+   "gradeMissing": [
+    "first",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": null,
+   "gradeEntry": "2026-12-09",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "A"
+  },
+  "ZK|2026-12-17": {
+   "token": "ZK",
+   "unlockDate": "2026-12-17",
+   "firstSeen": "2026-11-20 04:34",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 1.52,
+    "usdM": 1.27,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly post-cliff vesting for ZKsync investors (89.26M ZK) and team (83.81M ZK)."
+   },
+   "asLastShown": {
+    "pct": 1.52,
+    "usdM": 1.27,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly post-cliff vesting for ZKsync investors and team (Tokenomist: 89.26M investors, 83.81M team)."
+   },
+   "name": "ZKsync",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -34.9,
+   "gradeEntry": "2026-12-10",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "KNTQ|2026-12-27": {
+   "token": "KNTQ",
+   "unlockDate": "2026-12-27",
+   "firstSeen": "2026-11-20 04:34",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (235M total allocation) and investors (75M total; seed backers Maven11 Capital and Susquehanna Crypto), first monthly tranche after their one-year cliff."
+   },
+   "asLastShown": {
+    "pct": null,
+    "usdM": null,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Core contributors (23.5% of supply) and investors (7.5%; seed backers per Blocmates in prior pass), first monthly tranche after the one-year cliff."
+   },
+   "name": "Kinetiq",
+   "grade": "AA",
+   "gradeHas": [
+    "first"
+   ],
+   "gradeMissing": [
+    "cliff",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": null,
+   "gradeEntry": "2026-12-20",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "AA"
+  },
+  "MMT|2026-12-04": {
+   "token": "MMT",
+   "unlockDate": "2026-12-04",
+   "firstSeen": "2026-11-21 11:18",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 6.03,
+    "usdM": 3.26,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly post-cliff release; tokenomics.com: early/private investors (~5.2M) and community growth (~7.1M); Tokenomist labels it Ecosystem."
+   },
+   "asLastShown": {
+    "pct": 6.03,
+    "usdM": 2.64,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly post-cliff release; tokenomics.com: private investors (~5.2M) and community (~7.1M); Tokenomist labels it Ecosystem."
+   },
+   "name": "Momentum",
+   "grade": "A",
+   "gradeHas": [
+    "cliff"
+   ],
+   "gradeMissing": [
+    "first",
+    "vbig",
+    "inProfit",
+    "weekDown"
+   ],
+   "pumped": true,
+   "momentum": 64.4,
+   "gradeEntry": "2026-11-27",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "A"
+  },
+  "MOVE|2026-12-09": {
+   "token": "MOVE",
+   "unlockDate": "2026-12-09",
+   "firstSeen": "2026-11-21 11:18",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 3.41,
+    "usdM": 0.82,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche to early backers (62.5M), early contributors (36.46M), ecosystem + community (50M) and the foundation (15.63M)."
+   },
+   "asLastShown": {
+    "pct": 3.41,
+    "usdM": 0.82,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche to early backers (62.5M), early contributors (36.46M), ecosystem + community (50M) and the foundation (15.63M)."
+   },
+   "name": "Movement",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit",
+    "weekDown"
+   ],
+   "pumped": false,
+   "momentum": -24.5,
+   "gradeEntry": "2026-12-02",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "KAITO|2026-12-20": {
+   "token": "KAITO",
+   "unlockDate": "2026-12-20",
+   "firstSeen": "2026-11-21 11:18",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 7.29,
+    "usdM": 5.36,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche: ecosystem & network growth 7.16M, core contributors 6.94M, early backers 2.31M, foundation 1.19M."
+   },
+   "asLastShown": {
+    "pct": 7.29,
+    "usdM": 5.36,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche: ecosystem & network growth 7.16M, core contributors 6.94M, early backers 2.31M, foundation 1.19M."
+   },
+   "name": "Kaito",
+   "grade": null,
+   "gradeHas": [
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig",
+    "inProfit"
+   ],
+   "pumped": false,
+   "momentum": -35.0,
+   "gradeEntry": "2026-12-13",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "WPAY|2026-12-08": {
+   "token": "WPAY",
+   "unlockDate": "2026-12-08",
+   "firstSeen": "2026-11-22 09:51",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 9.83,
+    "usdM": 147.3,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche of the post-TGE vesting schedule: Foundation/Treasury and liquidity 35.1%, Team (insiders) 32.7%, node and veWPAY staking rewards 32.2%. No investor allocation exists in the published tokenomics."
+   },
+   "asLastShown": {
+    "pct": 9.83,
+    "usdM": 181.8,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche of the post-TGE linear schedule: Treasury ~51.2M, Team ~55.6M, Node Rewards ~33.3M, veWPAY Rewards ~21.4M, Liquidity ~8.3M (amounts computed from published terms; sum matches 169.89M). No investor allocation in published tokenomics."
+   },
+   "name": "Wirex Pay",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": null,
+   "gradeEntry": "2026-12-01",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "RAIN|2026-12-10": {
+   "token": "RAIN",
+   "unlockDate": "2026-12-10",
+   "firstSeen": "2026-11-22 09:51",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 5.21,
+    "usdM": 134.0,
+    "firstInsider": null,
+    "confidence": "confirmed",
+    "recipients": "Private investors 34.8%, insiders 29.0%, community 34.5%, public investors 1.7% (tokenomics.com split for this tranche)."
+   },
+   "asLastShown": {
+    "pct": 5.21,
+    "usdM": 122.2,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Private investors 34.8%, insiders 29.0%, community 34.5%, public investors 1.7% (tokenomics.com split for this tranche); monthly slice of linear vesting."
+   },
+   "name": "Rain",
+   "grade": null,
+   "gradeHas": [],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": null,
+   "gradeEntry": "2026-12-03",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "AKE|2026-12-21": {
+   "token": "AKE",
+   "unlockDate": "2026-12-21",
+   "firstSeen": "2026-11-22 09:51",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 9.25,
+    "usdM": 11.2,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly tranche: investors (24-month linear after 3-month cliff), early contributors/advisors (42-month linear after 6-month cliff), community pool (48-month linear). Split for Dec given only as 3 recipients; Nov split was investors 47.4%, community 30.5%, insiders 22.1%."
+   },
+   "asLastShown": {
+    "pct": 9.25,
+    "usdM": 5.8,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly linear tranche: private investors (24m linear after 3m cliff), early contributors/advisors (42m linear after 6m cliff), community (48m). Split from tokenomics.com for recent tranches."
+   },
+   "name": "Akedo",
+   "grade": null,
+   "gradeHas": [
+    "inProfit",
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "first",
+    "cliff",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": -74.4,
+   "gradeEntry": "2026-12-14",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": null
+  },
+  "LIT|2026-12-30": {
+   "token": "LIT",
+   "unlockDate": "2026-12-30",
+   "firstSeen": "2026-11-22 09:51",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 0.18,
+    "usdM": 1.04,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Team (260M, 26%) and investors (240M, 24%), linear over three years after a one-year lock; no lump."
+   },
+   "asLastShown": {
+    "pct": 0.18,
+    "usdM": 1.04,
+    "firstInsider": true,
+    "confidence": "confirmed",
+    "recipients": "Team (260M, 26%) and investors (240M, 24%), linear over three years after a one-year lock; no lump."
+   },
+   "name": "Lighter",
+   "grade": "AAA",
+   "gradeHas": [
+    "first",
+    "inProfit",
+    "weekDown"
+   ],
+   "gradeMissing": [
+    "cliff",
+    "vbig"
+   ],
+   "pumped": false,
+   "momentum": -13.5,
+   "gradeEntry": "2026-12-23",
+   "gradeAt": "2026-11-23 09:46",
+   "bestGrade": "AAA"
+  },
+  "RYO|2026-11-24": {
+   "token": "RYO",
+   "unlockDate": "2026-11-24",
+   "firstSeen": "2026-11-23 09:46",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 4.2,
+    "usdM": 134.9,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly vesting tranche split across insiders (team/advisors/early contributors), community, foundation and private investors."
+   },
+   "asLastShown": {
+    "pct": 4.2,
+    "usdM": 134.9,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Monthly vesting tranche split across insiders (team/advisors/early contributors), community, foundation and private investors."
+   },
+   "name": "RYO Coin",
+   "result": {
+    "status": "no prices",
+    "note": "no Binance or CoinGecko daily prices found"
+   }
+  },
+  "GRVT|2026-11-29": {
+   "token": "GRVT",
+   "unlockDate": "2026-11-29",
+   "firstSeen": "2026-11-23 09:23",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 30.0,
+    "usdM": 7.2,
+    "firstInsider": null,
+    "confidence": "confirmed",
+    "recipients": "Vested tranches from the GRVTVesting vault contracts (airdrop/community per tokenomics.com), possibly plus an ecosystem tranche."
+   },
+   "asLastShown": {
+    "pct": 30.0,
+    "usdM": 7.2,
+    "firstInsider": null,
+    "confidence": "confirmed",
+    "recipients": "Vested tranches from the GRVTVesting vault contracts (airdrop/community per tokenomics.com), possibly plus an ecosystem tranche."
+   },
+   "name": "Grvt",
+   "v3Call": "TAKE",
+   "v3Why": "passes every rule",
+   "v3At": "2026-11-23 09:46",
+   "v3Final": true,
+   "v3LateCall": true,
+   "v3Result": {
+    "status": "open",
+    "lastClose": 0.1458,
+    "openPct": 6.2,
+    "asOf": "2026-11-22"
+   }
+  },
+  "YZY|2026-12-14": {
+   "token": "YZY",
+   "unlockDate": "2026-12-14",
+   "firstSeen": "2026-11-23 09:46",
+   "lastSeen": "2026-11-23 15:10",
+   "asFirstShown": {
+    "pct": 9.4,
+    "usdM": 8.1,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Yeezy Investments LLC (Kanye West-linked entity holding 70% of supply across three vesting tranches)."
+   },
+   "asLastShown": {
+    "pct": 9.4,
+    "usdM": 8.1,
+    "firstInsider": false,
+    "confidence": "confirmed",
+    "recipients": "Yeezy Investments LLC (Kanye West-linked entity holding 70% of supply across three vesting tranches)."
+   },
+   "name": "YZY"
+  }
+ },
+ "generatedAt": "2026-11-23 09:46",
+ "about": "Every unlock the desk has shown, kept after its date passes. Never pruned."
+}

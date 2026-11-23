@@ -270,6 +270,15 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
 .pk-cmp th:first-child, .pk-cmp td:first-child { text-align: left; }
 .pk-cmp .up { color: var(--bull); } .pk-cmp .dn { color: var(--bear); }
 .pk-cmp .note { color: var(--muted); margin-top: 6px; }
+
+.hist-search { width: 100%; max-width: 420px; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel); color: var(--text); font-size: 15px; margin: 0 0 14px; }
+.hist-row { background: var(--panel); border-radius: 10px; padding: 10px 14px; margin: 0 0 8px; }
+.hist-row .top { display: flex; gap: 10px; flex-wrap: wrap; align-items: baseline; }
+.hist-row .tok { font-weight: 700; font-size: 16px; }
+.hist-row .tag { font-size: 12px; padding: 1px 7px; border-radius: 6px; background: rgba(255,255,255,.07); color: var(--muted); }
+.hist-row .meta { font-size: 13px; color: var(--muted); margin-top: 3px; }
+.hist-row .res { font-size: 14px; margin-top: 4px; }
+.hist-row .up { color: var(--bear); } .hist-row .dn { color: var(--bull); }
 </style>
 </head>
 <body>
@@ -285,6 +294,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       <button role="tab" data-tab="unlocks" aria-selected="false">Token unlocks</button>
       <button role="tab" data-tab="past" aria-selected="false">Past unlocks</button>
       <button role="tab" data-tab="signals" aria-selected="false">Trade signals</button>
+      <button role="tab" data-tab="history" aria-selected="false">History</button>
       <button role="tab" data-tab="log" aria-selected="false">Trade log</button>
       <button role="tab" data-tab="week" aria-selected="false">Week ahead</button>
       <button role="tab" data-tab="supply" aria-selected="false">Supply and revenue</button>
@@ -313,7 +323,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
   const { el } = Desk;
   const main = document.getElementById('main');
   let D, P, tab = 'picks', uRange = 30, uView = 'upcoming', sortKey = 'revenueUsdM', open = null, cdTimer;
-  try { const h = location.hash.slice(1); if (['picks', 'news', 'unlocks', 'past', 'signals', 'log', 'week', 'supply'].includes(h)) tab = h; } catch (e) {}
+  try { const h = location.hash.slice(1); if (['picks', 'news', 'unlocks', 'past', 'signals', 'history', 'log', 'week', 'supply'].includes(h)) tab = h; } catch (e) {}
 
   function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : ''; }
 
@@ -450,6 +460,46 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
         el('p', { text: 'Backtest: ' + bt.trades + ' trades, ' + bt.wonPct + '% won, ' + r2(bt.avgR) + ' a trade, longest losing run ' + bt.account1pct.longestLosingRun + '. About 4 in 10 trades lose 1R; the winners pay for them.' }),
         el('p', { text: 'Rules frozen on ' + d(R.frozenOn) + ' so the live record is a clean test. ' + R.passMark + ' Each call is made once, on entry day, from data known before entry, and is never changed afterwards. Past results are not a promise and this is not financial advice.' })])])
     ].filter(Boolean));
+  }
+
+
+  let histQuery = '';
+  function history() {
+    const A = D.archive;
+    if (!A) return el('p', { class: 'state', text: 'The history log isn’t ready yet.' });
+    const d = s => s ? new Date(s.slice(0, 10) + 'T00:00:00Z').toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }) : '';
+    const sg = v => v == null ? '–' : (v > 0 ? '+' : '') + v + '%';
+    const all = Object.values(A.entries).sort((a, b) => b.unlockDate.localeCompare(a.unlockDate) || a.token.localeCompare(b.token));
+    const list = el('div');
+    const draw = () => {
+      const q = histQuery.trim().toUpperCase();
+      const rows = all.filter(e => !q || e.token.toUpperCase().includes(q) || (e.name || '').toUpperCase().includes(q));
+      list.replaceChildren(...(rows.length ? rows.slice(0, 200).map(e => {
+        const sh = e.asLastShown || e.asFirstShown || {}, r = e.result || {};
+        const tags = [];
+        if (e.bestGrade) tags.push('graded ' + e.bestGrade + (e.pumped ? ', pumped' : ''));
+        if (e.v3Call) tags.push('Picks: ' + e.v3Call + (e.v3LateCall ? ' (late)' : ''));
+        const gone = e.lastSeen && A.generatedAt && (Date.parse(A.generatedAt.replace(' ', 'T') + 'Z') - Date.parse(e.lastSeen.replace(' ', 'T') + 'Z')) > 1.5 * 864e5;
+        if (gone && e.unlockDate > e.lastSeen.slice(0, 10)) tags.push('dropped from the list ' + d(e.lastSeen) + ' (date moved or unconfirmed)');
+        const said = [sh.pct != null ? Math.round(sh.pct * 10) / 10 + '% of circulating' : 'size unknown', sh.firstInsider ? 'first insider unlock' : null,
+          sh.usdM != null ? '$' + sh.usdM + 'M' : null, 'shown ' + d(e.firstSeen) + ' to ' + d(e.lastSeen)].filter(Boolean).join(' · ');
+        let res = 'Unlock not reached yet.';
+        if (r.status === 'no prices') res = 'No price data.';
+        else if (r.entryOpen) {
+          const plan = r.planR != null ? 'Standard short: ' + (r.planR > 0 ? '+' : '') + r.planR.toFixed(2) + 'R (' + ({ stop: 'stopped', target: 'target hit', time: 'closed day +14' }[r.planExit] || r.planExit) + ')' : 'Standard short still open';
+          res = plan + ' · price from day −7: ' + ['+1', '+3', '+7', '+14'].map(k => k + 'd ' + sg(r.move[k])).join(', ') + ' · biggest rise ' + sg(r.maxRise) + ', biggest drop ' + sg(r.maxDrop);
+        }
+        return el('div', { class: 'hist-row' }, [el('div', { class: 'top' }, [el('span', { class: 'tok', text: e.token }), el('span', { class: 'small', text: (e.name || '') + ' · unlock ' + d(e.unlockDate) }), ...tags.map(t => el('span', { class: 'tag', text: t }))]),
+          el('div', { class: 'meta', text: said }), el('div', { class: 'res', text: res })]);
+      }) : [el('p', { class: 'small', text: 'Nothing matches “' + histQuery + '”.' })]));
+    };
+    const box = el('input', { class: 'hist-search', type: 'search', placeholder: 'Search a token, e.g. ARIA', value: histQuery });
+    box.addEventListener('input', () => { histQuery = box.value; draw(); });
+    draw();
+    return el('section', { 'aria-label': 'History' }, [
+      el('p', { class: 'lead', text: 'Every unlock the desk has ever shown.' }),
+      el('p', { class: 'small', text: all.length + ' unlocks, kept after their date passes. “Graded” is the setup grade on the Trade signals tab; “Picks” is the v3 call. The standard short is the day −7 open with a 12% stop and 35% target, out day +14. Updated ' + d(A.generatedAt) + '.' }),
+      box, list]);
   }
 
   const PRESSURE = { 'Low': 'p-low', 'Moderate': 'p-mod', 'High': 'p-high', 'Very high': 'p-vhigh', 'Not enough data': 'p-na' };
@@ -1359,7 +1409,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
 
   function render() {
     document.querySelectorAll('nav.tabs button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.tab === tab)));
-    const view = { picks, news, unlocks, past, signals, log: tradeLog, week, supply }[tab]();
+    const view = { picks, news, unlocks, past, signals, history, log: tradeLog, week, supply }[tab]();
     main.replaceChildren(view);
     clearInterval(cdTimer);
     if (tab === 'unlocks' && uView === 'upcoming') {
@@ -1389,6 +1439,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     try { D.signals = await fetch('data/signals.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.signals = null; }
     try { const lv = await fetch('data/signals_live.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); if (lv && D.signals) { D.signals.pumpChecks = lv.pumpChecks || {}; D.signals.context = lv.context || {}; D.signals.pumpCheckedAt = lv.pumpCheckedAt; } } catch (e) { /* live checks are optional */ }
     try { D.grades = await fetch('data/grades.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.grades = null; }
+    try { D.archive = await fetch('data/archive.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.archive = null; }
     try { D.picks = await fetch('data/picks.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.picks = null; }
     try { D.tradelog = await fetch('data/trade_log.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.tradelog = null; }
     P = await Desk.prices(D.news.market);
