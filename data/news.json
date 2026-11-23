@@ -1,103 +1,104 @@
 {
   "date": "2026-11-23",
-  "updated": "2026-11-23T08:09:58Z",
-  "headline": "Bitcoin is holding near $61,000 on Monday afternoon in Bangkok after a weekend drop to about $55,100, while Asian stocks slide and US bitcoin funds log a fourth straight week of outflows before a short US holiday week.",
+  "updated": "2026-11-23T12:07:53Z",
+  "headline": "Bitcoin is back above $61,000 on Monday evening in Bangkok as US stock futures rebound, but money is still leaving bitcoin funds ahead of a short US holiday week with inflation data on Wednesday.",
   "market": {
-    "asOf": "BTC about $61,400 at about 06:30 UTC Mon 23 Nov (13:30 Bangkok) per Bitcoin.com News; ETH $1,724.15 at 00:00 UTC per KuCoin's daily report. The price sites could not be read directly this run, so use the live prices on this page.",
+    "asOf": "Read from the CoinMarketCap homepage at about 11:59 UTC Mon 23 Nov (18:59 Bangkok); the direction of the 24h moves could not be read, so it is left blank. Use the live prices on this page.",
     "btc": {
-      "price": 61400,
-      "chg24h": 4.0
-    },
-    "eth": {
-      "price": 1724.15,
+      "price": 61053.48,
       "chg24h": null
     },
-    "sol": null,
-    "fearGreed": "11 out of 100 (\"Extreme Fear\"), per Bitcoin.com News on 23 Nov; the index page itself could not be opened this run."
+    "eth": {
+      "price": 1725.14,
+      "chg24h": null
+    },
+    "sol": {
+      "price": 71.28,
+      "chg24h": null
+    },
+    "fearGreed": "11 out of 100 (\"Extreme Fear\") on the alternative.me Crypto Fear & Greed Index; CoinMarketCap's own index showed 9 (\"Extreme fear\"). Both read at about 11:59 UTC Mon 23 Nov."
   },
   "stories": [
     {
-      "title": "Bitcoin holds near $61,000 as Asian stocks slide",
+      "title": "Bitcoin climbs back above $61,000 as Wall Street futures rebound",
       "mood": "volatile",
-      "summary": "Bitcoin dropped to about $55,100 on Saturday and climbed back above $61,000 late Sunday. On Monday, South Korea's main stock index fell 5% at the open, triggering a brief halt on program selling, after the Nasdaq 100's worst week since March 2020. The Crypto Fear and Greed Index is still at \"Extreme Fear\".",
+      "summary": "Bitcoin recovered from its weekend low of about $55,100 and was back above $61,000 on Monday as US stock futures jumped about 3% after the Nasdaq's worst week since March 2020. Bitcoin also ended a record 18-day run of lower daily highs, which CoinDesk calls only an early signal. The Crypto Fear and Greed Index is still at \"Extreme Fear\".",
       "points": [
-        "Bitcoin was about $61,400, up about 4% in 24 hours, after a 21 Nov low of $55,130, per Bitcoin.com News (1:30am ET Monday).",
-        "Bitcoin is down about 21.5% so far in November and about 52% below its $126,080 all-time high, per Bitcoin.com News.",
-        "South Korea's KOSPI fell 5% at Monday's open, triggering a five-minute halt on program selling, per Bitcoin.com News.",
-        "Sources disagree on liquidations (forced closing of borrowed bets) in the last 24 hours: about $299 million, 76% of it bets on lower prices, per Stocktwits; about $2.7 billion, per crypto.news.",
-        "Holders realized more than $11.3 billion of losses over 7 days, per KuCoin's daily market report."
+        "Bitcoin was about $61,350 on Monday morning US time, per CoinDesk; its weekend low was $55,106, about 37% below its September peak, per CoinDesk.",
+        "S&P 500 and Nasdaq 100 futures were up about 3% before the US open, after the Nasdaq fell 10.4% last week, per CoinDesk.",
+        "South Korea's KOSPI closed down 3.31% at 4,708.54 on Monday, per Seoul Economic Daily.",
+        "CoinDesk says a lasting recovery would need money flowing back into bitcoin funds and stablecoins."
       ],
       "sources": [
         {
-          "label": "Bitcoin.com News: bitcoin near $61K, KOSPI crash",
-          "url": "https://news.bitcoin.com/market-updates/bitcoin-price-61k-arthur-hayes-55k-retest-kospi-crash/"
+          "label": "CoinDesk: bitcoin back above $61,000 as stocks rebound",
+          "url": "https://www.coindesk.com/markets/2026/11/23/live-updates-bitcoin-climbs-back-above-usd61-000-as-stocks-rebound-from-ai-rout"
         },
         {
-          "label": "Stocktwits: liquidations and Asia selloff",
-          "url": "https://stocktwits.com/news-articles/markets/cryptocurrency/arthur-hayes-bitcoin-55k-asia-ai-kospi-crash/cNbYtmnR9S0"
+          "label": "CoinDesk: market rout kills half-point hike bets",
+          "url": "https://www.coindesk.com/markets/2026/11/23/market-rout-kills-50-basis-points-december-fed-rate-hike-bets"
         },
         {
-          "label": "crypto.news: events that could move bitcoin this week",
-          "url": "https://crypto.news/bitcoin-price-5-key-events-that-could-move-btc"
+          "label": "CoinDesk: bitcoin breaks a record streak of lower highs",
+          "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-breaks-a-record-streak-of-lower-highs-here-s-what-it-means"
         },
         {
-          "label": "KuCoin: crypto daily market report, 23 Nov",
-          "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-23-2026"
+          "label": "Seoul Economic Daily: KOSPI closes down 3.31%",
+          "url": "https://en.sedaily.com/market/2026/11/23/kospi-closes-down-331-percent-at-470854"
+        },
+        {
+          "label": "Alternative.me: Crypto Fear & Greed Index",
+          "url": "https://alternative.me/crypto/fear-and-greed-index/"
         }
       ]
     },
     {
-      "title": "$1.79 billion left US bitcoin funds last week, with a crowded holiday week ahead",
+      "title": "Money keeps leaving bitcoin funds before a short Thanksgiving week with inflation data",
       "mood": "bearish",
-      "summary": "About $1.79 billion left US spot bitcoin funds last week, the fourth losing week in a row. This short Thanksgiving week brings US inflation data on Wednesday, with traders widely expecting the Fed to raise rates in December, and a large monthly bitcoin options expiry on Friday.",
+      "summary": "US spot bitcoin funds lost money for another week, and traders still expect the Fed to raise rates in December. October PCE inflation, the Fed's preferred gauge, comes out on Wednesday, and US stock markets close on Thursday for Thanksgiving while crypto keeps trading.",
       "points": [
-        "About $1.79 billion left US spot bitcoin ETFs in the week of 16-20 Nov, led by BlackRock's IBIT at about $1.37 billion, per CoinCentral citing SoSoValue.",
-        "Friday 20 Nov alone saw a $669 million outflow, the fourth day of outflows in a row, per SoSoValue data reported on KuCoin.",
-        "US spot ether ETFs lost about $314 million, their eighth losing week in a row, per Bitcoin Foundation news.",
-        "October PCE inflation comes out Wed 25 Nov; core PCE is expected at 3.2% a year against 3.1% before, per Newsquawk.",
-        "CME FedWatch showed a 93.2% chance of a quarter-point December rate hike, down from 99%, per KuCoin (23 Nov)."
+        "Sources disagree on last week's bitcoin fund outflows: $1.79 billion, the fourth losing week in a row, per The Block citing SoSoValue; $1.24 billion, per FxPro citing SoSoValue in CoinDesk's live blog.",
+        "BlackRock's IBIT lost $1.37 billion and US spot ether funds lost $314 million, their eighth losing week in a row, per The Block.",
+        "Total assets in US spot bitcoin funds were $71.35 billion on Friday, down from about $110 billion in mid-September, per The Block.",
+        "CME FedWatch odds of a quarter-point December hike: more than 95%, per CoinDesk; 93.2%, per KuCoin. Bets on a half-point hike have fallen to zero, per CoinDesk.",
+        "US stock markets and the spot crypto funds are closed Thursday 26 Nov and close early on Friday 27 Nov; crypto itself trades through the holiday, per CoinDesk."
       ],
       "sources": [
         {
-          "label": "CoinCentral: ETF outflows reach $1.8 billion",
-          "url": "https://coincentral.com/bitcoin-btc-price-rebounds-above-61000-as-etf-outflows-reach-1-8-billion"
+          "label": "The Block: spot bitcoin ETFs shed $1.79 billion",
+          "url": "https://www.theblock.co/news/markets/2026-11-23-spot-bitcoin-etfs-shed-1-79-billion-in-past-week-444857"
         },
         {
-          "label": "KuCoin: $669M bitcoin ETF outflow on 20 Nov",
-          "url": "https://www.kucoin.com/news/flash/bitcoin-spot-etfs-record-669m-net-outflow-on-nov-20-fourth-consecutive-day-of-outflows"
+          "label": "CoinDesk: market rout kills half-point hike bets",
+          "url": "https://www.coindesk.com/markets/2026/11/23/market-rout-kills-50-basis-points-december-fed-rate-hike-bets"
         },
         {
-          "label": "Bitcoin Foundation: ether ETFs extend losing streak",
-          "url": "https://bitcoinfoundation.org/news/bitcoin/weekly-bitcoin-etf-outflows-hit-1-8b-as-ethereum-extends-eight-week-retreat/"
+          "label": "CoinDesk: crypto week ahead",
+          "url": "https://www.coindesk.com/markets/2026/11/23/u-s-inflation-thanksgiving-trading-crypto-week-ahead"
         },
         {
-          "label": "Newsquawk: week in focus, 23-27 Nov",
-          "url": "https://www.newsquawk.com/headlines/week-in-focus--november-23rd-27th-highlights-include-us-pce-flash-pmis-aussie-cpi-and-ecb-minutes"
+          "label": "CoinDesk: live updates, 23 Nov",
+          "url": "https://www.coindesk.com/markets/2026/11/23/live-updates-bitcoin-climbs-back-above-usd61-000-as-stocks-rebound-from-ai-rout"
         },
         {
           "label": "KuCoin: December hike odds drop to 93.2%",
-          "url": "https://www.kucoin.com/news/flash/fed-s-december-25-basis-point-rate-hike-probability-drops-to-93-2"
+          "url": "https://www.kucoin.com/news/flash/fed-s-december-25-bp-hike-probability-drops-to-93-2"
         }
       ]
     },
     {
-      "title": "Saylor hints at another Strategy bitcoin buy a week before its index removal",
-      "mood": "neutral",
-      "summary": "Strategy, the company that holds 850,849 bitcoin, may announce another purchase: chairman Michael Saylor posted \"The dots aren't done\", a line that has come before past purchase filings, but no new buy is confirmed. At current prices its bitcoin is worth less than it paid, and it leaves the MSCI indexes after the 30 Nov close.",
+      "title": "Kalshi faces a New York court hearing today that it says could shut it down",
+      "mood": "volatile",
+      "summary": "New York's Attorney General is asking a state court for a renewed restraining order against the prediction market Kalshi. Kalshi says the order's wording would effectively shut down the whole exchange; the Attorney General's office says it is not seeking a nationwide shutdown.",
       "points": [
-        "Strategy holds 850,849 BTC bought for about $64.2 billion, an average of $75,452 each, per CoinCentral.",
-        "At about $60,424 per bitcoin those coins were worth about $51.4 billion, roughly $12.8 billion below cost, per CoinCentral.",
-        "Its last confirmed purchase was 485 BTC for $33.4 million during 9-15 Nov, per CoinCentral.",
-        "MSCI's removal takes effect at the close on 30 Nov; CoinCentral notes it does not force Strategy to sell bitcoin."
+        "Justice Melissa Crane hears the request at 11:30am ET Mon 23 Nov (23:30 Bangkok) in New York County Supreme Court, per Inside Bitcoins.",
+        "The order would bar unlicensed gambling contracts \"within or from New York or to persons in New York\", covering sports, elections and other events, per Inside Bitcoins.",
+        "On Fri 20 Nov a federal judge rejected the CFTC's second emergency bid to block New York's case, per Inside Bitcoins."
       ],
       "sources": [
         {
-          "label": "CoinCentral: Saylor says the dots aren't done",
-          "url": "https://coincentral.com/saylor-says-the-dots-arent-done-did-strategy-buy-more-bitcoin"
-        },
-        {
-          "label": "24/7 Wall St: Strategy is out of the MSCI indexes",
-          "url": "https://247wallst.com/investing/2026/11/12/its-official-michael-saylors-strategy-is-out-of-the-msci-indexes/"
+          "label": "Inside Bitcoins: Kalshi faces New York TRO hearing",
+          "url": "https://insidebitcoins.com/news/kalshi-new-york-tro-hearing-shutdown-order"
         }
       ]
     }
@@ -105,38 +106,38 @@
   "briefs": [
     {
       "title": "Chainflip hack bounty deadline is today",
-      "summary": "Chainflip offers the attacker a 10% bounty if 110.575 BTC and 2,618.1 ETH come back by 18:38 UTC Mon 23 Nov (01:38 Tue Bangkok); no return was confirmed as of Monday morning, per SpazioCrypto.",
-      "url": "https://en.spaziocrypto.com/hack/chainflip-hack-12-million-stolen-attacker-offer-deadline/"
+      "summary": "Chainflip's 10% bounty offer ends at 18:38 UTC Mon 23 Nov (01:38 Tue Bangkok); losses total about $12 million, including 122.86 BTC, and the stolen ETH and stablecoins went through Tornado Cash, per The Block.",
+      "url": "https://www.theblock.co/news/defi/2026-11-22-chainflips-losses-climb-to-12-million-after-protocol-discloses-122-9-btc-theft-offers-hacker-bounty-444829"
     },
     {
-      "title": "Kalshi faces a New York court hearing today",
-      "summary": "Justice Melissa Crane hears New York Attorney General Letitia James's renewed restraining-order request against Kalshi at 11:30am ET Mon 23 Nov (23:30 Bangkok), per Inside Bitcoins.",
-      "url": "https://insidebitcoins.com/news/kalshi-new-york-tro-hearing-shutdown-order"
+      "title": "Bitcoin briefly sold for about $17,000 on Kraken's Canadian-dollar market",
+      "summary": "Bitcoin traded at C$24,250 on Kraken's Canadian-dollar market early Saturday, far below global prices; Kraken says the trades stand and it found no breach, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-sold-for-usd17-000-on-kraken-s-canadian-dollar-market-and-the-trades-stand"
     },
     {
-      "title": "Monad's first big team and investor unlock is Tuesday",
-      "summary": "About 16.61 billion MON unlocks on Tue 24 Nov for team, investors and treasury, per Coinranking using CryptoRank; DefiLlama puts it at 17.1 billion. See the unlock table for this desk's size and confidence.",
-      "url": "https://coinranking.com/news/monad-token-unlock-releases-16-6-billion-mon-november-24"
+      "title": "Monad's large MON unlock is Tuesday",
+      "summary": "CoinDesk puts Tuesday's MON unlock at about $217 million, about 140% of circulating supply. See the unlock table on this page for this desk's size and confidence.",
+      "url": "https://www.coindesk.com/markets/2026/11/23/u-s-inflation-thanksgiving-trading-crypto-week-ahead"
     },
     {
-      "title": "Fusionist's ACE bridge losses put at about $5.7 million",
-      "summary": "An attacker misused a minting role to create unbacked ACE on BNB Chain; about $5.7 million was lost in total and Bithumb suspended ACE, per ChangeNOW.",
-      "url": "https://changenow.io/blog/cross-chain-crypto-hacks"
+      "title": "South Korea to publish a draft Digital Asset Basic Act",
+      "summary": "The draft, due this week, proposes a 15-20% cap on major shareholders' stakes in exchanges and bank-majority issuers for won stablecoins, per The Block.",
+      "url": "https://www.theblock.co/news/regulation/2026-11-23-south-korea-to-publish-draft-digital-asset-basic-act-444881"
     },
     {
-      "title": "Cyber bridge exploit pauses transfers in Korea",
-      "summary": "About 5.2 million CYBER was minted unexpectedly on Solana and the same amount left its Ethereum bridge; Upbit and Bithumb suspended deposits and withdrawals while Cyber investigates, per Cryptonews.com.au.",
-      "url": "https://cryptonews.com.au/news/south-koreas-upbit-and-bithumb-suspend-cyber-transfers-following-suspected-bridge-exploit-135594/"
+      "title": "Japan steps up crypto tax audits",
+      "summary": "Tokyo's tax bureau found about 3.9 billion yen (about $24.5 million) of hidden crypto trading income among 91 audited users, per CoinDesk citing NHK.",
+      "url": "https://www.coindesk.com/business/2026/11/23/japan-to-ramp-up-crypto-tax-audits-after-uncovering-usd24-5-million-in-hidden-income"
     },
     {
-      "title": "UK plans to bar exchanges from market making on their own platforms",
-      "summary": "The FCA's proposed rule would apply when the UK crypto regime goes live on 25 Oct 2027, per crypto.news.",
-      "url": "https://crypto.news/uk-fca-sets-new-market-making-restrictions-for-crypto-exchanges/"
+      "title": "Visa tests an AI agent wallet paid in a stablecoin",
+      "summary": "Visa Crypto Labs launched an experimental wallet for eligible US cardholders whose AI agents earn 10-50 OUSD for paid tasks such as surveys, per The Block.",
+      "url": "https://www.theblock.co/news/business/2026-11-23-visa-launches-experimental-ai-agent-wallet-for-eligible-us-users-to-earn-ousd-from-paid-tasks-444903"
     },
     {
-      "title": "Russia opens the door to crypto trading on domestic exchanges",
-      "summary": "A Bank of Russia rule took effect on 22 Nov; Moscow Exchange targets a 1 Dec pilot, and retail buyers are capped at 300,000 rubles a year per broker, limited to BTC, ETH and USDT, per Coinidol.",
-      "url": "https://coinidol.com/russia-opens-legal-framework-for-domestic-exchange-crypto-trading-as-venues-await-rulebook-sign-off/"
+      "title": "Swedish bitcoin treasury firm lost 30 BTC trading",
+      "summary": "H100 Group lost about 30 BTC (about $1.8 million) trading part of its holdings in the third quarter; its long-term treasury holds 3,243 BTC, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/23/this-swedish-bitcoin-treasury-firm-lost-30-btc-trading-part-of-its-own-stack"
     }
   ],
   "calendar": [
@@ -154,7 +155,7 @@
       "event": "Flash manufacturing and services PMIs (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "Manufacturing is expected at 54.5 (October: 54.9) and services at 55.6 (October: 56.1), per FXEmpire. HPE and Zoom report earnings after the close."
+      "note": "Manufacturing is expected at 54.5 (October: 54.9) and services at 55.6 (October: 56.1), per TipRanks. HPE and Zoom report earnings after the close, per Thrive in Markets."
     },
     {
       "et": "Mon 23 Nov · 11:30am",
@@ -162,7 +163,7 @@
       "event": "New York court hearing on Kalshi",
       "impact": "neutral",
       "key": false,
-      "note": "Justice Melissa Crane hears the New York Attorney General's renewed restraining-order request against Kalshi, per Inside Bitcoins."
+      "note": "Justice Melissa Crane hears the New York Attorney General's renewed restraining-order request, per Inside Bitcoins."
     },
     {
       "et": "Mon 23 Nov · 4:00pm",
@@ -170,7 +171,7 @@
       "event": "New York Fed President John Williams speaks",
       "impact": "neutral",
       "key": false,
-      "note": "The only Fed speaker on this week's calendars, per FXEmpire."
+      "note": "On the economic outlook and monetary policy, per the New York Fed. Thrive in Markets calls him the only scheduled Fed speaker this week."
     },
     {
       "et": "Tue 24 Nov · 10:00am",
@@ -178,15 +179,15 @@
       "event": "Conference Board consumer confidence (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "Expected at 92.1 after 91.7 in October, per FXEmpire. Dell, HP and Workday report earnings after the close."
+      "note": "Expected at 92.5 per Asktraders, about 92 per Thrive in Markets; 91.7 in October. Dell, Workday, Autodesk and HP report after the close, per Asktraders."
     },
     {
       "et": "Wed 25 Nov · 8:30am",
       "bkk": "Wed 25 · 20:30",
-      "event": "US PCE inflation (Oct), Q3 GDP (updated estimate), durable goods and jobless claims",
+      "event": "US PCE inflation (Oct), Q3 GDP (second estimate), durable goods and jobless claims",
       "impact": "volatile",
       "key": true,
-      "note": "Core PCE is expected at 3.2% a year (prior 3.1%), per Newsquawk, which notes Fed Governor Bowman suggested core reached 3.3%. Q3 GDP is expected at 3.5% after 3.4%, durable goods at 0.5% after 1.9%, and weekly jobless claims at 201K after 203K, per FXEmpire."
+      "note": "Core PCE is expected at 3.2% a year (September 3.1%) and headline at 3.8% (September 3.6%), per Asktraders; RBC expects core at 3.3%, per CoinCentral. Q3 GDP is expected at 3.5% per Thrive in Markets or 3.4% per Asktraders. Jobless claims are expected at 201K per Thrive in Markets (prior 203K)."
     },
     {
       "et": "Wed 25 Nov · 2:00pm",
@@ -194,7 +195,7 @@
       "event": "Fed Beige Book",
       "impact": "neutral",
       "key": false,
-      "note": "Per FXEmpire. New home sales come out earlier the same day at 10:00am ET (22:00 Bangkok); 649K is expected after 676K, per FXEmpire."
+      "note": "The last Fed publication before officials go quiet on policy, per Thrive in Markets. New home sales come out at 10:00am ET (22:00 Bangkok); 650K is expected after 676K, per Asktraders."
     },
     {
       "et": "Thu 26 Nov",
@@ -202,7 +203,7 @@
       "event": "Thanksgiving: US stock market closed",
       "impact": "neutral",
       "key": false,
-      "note": "US stock markets are closed; on Friday 27 Nov stocks close early at 1:00pm ET (01:00 Sat Bangkok)."
+      "note": "NYSE is closed Thursday and closes early at 1:00pm ET on Friday 27 Nov (01:00 Sat Bangkok), per NYSE's holiday calendar. Crypto trades through the holiday."
     },
     {
       "et": "Fri 27 Nov · 3:00am",
@@ -210,15 +211,7 @@
       "event": "Monthly bitcoin options expiry on Deribit",
       "impact": "volatile",
       "key": true,
-      "note": "About $6.76 billion of bitcoin options (112,323 BTC) expire, with the \"max pain\" level at $73,000, per Cryptoticker using Deribit data from 21 Nov; CoinOtag (22 Nov) puts it at about $6.6 billion."
-    },
-    {
-      "et": "Mon 30 Nov · after the close",
-      "bkk": "Tue 1 Dec · early morning",
-      "event": "Strategy (MSTR) leaves MSCI indexes at the close",
-      "impact": "volatile",
-      "key": false,
-      "note": "MSCI's removal takes effect at the close of 30 Nov, per 24/7 Wall St."
+      "note": "About $6.76 billion of bitcoin options (112,323 BTC) expire with the \"max pain\" level at $73,000, per Cryptoticker using Deribit data from 21 Nov; KCEX (17 Nov) put it at $6.5 billion with max pain at $75,000."
     },
     {
       "et": "Fri 4 Dec · 8:30am",
@@ -226,7 +219,7 @@
       "event": "US jobs report (Nov)",
       "impact": "volatile",
       "key": false,
-      "note": "Comes out before the Fed's 8-9 Dec meeting."
+      "note": "Per the BLS release schedule; it comes out before the Fed's 8-9 Dec meeting."
     },
     {
       "et": "Tue 8 – Wed 9 Dec",
@@ -234,14 +227,14 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": true,
-      "note": "Fed officials go quiet on policy from Sat 28 Nov. CME FedWatch showed a 93.2% chance of a quarter-point hike, per KuCoin (23 Nov)."
+      "note": "Per the Federal Reserve's calendar; officials' quiet period starts Sat 28 Nov. Odds of a quarter-point hike: more than 95% per CoinDesk, 93.2% per KuCoin (both citing CME FedWatch)."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-23T08:09:58Z",
-    "claimsChecked": 141,
-    "claimsRemoved": 6,
+    "checkedAt": "2026-11-23T12:07:53Z",
+    "claimsChecked": 97,
+    "claimsRemoved": 9,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
