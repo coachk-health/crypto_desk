@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-11-24T11:11:09Z",
+ "generatedAt": "2026-11-24T20:25:19Z",
  "rules": {
-  "version": "v3",
-  "frozenOn": "2026-11-19",
+  "version": "v4",
+  "frozenOn": "2026-11-25",
   "why": "Rules frozen before live trading so the live record is a clean test. Do not change them after seeing live trades; any change becomes v4 with a new date.",
   "setups": [
    {
@@ -11,12 +11,12 @@
    },
    {
     "name": "First insider unlock + falling open interest",
-    "rule": "the token's first-ever insider unlock (under 25%), and Binance futures open interest fell 10% or more from day -15 to day -8"
+    "rule": "the token's first-ever insider unlock (under 25%), and open interest on the exchange we trade fell 10% or more from day -15 to day -8"
    }
   ],
   "skipIf": [
    "price up 30% or more from the open 30 days before the unlock to the open on entry day (day -7)",
-   "the token has no Binance USDT perpetual",
+   "no USDT perpetual on Binance, and none on OKX, Bitget, Gate or Hyperliquid whose price confirms it is the same token",
    "the unlock is not confirmed (date, size or recipients unconfirmed by the project or two independent sources)"
   ],
   "trade": {
@@ -57,7 +57,17 @@
    },
    "source": "research/cs5.py, research/v3_trades.json"
   },
-  "passMark": "After 30 live trades: average above +0.25R. Until then, treat it as a test."
+  "passMark": "After 30 live trades: average above +0.25R. Until then, treat it as a test.",
+  "previous": "data/strategy_v3.json (19 Nov 2026)",
+  "approvedBy": "Coach K in chat, 25 Nov 2026: \"always check where tokens are traded and if they have perps on other exchanges ... so we dont have to skip if we do not need to\"",
+  "changes": [
+   "Same setups, entry, stop, target, exit and size as v3. The only change is where the short is placed.",
+   "A token with no Binance USDT perpetual is no longer skipped if OKX, Bitget, Gate, Hyperliquid, KuCoin or MEXC lists one AND its price confirms it is the same token (within 15% of CoinGecko's price for the token, or within 5% of Binance or another exchange; more than 10x off = a different asset, e.g. a stock perp with the same ticker). Ticker matches alone are not trusted: OKX's 'ADI' is a ~$300 asset, ADI Chain is ~$7.",
+   "Where more than one other exchange qualifies, use the one with the most dollar volume over the last 7 days.",
+   "The open-interest rule uses that exchange's open interest. Only Binance, OKX and Gate publish free open-interest history, so a first insider unlock that trades only on Bitget, Hyperliquid, KuCoin or MEXC is skipped.",
+   "A 'can't short it' skip is only made after Binance, Bybit (via CoinGecko), OKX, Bitget, Gate, Hyperliquid, KuCoin and MEXC have all been checked; if any can't be reached, the token stays on watch and is rechecked. Bybit is a listing check only (no candles), so a Bybit-only token is skipped."
+  ],
+  "evidenceOffBinance": "Thin: the history test found 4 qualifying trades on Bybit/Gate-only tokens (+5.5R in total, research/exchange_test.json). Smaller exchanges can slip more than the 0.5% assumed."
  },
  "picks": [
   {
@@ -72,6 +82,18 @@
    "recipients": "Team ~10.7B (one-year lock ends), early investors ~4.9B (25% of allocation at the one-year cliff), Category Labs treasury ~1.0B (earmarked for future employee compensation).",
    "confidence": "confirmed",
    "source": "https://coinranking.com/news/monad-token-unlock-releases-16-6-billion-mon-november-24",
+   "where": [
+    "Binance",
+    "OKX",
+    "Bitget",
+    "Gate",
+    "Hyperliquid",
+    "KuCoin",
+    "Bybit"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
+   "venue": "binance",
    "symbol": "MONUSDT",
    "pump": -30.7,
    "pumpTo": "2026-11-17",
@@ -110,6 +132,18 @@
    "recipients": "End of the one-year lock: investors ~632.5M and core team & advisors ~470M (25% of each allocation), plus monthly ecosystem ~54.2M and foundation ~20.2M.",
    "confidence": "confirmed",
    "source": "https://dropstab.com/coins/irys/vesting",
+   "where": [
+    "Binance",
+    "OKX",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "MEXC",
+    "Bybit"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
+   "venue": "binance",
    "symbol": "IRYSUSDT",
    "pump": -61.0,
    "pumpTo": "2026-11-18",
@@ -148,6 +182,18 @@
    "recipients": "First release of team & advisors (~160.8M) and private investors (~171.7M) after the 18-month cliff, plus either a Foundation/Protocol Treasury slice (DropsTab ~126.3M) or an LP & Ecosystem slice (tokenomics.com ~146M).",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/huma-finance/unlocks",
+   "where": [
+    "Binance",
+    "OKX",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "MEXC",
+    "Bybit"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
+   "venue": "binance",
    "symbol": "HUMAUSDT",
    "pump": -67.4,
    "pumpTo": "2026-11-18",
@@ -186,6 +232,18 @@
    "recipients": "Foundation ~41.6%, HumidiFi Labs (insiders) ~32.5%, Ecosystem/community allocation ~26.0% (tokenomics.com); one-off six-monthly lump.",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/humidifi/unlocks",
+   "where": [
+    "Binance",
+    "OKX",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "MEXC",
+    "Bybit"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
+   "venue": "binance",
    "symbol": "WETUSDT",
    "pump": -21.5,
    "pumpTo": "2026-11-23",
@@ -205,6 +263,17 @@
    "recipients": "End of 12-month cliffs: first monthly slice for seed/Pre-A investors (~19.68M), core contributors (~3.36M) and foundation treasury (~3.33M), plus the routine monthly ecosystem-incentive release (~3.35M). Split computed from tokenomics.com vesting terms, which sum to the 29.73M figure.",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/cysic",
+   "where": [
+    "Binance",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "MEXC",
+    "Bybit"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
+   "venue": "binance",
    "symbol": "CYSUSDT",
    "pump": -49.1,
    "pumpTo": "2026-11-23",
@@ -226,6 +295,21 @@
    "recipients": "tokenomics.com split for this tranche: Community 40.8%, Foundation 30.6%, Private Investors 22.4%, Insiders 6.2%. Team cliff runs to May 2027 (Phemex), so the 'Insiders' slice is most likely advisors.",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/janction/unlocks",
+   "where": [
+    "Binance",
+    "OKX",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "MEXC"
+   ],
+   "alsoListed": [
+    "Bybit"
+   ],
+   "venueNotes": [
+    "Bybit: can't confirm it's the same token"
+   ],
+   "venue": "binance",
    "symbol": "JCTUSDT",
    "pump": 161.2,
    "pumpTo": "2026-11-03",
@@ -267,6 +351,18 @@
    "recipients": "First release to team & advisors and private investors after the 12-month lock from the 14 Nov 2025 TGE, plus ongoing community, ecosystem/marketing and foundation releases. Pool sizes for this tranche are disputed.",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/pieverse/unlocks",
+   "where": [
+    "Binance",
+    "OKX",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "MEXC",
+    "Bybit"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
+   "venue": "binance",
    "symbol": "PIEVERSEUSDT",
    "pump": 17.9,
    "pumpTo": "2026-11-07",
@@ -308,8 +404,29 @@
    "recipients": "End of the 12-month cliff (TGE 9 Dec 2025) for private investors, team and partnerships (first monthly instalment of 72-month linear vesting each), plus the ongoing monthly Community Fund and Treasury Reserve releases.",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/adi-chain/unlocks",
+   "where": [],
+   "alsoListed": [],
+   "venueNotes": [
+    "Bitget: different asset: price 376.9 vs ~7.27 (the unlock data)",
+    "Gate: different asset: price 376.2 vs ~7.27 (the unlock data)",
+    "Bybit: different asset: price 318.2 vs ~7.27 (the unlock data)"
+   ],
+   "venueCheck": {
+    "at": "2026-11-24 20:25 UTC",
+    "reached": [
+     "Binance (data files)",
+     "OKX",
+     "Bitget",
+     "Gate",
+     "Hyperliquid",
+     "KuCoin",
+     "MEXC",
+     "Bybit (via CoinGecko)"
+    ],
+    "unreachable": []
+   },
    "call": "SKIP",
-   "why": "no Binance USDT perpetual",
+   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other exchange lists the real token (all 8 checked 2026-11-24 20:25 UTC)",
    "practice": null
   }
  ],
