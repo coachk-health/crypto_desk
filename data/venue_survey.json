@@ -1,6 +1,6 @@
 {
  "ran": {
-  "at": "2026-11-24 20:21 UTC",
+  "at": "2026-11-24 20:25 UTC",
   "reached": [
    "Binance (data files)",
    "OKX",
@@ -8,12 +8,10 @@
    "Gate",
    "Hyperliquid",
    "KuCoin",
-   "MEXC"
+   "MEXC",
+   "Bybit (via CoinGecko)"
   ],
-  "unreachable": [],
-  "notChecked": [
-   "Bybit (refuses GitHub's servers)"
-  ]
+  "unreachable": []
  },
  "errors": {},
  "tokens": [
@@ -63,6 +61,15 @@
      "lastClose": 0.001581,
      "qv7": 1888646,
      "match": true
+    },
+    {
+     "venue": "Bybit",
+     "symbol": "JCTUSDT",
+     "listed": true,
+     "lastClose": 0.001,
+     "qv7": null,
+     "match": null,
+     "note": "can't confirm it's the same token"
     }
    ],
    "best": [
@@ -116,6 +123,14 @@
      "listed": true,
      "lastClose": 3.5763,
      "qv7": 11232660,
+     "match": true
+    },
+    {
+     "venue": "Bybit",
+     "symbol": "PIEVERSEUSDT",
+     "listed": true,
+     "lastClose": 2.967,
+     "qv7": null,
      "match": true
     }
    ],
@@ -171,6 +186,14 @@
      "lastClose": 0.01152,
      "qv7": 237959,
      "match": true
+    },
+    {
+     "venue": "Bybit",
+     "symbol": "MONUSDT",
+     "listed": true,
+     "lastClose": 0.01,
+     "qv7": null,
+     "match": true
     }
    ],
    "best": [
@@ -224,6 +247,14 @@
      "listed": true,
      "lastClose": 0.01695,
      "qv7": 4363771,
+     "match": true
+    },
+    {
+     "venue": "Bybit",
+     "symbol": "IRYSUSDT",
+     "listed": true,
+     "lastClose": 0.016,
+     "qv7": null,
      "match": true
     }
    ],
@@ -279,6 +310,14 @@
      "lastClose": 0.008559,
      "qv7": 1148475,
      "match": true
+    },
+    {
+     "venue": "Bybit",
+     "symbol": "HUMAUSDT",
+     "listed": true,
+     "lastClose": 0.008,
+     "qv7": null,
+     "match": true
     }
    ],
    "best": [
@@ -301,7 +340,7 @@
      "lastClose": 376.86,
      "qv7": 291791,
      "match": false,
-     "note": "different asset: price 376.9 vs ~7.27 from the unlock data"
+     "note": "different asset: price 376.9 vs ~7.27 (the unlock data)"
     },
     {
      "venue": "Gate",
@@ -310,7 +349,16 @@
      "lastClose": 376.2,
      "qv7": 3026,
      "match": false,
-     "note": "different asset: price 376.2 vs ~7.27 from the unlock data"
+     "note": "different asset: price 376.2 vs ~7.27 (the unlock data)"
+    },
+    {
+     "venue": "Bybit",
+     "symbol": "ADIUSDT",
+     "listed": true,
+     "lastClose": 318.19,
+     "qv7": null,
+     "match": false,
+     "note": "different asset: price 318.2 vs ~7.27 (the unlock data)"
     }
    ],
    "best": null
@@ -361,6 +409,14 @@
      "lastClose": 0.03826,
      "qv7": 103321,
      "match": true
+    },
+    {
+     "venue": "Bybit",
+     "symbol": "WETUSDT",
+     "listed": true,
+     "lastClose": 0.037,
+     "qv7": null,
+     "match": true
     }
    ],
    "best": [
@@ -406,6 +462,14 @@
      "listed": true,
      "lastClose": 0.0599,
      "qv7": 664957,
+     "match": true
+    },
+    {
+     "venue": "Bybit",
+     "symbol": "CYSUSDT",
+     "listed": true,
+     "lastClose": 0.053,
+     "qv7": null,
      "match": true
     }
    ],
@@ -488,6 +552,14 @@
      "lastClose": 2.4301,
      "qv7": 7457960,
      "match": true
+    },
+    {
+     "venue": "Bybit",
+     "symbol": "LITUSDT",
+     "listed": true,
+     "lastClose": 2.322,
+     "qv7": null,
+     "match": true
     }
    ],
    "best": [
@@ -541,6 +613,14 @@
      "listed": true,
      "lastClose": 0.13124,
      "qv7": 251299,
+     "match": true
+    },
+    {
+     "venue": "Bybit",
+     "symbol": "ALLOUSDT",
+     "listed": true,
+     "lastClose": 0.124,
+     "qv7": null,
      "match": true
     }
    ],
