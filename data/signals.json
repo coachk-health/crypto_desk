@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T10:45:42Z",
+ "generatedAt": "2026-11-24T12:27:55Z",
  "playbook": {
   "entry": -7,
   "exit": 7,
@@ -168,13 +168,13 @@
    "n": 149,
    "tokens": 86,
    "win": 70,
-   "median": 8.4,
+   "median": 8.24,
    "mean": 5.64,
    "best": 74.91,
    "worst": -156.41,
    "profitFactor": 1.83,
-   "totalUsd": 8407,
-   "totalUsdWithoutBest3": 6376
+   "totalUsd": 8400,
+   "totalUsdWithoutBest3": 6370
   }
  },
  "live": {
@@ -2527,9 +2527,9 @@
     "0": -0.34,
     "3": 0.58,
     "7": 7.5,
-    "14": 8.4
+    "14": 7.76
    },
-   "edgeVsRandom": 11.13,
+   "edgeVsRandom": 11.08,
    "priceSource": "coingecko",
    "live": true,
    "check": null,
@@ -2565,7 +2565,7 @@
     "7": 0.42,
     "14": -10.17
    },
-   "edgeVsRandom": 1.61,
+   "edgeVsRandom": 1.66,
    "priceSource": "binance-futures",
    "live": true,
    "check": null,
@@ -2608,7 +2608,7 @@
     "7": 10.22,
     "14": 19.09
    },
-   "edgeVsRandom": -0.14,
+   "edgeVsRandom": -0.17,
    "priceSource": "binance-futures",
    "live": false,
    "check": "unchecked",
@@ -2651,7 +2651,7 @@
     "7": 3.96,
     "14": 10.99
    },
-   "edgeVsRandom": -0.39,
+   "edgeVsRandom": -0.53,
    "priceSource": "binance-futures",
    "live": true,
    "check": "partial",
@@ -2694,7 +2694,7 @@
     "7": -26.2,
     "14": 4.83
    },
-   "edgeVsRandom": -29.36,
+   "edgeVsRandom": -29.41,
    "priceSource": "binance-futures",
    "live": true,
    "check": null,
@@ -2737,7 +2737,7 @@
     "7": -3.61,
     "14": 27.95
    },
-   "edgeVsRandom": -4.87,
+   "edgeVsRandom": -4.88,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -2780,7 +2780,7 @@
     "7": 4.04,
     "14": 10.29
    },
-   "edgeVsRandom": -2.6,
+   "edgeVsRandom": -2.57,
    "priceSource": "binance-futures",
    "live": false,
    "check": "unchecked",
@@ -2823,7 +2823,7 @@
     "7": -29.4,
     "14": -43.97
    },
-   "edgeVsRandom": -28.85,
+   "edgeVsRandom": -28.96,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -2866,7 +2866,7 @@
     "7": 15.28,
     "14": 24.83
    },
-   "edgeVsRandom": 11.55,
+   "edgeVsRandom": 11.5,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -2909,7 +2909,7 @@
     "7": 19.37,
     "14": 28.71
    },
-   "edgeVsRandom": 12.11,
+   "edgeVsRandom": 12.1,
    "priceSource": "binance-futures",
    "live": false,
    "check": "unchecked",
@@ -2952,7 +2952,7 @@
     "7": -17.09,
     "14": -6.77
    },
-   "edgeVsRandom": -21.51,
+   "edgeVsRandom": -21.44,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -2995,7 +2995,7 @@
     "7": 11.37,
     "14": 11.89
    },
-   "edgeVsRandom": 3.8,
+   "edgeVsRandom": 3.79,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3038,7 +3038,7 @@
     "7": 16.28,
     "14": 11.62
    },
-   "edgeVsRandom": 10.23,
+   "edgeVsRandom": 9.97,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3081,7 +3081,7 @@
     "7": 17.93,
     "14": 18.52
    },
-   "edgeVsRandom": 13.39,
+   "edgeVsRandom": 13.35,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -3124,7 +3124,7 @@
     "7": 12.28,
     "14": 30.13
    },
-   "edgeVsRandom": 5.54,
+   "edgeVsRandom": 5.52,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3168,7 +3168,7 @@
     "7": 35.39,
     "14": 39.89
    },
-   "edgeVsRandom": 28.1,
+   "edgeVsRandom": 28.03,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -3211,7 +3211,7 @@
     "7": 8.25,
     "14": 13.54
    },
-   "edgeVsRandom": 5.05,
+   "edgeVsRandom": 5.08,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3254,7 +3254,7 @@
     "7": 4.13,
     "14": 13.15
    },
-   "edgeVsRandom": -1.36,
+   "edgeVsRandom": -1.39,
    "priceSource": "binance-futures",
    "live": false,
    "check": "unchecked",
@@ -3298,7 +3298,7 @@
     "7": 7.9,
     "14": 10.55
    },
-   "edgeVsRandom": -2.71,
+   "edgeVsRandom": -2.73,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3427,7 +3427,7 @@
     "7": -2.21,
     "14": 3.76
    },
-   "edgeVsRandom": -7.8,
+   "edgeVsRandom": -7.98,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -5086,7 +5086,7 @@
     "7": 65.73,
     "14": 66.34
    },
-   "edgeVsRandom": 61.29,
+   "edgeVsRandom": 61.15,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -7453,7 +7453,7 @@
     "7": -5.93,
     "14": -20.31
    },
-   "edgeVsRandom": -7.04,
+   "edgeVsRandom": -7.02,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -9183,7 +9183,7 @@
     "7": -119.95,
     "14": -118.18
    },
-   "edgeVsRandom": -118.81,
+   "edgeVsRandom": -119.33,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",

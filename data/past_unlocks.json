@@ -36906,6 +36906,81 @@
       "scoredAt": "2026-10-26T08:21:58Z"
      },
      "fixNote": "Same seven-pool monthly step as Jun-Sep; not a cliff"
+    },
+    {
+     "date": "2026-11-23",
+     "timeUTC": null,
+     "amountTokens": 20250000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.1373,
+      "investors": 0.0,
+      "community": 0.5743,
+      "ecosystem": 0.2884,
+      "other": 0.0
+     },
+     "sources": [
+      {
+       "label": "CoinGecko SOON page, Tokenomist-fed unlock widget (read 23 Nov 2026): Foundation/Treasury 1.67M, SOON Pill 2.22M, SOON Squad 6.67M, Team & Co-builders 2.78M, Airdrop/Liquidity 520.83K, Community Incentives 2.22M, Ecosystem 4.17M; no date shown; mcap $80.17M, 24h vol $2.68M, circ 339.79M",
+       "url": "https://www.coingecko.com/en/coins/soon-2",
+       "kind": "aggregator",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist SOON tokenomics: next unlock 23 Nov 2026; no amount or time (same feed as the CoinGecko widget, counted as one)",
+       "url": "https://tokenomist.ai/soon-2/tokenomics",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "tokenomics.com SOON unlocks: 23 Nov 2026, 13,575,556 SOON (~$3.4M), Community 67.3% / Insiders 20.5% / Foundation 12.3%; TGE 22 May 2025; monthly 23rd events Apr-Oct 2026 (1 group in Apr, 3 groups from May)",
+       "url": "https://app.tokenomics.com/tokenomics/soon/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "RootData SOON: next unlock 23 Nov 2026 ~13.57M SOON (~$3.58M); same amount Dec 2026 and Jan 2027; fundraising $27M, no round prices",
+       "url": "https://www.rootdata.com/projects/detail/SOON?k=MTM5MzA%3D",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount"
+       ]
+      },
+      {
+       "label": "CMC AI SOON page (21 Nov 2026): cites BTCC weekly report of a $4.41M SOON unlock on 23 Nov",
+       "url": "https://coinmarketcap.com/cmc-ai/soon/price-prediction/",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount"
+       ]
+      },
+      {
+       "label": "DropsTab SOON vesting: next unlock 'tomorrow', 664,336 SOON across 7 allocations (models a daily stream)",
+       "url": "https://dropstab.com/coins/soon/vesting",
+       "kind": "aggregator",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 4.2,
+      "confidence": 62,
+      "scoredAt": "2026-11-24T08:09:43Z"
+     }
     }
    ],
    "gaps": "SOON vests monthly on the 23rd. All ten tranches 23 Dec 2025 to 23 Sep 2026 are included, five with derived amounts. Two phases: 21,876,389 while the NFT-holder airdrop vested (through May 2026, assumed), and 20,242,222 once Team, SOON Pill and Foundation started on 23 Jun 2026. 23 Jun 2026 is SOON's first team (insider) tranche. No investor pool exists; the $22M private round was an NFT sale whose holders got the NFT airdrop, counted as community. SOON Squad and SOON Pill are counted as community, Foundation/Treasury as ecosystem. Exact hours are not published (Bitrue). coingeckoId confirmed on CoinGecko (coingecko.com/en/coins/soon-2).",
