@@ -41,13 +41,15 @@ jobs:
         run: python3 scripts/picks.py
       - name: Keep the permanent log of every unlock shown (data/archive.json)
         run: python3 scripts/archive.py
+      - name: Refresh the morning brief page with today's logged calls (no new snapshot)
+        run: python3 scripts/morning_brief.py --site
       - name: Refresh price checks and setup context
         run: python3 scripts/signals.py --live
       - name: Save and publish
         run: |
           git config user.name "crypto-desk-bot"
           git config user.email "crypto-desk-bot@users.noreply.github.com"
-          git add data/trade_log.json data/signals_live.json data/picks.json data/picks_log.json data/archive.json
+          git add data/trade_log.json data/signals_live.json data/picks.json data/picks_log.json data/archive.json data/brief.json
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "Trade log update $(date -u +%Y-%m-%d\ %H:%M)"
           pushed=0

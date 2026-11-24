@@ -447,6 +447,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     const closed = log.filter(c => (c.result || {}).status === 'closed').sort((a, b) => b.unlockDate.localeCompare(a.unlockDate));
     return el('section', { 'aria-label': 'Picks' }, [
       el('p', { class: 'lead', text: 'Only these unlocks get shorted.' }),
+      (() => { const a = el('a', { href: 'brief.html', text: 'Open the simple morning brief →' }); a.style.cssText = 'display:inline-block;margin:-6px 0 14px;font-size:15px;color:var(--sun)'; return a; })(),
       el('div', { class: 'pk-rule' }, [el('b', { text: 'Take: ' }), 'an unlock adding 25%+ of circulating supply, or a first insider unlock where open interest fell 10%+ the week before. ',
         el('b', { text: 'Skip: ' }), 'price up 30%+ going in, or no Binance perpetual. ',
         el('b', { text: 'Trade: ' }), 'short at the 00:00 UTC open 7 days before the unlock, stop 12% above, target 35% below, out 14 days after. Risk 1% a trade.']),

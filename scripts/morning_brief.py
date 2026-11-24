@@ -5,7 +5,10 @@ Read-only: it uses the frozen v3 rules (data/strategy_v3.json) through scripts/p
 with fresh Binance daily prices and open interest, and the live call log (data/picks_log.json).
 It never writes the desk's files. Run it shortly before 00:00 UTC (07:00 Bangkok), when entries open.
 
-  python3 scripts/morning_brief.py OUTDIR   -> OUTDIR/setups.json, OUTDIR/record.json
+  python3 scripts/morning_brief.py OUTDIR   -> OUTDIR/setups.json, OUTDIR/record.json (for the artifact)
+  python3 scripts/morning_brief.py --site [--snapshot]
+        -> data/brief.json for the brief page (brief.html); with --snapshot also
+           data/briefs/<Bangkok date>.json and data/briefs/index.json (one kept per morning, never deleted)
 """
 import json, sys
 from datetime import date, datetime, timedelta, timezone
@@ -37,7 +40,7 @@ def row(p, section, action, **extra):
     return r
 
 
-def main(outdir):
+def main(outdir, site=False, snapshot=False):
     out = Path(outdir); out.mkdir(parents=True, exist_ok=True)
     now = datetime.now(timezone.utc)
     today = (now + timedelta(hours=7)).date()      # the day whose 00:00 UTC open is the next entry
@@ -105,8 +108,27 @@ def main(outdir):
             "totalR": bt["totalR"], "avgR": bt["avgR"]}]
     (out / "record.json").write_text(json.dumps({"rows": rec, "meta": [{"label": "Live calls", "value": "data/picks_log.json: called once on entry day, never rewritten; late calls not counted."},
                                                                       {"label": "Backtest", "value": "data/strategy_v3.json"}, {"label": "Made", "value": now.strftime("%Y-%m-%d %H:%M UTC")}]}, indent=1))
+    if site:
+        keep = ("token", "name", "setup", "unlockDate", "entryDate", "coverDate", "pctCirculating", "firstInsider", "pump", "oiChange",
+                "call", "why", "lateCall", "entry", "stop", "target", "calledAt")
+        calls = []
+        for c in log["calls"]:
+            x = {k: c.get(k) for k in keep}
+            x["result"] = c.get("result")
+            calls.append(x)
+        calls.sort(key=lambda c: c["entryDate"], reverse=True)
+        brief = {"made": now.strftime("%Y-%m-%d %H:%M UTC"), "day": today.isoformat(), "rules": meta[0]["value"],
+                 "setups": rows, "record": rec, "calls": calls}
+        data = ROOT / "data"
+        (data / "brief.json").write_text(json.dumps(brief, indent=1, ensure_ascii=False) + "\n")
+        if snapshot:
+            d = data / "briefs"; d.mkdir(exist_ok=True)
+            (d / f"{today.isoformat()}.json").write_text(json.dumps(brief, indent=1, ensure_ascii=False) + "\n")
+            days = sorted((f.stem for f in d.glob("20*.json")), reverse=True)
+            (d / "index.json").write_text(json.dumps({"days": days}, indent=1) + "\n")
     print(f"{today}: " + ", ".join(f"{r['section']}:{r['token']}" for r in rows))
 
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else "/tmp/brief")
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    main(args[0] if args else "/tmp/brief", site="--site" in sys.argv, snapshot="--snapshot" in sys.argv)

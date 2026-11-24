@@ -1,0 +1,57 @@
+name: Morning brief
+
+# Builds the morning brief page (brief.html) before the 00:00 UTC open (07:00 Bangkok):
+# what to short today, open shorts, what's coming, and every call with its result.
+# Keeps one snapshot per morning in data/briefs/ (never deleted). Free.
+on:
+  schedule:
+    - cron: "41 23 * * *"
+  push:
+    branches: [main]
+    paths: ["scripts/morning_brief.py", "brief.html"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: trade-log
+  cancel-in-progress: false
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Reuse downloaded exchange candles
+        uses: actions/cache@v4
+        with:
+          path: data/cache/bn
+          key: bn-brief-${{ github.run_id }}
+          restore-keys: |
+            bn-log-
+            bn-
+      - name: Make the brief (frozen v3 rules, read-only)
+        run: python3 scripts/morning_brief.py --site --snapshot
+      - name: Save and publish
+        run: |
+          git config user.name "crypto-desk-bot"
+          git config user.email "crypto-desk-bot@users.noreply.github.com"
+          git add data/brief.json data/briefs
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "Morning brief $(date -u +%Y-%m-%d\ %H:%M)"
+          pushed=0
+          for i in 1 2 3 4; do
+            if git pull --rebase origin main && git push origin HEAD:main; then pushed=1; break; fi
+            git rebase --abort 2>/dev/null || true
+            sleep 8
+          done
+          if [ "$pushed" != "1" ]; then echo "::error::could not push the brief"; exit 1; fi
+          git push --force origin HEAD:gh-pages
+          curl -sS -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true

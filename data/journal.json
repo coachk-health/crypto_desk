@@ -3,6 +3,25 @@
  "entries": [
   {
    "date": "2026-11-25",
+   "title": "Morning brief page on the website",
+   "did": [
+    "Put the morning brief on the GitHub site as its own page (brief.html), linked from the Picks tab: short today, open shorts, coming up, the record, and every call so far with its result.",
+    "A free GitHub job rebuilds it every morning at 23:41 UTC (06:41 Bangkok) and keeps one snapshot per morning in data/briefs/ (pick any past morning from the dropdown). The twice-daily trade-log job also refreshes it with the logged calls."
+   ],
+   "found": [],
+   "decided": [
+    "The website page is the permanent record; the Claude artifact version is optional."
+   ],
+   "files": [
+    "brief.html",
+    "scripts/morning_brief.py",
+    ".github/workflows/brief.yml",
+    "data/brief.json",
+    "data/briefs/"
+   ]
+  },
+  {
+   "date": "2026-11-25",
    "title": "Morning brief dashboard",
    "did": [
     "Built 'Unlock shorts: morning brief' (https://claude.ai/artifact/Mh3h6x2jFDn2q2eeetmrxn): one simple page with what to short today, open shorts with levels, coming-up setups and what each still needs, the record, and the last 30 days of closed trades.",

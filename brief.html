@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unlock shorts: morning brief · Coach K Crypto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/desk.css">
+<style>
+  body { font-family: "Public Sans", system-ui, sans-serif; }
+  .mb { max-width: 900px; margin: 0 auto; padding: 28px 18px 60px; }
+  .mb a { color: inherit; }
+  .mb-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px; }
+  .mb h1 { font-size: 34px; margin: 0; }
+  .mb .sub { color: var(--muted); font-size: 13.5px; margin: 6px 0 4px; }
+  .mb .lead { font-size: 19px; margin: 10px 0 18px; }
+  .mb h2 { font-size: 20px; margin: 30px 0 6px; }
+  .mb .note { color: var(--muted); font-size: 13.5px; margin: 0 0 10px; }
+  .mb .cards { display: grid; gap: 10px; }
+  .mb .card { background: var(--panel); border-radius: 12px; padding: 14px 18px; border-left: 4px solid var(--line); }
+  .mb .card.go { border-left-color: var(--bull); } .mb .card.wait { border-left-color: var(--sun); }
+  .mb .hd { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; }
+  .mb .tok { font-size: 19px; font-weight: 700; }
+  .mb .nm { color: var(--muted); font-size: 13px; }
+  .mb .tag { font-size: 12px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+  .mb .facts { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 8px; font-variant-numeric: tabular-nums; }
+  .mb .facts div { display: flex; flex-direction: column; } .mb .facts .k { color: var(--muted); font-size: 12.5px; }
+  .mb .act { margin: 8px 0 4px; }
+  .mb .chart { font-size: 13px; color: var(--muted); }
+  .mb .good { color: var(--bull); } .mb .bad { color: var(--bear); }
+  .mb .empty { color: var(--muted); margin: 0; }
+  .mb .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+  .mb .tile { background: var(--panel); border-radius: 12px; padding: 14px 18px; }
+  .mb .tile .k { color: var(--muted); font-size: 13px; } .mb .tile .v { font-size: 26px; font-weight: 700; margin-top: 2px; } .mb .tile .n { color: var(--muted); font-size: 13px; }
+  .mb .tw { overflow-x: auto; }
+  .mb table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; font-size: 14px; }
+  .mb th, .mb td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  .mb td.wrap { white-space: normal; min-width: 220px; }
+  .mb th { color: var(--muted); font-weight: 600; font-size: 12.5px; }
+  .mb details { margin-top: 18px; } .mb summary { cursor: pointer; color: var(--muted); }
+  .mb select { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; font-size: 14px; }
+  .mb .old { background: rgba(255, 196, 0, .08); border: 1px solid var(--sun); border-radius: 10px; padding: 8px 12px; margin: 10px 0; font-size: 14px; }
+</style>
+</head>
+<body>
+<main class="mb">
+  <div class="mb-top">
+    <h1>Unlock shorts</h1>
+    <a class="chart" href="./">Full desk →</a>
+  </div>
+  <p class="sub" id="made">Loading…</p>
+  <p class="sub">Morning brief: <select id="day" aria-label="Choose a morning"></select></p>
+  <div id="oldnote" class="old" hidden>You’re looking at an earlier morning. Prices and results below are as they were then.</div>
+  <p class="lead" id="lead"></p>
+
+  <h2>Short today</h2>
+  <p class="note">Entry is the 00:00 UTC open (07:00 Bangkok), 7 days before the unlock. Stop 12% above entry, target 35% below, out 14 days after the unlock. Risk 1% of the account.</p>
+  <div class="cards" id="today"></div>
+
+  <h2>Open shorts</h2>
+  <p class="note">“Short up” means the price is below the entry.</p>
+  <div class="cards" id="open"></div>
+
+  <h2>Coming up</h2>
+  <p class="note">Next three weeks. Each one is decided at its entry-day open.</p>
+  <div class="cards" id="coming"></div>
+
+  <h2>Record</h2>
+  <div class="tiles" id="record"></div>
+
+  <h2>Every call so far</h2>
+  <p class="note">Each call is made once, on its entry day, from what was known before entry, and never changed. Calls made after their entry day are shown but not counted in the record.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Entry</th><th>Token</th><th>Call</th><th>Setup</th><th>Short at</th><th>Stop</th><th>Target</th><th>Result</th><th>Counted</th><th>Why</th></tr></thead>
+    <tbody id="calls"></tbody>
+  </table></div>
+
+  <details>
+    <summary>Skipped this morning, and why</summary>
+    <ul id="skipped"></ul>
+  </details>
+  <details>
+    <summary>The rules</summary>
+    <p id="rules"></p>
+    <p class="note">Rules frozen on 19 Nov 2026 (data/strategy_v3.json). Backtest and research: the Picks and History tabs on the full desk. Past results are not a promise. Not financial advice.</p>
+  </details>
+</main>
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  const day = (s) => s ? new Date(s + 'T00:00:00Z').toLocaleDateString(undefined, { day: 'numeric', month: 'short', timeZone: 'UTC' }) : '–';
+  const pct = (v) => v == null ? '–' : (v > 0 ? '+' : '') + Number(v).toFixed(1) + '%';
+  const r2 = (v) => v == null ? '–' : (v > 0 ? '+' : '') + Number(v).toFixed(2) + 'R';
+  const px = (v) => v == null ? '–' : '$' + (v >= 1 ? Number(v).toLocaleString(undefined, { maximumFractionDigits: 4 }) : Number(v).toPrecision(4));
+  const safe = (u) => typeof u === 'string' && /^https:\/\//.test(u);
+
+  function fact(box, k, v, cls) { const d = el('div'); d.append(el('span', 'k', k), el('span', cls || '', v)); box.appendChild(d); }
+  function card(r, kind) {
+    const c = el('article', 'card ' + kind);
+    const hd = el('div', 'hd'); hd.append(el('span', 'tok', r.token), el('span', 'nm', r.name || ''), el('span', 'tag', r.setup || ''));
+    if (r.lateCall) hd.append(el('span', 'tag', 'called late, not counted'));
+    c.appendChild(hd);
+    const f = el('div', 'facts');
+    fact(f, 'Unlock', day(r.unlockDate)); fact(f, 'Entry', day(r.entryDate));
+    fact(f, 'Size', r.sizePct == null ? 'unknown' : Number(r.sizePct).toFixed(1) + '% of circulating');
+    if (r.section === 'open') {
+      fact(f, 'Short at', px(r.entry)); fact(f, 'Stop', px(r.stop)); fact(f, 'Target', px(r.target)); fact(f, 'Last close', px(r.lastClose));
+      fact(f, 'Short up', pct(r.shortPct), r.shortPct == null ? '' : r.shortPct >= 0 ? 'good' : 'bad');
+    } else {
+      fact(f, 'Price since day −30', pct(r.pumpPct), r.pumpPct != null && r.pumpPct >= 30 ? 'bad' : '');
+      if (r.oiChangePct != null) fact(f, 'Open interest, week', pct(r.oiChangePct));
+      if (r.section === 'coming') fact(f, 'Days to entry', String(r.daysToEntry));
+    }
+    c.appendChild(f);
+    c.appendChild(el('p', 'act', r.action));
+    if (safe(r.chart)) { const a = el('a', 'chart', 'Chart on TradingView'); a.href = r.chart; a.target = '_blank'; a.rel = 'noopener'; c.appendChild(a); }
+    return c;
+  }
+  function fill(id, list, kind, empty) { $(id).replaceChildren(...(list.length ? list.map((r) => card(r, kind)) : [el('p', 'empty', empty)])); }
+
+  function render(B, isOld) {
+    const S = B.setups || [];
+    const by = (s) => S.filter((r) => r.section === s);
+    $('made').textContent = 'Updated ' + B.made + '. Only setups that pass the frozen v3 rules.';
+    $('oldnote').hidden = !isOld;
+    const t = by('today').length, o = by('open').length, cm = by('coming').length;
+    $('lead').textContent = t + (t === 1 ? ' short' : ' shorts') + ' to open today · ' + o + ' open · ' + cm + ' coming up.';
+    fill('today', by('today'), 'go', 'Nothing to short today.');
+    fill('open', by('open'), 'go', 'No open shorts.');
+    fill('coming', by('coming'), 'wait', 'Nothing in the next three weeks passes the rules yet.');
+    $('record').replaceChildren(...(B.record || []).map((r) => {
+      const d = el('div', 'tile');
+      d.append(el('div', 'k', r.label), el('div', 'v', r.avgR == null ? 'no trades yet' : r2(r.avgR) + ' a trade'),
+        el('div', 'n', r.won + ' of ' + r.trades + ' won · ' + r2(r.totalR) + ' total'));
+      return d;
+    }));
+    $('calls').replaceChildren(...(B.calls || []).map((c) => {
+      const tr = el('tr');
+      const res = c.result || {};
+      const result = c.call !== 'TAKE' ? 'skipped' : res.status === 'closed' ? r2(res.R) + ' (' + ({ stop: 'stopped', target: 'target', time: 'day +14' }[res.exit] || res.exit) + ')'
+        : res.openPct != null ? 'open, short ' + pct(res.openPct) : 'open';
+      const cells = [day(c.entryDate), c.token, c.call, (c.setup || '') + (c.pctCirculating != null ? ', ' + Number(c.pctCirculating).toFixed(0) + '%' : ''),
+        px(c.entry), px(c.stop), px(c.target), result, c.call !== 'TAKE' ? '–' : c.lateCall ? 'no (late)' : 'yes', c.why || ''];
+      cells.forEach((v, i) => { const td = el('td', i === 9 ? 'wrap' : '', v); if (i === 7 && res.status === 'closed') td.className = res.R >= 0 ? 'good' : 'bad'; tr.appendChild(td); });
+      return tr;
+    }));
+    const sk = by('skipped');
+    $('skipped').replaceChildren(...(sk.length ? sk.map((r) => { const li = el('li'); li.append(el('b', '', r.token), document.createTextNode(' (unlock ' + day(r.unlockDate) + '): ' + r.action)); return li; }) : [el('li', '', 'None.')]));
+    $('rules').textContent = B.rules || '';
+  }
+
+  const get = (u) => fetch(u + '?t=' + Date.now(), { cache: 'no-store' }).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); });
+  Promise.all([get('data/brief.json'), get('data/briefs/index.json').catch(() => ({ days: [] }))]).then(([B, idx]) => {
+    const sel = $('day');
+    sel.append(new Option('Latest (' + B.day + ')', ''));
+    (idx.days || []).forEach((d) => sel.append(new Option(d, d)));
+    render(B, false);
+    sel.addEventListener('change', () => {
+      if (!sel.value) { render(B, false); return; }
+      get('data/briefs/' + sel.value + '.json').then((O) => render(O, true)).catch(() => { $('lead').textContent = 'Couldn’t load that morning.'; });
+    });
+  }).catch(() => { $('made').textContent = 'The brief hasn’t been made yet. It updates every morning before 07:00 Bangkok.'; });
+})();
+</script>
+</body>
+</html>
