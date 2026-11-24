@@ -1,5 +1,5 @@
 {
- "ran": "2026-11-24 20:02 UTC",
+ "ran": "2026-11-24 20:20 UTC",
  "venues": {
   "binance": {
    "ok": false,
@@ -28,6 +28,14 @@
   "mexc": {
    "ok": true,
    "perps": 1175
+  },
+  "bybit-alt": {
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
+  },
+  "coingecko-bybit": {
+   "ok": true,
+   "perps": 970
   },
   "kucoin": {
    "ok": true,

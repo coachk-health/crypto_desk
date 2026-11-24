@@ -1,0 +1,554 @@
+{
+ "ran": {
+  "at": "2026-11-24 20:21 UTC",
+  "reached": [
+   "Binance (data files)",
+   "OKX",
+   "Bitget",
+   "Gate",
+   "Hyperliquid",
+   "KuCoin",
+   "MEXC"
+  ],
+  "unreachable": [],
+  "notChecked": [
+   "Bybit (refuses GitHub's servers)"
+  ]
+ },
+ "errors": {},
+ "tokens": [
+  {
+   "token": "JCT",
+   "unlock": "2026-11-10",
+   "pct": 10.24,
+   "firstInsider": true,
+   "binance": "binance-futures",
+   "venues": [
+    {
+     "venue": "OKX",
+     "symbol": "JCT-USDT-SWAP",
+     "listed": true,
+     "lastClose": 0.001579,
+     "qv7": 3794310,
+     "match": true
+    },
+    {
+     "venue": "Bitget",
+     "symbol": "JCTUSDT",
+     "listed": true,
+     "lastClose": 0.001581,
+     "qv7": 2940965,
+     "match": true
+    },
+    {
+     "venue": "Gate",
+     "symbol": "JCT_USDT",
+     "listed": true,
+     "lastClose": 0.00158,
+     "qv7": 2576076,
+     "match": true
+    },
+    {
+     "venue": "KuCoin",
+     "symbol": "JCTUSDTM",
+     "listed": true,
+     "lastClose": 0.0015785,
+     "qv7": 856864,
+     "match": true
+    },
+    {
+     "venue": "MEXC",
+     "symbol": "JCT_USDT",
+     "listed": true,
+     "lastClose": 0.001581,
+     "qv7": 1888646,
+     "match": true
+    }
+   ],
+   "best": [
+    "bitget",
+    "JCTUSDT",
+    45
+   ]
+  },
+  {
+   "token": "PIEVERSE",
+   "unlock": "2026-11-14",
+   "pct": null,
+   "firstInsider": true,
+   "binance": "binance-futures",
+   "venues": [
+    {
+     "venue": "OKX",
+     "symbol": "PIEVERSE-USDT-SWAP",
+     "listed": true,
+     "lastClose": 3.5786,
+     "qv7": 239401885,
+     "match": true
+    },
+    {
+     "venue": "Bitget",
+     "symbol": "PIEVERSEUSDT",
+     "listed": true,
+     "lastClose": 3.57298,
+     "qv7": 31025062,
+     "match": true
+    },
+    {
+     "venue": "Gate",
+     "symbol": "PIEVERSE_USDT",
+     "listed": true,
+     "lastClose": 3.5731,
+     "qv7": 29180243,
+     "match": true
+    },
+    {
+     "venue": "KuCoin",
+     "symbol": "PIEVERSEUSDTM",
+     "listed": true,
+     "lastClose": 3.57532,
+     "qv7": 32926122,
+     "match": true
+    },
+    {
+     "venue": "MEXC",
+     "symbol": "PIEVERSE_USDT",
+     "listed": true,
+     "lastClose": 3.5763,
+     "qv7": 11232660,
+     "match": true
+    }
+   ],
+   "best": [
+    "okx",
+    "PIEVERSE-USDT-SWAP",
+    45
+   ]
+  },
+  {
+   "token": "MON",
+   "unlock": "2026-11-24",
+   "pct": 140.3,
+   "firstInsider": true,
+   "binance": "binance-futures",
+   "venues": [
+    {
+     "venue": "OKX",
+     "symbol": "MON-USDT-SWAP",
+     "listed": true,
+     "lastClose": 0.01151,
+     "qv7": 5761658,
+     "match": true
+    },
+    {
+     "venue": "Bitget",
+     "symbol": "MONUSDT",
+     "listed": true,
+     "lastClose": 0.01151,
+     "qv7": 912360,
+     "match": true
+    },
+    {
+     "venue": "Gate",
+     "symbol": "MON_USDT",
+     "listed": true,
+     "lastClose": 0.01151,
+     "qv7": 566053,
+     "match": true
+    },
+    {
+     "venue": "Hyperliquid",
+     "symbol": "MON",
+     "listed": true,
+     "lastClose": 0.011522,
+     "qv7": 4023386,
+     "match": true
+    },
+    {
+     "venue": "KuCoin",
+     "symbol": "MONUSDTM",
+     "listed": true,
+     "lastClose": 0.01152,
+     "qv7": 237959,
+     "match": true
+    }
+   ],
+   "best": [
+    "okx",
+    "MON-USDT-SWAP",
+    45
+   ]
+  },
+  {
+   "token": "IRYS",
+   "unlock": "2026-11-25",
+   "pct": 58.8,
+   "firstInsider": true,
+   "binance": "binance-futures",
+   "venues": [
+    {
+     "venue": "OKX",
+     "symbol": "IRYS-USDT-SWAP",
+     "listed": true,
+     "lastClose": 0.01695,
+     "qv7": 27508020,
+     "match": true
+    },
+    {
+     "venue": "Bitget",
+     "symbol": "IRYSUSDT",
+     "listed": true,
+     "lastClose": 0.01696,
+     "qv7": 9184076,
+     "match": true
+    },
+    {
+     "venue": "Gate",
+     "symbol": "IRYS_USDT",
+     "listed": true,
+     "lastClose": 0.01697,
+     "qv7": 6484888,
+     "match": true
+    },
+    {
+     "venue": "KuCoin",
+     "symbol": "IRYSUSDTM",
+     "listed": true,
+     "lastClose": 0.016943,
+     "qv7": 19799440,
+     "match": true
+    },
+    {
+     "venue": "MEXC",
+     "symbol": "IRYS_USDT",
+     "listed": true,
+     "lastClose": 0.01695,
+     "qv7": 4363771,
+     "match": true
+    }
+   ],
+   "best": [
+    "okx",
+    "IRYS-USDT-SWAP",
+    45
+   ]
+  },
+  {
+   "token": "HUMA",
+   "unlock": "2026-11-26",
+   "pct": 26.47,
+   "firstInsider": true,
+   "binance": "binance-futures",
+   "venues": [
+    {
+     "venue": "OKX",
+     "symbol": "HUMA-USDT-SWAP",
+     "listed": true,
+     "lastClose": 0.008564,
+     "qv7": 22557941,
+     "match": true
+    },
+    {
+     "venue": "Bitget",
+     "symbol": "HUMAUSDT",
+     "listed": true,
+     "lastClose": 0.00857,
+     "qv7": 3400468,
+     "match": true
+    },
+    {
+     "venue": "Gate",
+     "symbol": "HUMA_USDT",
+     "listed": true,
+     "lastClose": 0.00857,
+     "qv7": 1629422,
+     "match": true
+    },
+    {
+     "venue": "KuCoin",
+     "symbol": "HUMAUSDTM",
+     "listed": true,
+     "lastClose": 0.008561,
+     "qv7": 562209,
+     "match": true
+    },
+    {
+     "venue": "MEXC",
+     "symbol": "HUMA_USDT",
+     "listed": true,
+     "lastClose": 0.008559,
+     "qv7": 1148475,
+     "match": true
+    }
+   ],
+   "best": [
+    "okx",
+    "HUMA-USDT-SWAP",
+    45
+   ]
+  },
+  {
+   "token": "ADI",
+   "unlock": "2026-12-09",
+   "pct": 11.75,
+   "firstInsider": true,
+   "binance": null,
+   "venues": [
+    {
+     "venue": "Bitget",
+     "symbol": "ADIUSDT",
+     "listed": true,
+     "lastClose": 376.86,
+     "qv7": 291791,
+     "match": false,
+     "note": "different asset: price 376.9 vs ~7.27 from the unlock data"
+    },
+    {
+     "venue": "Gate",
+     "symbol": "ADI_USDT",
+     "listed": true,
+     "lastClose": 376.2,
+     "qv7": 3026,
+     "match": false,
+     "note": "different asset: price 376.2 vs ~7.27 from the unlock data"
+    }
+   ],
+   "best": null
+  },
+  {
+   "token": "WET",
+   "unlock": "2026-12-09",
+   "pct": 112.7,
+   "firstInsider": false,
+   "binance": "binance-futures",
+   "venues": [
+    {
+     "venue": "OKX",
+     "symbol": "WET-USDT-SWAP",
+     "listed": true,
+     "lastClose": 0.03824,
+     "qv7": 425657,
+     "match": true
+    },
+    {
+     "venue": "Bitget",
+     "symbol": "WETUSDT",
+     "listed": true,
+     "lastClose": 0.03803,
+     "qv7": 163473,
+     "match": true
+    },
+    {
+     "venue": "Gate",
+     "symbol": "WET_USDT",
+     "listed": true,
+     "lastClose": 0.03792,
+     "qv7": 20429,
+     "match": true
+    },
+    {
+     "venue": "KuCoin",
+     "symbol": "WETUSDTM",
+     "listed": true,
+     "lastClose": 0.0382,
+     "qv7": 1022456,
+     "match": true
+    },
+    {
+     "venue": "MEXC",
+     "symbol": "WET_USDT",
+     "listed": true,
+     "lastClose": 0.03826,
+     "qv7": 103321,
+     "match": true
+    }
+   ],
+   "best": [
+    "kucoin",
+    "WETUSDTM",
+    45
+   ]
+  },
+  {
+   "token": "CYS",
+   "unlock": "2026-12-11",
+   "pct": 18.49,
+   "firstInsider": true,
+   "binance": "binance-futures",
+   "venues": [
+    {
+     "venue": "Bitget",
+     "symbol": "CYSUSDT",
+     "listed": true,
+     "lastClose": 0.05982,
+     "qv7": 1383670,
+     "match": true
+    },
+    {
+     "venue": "Gate",
+     "symbol": "CYS_USDT",
+     "listed": true,
+     "lastClose": 0.0599,
+     "qv7": 254321,
+     "match": true
+    },
+    {
+     "venue": "KuCoin",
+     "symbol": "CYSUSDTM",
+     "listed": true,
+     "lastClose": 0.0599,
+     "qv7": 45083,
+     "match": true
+    },
+    {
+     "venue": "MEXC",
+     "symbol": "CYS_USDT",
+     "listed": true,
+     "lastClose": 0.0599,
+     "qv7": 664957,
+     "match": true
+    }
+   ],
+   "best": [
+    "bitget",
+    "CYSUSDT",
+    45
+   ]
+  },
+  {
+   "token": "KNTQ",
+   "unlock": "2026-12-27",
+   "pct": null,
+   "firstInsider": true,
+   "binance": null,
+   "venues": [
+    {
+     "venue": "MEXC",
+     "symbol": "KNTQ_USDT",
+     "listed": true,
+     "lastClose": 0.1702,
+     "qv7": 140712,
+     "match": null,
+     "note": "can't confirm it's the same token"
+    }
+   ],
+   "best": null
+  },
+  {
+   "token": "LIT",
+   "unlock": "2026-12-27",
+   "pct": 5.56,
+   "firstInsider": true,
+   "binance": "binance-futures",
+   "venues": [
+    {
+     "venue": "OKX",
+     "symbol": "LIT-USDT-SWAP",
+     "listed": true,
+     "lastClose": 2.4304,
+     "qv7": 56734263,
+     "match": true
+    },
+    {
+     "venue": "Bitget",
+     "symbol": "LITUSDT",
+     "listed": true,
+     "lastClose": 2.432,
+     "qv7": 1544137,
+     "match": true
+    },
+    {
+     "venue": "Gate",
+     "symbol": "LIT_USDT",
+     "listed": true,
+     "lastClose": 2.431,
+     "qv7": 3164423,
+     "match": true
+    },
+    {
+     "venue": "Hyperliquid",
+     "symbol": "LIT",
+     "listed": true,
+     "lastClose": 2.4291,
+     "qv7": 23518429,
+     "match": true
+    },
+    {
+     "venue": "KuCoin",
+     "symbol": "LITUSDTM",
+     "listed": true,
+     "lastClose": 2.4225,
+     "qv7": 898330,
+     "match": true
+    },
+    {
+     "venue": "MEXC",
+     "symbol": "LIT_USDT",
+     "listed": true,
+     "lastClose": 2.4301,
+     "qv7": 7457960,
+     "match": true
+    }
+   ],
+   "best": [
+    "okx",
+    "LIT-USDT-SWAP",
+    45
+   ]
+  },
+  {
+   "token": "ALLO",
+   "unlock": "2027-05-11",
+   "pct": 57.67,
+   "firstInsider": false,
+   "binance": "binance-futures",
+   "venues": [
+    {
+     "venue": "OKX",
+     "symbol": "ALLO-USDT-SWAP",
+     "listed": true,
+     "lastClose": 0.13131,
+     "qv7": 5337148,
+     "match": true
+    },
+    {
+     "venue": "Bitget",
+     "symbol": "ALLOUSDT",
+     "listed": true,
+     "lastClose": 0.13117,
+     "qv7": 388918,
+     "match": true
+    },
+    {
+     "venue": "Gate",
+     "symbol": "ALLO_USDT",
+     "listed": true,
+     "lastClose": 0.13097,
+     "qv7": 139495,
+     "match": true
+    },
+    {
+     "venue": "KuCoin",
+     "symbol": "ALLOUSDTM",
+     "listed": true,
+     "lastClose": 0.13129,
+     "qv7": 7328593,
+     "match": true
+    },
+    {
+     "venue": "MEXC",
+     "symbol": "ALLO_USDT",
+     "listed": true,
+     "lastClose": 0.13124,
+     "qv7": 251299,
+     "match": true
+    }
+   ],
+   "best": [
+    "kucoin",
+    "ALLOUSDTM",
+    45
+   ]
+  }
+ ]
+}
