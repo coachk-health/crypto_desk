@@ -2,8 +2,9 @@
 """Where a token's USDT perpetual trades, and its daily candles / open interest off Binance.
 
 Free public APIs only (no keys). From GitHub's servers these answer: OKX, Bitget, Gate, Hyperliquid,
-KuCoin, MEXC (tested 24 Nov 2026, data/venue_probe.json). Bybit and Binance's live API refuse
-GitHub's servers, so Bybit is not checked and Binance is read from its free data files (candles.py).
+KuCoin, MEXC and CoinGecko (tested 24 Nov 2026, data/venue_probe.json). Bybit and Binance's live API
+refuse GitHub's servers: Binance is read from its free data files (candles.py), and Bybit's perp list
+and last prices come from CoinGecko's derivatives page for Bybit (listing check only, no candles).
 
 A ticker match is not proof it is the same token (OKX's "ADI" is a ~$300 asset; ADI Chain is ~$7).
 So a venue is only used when its price agrees with Binance or another venue (within 5%), or with the
@@ -20,6 +21,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / "data" / "cache" / "venues"
+CHECKED = ("okx", "bitget", "gate", "hyperliquid", "kucoin", "mexc", "bybit")
 NAMES = {"binance": "Binance", "okx": "OKX", "bitget": "Bitget", "gate": "Gate", "hyperliquid": "Hyperliquid",
          "kucoin": "KuCoin", "mexc": "MEXC", "bybit": "Bybit"}
 PRICED = ("okx", "bitget", "gate", "hyperliquid", "kucoin", "mexc")
@@ -73,6 +75,17 @@ def _list(v):
     if v == "mexc":
         d = _get("https://contract.mexc.com/api/v1/contract/detail")["data"]
         return {i["baseCoin"]: i["symbol"] for i in d if i.get("quoteCoin") == "USDT" and i.get("state") == 0}
+    if v == "bybit":
+        d = _get("https://api.coingecko.com/api/v3/derivatives/exchanges/bybit?include_tickers=unexpired").get("tickers") or []
+        out = {}
+        for t in d:
+            if (t.get("contract_type") or "perpetual") != "perpetual" or (t.get("target") or "USDT") != "USDT":
+                continue
+            b = t.get("base") or (t.get("symbol") or "").replace("USDT", "")
+            if b and t.get("last"):
+                out[b] = t.get("symbol") or b + "USDT"
+                out.setdefault("__last__", {})[b] = float(t["last"])
+        return out
     raise ValueError(v)
 
 
@@ -107,7 +120,7 @@ def symbol_for(v, token):
     if not L:
         return None
     for t in (token, "1000" + token, "k" + token):
-        if t in L:
+        if t in L and not t.startswith("__"):
             return L[t], (1000.0 if t != token else 1.0)
     return None
 
@@ -195,6 +208,22 @@ def oi_day(v, sym, d):
 
 
 # ---------- choose a venue ----------
+_cg = {}
+
+
+def cg_price(cid):
+    """CoinGecko's current USD price for the token's own CoinGecko id: the best 'is it the same token' check."""
+    if not cid:
+        return None
+    if cid not in _cg:
+        try:
+            _cg[cid] = float(_get(f"https://api.coingecko.com/api/v3/simple/price?ids={cid}&vs_currencies=usd")[cid]["usd"])
+        except Exception:
+            _cg[cid] = None
+        time.sleep(2)
+    return _cg[cid]
+
+
 def implied_price(r):
     try:
         return r["usdM"] * 1e6 / r["amountTokens"] if r.get("usdM") and r.get("amountTokens") else None
@@ -209,7 +238,9 @@ def _close(d):
 def survey(token, r, start, end, binance_days=None):
     """Every venue: is there a USDT perp, is it the same token, recent daily volume.
     Returns (rows, best) where best = (venue, symbol, days) of the most liquid confirmed priced venue, or None."""
-    ref = implied_price(r)
+    cg = cg_price(r.get("coingeckoId"))
+    ref = cg or implied_price(r)
+    refname = "CoinGecko's price" if cg else "the unlock data"
     got = {}
     for v in PRICED:
         sym, d = days(v, token, start, end)
@@ -219,7 +250,7 @@ def survey(token, r, start, end, binance_days=None):
     if binance_days:
         closes["binance"] = _close(binance_days)
     rows = []
-    for v in ("okx", "bitget", "gate", "hyperliquid", "kucoin", "mexc"):
+    for v in CHECKED:
         L = perp_list(v)
         if L is None:
             rows.append({"venue": NAMES[v], "listed": None, "note": "could not reach"})
@@ -228,11 +259,13 @@ def survey(token, r, start, end, binance_days=None):
         if not s:
             continue
         row = {"venue": NAMES[v], "symbol": s[0], "listed": True}
-        if v in got:
-            sym, d = got[v]
-            c = closes.get(v)
+        if v in got or v == "bybit":
+            sym, d = got.get(v) or (s[0], {})
+            c = closes.get(v) if v != "bybit" else (L.get("__last__") or {}).get(token)
+            if v == "bybit":
+                d = {"last": {"c": c, "qv": 0}} if c else {}
             row["lastClose"] = c
-            row["qv7"] = round(statistics.mean(b["qv"] for b in [d[k] for k in sorted(d)[-7:]])) if d else None
+            row["qv7"] = round(statistics.mean(b["qv"] for b in [d[k] for k in sorted(d)[-7:]])) if d and v != "bybit" else None
             # a stock ticker shared with the token: only Binance or the unlock data can confirm it
             others = [x for k, x in closes.items() if k != v and x and (k == "binance" or token not in tradfi())]
             agree = any(abs(c / x - 1) <= 0.05 for x in others) if c else False
@@ -240,15 +273,15 @@ def survey(token, r, start, end, binance_days=None):
             if not d:
                 row["match"], row["note"] = None, "no candles"
             elif ratio and (ratio < 0.1 or ratio > 10):   # far off the token's own price: never trust agreement
-                row["match"], row["note"] = False, f"different asset: price {c:.4g} vs ~{ref:.4g} from the unlock data"
-            elif agree or (ratio and 0.5 <= ratio <= 2.0):
+                row["match"], row["note"] = False, f"different asset: price {c:.4g} vs ~{ref:.4g} ({refname})"
+            elif agree or (ratio and ((0.85 <= ratio <= 1.15) if cg else (0.5 <= ratio <= 2.0))):
                 row["match"] = True
             else:
                 row["match"], row["note"] = None, "can't confirm it's the same token"
         else:
             row["match"], row["note"] = None, "no UTC daily candles"
         rows.append(row)
-    ok = [x for x in rows if x.get("match") is True and len(got[_key(x["venue"])][1]) >= 20]
+    ok = [x for x in rows if x.get("match") is True and _key(x["venue"]) in got and len(got[_key(x["venue"])][1]) >= 20]
     best = None
     if ok:
         x = max(ok, key=lambda x: x.get("qv7") or 0)
@@ -273,9 +306,8 @@ def trade_link(v, sym):
 def checked():
     """Which venues answered in this run (the proof behind a 'no perp anywhere' skip)."""
     return {"at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-            "reached": ["Binance (data files)"] + [NAMES[v] for v in PRICED if _lists.get(v) is not None],
-            "unreachable": [NAMES[v] for v in PRICED if v in _lists and _lists[v] is None],
-            "notChecked": ["Bybit (refuses GitHub's servers)"]}
+            "reached": ["Binance (data files)"] + [NAMES[v] + (" (via CoinGecko)" if v == "bybit" else "") for v in CHECKED if _lists.get(v) is not None],
+            "unreachable": [NAMES[v] for v in CHECKED if v in _lists and _lists[v] is None]}
 
 
 def errors():

@@ -129,13 +129,17 @@ def check(r, today):
             # a "can't short it" skip needs every exchange checked; until then it stays on watch
             p.update(call="WATCH", why="no Binance perp, and couldn't reach " + ", ".join(down) + " to check; will retry")
             return p
-        why = ("can't short it: no USDT perp on Binance, OKX, Bitget, Gate, Hyperliquid, KuCoin or MEXC (all checked "
-               + p["venueCheck"]["at"] + "; Bybit can't be checked from the server)")
-        if unsure:
-            why = "no Binance perp; can't confirm the " + " / ".join(unsure) + " perp is the same token"
+        why = ("can't short it: no USDT perp on Binance, Bybit, OKX, Bitget, Gate, Hyperliquid, KuCoin or MEXC (all checked "
+               + p["venueCheck"]["at"] + ")")
+        if any(x["venue"] == "Bybit" and x.get("match") is True for x in rows):
+            why = ("only Bybit has a perp, and the server can't get Bybit's candles to run the rules (Bybit refuses GitHub's servers), "
+                   "so no call; check it by hand if you want it")
+        elif unsure:
+            why = ("can't short it safely: no Binance perp, and the " + " / ".join(unsure) + " perp can't be confirmed as the same token "
+                   "(its price doesn't match CoinGecko's, or there's too little price history)")
         elif wrong:
             why = ("can't short it: no Binance perp, and " + " / ".join(wrong) + f"'s {r['token']} is a different asset (price doesn't match); "
-                   "the other exchanges don't list it (checked " + p["venueCheck"]["at"] + "; Bybit can't be checked from the server)")
+                   "no other exchange lists the real token (all 8 checked " + p["venueCheck"]["at"] + ")")
         p.update(call="SKIP", why=why)
         return p
     p["symbol"] = sym
@@ -154,7 +158,7 @@ def check(r, today):
         reasons.append(f"pumped {p['pump']:+.0f}% into the unlock")
     if not big:
         if p.get("oiChange") is None:
-            if p["venue"] in ("bitget", "hyperliquid"):
+            if p["venue"] in ("bitget", "hyperliquid", "kucoin", "mexc"):
                 reasons.append(f"no open-interest history on {venues.NAMES[p['venue']]}")
             else:
                 reasons.append("open interest not available yet" if not entered else "no open-interest data")

@@ -118,7 +118,7 @@
     c.appendChild(el('p', 'act', r.action));
     const w = (r.where || []).join(', ');
     const also = (r.alsoListed || []).length ? ' · also listed: ' + r.alsoListed.join(', ') : '';
-    c.appendChild(el('p', 'chart', (w ? 'Perps on: ' + w : 'No confirmed perp') + also + '. Bybit not checked.'));
+    c.appendChild(el('p', 'chart', (w ? 'Perps on: ' + w : 'No confirmed perp') + also + '.'));
     if (safe(r.chart)) { const a = el('a', 'chart', r.chartLabel || 'Chart on TradingView'); a.href = r.chart; a.target = '_blank'; a.rel = 'noopener'; c.appendChild(a); }
     return c;
   }

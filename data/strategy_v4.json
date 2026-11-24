@@ -60,10 +60,10 @@
  "approvedBy": "Coach K in chat, 25 Nov 2026: \"always check where tokens are traded and if they have perps on other exchanges ... so we dont have to skip if we do not need to\"",
  "changes": [
   "Same setups, entry, stop, target, exit and size as v3. The only change is where the short is placed.",
-  "A token with no Binance USDT perpetual is no longer skipped if OKX, Bitget, Gate or Hyperliquid lists one AND its price confirms it is the same token (within 5% of Binance or another exchange, or within 2x of the unlock record's implied price). Ticker matches alone are not trusted: OKX's 'ADI' is a ~$300 asset, ADI Chain is ~$7.",
+  "A token with no Binance USDT perpetual is no longer skipped if OKX, Bitget, Gate, Hyperliquid, KuCoin or MEXC lists one AND its price confirms it is the same token (within 15% of CoinGecko's price for the token, or within 5% of Binance or another exchange; more than 10x off = a different asset, e.g. a stock perp with the same ticker). Ticker matches alone are not trusted: OKX's 'ADI' is a ~$300 asset, ADI Chain is ~$7.",
   "Where more than one other exchange qualifies, use the one with the most dollar volume over the last 7 days.",
-  "The open-interest rule uses that exchange's open interest. Only Binance, OKX and Gate publish free open-interest history, so a first insider unlock that trades only on Bitget or Hyperliquid is skipped.",
-  "Bybit is not checked automatically (it refuses GitHub's servers). KuCoin and MEXC are shown as 'also listed' but not priced."
+  "The open-interest rule uses that exchange's open interest. Only Binance, OKX and Gate publish free open-interest history, so a first insider unlock that trades only on Bitget, Hyperliquid, KuCoin or MEXC is skipped.",
+  "A 'can't short it' skip is only made after Binance, Bybit (via CoinGecko), OKX, Bitget, Gate, Hyperliquid, KuCoin and MEXC have all been checked; if any can't be reached, the token stays on watch and is rechecked. Bybit is a listing check only (no candles), so a Bybit-only token is skipped."
  ],
  "evidenceOffBinance": "Thin: the history test found 4 qualifying trades on Bybit/Gate-only tokens (+5.5R in total, research/exchange_test.json). Smaller exchanges can slip more than the 0.5% assumed."
 }
