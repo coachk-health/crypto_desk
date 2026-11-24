@@ -3,6 +3,26 @@
  "entries": [
   {
    "date": "2026-11-25",
+   "title": "Desk update (02:52 Bangkok run)",
+   "did": [
+    "Refreshed news.json: lead is bitcoin slipping back below $60,000 on the WSJ-reported tariff plan and a chip-stock sell-off (ETF outflows $569.7M on 23 Nov, record $4.71B for November); story 2 is consumer confidence (103.3) ahead of Wednesday's October PCE; new story 3 is Utah moving to drop criminal charges against Kalshi. South Korea's bill moved to the briefs. 8 briefs (new: Krak credit cards, BTCS ETH sale, BlackRock HK tokenized fund, Rialto raise, Europol IPTV trace, MSTR low), 11 calendar rows.",
+    "119 claims checked over 2 rounds, 8 removed, 1 corrected; unlock research skipped (last checked under 24h ago), scores refreshed."
+   ],
+   "found": [
+    "CoinMarketCap and Binance agreed on BTC near $59,500-59,650 but disagreed on 24h changes and on ether/solana, so only the BTC price was kept; CoinGecko's page returned a stale-looking $27,408 and was ignored.",
+    "Unconfirmed release times (jobless claims, new home sales, the 08:00 UTC options expiry time) and the '14 other economies' tariff count were removed; Tuesday's ETF flows were not yet published."
+   ],
+   "decided": [
+    "Dropped the hike-odds percentage because no source opened this run gave current odds; story 2 cites Oxford Economics' 25bp call instead."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-25",
    "title": "Morning brief page on the website",
    "did": [
     "Put the morning brief on the GitHub site as its own page (brief.html), linked from the Picks tab: short today, open shorts, coming up, the record, and every call so far with its result.",
