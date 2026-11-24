@@ -3,6 +3,27 @@
   "entries": [
     {
       "date": "2026-11-24",
+      "title": "Desk update (18:52 Bangkok run)",
+      "did": [
+        "Refreshed news.json: lead is bitcoin slipping below $60,000 as the Nvidia bounce faded and liquidations tripled; Fed hike odds now 97.8% before Wednesday's PCE; South Korea draft law updated with CoinDesk and The Block detail; 8 briefs (new: Sky stUSDS pool, Ethereum Foundation security team, Coinbase TerraUSD case), 12 calendar rows.",
+        "121 claims checked over 2 rounds, 24 removed; unlock research skipped (last checked under 24h ago), scores refreshed."
+      ],
+      "found": [
+        "Ether and Solana prices taken from CoinDesk and Unchained because CoinMarketCap/CoinGecko pages for them could not be opened; Solana's 24h change not confirmed.",
+        "Fear & Greed differs: 9 on CoinMarketCap, 11 on Alternative.me.",
+        "OKX options-expiry page and the SEC Strategy filing could not be reopened, so those figures now cite Zerocap/CryptoTicker and The Block."
+      ],
+      "decided": [
+        "Dropped the week-old Grayscale 'oversold' brief and the unsupported 'crypto trades through the holiday' and 'tech stock' wording."
+      ],
+      "files": [
+        "data/news.json",
+        "data/unlocks.json",
+        "data/journal.json"
+      ]
+    },
+    {
+      "date": "2026-11-24",
       "title": "Desk update (14:52 Bangkok run)",
       "did": [
         "Refreshed news.json: new lead on bitcoin fading toward $60,000 with ETF outflows, Fed hike odds before Wednesday's PCE, and South Korea's draft crypto law; 6 briefs, 12 calendar rows.",
