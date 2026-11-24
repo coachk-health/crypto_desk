@@ -1,96 +1,91 @@
 {
   "date": "2026-11-24",
-  "updated": "2026-11-24T00:13:06Z",
-  "headline": "US stocks rallied sharply on Jensen Huang's return to Nvidia, but bitcoin gave back its early jump and ended Monday roughly flat near $61,000, with a Fed rate hike still expected in December.",
+  "updated": "2026-11-24T04:24:58Z",
+  "headline": "Asian stocks soared on Jensen Huang's return to Nvidia, but bitcoin did not follow, with traders waiting for Wednesday's US inflation data and a likely December Fed rate hike.",
   "market": {
-    "asOf": "Read about 23:55-00:00 UTC Mon 23 Nov (6:55pm ET; 06:55 Tue Bangkok). BTC from The Motley Fool's early-evening ET reading; ETH and SOL from CoinMarketCap. Use the live prices on this page.",
+    "asOf": "Read from the CoinMarketCap home page about 04:23 UTC Tue 24 Nov (11:23pm ET Mon; 11:23 Bangkok). CoinMarketCap's Solana page showed $73.48 at the same time. Use the live prices on this page.",
     "btc": {
-      "price": 61213,
-      "chg24h": 0.1
+      "price": 61224,
+      "chg24h": 0.9
     },
     "eth": {
-      "price": 1708,
-      "chg24h": -0.7
+      "price": 1720,
+      "chg24h": 1.0
     },
     "sol": {
-      "price": 73.5,
-      "chg24h": 4.3
+      "price": 72.02,
+      "chg24h": 2.5
     },
-    "fearGreed": "9 out of 100 on CoinMarketCap's Crypto Fear and Greed Index, read about 00:00 UTC Tue 24 Nov."
+    "fearGreed": "9 out of 100 on CoinMarketCap's Crypto Fear and Greed Index, read about 04:20 UTC Tue 24 Nov."
   },
   "stories": [
     {
-      "title": "Wall Street has a historic rally on Nvidia's CEO news, and bitcoin sits it out",
+      "title": "Asia piles into the Nvidia rally, but bitcoin sits it out",
       "mood": "volatile",
-      "summary": "Nvidia's board reinstated Jensen Huang as CEO and US stocks soared on Monday. Bitcoin jumped early in the day but could not hold it and finished the US session roughly where it started. Traders said the jump was short sellers being forced out, not new buyers.",
+      "summary": "Asian stock markets jumped on Tuesday after Nvidia's board brought back Jensen Huang as CEO and Wall Street had one of its best days in years. Bitcoin did not join in: it faded from Monday's high back toward $61,000. Monday's jump was mostly traders who had bet on a fall being forced to close out, not new buyers.",
       "points": [
-        "The Dow closed up 1,147 points (3.0%), the S&P 500 rose 4.7% and the Nasdaq 6.5%; Nvidia shares closed up more than 31%, per ABC News.",
-        "Bitcoin reached $64,603 on Monday before falling back toward $61,500, per crypto.news.",
-        "By early evening ET bitcoin was about $61,213, up only 0.08% on the day, per The Motley Fool.",
-        "\"Short squeeze ended and no spot bid during the market open to sustain price,\" one trader told crypto.news.",
-        "Over the weekend bitcoin fell to $55,106, 37% below its September peak, per CoinDesk."
+        "Taiwan's Taiex rose more than 9%, South Korea's Kospi 6.5% to 5,014.41 and Japan's Nikkei 3.9% to 58,654.40 on Tuesday, per the Associated Press.",
+        "On Monday the S&P 500 had its best day since April 2025, per the Associated Press; it rose 4.7% to 7,237.17 and the Nasdaq 6.51%, per The Motley Fool.",
+        "Bitcoin reached $64,603 on Monday before fading back toward $61,000, per crypto.news and Bitcoin Magazine.",
+        "About $321 million of bitcoin bets were wiped out on Monday, $224 million of them bets on a fall, per Bitcoin Magazine."
       ],
       "sources": [
         {
-          "label": "ABC News: stock market rebounds sharply",
-          "url": "https://abcnews.com/amp/Business/stock-market-rebounds-sharply-after-selloff/story?id=138373790"
+          "label": "AP via WSLS: Asian stocks rally as Huang returns",
+          "url": "https://www.wsls.com/business/2026/11/24/asian-stocks-rally-after-wall-street-rebound-as-jensen-huang-returns-as-nvidias-ceo/"
+        },
+        {
+          "label": "The Motley Fool via Yahoo Finance: crypto market today, 23 Nov",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/crypto-market-today-nov-23-221502833.html"
         },
         {
           "label": "crypto.news: bitcoin rally fades",
           "url": "https://crypto.news/bitcoin-rally-fades-short-squeeze-64k/"
         },
         {
-          "label": "The Motley Fool: crypto market today, 23 Nov",
-          "url": "https://www.fool.com/coverage/stock-market-today/2026/11/23/crypto-market-today-nov-23-bitcoin-sits-out-wall-street-s-historic-rally-as-usd1-8-billion-etf-exodus-weighs-on-prices/"
-        },
-        {
-          "label": "CoinDesk: bitcoin breaks a record streak of lower highs",
-          "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-breaks-a-record-streak-of-lower-highs-here-s-what-it-means"
+          "label": "Bitcoin Magazine: bitcoin fades to $61,000",
+          "url": "https://bitcoinmagazine.com/markets/bitcoin-price-fades-61000-huang"
         }
       ]
     },
     {
-      "title": "Fed's Williams keeps a rate hike on the table as money leaves bitcoin funds",
+      "title": "Fed's Williams won't rule out back-to-back hikes as money keeps leaving bitcoin funds",
       "mood": "bearish",
-      "summary": "New York Fed President John Williams said on Monday that the Fed needs to do more to bring inflation down, and would not rule out hikes at back-to-back meetings. Traders already expect a December hike. Meanwhile US spot bitcoin funds keep losing money, and October inflation data lands on Wednesday.",
+      "summary": "New York Fed President John Williams said on Monday he is not ruling out raising rates at two meetings in a row to fight inflation. Traders see a December hike as very likely. US spot bitcoin funds have lost money for four weeks running, and October inflation data lands on Wednesday.",
       "points": [
-        "Williams said \"further action is necessary\" to get inflation back to 2%, per KuCoin, but \"I don't think the situation calls for dramatic action,\" per AOL.",
-        "\"I'm not excluding options,\" Williams said after his speech, adding that he would not rule out moving at back-to-back meetings if needed, per investingLive.",
-        "More than 95% of traders expected a quarter-point hike in December, per CoinDesk's week-ahead report on 23 Nov.",
-        "US spot bitcoin funds lost $1.79 billion in the week to 20 Nov, and $4.137 billion over 15 trading days, per crypto.news.",
-        "October PCE inflation is out Wed 25 Nov at 8:30am ET (20:30 Bangkok); see the calendar below."
+        "Williams said he expects inflation of about 3.5% at the end of 2026 and a return to 2% only by 2028, per KuCoin.",
+        "CME FedWatch put the chance of a quarter-point hike in December at 93.2% on 23 Nov, down from as high as 99% earlier, per KuCoin.",
+        "US spot bitcoin funds lost $1.79 billion last week, their fourth weekly outflow in a row; BlackRock's IBIT accounted for $1.37 billion, per The Block (23 Nov).",
+        "Ether funds lost $314 million over the same week, their eighth negative week in a row, per The Block.",
+        "October PCE inflation and the second estimate of Q3 GDP are out Wed 25 Nov at 8:30am ET (20:30 Bangkok); see the calendar below."
       ],
       "sources": [
         {
-          "label": "KuCoin: Williams says Fed must take further action",
-          "url": "https://www.kucoin.com/news/flash/williams-says-fed-must-take-further-action-to-return-inflation-to-2"
+          "label": "KuCoin: Williams signals openness to consecutive hikes",
+          "url": "https://www.kucoin.com/news/flash/fed-s-williams-signals-openness-to-consecutive-rate-hikes-citing-inflation-risks"
         },
         {
-          "label": "AOL: Fed's Williams on the path forward",
-          "url": "https://www.aol.com/articles/feds-williams-fed-must-forward-212531000.html"
+          "label": "KuCoin: December hike probability drops to 93.2%",
+          "url": "https://www.kucoin.com/news/flash/fed-s-december-25-basis-point-rate-hike-probability-drops-to-93-2"
         },
         {
-          "label": "investingLive: Williams won't rule out back-to-back hikes",
-          "url": "https://investinglive.com/central-banks/fed-s-williams-won-t-rule-out-back-to-back-rate-hikes-as-data-drives-the-path/"
+          "label": "The Block: spot bitcoin ETFs shed $1.79 billion",
+          "url": "https://www.theblock.co/news/markets/2026-11-23-spot-bitcoin-etfs-shed-1-79-billion-in-past-week-444857"
         },
         {
           "label": "CoinDesk: crypto week ahead",
           "url": "https://www.coindesk.com/markets/2026/11/23/u-s-inflation-thanksgiving-trading-crypto-week-ahead"
-        },
-        {
-          "label": "crypto.news: bitcoin rally fades",
-          "url": "https://crypto.news/bitcoin-rally-fades-short-squeeze-64k/"
         }
       ]
     },
     {
       "title": "US moves to seize $1.17 billion in USDC from the Binance hack",
       "mood": "neutral",
-      "summary": "The Justice Department asked a court to hand over USDC stablecoins traced to last month's Binance hack. Circle has frozen the coins and says it will issue fresh USDC of the same amount once a court orders the forfeiture.",
+      "summary": "The Justice Department asked a court to hand over USDC stablecoins traced to last month's Binance hack. Circle has frozen the coins and says it will issue fresh USDC of the same amount once a court orders the forfeiture. A court has not ruled yet.",
       "points": [
         "The civil forfeiture complaint covers about $1.17 billion in USDC across 36 addresses on 18 blockchains, per The Block.",
         "US officials attribute the 29 Oct hack to North Korea's Lazarus Group, per The Block.",
-        "Binance put its losses at about $6.34 billion and says it fully replenished user assets, per The Block.",
+        "Binance put its losses at about $6.34 billion; US authorities have helped freeze, seize or return more than $2.9 billion since the hack, per The Block.",
         "Circle cannot move the frozen tokens, so it agreed to issue new USDC equal to the seized amount after a court order, per The Block."
       ],
       "sources": [
@@ -103,34 +98,34 @@
   ],
   "briefs": [
     {
-      "title": "Kalshi keeps operating in New York for now",
-      "summary": "Justice Melissa Crane denied the Attorney General's request for a temporary restraining order and offered 7 or 8 Jan for a fuller hearing; the two sides must agree safeguards for 18-to-20-year-old sports traders by 30 Nov, per Forbes.",
-      "url": "https://www.forbes.com/sites/danielwallach/2026/11/23/kalshi-escapes-new-york-tro-but-underage-sports-betting-concerns-loom-over-january-showdown/"
-    },
-    {
       "title": "Monad's large MON unlock is today",
-      "summary": "About 16.6 billion MON unlock on 24 Nov, mostly to the team and investors. Trackers disagree on the size because Monad never published the exact cliff amounts, per Kommunitas. See the unlock table on this page for this desk's size and confidence.",
-      "url": "https://kommunitas.net/blog/monad-token-unlock-explained-why-trackers-disagree"
+      "summary": "About 16.61 billion MON, worth roughly $217 million, unlock on 24 Nov, one year after launch, per CoinOtag. Trackers disagree on the size; see the unlock table on this page for this desk's figure and confidence.",
+      "url": "https://en.coinotag.com/monad-unlock-16-61-billion-mon-november-24"
     },
     {
-      "title": "Strategy buys 457 more bitcoin",
-      "summary": "The company bought 457 BTC for $29.6 million from 16 to 22 Nov, taking it to 851,305 BTC, and raised its buyback authorization to $4 billion, per The Crypto Basic.",
-      "url": "https://thecryptobasic.com/2026/11/23/tcb-daily-edition-what-happened-in-crypto-on-november-23-2026/"
+      "title": "South Korea's crypto law draft is expected this week",
+      "summary": "The Financial Services Commission will release a draft Digital Asset Basic Act later this week, expected to cover exchange licensing and require banks to hold more than 50% of any consortium issuing won stablecoins, per The Block.",
+      "url": "https://www.theblock.co/news/regulation/2026-11-23-south-korea-to-publish-draft-digital-asset-basic-act-444881"
     },
     {
-      "title": "US business activity growth slows to a four-month low",
-      "summary": "S&P Global's flash composite PMI fell to 54.6 in November from 55.9, with services at 54.7, per QNC News.",
-      "url": "https://qncnews.com/2026/11/23/us-flash-pmi-slips-to-54-6-in-november-as-business-activity-growth-hits-four-month-low/"
+      "title": "White House reviews the CFTC's prediction-market rule",
+      "summary": "The CFTC's final rule on prediction markets reached the White House budget office for review on 20 Nov, per crypto.news.",
+      "url": "https://crypto.news/cftc-prediction-market-rule-white-house-review/"
     },
     {
-      "title": "Bitmine adds more ether",
-      "summary": "Bitmine added 7,819 ETH, bringing its holdings to 6,085,564 ETH as of 22 Nov, per The Crypto Basic.",
-      "url": "https://thecryptobasic.com/2026/11/23/tcb-daily-edition-what-happened-in-crypto-on-november-23-2026/"
+      "title": "Kalshi keeps operating in New York for now",
+      "summary": "A New York judge denied the state's request for a temporary restraining order against Kalshi without ruling on the merits; a fuller hearing is set for 7 or 8 Jan, per Front Office Sports.",
+      "url": "https://frontofficesports.com/article/kalshi-notches-win-as-judge-denies-new-york-a-temporary-restraining-order/"
     },
     {
-      "title": "Chainflip's bounty deadline has passed",
-      "summary": "Chainflip offered the hacker a 10% bounty to return the rest of about $12 million stolen, with a deadline of 18:38 UTC Mon 23 Nov; no outcome has been reported, per Cryptonomist.",
-      "url": "https://en.cryptonomist.ch/2026/11/23/chainflip-stolen-funds-recovery/"
+      "title": "iPhone hacking kits target crypto wallets",
+      "summary": "A malicious-ads operation researchers call MoldyRoost uses nearly 500 ad domains to plant kits that steal wallet recovery phrases; Forbes advises keeping iOS updated.",
+      "url": "https://www.forbes.com/sites/digital-assets/2026/11/23/nation-state-grade-iphone-hack-leaves-crypto-wallets-password-managers-data-messages-and-photos-at-risk/"
+    },
+    {
+      "title": "Strategy and Metaplanet leave MSCI indexes on 30 Nov",
+      "summary": "MSCI removes both bitcoin-holding companies from its indexes at the close on 30 Nov; JPMorgan estimates about $2.8 billion of forced selling by index funds, per Altcoin Buzz.",
+      "url": "https://www.altcoinbuzz.io/why-are-strategy-and-metaplanet-leaving-msci-indexes-on-nov-30"
     }
   ],
   "calendar": [
@@ -140,15 +135,15 @@
       "event": "Conference Board consumer confidence (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "Expected at 92.1 per FXEmpire, 92.5 per CoinDesk; 91.7 in October. Dell, Workday, Autodesk and HP report after the close, per FXEmpire, and bitcoin miner CleanSpark per CoinDesk."
+      "note": "Expected at 92.1 per FXEmpire, 92.5 per CoinDesk; 91.7 in October. Dell, Workday, Autodesk and HP report after the close; bitcoin miner CleanSpark's results webcast is at 4:30pm ET (04:30 Wed Bangkok)."
     },
     {
       "et": "Tue 24 Nov – Tue 1 Dec",
       "bkk": "Tue 24 Nov – Tue 1 Dec",
-      "event": "Token unlocks: MON, SOSO, RYO, IRYS, XPL, H, HUMA, SIGN, PROS, GRASS, GRVT, FF, CARDS, KMNO, EIGEN, SUI",
+      "event": "Token unlocks: MON, SOSO, RYO, IRYS, XPL, H, HUMA, PROS, GRASS, GRVT, FF, CARDS, KMNO, GUN, EIGEN, SUI",
       "impact": "bearish",
       "key": false,
-      "note": "MON (the largest, about 16.6 billion tokens worth about $206M on this desk's data), SOSO and RYO on Tuesday 24; IRYS, XPL and H on Wednesday 25; HUMA on Thursday 26; SIGN, PROS and GRASS on Saturday 28; GRVT, FF and CARDS on Sunday 29; KMNO's monthly release on Monday 30; EIGEN and SUI on Tuesday 1 Dec. See the unlock table on this page for sizes and confidence. (Dates from this desk's unlock data.)"
+      "note": "MON (the largest, about 16.6 billion tokens worth about $193M on this desk's data), SOSO and RYO on Tuesday 24; IRYS, XPL and H on Wednesday 25; HUMA on Thursday 26; PROS and GRASS on Saturday 28; GRVT, FF and CARDS on Sunday 29; KMNO and GUN on Monday 30; EIGEN and SUI on Tuesday 1 Dec. See the unlock table on this page for sizes and confidence. (Dates from this desk's unlock data.)"
     },
     {
       "et": "Wed 25 Nov · 8:30am",
@@ -156,7 +151,7 @@
       "event": "US PCE inflation (Oct), Q3 GDP (second estimate), durable goods and jobless claims",
       "impact": "volatile",
       "key": true,
-      "note": "Core PCE expected at 3.4% a year per Zerohedge but 3.2% per AskTraders (September 3.1%); headline expected at 3.8% (September 3.6%). Q3 GDP expected at 3.5% per FXEmpire, 3.4% per CoinDesk. Jobless claims expected at 200K per Zerohedge, 201K per FXEmpire (prior 203K)."
+      "note": "Core PCE expected at 3.2% a year per AskTraders (September 3.1%); headline expected at 3.8% (September 3.6%), per AskTraders. Q3 GDP expected at 3.5% per FXEmpire (first estimate 3.4%). Jobless claims expected at 201K per FXEmpire."
     },
     {
       "et": "Wed 25 Nov · 2:00pm",
@@ -164,7 +159,7 @@
       "event": "Fed Beige Book",
       "impact": "neutral",
       "key": false,
-      "note": "Confirmed on the Fed's calendar."
+      "note": "Listed in GoTrade's weekly economic outlook."
     },
     {
       "et": "Thu 26 Nov",
@@ -172,15 +167,23 @@
       "event": "Thanksgiving: US stock market closed",
       "impact": "neutral",
       "key": false,
-      "note": "NYSE is closed Thursday and closes early at 1:00pm ET on Friday 27 Nov (01:00 Sat Bangkok), per NYSE's holiday calendar. Crypto trades through the holiday."
+      "note": "NYSE is closed Thursday and closes early at 1:00pm ET on Friday 27 Nov (01:00 Sat Bangkok), per NYSE's holiday calendar. US spot crypto funds pause; crypto trades through the holiday."
     },
     {
       "et": "Fri 27 Nov · 3:00am",
       "bkk": "Fri 27 · 15:00",
-      "event": "Monthly bitcoin options expiry on Deribit",
+      "event": "Monthly bitcoin and ether options expiry on Deribit",
       "impact": "volatile",
       "key": true,
-      "note": "About 112,000 BTC of options open, roughly $6.8 billion at current prices, per Deribit data cited by Cryptonews (23 Nov); Cryptoticker (21 Nov) put it at $6.76 billion with the \"max pain\" level at $73,000."
+      "note": "About 112,323 BTC of options open, roughly $6.76 billion, with the \"max pain\" level at $73,000, per Cryptoticker (21 Nov). About 293,823 ETH of options, roughly $534 million, per KCEX (17 Nov)."
+    },
+    {
+      "et": "Sat 28 – Sun 29 Nov",
+      "bkk": "Sat 28 – Sun 29 Nov",
+      "event": "Binance Blockchain Week in Bangkok",
+      "impact": "neutral",
+      "key": false,
+      "note": "At the Queen Sirikit National Convention Center, per VentureSquare."
     },
     {
       "et": "Mon 30 Nov · 9:45am",
@@ -188,15 +191,23 @@
       "event": "Chicago PMI (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "Release date per MNI's publication calendar."
+      "note": "October reading was 55.3, per Newsquawk. Release time per MNI's publication calendar."
+    },
+    {
+      "et": "Mon 30 Nov · close",
+      "bkk": "Tue 1 Dec",
+      "event": "MSCI removes Strategy (MSTR) and Metaplanet from its indexes",
+      "impact": "volatile",
+      "key": true,
+      "note": "Takes effect at the close of business on 30 Nov; JPMorgan estimates about $2.8 billion of forced index selling, per Altcoin Buzz."
     },
     {
       "et": "Tue 1 Dec · 10:00am",
       "bkk": "Tue 1 · 22:00",
-      "event": "US job openings, JOLTS (Oct)",
+      "event": "ISM manufacturing (Nov) and US job openings, JOLTS (Oct)",
       "impact": "neutral",
       "key": false,
-      "note": "Per the BLS release schedule."
+      "note": "Per the ISM report calendar and the BLS release schedule."
     },
     {
       "et": "Fri 4 Dec · 8:30am",
@@ -212,14 +223,14 @@
       "event": "Next Fed meeting and rate decision",
       "impact": "volatile",
       "key": true,
-      "note": "Decision Wed 9 Dec at 2:00pm ET (02:00 Thu Bangkok), per the Federal Reserve's calendar. More than 95% of traders expected a quarter-point hike, per CoinDesk's week-ahead report (23 Nov)."
+      "note": "Decision Wed 9 Dec at 2:00pm ET (02:00 Thu Bangkok), press conference 2:30pm ET, per the Federal Reserve's calendar. CME FedWatch showed a 93.2% chance of a quarter-point hike on 23 Nov, per KuCoin."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-24T00:13:06Z",
-    "claimsChecked": 136,
-    "claimsRemoved": 10,
+    "checkedAt": "2026-11-24T04:24:58Z",
+    "claimsChecked": 79,
+    "claimsRemoved": 9,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }

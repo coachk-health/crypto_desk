@@ -2,6 +2,14 @@
  "about": "Running record of what we have done on the desk: every change, test and decision, newest first. Entries are only ever added, never edited or removed. Add one entry per working session (see CLAUDE.md).",
  "entries": [
   {
+   "date": "2026-11-24",
+   "title": "Daily unlock re-check (10:52 Bangkok run)",
+   "did": ["Re-researched 37 unlock rows (next 7 days, stale checks, and every row under 60 confidence), then had separate agents re-check 38 rows: 2 confirmed, 35 partial, 1 contradicted (M, 2 Dec vs Tokenomist's 12 Dec).", "Added GUN (30 Nov) and STO (3 Dec); left out PMT and ON (single tracker only) and STABLE 8 Dec (tracker is out of date: the lock moved to Dec 2027).", "Refreshed news.json: 3 stories, 6 briefs, 12 calendar rows; 79 claims checked over 2 rounds, 9 removed."],
+   "found": ["SIGN 28 Nov could not be confirmed by any source (RootData lists 15 Dec, a Sign Foundation post points to Jan 2027), so the row was removed.", "LIT's next unlock moved from 30 to 27 Dec and is now shown as a monthly amount (~13.9M LIT).", "Web search ran out partway through the re-check, so most re-checks re-opened cited sources rather than finding new ones."],
+   "decided": ["Keep phantom-risk rows out: an unlock needs at least one opened source showing a real transfer on that date."],
+   "files": ["data/unlocks.json", "data/news.json", "data/journal.json"]
+  },
+  {
    "date": "2026-11-23",
    "title": "History tab and this journal",
    "did": [
