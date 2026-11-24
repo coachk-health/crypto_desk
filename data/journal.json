@@ -3,6 +3,26 @@
   "entries": [
     {
       "date": "2026-11-24",
+      "title": "Desk update (22:52 Bangkok run)",
+      "did": [
+        "Refreshed news.json: lead is bitcoin stuck near $60,000 as US stocks fell on a WSJ-reported tariff plan, with record November ETF outflows ($4.71B) and a record 11.6M BTC held at a loss; story 2 now carries the consumer confidence beat (103.3 vs 92.1 expected) and December hike pricing (95.1% quarter-point, per Coinotag); Korea story refocused on ending the 2017 ICO ban. 6 briefs (new: Anchorage asset manager, Ansem wallet, CFTC prediction-market rules), 12 calendar rows.",
+        "56 claims checked over 2 rounds, 11 removed; unlock research skipped (last checked under 24h ago), scores refreshed."
+      ],
+      "found": [
+        "CoinMarketCap, CoinGecko and Alternative.me could not be opened this run; ether and solana prices left blank (CoinDesk only gave % moves), Fear & Greed 11 taken from FinanceFeeds citing Alternative.me.",
+        "Several pages (The Block Korea bill, Coinranking MON, The Block Daily, FXEmpire) were blocked for the checker, so the Korea stablecoin details, MON and Strategy briefs and the 97.8% FedWatch figure were dropped."
+      ],
+      "decided": [
+        "Kept the page fresh with only re-confirmed claims rather than carrying over facts that could not be reopened."
+      ],
+      "files": [
+        "data/news.json",
+        "data/unlocks.json",
+        "data/journal.json"
+      ]
+    },
+    {
+      "date": "2026-11-24",
       "title": "Desk update (18:52 Bangkok run)",
       "did": [
         "Refreshed news.json: lead is bitcoin slipping below $60,000 as the Nvidia bounce faded and liquidations tripled; Fed hike odds now 97.8% before Wednesday's PCE; South Korea draft law updated with CoinDesk and The Block detail; 8 briefs (new: Sky stUSDS pool, Ethereum Foundation security team, Coinbase TerraUSD case), 12 calendar rows.",
