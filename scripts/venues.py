@@ -215,13 +215,16 @@ def cg_price(cid):
     """CoinGecko's current USD price for the token's own CoinGecko id: the best 'is it the same token' check."""
     if not cid:
         return None
-    if cid not in _cg:
+    if not _cg:   # one request for every upcoming token (CoinGecko's free API allows only a few calls a minute)
+        ids = {u.get("coingeckoId") for u in json.loads((ROOT / "data" / "unlocks.json").read_text()).get("upcoming", [])} | {cid}
+        ids = sorted(i for i in ids if i)
         try:
-            _cg[cid] = float(_get(f"https://api.coingecko.com/api/v3/simple/price?ids={cid}&vs_currencies=usd")[cid]["usd"])
-        except Exception:
-            _cg[cid] = None
-        time.sleep(2)
-    return _cg[cid]
+            j = _get("https://api.coingecko.com/api/v3/simple/price?vs_currencies=usd&ids=" + ",".join(ids))
+            _cg.update({i: float(j[i]["usd"]) for i in ids if (j.get(i) or {}).get("usd")})
+        except Exception as e:
+            _err["coingecko"] = str(e)[:100]
+        _cg.setdefault("__tried__", True)
+    return _cg.get(cid)
 
 
 def implied_price(r):

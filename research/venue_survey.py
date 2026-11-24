@@ -23,5 +23,6 @@ for r in up:
     rows, best = venues.survey(r["token"], r, start, end, days if src else None)
     out.append({"token": r["token"], "unlock": r["date"], "pct": pc, "firstInsider": r.get("firstInsiderUnlock"),
                 "binance": src, "venues": rows, "best": best and [best[0], best[1], len(best[2])]})
+    out[-1]["cgPrice"] = venues.cg_price(r.get("coingeckoId"))
     print(r["token"], src, best and best[:2], [(x["venue"], x.get("match"), x.get("note")) for x in rows])
 Path(ROOT / "data" / "venue_survey.json").write_text(json.dumps({"ran": venues.checked(), "errors": venues.errors(), "tokens": out}, indent=1) + "\n")
