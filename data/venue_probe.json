@@ -1,0 +1,37 @@
+{
+ "ran": "2026-11-24 20:02 UTC",
+ "venues": {
+  "binance": {
+   "ok": false,
+   "error": "HTTP Error 451: "
+  },
+  "bybit": {
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
+  },
+  "okx": {
+   "ok": true,
+   "perps": 550
+  },
+  "gate": {
+   "ok": true,
+   "perps": 1036
+  },
+  "bitget": {
+   "ok": true,
+   "perps": 894
+  },
+  "hyperliquid": {
+   "ok": true,
+   "perps": 235
+  },
+  "mexc": {
+   "ok": true,
+   "perps": 1175
+  },
+  "kucoin": {
+   "ok": true,
+   "perps": 725
+  }
+ }
+}
