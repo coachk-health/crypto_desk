@@ -1,7 +1,7 @@
 {
- "made": "2026-11-24 20:00 UTC",
+ "made": "2026-11-24 20:12 UTC",
  "day": "2026-11-25",
- "rules": "v3, frozen 19 Nov 2026: short 25%+ unlocks, or first insider unlocks with open interest down 10%+; skip anything up 30%+ going in. Short the day -7 open, stop 12%, target 35%, out day +14.",
+ "rules": "v4, frozen 25 Nov 2026: short 25%+ unlocks, or first insider unlocks with open interest down 10%+; skip anything up 30%+ going in. Short the day -7 open, stop 12%, target 35%, out day +14. Short on Binance; if Binance has no perp, on OKX, Bitget, Gate or Hyperliquid, but only where the price confirms it's the same token.",
  "setups": [
   {
    "id": "MON|2026-11-24",
@@ -23,7 +23,14 @@
    "stop": 0.0168112,
    "target": 0.0097565,
    "chart": "https://www.tradingview.com/chart/?symbol=BINANCE:MONUSDT.P",
+   "chartLabel": "Chart on TradingView",
    "lateCall": true,
+   "venue": "Binance",
+   "where": [
+    "Binance"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
    "lastClose": 0.01151,
    "shortPct": 23.3,
    "asOf": "2026-11-23"
@@ -48,10 +55,49 @@
    "stop": 0.17416,
    "target": 0.101075,
    "chart": "https://www.tradingview.com/chart/?symbol=BINANCE:GRVTUSDT.P",
+   "chartLabel": "Chart on TradingView",
    "lateCall": true,
+   "venue": "Binance",
+   "where": [
+    "Binance"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
    "lastClose": 0.1322,
    "shortPct": 15.0,
    "asOf": "2026-11-23"
+  },
+  {
+   "id": "ADI|2026-12-09",
+   "section": "coming",
+   "token": "ADI",
+   "name": "ADI (ADI Chain)",
+   "setup": "First insider unlock",
+   "unlockDate": "2026-12-09",
+   "entryDate": "2026-12-02",
+   "coverDate": "2026-12-23",
+   "sizePct": 11.8,
+   "firstInsider": true,
+   "pumpPct": -3.9,
+   "oiChangePct": null,
+   "call": "WATCH",
+   "why": "no open-interest history on Bitget",
+   "action": "Decided at the 2 Dec open. Needs: price not up 30%+ since 30 days before the unlock; open interest down 10%+ in the week before entry. Now: no open-interest history on Bitget.",
+   "entry": null,
+   "stop": null,
+   "target": null,
+   "chart": "https://www.tradingview.com/chart/?symbol=BITGET:ADIUSDT.P",
+   "chartLabel": "Chart on TradingView",
+   "lateCall": false,
+   "venue": "Bitget",
+   "where": [
+    "OKX",
+    "Bitget",
+    "Gate"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
+   "daysToEntry": 7
   },
   {
    "id": "WET|2026-12-09",
@@ -73,7 +119,19 @@
    "stop": null,
    "target": null,
    "chart": "https://www.tradingview.com/chart/?symbol=BINANCE:WETUSDT.P",
+   "chartLabel": "Chart on TradingView",
    "lateCall": false,
+   "venue": "Binance",
+   "where": [
+    "Binance",
+    "OKX",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "MEXC"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
    "daysToEntry": 7
   },
   {
@@ -96,7 +154,18 @@
    "stop": null,
    "target": null,
    "chart": "https://www.tradingview.com/chart/?symbol=BINANCE:CYSUSDT.P",
+   "chartLabel": "Chart on TradingView",
    "lateCall": false,
+   "venue": "Binance",
+   "where": [
+    "Binance",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "MEXC"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
    "daysToEntry": 9
   },
   {
@@ -119,7 +188,14 @@
    "stop": 0.128262,
    "target": 0.074438,
    "chart": "https://www.tradingview.com/chart/?symbol=BINANCE:KITEUSDT.P",
+   "chartLabel": "Chart on TradingView",
    "lateCall": true,
+   "venue": "Binance",
+   "where": [
+    "Binance"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
    "resultR": -1.04
   },
   {
@@ -142,7 +218,14 @@
    "stop": 0.0165872,
    "target": 0.0096265,
    "chart": "https://www.tradingview.com/chart/?symbol=BINANCE:IRYSUSDT.P",
+   "chartLabel": "Chart on TradingView",
    "lateCall": true,
+   "venue": "Binance",
+   "where": [
+    "Binance"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
    "resultR": -1.0
   },
   {
@@ -165,31 +248,15 @@
    "stop": 0.00947856,
    "target": 0.00550095,
    "chart": "https://www.tradingview.com/chart/?symbol=BINANCE:HUMAUSDT.P",
+   "chartLabel": "Chart on TradingView",
    "lateCall": false,
+   "venue": "Binance",
+   "where": [
+    "Binance"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
    "resultR": -1.0
-  },
-  {
-   "id": "ADI|2026-12-09",
-   "section": "skipped",
-   "token": "ADI",
-   "name": "ADI (ADI Chain)",
-   "setup": "First insider unlock",
-   "unlockDate": "2026-12-09",
-   "entryDate": "2026-12-02",
-   "coverDate": "2026-12-23",
-   "sizePct": 11.8,
-   "firstInsider": true,
-   "pumpPct": null,
-   "oiChangePct": null,
-   "call": "SKIP",
-   "why": "no Binance USDT perpetual",
-   "action": "Skip: no Binance USDT perpetual.",
-   "entry": null,
-   "stop": null,
-   "target": null,
-   "chart": "https://www.tradingview.com/chart/?symbol=BINANCE:ADIUSDT.P",
-   "lateCall": false,
-   "daysToEntry": 7
   }
  ],
  "record": [
