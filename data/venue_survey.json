@@ -1,6 +1,6 @@
 {
  "ran": {
-  "at": "2026-11-24 20:25 UTC",
+  "at": "2026-11-24 20:27 UTC",
   "reached": [
    "Binance (data files)",
    "OKX",
@@ -76,7 +76,8 @@
     "bitget",
     "JCTUSDT",
     45
-   ]
+   ],
+   "cgPrice": 0.00143149
   },
   {
    "token": "PIEVERSE",
@@ -138,7 +139,8 @@
     "okx",
     "PIEVERSE-USDT-SWAP",
     45
-   ]
+   ],
+   "cgPrice": 2.96
   },
   {
    "token": "MON",
@@ -200,7 +202,8 @@
     "okx",
     "MON-USDT-SWAP",
     45
-   ]
+   ],
+   "cgPrice": 0.00958122
   },
   {
    "token": "IRYS",
@@ -262,7 +265,8 @@
     "okx",
     "IRYS-USDT-SWAP",
     45
-   ]
+   ],
+   "cgPrice": 0.01627288
   },
   {
    "token": "HUMA",
@@ -324,7 +328,8 @@
     "okx",
     "HUMA-USDT-SWAP",
     45
-   ]
+   ],
+   "cgPrice": 0.00821173
   },
   {
    "token": "ADI",
@@ -340,7 +345,7 @@
      "lastClose": 376.86,
      "qv7": 291791,
      "match": false,
-     "note": "different asset: price 376.9 vs ~7.27 (the unlock data)"
+     "note": "different asset: price 376.9 vs ~7.18 (CoinGecko's price)"
     },
     {
      "venue": "Gate",
@@ -349,7 +354,7 @@
      "lastClose": 376.2,
      "qv7": 3026,
      "match": false,
-     "note": "different asset: price 376.2 vs ~7.27 (the unlock data)"
+     "note": "different asset: price 376.2 vs ~7.18 (CoinGecko's price)"
     },
     {
      "venue": "Bybit",
@@ -358,10 +363,11 @@
      "lastClose": 318.19,
      "qv7": null,
      "match": false,
-     "note": "different asset: price 318.2 vs ~7.27 (the unlock data)"
+     "note": "different asset: price 318.2 vs ~7.18 (CoinGecko's price)"
     }
    ],
-   "best": null
+   "best": null,
+   "cgPrice": 7.18
   },
   {
    "token": "WET",
@@ -423,7 +429,8 @@
     "kucoin",
     "WETUSDTM",
     45
-   ]
+   ],
+   "cgPrice": 0.03679156
   },
   {
    "token": "CYS",
@@ -477,7 +484,8 @@
     "bitget",
     "CYSUSDT",
     45
-   ]
+   ],
+   "cgPrice": 0.053019
   },
   {
    "token": "KNTQ",
@@ -492,11 +500,15 @@
      "listed": true,
      "lastClose": 0.1702,
      "qv7": 140712,
-     "match": null,
-     "note": "can't confirm it's the same token"
+     "match": true
     }
    ],
-   "best": null
+   "best": [
+    "mexc",
+    "KNTQ_USDT",
+    21
+   ],
+   "cgPrice": 0.162934
   },
   {
    "token": "LIT",
@@ -566,7 +578,8 @@
     "okx",
     "LIT-USDT-SWAP",
     45
-   ]
+   ],
+   "cgPrice": 2.31
   },
   {
    "token": "ALLO",
@@ -628,7 +641,8 @@
     "kucoin",
     "ALLOUSDTM",
     45
-   ]
+   ],
+   "cgPrice": 0.123422
   }
  ]
 }
