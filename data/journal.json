@@ -3,6 +3,39 @@
  "entries": [
   {
    "date": "2026-11-25",
+   "title": "v4: short on other exchanges when Binance has no perp",
+   "did": [
+    "Coach K asked to check where every token trades and short it on another exchange instead of skipping; and to skip only after confirming as fact that it can't be shorted.",
+    "Tested which free exchange APIs GitHub's servers can reach: OKX, Bitget, Gate, Hyperliquid, KuCoin, MEXC and CoinGecko yes; Bybit and Binance's live API no (data/venue_probe.json). Bybit's perp list comes via CoinGecko.",
+    "New scripts/venues.py: lists each exchange's USDT perps, gets UTC daily candles (and open interest on OKX/Gate), and confirms by price that a ticker is the same token.",
+    "Rules frozen as v4 (data/strategy_v4.json): v3 unchanged, plus other exchanges. Brief cards now show where each token has perps and which exchange to short on."
+   ],
+   "found": [
+    "Ticker matches lie: 'ADI' on OKX, Bitget, Gate and Bybit is a ~$300+ stock perp (most likely Analog Devices; OKX files it under stocks), while ADI Chain is ~$7. Three exchanges agreeing with each other did not prove anything, so CoinGecko's price is the main check and stock tickers can't be confirmed by agreement.",
+    "The unlock records' implied price can be weeks old (JCT: $0.011 implied vs $0.0016 now on Binance and OKX).",
+    "Survey of current candidates (data/venue_survey.json): ADI 9 Dec can't be shorted anywhere (confirmed on all 8 exchanges); KNTQ 27 Dec is only on MEXC (price confirmed) but MEXC has no open-interest history, so as a first insider unlock it will be skipped; every other candidate trades on Binance plus 4-6 other exchanges.",
+    "Off-Binance evidence is thin: 4 historic trades on Bybit/Gate-only tokens (+5.5R total)."
+   ],
+   "decided": [
+    "A 'can't short it' skip is made only when all 8 exchanges answered and none lists the real token; if any can't be reached, it stays on watch and is rechecked.",
+    "Off Binance, short on the confirmed exchange with the most dollar volume over 7 days. Bybit-only tokens get no call (no Bybit candles from the server)."
+   ],
+   "files": [
+    "scripts/venues.py",
+    "scripts/picks.py",
+    "scripts/morning_brief.py",
+    "data/strategy_v4.json",
+    "brief.html",
+    "index.html",
+    "research/venue_probe.py",
+    "research/venue_survey.py",
+    "data/venue_probe.json",
+    "data/venue_survey.json",
+    "CLAUDE.md"
+   ]
+  },
+  {
+   "date": "2026-11-25",
    "title": "Desk update (02:52 Bangkok run)",
    "did": [
     "Refreshed news.json: lead is bitcoin slipping back below $60,000 on the WSJ-reported tariff plan and a chip-stock sell-off (ETF outflows $569.7M on 23 Nov, record $4.71B for November); story 2 is consumer confidence (103.3) ahead of Wednesday's October PCE; new story 3 is Utah moving to drop criminal charges against Kalshi. South Korea's bill moved to the briefs. 8 briefs (new: Krak credit cards, BTCS ETH sale, BlackRock HK tokenized fund, Rialto raise, Europol IPTV trace, MSTR low), 11 calendar rows.",

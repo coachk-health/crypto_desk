@@ -8,7 +8,7 @@ on:
     - cron: "41 23 * * *"
   push:
     branches: [main]
-    paths: ["scripts/morning_brief.py", "brief.html"]
+    paths: ["scripts/morning_brief.py", "scripts/picks.py", "scripts/venues.py", "brief.html"]
   workflow_dispatch:
 
 permissions:
