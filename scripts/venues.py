@@ -53,7 +53,10 @@ def _day(ms):
 def _list(v):
     if v == "okx":
         d = _get("https://www.okx.com/api/v5/public/instruments?instType=SWAP")["data"]
-        return {i["instId"][:-10]: i["instId"] for i in d if i["instId"].endswith("-USDT-SWAP") and i.get("state") == "live"}
+        # instCategory 1 = crypto; 3 = stocks (AAPL, ADI = Analog Devices...), 4 = commodities. Crypto only.
+        L = {i["instId"][:-10]: i["instId"] for i in d if i["instId"].endswith("-USDT-SWAP") and i.get("state") == "live" and i.get("instCategory", "1") == "1"}
+        L["__tradfi__"] = sorted({i["instId"].split("-")[0] for i in d if i.get("instCategory") not in (None, "", "1")})
+        return L
     if v == "bitget":
         d = _get("https://api.bitget.com/api/v2/mix/market/contracts?productType=USDT-FUTURES")["data"]
         return {i["baseCoin"]: i["symbol"] for i in d if i.get("symbolStatus") == "normal" and i.get("quoteCoin") == "USDT"}
@@ -90,6 +93,13 @@ def perp_list(v):
         out = None
     _lists[v] = out
     return out
+
+
+def tradfi():
+    """Tickers OKX lists as stocks or commodities. Other exchanges may list the same stock under the
+    same ticker, so for these a match between exchanges proves nothing."""
+    L = perp_list("okx")
+    return set(L.get("__tradfi__", [])) if L else set()
 
 
 def symbol_for(v, token):
@@ -223,15 +233,16 @@ def survey(token, r, start, end, binance_days=None):
             c = closes.get(v)
             row["lastClose"] = c
             row["qv7"] = round(statistics.mean(b["qv"] for b in [d[k] for k in sorted(d)[-7:]])) if d else None
-            others = [x for k, x in closes.items() if k != v and x]
+            # a stock ticker shared with the token: only Binance or the unlock data can confirm it
+            others = [x for k, x in closes.items() if k != v and x and (k == "binance" or token not in tradfi())]
             agree = any(abs(c / x - 1) <= 0.05 for x in others) if c else False
             ratio = c / ref if (c and ref) else None
             if not d:
                 row["match"], row["note"] = None, "no candles"
+            elif ratio and (ratio < 0.1 or ratio > 10):   # far off the token's own price: never trust agreement
+                row["match"], row["note"] = False, f"different asset: price {c:.4g} vs ~{ref:.4g} from the unlock data"
             elif agree or (ratio and 0.5 <= ratio <= 2.0):
                 row["match"] = True
-            elif ratio and (ratio < 0.1 or ratio > 10):
-                row["match"], row["note"] = False, f"different asset: price {c:.4g} vs ~{ref:.4g} from the unlock data"
             else:
                 row["match"], row["note"] = None, "can't confirm it's the same token"
         else:

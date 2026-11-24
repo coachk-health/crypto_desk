@@ -8,7 +8,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: trade-log
+  group: venue-probe
   cancel-in-progress: false
 jobs:
   probe:
