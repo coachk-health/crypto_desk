@@ -55,7 +55,7 @@
   <p class="lead" id="lead"></p>
 
   <h2>Short today</h2>
-  <p class="note">Entry is the 00:00 UTC open (07:00 Bangkok), 7 days before the unlock. Stop 12% above entry, target 35% below, out 14 days after the unlock. Risk 1% of the account.</p>
+  <p class="note">Entry is the 00:00 UTC open (07:00 Bangkok), 7 days before the unlock. Stop 12% above entry, target 35% below, out 14 days after the unlock. Risk 1% of the account. Short on Binance; if Binance has no perp, on the exchange named on the card.</p>
   <div class="cards" id="today"></div>
 
   <h2>Open shorts</h2>
@@ -83,7 +83,7 @@
   <details>
     <summary>The rules</summary>
     <p id="rules"></p>
-    <p class="note">Rules frozen on 19 Nov 2026 (data/strategy_v3.json). Backtest and research: the Picks and History tabs on the full desk. Past results are not a promise. Not financial advice.</p>
+    <p class="note">Rules v4, frozen 25 Nov 2026 (data/strategy_v4.json): v3’s rules unchanged, plus other exchanges when Binance has no perp, only where the price confirms it’s the same token. Backtest and research: the Picks and History tabs on the full desk. Past results are not a promise. Not financial advice.</p>
   </details>
 </main>
 <script>
@@ -100,6 +100,7 @@
   function card(r, kind) {
     const c = el('article', 'card ' + kind);
     const hd = el('div', 'hd'); hd.append(el('span', 'tok', r.token), el('span', 'nm', r.name || ''), el('span', 'tag', r.setup || ''));
+    if (r.venue && r.venue !== 'Binance') hd.append(el('span', 'tag', 'short on ' + r.venue));
     if (r.lateCall) hd.append(el('span', 'tag', 'called late, not counted'));
     c.appendChild(hd);
     const f = el('div', 'facts');
@@ -115,7 +116,10 @@
     }
     c.appendChild(f);
     c.appendChild(el('p', 'act', r.action));
-    if (safe(r.chart)) { const a = el('a', 'chart', 'Chart on TradingView'); a.href = r.chart; a.target = '_blank'; a.rel = 'noopener'; c.appendChild(a); }
+    const w = (r.where || []).join(', ');
+    const also = (r.alsoListed || []).length ? ' · also listed: ' + r.alsoListed.join(', ') : '';
+    c.appendChild(el('p', 'chart', (w ? 'Perps on: ' + w : 'No confirmed perp') + also + '. Bybit not checked.'));
+    if (safe(r.chart)) { const a = el('a', 'chart', r.chartLabel || 'Chart on TradingView'); a.href = r.chart; a.target = '_blank'; a.rel = 'noopener'; c.appendChild(a); }
     return c;
   }
   function fill(id, list, kind, empty) { $(id).replaceChildren(...(list.length ? list.map((r) => card(r, kind)) : [el('p', 'empty', empty)])); }

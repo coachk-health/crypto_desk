@@ -1,0 +1,69 @@
+{
+ "version": "v4",
+ "frozenOn": "2026-11-25",
+ "why": "Rules frozen before live trading so the live record is a clean test. Do not change them after seeing live trades; any change becomes v4 with a new date.",
+ "setups": [
+  {
+   "name": "Big unlock",
+   "rule": "the unlock adds 25% or more of circulating supply"
+  },
+  {
+   "name": "First insider unlock + falling open interest",
+   "rule": "the token's first-ever insider unlock (under 25%), and open interest on the exchange we trade fell 10% or more from day -15 to day -8"
+  }
+ ],
+ "skipIf": [
+  "price up 30% or more from the open 30 days before the unlock to the open on entry day (day -7)",
+  "no USDT perpetual on Binance, and none on OKX, Bitget, Gate or Hyperliquid whose price confirms it is the same token",
+  "the unlock is not confirmed (date, size or recipients unconfirmed by the project or two independent sources)"
+ ],
+ "trade": {
+  "entry": "short at the 00:00 UTC open, 7 days before the unlock",
+  "stopPct": 12,
+  "targetPct": 35,
+  "coverDay": 14,
+  "risk": "1% of the account per trade (position = 1% / 12.6%)"
+ },
+ "costsAssumed": {
+  "feesPct": 0.1,
+  "fundingPctPerDay": 0.03,
+  "stopSlippagePct": 0.5
+ },
+ "backtest": {
+  "trades": 56,
+  "wonPct": 62,
+  "avgR": 0.75,
+  "totalR": 42.0,
+  "range90": [
+   0.42,
+   1.08
+  ],
+  "buildYear": {
+   "trades": 38,
+   "wonPct": 61,
+   "avgR": 0.66
+  },
+  "unseen2023to25": {
+   "trades": 18,
+   "wonPct": 67,
+   "avgR": 0.93
+  },
+  "account1pct": {
+   "growth": 1.51,
+   "worstDrawdownPct": -3.9,
+   "longestLosingRun": 3
+  },
+  "source": "research/cs5.py, research/v3_trades.json"
+ },
+ "passMark": "After 30 live trades: average above +0.25R. Until then, treat it as a test.",
+ "previous": "data/strategy_v3.json (19 Nov 2026)",
+ "approvedBy": "Coach K in chat, 25 Nov 2026: \"always check where tokens are traded and if they have perps on other exchanges ... so we dont have to skip if we do not need to\"",
+ "changes": [
+  "Same setups, entry, stop, target, exit and size as v3. The only change is where the short is placed.",
+  "A token with no Binance USDT perpetual is no longer skipped if OKX, Bitget, Gate or Hyperliquid lists one AND its price confirms it is the same token (within 5% of Binance or another exchange, or within 2x of the unlock record's implied price). Ticker matches alone are not trusted: OKX's 'ADI' is a ~$300 asset, ADI Chain is ~$7.",
+  "Where more than one other exchange qualifies, use the one with the most dollar volume over the last 7 days.",
+  "The open-interest rule uses that exchange's open interest. Only Binance, OKX and Gate publish free open-interest history, so a first insider unlock that trades only on Bitget or Hyperliquid is skipped.",
+  "Bybit is not checked automatically (it refuses GitHub's servers). KuCoin and MEXC are shown as 'also listed' but not priced."
+ ],
+ "evidenceOffBinance": "Thin: the history test found 4 qualifying trades on Bybit/Gate-only tokens (+5.5R in total, research/exchange_test.json). Smaller exchanges can slip more than the 0.5% assumed."
+}

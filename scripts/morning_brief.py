@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Data for the morning brief artifact: what to short today, what is open, what is coming up.
 
-Read-only: it uses the frozen v3 rules (data/strategy_v3.json) through scripts/picks.py's own checks,
+Read-only: it uses the frozen rules (data/strategy_v4.json) through scripts/picks.py's own checks,
 with fresh Binance daily prices and open interest, and the live call log (data/picks_log.json).
 It never writes the desk's files. Run it shortly before 00:00 UTC (07:00 Bangkok), when entries open.
 
@@ -19,11 +19,23 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import picks  # noqa: E402
 
 BKK = timezone(timedelta(hours=7))
-CODE_NOTE = "Built by scripts/morning_brief.py in coachk-health/crypto_desk from the frozen v3 rules (data/strategy_v3.json)."
+CODE_NOTE = "Built by scripts/morning_brief.py in coachk-health/crypto_desk from the frozen rules (data/strategy_v4.json; v4 = v3 plus other exchanges when Binance has no perp)."
 
 
 def tv(sym):
     return f"https://www.tradingview.com/chart/?symbol=BINANCE:{sym}.P" if sym else None
+
+
+VENUE_TV = {"okx": "OKX", "bitget": "BITGET"}
+
+
+def chart(p):
+    v = p.get("venue") or "binance"
+    if v == "binance":
+        return tv(p.get("symbol") or (p["token"] + "USDT")), "Chart on TradingView"
+    if v in VENUE_TV:
+        return f"https://www.tradingview.com/chart/?symbol={VENUE_TV[v]}:{p['token']}USDT.P", "Chart on TradingView"
+    return p.get("tradeLink"), "Trade page on " + picks.venues.NAMES[v]
 
 
 def row(p, section, action, **extra):
@@ -35,7 +47,10 @@ def row(p, section, action, **extra):
          "firstInsider": bool(p.get("firstInsider")), "pumpPct": p.get("pump"), "oiChangePct": p.get("oiChange"),
          "call": p.get("call"), "why": p.get("why"), "action": action,
          "entry": p.get("entry"), "stop": p.get("stop"), "target": p.get("target"),
-         "chart": tv(p.get("symbol") or (p["token"] + "USDT")), "lateCall": bool(p.get("lateCall"))}
+         "chart": chart(p)[0], "chartLabel": chart(p)[1], "lateCall": bool(p.get("lateCall")),
+         "venue": picks.venues.NAMES.get(p.get("venue") or "binance") if p.get("call") != "SKIP" or p.get("venue") else None,
+         "where": p.get("where") or (["Binance"] if (p.get("venue") or "binance") == "binance" and p.get("symbol") else []),
+         "alsoListed": p.get("alsoListed") or [], "venueNotes": p.get("venueNotes") or []}
     r.update(extra)
     return r
 
@@ -95,8 +110,8 @@ def main(outdir, site=False, snapshot=False):
                             lastClose=res.get("lastClose"), shortPct=res.get("openPct"), asOf=res.get("asOf")))
     order = {"today": 0, "open": 1, "coming": 2, "closed": 3, "skipped": 4}
     rows.sort(key=lambda r: (order[r["section"]], r["entryDate"]))
-    meta = [{"label": "Rules", "value": "v3, frozen 19 Nov 2026: short 25%+ unlocks, or first insider unlocks with open interest down 10%+; skip anything up 30%+ going in. Short the day -7 open, stop 12%, target 35%, out day +14."},
-            {"label": "Prices", "value": "Binance USDT perpetual daily candles and open interest (data.binance.vision)."},
+    meta = [{"label": "Rules", "value": "v4, frozen 25 Nov 2026: short 25%+ unlocks, or first insider unlocks with open interest down 10%+; skip anything up 30%+ going in. Short the day -7 open, stop 12%, target 35%, out day +14. Short on Binance; if Binance has no perp, on OKX, Bitget, Gate or Hyperliquid, but only where the price confirms it's the same token."},
+            {"label": "Prices", "value": "Binance USDT perpetual daily candles and open interest (data.binance.vision); off Binance, the exchange's own free API."},
             {"label": "Made", "value": now.strftime("%Y-%m-%d %H:%M UTC")}, {"label": "Code", "value": CODE_NOTE}]
     (out / "setups.json").write_text(json.dumps({"rows": rows, "meta": meta}, indent=1, ensure_ascii=False))
     calls = [c for c in log["calls"] if c["call"] == "TAKE"]
@@ -107,7 +122,7 @@ def main(outdir, site=False, snapshot=False):
            {"id": "backtest", "label": "Backtest (56 trades, 2023-2026)", "trades": bt["trades"], "won": round(bt["trades"] * bt["wonPct"] / 100),
             "totalR": bt["totalR"], "avgR": bt["avgR"]}]
     (out / "record.json").write_text(json.dumps({"rows": rec, "meta": [{"label": "Live calls", "value": "data/picks_log.json: called once on entry day, never rewritten; late calls not counted."},
-                                                                      {"label": "Backtest", "value": "data/strategy_v3.json"}, {"label": "Made", "value": now.strftime("%Y-%m-%d %H:%M UTC")}]}, indent=1))
+                                                                      {"label": "Backtest", "value": "data/strategy_v3.json (v4 uses the same rules)"}, {"label": "Made", "value": now.strftime("%Y-%m-%d %H:%M UTC")}]}, indent=1))
     if site:
         keep = ("token", "name", "setup", "unlockDate", "entryDate", "coverDate", "pctCirculating", "firstInsider", "pump", "oiChange",
                 "call", "why", "lateCall", "entry", "stop", "target", "calledAt")

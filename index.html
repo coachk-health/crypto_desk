@@ -400,7 +400,9 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       const cls = p.call === 'TAKE' ? 'take' : p.call === 'WATCH' ? 'watch' : 'skip';
       const lbl = p.call === 'TAKE' ? (res && res.status === 'closed' ? 'CLOSED' : 'SHORT') : p.call;
       const size = p.pctCirculating != null ? Math.round(p.pctCirculating) + '% of circulating' : 'size not published';
-      const meta = p.setup + ' · ' + size + ' · unlock ' + d(p.unlockDate) + ' · entry ' + d(p.entryDate) + ' 00:00 UTC · out by ' + d(p.coverDate);
+      const VN = { okx: 'OKX', bitget: 'Bitget', gate: 'Gate', hyperliquid: 'Hyperliquid' };
+      const meta = p.setup + ' · ' + size + ' · unlock ' + d(p.unlockDate) + ' · entry ' + d(p.entryDate) + ' 00:00 UTC · out by ' + d(p.coverDate)
+        + (p.venue && p.venue !== 'binance' ? ' · short on ' + (VN[p.venue] || p.venue) : '') + (p.where && p.where.length ? ' · perps on ' + p.where.join(', ') : '');
       const kids = [el('div', { class: 'top' }, [el('span', { class: 'tok', text: p.token }), el('span', { class: 'call', text: lbl }),
         p.lateCall ? el('span', { class: 'small', text: 'called after entry day, not counted in the live record' }) : null]),
         el('div', { class: 'meta', text: meta })];
@@ -431,7 +433,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
           el('table', null, [el('tr', null, [el('th', { text: 'Short profit if you…' }), el('th', { text: 'out +1d' }), el('th', { text: '+3d' }), el('th', { text: '+7d' }), el('th', { text: '+14d' }), el('th', { class: 'nowh', text: 'now' })]), ...rows]),
           sp ? el('div', { class: 'note', text: 'Shadow exit (60% off at −35%, rest trails 10%): ' + (sp.pct > 0 ? '+' : '') + sp.pct + '% · ' + sp.why + (sp.status === 'open' ? ' (open)' : '') }) : null,
           el('div', { class: 'note', text: 'No stop in this table: plain moves from each entry open to each exit close. “Now” uses the live Binance price when it loads, else the ' + d(pr.asOf) + ' close.' })]);
-        box.addEventListener('toggle', () => { if (!box.open || box.dataset.live) return; box.dataset.live = 1;
+        box.addEventListener('toggle', () => { if (!box.open || box.dataset.live || (p.venue && p.venue !== 'binance')) return; box.dataset.live = 1;
           fetch('https://fapi.binance.com/fapi/v1/ticker/price?symbol=' + sym).then(r => r.json()).then(j => { const now = +j.price; if (!now) return;
             nowCells.forEach(c => { const en = +c.dataset.entry, v = (en - now) / en * 100; c.textContent = (v > 0 ? '+' : '') + v.toFixed(1) + '%'; c.className = v >= 0 ? 'up' : 'dn'; });
             const h = box.querySelector('.nowh'); if (h) h.textContent = 'now ' + px(now); }).catch(() => {}); });
@@ -449,7 +451,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       el('p', { class: 'lead', text: 'Only these unlocks get shorted.' }),
       (() => { const a = el('a', { href: 'brief.html', text: 'Open the simple morning brief →' }); a.style.cssText = 'display:inline-block;margin:-6px 0 14px;font-size:15px;color:var(--sun)'; return a; })(),
       el('div', { class: 'pk-rule' }, [el('b', { text: 'Take: ' }), 'an unlock adding 25%+ of circulating supply, or a first insider unlock where open interest fell 10%+ the week before. ',
-        el('b', { text: 'Skip: ' }), 'price up 30%+ going in, or no Binance perpetual. ',
+        el('b', { text: 'Skip: ' }), 'price up 30%+ going in, or no perp on Binance or on another exchange (OKX, Bitget, Gate, Hyperliquid) whose price confirms it’s the same token. ',
         el('b', { text: 'Trade: ' }), 'short at the 00:00 UTC open 7 days before the unlock, stop 12% above, target 35% below, out 14 days after. Risk 1% a trade.']),
       el('div', { class: 'pk-tiles' }, [
         tile('Live record', L.closed ? L.won + ' of ' + L.closed + ' won' : 'no closed trades yet', L.closed ? r2(L.totalR) + ' total · ' + L.taken + ' taken' : 'rules frozen ' + d(R.frozenOn)),

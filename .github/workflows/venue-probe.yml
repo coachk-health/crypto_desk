@@ -3,7 +3,7 @@ name: Exchange reach test
 on:
   push:
     branches: [main]
-    paths: ["research/venue_probe.py"]
+    paths: ["research/venue_probe.py", "research/venue_survey.py", "scripts/venues.py"]
   workflow_dispatch:
 permissions:
   contents: write
@@ -16,7 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 research/venue_probe.py
+      - run: python3 research/venue_survey.py
       - run: |
           git config user.name "crypto-desk-bot"; git config user.email "crypto-desk-bot@users.noreply.github.com"
-          git add data/venue_probe.json; git commit -m "Exchange reach test" || exit 0
+          git add data/venue_probe.json data/venue_survey.json; git commit -m "Exchange reach test" || exit 0
           for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done

@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""The v3 picks: the only unlock shorts the desk takes (rules frozen in data/strategy_v3.json).
+"""The picks: the only unlock shorts the desk takes (rules frozen in data/strategy_v4.json;
+v4 = v3 plus trading on OKX/Bitget/Gate/Hyperliquid when Binance has no perp).
 
   Take:  an unlock that adds 25%+ of circulating supply, or a first insider unlock whose
-         Binance futures open interest fell 10%+ from day -15 to day -8.
-  Skip:  price up 30%+ from day -30 to entry, no Binance USDT perpetual, or not confirmed.
+         futures open interest fell 10%+ from day -15 to day -8.
+  Skip:  price up 30%+ from day -30 to entry, no USDT perpetual on Binance or on another exchange
+         whose price confirms it is the same token (scripts/venues.py), or not confirmed.
   Trade: short at the day -7 00:00 UTC open, stop 12% above, target 35% below, cover day +14.
 
 Each call is made once, on entry day, from data known before entry, and written to
 data/picks_log.json, which is never rewritten afterwards: that file is the live test.
-Prices, open interest: Binance's free files (data.binance.vision). Writes data/picks.json.
+Prices, open interest: Binance's free files (data.binance.vision); off Binance, the exchange's free API.
+Writes data/picks.json.
 """
 import csv, io, json, sys, urllib.error, urllib.request, zipfile
 from datetime import date, datetime, timedelta, timezone
@@ -16,9 +19,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
-import candles, levels  # noqa: E402
+import candles, levels, venues  # noqa: E402
 
-RULES = json.loads((ROOT / "data" / "strategy_v3.json").read_text())
+RULES = json.loads((ROOT / "data" / ("strategy_v4.json" if (ROOT / "data" / "strategy_v4.json").exists() else "strategy_v3.json")).read_text())
 T = RULES["trade"]
 STOP, TGT, COVER = T["stopPct"], T["targetPct"], T["coverDay"]
 BIG, PUMP, OI_DROP = 25, 30, -10
@@ -69,6 +72,26 @@ def oi_change(sym, d0, today):
     return None, None
 
 
+def oi_change_venue(v, sym, d0, today):
+    """Same as oi_change, on another exchange's open-interest history (OKX, Gate)."""
+    for late in (-8, -9, -10):
+        dl = d0 + timedelta(days=late)
+        if dl >= today:
+            continue
+        b, a = venues.oi_day(v, sym, dl), venues.oi_day(v, sym, dl - timedelta(days=7))
+        if a and b:
+            return round((b / a - 1) * 100, 1), dl.isoformat()
+    return None, None
+
+
+def bars_for(p, start, end):
+    """Daily candles for a pick, from the exchange it is traded on (Binance unless the pick says otherwise)."""
+    v = p.get("venue") or "binance"
+    if v == "binance":
+        return candles.token_days(p["token"], start, end)[2]
+    return venues.days(v, p["token"], start, end)[1]
+
+
 def check(r, today):
     """Return the pick (dict) for one upcoming unlock, or None if it is not a candidate."""
     pc, first = pct_circ(r), r.get("firstInsiderUnlock") is True
@@ -86,9 +109,34 @@ def check(r, today):
     if r.get("confidence") != "confirmed":
         p.update(call="SKIP", why="unlock not confirmed")
         return p
-    src, sym, days = candles.token_days(r["token"], d0 - timedelta(days=45), min(today, cover + timedelta(days=1)))
-    if src != "binance-futures":
-        p.update(call="SKIP", why="no Binance USDT perpetual")
+    start, end = d0 - timedelta(days=45), min(today, cover + timedelta(days=1))
+    src, sym, days = candles.token_days(r["token"], start, end)
+    rows, best = venues.survey(r["token"], r, start, end, days if src else None)
+    p["where"] = (["Binance"] if src == "binance-futures" else []) + [x["venue"] for x in rows if x.get("match") is True]
+    p["alsoListed"] = [x["venue"] for x in rows if x.get("listed") and x.get("match") is not True and not x.get("note", "").startswith("different")]
+    p["venueNotes"] = [f"{x['venue']}: {x['note']}" for x in rows if x.get("note") and x.get("match") is not True]
+    if src == "binance-futures":
+        p["venue"] = "binance"
+    elif best:
+        v, sym, days = best
+        p.update(venue=v, tradeLink=venues.trade_link(v, sym))
+    else:
+        wrong = [x["venue"] for x in rows if x.get("match") is False]
+        unsure = [x["venue"] for x in rows if x.get("match") is None and x.get("listed")]
+        down = [x["venue"] for x in rows if x.get("listed") is None]
+        p["venueCheck"] = venues.checked()
+        if down and not unsure:
+            # a "can't short it" skip needs every exchange checked; until then it stays on watch
+            p.update(call="WATCH", why="no Binance perp, and couldn't reach " + ", ".join(down) + " to check; will retry")
+            return p
+        why = ("can't short it: no USDT perp on Binance, OKX, Bitget, Gate, Hyperliquid, KuCoin or MEXC (all checked "
+               + p["venueCheck"]["at"] + "; Bybit can't be checked from the server)")
+        if unsure:
+            why = "no Binance perp; can't confirm the " + " / ".join(unsure) + " perp is the same token"
+        elif wrong:
+            why = ("can't short it: no Binance perp, and " + " / ".join(wrong) + f"'s {r['token']} is a different asset (price doesn't match); "
+                   "the other exchanges don't list it (checked " + p["venueCheck"]["at"] + "; Bybit can't be checked from the server)")
+        p.update(call="SKIP", why=why)
         return p
     p["symbol"] = sym
     bars = {(date.fromisoformat(k) - d0).days: v for k, v in days.items()}
@@ -99,14 +147,17 @@ def check(r, today):
         p["pump"] = round((bars[ref_day]["o"] / bars[-30]["o"] - 1) * 100, 1)
         p["pumpTo"] = (d0 + timedelta(days=ref_day)).isoformat()
     if not big:
-        p["oiChange"], p["oiTo"] = oi_change(sym, d0, today)
+        p["oiChange"], p["oiTo"] = oi_change(sym, d0, today) if p["venue"] == "binance" else oi_change_venue(p["venue"], sym, d0, today)
     entered = today >= entry
     reasons = []
     if p.get("pump") is not None and p["pump"] >= PUMP:
         reasons.append(f"pumped {p['pump']:+.0f}% into the unlock")
     if not big:
         if p.get("oiChange") is None:
-            reasons.append("open interest not available yet" if not entered else "no open-interest data")
+            if p["venue"] in ("bitget", "hyperliquid"):
+                reasons.append(f"no open-interest history on {venues.NAMES[p['venue']]}")
+            else:
+                reasons.append("open interest not available yet" if not entered else "no open-interest data")
         elif p["oiChange"] > OI_DROP:
             reasons.append(f"open interest {p['oiChange']:+.0f}% (needs to fall 10%+)")
     if not entered:
@@ -126,7 +177,7 @@ def check(r, today):
 def follow(p, today):
     """Result of a TAKE so far, on completed daily candles (same rules as the backtest)."""
     d0 = date.fromisoformat(p["unlockDate"])
-    _, _, days = candles.token_days(p["token"], d0 - timedelta(days=45), min(today - timedelta(days=1), d0 + timedelta(days=COVER)))
+    days = bars_for(p, d0 - timedelta(days=45), min(today - timedelta(days=1), d0 + timedelta(days=COVER)))
     b = {(date.fromisoformat(k) - d0).days: (v["o"], v["h"], v["l"], v["c"]) for k, v in days.items() if (date.fromisoformat(k) - d0).days >= -7}
     have = max(b) if b else -99
     if -7 in b and not p.get("entry"):  # entry-day candle is published the day after entry
@@ -155,7 +206,7 @@ def practice(p, today):
     d0 = date.fromisoformat(p["unlockDate"])
     if today <= d0 + timedelta(days=-14):
         return None
-    _, _, days = candles.token_days(p["token"], d0 - timedelta(days=40), min(today - timedelta(days=1), d0 + timedelta(days=30)))
+    days = bars_for(p, d0 - timedelta(days=40), min(today - timedelta(days=1), d0 + timedelta(days=30)))
     b = {(date.fromisoformat(k) - d0).days: v for k, v in days.items()}
     if not b:
         return None
@@ -211,7 +262,7 @@ def main():
         if p["call"] in ("TAKE", "SKIP") and today >= date.fromisoformat(p["entryDate"]) and key not in logged \
                 and p.get("why") != "unlock not confirmed":
             # frozen once, on entry day; later runs only follow the result
-            log["calls"].append({**p, "calledAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+            log["calls"].append({**p, "rules": RULES["version"], "calledAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
                                  "lateCall": today > date.fromisoformat(p["entryDate"])})
             logged.add(key)
         try:

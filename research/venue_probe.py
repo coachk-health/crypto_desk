@@ -10,6 +10,8 @@ T = [
     ("bitget", "https://api.bitget.com/api/v2/mix/market/contracts?productType=USDT-FUTURES", None, lambda d: len(d["data"])),
     ("hyperliquid", "https://api.hyperliquid.xyz/info", b'{"type":"meta"}', lambda d: len(d["universe"])),
     ("mexc", "https://contract.mexc.com/api/v1/contract/detail", None, lambda d: len(d["data"])),
+    ("bybit-alt", "https://api.bytick.com/v5/market/instruments-info?category=linear&limit=1000", None, lambda d: len(d["result"]["list"])),
+    ("coingecko-bybit", "https://api.coingecko.com/api/v3/derivatives/exchanges/bybit?include_tickers=unexpired", None, lambda d: len(d.get("tickers") or [])),
     ("kucoin", "https://api-futures.kucoin.com/api/v1/contracts/active", None, lambda d: len(d["data"])),
 ]
 out = {"ran": datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"), "venues": {}}
