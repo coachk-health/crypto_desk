@@ -383,12 +383,53 @@
     "target": 0.0097565
    },
    "mark": {
-    "date": "2026-11-22",
-    "price": 0.01252,
-    "pnl": 16.31,
-    "r": 1.29
+    "date": "2026-11-23",
+    "price": 0.01151,
+    "pnl": 23.01,
+    "r": 1.82
    },
    "worstAgainst": 3.46
+  },
+  {
+   "id": "RYO-2026-11-24",
+   "token": "RYO",
+   "name": "RYO Coin",
+   "coingeckoId": "ryo-coin",
+   "unlockDate": "2026-11-24",
+   "checkDate": "2026-11-16",
+   "entryDate": "2026-11-17",
+   "coverDate": "2026-12-08",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [
+    {
+     "at": "2026-11-24T11:10:27+00:00",
+     "event": "check day: missed (not logged before its entry day, so not counted)"
+    }
+   ],
+   "decision": {
+    "confidence": 33,
+    "pctCirculating": 15.73,
+    "investorsShare": 0.1848151848151848,
+    "firstInsiderUnlock": false,
+    "usdM": 129.5,
+    "amount": "45.125M RYO",
+    "frozenAt": "2026-11-24T11:10:27+00:00"
+   },
+   "plan": {
+    "stop": 12,
+    "target": 35,
+    "cover": 14,
+    "zone": 1.0,
+    "rr": 2.92,
+    "riskPct": 12.66,
+    "pumpPct": 30.0,
+    "fromSignals": "2026-11-23T10:45:42Z"
+   },
+   "status": "missed",
+   "skipReason": "not logged before its entry day, so not counted"
   },
   {
    "id": "H-2026-11-25",
@@ -795,14 +836,14 @@
    "status": "watching"
   },
   {
-   "id": "LIT-2026-12-30",
+   "id": "LIT-2026-12-27",
    "token": "LIT",
    "name": "Lighter",
    "coingeckoId": "lighter",
-   "unlockDate": "2026-12-30",
-   "checkDate": "2026-12-22",
-   "entryDate": "2026-12-23",
-   "coverDate": "2027-01-13",
+   "unlockDate": "2026-12-27",
+   "checkDate": "2026-12-19",
+   "entryDate": "2026-12-20",
+   "coverDate": "2027-01-10",
    "rules": [
     "first"
    ],
@@ -827,7 +868,7 @@
    "status": "watching"
   }
  ],
- "updatedAt": "2026-11-24T01:03:17Z",
+ "updatedAt": "2026-11-24T11:10:27Z",
  "summary": {
   "closed": 2,
   "won": 1,
