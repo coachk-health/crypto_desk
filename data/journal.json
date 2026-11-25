@@ -2,6 +2,30 @@
   "about": "Running record of what we have done on the desk: every change, test and decision, newest first. Entries are only ever added, never edited or removed. Add one entry per working session (see CLAUDE.md).",
   "entries": [
     {
+      "date": "2026-11-26",
+      "title": "02:52 desk update: news refresh",
+      "did": [
+        "Refreshed news, market snapshot and calendar after the US afternoon of 25 Nov (Beige Book out; stocks not yet closed).",
+        "Independent source check over 3 rounds (75 claims, 8 removed, ETH/SOL snapshot and Nvidia figures replaced with source values). Unlock re-check skipped (last checked 04:20 UTC 25 Nov).",
+        "Scores refreshed."
+      ],
+      "found": [
+        "US stocks won back most of the morning tariff/AI sell-off; bitcoin back above $60,000 at 2:24pm ET (CoinDesk).",
+        "Beige Book: 8 of 12 districts grew slightly to moderately; prices still rising. CME FedWatch 97.8% for a December hike (MarketSpeaker).",
+        "Deribit expiry trackers differ: CryptoTicker 112,323 BTC / max pain $73,000 (21 Nov) vs OKX 111,885 BTC / $72,000 (24 Nov); both shown.",
+        "Market-price pages could not be opened reliably by the research agent; snapshot uses Yahoo (BTC) and CoinDesk ticker (ETH, SOL)."
+      ],
+      "decided": [
+        "Lead 1 is now the afternoon rebound; Fed/inflation story adds the Beige Book; lead 3 merges ETF outflows and treasury-company selling.",
+        "Dropped DOJ-USDC, Franklin Templeton HYPE and Bithumb briefs (sources could not be re-opened), the liquidation figure and the trade-balance row (date unconfirmed). Added STO (3 Dec) to the unlock row."
+      ],
+      "files": [
+        "data/news.json",
+        "data/unlocks.json",
+        "data/journal.json"
+      ]
+    },
+    {
       "date": "2026-11-25",
       "title": "22:52 desk update: news refresh",
       "did": [
