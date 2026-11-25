@@ -1,9 +1,9 @@
 {
- "made": "2026-11-25 10:01 UTC",
- "day": "2026-11-25",
+ "made": "2026-11-25 22:39 UTC",
+ "day": "2026-11-26",
  "rules": "v5, frozen 25 Nov 2026: only unlocks we can short. Short 25%+ unlocks, or first insider unlocks with open interest down 10%+; skip anything up 30%+ going in. Short the day -7 open, stop 12%, target 35%, out day +14. Short on Binance; if Binance has no perp, on OKX, Bitget, Gate, Hyperliquid or KuCoin (never MEXC), only where the price confirms it's the same token.",
  "shortable": {
-  "checkedAt": "2026-11-25 10:01 UTC",
+  "checkedAt": "2026-11-25 22:38 UTC",
   "counts": {
    "yes": 58,
    "no": 9,
@@ -39,9 +39,9 @@
     "token": "ADI",
     "date": "2026-12-09",
     "notes": [
-     "Bitget: different asset: price 313.1 vs ~7.11 (CoinGecko's price)",
-     "Gate: different asset: price 311 vs ~7.11 (CoinGecko's price)",
-     "Bybit: different asset: price 304 vs ~7.11 (CoinGecko's price)"
+     "Bitget: different asset: price 313.1 vs ~7.17 (CoinGecko's price)",
+     "Gate: different asset: price 311 vs ~7.17 (CoinGecko's price)",
+     "Bybit: different asset: price 332.6 vs ~7.17 (CoinGecko's price)"
     ]
    },
    {
@@ -126,7 +126,7 @@
    ],
    "alsoListed": [],
    "venueNotes": [],
-   "daysToEntry": 9
+   "daysToEntry": 8
   },
   {
    "id": "KITE|2026-11-03",
@@ -274,7 +274,7 @@
    "where": [],
    "alsoListed": [],
    "venueNotes": [],
-   "daysToEntry": 7
+   "daysToEntry": 6
   },
   {
    "id": "ADI|2026-12-09",
@@ -290,8 +290,8 @@
    "pumpPct": null,
    "oiChangePct": null,
    "call": "SKIP",
-   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-25 10:01 UTC)",
-   "action": "Skip: can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-25 10:01 UTC).",
+   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-25 22:39 UTC)",
+   "action": "Skip: can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-25 22:39 UTC).",
    "entry": null,
    "stop": null,
    "target": null,
@@ -302,11 +302,11 @@
    "where": [],
    "alsoListed": [],
    "venueNotes": [
-    "Bitget: different asset: price 313.1 vs ~7.1 (CoinGecko's price)",
-    "Gate: different asset: price 311 vs ~7.1 (CoinGecko's price)",
-    "Bybit: different asset: price 304 vs ~7.1 (CoinGecko's price)"
+    "Bitget: different asset: price 313.1 vs ~7.17 (CoinGecko's price)",
+    "Gate: different asset: price 311 vs ~7.17 (CoinGecko's price)",
+    "Bybit: different asset: price 332.6 vs ~7.17 (CoinGecko's price)"
    ],
-   "daysToEntry": 7
+   "daysToEntry": 6
   }
  ],
  "record": [
