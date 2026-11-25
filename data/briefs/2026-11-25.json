@@ -1,11 +1,11 @@
 {
- "made": "2026-11-25 03:17 UTC",
+ "made": "2026-11-25 05:41 UTC",
  "day": "2026-11-25",
  "rules": "v5, frozen 25 Nov 2026: only unlocks we can short. Short 25%+ unlocks, or first insider unlocks with open interest down 10%+; skip anything up 30%+ going in. Short the day -7 open, stop 12%, target 35%, out day +14. Short on Binance; if Binance has no perp, on OKX, Bitget, Gate, Hyperliquid or KuCoin (never MEXC), only where the price confirms it's the same token.",
  "shortable": {
-  "checkedAt": "2026-11-25 03:17 UTC",
+  "checkedAt": "2026-11-25 05:41 UTC",
   "counts": {
-   "yes": 57,
+   "yes": 58,
    "no": 9,
    "unknown": 0
   },
@@ -39,9 +39,9 @@
     "token": "ADI",
     "date": "2026-12-09",
     "notes": [
-     "Bitget: different asset: price 313.1 vs ~7.2 (CoinGecko's price)",
-     "Gate: different asset: price 311 vs ~7.2 (CoinGecko's price)",
-     "Bybit: different asset: price 309.7 vs ~7.2 (CoinGecko's price)"
+     "Bitget: different asset: price 313.1 vs ~7.19 (CoinGecko's price)",
+     "Gate: different asset: price 311 vs ~7.19 (CoinGecko's price)",
+     "Bybit: different asset: price 309.2 vs ~7.19 (CoinGecko's price)"
     ]
    },
    {
@@ -125,41 +125,6 @@
    "lastClose": 0.1322,
    "shortPct": 15.0,
    "asOf": "2026-11-23"
-  },
-  {
-   "id": "WET|2026-12-09",
-   "section": "coming",
-   "token": "WET",
-   "name": "HumidiFi",
-   "setup": "Big unlock",
-   "unlockDate": "2026-12-09",
-   "entryDate": "2026-12-02",
-   "coverDate": "2026-12-23",
-   "sizePct": 112.7,
-   "firstInsider": false,
-   "pumpPct": -21.5,
-   "oiChangePct": null,
-   "call": "WATCH",
-   "why": "passes so far",
-   "action": "Decided at the 2 Dec open. Needs: price not up 30%+ since 30 days before the unlock. Now: passes so far.",
-   "entry": null,
-   "stop": null,
-   "target": null,
-   "chart": "https://www.tradingview.com/chart/?symbol=BINANCE:WETUSDT.P",
-   "chartLabel": "Chart on TradingView",
-   "lateCall": false,
-   "venue": "Binance",
-   "where": [
-    "Binance",
-    "OKX",
-    "Bitget",
-    "Gate",
-    "KuCoin",
-    "Bybit"
-   ],
-   "alsoListed": [],
-   "venueNotes": [],
-   "daysToEntry": 7
   },
   {
    "id": "CYS|2026-12-11",
@@ -286,6 +251,34 @@
    "resultR": -1.0
   },
   {
+   "id": "WET|2026-12-09",
+   "section": "skipped",
+   "token": "WET",
+   "name": "HumidiFi",
+   "setup": "Big unlock",
+   "unlockDate": "2026-12-09",
+   "entryDate": "2026-12-02",
+   "coverDate": "2026-12-23",
+   "sizePct": 112.7,
+   "firstInsider": false,
+   "pumpPct": null,
+   "oiChangePct": null,
+   "call": "SKIP",
+   "why": "unlock not confirmed",
+   "action": "Skip: unlock not confirmed.",
+   "entry": null,
+   "stop": null,
+   "target": null,
+   "chart": "https://www.tradingview.com/chart/?symbol=BINANCE:WETUSDT.P",
+   "chartLabel": "Chart on TradingView",
+   "lateCall": false,
+   "venue": null,
+   "where": [],
+   "alsoListed": [],
+   "venueNotes": [],
+   "daysToEntry": 7
+  },
+  {
    "id": "ADI|2026-12-09",
    "section": "cantshort",
    "token": "ADI",
@@ -299,8 +292,8 @@
    "pumpPct": null,
    "oiChangePct": null,
    "call": "SKIP",
-   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-25 03:17 UTC)",
-   "action": "Skip: can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-25 03:17 UTC).",
+   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-25 05:41 UTC)",
+   "action": "Skip: can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-25 05:41 UTC).",
    "entry": null,
    "stop": null,
    "target": null,
@@ -311,9 +304,9 @@
    "where": [],
    "alsoListed": [],
    "venueNotes": [
-    "Bitget: different asset: price 313.1 vs ~7.2 (CoinGecko's price)",
-    "Gate: different asset: price 311 vs ~7.2 (CoinGecko's price)",
-    "Bybit: different asset: price 309.7 vs ~7.2 (CoinGecko's price)"
+    "Bitget: different asset: price 313.1 vs ~7.19 (CoinGecko's price)",
+    "Gate: different asset: price 311 vs ~7.19 (CoinGecko's price)",
+    "Bybit: different asset: price 309.2 vs ~7.19 (CoinGecko's price)"
    ],
    "daysToEntry": 7
   }
