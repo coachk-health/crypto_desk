@@ -3,6 +3,29 @@
   "entries": [
     {
       "date": "2026-11-25",
+      "title": "22:52 desk update: news refresh",
+      "did": [
+        "Refreshed news, market snapshot and calendar after the 8:30am ET US data.",
+        "Independent source check over 2 rounds (142 claims, 3 contradicted and corrected, 1 reworded). Unlock re-check skipped (last checked 04:20 UTC today).",
+        "Scores refreshed."
+      ],
+      "found": [
+        "USTR formally proposed Section 301 tariffs on 14 economies (not 16), up to 35% on Vietnam; comments due 5 Jan 2027.",
+        "Core PCE 3.3% vs 3.2% expected; Q3 GDP revised to 4.3%. Bitcoin hit a $57,500 session low as the Nasdaq fell about 4% (CoinDesk).",
+        "Earlier JPMorgan $2.8B MSTR outflow estimate dates from Nov 2025 (KuCoin); calendar note reworded."
+      ],
+      "decided": [
+        "Lead 1 is now the USTR tariff proposal; PCE story rewritten with actuals; DOJ/Lazarus moved to a brief; new lead 3 on crypto-treasury companies (Bit Digital, Ark, Strategy).",
+        "Dropped HKMA, Tether-fees and South Korea briefs (not re-verified this run)."
+      ],
+      "files": [
+        "data/news.json",
+        "data/unlocks.json",
+        "data/journal.json"
+      ]
+    },
+    {
+      "date": "2026-11-25",
       "title": "18:52 desk update: news refresh",
       "did": [
         "Refreshed news, market snapshot and calendar.",
