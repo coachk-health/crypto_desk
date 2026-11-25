@@ -1,239 +1,237 @@
 {
-  "date": "2026-11-25",
-  "updated": "2026-11-24T20:15:51Z",
-  "headline": "Bitcoin has slipped back below $60,000 as a reported US tariff plan and a tech-stock sell-off hit risky assets, with Wednesday's inflation report the next big test before the Fed's 9 December decision.",
-  "market": {
-    "asOf": "Bitcoin price read on CoinMarketCap at about 19:57 UTC Tue 24 Nov (02:57 Wed Bangkok); Binance showed $59,494 at 16:05 UTC. Sources disagreed on the 24-hour change for all three coins and on ether and solana prices, so those are left out. Use the live prices on this page.",
-    "btc": {
-      "price": 59650,
-      "chg24h": null
-    },
-    "eth": {
-      "price": null,
-      "chg24h": null
-    },
-    "sol": {
-      "price": null,
-      "chg24h": null
-    },
-    "fearGreed": "11 (\"Extreme Fear\") on Alternative.me's Crypto Fear & Greed Index; CoinMarketCap's Fear and Greed Index read 9. Both read about 19:55 UTC 24 Nov."
+ "date": "2026-11-25",
+ "updated": "2026-11-25T00:14:13Z",
+ "headline": "Bitcoin is holding just under $60,000 after US tech stocks fell again, with new US tariffs expected soon and Wednesday's inflation report the next test before a Fed meeting where markets expect a rate hike.",
+ "market": {
+  "asOf": "Bitcoin and solana read on CoinMarketCap at about 23:56-23:58 UTC Tue 24 Nov (06:56 Wed Bangkok); ether from Business Upturn at 5:55pm ET (22:55 UTC). Sources disagreed on the 24-hour change for ether and solana (CoinMarketCap's solana page showed -5.43%, Business Upturn -2.82% at 5:55pm ET), so those are left out. Use the live prices on this page.",
+  "btc": {
+   "price": 59663,
+   "chg24h": -2.12
   },
-  "stories": [
+  "eth": {
+   "price": 1684,
+   "chg24h": null
+  },
+  "sol": {
+   "price": 69.38,
+   "chg24h": null
+  },
+  "fearGreed": "9 (\"Extreme Fear\") on CoinMarketCap's Fear and Greed Index, read about 23:56 UTC 24 Nov. Alternative.me's index could not be read this run."
+ },
+ "stories": [
+  {
+   "title": "Bitcoin stays just under $60,000 as tech stocks fall and money keeps leaving bitcoin funds",
+   "mood": "bearish",
+   "summary": "Bitcoin gave back Monday's Nvidia-driven bounce and stayed just under $60,000 into Tuesday evening in the US. The Nasdaq fell about 1.5%, traders who borrowed to bet on higher prices were forced out, and US spot bitcoin funds have now lost money five days in a row. Analysts are watching June's low near $58,500.",
+   "points": [
+    "At 5:55pm ET bitcoin was $59,931.93, down 2.09% over 24 hours, and ether $1,684.14, down 1.45%, per Business Upturn.",
+    "The Nasdaq closed down 1.45% at 23,740.52 and the S&P 500 down 0.48%, while the Dow rose 0.87%, per Reuters via MarketScreener.",
+    "About $844 million of crypto futures bets were force-closed in 24 hours, $357 million of them in bitcoin, per CoinDesk.",
+    "US spot bitcoin funds lost $569.7 million on Monday 23 Nov, led by BlackRock's IBIT at $509.3 million, per The Block; November's outflows of about $4.71 billion are a monthly record, per CoinDesk.",
+    "Glassnode said a close below the June low of $58,500 could point toward bitcoin's \"realized price\" of about $53,200, per CoinDesk."
+   ],
+   "sources": [
     {
-      "title": "Bitcoin slips below $60,000 again as a tariff report and a tech-stock sell-off hit risky assets",
-      "mood": "bearish",
-      "summary": "Monday's Nvidia-driven stock rally faded on Tuesday after a report that the US could soon raise tariffs on many trading partners. Chip stocks fell hard and bitcoin dropped back under $60,000. Money is still leaving US bitcoin funds, and analysts are watching June's low near $58,500.",
-      "points": [
-        "Bitcoin was at $59,800 at 10:32am ET, down 5.8% over 24 hours, with ether down about 6% and XRP and solana about 10%, per CoinDesk.",
-        "Bitcoin dipped below $59,500 on Bitstamp, nearly 8% below Monday's high of $64,500, per Cointelegraph.",
-        "The Wall Street Journal reported the US could raise tariffs as soon as this week on China, Japan, South Korea and more than a dozen other countries, per CoinDesk.",
-        "US spot bitcoin funds lost $569.7 million on Monday 23 Nov, their fifth straight day of outflows; November's outflows reached a record $4.71 billion, per ChainCatcher.",
-        "Glassnode said a close below the June low of $58,500 could open a move toward bitcoin's \"realized price\" of $53,200, per CoinDesk."
-      ],
-      "sources": [
-        {
-          "label": "CoinDesk: live updates, bitcoin pulls back to $60,000",
-          "url": "https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto"
-        },
-        {
-          "label": "Cointelegraph: bitcoin slides on US tariff nerves",
-          "url": "https://cointelegraph.com/markets/bitcoin-slides-us-tariff-nerves-anthropic-falls-ipo-price"
-        },
-        {
-          "label": "ChainCatcher: spot bitcoin ETF outflows",
-          "url": "https://chaincatcher.com/en/article/2307608"
-        },
-        {
-          "label": "CoinDesk Daybook: record November ETF outflows",
-          "url": "https://www.coindesk.com/daybook-us/2026/11/24/bitcoin-drops-as-november-spot-etf-outflows-increase-to-record-usd4-71-billion"
-        }
-      ]
+     "label": "CoinDesk: bitcoin hands back Monday's Nvidia-driven gains",
+     "url": "https://www.coindesk.com/markets/2026/11/24/bitcoin-hands-back-monday-s-nvidia-driven-gains-liquidations-triple"
     },
     {
-      "title": "US consumer confidence jumps ahead of Wednesday's inflation report and the Fed's December decision",
-      "mood": "volatile",
-      "summary": "US consumer confidence rose sharply in November. Oxford Economics expects the Federal Reserve to raise rates by a quarter point at its 9 December decision, and higher rates tend to weigh on risky assets like crypto. October's PCE inflation report comes out Wednesday at 8:30am ET (20:30 Bangkok).",
-      "points": [
-        "The Conference Board's consumer confidence index rose 11.4 points to 103.3 in November, its highest since January 2025, per the Conference Board.",
-        "October PCE prices are expected to rise 0.3% on the month and 3.8% on the year, after 0.5% and 3.6% in September, per Continuum Economics and the BEA.",
-        "Core PCE is expected at 3.2% on the year, up from 3.1% in September, per Continuum Economics and the BEA.",
-        "The Fed's next rate decision is Wed 9 Dec at 2:00pm ET, per the Federal Reserve."
-      ],
-      "sources": [
-        {
-          "label": "Conference Board via PR Newswire: consumer confidence surged in November",
-          "url": "https://www.prnewswire.com/news-releases/us-consumer-confidence-surged-in-november-302949447.html"
-        },
-        {
-          "label": "BEA: personal income and outlays, September 2026",
-          "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026"
-        },
-        {
-          "label": "Federal Reserve: December 2026 calendar",
-          "url": "https://www.federalreserve.gov/newsevents/2026-December.htm"
-        },
-        {
-          "label": "Oxford Economics: US PCE nowcast",
-          "url": "https://www.oxfordeconomics.com/resource/us-pce-nowcast-broadening-pressures-lock-in-december-rate-hike/"
-        }
-      ]
+     "label": "The Block: bitcoin ETFs see another $570 million of outflows",
+     "url": "https://www.theblock.co/news/markets/2026-11-24-bitcoin-etfs-another-570-million-net-outflows-november-total-nears-5-billion-btc-dips-below-60k-445548"
     },
     {
-      "title": "Utah moves to drop criminal charges against Kalshi after the prediction market leaves the state",
-      "mood": "neutral",
-      "summary": "Utah's attorney general moved to drop criminal complaints against prediction-market company Kalshi and its executives after Kalshi stopped serving the state. Where Americans can legally use prediction markets is being fought out state by state and may end up at the Supreme Court.",
-      "points": [
-        "Utah's attorney general moved to drop 14 criminal complaints, including a felony count, against Kalshi and its executives, per CoinDesk.",
-        "Utah AG Derek Brown: \"Kalshi has pulled out of Utah, and if it returns, so will the charges,\" per CoinDesk.",
-        "Six other prediction-market firms also agreed to stay out of Utah, per CoinDesk.",
-        "Three of four federal appeals rulings have sided with the states, so the Supreme Court may have to decide, per CoinDesk."
-      ],
-      "sources": [
-        {
-          "label": "CoinDesk: Utah moves to drop criminal pursuit of Kalshi",
-          "url": "https://www.coindesk.com/policy/2026/11/24/utah-moves-to-drop-criminal-pursuit-of-kalshi-after-the-firm-halted-services-there"
-        }
-      ]
+     "label": "Reuters via MarketScreener: Nasdaq, S&P 500 end lower",
+     "url": "https://www.marketscreener.com/news/nasdaq-s-p-500-end-lower-following-monday-s-nvidia-fueled-rally-ce7851dbdd81f720"
+    },
+    {
+     "label": "Business Upturn: crypto markets fall on Tuesday evening",
+     "url": "https://businessupturn.com/usa/money/cryptocurrency/crypto-markets-fall-broadly-on-tuesday-evening-as-bitcoin-slips-below-60-000/"
+    },
+    {
+     "label": "CoinDesk: live updates, bitcoin pulls back to $60,000",
+     "url": "https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto"
     }
-  ],
-  "briefs": [
+   ]
+  },
+  {
+   "title": "US expected to announce new tariffs on 16 trading partners",
+   "mood": "volatile",
+   "summary": "Reuters reported that the US government is about to publish the results of an investigation into \"excess industrial capacity\" in 16 economies, followed by new import taxes. As of the latest reports it had not been announced.",
+   "points": [
+    "The 16 economies include China, the EU, India, Japan, South Korea, Mexico, Vietnam and Taiwan, per Reuters via the Korea Times.",
+    "Existing trade deals cap duties at 15% for the EU, Japan and South Korea, and the White House is expected to honor them, per Reuters via Yahoo Finance.",
+    "A trade lawyer at King & Spalding suggested rates of 15% to 25%, per Reuters via Yahoo Finance.",
+    "The new duties would partly replace tariffs the Supreme Court struck down in February; the US-China trade truce runs out on 10 January, per Reuters via the Korea Times."
+   ],
+   "sources": [
     {
-      "title": "Kraken's Krak opens a waitlist for US credit cards",
-      "summary": "Krak plans two US Visa credit cards for early 2027 with up to 4% cashback in dollars or bitcoin; one is secured by a USDC deposit, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-24-kraken-krak-early-2027-launch-us-credit-cards-bitcoin-cashback-usdc-collateral-445498"
+     "label": "Reuters via Yahoo Finance: Trump administration set to unveil tariffs",
+     "url": "https://finance.yahoo.com/economy/policy/articles/trump-administration-set-unveil-tariffs-161914689.html"
     },
     {
-      "title": "Ether treasury firm BTCS sells $43.8 million of ETH",
-      "summary": "BTCS sold about 27,300 ETH to cut its Aave debt, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-24-ethereum-treasury-firm-btcs-sells-43-8-million-eth-cut-aave-debt-ceo-says-we-do-not-take-this-lightly-445562"
-    },
-    {
-      "title": "US seeks $1.17 billion in USDC from the Binance hack",
-      "summary": "The Justice Department filed to seize about $1.17 billion in frozen USDC tied to the Binance hack that US agencies blame on North Korea's Lazarus group, per Cryptonews Australia.",
-      "url": "https://cryptonews.com.au/news/us-seeks-to-recover-us1-17-billion-in-stolen-usdc-from-binance-hack-135605/"
-    },
-    {
-      "title": "South Korea's draft crypto bill would allow token sales again",
-      "summary": "The draft bill would allow domestic token sales (ICOs) with a white paper filed with regulators and now goes to the National Assembly, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-24-south-korea-new-crypto-bill-445494"
-    },
-    {
-      "title": "BlackRock opens a tokenized money market fund in Hong Kong",
-      "summary": "BlackRock's HKD Digital Liquidity Fund, with about $100 million in assets, is open to retail and institutional investors in Hong Kong, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-24-blackrock-opens-tokenized-money-market-fund-with-100-million-in-assets-to-hong-kong-investors-445524"
-    },
-    {
-      "title": "Robinhood co-leads a $5 million round in Rialto",
-      "summary": "Rialto is an onchain platform that trades Robinhood Stock Tokens, per The Block.",
-      "url": "https://www.theblock.co/news/deals/2026-11-24-robinhood-onchain-trading-platform-rialto-funding-446030"
-    },
-    {
-      "title": "Europol traces $28.5 million in crypto behind illegal streaming",
-      "summary": "A Europol operation working with Binance, Coinbase and Chainalysis traced the money behind 57 illegal streaming services, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-24-europol-operation-binance-coinbase-chainalysis-traces-28-5-million-crypto-illegal-streaming-services-446019"
-    },
-    {
-      "title": "Strategy stock hits its lowest since early 2024",
-      "summary": "Strategy (MSTR) fell to an intraday low of $77.89 on Tuesday, its lowest since early 2024, per CoinDesk.",
-      "url": "https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto"
+     "label": "Reuters via Korea Times: US poised to unveil new tariffs",
+     "url": "https://www.koreatimes.co.kr/world/20261125/us-poised-to-unveil-new-tariffs-targeting-s-korea-15-other-trading-partners"
     }
-  ],
-  "calendar": [
+   ]
+  },
+  {
+   "title": "Wednesday's inflation report lands as markets expect the Fed to raise rates in December",
+   "mood": "volatile",
+   "summary": "October's PCE inflation report, the Fed's preferred inflation measure, comes out Wednesday at 8:30am ET (20:30 Bangkok), along with a revised Q3 growth figure. Traders now expect the Federal Reserve to raise interest rates at its 9 December decision. Higher rates tend to weigh on risky assets like crypto.",
+   "points": [
+    "October PCE prices are expected to rise 0.3% on the month and 3.8% on the year, after 0.5% and 3.6% in September, per FinanceCalendar.",
+    "Fed funds futures priced about a 95% chance of a quarter-point hike on 9 Dec as of 24 Nov, per CoinOtag.",
+    "New York Fed President John Williams signaled support for higher rates but did not appear to back Governor Waller's push for a half-point hike, per CoinDesk.",
+    "The Fed's decision is Wed 9 Dec at 2:00pm ET (02:00 Thu Bangkok), per the Federal Reserve."
+   ],
+   "sources": [
     {
-      "et": "Tue 24 Nov · 4:30pm",
-      "bkk": "Wed 25 · 04:30",
-      "event": "CleanSpark results webcast (bitcoin miner)",
-      "impact": "neutral",
-      "key": false,
-      "note": "Webcast time per CleanSpark's announcement."
+     "label": "FinanceCalendar: US PCE, October release",
+     "url": "https://www.financecalendar.com/event/us-personal-income-and-outlays-pce-november-2026/"
     },
     {
-      "et": "Wed 25 Nov – Tue 1 Dec",
-      "bkk": "Wed 25 Nov – Tue 1 Dec",
-      "event": "Token unlocks: IRYS, XPL, H, HUMA, PROS, GRASS, GRVT, FF, CARDS, KMNO, GUN, EIGEN, SUI",
-      "impact": "bearish",
-      "key": false,
-      "note": "IRYS, XPL and H on Wednesday 25; HUMA on Thursday 26; PROS and GRASS on Saturday 28; GRVT, FF and CARDS on Sunday 29; KMNO and GUN on Monday 30; EIGEN and SUI on Tuesday 1 Dec. See the unlock table on this page for sizes and confidence. (Dates from this desk's unlock data.)"
+     "label": "CoinOtag: traders price a December Fed hike",
+     "url": "https://en.coinotag.com/traders-price-december-fed-rate-hike-odds-pce"
     },
     {
-      "et": "Wed 25 Nov · 8:30am",
-      "bkk": "Wed 25 · 20:30",
-      "event": "US PCE inflation (Oct) and Q3 GDP (second estimate)",
-      "impact": "volatile",
-      "key": true,
-      "note": "PCE expected +0.3% on the month and 3.8% on the year (September +0.5% and 3.6%); core expected 3.2% on the year (September 3.1%), per Continuum Economics and the BEA. Q3 GDP expected 3.1% per FactSet via FinanceCalendar (first estimate 3.4%, per the BEA). October durable goods orders are also due Wednesday; Continuum Economics forecasts +0.2% (September +1.8%, per the Census Bureau)."
+     "label": "CoinDesk: live updates, bitcoin pulls back to $60,000",
+     "url": "https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto"
     },
     {
-      "et": "Wed 25 Nov · 2:00pm",
-      "bkk": "Thu 26 · 02:00",
-      "event": "Fed Beige Book",
-      "impact": "neutral",
-      "key": false,
-      "note": "Per the Federal Reserve's November calendar."
-    },
-    {
-      "et": "Thu 26 Nov",
-      "bkk": "Thu 26 Nov",
-      "event": "Thanksgiving: US stock market closed",
-      "impact": "neutral",
-      "key": false,
-      "note": "NYSE is closed Thursday and closes early at 1:00pm ET on Friday 27 Nov (01:00 Sat Bangkok), per NYSE."
-    },
-    {
-      "et": "Fri 27 Nov",
-      "bkk": "Fri 27 Nov",
-      "event": "Bitcoin monthly options expiry",
-      "impact": "volatile",
-      "key": true,
-      "note": "About $6.5 billion of bitcoin options expire on Friday 27 Nov, with \"max pain\" at $75,000, per a CryptoQuant Quicktake."
-    },
-    {
-      "et": "Mon 30 Nov · 9:45am",
-      "bkk": "Mon 30 · 21:45",
-      "event": "Chicago PMI (Nov)",
-      "impact": "neutral",
-      "key": false,
-      "note": "October was 55.3, per Newsquawk. Release time per MNI."
-    },
-    {
-      "et": "Mon 30 Nov · close",
-      "bkk": "Tue 1 Dec",
-      "event": "MSCI removes Strategy (MSTR), Metaplanet and Upexi from its indexes",
-      "impact": "volatile",
-      "key": true,
-      "note": "Takes effect after the close on 30 Nov; JPMorgan had estimated about $2.8 billion of MSTR selling, per Cointelegraph."
-    },
-    {
-      "et": "Tue 1 Dec · 10:00am",
-      "bkk": "Tue 1 · 22:00",
-      "event": "ISM manufacturing (Nov) and US job openings, JOLTS (Oct)",
-      "impact": "neutral",
-      "key": false,
-      "note": "ISM's October reading was 55.5, per ISM; September job openings were 7.523 million, per the BLS."
-    },
-    {
-      "et": "Fri 4 Dec · 8:30am",
-      "bkk": "Fri 4 · 20:30",
-      "event": "US jobs report (Nov)",
-      "impact": "volatile",
-      "key": false,
-      "note": "Per the BLS schedule. October payrolls rose 165,000 with unemployment at 4.1%, per Fox Business."
-    },
-    {
-      "et": "Tue 8 – Wed 9 Dec",
-      "bkk": "Tue 8 – Thu 10 Dec",
-      "event": "Next Fed meeting and rate decision",
-      "impact": "volatile",
-      "key": true,
-      "note": "Decision Wed 9 Dec at 2:00pm ET (02:00 Thu Bangkok), per the Federal Reserve. Fed officials stop public comments from Sat 28 Nov, per the Fed's blackout calendar. Current range 3.75-4.00%."
+     "label": "Federal Reserve: December 2026 calendar",
+     "url": "https://www.federalreserve.gov/newsevents/2026-December.htm"
     }
-  ],
-  "breaking": [],
-  "verification": {
-    "checkedAt": "2026-11-24T20:15:51Z",
-    "claimsChecked": 119,
-    "claimsRemoved": 8,
-    "rounds": 2,
-    "method": "Independent source check: every claim re-opened at its cited URL"
+   ]
   }
+ ],
+ "briefs": [
+  {
+   "title": "SEC staff gives Molecule no-action relief",
+   "summary": "The SEC's Corporation Finance staff said it will not recommend enforcement over Molecule's science-research project tokens, adding to recent no-action letters for DoubleZero, Fuse and Canton, per The Block.",
+   "url": "https://www.theblock.co/news/regulation/2026-11-24-sec-staff-gives-molecule-no-action-relief-scientific-research-tokens-446067"
+  },
+  {
+   "title": "CleanSpark reports its fiscal-year results",
+   "summary": "The bitcoin miner reported fourth-quarter revenue of $120.9 million, down 46% on the year, a full-year net loss of $987.1 million, and 13,530 BTC held, per its SEC filing.",
+   "url": "https://www.sec.gov/Archives/edgar/data/0000827876/000119312526475677/clsk-ex99_1.htm"
+  },
+  {
+   "title": "Binance pauses withdrawals for maintenance on Wednesday",
+   "summary": "Withdrawals on all networks pause from 06:00 UTC Wed 25 Nov (13:00 Bangkok) for about 60 minutes; trading is not affected, per crypto.news.",
+   "url": "https://crypto.news/binance-to-suspend-crypto-withdrawals-across-all-networks-on-nov-25"
+  },
+  {
+   "title": "CFTC lets derivatives firms count crypto toward reserves",
+   "summary": "A CFTC staff advisory lets exchanges and clearinghouses count bitcoin and ether (with a 20% haircut) and qualifying stablecoins (2%) toward operating-cost reserves, per crypto.news.",
+   "url": "https://crypto.news/cftc-bitcoin-ethereum-stablecoins-financial-reserves"
+  },
+  {
+   "title": "Strategy stock hits its lowest since early 2024",
+   "summary": "Strategy (MSTR) fell to an intraday low of $77.89 on Tuesday, its lowest since early 2024, per CoinDesk.",
+   "url": "https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto"
+  },
+  {
+   "title": "$2.57 million drained from trader Ansem's wallet",
+   "summary": "A suspected attacker moved $2.57 million in USDC out of memecoin trader Ansem's wallet and his Black Bull coin fell 55%; Ansem denies involvement, per The Block.",
+   "url": "https://www.theblock.co/news/defi/2026-11-24-ansem-denies-involvement-2-57-million-wallet-drain-black-bull-creator-coin-plummets-55-445705"
+  }
+ ],
+ "calendar": [
+  {
+   "et": "Wed 25 Nov – Wed 2 Dec",
+   "bkk": "Wed 25 Nov – Wed 2 Dec",
+   "event": "Token unlocks: IRYS, XPL, H, HUMA, PROS, GRASS, GRVT, FF, CARDS, KMNO, GUN, EIGEN, SUI, M, BTW, ENA",
+   "impact": "bearish",
+   "key": false,
+   "note": "IRYS, XPL and H on Wednesday 25; HUMA on Thursday 26; PROS and GRASS on Saturday 28; GRVT, FF and CARDS on Sunday 29; KMNO and GUN on Monday 30; EIGEN and SUI on Tuesday 1 Dec; M, BTW and ENA on Wednesday 2 Dec. See the unlock table on this page for sizes and confidence. (Dates from this desk's unlock data.)"
+  },
+  {
+   "et": "Wed 25 Nov · 7:25am",
+   "bkk": "Wed 25 · 19:25",
+   "event": "Fed Vice Chair for Supervision Bowman speaks (pre-recorded, on bank supervision)",
+   "impact": "neutral",
+   "key": false,
+   "note": "Per the Federal Reserve's November calendar."
+  },
+  {
+   "et": "Wed 25 Nov · 8:30am",
+   "bkk": "Wed 25 · 20:30",
+   "event": "US PCE inflation (Oct), Q3 GDP (second estimate), durable goods (Oct) and jobless claims",
+   "impact": "volatile",
+   "key": true,
+   "note": "PCE expected +0.3% on the month and 3.8% on the year (September +0.5% and 3.6%); core expected about 3.2% on the year (September 3.1%), per FinanceCalendar. Q3 GDP forecasts differ: 3.1% (FactSet, via FinanceCalendar) and 3.5% (Gotrade); first estimate was 3.4%. Durable goods: Continuum Economics forecasts +0.2% (September +1.8%). Jobless claims move up a day for Thanksgiving; about 201,000 expected, per Gotrade."
+  },
+  {
+   "et": "Wed 25 Nov · 2:00pm",
+   "bkk": "Thu 26 · 02:00",
+   "event": "Fed Beige Book",
+   "impact": "neutral",
+   "key": false,
+   "note": "Per the Federal Reserve's November calendar."
+  },
+  {
+   "et": "Thu 26 Nov",
+   "bkk": "Thu 26 Nov",
+   "event": "Thanksgiving: US stock market closed",
+   "impact": "neutral",
+   "key": false,
+   "note": "NYSE is closed Thursday and closes early at 1:00pm ET on Friday 27 Nov (01:00 Sat Bangkok), per NYSE."
+  },
+  {
+   "et": "Fri 27 Nov",
+   "bkk": "Fri 27 Nov",
+   "event": "Deribit monthly bitcoin and ether options expiry",
+   "impact": "volatile",
+   "key": true,
+   "note": "About $6.5 billion of bitcoin options expire, with \"max pain\" at $75,000, per CryptoQuant."
+  },
+  {
+   "et": "Mon 30 Nov · 9:45am",
+   "bkk": "Mon 30 · 21:45",
+   "event": "Chicago PMI (Nov)",
+   "impact": "neutral",
+   "key": false,
+   "note": "October was 55.3, per Newsquawk. Release time per MNI."
+  },
+  {
+   "et": "Mon 30 Nov · close",
+   "bkk": "Tue 1 Dec",
+   "event": "MSCI removes Strategy (MSTR), Metaplanet and Upexi from its indexes",
+   "impact": "volatile",
+   "key": true,
+   "note": "New index make-up applies from 1 Dec. Funds tracking MSCI indexes held about 13 million MSTR shares (about $1.49 billion at the 12 Nov close), per KuCoin, which says no final selling figure has been confirmed."
+  },
+  {
+   "et": "Tue 1 Dec · 10:00am",
+   "bkk": "Tue 1 · 22:00",
+   "event": "ISM manufacturing (Nov) and US job openings, JOLTS (Oct)",
+   "impact": "neutral",
+   "key": false,
+   "note": "ISM's October reading was 55.5, per ISM; September job openings were 7.5 million, per the BLS."
+  },
+  {
+   "et": "Fri 4 Dec · 8:30am",
+   "bkk": "Fri 4 · 20:30",
+   "event": "US jobs report (Nov)",
+   "impact": "volatile",
+   "key": false,
+   "note": "Per the BLS schedule. October payrolls rose 165,000 with unemployment at 4.1%, per Fox Business."
+  },
+  {
+   "et": "Tue 8 – Wed 9 Dec",
+   "bkk": "Tue 8 – Thu 10 Dec",
+   "event": "Next Fed meeting and rate decision",
+   "impact": "volatile",
+   "key": true,
+   "note": "Decision Wed 9 Dec at 2:00pm ET (02:00 Thu Bangkok), per the Federal Reserve. Fed officials stop public comments from Sat 28 Nov, per the St. Louis Fed. Futures price a quarter-point hike, per CoinOtag."
+  }
+ ],
+ "breaking": [],
+ "verification": {
+  "checkedAt": "2026-11-25T00:14:13Z",
+  "claimsChecked": 67,
+  "claimsRemoved": 8,
+  "rounds": 2,
+  "method": "Independent source check: every claim re-opened at its cited URL"
+ }
 }
