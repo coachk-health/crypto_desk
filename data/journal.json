@@ -3,6 +3,32 @@
   "entries": [
     {
       "date": "2026-11-25",
+      "title": "18:52 desk update: news refresh",
+      "did": [
+        "Refreshed news, market snapshot and calendar.",
+        "Independent source check over 2 rounds (107 claims, 17 removed, 1 corrected). Unlock re-check skipped (last checked 04:20 UTC today).",
+        "Scores refreshed."
+      ],
+      "found": [
+        "Reuters: new US tariffs on 16 partners imminent; Nasdaq 100 futures down 2.38% pre-market.",
+        "US spot bitcoin funds lost $231.4M on 24 Nov (Farside via CoinDesk); November outflows $4.94B, a record month (Decrypt).",
+        "CME FedWatch 97% for a December hike, 63% for another in January.",
+        "DOJ complaint: Lazarus hijacked 32 Binance addresses; nearly $342M USDC blocklisted (Protos)."
+      ],
+      "decided": [
+        "Tariffs moved back into lead story 1.",
+        "DOJ story kept as lead 3 but rebuilt on Protos only (Bitcoin Magazine and Fox could not be opened, so the $1.1B figure was dropped).",
+        "Dropped CFTC and Ethereum Foundation briefs (source pages could not be re-opened); added Kalshi/Utah, HYPE, SBI Solana JV, HKMA tokenized bonds, Tether fees, South Korea ICO items.",
+        "Dropped Bowman (already spoken by publish) and unsourced times for Chicago PMI, ISM, Deribit and the FOMC statement."
+      ],
+      "files": [
+        "data/news.json",
+        "data/unlocks.json",
+        "data/journal.json"
+      ]
+    },
+    {
+      "date": "2026-11-25",
       "title": "14:52 desk update: news refresh",
       "did": [
         "Refreshed news, market snapshot and calendar.",
