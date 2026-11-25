@@ -4,9 +4,22 @@
     {
       "date": "2026-11-25",
       "title": "14:52 desk update: news refresh",
-      "did": "Refreshed news, market snapshot and calendar; independent source check over 2 rounds (127 claims, 4 removed, 3 reworded). Unlock re-check skipped (last checked 04:20 UTC today); scores refreshed.",
-      "found": "Bitcoin under $59,000; US spot bitcoin funds lost $231.6M on 24 Nov, a sixth straight day of outflows; DOJ filed to seize $1.1B+ of USDC from the Binance hack; CME FedWatch ~97% for a December hike; new US tariffs still not announced.",
-      "decided": "Tariffs moved from a lead story to a brief; DOJ USDC seizure promoted to lead story 3.",
+      "did": [
+        "Refreshed news, market snapshot and calendar.",
+        "independent source check over 2 rounds (127 claims, 4 removed, 3 reworded). Unlock re-check skipped (last checked 04:20 UTC today).",
+        "scores refreshed."
+      ],
+      "found": [
+        "Bitcoin under $59,000.",
+        "US spot bitcoin funds lost $231.6M on 24 Nov, a sixth straight day of outflows.",
+        "DOJ filed to seize $1.1B+ of USDC from the Binance hack.",
+        "CME FedWatch ~97% for a December hike.",
+        "new US tariffs still not announced."
+      ],
+      "decided": [
+        "Tariffs moved from a lead story to a brief.",
+        "DOJ USDC seizure promoted to lead story 3."
+      ],
       "files": [
         "data/news.json",
         "data/unlocks.json"
