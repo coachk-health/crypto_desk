@@ -29157,7 +29157,67 @@
    "coingeckoId": "monad",
    "maxSupply": 100000000000,
    "listed": "2025-11",
-   "events": [],
+   "events": [
+    {
+     "date": "2026-11-24",
+     "timeUTC": null,
+     "amountTokens": 16610000000,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0.644,
+      "investors": 0.296,
+      "community": 0,
+      "ecosystem": 0.06,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "Coinranking News (updated 22 Nov 2026 09:46 UTC): 24 Nov cliff, CryptoRank 16.61B vs DefiLlama 17.105B; team ~10.7B, investors ~4.9B, Category Labs treasury ~1.0B; no time",
+       "url": "https://coinranking.com/news/monad-token-unlock-releases-16-6-billion-mon-november-24",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinGabbar (19 Nov 2026): ~16.6B MON on 24 Nov; team ~10.7B, investors ~4.9B, treasury ~1.0B; project publishes no single official figure; next ~0.95B/month from ~24 Dec 2026",
+       "url": "https://www.coingabbar.com/en/monad-token-unlock-november-24-mon-supply-impact",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CryptoTicker (updated 1 Nov 2026): 24 Nov 2026 is the first anniversary of mainnet; team ~10.7B per Foundation tokenomics overview; investor cliff amount is an interpretation, not published",
+       "url": "https://cryptoticker.io/en/monad-mon-unlock-lock-up-expiry/",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist research (24 Aug 2026): older model 6.66B on 24 Nov (investors 4.92B, team 750M modeled, treasury 988M); $60M Foundation tender for locked early-investor MON",
+       "url": "https://tokenomist.ai/research/monad-tokenomics-60m-exit-offer",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 8.55,
+      "confidence": 62,
+      "scoredAt": "2026-11-25T08:10:37Z"
+     }
+    }
+   ],
    "gaps": "No unlock events found in the window (28 Nov 2025-11 Oct 2026). Monad's tokenomics post (earlier pass: https://monad.xyz/blog/mon-tokenomics-overview) puts team, investors and the Category Labs treasury on a 1-year lock from the 24 Nov 2025 launch, so the first insider unlock is 24 Nov 2026, after the window; tokenomics.com, DefiLlama and Tokenomist all date the first insider event 24 Nov 2026. Not confirmed: whether the Ecosystem Development pool or any airdrop/public-sale tokens had discrete releases inside the window, and The Block's launch piece said unlocks 'begin in the second half of 2026 and increase quarterly', which is vaguer and could imply earlier releases. None of these sources could be re-opened in this run."
   },
   {
@@ -37661,6 +37721,61 @@
       "scoredAt": "2026-10-26T08:21:58Z"
      },
      "fixNote": "a regular monthly vesting step (Core 1/36, Investors 1/18), not a cliff"
+    },
+    {
+     "date": "2026-11-24",
+     "timeUTC": null,
+     "amountTokens": 23463889,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.391,
+      "investors": 0.391,
+      "community": 0.11,
+      "ecosystem": 0.067,
+      "other": 0.041
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com SoSoValue unlocks: 24 Nov 2026, 23,463,889 SOSO ($6.2M); Private Investors 39.1% / Insiders 39.1% / Community 11.0% / Foundation 10.9%; previous 24 Oct 2026; TGE 23 Jan 2025; circ 358.17M",
+       "url": "https://app.tokenomics.com/tokenomics/sosovalue/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist SoSoValue: next unlock 24 Nov 2026 to Core Contributors; no amount or time; circ 342.0M, price $0.304",
+       "url": "https://tokenomist.ai/sosovalue",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "CMC AI SoSoValue updates (20 Nov 2026): ~23.46M SOSO unlocked 24 Sep 2026 to contributors, investors, ecosystem, foundation, partners (same monthly size)",
+       "url": "https://coinmarketcap.com/cmc-ai/sosovalue/latest-updates",
+       "kind": "news",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "DefiLlama SoSoValue (as of 18 Nov 2026): no discrete upcoming event; continuous weekly streams for Investors, Core Contributors, Partners; price $0.29; circ 358.17M; max 1B",
+       "url": "https://defillama.com/unlocks/sosovalue",
+       "kind": "aggregator",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 2.77,
+      "confidence": 62,
+      "scoredAt": "2026-11-25T08:10:37Z"
+     }
     }
    ],
    "gaps": "SEVERELY INCOMPLETE. The shared web-search budget ran out before SOSO could be researched, and no SoSoValue, Tokenomist, tokenomics.com or DefiLlama SOSO page was reachable. Only three weeks are evidenced (Jan, Jul, Sep 2026). Monthly tranches in Dec 2025 and Feb-Jun and Aug 2026 are likely but unconfirmed, so they are not listed. Earlier desk research (unverified here) says: tranches on the 24th; Oct 2026 = 23.46M (Core Contributors 330M/36 = 9.17M + Investors 165M/18 = 9.17M + Foundation/Partners/community); DefiLlama instead models continuous weekly contributor/partner streams. Needs a follow-up pass for day, size, recipients, first-insider date, max supply (likely 1B, unverified), listing month and coingeckoId (likely 'sosovalue', unverified).",
@@ -48943,6 +49058,66 @@
       "points": 3,
       "confidence": 50,
       "scoredAt": "2026-11-22T08:05:21Z"
+     }
+    }
+   ],
+   "harvested": true
+  },
+  {
+   "token": "RYO",
+   "name": "RYO Coin",
+   "coingeckoId": "ryo-coin",
+   "events": [
+    {
+     "date": "2026-11-24",
+     "timeUTC": null,
+     "amountTokens": 45125000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.336,
+      "investors": 0.185,
+      "community": 0.273,
+      "ecosystem": 0.207,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com RYO unlocks (with BlackTokenomics): 24 Nov 2026, 45,125,000 RYO (~$128.9M); Insiders 33.6% / Community 27.3% / Foundation 20.7% / Private Investors 18.5%; previous 24 Oct 2026; TGE 23 May 2024",
+       "url": "https://app.tokenomics.com/tokenomics/ryo-coin/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "tokenomics.com RYO overview: allocation and vesting table (Team 15% 13m cliff + 48m; Investors 10% 13m cliff + 24m; Early Contributors 6% 7m + 24m; Advisors 6% 7m + 30m; etc.); 2B total supply; same feed as the unlocks page",
+       "url": "https://app.tokenomics.com/tokenomics/ryo-coin",
+       "kind": "aggregator",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinGecko RYO: ~$2.90, 24h vol $109K, mcap $0 (no circulating supply), FDV $5.81B; no unlock data",
+       "url": "https://www.coingecko.com/en/coins/ryo-coin",
+       "kind": "aggregator",
+       "confirms": []
+      },
+      {
+       "label": "CoinDesk RYO (23 Nov 2026 23:01 EST): $2.87, mcap $822.03M, 24h vol $72.19K, circ 286.83M",
+       "url": "https://www.coindesk.com/price/ryo",
+       "kind": "news",
+       "confirms": []
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 7.53,
+      "confidence": 33,
+      "scoredAt": "2026-11-25T08:10:37Z"
      }
     }
    ],

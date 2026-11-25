@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T12:27:55Z",
+ "generatedAt": "2026-11-25T11:30:18Z",
  "playbook": {
   "entry": -7,
   "exit": 7,
@@ -46,28 +46,28 @@
   "totalUsdWithoutBest3": 519
  },
  "summaryNoGuard": {
-  "n": 163,
-  "tokens": 93,
+  "n": 164,
+  "tokens": 94,
   "win": 66,
-  "median": 7.29,
-  "mean": 4.18,
+  "median": 7.34,
+  "mean": 4.48,
   "best": 65.73,
   "worst": -172.83,
-  "profitFactor": 1.62,
-  "totalUsd": 6814,
-  "totalUsdWithoutBest3": 4926
+  "profitFactor": 1.67,
+  "totalUsd": 7343,
+  "totalUsdWithoutBest3": 5454
  },
  "skippedStats": {
-  "n": 14,
-  "tokens": 13,
-  "win": 71,
-  "median": 10.27,
-  "mean": 13.18,
+  "n": 15,
+  "tokens": 14,
+  "win": 73,
+  "median": 12.28,
+  "mean": 15.83,
   "best": 62.79,
   "worst": -40.66,
-  "profitFactor": 3.14,
-  "totalUsd": 1846,
-  "totalUsdWithoutBest3": 190
+  "profitFactor": 3.75,
+  "totalUsd": 2374,
+  "totalUsdWithoutBest3": 620
  },
  "drawdownUsdNoGuard": -2292,
  "drawdownUsd": -2324,
@@ -2498,9 +2498,57 @@
    "date": "2026-11-16",
    "cum": 6814,
    "token": "ADI"
+  },
+  {
+   "date": "2026-11-17",
+   "cum": 7343,
+   "token": "JCT"
   }
  ],
  "trades": [
+  {
+   "token": "JCT",
+   "name": "Janction",
+   "unlockDate": "2026-11-10",
+   "entryDate": "2026-11-03",
+   "exitDate": "2026-11-17",
+   "rules": [
+    "big"
+   ],
+   "grade": "Very high",
+   "usdM": 12.632,
+   "pctCirculating": 10.237,
+   "advDays": 0.408,
+   "investorsShare": 0.22,
+   "setup": "B",
+   "firstInsiderUnlock": false,
+   "entryVsUnlockDay": -55.25,
+   "pnl": 52.87,
+   "worstAgainst": 137.59,
+   "held": 14,
+   "pnlStop": -137.87,
+   "stopped": true,
+   "exits": {
+    "0": -123.77,
+    "3": 50.28,
+    "7": 52.87,
+    "14": 66.35
+   },
+   "edgeVsRandom": 48.97,
+   "priceSource": "binance-futures",
+   "live": true,
+   "check": null,
+   "momentum": 161.24,
+   "skipped": true,
+   "plan": {
+    "pnl": -12.69,
+    "why": "stop",
+    "filled": 1.0,
+    "exitDay": -6,
+    "worstAgainst": 19.98,
+    "r": -1.0
+   }
+  },
   {
    "token": "ADI",
    "name": "ADI Chain",
@@ -2529,7 +2577,7 @@
     "7": 7.5,
     "14": 7.76
    },
-   "edgeVsRandom": 11.08,
+   "edgeVsRandom": 11.0,
    "priceSource": "coingecko",
    "live": true,
    "check": null,
@@ -2565,7 +2613,7 @@
     "7": 0.42,
     "14": -10.17
    },
-   "edgeVsRandom": 1.66,
+   "edgeVsRandom": 1.73,
    "priceSource": "binance-futures",
    "live": true,
    "check": null,
@@ -2608,7 +2656,7 @@
     "7": 10.22,
     "14": 19.09
    },
-   "edgeVsRandom": -0.17,
+   "edgeVsRandom": -0.26,
    "priceSource": "binance-futures",
    "live": false,
    "check": "unchecked",
@@ -2651,7 +2699,7 @@
     "7": 3.96,
     "14": 10.99
    },
-   "edgeVsRandom": -0.53,
+   "edgeVsRandom": -0.68,
    "priceSource": "binance-futures",
    "live": true,
    "check": "partial",
@@ -2694,7 +2742,7 @@
     "7": -26.2,
     "14": 4.83
    },
-   "edgeVsRandom": -29.41,
+   "edgeVsRandom": -29.58,
    "priceSource": "binance-futures",
    "live": true,
    "check": null,
@@ -2737,7 +2785,7 @@
     "7": -3.61,
     "14": 27.95
    },
-   "edgeVsRandom": -4.88,
+   "edgeVsRandom": -4.89,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -2780,7 +2828,7 @@
     "7": 4.04,
     "14": 10.29
    },
-   "edgeVsRandom": -2.57,
+   "edgeVsRandom": -2.54,
    "priceSource": "binance-futures",
    "live": false,
    "check": "unchecked",
@@ -2823,7 +2871,7 @@
     "7": -29.4,
     "14": -43.97
    },
-   "edgeVsRandom": -28.96,
+   "edgeVsRandom": -28.85,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -2866,7 +2914,7 @@
     "7": 15.28,
     "14": 24.83
    },
-   "edgeVsRandom": 11.5,
+   "edgeVsRandom": 11.46,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -2909,7 +2957,7 @@
     "7": 19.37,
     "14": 28.71
    },
-   "edgeVsRandom": 12.1,
+   "edgeVsRandom": 11.93,
    "priceSource": "binance-futures",
    "live": false,
    "check": "unchecked",
@@ -2952,7 +3000,7 @@
     "7": -17.09,
     "14": -6.77
    },
-   "edgeVsRandom": -21.44,
+   "edgeVsRandom": -21.43,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -2995,7 +3043,7 @@
     "7": 11.37,
     "14": 11.89
    },
-   "edgeVsRandom": 3.79,
+   "edgeVsRandom": 3.66,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3038,7 +3086,7 @@
     "7": 16.28,
     "14": 11.62
    },
-   "edgeVsRandom": 9.97,
+   "edgeVsRandom": 9.94,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3081,7 +3129,7 @@
     "7": 17.93,
     "14": 18.52
    },
-   "edgeVsRandom": 13.35,
+   "edgeVsRandom": 13.31,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -3124,7 +3172,7 @@
     "7": 12.28,
     "14": 30.13
    },
-   "edgeVsRandom": 5.52,
+   "edgeVsRandom": 5.51,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3168,7 +3216,7 @@
     "7": 35.39,
     "14": 39.89
    },
-   "edgeVsRandom": 28.03,
+   "edgeVsRandom": 27.95,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -3211,7 +3259,7 @@
     "7": 8.25,
     "14": 13.54
    },
-   "edgeVsRandom": 5.08,
+   "edgeVsRandom": 5.1,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3254,7 +3302,7 @@
     "7": 4.13,
     "14": 13.15
    },
-   "edgeVsRandom": -1.39,
+   "edgeVsRandom": -1.4,
    "priceSource": "binance-futures",
    "live": false,
    "check": "unchecked",
@@ -3298,7 +3346,7 @@
     "7": 7.9,
     "14": 10.55
    },
-   "edgeVsRandom": -2.73,
+   "edgeVsRandom": -2.74,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -3427,7 +3475,7 @@
     "7": -2.21,
     "14": 3.76
    },
-   "edgeVsRandom": -7.98,
+   "edgeVsRandom": -8.04,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -5086,7 +5134,7 @@
     "7": 65.73,
     "14": 66.34
    },
-   "edgeVsRandom": 61.15,
+   "edgeVsRandom": 61.02,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -7453,7 +7501,7 @@
     "7": -5.93,
     "14": -20.31
    },
-   "edgeVsRandom": -7.02,
+   "edgeVsRandom": -6.95,
    "priceSource": "binance-futures",
    "live": false,
    "check": "partial",
@@ -9183,7 +9231,7 @@
     "7": -119.95,
     "14": -118.18
    },
-   "edgeVsRandom": -119.33,
+   "edgeVsRandom": -119.43,
    "priceSource": "binance-futures",
    "live": false,
    "check": "confirmed",
@@ -15046,7 +15094,8 @@
   "ZKC": "boundless",
   "ZORA": "zora",
   "ZRO": "layerzero",
-  "ARIA": "aria-ai"
+  "ARIA": "aria-ai",
+  "RYO": "ryo-coin"
  },
  "method": "Fixed playbook applied to every past unlock in the track record. Entry and exit use CoinGecko daily prices at 00:00 UTC; day 0 is the unlock date. Profit is for a short: positive when the price fell. Costs assumed: 0.10% fees for the round trip and 0.03% funding per day held. The 'with stop' version covers at the first daily close 20% above entry, so a real stop-loss order could fill earlier or later. The account curve books $1,000 per trade on its exit date. Trades are skipped when the token rose 30% or more from 30 days before the unlock to the entry day; that guard was chosen after seeing the worst losses, so results are shown with and without it. Rules were chosen from published research and this same year of data, so the first-half and second-half results and the live-tracked trades are the fairer test."
 }

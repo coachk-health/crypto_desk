@@ -1,4 +1,4 @@
-harvested 1 past rows from the live page
+harvested 3 past rows from the live page
 2Z (doublezero): 2 events
   prices: binance-futures 2ZUSDT (CoinGecko differed by a median 0.1%, at most 4.9%)
 ACE (endurance): 12 events
@@ -177,6 +177,8 @@ MIRA (mira-3): 12 events
   prices: binance-futures MIRAUSDT (CoinGecko differed by a median 0.2%, at most 18.4%)
 MOCA (mocaverse): 11 events
   prices: binance-futures MOCAUSDT (CoinGecko differed by a median 0.3%, at most 13.0%)
+MON (monad): 1 events
+  prices: binance-futures MONUSDT (CoinGecko differed by a median 0.1%, at most 3.3%)
 MOVE (movement): 12 events
   prices: binance-futures MOVEUSDT (CoinGecko differed by a median 0.2%, at most 42.8%)
 NEWT (newton-protocol): 1 events
@@ -245,7 +247,7 @@ SOON (soon-2): 12 events
   prices: binance-futures SOONUSDT (CoinGecko differed by a median 0.3%, at most 3.5%)
 SOPH (sophon): 12 events
   prices: binance-futures SOPHUSDT (CoinGecko differed by a median 0.2%, at most 5.0%)
-SOSO (sosovalue): 1 events
+SOSO (sosovalue): 2 events
   prices: coingecko  (CoinGecko differed by a median None%, at most None%)
 SPEC (spectral): 1 events
   prices: coingecko  (CoinGecko differed by a median None%, at most None%)
@@ -311,4 +313,6 @@ ZRO (layerzero): 11 events
   prices: binance-futures ZROUSDT (CoinGecko differed by a median 0.1%, at most 3.4%)
 ARIA (aria-ai): 1 events
   prices: binance-futures ARIAUSDT (CoinGecko differed by a median 0.4%, at most 6.2%)
-measured 935 events (782 kept from earlier runs), skipped 11
+RYO (ryo-coin): 1 events
+  prices: coingecko  (CoinGecko differed by a median None%, at most None%)
+measured 939 events (784 kept from earlier runs), skipped 9
