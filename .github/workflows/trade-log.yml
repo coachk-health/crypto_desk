@@ -37,6 +37,8 @@ jobs:
             bn-
       - name: Update the trade log
         run: python3 scripts/trade_log.py
+      - name: Can we short it? (every unlock on the list; rules v5, never MEXC)
+        run: python3 scripts/shortable.py
       - name: Make the v3 picks (frozen rules, data/strategy_v3.json)
         run: python3 scripts/picks.py
       - name: Keep the permanent log of every unlock shown (data/archive.json)
@@ -49,7 +51,7 @@ jobs:
         run: |
           git config user.name "crypto-desk-bot"
           git config user.email "crypto-desk-bot@users.noreply.github.com"
-          git add data/trade_log.json data/signals_live.json data/picks.json data/picks_log.json data/archive.json data/brief.json
+          git add data/trade_log.json data/signals_live.json data/picks.json data/picks_log.json data/archive.json data/brief.json data/shortable.json
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "Trade log update $(date -u +%Y-%m-%d\ %H:%M)"
           pushed=0

@@ -1,0 +1,69 @@
+{
+ "version": "v5",
+ "frozenOn": "2026-11-25",
+ "why": "Rules frozen before live trading so the live record is a clean test. Do not change them after seeing live trades; any change becomes v4 with a new date.",
+ "setups": [
+  {
+   "name": "Big unlock",
+   "rule": "the unlock adds 25% or more of circulating supply"
+  },
+  {
+   "name": "First insider unlock + falling open interest",
+   "rule": "the token's first-ever insider unlock (under 25%), and open interest on the exchange we trade fell 10% or more from day -15 to day -8 (OI history: Binance, OKX, Gate only)"
+  }
+ ],
+ "skipIf": [
+  "price up 30% or more from the open 30 days before the unlock to the open on entry day (day -7)",
+  "no USDT perpetual for the real token on Binance, OKX, Bitget, Gate, Hyperliquid or KuCoin (MEXC never used)",
+  "the unlock is not confirmed (date, size or recipients unconfirmed by the project or two independent sources)"
+ ],
+ "trade": {
+  "entry": "short at the 00:00 UTC open, 7 days before the unlock",
+  "stopPct": 12,
+  "targetPct": 35,
+  "coverDay": 14,
+  "risk": "1% of the account per trade (position = 1% / 12.6%)"
+ },
+ "costsAssumed": {
+  "feesPct": 0.1,
+  "fundingPctPerDay": 0.03,
+  "stopSlippagePct": 0.5
+ },
+ "backtest": {
+  "trades": 56,
+  "wonPct": 62,
+  "avgR": 0.75,
+  "totalR": 42.0,
+  "range90": [
+   0.42,
+   1.08
+  ],
+  "buildYear": {
+   "trades": 38,
+   "wonPct": 61,
+   "avgR": 0.66
+  },
+  "unseen2023to25": {
+   "trades": 18,
+   "wonPct": 67,
+   "avgR": 0.93
+  },
+  "account1pct": {
+   "growth": 1.51,
+   "worstDrawdownPct": -3.9,
+   "longestLosingRun": 3
+  },
+  "source": "research/cs5.py, research/v3_trades.json"
+ },
+ "passMark": "After 30 live trades: average above +0.25R. Until then, treat it as a test.",
+ "previous": "data/strategy_v4.json (25 Nov 2026)",
+ "approvedBy": "Coach K in chat, 25 Nov 2026 10:08 Bangkok: \"we must check all tokens have a perp/futures market that we can short or there is no point to focus on those unlocks ... with sanctions against MEXC we must avoid trading on that exchange\"",
+ "changes": [
+  "Same setups, entry, stop, target, exit and size as v3/v4.",
+  "MEXC is never used: not for trading, not for prices, and it doesn't count toward 'shortable'. Reason: FinCEN's order of 6 Nov 2026 cutting MEXC off from the US financial system over sanctions evasion (https://www.fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf).",
+  "Allowed exchanges: Binance, then OKX, Bitget, Gate, Hyperliquid or KuCoin (the confirmed one with the most dollar volume over 7 days). Bybit is checked via CoinGecko, listing only.",
+  "Focus only on unlocks we can short: every unlock on the list is checked (scripts/shortable.py, data/shortable.json). Unlocks with no allowed perp for the real token are dropped from the brief, the Picks tab and the Unlocks tab (shown behind a click) and get no deep research. 'Can't short' is only recorded after every allowed exchange answered; otherwise it's 'unknown' and rechecked.",
+  "Same-token check unchanged from v4: within 15% of CoinGecko's price, or 5% of Binance/another exchange; over 10x off = a different asset (e.g. ADI = a stock perp)."
+ ],
+ "evidenceOffBinance": "Thin: the history test found 4 qualifying trades on Bybit/Gate-only tokens (+5.5R in total, research/exchange_test.json). Smaller exchanges can slip more than the 0.5% assumed."
+}

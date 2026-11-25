@@ -3,6 +3,35 @@
  "entries": [
   {
    "date": "2026-11-25",
+   "title": "v5: only unlocks we can short; never MEXC",
+   "did": [
+    "Coach K's new rule: check every token has a perp/futures market we can short, focus only on those, and avoid MEXC because of sanctions.",
+    "Checked the MEXC claim: FinCEN (US Treasury) issued an order on 6 Nov 2026 cutting MEXC off from the US financial system over at least $16B of transactions tied to sanctions evasion and cybercrime (fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf). Strictly it's a FinCEN order, not OFAC sanctions, but US firms that deal with MEXC face enforcement risk.",
+    "Rules frozen as v5 (data/strategy_v5.json): v4 minus MEXC, plus the focus rule.",
+    "New scripts/shortable.py checks every unlock on the list twice a day on GitHub and writes data/shortable.json (yes / no / unknown, with where it trades and when it was checked). The brief, the Picks tab and the Unlocks tab now list only shortable unlocks; can't-short ones sit behind a click.",
+    "The 4-hourly research task now skips deep research for unlocks marked can't short."
+   ],
+   "found": [
+    "KNTQ (27 Dec) was only on MEXC, so under v5 it can't be shorted."
+   ],
+   "decided": [
+    "'Can't short' is a fact only when every allowed exchange answered (Binance, Bybit via CoinGecko, OKX, Bitget, Gate, Hyperliquid, KuCoin). If any couldn't be reached it's 'unknown' and stays on the list until rechecked."
+   ],
+   "files": [
+    "scripts/shortable.py",
+    "scripts/venues.py",
+    "scripts/picks.py",
+    "scripts/morning_brief.py",
+    "data/strategy_v5.json",
+    "brief.html",
+    "index.html",
+    ".github/workflows/trade-log.yml",
+    ".github/workflows/brief.yml",
+    "CLAUDE.md"
+   ]
+  },
+  {
+   "date": "2026-11-25",
    "title": "v4: short on other exchanges when Binance has no perp",
    "did": [
     "Coach K asked to check where every token trades and short it on another exchange instead of skipping; and to skip only after confirming as fact that it can't be shorted.",

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Data for the morning brief artifact: what to short today, what is open, what is coming up.
 
-Read-only: it uses the frozen rules (data/strategy_v4.json) through scripts/picks.py's own checks,
+Read-only: it uses the frozen rules (data/strategy_v5.json) through scripts/picks.py's own checks,
 with fresh Binance daily prices and open interest, and the live call log (data/picks_log.json).
 It never writes the desk's files. Run it shortly before 00:00 UTC (07:00 Bangkok), when entries open.
 
@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import picks  # noqa: E402
 
 BKK = timezone(timedelta(hours=7))
-CODE_NOTE = "Built by scripts/morning_brief.py in coachk-health/crypto_desk from the frozen rules (data/strategy_v4.json; v4 = v3 plus other exchanges when Binance has no perp)."
+CODE_NOTE = "Built by scripts/morning_brief.py in coachk-health/crypto_desk from the frozen rules (data/strategy_v5.json; v5 = v3 plus other exchanges when Binance has no perp, never MEXC, only unlocks we can short)."
 
 
 def tv(sym):
@@ -81,7 +81,7 @@ def main(outdir, site=False, snapshot=False):
             rows.append(row(p, "today", "Short at the 00:00 UTC open (07:00 Bangkok) today. Stop 12% above the entry, target 35% below, out by "
                             + date.fromisoformat(p["coverDate"]).strftime("%-d %b") + ".", daysToEntry=0))
         elif days == 0:
-            rows.append(row(p, "skipped", "Skip: " + p["why"] + ".", daysToEntry=0))
+            rows.append(row(p, "cantshort" if p["why"].startswith("can't short") else "skipped", "Skip: " + p["why"] + ".", daysToEntry=0))
         elif days > 0 and p["call"] == "WATCH":
             need = ["price not up 30%+ since 30 days before the unlock"]
             if not ((p.get("pctCirculating") or 0) >= picks.BIG):
@@ -89,7 +89,7 @@ def main(outdir, site=False, snapshot=False):
             rows.append(row(p, "coming", ("Decided at the " + e.strftime("%-d %b") + " open. Needs: " + "; ".join(need)
                                           + ". Now: " + p["why"] + "."), daysToEntry=days))
         elif p["call"] == "SKIP":
-            rows.append(row(p, "skipped", "Skip: " + p["why"] + ".", daysToEntry=days))
+            rows.append(row(p, "cantshort" if p["why"].startswith("can't short") else "skipped", "Skip: " + p["why"] + ".", daysToEntry=days))
     for c in log["calls"]:
         if c["call"] != "TAKE":
             continue
@@ -108,9 +108,9 @@ def main(outdir, site=False, snapshot=False):
             rows.append(row(c, "open", ("Open short. Out by " + date.fromisoformat(c["coverDate"]).strftime("%-d %b") + " unless the stop or target hits first."
                                         + (" Called late, not counted." if c.get("lateCall") else "")),
                             lastClose=res.get("lastClose"), shortPct=res.get("openPct"), asOf=res.get("asOf")))
-    order = {"today": 0, "open": 1, "coming": 2, "closed": 3, "skipped": 4}
+    order = {"today": 0, "open": 1, "coming": 2, "closed": 3, "skipped": 4, "cantshort": 5}
     rows.sort(key=lambda r: (order[r["section"]], r["entryDate"]))
-    meta = [{"label": "Rules", "value": "v4, frozen 25 Nov 2026: short 25%+ unlocks, or first insider unlocks with open interest down 10%+; skip anything up 30%+ going in. Short the day -7 open, stop 12%, target 35%, out day +14. Short on Binance; if Binance has no perp, on OKX, Bitget, Gate or Hyperliquid, but only where the price confirms it's the same token."},
+    meta = [{"label": "Rules", "value": "v5, frozen 25 Nov 2026: only unlocks we can short. Short 25%+ unlocks, or first insider unlocks with open interest down 10%+; skip anything up 30%+ going in. Short the day -7 open, stop 12%, target 35%, out day +14. Short on Binance; if Binance has no perp, on OKX, Bitget, Gate, Hyperliquid or KuCoin (never MEXC), only where the price confirms it's the same token."},
             {"label": "Prices", "value": "Binance USDT perpetual daily candles and open interest (data.binance.vision); off Binance, the exchange's own free API."},
             {"label": "Made", "value": now.strftime("%Y-%m-%d %H:%M UTC")}, {"label": "Code", "value": CODE_NOTE}]
     (out / "setups.json").write_text(json.dumps({"rows": rows, "meta": meta}, indent=1, ensure_ascii=False))
@@ -122,7 +122,7 @@ def main(outdir, site=False, snapshot=False):
            {"id": "backtest", "label": "Backtest (56 trades, 2023-2026)", "trades": bt["trades"], "won": round(bt["trades"] * bt["wonPct"] / 100),
             "totalR": bt["totalR"], "avgR": bt["avgR"]}]
     (out / "record.json").write_text(json.dumps({"rows": rec, "meta": [{"label": "Live calls", "value": "data/picks_log.json: called once on entry day, never rewritten; late calls not counted."},
-                                                                      {"label": "Backtest", "value": "data/strategy_v3.json (v4 uses the same rules)"}, {"label": "Made", "value": now.strftime("%Y-%m-%d %H:%M UTC")}]}, indent=1))
+                                                                      {"label": "Backtest", "value": "data/strategy_v3.json (v5 uses the same setups)"}, {"label": "Made", "value": now.strftime("%Y-%m-%d %H:%M UTC")}]}, indent=1))
     if site:
         keep = ("token", "name", "setup", "unlockDate", "entryDate", "coverDate", "pctCirculating", "firstInsider", "pump", "oiChange",
                 "call", "why", "lateCall", "entry", "stop", "target", "calledAt")
@@ -132,7 +132,11 @@ def main(outdir, site=False, snapshot=False):
             x["result"] = c.get("result")
             calls.append(x)
         calls.sort(key=lambda c: c["entryDate"], reverse=True)
-        brief = {"made": now.strftime("%Y-%m-%d %H:%M UTC"), "day": today.isoformat(), "rules": meta[0]["value"],
+        sh = json.loads((ROOT / "data" / "shortable.json").read_text()) if (ROOT / "data" / "shortable.json").exists() else {}
+        shortable = {"checkedAt": sh.get("generatedAt"), "counts": sh.get("counts"),
+                     "no": sorted(({"token": k.split("|")[0], "date": k.split("|")[1], "notes": v.get("notes")} for k, v in (sh.get("unlocks") or {}).items()
+                                   if v["shortable"] == "no"), key=lambda x: x["date"])}
+        brief = {"made": now.strftime("%Y-%m-%d %H:%M UTC"), "day": today.isoformat(), "rules": meta[0]["value"], "shortable": shortable,
                  "setups": rows, "record": rec, "calls": calls}
         data = ROOT / "data"
         (data / "brief.json").write_text(json.dumps(brief, indent=1, ensure_ascii=False) + "\n")

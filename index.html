@@ -451,7 +451,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       el('p', { class: 'lead', text: 'Only these unlocks get shorted.' }),
       (() => { const a = el('a', { href: 'brief.html', text: 'Open the simple morning brief →' }); a.style.cssText = 'display:inline-block;margin:-6px 0 14px;font-size:15px;color:var(--sun)'; return a; })(),
       el('div', { class: 'pk-rule' }, [el('b', { text: 'Take: ' }), 'an unlock adding 25%+ of circulating supply, or a first insider unlock where open interest fell 10%+ the week before. ',
-        el('b', { text: 'Skip: ' }), 'price up 30%+ going in, or no perp on Binance or on another exchange (OKX, Bitget, Gate, Hyperliquid) whose price confirms it’s the same token. ',
+        el('b', { text: 'Skip: ' }), 'price up 30%+ going in, or no perp we can short: Binance, or OKX, Bitget, Gate, Hyperliquid or KuCoin where the price confirms it’s the same token (MEXC never used). ',
         el('b', { text: 'Trade: ' }), 'short at the 00:00 UTC open 7 days before the unlock, stop 12% above, target 35% below, out 14 days after. Risk 1% a trade.']),
       el('div', { class: 'pk-tiles' }, [
         tile('Live record', L.closed ? L.won + ' of ' + L.closed + ' won' : 'no closed trades yet', L.closed ? r2(L.totalR) + ' total · ' + L.taken + ' taken' : 'rules frozen ' + d(R.frozenOn)),
@@ -614,13 +614,20 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
       ]);
     }
     const days = uRange === 'all' ? 3650 : uRange;
-    const list = Desk.upcoming(D.unlocks, now, days);
+    const all = Desk.upcoming(D.unlocks, now, days);
+    // rules v5: only unlocks we can short are worth focusing on; the rest sit behind a click
+    const SH = (D.shortable || {}).unlocks || {};
+    const st = u => (SH[u.token + '|' + u.date] || {}).shortable || 'unknown';
+    const list = all.filter(u => st(u) !== 'no'), dropped = all.filter(u => st(u) === 'no');
     const total = list.reduce((s, u) => s + (u.usdM || 0), 0);
+    const where = u => (SH[u.token + '|' + u.date] || {}).where || [];
     return el('section', { 'aria-label': 'Upcoming token unlocks' }, [head, ' ',
       seg([[7, 'Next 7 days'], [30, 'Next 30 days'], ['all', 'All']], uRange, v => uRange = v),
-      el('p', { class: 'intro', text: 'An unlock releases tokens held by teams, investors or the treasury. ' + list.length + ' unlocks worth about ' + (Desk.usd(total) || '$0') + ' in this window. Each row shows the likely sell pressure and how confident we are in the data. Tap a row for the reasons and sources.' }),
+      el('p', { class: 'intro', text: 'An unlock releases tokens held by teams, investors or the treasury. Only unlocks we can short are listed: ' + list.length + ' worth about ' + (Desk.usd(total) || '$0') + ' in this window' + (dropped.length ? ' (' + dropped.length + ' with no perp we can short are hidden below)' : '') + '. Each row shows the likely sell pressure and how confident we are in the data. Tap a row for the reasons and sources.' }),
       method(),
-      el('div', { class: 'ul' }, list.length ? list.map(u => unlockRow(u, now)) : [el('p', { class: 'state', text: 'No unlocks in this window.' })])
+      el('div', { class: 'ul' }, list.length ? list.map(u => { const row = unlockRow(u, now); const w = where(u); if (w.length || st(u) === 'unknown') row.appendChild(el('div', { class: 'note', style: 'font-size:12.5px;opacity:.75;padding:0 12px 8px', text: w.length ? 'Perps on: ' + w.join(', ') : 'Still checking where it can be shorted' })); return row; }) : [el('p', { class: 'state', text: 'No shortable unlocks in this window.' })]),
+      dropped.length ? el('details', { style: 'margin-top:14px' }, [el('summary', { text: 'Can’t short these (' + dropped.length + '): no perp for the real token on Binance, Bybit, OKX, Bitget, Gate, Hyperliquid or KuCoin. MEXC is never used.' }),
+        el('ul', null, dropped.map(u => el('li', { text: u.token + ' · ' + new Date(u.date + 'T00:00:00Z').toLocaleDateString('en-US', { day: 'numeric', month: 'short', timeZone: 'UTC' }) + ((SH[u.token + '|' + u.date] || {}).notes || []).map(n => ' · ' + n).join('') })))]) : null
     ]);
   }
 
@@ -1457,6 +1464,7 @@ html.scene-mode, html.scene-mode body { height: 100%; overflow: hidden; backgrou
     try { D.grades = await fetch('data/grades.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.grades = null; }
     try { D.journal = await fetch('data/journal.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.journal = null; }
     try { D.archive = await fetch('data/archive.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.archive = null; }
+    try { D.shortable = await fetch('data/shortable.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.shortable = null; }
     try { D.picks = await fetch('data/picks.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.picks = null; }
     try { D.tradelog = await fetch('data/trade_log.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null); } catch (e) { D.tradelog = null; }
     P = await Desk.prices(D.news.market);

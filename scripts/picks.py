@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""The picks: the only unlock shorts the desk takes (rules frozen in data/strategy_v4.json;
-v4 = v3 plus trading on OKX/Bitget/Gate/Hyperliquid when Binance has no perp).
+"""The picks: the only unlock shorts the desk takes (rules frozen in data/strategy_v5.json;
+v4 = v3 plus other exchanges when Binance has no perp; v5 = v4 without MEXC).
 
   Take:  an unlock that adds 25%+ of circulating supply, or a first insider unlock whose
          futures open interest fell 10%+ from day -15 to day -8.
@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 import candles, levels, venues  # noqa: E402
 
-RULES = json.loads((ROOT / "data" / ("strategy_v4.json" if (ROOT / "data" / "strategy_v4.json").exists() else "strategy_v3.json")).read_text())
+RULES = json.loads(next((ROOT / "data" / f).read_text() for f in ("strategy_v5.json", "strategy_v4.json", "strategy_v3.json") if (ROOT / "data" / f).exists()))
 T = RULES["trade"]
 STOP, TGT, COVER = T["stopPct"], T["targetPct"], T["coverDay"]
 BIG, PUMP, OI_DROP = 25, 30, -10
@@ -129,8 +129,8 @@ def check(r, today):
             # a "can't short it" skip needs every exchange checked; until then it stays on watch
             p.update(call="WATCH", why="no Binance perp, and couldn't reach " + ", ".join(down) + " to check; will retry")
             return p
-        why = ("can't short it: no USDT perp on Binance, Bybit, OKX, Bitget, Gate, Hyperliquid, KuCoin or MEXC (all checked "
-               + p["venueCheck"]["at"] + ")")
+        why = ("can't short it: no USDT perp on Binance, Bybit, OKX, Bitget, Gate, Hyperliquid or KuCoin (all checked "
+               + p["venueCheck"]["at"] + "; MEXC is never used)")
         if any(x["venue"] == "Bybit" and x.get("match") is True for x in rows):
             why = ("only Bybit has a perp, and the server can't get Bybit's candles to run the rules (Bybit refuses GitHub's servers), "
                    "so no call; check it by hand if you want it")
@@ -139,7 +139,7 @@ def check(r, today):
                    "(its price doesn't match CoinGecko's, or there's too little price history)")
         elif wrong:
             why = ("can't short it: no Binance perp, and " + " / ".join(wrong) + f"'s {r['token']} is a different asset (price doesn't match); "
-                   "no other exchange lists the real token (all 8 checked " + p["venueCheck"]["at"] + ")")
+                   "no other allowed exchange lists the real token (all 7 checked " + p["venueCheck"]["at"] + ")")
         p.update(call="SKIP", why=why)
         return p
     p["symbol"] = sym
@@ -158,7 +158,7 @@ def check(r, today):
         reasons.append(f"pumped {p['pump']:+.0f}% into the unlock")
     if not big:
         if p.get("oiChange") is None:
-            if p["venue"] in ("bitget", "hyperliquid", "kucoin", "mexc"):
+            if p["venue"] in ("bitget", "hyperliquid", "kucoin"):
                 reasons.append(f"no open-interest history on {venues.NAMES[p['venue']]}")
             else:
                 reasons.append("open interest not available yet" if not entered else "no open-interest data")

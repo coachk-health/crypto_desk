@@ -81,9 +81,14 @@
     <ul id="skipped"></ul>
   </details>
   <details>
+    <summary id="csum">Unlocks we can’t short (dropped)</summary>
+    <p class="note">No USDT perp for the real token on Binance, Bybit, OKX, Bitget, Gate, Hyperliquid or KuCoin, checked on every exchange. MEXC is never used. These get no setup and no deep research.</p>
+    <ul id="cantshort"></ul>
+  </details>
+  <details>
     <summary>The rules</summary>
     <p id="rules"></p>
-    <p class="note">Rules v4, frozen 25 Nov 2026 (data/strategy_v4.json): v3’s rules unchanged, plus other exchanges when Binance has no perp, only where the price confirms it’s the same token. Backtest and research: the Picks and History tabs on the full desk. Past results are not a promise. Not financial advice.</p>
+    <p class="note">Rules v5, frozen 25 Nov 2026 (data/strategy_v5.json): v3’s setups unchanged; only unlocks we can short; Binance first, else OKX, Bitget, Gate, Hyperliquid or KuCoin, only where the price confirms it’s the same token. MEXC is never used (FinCEN order, 6 Nov 2026). Backtest and research: the Picks and History tabs on the full desk. Past results are not a promise. Not financial advice.</p>
   </details>
 </main>
 <script>
@@ -153,6 +158,13 @@
     const sk = by('skipped');
     $('skipped').replaceChildren(...(sk.length ? sk.map((r) => { const li = el('li'); li.append(el('b', '', r.token), document.createTextNode(' (unlock ' + day(r.unlockDate) + '): ' + r.action)); return li; }) : [el('li', '', 'None.')]));
     $('rules').textContent = B.rules || '';
+    const cs = by('cantshort'), no = ((B.shortable || {}).no || []).filter((x) => !cs.some((r) => r.token === x.token && r.unlockDate === x.date));
+    const n = (B.shortable || {}).counts;
+    $('csum').textContent = 'Unlocks we can’t short (' + (cs.length + no.length) + ' dropped' + (n ? ' · ' + n.yes + ' on the list can be shorted' + (n.unknown ? ', ' + n.unknown + ' still being checked' : '') : '') + ')';
+    $('cantshort').replaceChildren(...(cs.length + no.length ? [
+      ...cs.map((r) => { const li = el('li'); li.append(el('b', '', r.token), document.createTextNode(' (unlock ' + day(r.unlockDate) + '): ' + r.action)); return li; }),
+      ...no.map((x) => { const li = el('li'); li.append(el('b', '', x.token), document.createTextNode(' (unlock ' + day(x.date) + ')' + ((x.notes || []).length ? ': ' + x.notes.join('; ') : ''))); return li; })
+    ] : [el('li', '', 'None.')]));
   }
 
   const get = (u) => fetch(u + '?t=' + Date.now(), { cache: 'no-store' }).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); });

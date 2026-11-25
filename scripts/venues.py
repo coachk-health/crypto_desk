@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Where a token's USDT perpetual trades, and its daily candles / open interest off Binance.
+MEXC is never used (rules v5: FinCEN order of 6 Nov 2026, see AVOID).
 
 Free public APIs only (no keys). From GitHub's servers these answer: OKX, Bitget, Gate, Hyperliquid,
 KuCoin, MEXC and CoinGecko (tested 24 Nov 2026, data/venue_probe.json). Bybit and Binance's live API
@@ -21,10 +22,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / "data" / "cache" / "venues"
-CHECKED = ("okx", "bitget", "gate", "hyperliquid", "kucoin", "mexc", "bybit")
+CHECKED = ("okx", "bitget", "gate", "hyperliquid", "kucoin", "bybit")
+# Never traded or counted as "shortable" (rules v5, Coach K 25 Nov 2026):
+AVOID = {"mexc": "FinCEN order of 6 Nov 2026 cut MEXC off from the US financial system over sanctions evasion "
+                 "(fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf)"}
 NAMES = {"binance": "Binance", "okx": "OKX", "bitget": "Bitget", "gate": "Gate", "hyperliquid": "Hyperliquid",
          "kucoin": "KuCoin", "mexc": "MEXC", "bybit": "Bybit"}
-PRICED = ("okx", "bitget", "gate", "hyperliquid", "kucoin", "mexc")
+PRICED = ("okx", "bitget", "gate", "hyperliquid", "kucoin")
 _lists, _err = {}, {}
 
 
@@ -323,3 +327,28 @@ if __name__ == "__main__":
     rec = {"usdM": float(sys.argv[2]), "amountTokens": float(sys.argv[3])} if len(sys.argv) > 3 else {}
     rows, best = survey(tok, rec, date.today() - timedelta(days=45), date.today())
     print(json.dumps(rows, indent=1)); print("best:", best and (best[0], best[1], len(best[2])), errors())
+
+
+def shortable(token, r, today=None):
+    """Is there a USDT perp we're allowed to short (Binance, Bybit, OKX, Bitget, Gate, Hyperliquid, KuCoin;
+    never MEXC) that really is this token? Light check for the whole unlock list (scripts/shortable.py)."""
+    import candles
+    today = today or datetime.now(timezone.utc).date()
+    start = today - timedelta(days=10)
+    src, sym, bd = candles.token_days(token, start, today)
+    where, notes = [], []
+    cg = cg_price(r.get("coingeckoId"))
+    bn_ok = src == "binance-futures" and bd
+    if bn_ok and cg:
+        ratio = _close(bd) / cg
+        if ratio < 0.1 or ratio > 10:
+            bn_ok = False
+            notes.append(f"Binance: different asset: price {_close(bd):.4g} vs ~{cg:.4g} (CoinGecko's price)")
+    if bn_ok:
+        where.append("Binance")
+    rows, _ = survey(token, r, start, today, bd if bn_ok else None)
+    where += [x["venue"] for x in rows if x.get("match") is True]
+    notes += [f"{x['venue']}: {x['note']}" for x in rows if x.get("note") and x.get("match") is not True]
+    down = [x["venue"] for x in rows if x.get("listed") is None]
+    status = "yes" if where else ("unknown" if down else "no")
+    return {"shortable": status, "where": where, "notes": notes, "unreachable": down}
