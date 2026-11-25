@@ -3,6 +3,27 @@
  "entries": [
   {
    "date": "2026-11-25",
+   "title": "10:52 desk update: news refresh and unlock re-check (v5 rules)",
+   "did": [
+    "Refreshed the public news: bitcoin just under $60,000 as Asian chip stocks slide, today's PCE report, tariffs still pending. 158 claims checked over 3 rounds, 25 removed or corrected (three briefs dropped because their pages could not be opened).",
+    "Re-researched and independently re-checked 32 shortable unlocks in the next 30 days; skipped 4 marked can't-short in shortable.json (WPAY, ADI, RAIN, YZY).",
+    "Added COAI (25 Nov, 19.54M) after a KuCoin USDT perp listing was confirmed. Did not add ASTER, TRUMP, WLD or MORPHO: their 'dates' are slices of continuous streams, not real unlock events."
+   ],
+   "found": [
+    "Trackers disagree on IRYS (tokenomics.com ~1.18B lump today vs Tokenomist: none until 25 Dec), GRVT (29 vs 30 Nov), GUN (28 vs 30 Nov), M (2 vs 12 Dec) and WET (192.5M vs 256.67M): all marked disputed.",
+    "Impact grade changes: H Very high->High, SUI ->Low, TON Moderate->High, MOVE High->Moderate, SEI ->Moderate, MON ->Very high."
+   ],
+   "decided": [
+    "Left ether's snapshot price blank: no timestamped figure could be confirmed this run (live prices still load in the browser)."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-25",
    "title": "v5: only unlocks we can short; never MEXC",
    "did": [
     "Coach K's new rule: check every token has a perp/futures market we can short, focus only on those, and avoid MEXC because of sanctions.",
