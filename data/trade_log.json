@@ -343,6 +343,10 @@
     {
      "at": "2026-11-18T08:40:50+00:00",
      "event": "entry: short at 0.01501 (binance-futures MONUSDT)"
+    },
+    {
+     "at": "2026-11-25T09:57:39+00:00",
+     "event": "closed: target on 2026-11-24 at 0.0097565, +34.69%"
     }
    ],
    "decision": {
@@ -364,7 +368,7 @@
     "pumpPct": 30.0,
     "fromSignals": "2026-11-15T08:51:09Z"
    },
-   "status": "open",
+   "status": "closed",
    "ref": 0.01501,
    "refSource": "binance-futures MONUSDT",
    "pump": -30.7,
@@ -382,13 +386,14 @@
     "stop": 0.0168112,
     "target": 0.0097565
    },
-   "mark": {
-    "date": "2026-11-23",
-    "price": 0.01151,
-    "pnl": 23.01,
-    "r": 1.82
+   "worstAgainst": 3.46,
+   "exit": {
+    "date": "2026-11-24",
+    "price": 0.0097565,
+    "why": "target"
    },
-   "worstAgainst": 3.46
+   "pnl": 34.69,
+   "r": 2.74
   },
   {
    "id": "RYO-2026-11-24",
@@ -427,6 +432,47 @@
     "riskPct": 12.66,
     "pumpPct": 30.0,
     "fromSignals": "2026-11-23T10:45:42Z"
+   },
+   "status": "missed",
+   "skipReason": "not logged before its entry day, so not counted"
+  },
+  {
+   "id": "COAI-2026-11-25",
+   "token": "COAI",
+   "name": "ChainOpera AI",
+   "coingeckoId": null,
+   "unlockDate": "2026-11-25",
+   "checkDate": "2026-11-17",
+   "entryDate": "2026-11-18",
+   "coverDate": "2026-12-09",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [
+    {
+     "at": "2026-11-25T09:57:39+00:00",
+     "event": "check day: missed (not logged before its entry day, so not counted)"
+    }
+   ],
+   "decision": {
+    "confidence": 62,
+    "pctCirculating": 10.39,
+    "investorsShare": 0.226,
+    "firstInsiderUnlock": false,
+    "usdM": 3.34,
+    "amount": "19.54M COAI",
+    "frozenAt": "2026-11-25T09:57:39+00:00"
+   },
+   "plan": {
+    "stop": 12,
+    "target": 35,
+    "cover": 14,
+    "zone": 1.0,
+    "rr": 2.92,
+    "riskPct": 12.66,
+    "pumpPct": 30.0,
+    "fromSignals": "2026-11-24T12:27:55Z"
    },
    "status": "missed",
    "skipReason": "not logged before its entry day, so not counted"
@@ -649,10 +695,10 @@
    },
    "worstAgainst": 2.51,
    "mark": {
-    "date": "2026-11-23",
-    "price": 0.171007,
-    "pnl": 22.18,
-    "r": 1.75
+    "date": "2026-11-24",
+    "price": 0.160073,
+    "pnl": 27.11,
+    "r": 2.14
    }
   },
   {
@@ -868,21 +914,31 @@
    "status": "watching"
   }
  ],
- "updatedAt": "2026-11-24T23:08:07Z",
+ "updatedAt": "2026-11-25T09:57:39Z",
  "summary": {
-  "closed": 2,
-  "won": 1,
+  "closed": 3,
+  "won": 2,
   "riskUsd": 100,
-  "rTotal": 0.6,
-  "totalUsd": 60,
-  "open": 2,
+  "rTotal": 3.34,
+  "totalUsd": 334,
+  "open": 1,
   "skipped": 3,
   "watching": 8,
   "byTag": {
-   "core": {
-    "closed": 2,
+   "strong": {
+    "closed": 1,
     "won": 1,
-    "rTotal": 0.6
+    "rTotal": 2.74
+   },
+   "core": {
+    "closed": 3,
+    "won": 2,
+    "rTotal": 3.34
+   },
+   "weekDown": {
+    "closed": 1,
+    "won": 1,
+    "rTotal": 2.74
    },
    "weekFlatUp": {
     "closed": 1,
@@ -894,10 +950,15 @@
     "won": 1,
     "rTotal": 0.6
    },
-   "first": {
-    "closed": 2,
+   "size50": {
+    "closed": 1,
     "won": 1,
-    "rTotal": 0.6
+    "rTotal": 2.74
+   },
+   "first": {
+    "closed": 3,
+    "won": 2,
+    "rTotal": 3.34
    }
   }
  },

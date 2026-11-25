@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-24T23:09:02Z",
+ "generatedAt": "2026-11-25T10:01:43Z",
  "rules": {
-  "version": "v4",
+  "version": "v5",
   "frozenOn": "2026-11-25",
   "why": "Rules frozen before live trading so the live record is a clean test. Do not change them after seeing live trades; any change becomes v4 with a new date.",
   "setups": [
@@ -11,12 +11,12 @@
    },
    {
     "name": "First insider unlock + falling open interest",
-    "rule": "the token's first-ever insider unlock (under 25%), and open interest on the exchange we trade fell 10% or more from day -15 to day -8"
+    "rule": "the token's first-ever insider unlock (under 25%), and open interest on the exchange we trade fell 10% or more from day -15 to day -8 (OI history: Binance, OKX, Gate only)"
    }
   ],
   "skipIf": [
    "price up 30% or more from the open 30 days before the unlock to the open on entry day (day -7)",
-   "no USDT perpetual on Binance, and none on OKX, Bitget, Gate or Hyperliquid whose price confirms it is the same token",
+   "no USDT perpetual for the real token on Binance, OKX, Bitget, Gate, Hyperliquid or KuCoin (MEXC never used)",
    "the unlock is not confirmed (date, size or recipients unconfirmed by the project or two independent sources)"
   ],
   "trade": {
@@ -58,14 +58,14 @@
    "source": "research/cs5.py, research/v3_trades.json"
   },
   "passMark": "After 30 live trades: average above +0.25R. Until then, treat it as a test.",
-  "previous": "data/strategy_v3.json (19 Nov 2026)",
-  "approvedBy": "Coach K in chat, 25 Nov 2026: \"always check where tokens are traded and if they have perps on other exchanges ... so we dont have to skip if we do not need to\"",
+  "previous": "data/strategy_v4.json (25 Nov 2026)",
+  "approvedBy": "Coach K in chat, 25 Nov 2026 10:08 Bangkok: \"we must check all tokens have a perp/futures market that we can short or there is no point to focus on those unlocks ... with sanctions against MEXC we must avoid trading on that exchange\"",
   "changes": [
-   "Same setups, entry, stop, target, exit and size as v3. The only change is where the short is placed.",
-   "A token with no Binance USDT perpetual is no longer skipped if OKX, Bitget, Gate, Hyperliquid, KuCoin or MEXC lists one AND its price confirms it is the same token (within 15% of CoinGecko's price for the token, or within 5% of Binance or another exchange; more than 10x off = a different asset, e.g. a stock perp with the same ticker). Ticker matches alone are not trusted: OKX's 'ADI' is a ~$300 asset, ADI Chain is ~$7.",
-   "Where more than one other exchange qualifies, use the one with the most dollar volume over the last 7 days.",
-   "The open-interest rule uses that exchange's open interest. Only Binance, OKX and Gate publish free open-interest history, so a first insider unlock that trades only on Bitget, Hyperliquid, KuCoin or MEXC is skipped.",
-   "A 'can't short it' skip is only made after Binance, Bybit (via CoinGecko), OKX, Bitget, Gate, Hyperliquid, KuCoin and MEXC have all been checked; if any can't be reached, the token stays on watch and is rechecked. Bybit is a listing check only (no candles), so a Bybit-only token is skipped."
+   "Same setups, entry, stop, target, exit and size as v3/v4.",
+   "MEXC is never used: not for trading, not for prices, and it doesn't count toward 'shortable'. Reason: FinCEN's order of 6 Nov 2026 cutting MEXC off from the US financial system over sanctions evasion (https://www.fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf).",
+   "Allowed exchanges: Binance, then OKX, Bitget, Gate, Hyperliquid or KuCoin (the confirmed one with the most dollar volume over 7 days). Bybit is checked via CoinGecko, listing only.",
+   "Focus only on unlocks we can short: every unlock on the list is checked (scripts/shortable.py, data/shortable.json). Unlocks with no allowed perp for the real token are dropped from the brief, the Picks tab and the Unlocks tab (shown behind a click) and get no deep research. 'Can't short' is only recorded after every allowed exchange answered; otherwise it's 'unknown' and rechecked.",
+   "Same-token check unchanged from v4: within 15% of CoinGecko's price, or 5% of Binance/another exchange; over 10x off = a different asset (e.g. ADI = a stock perp)."
   ],
   "evidenceOffBinance": "Thin: the history test found 4 qualifying trades on Bybit/Gate-only tokens (+5.5R in total, research/exchange_test.json). Smaller exchanges can slip more than the 0.5% assumed."
  },
@@ -110,13 +110,13 @@
      "-3": 0.01313
     },
     "exits": {},
-    "lastClose": 0.01151,
-    "asOf": "2026-11-23",
+    "lastClose": 0.00944,
+    "asOf": "2026-11-24",
     "shadowPartial": {
      "status": "open",
-     "pct": 23.3,
-     "why": "no target yet",
-     "day": -1
+     "pct": 35.8,
+     "why": "60% taken at target, 40% trailing",
+     "day": 0
     }
    }
   },
@@ -126,32 +126,19 @@
    "unlockDate": "2026-11-25",
    "entryDate": "2026-11-18",
    "coverDate": "2026-12-09",
-   "pctCirculating": 58.8,
+   "pctCirculating": 45.97,
    "firstInsider": true,
    "setup": "Big unlock",
-   "recipients": "End of the one-year lock: investors ~632.5M and core team & advisors ~470M (25% of each allocation), plus monthly ecosystem ~54.2M and foundation ~20.2M.",
-   "confidence": "confirmed",
-   "source": "https://dropstab.com/coins/irys/vesting",
-   "where": [
-    "Binance",
-    "OKX",
-    "Bitget",
-    "Gate",
-    "KuCoin",
-    "MEXC",
-    "Bybit"
-   ],
-   "alsoListed": [],
-   "venueNotes": [],
-   "venue": "binance",
-   "symbol": "IRYSUSDT",
-   "pump": -61.0,
-   "pumpTo": "2026-11-18",
+   "recipients": "End of the one-year insider lock: private investors (~632.5M) and core team & advisors (~469.6M), plus monthly ecosystem (~56.6M) and foundation (~21.2M) slices, per tokenomics.com.",
+   "confidence": "disputed",
+   "source": "https://app.tokenomics.com/tokenomics/irys/unlocks",
    "call": "TAKE",
    "why": "passes every rule",
    "entry": 0.01481,
    "stop": 0.0165872,
    "target": 0.0096265,
+   "pump": -61.0,
+   "pumpTo": "2026-11-18",
    "lateCall": true,
    "practice": {
     "entries": {
@@ -160,8 +147,8 @@
      "-3": 0.01891
     },
     "exits": {},
-    "lastClose": 0.01695,
-    "asOf": "2026-11-23",
+    "lastClose": 0.01656,
+    "asOf": "2026-11-24",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -176,19 +163,18 @@
    "unlockDate": "2026-11-26",
    "entryDate": "2026-11-19",
    "coverDate": "2026-12-10",
-   "pctCirculating": 26.47,
+   "pctCirculating": 12.94,
    "firstInsider": true,
-   "setup": "Big unlock",
-   "recipients": "First release of team & advisors (~160.8M) and private investors (~171.7M) after the 18-month cliff, plus either a Foundation/Protocol Treasury slice (DropsTab ~126.3M) or an LP & Ecosystem slice (tokenomics.com ~146M).",
+   "setup": "First insider unlock",
+   "recipients": "First release of Team & Advisors (160.84M) and Investors (171.67M) after the cliff was extended from 26 May to 26 Nov 2026, plus a Foundation Treasury slice (126.26M) per DropsTab.",
    "confidence": "confirmed",
-   "source": "https://app.tokenomics.com/tokenomics/huma-finance/unlocks",
+   "source": "https://tokenomist.ai/research/weekly-unlock-digest-may-25-31-2026-humas-lockup-extension",
    "where": [
     "Binance",
     "OKX",
     "Bitget",
     "Gate",
     "KuCoin",
-    "MEXC",
     "Bybit"
    ],
    "alsoListed": [],
@@ -197,6 +183,8 @@
    "symbol": "HUMAUSDT",
    "pump": -67.4,
    "pumpTo": "2026-11-18",
+   "oiChange": 29.7,
+   "oiTo": "2026-11-18",
    "call": "TAKE",
    "why": "passes every rule",
    "entry": 0.008463,
@@ -210,8 +198,8 @@
      "-3": 0.00836
     },
     "exits": {},
-    "lastClose": 0.00856,
-    "asOf": "2026-11-23",
+    "lastClose": 0.008016,
+    "asOf": "2026-11-24",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -219,37 +207,6 @@
      "day": -7
     }
    }
-  },
-  {
-   "token": "WET",
-   "name": "HumidiFi",
-   "unlockDate": "2026-12-09",
-   "entryDate": "2026-12-02",
-   "coverDate": "2026-12-23",
-   "pctCirculating": 112.7,
-   "firstInsider": false,
-   "setup": "Big unlock",
-   "recipients": "Foundation ~41.6%, HumidiFi Labs (insiders) ~32.5%, Ecosystem/community allocation ~26.0% (tokenomics.com); one-off six-monthly lump.",
-   "confidence": "confirmed",
-   "source": "https://app.tokenomics.com/tokenomics/humidifi/unlocks",
-   "where": [
-    "Binance",
-    "OKX",
-    "Bitget",
-    "Gate",
-    "KuCoin",
-    "MEXC",
-    "Bybit"
-   ],
-   "alsoListed": [],
-   "venueNotes": [],
-   "venue": "binance",
-   "symbol": "WETUSDT",
-   "pump": -21.5,
-   "pumpTo": "2026-11-23",
-   "call": "WATCH",
-   "why": "passes so far",
-   "practice": null
   },
   {
    "token": "CYS",
@@ -260,23 +217,22 @@
    "pctCirculating": 18.49,
    "firstInsider": true,
    "setup": "First insider unlock",
-   "recipients": "End of 12-month cliffs: first monthly slice for seed/Pre-A investors (~19.68M), core contributors (~3.36M) and foundation treasury (~3.33M), plus the routine monthly ecosystem-incentive release (~3.35M). Split computed from tokenomics.com vesting terms, which sum to the 29.73M figure.",
+   "recipients": "End of 12-month cliffs: first monthly slice for investors (~19.68M; 236.2M over 12 months), contributors (~3.36M; 36 months) and foundation treasury (~3.33M; 24 months), plus routine ecosystem incentive (~3.35M; 120 months). tokenomics.com split: investors 66.2%, insiders 11.3%, community/ecosystem 11.3%, foundation 11.2%.",
    "confidence": "confirmed",
-   "source": "https://app.tokenomics.com/tokenomics/cysic",
+   "source": "https://app.tokenomics.com/tokenomics/cysic/unlocks",
    "where": [
     "Binance",
     "Bitget",
     "Gate",
     "KuCoin",
-    "MEXC",
     "Bybit"
    ],
    "alsoListed": [],
    "venueNotes": [],
    "venue": "binance",
    "symbol": "CYSUSDT",
-   "pump": -49.1,
-   "pumpTo": "2026-11-23",
+   "pump": -25.9,
+   "pumpTo": "2026-11-24",
    "oiChange": null,
    "oiTo": null,
    "call": "WATCH",
@@ -300,8 +256,7 @@
     "OKX",
     "Bitget",
     "Gate",
-    "KuCoin",
-    "MEXC"
+    "KuCoin"
    ],
    "alsoListed": [
     "Bybit"
@@ -327,10 +282,11 @@
     "exits": {
      "1": 0.005021,
      "3": 0.002079,
-     "7": 0.002064
+     "7": 0.002064,
+     "14": 0.001452
     },
-    "lastClose": 0.001581,
-    "asOf": "2026-11-23",
+    "lastClose": 0.001452,
+    "asOf": "2026-11-24",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -357,7 +313,6 @@
     "Bitget",
     "Gate",
     "KuCoin",
-    "MEXC",
     "Bybit"
    ],
    "alsoListed": [],
@@ -382,8 +337,8 @@
      "3": 2.0536,
      "7": 3.4039
     },
-    "lastClose": 3.576,
-    "asOf": "2026-11-23",
+    "lastClose": 3.0852,
+    "asOf": "2026-11-24",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -407,12 +362,12 @@
    "where": [],
    "alsoListed": [],
    "venueNotes": [
-    "Bitget: different asset: price 376.9 vs ~7.2 (CoinGecko's price)",
-    "Gate: different asset: price 376.2 vs ~7.2 (CoinGecko's price)",
-    "Bybit: different asset: price 315.6 vs ~7.2 (CoinGecko's price)"
+    "Bitget: different asset: price 313.1 vs ~7.1 (CoinGecko's price)",
+    "Gate: different asset: price 311 vs ~7.1 (CoinGecko's price)",
+    "Bybit: different asset: price 304 vs ~7.1 (CoinGecko's price)"
    ],
    "venueCheck": {
-    "at": "2026-11-24 23:08 UTC",
+    "at": "2026-11-25 10:01 UTC",
     "reached": [
      "Binance (data files)",
      "OKX",
@@ -420,13 +375,28 @@
      "Gate",
      "Hyperliquid",
      "KuCoin",
-     "MEXC",
      "Bybit (via CoinGecko)"
     ],
     "unreachable": []
    },
    "call": "SKIP",
-   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other exchange lists the real token (all 8 checked 2026-11-24 23:08 UTC)",
+   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-25 10:01 UTC)",
+   "practice": null
+  },
+  {
+   "token": "WET",
+   "name": "HumidiFi",
+   "unlockDate": "2026-12-09",
+   "entryDate": "2026-12-02",
+   "coverDate": "2026-12-23",
+   "pctCirculating": 112.7,
+   "firstInsider": false,
+   "setup": "Big unlock",
+   "recipients": "Six-monthly lump to three allocations: Foundation ~80M (41.6%), HumidiFi Labs ~62.5M (32.5%), Ecosystem ~50M (26.0%), per the four-equal-tranche schedule.",
+   "confidence": "disputed",
+   "source": "https://www.rootdata.com/projects/detail/humidifi?k=MjA3NDY%3D",
+   "call": "SKIP",
+   "why": "unlock not confirmed",
    "practice": null
   }
  ],
@@ -595,10 +565,10 @@
    "calledAt": "2026-11-18T19:18:55Z",
    "lateCall": true,
    "result": {
-    "status": "open",
-    "lastClose": 0.01151,
-    "openPct": 23.3,
-    "asOf": "2026-11-23"
+    "status": "closed",
+    "R": 2.74,
+    "exit": "target",
+    "exitDay": 0
    },
    "practice": {
     "entries": {
@@ -607,13 +577,13 @@
      "-3": 0.01313
     },
     "exits": {},
-    "lastClose": 0.01151,
-    "asOf": "2026-11-23",
+    "lastClose": 0.00944,
+    "asOf": "2026-11-24",
     "shadowPartial": {
      "status": "open",
-     "pct": 23.3,
-     "why": "no target yet",
-     "day": -1
+     "pct": 35.8,
+     "why": "60% taken at target, 40% trailing",
+     "day": 0
     }
    }
   },
@@ -730,9 +700,9 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.1322,
-    "openPct": 15.0,
-    "asOf": "2026-11-23"
+    "lastClose": 0.1267,
+    "openPct": 18.5,
+    "asOf": "2026-11-24"
    },
    "practice": {
     "entries": {
@@ -740,13 +710,13 @@
      "-7": 0.1555
     },
     "exits": {},
-    "lastClose": 0.1322,
-    "asOf": "2026-11-23",
+    "lastClose": 0.1267,
+    "asOf": "2026-11-24",
     "shadowPartial": {
      "status": "open",
-     "pct": 15.0,
+     "pct": 18.5,
      "why": "no target yet",
-     "day": -6
+     "day": -5
     }
    }
   }

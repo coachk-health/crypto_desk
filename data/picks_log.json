@@ -158,10 +158,10 @@
    "calledAt": "2026-11-18T19:18:55Z",
    "lateCall": true,
    "result": {
-    "status": "open",
-    "lastClose": 0.01151,
-    "openPct": 23.3,
-    "asOf": "2026-11-23"
+    "status": "closed",
+    "R": 2.74,
+    "exit": "target",
+    "exitDay": 0
    },
    "practice": {
     "entries": {
@@ -170,13 +170,13 @@
      "-3": 0.01313
     },
     "exits": {},
-    "lastClose": 0.01151,
-    "asOf": "2026-11-23",
+    "lastClose": 0.00944,
+    "asOf": "2026-11-24",
     "shadowPartial": {
      "status": "open",
-     "pct": 23.3,
-     "why": "no target yet",
-     "day": -1
+     "pct": 35.8,
+     "why": "60% taken at target, 40% trailing",
+     "day": 0
     }
    }
   },
@@ -293,9 +293,9 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.1322,
-    "openPct": 15.0,
-    "asOf": "2026-11-23"
+    "lastClose": 0.1267,
+    "openPct": 18.5,
+    "asOf": "2026-11-24"
    },
    "practice": {
     "entries": {
@@ -303,13 +303,13 @@
      "-7": 0.1555
     },
     "exits": {},
-    "lastClose": 0.1322,
-    "asOf": "2026-11-23",
+    "lastClose": 0.1267,
+    "asOf": "2026-11-24",
     "shadowPartial": {
      "status": "open",
-     "pct": 15.0,
+     "pct": 18.5,
      "why": "no target yet",
-     "day": -6
+     "day": -5
     }
    }
   }
