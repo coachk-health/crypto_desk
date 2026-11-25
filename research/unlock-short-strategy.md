@@ -1,8 +1,16 @@
-# Unlock short strategy (updated 25 Nov 2026, v4: v3 rules plus other exchanges — live test running)
+# Unlock short strategy (updated 25 Nov 2026, v5: only unlocks we can short, never MEXC — live test running)
 
 Short only. 1R = the loss when the stop is hit (about 12.7% of the position). Not trading advice.
 
 Trade plan for every setup: short at 00:00 UTC 7 days before the unlock, stop 12% above entry, target 35% below, close whatever is open 14 days after the unlock. Risk 1% of the account per trade.
+
+## v5 (frozen 25 Nov 2026): focus only on unlocks we can short; never MEXC
+- Coach K's rule (25 Nov 10:08): check that every token has a perp/futures market we can short, and focus only on those; avoid MEXC because of sanctions. Rules file: data/strategy_v5.json. The setups and trade plan are unchanged.
+- **MEXC:** never used for trading, prices or counting as shortable. On 6 Nov 2026, FinCEN (US Treasury) issued an order cutting MEXC off from the US financial system over at least $16B of transactions tied to sanctions evasion and cybercrime (https://www.fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf). Strictly it's a FinCEN order rather than OFAC sanctions.
+- **Allowed exchanges:** Binance, Bybit (checked via CoinGecko, listing only), OKX, Bitget, Gate, Hyperliquid, KuCoin.
+- **Shortable check:** scripts/shortable.py runs twice a day on GitHub (Live trade log and Morning brief workflows) and writes data/shortable.json. Each unlock on the list is yes / no / unknown, with where it trades and when it was checked. "No" is recorded only when every allowed exchange answered; if any couldn't be reached it's "unknown" and stays on the list.
+- **What changes on screen:** the brief, the Picks tab and the Unlocks tab list only shortable unlocks. Can't-short ones sit behind a click with the reason. The 4-hourly research task skips deep research for can't-short unlocks, and adds new unlocks only if it can confirm a perp on an allowed exchange.
+- **First run (25 Nov 03:17 UTC):** 66 unlocks checked, 57 shortable, 9 not: ADI (the "ADI" listed elsewhere is a stock perp), KNTQ (only on MEXC), WPAY, RAIN, YZY (×2), KUB, MBG, RYO.
 
 ## v4 (frozen 25 Nov 2026): short on other exchanges when Binance has no perp
 - Coach K's call (25 Nov): always check where a token trades and short it elsewhere rather than skip; skip only once it's confirmed as fact that it can't be shorted. Rules file: data/strategy_v4.json. The setups, entry, stop, target, exit and size are unchanged from v3.
