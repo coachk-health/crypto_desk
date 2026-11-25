@@ -1,7 +1,66 @@
 {
- "made": "2026-11-24 23:09 UTC",
+ "made": "2026-11-25 03:17 UTC",
  "day": "2026-11-25",
- "rules": "v4, frozen 25 Nov 2026: short 25%+ unlocks, or first insider unlocks with open interest down 10%+; skip anything up 30%+ going in. Short the day -7 open, stop 12%, target 35%, out day +14. Short on Binance; if Binance has no perp, on OKX, Bitget, Gate or Hyperliquid, but only where the price confirms it's the same token.",
+ "rules": "v5, frozen 25 Nov 2026: only unlocks we can short. Short 25%+ unlocks, or first insider unlocks with open interest down 10%+; skip anything up 30%+ going in. Short the day -7 open, stop 12%, target 35%, out day +14. Short on Binance; if Binance has no perp, on OKX, Bitget, Gate, Hyperliquid or KuCoin (never MEXC), only where the price confirms it's the same token.",
+ "shortable": {
+  "checkedAt": "2026-11-25 03:17 UTC",
+  "counts": {
+   "yes": 57,
+   "no": 9,
+   "unknown": 0
+  },
+  "no": [
+   {
+    "token": "KUB",
+    "date": "2026-11-11",
+    "notes": []
+   },
+   {
+    "token": "YZY",
+    "date": "2026-11-14",
+    "notes": []
+   },
+   {
+    "token": "MBG",
+    "date": "2026-11-22",
+    "notes": []
+   },
+   {
+    "token": "RYO",
+    "date": "2026-11-24",
+    "notes": []
+   },
+   {
+    "token": "WPAY",
+    "date": "2026-12-08",
+    "notes": []
+   },
+   {
+    "token": "ADI",
+    "date": "2026-12-09",
+    "notes": [
+     "Bitget: different asset: price 313.1 vs ~7.2 (CoinGecko's price)",
+     "Gate: different asset: price 311 vs ~7.2 (CoinGecko's price)",
+     "Bybit: different asset: price 309.7 vs ~7.2 (CoinGecko's price)"
+    ]
+   },
+   {
+    "token": "RAIN",
+    "date": "2026-12-10",
+    "notes": []
+   },
+   {
+    "token": "YZY",
+    "date": "2026-12-14",
+    "notes": []
+   },
+   {
+    "token": "KNTQ",
+    "date": "2026-12-27",
+    "notes": []
+   }
+  ]
+ },
  "setups": [
   {
    "id": "MON|2026-11-24",
@@ -96,7 +155,6 @@
     "Bitget",
     "Gate",
     "KuCoin",
-    "MEXC",
     "Bybit"
    ],
    "alsoListed": [],
@@ -131,7 +189,6 @@
     "Bitget",
     "Gate",
     "KuCoin",
-    "MEXC",
     "Bybit"
    ],
    "alsoListed": [],
@@ -230,7 +287,7 @@
   },
   {
    "id": "ADI|2026-12-09",
-   "section": "skipped",
+   "section": "cantshort",
    "token": "ADI",
    "name": "ADI (ADI Chain)",
    "setup": "First insider unlock",
@@ -242,8 +299,8 @@
    "pumpPct": null,
    "oiChangePct": null,
    "call": "SKIP",
-   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other exchange lists the real token (all 8 checked 2026-11-24 23:09 UTC)",
-   "action": "Skip: can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other exchange lists the real token (all 8 checked 2026-11-24 23:09 UTC).",
+   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-25 03:17 UTC)",
+   "action": "Skip: can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-25 03:17 UTC).",
    "entry": null,
    "stop": null,
    "target": null,
@@ -254,9 +311,9 @@
    "where": [],
    "alsoListed": [],
    "venueNotes": [
-    "Bitget: different asset: price 376.9 vs ~7.2 (CoinGecko's price)",
-    "Gate: different asset: price 376.2 vs ~7.2 (CoinGecko's price)",
-    "Bybit: different asset: price 315.6 vs ~7.2 (CoinGecko's price)"
+    "Bitget: different asset: price 313.1 vs ~7.2 (CoinGecko's price)",
+    "Gate: different asset: price 311 vs ~7.2 (CoinGecko's price)",
+    "Bybit: different asset: price 309.7 vs ~7.2 (CoinGecko's price)"
    ],
    "daysToEntry": 7
   }
