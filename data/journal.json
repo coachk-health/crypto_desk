@@ -3,6 +3,29 @@
   "entries": [
     {
       "date": "2026-11-26",
+      "title": "22:52 desk update: news refresh",
+      "did": [
+        "Refreshed news.json: lead story now CoinDesk's record-month ETF outflow comparison; new third story on the US scam crackdown (DOJ 800+ defendants, NovaTech $1.37B judgment); reserve bill moved to a brief; new briefs (Zodia Custody breach, Spain crypto account freezes, mining-route hijack, AI-stock selloff, Franklin Templeton adds HYPE).",
+        "Calendar: Thanksgiving row dropped; added Trump Media note put (30 Nov) and Bowman testimony (1 Dec); Fed blackout row and unconfirmed consensus figures removed.",
+        "Two independent check rounds. Unlock loop skipped (checked under 24h ago); score.py re-run."
+      ],
+      "found": [
+        "Price pages (CoinGecko, CoinMarketCap, Alternative.me) could not be opened this run, so the market snapshot uses CoinDesk's 11:17 UTC read and has no 24h changes or SOL price.",
+        "The 0.55 late-October put/call ratio is for all expiries (now 0.81), not Friday's 0.89; the comparison was removed.",
+        "Nowflation and ISM/JOLTS consensus figures could not be found and were dropped."
+      ],
+      "decided": [
+        "87 claims checked, 3 removed, 2 corrected.",
+        "verify.py: 0 problems."
+      ],
+      "files": [
+        "data/news.json",
+        "data/unlocks.json",
+        "data/journal.json"
+      ]
+    },
+    {
+      "date": "2026-11-26",
       "title": "18:52 desk update: news refresh",
       "did": [
         "Refreshed news.json: new market read, lead story updated to The Block's record-month ETF outflow figure, new briefs (Auros wind-down, Zcash Sapling pool, 1Password breach, German co-op banks, Swiss tax-data list, Senate letter to SEC), calendar updated (newer options-expiry figures, Binance Blockchain Week, earnings).",

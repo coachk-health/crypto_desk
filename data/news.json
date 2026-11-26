@@ -1,32 +1,30 @@
 {
   "date": "2026-11-26",
-  "updated": "2026-11-26T12:03:33Z",
-  "headline": "US bitcoin funds are on track for their worst month on record, with about $5.39 billion out in November, as bitcoin trades near $60,000 on the US Thanksgiving holiday ahead of Friday's roughly $7 billion options expiry.",
+  "updated": "2026-11-26T16:12:29Z",
+  "headline": "US bitcoin funds have already lost more money in November than in any month since they launched, while bitcoin trades back near $60,000 on the US Thanksgiving holiday ahead of Friday's roughly $7 billion options expiry.",
   "market": {
-    "asOf": "Read from CoinMarketCap on Thu 26 Nov between about 11:50 and 12:30 UTC (18:50-19:30 Bangkok). Use the live prices on this page.",
+    "asOf": "Read from CoinDesk's markets report at about 11:17 UTC on Thu 26 Nov (18:17 Bangkok); a fresher price page could not be opened this run. CoinDesk gave bitcoin at about $60,500 to $60,800. Use the live prices on this page.",
     "btc": {
-      "price": 59650.84,
-      "chg24h": -1.9
+      "price": 60500,
+      "chg24h": null
     },
     "eth": {
-      "price": 1698.91,
-      "chg24h": 3.3
+      "price": 1690,
+      "chg24h": null
     },
-    "sol": {
-      "price": 70.72,
-      "chg24h": 4.8
-    },
-    "fearGreed": "Extreme fear: 13 on Alternative.me's Crypto Fear and Greed Index and 9 on CoinMarketCap's index, both read about 11:50 UTC."
+    "sol": null,
+    "fearGreed": "Extreme fear: 10 on CoinMarketCap's Fear and Greed Index, per CoinDesk on Thu 26 Nov."
   },
   "stories": [
     {
-      "title": "US bitcoin funds head for their worst month on record after a seventh straight day of outflows",
+      "title": "US bitcoin funds set a record for money pulled out in a single month",
       "mood": "bearish",
-      "summary": "Money has left US spot bitcoin funds for seven days in a row, and November's withdrawals are already bigger than any previous month.",
+      "summary": "Money has left US spot bitcoin funds for seven trading days in a row, and November's withdrawals are already the biggest since the funds launched in January 2024. US markets are closed for Thanksgiving, so there are no new flows today.",
       "points": [
-        "US spot bitcoin funds lost a net $453.1 million on Wed 25 Nov, the seventh straight outflow day, per The Block.",
+        "US spot bitcoin funds lost a net $453.1 million on Wed 25 Nov, the seventh straight day of outflows, per The Block.",
         "BlackRock's IBIT accounted for $329.7 million of Wednesday's outflow, per The Block.",
-        "November outflows now total about $5.39 billion, more than any previous month, per The Block.",
+        "November outflows total about $5.39 billion so far, about 20% more than the previous record of $4.51 billion in June 2026, per CoinDesk.",
+        "The funds are now about $5.02 billion in the red for 2026, after inflows of $35.24 billion in 2024 and $21.37 billion in 2025, per CoinDesk.",
         "US spot ether funds lost $68.5 million on Wednesday, their ninth straight outflow day, per The Block."
       ],
       "sources": [
@@ -35,141 +33,116 @@
           "url": "https://www.theblock.co/news/markets/2026-11-26-spot-bitcoin-etfs-worst-month-november-446814"
         },
         {
-          "label": "TokenPost: bitcoin ETF flows, 25 Nov (SoSoValue)",
-          "url": "https://www.tokenpost.com/news/investing/62669"
+          "label": "CoinDesk Daybook: bitcoin ETFs are bleeding cash",
+          "url": "https://www.coindesk.com/daybook-us/2026/11/26/bitcoin-etfs-are-bleeding-cash-and-the-fed-is-unlikely-to-help"
         }
       ]
     },
     {
-      "title": "Bitcoin trades near $60,000 as the US marks Thanksgiving, with a big options expiry on Friday",
+      "title": "Bitcoin climbs back above $60,000 as the US marks Thanksgiving, with $7 billion of options expiring Friday",
       "mood": "volatile",
-      "summary": "Bitcoin fell to about $57,300 on Wednesday, then recovered toward $60,000. US stock markets are closed for Thanksgiving, and about $7 billion of bitcoin options expire on Friday.",
+      "summary": "Bitcoin recovered from Wednesday's low near $57,500 as traders betting on a fall were forced to close out. The biggest options bets for Friday's expiry are protection against further drops.",
       "points": [
-        "Bitcoin hit a low of about $57,300 on Wednesday, per The Block.",
-        "Core PCE inflation came in at 3.3% a year, above the 3.2% forecast, and markets expect a December Fed rate hike, per CoinDesk.",
-        "The US Trade Representative proposed tariffs on 14 economies, including 20% extra on China and 15% on the EU and Japan; comments are due 5 Jan 2027, per Saxo.",
-        "About $692 million of leveraged bets were forcibly closed in 24 hours, per CoinGlass data reported by crypto.news.",
-        "About $7 billion of bitcoin options and $0.6 billion of ether options expire on Deribit on Friday 27 Nov, per CoinDesk."
+        "Bitcoin was about $60,500 to $60,800 on Thursday morning after a Wednesday low of $57,500, per CoinDesk (read about 11:17 UTC).",
+        "About $618 million of leveraged positions were forcibly closed across crypto in 24 hours; 57.2% of the $245 million closed in bitcoin were bets on a fall, per CoinDesk.",
+        "About $7 billion of bitcoin options and $0.6 billion of ether options expire on Deribit on Friday 27 Nov, with a put/call ratio of 0.89 for that expiry, per CoinDesk.",
+        "Galaxy withdrew its call that the bear market ended in June; its Alex Thorn says a daily close below $58,525 would point to a materially lower low, per The Block."
       ],
       "sources": [
-        {
-          "label": "The Block: Galaxy walks back bitcoin bottom call",
-          "url": "https://www.theblock.co/news/markets/2026-11-26-galaxy-walks-back-bitcoin-bottom-call-446786"
-        },
         {
           "label": "CoinDesk: DeFi tokens lead the bounce as US marks Thanksgiving",
           "url": "https://www.coindesk.com/markets/2026/11/26/bitcoin-little-changed-defi-tokens-lead-the-bounce-as-u-s-marks-thanksgiving"
         },
         {
-          "label": "Saxo: market quick take, 26 Nov",
-          "url": "https://www.home.saxo/en-mena/content/articles/macro/market-quick-take---nasdaq-briefly-hits-bear-market-territory-before-paring-losses---26-november-2026-26112026"
-        },
-        {
-          "label": "crypto.news: ETF outflows and liquidations (CoinGlass)",
-          "url": "https://crypto.news/bitcoin-price-prediction-btc-recovery-etf-outflows/"
-        },
-        {
           "label": "CoinDesk: $7 billion of bitcoin options expire Friday",
           "url": "https://www.coindesk.com/markets/2026/11/26/usd7-billion-of-bitcoin-options-expire-friday-and-the-biggest-bets-look-starkly-different-from-october"
+        },
+        {
+          "label": "The Block: Galaxy walks back bitcoin bottom call",
+          "url": "https://www.theblock.co/news/markets/2026-11-26-galaxy-walks-back-bitcoin-bottom-call-446786"
         }
       ]
     },
     {
-      "title": "A bill to hold US government bitcoin for 20 years reaches the full House, but time is short",
+      "title": "US steps up action against crypto scams: 800+ defendants targeted, and a $1.37 billion judgment in New York",
       "mood": "neutral",
-      "summary": "A bill to write a US Strategic Bitcoin Reserve into law can now get a House vote, but it also needs the Senate and a signature before this Congress ends on 3 January.",
+      "summary": "The Justice Department says it has launched its largest-ever action against crypto fraud, including scam centers in Southeast Asia. Separately, a New York court ordered the founders of the NovaTech crypto Ponzi scheme to pay about $1.37 billion.",
       "points": [
-        "H.R. 8957, the American Reserve Modernization Act, was sent to the full House on 24 Nov, per The Block.",
-        "The bill would bar any sale of reserve bitcoin for at least 20 years, per The Block.",
-        "Addresses linked to the US government hold about 306,795 BTC, per Arkham data reported by CoinDesk.",
-        "Polymarket's odds of a US bitcoin reserve by the end of 2026 were 4%, down from 34% in May, per The Block."
+        "The Justice Department targeted more than 800 defendants and froze more than $1 billion in stolen crypto with State Department help, per The Block.",
+        "A New York state court ordered NovaTech's founders to pay $1,367,023,585, including $232.5 million in interest, per Decrypt.",
+        "About 11,000 New Yorkers were among NovaTech's victims, per Decrypt.",
+        "The founders have left the US, so collecting the money may be difficult, per Decrypt."
       ],
       "sources": [
         {
-          "label": "The Block: House committee advances strategic bitcoin reserve bill",
-          "url": "https://www.theblock.co/news/regulation/2026-11-25-house-committee-advances-strategic-bitcoin-reserve-bill-446778"
+          "label": "The Block: Justice Department's largest-ever crypto fraud crackdown",
+          "url": "https://www.theblock.co/news/regulation/2026-11-25-justice-department-takes-aim-billions-crypto-fraud-proceeds-largest-ever-crackdown-446711"
         },
         {
-          "label": "CoinDesk: reserve bill goes to full House",
-          "url": "https://www.coindesk.com/policy/2026/11/26/strategic-bitcoin-reserve-bill-to-lock-up-u-s-government-held-bitcoin-for-20-years-goes-to-full-house"
+          "label": "Decrypt: New York wins $1.37B judgment against NovaTech founders",
+          "url": "https://decrypt.co/384025/new-york-wins-1-37b-judgment-against-novatech-founders-who-fled-the-us"
         }
       ]
     }
   ],
   "briefs": [
     {
+      "title": "Standard Chartered's crypto custodian Zodia reports a data breach",
+      "summary": "Hackers accessed some client and employee company details, contact names and email addresses, found on 24 Nov; Zodia reports no unauthorized transactions and has told regulators, per CoinDesk.",
+      "url": "https://www.coindesk.com/tech/2026/11/26/standard-chartered-s-zodia-custody-suffers-data-breach-exposing-client-information"
+    },
+    {
+      "title": "Spain lets its anti-laundering unit freeze crypto accounts without a judge",
+      "summary": "Sepblac could freeze an account for up to 5 business days without a court order under a decree due to take effect on 25 Jan 2027, pending parliament's approval, per CoinDesk.",
+      "url": "https://www.coindesk.com/business/2026/11/26/spain-gives-anti-laundering-unit-power-to-freeze-crypto-accounts-without-a-judge"
+    },
+    {
+      "title": "A bill to hold US government bitcoin for 20 years reaches the full House",
+      "summary": "H.R. 8957 would bar selling the government's bitcoin for 20 years; it still needs the Senate before this Congress ends on 3 Jan, and Polymarket odds of a reserve before 2027 are below 5%, per CoinDesk.",
+      "url": "https://www.coindesk.com/policy/2026/11/26/strategic-bitcoin-reserve-bill-to-lock-up-u-s-government-held-bitcoin-for-20-years-goes-to-full-house"
+    },
+    {
+      "title": "Zcash team urges a faster shutdown of its older privacy pool",
+      "summary": "About 400,000 ZEC, about 2% of supply, still sits in the legacy Sapling pool; the team set no deadline, per The Block.",
+      "url": "https://www.theblock.co/news/ecosystems/2026-11-26-the-time-to-prepare-for-a-cryptographic-breakthrough-is-before-it-happens-zcash-team-urges-faster-deprecation-of-legacy-shielded-pool-447000"
+    },
+    {
       "title": "Crypto market maker Auros reportedly winding down",
-      "summary": "The Hong Kong trading firm is shutting down, according to two people familiar with the matter cited by CoinDesk; the reason and timetable are unclear.",
+      "summary": "The trading firm is shutting down, according to two people familiar with the matter cited by CoinDesk; the firm did not comment.",
       "url": "https://www.coindesk.com/markets/2026/11/26/major-crypto-trading-firm-auros-is-winding-down-operations-sources"
     },
     {
-      "title": "Zcash developers urge users to leave an old privacy pool",
-      "summary": "About 400,000 ZEC still sits in Zcash's 2018 Sapling pool; developers propose allowing withdrawals only, as a precaution, per CoinDesk.",
-      "url": "https://www.coindesk.com/tech/2026/11/26/zcash-developers-want-users-to-move-usd300-million-out-of-an-older-privacy-system"
+      "title": "Over 1,000 bitcoin mining sites hijacked by faked internet routes",
+      "summary": "An attacker redirected mining power for much of November, peaking at 1.9 EH/s; CoinDesk estimates the stolen revenue at under $17,000.",
+      "url": "https://www.coindesk.com/markets/2026/11/26/hackers-hijacked-1-000-plus-bitcoin-mines-in-one-second-by-faking-internet-routes"
     },
     {
-      "title": "1Password breach raises phishing risk",
-      "summary": "An attacker exposed 1Password customer names and emails; the company says vaults and passwords were not exposed. Binance founder CZ urged users to change stored passwords anyway, per FinanceFeeds.",
-      "url": "https://financefeeds.com/binance-founder-cz-urges-1password-users-to-change-all-passwords-following-security-breach/"
+      "title": "AI-stock selloff hits debt-funded AI infrastructure firms",
+      "summary": "The Nasdaq 100 is down as much as 17% from its peak, and companies such as IREN, Cipher and CoreWeave have fallen as much as 70%, per CoinDesk.",
+      "url": "https://www.coindesk.com/markets/2026/11/26/nvidia-shipment-freeze-and-u-s-chip-curbs-put-ai-stocks-under-pressure"
     },
     {
-      "title": "77 German cooperative banks file to offer crypto trading",
-      "summary": "Up from 56 in October, they would use DZ BANK's meinKrypto platform under the EU's MiCA rules, per TokenPost.",
-      "url": "https://www.tokenpost.com/news/business/62719"
-    },
-    {
-      "title": "Switzerland picks 57 partners for crypto tax-data sharing from 2028",
-      "summary": "The list, under the OECD framework, covers all EU states and the UK, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-26-switzerland-approves-57-jurisdictions-for-crypto-data-exchange-from-2028-446821"
-    },
-    {
-      "title": "Senate Democrats ask the SEC to drop its planned crypto exemptions",
-      "summary": "Senators led by Warren and Van Hollen want the SEC's proposed \"Regulation Crypto\" and an \"innovation exemption\" withdrawn, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-25-warren-van-hollen-lead-push-scrap-sec-regulation-crypto-innovation-exemption-446756"
-    },
-    {
-      "title": "Fidelity files for a spot Chainlink fund",
-      "summary": "Fidelity filed to list a spot Chainlink (LINK) fund on Nasdaq under the ticker FLNK; it will not stake its LINK, per The Block.",
-      "url": "https://www.theblock.co/newsletters/the-daily/2026-11-26-fidelity-chainlink-etf-musk-x-ruling-alleged-bitcoin-content-farm-case-more-crypto-news-446755"
-    },
-    {
-      "title": "A spot bitcoin ETF starts trading in Switzerland",
-      "summary": "BIT's BBIT has begun trading on the SIX exchange holding 350 BTC, with a 0.19% yearly fee, per The Block.",
-      "url": "https://www.theblock.co/news/markets/2026-11-26-swiss-bitcoin-etf-bbit-begins-trading-europes-only-446724"
+      "title": "Franklin Templeton's crypto fund adds Hyperliquid's HYPE",
+      "summary": "The EZPZ fund adds HYPE on 1 Dec, per The Block.",
+      "url": "https://www.theblock.co/news/markets/2026-11-25-franklin-templeton-ezpz-etf-adds-hyperliquid-hype-446686"
     }
   ],
   "calendar": [
-    {
-      "et": "Thu 26 Nov",
-      "bkk": "Thu 26 Nov",
-      "event": "Thanksgiving: US stock market closed",
-      "impact": "neutral",
-      "key": false,
-      "note": "No US stock trading today. Stocks close early on Friday 27 Nov at 1:00pm ET (01:00 Sat Bangkok), per NYSE owner ICE; US bond markets close early at 2:00pm ET, per SIFMA."
-    },
-    {
-      "et": "Thu 26 Nov – Fri 4 Dec",
-      "bkk": "Thu 26 Nov – Fri 4 Dec",
-      "event": "Token unlocks: HUMA, PROS, GRASS, FF, CARDS, GRVT, KMNO, GUN, EIGEN, SUI, M, BTW, ENA, 2Z, STO, MMT, LA",
-      "impact": "bearish",
-      "key": false,
-      "note": "HUMA on Thursday 26; PROS and GRASS on Saturday 28; FF and CARDS on Sunday 29; GRVT, KMNO and GUN on Monday 30; EIGEN and SUI on Tuesday 1 Dec; M, BTW, ENA and 2Z on Wednesday 2 Dec; STO on Thursday 3 Dec; MMT and LA on Friday 4 Dec. Trackers disagree on the date for GRVT and M (one tracker now says 12 Dec for M). See the unlock table on this page for sizes and confidence. (Dates from this desk's unlock data.)"
-    },
     {
       "et": "Fri 27 Nov · 3:00am",
       "bkk": "Fri 27 · 15:00",
       "event": "Deribit monthly bitcoin options expiry",
       "impact": "volatile",
       "key": true,
-      "note": "Expires at 08:00 UTC. About $7 billion of bitcoin options and $0.6 billion of ether options expire on Deribit, put/call ratio 0.89, per CoinDesk. Bitcoinist (PiSpace data) gives $6.92 billion with \"max pain\" at $71,000; OKX's 24 Nov post put max pain at $72,000."
+      "note": "Settles at 08:00 UTC, per CoinInsider. About $7 billion of bitcoin options and $0.6 billion of ether options expire, put/call ratio 0.89, per CoinDesk; Bitcoinist gives $6.92 billion. The \"max pain\" level is $71,000 per Bitcoinist (PiSpace data, 26 Nov) and was $72,000 in a KuCoin post on 24 Nov."
     },
     {
-      "et": "Sat 28 Nov",
-      "bkk": "Sat 28 Nov",
-      "event": "Fed officials stop public comments before the December meeting",
+      "et": "Fri 27 Nov · 1:00pm",
+      "bkk": "Sat 28 · 01:00",
+      "event": "US stock markets close early after Thanksgiving",
       "impact": "neutral",
       "key": false,
-      "note": "The blackout runs to Thu 10 Dec, under the Fed's blackout rules."
+      "note": "Stocks close at 1:00pm ET, per The Company Chronicle; SIFMA recommends a 2:00pm ET early close for US bond markets."
     },
     {
       "et": "Sat 28 – Sun 29 Nov",
@@ -177,7 +150,15 @@
       "event": "Binance Blockchain Week, Bangkok",
       "impact": "neutral",
       "key": false,
-      "note": "At the Queen Sirikit National Convention Center, per Daily Tribune."
+      "note": "At the Queen Sirikit National Convention Center, per Khaosod English."
+    },
+    {
+      "et": "Sat 28 Nov – Fri 4 Dec",
+      "bkk": "Sat 28 Nov – Fri 4 Dec",
+      "event": "Token unlocks: PROS, GRASS, FF, CARDS, GRVT, KMNO, GUN, EIGEN, SUI, M, BTW, ENA, 2Z, STO, MMT, LA",
+      "impact": "bearish",
+      "key": false,
+      "note": "PROS and GRASS on Saturday 28; FF and CARDS on Sunday 29; GRVT, KMNO and GUN on Monday 30; EIGEN and SUI on Tuesday 1 Dec; M, BTW, ENA and 2Z on Wednesday 2 Dec; STO on Thursday 3 Dec; MMT and LA on Friday 4 Dec. See the unlock table on this page for sizes and confidence. (Dates from this desk's unlock data.)"
     },
     {
       "et": "Mon 30 Nov · 9:45am",
@@ -185,7 +166,15 @@
       "event": "Chicago PMI (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "October was 55.3, per Newsquawk. Release time per MNI."
+      "note": "October was 55.3 against 56.1 expected, per Newsquawk. Release time per MNI."
+    },
+    {
+      "et": "Mon 30 Nov",
+      "bkk": "Mon 30 Nov",
+      "event": "Trump Media (DJT) noteholders can demand repayment",
+      "impact": "volatile",
+      "key": false,
+      "note": "Holders of about $1 billion of convertible notes can ask for their money back; the company holds a crypto treasury, mostly bitcoin and CRO, per Finimize (16 Nov)."
     },
     {
       "et": "Mon 30 Nov · 4:00pm",
@@ -193,15 +182,15 @@
       "event": "MSCI removes Strategy (MSTR) from its indexes",
       "impact": "volatile",
       "key": true,
-      "note": "Takes effect at the end of November. MSCI-linked funds hold about 13 million MSTR shares, about 3.1% of the total, by Strategy's own estimate reported by Cointelegraph."
+      "note": "Takes effect after the close on 30 Nov. MSCI-linked funds hold about 13 million MSTR shares, about 3.1% of the total, by Strategy's own estimate reported by Cointelegraph."
     },
     {
       "et": "Tue 1 Dec · 10:00am",
       "bkk": "Tue 1 · 22:00",
-      "event": "ISM manufacturing PMI (Nov), job openings (JOLTS, Oct); House hearing on bank regulators",
+      "event": "ISM manufacturing PMI (Nov), job openings (JOLTS, Oct); Fed's Bowman testifies to the House",
       "impact": "neutral",
       "key": false,
-      "note": "ISM: consensus 55 per Nowflation; October was 55.5. JOLTS: consensus 7.3 million per Nowflation, September 7.52 million. The House Financial Services Committee holds an \"Oversight of Prudential Regulators\" hearing at 10:00am ET. CrowdStrike reports earnings after the close; Marvell holds its earnings call at 4:30pm ET."
+      "note": "ISM: October was 55.5, per Newsquawk. JOLTS: September was 7.52 million, per the BLS. Fed Vice Chair for Supervision Michelle Bowman appears at the House Financial Services \"Oversight of Prudential Regulators\" hearing, per the Fed's calendar. CrowdStrike's earnings call is at 5:00pm ET and Marvell's at 4:30pm ET."
     },
     {
       "et": "Wed 2 Dec · 8:15am",
@@ -209,7 +198,7 @@
       "event": "ADP private payrolls (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "October was +86,000, per InvestingLive. No published consensus found. Salesforce reports earnings after the close."
+      "note": "October was +86,000, per InvestingLive. Salesforce holds its earnings webcast at 5:00pm ET."
     },
     {
       "et": "Thu 3 Dec · 10:00am",
@@ -217,7 +206,7 @@
       "event": "ISM services PMI (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "October was 54.5, per InvestingLive. Weekly jobless claims come out the same day at 8:30am ET; last week's figure was 189,000, per the Labor Department."
+      "note": "October was 54.5, per InvestingLive."
     },
     {
       "et": "Fri 4 Dec · 8:30am",
@@ -225,7 +214,7 @@
       "event": "US jobs report (Nov)",
       "impact": "volatile",
       "key": true,
-      "note": "Forecasts differ: +82,000 jobs and 4.2% unemployment per Nowflation; U.S. Bank cites a +101,000 consensus and forecasts +98,000 itself. October payrolls rose 165,000 with unemployment at 4.1%, per the BLS."
+      "note": "Forecasts differ: U.S. Bank cites a +101,000 consensus and forecasts +98,000 with 4.1% unemployment itself; Continuum Economics expects +95,000 and 4.1%. October payrolls rose 165,000 with unemployment at 4.1%, per Continuum Economics."
     },
     {
       "et": "Wed 9 Dec · 2:00pm",
@@ -233,14 +222,14 @@
       "event": "Fed rate decision (meeting 8-9 Dec)",
       "impact": "volatile",
       "key": true,
-      "note": "Markets expect a rate hike, not a cut. CME FedWatch put the chance of a quarter-point hike at 97.8% on 25 Nov, per MarketSpeaker. Press conference at 2:30pm ET."
+      "note": "Markets expect a rate hike, not a cut: CME FedWatch put the chance of a quarter-point hike at 97.8% on 25 Nov, per KuCoin News. Press conference at 2:30pm ET, per the Fed's calendar."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-26T12:15:05Z",
-    "claimsChecked": 105,
-    "claimsRemoved": 5,
+    "checkedAt": "2026-11-26T16:12:29Z",
+    "claimsChecked": 87,
+    "claimsRemoved": 3,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
