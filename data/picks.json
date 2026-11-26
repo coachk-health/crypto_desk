@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T09:44:08Z",
+ "generatedAt": "2026-11-26T22:29:19Z",
  "rules": {
   "version": "v5",
   "frozenOn": "2026-11-25",
@@ -241,6 +241,7 @@
    "entry": 0.1459,
    "stop": 0.163408,
    "target": 0.094835,
+   "lateCall": true,
    "practice": {
     "entries": {
      "-14": 0.1727,
@@ -450,10 +451,10 @@
    "venueNotes": [
     "Bitget: different asset: price 335 vs ~7.16 (CoinGecko's price)",
     "Gate: different asset: price 336.9 vs ~7.16 (CoinGecko's price)",
-    "Bybit: different asset: price 335.8 vs ~7.16 (CoinGecko's price)"
+    "Bybit: different asset: price 336 vs ~7.16 (CoinGecko's price)"
    ],
    "venueCheck": {
-    "at": "2026-11-26 09:44 UTC",
+    "at": "2026-11-26 22:29 UTC",
     "reached": [
      "Binance (data files)",
      "OKX",
@@ -466,7 +467,7 @@
     "unreachable": []
    },
    "call": "SKIP",
-   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-26 09:44 UTC)",
+   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-26 22:29 UTC)",
    "practice": null
   }
  ],
