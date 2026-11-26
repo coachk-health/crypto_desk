@@ -2,6 +2,30 @@
   "about": "Running record of what we have done on the desk: every change, test and decision, newest first. Entries are only ever added, never edited or removed. Add one entry per working session (see CLAUDE.md).",
   "entries": [
     {
+      "date": "2026-11-27",
+      "title": "02:52 desk update: news refresh",
+      "did": [
+        "Refreshed news.json: ETF outflow record stays the lead; bitcoin/options story updated (Bitstamp $57,209 low and $61,509 high, death cross, liquidations mostly shorts); new third story on JPMorgan's Strategy 'capitulation' note and Glassnode dormant supply; DOJ and NovaTech moved to briefs; new briefs (KuCoin Monero delisting 30 Nov, UK FCA DeFi plan, Swiss BBIT ETF, Ripple share valuations).",
+        "Market snapshot from CoinMarketCap at about 19:52 UTC, with SOL and 24h changes restored; Fear and Greed from CoinMarketCap (9) and Alternative.me (11).",
+        "Calendar: Trump Media notes corrected to about $883.5M outstanding; jobs-report forecasts updated (Nowflation +82k/4.2%, Continuum +95k/4.1%); Fed blackout and jobless claims added; JOLTS forecast added.",
+        "Two independent check rounds. Unlock loop skipped (checked under 24h ago); score.py re-run."
+      ],
+      "found": [
+        "A CoinGecko page served prices far from CoinMarketCap and Blockchain.com (apparently a cached page), so CoinMarketCap was used.",
+        "Three brief sources (The Block DOJ, Decrypt NovaTech, CoinDesk Zodia) could not be opened by the checker, so those briefs were removed; ADP and ISM services times had no cited source and were removed.",
+        "The October 0.55 put/call comparison was dropped again (previous run found it covers all expiries)."
+      ],
+      "decided": [
+        "99 claims checked, 13 removed.",
+        "verify.py: 0 problems."
+      ],
+      "files": [
+        "data/news.json",
+        "data/unlocks.json",
+        "data/journal.json"
+      ]
+    },
+    {
       "date": "2026-11-26",
       "title": "22:52 desk update: news refresh",
       "did": [
