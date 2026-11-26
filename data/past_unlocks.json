@@ -10006,6 +10006,64 @@
       "confidence": 63,
       "scoredAt": "2026-10-26T08:21:58Z"
      }
+    },
+    {
+     "date": "2026-11-25",
+     "timeUTC": null,
+     "amountTokens": 19537438,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0.35,
+      "investors": 0.226,
+      "community": 0.197,
+      "ecosystem": 0.227,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com COAI unlocks",
+       "url": "https://app.tokenomics.com/tokenomics/chainopera-ai/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist homepage (countdown, updated 25 Nov 03:53 UTC)",
+       "url": "https://tokenomist.ai/",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "time"
+       ]
+      },
+      {
+       "label": "CoinGecko COAI page (unlock widget = Tokenomist data)",
+       "url": "https://coingecko.com/en/coins/chainopera-ai",
+       "kind": "aggregator",
+       "confirms": [
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Bitcoin Sistemi weekly unlock schedule (22 Nov 2026)",
+       "url": "https://en.bitcoinsistemi.com/watch-out-major-token-unlocks-are-coming-for-16-altcoins-this-week-here-s-the-day-by-day-hour-by-hou/",
+       "kind": "news",
+       "confirms": [
+        "date"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 7.01,
+      "confidence": 62,
+      "scoredAt": "2026-11-26T08:17:19Z"
+     }
     }
    ],
    "gaps": "Weakest token in this batch: no COAI page could be opened this session (tokenomics.com, Tokenomist, Bitrue, CoinGecko not on the fetch allowlist and the shared search budget ran out). All events rest on the desk's own 24-25 Oct 2026 readings of tokenomics.com, the CoinGecko/Tokenomist widget and Bitrue. No official ChainOpera tokenomics doc found. Dec-Aug amounts assume constant 48-month linear steps. Supply 1B is total (The Block, per desk snapshot), not a confirmed max.",
@@ -18143,6 +18201,56 @@
       }
      ],
      "gaps": "Recipients not stated by the source opened. Per CapWolf (via desk record) this is also the cliff date for investors who chose extended vesting, so the investor part may differ from the routine monthly pattern."
+    },
+    {
+     "date": "2026-11-25",
+     "timeUTC": null,
+     "amountTokens": 266470000,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": null,
+     "sources": [
+      {
+       "label": "Bitrue blog (21 Sep 2026, citing tokenomics.com): monthly ~266.5M H on 25th incl. 25 Nov 2026",
+       "url": "https://www.bitrue.com/blog/humanity-protocol-token-unlock",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount"
+       ]
+      },
+      {
+       "label": "CoinoTag: 266.47M H on 25 Sep (same monthly size)",
+       "url": "https://en.coinotag.com/humanity-h-unlocks-266-47m-tokens-worth-19-3m-september-25",
+       "kind": "news",
+       "confirms": [
+        "amount"
+       ]
+      },
+      {
+       "label": "TokenRadar tokenomics (read 25 Nov 2026 03:00 UTC): 'Nov 25-30' window with recipient split",
+       "url": "https://tokenradar.ai/tokens/humanity-protocol/tokenomics?time=30d",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "KuCoin/ChainCatcher (24 Apr 2026): investor vesting restructure",
+       "url": "https://www.kucoin.com/news/flash/humanity-foundation-announces-h-token-vesting-plan-adjustment-with-discounted-unlock-option",
+       "kind": "news",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "High",
+      "points": 4.5,
+      "confidence": 62,
+      "scoredAt": "2026-11-26T08:17:19Z"
+     }
     }
    ],
    "gaps": "Weakest token in this batch. No primary Humanity vesting document found; Tokenomist's dated event list is paywalled and tokenomics.com could not be opened this pass. Monthly tranches on the 25th very likely also occurred 25 Dec 2025-25 Apr 2026 (ecosystem/community buckets) and 25 Aug 2026, but no source opened shows them, so they are omitted rather than invented. Token amounts are missing for May/Jun/Jul (only USD values published). June 2026 ~$36M exploit and 1:1 migration to a new contract: check that the CoinGecko 'humanity' price series is continuous across the migration before measuring Jun-Jul events. Investor vesting was restructured in Apr-Jun 2026 (haircut vs extension), so investor shares of each tranche are uncertain. listed 2025-06 from tokenomics.com TGE 25 Jun 2025 (via desk record), consistent with the 25 Jun 2026 one-year insider cliff.",
@@ -44616,6 +44724,64 @@
       "scoredAt": "2026-10-26T08:21:58Z"
      },
      "fixNote": "first regular monthly step after the Sep cliff (1/24 of the remaining team and investor 2/3, plus the ecosystem step)"
+    },
+    {
+     "date": "2026-11-25",
+     "timeUTC": null,
+     "amountTokens": 227777777,
+     "amountHow": "from the live page's researched row",
+     "type": "linear-monthly",
+     "recipientsMix": {
+      "team": 0.305,
+      "investors": 0.305,
+      "community": 0,
+      "ecosystem": 0.39,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "Tokenomist Plasma updates page",
+       "url": "https://www.tokenomist.ai/plasma/updates",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "DefiLlama unlocks: Plasma",
+       "url": "https://defillama.com/unlocks/plasma",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "time"
+       ]
+      },
+      {
+       "label": "Bitrue blog: Plasma XPL token unlock",
+       "url": "https://www.bitrue.com/blog/plasma-xpl-token-unlock",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist weekly digest Sep 21-27 2026 (cliff context)",
+       "url": "https://tokenomist.ai/research/weekly-unlock-digest-sep-21-27-2026-xpl-unlocks-63-of-circulating-supply-2",
+       "kind": "aggregator",
+       "confirms": [
+        "recipients"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Moderate",
+      "points": 2.22,
+      "confidence": 50,
+      "scoredAt": "2026-11-26T08:17:19Z"
+     }
     }
    ],
    "gaps": "Plasma's own docs page could not be opened (allowlist); terms rest on Odaily's summary of the official tokenomics plus tokenomics.com/Bitrue. 28 Jul 2026 U.S. public-sale unlock amount unknown. Monthly ecosystem tranches Dec 2025-Jul 2026 are derived from the stated monthly pro-rata schedule rather than per-month reports. The 25 Oct 2026 tranche (first post-cliff team/investor monthly step, ~227.78M) falls after the window. Listed Sep 2025 (mainnet beta/TGE 25 Sep 2025 per Bitrue).",
@@ -49118,6 +49284,71 @@
       "points": 7.53,
       "confidence": 33,
       "scoredAt": "2026-11-25T08:10:37Z"
+     }
+    }
+   ],
+   "harvested": true
+  },
+  {
+   "token": "IRYS",
+   "name": "Irys",
+   "coingeckoId": "irys",
+   "events": [
+    {
+     "date": "2026-11-25",
+     "timeUTC": null,
+     "amountTokens": 1180087200,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0.398,
+      "investors": 0.536,
+      "community": 0.048,
+      "ecosystem": 0.018,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "tokenomics.com IRYS unlocks",
+       "url": "https://app.tokenomics.com/tokenomics/irys/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist IRYS unlock events",
+       "url": "https://tokenomist.ai/irys/unlock-events",
+       "kind": "aggregator",
+       "confirms": [
+        "date"
+       ]
+      },
+      {
+       "label": "Irys blog: tokenomics",
+       "url": "https://irys.xyz/blog/irys-tokenomics",
+       "kind": "primary",
+       "confirms": [
+        "recipients"
+       ]
+      },
+      {
+       "label": "CoinMarketCap AI latest updates (citing TokenPost)",
+       "url": "https://coinmarketcap.com/cmc-ai/irys/latest-updates",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 6.37,
+      "confidence": 30,
+      "scoredAt": "2026-11-26T08:17:19Z"
      }
     }
    ],
