@@ -3,6 +3,30 @@
   "entries": [
     {
       "date": "2026-11-26",
+      "title": "06:52 desk update: news refresh",
+      "did": [
+        "Refreshed news, market snapshot and calendar after the US close on Wed 25 Nov.",
+        "Independent source check over 2 rounds (119 claims, 2 removed, 2 corrected). Unlock re-check skipped (last checked 04:20 UTC 25 Nov, under 24h).",
+        "Scores refreshed."
+      ],
+      "found": [
+        "Final closes 25 Nov: Dow +0.33%, S&P 500 -0.25%, Nasdaq -0.62% (Avalon Capital); bitcoin $60,139 at the early-evening US read (Motley Fool).",
+        "Galaxy's Alex Thorn withdrew the October 'bear market ended in June' call (CoinDesk); total crypto market $2.08T, lowest since Sep 2024 (The Block).",
+        "Spot bitcoin funds -$4.94B in November through Tuesday (Decrypt); Wednesday's flows not yet published.",
+        "No published consensus found for Chicago PMI, ISM, JOLTS or ADP; Fifth Third forecasts dropped from the calendar (not re-opened this run)."
+      ],
+      "decided": [
+        "Lead stories: Wall Street round trip; Galaxy bear-market call plus fund outflows; senators vs SEC and the CFTC capital advisory. Fed/inflation moved to the calendar.",
+        "Dropped the 'no spot ETF flows on Thursday' line (no source) and a wrong '14-month low'. Added Bowman's 1 Dec testimony and MMT (4 Dec) to the calendar."
+      ],
+      "files": [
+        "data/news.json",
+        "data/unlocks.json",
+        "data/journal.json"
+      ]
+    },
+    {
+      "date": "2026-11-26",
       "title": "02:52 desk update: news refresh",
       "did": [
         "Refreshed news, market snapshot and calendar after the US afternoon of 25 Nov (Beige Book out; stocks not yet closed).",
