@@ -3,6 +3,27 @@
   "entries": [
     {
       "date": "2026-11-26",
+      "title": "14:52 desk update: news refresh",
+      "did": [
+        "Refreshed news, market snapshot (BTC/ETH from Investing.com 06:18 UTC; SOL from CoinMarketCap ~08:00 UTC, 24h change left blank because sources disagreed) and calendar.",
+        "Independent news source check over 2 rounds (158 claim checks, 26 claims removed; about ten cited pages could not be opened by the checker, so their claims came out).",
+        "Unlock loop skipped (checked 04:26 UTC today); scores refreshed with score.py."
+      ],
+      "found": [
+        "Final 25 Nov spot bitcoin fund flow was -$453.12M (SoSoValue via TokenPost), the 7th straight outflow day; IBIT -$329.71M.",
+        "Polymarket odds of a national bitcoin reserve by year-end at 4% (The Block). Friday expiry counts differ: Deribit ~$6.8B, max pain $72,000 (OKX) vs three-exchange $8.42B, max pain $70,000 (CryptoKeyhole).",
+        "Jobs-report forecasts disagree (+82k Nowflation vs +101k U.S. Bank consensus); ISM manufacturing 55 (Nowflation) vs 53.8 (Wells Fargo)."
+      ],
+      "decided": [
+        "Lead stories: ETF outflows; tariffs + inflation + oil; reserve bill odds. Warren/SEC point, USTR and KuCoin PCE citations, and five briefs dropped because their pages could not be re-opened."
+      ],
+      "files": [
+        "data/news.json",
+        "data/unlocks.json"
+      ]
+    },
+    {
+      "date": "2026-11-26",
       "title": "10:52 desk update: news refresh and unlock re-check",
       "did": [
         "Refreshed news, market snapshot (TradingView, ~03:54 UTC) and calendar.",

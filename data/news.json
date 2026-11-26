@@ -1,136 +1,106 @@
 {
   "date": "2026-11-26",
-  "updated": "2026-11-26T04:28:52Z",
-  "headline": "After a wild Wednesday, the US made its new tariff plan official, inflation ran hotter than expected and markets now price a Fed rate hike on 9 December, as crypto heads into the Thanksgiving holiday.",
+  "updated": "2026-11-26T08:17:19Z",
+  "headline": "US bitcoin funds lost $453 million on Wednesday, their seventh straight day of outflows, while bitcoin sits near $60,000 on the US Thanksgiving holiday ahead of Friday's monthly options expiry.",
   "market": {
-    "asOf": "Prices from TradingView's crypto price page, read about 03:54 UTC Thu 26 Nov (10:54 Bangkok). Use the live prices on this page.",
+    "asOf": "BTC and ETH from Investing.com at 06:18 UTC Thu 26 Nov (13:18 Bangkok); SOL from CoinMarketCap about 08:00 UTC. Use the live prices on this page.",
     "btc": {
-      "price": 60753.29,
-      "chg24h": 2.52
+      "price": 60397.8,
+      "chg24h": 2.0
     },
     "eth": {
-      "price": 1697.9,
-      "chg24h": 2.3
+      "price": 1688.78,
+      "chg24h": 1.7
     },
     "sol": {
-      "price": 71.09,
-      "chg24h": 2.82
+      "price": 69.38,
+      "chg24h": null
     },
-    "fearGreed": "Extreme fear: 9 on CoinMarketCap's Fear and Greed Index and 13 on Alternative.me's index, both read about 03:54 UTC."
+    "fearGreed": "Extreme fear: 9 on CoinMarketCap's Fear and Greed Index and 13 on Alternative.me's index, both read about 08:00 UTC."
   },
   "stories": [
     {
-      "title": "The US makes its new tariff plan official on a day of hot inflation; bitcoin's Wednesday round trip ends back near $60,000",
-      "mood": "volatile",
-      "summary": "Washington formally proposed extra tariffs on 14 economies and a key inflation gauge came in above forecasts. Tech stocks plunged at the open and then recovered most of the loss, and bitcoin, which has been moving with tech stocks, followed the same path.",
-      "points": [
-        "The US Trade Representative found that 14 economies' \"structural excess capacity\" practices can be acted on under Section 301 and proposed extra tariffs on each. These are proposals: comments are due 5 January and hearings start 25 January, per USTR.",
-        "October core PCE inflation rose 3.3% from a year earlier against 3.2% expected, while headline PCE was 3.8%, in line with forecasts, per KuCoin News and TradingKey.",
-        "Final closes on Wed 25 Nov: Dow 50,182.95 (+0.33%), S&P 500 7,182.78 (-0.25%), Nasdaq 23,585.80 (-0.62%), per TradingKey, after the Nasdaq was down more than 4% in the morning, per CoinDesk.",
-        "CoinDesk reported bitcoin at about $57,500 after the open and back above $60,000 by 2:24pm ET.",
-        "US stock markets are closed today for Thanksgiving; crypto keeps trading around the clock."
-      ],
-      "sources": [
-        {
-          "label": "USTR: determinations and proposed actions in 14 Section 301 investigations",
-          "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural"
-        },
-        {
-          "label": "TradingKey: market recap, PCE and Nvidia, 25 Nov",
-          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262322956-market-recap-sp-nasdaq-nvidia-pce-gold-breaks-3500-tradingkey"
-        },
-        {
-          "label": "KuCoin News: US core PCE rises to 3.3% in October",
-          "url": "https://www.kucoin.com/news/flash/us-core-pce-inflation-rises-to-3-3-in-october-boosting-fed-rate-hike-expectations"
-        },
-        {
-          "label": "CoinDesk: live updates, bitcoin and markets on 25 Nov",
-          "url": "https://www.coindesk.com/business/2026/11/25/live-updates-bitcoin-slips-back-under-usd60-000-as-hype-leads-altcoins-lower"
-        }
-      ]
-    },
-    {
-      "title": "Money keeps leaving US bitcoin funds, with November outflows approaching $5 billion",
+      "title": "US bitcoin funds lose $453 million on Wednesday, the seventh outflow day in a row",
       "mood": "bearish",
-      "summary": "US spot bitcoin funds have now had money flow out for days in a row, and the crypto market's total value is at its lowest in more than two years.",
+      "summary": "Money has now left US spot bitcoin funds for seven days in a row, even as the price bounced.",
       "points": [
-        "US spot bitcoin funds lost a net $231.56 million on Tuesday 24 Nov, their sixth outflow day in a row, led by BlackRock's IBIT at -$175.30 million, per Bloomingbit.",
-        "November outflows are approaching $5 billion, per The Block.",
-        "An early, incomplete count for Wednesday 25 Nov showed another $123.3 million of net outflows, per a Bitget daily report carried by ChainCatcher.",
-        "The whole crypto market was worth $2.08 trillion on Wednesday, its lowest since September 2024, per The Block."
+        "US spot bitcoin funds lost a net $453.12 million on Wed 25 Nov, per SoSoValue data reported by TokenPost; Farside's count, reported by Bloomingbit, also shows about $453 million.",
+        "BlackRock's IBIT accounted for $329.71 million of the outflow; of the 12 funds, seven recorded outflows, per TokenPost.",
+        "November outflows reached about $4.94 billion through Tuesday, per SoSoValue data cited by The Block, before Wednesday's figure.",
+        "US funds do not trade today for Thanksgiving, so the next daily figure comes after Friday's session."
       ],
       "sources": [
         {
-          "label": "Bloomingbit: spot bitcoin ETF flows, 24 Nov",
-          "url": "https://en.bloomingbit.io/feed/news/125188"
+          "label": "TokenPost: bitcoin ETF flows, 25 Nov (SoSoValue)",
+          "url": "https://www.tokenpost.com/news/investing/62669"
         },
         {
-          "label": "The Block: bitcoin falls below $58,000",
-          "url": "https://www.theblock.co/news/markets/2026-11-25-bitcoin-falls-below-58000-coinshares-butterfill-sees-tail-end-bear-market-446678"
+          "label": "Bloomingbit: spot bitcoin ETF flows, 25 Nov (Farside)",
+          "url": "https://en.bloomingbit.io/feed/news/125287"
         },
         {
-          "label": "ChainCatcher: Bitget daily, 26 Nov",
-          "url": "https://www.chaincatcher.com/en/article/2308137"
+          "label": "The Block: Swiss bitcoin ETF begins trading (November flows)",
+          "url": "https://www.theblock.co/news/markets/2026-11-26-swiss-bitcoin-etf-bbit-begins-trading-europes-only-446724"
         }
       ]
     },
     {
-      "title": "Washington pulls both ways: a bitcoin reserve bill reaches the House floor while Democratic senators push the SEC to scrap its crypto rules",
+      "title": "Tariff plan, hot inflation and pricier oil keep pressure on crypto as bitcoin holds near $60,000",
+      "mood": "volatile",
+      "summary": "A formal US plan for new tariffs on 14 economies, inflation above forecasts and rising oil prices are weighing on markets. Bitcoin is back near $60,000 but is having a very weak month.",
+      "points": [
+        "Bitcoin was at $60,397.8 at 06:18 UTC on Thursday, up 2%, per Investing.com.",
+        "Bitcoin is down 24% in November and on pace for its worst month since June 2022, per Bitbo.",
+        "The US proposed extra tariffs on 14 trading partners; comments are due 5 January 2027 and hearings start 25 January, per Bitbo.",
+        "Brent crude was at $94.71 a barrel at 06:40 GMT Thursday after Yemen's Houthis claimed an attack on Saudi Arabia's Ras Tanura refinery, per Unbiased Headlines."
+      ],
+      "sources": [
+        {
+          "label": "Investing.com: bitcoin recovers to $60.5k",
+          "url": "https://investing.com/news/cryptocurrency-news/bitcoin-recovers-to-605k-but-rates-regulatory-fears-persist-5052101"
+        },
+        {
+          "label": "Bitbo: bitcoin sinks on tariff proposal",
+          "url": "https://bitbo.io/news/bitcoin-sinks-tariff-proposal/"
+        },
+        {
+          "label": "Unbiased Headlines: Brent rises for a third day",
+          "url": "https://unbiasedheadlines.com/article/brent-rises-to-9471-thursday-for-a-third-straight-gain-as-houthis-claim-ras"
+        }
+      ]
+    },
+    {
+      "title": "A bitcoin reserve bill can now get a House vote, but betting markets give it little chance this year",
       "mood": "neutral",
-      "summary": "A bill to write a US Strategic Bitcoin Reserve into law is now eligible for a vote of the full House. On the same day, Democratic senators led by Elizabeth Warren and Chris Van Hollen asked the SEC to withdraw two pro-crypto measures.",
+      "summary": "A bill to write a US Strategic Bitcoin Reserve into law is on the House calendar, with little time left before Congress breaks.",
       "points": [
         "H.R. 8957, the American Reserve Modernization Act from Rep. Nick Begich, was sent to the full House on 24 Nov after the House Financial Services Committee approved it 28-21, per The Block.",
-        "The bill would bar any sale of reserve bitcoin for at least 20 years and require proof-of-reserve reporting, per The Block.",
-        "Sens. Warren, Van Hollen, Tina Smith and Jack Reed want the SEC to withdraw its proposed \"Regulation Crypto Assets\" and its \"innovation exemption\" for tokenized-securities venues, per The Block.",
-        "The SEC proposal includes a startup exemption for offerings up to $5 million and a fundraising exemption up to $75 million, per The Block."
+        "The bill would bar any sale of reserve bitcoin for at least 20 years, per The Block.",
+        "Polymarket's odds of a national bitcoin reserve by year-end were 4%, down from 34% in May, per The Block."
       ],
       "sources": [
         {
           "label": "The Block: House committee advances strategic bitcoin reserve bill",
           "url": "https://www.theblock.co/news/regulation/2026-11-25-house-committee-advances-strategic-bitcoin-reserve-bill-446778"
-        },
-        {
-          "label": "The Block: Warren, Van Hollen push to scrap SEC crypto rules",
-          "url": "https://www.theblock.co/news/regulation/2026-11-25-warren-van-hollen-lead-push-scrap-sec-regulation-crypto-innovation-exemption-446756"
         }
       ]
     }
   ],
   "briefs": [
     {
+      "title": "Hackers divert bitcoin miners' computing power",
+      "summary": "Mining pool Braiins found an attack that redirects miners' computing power through unencrypted connections; more than 1,000 mining sites were targeted on 20 Nov, per The Block.",
+      "url": "https://www.theblock.co/newsletters/the-daily/2026-11-26-fidelity-chainlink-etf-musk-x-ruling-alleged-bitcoin-content-farm-case-more-crypto-news-446755"
+    },
+    {
+      "title": "A spot bitcoin ETF starts trading in Switzerland",
+      "summary": "BIT's BBIT has begun trading on the SIX exchange holding 350 BTC, with a 0.19% yearly fee, per The Block.",
+      "url": "https://www.theblock.co/news/markets/2026-11-26-swiss-bitcoin-etf-bbit-begins-trading-europes-only-446724"
+    },
+    {
       "title": "Fidelity files for a spot Chainlink fund",
-      "summary": "Fidelity filed to list a spot Chainlink (LINK) fund on Nasdaq under the ticker FLNK; it will not stake its LINK, per Yahoo Finance.",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/fidelity-files-spot-chainlink-etf-200912835.html"
-    },
-    {
-      "title": "Fidelity adds AAVE, LINK and UNI for US retail customers",
-      "summary": "Fidelity's US retail crypto platform added Aave, Chainlink and Uniswap on 24 Nov, taking it to 8 assets, per U.Today.",
-      "url": "https://u.today/link-aave-and-uni-now-supported-by-fidelity"
-    },
-    {
-      "title": "Bit Digital sold ether to cut its Galaxy loan",
-      "summary": "Bit Digital sold 29,825 ETH between 15 and 23 Nov to repay $50 million of its loan from Galaxy, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-25-bit-digital-repays-50-million-to-galaxy-after-selling-29825-eth-446164"
-    },
-    {
-      "title": "US moves to keep $1.1 billion of USDC from North Korea's Binance hack",
-      "summary": "The Justice Department filed to permanently forfeit more than $1.1 billion in USDC tied to North Korea's $6.4 billion hack of Binance, per Decrypt.",
-      "url": "https://decrypt.co/383874/justice-department-moves-to-forfeit-1-1b-in-usdc-from-north-koreas-binance-hack"
-    },
-    {
-      "title": "Bank of Korea raises rates",
-      "summary": "South Korea's central bank raised its key rate by a quarter point to 3.25% on Thursday, per The Korea Herald.",
-      "url": "https://www.koreaherald.com/article/10949940"
-    },
-    {
-      "title": "Oil jumps after a claimed attack on a Saudi refinery",
-      "summary": "Brent crude settled at $94.61 after Yemen's Houthis claimed an attack on Saudi Arabia's Ras Tanura refinery, adding to inflation worries, per ChainCatcher's daily wrap.",
-      "url": "https://www.chaincatcher.com/en/article/2308137"
-    },
-    {
-      "title": "Franklin Templeton's crypto index fund adds HYPE",
-      "summary": "The Franklin Crypto Index ETF (EZPZ) will add Hyperliquid's HYPE from 1 December, per an SEC filing reported by The Block.",
-      "url": "https://www.theblock.co/news/markets/2026-11-25-franklin-templeton-ezpz-etf-adds-hyperliquid-hype-446686"
+      "summary": "Fidelity filed to list a spot Chainlink (LINK) fund on Nasdaq under the ticker FLNK; it will not stake its LINK, per The Block.",
+      "url": "https://www.theblock.co/newsletters/the-daily/2026-11-26-fidelity-chainlink-etf-musk-x-ruling-alleged-bitcoin-content-farm-case-more-crypto-news-446755"
     }
   ],
   "calendar": [
@@ -140,7 +110,7 @@
       "event": "Thanksgiving: US stock market closed",
       "impact": "neutral",
       "key": false,
-      "note": "No US stock trading today. Stocks close early on Friday 27 Nov at 1:00pm ET (01:00 Sat Bangkok), per NYSE owner ICE."
+      "note": "No US stock trading today. Stocks close early on Friday 27 Nov at 1:00pm ET (01:00 Sat Bangkok), per NYSE owner ICE; US bond markets close early at 2:00pm ET, per SIFMA."
     },
     {
       "et": "Thu 26 Nov – Fri 4 Dec",
@@ -156,7 +126,7 @@
       "event": "Deribit monthly bitcoin options expiry",
       "impact": "volatile",
       "key": true,
-      "note": "Expires at 08:00 UTC. Counts differ by date: CryptoTicker's 21 Nov count was 112,323 BTC (about $6.76 billion), \"max pain\" $73,000; OKX's 24 Nov post gives about $6.8 billion and $72,000; KCEX's 17 Nov count was about $6.5 billion and $75,000."
+      "note": "Expires at 08:00 UTC. Counts differ: OKX's 24 Nov post gives about $6.8 billion on Deribit with \"max pain\" at $72,000; CryptoKeyhole's 25 Nov count across Deribit, OKX and Bybit is $8.42 billion (140,159 BTC) with max pain at $70,000. Ether options worth about $1.20 billion also expire across those three exchanges, per CryptoKeyhole."
     },
     {
       "et": "Sat 28 Nov",
@@ -164,7 +134,7 @@
       "event": "Fed officials stop public comments before the December meeting",
       "impact": "neutral",
       "key": false,
-      "note": "The blackout runs to Thu 10 Dec, per the Chicago Fed's calendar."
+      "note": "The blackout runs to Thu 10 Dec, under the Fed's blackout rules."
     },
     {
       "et": "Mon 30 Nov · 9:45am",
@@ -172,7 +142,7 @@
       "event": "Chicago PMI (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "October was 55.3, per RTTNews. Release time per MNI."
+      "note": "October was 55.3, per Newsquawk. Release time per MNI."
     },
     {
       "et": "Mon 30 Nov · 4:00pm",
@@ -188,7 +158,7 @@
       "event": "ISM manufacturing PMI (Nov), job openings (JOLTS, Oct); Fed Vice Chair Bowman testifies",
       "impact": "neutral",
       "key": false,
-      "note": "ISM: consensus 55, October 55.5. JOLTS: consensus 7.3 million, September 7.52 million (consensus per Nowflation; prior per ISM and AP). Bowman appears before the House Financial Services Committee."
+      "note": "ISM: consensus 55 per Nowflation, while Wells Fargo forecasts 53.8; October was 55.5. JOLTS: consensus 7.3 million per Nowflation, September 7.52 million. Bowman appears before the House Financial Services Committee, per the Fed's calendar."
     },
     {
       "et": "Wed 2 Dec · 8:15am",
@@ -204,7 +174,7 @@
       "event": "ISM services PMI (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "October was 54.5, per InvestingLive. Weekly jobless claims come out the same day at 8:30am ET."
+      "note": "October was 54.5, per InvestingLive. Weekly jobless claims come out the same day at 8:30am ET; last week's figure was 189,000."
     },
     {
       "et": "Fri 4 Dec · 8:30am",
@@ -212,7 +182,7 @@
       "event": "US jobs report (Nov)",
       "impact": "volatile",
       "key": true,
-      "note": "Consensus +82,000 jobs and 4.2% unemployment, per Nowflation. October payrolls rose 165,000 with unemployment at 4.1%, per ABC7/AP."
+      "note": "Forecasts differ: consensus +82,000 jobs and 4.2% unemployment per Nowflation; U.S. Bank's consensus is +101,000 jobs and Wells Fargo expects +80,000. October payrolls rose 165,000 with unemployment at 4.1%, per the BLS."
     },
     {
       "et": "Wed 9 Dec",
@@ -220,14 +190,14 @@
       "event": "Fed rate decision (meeting 8-9 Dec)",
       "impact": "volatile",
       "key": true,
-      "note": "Markets expect a rate hike, not a cut. CME FedWatch put the chance of a quarter-point hike at 97.8% on the morning of 25 Nov, per MarketSpeaker, and 94.4% after the PCE inflation data, per KuCoin News. The current target range is 3.75-4.00%."
+      "note": "Markets expect a rate hike, not a cut. CME FedWatch put the chance of a quarter-point hike at 97.8% on 25 Nov, per KuCoin News."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-26T04:28:52Z",
-    "claimsChecked": 115,
-    "claimsRemoved": 13,
+    "checkedAt": "2026-11-26T08:17:19Z",
+    "claimsChecked": 158,
+    "claimsRemoved": 26,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
