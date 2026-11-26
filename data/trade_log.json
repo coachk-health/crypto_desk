@@ -695,10 +695,10 @@
    },
    "worstAgainst": 2.51,
    "mark": {
-    "date": "2026-11-24",
-    "price": 0.160073,
-    "pnl": 27.11,
-    "r": 2.14
+    "date": "2026-11-25",
+    "price": 0.151492,
+    "pnl": 30.98,
+    "r": 2.45
    }
   },
   {
@@ -779,6 +779,47 @@
     "riskPct": 12.66,
     "pumpPct": 30.0,
     "fromSignals": "2026-11-22T09:40:58Z"
+   },
+   "status": "missed",
+   "skipReason": "not logged before its entry day, so not counted"
+  },
+  {
+   "id": "GRVT-2026-11-30",
+   "token": "GRVT",
+   "name": "Grvt",
+   "coingeckoId": "grvt",
+   "unlockDate": "2026-11-30",
+   "checkDate": "2026-11-22",
+   "entryDate": "2026-11-23",
+   "coverDate": "2026-12-14",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [
+    {
+     "at": "2026-11-26T09:42:08+00:00",
+     "event": "check day: missed (not logged before its entry day, so not counted)"
+    }
+   ],
+   "decision": {
+    "confidence": 37,
+    "pctCirculating": 29.99,
+    "investorsShare": 0.0,
+    "firstInsiderUnlock": false,
+    "usdM": 4.37,
+    "amount": "Unconfirmed (prior leads: 34.3M GRVT tokenomics.com vs ~73.6M implied by TokenPost)",
+    "frozenAt": "2026-11-26T09:42:08+00:00"
+   },
+   "plan": {
+    "stop": 12,
+    "target": 35,
+    "cover": 14,
+    "zone": 1.0,
+    "rr": 2.92,
+    "riskPct": 12.66,
+    "pumpPct": 30.0,
+    "fromSignals": "2026-11-25T11:30:18Z"
    },
    "status": "missed",
    "skipReason": "not logged before its entry day, so not counted"
@@ -866,6 +907,22 @@
    "status": "watching"
   },
   {
+   "id": "H-2026-12-25",
+   "token": "H",
+   "name": "Humanity Protocol",
+   "coingeckoId": "humanity",
+   "unlockDate": "2026-12-25",
+   "checkDate": "2026-12-17",
+   "entryDate": "2026-12-18",
+   "coverDate": "2027-01-08",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [],
+   "status": "watching"
+  },
+  {
    "id": "KNTQ-2026-12-27",
    "token": "KNTQ",
    "name": "Kinetiq",
@@ -914,7 +971,7 @@
    "status": "watching"
   }
  ],
- "updatedAt": "2026-11-25T22:37:49Z",
+ "updatedAt": "2026-11-26T09:42:08Z",
  "summary": {
   "closed": 3,
   "won": 2,
@@ -923,7 +980,7 @@
   "totalUsd": 334,
   "open": 1,
   "skipped": 3,
-  "watching": 8,
+  "watching": 9,
   "byTag": {
    "strong": {
     "closed": 1,

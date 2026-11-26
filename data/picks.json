@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T22:39:03Z",
+ "generatedAt": "2026-11-26T09:44:08Z",
  "rules": {
   "version": "v5",
   "frozenOn": "2026-11-25",
@@ -109,14 +109,16 @@
      "-7": 0.01501,
      "-3": 0.01313
     },
-    "exits": {},
-    "lastClose": 0.00944,
-    "asOf": "2026-11-24",
+    "exits": {
+     "1": 0.01104
+    },
+    "lastClose": 0.01104,
+    "asOf": "2026-11-25",
     "shadowPartial": {
-     "status": "open",
-     "pct": 35.8,
-     "why": "60% taken at target, 40% trailing",
-     "day": 0
+     "status": "closed",
+     "pct": 34.4,
+     "why": "target + trailing stop",
+     "day": 1
     }
    }
   },
@@ -147,8 +149,8 @@
      "-3": 0.01891
     },
     "exits": {},
-    "lastClose": 0.01656,
-    "asOf": "2026-11-24",
+    "lastClose": 0.01621,
+    "asOf": "2026-11-25",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -166,9 +168,9 @@
    "pctCirculating": 12.94,
    "firstInsider": true,
    "setup": "First insider unlock",
-   "recipients": "First release of Team & Advisors (160.84M) and Investors (171.67M) after the cliff was extended from 26 May to 26 Nov 2026, plus a Foundation Treasury slice (126.26M) per DropsTab.",
+   "recipients": "First release for Team & Advisors and Investors after their cliff was moved from 26 May to 26 Nov 2026, plus a third slice that Tokenomist labels Protocol Treasury (tokenomics.com: Community).",
    "confidence": "confirmed",
-   "source": "https://tokenomist.ai/research/weekly-unlock-digest-may-25-31-2026-humas-lockup-extension",
+   "source": "https://tokenomist.ai/huma-finance/claim",
    "where": [
     "Binance",
     "OKX",
@@ -198,14 +200,98 @@
      "-3": 0.00836
     },
     "exits": {},
-    "lastClose": 0.008016,
-    "asOf": "2026-11-24",
+    "lastClose": 0.00751,
+    "asOf": "2026-11-25",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
      "why": "stopped",
      "day": -7
     }
+   }
+  },
+  {
+   "token": "GRVT",
+   "name": "Grvt",
+   "unlockDate": "2026-11-30",
+   "entryDate": "2026-11-23",
+   "coverDate": "2026-12-14",
+   "pctCirculating": 29.99,
+   "firstInsider": false,
+   "setup": "Big unlock",
+   "recipients": "Community & Airdrop recipients (the remainder of the 28% airdrop vests over 12 months from the 30 Jul 2026 TGE). Ecosystem (6-month lockup) and team/investors (12-month lockup) are not due until about 30 Jan 2027 and about 30 Jul 2027.",
+   "confidence": "confirmed",
+   "source": "https://app.tokenomics.com/tokenomics/grvt",
+   "where": [
+    "Binance",
+    "OKX",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "Bybit"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
+   "venue": "binance",
+   "symbol": "GRVTUSDT",
+   "pump": -33.1,
+   "pumpTo": "2026-11-23",
+   "call": "TAKE",
+   "why": "passes every rule",
+   "entry": 0.1459,
+   "stop": 0.163408,
+   "target": 0.094835,
+   "practice": {
+    "entries": {
+     "-14": 0.1727,
+     "-7": 0.1459
+    },
+    "exits": {},
+    "lastClose": 0.1249,
+    "asOf": "2026-11-25",
+    "shadowPartial": {
+     "status": "open",
+     "pct": 14.4,
+     "why": "no target yet",
+     "day": -5
+    }
+   }
+  },
+  {
+   "token": "WET",
+   "name": "HumidiFi",
+   "unlockDate": "2026-12-09",
+   "entryDate": "2026-12-02",
+   "coverDate": "2026-12-23",
+   "pctCirculating": 83.7,
+   "firstInsider": false,
+   "setup": "Big unlock",
+   "recipients": "Foundation, HumidiFi Labs (developer) and Ecosystem pool, in the ratio of their post-TGE remainders (Foundation 32%, Labs 25%, Ecosystem 20% of supply). No VC investors.",
+   "confidence": "confirmed",
+   "source": "https://www.rootdata.com/projects/detail/humidifi?k=MjA3NDY%3D",
+   "where": [
+    "Binance",
+    "OKX",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "Bybit"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
+   "venue": "binance",
+   "symbol": "WETUSDT",
+   "pump": -23.5,
+   "pumpTo": "2026-11-25",
+   "call": "WATCH",
+   "why": "passes so far",
+   "practice": {
+    "entries": {
+     "-14": 0.03669
+    },
+    "exits": {},
+    "lastClose": 0.03686,
+    "asOf": "2026-11-25"
    }
   },
   {
@@ -217,7 +303,7 @@
    "pctCirculating": 18.49,
    "firstInsider": true,
    "setup": "First insider unlock",
-   "recipients": "End of 12-month cliffs: first monthly slice for investors (~19.68M; 236.2M over 12 months), contributors (~3.36M; 36 months) and foundation treasury (~3.33M; 24 months), plus routine ecosystem incentive (~3.35M; 120 months). tokenomics.com split: investors 66.2%, insiders 11.3%, community/ecosystem 11.3%, foundation 11.2%.",
+   "recipients": "End of 12-month cliffs from the 11 Dec 2025 TGE: first monthly slice for private investors (~66%), insiders/contributors (~11%) and foundation (~11%), plus a routine community/ecosystem slice (~11%), per tokenomics.com. Earlier monthly unlocks (May-Nov 2026) each list a single recipient, consistent with no earlier insider release.",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/cysic/unlocks",
    "where": [
@@ -231,8 +317,8 @@
    "venueNotes": [],
    "venue": "binance",
    "symbol": "CYSUSDT",
-   "pump": -25.9,
-   "pumpTo": "2026-11-24",
+   "pump": -39.2,
+   "pumpTo": "2026-11-25",
    "oiChange": null,
    "oiTo": null,
    "call": "WATCH",
@@ -285,8 +371,8 @@
      "7": 0.002064,
      "14": 0.001452
     },
-    "lastClose": 0.001452,
-    "asOf": "2026-11-24",
+    "lastClose": 0.001449,
+    "asOf": "2026-11-25",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -337,8 +423,8 @@
      "3": 2.0536,
      "7": 3.4039
     },
-    "lastClose": 3.0852,
-    "asOf": "2026-11-24",
+    "lastClose": 3.5479,
+    "asOf": "2026-11-25",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -362,12 +448,12 @@
    "where": [],
    "alsoListed": [],
    "venueNotes": [
-    "Bitget: different asset: price 313.1 vs ~7.17 (CoinGecko's price)",
-    "Gate: different asset: price 311 vs ~7.17 (CoinGecko's price)",
-    "Bybit: different asset: price 332.6 vs ~7.17 (CoinGecko's price)"
+    "Bitget: different asset: price 335 vs ~7.16 (CoinGecko's price)",
+    "Gate: different asset: price 336.9 vs ~7.16 (CoinGecko's price)",
+    "Bybit: different asset: price 335.8 vs ~7.16 (CoinGecko's price)"
    ],
    "venueCheck": {
-    "at": "2026-11-25 22:39 UTC",
+    "at": "2026-11-26 09:44 UTC",
     "reached": [
      "Binance (data files)",
      "OKX",
@@ -380,23 +466,7 @@
     "unreachable": []
    },
    "call": "SKIP",
-   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-25 22:39 UTC)",
-   "practice": null
-  },
-  {
-   "token": "WET",
-   "name": "HumidiFi",
-   "unlockDate": "2026-12-09",
-   "entryDate": "2026-12-02",
-   "coverDate": "2026-12-23",
-   "pctCirculating": 112.7,
-   "firstInsider": false,
-   "setup": "Big unlock",
-   "recipients": "Six-monthly lump to three allocations: Foundation ~80M (41.6%), HumidiFi Labs ~62.5M (32.5%), Ecosystem ~50M (26.0%), per the four-equal-tranche schedule.",
-   "confidence": "disputed",
-   "source": "https://www.rootdata.com/projects/detail/humidifi?k=MjA3NDY%3D",
-   "call": "SKIP",
-   "why": "unlock not confirmed",
+   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-26 09:44 UTC)",
    "practice": null
   }
  ],
@@ -576,14 +646,16 @@
      "-7": 0.01501,
      "-3": 0.01313
     },
-    "exits": {},
-    "lastClose": 0.00944,
-    "asOf": "2026-11-24",
+    "exits": {
+     "1": 0.01104
+    },
+    "lastClose": 0.01104,
+    "asOf": "2026-11-25",
     "shadowPartial": {
-     "status": "open",
-     "pct": 35.8,
-     "why": "60% taken at target, 40% trailing",
-     "day": 0
+     "status": "closed",
+     "pct": 34.4,
+     "why": "target + trailing stop",
+     "day": 1
     }
    }
   },
@@ -700,9 +772,9 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.1267,
-    "openPct": 18.5,
-    "asOf": "2026-11-24"
+    "lastClose": 0.1249,
+    "openPct": 19.7,
+    "asOf": "2026-11-25"
    },
    "practice": {
     "entries": {
@@ -710,11 +782,67 @@
      "-7": 0.1555
     },
     "exits": {},
-    "lastClose": 0.1267,
-    "asOf": "2026-11-24",
+    "lastClose": 0.1249,
+    "asOf": "2026-11-25",
     "shadowPartial": {
      "status": "open",
-     "pct": 18.5,
+     "pct": 19.7,
+     "why": "no target yet",
+     "day": -4
+    }
+   }
+  },
+  {
+   "token": "GRVT",
+   "name": "Grvt",
+   "unlockDate": "2026-11-30",
+   "entryDate": "2026-11-23",
+   "coverDate": "2026-12-14",
+   "pctCirculating": 29.99,
+   "firstInsider": false,
+   "setup": "Big unlock",
+   "recipients": "Community & Airdrop recipients (the remainder of the 28% airdrop vests over 12 months from the 30 Jul 2026 TGE). Ecosystem (6-month lockup) and team/investors (12-month lockup) are not due until about 30 Jan 2027 and about 30 Jul 2027.",
+   "confidence": "confirmed",
+   "source": "https://app.tokenomics.com/tokenomics/grvt",
+   "where": [
+    "Binance",
+    "OKX",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "Bybit"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
+   "venue": "binance",
+   "symbol": "GRVTUSDT",
+   "pump": -33.1,
+   "pumpTo": "2026-11-23",
+   "call": "TAKE",
+   "why": "passes every rule",
+   "entry": 0.1459,
+   "stop": 0.163408,
+   "target": 0.094835,
+   "rules": "v5",
+   "calledAt": "2026-11-26T09:44:05Z",
+   "lateCall": true,
+   "result": {
+    "status": "open",
+    "lastClose": 0.1249,
+    "openPct": 14.4,
+    "asOf": "2026-11-25"
+   },
+   "practice": {
+    "entries": {
+     "-14": 0.1727,
+     "-7": 0.1459
+    },
+    "exits": {},
+    "lastClose": 0.1249,
+    "asOf": "2026-11-25",
+    "shadowPartial": {
+     "status": "open",
+     "pct": 14.4,
      "why": "no target yet",
      "day": -5
     }

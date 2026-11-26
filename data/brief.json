@@ -1,9 +1,9 @@
 {
- "made": "2026-11-26 05:25 UTC",
+ "made": "2026-11-26 09:44 UTC",
  "day": "2026-11-26",
  "rules": "v5, frozen 25 Nov 2026: only unlocks we can short. Short 25%+ unlocks, or first insider unlocks with open interest down 10%+; skip anything up 30%+ going in. Short the day -7 open, stop 12%, target 35%, out day +14. Short on Binance; if Binance has no perp, on OKX, Bitget, Gate, Hyperliquid or KuCoin (never MEXC), only where the price confirms it's the same token.",
  "shortable": {
-  "checkedAt": "2026-11-26 05:25 UTC",
+  "checkedAt": "2026-11-26 09:43 UTC",
   "counts": {
    "yes": 62,
    "no": 8,
@@ -34,9 +34,9 @@
     "token": "ADI",
     "date": "2026-12-09",
     "notes": [
-     "Bitget: different asset: price 335 vs ~7.18 (CoinGecko's price)",
-     "Gate: different asset: price 336.9 vs ~7.18 (CoinGecko's price)",
-     "Bybit: different asset: price 334.9 vs ~7.18 (CoinGecko's price)"
+     "Bitget: different asset: price 335 vs ~7.16 (CoinGecko's price)",
+     "Gate: different asset: price 336.9 vs ~7.16 (CoinGecko's price)",
+     "Bybit: different asset: price 335.8 vs ~7.16 (CoinGecko's price)"
     ]
    },
    {
@@ -85,9 +85,46 @@
    ],
    "alsoListed": [],
    "venueNotes": [],
-   "lastClose": 0.1267,
-   "shortPct": 18.5,
-   "asOf": "2026-11-24"
+   "lastClose": 0.1249,
+   "shortPct": 19.7,
+   "asOf": "2026-11-25"
+  },
+  {
+   "id": "GRVT|2026-11-30",
+   "section": "open",
+   "token": "GRVT",
+   "name": "Grvt",
+   "setup": "Big unlock",
+   "unlockDate": "2026-11-30",
+   "entryDate": "2026-11-23",
+   "coverDate": "2026-12-14",
+   "sizePct": 30.0,
+   "firstInsider": false,
+   "pumpPct": -33.1,
+   "oiChangePct": null,
+   "call": "TAKE",
+   "why": "passes every rule",
+   "action": "Open short. Out by 14 Dec unless the stop or target hits first. Called late, not counted.",
+   "entry": 0.1459,
+   "stop": 0.163408,
+   "target": 0.094835,
+   "chart": "https://www.tradingview.com/chart/?symbol=BINANCE:GRVTUSDT.P",
+   "chartLabel": "Chart on TradingView",
+   "lateCall": true,
+   "venue": "Binance",
+   "where": [
+    "Binance",
+    "OKX",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "Bybit"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
+   "lastClose": 0.1249,
+   "shortPct": 14.4,
+   "asOf": "2026-11-25"
   },
   {
    "id": "WET|2026-12-09",
@@ -100,7 +137,7 @@
    "coverDate": "2026-12-23",
    "sizePct": 83.7,
    "firstInsider": false,
-   "pumpPct": -20.3,
+   "pumpPct": -23.5,
    "oiChangePct": null,
    "call": "WATCH",
    "why": "passes so far",
@@ -135,7 +172,7 @@
    "coverDate": "2026-12-25",
    "sizePct": 18.5,
    "firstInsider": true,
-   "pumpPct": -25.9,
+   "pumpPct": -39.2,
    "oiChangePct": null,
    "call": "WATCH",
    "why": "open interest not available yet",
@@ -292,8 +329,8 @@
    "pumpPct": null,
    "oiChangePct": null,
    "call": "SKIP",
-   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-26 05:25 UTC)",
-   "action": "Skip: can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-26 05:25 UTC).",
+   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-26 09:44 UTC)",
+   "action": "Skip: can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-26 09:44 UTC).",
    "entry": null,
    "stop": null,
    "target": null,
@@ -304,9 +341,9 @@
    "where": [],
    "alsoListed": [],
    "venueNotes": [
-    "Bitget: different asset: price 335 vs ~7.18 (CoinGecko's price)",
-    "Gate: different asset: price 336.9 vs ~7.18 (CoinGecko's price)",
-    "Bybit: different asset: price 334.9 vs ~7.18 (CoinGecko's price)"
+    "Bitget: different asset: price 335 vs ~7.16 (CoinGecko's price)",
+    "Gate: different asset: price 336.9 vs ~7.16 (CoinGecko's price)",
+    "Bybit: different asset: price 335.8 vs ~7.16 (CoinGecko's price)"
    ],
    "daysToEntry": 6
   }
@@ -334,6 +371,31 @@
    "token": "GRVT",
    "name": "Grvt",
    "setup": "Big unlock",
+   "unlockDate": "2026-11-30",
+   "entryDate": "2026-11-23",
+   "coverDate": "2026-12-14",
+   "pctCirculating": 29.99,
+   "firstInsider": false,
+   "pump": -33.1,
+   "oiChange": null,
+   "call": "TAKE",
+   "why": "passes every rule",
+   "lateCall": true,
+   "entry": 0.1459,
+   "stop": 0.163408,
+   "target": 0.094835,
+   "calledAt": "2026-11-26T09:44:05Z",
+   "result": {
+    "status": "open",
+    "lastClose": 0.1249,
+    "openPct": 14.4,
+    "asOf": "2026-11-25"
+   }
+  },
+  {
+   "token": "GRVT",
+   "name": "Grvt",
+   "setup": "Big unlock",
    "unlockDate": "2026-11-29",
    "entryDate": "2026-11-22",
    "coverDate": "2026-12-13",
@@ -350,9 +412,9 @@
    "calledAt": "2026-11-23T09:17:25Z",
    "result": {
     "status": "open",
-    "lastClose": 0.1267,
-    "openPct": 18.5,
-    "asOf": "2026-11-24"
+    "lastClose": 0.1249,
+    "openPct": 19.7,
+    "asOf": "2026-11-25"
    }
   },
   {

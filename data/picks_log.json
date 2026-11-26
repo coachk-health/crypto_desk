@@ -169,14 +169,16 @@
      "-7": 0.01501,
      "-3": 0.01313
     },
-    "exits": {},
-    "lastClose": 0.00944,
-    "asOf": "2026-11-24",
+    "exits": {
+     "1": 0.01104
+    },
+    "lastClose": 0.01104,
+    "asOf": "2026-11-25",
     "shadowPartial": {
-     "status": "open",
-     "pct": 35.8,
-     "why": "60% taken at target, 40% trailing",
-     "day": 0
+     "status": "closed",
+     "pct": 34.4,
+     "why": "target + trailing stop",
+     "day": 1
     }
    }
   },
@@ -293,9 +295,9 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.1267,
-    "openPct": 18.5,
-    "asOf": "2026-11-24"
+    "lastClose": 0.1249,
+    "openPct": 19.7,
+    "asOf": "2026-11-25"
    },
    "practice": {
     "entries": {
@@ -303,11 +305,67 @@
      "-7": 0.1555
     },
     "exits": {},
-    "lastClose": 0.1267,
-    "asOf": "2026-11-24",
+    "lastClose": 0.1249,
+    "asOf": "2026-11-25",
     "shadowPartial": {
      "status": "open",
-     "pct": 18.5,
+     "pct": 19.7,
+     "why": "no target yet",
+     "day": -4
+    }
+   }
+  },
+  {
+   "token": "GRVT",
+   "name": "Grvt",
+   "unlockDate": "2026-11-30",
+   "entryDate": "2026-11-23",
+   "coverDate": "2026-12-14",
+   "pctCirculating": 29.99,
+   "firstInsider": false,
+   "setup": "Big unlock",
+   "recipients": "Community & Airdrop recipients (the remainder of the 28% airdrop vests over 12 months from the 30 Jul 2026 TGE). Ecosystem (6-month lockup) and team/investors (12-month lockup) are not due until about 30 Jan 2027 and about 30 Jul 2027.",
+   "confidence": "confirmed",
+   "source": "https://app.tokenomics.com/tokenomics/grvt",
+   "where": [
+    "Binance",
+    "OKX",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "Bybit"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
+   "venue": "binance",
+   "symbol": "GRVTUSDT",
+   "pump": -33.1,
+   "pumpTo": "2026-11-23",
+   "call": "TAKE",
+   "why": "passes every rule",
+   "entry": 0.1459,
+   "stop": 0.163408,
+   "target": 0.094835,
+   "rules": "v5",
+   "calledAt": "2026-11-26T09:44:05Z",
+   "lateCall": true,
+   "result": {
+    "status": "open",
+    "lastClose": 0.1249,
+    "openPct": 14.4,
+    "asOf": "2026-11-25"
+   },
+   "practice": {
+    "entries": {
+     "-14": 0.1727,
+     "-7": 0.1459
+    },
+    "exits": {},
+    "lastClose": 0.1249,
+    "asOf": "2026-11-25",
+    "shadowPartial": {
+     "status": "open",
+     "pct": 14.4,
      "why": "no target yet",
      "day": -5
     }
