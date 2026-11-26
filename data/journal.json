@@ -3,6 +3,17 @@
   "entries": [
     {
       "date": "2026-11-26",
+      "title": "18:52 desk update: news refresh",
+      "did": "Refreshed news.json: new market read, lead story updated to The Block's record-month ETF outflow figure, new briefs (Auros wind-down, Zcash Sapling pool, 1Password breach, German co-op banks, Swiss tax-data list, Senate letter to SEC), calendar updated (newer options-expiry figures, Binance Blockchain Week, earnings). Two independent check rounds. Unlock loop skipped (checked under 24h ago); score.py re-run.",
+      "found": "BTC 24h change flipped from +3.3% to about -1.9% on CoinMarketCap between research and check. One draft line tying Wednesday's dip to inflation and tariffs was not supported by CoinDesk and was removed. U.S. Bank's payrolls figure is +98k (the +101k is the consensus it cites).",
+      "decided": "105 claims checked, 5 removed, 2 corrected. verify.py: 0 problems.",
+      "files": [
+        "data/news.json",
+        "data/unlocks.json"
+      ]
+    },
+    {
+      "date": "2026-11-26",
       "title": "14:52 desk update: news refresh",
       "did": [
         "Refreshed news, market snapshot (BTC/ETH from Investing.com 06:18 UTC; SOL from CoinMarketCap ~08:00 UTC, 24h change left blank because sources disagreed) and calendar.",
