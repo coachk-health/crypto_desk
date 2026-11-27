@@ -3,6 +3,27 @@
   "entries": [
     {
       "date": "2026-11-27",
+      "title": "14:52 desk update: news refresh",
+      "did": [
+        "Refreshed market, stories, briefs and calendar; two independent verification rounds (91 claims checked, 13 removed or corrected, mostly briefs whose pages could not be opened).",
+        "Unlock loop skipped (data checked 04:14 UTC, under 24h); score.py re-run for freshness."
+      ],
+      "found": [
+        "Binance says its post-hack withdrawal freeze is fully lifted (new lead).",
+        "Deribit's ~$7B bitcoin options expiry at 08:00 UTC: no settlement report found yet.",
+        "CoinGecko and CoinMarketCap coin pages blocked for the market agent; prices read from the CoinMarketCap homepage."
+      ],
+      "decided": [
+        "Dropped five carried-over briefs and the ISM services row because their sources could not be re-opened this run; ADP row became Salesforce/Snowflake earnings (ADP date unconfirmed)."
+      ],
+      "files": [
+        "data/news.json",
+        "data/unlocks.json",
+        "data/journal.json"
+      ]
+    },
+    {
+      "date": "2026-11-27",
       "title": "10:52 desk update: news refresh and unlock verification loop",
       "did": [
         "Refreshed market, stories, briefs and calendar; two independent verification rounds (133 claims checked, 12 removed, mostly claims resting on CoinDesk and Deribit pages that could not be opened).",

@@ -1,53 +1,54 @@
 {
   "date": "2026-11-27",
-  "updated": "2026-11-27T04:34:16Z",
-  "headline": "Bitcoin is near $61,400 ahead of about $7.6 billion of bitcoin and ether options expiring at 08:00 UTC today (3pm Bangkok), while US bitcoin funds are on course for their worst month on record and sentiment sits at \"Extreme Fear\".",
+  "updated": "2026-11-27T08:07:37Z",
+  "headline": "Binance says it has fully lifted the withdrawal freeze from its $6.3 billion October hack, as about $7 billion of bitcoin options were due to expire at 08:00 UTC and US bitcoin funds stay on course for their worst month on record.",
   "market": {
-    "asOf": "Read from CoinMarketCap at about 03:58 UTC Fri 27 Nov (10:58 Bangkok). The 24-hour changes for ETH and SOL are left out; use the live prices on this page.",
+    "asOf": "Read from CoinMarketCap's homepage at about 08:00 UTC Fri 27 Nov (15:00 Bangkok). Use the live prices on this page.",
     "btc": {
-      "price": 61431.61,
-      "chg24h": 1.13
+      "price": 60737.47,
+      "chg24h": 0.05
     },
     "eth": {
-      "price": 1727.17,
-      "chg24h": null
+      "price": 1700.25,
+      "chg24h": 0.11
     },
     "sol": {
-      "price": 72.83,
-      "chg24h": null
+      "price": 71.31,
+      "chg24h": 0.61
     },
-    "fearGreed": "11 out of 100 on both Alternative.me's index (\"Extreme Fear\", 13 a day earlier) and CoinMarketCap's Fear and Greed Index. Read about 03:56-03:58 UTC Fri 27 Nov."
+    "fearGreed": "Alternative.me's index reads 11 out of 100 (\"Extreme Fear\", 13 a day earlier); CoinMarketCap's Fear and Greed Index reads 10 (\"Extreme fear\"). Read about 07:57-08:00 UTC Fri 27 Nov."
   },
   "stories": [
     {
-      "title": "US bitcoin funds head for their worst month since they launched",
-      "mood": "bearish",
-      "summary": "Money left US spot bitcoin funds for seven trading days in a row through Wednesday, and November's withdrawals have already passed the previous monthly record. US markets were shut for Thanksgiving on Thursday and stocks close early at 1pm ET on Friday.",
+      "title": "Binance fully lifts its withdrawal freeze four weeks after the $6.3 billion hack",
+      "mood": "bullish",
+      "summary": "Binance, the world's biggest crypto exchange, says withdrawals are back to normal after the 29 October hack. Withdrawals had been reopening in stages, and a few networks remain paused for maintenance.",
       "points": [
-        "US spot bitcoin funds lost a net $453.1 million on Wed 25 Nov, the seventh straight day of outflows; BlackRock's IBIT accounted for $329.7 million, per The Block.",
-        "November outflows total about $5.39 billion so far, already past the previous monthly record, per The Block.",
-        "Since 4 Oct the funds have shed 71,339 BTC (about $4.95 billion), with outflows on 22 of 35 trading days; they now hold about 1.24 million BTC, per Galaxy data cited by The Block.",
-        "US spot ether funds lost $68.5 million on Wednesday, their ninth straight outflow day, and about $1.3 billion so far in November, per The Block."
+        "Binance said \"the withdrawal suspension from the October security incident has been fully lifted\", per CoinDesk.",
+        "The hack affected about $6.3 billion in assets, of which about $3 billion was frozen, per CoinDesk.",
+        "Binance said it had restored 90% of the stolen crypto by 31 Oct, using company funds and its SAFU emergency reserve, and 98% of the $6.34 billion by 3 Nov, per CoinDesk.",
+        "Withdrawals for a small number of networks are still temporarily paused for maintenance or planned upgrades, per Binance via CoinDesk.",
+        "TRM Labs linked the attack to North Korea's TraderTraitor group, and the FBI also pointed to North Korea, per CoinDesk."
       ],
       "sources": [
         {
-          "label": "The Block: spot bitcoin ETFs head for worst month",
-          "url": "https://www.theblock.co/news/markets/2026-11-26-spot-bitcoin-etfs-worst-month-november-446814"
+          "label": "CoinDesk: Binance says its withdrawal suspension is over",
+          "url": "https://www.coindesk.com/markets/2026/11/27/binance-says-its-withdrawal-suspension-is-over-four-weeks-after-a-usd6-3-billion-hack"
         },
         {
-          "label": "The Block: Galaxy walks back its bitcoin bottom call",
-          "url": "https://www.theblock.co/news/markets/2026-11-26-galaxy-walks-back-bitcoin-bottom-call-446786"
+          "label": "The Cryptonomist: Binance withdrawals reopening",
+          "url": "https://en.cryptonomist.ch/2026/11/27/binance-withdrawals-reopening/"
         }
       ]
     },
     {
-      "title": "About $7.6 billion of bitcoin and ether options expire at 08:00 UTC today, with most big bets on further falls",
+      "title": "About $7 billion of bitcoin options were due to expire at 08:00 UTC today, with most big bets on further falls",
       "mood": "volatile",
-      "summary": "Bitcoin kept most of its bounce from Wednesday's low while US stock markets were closed, and traders betting on a fall took most of the forced selling. The biggest bets for Friday's options expiry are protection against further drops.",
+      "summary": "Deribit's bitcoin options were due to expire at 08:00 UTC (3pm Bangkok), alongside $0.6 billion of ether options, and bitcoin rose into the expiry. Big expiries can move prices around settlement; the settlement price was not yet reported when this page was written.",
       "points": [
-        "On Bitstamp, bitcoin fell to $57,209 on Wednesday and reached $61,509 on Thursday, per Bitcoin.com News; liquidations across the crypto market were under $313 million, and 75% ($237 million) were bets on a fall, per CoinGlass data it cites.",
-        "About $7 billion of bitcoin options and $0.6 billion of ether options expire on Deribit at 08:00 UTC on Friday 27 Nov (3:00am ET, 3:00pm Bangkok). CoinDesk puts the put/call ratio for that expiry at 0.89; Bitcoinist gives 0.85, $6.92 billion of bitcoin options and a \"max pain\" level of $71,000.",
-        "Deribit's volatility index (DVOL), a gauge of how big a move traders are pricing in, was 55.45, up from 38 at October's expiry, per CoinDesk."
+        "About $7 billion of bitcoin options and $0.6 billion of ether options were due to expire on Deribit, per CoinDesk; crypto.news, citing CryptoQuant, gives $6.8 billion of bitcoin options and a \"max pain\" level of $70,000.",
+        "CoinDesk put the put/call ratio for this expiry at 0.89, against 0.55 before October's, with heavy put clusters across $63,000 to $75,000.",
+        "Bitcoin was at $61,855, up 2.26% over 24 hours, at 06:17 UTC, per TokenPost; CoinMarketCap showed $60,737 at about 08:00 UTC."
       ],
       "sources": [
         {
@@ -55,87 +56,59 @@
           "url": "https://www.coindesk.com/markets/2026/11/26/usd7-billion-of-bitcoin-options-expire-friday-and-the-biggest-bets-look-starkly-different-from-october"
         },
         {
-          "label": "Bitcoin.com News: bitcoin taps $61K on Thanksgiving",
-          "url": "https://news.bitcoin.com/market-updates/bitcoin-price-taps-61k-on-thanksgiving-as-short-sellers-take-a-beating/"
+          "label": "crypto.news: bitcoin rebounds before $6.8B options expiry",
+          "url": "https://crypto.news/bitcoin-price-rebounds-68b-options-expiry-november-27/"
         },
         {
-          "label": "Bitcoinist: $7 billion bitcoin options expiry",
-          "url": "https://bitcoinist.com/bitcoin-options-expiry-7-billion"
+          "label": "TokenPost: bitcoin price update",
+          "url": "https://tokenpost.com/news/investing/63287"
         }
       ]
     },
     {
-      "title": "Wall Street is split on the bitcoin bottom: JPMorgan sees 'capitulation', Galaxy withdraws its call that the bear market is over",
-      "mood": "volatile",
-      "summary": "JPMorgan analysts read Strategy (MSTR) trading below the value of its bitcoin as capitulation (sellers giving up). On the same day Galaxy's Alex Thorn withdrew Galaxy's October call that bitcoin's bear market ended in June, saying it is \"very likely not over.\" These are analysts' readings, not forecasts.",
+      "title": "US bitcoin funds head for a record-bad month, and Strategy leaves MSCI's indexes on Monday",
+      "mood": "bearish",
+      "summary": "November withdrawals from US spot bitcoin funds have already set a record. Index funds tracking MSCI must sell Strategy (MSTR) shares by Monday's close, while JPMorgan reads Strategy's record-low value against its bitcoin as capitulation (sellers giving up).",
       "points": [
-        "Strategy's mNAV, its market value divided by the value of its bitcoin, fell to about 0.88x on Strategy's own dashboard, then recovered to 0.94x; JPMorgan called it a record low, per The Block.",
-        "JPMorgan puts bitcoin's production cost at about $86,000, which could pressure higher-cost miners while bitcoin trades near $60,000, per The Block.",
-        "Galaxy is watching a daily close below $58,525 (the 30 June closing low) and a $59,517 weekly close, per The Block."
+        "US spot bitcoin funds lost a net $453.1 million on Wed 25 Nov, the seventh straight day of outflows; BlackRock's IBIT accounted for $329.7 million, per The Block.",
+        "November outflows total about $5.39 billion, already past the previous monthly record, per The Block. US spot ether funds lost $68.5 million on Wednesday, their ninth straight outflow day, and $1.3 billion in November.",
+        "Strategy's mNAV (market value divided by the value of its bitcoin) fell to about 0.88x on 25 Nov, then recovered to 0.94x; JPMorgan called it a record low, per The Block.",
+        "MSCI's removal of Strategy takes effect after the close on Mon 30 Nov; MSCI-linked funds hold about 13 million shares (3.1%), and JPMorgan estimated about $2.8 billion of selling, per Cointelegraph."
       ],
       "sources": [
+        {
+          "label": "The Block: spot bitcoin ETFs head for worst month",
+          "url": "https://www.theblock.co/news/markets/2026-11-26-spot-bitcoin-etfs-worst-month-november-446814"
+        },
         {
           "label": "The Block: JPMorgan sees bitcoin capitulation in Strategy's low NAV",
           "url": "https://www.theblock.co/news/markets/2026-11-26-jpmorgan-bitcoin-capitulation-strategy-low-nav-multiple-447007"
         },
         {
-          "label": "The Block: Galaxy walks back its bitcoin bottom call",
-          "url": "https://www.theblock.co/news/markets/2026-11-26-galaxy-walks-back-bitcoin-bottom-call-446786"
+          "label": "Cointelegraph: MSCI confirms Strategy's removal",
+          "url": "https://cointelegraph.com/news/msci-confirms-strategys-removal-from-indexes-end-november"
         }
       ]
     }
   ],
   "briefs": [
     {
-      "title": "Hong Kong market maker Auros to wind down",
-      "summary": "Auros, a firm that keeps trading flowing on exchanges, is reportedly winding down after seven years; it traded more than $1.3 trillion in 2025, per crypto.news.",
-      "url": "https://crypto.news/hong-kong-crypto-market-maker-auros-moves-to-wind-down-operations/"
+      "title": "Asian finance officials form a digital payments working group",
+      "summary": "Finance and central bank deputies from China, Japan, South Korea and ASEAN agreed to form a cross-border digital payments program and a working group that also covers digital-asset rules; ministers are due to discuss it in Nagoya in May 2027, per The Block.",
+      "url": "https://www.theblock.co/news/regulation/2026-11-26-china-japan-south-korea-asean-digital-payments-447029"
+    },
+    {
+      "title": "CFTC staff let venues count bitcoin and ether toward reserves",
+      "summary": "CFTC staff said they would not object to derivatives venues counting BTC and ETH with at least a 20% haircut, and payment stablecoins with a 2% haircut, per Blockhead.",
+      "url": "https://blockhead.co/2026/11/26/cftc-hands-crypto-a-balance-sheet-victory-but-bitcoin-doesnt-care"
     },
     {
       "title": "BitMart reported $319.5 million short",
       "summary": "Citing Nikkei Asia, Cointelegraph reports BitMart has a $319.5 million shortfall and $1.9 million of liquid assets for customer repayments, with Alvarez & Marsal overseeing the restructuring.",
       "url": "https://cointelegraph.com/magazine/very-racist-netflix-sbf-series-bitmarts-319m-shortfall-asia-express"
-    },
-    {
-      "title": "Zodia Custody breach confirmed",
-      "summary": "Reuters reports an unauthorised party accessed limited client data at the Standard Chartered-backed custodian; Zodia says there were no unauthorised transactions.",
-      "url": "https://www.investing.com/news/stock-market-news/exclusivestancharts-crypto-unit-zodia-custody-hit-by-security-breach-some-client-data-exposed-5052481"
-    },
-    {
-      "title": "KuCoin to delist Monero",
-      "summary": "KuCoin removes its four XMR pairs at 08:00 UTC on 30 Nov; withdrawals stay open until 31 Dec. XMR fell almost 15%, to as low as $436, per U.Today.",
-      "url": "https://u.today/monero-xmr-drops-15-as-kucoin-sets-delisting-date"
-    },
-    {
-      "title": "US moves to recover Binance hack funds",
-      "summary": "The Justice Department filed a civil lawsuit to recover more than $1.1 billion in cryptocurrency stolen in the October Binance hack, targeting USDC; over $2.9 billion of the more than $6 billion taken has been frozen, seized or returned, per GovInfoSecurity.",
-      "url": "https://www.govinfosecurity.com/cryptohack-roundup-us-seeks-to-recover-stolen-binance-funds-a-33532"
-    },
-    {
-      "title": "Senators push SEC to drop crypto exemption plan",
-      "summary": "Senators Warren, Van Hollen, Smith and Reed asked SEC Chair Atkins to withdraw \"Regulation Crypto Assets\", which includes a $5 million startup exemption and a $75 million fundraising exemption, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-25-warren-van-hollen-lead-push-scrap-sec-regulation-crypto-innovation-exemption-446756"
-    },
-    {
-      "title": "Fidelity files for a Chainlink fund",
-      "summary": "Fidelity filed for a spot Chainlink ETF to trade on Nasdaq as FLNK, without staking, per The Block.",
-      "url": "https://www.theblock.co/news/business/2026-11-25-fidelity-chainlink-etf-nasdaq-listing-446735"
-    },
-    {
-      "title": "US Justice Department's biggest crypto scam crackdown",
-      "summary": "The department targeted more than 800 defendants and froze more than $1 billion of stolen crypto, per The Block.",
-      "url": "https://www.theblock.co/news/regulation/2026-11-25-justice-department-takes-aim-billions-crypto-fraud-proceeds-largest-ever-crackdown-446711"
     }
   ],
   "calendar": [
-    {
-      "et": "Fri 27 Nov · 3:00am",
-      "bkk": "Fri 27 · 15:00",
-      "event": "Deribit monthly bitcoin and ether options expiry",
-      "impact": "volatile",
-      "key": true,
-      "note": "Settles at 08:00 UTC. About $7 billion of bitcoin options and $0.6 billion of ether options expire, put/call ratio 0.89, with large put bets at $60,000, $58,000, $50,000 and $40,000, per CoinDesk. Bitcoinist gives $6.92 billion, a put/call ratio of 0.85 and a \"max pain\" level of $71,000."
-    },
     {
       "et": "Fri 27 Nov · 1:00pm",
       "bkk": "Sat 28 · 01:00",
@@ -150,7 +123,7 @@
       "event": "Binance Blockchain Week, Bangkok; Fed quiet period begins",
       "impact": "neutral",
       "key": false,
-      "note": "At the Queen Sirikit National Convention Center, per Khaosod English. The Fed's pre-meeting blackout runs from Sat 28 Nov to Thu 10 Dec, per the Fed's blackout calendar."
+      "note": "At the Queen Sirikit National Convention Center, per VentureSquare. The Fed's pre-meeting blackout runs from Sat 28 Nov to Thu 10 Dec, per the Fed's blackout calendar."
     },
     {
       "et": "Sat 28 Nov – Fri 4 Dec",
@@ -166,7 +139,7 @@
       "event": "Chicago PMI (Nov)",
       "impact": "neutral",
       "key": false,
-      "note": "October was 55.3, per Trading Economics; FXStreet lists 56.7 expected. Release time per MetaTrader."
+      "note": "October was 55.3 (September 58.8), per Newsquawk. Release time per MNI."
     },
     {
       "et": "Mon 30 Nov",
@@ -174,7 +147,7 @@
       "event": "Trump Media (DJT) noteholders can demand repayment",
       "impact": "volatile",
       "key": false,
-      "note": "Holders of its convertible notes can require the company to buy them back for cash; about $883.5 million is outstanding after a $100 million buyback, per Trump Media."
+      "note": "Holders of its convertible notes can require the company to buy them back for cash; about $883.5 million is outstanding after a $100 million buyback, per Bitcoin.com News."
     },
     {
       "et": "Mon 30 Nov · 4:00pm",
@@ -190,23 +163,15 @@
       "event": "ISM manufacturing PMI (Nov), job openings (JOLTS, Oct); Fed's Bowman testifies to the House",
       "impact": "neutral",
       "key": false,
-      "note": "ISM: October was 55.5, per ISM (ActionForex gives 55.4); ActionForex expects 53.8. ISM and JOLTS are both due at 10:00am, per FinanceCalendar. JOLTS: September was about 7.5 million, per the BLS; no consensus published. Fed Vice Chair for Supervision Michelle Bowman appears at the House Financial Services \"Oversight of Prudential Regulators\" hearing at 10:00am, per the Fed's calendar. Marvell reports after the close."
+      "note": "ISM: October was 55.5, per ISM; Wells Fargo expects 53.8, per ActionForex. JOLTS: September was about 7.5 million, per the BLS, which schedules October's release for 10:00am. Fed Vice Chair for Supervision Michelle Bowman testifies at the House Financial Services \"Oversight of Prudential Regulators\" hearing, per the Fed's calendar. Marvell reports after the close, per Earnings Whispers."
     },
     {
-      "et": "Wed 2 Dec · 8:15am",
-      "bkk": "Wed 2 · 20:15",
-      "event": "ADP private payrolls (Nov)",
+      "et": "Wed 2 Dec",
+      "bkk": "Wed 2 Dec",
+      "event": "Salesforce and Snowflake earnings",
       "impact": "neutral",
       "key": false,
-      "note": "October was +86,000, per ADP. Salesforce and Snowflake report after the close; both calls are at 5:00pm ET, per the companies."
-    },
-    {
-      "et": "Thu 3 Dec · 10:00am",
-      "bkk": "Thu 3 · 22:00",
-      "event": "ISM services PMI (Nov)",
-      "impact": "neutral",
-      "key": false,
-      "note": "October was 54.5, per InvestingLive; ActionForex expects 54.9. Time per FinanceCalendar. The last weekly jobless claims reading was 189,000, per StockAnalysis."
+      "note": "Both report after the close, per Earnings Whispers. ADP's private payrolls count for October was +86,000, per Fox Business; the November report's date is not confirmed here."
     },
     {
       "et": "Fri 4 Dec · 8:30am",
@@ -214,7 +179,7 @@
       "event": "US jobs report (Nov)",
       "impact": "volatile",
       "key": true,
-      "note": "Forecasts differ: U.S. Bank cites a +101,000 consensus, Continuum Economics expects +95,000 and Trading Economics +82,000. October payrolls rose 165,000 with unemployment at 4.1%, per the BLS, which schedules the release for 8:30am ET. University of Michigan's preliminary December sentiment follows at 10:00am ET (November final: 51.5, per FinanceCalendar)."
+      "note": "Forecasts differ: Continuum Economics expects +95,000 and Wells Fargo +80,000, both with unemployment at 4.1%. October payrolls rose 165,000, per Continuum Economics. Release at 8:30am ET, per FinanceCalendar."
     },
     {
       "et": "Wed 9 Dec · 2:00pm",
@@ -222,14 +187,14 @@
       "event": "Fed rate decision (meeting 8-9 Dec)",
       "impact": "volatile",
       "key": true,
-      "note": "Markets expect a rate hike, not a cut: CME FedWatch put the chance of a quarter-point hike at 99.4% on 26 Nov, per Invezz on TradingView; Longbridge reported 97.4%. Press conference at 2:30pm ET, per the Fed's calendar."
+      "note": "Markets expect a rate hike, not a cut: CME FedWatch put the chance of a hike at 99.4% on 26 Nov, per Invezz on TradingView; MarketSpeaker reported a 97.8% chance of a quarter-point hike on 25 Nov. Press conference at 2:30pm ET, per the Fed's calendar."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-27T04:34:16Z",
-    "claimsChecked": 133,
-    "claimsRemoved": 12,
+    "checkedAt": "2026-11-27T08:07:37Z",
+    "claimsChecked": 91,
+    "claimsRemoved": 13,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }
