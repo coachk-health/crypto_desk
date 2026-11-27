@@ -1,711 +1,732 @@
 {
-  "about": "Running record of what we have done on the desk: every change, test and decision, newest first. Entries are only ever added, never edited or removed. Add one entry per working session (see CLAUDE.md).",
-  "entries": [
-    {
-      "date": "2026-11-27",
-      "title": "14:52 desk update: news refresh",
-      "did": [
-        "Refreshed market, stories, briefs and calendar; two independent verification rounds (91 claims checked, 13 removed or corrected, mostly briefs whose pages could not be opened).",
-        "Unlock loop skipped (data checked 04:14 UTC, under 24h); score.py re-run for freshness."
-      ],
-      "found": [
-        "Binance says its post-hack withdrawal freeze is fully lifted (new lead).",
-        "Deribit's ~$7B bitcoin options expiry at 08:00 UTC: no settlement report found yet.",
-        "CoinGecko and CoinMarketCap coin pages blocked for the market agent; prices read from the CoinMarketCap homepage."
-      ],
-      "decided": [
-        "Dropped five carried-over briefs and the ISM services row because their sources could not be re-opened this run; ADP row became Salesforce/Snowflake earnings (ADP date unconfirmed)."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-27",
-      "title": "10:52 desk update: news refresh and unlock verification loop",
-      "did": [
-        "Refreshed market, stories, briefs and calendar; two independent verification rounds (133 claims checked, 12 removed, mostly claims resting on CoinDesk and Deribit pages that could not be opened).",
-        "Unlock loop: researched 30 existing rows in the next 30 days (5 batches) and independently re-checked them plus 5 new rows; skipped 5 rows marked can't-short (WPAY, ADI, RAIN, YZY, KNTQ)."
-      ],
-      "found": [
-        "Galaxy withdrew its call that bitcoin's bear market ended in June; merged into the JPMorgan story. CrowdStrike already reported on 23 Nov, so it was dropped from the calendar.",
-        "New shortable unlocks added: Q (2 Dec), VELVET (10 Dec), US/Talus (11 Dec, first insider cliff), ERA (17 Dec), COAI (25 Dec). STABLE 8 Dec dropped as not real (relocked to Dec 2027).",
-        "Re-check contradicted M's 2 Dec date (Tokenomist shows 12 Dec); EIGEN grade moved High to Moderate, LINEA Low to Not enough data (size disputed 480M vs 750M). CRO December day is estimated from the monthly pattern."
-      ],
-      "decided": [
-        "Kept ETF outflows as lead story; kept M on 2 Dec with its contradicted status visible rather than guessing a new date."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-27",
-      "title": "06:52 desk update: news refresh",
-      "did": [
-        "Refreshed market snapshot, stories, briefs and calendar; two independent verification rounds (133 claims checked, 11 removed). Unlock loop skipped (checked under 24h ago, not the 10:52 run); scores refreshed."
-      ],
-      "found": [
-        "No new lead story overnight; added the 08:00 UTC (3pm Bangkok) Deribit settlement time and Bitcoinist's 0.85 put/call next to CoinDesk's 0.89. Price pages disagreed, so 24h changes were left out. Decrypt pages could not be opened, so the death-cross and FCA items were removed."
-      ],
-      "decided": [
-        "Kept ETF outflows as lead; swapped in Zodia breach, Binance hack funds, DOJ crackdown and DeFi bounce briefs."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-27",
-      "title": "02:52 desk update: news refresh",
-      "did": [
-        "Refreshed news.json: ETF outflow record stays the lead; bitcoin/options story updated (Bitstamp $57,209 low and $61,509 high, death cross, liquidations mostly shorts); new third story on JPMorgan's Strategy 'capitulation' note and Glassnode dormant supply; DOJ and NovaTech moved to briefs; new briefs (KuCoin Monero delisting 30 Nov, UK FCA DeFi plan, Swiss BBIT ETF, Ripple share valuations).",
-        "Market snapshot from CoinMarketCap at about 19:52 UTC, with SOL and 24h changes restored; Fear and Greed from CoinMarketCap (9) and Alternative.me (11).",
-        "Calendar: Trump Media notes corrected to about $883.5M outstanding; jobs-report forecasts updated (Nowflation +82k/4.2%, Continuum +95k/4.1%); Fed blackout and jobless claims added; JOLTS forecast added.",
-        "Two independent check rounds. Unlock loop skipped (checked under 24h ago); score.py re-run."
-      ],
-      "found": [
-        "A CoinGecko page served prices far from CoinMarketCap and Blockchain.com (apparently a cached page), so CoinMarketCap was used.",
-        "Three brief sources (The Block DOJ, Decrypt NovaTech, CoinDesk Zodia) could not be opened by the checker, so those briefs were removed; ADP and ISM services times had no cited source and were removed.",
-        "The October 0.55 put/call comparison was dropped again (previous run found it covers all expiries)."
-      ],
-      "decided": [
-        "99 claims checked, 13 removed.",
-        "verify.py: 0 problems."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-26",
-      "title": "22:52 desk update: news refresh",
-      "did": [
-        "Refreshed news.json: lead story now CoinDesk's record-month ETF outflow comparison; new third story on the US scam crackdown (DOJ 800+ defendants, NovaTech $1.37B judgment); reserve bill moved to a brief; new briefs (Zodia Custody breach, Spain crypto account freezes, mining-route hijack, AI-stock selloff, Franklin Templeton adds HYPE).",
-        "Calendar: Thanksgiving row dropped; added Trump Media note put (30 Nov) and Bowman testimony (1 Dec); Fed blackout row and unconfirmed consensus figures removed.",
-        "Two independent check rounds. Unlock loop skipped (checked under 24h ago); score.py re-run."
-      ],
-      "found": [
-        "Price pages (CoinGecko, CoinMarketCap, Alternative.me) could not be opened this run, so the market snapshot uses CoinDesk's 11:17 UTC read and has no 24h changes or SOL price.",
-        "The 0.55 late-October put/call ratio is for all expiries (now 0.81), not Friday's 0.89; the comparison was removed.",
-        "Nowflation and ISM/JOLTS consensus figures could not be found and were dropped."
-      ],
-      "decided": [
-        "87 claims checked, 3 removed, 2 corrected.",
-        "verify.py: 0 problems."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-26",
-      "title": "18:52 desk update: news refresh",
-      "did": [
-        "Refreshed news.json: new market read, lead story updated to The Block's record-month ETF outflow figure, new briefs (Auros wind-down, Zcash Sapling pool, 1Password breach, German co-op banks, Swiss tax-data list, Senate letter to SEC), calendar updated (newer options-expiry figures, Binance Blockchain Week, earnings).",
-        "Two independent check rounds.",
-        "Unlock loop skipped (checked under 24h ago); score.py re-run."
-      ],
-      "found": [
-        "BTC 24h change flipped from +3.3% to about -1.9% on CoinMarketCap between research and check.",
-        "One draft line tying Wednesday's dip to inflation and tariffs was not supported by CoinDesk and was removed.",
-        "U.S.",
-        "Bank's payrolls figure is +98k (the +101k is the consensus it cites)."
-      ],
-      "decided": [
-        "105 claims checked, 5 removed, 2 corrected.",
-        "verify.py: 0 problems."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json"
-      ]
-    },
-    {
-      "date": "2026-11-26",
-      "title": "14:52 desk update: news refresh",
-      "did": [
-        "Refreshed news, market snapshot (BTC/ETH from Investing.com 06:18 UTC; SOL from CoinMarketCap ~08:00 UTC, 24h change left blank because sources disagreed) and calendar.",
-        "Independent news source check over 2 rounds (158 claim checks, 26 claims removed; about ten cited pages could not be opened by the checker, so their claims came out).",
-        "Unlock loop skipped (checked 04:26 UTC today); scores refreshed with score.py."
-      ],
-      "found": [
-        "Final 25 Nov spot bitcoin fund flow was -$453.12M (SoSoValue via TokenPost), the 7th straight outflow day; IBIT -$329.71M.",
-        "Polymarket odds of a national bitcoin reserve by year-end at 4% (The Block). Friday expiry counts differ: Deribit ~$6.8B, max pain $72,000 (OKX) vs three-exchange $8.42B, max pain $70,000 (CryptoKeyhole).",
-        "Jobs-report forecasts disagree (+82k Nowflation vs +101k U.S. Bank consensus); ISM manufacturing 55 (Nowflation) vs 53.8 (Wells Fargo)."
-      ],
-      "decided": [
-        "Lead stories: ETF outflows; tariffs + inflation + oil; reserve bill odds. Warren/SEC point, USTR and KuCoin PCE citations, and five briefs dropped because their pages could not be re-opened."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json"
-      ]
-    },
-    {
-      "date": "2026-11-26",
-      "title": "10:52 desk update: news refresh and unlock re-check",
-      "did": [
-        "Refreshed news, market snapshot (TradingView, ~03:54 UTC) and calendar.",
-        "Independent news source check over 2 rounds (115 claim checks, 13 claims removed; three cited pages could not be opened, so their claims came out).",
-        "Unlock loop: 28 existing rows researched and independently re-checked (5 skipped as can't-short: WPAY, ADI, RAIN, YZY, KNTQ). Added 5 new rows with a perp seen on OKX: 2Z, LA, VANA, XPL, H. Scores refreshed."
-      ],
-      "found": [
-        "USTR formally proposed Section 301 tariffs on 14 economies; October core PCE 3.3% vs 3.2% expected; CME FedWatch ~94-98% for a 9 Dec hike.",
-        "Spot bitcoin funds -$231.56M on 24 Nov (6th straight outflow day); November outflows approaching $5B (The Block).",
-        "GRVT unlock moved to 30 Nov (tokenomics.com, 34.28M, community only). M date still split: 2 Dec (cadence) vs 12 Dec (Tokenomist).",
-        "ERA (17 Dec) not added: perp evidence was only a CoinGlass chart link with an empty markets table. Exchanges other than OKX could not be reached by the new-unlock search."
-      ],
-      "decided": [
-        "Lead stories: tariffs + PCE + Wednesday round trip; ETF outflows; bitcoin reserve bill and senators vs SEC.",
-        "Dropped Galaxy/Thorn and Decrypt's 'worst month' claims this edition because the source pages could not be re-opened; FOMC time left off the calendar row (no opened source gave it)."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-26",
-      "title": "06:52 desk update: news refresh",
-      "did": [
-        "Refreshed news, market snapshot and calendar after the US close on Wed 25 Nov.",
-        "Independent source check over 2 rounds (119 claims, 2 removed, 2 corrected). Unlock re-check skipped (last checked 04:20 UTC 25 Nov, under 24h).",
-        "Scores refreshed."
-      ],
-      "found": [
-        "Final closes 25 Nov: Dow +0.33%, S&P 500 -0.25%, Nasdaq -0.62% (Avalon Capital); bitcoin $60,139 at the early-evening US read (Motley Fool).",
-        "Galaxy's Alex Thorn withdrew the October 'bear market ended in June' call (CoinDesk); total crypto market $2.08T, lowest since Sep 2024 (The Block).",
-        "Spot bitcoin funds -$4.94B in November through Tuesday (Decrypt); Wednesday's flows not yet published.",
-        "No published consensus found for Chicago PMI, ISM, JOLTS or ADP; Fifth Third forecasts dropped from the calendar (not re-opened this run)."
-      ],
-      "decided": [
-        "Lead stories: Wall Street round trip; Galaxy bear-market call plus fund outflows; senators vs SEC and the CFTC capital advisory. Fed/inflation moved to the calendar.",
-        "Dropped the 'no spot ETF flows on Thursday' line (no source) and a wrong '14-month low'. Added Bowman's 1 Dec testimony and MMT (4 Dec) to the calendar."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-26",
-      "title": "02:52 desk update: news refresh",
-      "did": [
-        "Refreshed news, market snapshot and calendar after the US afternoon of 25 Nov (Beige Book out; stocks not yet closed).",
-        "Independent source check over 3 rounds (75 claims, 8 removed, ETH/SOL snapshot and Nvidia figures replaced with source values). Unlock re-check skipped (last checked 04:20 UTC 25 Nov).",
-        "Scores refreshed."
-      ],
-      "found": [
-        "US stocks won back most of the morning tariff/AI sell-off; bitcoin back above $60,000 at 2:24pm ET (CoinDesk).",
-        "Beige Book: 8 of 12 districts grew slightly to moderately; prices still rising. CME FedWatch 97.8% for a December hike (MarketSpeaker).",
-        "Deribit expiry trackers differ: CryptoTicker 112,323 BTC / max pain $73,000 (21 Nov) vs OKX 111,885 BTC / $72,000 (24 Nov); both shown.",
-        "Market-price pages could not be opened reliably by the research agent; snapshot uses Yahoo (BTC) and CoinDesk ticker (ETH, SOL)."
-      ],
-      "decided": [
-        "Lead 1 is now the afternoon rebound; Fed/inflation story adds the Beige Book; lead 3 merges ETF outflows and treasury-company selling.",
-        "Dropped DOJ-USDC, Franklin Templeton HYPE and Bithumb briefs (sources could not be re-opened), the liquidation figure and the trade-balance row (date unconfirmed). Added STO (3 Dec) to the unlock row."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-25",
-      "title": "22:52 desk update: news refresh",
-      "did": [
-        "Refreshed news, market snapshot and calendar after the 8:30am ET US data.",
-        "Independent source check over 2 rounds (142 claims, 3 contradicted and corrected, 1 reworded). Unlock re-check skipped (last checked 04:20 UTC today).",
-        "Scores refreshed."
-      ],
-      "found": [
-        "USTR formally proposed Section 301 tariffs on 14 economies (not 16), up to 35% on Vietnam; comments due 5 Jan 2027.",
-        "Core PCE 3.3% vs 3.2% expected; Q3 GDP revised to 4.3%. Bitcoin hit a $57,500 session low as the Nasdaq fell about 4% (CoinDesk).",
-        "Earlier JPMorgan $2.8B MSTR outflow estimate dates from Nov 2025 (KuCoin); calendar note reworded."
-      ],
-      "decided": [
-        "Lead 1 is now the USTR tariff proposal; PCE story rewritten with actuals; DOJ/Lazarus moved to a brief; new lead 3 on crypto-treasury companies (Bit Digital, Ark, Strategy).",
-        "Dropped HKMA, Tether-fees and South Korea briefs (not re-verified this run)."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-25",
-      "title": "18:52 desk update: news refresh",
-      "did": [
-        "Refreshed news, market snapshot and calendar.",
-        "Independent source check over 2 rounds (107 claims, 17 removed, 1 corrected). Unlock re-check skipped (last checked 04:20 UTC today).",
-        "Scores refreshed."
-      ],
-      "found": [
-        "Reuters: new US tariffs on 16 partners imminent; Nasdaq 100 futures down 2.38% pre-market.",
-        "US spot bitcoin funds lost $231.4M on 24 Nov (Farside via CoinDesk); November outflows $4.94B, a record month (Decrypt).",
-        "CME FedWatch 97% for a December hike, 63% for another in January.",
-        "DOJ complaint: Lazarus hijacked 32 Binance addresses; nearly $342M USDC blocklisted (Protos)."
-      ],
-      "decided": [
-        "Tariffs moved back into lead story 1.",
-        "DOJ story kept as lead 3 but rebuilt on Protos only (Bitcoin Magazine and Fox could not be opened, so the $1.1B figure was dropped).",
-        "Dropped CFTC and Ethereum Foundation briefs (source pages could not be re-opened); added Kalshi/Utah, HYPE, SBI Solana JV, HKMA tokenized bonds, Tether fees, South Korea ICO items.",
-        "Dropped Bowman (already spoken by publish) and unsourced times for Chicago PMI, ISM, Deribit and the FOMC statement."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-25",
-      "title": "14:52 desk update: news refresh",
-      "did": [
-        "Refreshed news, market snapshot and calendar.",
-        "independent source check over 2 rounds (127 claims, 4 removed, 3 reworded). Unlock re-check skipped (last checked 04:20 UTC today).",
-        "scores refreshed."
-      ],
-      "found": [
-        "Bitcoin under $59,000.",
-        "US spot bitcoin funds lost $231.6M on 24 Nov, a sixth straight day of outflows.",
-        "DOJ filed to seize $1.1B+ of USDC from the Binance hack.",
-        "CME FedWatch ~97% for a December hike.",
-        "new US tariffs still not announced."
-      ],
-      "decided": [
-        "Tariffs moved from a lead story to a brief.",
-        "DOJ USDC seizure promoted to lead story 3."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json"
-      ]
-    },
-    {
-      "date": "2026-11-25",
-      "title": "10:52 desk update: news refresh and unlock re-check (v5 rules)",
-      "did": [
-        "Refreshed the public news: bitcoin just under $60,000 as Asian chip stocks slide, today's PCE report, tariffs still pending. 158 claims checked over 3 rounds, 25 removed or corrected (three briefs dropped because their pages could not be opened).",
-        "Re-researched and independently re-checked 32 shortable unlocks in the next 30 days; skipped 4 marked can't-short in shortable.json (WPAY, ADI, RAIN, YZY).",
-        "Added COAI (25 Nov, 19.54M) after a KuCoin USDT perp listing was confirmed. Did not add ASTER, TRUMP, WLD or MORPHO: their 'dates' are slices of continuous streams, not real unlock events."
-      ],
-      "found": [
-        "Trackers disagree on IRYS (tokenomics.com ~1.18B lump today vs Tokenomist: none until 25 Dec), GRVT (29 vs 30 Nov), GUN (28 vs 30 Nov), M (2 vs 12 Dec) and WET (192.5M vs 256.67M): all marked disputed.",
-        "Impact grade changes: H Very high->High, SUI ->Low, TON Moderate->High, MOVE High->Moderate, SEI ->Moderate, MON ->Very high."
-      ],
-      "decided": [
-        "Left ether's snapshot price blank: no timestamped figure could be confirmed this run (live prices still load in the browser)."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-25",
-      "title": "v5: only unlocks we can short; never MEXC",
-      "did": [
-        "Coach K's new rule: check every token has a perp/futures market we can short, focus only on those, and avoid MEXC because of sanctions.",
-        "Checked the MEXC claim: FinCEN (US Treasury) issued an order on 6 Nov 2026 cutting MEXC off from the US financial system over at least $16B of transactions tied to sanctions evasion and cybercrime (fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf). Strictly it's a FinCEN order, not OFAC sanctions, but US firms that deal with MEXC face enforcement risk.",
-        "Rules frozen as v5 (data/strategy_v5.json): v4 minus MEXC, plus the focus rule.",
-        "New scripts/shortable.py checks every unlock on the list twice a day on GitHub and writes data/shortable.json (yes / no / unknown, with where it trades and when it was checked). The brief, the Picks tab and the Unlocks tab now list only shortable unlocks; can't-short ones sit behind a click.",
-        "The 4-hourly research task now skips deep research for unlocks marked can't short."
-      ],
-      "found": [
-        "KNTQ (27 Dec) was only on MEXC, so under v5 it can't be shorted."
-      ],
-      "decided": [
-        "'Can't short' is a fact only when every allowed exchange answered (Binance, Bybit via CoinGecko, OKX, Bitget, Gate, Hyperliquid, KuCoin). If any couldn't be reached it's 'unknown' and stays on the list until rechecked."
-      ],
-      "files": [
-        "scripts/shortable.py",
-        "scripts/venues.py",
-        "scripts/picks.py",
-        "scripts/morning_brief.py",
-        "data/strategy_v5.json",
-        "brief.html",
-        "index.html",
-        ".github/workflows/trade-log.yml",
-        ".github/workflows/brief.yml",
-        "CLAUDE.md"
-      ]
-    },
-    {
-      "date": "2026-11-25",
-      "title": "v4: short on other exchanges when Binance has no perp",
-      "did": [
-        "Coach K asked to check where every token trades and short it on another exchange instead of skipping; and to skip only after confirming as fact that it can't be shorted.",
-        "Tested which free exchange APIs GitHub's servers can reach: OKX, Bitget, Gate, Hyperliquid, KuCoin, MEXC and CoinGecko yes; Bybit and Binance's live API no (data/venue_probe.json). Bybit's perp list comes via CoinGecko.",
-        "New scripts/venues.py: lists each exchange's USDT perps, gets UTC daily candles (and open interest on OKX/Gate), and confirms by price that a ticker is the same token.",
-        "Rules frozen as v4 (data/strategy_v4.json): v3 unchanged, plus other exchanges. Brief cards now show where each token has perps and which exchange to short on."
-      ],
-      "found": [
-        "Ticker matches lie: 'ADI' on OKX, Bitget, Gate and Bybit is a ~$300+ stock perp (most likely Analog Devices; OKX files it under stocks), while ADI Chain is ~$7. Three exchanges agreeing with each other did not prove anything, so CoinGecko's price is the main check and stock tickers can't be confirmed by agreement.",
-        "The unlock records' implied price can be weeks old (JCT: $0.011 implied vs $0.0016 now on Binance and OKX).",
-        "Survey of current candidates (data/venue_survey.json): ADI 9 Dec can't be shorted anywhere (confirmed on all 8 exchanges); KNTQ 27 Dec is only on MEXC (price confirmed) but MEXC has no open-interest history, so as a first insider unlock it will be skipped; every other candidate trades on Binance plus 4-6 other exchanges.",
-        "Off-Binance evidence is thin: 4 historic trades on Bybit/Gate-only tokens (+5.5R total)."
-      ],
-      "decided": [
-        "A 'can't short it' skip is made only when all 8 exchanges answered and none lists the real token; if any can't be reached, it stays on watch and is rechecked.",
-        "Off Binance, short on the confirmed exchange with the most dollar volume over 7 days. Bybit-only tokens get no call (no Bybit candles from the server)."
-      ],
-      "files": [
-        "scripts/venues.py",
-        "scripts/picks.py",
-        "scripts/morning_brief.py",
-        "data/strategy_v4.json",
-        "brief.html",
-        "index.html",
-        "research/venue_probe.py",
-        "research/venue_survey.py",
-        "data/venue_probe.json",
-        "data/venue_survey.json",
-        "CLAUDE.md"
-      ]
-    },
-    {
-      "date": "2026-11-25",
-      "title": "Desk update (02:52 Bangkok run)",
-      "did": [
-        "Refreshed news.json: lead is bitcoin slipping back below $60,000 on the WSJ-reported tariff plan and a chip-stock sell-off (ETF outflows $569.7M on 23 Nov, record $4.71B for November); story 2 is consumer confidence (103.3) ahead of Wednesday's October PCE; new story 3 is Utah moving to drop criminal charges against Kalshi. South Korea's bill moved to the briefs. 8 briefs (new: Krak credit cards, BTCS ETH sale, BlackRock HK tokenized fund, Rialto raise, Europol IPTV trace, MSTR low), 11 calendar rows.",
-        "119 claims checked over 2 rounds, 8 removed, 1 corrected; unlock research skipped (last checked under 24h ago), scores refreshed."
-      ],
-      "found": [
-        "CoinMarketCap and Binance agreed on BTC near $59,500-59,650 but disagreed on 24h changes and on ether/solana, so only the BTC price was kept; CoinGecko's page returned a stale-looking $27,408 and was ignored.",
-        "Unconfirmed release times (jobless claims, new home sales, the 08:00 UTC options expiry time) and the '14 other economies' tariff count were removed; Tuesday's ETF flows were not yet published."
-      ],
-      "decided": [
-        "Dropped the hike-odds percentage because no source opened this run gave current odds; story 2 cites Oxford Economics' 25bp call instead."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-25",
-      "title": "Morning brief page on the website",
-      "did": [
-        "Put the morning brief on the GitHub site as its own page (brief.html), linked from the Picks tab: short today, open shorts, coming up, the record, and every call so far with its result.",
-        "A free GitHub job rebuilds it every morning at 23:41 UTC (06:41 Bangkok) and keeps one snapshot per morning in data/briefs/ (pick any past morning from the dropdown). The twice-daily trade-log job also refreshes it with the logged calls."
-      ],
-      "found": [],
-      "decided": [
-        "The website page is the permanent record; the Claude artifact version is optional."
-      ],
-      "files": [
-        "brief.html",
-        "scripts/morning_brief.py",
-        ".github/workflows/brief.yml",
-        "data/brief.json",
-        "data/briefs/"
-      ]
-    },
-    {
-      "date": "2026-11-25",
-      "title": "Morning brief dashboard",
-      "did": [
-        "Built 'Unlock shorts: morning brief' (https://claude.ai/artifact/Mh3h6x2jFDn2q2eeetmrxn): one simple page with what to short today, open shorts with levels, coming-up setups and what each still needs, the record, and the last 30 days of closed trades.",
-        "Added scripts/morning_brief.py (read-only, frozen v3 rules) and a scheduled task, 'Crypto Desk: morning unlock-short brief', that rebuilds it every day at 06:41 Bangkok, before the 07:00 entry."
-      ],
-      "found": [
-        "25 Nov: nothing to short today; MON and GRVT open (late calls, not counted); WET (entry 2 Dec) and CYS (4 Dec, needs open interest down 10%+) coming up."
-      ],
-      "decided": [
-        "The dashboard website stays as the full desk; the brief is the simple daily execution view."
-      ],
-      "files": [
-        "scripts/morning_brief.py",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-24",
-      "title": "Desk update (22:52 Bangkok run)",
-      "did": [
-        "Refreshed news.json: lead is bitcoin stuck near $60,000 as US stocks fell on a WSJ-reported tariff plan, with record November ETF outflows ($4.71B) and a record 11.6M BTC held at a loss; story 2 now carries the consumer confidence beat (103.3 vs 92.1 expected) and December hike pricing (95.1% quarter-point, per Coinotag); Korea story refocused on ending the 2017 ICO ban. 6 briefs (new: Anchorage asset manager, Ansem wallet, CFTC prediction-market rules), 12 calendar rows.",
-        "56 claims checked over 2 rounds, 11 removed; unlock research skipped (last checked under 24h ago), scores refreshed."
-      ],
-      "found": [
-        "CoinMarketCap, CoinGecko and Alternative.me could not be opened this run; ether and solana prices left blank (CoinDesk only gave % moves), Fear & Greed 11 taken from FinanceFeeds citing Alternative.me.",
-        "Several pages (The Block Korea bill, Coinranking MON, The Block Daily, FXEmpire) were blocked for the checker, so the Korea stablecoin details, MON and Strategy briefs and the 97.8% FedWatch figure were dropped."
-      ],
-      "decided": [
-        "Kept the page fresh with only re-confirmed claims rather than carrying over facts that could not be reopened."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-24",
-      "title": "Desk update (18:52 Bangkok run)",
-      "did": [
-        "Refreshed news.json: lead is bitcoin slipping below $60,000 as the Nvidia bounce faded and liquidations tripled; Fed hike odds now 97.8% before Wednesday's PCE; South Korea draft law updated with CoinDesk and The Block detail; 8 briefs (new: Sky stUSDS pool, Ethereum Foundation security team, Coinbase TerraUSD case), 12 calendar rows.",
-        "121 claims checked over 2 rounds, 24 removed; unlock research skipped (last checked under 24h ago), scores refreshed."
-      ],
-      "found": [
-        "Ether and Solana prices taken from CoinDesk and Unchained because CoinMarketCap/CoinGecko pages for them could not be opened; Solana's 24h change not confirmed.",
-        "Fear & Greed differs: 9 on CoinMarketCap, 11 on Alternative.me.",
-        "OKX options-expiry page and the SEC Strategy filing could not be reopened, so those figures now cite Zerocap/CryptoTicker and The Block."
-      ],
-      "decided": [
-        "Dropped the week-old Grayscale 'oversold' brief and the unsupported 'crypto trades through the holiday' and 'tech stock' wording."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-24",
-      "title": "Desk update (14:52 Bangkok run)",
-      "did": [
-        "Refreshed news.json: new lead on bitcoin fading toward $60,000 with ETF outflows, Fed hike odds before Wednesday's PCE, and South Korea's draft crypto law; 6 briefs, 12 calendar rows.",
-        "125 claims checked over 2 rounds, 10 removed; unlock research skipped (last checked under 24h ago), scores refreshed."
-      ],
-      "found": [
-        "CoinMarketCap and CoinGecko price pages could not be read reliably this run, so only bitcoin's snapshot price is filled; ether and Solana fall back to the live browser prices.",
-        "Fear & Greed readings differ: 9 on CoinMarketCap, 11 per KuCoin's daily report."
-      ],
-      "decided": [
-        "Dropped the CFTC prediction-market and iPhone wallet-kit briefs because their sources could not be opened this run."
-      ],
-      "files": [
-        "data/news.json",
-        "data/unlocks.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-24",
-      "title": "Daily unlock re-check (10:52 Bangkok run)",
-      "did": [
-        "Re-researched 37 unlock rows (next 7 days, stale checks, and every row under 60 confidence), then had separate agents re-check 38 rows: 2 confirmed, 35 partial, 1 contradicted (M, 2 Dec vs Tokenomist's 12 Dec).",
-        "Added GUN (30 Nov) and STO (3 Dec); left out PMT and ON (single tracker only) and STABLE 8 Dec (tracker is out of date: the lock moved to Dec 2027).",
-        "Refreshed news.json: 3 stories, 6 briefs, 12 calendar rows; 79 claims checked over 2 rounds, 9 removed."
-      ],
-      "found": [
-        "SIGN 28 Nov could not be confirmed by any source (RootData lists 15 Dec, a Sign Foundation post points to Jan 2027), so the row was removed.",
-        "LIT's next unlock moved from 30 to 27 Dec and is now shown as a monthly amount (~13.9M LIT).",
-        "Web search ran out partway through the re-check, so most re-checks re-opened cited sources rather than finding new ones."
-      ],
-      "decided": [
-        "Keep phantom-risk rows out: an unlock needs at least one opened source showing a real transfer on that date."
-      ],
-      "files": [
-        "data/unlocks.json",
-        "data/news.json",
-        "data/journal.json"
-      ]
-    },
-    {
-      "date": "2026-11-23",
-      "title": "History tab and this journal",
-      "did": [
-        "ARIA (unlock 21 Nov) disappeared from Trade signals once its date passed. Added the History tab: a permanent, searchable log of every unlock the desk has shown (data/archive.json, scripts/archive.py), rebuilt from the repo history: 104 unlocks.",
-        "Started this journal so every change and decision stays findable."
-      ],
-      "found": [
-        "ARIA was graded AA but flagged pumped (+210% in 30 days) and was never a v3 pick (8.3% of circulating, not a first insider unlock). The standard short was stopped on entry day; ARIA was +38% from the day −7 open by the day after the unlock."
-      ],
-      "decided": [
-        "Nothing is deleted from History or this journal; both update twice a day or whenever we work."
-      ],
-      "files": [
-        "data/archive.json",
-        "scripts/archive.py",
-        "data/journal.json",
-        "index.html"
-      ]
-    },
-    {
-      "date": "2026-11-22",
-      "title": "Entry days, exit days and taking profit early",
-      "did": [
-        "Tested shorting 14, 7 and 3 days before the unlock against covering 1, 3, 7 and 14 days after, an entry zone (thirds at −14/−7/−3), and closing 60% at the 35% target with a trailing stop on the rest.",
-        "Added 'Compare entries and exits' to every pick: profit from each entry day to each exit day, a live 'now' price, and a shadow result for the 60% + trailing exit."
-      ],
-      "found": [
-        "Fair test (each trade picked only with what was known on its entry day): day −7 +0.74R a trade, day −14 +0.28R, day −3 +0.42R. A first run that made day −14 look best was using day −7 information.",
-        "Entry zone: more winners (64%) but less profit (+0.64R).",
-        "60% at target + 40% trailing 10%: +0.86R vs +0.81R for the current exit — inside the noise."
-      ],
-      "decided": [
-        "Keep day −7 entry and the current exit. Track the 60%/trailing exit as a shadow result; adopt only if live trades back it (would be v4)."
-      ],
-      "files": [
-        "research/entry_exit.py",
-        "research/entry_fair.py",
-        "scripts/picks.py",
-        "index.html"
-      ]
-    },
-    {
-      "date": "2026-11-19",
-      "title": "Bybit and Gate.io perpetuals",
-      "did": [
-        "Mapped which tokens had a Bybit or Gate.io perpetual before Binance (75) and researched 55 new ones; independent re-check of every qualifying unlock; priced them from Bybit/Gate through Coach K's browser."
-      ],
-      "found": [
-        "4 more v3 trades with unchanged rules: 3 won, +5.5R (DBR, FLOW, BOBA won; TAIKO stopped then fell 43%).",
-        "The open-interest rule skipped three first-insider unlocks that all won (RAY, ATH, HAEDAL) — a watch item."
-      ],
-      "decided": [
-        "Keep the frozen rules. Live picks stay Binance-only because Bybit/Gate block the cloud servers; proposed running a small script on the Mac mini (no answer yet)."
-      ],
-      "files": [
-        "research/exchange_test.json",
-        "research/exchange_listings.json",
-        "research/hist_decisions.md"
-      ]
-    },
-    {
-      "date": "2026-11-19",
-      "title": "2021–2025 history test",
-      "did": [
-        "Researched 122 tokens with Binance perpetuals back to 2021; re-checked every tradeable unlock before pricing."
-      ],
-      "found": [
-        "Big one-day unlocks are mostly a 2023+ thing; many 2021–22 big unlocks had no perpetual to short; about a third of 'unlocks' were swaps, re-locks, delays or launches.",
-        "v3 took 5 trades: 3 won, +5.5R. Both losses came with BTC up 28–47% the month before."
-      ],
-      "decided": [
-        "No rule change; BTC trend is a watch item."
-      ],
-      "files": [
-        "research/hist_test.py",
-        "research/hist_test.json",
-        "research/hist_decisions.md"
-      ]
-    },
-    {
-      "date": "2026-11-19",
-      "title": "Picks tab and live test start (v3 rules frozen)",
-      "did": [
-        "Froze the v3 rules in data/strategy_v3.json. Picks tab: only v3 setups, called once on entry day and logged in data/picks_log.json, never rewritten.",
-        "First live call: HUMA (taken 19 Nov), stopped on entry day (−1R). The desk's data later cut HUMA's size from 26% to 13%, so on today's data it would not qualify; the call stays as made."
-      ],
-      "found": [],
-      "decided": [
-        "Pass mark: after 30 live trades, average above +0.25R. Any rule change becomes v4 with a new date."
-      ],
-      "files": [
-        "data/strategy_v3.json",
-        "scripts/picks.py",
-        "data/picks_log.json"
-      ]
-    },
-    {
-      "date": "2026-11-19",
-      "title": "Chart study: open interest is the tell (v3)",
-      "did": [
-        "Tested chart, volume, funding and open-interest signals on 917 unlocks using Binance's free files."
-      ],
-      "found": [
-        "Open interest falling 10%+ the week before entry turns first insider unlocks under 25% from break-even (+0.07R) into winners (+0.78R, 69% won); confirmed on 818 routine unlocks it wasn't found on.",
-        "v3 backtest: 56 trades, 62% won, +0.75R a trade, worst drawdown −3.9% at 1% risk."
-      ],
-      "decided": [
-        "v3: take 25%+ unlocks, and first insider unlocks only if open interest fell 10%+; skip anything pumped 30%+."
-      ],
-      "files": [
-        "research/charts.py",
-        "research/cs3.py",
-        "research/cs4.py",
-        "research/cs5.py",
-        "research/v3_trades.json"
-      ]
-    },
-    {
-      "date": "2026-11-19",
-      "title": "Take / skip groups and the backtest journal sheet",
-      "did": [
-        "Sorted every past unlock into take full size, take half size and skip; built the shareable journal sheet."
-      ],
-      "found": [
-        "Only 25%+ unlocks that weren't pumped made money in both data sets on their own; routine unlocks lost (−50.7R over 820)."
-      ],
-      "decided": [
-        "Dropped 'already falling the week before' as a rule (did not hold on unseen data)."
-      ],
-      "files": [
-        "research/tiers.py",
-        "research/journal.xlsx",
-        "https://claude.ai/artifact/ShUA8ksjPAokad8wH3XaXT"
-      ]
-    },
-    {
-      "date": "2026-11-19",
-      "title": "First unseen-data test (2023–25)",
-      "did": [
-        "Froze the 18 Nov rules, researched 62 big Binance tokens, re-checked every unlock independently, priced them."
-      ],
-      "found": [
-        "The strict rule was NOT PROVEN after the re-check: 13 trades, +0.53R a trade, bad-case range below zero."
-      ],
-      "decided": [
-        "Keep testing; don't sell the strategy to followers until proven."
-      ],
-      "files": [
-        "data/strategy_frozen.json",
-        "data/frozen_test.json",
-        "data/frozen_test_decisions.md"
-      ]
-    },
-    {
-      "date": "2026-11-18",
-      "title": "Pump study and best/worst trades",
-      "did": [
-        "Studied what pumps into and after unlocks do, the best and worst trades and why; tested trailing stops."
-      ],
-      "found": [
-        "Tokens pumped 30%+ going in lose; most losers were right on direction but squeezed through the stop first; trailing stops didn't help."
-      ],
-      "decided": [
-        "Skip anything pumped 30%+ into the unlock."
-      ],
-      "files": [
-        "research/",
-        "claude/unlock-audit-2026-11-17.md"
-      ]
-    },
-    {
-      "date": "2026-11-17",
-      "title": "Rules into the tracker, more past tokens, simpler dashboard",
-      "did": [
-        "Added the new rules and pump warnings to the tracker and signals; looped in 69 past tokens; size badges for big unlocks; moved the busy panels behind clicks."
-      ],
-      "found": [],
-      "decided": [
-        "Keep the dashboard simple with extras behind a click."
-      ],
-      "files": [
-        "index.html",
-        "scripts/signals.py",
-        "scripts/merge_past_research.py"
-      ]
-    }
-  ]
+ "about": "Running record of what we have done on the desk: every change, test and decision, newest first. Entries are only ever added, never edited or removed. Add one entry per working session (see CLAUDE.md).",
+ "entries": [
+  {
+   "date": "2026-11-27",
+   "title": "18:52 desk update: news refresh",
+   "did": [
+    "Refreshed market, stories, briefs and calendar; two independent verification rounds (90 claims checked, 4 removed, 1 corrected).",
+    "Unlock loop skipped (data checked 04:14 UTC, under 24h); score.py re-run for freshness."
+   ],
+   "found": [
+    "New lead: bitcoin back above $61,000 and on course to end a seven-week losing streak after the ~$7B Deribit expiry (CoinDesk); no settlement price found.",
+    "Calendar fixes: ADP moved to Wed 2 Dec 8:15am ET; ISM services and jobless claims added on Thu 3 Dec; jobs consensus now LSEG +90,000.",
+    "CoinGecko pages and APIs blocked for the market agent; prices read from CoinMarketCap's coin list."
+   ],
+   "decided": [
+    "Dropped the ASEAN, CFTC and BitMart briefs for newer items; dropped the Cryptonomist source (could not be opened); FedWatch note now sourced to Admiral Markets and Reuters."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "title": "14:52 desk update: news refresh",
+   "did": [
+    "Refreshed market, stories, briefs and calendar; two independent verification rounds (91 claims checked, 13 removed or corrected, mostly briefs whose pages could not be opened).",
+    "Unlock loop skipped (data checked 04:14 UTC, under 24h); score.py re-run for freshness."
+   ],
+   "found": [
+    "Binance says its post-hack withdrawal freeze is fully lifted (new lead).",
+    "Deribit's ~$7B bitcoin options expiry at 08:00 UTC: no settlement report found yet.",
+    "CoinGecko and CoinMarketCap coin pages blocked for the market agent; prices read from the CoinMarketCap homepage."
+   ],
+   "decided": [
+    "Dropped five carried-over briefs and the ISM services row because their sources could not be re-opened this run; ADP row became Salesforce/Snowflake earnings (ADP date unconfirmed)."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "title": "10:52 desk update: news refresh and unlock verification loop",
+   "did": [
+    "Refreshed market, stories, briefs and calendar; two independent verification rounds (133 claims checked, 12 removed, mostly claims resting on CoinDesk and Deribit pages that could not be opened).",
+    "Unlock loop: researched 30 existing rows in the next 30 days (5 batches) and independently re-checked them plus 5 new rows; skipped 5 rows marked can't-short (WPAY, ADI, RAIN, YZY, KNTQ)."
+   ],
+   "found": [
+    "Galaxy withdrew its call that bitcoin's bear market ended in June; merged into the JPMorgan story. CrowdStrike already reported on 23 Nov, so it was dropped from the calendar.",
+    "New shortable unlocks added: Q (2 Dec), VELVET (10 Dec), US/Talus (11 Dec, first insider cliff), ERA (17 Dec), COAI (25 Dec). STABLE 8 Dec dropped as not real (relocked to Dec 2027).",
+    "Re-check contradicted M's 2 Dec date (Tokenomist shows 12 Dec); EIGEN grade moved High to Moderate, LINEA Low to Not enough data (size disputed 480M vs 750M). CRO December day is estimated from the monthly pattern."
+   ],
+   "decided": [
+    "Kept ETF outflows as lead story; kept M on 2 Dec with its contradicted status visible rather than guessing a new date."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "title": "06:52 desk update: news refresh",
+   "did": [
+    "Refreshed market snapshot, stories, briefs and calendar; two independent verification rounds (133 claims checked, 11 removed). Unlock loop skipped (checked under 24h ago, not the 10:52 run); scores refreshed."
+   ],
+   "found": [
+    "No new lead story overnight; added the 08:00 UTC (3pm Bangkok) Deribit settlement time and Bitcoinist's 0.85 put/call next to CoinDesk's 0.89. Price pages disagreed, so 24h changes were left out. Decrypt pages could not be opened, so the death-cross and FCA items were removed."
+   ],
+   "decided": [
+    "Kept ETF outflows as lead; swapped in Zodia breach, Binance hack funds, DOJ crackdown and DeFi bounce briefs."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "title": "02:52 desk update: news refresh",
+   "did": [
+    "Refreshed news.json: ETF outflow record stays the lead; bitcoin/options story updated (Bitstamp $57,209 low and $61,509 high, death cross, liquidations mostly shorts); new third story on JPMorgan's Strategy 'capitulation' note and Glassnode dormant supply; DOJ and NovaTech moved to briefs; new briefs (KuCoin Monero delisting 30 Nov, UK FCA DeFi plan, Swiss BBIT ETF, Ripple share valuations).",
+    "Market snapshot from CoinMarketCap at about 19:52 UTC, with SOL and 24h changes restored; Fear and Greed from CoinMarketCap (9) and Alternative.me (11).",
+    "Calendar: Trump Media notes corrected to about $883.5M outstanding; jobs-report forecasts updated (Nowflation +82k/4.2%, Continuum +95k/4.1%); Fed blackout and jobless claims added; JOLTS forecast added.",
+    "Two independent check rounds. Unlock loop skipped (checked under 24h ago); score.py re-run."
+   ],
+   "found": [
+    "A CoinGecko page served prices far from CoinMarketCap and Blockchain.com (apparently a cached page), so CoinMarketCap was used.",
+    "Three brief sources (The Block DOJ, Decrypt NovaTech, CoinDesk Zodia) could not be opened by the checker, so those briefs were removed; ADP and ISM services times had no cited source and were removed.",
+    "The October 0.55 put/call comparison was dropped again (previous run found it covers all expiries)."
+   ],
+   "decided": [
+    "99 claims checked, 13 removed.",
+    "verify.py: 0 problems."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "title": "22:52 desk update: news refresh",
+   "did": [
+    "Refreshed news.json: lead story now CoinDesk's record-month ETF outflow comparison; new third story on the US scam crackdown (DOJ 800+ defendants, NovaTech $1.37B judgment); reserve bill moved to a brief; new briefs (Zodia Custody breach, Spain crypto account freezes, mining-route hijack, AI-stock selloff, Franklin Templeton adds HYPE).",
+    "Calendar: Thanksgiving row dropped; added Trump Media note put (30 Nov) and Bowman testimony (1 Dec); Fed blackout row and unconfirmed consensus figures removed.",
+    "Two independent check rounds. Unlock loop skipped (checked under 24h ago); score.py re-run."
+   ],
+   "found": [
+    "Price pages (CoinGecko, CoinMarketCap, Alternative.me) could not be opened this run, so the market snapshot uses CoinDesk's 11:17 UTC read and has no 24h changes or SOL price.",
+    "The 0.55 late-October put/call ratio is for all expiries (now 0.81), not Friday's 0.89; the comparison was removed.",
+    "Nowflation and ISM/JOLTS consensus figures could not be found and were dropped."
+   ],
+   "decided": [
+    "87 claims checked, 3 removed, 2 corrected.",
+    "verify.py: 0 problems."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "title": "18:52 desk update: news refresh",
+   "did": [
+    "Refreshed news.json: new market read, lead story updated to The Block's record-month ETF outflow figure, new briefs (Auros wind-down, Zcash Sapling pool, 1Password breach, German co-op banks, Swiss tax-data list, Senate letter to SEC), calendar updated (newer options-expiry figures, Binance Blockchain Week, earnings).",
+    "Two independent check rounds.",
+    "Unlock loop skipped (checked under 24h ago); score.py re-run."
+   ],
+   "found": [
+    "BTC 24h change flipped from +3.3% to about -1.9% on CoinMarketCap between research and check.",
+    "One draft line tying Wednesday's dip to inflation and tariffs was not supported by CoinDesk and was removed.",
+    "U.S.",
+    "Bank's payrolls figure is +98k (the +101k is the consensus it cites)."
+   ],
+   "decided": [
+    "105 claims checked, 5 removed, 2 corrected.",
+    "verify.py: 0 problems."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "title": "14:52 desk update: news refresh",
+   "did": [
+    "Refreshed news, market snapshot (BTC/ETH from Investing.com 06:18 UTC; SOL from CoinMarketCap ~08:00 UTC, 24h change left blank because sources disagreed) and calendar.",
+    "Independent news source check over 2 rounds (158 claim checks, 26 claims removed; about ten cited pages could not be opened by the checker, so their claims came out).",
+    "Unlock loop skipped (checked 04:26 UTC today); scores refreshed with score.py."
+   ],
+   "found": [
+    "Final 25 Nov spot bitcoin fund flow was -$453.12M (SoSoValue via TokenPost), the 7th straight outflow day; IBIT -$329.71M.",
+    "Polymarket odds of a national bitcoin reserve by year-end at 4% (The Block). Friday expiry counts differ: Deribit ~$6.8B, max pain $72,000 (OKX) vs three-exchange $8.42B, max pain $70,000 (CryptoKeyhole).",
+    "Jobs-report forecasts disagree (+82k Nowflation vs +101k U.S. Bank consensus); ISM manufacturing 55 (Nowflation) vs 53.8 (Wells Fargo)."
+   ],
+   "decided": [
+    "Lead stories: ETF outflows; tariffs + inflation + oil; reserve bill odds. Warren/SEC point, USTR and KuCoin PCE citations, and five briefs dropped because their pages could not be re-opened."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "title": "10:52 desk update: news refresh and unlock re-check",
+   "did": [
+    "Refreshed news, market snapshot (TradingView, ~03:54 UTC) and calendar.",
+    "Independent news source check over 2 rounds (115 claim checks, 13 claims removed; three cited pages could not be opened, so their claims came out).",
+    "Unlock loop: 28 existing rows researched and independently re-checked (5 skipped as can't-short: WPAY, ADI, RAIN, YZY, KNTQ). Added 5 new rows with a perp seen on OKX: 2Z, LA, VANA, XPL, H. Scores refreshed."
+   ],
+   "found": [
+    "USTR formally proposed Section 301 tariffs on 14 economies; October core PCE 3.3% vs 3.2% expected; CME FedWatch ~94-98% for a 9 Dec hike.",
+    "Spot bitcoin funds -$231.56M on 24 Nov (6th straight outflow day); November outflows approaching $5B (The Block).",
+    "GRVT unlock moved to 30 Nov (tokenomics.com, 34.28M, community only). M date still split: 2 Dec (cadence) vs 12 Dec (Tokenomist).",
+    "ERA (17 Dec) not added: perp evidence was only a CoinGlass chart link with an empty markets table. Exchanges other than OKX could not be reached by the new-unlock search."
+   ],
+   "decided": [
+    "Lead stories: tariffs + PCE + Wednesday round trip; ETF outflows; bitcoin reserve bill and senators vs SEC.",
+    "Dropped Galaxy/Thorn and Decrypt's 'worst month' claims this edition because the source pages could not be re-opened; FOMC time left off the calendar row (no opened source gave it)."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "title": "06:52 desk update: news refresh",
+   "did": [
+    "Refreshed news, market snapshot and calendar after the US close on Wed 25 Nov.",
+    "Independent source check over 2 rounds (119 claims, 2 removed, 2 corrected). Unlock re-check skipped (last checked 04:20 UTC 25 Nov, under 24h).",
+    "Scores refreshed."
+   ],
+   "found": [
+    "Final closes 25 Nov: Dow +0.33%, S&P 500 -0.25%, Nasdaq -0.62% (Avalon Capital); bitcoin $60,139 at the early-evening US read (Motley Fool).",
+    "Galaxy's Alex Thorn withdrew the October 'bear market ended in June' call (CoinDesk); total crypto market $2.08T, lowest since Sep 2024 (The Block).",
+    "Spot bitcoin funds -$4.94B in November through Tuesday (Decrypt); Wednesday's flows not yet published.",
+    "No published consensus found for Chicago PMI, ISM, JOLTS or ADP; Fifth Third forecasts dropped from the calendar (not re-opened this run)."
+   ],
+   "decided": [
+    "Lead stories: Wall Street round trip; Galaxy bear-market call plus fund outflows; senators vs SEC and the CFTC capital advisory. Fed/inflation moved to the calendar.",
+    "Dropped the 'no spot ETF flows on Thursday' line (no source) and a wrong '14-month low'. Added Bowman's 1 Dec testimony and MMT (4 Dec) to the calendar."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "title": "02:52 desk update: news refresh",
+   "did": [
+    "Refreshed news, market snapshot and calendar after the US afternoon of 25 Nov (Beige Book out; stocks not yet closed).",
+    "Independent source check over 3 rounds (75 claims, 8 removed, ETH/SOL snapshot and Nvidia figures replaced with source values). Unlock re-check skipped (last checked 04:20 UTC 25 Nov).",
+    "Scores refreshed."
+   ],
+   "found": [
+    "US stocks won back most of the morning tariff/AI sell-off; bitcoin back above $60,000 at 2:24pm ET (CoinDesk).",
+    "Beige Book: 8 of 12 districts grew slightly to moderately; prices still rising. CME FedWatch 97.8% for a December hike (MarketSpeaker).",
+    "Deribit expiry trackers differ: CryptoTicker 112,323 BTC / max pain $73,000 (21 Nov) vs OKX 111,885 BTC / $72,000 (24 Nov); both shown.",
+    "Market-price pages could not be opened reliably by the research agent; snapshot uses Yahoo (BTC) and CoinDesk ticker (ETH, SOL)."
+   ],
+   "decided": [
+    "Lead 1 is now the afternoon rebound; Fed/inflation story adds the Beige Book; lead 3 merges ETF outflows and treasury-company selling.",
+    "Dropped DOJ-USDC, Franklin Templeton HYPE and Bithumb briefs (sources could not be re-opened), the liquidation figure and the trade-balance row (date unconfirmed). Added STO (3 Dec) to the unlock row."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "title": "22:52 desk update: news refresh",
+   "did": [
+    "Refreshed news, market snapshot and calendar after the 8:30am ET US data.",
+    "Independent source check over 2 rounds (142 claims, 3 contradicted and corrected, 1 reworded). Unlock re-check skipped (last checked 04:20 UTC today).",
+    "Scores refreshed."
+   ],
+   "found": [
+    "USTR formally proposed Section 301 tariffs on 14 economies (not 16), up to 35% on Vietnam; comments due 5 Jan 2027.",
+    "Core PCE 3.3% vs 3.2% expected; Q3 GDP revised to 4.3%. Bitcoin hit a $57,500 session low as the Nasdaq fell about 4% (CoinDesk).",
+    "Earlier JPMorgan $2.8B MSTR outflow estimate dates from Nov 2025 (KuCoin); calendar note reworded."
+   ],
+   "decided": [
+    "Lead 1 is now the USTR tariff proposal; PCE story rewritten with actuals; DOJ/Lazarus moved to a brief; new lead 3 on crypto-treasury companies (Bit Digital, Ark, Strategy).",
+    "Dropped HKMA, Tether-fees and South Korea briefs (not re-verified this run)."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "title": "18:52 desk update: news refresh",
+   "did": [
+    "Refreshed news, market snapshot and calendar.",
+    "Independent source check over 2 rounds (107 claims, 17 removed, 1 corrected). Unlock re-check skipped (last checked 04:20 UTC today).",
+    "Scores refreshed."
+   ],
+   "found": [
+    "Reuters: new US tariffs on 16 partners imminent; Nasdaq 100 futures down 2.38% pre-market.",
+    "US spot bitcoin funds lost $231.4M on 24 Nov (Farside via CoinDesk); November outflows $4.94B, a record month (Decrypt).",
+    "CME FedWatch 97% for a December hike, 63% for another in January.",
+    "DOJ complaint: Lazarus hijacked 32 Binance addresses; nearly $342M USDC blocklisted (Protos)."
+   ],
+   "decided": [
+    "Tariffs moved back into lead story 1.",
+    "DOJ story kept as lead 3 but rebuilt on Protos only (Bitcoin Magazine and Fox could not be opened, so the $1.1B figure was dropped).",
+    "Dropped CFTC and Ethereum Foundation briefs (source pages could not be re-opened); added Kalshi/Utah, HYPE, SBI Solana JV, HKMA tokenized bonds, Tether fees, South Korea ICO items.",
+    "Dropped Bowman (already spoken by publish) and unsourced times for Chicago PMI, ISM, Deribit and the FOMC statement."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "title": "14:52 desk update: news refresh",
+   "did": [
+    "Refreshed news, market snapshot and calendar.",
+    "independent source check over 2 rounds (127 claims, 4 removed, 3 reworded). Unlock re-check skipped (last checked 04:20 UTC today).",
+    "scores refreshed."
+   ],
+   "found": [
+    "Bitcoin under $59,000.",
+    "US spot bitcoin funds lost $231.6M on 24 Nov, a sixth straight day of outflows.",
+    "DOJ filed to seize $1.1B+ of USDC from the Binance hack.",
+    "CME FedWatch ~97% for a December hike.",
+    "new US tariffs still not announced."
+   ],
+   "decided": [
+    "Tariffs moved from a lead story to a brief.",
+    "DOJ USDC seizure promoted to lead story 3."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "title": "10:52 desk update: news refresh and unlock re-check (v5 rules)",
+   "did": [
+    "Refreshed the public news: bitcoin just under $60,000 as Asian chip stocks slide, today's PCE report, tariffs still pending. 158 claims checked over 3 rounds, 25 removed or corrected (three briefs dropped because their pages could not be opened).",
+    "Re-researched and independently re-checked 32 shortable unlocks in the next 30 days; skipped 4 marked can't-short in shortable.json (WPAY, ADI, RAIN, YZY).",
+    "Added COAI (25 Nov, 19.54M) after a KuCoin USDT perp listing was confirmed. Did not add ASTER, TRUMP, WLD or MORPHO: their 'dates' are slices of continuous streams, not real unlock events."
+   ],
+   "found": [
+    "Trackers disagree on IRYS (tokenomics.com ~1.18B lump today vs Tokenomist: none until 25 Dec), GRVT (29 vs 30 Nov), GUN (28 vs 30 Nov), M (2 vs 12 Dec) and WET (192.5M vs 256.67M): all marked disputed.",
+    "Impact grade changes: H Very high->High, SUI ->Low, TON Moderate->High, MOVE High->Moderate, SEI ->Moderate, MON ->Very high."
+   ],
+   "decided": [
+    "Left ether's snapshot price blank: no timestamped figure could be confirmed this run (live prices still load in the browser)."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "title": "v5: only unlocks we can short; never MEXC",
+   "did": [
+    "Coach K's new rule: check every token has a perp/futures market we can short, focus only on those, and avoid MEXC because of sanctions.",
+    "Checked the MEXC claim: FinCEN (US Treasury) issued an order on 6 Nov 2026 cutting MEXC off from the US financial system over at least $16B of transactions tied to sanctions evasion and cybercrime (fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf). Strictly it's a FinCEN order, not OFAC sanctions, but US firms that deal with MEXC face enforcement risk.",
+    "Rules frozen as v5 (data/strategy_v5.json): v4 minus MEXC, plus the focus rule.",
+    "New scripts/shortable.py checks every unlock on the list twice a day on GitHub and writes data/shortable.json (yes / no / unknown, with where it trades and when it was checked). The brief, the Picks tab and the Unlocks tab now list only shortable unlocks; can't-short ones sit behind a click.",
+    "The 4-hourly research task now skips deep research for unlocks marked can't short."
+   ],
+   "found": [
+    "KNTQ (27 Dec) was only on MEXC, so under v5 it can't be shorted."
+   ],
+   "decided": [
+    "'Can't short' is a fact only when every allowed exchange answered (Binance, Bybit via CoinGecko, OKX, Bitget, Gate, Hyperliquid, KuCoin). If any couldn't be reached it's 'unknown' and stays on the list until rechecked."
+   ],
+   "files": [
+    "scripts/shortable.py",
+    "scripts/venues.py",
+    "scripts/picks.py",
+    "scripts/morning_brief.py",
+    "data/strategy_v5.json",
+    "brief.html",
+    "index.html",
+    ".github/workflows/trade-log.yml",
+    ".github/workflows/brief.yml",
+    "CLAUDE.md"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "title": "v4: short on other exchanges when Binance has no perp",
+   "did": [
+    "Coach K asked to check where every token trades and short it on another exchange instead of skipping; and to skip only after confirming as fact that it can't be shorted.",
+    "Tested which free exchange APIs GitHub's servers can reach: OKX, Bitget, Gate, Hyperliquid, KuCoin, MEXC and CoinGecko yes; Bybit and Binance's live API no (data/venue_probe.json). Bybit's perp list comes via CoinGecko.",
+    "New scripts/venues.py: lists each exchange's USDT perps, gets UTC daily candles (and open interest on OKX/Gate), and confirms by price that a ticker is the same token.",
+    "Rules frozen as v4 (data/strategy_v4.json): v3 unchanged, plus other exchanges. Brief cards now show where each token has perps and which exchange to short on."
+   ],
+   "found": [
+    "Ticker matches lie: 'ADI' on OKX, Bitget, Gate and Bybit is a ~$300+ stock perp (most likely Analog Devices; OKX files it under stocks), while ADI Chain is ~$7. Three exchanges agreeing with each other did not prove anything, so CoinGecko's price is the main check and stock tickers can't be confirmed by agreement.",
+    "The unlock records' implied price can be weeks old (JCT: $0.011 implied vs $0.0016 now on Binance and OKX).",
+    "Survey of current candidates (data/venue_survey.json): ADI 9 Dec can't be shorted anywhere (confirmed on all 8 exchanges); KNTQ 27 Dec is only on MEXC (price confirmed) but MEXC has no open-interest history, so as a first insider unlock it will be skipped; every other candidate trades on Binance plus 4-6 other exchanges.",
+    "Off-Binance evidence is thin: 4 historic trades on Bybit/Gate-only tokens (+5.5R total)."
+   ],
+   "decided": [
+    "A 'can't short it' skip is made only when all 8 exchanges answered and none lists the real token; if any can't be reached, it stays on watch and is rechecked.",
+    "Off Binance, short on the confirmed exchange with the most dollar volume over 7 days. Bybit-only tokens get no call (no Bybit candles from the server)."
+   ],
+   "files": [
+    "scripts/venues.py",
+    "scripts/picks.py",
+    "scripts/morning_brief.py",
+    "data/strategy_v4.json",
+    "brief.html",
+    "index.html",
+    "research/venue_probe.py",
+    "research/venue_survey.py",
+    "data/venue_probe.json",
+    "data/venue_survey.json",
+    "CLAUDE.md"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "title": "Desk update (02:52 Bangkok run)",
+   "did": [
+    "Refreshed news.json: lead is bitcoin slipping back below $60,000 on the WSJ-reported tariff plan and a chip-stock sell-off (ETF outflows $569.7M on 23 Nov, record $4.71B for November); story 2 is consumer confidence (103.3) ahead of Wednesday's October PCE; new story 3 is Utah moving to drop criminal charges against Kalshi. South Korea's bill moved to the briefs. 8 briefs (new: Krak credit cards, BTCS ETH sale, BlackRock HK tokenized fund, Rialto raise, Europol IPTV trace, MSTR low), 11 calendar rows.",
+    "119 claims checked over 2 rounds, 8 removed, 1 corrected; unlock research skipped (last checked under 24h ago), scores refreshed."
+   ],
+   "found": [
+    "CoinMarketCap and Binance agreed on BTC near $59,500-59,650 but disagreed on 24h changes and on ether/solana, so only the BTC price was kept; CoinGecko's page returned a stale-looking $27,408 and was ignored.",
+    "Unconfirmed release times (jobless claims, new home sales, the 08:00 UTC options expiry time) and the '14 other economies' tariff count were removed; Tuesday's ETF flows were not yet published."
+   ],
+   "decided": [
+    "Dropped the hike-odds percentage because no source opened this run gave current odds; story 2 cites Oxford Economics' 25bp call instead."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "title": "Morning brief page on the website",
+   "did": [
+    "Put the morning brief on the GitHub site as its own page (brief.html), linked from the Picks tab: short today, open shorts, coming up, the record, and every call so far with its result.",
+    "A free GitHub job rebuilds it every morning at 23:41 UTC (06:41 Bangkok) and keeps one snapshot per morning in data/briefs/ (pick any past morning from the dropdown). The twice-daily trade-log job also refreshes it with the logged calls."
+   ],
+   "found": [],
+   "decided": [
+    "The website page is the permanent record; the Claude artifact version is optional."
+   ],
+   "files": [
+    "brief.html",
+    "scripts/morning_brief.py",
+    ".github/workflows/brief.yml",
+    "data/brief.json",
+    "data/briefs/"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "title": "Morning brief dashboard",
+   "did": [
+    "Built 'Unlock shorts: morning brief' (https://claude.ai/artifact/Mh3h6x2jFDn2q2eeetmrxn): one simple page with what to short today, open shorts with levels, coming-up setups and what each still needs, the record, and the last 30 days of closed trades.",
+    "Added scripts/morning_brief.py (read-only, frozen v3 rules) and a scheduled task, 'Crypto Desk: morning unlock-short brief', that rebuilds it every day at 06:41 Bangkok, before the 07:00 entry."
+   ],
+   "found": [
+    "25 Nov: nothing to short today; MON and GRVT open (late calls, not counted); WET (entry 2 Dec) and CYS (4 Dec, needs open interest down 10%+) coming up."
+   ],
+   "decided": [
+    "The dashboard website stays as the full desk; the brief is the simple daily execution view."
+   ],
+   "files": [
+    "scripts/morning_brief.py",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Desk update (22:52 Bangkok run)",
+   "did": [
+    "Refreshed news.json: lead is bitcoin stuck near $60,000 as US stocks fell on a WSJ-reported tariff plan, with record November ETF outflows ($4.71B) and a record 11.6M BTC held at a loss; story 2 now carries the consumer confidence beat (103.3 vs 92.1 expected) and December hike pricing (95.1% quarter-point, per Coinotag); Korea story refocused on ending the 2017 ICO ban. 6 briefs (new: Anchorage asset manager, Ansem wallet, CFTC prediction-market rules), 12 calendar rows.",
+    "56 claims checked over 2 rounds, 11 removed; unlock research skipped (last checked under 24h ago), scores refreshed."
+   ],
+   "found": [
+    "CoinMarketCap, CoinGecko and Alternative.me could not be opened this run; ether and solana prices left blank (CoinDesk only gave % moves), Fear & Greed 11 taken from FinanceFeeds citing Alternative.me.",
+    "Several pages (The Block Korea bill, Coinranking MON, The Block Daily, FXEmpire) were blocked for the checker, so the Korea stablecoin details, MON and Strategy briefs and the 97.8% FedWatch figure were dropped."
+   ],
+   "decided": [
+    "Kept the page fresh with only re-confirmed claims rather than carrying over facts that could not be reopened."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Desk update (18:52 Bangkok run)",
+   "did": [
+    "Refreshed news.json: lead is bitcoin slipping below $60,000 as the Nvidia bounce faded and liquidations tripled; Fed hike odds now 97.8% before Wednesday's PCE; South Korea draft law updated with CoinDesk and The Block detail; 8 briefs (new: Sky stUSDS pool, Ethereum Foundation security team, Coinbase TerraUSD case), 12 calendar rows.",
+    "121 claims checked over 2 rounds, 24 removed; unlock research skipped (last checked under 24h ago), scores refreshed."
+   ],
+   "found": [
+    "Ether and Solana prices taken from CoinDesk and Unchained because CoinMarketCap/CoinGecko pages for them could not be opened; Solana's 24h change not confirmed.",
+    "Fear & Greed differs: 9 on CoinMarketCap, 11 on Alternative.me.",
+    "OKX options-expiry page and the SEC Strategy filing could not be reopened, so those figures now cite Zerocap/CryptoTicker and The Block."
+   ],
+   "decided": [
+    "Dropped the week-old Grayscale 'oversold' brief and the unsupported 'crypto trades through the holiday' and 'tech stock' wording."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Desk update (14:52 Bangkok run)",
+   "did": [
+    "Refreshed news.json: new lead on bitcoin fading toward $60,000 with ETF outflows, Fed hike odds before Wednesday's PCE, and South Korea's draft crypto law; 6 briefs, 12 calendar rows.",
+    "125 claims checked over 2 rounds, 10 removed; unlock research skipped (last checked under 24h ago), scores refreshed."
+   ],
+   "found": [
+    "CoinMarketCap and CoinGecko price pages could not be read reliably this run, so only bitcoin's snapshot price is filled; ether and Solana fall back to the live browser prices.",
+    "Fear & Greed readings differ: 9 on CoinMarketCap, 11 per KuCoin's daily report."
+   ],
+   "decided": [
+    "Dropped the CFTC prediction-market and iPhone wallet-kit briefs because their sources could not be opened this run."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "title": "Daily unlock re-check (10:52 Bangkok run)",
+   "did": [
+    "Re-researched 37 unlock rows (next 7 days, stale checks, and every row under 60 confidence), then had separate agents re-check 38 rows: 2 confirmed, 35 partial, 1 contradicted (M, 2 Dec vs Tokenomist's 12 Dec).",
+    "Added GUN (30 Nov) and STO (3 Dec); left out PMT and ON (single tracker only) and STABLE 8 Dec (tracker is out of date: the lock moved to Dec 2027).",
+    "Refreshed news.json: 3 stories, 6 briefs, 12 calendar rows; 79 claims checked over 2 rounds, 9 removed."
+   ],
+   "found": [
+    "SIGN 28 Nov could not be confirmed by any source (RootData lists 15 Dec, a Sign Foundation post points to Jan 2027), so the row was removed.",
+    "LIT's next unlock moved from 30 to 27 Dec and is now shown as a monthly amount (~13.9M LIT).",
+    "Web search ran out partway through the re-check, so most re-checks re-opened cited sources rather than finding new ones."
+   ],
+   "decided": [
+    "Keep phantom-risk rows out: an unlock needs at least one opened source showing a real transfer on that date."
+   ],
+   "files": [
+    "data/unlocks.json",
+    "data/news.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-23",
+   "title": "History tab and this journal",
+   "did": [
+    "ARIA (unlock 21 Nov) disappeared from Trade signals once its date passed. Added the History tab: a permanent, searchable log of every unlock the desk has shown (data/archive.json, scripts/archive.py), rebuilt from the repo history: 104 unlocks.",
+    "Started this journal so every change and decision stays findable."
+   ],
+   "found": [
+    "ARIA was graded AA but flagged pumped (+210% in 30 days) and was never a v3 pick (8.3% of circulating, not a first insider unlock). The standard short was stopped on entry day; ARIA was +38% from the day −7 open by the day after the unlock."
+   ],
+   "decided": [
+    "Nothing is deleted from History or this journal; both update twice a day or whenever we work."
+   ],
+   "files": [
+    "data/archive.json",
+    "scripts/archive.py",
+    "data/journal.json",
+    "index.html"
+   ]
+  },
+  {
+   "date": "2026-11-22",
+   "title": "Entry days, exit days and taking profit early",
+   "did": [
+    "Tested shorting 14, 7 and 3 days before the unlock against covering 1, 3, 7 and 14 days after, an entry zone (thirds at −14/−7/−3), and closing 60% at the 35% target with a trailing stop on the rest.",
+    "Added 'Compare entries and exits' to every pick: profit from each entry day to each exit day, a live 'now' price, and a shadow result for the 60% + trailing exit."
+   ],
+   "found": [
+    "Fair test (each trade picked only with what was known on its entry day): day −7 +0.74R a trade, day −14 +0.28R, day −3 +0.42R. A first run that made day −14 look best was using day −7 information.",
+    "Entry zone: more winners (64%) but less profit (+0.64R).",
+    "60% at target + 40% trailing 10%: +0.86R vs +0.81R for the current exit — inside the noise."
+   ],
+   "decided": [
+    "Keep day −7 entry and the current exit. Track the 60%/trailing exit as a shadow result; adopt only if live trades back it (would be v4)."
+   ],
+   "files": [
+    "research/entry_exit.py",
+    "research/entry_fair.py",
+    "scripts/picks.py",
+    "index.html"
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Bybit and Gate.io perpetuals",
+   "did": [
+    "Mapped which tokens had a Bybit or Gate.io perpetual before Binance (75) and researched 55 new ones; independent re-check of every qualifying unlock; priced them from Bybit/Gate through Coach K's browser."
+   ],
+   "found": [
+    "4 more v3 trades with unchanged rules: 3 won, +5.5R (DBR, FLOW, BOBA won; TAIKO stopped then fell 43%).",
+    "The open-interest rule skipped three first-insider unlocks that all won (RAY, ATH, HAEDAL) — a watch item."
+   ],
+   "decided": [
+    "Keep the frozen rules. Live picks stay Binance-only because Bybit/Gate block the cloud servers; proposed running a small script on the Mac mini (no answer yet)."
+   ],
+   "files": [
+    "research/exchange_test.json",
+    "research/exchange_listings.json",
+    "research/hist_decisions.md"
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "title": "2021–2025 history test",
+   "did": [
+    "Researched 122 tokens with Binance perpetuals back to 2021; re-checked every tradeable unlock before pricing."
+   ],
+   "found": [
+    "Big one-day unlocks are mostly a 2023+ thing; many 2021–22 big unlocks had no perpetual to short; about a third of 'unlocks' were swaps, re-locks, delays or launches.",
+    "v3 took 5 trades: 3 won, +5.5R. Both losses came with BTC up 28–47% the month before."
+   ],
+   "decided": [
+    "No rule change; BTC trend is a watch item."
+   ],
+   "files": [
+    "research/hist_test.py",
+    "research/hist_test.json",
+    "research/hist_decisions.md"
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Picks tab and live test start (v3 rules frozen)",
+   "did": [
+    "Froze the v3 rules in data/strategy_v3.json. Picks tab: only v3 setups, called once on entry day and logged in data/picks_log.json, never rewritten.",
+    "First live call: HUMA (taken 19 Nov), stopped on entry day (−1R). The desk's data later cut HUMA's size from 26% to 13%, so on today's data it would not qualify; the call stays as made."
+   ],
+   "found": [],
+   "decided": [
+    "Pass mark: after 30 live trades, average above +0.25R. Any rule change becomes v4 with a new date."
+   ],
+   "files": [
+    "data/strategy_v3.json",
+    "scripts/picks.py",
+    "data/picks_log.json"
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Chart study: open interest is the tell (v3)",
+   "did": [
+    "Tested chart, volume, funding and open-interest signals on 917 unlocks using Binance's free files."
+   ],
+   "found": [
+    "Open interest falling 10%+ the week before entry turns first insider unlocks under 25% from break-even (+0.07R) into winners (+0.78R, 69% won); confirmed on 818 routine unlocks it wasn't found on.",
+    "v3 backtest: 56 trades, 62% won, +0.75R a trade, worst drawdown −3.9% at 1% risk."
+   ],
+   "decided": [
+    "v3: take 25%+ unlocks, and first insider unlocks only if open interest fell 10%+; skip anything pumped 30%+."
+   ],
+   "files": [
+    "research/charts.py",
+    "research/cs3.py",
+    "research/cs4.py",
+    "research/cs5.py",
+    "research/v3_trades.json"
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "title": "Take / skip groups and the backtest journal sheet",
+   "did": [
+    "Sorted every past unlock into take full size, take half size and skip; built the shareable journal sheet."
+   ],
+   "found": [
+    "Only 25%+ unlocks that weren't pumped made money in both data sets on their own; routine unlocks lost (−50.7R over 820)."
+   ],
+   "decided": [
+    "Dropped 'already falling the week before' as a rule (did not hold on unseen data)."
+   ],
+   "files": [
+    "research/tiers.py",
+    "research/journal.xlsx",
+    "https://claude.ai/artifact/ShUA8ksjPAokad8wH3XaXT"
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "title": "First unseen-data test (2023–25)",
+   "did": [
+    "Froze the 18 Nov rules, researched 62 big Binance tokens, re-checked every unlock independently, priced them."
+   ],
+   "found": [
+    "The strict rule was NOT PROVEN after the re-check: 13 trades, +0.53R a trade, bad-case range below zero."
+   ],
+   "decided": [
+    "Keep testing; don't sell the strategy to followers until proven."
+   ],
+   "files": [
+    "data/strategy_frozen.json",
+    "data/frozen_test.json",
+    "data/frozen_test_decisions.md"
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "title": "Pump study and best/worst trades",
+   "did": [
+    "Studied what pumps into and after unlocks do, the best and worst trades and why; tested trailing stops."
+   ],
+   "found": [
+    "Tokens pumped 30%+ going in lose; most losers were right on direction but squeezed through the stop first; trailing stops didn't help."
+   ],
+   "decided": [
+    "Skip anything pumped 30%+ into the unlock."
+   ],
+   "files": [
+    "research/",
+    "claude/unlock-audit-2026-11-17.md"
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "title": "Rules into the tracker, more past tokens, simpler dashboard",
+   "did": [
+    "Added the new rules and pump warnings to the tracker and signals; looped in 69 past tokens; size badges for big unlocks; moved the busy panels behind clicks."
+   ],
+   "found": [],
+   "decided": [
+    "Keep the dashboard simple with extras behind a click."
+   ],
+   "files": [
+    "index.html",
+    "scripts/signals.py",
+    "scripts/merge_past_research.py"
+   ]
+  }
+ ]
 }
