@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-11-26 22:29 UTC",
+ "generatedAt": "2026-11-27 05:20 UTC",
  "rule": "v5: only unlocks with a USDT perp we can short (Binance, Bybit, OKX, Bitget, Gate, Hyperliquid, KuCoin; never MEXC) are focused on",
  "avoid": {
   "mexc": "FinCEN order of 6 Nov 2026 cut MEXC off from the US financial system over sanctions evasion (fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf)"
  },
  "checked": {
-  "at": "2026-11-26 22:29 UTC",
+  "at": "2026-11-27 05:20 UTC",
   "reached": [
    "Binance (data files)",
    "OKX",
@@ -18,34 +18,11 @@
   "unreachable": []
  },
  "counts": {
-  "yes": 62,
+  "yes": 65,
   "no": 8,
   "unknown": 0
  },
  "unlocks": {
-  "PEAQ|2026-11-12": {
-   "shortable": "yes",
-   "where": [
-    "Bybit"
-   ],
-   "notes": [],
-   "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
-  },
-  "PUMP|2026-11-12": {
-   "shortable": "yes",
-   "where": [
-    "Binance",
-    "OKX",
-    "Bitget",
-    "Gate",
-    "Hyperliquid",
-    "KuCoin"
-   ],
-   "notes": [],
-   "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
-  },
   "AZTEC|2026-11-13": {
    "shortable": "yes",
    "where": [
@@ -59,7 +36,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:18 UTC"
   },
   "PIEVERSE|2026-11-14": {
    "shortable": "yes",
@@ -73,14 +50,14 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:18 UTC"
   },
   "YZY|2026-11-14": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:18 UTC"
   },
   "ARB|2026-11-15": {
    "shortable": "yes",
@@ -95,7 +72,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:18 UTC"
   },
   "SEI|2026-11-15": {
    "shortable": "yes",
@@ -110,7 +87,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:18 UTC"
   },
   "STRK|2026-11-15": {
    "shortable": "yes",
@@ -125,7 +102,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:18 UTC"
   },
   "CRO|2026-11-16": {
    "shortable": "yes",
@@ -138,7 +115,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:18 UTC"
   },
   "PENGU|2026-11-17": {
    "shortable": "yes",
@@ -153,7 +130,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:18 UTC"
   },
   "ZK|2026-11-17": {
    "shortable": "yes",
@@ -168,7 +145,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:18 UTC"
   },
   "KAITO|2026-11-20": {
    "shortable": "yes",
@@ -183,7 +160,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:18 UTC"
   },
   "ZRO|2026-11-20": {
    "shortable": "yes",
@@ -198,7 +175,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:18 UTC"
   },
   "ARIA|2026-11-21": {
    "shortable": "yes",
@@ -211,7 +188,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "AKE|2026-11-21": {
    "shortable": "yes",
@@ -220,20 +197,19 @@
     "OKX",
     "Bitget",
     "Gate",
-    "KuCoin"
+    "KuCoin",
+    "Bybit"
    ],
-   "notes": [
-    "Bybit: can't confirm it's the same token"
-   ],
+   "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "MBG|2026-11-22": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "SOON|2026-11-23": {
    "shortable": "yes",
@@ -247,7 +223,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "MON|2026-11-24": {
    "shortable": "yes",
@@ -262,7 +238,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "SOSO|2026-11-24": {
    "shortable": "yes",
@@ -271,14 +247,14 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "RYO|2026-11-24": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "IRYS|2026-11-25": {
    "shortable": "yes",
@@ -292,7 +268,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "XPL|2026-11-25": {
    "shortable": "yes",
@@ -307,7 +283,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "H|2026-11-25": {
    "shortable": "yes",
@@ -321,7 +297,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "COAI|2026-11-25": {
    "shortable": "yes",
@@ -335,7 +311,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "HUMA|2026-11-26": {
    "shortable": "yes",
@@ -349,7 +325,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "PROS|2026-11-28": {
    "shortable": "yes",
@@ -361,7 +337,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "GRASS|2026-11-28": {
    "shortable": "yes",
@@ -376,7 +352,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "FF|2026-11-29": {
    "shortable": "yes",
@@ -389,7 +365,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "CARDS|2026-11-29": {
    "shortable": "yes",
@@ -398,7 +374,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "GRVT|2026-11-30": {
    "shortable": "yes",
@@ -412,7 +388,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "KMNO|2026-11-30": {
    "shortable": "yes",
@@ -425,7 +401,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "GUN|2026-11-30": {
    "shortable": "yes",
@@ -439,7 +415,7 @@
     "Bybit: can't confirm it's the same token"
    ],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "EIGEN|2026-12-01": {
    "shortable": "yes",
@@ -454,7 +430,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "SUI|2026-12-01": {
    "shortable": "yes",
@@ -469,7 +445,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "M|2026-12-02": {
    "shortable": "yes",
@@ -482,7 +458,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "BTW|2026-12-02": {
    "shortable": "yes",
@@ -496,7 +472,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "ENA|2026-12-02": {
    "shortable": "yes",
@@ -511,7 +487,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "2Z|2026-12-02": {
    "shortable": "yes",
@@ -526,7 +502,20 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:28 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
+  },
+  "Q|2026-12-02": {
+   "shortable": "yes",
+   "where": [
+    "Binance",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "Bybit"
+   ],
+   "notes": [],
+   "unreachable": [],
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "STO|2026-12-03": {
    "shortable": "yes",
@@ -539,7 +528,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "MMT|2026-12-04": {
    "shortable": "yes",
@@ -554,7 +543,7 @@
     "Bybit: can't confirm it's the same token"
    ],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "LA|2026-12-04": {
    "shortable": "yes",
@@ -568,7 +557,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "ENA|2026-12-05": {
    "shortable": "yes",
@@ -583,7 +572,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "HYPE|2026-12-06": {
    "shortable": "yes",
@@ -598,7 +587,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "TON|2026-12-06": {
    "shortable": "yes",
@@ -607,25 +596,25 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "WPAY|2026-12-08": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "ADI|2026-12-09": {
    "shortable": "no",
    "where": [],
    "notes": [
-    "Bitget: different asset: price 335 vs ~7.16 (CoinGecko's price)",
-    "Gate: different asset: price 336.9 vs ~7.16 (CoinGecko's price)",
-    "Bybit: different asset: price 336 vs ~7.16 (CoinGecko's price)"
+    "Bitget: different asset: price 333.4 vs ~7.16 (CoinGecko's price)",
+    "Gate: different asset: price 337.5 vs ~7.16 (CoinGecko's price)",
+    "Bybit: different asset: price 344.9 vs ~7.16 (CoinGecko's price)"
    ],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "WET|2026-12-09": {
    "shortable": "yes",
@@ -639,7 +628,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "MOVE|2026-12-09": {
    "shortable": "yes",
@@ -654,7 +643,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "JCT|2026-12-10": {
    "shortable": "yes",
@@ -669,7 +658,7 @@
     "Bybit: can't confirm it's the same token"
    ],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "LINEA|2026-12-10": {
    "shortable": "yes",
@@ -685,14 +674,27 @@
     "Bybit: can't confirm it's the same token"
    ],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "RAIN|2026-12-10": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
+  },
+  "VELVET|2026-12-10": {
+   "shortable": "yes",
+   "where": [
+    "Binance",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "Bybit"
+   ],
+   "notes": [],
+   "unreachable": [],
+   "checkedAt": "2026-11-27 05:19 UTC"
   },
   "CYS|2026-12-11": {
    "shortable": "yes",
@@ -705,7 +707,20 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:19 UTC"
+  },
+  "US|2026-12-11": {
+   "shortable": "yes",
+   "where": [
+    "Binance",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "Bybit"
+   ],
+   "notes": [],
+   "unreachable": [],
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "PUMP|2026-12-12": {
    "shortable": "yes",
@@ -719,7 +734,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "PIEVERSE|2026-12-14": {
    "shortable": "yes",
@@ -733,14 +748,14 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "YZY|2026-12-14": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "STRK|2026-12-15": {
    "shortable": "yes",
@@ -755,7 +770,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "SEI|2026-12-15": {
    "shortable": "yes",
@@ -770,7 +785,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "ARB|2026-12-16": {
    "shortable": "yes",
@@ -785,7 +800,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "CRO|2026-12-16": {
    "shortable": "yes",
@@ -798,7 +813,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "VANA|2026-12-16": {
    "shortable": "yes",
@@ -812,7 +827,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "ZK|2026-12-17": {
    "shortable": "yes",
@@ -827,7 +842,20 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
+  },
+  "ERA|2026-12-17": {
+   "shortable": "yes",
+   "where": [
+    "Binance",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "Bybit"
+   ],
+   "notes": [],
+   "unreachable": [],
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "ZRO|2026-12-20": {
    "shortable": "yes",
@@ -842,7 +870,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "KAITO|2026-12-20": {
    "shortable": "yes",
@@ -857,7 +885,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "AKE|2026-12-21": {
    "shortable": "yes",
@@ -866,13 +894,12 @@
     "OKX",
     "Bitget",
     "Gate",
-    "KuCoin"
+    "KuCoin",
+    "Bybit"
    ],
-   "notes": [
-    "Bybit: can't confirm it's the same token"
-   ],
+   "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "MON|2026-12-24": {
    "shortable": "yes",
@@ -887,7 +914,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "XPL|2026-12-25": {
    "shortable": "yes",
@@ -902,7 +929,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "H|2026-12-25": {
    "shortable": "yes",
@@ -916,14 +943,28 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
+  },
+  "COAI|2026-12-25": {
+   "shortable": "yes",
+   "where": [
+    "Binance",
+    "OKX",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "Bybit"
+   ],
+   "notes": [],
+   "unreachable": [],
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "KNTQ|2026-12-27": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "LIT|2026-12-27": {
    "shortable": "yes",
@@ -938,7 +979,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   },
   "ALLO|2027-05-11": {
    "shortable": "yes",
@@ -952,7 +993,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-26 22:29 UTC"
+   "checkedAt": "2026-11-27 05:20 UTC"
   }
  }
 }

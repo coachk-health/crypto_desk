@@ -1,11 +1,11 @@
 {
- "made": "2026-11-26 22:29 UTC",
+ "made": "2026-11-27 05:20 UTC",
  "day": "2026-11-27",
  "rules": "v5, frozen 25 Nov 2026: only unlocks we can short. Short 25%+ unlocks, or first insider unlocks with open interest down 10%+; skip anything up 30%+ going in. Short the day -7 open, stop 12%, target 35%, out day +14. Short on Binance; if Binance has no perp, on OKX, Bitget, Gate, Hyperliquid or KuCoin (never MEXC), only where the price confirms it's the same token.",
  "shortable": {
-  "checkedAt": "2026-11-26 22:29 UTC",
+  "checkedAt": "2026-11-27 05:20 UTC",
   "counts": {
-   "yes": 62,
+   "yes": 65,
    "no": 8,
    "unknown": 0
   },
@@ -34,9 +34,9 @@
     "token": "ADI",
     "date": "2026-12-09",
     "notes": [
-     "Bitget: different asset: price 335 vs ~7.16 (CoinGecko's price)",
-     "Gate: different asset: price 336.9 vs ~7.16 (CoinGecko's price)",
-     "Bybit: different asset: price 336 vs ~7.16 (CoinGecko's price)"
+     "Bitget: different asset: price 333.4 vs ~7.16 (CoinGecko's price)",
+     "Gate: different asset: price 337.5 vs ~7.16 (CoinGecko's price)",
+     "Bybit: different asset: price 344.9 vs ~7.16 (CoinGecko's price)"
     ]
    },
    {
@@ -196,6 +196,40 @@
    "daysToEntry": 7
   },
   {
+   "id": "US|2026-12-11",
+   "section": "coming",
+   "token": "US",
+   "name": "Talus",
+   "setup": "Big unlock",
+   "unlockDate": "2026-12-11",
+   "entryDate": "2026-12-04",
+   "coverDate": "2026-12-25",
+   "sizePct": 46.2,
+   "firstInsider": true,
+   "pumpPct": -20.6,
+   "oiChangePct": null,
+   "call": "WATCH",
+   "why": "passes so far",
+   "action": "Decided at the 4 Dec open. Needs: price not up 30%+ since 30 days before the unlock. Now: passes so far.",
+   "entry": null,
+   "stop": null,
+   "target": null,
+   "chart": "https://www.tradingview.com/chart/?symbol=BINANCE:USUSDT.P",
+   "chartLabel": "Chart on TradingView",
+   "lateCall": false,
+   "venue": "Binance",
+   "where": [
+    "Binance",
+    "Bitget",
+    "Gate",
+    "KuCoin",
+    "Bybit"
+   ],
+   "alsoListed": [],
+   "venueNotes": [],
+   "daysToEntry": 7
+  },
+  {
    "id": "KITE|2026-11-03",
    "section": "closed",
    "token": "KITE",
@@ -329,8 +363,8 @@
    "pumpPct": null,
    "oiChangePct": null,
    "call": "SKIP",
-   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-26 22:29 UTC)",
-   "action": "Skip: can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-26 22:29 UTC).",
+   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-27 05:20 UTC)",
+   "action": "Skip: can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-27 05:20 UTC).",
    "entry": null,
    "stop": null,
    "target": null,
@@ -341,9 +375,9 @@
    "where": [],
    "alsoListed": [],
    "venueNotes": [
-    "Bitget: different asset: price 335 vs ~7.16 (CoinGecko's price)",
-    "Gate: different asset: price 336.9 vs ~7.16 (CoinGecko's price)",
-    "Bybit: different asset: price 336 vs ~7.16 (CoinGecko's price)"
+    "Bitget: different asset: price 333.4 vs ~7.16 (CoinGecko's price)",
+    "Gate: different asset: price 337.5 vs ~7.16 (CoinGecko's price)",
+    "Bybit: different asset: price 344.9 vs ~7.16 (CoinGecko's price)"
    ],
    "daysToEntry": 5
   }
