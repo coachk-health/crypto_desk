@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T22:29:19Z",
+ "generatedAt": "2026-11-27T09:49:45Z",
  "rules": {
   "version": "v5",
   "frozenOn": "2026-11-25",
@@ -112,8 +112,8 @@
     "exits": {
      "1": 0.01104
     },
-    "lastClose": 0.01104,
-    "asOf": "2026-11-25",
+    "lastClose": 0.01035,
+    "asOf": "2026-11-26",
     "shadowPartial": {
      "status": "closed",
      "pct": 34.4,
@@ -148,9 +148,11 @@
      "-7": 0.01481,
      "-3": 0.01891
     },
-    "exits": {},
-    "lastClose": 0.01621,
-    "asOf": "2026-11-25",
+    "exits": {
+     "1": 0.01588
+    },
+    "lastClose": 0.01588,
+    "asOf": "2026-11-26",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -200,8 +202,8 @@
      "-3": 0.00836
     },
     "exits": {},
-    "lastClose": 0.00751,
-    "asOf": "2026-11-25",
+    "lastClose": 0.006809,
+    "asOf": "2026-11-26",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -219,9 +221,9 @@
    "pctCirculating": 29.99,
    "firstInsider": false,
    "setup": "Big unlock",
-   "recipients": "Community & Airdrop recipients (the remainder of the 28% airdrop vests over 12 months from the 30 Jul 2026 TGE). Ecosystem (6-month lockup) and team/investors (12-month lockup) are not due until about 30 Jan 2027 and about 30 Jul 2027.",
+   "recipients": "Community and airdrop recipients (tokenomics.com: Community 100%). Team, investors and ecosystem are not in this tranche.",
    "confidence": "confirmed",
-   "source": "https://app.tokenomics.com/tokenomics/grvt",
+   "source": "https://app.tokenomics.com/tokenomics/grvt/unlocks",
    "where": [
     "Binance",
     "OKX",
@@ -248,13 +250,13 @@
      "-7": 0.1459
     },
     "exits": {},
-    "lastClose": 0.1249,
-    "asOf": "2026-11-25",
+    "lastClose": 0.1278,
+    "asOf": "2026-11-26",
     "shadowPartial": {
      "status": "open",
-     "pct": 14.4,
+     "pct": 12.4,
      "why": "no target yet",
-     "day": -5
+     "day": -4
     }
    }
   },
@@ -282,8 +284,8 @@
    "venueNotes": [],
    "venue": "binance",
    "symbol": "WETUSDT",
-   "pump": -23.5,
-   "pumpTo": "2026-11-25",
+   "pump": -23.2,
+   "pumpTo": "2026-11-26",
    "call": "WATCH",
    "why": "passes so far",
    "practice": {
@@ -291,8 +293,8 @@
      "-14": 0.03669
     },
     "exits": {},
-    "lastClose": 0.03686,
-    "asOf": "2026-11-25"
+    "lastClose": 0.03654,
+    "asOf": "2026-11-26"
    }
   },
   {
@@ -304,7 +306,7 @@
    "pctCirculating": 18.49,
    "firstInsider": true,
    "setup": "First insider unlock",
-   "recipients": "End of 12-month cliffs from the 11 Dec 2025 TGE: first monthly slice for private investors (~66%), insiders/contributors (~11%) and foundation (~11%), plus a routine community/ecosystem slice (~11%), per tokenomics.com. Earlier monthly unlocks (May-Nov 2026) each list a single recipient, consistent with no earlier insider release.",
+   "recipients": "End of the 12-month cliffs from the 11 Dec 2025 TGE: first monthly slice for private investors (~66%), contributors (~11%) and foundation (~11%), plus the routine ecosystem-incentive slice (~11%).",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/cysic/unlocks",
    "where": [
@@ -318,8 +320,8 @@
    "venueNotes": [],
    "venue": "binance",
    "symbol": "CYSUSDT",
-   "pump": -39.2,
-   "pumpTo": "2026-11-25",
+   "pump": -39.3,
+   "pumpTo": "2026-11-26",
    "oiChange": null,
    "oiTo": null,
    "call": "WATCH",
@@ -327,60 +329,33 @@
    "practice": null
   },
   {
-   "token": "JCT",
-   "name": "Janction",
-   "unlockDate": "2026-11-10",
-   "entryDate": "2026-11-03",
-   "coverDate": "2026-11-24",
-   "pctCirculating": 10.24,
+   "token": "US",
+   "name": "Talus",
+   "unlockDate": "2026-12-11",
+   "entryDate": "2026-12-04",
+   "coverDate": "2026-12-25",
+   "pctCirculating": 46.2,
    "firstInsider": true,
-   "setup": "First insider unlock",
-   "recipients": "tokenomics.com split for this tranche: Community 40.8%, Foundation 30.6%, Private Investors 22.4%, Insiders 6.2%. Team cliff runs to May 2027 (Phemex), so the 'Insiders' slice is most likely advisors.",
+   "setup": "Big unlock",
+   "recipients": "End of the 12-month cliff for investors (Polychain-led backers) and core contributors, plus routine community and foundation tranches.",
    "confidence": "confirmed",
-   "source": "https://app.tokenomics.com/tokenomics/janction/unlocks",
+   "source": "https://app.tokenomics.com/tokenomics/talus-network/unlocks",
    "where": [
     "Binance",
-    "OKX",
     "Bitget",
     "Gate",
-    "KuCoin"
-   ],
-   "alsoListed": [
+    "KuCoin",
     "Bybit"
    ],
-   "venueNotes": [
-    "Bybit: can't confirm it's the same token"
-   ],
+   "alsoListed": [],
+   "venueNotes": [],
    "venue": "binance",
-   "symbol": "JCTUSDT",
-   "pump": 161.2,
-   "pumpTo": "2026-11-03",
-   "oiChange": -20.0,
-   "oiTo": "2026-11-02",
-   "call": "SKIP",
-   "why": "pumped +161% into the unlock",
-   "lateCall": true,
-   "practice": {
-    "entries": {
-     "-14": 0.00721,
-     "-7": 0.004804,
-     "-3": 0.003233
-    },
-    "exits": {
-     "1": 0.005021,
-     "3": 0.002079,
-     "7": 0.002064,
-     "14": 0.001452
-    },
-    "lastClose": 0.001449,
-    "asOf": "2026-11-25",
-    "shadowPartial": {
-     "status": "closed",
-     "pct": -12.6,
-     "why": "stopped",
-     "day": -6
-    }
-   }
+   "symbol": "USUSDT",
+   "pump": -15.7,
+   "pumpTo": "2026-11-26",
+   "call": "WATCH",
+   "why": "passes so far",
+   "practice": null
   },
   {
    "token": "PIEVERSE",
@@ -424,8 +399,8 @@
      "3": 2.0536,
      "7": 3.4039
     },
-    "lastClose": 3.5479,
-    "asOf": "2026-11-25",
+    "lastClose": 3.8236,
+    "asOf": "2026-11-26",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -449,12 +424,12 @@
    "where": [],
    "alsoListed": [],
    "venueNotes": [
-    "Bitget: different asset: price 335 vs ~7.16 (CoinGecko's price)",
-    "Gate: different asset: price 336.9 vs ~7.16 (CoinGecko's price)",
-    "Bybit: different asset: price 336 vs ~7.16 (CoinGecko's price)"
+    "Bitget: different asset: price 333.4 vs ~7.16 (CoinGecko's price)",
+    "Gate: different asset: price 337.5 vs ~7.16 (CoinGecko's price)",
+    "Bybit: different asset: price 345.8 vs ~7.16 (CoinGecko's price)"
    ],
    "venueCheck": {
-    "at": "2026-11-26 22:29 UTC",
+    "at": "2026-11-27 09:49 UTC",
     "reached": [
      "Binance (data files)",
      "OKX",
@@ -467,7 +442,7 @@
     "unreachable": []
    },
    "call": "SKIP",
-   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-26 22:29 UTC)",
+   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-27 09:49 UTC)",
    "practice": null
   }
  ],
@@ -773,23 +748,24 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.1249,
-    "openPct": 19.7,
-    "asOf": "2026-11-25"
+    "lastClose": 0.1278,
+    "openPct": 17.8,
+    "asOf": "2026-11-26"
    },
    "practice": {
     "entries": {
      "-14": 0.1747,
-     "-7": 0.1555
+     "-7": 0.1555,
+     "-3": 0.1248
     },
     "exits": {},
-    "lastClose": 0.1249,
-    "asOf": "2026-11-25",
+    "lastClose": 0.1278,
+    "asOf": "2026-11-26",
     "shadowPartial": {
      "status": "open",
-     "pct": 19.7,
+     "pct": 17.8,
      "why": "no target yet",
-     "day": -4
+     "day": -3
     }
    }
   },
@@ -829,9 +805,9 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.1249,
-    "openPct": 14.4,
-    "asOf": "2026-11-25"
+    "lastClose": 0.1278,
+    "openPct": 12.4,
+    "asOf": "2026-11-26"
    },
    "practice": {
     "entries": {
@@ -839,13 +815,13 @@
      "-7": 0.1459
     },
     "exits": {},
-    "lastClose": 0.1249,
-    "asOf": "2026-11-25",
+    "lastClose": 0.1278,
+    "asOf": "2026-11-26",
     "shadowPartial": {
      "status": "open",
-     "pct": 14.4,
+     "pct": 12.4,
      "why": "no target yet",
-     "day": -5
+     "day": -4
     }
    }
   }

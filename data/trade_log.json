@@ -695,10 +695,10 @@
    },
    "worstAgainst": 2.51,
    "mark": {
-    "date": "2026-11-25",
-    "price": 0.151492,
-    "pnl": 30.98,
-    "r": 2.45
+    "date": "2026-11-26",
+    "price": 0.209483,
+    "pnl": 4.63,
+    "r": 0.37
    }
   },
   {
@@ -891,6 +891,23 @@
    "status": "watching"
   },
   {
+   "id": "US-2026-12-11",
+   "token": "US",
+   "name": "Talus",
+   "coingeckoId": "talus-2",
+   "unlockDate": "2026-12-11",
+   "checkDate": "2026-12-03",
+   "entryDate": "2026-12-04",
+   "coverDate": "2026-12-25",
+   "rules": [
+    "big",
+    "first"
+   ],
+   "setup": "A",
+   "history": [],
+   "status": "watching"
+  },
+  {
    "id": "PIEVERSE-2026-12-14",
    "token": "PIEVERSE",
    "name": "Pieverse",
@@ -899,6 +916,38 @@
    "checkDate": "2026-12-06",
    "entryDate": "2026-12-07",
    "coverDate": "2026-12-28",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [],
+   "status": "watching"
+  },
+  {
+   "id": "ERA-2026-12-17",
+   "token": "ERA",
+   "name": "Caldera",
+   "coingeckoId": "caldera",
+   "unlockDate": "2026-12-17",
+   "checkDate": "2026-12-09",
+   "entryDate": "2026-12-10",
+   "coverDate": "2026-12-31",
+   "rules": [
+    "big"
+   ],
+   "setup": "B",
+   "history": [],
+   "status": "watching"
+  },
+  {
+   "id": "COAI-2026-12-25",
+   "token": "COAI",
+   "name": "ChainOpera AI",
+   "coingeckoId": "chainopera-ai",
+   "unlockDate": "2026-12-25",
+   "checkDate": "2026-12-17",
+   "entryDate": "2026-12-18",
+   "coverDate": "2027-01-08",
    "rules": [
     "big"
    ],
@@ -971,7 +1020,7 @@
    "status": "watching"
   }
  ],
- "updatedAt": "2026-11-26T22:27:58Z",
+ "updatedAt": "2026-11-27T09:47:31Z",
  "summary": {
   "closed": 3,
   "won": 2,
@@ -980,7 +1029,7 @@
   "totalUsd": 334,
   "open": 1,
   "skipped": 3,
-  "watching": 9,
+  "watching": 12,
   "byTag": {
    "strong": {
     "closed": 1,
