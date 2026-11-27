@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T09:49:55Z",
+ "generatedAt": "2026-11-27T22:11:28Z",
  "pumpChecks": {
   "KAITO": {
    "id": "kaito",
@@ -67,50 +67,50 @@
   },
   "ADI": {
    "id": "adi-token",
-   "rise": -11.0,
+   "rise": -10.9,
    "to": "2026-11-27",
-   "week": -2.7,
-   "ref": 7.16147,
+   "week": -2.5,
+   "ref": 7.17081,
    "source": "coingecko"
   },
   "WET": {
    "id": "humidifi",
-   "rise": -32.0,
+   "rise": -32.2,
    "to": "2026-11-27",
-   "week": -7.0,
-   "ref": 0.0375089,
+   "week": -7.3,
+   "ref": 0.0374018,
    "source": "binance-futures"
   },
   "JCT": {
    "id": "janction",
-   "rise": -64.1,
+   "rise": -63.5,
    "to": "2026-11-27",
-   "week": -19.0,
-   "ref": 0.00152016,
+   "week": -17.5,
+   "ref": 0.00154694,
    "source": "binance-futures"
   },
   "CYS": {
    "id": "cysic",
-   "rise": -49.0,
+   "rise": -50.5,
    "to": "2026-11-27",
-   "week": -6.0,
-   "ref": 0.0521282,
+   "week": -8.7,
+   "ref": 0.0506239,
    "source": "binance-futures"
   },
   "PIEVERSE": {
    "id": "pieverse",
-   "rise": 231.7,
+   "rise": 234.9,
    "to": "2026-11-27",
-   "week": 29.4,
-   "ref": 3.87072,
+   "week": 30.6,
+   "ref": 3.90738,
    "source": "binance-futures"
   },
   "ERA": {
    "id": "caldera",
-   "rise": 16.4,
+   "rise": 14.5,
    "to": "2026-11-27",
-   "week": 3.7,
-   "ref": 0.0749472,
+   "week": 1.9,
+   "ref": 0.073697,
    "source": "binance-futures"
   }
  },
@@ -121,7 +121,7 @@
    "support": [],
    "high": null,
    "low": null,
-   "ref": 0.17088,
+   "ref": 0.16639,
    "source": "coingecko",
    "last": {
     "pre30": 34.2,
@@ -178,7 +178,7 @@
    "support": [],
    "high": null,
    "low": null,
-   "ref": 7.16242,
+   "ref": 7.17073,
    "source": "coingecko",
    "last": {
     "pre30": -5.1,
@@ -319,7 +319,132 @@
     "what": "1 recipient, not named (schedule fits the ecosystem incentive pool, 120-month linear)",
     "kind": "monthly"
    }
+  },
+  "PIEVERSE": {
+   "asOf": "2026-11-27",
+   "resistance": [
+    {
+     "price": 5.3679,
+     "pct": 40.4,
+     "date": "2026-11-22"
+    }
+   ],
+   "support": [
+    {
+     "price": 1.5638,
+     "pct": -59.1,
+     "date": "2026-11-13"
+    },
+    {
+     "price": 1.2509,
+     "pct": -67.3,
+     "date": "2026-10-08"
+    }
+   ],
+   "high": 5.3679,
+   "low": 0.6253,
+   "ref": 3.8236,
+   "source": "binance-futures PIEVERSEUSDT",
+   "last": {
+    "pre30": 38.5,
+    "pre14": 63.6,
+    "pre7": 17.5,
+    "post7": 84.1,
+    "post14": null,
+    "pumpedInto": true,
+    "after": null,
+    "date": "2026-11-14",
+    "basis": "researched",
+    "source": "binance-futures PIEVERSEUSDT",
+    "what": "investors 25.0M, foundation 25.0M, ecosystem/marketing 19.75M, team/advisers 8.33M, community 8.3M (CMC via CoinStats); first insider release after 12-month lockup",
+    "kind": "cliff end / first monthly step"
+   }
+  },
+  "ERA": {
+   "asOf": "2026-11-27",
+   "resistance": [
+    {
+     "price": 0.07804,
+     "pct": 3.1,
+     "date": "2026-08-06"
+    },
+    {
+     "price": 0.07884,
+     "pct": 4.2,
+     "date": "2026-11-20"
+    }
+   ],
+   "support": [
+    {
+     "price": 0.0692,
+     "pct": -8.6,
+     "date": "2026-11-10"
+    },
+    {
+     "price": 0.06842,
+     "pct": -9.6,
+     "date": "2026-11-21"
+    }
+   ],
+   "high": 0.10226,
+   "low": 0.05,
+   "ref": 0.07567,
+   "source": "binance-futures ERAUSDT",
+   "last": {
+    "pre30": 17.8,
+    "pre14": 19.4,
+    "pre7": 4.7,
+    "post7": 1.4,
+    "post14": null,
+    "pumpedInto": false,
+    "after": null,
+    "date": "2026-11-17",
+    "basis": "researched",
+    "source": "binance-futures ERAUSDT",
+    "what": "early backers & investors, core team, treasury/foundation/R&D",
+    "kind": "monthly"
+   }
+  },
+  "H": {
+   "asOf": "2026-11-27",
+   "resistance": [
+    {
+     "price": 0.01732,
+     "pct": 48.0,
+     "date": "2026-11-19"
+    },
+    {
+     "price": 0.05581,
+     "pct": 377.0,
+     "date": "2026-11-08"
+    }
+   ],
+   "support": [
+    {
+     "price": 0.01019,
+     "pct": -12.9,
+     "date": "2026-11-21"
+    }
+   ],
+   "high": 0.17017,
+   "low": 0.01019,
+   "ref": 0.0117,
+   "source": "binance-futures HUSDT",
+   "last": {
+    "pre30": -77.5,
+    "pre14": -65.7,
+    "pre7": -20.9,
+    "post7": null,
+    "post14": null,
+    "pumpedInto": false,
+    "after": null,
+    "date": "2026-11-25",
+    "basis": "researched",
+    "source": "binance-futures HUSDT",
+    "what": "team, investors, ecosystem/foundation, identity rewards",
+    "kind": "monthly"
+   }
   }
  },
- "pumpCheckedAt": "2026-11-27T09:49:55Z"
+ "pumpCheckedAt": "2026-11-27T22:11:28Z"
 }

@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-11-27 09:49 UTC",
+ "generatedAt": "2026-11-27 22:11 UTC",
  "rule": "v5: only unlocks with a USDT perp we can short (Binance, Bybit, OKX, Bitget, Gate, Hyperliquid, KuCoin; never MEXC) are focused on",
  "avoid": {
   "mexc": "FinCEN order of 6 Nov 2026 cut MEXC off from the US financial system over sanctions evasion (fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf)"
  },
  "checked": {
-  "at": "2026-11-27 09:49 UTC",
+  "at": "2026-11-27 22:11 UTC",
   "reached": [
    "Binance (data files)",
    "OKX",
@@ -36,7 +36,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "PIEVERSE|2026-11-14": {
    "shortable": "yes",
@@ -50,14 +50,14 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "YZY|2026-11-14": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "ARB|2026-11-15": {
    "shortable": "yes",
@@ -72,7 +72,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "SEI|2026-11-15": {
    "shortable": "yes",
@@ -87,7 +87,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "STRK|2026-11-15": {
    "shortable": "yes",
@@ -102,7 +102,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "CRO|2026-11-16": {
    "shortable": "yes",
@@ -115,7 +115,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "PENGU|2026-11-17": {
    "shortable": "yes",
@@ -130,7 +130,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "ZK|2026-11-17": {
    "shortable": "yes",
@@ -145,7 +145,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "KAITO|2026-11-20": {
    "shortable": "yes",
@@ -160,7 +160,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "ZRO|2026-11-20": {
    "shortable": "yes",
@@ -175,7 +175,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "ARIA|2026-11-21": {
    "shortable": "yes",
@@ -188,7 +188,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "AKE|2026-11-21": {
    "shortable": "yes",
@@ -202,14 +202,14 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "MBG|2026-11-22": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "SOON|2026-11-23": {
    "shortable": "yes",
@@ -223,7 +223,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "MON|2026-11-24": {
    "shortable": "yes",
@@ -238,7 +238,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "SOSO|2026-11-24": {
    "shortable": "yes",
@@ -247,14 +247,14 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "RYO|2026-11-24": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "IRYS|2026-11-25": {
    "shortable": "yes",
@@ -268,7 +268,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "XPL|2026-11-25": {
    "shortable": "yes",
@@ -283,7 +283,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "H|2026-11-25": {
    "shortable": "yes",
@@ -297,7 +297,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "COAI|2026-11-25": {
    "shortable": "yes",
@@ -311,7 +311,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "HUMA|2026-11-26": {
    "shortable": "yes",
@@ -325,7 +325,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "PROS|2026-11-28": {
    "shortable": "yes",
@@ -337,7 +337,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "GRASS|2026-11-28": {
    "shortable": "yes",
@@ -352,7 +352,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "FF|2026-11-29": {
    "shortable": "yes",
@@ -365,7 +365,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "CARDS|2026-11-29": {
    "shortable": "yes",
@@ -374,7 +374,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "GRVT|2026-11-30": {
    "shortable": "yes",
@@ -388,7 +388,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "KMNO|2026-11-30": {
    "shortable": "yes",
@@ -401,7 +401,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "GUN|2026-11-30": {
    "shortable": "yes",
@@ -415,7 +415,7 @@
     "Bybit: can't confirm it's the same token"
    ],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "EIGEN|2026-12-01": {
    "shortable": "yes",
@@ -430,7 +430,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "SUI|2026-12-01": {
    "shortable": "yes",
@@ -445,7 +445,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "M|2026-12-02": {
    "shortable": "yes",
@@ -458,7 +458,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "BTW|2026-12-02": {
    "shortable": "yes",
@@ -472,7 +472,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "ENA|2026-12-02": {
    "shortable": "yes",
@@ -487,7 +487,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "2Z|2026-12-02": {
    "shortable": "yes",
@@ -502,7 +502,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "Q|2026-12-02": {
    "shortable": "yes",
@@ -515,7 +515,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "STO|2026-12-03": {
    "shortable": "yes",
@@ -528,7 +528,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "MMT|2026-12-04": {
    "shortable": "yes",
@@ -543,7 +543,7 @@
     "Bybit: can't confirm it's the same token"
    ],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "LA|2026-12-04": {
    "shortable": "yes",
@@ -557,7 +557,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "ENA|2026-12-05": {
    "shortable": "yes",
@@ -572,7 +572,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "HYPE|2026-12-06": {
    "shortable": "yes",
@@ -587,7 +587,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "TON|2026-12-06": {
    "shortable": "yes",
@@ -596,25 +596,25 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "WPAY|2026-12-08": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:48 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "ADI|2026-12-09": {
    "shortable": "no",
    "where": [],
    "notes": [
-    "Bitget: different asset: price 333.4 vs ~7.16 (CoinGecko's price)",
-    "Gate: different asset: price 337.5 vs ~7.16 (CoinGecko's price)",
-    "Bybit: different asset: price 345.8 vs ~7.16 (CoinGecko's price)"
+    "Bitget: different asset: price 333.4 vs ~7.17 (CoinGecko's price)",
+    "Gate: different asset: price 337.5 vs ~7.17 (CoinGecko's price)",
+    "Bybit: different asset: price 345.4 vs ~7.17 (CoinGecko's price)"
    ],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "WET|2026-12-09": {
    "shortable": "yes",
@@ -628,7 +628,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "MOVE|2026-12-09": {
    "shortable": "yes",
@@ -643,7 +643,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "JCT|2026-12-10": {
    "shortable": "yes",
@@ -658,7 +658,7 @@
     "Bybit: can't confirm it's the same token"
    ],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:10 UTC"
   },
   "LINEA|2026-12-10": {
    "shortable": "yes",
@@ -674,14 +674,14 @@
     "Bybit: can't confirm it's the same token"
    ],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "RAIN|2026-12-10": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "VELVET|2026-12-10": {
    "shortable": "yes",
@@ -694,7 +694,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "CYS|2026-12-11": {
    "shortable": "yes",
@@ -707,7 +707,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "US|2026-12-11": {
    "shortable": "yes",
@@ -720,7 +720,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "PUMP|2026-12-12": {
    "shortable": "yes",
@@ -734,7 +734,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "PIEVERSE|2026-12-14": {
    "shortable": "yes",
@@ -748,14 +748,14 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "YZY|2026-12-14": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "STRK|2026-12-15": {
    "shortable": "yes",
@@ -770,7 +770,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "SEI|2026-12-15": {
    "shortable": "yes",
@@ -785,7 +785,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "ARB|2026-12-16": {
    "shortable": "yes",
@@ -800,7 +800,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "CRO|2026-12-16": {
    "shortable": "yes",
@@ -813,7 +813,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "VANA|2026-12-16": {
    "shortable": "yes",
@@ -827,7 +827,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "ZK|2026-12-17": {
    "shortable": "yes",
@@ -842,7 +842,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "ERA|2026-12-17": {
    "shortable": "yes",
@@ -855,7 +855,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "ZRO|2026-12-20": {
    "shortable": "yes",
@@ -870,7 +870,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "KAITO|2026-12-20": {
    "shortable": "yes",
@@ -885,7 +885,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "AKE|2026-12-21": {
    "shortable": "yes",
@@ -899,7 +899,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "MON|2026-12-24": {
    "shortable": "yes",
@@ -914,7 +914,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "XPL|2026-12-25": {
    "shortable": "yes",
@@ -929,7 +929,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "H|2026-12-25": {
    "shortable": "yes",
@@ -943,7 +943,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "COAI|2026-12-25": {
    "shortable": "yes",
@@ -957,14 +957,14 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "KNTQ|2026-12-27": {
    "shortable": "no",
    "where": [],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "LIT|2026-12-27": {
    "shortable": "yes",
@@ -979,7 +979,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   },
   "ALLO|2027-05-11": {
    "shortable": "yes",
@@ -993,7 +993,7 @@
    ],
    "notes": [],
    "unreachable": [],
-   "checkedAt": "2026-11-27 09:49 UTC"
+   "checkedAt": "2026-11-27 22:11 UTC"
   }
  }
 }
