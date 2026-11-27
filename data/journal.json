@@ -3,6 +3,27 @@
  "entries": [
   {
    "date": "2026-11-27",
+   "title": "22:52 desk update: news refresh",
+   "did": [
+    "Refreshed stories, briefs and calendar; three independent verification rounds (137 claims checked, 16 removed).",
+    "Unlock loop skipped (data checked 04:14 UTC, under 24h); score.py re-run for freshness."
+   ],
+   "found": [
+    "Lead updated: bitcoin's bounce to ~$61,600 faded and it briefly dipped below $60,000 after the US open as Nvidia fell (CoinDesk live blog).",
+    "Strategy's mNAV recovered to about 0.94 after the 0.88 record low (Bitcoin.com News). CrowdStrike already reported on 23 Nov, so it was removed from Tue 1 Dec. FedWatch hike odds now 97.4% (Longbridge).",
+    "CoinMarketCap returned the same prices as the 11:57 UTC read (likely cached) and CoinGecko returned a stale page, so the market block was left at its 11:57 UTC reading with that time shown."
+   ],
+   "decided": [
+    "Dropped briefs whose sources the checker could not open (senators' SEC letter, bitcoin reserve bill, Zodia breach, Brazil stablecoin, ECB chief); re-sourced ETF flow points to The Block; added XRP Ledger lending vote and Asia crypto working group briefs. Skipped items seen only via an aggregator (GTokenTool)."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-27",
    "title": "18:52 desk update: news refresh",
    "did": [
     "Refreshed market, stories, briefs and calendar; two independent verification rounds (90 claims checked, 4 removed, 1 corrected).",

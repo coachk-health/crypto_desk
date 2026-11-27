@@ -1,7 +1,7 @@
 {
  "date": "2026-11-27",
- "updated": "2026-11-27T12:16:00Z",
- "headline": "Bitcoin is back above $61,000 and could end a seven-week losing streak after about $7 billion of options expired on Deribit, while US bitcoin funds stay on course for their worst month on record.",
+ "updated": "2026-11-27T16:14:12Z",
+ "headline": "Bitcoin gave back its early gains and briefly dipped below $60,000 after US stocks opened, but it is still on course to end a seven-week losing streak, while US bitcoin funds are on track for their worst month on record.",
  "market": {
   "asOf": "Read from CoinMarketCap's cryptocurrency list at about 11:57 UTC Fri 27 Nov (18:57 Bangkok). Use the live prices on this page.",
   "btc": {
@@ -20,46 +20,50 @@
  },
  "stories": [
   {
-   "title": "Bitcoin climbs back above $61,000 and could snap a seven-week losing streak",
+   "title": "Bitcoin's Friday bounce fades below $60,000, but its losing streak could still end",
    "mood": "volatile",
-   "summary": "Bitcoin rose on Friday alongside a rebound in US stock futures, after about $7 billion of bitcoin options expired on Deribit at 08:00 UTC. A higher weekly close would end its second-longest run of weekly losses on record, but November is still its worst month since June.",
+   "summary": "Bitcoin rose to about $61,600 on Friday morning, on a day when about $7 billion of bitcoin options expired on Deribit, then briefly dipped below $60,000 shortly after US stocks opened, as Nvidia shares fell. A higher weekly close on Sunday would still end seven straight weekly losses.",
    "points": [
-    "Bitcoin was around $61,600, up 1.8% since midnight UTC, and up about 0.6% for the week, per CoinDesk.",
-    "A weekly gain would end seven straight weekly losses, the second-longest such streak on record, per CoinDesk.",
-    "About $7 billion of bitcoin options expired on Deribit at 08:00 UTC, with traders positioned defensively, per CoinDesk.",
-    "Bitcoin is down about 20% in November, its worst month since June, per CoinDesk.",
-    "Crypto liquidations fell 61% to $242 million, and 71% of them hit short sellers (traders betting on falls), per CoinDesk."
+    "Bitcoin had risen 1.8% since midnight UTC to around $61,600 by late morning UTC, per CoinDesk.",
+    "Early gains faded in the first 20 minutes of US trading and bitcoin slipped below $60,000 as Nvidia fell more than 2%, per CoinDesk's live blog at 9:50am ET (14:50 UTC).",
+    "A weekly gain would end seven straight weekly losses, the second-longest such streak on record; bitcoin is down about 20% in November, its worst month since June, per CoinDesk.",
+    "CoinDesk says a \"death cross\" (the 50-day average dropping below the 200-day average) is near, but notes the pattern usually appears after a decline has already started.",
+    "About $7 billion of bitcoin options expired on Deribit at 08:00 UTC, per CoinDesk."
    ],
    "sources": [
+    {
+     "label": "CoinDesk live: bitcoin slips below $60,000",
+     "url": "https://www.coindesk.com/tech/2026/11/27/live-news-bitcoin-rebounds-above-usd61-000-as-ai-stocks-lead-premarket-gains"
+    },
     {
      "label": "CoinDesk: bitcoin on course to end seven-week losing streak",
      "url": "https://www.coindesk.com/markets/2026/11/27/bitcoin-on-course-to-end-seven-week-losing-streak-while-trailing-stock-rebound"
     },
     {
-     "label": "CoinDesk live: bitcoin rebounds above $61,000",
-     "url": "https://www.coindesk.com/tech/2026/11/27/live-news-bitcoin-rebounds-above-usd61-000-as-ai-stocks-lead-premarket-gains"
+     "label": "CoinDesk Daybook: bitcoin death cross is coming",
+     "url": "https://www.coindesk.com/daybook-us/2026/11/27/bitcoin-death-cross-is-coming-here-s-what-happened-after-previous-13"
     }
    ]
   },
   {
    "title": "US bitcoin funds head for a record-bad month, and Strategy leaves MSCI's indexes on Monday",
    "mood": "bearish",
-   "summary": "November withdrawals from US spot bitcoin funds have already set a record, even as the price bounces. Index funds tracking MSCI must sell Strategy (MSTR) shares by Monday's close, while JPMorgan reads Strategy's record-low value against its bitcoin as capitulation (sellers giving up).",
+   "summary": "November withdrawals from US spot bitcoin funds have already passed every previous month's total. MSCI's removal of Strategy (MSTR) from its indexes takes effect after Monday's close, which could prompt index funds to sell, while JPMorgan read Strategy's record-low value against its bitcoin as capitulation (sellers giving up).",
    "points": [
-    "US spot bitcoin funds lost a net $453.12 million on Wed 25 Nov, the seventh straight day of outflows; BlackRock's IBIT accounted for $329.71 million, per Bitcoin.com News.",
-    "Outflows total $3.05 billion over seven days and $5.39 billion in November, a monthly record, per Bitcoin.com News. US markets were shut on Thursday for Thanksgiving.",
-    "US spot ether funds lost $68.51 million on Wednesday, all from BlackRock's ETHA, per Bitcoin.com News.",
-    "Strategy's mNAV (market value divided by the value of its bitcoin) fell to a record-low 0.88 on 25 Nov, which JPMorgan said signals capitulation in bitcoin, per The Block.",
-    "MSCI's removal of Strategy takes effect after the close on Mon 30 Nov; MSCI-linked funds hold about 13 million shares (3.1%), and JPMorgan estimated about $2.8 billion of selling, per Cointelegraph."
+    "US spot bitcoin funds lost $453.1 million on Wed 25 Nov, the seventh negative day in a row; BlackRock's IBIT led with $329.7 million, per The Block.",
+    "November outflows of $5.39 billion so far are already more than in any previous month, per The Block.",
+    "US spot ether funds lost $68.5 million on Wednesday, their ninth straight negative day, and $1.3 billion so far in November, per The Block.",
+    "Strategy's mNAV (market value divided by the value of its bitcoin) hit a record-low 0.88 on 25 Nov and later recovered to about 0.94; JPMorgan said the low signals capitulation in bitcoin, per Bitcoin.com News.",
+    "MSCI's removal of Strategy takes effect at the close on Mon 30 Nov; MSCI-linked funds hold about 13 million shares (about 3.1% of Strategy's shares), and JPMorgan estimated about $2.8 billion of selling, per Cointelegraph."
    ],
    "sources": [
     {
-     "label": "Bitcoin.com News: bitcoin ETFs lose $3.05B in 7 days",
-     "url": "https://news.bitcoin.com/market-updates/bitcoin-etfs-lose-3-05b-in-7-days-as-november-outflows-hit-5-39b/"
+     "label": "The Block: spot bitcoin ETFs on track for worst month",
+     "url": "https://www.theblock.co/news/markets/2026-11-26-spot-bitcoin-etfs-worst-month-november-446814"
     },
     {
-     "label": "The Block: JPMorgan sees bitcoin capitulation in Strategy's low NAV",
-     "url": "https://www.theblock.co/news/markets/2026-11-26-jpmorgan-bitcoin-capitulation-strategy-low-nav-multiple-447007"
+     "label": "Bitcoin.com News: JPMorgan on Strategy's record-low NAV",
+     "url": "https://news.bitcoin.com/market-updates/jpmorgan-strategy-record-low-nav-bitcoin-capitulation-td-cowen/"
     },
     {
      "label": "Cointelegraph: MSCI confirms Strategy's removal",
@@ -93,19 +97,9 @@
    "url": "https://www.coindesk.com/markets/2026/11/27/monero-suffers-biggest-single-day-slide-in-over-5-months-here-s-why"
   },
   {
-   "title": "Democratic senators ask the SEC to pull its crypto plans",
-   "summary": "Sens. Warren and Van Hollen asked SEC Chair Atkins to withdraw \"Regulation Crypto Assets\" and the tokenized-securities innovation exemption, saying they let crypto firms bypass securities laws, per The Block.",
-   "url": "https://www.theblock.co/newsletters/the-daily/2026-11-26-jpmorgan-bitcoin-capitulation-democrats-sec-crypto-plans-more-news-447025"
-  },
-  {
-   "title": "Bitcoin reserve bill moves to the full House",
-   "summary": "The House Financial Services Committee advanced the American Reserve Modernization Act of 2026, which would write the Strategic Bitcoin Reserve into law and bar selling its bitcoin for at least 20 years; little time is left before Congress adjourns, per The Block.",
-   "url": "https://www.theblock.co/newsletters/the-daily/2026-11-26-jpmorgan-bitcoin-capitulation-democrats-sec-crypto-plans-more-news-447025"
-  },
-  {
-   "title": "Standard Chartered's Zodia Custody reports a data breach",
-   "summary": "An unauthorized party accessed some client names and emails, and Zodia reported no unauthorized transactions, per Decrypt.",
-   "url": "https://decrypt.co/384033/standard-chartereds-zodia-custody-says-hackers-accessed-client-contact-details"
+   "title": "Ripple's lending plan for the XRP Ledger is one vote short",
+   "summary": "The vaults part of the plan has 29 of 35 validator votes and could switch on 9 Dec; the lending part has 28 votes, exactly 80%, one short of what it needs, per CoinDesk.",
+   "url": "https://www.coindesk.com/markets/2026/11/27/ripple-s-lending-plan-moves-closer-to-tapping-xrp-ledger-s-usd950-million-in-stablecoins"
   },
   {
    "title": "Injective asks the SEC to allow order books for tokenized stocks",
@@ -113,19 +107,14 @@
    "url": "https://www.coindesk.com/markets/2026/11/27/injective-asks-sec-to-allow-order-books-for-tokenized-stock-trading"
   },
   {
-   "title": "Brazil's stock exchange and big banks plan a real-backed stablecoin",
-   "summary": "B3 and six firms including Itaú, Bradesco and Santander plan Open BRL, a stablecoin backed 1:1 by Brazilian reais, expected in the first quarter of 2027, per CoinDesk.",
-   "url": "https://www.coindesk.com/business/2026/11/27/brazil-s-stock-exchange-teams-up-with-major-banks-to-launch-real-pegged-stablecoin"
-  },
-  {
-   "title": "Next ECB chief favors tokenized bank deposits",
-   "summary": "Pablo Hernández de Cos, nominated to succeed Christine Lagarde, favors tokenized bank deposits over stablecoins and bitcoin, per CoinDesk.",
-   "url": "https://www.coindesk.com/policy/2026/11/27/next-ecb-chief-favors-tokenized-bank-deposits-over-stablecoins-and-bitcoin"
-  },
-  {
    "title": "Ethereum sets a test date for its Glamsterdam upgrade",
-   "summary": "Developers scheduled Glamsterdam for the Hoodi test network on 15 Dec at 19:12 UTC; no main-network date is set, per The Block.",
-   "url": "https://theblock.co/news/ecosystems/2026-11-27-ethereum-devs-schedule-glamsterdam-upgrade-hoodi-447051"
+   "summary": "Ethereum's Glamsterdam upgrade is cleared for a test on the Hoodi test network on 15 Dec, per CoinDesk.",
+   "url": "https://coindesk.com/tech/2026/11/27/ethereum-s-much-awaited-glamsterdam-upgrade-cleared-for-december-test-here-s-what-to-know"
+  },
+  {
+   "title": "China, Japan, South Korea and ASEAN plan a crypto working group",
+   "summary": "The countries will form a working group on digital payments and crypto regulation, per The Block.",
+   "url": "https://www.theblock.co/news/regulation/2026-11-26-china-japan-south-korea-asean-digital-payments-447029"
   }
  ],
  "calendar": [
@@ -143,7 +132,7 @@
    "event": "Binance Blockchain Week, Bangkok; Fed quiet period begins",
    "impact": "neutral",
    "key": false,
-   "note": "At the Queen Sirikit National Convention Center, per VentureSquare. The Fed's pre-meeting blackout runs from Sat 28 Nov to Thu 10 Dec, per PropDataLab's Fed blackout calendar."
+   "note": "At the Queen Sirikit National Convention Center, per Khaosod English. The Fed's pre-meeting blackout runs from Sat 28 Nov to Thu 10 Dec, per Admiral Markets."
   },
   {
    "et": "Sat 28 Nov – Fri 4 Dec",
@@ -159,7 +148,7 @@
    "event": "Chicago PMI (Nov)",
    "impact": "neutral",
    "key": false,
-   "note": "October was 55.3 (September 58.8), per Newsquawk. Release time per MNI."
+   "note": "October was 55.3 (September 58.8), per Newsquawk."
   },
   {
    "et": "Mon 30 Nov",
@@ -175,7 +164,7 @@
    "event": "MSCI removes Strategy (MSTR) from its indexes",
    "impact": "volatile",
    "key": true,
-   "note": "Takes effect after the close on 30 Nov. MSCI-linked funds hold about 13 million MSTR shares, about 3.1% of the total; JPMorgan estimated about $2.8 billion of selling, per Cointelegraph."
+   "note": "Takes effect at the close on 30 Nov. MSCI-linked funds hold about 13 million MSTR shares, about 3.1% of its shares outstanding; JPMorgan estimated about $2.8 billion of selling, per Cointelegraph."
   },
   {
    "et": "Tue 1 Dec · 10:00am",
@@ -183,7 +172,7 @@
    "event": "ISM manufacturing PMI (Nov), job openings (JOLTS, Oct); Fed's Bowman testifies to the House",
    "impact": "neutral",
    "key": false,
-   "note": "ISM: October was 55.5, per ISM; Wells Fargo expects 53.8, per ActionForex. JOLTS: September was about 7.5 million, per AP via KSAT; the BLS schedules October's release for 10:00am. Fed Vice Chair for Supervision Michelle Bowman testifies at the House Financial Services \"Oversight of Prudential Regulators\" hearing, per the Fed's calendar. CrowdStrike reports after the close, per its investor page; Marvell reports the same day, with its call at 4:30pm ET, per its investor page."
+   "note": "ISM: October was 55.5, per ISM; Wells Fargo expects 53.8, per ActionForex. JOLTS: September was about 7.5 million, per the BLS; the BLS schedules October's release for 10:00am. Fed Vice Chair for Supervision Michelle Bowman testifies at the House Financial Services \"Oversight of Prudential Regulators\" hearing, per the Fed's calendar. Marvell reports the same day, with its call at 4:30pm ET, per its investor page."
   },
   {
    "et": "Wed 2 Dec · 8:15am",
@@ -191,7 +180,7 @@
    "event": "ADP private payrolls (Nov); Salesforce and Snowflake earnings",
    "impact": "neutral",
    "key": false,
-   "note": "ADP's release is at 8:15am ET; October was +86,000, per ADP's release on Finviz. Salesforce and Snowflake report after the close, per their investor pages."
+   "note": "ADP's release is at 8:15am ET, per FinanceCalendar; October was +86,000, per Fox Business. Salesforce and Snowflake report after the close, per their investor pages."
   },
   {
    "et": "Thu 3 Dec · 8:30am",
@@ -199,7 +188,7 @@
    "event": "US jobless claims; ISM services PMI (Nov); Nvidia's Huang before the Senate",
    "impact": "neutral",
    "key": false,
-   "note": "Claims fell to 189,000 in the week to 21 Nov, per Stock Analysis. ISM services: October was 54.5, per investingLive; Wells Fargo expects 54.9, per ActionForex. The Senate Banking Committee chairman asked Nvidia CEO Jensen Huang to appear on 3 Dec, per Fortune."
+   "note": "Claims fell to 189,000 in the week to 21 Nov, per the Labor Department. ISM services: October was 54.5, per investingLive; Wells Fargo expects 54.9, per ActionForex. The Senate Banking Committee chairman set a public hearing with Nvidia CEO Jensen Huang for 10:00am ET on 3 Dec, per Yahoo News."
   },
   {
    "et": "Fri 4 Dec · 8:30am",
@@ -207,7 +196,7 @@
    "event": "US jobs report (Nov)",
    "impact": "volatile",
    "key": true,
-   "note": "Economists polled by LSEG expect +90,000 jobs and unemployment at 4.1%, per Reuters via AOL; Wells Fargo expects +80,000. October payrolls rose 165,000 and unemployment was 4.1%, per AP via ABC11. Release at 8:30am ET, per the BLS."
+   "note": "A Reuters poll expects +90,000 jobs, per Reuters' Take Five; ING and Wells Fargo expect +80,000 with unemployment at 4.1%. October payrolls rose 165,000 and unemployment was 4.1%, per Fox Business. Release at 8:30am ET, per the BLS."
   },
   {
    "et": "Wed 9 Dec · 2:00pm",
@@ -215,15 +204,15 @@
    "event": "Fed rate decision (meeting 8-9 Dec)",
    "impact": "volatile",
    "key": true,
-   "note": "Markets expect a rate hike, not a cut: the Fed is \"widely expected to raise interest rates by a quarter percentage point\", per Reuters via AOL, and CME FedWatch showed a 94.4% chance of a quarter-point hike on 25 Nov, per Admiral Markets. The Fed's calendar lists the meeting at 2:00pm ET and the press conference at 2:30pm ET."
+   "note": "Markets expect a rate hike, not a cut: CME FedWatch showed a 97.4% chance of a quarter-point hike late on 26 Nov, per Longbridge, and Reuters says the debate is between a quarter-point and a half-point move. The Fed's calendar lists the decision at 2:00pm ET and the press conference at 2:30pm ET."
   }
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-11-27T12:16:00Z",
-  "claimsChecked": 90,
-  "claimsRemoved": 4,
-  "rounds": 2,
+  "checkedAt": "2026-11-27T16:14:12Z",
+  "claimsChecked": 137,
+  "claimsRemoved": 16,
+  "rounds": 3,
   "method": "Independent source check: every claim re-opened at its cited URL"
  }
 }
