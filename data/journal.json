@@ -2,6 +2,27 @@
  "about": "Running record of what we have done on the desk: every change, test and decision, newest first. Entries are only ever added, never edited or removed. Add one entry per working session (see CLAUDE.md).",
  "entries": [
   {
+   "date": "2026-11-28",
+   "title": "02:52 desk update: news refresh",
+   "did": [
+    "Refreshed stories, briefs and calendar; two independent verification rounds (107 claims checked, 4 removed or reworded).",
+    "Unlock loop skipped (data checked 04:14 UTC 27 Nov, under 24h); score.py re-run for freshness."
+   ],
+   "found": [
+    "Lead updated: bitcoin's Friday rise above $62,000 failed and it fell below $59,000 after the US open, ending below its $61,271 weekly open (Decrypt, crypto.news, Cointelegraph).",
+    "US spot bitcoin fund outflows hit a record $5.39B for November per Farside (CoinReporter). Sources differ on who estimated ~$2.8B of MSTR selling from the MSCI exit (Cointelegraph: JPMorgan; FinanceFeeds: Strategy).",
+    "CoinMarketCap and CoinGecko pages returned conflicting or stale prices, so ETH/SOL snapshots and Fear & Greed were left out; BTC snapshot taken from Decrypt's article."
+   ],
+   "decided": [
+    "Dropped the Glamsterdam brief (CoinDesk page could not be opened) and the 'world's biggest exchange' wording (not in sources). Added stablecoin-supply, Tether/Bitdeer, CZ, KuCoin XMR delisting, NovaTech, Zodia and Spain briefs. Calendar consensus figures now from Economic Weekly; FedWatch 97.5% hike odds (Beansprout, 27 Nov)."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
    "date": "2026-11-27",
    "title": "22:52 desk update: news refresh",
    "did": [

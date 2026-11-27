@@ -1,69 +1,71 @@
 {
- "date": "2026-11-27",
- "updated": "2026-11-27T16:14:12Z",
- "headline": "Bitcoin gave back its early gains and briefly dipped below $60,000 after US stocks opened, but it is still on course to end a seven-week losing streak, while US bitcoin funds are on track for their worst month on record.",
+ "date": "2026-11-28",
+ "updated": "2026-11-27T20:05:46Z",
+ "headline": "Bitcoin slipped back below $60,000 on Friday even as US stocks rallied after Thanksgiving, putting its hoped-for end to a seven-week losing streak in doubt, as US bitcoin funds close out their worst month on record.",
  "market": {
-  "asOf": "Read from CoinMarketCap's cryptocurrency list at about 11:57 UTC Fri 27 Nov (18:57 Bangkok). Use the live prices on this page.",
+  "asOf": "Bitcoin read from Decrypt's article published about 19:46 UTC Fri 27 Nov (02:46 Bangkok Sat): $59,576, down 1.58% on the daily chart. Ether and Solana snapshots could not be confirmed this run. Use the live prices on this page.",
   "btc": {
-   "price": 61613.52,
-   "chg24h": 1.8
+   "price": 59576,
+   "chg24h": null
   },
-  "eth": {
-   "price": 1732.6,
-   "chg24h": 2.74
-  },
-  "sol": {
-   "price": 72.92,
-   "chg24h": 3.11
-  },
-  "fearGreed": "Alternative.me's index reads 11 out of 100 (\"Extreme Fear\", 13 a day earlier); CoinMarketCap's Fear and Greed Index reads 10 (\"Extreme fear\"). Read about 11:57 UTC Fri 27 Nov."
+  "eth": null,
+  "sol": null,
+  "fearGreed": "Not confirmed this run."
  },
  "stories": [
   {
-   "title": "Bitcoin's Friday bounce fades below $60,000, but its losing streak could still end",
-   "mood": "volatile",
-   "summary": "Bitcoin rose to about $61,600 on Friday morning, on a day when about $7 billion of bitcoin options expired on Deribit, then briefly dipped below $60,000 shortly after US stocks opened, as Nvidia shares fell. A higher weekly close on Sunday would still end seven straight weekly losses.",
+   "title": "Bitcoin's Friday bounce fails and it drops back below $60,000",
+   "mood": "bearish",
+   "summary": "Bitcoin climbed above $62,000 early on Friday, then fell to under $59,000 after US stock trading opened, even though stocks rose. Earlier on Friday it had been up for the week, on course to end a seven-week losing streak; it is now below where the week started.",
    "points": [
-    "Bitcoin had risen 1.8% since midnight UTC to around $61,600 by late morning UTC, per CoinDesk.",
-    "Early gains faded in the first 20 minutes of US trading and bitcoin slipped below $60,000 as Nvidia fell more than 2%, per CoinDesk's live blog at 9:50am ET (14:50 UTC).",
-    "A weekly gain would end seven straight weekly losses, the second-longest such streak on record; bitcoin is down about 20% in November, its worst month since June, per CoinDesk.",
-    "CoinDesk says a \"death cross\" (the 50-day average dropping below the 200-day average) is near, but notes the pattern usually appears after a decline has already started.",
-    "About $7 billion of bitcoin options expired on Deribit at 08:00 UTC, per CoinDesk."
+    "Bitcoin was at $59,576, down 1.58% on the day, after an intraday high of $62,210, and is more than 52% below its all-time high, per Decrypt (about 19:46 UTC).",
+    "The low was $58,792; the week opened at $61,271, so bitcoin is now below its weekly open, per crypto.news.",
+    "About $228 million of crypto bets were liquidated (forcibly closed) in the hour to 15:00 UTC, while the S&P 500 opened 0.9% higher and the Nasdaq 1.4% higher, per Cointelegraph.",
+    "About $6.8 billion of bitcoin options expired on Deribit on Friday, per Decrypt.",
+    "Bitcoin is down about 20% in November, per CoinDesk."
    ],
    "sources": [
     {
-     "label": "CoinDesk live: bitcoin slips below $60,000",
+     "label": "Decrypt: bitcoin's four scary charts",
+     "url": "https://decrypt.co/384177/bitcoin-4-scary-charts-crypto-winter-bear-market"
+    },
+    {
+     "label": "crypto.news: bitcoin slips below $60K",
+     "url": "https://crypto.news/bitcoin-price-slips-below-60k-traders-watch-55k/"
+    },
+    {
+     "label": "Cointelegraph: bitcoin below $59K as tech stocks rebound",
+     "url": "https://cointelegraph.com/markets/bitcoin-price-below-59k-anthropic-tech-stock-rebound"
+    },
+    {
+     "label": "Decrypt: $7 billion of bitcoin options just expired",
+     "url": "https://decrypt.co/384154/7-billion-bitcoin-options-just-expired-what-it-means"
+    },
+    {
+     "label": "CoinDesk live blog, 27 Nov",
      "url": "https://www.coindesk.com/tech/2026/11/27/live-news-bitcoin-rebounds-above-usd61-000-as-ai-stocks-lead-premarket-gains"
-    },
-    {
-     "label": "CoinDesk: bitcoin on course to end seven-week losing streak",
-     "url": "https://www.coindesk.com/markets/2026/11/27/bitcoin-on-course-to-end-seven-week-losing-streak-while-trailing-stock-rebound"
-    },
-    {
-     "label": "CoinDesk Daybook: bitcoin death cross is coming",
-     "url": "https://www.coindesk.com/daybook-us/2026/11/27/bitcoin-death-cross-is-coming-here-s-what-happened-after-previous-13"
     }
    ]
   },
   {
-   "title": "US bitcoin funds head for a record-bad month, and Strategy leaves MSCI's indexes on Monday",
+   "title": "US bitcoin funds set a record for monthly withdrawals, and Strategy leaves MSCI's indexes on Monday",
    "mood": "bearish",
-   "summary": "November withdrawals from US spot bitcoin funds have already passed every previous month's total. MSCI's removal of Strategy (MSTR) from its indexes takes effect after Monday's close, which could prompt index funds to sell, while JPMorgan read Strategy's record-low value against its bitcoin as capitulation (sellers giving up).",
+   "summary": "Money pulled from US spot bitcoin funds in November is already a record. On Monday at the close, MSCI removes Strategy (MSTR), the biggest company holder of bitcoin, from its indexes, and funds that track those indexes are expected to sell some of its shares.",
    "points": [
-    "US spot bitcoin funds lost $453.1 million on Wed 25 Nov, the seventh negative day in a row; BlackRock's IBIT led with $329.7 million, per The Block.",
-    "November outflows of $5.39 billion so far are already more than in any previous month, per The Block.",
-    "US spot ether funds lost $68.5 million on Wednesday, their ninth straight negative day, and $1.3 billion so far in November, per The Block.",
-    "Strategy's mNAV (market value divided by the value of its bitcoin) hit a record-low 0.88 on 25 Nov and later recovered to about 0.94; JPMorgan said the low signals capitulation in bitcoin, per Bitcoin.com News.",
-    "MSCI's removal of Strategy takes effect at the close on Mon 30 Nov; MSCI-linked funds hold about 13 million shares (about 3.1% of Strategy's shares), and JPMorgan estimated about $2.8 billion of selling, per Cointelegraph."
+    "November outflows reached $5.39 billion per Farside data, above the previous record of $4.51 billion set in June, per CoinReporter.",
+    "On Wed 25 Nov the funds lost $453 million, led by BlackRock's IBIT at $329.7 million, per CoinReporter. US markets were shut on Thanksgiving, so there was no flow data for Thursday.",
+    "Strategy holds 851,305 bitcoin at an average cost of $75,446, well above today's price, per FinanceFeeds.",
+    "Sources differ on the expected selling from the MSCI exit: Cointelegraph credits JPMorgan with an estimate of about $2.8 billion; FinanceFeeds says Strategy itself estimated about $2.8 billion of its stock could be sold.",
+    "MSCI-linked funds hold about 13 million Strategy shares, about 3.1% of its shares, per Cointelegraph."
    ],
    "sources": [
     {
-     "label": "The Block: spot bitcoin ETFs on track for worst month",
-     "url": "https://www.theblock.co/news/markets/2026-11-26-spot-bitcoin-etfs-worst-month-november-446814"
+     "label": "CoinReporter: bitcoin ETF outflows hit a record $5.39 billion",
+     "url": "https://www.coinreporter.io/2026/11/bitcoin-etf-outflows-record-5-39-billion-november/"
     },
     {
-     "label": "Bitcoin.com News: JPMorgan on Strategy's record-low NAV",
-     "url": "https://news.bitcoin.com/market-updates/jpmorgan-strategy-record-low-nav-bitcoin-capitulation-td-cowen/"
+     "label": "FinanceFeeds: MSCI to remove Strategy on 30 Nov",
+     "url": "https://financefeeds.com/msci-to-remove-strategy-from-global-indexes-on-november-30-as-bitcoin-trades-20-below-companys-cost-basis/"
     },
     {
      "label": "Cointelegraph: MSCI confirms Strategy's removal",
@@ -72,67 +74,72 @@
    ]
   },
   {
-   "title": "Binance fully lifts its withdrawal freeze four weeks after the $6.3 billion hack",
-   "mood": "bullish",
-   "summary": "Binance, the world's biggest crypto exchange, says withdrawals are back to normal after the 29 October hack. Withdrawals had been reopening in stages, and a few networks remain paused for maintenance.",
+   "title": "Binance's withdrawals are back to normal, but funds from the hack are still moving",
+   "mood": "neutral",
+   "summary": "Binance says the withdrawal freeze from its 29 October hack is fully lifted, with a few networks still paused for maintenance. On Friday a wallet tied to the hack moved about $19.7 million of ether.",
    "points": [
-    "Binance said \"the withdrawal suspension from the October security incident has been fully lifted\", per CoinDesk.",
-    "The hack affected about $6.3 billion in assets, of which about $3 billion was frozen, per CoinDesk.",
-    "Binance said it had restored 90% of the stolen crypto by 31 Oct, using company funds and its SAFU emergency reserve, and 98% of the $6.34 billion by 3 Nov, per CoinDesk.",
-    "Withdrawals for a small number of networks are still temporarily paused for maintenance or planned upgrades, per Binance via CoinDesk.",
-    "TRM Labs linked the attack to North Korea's TraderTraitor group, and the FBI also pointed to North Korea, per CoinDesk."
+    "Binance said the withdrawal suspension from the October security incident has been fully lifted; a small number of networks remain paused for maintenance, per Decrypt via Yahoo Finance.",
+    "Binance set aside $6.34 billion to cover losses and won a $6.5 billion freezing order in Abu Dhabi, per Decrypt via Yahoo Finance.",
+    "The US Justice Department filed to seize more than $1.1 billion in USDC, and the FBI blames North Korea's TraderTraitor group, per Decrypt via Yahoo Finance.",
+    "On Friday 11,989 ETH (about $19.7 million) moved from a wallet tied to the hack, per TokenPost."
    ],
    "sources": [
     {
-     "label": "CoinDesk: Binance says its withdrawal suspension is over",
-     "url": "https://www.coindesk.com/markets/2026/11/27/binance-says-its-withdrawal-suspension-is-over-four-weeks-after-a-usd6-3-billion-hack"
+     "label": "Decrypt via Yahoo Finance: Binance fully lifts withdrawal suspension",
+     "url": "https://finance.yahoo.com/markets/crypto/articles/binance-fully-lifts-withdrawal-suspension-132417972.html"
+    },
+    {
+     "label": "TokenPost: hack-linked wallet moves ETH",
+     "url": "https://tokenpost.com/news/technology/63725"
     }
    ]
   }
  ],
  "briefs": [
   {
-   "title": "Monero has its worst day in over five months",
-   "summary": "XMR fell more than 11% on Thursday, touching $430; KuCoin says it will delist XMR trading pairs at 08:00 UTC on 30 Nov, per CoinDesk.",
-   "url": "https://www.coindesk.com/markets/2026/11/27/monero-suffers-biggest-single-day-slide-in-over-5-months-here-s-why"
+   "title": "Less new stablecoin money is coming into crypto",
+   "summary": "USDT supply on Ethereum and Tron fell $8.1 billion (4.4%) in the 60 days to 23 Nov, the biggest such drop since August 2022, to $174.5 billion, per CryptoQuant via The Block.",
+   "url": "https://www.theblock.co/news/markets/2026-11-27-cryptoquant-bitcoin-price-recovery-usdt-supply-growth-447560"
   },
   {
-   "title": "Ripple's lending plan for the XRP Ledger is one vote short",
-   "summary": "The vaults part of the plan has 29 of 35 validator votes and could switch on 9 Dec; the lending part has 28 votes, exactly 80%, one short of what it needs, per CoinDesk.",
-   "url": "https://www.coindesk.com/markets/2026/11/27/ripple-s-lending-plan-moves-closer-to-tapping-xrp-ledger-s-usd950-million-in-stablecoins"
+   "title": "Tether raises its stake in bitcoin miner Bitdeer",
+   "summary": "Tether bought about 3.72 million Bitdeer shares for about $10 million and now owns 17.9%; Bitdeer's stock is down 74.3% this year, per The Block.",
+   "url": "https://www.theblock.co/news/business/2026-11-27-tether-buys-10-million-of-bitdeer-shares-as-stock-hovers-near-all-time-low-447554"
   },
   {
-   "title": "Injective asks the SEC to allow order books for tokenized stocks",
-   "summary": "Injective asked the SEC to extend its proposed innovation exemption for tokenized US stocks to on-chain order-book venues, not just liquidity pools, per CoinDesk.",
-   "url": "https://www.coindesk.com/markets/2026/11/27/injective-asks-sec-to-allow-order-books-for-tokenized-stock-trading"
+   "title": "CZ calls $60,000 bitcoin an \"attractive price\"",
+   "summary": "Binance founder Changpeng Zhao said he hopes pessimism has peaked, speaking at BNB Chain Demo Night, per Bloomingbit.",
+   "url": "https://en.bloomingbit.io/feed/news/125409"
   },
   {
-   "title": "Ethereum sets a test date for its Glamsterdam upgrade",
-   "summary": "Ethereum's Glamsterdam upgrade is cleared for a test on the Hoodi test network on 15 Dec, per CoinDesk.",
-   "url": "https://coindesk.com/tech/2026/11/27/ethereum-s-much-awaited-glamsterdam-upgrade-cleared-for-december-test-here-s-what-to-know"
+   "title": "KuCoin delists Monero on Monday",
+   "summary": "KuCoin will remove XMR spot trading pairs at 08:00 UTC on 30 Nov; withdrawals stay open until 31 Dec, per KuCoin.",
+   "url": "https://www.kucoin.com/announcement/en-kucoin-will-delist-xmr-on-2026-11-30"
   },
   {
-   "title": "China, Japan, South Korea and ASEAN plan a crypto working group",
-   "summary": "The countries will form a working group on digital payments and crypto regulation, per The Block.",
-   "url": "https://www.theblock.co/news/regulation/2026-11-26-china-japan-south-korea-asean-digital-payments-447029"
+   "title": "New York wins a $1.37 billion judgment over NovaTech",
+   "summary": "New York's Attorney General won the ruling against NovaTech's founders; the firm raised about $650 million from more than 200,000 investors, per CoinDesk.",
+   "url": "https://www.coindesk.com/policy/2026/11/26/new-york-attorney-general-wins-usd1-4-billion-ruling-against-founders-of-crypto-trading-firm-novatech"
+  },
+  {
+   "title": "Standard Chartered's Zodia Custody reports a data breach",
+   "summary": "Client and employee contact details were exposed; Zodia says there were no unauthorized transactions, per CoinDesk.",
+   "url": "https://www.coindesk.com/tech/2026/11/26/standard-chartered-s-zodia-custody-suffers-data-breach-exposing-client-information"
+  },
+  {
+   "title": "Spain lets its financial watchdog freeze crypto accounts",
+   "summary": "A new decree lets Spain's financial intelligence unit freeze crypto accounts for up to 5 business days without a court order, from 25 Jan 2027, per Cointelegraph.",
+   "url": "https://cointelegraph.com/news/what-happened-in-crypto-today"
   }
  ],
  "calendar": [
-  {
-   "et": "Fri 27 Nov · 1:00pm",
-   "bkk": "Sat 28 · 01:00",
-   "event": "US stock markets close early after Thanksgiving",
-   "impact": "neutral",
-   "key": false,
-   "note": "Stocks close at 1:00pm ET, per NYSE; SIFMA recommends a 2:00pm ET early close for US bond markets."
-  },
   {
    "et": "Sat 28 – Sun 29 Nov",
    "bkk": "Sat 28 – Sun 29 Nov",
    "event": "Binance Blockchain Week, Bangkok; Fed quiet period begins",
    "impact": "neutral",
    "key": false,
-   "note": "At the Queen Sirikit National Convention Center, per Khaosod English. The Fed's pre-meeting blackout runs from Sat 28 Nov to Thu 10 Dec, per Admiral Markets."
+   "note": "At the Queen Sirikit National Convention Center, per Khaosod English. The Fed's pre-meeting blackout runs from Sat 28 Nov to Thu 10 Dec, per the Federal Reserve."
   },
   {
    "et": "Sat 28 Nov – Fri 4 Dec",
@@ -143,12 +150,20 @@
    "note": "PROS and GRASS on Saturday 28; FF and CARDS on Sunday 29; GRVT, KMNO and GUN on Monday 30 (one tracker gives GUN on the 29th); EIGEN and SUI on Tuesday 1 Dec; M, BTW, ENA, 2Z and Q on Wednesday 2 Dec (M's date is disputed: Tokenomist shows 12 Dec); STO on Thursday 3 Dec; MMT and LA on Friday 4 Dec. See the unlock table on this page for sizes and confidence. (Dates from this desk's unlock data.)"
   },
   {
+   "et": "Mon 30 Nov · 3:00am",
+   "bkk": "Mon 30 · 15:00",
+   "event": "KuCoin delists Monero (XMR) trading pairs",
+   "impact": "neutral",
+   "key": false,
+   "note": "XMR/USDT, USDC, ETH and BTC spot pairs are removed at 08:00 UTC; withdrawals close 31 Dec, per KuCoin."
+  },
+  {
    "et": "Mon 30 Nov · 9:45am",
    "bkk": "Mon 30 · 21:45",
    "event": "Chicago PMI (Nov)",
    "impact": "neutral",
    "key": false,
-   "note": "October was 55.3 (September 58.8), per Newsquawk."
+   "note": "October was 55.3, per Newsquawk. Release time per MNI."
   },
   {
    "et": "Mon 30 Nov",
@@ -156,7 +171,7 @@
    "event": "Trump Media (DJT) noteholders can demand repayment",
    "impact": "volatile",
    "key": false,
-   "note": "Holders of its convertible notes can require the company to buy them back for cash; about $883.5 million is outstanding after a $100 million buyback, and its filing warns it may need to sell bitcoin to fund repurchases, per CoinDesk."
+   "note": "About $883.5 million of convertible notes are outstanding; the company holds about 15,649 bitcoin, of which 4,261 are pledged as collateral for the notes, per Bitcoin.com News."
   },
   {
    "et": "Mon 30 Nov · 4:00pm",
@@ -164,7 +179,7 @@
    "event": "MSCI removes Strategy (MSTR) from its indexes",
    "impact": "volatile",
    "key": true,
-   "note": "Takes effect at the close on 30 Nov. MSCI-linked funds hold about 13 million MSTR shares, about 3.1% of its shares outstanding; JPMorgan estimated about $2.8 billion of selling, per Cointelegraph."
+   "note": "Takes effect at the close on 30 Nov. MSCI-linked funds hold about 13 million MSTR shares, about 3.1% of its shares; JPMorgan estimated about $2.8 billion of selling, per Cointelegraph. Metaplanet and Upexi are also being removed."
   },
   {
    "et": "Tue 1 Dec · 10:00am",
@@ -172,7 +187,7 @@
    "event": "ISM manufacturing PMI (Nov), job openings (JOLTS, Oct); Fed's Bowman testifies to the House",
    "impact": "neutral",
    "key": false,
-   "note": "ISM: October was 55.5, per ISM; Wells Fargo expects 53.8, per ActionForex. JOLTS: September was about 7.5 million, per the BLS; the BLS schedules October's release for 10:00am. Fed Vice Chair for Supervision Michelle Bowman testifies at the House Financial Services \"Oversight of Prudential Regulators\" hearing, per the Fed's calendar. Marvell reports the same day, with its call at 4:30pm ET, per its investor page."
+   "note": "ISM: consensus 55.2, October 55.5, per Economic Weekly. JOLTS: September was 7.5 million, per the BLS. Fed Vice Chair for Supervision Michelle Bowman testifies at the House Financial Services \"Oversight of Prudential Regulators\" hearing, per the Fed's calendar. Marvell reports after the close, per StockTitan."
   },
   {
    "et": "Wed 2 Dec · 8:15am",
@@ -180,15 +195,15 @@
    "event": "ADP private payrolls (Nov); Salesforce and Snowflake earnings",
    "impact": "neutral",
    "key": false,
-   "note": "ADP's release is at 8:15am ET, per FinanceCalendar; October was +86,000, per Fox Business. Salesforce and Snowflake report after the close, per their investor pages."
+   "note": "ADP: consensus 80,000, October 86,000, per Economic Weekly. Salesforce and Snowflake report after the close, per StockTitan."
   },
   {
    "et": "Thu 3 Dec · 8:30am",
    "bkk": "Thu 3 · 20:30",
-   "event": "US jobless claims; ISM services PMI (Nov); Nvidia's Huang before the Senate",
+   "event": "US jobless claims; ISM services PMI (Nov); Jensen Huang before the Senate",
    "impact": "neutral",
    "key": false,
-   "note": "Claims fell to 189,000 in the week to 21 Nov, per the Labor Department. ISM services: October was 54.5, per investingLive; Wells Fargo expects 54.9, per ActionForex. The Senate Banking Committee chairman set a public hearing with Nvidia CEO Jensen Huang for 10:00am ET on 3 Dec, per Yahoo News."
+   "note": "Claims: consensus 193,000, prior 189,000. ISM services at 10:00am: consensus 54.5, October 54.5. Both per Economic Weekly. The Senate Banking Committee holds a public hearing with Nvidia's Jensen Huang on AI-chip export controls at 10:00am ET, per JBizNews."
   },
   {
    "et": "Fri 4 Dec · 8:30am",
@@ -196,7 +211,7 @@
    "event": "US jobs report (Nov)",
    "impact": "volatile",
    "key": true,
-   "note": "A Reuters poll expects +90,000 jobs, per Reuters' Take Five; ING and Wells Fargo expect +80,000 with unemployment at 4.1%. October payrolls rose 165,000 and unemployment was 4.1%, per Fox Business. Release at 8:30am ET, per the BLS."
+   "note": "Consensus +90,000 jobs with unemployment at 4.1%; October was +165,000 and 4.1%, per Economic Weekly. Weekly bitcoin options also expire at 08:00 UTC (03:00am ET) that day, per BasisCharts."
   },
   {
    "et": "Wed 9 Dec · 2:00pm",
@@ -204,15 +219,15 @@
    "event": "Fed rate decision (meeting 8-9 Dec)",
    "impact": "volatile",
    "key": true,
-   "note": "Markets expect a rate hike, not a cut: CME FedWatch showed a 97.4% chance of a quarter-point hike late on 26 Nov, per Longbridge, and Reuters says the debate is between a quarter-point and a half-point move. The Fed's calendar lists the decision at 2:00pm ET and the press conference at 2:30pm ET."
+   "note": "Markets expect a rate hike, not a cut: CME FedWatch showed a 97.5% chance of a quarter-point hike as of 27 Nov, per Beansprout, and 97.8% after the 25 Nov PCE release, per Gate News. The Fed's calendar lists the decision at 2:00pm ET and the press conference at 2:30pm ET."
   }
  ],
  "breaking": [],
  "verification": {
-  "checkedAt": "2026-11-27T16:14:12Z",
-  "claimsChecked": 137,
-  "claimsRemoved": 16,
-  "rounds": 3,
+  "checkedAt": "2026-11-27T20:05:46Z",
+  "claimsChecked": 107,
+  "claimsRemoved": 4,
+  "rounds": 2,
   "method": "Independent source check: every claim re-opened at its cited URL"
  }
 }
