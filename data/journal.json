@@ -3,6 +3,24 @@
   "entries": [
     {
       "date": "2026-11-27",
+      "title": "06:52 desk update: news refresh",
+      "did": [
+        "Refreshed market snapshot, stories, briefs and calendar; two independent verification rounds (133 claims checked, 11 removed). Unlock loop skipped (checked under 24h ago, not the 10:52 run); scores refreshed."
+      ],
+      "found": [
+        "No new lead story overnight; added the 08:00 UTC (3pm Bangkok) Deribit settlement time and Bitcoinist's 0.85 put/call next to CoinDesk's 0.89. Price pages disagreed, so 24h changes were left out. Decrypt pages could not be opened, so the death-cross and FCA items were removed."
+      ],
+      "decided": [
+        "Kept ETF outflows as lead; swapped in Zodia breach, Binance hack funds, DOJ crackdown and DeFi bounce briefs."
+      ],
+      "files": [
+        "data/news.json",
+        "data/unlocks.json",
+        "data/journal.json"
+      ]
+    },
+    {
+      "date": "2026-11-27",
       "title": "02:52 desk update: news refresh",
       "did": [
         "Refreshed news.json: ETF outflow record stays the lead; bitcoin/options story updated (Bitstamp $57,209 low and $61,509 high, death cross, liquidations mostly shorts); new third story on JPMorgan's Strategy 'capitulation' note and Glassnode dormant supply; DOJ and NovaTech moved to briefs; new briefs (KuCoin Monero delisting 30 Nov, UK FCA DeFi plan, Swiss BBIT ETF, Ripple share valuations).",
