@@ -3,6 +3,27 @@
  "entries": [
   {
    "date": "2026-11-28",
+   "title": "06:52 desk update: news refresh",
+   "did": [
+    "Refreshed stories, briefs and calendar; two independent verification rounds (109 claims checked, 9 removed or reworded).",
+    "Unlock loop skipped (data checked 04:14 UTC 27 Nov, under 24h); score.py re-run for freshness."
+   ],
+   "found": [
+    "Lead updated: bitcoin stayed just under $60,000 into Friday evening ($59,772 at 5:55pm ET, Business Upturn) while the S&P 500 rose 1.6% (Motley Fool); now below its $61,172 weekly open (CryptoTicker, CoinGecko hourly). Weekly candle closes Sunday.",
+    "Strategy hit a record mNAV discount of 0.88x (CoinMarketCap Academy). FedWatch odds of a 9 Dec quarter-point hike now 99.2% (Investing.com).",
+    "BTC/ETH/SOL snapshot from Business Upturn; Fear & Greed from CoinMarketCap Academy (CMC index 9). CoinGecko, CoinMarketCap and alternative.me pages could not be opened."
+   ],
+   "decided": [
+    "Dropped the 11,989 ETH hack-wallet point, the USDT supply brief and CoinReporter credit (pages could not be re-opened this run), and the 2:00pm ET Fed statement time (Fed calendar lists only the 2:30pm press conference). Added Fidelity LINK fund, Franklin/HYPE, Warren-Van Hollen, miner hashrate hijack and Brazil Open BRL briefs; dropped Tether/Bitdeer, CZ, NovaTech and Zodia. Added OPEC+ 29 Nov meeting to calendar."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-28",
    "title": "02:52 desk update: news refresh",
    "did": [
     "Refreshed stories, briefs and calendar; two independent verification rounds (107 claims checked, 4 removed or reworded).",
