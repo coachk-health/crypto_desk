@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T22:11:19Z",
+ "generatedAt": "2026-11-28T09:02:03Z",
  "rules": {
   "version": "v5",
   "frozenOn": "2026-11-25",
@@ -110,10 +110,11 @@
      "-3": 0.01313
     },
     "exits": {
-     "1": 0.01104
+     "1": 0.01104,
+     "3": 0.01018
     },
-    "lastClose": 0.01035,
-    "asOf": "2026-11-26",
+    "lastClose": 0.01018,
+    "asOf": "2026-11-27",
     "shadowPartial": {
      "status": "closed",
      "pct": 34.4,
@@ -151,8 +152,8 @@
     "exits": {
      "1": 0.01588
     },
-    "lastClose": 0.01588,
-    "asOf": "2026-11-26",
+    "lastClose": 0.01598,
+    "asOf": "2026-11-27",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -201,9 +202,11 @@
      "-7": 0.008463,
      "-3": 0.00836
     },
-    "exits": {},
-    "lastClose": 0.006809,
-    "asOf": "2026-11-26",
+    "exits": {
+     "1": 0.006914
+    },
+    "lastClose": 0.006914,
+    "asOf": "2026-11-27",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -221,7 +224,7 @@
    "pctCirculating": 29.99,
    "firstInsider": false,
    "setup": "Big unlock",
-   "recipients": "Community and airdrop recipients (tokenomics.com: Community 100%). Team, investors and ecosystem are not in this tranche.",
+   "recipients": "Community / airdrop recipients (tokenomics.com: Community 100%). No team, investor or ecosystem tokens in this tranche.",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/grvt/unlocks",
    "where": [
@@ -247,16 +250,17 @@
    "practice": {
     "entries": {
      "-14": 0.1727,
-     "-7": 0.1459
+     "-7": 0.1459,
+     "-3": 0.1278
     },
     "exits": {},
-    "lastClose": 0.1278,
-    "asOf": "2026-11-26",
+    "lastClose": 0.1334,
+    "asOf": "2026-11-27",
     "shadowPartial": {
      "status": "open",
-     "pct": 12.4,
+     "pct": 8.6,
      "why": "no target yet",
-     "day": -4
+     "day": -3
     }
    }
   },
@@ -284,8 +288,8 @@
    "venueNotes": [],
    "venue": "binance",
    "symbol": "WETUSDT",
-   "pump": -23.2,
-   "pumpTo": "2026-11-26",
+   "pump": -23.8,
+   "pumpTo": "2026-11-27",
    "call": "WATCH",
    "why": "passes so far",
    "practice": {
@@ -293,8 +297,8 @@
      "-14": 0.03669
     },
     "exits": {},
-    "lastClose": 0.03654,
-    "asOf": "2026-11-26"
+    "lastClose": 0.03748,
+    "asOf": "2026-11-27"
    }
   },
   {
@@ -306,7 +310,7 @@
    "pctCirculating": 18.49,
    "firstInsider": true,
    "setup": "First insider unlock",
-   "recipients": "End of the 12-month cliffs from the 11 Dec 2025 TGE: first monthly slice for private investors (~66%), contributors (~11%) and foundation (~11%), plus the routine ecosystem-incentive slice (~11%).",
+   "recipients": "End of the 12-month cliffs from the 11 Dec 2025 TGE: first monthly slice for seed/pre-A investors (~66%), core contributors (~11%) and foundation (~11%), plus the routine ecosystem-incentive slice (~11%).",
    "confidence": "confirmed",
    "source": "https://app.tokenomics.com/tokenomics/cysic/unlocks",
    "where": [
@@ -320,13 +324,20 @@
    "venueNotes": [],
    "venue": "binance",
    "symbol": "CYSUSDT",
-   "pump": -39.3,
-   "pumpTo": "2026-11-26",
+   "pump": -37.2,
+   "pumpTo": "2026-11-27",
    "oiChange": null,
    "oiTo": null,
    "call": "WATCH",
    "why": "open interest not available yet",
-   "practice": null
+   "practice": {
+    "entries": {
+     "-14": 0.05079
+    },
+    "exits": {},
+    "lastClose": 0.05031,
+    "asOf": "2026-11-27"
+   }
   },
   {
    "token": "US",
@@ -351,11 +362,18 @@
    "venueNotes": [],
    "venue": "binance",
    "symbol": "USUSDT",
-   "pump": -15.7,
-   "pumpTo": "2026-11-26",
+   "pump": -19.6,
+   "pumpTo": "2026-11-27",
    "call": "WATCH",
    "why": "passes so far",
-   "practice": null
+   "practice": {
+    "entries": {
+     "-14": 0.00324
+    },
+    "exits": {},
+    "lastClose": 0.003203,
+    "asOf": "2026-11-27"
+   }
   },
   {
    "token": "PIEVERSE",
@@ -399,8 +417,8 @@
      "3": 2.0536,
      "7": 3.4039
     },
-    "lastClose": 3.8236,
-    "asOf": "2026-11-26",
+    "lastClose": 3.8708,
+    "asOf": "2026-11-27",
     "shadowPartial": {
      "status": "closed",
      "pct": -12.6,
@@ -424,12 +442,12 @@
    "where": [],
    "alsoListed": [],
    "venueNotes": [
-    "Bitget: different asset: price 333.4 vs ~7.18 (CoinGecko's price)",
-    "Gate: different asset: price 337.5 vs ~7.18 (CoinGecko's price)",
-    "Bybit: different asset: price 345.4 vs ~7.18 (CoinGecko's price)"
+    "Bitget: different asset: price 344.5 vs ~7.17 (CoinGecko's price)",
+    "Gate: different asset: price 345.1 vs ~7.17 (CoinGecko's price)",
+    "Bybit: different asset: price 343.4 vs ~7.17 (CoinGecko's price)"
    ],
    "venueCheck": {
-    "at": "2026-11-27 22:11 UTC",
+    "at": "2026-11-28 09:02 UTC",
     "reached": [
      "Binance (data files)",
      "OKX",
@@ -442,7 +460,7 @@
     "unreachable": []
    },
    "call": "SKIP",
-   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-27 22:11 UTC)",
+   "why": "can't short it: no Binance perp, and Bitget / Gate / Bybit's ADI is a different asset (price doesn't match); no other allowed exchange lists the real token (all 7 checked 2026-11-28 09:02 UTC)",
    "practice": null
   }
  ],
@@ -748,9 +766,9 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.1278,
-    "openPct": 17.8,
-    "asOf": "2026-11-26"
+    "lastClose": 0.1334,
+    "openPct": 14.2,
+    "asOf": "2026-11-27"
    },
    "practice": {
     "entries": {
@@ -759,13 +777,13 @@
      "-3": 0.1248
     },
     "exits": {},
-    "lastClose": 0.1278,
-    "asOf": "2026-11-26",
+    "lastClose": 0.1334,
+    "asOf": "2026-11-27",
     "shadowPartial": {
      "status": "open",
-     "pct": 17.8,
+     "pct": 14.2,
      "why": "no target yet",
-     "day": -3
+     "day": -2
     }
    }
   },
@@ -805,23 +823,24 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.1278,
-    "openPct": 12.4,
-    "asOf": "2026-11-26"
+    "lastClose": 0.1334,
+    "openPct": 8.6,
+    "asOf": "2026-11-27"
    },
    "practice": {
     "entries": {
      "-14": 0.1727,
-     "-7": 0.1459
+     "-7": 0.1459,
+     "-3": 0.1278
     },
     "exits": {},
-    "lastClose": 0.1278,
-    "asOf": "2026-11-26",
+    "lastClose": 0.1334,
+    "asOf": "2026-11-27",
     "shadowPartial": {
      "status": "open",
-     "pct": 12.4,
+     "pct": 8.6,
      "why": "no target yet",
-     "day": -4
+     "day": -3
     }
    }
   }

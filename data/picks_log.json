@@ -295,9 +295,9 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.1278,
-    "openPct": 17.8,
-    "asOf": "2026-11-26"
+    "lastClose": 0.1334,
+    "openPct": 14.2,
+    "asOf": "2026-11-27"
    },
    "practice": {
     "entries": {
@@ -306,13 +306,13 @@
      "-3": 0.1248
     },
     "exits": {},
-    "lastClose": 0.1278,
-    "asOf": "2026-11-26",
+    "lastClose": 0.1334,
+    "asOf": "2026-11-27",
     "shadowPartial": {
      "status": "open",
-     "pct": 17.8,
+     "pct": 14.2,
      "why": "no target yet",
-     "day": -3
+     "day": -2
     }
    }
   },
@@ -352,23 +352,24 @@
    "lateCall": true,
    "result": {
     "status": "open",
-    "lastClose": 0.1278,
-    "openPct": 12.4,
-    "asOf": "2026-11-26"
+    "lastClose": 0.1334,
+    "openPct": 8.6,
+    "asOf": "2026-11-27"
    },
    "practice": {
     "entries": {
      "-14": 0.1727,
-     "-7": 0.1459
+     "-7": 0.1459,
+     "-3": 0.1278
     },
     "exits": {},
-    "lastClose": 0.1278,
-    "asOf": "2026-11-26",
+    "lastClose": 0.1334,
+    "asOf": "2026-11-27",
     "shadowPartial": {
      "status": "open",
-     "pct": 12.4,
+     "pct": 8.6,
      "why": "no target yet",
-     "day": -4
+     "day": -3
     }
    }
   }
