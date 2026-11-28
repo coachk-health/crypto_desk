@@ -3,6 +3,28 @@
  "entries": [
   {
    "date": "2026-11-28",
+   "title": "10:52 desk update: news refresh and unlock verification loop",
+   "did": [
+    "Refreshed stories, briefs and calendar; two independent verification rounds (86 claims checked, 8 removed).",
+    "Unlock loop: researched 33 existing rows plus 5 new shortable ones; skipped 5 rows marked can't-short (WPAY, ADI, RAIN, YZY, KNTQ); independent re-check of all 38 (7 confirmed, 27 partial, 4 contradicted)."
+   ],
+   "found": [
+    "Lead: bitcoin swung between about $62,100 and $58,700 on Friday and sat at $59,923.74 (-2.34%) on CoinDesk at 03:55 UTC, while the S&P 500 closed its best week since April 2025 (AP). Galaxy flags a daily close below $58,525 (The Block).",
+    "Friday 27 Nov ETF flows not yet published; November record outflows still $5.39B through 25 Nov. ADGM court hearing on frozen Binance-hack tokens on 1 Dec (The Defiant).",
+    "Unlocks: GRASS 28 Nov already released (removed). MemeCore moved to 12 Dec per Tokenomist. ALLO 11 Dec insider tranche reported pushed to May 2027 (Phemex/PANews), row dropped. ZRO 20 Dec corrected to ~23.28M; TON/GRAM date disputed (6 vs 23 Dec); MMT amount and recipients disputed. New rows with OKX perps: ZETA 1 Dec, STABLE 8 Dec, GPS 16 Dec, RE 18 Dec.",
+    "Grade changes: EIGEN, 2Z, MOVE, MON up to High; Q and VELVET down to High; MMT down to Moderate."
+   ],
+   "decided": [
+    "Dropped the XRP escrow candidate (monthly release mostly relocked). Removed Strategy mNAV point, Fidelity LINK, Franklin HYPE and Open BRL briefs, the Khaosod venue, Deribit and FedWatch notes: their pages could not be opened by the checker this run (shared search budget ran out). Only OKX could be checked for perps on new rows."
+   ],
+   "files": [
+    "data/news.json",
+    "data/unlocks.json",
+    "data/journal.json"
+   ]
+  },
+  {
+   "date": "2026-11-28",
    "title": "06:52 desk update: news refresh",
    "did": [
     "Refreshed stories, briefs and calendar; two independent verification rounds (109 claims checked, 9 removed or reworded).",
