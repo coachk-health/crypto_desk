@@ -1,33 +1,32 @@
 {
   "date": "2026-11-28",
-  "updated": "2026-11-28T08:13:20Z",
-  "headline": "Bitcoin slipped back under $60,000 on Saturday as US bitcoin funds logged an eighth straight day of withdrawals in what is already a record month for outflows.",
+  "updated": "2026-11-28T12:07:03Z",
+  "headline": "Bitcoin slid further below $60,000 on Saturday and the Trump-linked WLFI token crashed more than 50%, with both main crypto fear gauges reading extreme fear.",
   "market": {
-    "asOf": "Prices read on alternative.me's crypto dashboard at about 07:58 UTC Sat 28 Nov (14:58 Bangkok; 2:58am ET); solana's 24h change was shown without a sign, so it is left out. Use the live prices on this page.",
+    "asOf": "BTC read on CoinMarketCap and SOL on CoinDesk at about 11:50 UTC Sat 28 Nov (18:50 Bangkok; 6:50am ET). CoinMarketCap's ether page gave conflicting figures within minutes ($1,646 down 4.27%, then $1,741 up 2.47%), so ether is CoinGecko's 06:43 UTC reading as reported by Cryptoticker. Use the live prices on this page.",
     "btc": {
-      "price": 59790,
-      "chg24h": -1.01
+      "price": 59982,
+      "chg24h": -2.21
     },
     "eth": {
-      "price": 1659.09,
-      "chg24h": -1.54
+      "price": 1658.79,
+      "chg24h": -4.2
     },
     "sol": {
-      "price": 71.44,
-      "chg24h": null
+      "price": 70.91,
+      "chg24h": -3.0
     },
-    "fearGreed": "Two indexes, both in fear: CoinMarketCap Fear & Greed 10 (read on CoinMarketCap's charts page) and alternative.me Crypto Fear & Greed 12, Extreme Fear, both read at about 07:58 UTC 28 Nov."
+    "fearGreed": "Two indexes, both in extreme fear: alternative.me Crypto Fear & Greed 12 (Extreme Fear) and CoinMarketCap Fear & Greed 9, both read at about 11:50 UTC 28 Nov."
   },
   "stories": [
     {
-      "title": "Bitcoin gives back Friday's bounce and is under $60,000 again",
+      "title": "Bitcoin slides further below $60,000 as fear gauges read extreme fear",
       "mood": "bearish",
-      "summary": "Bitcoin touched about $62,100 on Friday but could not hold it, and early Saturday it was back below $60,000, with ether falling further.",
+      "summary": "Bitcoin fell again on Saturday morning, ether fell harder, and the whole crypto market was down about 2% in a day.",
       "points": [
-        "Bitcoin was down 3.23% at $59,710.30 at 01:07 ET (06:07 GMT) on Saturday, after a Friday high of $62,125 and a low of $58,719, per Investing.com.",
-        "Ether fell 4.48% to $1,656.85, and about $478 million of positions were liquidated across the market, per Investing.com.",
-        "Bitcoin fell 26.3% from $81,255 on 28 Oct to $59,857 at the 27 Nov close, per crypto.news using Investing.com data.",
-        "Bitcoin's 50-day average is about 3.45% above its 200-day average, down from a 12% gap a month ago, so a so-called death cross could come soon; CoinDesk notes such signals lag the price."
+        "Bitcoin was down 4.1% at $59,151.4 at 06:36 ET (11:36 GMT) on Saturday, per Investing.com.",
+        "The total crypto market fell 2% to $2.144 trillion over 24 hours, and $458 million of derivatives positions were liquidated, $273 million of them bets on rising prices, per TokenPost.",
+        "Ether lost 4.2% to $1,659 on Saturday morning, per Cryptoticker."
       ],
       "sources": [
         {
@@ -35,71 +34,81 @@
           "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-falls-below-60k-as-whales-buy-dip-etf-outflows-mount-5054180"
         },
         {
-          "label": "crypto.news",
-          "url": "https://crypto.news/bitcoin-monthly-price-etf-outflows-november-2026/"
+          "label": "TokenPost",
+          "url": "https://www.tokenpost.com/news/investing/64148"
         },
         {
-          "label": "CoinDesk (death cross)",
-          "url": "https://www.coindesk.com/daybook-us/2026/11/27/bitcoin-death-cross-is-coming-here-s-what-happened-after-previous-13"
+          "label": "Cryptoticker",
+          "url": "https://cryptoticker.io/en/crypto-news-ether-4-percent-fear-greed-10/"
         }
       ]
     },
     {
-      "title": "US bitcoin funds see an eighth straight day of withdrawals in a record month; Strategy leaves MSCI's indexes Monday",
+      "title": "US bitcoin funds' eight-day exodus tops $3.4 billion; MSCI drops Strategy at Monday's close",
       "mood": "bearish",
-      "summary": "US spot bitcoin funds lost another $389 million on Friday, most of it from BlackRock's fund, making November the biggest month of withdrawals on record. On Monday after the close, MSCI drops bitcoin treasury company Strategy from its indexes, which could make funds that track them sell its shares.",
+      "summary": "US spot bitcoin funds lost another $389 million on Friday, their eighth straight day of withdrawals, in a record month for outflows. After Monday's close, MSCI removes bitcoin treasury company Strategy from its indexes, which could make funds that track them sell its shares.",
       "points": [
-        "Spot bitcoin funds had net outflows of $389 million on Friday 27 Nov, the eighth straight session, with $327.2 million from BlackRock's IBIT, per Farside data via crypto.news.",
-        "November outflows reached $5.78 billion including Friday, per Farside data via crypto.news, already above the previous monthly record of $4.51 billion set in June, per CryptoBriefing via KuCoin.",
-        "US ether funds lost $69.4 million on Friday and $592.7 million over nine straight sessions, per crypto.news.",
-        "MSCI's removal of Strategy takes effect after the close on 30 Nov. MSCI-linked funds hold about 13 million Strategy shares, 3.1% of its shares, and JPMorgan estimated about $2.8 billion of selling, per Cointelegraph."
+        "Spot bitcoin funds had net outflows of $389 million on 27 Nov, the eighth straight day, led by $327 million from BlackRock's IBIT, per TokenPost.",
+        "From 17 to 27 Nov the funds lost $3.44 billion, and IBIT's $2.79 billion was 81% of it, per CoinTurk.",
+        "November's outflows reached about $5.78 billion, above the previous monthly record set in June, per Pluang.",
+        "MSCI's changes take effect at the close on 30 Nov; funds tracking MSCI indexes hold about 3.1% of Strategy's shares. A JPMorgan estimate of about $2.8 billion of selling dates from 2025 and an earlier version of the plan, per Cryptoticker."
       ],
       "sources": [
         {
-          "label": "crypto.news (Farside data)",
-          "url": "https://crypto.news/bitcoin-etf-outflows-november-5-78-billion/"
+          "label": "TokenPost",
+          "url": "https://www.tokenpost.com/news/investing/64012"
         },
         {
-          "label": "CryptoBriefing via KuCoin",
-          "url": "https://www.kucoin.com/news/flash/blackrock-s-bitcoin-etf-sees-389m-outflows-as-november-etf-exodus-hits-record"
+          "label": "CoinTurk",
+          "url": "https://en.coin-turk.com/blackrocks-ibit-sees-2-79-billion-in-bitcoin-etf-outflows-over-eight-sessions"
         },
         {
-          "label": "Cointelegraph",
-          "url": "https://cointelegraph.com/news/msci-confirms-strategys-removal-from-indexes-end-november"
+          "label": "Pluang",
+          "url": "https://pluang.com/en/news-feed/etf-bitcoin-spot-as-us-kehilangan-578-miliar-dolar-saat-dana-xrp-menarik-inflow"
+        },
+        {
+          "label": "Cryptoticker (MSCI)",
+          "url": "https://cryptoticker.io/en/msci-removes-strategy-msci-world-november-30/"
         }
       ]
     },
     {
-      "title": "Binance's hack withdrawals are back; an Abu Dhabi court weighs the frozen funds on Tuesday",
-      "mood": "neutral",
-      "summary": "Binance says the withdrawal suspension from its 29 October hack is fully lifted, with a few networks paused for maintenance. An Abu Dhabi court holds a hearing on 1 December on whether firms must keep hack-linked tokens frozen.",
+      "title": "Trump-linked WLFI token crashes more than 50%; its USD1 stablecoin briefly slips to 94 cents",
+      "mood": "volatile",
+      "summary": "World Liberty Financial's WLFI token fell to a record low overnight after a wallet labelled as the project's reserve sold ether at a loss, and its dollar stablecoin briefly lost its $1 peg. Tron founder Justin Sun accused insiders of cashing out.",
       "points": [
-        "Binance said the withdrawal suspension has been fully lifted and withdrawals for a small number of networks are temporarily paused for maintenance or planned upgrades; about $6.3 billion was affected, per CoinDesk.",
-        "The ADGM Courts in Abu Dhabi issued a $6.5 billion worldwide freezing order covering 26,000 addresses, and about $2.85 billion has been frozen or intercepted, per The Block.",
-        "A 1 Dec hearing will consider whether 18 firms, including Circle and World Liberty Financial, must keep hack-linked tokens frozen, per Reuters via The Star.",
-        "11,989 ETH, about $19.7 million, moved on Friday from an address labelled \"Binance Hack 2026\" to an unidentified wallet, per TokenPost."
+        "WLFI fell 52.9% over 24 hours to $0.01956, per CoinGlass data cited by crypto.news.",
+        "CoinDesk puts WLFI down roughly 95% from its September 2025 peak of $0.33; TokenPost measures from an all-time high near $0.46 and puts the drop at almost 96%.",
+        "A wallet labelled \"World Liberty Financial: Strategic Reserve\" sold 12,121 ETH for about $20.06 million, a realized loss CoinDesk estimates at $19.26 million, citing EmberCN and Arkham.",
+        "The USD1 stablecoin briefly traded at $0.94, per TokenPost; World Liberty had not responded to CoinDesk's request for comment."
       ],
       "sources": [
         {
           "label": "CoinDesk",
-          "url": "https://www.coindesk.com/markets/2026/11/27/binance-says-its-withdrawal-suspension-is-over-four-weeks-after-a-usd6-3-billion-hack"
+          "url": "https://www.coindesk.com/markets/2026/11/28/trump-linked-crypto-token-wlfi-plunges-over-50"
         },
         {
-          "label": "The Block",
-          "url": "https://theblock.co/news/business/2026-11-18-binance-freezing-court-order-adgm-crypto-october-hack-443491"
-        },
-        {
-          "label": "Reuters via The Star",
-          "url": "https://www.thestar.com.my/tech/tech-news/2026/11/19/uae-court-orders-freeze-on-crypto-tokens-stolen-from-binance-wallets"
+          "label": "crypto.news",
+          "url": "https://crypto.news/justin-sun-wlfi-usd1-delisting"
         },
         {
           "label": "TokenPost",
-          "url": "https://www.tokenpost.com/news/technology/63725"
+          "url": "https://www.tokenpost.com/news/investing/64098"
         }
       ]
     }
   ],
   "briefs": [
+    {
+      "title": "Abu Dhabi court weighs frozen Binance-hack funds Tuesday",
+      "summary": "On 1 Dec an Abu Dhabi court hears whether 18 named firms must hand over frozen funds linked to Binance's October hack, per Cryptoticker.",
+      "url": "https://cryptoticker.io/en/binance-hack-abu-dhabi-freezing-order-phishing/"
+    },
+    {
+      "title": "CZ admits security complacency",
+      "summary": "Binance founder Changpeng Zhao acknowledged complacency over the $6.3 billion hack and warned of another six to 12 months of heightened security threats, per The National.",
+      "url": "https://www.thenationalnews.com/business/2026/11/28/binance-founder-acknowledges-security-complacency-on-63-hack-and-calls-for-crypto-industry-alliance/"
+    },
     {
       "title": "Big holders kept buying",
       "summary": "Wallets holding 1,000 to 10,000 BTC added 121,117 BTC between 30 Sep and 21 Nov, to 2.95 million BTC, per CryptoQuant data cited by Investing.com.",
@@ -107,8 +116,8 @@
     },
     {
       "title": "XRP funds buck the trend",
-      "summary": "US XRP funds took in $5.4 million on Friday while bitcoin and ether funds lost money, per SoSoValue data cited by crypto.news.",
-      "url": "https://crypto.news/bitcoin-etf-outflows-november-5-78-billion/"
+      "summary": "US XRP funds drew $5.4 million of net inflows while bitcoin funds lost money, per Pluang.",
+      "url": "https://pluang.com/en/news-feed/etf-bitcoin-spot-as-us-kehilangan-578-miliar-dolar-saat-dana-xrp-menarik-inflow"
     },
     {
       "title": "Malaysia's first spot bitcoin fund eyes a 2 Dec debut",
@@ -119,11 +128,6 @@
       "title": "KuCoin delists Monero on Monday",
       "summary": "KuCoin removes its XMR spot pairs at 08:00 UTC on 30 Nov; withdrawals stay open until 31 Dec, per KuCoin.",
       "url": "https://www.kucoin.com/announcement/en-kucoin-will-delist-xmr-on-2026-11-30"
-    },
-    {
-      "title": "Spain lets its financial watchdog freeze crypto accounts",
-      "summary": "A new decree lets Spain's financial intelligence unit freeze crypto accounts for up to 5 business days without a court order, from 25 Jan 2027, per Cointelegraph.",
-      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today"
     }
   ],
   "calendar": [
@@ -133,7 +137,7 @@
       "event": "Fed quiet period under way",
       "impact": "neutral",
       "key": false,
-      "note": "The Fed's blackout began at 12:00am ET Sat 28 Nov and runs to 11:59pm ET Thu 10 Dec, per the Fed's blackout calendar; its December calendar lists no speeches, only Bowman's testimony on 1 Dec."
+      "note": "The Fed's blackout runs from Sat 28 Nov to Thu 10 Dec, per the St. Louis Fed's blackout calendar; the Fed's December calendar lists Bowman's testimony on 1 Dec."
     },
     {
       "et": "Sat 28 Nov – Sat 5 Dec",
@@ -152,12 +156,12 @@
       "note": "OPEC says \"The next meeting will be held on 29 November 2026.\" Time not announced."
     },
     {
-      "et": "Sun 29 Nov",
-      "bkk": "Sun 29 – Mon 30 Nov",
+      "et": "Sun 29 Nov · 2:00pm",
+      "bkk": "Mon 30 · 02:00",
       "event": "Spanish general election",
       "impact": "neutral",
       "key": false,
-      "note": "176 of 350 seats are needed for a majority; polls point to a PP-Vox majority, per Newsquawk."
+      "note": "Polls close at 20:00 CET, with a first official count around 21:00 CET. 176 of 350 seats are needed for a majority; most polls point to a PP-Vox majority, per Newsquawk."
     },
     {
       "et": "Mon 30 Nov · 3:00am",
@@ -189,7 +193,7 @@
       "event": "ISM manufacturing PMI (Nov), job openings (JOLTS, Oct); Fed's Bowman testifies to the House",
       "impact": "neutral",
       "key": false,
-      "note": "ISM: consensus 55.2, October 55.5, per Economic Weekly. JOLTS: September was 7.5 million, per the BLS. Bowman testifies on oversight of prudential regulators at 10:00am, per the Fed's calendar. An Abu Dhabi court hearing on the frozen Binance-hack tokens is also on 1 Dec, per The Defiant. Marvell reports after the close, per StockTitan."
+      "note": "ISM: consensus 55.2, October 55.5, per Newsquawk and Economic Weekly. JOLTS: September was 7.5 million, per the BLS. Bowman testifies on oversight of prudential regulators at 10:00am, per the Fed's calendar. An Abu Dhabi court hearing on the frozen Binance-hack tokens is also on 1 Dec, per TokenPost. Marvell holds its results call at 4:30pm ET, per Marvell."
     },
     {
       "et": "Wed 2 Dec · 8:15am",
@@ -197,7 +201,7 @@
       "event": "ADP private payrolls (Nov); Salesforce and Snowflake earnings",
       "impact": "neutral",
       "key": false,
-      "note": "ADP: consensus 80,000, October 86,000, per Economic Weekly. Salesforce and Snowflake report after the close, per StockTitan."
+      "note": "ADP: consensus 80,000, October 86,000, per Economic Weekly. Salesforce and Snowflake report after the close, per the companies."
     },
     {
       "et": "Thu 3 Dec · 8:30am",
@@ -213,22 +217,22 @@
       "event": "US jobs report (Nov)",
       "impact": "volatile",
       "key": true,
-      "note": "Consensus +90,000 jobs with unemployment at 4.1%; October was +165,000 and 4.1%, per Economic Weekly."
+      "note": "Consensus +90,000 jobs with unemployment at 4.1%; October was +165,000 and 4.1%, per Economic Weekly. Newsquawk also sees average hourly earnings +0.3% on the month."
     },
     {
-      "et": "Wed 9 Dec · 2:30pm",
-      "bkk": "Thu 10 Dec · 02:30",
-      "event": "Fed meeting ends (8-9 Dec); Powell press conference",
+      "et": "Wed 9 Dec · 2:00pm",
+      "bkk": "Thu 10 Dec · 02:00",
+      "event": "Fed decision (8-9 Dec meeting); Powell press conference at 2:30pm",
       "impact": "volatile",
       "key": true,
-      "note": "The Fed's December calendar lists the two-day meeting on 8-9 Dec and the press conference at 2:30pm ET. November CPI follows on Thu 10 Dec at 8:30am ET, per the BLS schedule, so the Fed decides before seeing it."
+      "note": "The Fed's December calendar lists the statement at 2:00pm ET and the press conference at 2:30pm ET. Newsquawk says a 25bp hike is fully priced for December. November CPI follows on Thu 10 Dec at 8:30am ET, per the BLS schedule, so the Fed decides before seeing it."
     }
   ],
   "breaking": [],
   "verification": {
-    "checkedAt": "2026-11-28T08:13:20Z",
-    "claimsChecked": 75,
-    "claimsRemoved": 6,
+    "checkedAt": "2026-11-28T12:07:03Z",
+    "claimsChecked": 96,
+    "claimsRemoved": 10,
     "rounds": 2,
     "method": "Independent source check: every claim re-opened at its cited URL"
   }

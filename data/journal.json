@@ -3,6 +3,28 @@
   "entries": [
     {
       "date": "2026-11-28",
+      "title": "18:52 desk update: news refresh",
+      "did": [
+        "Refreshed market block, stories, briefs and calendar; two independent verification rounds (96 claims checked, 10 removed, 2 corrected). Unlock loop skipped (checked 04:18 UTC, under 24h)."
+      ],
+      "found": [
+        "New story: Trump-linked WLFI token fell 52.9% in 24h to $0.01956 (CoinGlass via crypto.news); its USD1 stablecoin briefly traded at $0.94 (TokenPost).",
+        "Bitcoin $59,151.4 (-4.1%) at 11:36 GMT per Investing.com; $458M liquidated in 24h (TokenPost). Spot bitcoin funds lost $3.44B over 17-27 Nov, 81% from IBIT (CoinTurk).",
+        "Calendar fix: the Fed's 9 Dec statement is at 2:00pm ET (press conference 2:30pm), not 2:30pm.",
+        "CoinMarketCap's ether page showed two conflicting readings minutes apart; ether shown from CoinGecko via Cryptoticker with its read time."
+      ],
+      "decided": [
+        "Dropped the death-cross point, the Spain decree brief and a 'withdrawals fully back' claim: their pages could not be opened or did not support them.",
+        "The JPMorgan ~$2.8B MSTR selling estimate is now labelled as a 2025 estimate for an earlier version of MSCI's plan."
+      ],
+      "files": [
+        "data/news.json",
+        "data/unlocks.json (scores only)",
+        "data/journal.json"
+      ]
+    },
+    {
+      "date": "2026-11-28",
       "title": "14:52 desk update: news refresh",
       "did": [
         "Refreshed market block, stories, briefs and calendar; two independent verification rounds (75 claims checked, 6 removed, 1 corrected). Unlock loop skipped (checked 04:18 UTC, under 24h)."
