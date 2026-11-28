@@ -20254,6 +20254,85 @@
      ],
      "gaps": "Only one source, and it hedges ('appears to remain'); no confirmation the treasury tranche released or its token count. Team/investor tranches did NOT unlock (moved to 26 Nov 2026, outside the window).",
      "fixNote": "BeInCrypto (Tokenomist data) lists protocol treasury 126.25M in the original 26 May cliff; the release itself is still unconfirmed"
+    },
+    {
+     "date": "2026-11-26",
+     "timeUTC": null,
+     "amountTokens": 458750000,
+     "amountHow": "from the live page's researched row",
+     "type": "cliff",
+     "recipientsMix": {
+      "team": 0.336,
+      "investors": 0.359,
+      "community": 0,
+      "ecosystem": 0.305,
+      "other": 0
+     },
+     "sources": [
+      {
+       "label": "Tokenomist HUMA claim page (updated 26 Nov 2026)",
+       "url": "https://tokenomist.ai/huma-finance/claim",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "tokenomics.com HUMA unlocks",
+       "url": "https://app.tokenomics.com/tokenomics/huma-finance/unlocks",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "RootData research: Q4 2026 popular token unlocks",
+       "url": "https://www.rootdata.com/research/Q4-2026-Popular-Token-Unlocking-and-Supply-Changes",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "amount",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Tokenomist weekly digest May 25-31 2026 (lockup extension)",
+       "url": "https://tokenomist.ai/research/weekly-unlock-digest-may-25-31-2026-humas-lockup-extension",
+       "kind": "aggregator",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "Bitrue blog: HUMA unlock and vesting schedule",
+       "url": "https://www.bitrue.com/blog/huma-token-unlock-vesting-schedule",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "recipients"
+       ]
+      },
+      {
+       "label": "CMC AI latest updates (cites TokenPost 23 Nov: ~459M on 26 Nov)",
+       "url": "https://coinmarketcap.com/cmc-ai/huma-finance/latest-updates",
+       "kind": "news",
+       "confirms": [
+        "date",
+        "amount"
+       ]
+      }
+     ],
+     "predicted": {
+      "grade": "Very high",
+      "points": 4.88,
+      "confidence": 62,
+      "scoredAt": "2026-11-28T08:13:20Z"
+     }
     }
    ],
    "gaps": "The first team/advisor/investor unlock was moved from 26 May 2026 to 26 Nov 2026, so there is no insider unlock in the window. tokenomics.com (desk reading, not re-opened) shows quarterly, decaying LP & Ecosystem releases; 26 Feb and 26 Aug 2026 quarterly releases are likely but no source opened this session confirms their date or size, so they are not listed. maxSupply 10B and listed 2025-05 come from the desk snapshot (CoinGecko 1.733B circ = 17.33% of max; original 12-month lock ending 26 May 2026), not re-opened.",
